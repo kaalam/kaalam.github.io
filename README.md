@@ -31,11 +31,11 @@ http://www.apache.org/licenses/LICENSE-2.0
 
   (c)2018 The Authors of Jazz 
   
-  available under GNU Simpler Free Documentation License http://gplv3.fsf.org/sfdl-draft-2006-09-26.html
-	
+  available under GNU Simpler Free Documentation License http://gplv3.fsf.org/sfdl-dd1.txt
+
 
 ### Kaalam website and blog:
 
   (c)2018 kaalam.ai
   
-  available under GNU Simpler Free Documentation License http://gplv3.fsf.org/sfdl-draft-2006-09-26.html
+  available under GNU Simpler Free Documentation License http://gplv3.fsf.org/sfdl-dd1.txt
