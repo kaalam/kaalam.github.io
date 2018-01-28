@@ -6,9 +6,9 @@
 </description>
     <link>http://localhost:8888/news/</link>
     <atom:link href="http://localhost:8888/news/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 22 Jan 2018 21:38:06 +0100</pubDate>
-    <lastBuildDate>Mon, 22 Jan 2018 21:38:06 +0100</lastBuildDate>
-    <generator>Jekyll v3.6.2</generator>
+    <pubDate>Sun, 28 Jan 2018 18:36:39 +0100</pubDate>
+    <lastBuildDate>Sun, 28 Jan 2018 18:36:39 +0100</lastBuildDate>
+    <generator>Jekyll v3.1.6</generator>
     
       <item>
         <title>Docker</title>

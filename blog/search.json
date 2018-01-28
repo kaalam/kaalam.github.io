@@ -85,6 +85,12 @@
   
 
   
+    ,{
+      "title"			: "About the Jekyll Theme",
+      "link"			: "http://localhost:8888/blog/about/",
+      "excerpt"		: "So Simple is a responsive Jekyll theme for your words and images."
+    }
+  
 
   
     ,{
@@ -96,12 +102,6 @@
 
   
 
-  
-    ,{
-      "title"			: "About the Jekyll Theme",
-      "link"			: "http://localhost:8888/blog/about/",
-      "excerpt"		: "So Simple is a responsive Jekyll theme for your words and images."
-    }
   
 
   
