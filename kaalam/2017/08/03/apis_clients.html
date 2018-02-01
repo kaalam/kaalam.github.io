@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Forty</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<!--[if lte IE 8]><script src="/kaalam/assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="/kaalam/assets/css/main.css" />
+	<!--[if lte IE 9]><link rel="stylesheet" href="/kaalam/assets/css/ie9.css" /><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" href="/kaalam/assets/css/ie8.css" /><![endif]-->
+</head>
+
+
+<body>
+
+    <!-- Wrapper -->
+<div id="wrapper">
+
+<!-- Header -->
+<header id="header">
+	<a href="http://localhost:8888/kaalam/" class="logo"><strong>Forty</strong> <span>by HTML5 UP</span></a>
+	<nav>
+		<a href="#menu">Menu</a>
+	</nav>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+	<ul class="links">
+        
+		    
+		        <li><a href="http://localhost:8888/kaalam/">Home</a></li>
+	    	
+		
+		    
+		
+		
+		    
+		
+		    
+		
+	</ul>
+	<ul class="actions vertical">
+		<li><a href="#" class="button special fit">Get Started</a></li>
+		<li><a href="#" class="button fit">Log In</a></li>
+	</ul>
+</nav>
+ 
+    
+    
+<!-- Main -->
+<div id="main" class="alt">
+
+<!-- One -->
+<section id="one">
+	<div class="inner">
+		<header class="major">
+			<h1>API</h1>
+		</header>
+		<span class="image main"><img src="/kaalam/assets/images/pic04.jpg" alt="" /></span>
+		<p><p>Jazz has a strong need for communications, both as a server and as a client. As a client Jazz performs <abbr title="Jazz nodes are coordinated as a cluster. This requires the nodes to communicate.">inter-node</abbr> communications and data gathering
+from <abbr title="APIs from other services that provide data required by the applications running on the Jazz server. E.g., a EURO/USD rate.">external APIs</abbr>. Both client and server communications support modern technologies including <abbr title="The latest version. HTTP/1.1 is a revision of the original HTTP (HTTP/1.0) that allows a single connection to access many objects.">http 1.1</abbr> and <abbr title="Internet Protocol version 6 (IPv6) is the most recent version of the Internet Protocol (IP) with an address space 65536 times that of the previous version.">IP v6</abbr>. Jazz is built on top of widely
+used http technologies: <strong><a href="https://curl.haxx.se/libcurl/">libcurl</a></strong> for the client functionality
+and <strong><a href="https://www.gnu.org/software/libmicrohttpd/">libmicrohttpd</a></strong> for the server side.</p>
+
+<h2 id="as-a-server-jazz-provides">As a server, Jazz provides</h2>
+
+<ul>
+  <li><strong>Jazz server by functionality:</strong>
+    <ul>
+      <li>Deliver <abbr title="Web pages whose content is not created by querying data services, like this one.">static web pages</abbr>.</li>
+      <li>Deliver <abbr title="Web pages and mobile applications whose content is created from querying data services.">data driven applications</abbr>.</li>
+      <li>Deliver <abbr title="The data stored returned &quot;as is&quot; or with just simple transformations like filtering and formatting.">raw data</abbr>.</li>
+      <li>Deliver <abbr title="Results computed by possibly complex operations such as image recognition.">AI computations</abbr> based on internal or <abbr title="Data defined to be outside the Jazz server, but the Jazz server has a way to access it on demand.">external data</abbr>.</li>
+    </ul>
+  </li>
+  <li><strong>Jazz server by internal service:</strong>
+    <ul>
+      <li>Read/write data <abbr title="The basic unit of data storage inside Jazz. Blocks have a type, like a raw binary file or a vector of 100 strings.">blocks</abbr> using the internal <abbr title="The internal persisted storage in the Jazz server. It is an extremely fast way to access data (value) given some unique identifier (key).">key/value store</abbr>.</li>
+      <li>Read/write/create data <abbr title="An abstraction over the blocks and the nodes than allows defining functions over unlimited size data sets.">instruments</abbr> abstracting the <abbr title="A group of computers running Jazz servers that work together and are aware of each other.">cluster</abbr> and <abbr title="The basic unit of data storage inside Jazz. Blocks have a type, like a raw binary file or a vector of 100 strings.">blocks</abbr> levels.</li>
+      <li>Read/write/create <abbr title="Same as &quot;deep neural networks&quot;. DNNs are architectures of functions. Typically, these networks are created by &quot;learning&quot; iteratively to do tasks by looking at examples.">neural networks</abbr> using <abbr title="The basic unit of data storage inside Jazz. Blocks have a type, like a raw binary file or a vector of 100 strings.">blocks</abbr>, <abbr title="An abstraction over the blocks and the nodes than allows defining functions over unlimited size data sets.">instruments</abbr> and user <abbr title="The data uploaded by a user. E.g., a face shot of herself for identification.">uploaded data</abbr>.</li>
+      <li>Create <abbr title="Universal Resource Locators. Simply put: the address of a World Wide Web page.">URLs</abbr> to reference data <abbr title="The basic unit of data storage inside Jazz. Blocks have a type, like a raw binary file or a vector of 100 strings.">blocks</abbr> for reading.</li>
+      <li>Create <abbr title="The APIs the server exposes for the clients using it.">served APIs</abbr> to reference <abbr title="Same as &quot;deep neural networks&quot;. DNNs are architectures of functions. Typically, these networks are created by &quot;learning&quot; iteratively to do tasks by looking at examples.">neural networks</abbr> for reading and writing.</li>
+    </ul>
+  </li>
+  <li><strong>Jazz server security:</strong>
+    <ul>
+      <li>Trusted <abbr title="In this case, IP (Internet Protocol) means IP address. Only the known addresses of the clients connecting inside the cluster are trusted.">IPs</abbr> for internal communications.</li>
+      <li>Support for <abbr title="Authentication with a password (and typically a user name or another unique identifier) plus a session cookie.">basic authentication</abbr>.</li>
+      <li>
+        <p>Support for <abbr title="Authentication using some public key cryptography based mechanism.">digest authentication</abbr>.</p>
+
+        <p><img src="/jazz/assets/images/security.jpg" alt="link" width="480px" /></p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+</p>
+	</div>
+</section>
+
+</div>
+
+    <!-- Contact -->
+<section id="contact">
+	<div class="inner">
+		<section>
+			<form action="https://formspree.io/youremailaddress@gmail.com" method="POST">
+				<div class="field half first">
+					<label for="name">Name</label>
+					<input type="text" name="name" id="name" />
+				</div>
+				<div class="field half">
+					<label for="email">Email</label>
+					<input type="text" name="_replyto" id="email" />
+				</div>
+				<div class="field">
+					<label for="message">Message</label>
+					<textarea name="message" id="message" rows="6"></textarea>
+				</div>
+				<ul class="actions">
+					<li><input type="submit" value="Send Message" class="special" /></li>
+					<li><input type="reset" value="Clear" /></li>
+				</ul>
+			</form>
+		</section>
+		<section class="split">
+			<section>
+				<div class="contact-method">
+					<span class="icon alt fa-envelope"></span>
+					<h3>Email</h3>
+					<a href="#">youremailaddress@gmail.com</a>
+				</div>
+			</section>
+			<section>
+				<div class="contact-method">
+					<span class="icon alt fa-phone"></span>
+					<h3>Phone</h3>
+					<span>(716) 555-5555</span>
+				</div>
+			</section>
+			<section>
+				<div class="contact-method">
+					<span class="icon alt fa-home"></span>
+					<h3>Address</h3>
+					<span>
+					
+					    1234 Somewhere Road<br />
+					
+					
+					    Nashville,
+					
+					
+					    TN 
+					
+					
+					    55555<br />
+					
+					
+					    United States of America
+					
+					</span>
+				</div>
+			</section>
+		</section>
+	</div>
+</section>
+
+<!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+			<ul class="icons">
+				
+				<li><a href="https://twitter.com/andrewbanchich" class="icon alt fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+				
+				
+				<li><a href="https://plus.google.com/u/0/+AndrewBanchich" class="icon alt fa-google-plus" target="_blank"><span class="label">Google+</span></a></li>
+				
+				
+				
+				<li><a href="https://instagram.com" class="icon alt fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+				
+				
+				
+				
+				<li><a href="https://gitlab.com/u/andrewbanchich" class="icon alt fa-gitlab" target="_blank"><span class="label">GitLab</span></a></li>
+				
+				
+				
+				
+				<li><a href="https://www.linkedin.com/in/andrew-banchich-a4ba1195" class="icon alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+				
+			</ul>
+			<ul class="copyright">
+				<li>&copy; Forty by HTML5 UP</li>
+				<li>Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a></li>
+				<li>Jekyll integration: <a href="http://andrewbanchi.ch" target="_blank">Andrew Banchich</a></li>
+
+			</ul>
+		</div>
+	</footer>
+
+</div>
+
+<!-- Scripts -->
+	<script src="http://localhost:8888/kaalam/assets/js/jquery.min.js"></script>
+	<script src="http://localhost:8888/kaalam/assets/js/jquery.scrolly.min.js"></script>
+	<script src="http://localhost:8888/kaalam/assets/js/jquery.scrollex.min.js"></script>
+	<script src="http://localhost:8888/kaalam/assets/js/skel.min.js"></script>
+	<script src="http://localhost:8888/kaalam/assets/js/util.js"></script>
+	<!--[if lte IE 8]><script src="http://localhost:8888/kaalam/assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="http://localhost:8888/kaalam/assets/js/main.js"></script>
+
+
+</body>
+
+</html>

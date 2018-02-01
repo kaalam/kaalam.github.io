@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Forty</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<!--[if lte IE 8]><script src="/kaalam/assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="/kaalam/assets/css/main.css" />
+	<!--[if lte IE 9]><link rel="stylesheet" href="/kaalam/assets/css/ie9.css" /><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" href="/kaalam/assets/css/ie8.css" /><![endif]-->
+</head>
+
+
+<body>
+
+    <!-- Wrapper -->
+<div id="wrapper">
+
+<!-- Header -->
+<header id="header">
+	<a href="http://localhost:8888/kaalam/" class="logo"><strong>Forty</strong> <span>by HTML5 UP</span></a>
+	<nav>
+		<a href="#menu">Menu</a>
+	</nav>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+	<ul class="links">
+        
+		    
+		        <li><a href="http://localhost:8888/kaalam/">Home</a></li>
+	    	
+		
+		    
+		
+		
+		    
+		
+		    
+		
+	</ul>
+	<ul class="actions vertical">
+		<li><a href="#" class="button special fit">Get Started</a></li>
+		<li><a href="#" class="button fit">Log In</a></li>
+	</ul>
+</nav>
+ 
+    
+    
+<!-- Main -->
+<div id="main" class="alt">
+
+<!-- One -->
+<section id="one">
+	<div class="inner">
+		<header class="major">
+			<h1>Persistence</h1>
+		</header>
+		<span class="image main"><img src="/kaalam/assets/images/pic05.jpg" alt="" /></span>
+		<p><p>Persistence is the way data is stored in a <strong>permanent</strong> way, as opposed to volatile data in <abbr title="Random Access Memory: The memory where computation takes place.">RAM</abbr>. Persisted data that can be backed up, audited,
+restored, traced, verified, etc. Needless to say, choosing a persistence technology is a huge decision and a wrong choice can go <em>really wrong</em>.
+Luckily, we did not have to compromise on that. We needed an <abbr title="A program that can be used inside another program without being a different process.">embedded</abbr>, <abbr title="All Jazz modules can use as many threads (CPU cores) as are available on each machine.">thread safe</abbr>, <abbr title="The internal persisted storage in the Jazz server. It is an extremely fast way to access data (value) given some unique identifier (key).">key/value store</abbr> and we also got: extraordinarily fast,
+<abbr title="The usage of memory is almost exactly the same as the size of the data with a minimum overhead, unlike what is frequent in other systems.">memory-efficient</abbr>, <abbr title="Any change to the database is, by design: atomic, consistent, isolated and durable.">transactional</abbr> and widely tested at the same time.</p>
+
+<p>Our choice is <a href="https://symas.com/lightning-memory-mapped-database/">LMDB</a>. On top of the already mentioned advantages, LMDB provides a set
+of command line tools that allow backing up a node even when it is running and basic maintenance tools. Data can be loaded into a node using
+either the <abbr title="Application Program Interface: The interface that allows clients (computers and smartphones) to communicate data with Jazz.">http API</abbr> or maintenance tools.</p>
+
+<p>Everything is persisted as a <strong>block</strong>. On top of LMDB, Jazz defines types for <abbr title="The basic unit of data storage inside Jazz. Blocks have a type, like a raw binary file or a vector of 100 strings.">blocks</abbr> such as:</p>
+<ul>
+  <li>Data <abbr title="The basic unit of data storage inside Jazz. Blocks have a type, like a raw binary file or a vector of 100 strings.">blocks</abbr> (including <abbr title="A set of data of the same type with a set of dimensions. Examples of tensors include numbers, vectors, matrices, images, videos and more.">tensors</abbr>)</li>
+  <li><abbr title="Data describing how other data has to be interpreted.">Metadata</abbr> (to define <abbr title="An abstraction over the blocks that can handle large data columns without caring about the internal block details or even in which nodes they are stored.">instruments</abbr> for example)</li>
+  <li><abbr title="Same as &quot;deep neural networks&quot;. DNNs are architectures of functions. Typically, these networks are created by &quot;learning&quot; iteratively to do tasks by looking at examples.">Neural networks</abbr></li>
+  <li>Web pages</li>
+  <li>Mobile applications</li>
+  <li>Images, video, web resources, etc.</li>
+</ul>
+
+<p>On top of <abbr title="The basic unit of data storage inside Jazz. Blocks have a type, like a raw binary file or a vector of 100 strings.">blocks</abbr>, an <strong>instrument</strong> is an abstraction of many data <abbr title="The basic unit of data storage inside Jazz. Blocks have a type, like a raw binary file or a vector of 100 strings.">blocks</abbr> of the same type. Instruments have IDs and times that define a relation
+with other <abbr title="An abstraction over the blocks that can handle large data columns without caring about the internal block details or even in which nodes they are stored.">instruments</abbr> that share a compatible structure. Jazz has native support for <abbr title="A series of values of a variable obtained at successive times, possibly with different intervals between them.">time series</abbr> and <abbr title="A series of values of a variable obtained in relation with some unique identifier.">key-identified</abbr> attributes. Oversimplifying, one
+can view <abbr title="An abstraction over the blocks that can handle large data columns without caring about the internal block details or even in which nodes they are stored.">instruments</abbr> as something similar to columns in a relational database. Instruments are highly efficient, <abbr title="Modifying an instrument does not need to apply to the whole instrument. I can be just a value or a group of values.">incrementally updated</abbr> collections
+of <abbr title="The basic unit of data storage inside Jazz. Blocks have a type, like a raw binary file or a vector of 100 strings.">blocks</abbr> distributed in a <abbr title="A group of computers running Jazz servers that work together and are aware of each other.">cluster</abbr> of Jazz nodes.</p>
+
+<p>Instruments are one of the three input sources a neural network can have. The other two are <abbr title="The basic unit of data storage inside Jazz. Blocks have a type, like a raw binary file or a vector of 100 strings.">blocks</abbr> and <strong>volatiles</strong>. <abbr title="Blocks the user provides for some computation that are local to a Jazz node and not persisted.">Volatiles</abbr> are <abbr title="The basic unit of data storage inside Jazz. Blocks have a type, like a raw binary file or a vector of 100 strings.">blocks</abbr> that are
+not persisted, not shared across the <abbr title="A group of computers running Jazz servers that work together and are aware of each other.">cluster</abbr>, they are uploaded by the user to perform computations with them.</p>
+
+</p>
+	</div>
+</section>
+
+</div>
+
+    <!-- Contact -->
+<section id="contact">
+	<div class="inner">
+		<section>
+			<form action="https://formspree.io/youremailaddress@gmail.com" method="POST">
+				<div class="field half first">
+					<label for="name">Name</label>
+					<input type="text" name="name" id="name" />
+				</div>
+				<div class="field half">
+					<label for="email">Email</label>
+					<input type="text" name="_replyto" id="email" />
+				</div>
+				<div class="field">
+					<label for="message">Message</label>
+					<textarea name="message" id="message" rows="6"></textarea>
+				</div>
+				<ul class="actions">
+					<li><input type="submit" value="Send Message" class="special" /></li>
+					<li><input type="reset" value="Clear" /></li>
+				</ul>
+			</form>
+		</section>
+		<section class="split">
+			<section>
+				<div class="contact-method">
+					<span class="icon alt fa-envelope"></span>
+					<h3>Email</h3>
+					<a href="#">youremailaddress@gmail.com</a>
+				</div>
+			</section>
+			<section>
+				<div class="contact-method">
+					<span class="icon alt fa-phone"></span>
+					<h3>Phone</h3>
+					<span>(716) 555-5555</span>
+				</div>
+			</section>
+			<section>
+				<div class="contact-method">
+					<span class="icon alt fa-home"></span>
+					<h3>Address</h3>
+					<span>
+					
+					    1234 Somewhere Road<br />
+					
+					
+					    Nashville,
+					
+					
+					    TN 
+					
+					
+					    55555<br />
+					
+					
+					    United States of America
+					
+					</span>
+				</div>
+			</section>
+		</section>
+	</div>
+</section>
+
+<!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+			<ul class="icons">
+				
+				<li><a href="https://twitter.com/andrewbanchich" class="icon alt fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+				
+				
+				<li><a href="https://plus.google.com/u/0/+AndrewBanchich" class="icon alt fa-google-plus" target="_blank"><span class="label">Google+</span></a></li>
+				
+				
+				
+				<li><a href="https://instagram.com" class="icon alt fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+				
+				
+				
+				
+				<li><a href="https://gitlab.com/u/andrewbanchich" class="icon alt fa-gitlab" target="_blank"><span class="label">GitLab</span></a></li>
+				
+				
+				
+				
+				<li><a href="https://www.linkedin.com/in/andrew-banchich-a4ba1195" class="icon alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+				
+			</ul>
+			<ul class="copyright">
+				<li>&copy; Forty by HTML5 UP</li>
+				<li>Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a></li>
+				<li>Jekyll integration: <a href="http://andrewbanchi.ch" target="_blank">Andrew Banchich</a></li>
+
+			</ul>
+		</div>
+	</footer>
+
+</div>
+
+<!-- Scripts -->
+	<script src="http://localhost:8888/kaalam/assets/js/jquery.min.js"></script>
+	<script src="http://localhost:8888/kaalam/assets/js/jquery.scrolly.min.js"></script>
+	<script src="http://localhost:8888/kaalam/assets/js/jquery.scrollex.min.js"></script>
+	<script src="http://localhost:8888/kaalam/assets/js/skel.min.js"></script>
+	<script src="http://localhost:8888/kaalam/assets/js/util.js"></script>
+	<!--[if lte IE 8]><script src="http://localhost:8888/kaalam/assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="http://localhost:8888/kaalam/assets/js/main.js"></script>
+
+
+</body>
+
+</html>

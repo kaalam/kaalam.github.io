@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Forty</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<!--[if lte IE 8]><script src="/kaalam/assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="/kaalam/assets/css/main.css" />
+	<!--[if lte IE 9]><link rel="stylesheet" href="/kaalam/assets/css/ie9.css" /><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" href="/kaalam/assets/css/ie8.css" /><![endif]-->
+</head>
+
+
+<body>
+
+    <!-- Wrapper -->
+<div id="wrapper">
+
+<!-- Header -->
+<header id="header">
+	<a href="http://localhost:8888/kaalam/" class="logo"><strong>Forty</strong> <span>by HTML5 UP</span></a>
+	<nav>
+		<a href="#menu">Menu</a>
+	</nav>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+	<ul class="links">
+        
+		    
+		        <li><a href="http://localhost:8888/kaalam/">Home</a></li>
+	    	
+		
+		    
+		
+		
+		    
+		
+		    
+		
+	</ul>
+	<ul class="actions vertical">
+		<li><a href="#" class="button special fit">Get Started</a></li>
+		<li><a href="#" class="button fit">Log In</a></li>
+	</ul>
+</nav>
+ 
+    
+    
+<!-- Main -->
+<div id="main" class="alt">
+
+<!-- One -->
+<section id="one">
+	<div class="inner">
+		<header class="major">
+			<h1>AI</h1>
+		</header>
+		<span class="image main"><img src="/kaalam/assets/images/pic03.jpg" alt="" /></span>
+		<p><p>Jazz implements an open source, <abbr title="The latest version of C++, an extension of the C computer language appeared in 1983 that is still today the language of use when efficiency is the main concern.">C++14</abbr> <abbr title="Platforms providing functionality to &quot;learn&quot;, &quot;analyze&quot; and &quot;predict&quot; using deep neural networks.">deep neural networks framework</abbr> called <strong><a href="https://github.com/tiny-dnn/tiny-dnn">tiny dnn</a></strong>. On top of that,
+Jazz provides a <abbr title="A machine-understandable programming code that does basic operations. Unlike machine code, it is not understood by a CPU and has to be executed by some program.">bytecode</abbr> language for describing network architectures, connecting networks to <abbr title="The data that is stored inside Jazz is stored in blocks of some internal type.">data blocks</abbr> and <abbr title="An abstraction over the blocks that can handle large data columns without caring about the internal block details or even in which nodes they are stored.">instruments</abbr> and exposing the output
+through <abbr title="Application Program Interfaces: The interfaces that allow clients (computers and smartphones) to communicate data with Jazz.">APIs</abbr>.</p>
+
+<p>Jazz’s <abbr title="A machine-understandable programming code that does basic operations. Unlike machine code, it is not understood by a CPU and has to be executed by some program.">bytecode</abbr> language, named <strong>swing</strong>, gives a consistent way of defining operations across all Jazz modules.
+Swing usually hides inside higher level functions available via the “<abbr title="An API that is identical in all languages and does not require understanding swing.">easy API</abbr>” consistently identical in the <abbr title="An open source programming language for statistical computing and graphics. The R language is widely used among statisticians and data miners for developing statistical software and data analysis.">R</abbr>, <abbr title="A widely used high-level programming language for general-purpose programming that is frequently used for data analysis and machine learning.">Python</abbr> and <abbr title="Typescript is a typed, open source language that is a superset of JavaScript. This means JavaScript is also TS. It is fundamental to technologies like Angular 2 and Ionic 2.">Typescript</abbr> clients.</p>
+
+<h2 id="the-dnn-layer-is-tiny-dnn-hence-it-has-the-same-features">The dnn layer is tiny-dnn, hence, it has the same features</h2>
+<ul>
+  <li><abbr title="All Jazz modules can use as many threads (CPU cores) as are available on each machine.">Thread safe</abbr></li>
+  <li>Including <abbr title="The SIMD technologies implemented in modern processors from Intel and AMD.">SSE/AVX</abbr> <abbr title="Single Instruction on Multiple Data. A technology implemented in modern CPUs to enhance the speed of repetitive mathematical operations by doing many at the same time on the same core.">simd</abbr></li>
+  <li>Can import <abbr title="A deep learning framework, originally developed by Yangqing Jia as part of his PhD at UC Berkeley. It is open source and written in C++.">Caffe</abbr> models</li>
+  <li>Working on importing <abbr title="An open-source software library for machine learning developed by Google.">TensorFlow</abbr> models</li>
+</ul>
+
+<p>Below is a list of the built-in <abbr title="Using architectures of functions for data analysis. Typically, these networks are created by &quot;learning&quot; iteratively to do tasks by looking at examples.">deep learning</abbr> functionalities. You can safely skip that part if you have no interest in neural network’s internals.
+Besides that “high level” network functionality, Jazz also exposes the “mathematical bricks” to build all basic logical, arithmetic and statistical
+operations.</p>
+
+<h2 id="supported-networks">Supported networks</h2>
+<ul>
+  <li><strong>Layer-types</strong>
+    <ul>
+      <li>Core</li>
+      <li>Fully-connected</li>
+      <li>Dropout</li>
+      <li>Linear operation</li>
+      <li>Power</li>
+      <li>Convolution</li>
+      <li>Convolutional</li>
+      <li>Average pooling</li>
+      <li>Max pooling</li>
+      <li>Deconvolutional</li>
+      <li>Average unpooling</li>
+      <li>Max unpooling</li>
+      <li>Normalization</li>
+      <li>Contrast normalization (only forward pass)</li>
+      <li>Batch normalization</li>
+      <li>Split/merge</li>
+      <li>Concat</li>
+      <li>Slice</li>
+      <li>Elementwise-add</li>
+    </ul>
+  </li>
+  <li><strong>Activation functions</strong>
+    <ul>
+      <li>Tanh</li>
+      <li>Sigmoid</li>
+      <li>Softmax</li>
+      <li>Rectified linear(relu)</li>
+      <li>Leaky relu</li>
+      <li>Identity</li>
+      <li>Exponential linear units(elu)</li>
+    </ul>
+  </li>
+  <li><strong>Loss functions</strong>
+    <ul>
+      <li>Cross-entropy</li>
+      <li>Mean squared error</li>
+      <li>Mean absolute error</li>
+      <li>Mean absolute error with epsilon range</li>
+    </ul>
+  </li>
+  <li><strong>Optimization algorithms</strong>
+    <ul>
+      <li>Stochastic gradient descent (with/without L2 normalization)</li>
+      <li>Momentum and Nesterov momentum</li>
+      <li>Adagrad</li>
+      <li>Rmsprop</li>
+      <li>Adam</li>
+      <li>Adamax</li>
+    </ul>
+  </li>
+</ul>
+
+</p>
+	</div>
+</section>
+
+</div>
+
+    <!-- Contact -->
+<section id="contact">
+	<div class="inner">
+		<section>
+			<form action="https://formspree.io/youremailaddress@gmail.com" method="POST">
+				<div class="field half first">
+					<label for="name">Name</label>
+					<input type="text" name="name" id="name" />
+				</div>
+				<div class="field half">
+					<label for="email">Email</label>
+					<input type="text" name="_replyto" id="email" />
+				</div>
+				<div class="field">
+					<label for="message">Message</label>
+					<textarea name="message" id="message" rows="6"></textarea>
+				</div>
+				<ul class="actions">
+					<li><input type="submit" value="Send Message" class="special" /></li>
+					<li><input type="reset" value="Clear" /></li>
+				</ul>
+			</form>
+		</section>
+		<section class="split">
+			<section>
+				<div class="contact-method">
+					<span class="icon alt fa-envelope"></span>
+					<h3>Email</h3>
+					<a href="#">youremailaddress@gmail.com</a>
+				</div>
+			</section>
+			<section>
+				<div class="contact-method">
+					<span class="icon alt fa-phone"></span>
+					<h3>Phone</h3>
+					<span>(716) 555-5555</span>
+				</div>
+			</section>
+			<section>
+				<div class="contact-method">
+					<span class="icon alt fa-home"></span>
+					<h3>Address</h3>
+					<span>
+					
+					    1234 Somewhere Road<br />
+					
+					
+					    Nashville,
+					
+					
+					    TN 
+					
+					
+					    55555<br />
+					
+					
+					    United States of America
+					
+					</span>
+				</div>
+			</section>
+		</section>
+	</div>
+</section>
+
+<!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+			<ul class="icons">
+				
+				<li><a href="https://twitter.com/andrewbanchich" class="icon alt fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+				
+				
+				<li><a href="https://plus.google.com/u/0/+AndrewBanchich" class="icon alt fa-google-plus" target="_blank"><span class="label">Google+</span></a></li>
+				
+				
+				
+				<li><a href="https://instagram.com" class="icon alt fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+				
+				
+				
+				
+				<li><a href="https://gitlab.com/u/andrewbanchich" class="icon alt fa-gitlab" target="_blank"><span class="label">GitLab</span></a></li>
+				
+				
+				
+				
+				<li><a href="https://www.linkedin.com/in/andrew-banchich-a4ba1195" class="icon alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+				
+			</ul>
+			<ul class="copyright">
+				<li>&copy; Forty by HTML5 UP</li>
+				<li>Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a></li>
+				<li>Jekyll integration: <a href="http://andrewbanchi.ch" target="_blank">Andrew Banchich</a></li>
+
+			</ul>
+		</div>
+	</footer>
+
+</div>
+
+<!-- Scripts -->
+	<script src="http://localhost:8888/kaalam/assets/js/jquery.min.js"></script>
+	<script src="http://localhost:8888/kaalam/assets/js/jquery.scrolly.min.js"></script>
+	<script src="http://localhost:8888/kaalam/assets/js/jquery.scrollex.min.js"></script>
+	<script src="http://localhost:8888/kaalam/assets/js/skel.min.js"></script>
+	<script src="http://localhost:8888/kaalam/assets/js/util.js"></script>
+	<!--[if lte IE 8]><script src="http://localhost:8888/kaalam/assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="http://localhost:8888/kaalam/assets/js/main.js"></script>
+
+
+</body>
+
+</html>
