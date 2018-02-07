@@ -1,15 +1,14 @@
 var searchData=
 [
-  ['r_5fisna',['R_IsNA',['../jazzCommons_8h.html#a44f6e16a8c26cb2bbe62804e55d4f1e2',1,'jazzCommons.h']]],
-  ['register_5fservice',['register_service',['../classjazzServices.html#a5ba027c4e805ba3eab3ec7e533d6310c',1,'jazzServices']]],
-  ['reload',['reload',['../classjazzService.html#a5e4d64910b36f8033aefe4d1852634e9',1,'jazzService']]],
-  ['reload_5fall',['reload_all',['../classjazzServices.html#a861baec68ac17052f19968ec17bdf6d6',1,'jazzServices']]],
-  ['remote_5fapi_5fcall',['remote_api_call',['../classjazzCommons.html#a65f057091e675b1fcc25a740018d141b',1,'jazzCommons']]],
-  ['remote_5fblock_5fget',['remote_block_get',['../classjazzCommons.html#a65a9a506adcad44a31ea7272dcb52ccb',1,'jazzCommons']]],
-  ['remote_5fblock_5fkill',['remote_block_kill',['../classjazzCommons.html#aa53c53820c26cbd1e10db5595f31d755',1,'jazzCommons']]],
-  ['remote_5fblock_5fput',['remote_block_put',['../classjazzCommons.html#a698792fd6652e10d4c8684d312dba048',1,'jazzCommons']]],
-  ['remote_5fkill_5fsource',['remote_kill_source',['../classjazzCommons.html#ad2d3835d2e0e52d63bd5cf4dd56c02ee',1,'jazzCommons']]],
-  ['remote_5fnew_5fsource',['remote_new_source',['../classjazzCommons.html#a6ff37da61f537be33eb5ec023d166160',1,'jazzCommons']]],
-  ['remote_5ftesting_5fpoint',['remote_testing_point',['../classjazzCommons.html#a30cb41a5b56b0ea52bb8181f51ad72af',1,'jazzCommons']]],
-  ['remove_5fsptab',['remove_sptab',['../jazzCommons_8h.html#a9401b48fbc5767a1553ce310e51e76aa',1,'jazzCommons.h']]]
+  ['lastassertionpassed',['lastAssertionPassed',['../structCatch_1_1IResultCapture.html#a973435fbdcb2f6f07a0ec5719a01e956',1,'Catch::IResultCapture']]],
+  ['lazyexpression',['LazyExpression',['../classCatch_1_1LazyExpression.html#a47186c2487bd4bf871e870ba8048553a',1,'Catch::LazyExpression::LazyExpression(bool isNegated)'],['../classCatch_1_1LazyExpression.html#ab82d5e94df0e159b018fbde0170e46f8',1,'Catch::LazyExpression::LazyExpression(LazyExpression const &amp;other)']]],
+  ['leave_5fapi_5fcall',['leave_api_call',['../classjazzCommons.html#a95457f82eaaa5dcb1fb3e7370a9f1b30',1,'jazzCommons']]],
+  ['leave_5fpersistence',['leave_persistence',['../classjazzCommons.html#a7bf915f25c3ec4ee0b5ef83ff1584c7a',1,'jazzCommons']]],
+  ['leave_5fr_5finterpreter',['leave_R_interpreter',['../classjazzCommons.html#a13de0bb7c29b474cd2e759286893425d',1,'jazzCommons']]],
+  ['load_5fcluster_5fconf',['load_cluster_conf',['../classjazzCommons.html#afae6412c8ad717739034b2bb00dfe5c4',1,'jazzCommons']]],
+  ['load_5fconfig_5ffile',['load_config_file',['../classjazzCommons.html#aa4a5c73ff57e076945b5eebb2866c93e',1,'jazzCommons']]],
+  ['log',['log',['../classjazzCommons.html#ac3e3a381a793b2c2fcd454056ff2e19c',1,'jazzCommons']]],
+  ['log_5fprintf',['log_printf',['../classjazzCommons.html#a0d5aa3ae6e93f36e5925826662e36213',1,'jazzCommons']]],
+  ['logger_5fclose',['logger_close',['../classjazzCommons.html#ae44ae611a2aa4803ac62d612cdf6d2a0',1,'jazzCommons']]],
+  ['logger_5finit',['logger_init',['../classjazzCommons.html#a9e25e6836dab1140d0137ccca85c895a',1,'jazzCommons']]]
 ];

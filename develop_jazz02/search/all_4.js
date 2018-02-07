@@ -1,15 +1,30 @@
 var searchData=
 [
-  ['empty',['EMPTY',['../structstring__buffer.html#a250a9fc5d8a0e29fd1e294926818b262',1,'string_buffer']]],
+  ['empty',['EMPTY',['../structstring__buffer.html#a250a9fc5d8a0e29fd1e294926818b262',1,'string_buffer::EMPTY()'],['../structCatch_1_1SourceLineInfo.html#a10a5b5b7dff82971879c2eb8d83f9b3b',1,'Catch::SourceLineInfo::empty()'],['../classCatch_1_1StringRef.html#ac6b68b9dc1e1dec69e884e3f7be581bd',1,'Catch::StringRef::empty()']]],
   ['enable_5frole_5fcreator',['enable_role_creator',['../structjazz__http__security.html#a9f6f3affe959c4d52aaa710a1b236ba1',1,'jazz_http_security']]],
   ['enable_5frole_5fdatawriter',['enable_role_datawriter',['../structjazz__http__security.html#a02c8acd295073dd9a9257252f82ad418',1,'jazz_http_security']]],
   ['enable_5frole_5ffunctionwriter',['enable_role_functionwriter',['../structjazz__http__security.html#ac2cf4b54cdd2ea194a34db662bdba296',1,'jazz_http_security']]],
   ['enable_5frole_5fgroup',['enable_role_group',['../structjazz__http__security.html#a738a5a0f078881be5bec5bd0b4781ace',1,'jazz_http_security']]],
   ['enable_5frole_5fgroupadmin',['enable_role_groupadmin',['../structjazz__http__security.html#a615bbb8f734ea3cd5955be694cca0471',1,'jazz_http_security']]],
   ['enable_5frole_5freader',['enable_role_reader',['../structjazz__http__security.html#aa8be8603b48f446cfa671d5ac61df796',1,'jazz_http_security']]],
+  ['end',['end',['../namespaceCatch.html#a71fef6a57614eb2d9751f8586ff6de6a',1,'Catch']]],
+  ['endswith',['endsWith',['../namespaceCatch.html#ada025504f627feaf9ac68ca391515dff',1,'Catch::endsWith(std::string const &amp;s, std::string const &amp;suffix)'],['../namespaceCatch.html#afd801a3e33fd7a8b91ded0d02747a93f',1,'Catch::endsWith(std::string const &amp;s, char suffix)'],['../namespaceCatch_1_1Matchers.html#ae5a45efb4538c57c43e04f3f9043ad6e',1,'Catch::Matchers::EndsWith()']]],
+  ['endswithmatcher',['EndsWithMatcher',['../structCatch_1_1Matchers_1_1StdString_1_1EndsWithMatcher.html',1,'Catch::Matchers::StdString::EndsWithMatcher'],['../structCatch_1_1Matchers_1_1StdString_1_1EndsWithMatcher.html#aa5ec700b4629562f74f362080accfd7b',1,'Catch::Matchers::StdString::EndsWithMatcher::EndsWithMatcher()']]],
   ['enter_5fapi_5fcall',['enter_api_call',['../classjazzCommons.html#a0c22511e7268dc25ac76096e0070dc0c',1,'jazzCommons']]],
   ['enter_5fpersistence',['enter_persistence',['../classjazzCommons.html#a0514db83ac6aedafa4ae06153751524c',1,'jazzCommons']]],
   ['enter_5fr_5finterpreter',['enter_R_interpreter',['../classjazzCommons.html#abccd7f02e0987a5422a74b6a3bb10c38',1,'jazzCommons']]],
+  ['epsilon',['epsilon',['../classCatch_1_1Detail_1_1Approx.html#acd26adba86a066b9f40dad467f23bc85',1,'Catch::Detail::Approx']]],
+  ['equals',['Equals',['../namespaceCatch_1_1Matchers.html#af8af7dfc338335ed4c788cb1b37fc59f',1,'Catch::Matchers::Equals(std::string const &amp;str, CaseSensitive::Choice caseSensitivity=CaseSensitive::Yes)'],['../namespaceCatch_1_1Matchers.html#a332a401fb0da33c988e9cfa400ecce1b',1,'Catch::Matchers::Equals(std::vector&lt; T &gt; const &amp;comparator)']]],
+  ['equalsmatcher',['EqualsMatcher',['../structCatch_1_1Matchers_1_1StdString_1_1EqualsMatcher.html',1,'Catch::Matchers::StdString::EqualsMatcher'],['../structCatch_1_1Matchers_1_1Vector_1_1EqualsMatcher.html',1,'Catch::Matchers::Vector::EqualsMatcher&lt; T &gt;'],['../structCatch_1_1Matchers_1_1StdString_1_1EqualsMatcher.html#ab740f1fb2310e9fe3fed5134d4c7e4c8',1,'Catch::Matchers::StdString::EqualsMatcher::EqualsMatcher()'],['../structCatch_1_1Matchers_1_1Vector_1_1EqualsMatcher.html#a3846c47780d1991dcfe87aefded98008',1,'Catch::Matchers::Vector::EqualsMatcher::EqualsMatcher()']]],
+  ['exception',['Exception',['../structCatch_1_1ResultWas.html#a624e1ee3661fcf6094ceef1f654601efaa9107b7836cc7590ca668002f76d27c7',1,'Catch::ResultWas']]],
+  ['exceptionearlyreported',['exceptionEarlyReported',['../structCatch_1_1IResultCapture.html#ae63ecec95db4c236c63ecf616f483810',1,'Catch::IResultCapture']]],
+  ['exceptiontranslatefunction',['exceptionTranslateFunction',['../namespaceCatch.html#ae8d8673884dc36b98875106322a2a37b',1,'Catch']]],
+  ['exceptiontranslatorregistrar',['ExceptionTranslatorRegistrar',['../classCatch_1_1ExceptionTranslatorRegistrar.html',1,'Catch::ExceptionTranslatorRegistrar'],['../classCatch_1_1ExceptionTranslatorRegistrar.html#aa73229de911f26b1df6c6c87c4d9e04e',1,'Catch::ExceptionTranslatorRegistrar::ExceptionTranslatorRegistrar()']]],
+  ['exceptiontranslators',['ExceptionTranslators',['../namespaceCatch.html#a7ad07967e688fdc03cf784f58be4b741',1,'Catch']]],
   ['exists',['exists',['../jazzCommons_8h.html#aa3065154e3675f6fcbba6b023fb170e4',1,'jazzCommons.h']]],
-  ['expand_5fescaped',['expand_escaped',['../jazzCommons_8h.html#a0ef758ac0489b591a45e9792bc245d0b',1,'jazzCommons.h']]]
+  ['expand_5fescaped',['expand_escaped',['../jazzCommons_8h.html#a0ef758ac0489b591a45e9792bc245d0b',1,'jazzCommons.h']]],
+  ['expectedtofail',['expectedToFail',['../structCatch_1_1TestCaseInfo.html#abe33d81233230cdae8afa714688e905b',1,'Catch::TestCaseInfo']]],
+  ['explicitfailure',['ExplicitFailure',['../structCatch_1_1ResultWas.html#a624e1ee3661fcf6094ceef1f654601efacecfc052e2499499b13304249303cc36',1,'Catch::ResultWas']]],
+  ['expressionfailed',['ExpressionFailed',['../structCatch_1_1ResultWas.html#a624e1ee3661fcf6094ceef1f654601efa5e7126b8458dc1376ac870a719f7873f',1,'Catch::ResultWas']]],
+  ['exprlhs',['ExprLhs',['../classCatch_1_1ExprLhs.html',1,'Catch::ExprLhs&lt; LhsT &gt;'],['../classCatch_1_1ExprLhs.html#ad22c6af1a7d6993240624d299714a479',1,'Catch::ExprLhs::ExprLhs()']]]
 ];

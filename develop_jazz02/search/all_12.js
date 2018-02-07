@@ -1,7 +1,29 @@
 var searchData=
 [
+  ['tags',['tags',['../structCatch_1_1NameAndTags.html#a74062ed1138834a348424eb7ed900c57',1,'Catch::NameAndTags::tags()'],['../structCatch_1_1TestCaseInfo.html#a150a7cbca1dd0c91799ccb14ff822eb0',1,'Catch::TestCaseInfo::tags()']]],
+  ['tagsasstring',['tagsAsString',['../structCatch_1_1TestCaseInfo.html#a17506de67fb18e27511c17f8a81119d8',1,'Catch::TestCaseInfo']]],
   ['ten_5fbits_5frange',['TEN_BITS_RANGE',['../jazzCommons_8h.html#a5ec787a625ec7e4c8d7207588453134e',1,'jazzCommons.h']]],
   ['tenbits',['tenbits',['../jazzCommons_8h.html#a564eceb2391645b02f812e47cab8e767',1,'jazzCommons.h']]],
+  ['test_5fcase',['TEST_CASE',['../catch_8hpp.html#abd6e2aec703006b3da62cf7860c9808f',1,'TEST_CASE():&#160;catch.hpp'],['../trivial__catch__test_8cpp.html#aab83b61870b4c74481e713004e4fe5d3',1,'TEST_CASE(&quot;Factorials are computed&quot;, &quot;[factorial]&quot;):&#160;trivial_catch_test.cpp']]],
+  ['test_5fcase_5fmethod',['TEST_CASE_METHOD',['../catch_8hpp.html#adf06142f54a9e271590fa0e270bc41d2',1,'catch.hpp']]],
+  ['testcase',['TestCase',['../classCatch_1_1TestCase.html',1,'Catch::TestCase'],['../classCatch_1_1TestCase.html#ac504688b271fcb9eb459a11cd900e8c4',1,'Catch::TestCase::TestCase()']]],
+  ['testcaseinfo',['TestCaseInfo',['../structCatch_1_1TestCaseInfo.html',1,'Catch::TestCaseInfo'],['../structCatch_1_1TestCaseInfo.html#ad1a6b08b5a83d1c5eb4596b727b5305f',1,'Catch::TestCaseInfo::TestCaseInfo()']]],
+  ['testcases',['testCases',['../structCatch_1_1Totals.html#adb195fe477aedee2ecea88c888f16506',1,'Catch::Totals']]],
+  ['testfailureexception',['TestFailureException',['../structCatch_1_1TestFailureException.html',1,'Catch']]],
+  ['testinvokerasmethod',['TestInvokerAsMethod',['../classCatch_1_1TestInvokerAsMethod.html',1,'Catch::TestInvokerAsMethod&lt; C &gt;'],['../classCatch_1_1TestInvokerAsMethod.html#a119c4bdbbdd95c42859c18541987a1a4',1,'Catch::TestInvokerAsMethod::TestInvokerAsMethod()']]],
+  ['then',['THEN',['../catch_8hpp.html#a27987092139727fd7a471b5f74dc62de',1,'catch.hpp']]],
+  ['threwexception',['ThrewException',['../structCatch_1_1ResultWas.html#a624e1ee3661fcf6094ceef1f654601efa3bb56296483947280cf7fa1ad074ab45',1,'Catch::ResultWas']]],
+  ['throws',['throws',['../structCatch_1_1TestCaseInfo.html#afc70d4379a2070cc22b693ffe3932c1a',1,'Catch::TestCaseInfo::throws() const'],['../structCatch_1_1TestCaseInfo.html#a39b232f74b4a7a6f2183b96759027eaca4704adf89ed7f7ad653d08f99813a974',1,'Catch::TestCaseInfo::Throws()']]],
   ['time_5fpoint',['time_point',['../jazzCommons_8h.html#a446a3f204afe93a99c1c74177a7d70cc',1,'jazzCommons.h']]],
-  ['type',['type',['../structjzzBlockHeader.html#a3b8c2e2a40585c07dc9ab5766be0e005',1,'jzzBlockHeader']]]
+  ['timer',['Timer',['../classCatch_1_1Timer.html',1,'Catch']]],
+  ['tolower',['toLower',['../namespaceCatch.html#ac036a17412d318598ffda8e1fe7a1177',1,'Catch']]],
+  ['tolowerinplace',['toLowerInPlace',['../namespaceCatch.html#a0760dbe87d090a55a35414db57d272c4',1,'Catch']]],
+  ['tostring',['toString',['../classCatch_1_1Detail_1_1Approx.html#a972fd9ac60607483263f1b0f0f9955e6',1,'Catch::Detail::Approx::toString()'],['../classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase.html#a5982c7c80ca71dfe2298babadad7a453',1,'Catch::Matchers::Impl::MatcherUntypedBase::toString()']]],
+  ['total',['total',['../structCatch_1_1Counts.html#a94f969c09cf52d1339c085c9603cd1d3',1,'Catch::Counts']]],
+  ['totals',['Totals',['../structCatch_1_1Totals.html',1,'Catch']]],
+  ['translate',['translate',['../structCatch_1_1IExceptionTranslator.html#a2a554b96ed5ed411e7c796b6b42837a5',1,'Catch::IExceptionTranslator']]],
+  ['translateactiveexception',['translateActiveException',['../structCatch_1_1IExceptionTranslatorRegistry.html#af76ae8c331a17f2a94c9720bc0d686bb',1,'Catch::IExceptionTranslatorRegistry::translateActiveException()'],['../namespaceCatch.html#adafff91485eeeeb9e9333f317cc0e3b1',1,'Catch::translateActiveException()']]],
+  ['trim',['trim',['../namespaceCatch.html#a084108b47f37d8bfd5db51c50c7451b3',1,'Catch']]],
+  ['trivial_5fcatch_5ftest_2ecpp',['trivial_catch_test.cpp',['../trivial__catch__test_8cpp.html',1,'']]],
+  ['type',['type',['../structCatch_1_1MessageInfo.html#ae928b9117465c696e45951d9d0284e78',1,'Catch::MessageInfo::type()'],['../structjzzBlockHeader.html#a3b8c2e2a40585c07dc9ab5766be0e005',1,'jzzBlockHeader::type()']]]
 ];
