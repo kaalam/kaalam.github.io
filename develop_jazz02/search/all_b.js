@@ -9,17 +9,11 @@ var searchData=
   ['lang_5flast_5f',['LANG_LAST_',['../jazzCommons_8h.html#a70fe25098787f5d37d27bcee68a15e07',1,'jazzCommons.h']]],
   ['lang_5ftr_5ftr',['LANG_TR_TR',['../jazzCommons_8h.html#a5dda8492336185edbd6ad11d0e37d546',1,'jazzCommons.h']]],
   ['last_5fidx',['last_idx',['../structstring__buffer.html#a186708add49f9102b959565fa8d14fc4',1,'string_buffer']]],
-  ['lastassertionpassed',['lastAssertionPassed',['../structCatch_1_1IResultCapture.html#a973435fbdcb2f6f07a0ec5719a01e956',1,'Catch::IResultCapture']]],
-  ['lazyexpression',['LazyExpression',['../classCatch_1_1LazyExpression.html',1,'Catch::LazyExpression'],['../classCatch_1_1LazyExpression.html#a47186c2487bd4bf871e870ba8048553a',1,'Catch::LazyExpression::LazyExpression(bool isNegated)'],['../classCatch_1_1LazyExpression.html#ab82d5e94df0e159b018fbde0170e46f8',1,'Catch::LazyExpression::LazyExpression(LazyExpression const &amp;other)']]],
-  ['lcasetags',['lcaseTags',['../structCatch_1_1TestCaseInfo.html#a844e3de9baf6e53cadfba9733c236bfe',1,'Catch::TestCaseInfo']]],
   ['leave_5fapi_5fcall',['leave_api_call',['../classjazzCommons.html#a95457f82eaaa5dcb1fb3e7370a9f1b30',1,'jazzCommons']]],
   ['leave_5fpersistence',['leave_persistence',['../classjazzCommons.html#a7bf915f25c3ec4ee0b5ef83ff1584c7a',1,'jazzCommons']]],
   ['leave_5fr_5finterpreter',['leave_R_interpreter',['../classjazzCommons.html#a13de0bb7c29b474cd2e759286893425d',1,'jazzCommons']]],
   ['length',['length',['../structjzzBlockHeader.html#a1a92953ce4723d8ab4d74515986ff97a',1,'jzzBlockHeader']]],
   ['lglsxp',['LGLSXP',['../jazzCommons_8h.html#aeec9a0dc48195fc54f3d029fa9d19a3c',1,'jazzCommons.h']]],
-  ['license_2emd',['LICENSE.md',['../LICENSE_8md.html',1,'']]],
-  ['line',['line',['../structCatch_1_1SourceLineInfo.html#a841e5d696c7b9cde24e45e61dd979c77',1,'Catch::SourceLineInfo']]],
-  ['lineinfo',['lineInfo',['../structCatch_1_1AssertionInfo.html#a17bdbb404ba12658034f833be2f4c3e7',1,'Catch::AssertionInfo::lineInfo()'],['../structCatch_1_1MessageInfo.html#a985165328723e599696ebd8e43195cc5',1,'Catch::MessageInfo::lineInfo()'],['../structCatch_1_1SectionInfo.html#adbc83b8a3507c4acc8ee249e93465711',1,'Catch::SectionInfo::lineInfo()'],['../structCatch_1_1TestCaseInfo.html#aa9407b7f442655b51a2aad24b3fa2fd3',1,'Catch::TestCaseInfo::lineInfo()']]],
   ['load_5fcluster_5fconf',['load_cluster_conf',['../classjazzCommons.html#afae6412c8ad717739034b2bb00dfe5c4',1,'jazzCommons']]],
   ['load_5fconfig_5ffile',['load_config_file',['../classjazzCommons.html#aa4a5c73ff57e076945b5eebb2866c93e',1,'jazzCommons']]],
   ['log',['log',['../classjazzCommons.html#ac3e3a381a793b2c2fcd454056ff2e19c',1,'jazzCommons']]],
@@ -31,6 +25,5 @@ var searchData=
   ['log_5fprintf',['log_printf',['../classjazzCommons.html#a0d5aa3ae6e93f36e5925826662e36213',1,'jazzCommons']]],
   ['log_5fwarn',['LOG_WARN',['../jazzCommons_8h.html#aea3f57d6dcc5b4ac957e2679e87dde27',1,'jazzCommons.h']]],
   ['logger_5fclose',['logger_close',['../classjazzCommons.html#ae44ae611a2aa4803ac62d612cdf6d2a0',1,'jazzCommons']]],
-  ['logger_5finit',['logger_init',['../classjazzCommons.html#a9e25e6836dab1140d0137ccca85c895a',1,'jazzCommons']]],
-  ['license',['LICENSE',['../md__home_jadmin_kaalam_8github_Jazz_server_src_catch2_LICENSE.html',1,'']]]
+  ['logger_5finit',['logger_init',['../classjazzCommons.html#a9e25e6836dab1140d0137ccca85c895a',1,'jazzCommons']]]
 ];

@@ -1,6 +1,10 @@
 var searchData=
 [
-  ['data',['data',['../structblock__C__BOOL.html#a3ea96e1728bb066515122ec26b1e5799',1,'block_C_BOOL::data()'],['../structblock__C__OFFS__CHARS.html#ae4553168c43c04489013e495124effdd',1,'block_C_OFFS_CHARS::data()'],['../structblock__C__INTEGER.html#a847debd9ef5d3936a8e329d9904ab8fc',1,'block_C_INTEGER::data()'],['../structblock__C__REAL.html#a8fe1b3ba724d146666f447ac53890b20',1,'block_C_REAL::data()'],['../structblock__C__RAW.html#aadf94e061bb365c401292087cf06e9ee',1,'block_C_RAW::data()']]],
-  ['description',['description',['../structCatch_1_1SectionInfo.html#a0052060219a6de74bb7ade34d4163a4e',1,'Catch::SectionInfo::description()'],['../structCatch_1_1TestCaseInfo.html#a37fe2db9425bc45f6a33893eac31198e',1,'Catch::TestCaseInfo::description()']]],
-  ['durationinseconds',['durationInSeconds',['../structCatch_1_1SectionEndInfo.html#a7c262f2dab9cff166b8eca620c47eea5',1,'Catch::SectionEndInfo']]]
+  ['empty',['EMPTY',['../structstring__buffer.html#a250a9fc5d8a0e29fd1e294926818b262',1,'string_buffer']]],
+  ['enable_5frole_5fcreator',['enable_role_creator',['../structjazz__http__security.html#a9f6f3affe959c4d52aaa710a1b236ba1',1,'jazz_http_security']]],
+  ['enable_5frole_5fdatawriter',['enable_role_datawriter',['../structjazz__http__security.html#a02c8acd295073dd9a9257252f82ad418',1,'jazz_http_security']]],
+  ['enable_5frole_5ffunctionwriter',['enable_role_functionwriter',['../structjazz__http__security.html#ac2cf4b54cdd2ea194a34db662bdba296',1,'jazz_http_security']]],
+  ['enable_5frole_5fgroup',['enable_role_group',['../structjazz__http__security.html#a738a5a0f078881be5bec5bd0b4781ace',1,'jazz_http_security']]],
+  ['enable_5frole_5fgroupadmin',['enable_role_groupadmin',['../structjazz__http__security.html#a615bbb8f734ea3cd5955be694cca0471',1,'jazz_http_security']]],
+  ['enable_5frole_5freader',['enable_role_reader',['../structjazz__http__security.html#aa8be8603b48f446cfa671d5ac61df796',1,'jazz_http_security']]]
 ];

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['benchmark',['BENCHMARK',['../catch_8hpp.html#aaba0eec6ef0736ca2b022a98a7c855e4',1,'catch.hpp']]],
   ['blocktype_5f_5f',['BLOCKTYPE__',['../jazzCommons_8h.html#abee4403776655e0d9e12e239cc9f578a',1,'jazzCommons.h']]],
   ['blocktype_5fall_5fkeyspace',['BLOCKTYPE_ALL_KEYSPACE',['../jazzCommons_8h.html#af02295c823f75867f0dc0a15fe7e74c2',1,'jazzCommons.h']]],
   ['blocktype_5fall_5froles',['BLOCKTYPE_ALL_ROLES',['../jazzCommons_8h.html#aa55528e6f99d7a6a12595fcb60553223',1,'jazzCommons.h']]],

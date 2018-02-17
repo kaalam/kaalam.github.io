@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['benchmarkended',['benchmarkEnded',['../structCatch_1_1IResultCapture.html#a6e5e64f9d94211a888249012ab6cc7fb',1,'Catch::IResultCapture']]],
-  ['benchmarklooper',['BenchmarkLooper',['../classCatch_1_1BenchmarkLooper.html#ab9ba6397306a70082f39e63a8a71bde6',1,'Catch::BenchmarkLooper']]],
-  ['benchmarkstarting',['benchmarkStarting',['../structCatch_1_1IResultCapture.html#a264ae12330c74b2daae41715a30d51bf',1,'Catch::IResultCapture']]],
-  ['binaryexpr',['BinaryExpr',['../classCatch_1_1BinaryExpr.html#a657d66346aef97a760c22776fe6008b6',1,'Catch::BinaryExpr']]]
+  ['configure_5fmhd_5fserver',['configure_MHD_server',['../classjazzCommons.html#add7942e2991b4da7d144f7218198c8d7',1,'jazzCommons']]],
+  ['count_5futf8_5fbytes',['count_utf8_bytes',['../jazzCommons_8h.html#a0060848283d5a05ac981b5b982e82d78',1,'jazzCommons.h']]]
 ];

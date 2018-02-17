@@ -1,30 +1,7 @@
 var searchData=
 [
-  ['get',['get',['../classCatch_1_1ReusableStringStream.html#a6881808c60a080d4e24a0b81c94cbf67',1,'Catch::ReusableStringStream']]],
   ['get_5fcluster_5fport',['get_cluster_port',['../classjazzCommons.html#a6b5f1cd534ecd974e8649d3d2e87140a',1,'jazzCommons']]],
   ['get_5fconfig_5fkey',['get_config_key',['../classjazzCommons.html#a127b588bf73ed697f66a1561aeedd02f',1,'jazzCommons::get_config_key(const char *key, int &amp;value)'],['../classjazzCommons.html#af6086e4de53a3f669b6908beb1e5994c',1,'jazzCommons::get_config_key(const char *key, double &amp;value)'],['../classjazzCommons.html#aecf7c7d07e4d27f4027a7a2d89d74270',1,'jazzCommons::get_config_key(const char *key, string &amp;value)']]],
   ['get_5fmacro',['GET_MACRO',['../jazzCommons_8h.html#a857fa4baf727f64fa21f32da2b6c0468',1,'jazzCommons.h']]],
-  ['get_5fserver_5fstart_5fparams',['get_server_start_params',['../classjazzCommons.html#a2ad4a9e73d55ec38be4ee7bbf951fbb9',1,'jazzCommons']]],
-  ['getalltestcasessorted',['getAllTestCasesSorted',['../namespaceCatch.html#a1c9b1a23bc947ea70ddaabf067276cf2',1,'Catch']]],
-  ['getalltests',['getAllTests',['../structCatch_1_1ITestCaseRegistry.html#ad6e4d4a621655123f73ae98cfeda063d',1,'Catch::ITestCaseRegistry']]],
-  ['getalltestssorted',['getAllTestsSorted',['../structCatch_1_1ITestCaseRegistry.html#a33e46639d0319d35497c05bb5d02be5a',1,'Catch::ITestCaseRegistry']]],
-  ['getcurrentnanosecondssinceepoch',['getCurrentNanosecondsSinceEpoch',['../namespaceCatch.html#a98d058468488c486a9cb5c8463f3ba29',1,'Catch']]],
-  ['getcurrenttestname',['getCurrentTestName',['../structCatch_1_1IResultCapture.html#aea1617f4a84cc648246aa3ed6918b5bf',1,'Catch::IResultCapture']]],
-  ['getelapsedmicroseconds',['getElapsedMicroseconds',['../classCatch_1_1Timer.html#a545de17a61a6fee1dbe3de5b0723e5fa',1,'Catch::Timer']]],
-  ['getelapsedmilliseconds',['getElapsedMilliseconds',['../classCatch_1_1Timer.html#a30aaf458dbb59dd8ac8971c9c62e0eac',1,'Catch::Timer']]],
-  ['getelapsednanoseconds',['getElapsedNanoseconds',['../classCatch_1_1Timer.html#a57be5d17ca868a2d6fb1eea84de665cf',1,'Catch::Timer']]],
-  ['getelapsedseconds',['getElapsedSeconds',['../classCatch_1_1Timer.html#a065e37e3c9eb16bd4dcf41971d8deedc',1,'Catch::Timer']]],
-  ['getestimatedclockresolution',['getEstimatedClockResolution',['../namespaceCatch.html#ac8e1ed37624bd0d97b2c0d4ec099d31f',1,'Catch']]],
-  ['getexceptiontranslatorregistry',['getExceptionTranslatorRegistry',['../structCatch_1_1IRegistryHub.html#a3606988da110c016c5af3ae63454eb78',1,'Catch::IRegistryHub']]],
-  ['getlastresult',['getLastResult',['../structCatch_1_1IResultCapture.html#ab18872c89fab97405a56e9c6a4919736',1,'Catch::IResultCapture']]],
-  ['getmutableregistryhub',['getMutableRegistryHub',['../namespaceCatch.html#ac9ddcc6d66079add9cb2a3140b8ae51e',1,'Catch']]],
-  ['getregistryhub',['getRegistryHub',['../namespaceCatch.html#ac24b072979540bfd922e7d46e899f46f',1,'Catch']]],
-  ['getreporterregistry',['getReporterRegistry',['../structCatch_1_1IRegistryHub.html#a55534563f7ecf7e20ec1e37285ebe54d',1,'Catch::IRegistryHub']]],
-  ['getresult',['getResult',['../structCatch_1_1ITransientExpression.html#a101c7db86c87eff93a8ff496720e6320',1,'Catch::ITransientExpression']]],
-  ['getresultcapture',['getResultCapture',['../namespaceCatch.html#aff60c1de6ac6cea30175d70e33d83c8e',1,'Catch']]],
-  ['getstartupexceptionregistry',['getStartupExceptionRegistry',['../structCatch_1_1IRegistryHub.html#a00281210628e6c616aca1d3e0d84db04',1,'Catch::IRegistryHub']]],
-  ['gettagaliasregistry',['getTagAliasRegistry',['../structCatch_1_1IRegistryHub.html#a3c511b1d33e5a6d95c333a0ff387df1a',1,'Catch::IRegistryHub']]],
-  ['gettestcaseinfo',['getTestCaseInfo',['../classCatch_1_1TestCase.html#a1ea0d79f49156cebea076fe1ba50d2b6',1,'Catch::TestCase']]],
-  ['gettestcaseregistry',['getTestCaseRegistry',['../structCatch_1_1IRegistryHub.html#af4f6255f0c0f8f1f179fa9d7d4843076',1,'Catch::IRegistryHub']]],
-  ['given',['GIVEN',['../catch_8hpp.html#a2b70c603786d759242856d883dbe93bd',1,'catch.hpp']]]
+  ['get_5fserver_5fstart_5fparams',['get_server_start_params',['../classjazzCommons.html#a2ad4a9e73d55ec38be4ee7bbf951fbb9',1,'jazzCommons']]]
 ];
