@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="keywords" content=" ">
-<title>Content types pages | Jekyll theme for documentation</title>
+<title>Content types pages | Jazz User's Manual</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -41,7 +41,7 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<link rel="alternate" type="application/rss+xml" title="documentation-theme-jekyll" href="http://idratherbewriting.com/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="Jazz" href="http://kaalam.github.io/jazz_reference/feed.xml">
 
     <script>
         $(document).ready(function() {
@@ -105,7 +105,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> Jekyll Documentation Theme</span></a>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> Jazz User's Manual</span></a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
@@ -119,11 +119,15 @@
                 
                 
                 
-                <li><a href="https://github.com/tomjoht/documentation-theme-jekyll" target="_blank">GitHub</a></li>
+                <li><a href="https://github.com/bbvadata/Jazz" target="_blank">GitHub</a></li>
                 
                 
                 
-                <li><a href="news">News</a></li>
+                <li><a href="https://kaalam.github.io/news/" target="_blank">News</a></li>
+                
+                
+                
+                <li><a href="https://kaalam.github.io/blog/" target="_blank">Blog</a></li>
                 
                 
                 
@@ -132,42 +136,47 @@
                 
                 
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jekyll Help<b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Help<b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         
                         
-                        <li><a href="https://talk.jekyllrb.com" target="_blank">Jekyll Talk</a></li>
+                        <li><a href="getstarted_r">Getting started in R without a server</a></li>
                         
                         
                         
-                        <li><a href="http://jekyllrb.com/docs/home/" target="_blank">Jekyll documentation</a></li>
+                        <li><a href="getstarted_py">Getting started in Python without a server</a></li>
                         
                         
                         
-                        <li><a href="http://stackoverflow.com/questions/tagged/jekyll" target="_blank">Jekyll on Stack Overflow</a></li>
+                        <li><a href="getstarted_docker_r">Getting started in R with a Docker server</a></li>
                         
                         
                         
-                        <li><a href="http://idratherbewriting.com/category-jekyll/" target="_blank">Jekyll on my blog</a></li>
-                        
-                        
-                    </ul>
-                </li>
-                
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        
-                        
-                        <li><a href="mydoc_introduction.html">Jekyll Documentation Theme</a></li>
+                        <li><a href="getstarted_docker_py">Getting started in Python with a Docker server</a></li>
                         
                         
                         
-                        <li><a href="p1_landing_page.html">Product 1</a></li>
+                        <li><a href="setup_docker">Setting up a dockerized Jazz server</a></li>
                         
                         
                         
-                        <li><a href="p2_landing_page.html">Product 2</a></li>
+                        <li><a href="https://kaalam.github.io/rjazz/" target="_blank">More on the R client</a></li>
+                        
+                        
+                        
+                        <li><a href="https://kaalam.github.io/pyjazz/" target="_blank">More on the Python client</a></li>
+                        
+                        
+                        
+                        <li><a href="reference_api">Jazz server API reference</a></li>
+                        
+                        
+                        
+                        <li><a href="https:talk.jekyllrb.com">Adding C++ functions to the server</a></li>
+                        
+                        
+                        
+                        <li><a href="https://kaalam.github.io/develop/" target="_blank">Jazz server C++ core development</a></li>
                         
                         
                     </ul>
@@ -179,7 +188,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:tomjoht@gmail.com?subject=Jekyll documentation theme feedback&body=I have some feedback about the Content types pages page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:kaalam@dybot.com?subject=Jazz User's Manual feedback&body=I have some feedback about the Content types pages page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
 
 </li>
 
@@ -769,10 +778,6 @@ $('#toc').on('click', 'a', function() {
 
     
 
-    <a target="_blank" href="https://github.com/tomjoht/documentation-theme-jekyll/blob/gh-pages/pages/tags/tag_content_types.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
-
-    
-
 
     
 
@@ -781,8 +786,6 @@ $('#toc').on('click', 'a', function() {
     <tbody>
     
   
-    
-   
     
         
      
@@ -1125,12 +1128,6 @@ $('#toc').on('click', 'a', function() {
    
     
    
-    
-   
-    
-   
-    
-   
 
         
         
@@ -1160,30 +1157,6 @@ $('#toc').on('click', 'a', function() {
 
 
 
-<div id="disqus_thread"></div>
-<script>
-    /**
-     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
-     */
-
-    var disqus_config = function () {
-        this.page.url = "http://idratherbewriting.com/tag_content_types.html";  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = "tag_content_types.html"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-
-    (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
-        var d = document, s = d.createElement('script');
-
-        s.src = 'https://idrbwjekyll.disqus.com/embed.js';  // IMPORTANT: Replace EXAMPLE with your forum shortname!
-
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-
-
 
 </div>
 
@@ -1192,8 +1165,8 @@ $('#toc').on('click', 'a', function() {
 <footer>
             <div class="row">
                 <div class="col-lg-12 footer">
-               &copy;2018 Your company. All rights reserved. <br />
- Site last generated: Feb 17, 2018 <br />
+               &copy;2018 kaalam.ai. All rights reserved. <br />
+ Site last generated: Feb 18, 2018 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>
@@ -1209,12 +1182,5 @@ $('#toc').on('click', 'a', function() {
     </div>
 
 </body>
-
-<!-- the google_analytics_id gets auto inserted from the config file -->
-
-
-
-<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-66296557-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
-
 
 </html>
