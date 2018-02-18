@@ -183,37 +183,6 @@
                 </li>
                 
                 
-                
-			<li>
-
-
-
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:kaalam@dybot.com?subject=Jazz User's Manual feedback&body=I have some feedback about the YAML tutorial in the context of Jekyll page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
-
-</li>
-
-		
-                <!--comment out this block if you want to hide search-->
-                <li>
-                    <!--start search-->
-                    <div id="search-demo-container">
-                        <input type="text" id="search-input" placeholder="search...">
-                        <ul id="results-container"></ul>
-                    </div>
-                    <script src="js/jekyll-search.js" type="text/javascript"></script>
-                    <script type="text/javascript">
-                            SimpleJekyllSearch.init({
-                                searchInput: document.getElementById('search-input'),
-                                resultsContainer: document.getElementById('results-container'),
-                                dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="YAML tutorial in the context of Jekyll">{title}</a></li>',
-                    noResultsText: 'No results found.',
-                            limit: 10,
-                            fuzzy: true,
-                    })
-                    </script>
-                    <!--end search-->
-                </li>
             </ul>
         </div>
         </div>
@@ -232,7 +201,7 @@
                 
 
 <ul id="mysidebar" class="nav">
-  <li class="sidebarTitle">Jekyll Doc Theme 6.0</li>
+  <li class="sidebarTitle">Jazz 0.2.x</li>
   
   
   
@@ -847,8 +816,8 @@ margin-bottom: 10px;
 <p><strong>Result:</strong></p>
 
 <div class="result">
-<p>Husband's name: Tom</p>
-<p>Wife's name: Shannon</p>
+<p>Husband's name: </p>
+<p>Wife's name: </p>
 </div>
 
 <h2 id="example-2-line-breaks">Example 2: Line breaks</h2>
@@ -881,17 +850,10 @@ margin-bottom: 10px;
 
 <div class="result">
 <p><b>Feedback</b></p>
-<p>This is my feedback to you. Even if I include linebreaks here, all of the linebreaks will be removed when the value is inserted.
-  
-</p>
+<p></p>
 
 <p><b>Block</b></p>
-<p>This pipe does something a little different. 
-It preserves the breaks.
-This is really helpful for code samples, 
-since you can format the code samples with
-   the appropriate
-   white spacing.</p>
+<p></p>
 </div>
 
 <p>The right angle bracket <code class="highlighter-rouge">&gt;</code> allows you to put the value on the next lines (which must be indented). Even if you create a line break, the output will remove all of those line breaks, creating one paragraph.</p>
@@ -921,12 +883,6 @@ since you can format the code samples with
 
 <div class="result">
 <ul>
-
-<li>mountain bikes</li>
-
-<li>road bikes</li>
-
-<li>hybrid bikes</li>
 
 </ul>
 </div>
@@ -960,17 +916,6 @@ since you can format the code samples with
 <p><strong>Result:</strong></p>
 
 <div class="result">
-
-<h3>Regions</h3>
-<ul>
-
-<li>US</li>
-
-<li>Spain</li>
-
-<li>France</li>
-
-</ul>
 
 </div>
 
@@ -1016,39 +961,6 @@ since you can format the code samples with
 
 <div class="result">
 
-<h3>Group 1</h3>
-<ul>
-
-<li>Thing 1</li>
-
-<li>Thing 2</li>
-
-<li>Thing 3</li>
-
-</ul>
-
-<h3>Group 2</h3>
-<ul>
-
-<li>Piece 1</li>
-
-<li>Piece 2</li>
-
-<li>Piece 3</li>
-
-</ul>
-
-<h3>Group 3</h3>
-<ul>
-
-<li>Widget 1</li>
-
-<li>Widget 2</li>
-
-<li>Widget 3</li>
-
-</ul>
-
 </div>
 
 <p>This example is similar to the previous one, but it’s more developed as a real table of contents.</p>
@@ -1069,7 +981,7 @@ since you can format the code samples with
 <p><strong>Result:</strong></p>
 
 <div class="result">
-Greetings earthling!
+
 </div>
 
 <p>This example is notably different. Here I’m showing how to reuse content in YAML file. If you have the same value that you want to repeat in other mappings, you can create a variable using the <code class="highlighter-rouge">&amp;</code> symbol. Then when you want to refer to that variable’s value, you use an asterisk <code class="highlighter-rouge">*</code> followed by the name of the variable.</p>
@@ -1096,7 +1008,7 @@ Greetings earthling!
 
 <p><strong>Result:</strong></p>
 <div class="result">
-zero
+
 </div>
 
 <p>You can see that I’m accessing one of the items in the list using <code class="highlighter-rouge">[0]</code>. This refers to the position in the array where a list item is. Like most programming languages, you start counting at zero, not one.</p>
@@ -1125,7 +1037,7 @@ zero
 
 <p><strong>Result:</strong></p>
 <div class="result">
-red
+
 </div>
 
 <p>This example is similar as before; however, in this case were getting a specific property from the list item in the zero position.</p>
@@ -1173,22 +1085,6 @@ red
 <div class="result">
 <ul>
 
-
-
-
-<li>google.com</li>
-
-
-
-
-
-<li>apple.com</li>
-
-
-
-<li>microsoft.com</li>
-
-
 </ul>
 </div>
 
@@ -1210,18 +1106,6 @@ red
 <div class="result">
 <ul>
 
-
-
-
-
-
-
-
-<li>apple.com</li>
-
-
-
-
 </ul>
 </div>
 
@@ -1237,8 +1121,6 @@ red
         
         
         
-        <a href="tag_formatting.html" class="btn btn-default navbar-btn cursorNorm" role="button">formatting</a>
-        
         
         
     </div>
@@ -1248,7 +1130,7 @@ red
 
 </div>
 
-<hr class="shaded"/>
+
 
 <footer>
             <div class="row">

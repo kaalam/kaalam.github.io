@@ -183,37 +183,6 @@
                 </li>
                 
                 
-                
-			<li>
-
-
-
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:kaalam@dybot.com?subject=Jazz User's Manual feedback&body=I have some feedback about the Search configuration page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
-
-</li>
-
-		
-                <!--comment out this block if you want to hide search-->
-                <li>
-                    <!--start search-->
-                    <div id="search-demo-container">
-                        <input type="text" id="search-input" placeholder="search...">
-                        <ul id="results-container"></ul>
-                    </div>
-                    <script src="js/jekyll-search.js" type="text/javascript"></script>
-                    <script type="text/javascript">
-                            SimpleJekyllSearch.init({
-                                searchInput: document.getElementById('search-input'),
-                                resultsContainer: document.getElementById('results-container'),
-                                dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Search configuration">{title}</a></li>',
-                    noResultsText: 'No results found.',
-                            limit: 10,
-                            fuzzy: true,
-                    })
-                    </script>
-                    <!--end search-->
-                </li>
             </ul>
         </div>
         </div>
@@ -232,7 +201,7 @@
                 
 
 <ul id="mysidebar" class="nav">
-  <li class="sidebarTitle">Jekyll Doc Theme 6.0</li>
+  <li class="sidebarTitle">Jazz 0.2.x</li>
   
   
   
@@ -861,7 +830,7 @@ $('#toc').on('click', 'a', function() {
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;li&gt;</span>
     <span class="c">&lt;!--start search--&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"search-demo-container"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"search-input"</span> <span class="na">placeholder=</span><span class="s">"search..."</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"search-input"</span> <span class="na">placeholder=</span><span class="s">""</span><span class="nt">&gt;</span>
         <span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">"results-container"</span><span class="nt">&gt;&lt;/ul&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"js/jekyll-search.js"</span> <span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;&lt;/script&gt;</span>
@@ -871,7 +840,7 @@ $('#toc').on('click', 'a', function() {
                 <span class="na">resultsContainer</span><span class="p">:</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'results-container'</span><span class="p">),</span>
                 <span class="na">dataSource</span><span class="p">:</span> <span class="s1">'search.json'</span><span class="p">,</span>
                 <span class="na">searchResultTemplate</span><span class="p">:</span> <span class="s1">'&lt;li&gt;&lt;a href="{url}" title="Search configuration"&gt;{title}&lt;/a&gt;&lt;/li&gt;'</span><span class="p">,</span>
-    <span class="na">noResultsText</span><span class="p">:</span> <span class="s1">'No results found.'</span><span class="p">,</span>
+    <span class="na">noResultsText</span><span class="p">:</span> <span class="s1">''</span><span class="p">,</span>
             <span class="na">limit</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
             <span class="na">fuzzy</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
     <span class="p">})</span>
@@ -894,11 +863,7 @@ $('#toc').on('click', 'a', function() {
         
         
         
-        <a href="tag_publishing.html" class="btn btn-default navbar-btn cursorNorm" role="button">publishing</a>
         
-        
-        
-        <a href="tag_navigation.html" class="btn btn-default navbar-btn cursorNorm" role="button">navigation</a>
         
         
         
@@ -909,7 +874,7 @@ $('#toc').on('click', 'a', function() {
 
 </div>
 
-<hr class="shaded"/>
+
 
 <footer>
             <div class="row">

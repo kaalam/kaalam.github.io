@@ -183,37 +183,6 @@
                 </li>
                 
                 
-                
-			<li>
-
-
-
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:kaalam@dybot.com?subject=Jazz User's Manual feedback&body=I have some feedback about the Help APIs and UI tooltips page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
-
-</li>
-
-		
-                <!--comment out this block if you want to hide search-->
-                <li>
-                    <!--start search-->
-                    <div id="search-demo-container">
-                        <input type="text" id="search-input" placeholder="search...">
-                        <ul id="results-container"></ul>
-                    </div>
-                    <script src="js/jekyll-search.js" type="text/javascript"></script>
-                    <script type="text/javascript">
-                            SimpleJekyllSearch.init({
-                                searchInput: document.getElementById('search-input'),
-                                resultsContainer: document.getElementById('results-container'),
-                                dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Help APIs and UI tooltips">{title}</a></li>',
-                    noResultsText: 'No results found.',
-                            limit: 10,
-                            fuzzy: true,
-                    })
-                    </script>
-                    <!--end search-->
-                </li>
             </ul>
         </div>
         </div>
@@ -232,7 +201,7 @@
                 
 
 <ul id="mysidebar" class="nav">
-  <li class="sidebarTitle">Jekyll Doc Theme 6.0</li>
+  <li class="sidebarTitle">Jazz 0.2.x</li>
   
   
   
@@ -883,19 +852,19 @@ search: exclude
   </span><span class="s2">"entries"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
     </span><span class="p">{</span><span class="w">
       </span><span class="s2">"doc_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"baseball"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"body"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Baseball is considered America's pasttime sport, though that may be more of a historical term than a current one. There's a lot more excitement about football than baseball. A baseball game is somewhat of a snooze to watch, for the most part."</span><span class="w">
+      </span><span class="s2">"body"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
     </span><span class="p">},</span><span class="w">
     </span><span class="p">{</span><span class="w">
       </span><span class="s2">"doc_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"basketball"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"body"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Basketball is a sport involving two teams of five players each competing to put a ball through a small circular rim 10 feet above the ground. Basketball requires players to be in top physical condition, since they spend most of the game running back and forth along a 94-foot-long floor."</span><span class="w">
+      </span><span class="s2">"body"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
     </span><span class="p">},</span><span class="w">
     </span><span class="p">{</span><span class="w">
       </span><span class="s2">"doc_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"football"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"body"</span><span class="p">:</span><span class="w"> </span><span class="s2">"No doubt the most fun sport to watch, football also manages to accrue the most injuries with the players. From concussions to blown knees, football players have short sport lives."</span><span class="w">
+      </span><span class="s2">"body"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
     </span><span class="p">},</span><span class="w">
     </span><span class="p">{</span><span class="w">
       </span><span class="s2">"doc_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"soccer"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"body"</span><span class="p">:</span><span class="w"> </span><span class="s2">"If there's one sport that dominates the world landscape, it's soccer. However, US soccer fans are few and far between. Apart from the popularity of soccer during the World Cup, most people don't even know the name of the professional soccer organization in their area."</span><span class="w">
+      </span><span class="s2">"body"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
@@ -1094,22 +1063,22 @@ search: exclude
 
 <tr>
 <td>Basketball</td>
-<td>Basketball is a sport involving two teams of five players each competing to put a ball through a small circular rim 10 feet above the ground. Basketball requires players to be in top physical condition, since they spend most of the game running back and forth along a 94-foot-long floor.</td>
+<td></td>
 </tr>
 
 <tr>
 <td>Baseball</td>
-<td>Baseball is considered America's pasttime sport, though that may be more of a historical term than a current one. There's a lot more excitement about football than baseball. A baseball game is somewhat of a snooze to watch, for the most part.</td>
+<td></td>
 </tr>
 
 <tr>
 <td>Football</td>
-<td>No doubt the most fun sport to watch, football also manages to accrue the most injuries with the players. From concussions to blown knees, football players have short sport lives.</td>
+<td></td>
 </tr>
 
 <tr>
 <td>Soccer</td>
-<td>If there's one sport that dominates the world landscape, it's soccer. However, US soccer fans are few and far between. Apart from the popularity of soccer during the World Cup, most people don't even know the name of the professional soccer organization in their area.</td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -1124,15 +1093,9 @@ search: exclude
         
         
         
-        <a href="tag_publishing.html" class="btn btn-default navbar-btn cursorNorm" role="button">publishing</a>
         
         
         
-        <a href="tag_single_sourcing.html" class="btn btn-default navbar-btn cursorNorm" role="button">single_sourcing</a>
-        
-        
-        
-        <a href="tag_content_types.html" class="btn btn-default navbar-btn cursorNorm" role="button">content_types</a>
         
         
         
@@ -1143,7 +1106,7 @@ search: exclude
 
 </div>
 
-<hr class="shaded"/>
+
 
 <footer>
             <div class="row">
