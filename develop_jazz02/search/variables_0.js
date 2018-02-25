@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['key',['key',['../structpersistedKey.html#ab06e6d4da8ff387ca3974bea50b38126',1,'persistedKey']]]
+  ['bit',['bit',['../structflagbit.html#a9f61aae8c279bfc54a9f37a229c40709',1,'flagbit']]]
 ];

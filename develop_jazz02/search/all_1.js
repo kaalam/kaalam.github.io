@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['jazzcommons_2eh',['jazzCommons.h',['../jazzCommons_8h.html',1,'']]],
-  ['jzz_5fig_5fjazzcommons',['jzz_IG_JAZZCOMMONS',['../jazzCommons_8h.html#aea3a949f58831c126c8f22c830449040',1,'jazzCommons.h']]]
+  ['alignof2',['ALIGNOF2',['../group__internal.html#gaa1b989dd4a56a3d7d4b0b81feb0eaacd',1,'mdb.c']]]
 ];
