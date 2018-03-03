@@ -80,10 +80,10 @@ $(function() {
 <code>#include &lt;sys/socket.h&gt;</code><br />
 <code>#include &lt;sys/types.h&gt;</code><br />
 <code>#include &lt;unistd.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="microhttpd_8h_source.html">src/include/microhttpd.h</a>&quot;</code><br />
+<code>#include &quot;src/include/microhttpd.h&quot;</code><br />
 <code>#include &lt;math.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="auto__version_8h_source.html">src/include/auto_version.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="auto__linux__platform_8h_source.html">src/include/auto_linux_platform.h</a>&quot;</code><br />
+<code>#include &quot;src/include/auto_version.h&quot;</code><br />
+<code>#include &quot;src/include/auto_linux_platform.h&quot;</code><br />
 </div>
 <p><a href="jazz__commons_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -3043,7 +3043,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Callback function for MHD. The details explaining the interface can be found at: .../da_jazz_JAZZ/doc/MHD_TUT/mhdTutorial.html</p>
-<p>Jazz does not use post processor callbacks linked with <a class="el" href="group__request.html#ga58a70fa3d5f791ae409b520dff63cdb2">MHD_create_post_processor()</a>. Jazz does not use request completed callbacks linked with <a class="el" href="group__event.html#ga4c76ec84bf23fc92185bf1aa73a443a5">MHD_start_daemon()</a>.</p>
+<p>Jazz does not use post processor callbacks linked with MHD_create_post_processor(). Jazz does not use request completed callbacks linked with MHD_start_daemon().</p>
 <p>The only callback functions are: </p><pre class="fragment">1. This (The full operational blocks and instrumental API)
 2. perimetral_answer_to_connection() - A security wrapper that decides which calls to this are acceptable.
 3. jazz_apc_callback()               - An IP based (firewall like) that can filter based on called IPs.

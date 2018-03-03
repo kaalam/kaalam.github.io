@@ -99,10 +99,10 @@ Macros</h2></td></tr>
 <tr class="separator:ac15b62994cd6eeb840a58f553da60525"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af408297ae8f614e0592a024770b78b8f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__blocks_8h.html#af408297ae8f614e0592a024770b78b8f">STR_SEARCH_BIG_ABOVE</a>&#160;&#160;&#160;25</td></tr>
 <tr class="separator:af408297ae8f614e0592a024770b78b8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19ac5c8026f6f1159f6b754240c3e68a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__blocks_8h.html#a19ac5c8026f6f1159f6b754240c3e68a">STRING_BUFFER</a>(pstr)&#160;&#160;&#160;reinterpret_cast&lt;<a class="el" href="jazz__commons_8h.html#a2c1f22d3dee37b73cda33f72eab78858">pStringBuff</a>&gt;(&amp;pstr-&gt;<a class="el" href="microhttpd_8h.html#a735984d41155bc1032e09bece8f8d66d">data</a>[pstr-&gt;length])</td></tr>
+<tr class="memitem:a19ac5c8026f6f1159f6b754240c3e68a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__blocks_8h.html#a19ac5c8026f6f1159f6b754240c3e68a">STRING_BUFFER</a>(pstr)&#160;&#160;&#160;reinterpret_cast&lt;<a class="el" href="jazz__commons_8h.html#a2c1f22d3dee37b73cda33f72eab78858">pStringBuff</a>&gt;(&amp;pstr-&gt;data[pstr-&gt;length])</td></tr>
 <tr class="memdesc:a19ac5c8026f6f1159f6b754240c3e68a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the string buffer in a pCharBlock.  <a href="#a19ac5c8026f6f1159f6b754240c3e68a">More...</a><br /></td></tr>
 <tr class="separator:a19ac5c8026f6f1159f6b754240c3e68a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85efe24581ffbe3250bec2011da484df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__blocks_8h.html#a85efe24581ffbe3250bec2011da484df">PCHAR</a>(pstr,  idx)&#160;&#160;&#160;((char *)<a class="el" href="jazz__blocks_8h.html#a19ac5c8026f6f1159f6b754240c3e68a">STRING_BUFFER</a>(pstr) + (uintptr_t)pstr-&gt;<a class="el" href="microhttpd_8h.html#a735984d41155bc1032e09bece8f8d66d">data</a>[idx])</td></tr>
+<tr class="memitem:a85efe24581ffbe3250bec2011da484df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__blocks_8h.html#a85efe24581ffbe3250bec2011da484df">PCHAR</a>(pstr,  idx)&#160;&#160;&#160;((char *)<a class="el" href="jazz__blocks_8h.html#a19ac5c8026f6f1159f6b754240c3e68a">STRING_BUFFER</a>(pstr) + (uintptr_t)pstr-&gt;data[idx])</td></tr>
 <tr class="memdesc:a85efe24581ffbe3250bec2011da484df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string by index inside a pCharBlock.  <a href="#a85efe24581ffbe3250bec2011da484df">More...</a><br /></td></tr>
 <tr class="separator:a85efe24581ffbe3250bec2011da484df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26b35dcc3b9e89cf9441dc6571549718"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__blocks_8h.html#a26b35dcc3b9e89cf9441dc6571549718">SYSTEM_SOURCE_SYS</a>&#160;&#160;&#160;0</td></tr>
@@ -207,7 +207,7 @@ Typedefs</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((char *)<a class="el" href="jazz__blocks_8h.html#a19ac5c8026f6f1159f6b754240c3e68a">STRING_BUFFER</a>(pstr) + (uintptr_t)pstr-&gt;<a class="el" href="microhttpd_8h.html#a735984d41155bc1032e09bece8f8d66d">data</a>[idx])</td>
+          <td></td><td>&#160;&#160;&#160;((char *)<a class="el" href="jazz__blocks_8h.html#a19ac5c8026f6f1159f6b754240c3e68a">STRING_BUFFER</a>(pstr) + (uintptr_t)pstr-&gt;data[idx])</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -242,7 +242,7 @@ Typedefs</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">pstr</td><td>)</td>
-          <td>&#160;&#160;&#160;reinterpret_cast&lt;<a class="el" href="jazz__commons_8h.html#a2c1f22d3dee37b73cda33f72eab78858">pStringBuff</a>&gt;(&amp;pstr-&gt;<a class="el" href="microhttpd_8h.html#a735984d41155bc1032e09bece8f8d66d">data</a>[pstr-&gt;length])</td>
+          <td>&#160;&#160;&#160;reinterpret_cast&lt;<a class="el" href="jazz__commons_8h.html#a2c1f22d3dee37b73cda33f72eab78858">pStringBuff</a>&gt;(&amp;pstr-&gt;data[pstr-&gt;length])</td>
         </tr>
       </table>
 </div><div class="memdoc">

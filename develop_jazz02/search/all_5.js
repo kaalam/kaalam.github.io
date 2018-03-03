@@ -13,7 +13,6 @@ var searchData=
   ['env_5fset_5fmapsize',['env_set_mapsize',['../structjazz__lmdb__opt.html#a9d2e28a6806d0e389239630ba035a2b3',1,'jazz_lmdb_opt']]],
   ['env_5fset_5fmaxdbs',['env_set_maxdbs',['../structjazz__lmdb__opt.html#a76b8fe9fa341056a682509e8dbe62077',1,'jazz_lmdb_opt']]],
   ['env_5fset_5fmaxreaders',['env_set_maxreaders',['../structjazz__lmdb__opt.html#ac9be00c549d54bf0f4de496f70fcb0d4',1,'jazz_lmdb_opt']]],
-  ['event_2dloop_20control',['event-loop control',['../group__event.html',1,'']]],
   ['exec_5fblock_5fget',['exec_block_get',['../classjzzAPI.html#a7494ee6c50e1424493d34a8eb92fbd6a',1,'jzzAPI']]],
   ['exec_5fblock_5fget_5ffunction',['exec_block_get_function',['../classjzzAPI.html#ad651b19dcbe99728948e028c9384df97',1,'jzzAPI']]],
   ['exec_5fblock_5fkill',['exec_block_kill',['../classjzzAPI.html#ae1adfb16069e87ee23959f8911fa45a6',1,'jzzAPI']]],

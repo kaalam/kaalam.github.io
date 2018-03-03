@@ -123,7 +123,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:add7942e2991b4da7d144f7218198c8d7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazzCommons.html#add7942e2991b4da7d144f7218198c8d7">configure_MHD_server</a> ()</td></tr>
 <tr class="memdesc:add7942e2991b4da7d144f7218198c8d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Some http support utilities.  <a href="#add7942e2991b4da7d144f7218198c8d7">More...</a><br /></td></tr>
 <tr class="separator:add7942e2991b4da7d144f7218198c8d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ad4a9e73d55ec38be4ee7bbf951fbb9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazzCommons.html#a2ad4a9e73d55ec38be4ee7bbf951fbb9">get_server_start_params</a> (unsigned int &amp;flags, <a class="el" href="microhttpd_8h.html#a1cd2c0b9294d3776843fba658eed6ce5">MHD_AcceptPolicyCallback</a> &amp;apc, <a class="el" href="microhttpd_8h.html#aeddca39a837edf9773566c77284f4684">MHD_AccessHandlerCallback</a> &amp;dh, <a class="el" href="structMHD__OptionItem.html">MHD_OptionItem</a> *&amp;pops)</td></tr>
+<tr class="memitem:a2ad4a9e73d55ec38be4ee7bbf951fbb9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazzCommons.html#a2ad4a9e73d55ec38be4ee7bbf951fbb9">get_server_start_params</a> (unsigned int &amp;flags, MHD_AcceptPolicyCallback &amp;apc, MHD_AccessHandlerCallback &amp;dh, MHD_OptionItem *&amp;pops)</td></tr>
 <tr class="separator:a2ad4a9e73d55ec38be4ee7bbf951fbb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c22511e7268dc25ac76096e0070dc0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazzCommons.html#a0c22511e7268dc25ac76096e0070dc0c">enter_api_call</a> (struct MHD_Connection *connection, const char *url, int method)</td></tr>
 <tr class="separator:a0c22511e7268dc25ac76096e0070dc0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -189,7 +189,7 @@ Public Member Functions</h2></td></tr>
 <p>This module includes the support for gathering http statistics, server configuration utilities and a set of constants converting integer values to well formed http protocol messages.Configure the MHD server from the appropriate configuration variables.</p>
 <dl class="section return"><dt>Returns</dt><dd>If the configuration is valid. logs with LOG_MISS if failed.</dd></dl>
 <p>This sets the private server variables in <a class="el" href="classjazzCommons.html">jazzCommons</a> according to the configuration variables.</p>
-<p>After a successful call to this, <a class="el" href="classjazzCommons.html#a2ad4a9e73d55ec38be4ee7bbf951fbb9">get_server_start_params()</a> can be used to get the necessary values to start the server via <a class="el" href="group__event.html#ga4c76ec84bf23fc92185bf1aa73a443a5">MHD_start_daemon()</a> </p>
+<p>After a successful call to this, <a class="el" href="classjazzCommons.html#a2ad4a9e73d55ec38be4ee7bbf951fbb9">get_server_start_params()</a> can be used to get the necessary values to start the server via MHD_start_daemon() </p>
 
 </div>
 </div>
@@ -472,19 +472,19 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="microhttpd_8h.html#a1cd2c0b9294d3776843fba658eed6ce5">MHD_AcceptPolicyCallback</a> &amp;&#160;</td>
+          <td class="paramtype">MHD_AcceptPolicyCallback &amp;&#160;</td>
           <td class="paramname"><em>apc</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="microhttpd_8h.html#aeddca39a837edf9773566c77284f4684">MHD_AccessHandlerCallback</a> &amp;&#160;</td>
+          <td class="paramtype">MHD_AccessHandlerCallback &amp;&#160;</td>
           <td class="paramname"><em>dh</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structMHD__OptionItem.html">MHD_OptionItem</a> *&amp;&#160;</td>
+          <td class="paramtype">MHD_OptionItem *&amp;&#160;</td>
           <td class="paramname"><em>pops</em>&#160;</td>
         </tr>
         <tr>
@@ -494,13 +494,13 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the necessary parameters to start the server calling <a class="el" href="group__event.html#ga4c76ec84bf23fc92185bf1aa73a443a5">MHD_start_daemon()</a></p>
+<p>Get the necessary parameters to start the server calling MHD_start_daemon()</p>
 <p>This function requires a previous successful call to configure_MHD_server</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">flags</td><td>flags in <a class="el" href="group__event.html#ga4c76ec84bf23fc92185bf1aa73a443a5">MHD_start_daemon()</a> </td></tr>
-    <tr><td class="paramname">apc</td><td>apc in <a class="el" href="group__event.html#ga4c76ec84bf23fc92185bf1aa73a443a5">MHD_start_daemon()</a> </td></tr>
-    <tr><td class="paramname">dh</td><td>dh in <a class="el" href="group__event.html#ga4c76ec84bf23fc92185bf1aa73a443a5">MHD_start_daemon()</a> </td></tr>
+    <tr><td class="paramname">flags</td><td>flags in MHD_start_daemon() </td></tr>
+    <tr><td class="paramname">apc</td><td>apc in MHD_start_daemon() </td></tr>
+    <tr><td class="paramname">dh</td><td>dh in MHD_start_daemon() </td></tr>
     <tr><td class="paramname">pops</td><td>a pointer to an MHD_OPTION_ARRAY structure.</td></tr>
   </table>
   </dd>

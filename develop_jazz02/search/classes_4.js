@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['mhd_5fconnectioninfo',['MHD_ConnectionInfo',['../unionMHD__ConnectionInfo.html',1,'']]],
-  ['mhd_5fdaemoninfo',['MHD_DaemonInfo',['../unionMHD__DaemonInfo.html',1,'']]],
-  ['mhd_5foptionitem',['MHD_OptionItem',['../structMHD__OptionItem.html',1,'']]]
+  ['parsedurl',['parsedURL',['../structparsedURL.html',1,'']]],
+  ['parsedurlhea',['parsedURLhea',['../structparsedURLhea.html',1,'']]],
+  ['persistedkey',['persistedKey',['../structpersistedKey.html',1,'']]],
+  ['prstr_5fstream',['pRStr_stream',['../unionpRStr__stream.html',1,'']]]
 ];

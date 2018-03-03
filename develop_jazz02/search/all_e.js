@@ -19,7 +19,6 @@ var searchData=
   ['no_5fwebpages',['no_webpages',['../jazz__api_8cpp.html#a48ed45cf77c4248b119c9be71138abf3',1,'jazz_api.cpp']]],
   ['normal_5fverbose_5fload_5fconfiguration',['normal_verbose_load_configuration',['../jazz__main_8cpp.html#a12cca51514ca12faf35b10d409a0a1a0',1,'jazz_main.cpp']]],
   ['not_5fconditional',['NOT_CONDITIONAL',['../jazz__main_8cpp.html#ae14380fcbf9ec6a78bc9ab096f273379',1,'jazz_main.cpp']]],
-  ['num_5fconnections',['num_connections',['../unionMHD__DaemonInfo.html#ac00f6d0c40cfd7fb5edc58d661b43563',1,'MHD_DaemonInfo']]],
   ['num_5fip_5franges',['num_ip_ranges',['../structjazz__http__security.html#a84cc9f7440c92dbdf76546161edbc153',1,'jazz_http_security']]],
   ['num_5fsources',['num_sources',['../classjzzBLOCKS.html#a9d37e658424ae9e2f88aec48f9ab9346',1,'jzzBLOCKS']]]
 ];

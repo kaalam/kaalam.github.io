@@ -407,7 +407,7 @@ Variables</h2></td></tr>
 <p class="startli">if that fails: calls jServices.stop_all() and returns EXIT_FAILURE</p>
 <p class="startli">(The parent exits with EXIT_SUCCESS, the child continues)</p>
 </li>
-<li><p class="startli">Calls <a class="el" href="group__event.html#ga4c76ec84bf23fc92185bf1aa73a443a5">MHD_start_daemon()</a></p>
+<li><p class="startli">Calls MHD_start_daemon()</p>
 <p class="startli">if that fails: The child calls jServices.stop_all() and returns EXIT_FAILURE</p>
 <p class="startli">Then calls setsid() This creates a new session if the calling process is not a process group leader. The calling process is the leader of the new session, the process group leader of the new process group, and has no controlling terminal.</p>
 <p class="startli">And sleeps forever! (The child.) </p>
@@ -555,7 +555,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The server's MHD_Daemon created by <a class="el" href="group__event.html#ga4c76ec84bf23fc92185bf1aa73a443a5">MHD_start_daemon()</a> and needed for <a class="el" href="group__event.html#ga2ad2aeb88498ba3fd58304d01eefcdec">MHD_stop_daemon()</a> </p>
+<p>The server's MHD_Daemon created by MHD_start_daemon() and needed for MHD_stop_daemon() </p>
 
 </div>
 </div>

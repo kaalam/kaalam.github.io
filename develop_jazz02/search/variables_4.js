@@ -1,6 +1,13 @@
 var searchData=
 [
-  ['daemon',['daemon',['../unionMHD__ConnectionInfo.html#a4f4bebd55f1052ec78275c5bfec06e98',1,'MHD_ConnectionInfo']]],
-  ['data',['data',['../structblock__C__BOOL.html#a3ea96e1728bb066515122ec26b1e5799',1,'block_C_BOOL::data()'],['../structblock__C__OFFS__CHARS.html#ae4553168c43c04489013e495124effdd',1,'block_C_OFFS_CHARS::data()'],['../structblock__C__INTEGER.html#a847debd9ef5d3936a8e329d9904ab8fc',1,'block_C_INTEGER::data()'],['../structblock__C__REAL.html#a8fe1b3ba724d146666f447ac53890b20',1,'block_C_REAL::data()'],['../structblock__C__RAW.html#aadf94e061bb365c401292087cf06e9ee',1,'block_C_RAW::data()'],['../microhttpd_8h.html#a735984d41155bc1032e09bece8f8d66d',1,'data():&#160;microhttpd.h']]],
-  ['deletesource',['deleteSource',['../structparsedURLhea.html#ad5eaf425feaba1400af763c751f36f27',1,'parsedURLhea']]]
+  ['empty',['EMPTY',['../structstring__buffer.html#a250a9fc5d8a0e29fd1e294926818b262',1,'string_buffer']]],
+  ['enable_5frole_5fcreator',['enable_role_creator',['../structjazz__http__security.html#a9f6f3affe959c4d52aaa710a1b236ba1',1,'jazz_http_security']]],
+  ['enable_5frole_5fdatawriter',['enable_role_datawriter',['../structjazz__http__security.html#a02c8acd295073dd9a9257252f82ad418',1,'jazz_http_security']]],
+  ['enable_5frole_5ffunctionwriter',['enable_role_functionwriter',['../structjazz__http__security.html#ac2cf4b54cdd2ea194a34db662bdba296',1,'jazz_http_security']]],
+  ['enable_5frole_5fgroup',['enable_role_group',['../structjazz__http__security.html#a738a5a0f078881be5bec5bd0b4781ace',1,'jazz_http_security']]],
+  ['enable_5frole_5fgroupadmin',['enable_role_groupadmin',['../structjazz__http__security.html#a615bbb8f734ea3cd5955be694cca0471',1,'jazz_http_security']]],
+  ['enable_5frole_5freader',['enable_role_reader',['../structjazz__http__security.html#aa8be8603b48f446cfa671d5ac61df796',1,'jazz_http_security']]],
+  ['env_5fset_5fmapsize',['env_set_mapsize',['../structjazz__lmdb__opt.html#a9d2e28a6806d0e389239630ba035a2b3',1,'jazz_lmdb_opt']]],
+  ['env_5fset_5fmaxdbs',['env_set_maxdbs',['../structjazz__lmdb__opt.html#a76b8fe9fa341056a682509e8dbe62077',1,'jazz_lmdb_opt']]],
+  ['env_5fset_5fmaxreaders',['env_set_maxreaders',['../structjazz__lmdb__opt.html#ac9be00c549d54bf0f4de496f70fcb0d4',1,'jazz_lmdb_opt']]]
 ];

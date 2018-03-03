@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['imethods',['imethods',['../jazz__api_8cpp.html#a0ef052357ad7e8d2b9228ba537487242',1,'jazz_api.cpp']]],
-  ['instrument',['instrument',['../structparsedURL.html#ac80913160170e07db0a1090416b4ac31',1,'parsedURL']]],
-  ['ipr',['ipr',['../structIPrange.html#aaa44a478fdff7c3ec991c3fb0b260b7e',1,'IPrange']]],
-  ['isbig',['isBig',['../structstring__buffer.html#aab3f1d1cdc67371408163623f48e0638',1,'string_buffer']]],
-  ['isinstrumental',['isInstrumental',['../structparsedURLhea.html#aaf6b748e2095c7b8fd0d554dbee10404',1,'parsedURLhea']]]
+  ['japi',['jAPI',['../jazz__api_8cpp.html#a78888586ae139e6b5260923aee4b3615',1,'jAPI():&#160;jazz_api.cpp'],['../jazz__api_8h.html#a78888586ae139e6b5260923aee4b3615',1,'jAPI():&#160;jazz_api.cpp']]],
+  ['jblockc',['jBLOCKC',['../jazz__instances_8cpp.html#a4740d264c5428ae9f295819c6e352f55',1,'jBLOCKC():&#160;jazz_instances.cpp'],['../jazz__instances_8h.html#a4740d264c5428ae9f295819c6e352f55',1,'jBLOCKC():&#160;jazz_instances.cpp']]],
+  ['jcommons',['jCommons',['../jazz__commons_8h.html#a46526b4e8a43349853474392542c2b0b',1,'jCommons():&#160;jazz_commons.cpp'],['../jazz__commons_8cpp.html#a46526b4e8a43349853474392542c2b0b',1,'jCommons():&#160;jazz_commons.cpp']]],
+  ['jservices',['jServices',['../jazz__commons_8h.html#a340287b3d99df3ccde1ac1f393231898',1,'jServices():&#160;jazz_commons.cpp'],['../jazz__commons_8cpp.html#a340287b3d99df3ccde1ac1f393231898',1,'jServices():&#160;jazz_commons.cpp']]],
+  ['jzzdaemon',['jzzdaemon',['../jazz__main_8cpp.html#a0b1141133a72a17ae5323bb62a9124f1',1,'jazz_main.cpp']]]
 ];

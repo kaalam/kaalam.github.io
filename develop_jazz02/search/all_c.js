@@ -17,8 +17,10 @@ var searchData=
   ['length',['length',['../structjzzBlockHeader.html#a1a92953ce4723d8ab4d74515986ff97a',1,'jzzBlockHeader']]],
   ['length_5fna_5fas_5ftext',['LENGTH_NA_AS_TEXT',['../jazz__blockconv_8h.html#add13ccea0ef1a0e1e31f9c65a8b2021c',1,'jazz_blockconv.h']]],
   ['lglsxp',['LGLSXP',['../jazz__commons_8h.html#aeec9a0dc48195fc54f3d029fa9d19a3c',1,'jazz_commons.h']]],
-  ['linux_5fplatform',['LINUX_PLATFORM',['../auto__linux__platform_8h.html#aea13f49a32fd1c0e4c8936040892c6bd',1,'auto_linux_platform.h']]],
-  ['listen_5ffd',['listen_fd',['../unionMHD__DaemonInfo.html#ae6d9bcb225e9c80370a06db91a1bf79c',1,'MHD_DaemonInfo']]],
+  ['linux_5fdistro',['LINUX_DISTRO',['../jazz__platform_8h.html#a604895b0d8875d97115c9bebbf5f519b',1,'jazz_platform.h']]],
+  ['linux_5fplatform',['LINUX_PLATFORM',['../jazz__platform_8h.html#aea13f49a32fd1c0e4c8936040892c6bd',1,'jazz_platform.h']]],
+  ['linux_5fprocessor',['LINUX_PROCESSOR',['../jazz__platform_8h.html#a9fe308e808a05364a550fa9cf72fde31',1,'jazz_platform.h']]],
+  ['linux_5fversion',['LINUX_VERSION',['../jazz__platform_8h.html#ae664f4fd6431eae2bb5db419fd7154c8',1,'jazz_platform.h']]],
   ['lmdb_5funix_5ffile_5fpermissions',['LMDB_UNIX_FILE_PERMISSIONS',['../jazz__blocks_8h.html#ac15b62994cd6eeb840a58f553da60525',1,'jazz_blocks.h']]],
   ['load_5fcluster_5fconf',['load_cluster_conf',['../classjazzCommons.html#afae6412c8ad717739034b2bb00dfe5c4',1,'jazzCommons']]],
   ['load_5fconfig_5ffile',['load_config_file',['../classjazzCommons.html#aa4a5c73ff57e076945b5eebb2866c93e',1,'jazzCommons']]],
@@ -31,6 +33,5 @@ var searchData=
   ['log_5fprintf',['log_printf',['../classjazzCommons.html#a0d5aa3ae6e93f36e5925826662e36213',1,'jazzCommons']]],
   ['log_5fwarn',['LOG_WARN',['../jazz__commons_8h.html#aea3f57d6dcc5b4ac957e2679e87dde27',1,'jazz_commons.h']]],
   ['logger_5fclose',['logger_close',['../classjazzCommons.html#ae44ae611a2aa4803ac62d612cdf6d2a0',1,'jazzCommons']]],
-  ['logger_5finit',['logger_init',['../classjazzCommons.html#a9e25e6836dab1140d0137ccca85c895a',1,'jazzCommons']]],
-  ['logging',['logging',['../group__logging.html',1,'']]]
+  ['logger_5finit',['logger_init',['../classjazzCommons.html#a9e25e6836dab1140d0137ccca85c895a',1,'jazzCommons']]]
 ];

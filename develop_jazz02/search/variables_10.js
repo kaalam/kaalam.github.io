@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['r_5flength',['R_length',['../structR__binary.html#a10f86187fe566768fdcfb09a4bb3df0d',1,'R_binary::R_length()'],['../jazz__blockconv_8h.html#a4190fd59d90d713237ea01df230fd79c',1,'R_length():&#160;jazz_blockconv.h']]],
-  ['r_5fna',['R_NA',['../jazz__commons_8h.html#aee8296dc80df1bf2da84acda63522a41',1,'R_NA():&#160;jazz_commons.cpp'],['../jazz__commons_8cpp.html#aee8296dc80df1bf2da84acda63522a41',1,'R_NA():&#160;jazz_commons.cpp']]],
-  ['r_5ftype',['R_type',['../structR__binary.html#a888f9a060a59a7c7c1b709765d1b4175',1,'R_binary::R_type()'],['../jazz__blockconv_8h.html#a9519181ef1cf125d6ae7b73954804402',1,'R_type():&#160;jazz_blockconv.h']]],
-  ['range',['range',['../structjazz__http__security.html#af3da789bac3b8381fd60ebedf4aa30ab',1,'jazz_http_security']]],
-  ['response_5fput_5ffail',['response_put_fail',['../jazz__api_8cpp.html#ab133419f925117de26e1f7d48337d56b',1,'jazz_api.cpp']]],
-  ['response_5fput_5fok',['response_put_ok',['../jazz__api_8cpp.html#a896eab3c7cf41b069cae5b89f1261aba',1,'jazz_api.cpp']]]
+  ['tenbitds',['tenbitDS',['../jazz__api_8cpp.html#ac703a2ba73f4cb502674c494550aedbf',1,'jazz_api.cpp']]],
+  ['two_5forder_5fdbl_5fepsilon',['TWO_ORDER_DBL_EPSILON',['../jazz__blocks_8cpp.html#aba9464d5192b9ec407d6665a1bc98e0d',1,'jazz_blocks.cpp']]],
+  ['type',['type',['../structjzzBlockHeader.html#a3b8c2e2a40585c07dc9ab5766be0e005',1,'jzzBlockHeader']]]
 ];

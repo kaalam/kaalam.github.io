@@ -1,11 +1,12 @@
 var searchData=
 [
-  ['param',['param',['../structapifunctionParam.html#a31fcc8c8492f4f21275744f9573a4f38',1,'apifunctionParam']]],
-  ['parameters',['parameters',['../structparsedURL.html#a22d9c27fd6688217f84f2c2287ff344d',1,'parsedURL']]],
-  ['path',['path',['../structjazz__lmdb__opt.html#ae60b38e6e7526945ca0232493cfbc273',1,'jazz_lmdb_opt']]],
-  ['pchar',['pchar',['../unionpRStr__stream.html#a12428aa13589cd075612fb5f3908fa4e',1,'pRStr_stream']]],
-  ['phead',['phead',['../unionpRStr__stream.html#af675575c57948d2f11660244209aee0c',1,'pRStr_stream']]],
-  ['port',['port',['../structjazz__node.html#a69163ac70d92eb9c9465aa924947ab81',1,'jazz_node']]],
-  ['protocol',['protocol',['../unionMHD__ConnectionInfo.html#a493d7db4e3d5a8a9f3f89b8269d5b6ed',1,'MHD_ConnectionInfo']]],
-  ['ptr_5fvalue',['ptr_value',['../structMHD__OptionItem.html#aed7ca1850f1fdc0a8b45573fbb4f7e24',1,'MHD_OptionItem']]]
+  ['signature',['signature',['../structR__binary.html#a965be7c7c710e18ea3bb89bdd6f8537d',1,'R_binary::signature()'],['../structRStr__header.html#a284a841adf596f73f46fb701275f5667',1,'RStr_header::signature()'],['../jazz__blockconv_8h.html#a7a745885960cf41a1a530159b3aa41ed',1,'signature():&#160;jazz_blockconv.h']]],
+  ['size',['size',['../structjzzBlockHeader.html#a880482ea2ddf3e8ef4588706f616dbbe',1,'jzzBlockHeader']]],
+  ['source',['source',['../structparsedURL.html#aaa09298bfdd59373a985b11ad51775f5',1,'parsedURL']]],
+  ['sources',['sources',['../classjazzWebSource.html#a31fde3b86ea02c355efcb47e59e7125b',1,'jazzWebSource']]],
+  ['state_5fnew_5fcall',['state_new_call',['../jazz__api_8cpp.html#a3994db0fd1cce88a45e592c97eb1acda',1,'jazz_api.cpp']]],
+  ['state_5fupload_5fbadrequest',['state_upload_badrequest',['../jazz__api_8cpp.html#a38f29c95b1043855369c5a7b9ccf61d3',1,'jazz_api.cpp']]],
+  ['state_5fupload_5fin_5fprogress',['state_upload_in_progress',['../jazz__api_8cpp.html#aa6cfa82a8a9ab1329927a138bc664b73',1,'jazz_api.cpp']]],
+  ['state_5fupload_5fnotacceptable',['state_upload_notacceptable',['../jazz__api_8cpp.html#acf78ca0c3383b9058a2918ce9a6ac578',1,'jazz_api.cpp']]],
+  ['state_5fupload_5funavailable',['state_upload_unavailable',['../jazz__api_8cpp.html#a81dd25004d49da6504f816ccb56440d0',1,'jazz_api.cpp']]]
 ];
