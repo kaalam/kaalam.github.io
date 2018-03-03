@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['max_5fkey_5flength',['MAX_KEY_LENGTH',['../jazzCommons_8h.html#a26545336d0ab0d77af434c289f1c5922',1,'jazzCommons.h']]],
-  ['mhd_5fplatform_5fh',['MHD_PLATFORM_H',['../jazzCommons_8h.html#a5a61c24fd07097ce8715f7e10f7152e3',1,'jazzCommons.h']]],
-  ['mode_5f_5f',['MODE__',['../jazzCommons_8h.html#a530fcbade5899a5c48241baff2c27423',1,'jazzCommons.h']]],
-  ['mode_5fexternal_5fperimeter',['MODE_EXTERNAL_PERIMETER',['../jazzCommons_8h.html#a18b3b1b5ca8dac7523208066129300ed',1,'jazzCommons.h']]],
-  ['mode_5finternal_5fperimeter',['MODE_INTERNAL_PERIMETER',['../jazzCommons_8h.html#af6c57094935d2b5ebf71a993a95a6ca1',1,'jazzCommons.h']]],
-  ['mode_5fsafe_5fif_5fphysical',['MODE_SAFE_IF_PHYSICAL',['../jazzCommons_8h.html#a20120ecec07ea5b146118cda77b22064',1,'jazzCommons.h']]],
-  ['mode_5ftrusted_5fonly',['MODE_TRUSTED_ONLY',['../jazzCommons_8h.html#a9b5ea256c1ab5e694022ec857c228e8e',1,'jazzCommons.h']]]
+  ['catch_5fconfig_5fmain',['CATCH_CONFIG_MAIN',['../jazz__main_8cpp.html#a656eb5868e824d59f489f910db438420',1,'jazz_main.cpp']]],
+  ['charsxp',['CHARSXP',['../jazz__commons_8h.html#a8c6a57ad13f96a2140e4ebde79c8ed5f',1,'jazz_commons.h']]],
+  ['cmnd_5fhelp',['CMND_HELP',['../jazz__main_8cpp.html#a32c3b827931ad883bf0d4e18d79eac03',1,'jazz_main.cpp']]],
+  ['cmnd_5freload',['CMND_RELOAD',['../jazz__main_8cpp.html#ae566b9e115eefd4852781fe406c8a49f',1,'jazz_main.cpp']]],
+  ['cmnd_5fstart',['CMND_START',['../jazz__main_8cpp.html#a71614c145c330082129fa1709b212526',1,'jazz_main.cpp']]],
+  ['cmnd_5fstatus',['CMND_STATUS',['../jazz__main_8cpp.html#a81477e191d8e50592d5e201a69dc0492',1,'jazz_main.cpp']]],
+  ['cmnd_5fstop',['CMND_STOP',['../jazz__main_8cpp.html#ae7fb09d0fc2ee288779d4734f7510901',1,'jazz_main.cpp']]]
 ];
