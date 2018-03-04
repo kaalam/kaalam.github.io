@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Reference Documentation for Jazz, Bebop, the server, the clients and the reference docker images">
-<meta name="keywords" content="JazzBasics,  ">
-<title>Welcome to Jazz! | Jazz User's Manual</title>
+<meta name="description" content="Extending the Core in C++">
+<meta name="keywords" content="JazzCustomization,  ">
+<title>Extending Jazz in C++ | Jazz User's Manual</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -211,7 +211,7 @@
           
           
           
-          <li class="active"><a href="index.html">Welcome to Jazz!</a></li>
+          <li><a href="index.html">Welcome to Jazz!</a></li>
           
           
           
@@ -596,7 +596,7 @@
           
           
           
-          <li><a href="customization_cpp.html">Extending Jazz in C++</a></li>
+          <li class="active"><a href="customization_cpp.html">Extending Jazz in C++</a></li>
           
           
           
@@ -637,7 +637,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Welcome to Jazz!</h1>
+   <h1 class="post-title-main">Extending Jazz in C++</h1>
 </div>
 
 
@@ -645,7 +645,7 @@
 <div class="post-content">
 
    
-    <div class="summary">Reference Documentation for Jazz, Bebop, the server, the clients and the reference docker images</div>
+    <div class="summary">Extending the Core in C++</div>
    
 
     
@@ -679,16 +679,25 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>If you’ve never installed or run a Jekyll site locally on your computer, follow these instructions to install Jekyll:</p>
+  <h2 id="about-labels">About labels</h2>
+<p>Labels might come in handy for adding button-like tags next to elements, such as POST, DELETE, UPDATE methods for endpoints. You can use any classes from Bootstrap in your content.</p>
 
-<ul>
-  <li>[Install Jekyll on Mac][mydoc_install_jekyll_on_mac]</li>
-  <li>[Install Jekyll on Windows][mydoc_install_jekyll_on_windows]</li>
-</ul>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"label label-default"</span><span class="nt">&gt;</span>Default<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"label label-primary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"label label-success"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"label label-info"</span><span class="nt">&gt;</span>Info<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"label label-warning"</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"label label-danger"</span><span class="nt">&gt;</span>Danger<span class="nt">&lt;/span&gt;</span>
+</code></pre></div></div>
 
-<h2 id="other-instructions">Other instructions</h2>
+<p><span class="label label-default">Default</span>
+<span class="label label-primary">Primary</span>
+<span class="label label-success">Success</span>
+<span class="label label-info">Info</span>
+<span class="label label-warning">Warning</span>
+<span class="label label-danger">Danger</span></p>
 
-<p>The content here is just a getting started guide only. For other details in working with the theme, see the various sections in the sidebar.</p>
+<p>You can have a label appear within a heading simply by including the span tag in the heading. However, you can’t mix Markdown syntax with HTML, so you’d have to hard-code the heading ID for the auto-TOC to work.</p>
 
 
 

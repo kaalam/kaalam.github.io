@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Reference Documentation for Jazz, Bebop, the server, the clients and the reference docker images">
-<meta name="keywords" content="JazzBasics,  ">
-<title>Welcome to Jazz! | Jazz User's Manual</title>
+<meta name="description" content="Getting oriented with Jazz Documentation for Python programmers">
+<meta name="keywords" content="JazzPython,  ">
+<title>Advanced Python usage | Jazz User's Manual</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -211,7 +211,7 @@
           
           
           
-          <li class="active"><a href="index.html">Welcome to Jazz!</a></li>
+          <li><a href="index.html">Welcome to Jazz!</a></li>
           
           
           
@@ -365,7 +365,7 @@
           
           
           
-          <li><a href="pyjazz_advanced.html">Advanced Python usage</a></li>
+          <li class="active"><a href="pyjazz_advanced.html">Advanced Python usage</a></li>
           
           
           
@@ -637,7 +637,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Welcome to Jazz!</h1>
+   <h1 class="post-title-main">Advanced Python usage</h1>
 </div>
 
 
@@ -645,7 +645,7 @@
 <div class="post-content">
 
    
-    <div class="summary">Reference Documentation for Jazz, Bebop, the server, the clients and the reference docker images</div>
+    <div class="summary">Getting oriented with Jazz Documentation for Python programmers</div>
    
 
     
@@ -679,16 +679,218 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>If you’ve never installed or run a Jekyll site locally on your computer, follow these instructions to install Jekyll:</p>
+  <p>hg fetch does a pull and update at the same time
+you’re prompted about any conflicts
+you fix them. then you do this:</p>
 
-<ul>
-  <li>[Install Jekyll on Mac][mydoc_install_jekyll_on_mac]</li>
-  <li>[Install Jekyll on Windows][mydoc_install_jekyll_on_windows]</li>
-</ul>
+<p>hg pull -u (i think this is pull and then update)</p>
 
-<h2 id="other-instructions">Other instructions</h2>
+<p>$ hg [COMMAND] [ARGUMENTS]</p>
 
-<p>The content here is just a getting started guide only. For other details in working with the theme, see the various sections in the sidebar.</p>
+<p>hg init
+hg add
+hg log
+hg diff
+hg revert
+hg remove
+hg update
+You have seen that it is possible to switch revision using hg update.
+clone</p>
+
+<p>commit</p>
+
+<p>The first feature of the diff command is to show the differences between the last revision of a file (the state at the last commit command) and the current version. It can also show the differences between any two specified revisions. For example, on apache2.conf, the diff command can be used as follows:
+$ hg diff -r 1 -r 2 apache2.conf</p>
+
+<p>To print each line of a file with the revision at which the line was created (and with the –user option, we come to know who committed this revision), type:
+$ hg annotate [FILE] or $ hg blame [FILE]</p>
+
+<p>To search for a pattern in version controlled files, use hg grep; it will search this pattern in every version of the file and it will print the first one in which it appears, such as hg annotate. For example:
+$ hg grep new apache2.conf</p>
+
+<p>You can also print the content of a file at a given revision even without changing the current working directory using hg cat -r REVISION.</p>
+
+<p>Whenever changes have been committed but not yet pushed, the outgoing command lists all the changesets that are present in the current repository but not yet found in the destination (the ones that are candidates to be pushed), whereas the incoming command shows you the changesets that are found in the source repository but have not been pulled yet. So here, if you use the outgoing command, you will see</p>
+
+<p>push
+pull
+fetch
+merge
+resolve –mark</p>
+
+<p>As you can see, you have added John’s change to your repository because hg log is listing it. But it is not yet present in your working copy; you need to update the working directory to the tip revision, which is the default of the update command, when no revision is passed as argument:</p>
+
+<p>You can now see John’s change in the working directory. If some files had been modified, either committed or not, the modifications would have been seamlessly merged with that of John’s. If there was a conflict, Mercurial would have told us.</p>
+
+<p>hg pull –update or -u: This option combines both the pull and the update commands, not only pulling new changesets into the local repository, but also updating the working directory to the head of these new changes.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>annotate, blame</td>
+      <td>show changeset information by line for each file</td>
+    </tr>
+    <tr>
+      <td>diff</td>
+      <td>diff repository (or selected files)</td>
+    </tr>
+    <tr>
+      <td>forget {filename}</td>
+      <td>forget the specified files on the next commit</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>hg fetch. This extension acts as a combination of hg pull -u, hg merge and hg commit. It begins by pulling changes from another repository into the current repository. If it finds that the changes added a new head to the repository, it updates to the new head, begins a merge, then (if the merge succeeded) commits the result of the merge with an automatically-generated commit message. If no new heads were added, it updates the working directory to the new tip changeset.</p>
+
+<p>i like</p>
+
+<p>hg fetch does a pull and update at the same time
+you’re prompted about any conflicts
+you fix them. then you do this: hg resolve –mark</p>
+
+<p>hg pull -u (i think this is pull and then update)</p>
+
+<p>$ hg [COMMAND] [ARGUMENTS]</p>
+
+<p>hg init
+hg add
+hg log
+hg diff
+hg revert
+hg remove
+hg update
+You have seen that it is possible to switch revision using hg update.
+clone
+addremove, which allows you to automatically add all new files and remove (from version control) files that have been deleted.
+log
+commit</p>
+
+<p>The first feature of the diff command is to show the differences between the last revision of a file (the state at the last commit command) and the current version. It can also show the differences between any two specified revisions. For example, on apache2.conf, the diff command can be used as follows:
+$ hg diff -r 1 -r 2 apache2.conf</p>
+
+<p>To print each line of a file with the revision at which the line was created (and with the –user option, we come to know who committed this revision), type:
+$ hg annotate [FILE] or $ hg blame [FILE]</p>
+
+<p>To search for a pattern in version controlled files, use hg grep; it will search this pattern in every version of the file and it will print the first one in which it appears, such as hg annotate. For example:
+$ hg grep new apache2.conf</p>
+
+<p>You can also print the content of a file at a given revision even without changing the current working directory using hg cat -r REVISION.</p>
+
+<p>Whenever changes have been committed but not yet pushed, the outgoing command lists all the changesets that are present in the current repository but not yet found in the destination (the ones that are candidates to be pushed), whereas the incoming command shows you the changesets that are found in the source repository but have not been pulled yet. So here, if you use the outgoing command, you will see</p>
+
+<p>push
+pull
+fetch
+merge
+resolve –mark</p>
+
+<p>As you can see, you have added John’s change to your repository because hg log is listing it. But it is not yet present in your working copy; you need to update the working directory to the tip revision, which is the default of the update command, when no revision is passed as argument:</p>
+
+<p>You can now see John’s change in the working directory. If some files had been modified, either committed or not, the modifications would have been seamlessly merged with that of John’s. If there was a conflict, Mercurial would have told us.</p>
+
+<p>hg pull –update or -u: This option combines both the pull and the update commands, not only pulling new changesets into the local repository, but also updating the working directory to the head of these new changes.</p>
+
+<p>Bookmarks are tags that move forward automatically to subsequent changes, leaving no mark on the changesets that previously had that bookmark pointing toward them. Named branches, on the other hand, are indelible marks that are part of a changeset. Multiple heads can be on the same branch, but only one head at a time can be pointed to by the same bookmark. Named branches are pushed/pulled from repo to repo, and bookmarks don’t travel.</p>
+
+<p>The default branch name in Mercurial is “default”.</p>
+
+<p>The slowest, safest way to create a branch with Mercurial is to make a new clone of the repository. this is really fascinating – a clone is merely a branch.</p>
+
+<p>Discarding a branch you don’t want any more is very easy with cloned branches. It’s as simple as rm -rf test-project-feature-branch. There’s no need to mess around with editing repository history, you just delete the damn thing.</p>
+
+<p>The next way to branch is to use a bookmark. For example:</p>
+
+<p>$ cd ~/src/test-project
+$ hg bookmark main
+$ hg bookmark feature
+Now you’ve got two bookmarks (essentially a tag) for your two branches at the current changeset.</p>
+
+<p>To switch to one of these branches you can use hg update feature to update to the tip changeset of that branch and mark yourself as working on that branch. When you commit, it will move the bookmark to the newly created changeset.</p>
+
+<h2 id="branching">Branching</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Commands</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>List all branches</td>
+      <td><code class="highlighter-rouge">git branch a</code> (the * indicates the branch you’re on)</td>
+    </tr>
+    <tr>
+      <td>Create new branch</td>
+      <td><code class="highlighter-rouge">git -b branchname</code> or <code class="highlighter-rouge">git branch branchname</code></td>
+    </tr>
+    <tr>
+      <td>Checkout a branch</td>
+      <td><code class="highlighter-rouge">git checkout branchname</code></td>
+    </tr>
+    <tr>
+      <td>Create new branch and checkout at the same time</td>
+      <td><code class="highlighter-rouge">git checkout -b branchname</code></td>
+    </tr>
+    <tr>
+      <td>Merge into current branch</td>
+      <td>First go into the branch you want to merge changes into. Then do <code class="highlighter-rouge">git merge branchname</code>. For example, to merge branch b into branch master, first checkout branch master: <code class="highlighter-rouge">git checkout a</code>. Now merge b into master: <code class="highlighter-rouge">git merge b</code>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>git lg</p>
+
+<p>git checkout master
+git merge search | git merge –no-ff search</p>
+
+<p>the latter (–no-ff) keeps the additional information that these commits were made on a branch.
+then type a commit message (:wq)
+git branch -d search</p>
+
+<p>git add . (works same as add –all)
+git commit am “my commit message” (this performs both adding and commit message at same time)</p>
+
+<p>with merge conflicts:</p>
+
+<p>git status (shows you all the files that can’t be added due to merge conflicts)
+fix the conflicts
+then git add . (tells git you fixed the conflicts)
+then git status
+git commit</p>
+
+<p>From the interface, you can also create a pull request to merge all of the changes from a specific branch into another branch.</p>
+
+<h2 id="general-commands">General commands</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Commands</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>start tracking files</td>
+      <td><code class="highlighter-rouge">git add</code></td>
+    </tr>
+    <tr>
+      <td>see what has changed since last commit</td>
+      <td><code class="highlighter-rouge">git diff</code></td>
+    </tr>
+    <tr>
+      <td>commit changes</td>
+      <td><code class="highlighter-rouge">git commit</code></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
 
 
 

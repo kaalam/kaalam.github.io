@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Reference Documentation for Jazz, Bebop, the server, the clients and the reference docker images">
-<meta name="keywords" content="JazzBasics,  ">
-<title>Welcome to Jazz! | Jazz User's Manual</title>
+<meta name="description" content="Jazz Standard Core - String manipulation">
+<meta name="keywords" content="JazzStandard Core,  ">
+<title>String Operations | Jazz User's Manual</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -211,7 +211,7 @@
           
           
           
-          <li class="active"><a href="index.html">Welcome to Jazz!</a></li>
+          <li><a href="index.html">Welcome to Jazz!</a></li>
           
           
           
@@ -514,7 +514,7 @@
                   
                   
                   
-                  <li><a href="sc_05_strings.html">String Operations</a></li>
+                  <li class="active"><a href="sc_05_strings.html">String Operations</a></li>
                   
                   
                   
@@ -637,7 +637,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Welcome to Jazz!</h1>
+   <h1 class="post-title-main">String Operations</h1>
 </div>
 
 
@@ -645,7 +645,7 @@
 <div class="post-content">
 
    
-    <div class="summary">Reference Documentation for Jazz, Bebop, the server, the clients and the reference docker images</div>
+    <div class="summary">Jazz Standard Core - String manipulation</div>
    
 
     
@@ -679,16 +679,70 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>If you’ve never installed or run a Jekyll site locally on your computer, follow these instructions to install Jekyll:</p>
+  <h2 id="issues-building-the-site">Issues building the site</h2>
 
-<ul>
-  <li>[Install Jekyll on Mac][mydoc_install_jekyll_on_mac]</li>
-  <li>[Install Jekyll on Windows][mydoc_install_jekyll_on_windows]</li>
-</ul>
+<h3 id="address-already-in-use">Address already in use</h3>
 
-<h2 id="other-instructions">Other instructions</h2>
+<p>When you try to build the site, you get this error in iTerm:</p>
 
-<p>The content here is just a getting started guide only. For other details in working with the theme, see the various sections in the sidebar.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll 2.5.3 | Error:  Address already in use - bind(2)
+</code></pre></div></div>
+<p>This happens if a server is already in use. To fix this, edit your config file and change the port to a unique number.</p>
+
+<p>If the previous server wasn’t shut down properly, you can kill the server process using these commands:</p>
+
+<p><code class="highlighter-rouge">ps aux | grep jekyll</code></p>
+
+<p>Find the PID (for example, it  looks like “22298”).</p>
+
+<p>Then type <code class="highlighter-rouge">kill -9 22298</code> where “22298” is the PID.</p>
+
+<p>Alternatively, type the following to stop all Jekyll servers:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kill -9 $(ps aux | grep '[j]ekyll' | awk '{print $2}')
+</code></pre></div></div>
+
+<h3 id="shell-file-not-executable">shell file not executable</h3>
+
+<p>If you run into permissions errors trying to run a shell script file (such as mydoc_multibuild_web.sh), you may need to change the file permissions to make the sh file executable. Browse to the directory containing the shell script and run the following:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>chmod +x build_writer.sh
+</code></pre></div></div>
+
+<h2 id="shell-file-not-runnable">shell file not runnable</h2>
+
+<p>If you’re using a PC, rename your shell files with a .bat extension.</p>
+
+<h3 id="page-0-cross-references-in-the-pdf">“page 0” cross references in the PDF</h3>
+
+<p>If you see “page 0” cross-references in the PDF, the URL doesn’t exist. Check to make sure you actually included this page in the build.</p>
+
+<p>If it’s not a page but rather a file, you need to add a <code class="highlighter-rouge">noCrossRef</code> class to the file so that your print stylesheet excludes the counter from it. Add <code class="highlighter-rouge">class="noCrossRef"</code> as an attribute to the link. In the css/printstyles.css file, there is a style that should remove the counter from anchor elements with this class.</p>
+
+<h3 id="the-pdf-is-blank">The PDF is blank</h3>
+
+<p>Check the prince-list.txt file in the output to see if it contains links. If not, you have something wrong with the logic in the prince-list.txt file. Check the conditions.html file in your _includes to see if the audience specified in your configuration file aligns with the buildAudience in the conditions.html file</p>
+
+<h3 id="sidebar-not-appearing">Sidebar not appearing</h3>
+
+<p>If you build your site but the sidebar doesn’t appear, check the following:</p>
+
+<p>Look in your PDF config file and make sure you have a sidebar property, such as this:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pdf_sidebar: product2_sidebar
+</code></pre></div></div>
+
+<p>Make sure each TOC item has an output property that specifies web or pdf.</p>
+
+<p>Understanding how the theme works can be helpful in troubleshooting. The _includes/sidebar.html file loops through the values in the _data/sidebar.yml file. There are <code class="highlighter-rouge">if</code> statements that check whether the conditions (as specified in the conditions.html file) are met. If the sidebar.yml item doesn’t have the right output, then it won’t get displayed in the sidebar. It would instead get skipped.</p>
+
+<h3 id="sidebar-isnt-collapsed">Sidebar isn’t collapsed</h3>
+
+<p>If the sidebar levels aren’t collapsed, usually your JavaScript is broken somewhere. Open the JavaScript Console and look to see where the problem is. If one script breaks, then other scripts will break too, so troubleshooting it is a little tricky.</p>
+
+<h3 id="search-isnt-working">Search isn’t working</h3>
+
+<p>If the search isn’t working, check the JSON validity in the search.json file in your output folder. Usually something is invalid. Identify the problematic line, fix the file, or put <code class="highlighter-rouge">search: exclude</code> in the frontmatter of the file to exclude it from search.</p>
 
 
 

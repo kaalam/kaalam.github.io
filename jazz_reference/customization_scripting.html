@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Reference Documentation for Jazz, Bebop, the server, the clients and the reference docker images">
-<meta name="keywords" content="JazzBasics,  ">
-<title>Welcome to Jazz! | Jazz User's Manual</title>
+<meta name="description" content="Adding functions written in Bebop, R and Python to the Core">
+<meta name="keywords" content="JazzCustomization,  ">
+<title>Extending Jazz in Bebop, R and Python | Jazz User's Manual</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -211,7 +211,7 @@
           
           
           
-          <li class="active"><a href="index.html">Welcome to Jazz!</a></li>
+          <li><a href="index.html">Welcome to Jazz!</a></li>
           
           
           
@@ -589,7 +589,7 @@
           
           
           
-          <li><a href="customization_scripting.html">Extending Jazz in Bebop, R and Python</a></li>
+          <li class="active"><a href="customization_scripting.html">Extending Jazz in Bebop, R and Python</a></li>
           
           
           
@@ -637,7 +637,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Welcome to Jazz!</h1>
+   <h1 class="post-title-main">Extending Jazz in Bebop, R and Python</h1>
 </div>
 
 
@@ -645,7 +645,7 @@
 <div class="post-content">
 
    
-    <div class="summary">Reference Documentation for Jazz, Bebop, the server, the clients and the reference docker images</div>
+    <div class="summary">Adding functions written in Bebop, R and Python to the Core</div>
    
 
     
@@ -679,16 +679,303 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>If you’ve never installed or run a Jekyll site locally on your computer, follow these instructions to install Jekyll:</p>
+  <h2 id="generating-a-list-of-all-pages-with-a-certain-tag">Generating a list of all pages with a certain tag</h2>
+
+<p>If you don’t want to link to a tag archive index, but instead want to list all pages that have a certain tag, you could use this code:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Getting started pages:
+<span class="nt">&lt;ul&gt;</span>
+{% assign sorted_pages = site.pages | sort: 'title' %}
+{% for page in sorted_pages %}
+{% for tag in page.tags %}
+{% if tag == "getting_started" %}
+<span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"{{ page.url | remove: "</span><span class="err">/"</span> <span class="err">}}"</span><span class="nt">&gt;</span>{{page.title}}<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+{% endif %}
+{% endfor %}
+{% endfor %}
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre></div></div>
+
+<p>Here’s the result:</p>
+
+<p>Getting started pages:</p>
 
 <ul>
-  <li>[Install Jekyll on Mac][mydoc_install_jekyll_on_mac]</li>
-  <li>[Install Jekyll on Windows][mydoc_install_jekyll_on_windows]</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </ul>
-
-<h2 id="other-instructions">Other instructions</h2>
-
-<p>The content here is just a getting started guide only. For other details in working with the theme, see the various sections in the sidebar.</p>
 
 
 

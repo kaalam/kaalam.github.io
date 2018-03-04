@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Reference Documentation for Jazz, Bebop, the server, the clients and the reference docker images">
-<meta name="keywords" content="JazzBasics,  ">
-<title>Welcome to Jazz! | Jazz User's Manual</title>
+<meta name="description" content="Jazz Standard Core Reference">
+<meta name="keywords" content="JazzStandard Core,  ">
+<title>Standard Core Reference | Jazz User's Manual</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -211,7 +211,7 @@
           
           
           
-          <li class="active"><a href="index.html">Welcome to Jazz!</a></li>
+          <li><a href="index.html">Welcome to Jazz!</a></li>
           
           
           
@@ -480,7 +480,7 @@
           
           
           
-          <li><a href="sc_00_reference.html">Standard Core Reference</a></li>
+          <li class="active"><a href="sc_00_reference.html">Standard Core Reference</a></li>
           
           
           
@@ -637,7 +637,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Welcome to Jazz!</h1>
+   <h1 class="post-title-main">Standard Core Reference</h1>
 </div>
 
 
@@ -645,7 +645,7 @@
 <div class="post-content">
 
    
-    <div class="summary">Reference Documentation for Jazz, Bebop, the server, the clients and the reference docker images</div>
+    <div class="summary">Jazz Standard Core Reference</div>
    
 
     
@@ -679,16 +679,40 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>If you’ve never installed or run a Jekyll site locally on your computer, follow these instructions to install Jekyll:</p>
+  <h2 id="about-iterm-profiles">About iTerm profiles</h2>
 
-<ul>
-  <li>[Install Jekyll on Mac][mydoc_install_jekyll_on_mac]</li>
-  <li>[Install Jekyll on Windows][mydoc_install_jekyll_on_windows]</li>
-</ul>
+<p>When you’re working with tech docs, a lot of times you have builds that push files onto different servers, or that build the content for different environments. It can be a hassle to type out these commands each time. Instead, it’s easier to configure iTerm with profiles that initiate the scripts.</p>
 
-<h2 id="other-instructions">Other instructions</h2>
+<h2 id="set-up-profiles">Set up profiles</h2>
 
-<p>The content here is just a getting started guide only. For other details in working with the theme, see the various sections in the sidebar.</p>
+<ol>
+  <li>Open iTerm and go to <strong>Profiles &gt; Open Profiles.</strong></li>
+  <li>Click <strong>Edit Profiles</strong>.</li>
+  <li>Click the + button in the lower-left corner to create a new profile.</li>
+  <li>In the <strong>Name</strong> field, type a name describing the output, such as <code class="highlighter-rouge">Doc theme -- designers</code>.</li>
+  <li>
+    <p>In the <strong>Send text at start</strong> field, type the command for the build script, such as this:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>JEKYLL_ENV=production jekyll serve
+</code></pre></div>    </div>
+    <p>Leave the Login shell option selected.</p>
+  </li>
+  <li>In the Working Directory section, select <strong>Directory</strong> and enter the directory for your project, such as <strong>/Users/tjohnson/projects/documentation-theme-jekyll</strong>.</li>
+  <li>Close the profiles panel.</li>
+</ol>
+
+<p>Here’s an example:</p>
+
+<figure><img class="docimage" src="images/itermexample.png" alt="" /><figcaption>iTerm profile example</figcaption></figure>
+
+<h2 id="launching-a-profile">Launching a profile</h2>
+
+<ol>
+  <li>In iTerm, make sure the Toolbar is shown. Go to <strong>View &gt; Toggle Toolbar</strong>.</li>
+  <li>Click the <strong>New</strong> button and select your profile.</li>
+</ol>
+
+<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> When you’re done with the session, make sure to click <b>Ctrl+C</b>.</div>
 
 
 

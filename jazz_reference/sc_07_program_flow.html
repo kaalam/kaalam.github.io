@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Reference Documentation for Jazz, Bebop, the server, the clients and the reference docker images">
-<meta name="keywords" content="JazzBasics,  ">
-<title>Welcome to Jazz! | Jazz User's Manual</title>
+<meta name="description" content="Jazz Standard Core - Conditional flow">
+<meta name="keywords" content="JazzStandard Core,  ">
+<title>Program Flow | Jazz User's Manual</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -211,7 +211,7 @@
           
           
           
-          <li class="active"><a href="index.html">Welcome to Jazz!</a></li>
+          <li><a href="index.html">Welcome to Jazz!</a></li>
           
           
           
@@ -526,7 +526,7 @@
                   
                   
                   
-                  <li><a href="sc_07_program_flow.html">Program Flow</a></li>
+                  <li class="active"><a href="sc_07_program_flow.html">Program Flow</a></li>
                   
                   
                   
@@ -637,7 +637,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Welcome to Jazz!</h1>
+   <h1 class="post-title-main">Program Flow</h1>
 </div>
 
 
@@ -645,7 +645,7 @@
 <div class="post-content">
 
    
-    <div class="summary">Reference Documentation for Jazz, Bebop, the server, the clients and the reference docker images</div>
+    <div class="summary">Jazz Standard Core - Conditional flow</div>
    
 
     
@@ -679,16 +679,704 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>If you’ve never installed or run a Jekyll site locally on your computer, follow these instructions to install Jekyll:</p>
+  <h2 id="add-a-tag-to-a-page">Add a tag to a page</h2>
+<p>You can add tags to pages by adding <code class="highlighter-rouge">tags</code> in the frontmatter with values inside brackets, like this:</p>
 
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+title: 5.0 Release Notes
+permalink: release_notes_5_0.html
+tags: [formatting, single_sourcing]
+---
+</code></pre></div></div>
+
+<h2 id="tags-overview">Tags overview</h2>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b>  With posts, tags have a namespace that you can access with <code>posts.tags.tagname</code>, where <code>tagname</code> is the name of the tag. You can then list all posts in that tag namespace. But pages don’t off this same tag namespace, so you could actually use another key instead of <code>tags</code>. Nevertheless, I’m using the same <code>tags</code> approach for posts as with pages.</div>
+
+<p>To prevent tags from getting out of control and inconsistent, first make sure the tag appears in the _data/tags.yml file. If it’s not there, the tag you add to a page won’t be read. I added this check just to make sure I’m using the same tags consistently and not adding new tags that don’t have tag archive pages.</p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> In contrast to WordPress, with Jekyll to get tags on pages you have to build out the functionality for tags so that clicking a tag name shows you all pages with that tag. Tags in Jekyll are much more manual.</div>
+
+<p>Additionally, you must create a tag archive page similar to the other pages named tag_{tagname}.html folder. This theme doesn’t auto-create tag archive pages.</p>
+
+<p>For simplicity, make all your tags single words (connect them with hyphens if necessary).</p>
+
+<h2 id="setting-up-tags">Setting up tags</h2>
+
+<p>Tags have a few components.</p>
+
+<ol>
+  <li>
+    <p>In the _data/tags.yml file, add the tag names you want to allow. For example:</p>
+
+    <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">allowed-tags</span><span class="p">:</span><span class="w">
+  </span><span class="err">-</span><span class="w"> </span><span class="err">getting_started</span><span class="w">
+  </span><span class="err">-</span><span class="w"> </span><span class="err">overview</span><span class="w">
+  </span><span class="err">-</span><span class="w"> </span><span class="err">formatting</span><span class="w">
+  </span><span class="err">-</span><span class="w"> </span><span class="err">publishing</span><span class="w">
+  </span><span class="err">-</span><span class="w"> </span><span class="err">single_sourcing</span><span class="w">
+  </span><span class="err">-</span><span class="w"> </span><span class="err">special_layouts</span><span class="w">
+  </span><span class="err">-</span><span class="w"> </span><span class="err">content</span><span class="w"> </span><span class="err">types</span><span class="w">
+</span></code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Create a tag archive file for each tag in your tags_doc.yml list. Name the file following the same pattern in the tags folder, like this: tag_collaboration.html.</p>
+
+    <p>Each tag archive file needs only this:</p>
+
+    <div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+title: "Collaboration pages"
+tagName: collaboration
+search: exclude
+permalink: tag_collaboration.html
+sidebar: mydoc_sidebar
+---
+<span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="na">taglogic</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="p">%}</span>
+</code></pre></div>    </div>
+
+    <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> In the _includes/mydoc folder, there’s a taglogic.html file. This file (included in each tag archive file) has common logic for getting the tags and listing out the pages containing the tag in a table with summaries or truncated excerpts. You don’t have to do anything with the file — just leave it there because the tag archive pages reference it.</div>
+  </li>
+  <li>
+    <p>Change the title, tagName, and permalink values to be specific to the tag name you just created.</p>
+
+    <p>By default, the _layouts/page.html file will look for any tags on a page and insert them at the bottom of the page using this code:</p>
+  </li>
+</ol>
+
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div class="tags"&gt;
+<span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">tags</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="nv">null</span><span class="w"> </span><span class="p">%}</span>
+&lt;b&gt;Tags: &lt;/b&gt;
+<span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">projectTags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">data</span><span class="p">.</span><span class="nv">tags</span><span class="p">.</span><span class="nv">allowed</span><span class="err">-</span><span class="nv">tags</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span>tag<span class="w"> </span>in<span class="w"> </span>page.tags<span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">projectTags</span><span class="w"> </span><span class="ow">contains</span><span class="w"> </span><span class="nv">tag</span><span class="w"> </span><span class="p">%}</span>
+&lt;a href="<span class="p">{{</span><span class="w"> </span><span class="s2">"tag_"</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">append</span><span class="p">:</span><span class="w"> </span>tag<span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">append</span><span class="p">:</span><span class="w"> </span><span class="s2">".html"</span><span class="w"> </span><span class="p">}}</span>" class="btn btn-default navbar-btn cursorNorm" role="button"&gt;<span class="p">{{</span><span class="nv">page</span><span class="p">.</span><span class="nv">tagName</span><span class="p">}}{{</span><span class="nv">tag</span><span class="p">}}</span>&lt;/a&gt;
+<span class="p">{%</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
+&lt;/div&gt;
+</code></pre></div></div>
+
+<p>Because this code appears on the _layouts/page.html file by default, you don’t need to do anything in your page to get the tags to appear. However, if you want to alter the placement or change the button color, you can do so within the _includes/taglogic.html file.</p>
+
+<p>You can change the button color by changing the class on the button from <code class="highlighter-rouge">btn-info</code> to one of the other button classes bootstrap provides. See [Labels][mydoc_labels] for more options on button class names.</p>
+
+<h2 id="retrieving-pages-for-a-specific-tag">Retrieving pages for a specific tag</h2>
+
+<p>If you want to retrieve pages outside of a particular tag_archive page, you could use this code:</p>
+
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Getting started pages:
+&lt;ul&gt;
+<span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span>page<span class="w"> </span>in<span class="w"> </span>site.pages<span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span>tag<span class="w"> </span>in<span class="w"> </span>page.tags<span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">tag</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"getting_started"</span><span class="w"> </span><span class="p">%}</span>
+&lt;li&gt;&lt;a href="<span class="p">{{</span><span class="nv">page</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">remove</span><span class="p">:</span><span class="w"> </span><span class="s2">"/"</span><span class="w"> </span><span class="p">}}</span>"&gt;<span class="p">{{</span><span class="nv">page</span><span class="p">.</span><span class="nv">title</span><span class="p">}}</span>&lt;/a&gt;&lt;/li&gt;
+<span class="p">{%</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
+&lt;/ul&gt;
+</code></pre></div></div>
+
+<p>Here’s how that code renders:</p>
+
+<p>Getting started pages:</p>
 <ul>
-  <li>[Install Jekyll on Mac][mydoc_install_jekyll_on_mac]</li>
-  <li>[Install Jekyll on Windows][mydoc_install_jekyll_on_windows]</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </ul>
 
-<h2 id="other-instructions">Other instructions</h2>
+<p>If you want to sort the pages alphabetically, you have to apply a <code class="highlighter-rouge">sort</code> filter:</p>
 
-<p>The content here is just a getting started guide only. For other details in working with the theme, see the various sections in the sidebar.</p>
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+Getting started pages:
+&lt;ul&gt;
+<span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">sorted_pages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">pages</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">sort</span><span class="p">:</span><span class="w"> </span><span class="s1">'title'</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span>page<span class="w"> </span>in<span class="w"> </span>sorted_pages<span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span>tag<span class="w"> </span>in<span class="w"> </span>page.tags<span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">tag</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"getting_started"</span><span class="w"> </span><span class="p">%}</span>
+&lt;li&gt;&lt;a href="<span class="p">{{</span><span class="nv">page</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">remove</span><span class="p">:</span><span class="w"> </span><span class="s2">"/"</span><span class="w"> </span><span class="p">}}</span>"&gt;<span class="p">{{</span><span class="nv">page</span><span class="p">.</span><span class="nv">title</span><span class="p">}}</span>&lt;/a&gt;&lt;/li&gt;
+<span class="p">{%</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
+&lt;/ul&gt;
+
+</code></pre></div></div>
+
+<p>Here’s how that code renders:</p>
+
+<p>Getting started pages:</p>
+<ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+
+<h2 id="efficiency">Efficiency</h2>
+<p>Although the tag approach here uses <code class="highlighter-rouge">for</code> loops, these are somewhat inefficient on a large site. Most of my tech doc projects don’t have hundreds of pages (like my blog does). If your project does have hundreds of pages, this <code class="highlighter-rouge">for</code> loop approach with tags is going to slow down your build times.</p>
+
+<p>Without the ability to access pages inside a universal namespace with the page type, there aren’t many workarounds here for faster looping.</p>
+
+<p>With posts (instead of pages), since you can access just the posts inside <code class="highlighter-rouge">posts.tag.tagname</code>, you can be a lot more efficient with the looping.</p>
+
+<p>Still, if the build times are getting long (e.g., 1 or 2 minutes per build), look into reducing the number of <code class="highlighter-rouge">for</code> loops on your site.</p>
+
+<h2 id="empty-tags">Empty tags?</h2>
+
+<p>If your page shows “tags:” at the bottom without any value, it could mean a couple of things:</p>
+
+<ul>
+  <li>You’re using a tag that isn’t specified in your allowed tags list in your tags.yml file.</li>
+  <li>You have an empty <code class="highlighter-rouge">tags: []</code> property in your frontmatter.</li>
+</ul>
+
+<p>If you don’t want tags to appear at all on your page, remove the tags property from your frontmatter.</p>
+
+<h2 id="remembering-the-right-tags">Remembering the right tags</h2>
+
+<p>Since you may have many tags and find it difficult to remember what tags are allowed, I recommend creating a template that prepopulates all your frontmatter with all possible tags. Then just remove the tags that don’t apply.</p>
+
+<p>See [WebStorm Text Editor][mydoc_webstorm_text_editor] for tips on creating file templates in WebStorm.</p>
 
 
 

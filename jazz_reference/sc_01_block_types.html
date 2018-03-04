@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Jazz Standard Core - Block Types">
+<meta name="keywords" content="JazzStandard Core,  ">
+<title>SC Block Types | Jazz User's Manual</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="Jazz" href="http://kaalam.github.io/jazz_reference/feed.xml">
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> Jazz User's Manual</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://github.com/bbvadata/Jazz" target="_blank">GitHub</a></li>
+                
+                
+                
+                <li><a href="https://kaalam.github.io/news/" target="_blank">News</a></li>
+                
+                
+                
+                <li><a href="https://kaalam.github.io/blog/" target="_blank">Blog</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Help<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="rjazz_walkthough_client_only.html">Getting started in R without a server</a></li>
+                        
+                        
+                        
+                        <li><a href="pyjazz_walkthough_client_only.html">Getting started in Python without a server</a></li>
+                        
+                        
+                        
+                        <li><a href="rjazz_walkthough_with_server.html">Getting started in R with a Docker server</a></li>
+                        
+                        
+                        
+                        <li><a href="pyjazz_walkthough_with_server.html">Getting started in Python with a Docker server</a></li>
+                        
+                        
+                        
+                        <li><a href="docker_last_stable_reference.html">Get the last stable Reference Server dockerized</a></li>
+                        
+                        
+                        
+                        <li><a href="docker_jazz_a_la_carte.html">Explore the dockerized Jazz pre-built applications</a></li>
+                        
+                        
+                        
+                        <li><a href="rest_reference.html">Jazz REST API reference</a></li>
+                        
+                        
+                        
+                        <li><a href="https://kaalam.github.io/rjazz/" target="_blank">R client Reference</a></li>
+                        
+                        
+                        
+                        <li><a href="https://kaalam.github.io/pyjazz/" target="_blank">Python client Reference</a></li>
+                        
+                        
+                        
+                        <li><a href="https://kaalam.github.io/develop/" target="_blank">Jazz for developers</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle">Jazz 0.2.x</li>
+  
+  
+  
+  <li>
+      <a href="#">Basics</a>
+      <ul>
+          
+          
+          
+          <li><a href="index.html">Welcome to Jazz!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="basics_fundamental.html">Fundamental Jazz Concepts</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="basics_walkthrough.html">A fast Jazz walkthrough</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">Setup</a>
+      <ul>
+          
+          
+          
+          <li><a href="setup_installing_client.html">Installing a Jazz client</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="setup_installing_server.html">Running a dockerized Jazz server</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="setup_compiling_from_source.html">Compiling Jazz from source</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">Jazz Dockers</a>
+      <ul>
+          
+          
+          
+          <li><a href="docker_last_stable_reference.html">The last stable Reference Server</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="docker_jazz_a_la_carte.html">Dockerized Jazz Applications</a></li>
+          
+          
+          
+          <li class="subfolders">
+              <a href="#">Jazz "&agrave; la carte"</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a href="docker_jazz_nlp.html">Jazz with NLP tools</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="docker_jazz_ocr.html">Jazz OCR demo</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="docker_jazz_speech.html">Jazz speech processing</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">Jazz with R</a>
+      <ul>
+          
+          
+          
+          <li><a href="rjazz_walkthough_client_only.html">A quick R walkthough without a Jazz server</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="rjazz_walkthough_with_server.html">A quick R walkthough connecting to a Jazz server</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="rjazz_advanced.html">Advanced R usage</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">Jazz with Python</a>
+      <ul>
+          
+          
+          
+          <li><a href="pyjazz_walkthough_client_only.html">A quick Python walkthough without a Jazz server</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="pyjazz_walkthough_with_server.html">A quick Python walkthough connecting to a Jazz server</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="pyjazz_advanced.html">Advanced Python usage</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">Jazz via the REST API</a>
+      <ul>
+          
+          
+          
+          <li><a href="rest_just_a_browser.html">Jazz with just a web browser</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="rest_reference.html">The Jazz REST API Reference</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">Bebop</a>
+      <ul>
+          
+          
+          
+          <li><a href="bebop_fundamentals.html">Bebop Fundamentals</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="bebop_simple_on_local_blocks.html">Simple Bebop on local blocks</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="bebop_reference.html">Bebop Reference</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">Multiblock Abstractions</a>
+      <ul>
+          
+          
+          
+          <li><a href="bebop_multiblock_file_like_structures.html">Extending Bebop to File-like Structures</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="bebop_multiblock_data_sources.html">Extending Bebop to Data Sources</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="bebop_multiblock_data_frames.html">Extending Bebop to Data Frames</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">Multinode Abstractions</a>
+      <ul>
+          
+          
+          
+          <li><a href="bebop_multinode_principles.html">Distribution Principles</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">Standard Core Functionality</a>
+      <ul>
+          
+          
+          
+          <li><a href="sc_00_reference.html">Standard Core Reference</a></li>
+          
+          
+          
+          <li class="subfolders">
+              <a href="#">SC Reference</a>
+              <ul>
+                  
+                  
+                  
+                  <li class="active"><a href="sc_01_block_types.html">SC Block Types</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sc_02_basic_functions.html">Basic Manipulation, initialize, copy and serialize</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sc_03_arithmetic.html">Arithmetic Operations</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sc_04_math.html">Math Functions</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sc_05_strings.html">String Operations</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sc_06_logic.html">Logic Operations</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sc_07_program_flow.html">Program Flow</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sc_08_file_like.html">SC Support for File-like Structures</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sc_09_data_sources.html">SC Support for Data Sources</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sc_10_data_frames.html">SC Support for Data Frames</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sc_11_multi_node.html">SC Support for Multinode</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sc_12_functions.html">Functions in Bebop</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sc_13_functions_in_r.html">Functions in R</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="sc_14_functions_in_python.html">Functions in Python</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">Extending the Core</a>
+      <ul>
+          
+          
+          
+          <li><a href="customization_scripting.html">Extending Jazz in Bebop, R and Python</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="customization_cpp.html">Extending Jazz in C++</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="customization_docker.html">Deploying Jazz Docker Images with flavors</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="contributing_to_jazz.html">Contributing to Jazz</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">SC Block Types</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+    <div class="summary">Jazz Standard Core - Block Types</div>
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
+
+    
+
+
+    
+
+
+    
+
+  <h2 id="overview">Overview</h2>
+<p>One of the most interesting features of Jekyll is the ability to separate out data elements from formatting elements using a combination of YAML and Liquid. This setup is most common when you’re trying to create a table of contents.</p>
+
+<p>Not many Jekyll themes actually have a robust table of contents, which is critical when you are creating any kind of documentation or reference material that has a lot of pages.</p>
+
+<p>Then, using Liquid syntax for loops and conditions, you access all of those values from the data file and splice them into HTML formatting. This will become more clear as we go through some examples.</p>
+
+<h2 id="yaml-overview">YAML overview</h2>
+
+<p>Rather than just jump into YAML at the most advanced level, I’m going to start from ground zero with an introduction to YAML and how you access basic values in your data files using Jekyll.</p>
+
+<p>Note that you don’t actually have to use Jekyll when using YAML. YAML is used in a lot of other systems and is a format completely independent of Jekyll. However, because Jekyll uses Liquid, it gives you a lot of power to parse through your YAML data and make use of it.</p>
+
+<p>YAML itself doesn’t do anything on its own — it’s just a way of storing your data in a specific structure that other utilities can parse.</p>
+
+<h2 id="yaml-basics">YAML basics</h2>
+<p>You can read about YAML from a lot of different sources. Here are some basic characteristics of YAML:</p>
+
+<ul>
+  <li>YAML (“YAML Ain’t Markup Language”) doesn’t use markup tags. This means you won’t see any kind of angle brackets. It uses white space as a way to form the structure. This makes YAML much more human readable.</li>
+  <li>Because YAML does use white space for the structure, YAML is extremely picky about the exactness of spaces. If you have just one extra space somewhere, it can cause the whole file to be invalid.</li>
+  <li>For each new level in YAML, you indent two spaces. Each level provides a different access point for the content. You use dot notation to access each new level.</li>
+  <li>Because tabs are not universally implemented the same way in editors, a tab might not equate to two spaces. In general, it’s best to manually type two spaces to create a new level in YAML.</li>
+  <li>YAML has several types of elements. The most common are mappings and lists. A mapping is simply a key-value pair. A list is a sequence of items. List start with hyphens.</li>
+  <li>Items at each level can have various properties. You can create conditions based on the properties.</li>
+  <li>You can use “for” loops to iterate through a list.</li>
+</ul>
+
+<p>I realize a lot of this vague and general; however, it will become a lot more clear as we go through some concrete examples.</p>
+
+<p>In the _data/mydoc folder, there’s a file called samplelist.yml. All of these examples come from that file.</p>
+
+<h2 id="example-1-simple-mapping">Example 1: Simple mapping</h2>
+
+<p><strong>YAML:</strong></p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">name</span><span class="pi">:</span>
+  <span class="na">husband</span><span class="pi">:</span> <span class="s">Tom</span>
+  <span class="na">wife</span><span class="pi">:</span> <span class="s">Shannon</span>
+</code></pre></div></div>
+
+<p><strong>Markdown + Liquid:</strong></p>
+
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;p&gt;Husband's name: <span class="p">{{</span><span class="nv">site</span><span class="p">.</span><span class="nv">data</span><span class="p">.</span><span class="nv">samplelist</span><span class="p">.</span><span class="nv">name</span><span class="p">.</span><span class="nv">husband</span><span class="p">}}</span>&lt;/p&gt;
+&lt;p&gt;Wife's name: <span class="p">{{</span><span class="nv">site</span><span class="p">.</span><span class="nv">data</span><span class="p">.</span><span class="nv">samplelist</span><span class="p">.</span><span class="nv">name</span><span class="p">.</span><span class="nv">wife</span><span class="p">}}</span>&lt;/p&gt;
+</code></pre></div></div>
+
+<p>Notice that in order to access the data file, you use <code class="highlighter-rouge">site.data.samplelist</code>. <code class="highlighter-rouge">mydoc</code> is the folder, and <code class="highlighter-rouge">samplelist</code> is the name of the YAML file.</p>
+
+<p><strong>Result:</strong></p>
+
+<div class="result">
+<p>Husband's name: </p>
+<p>Wife's name: </p>
+</div>
+
+<h2 id="example-2-line-breaks">Example 2: Line breaks</h2>
+
+<p><strong>YAML:</strong></p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">feedback</span><span class="pi">:</span> <span class="pi">&gt;</span>
+  <span class="no">This is my feedback to you.</span>
+  <span class="no">Even if I include linebreaks here,</span>
+  <span class="no">all of the linebreaks will be removed when the value is inserted.</span>
+
+<span class="na">block</span><span class="pi">:</span> <span class="pi">|</span>
+    <span class="no">This pipe does something a little different.</span>
+    <span class="no">It preserves the breaks.</span>
+    <span class="no">This is really helpful for code samples,</span>
+    <span class="no">since you can format the code samples with</span>
+       <span class="no">the appropriate</span>
+</code></pre></div></div>
+
+<p><strong>Markdown:</strong></p>
+
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;p&gt;&lt;b&gt;Feedback&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;<span class="p">{{</span><span class="nv">site</span><span class="p">.</span><span class="nv">data</span><span class="p">.</span><span class="nv">samplelist</span><span class="p">.</span><span class="nv">feedback</span><span class="p">}}</span>&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Block&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;<span class="p">{{</span><span class="nv">site</span><span class="p">.</span><span class="nv">data</span><span class="p">.</span><span class="nv">samplelist</span><span class="p">.</span><span class="nv">block</span><span class="p">}}</span>&lt;/p&gt;
+</code></pre></div></div>
+
+<p><strong>Result:</strong></p>
+
+<div class="result">
+<p><b>Feedback</b></p>
+<p></p>
+
+<p><b>Block</b></p>
+<p></p>
+</div>
+
+<p>The right angle bracket <code class="highlighter-rouge">&gt;</code> allows you to put the value on the next lines (which must be indented). Even if you create a line break, the output will remove all of those line breaks, creating one paragraph.</p>
+
+<p>The pipe <code class="highlighter-rouge">|</code> functions like the angle bracket in that it allows you to put the values for the mapping on the next lines (which again must be indented). However, the pipe does preserve all of the line breaks that you use. This makes the pipe method ideal for storing code samples.</p>
+
+<h2 id="example-3-simple-list">Example 3: Simple list</h2>
+
+<p><strong>YAML</strong>:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">bikes</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">mountain bikes</span>
+  <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">road bikes</span>
+  <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">hybrid bikes</span>
+</code></pre></div></div>
+
+<p><strong>Markdown + Liquid:</strong></p>
+
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;ul&gt;
+<span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span>item<span class="w"> </span>in<span class="w"> </span>site.data.samplelist.bikes<span class="w"> </span><span class="p">%}</span>
+&lt;li&gt;<span class="p">{{</span><span class="nv">item</span><span class="p">.</span><span class="nv">title</span><span class="p">}}</span>&lt;/li&gt;
+<span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
+&lt;/ul&gt;
+</code></pre></div></div>
+
+<p><strong>Result:</strong></p>
+
+<div class="result">
+<ul>
+
+</ul>
+</div>
+
+<p>Here we use a “for” loop to get each item in the bikes list. By using <code class="highlighter-rouge">.title</code> we only get the <code class="highlighter-rouge">title</code> property from each list item.</p>
+
+<h2 id="example-4-list-items">Example 4: List items</h2>
+
+<p><strong>YAML:</strong></p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">salesteams</span><span class="pi">:</span>
+<span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">Regions</span>
+ <span class="na">subfolderitems</span><span class="pi">:</span>
+   <span class="pi">-</span> <span class="na">location</span><span class="pi">:</span> <span class="s">US</span>
+   <span class="pi">-</span> <span class="na">location</span><span class="pi">:</span> <span class="s">Spain</span>
+   <span class="pi">-</span> <span class="na">location</span><span class="pi">:</span> <span class="s">France</span>
+</code></pre></div></div>
+
+<p><strong>Markdown + Liquid:</strong></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% for item in site.data.samplelist.salesteams %}
+&lt;h3&gt;{{item.title}}&lt;/h3&gt;
+&lt;ul&gt;
+{% for entry in item.subitems %}
+&lt;li&gt;{{entry.location}}&lt;/li&gt;
+{% endfor %}
+&lt;/ul&gt;
+{% endfor %}
+</code></pre></div></div>
+
+<p><strong>Result:</strong></p>
+
+<div class="result">
+
+</div>
+
+<p>Hopefully you can start to see how to wrap more complex formatting around the YAML content. When you use a “for” loop, you choose the variable of what to call the list items. The variable you choose to use becomes how you access the properties of each list item. In this case, I decided to use the variable <code class="highlighter-rouge">item</code>. In order to get each property of the list item, I used <code class="highlighter-rouge">item.subitems</code>.</p>
+
+<p>Each list item starts with the hyphen <code class="highlighter-rouge">–</code>.  You cannot directly access the list item by referring to a mapping. You only loop through the list items. If you wanted to access the list item, you would have to use something like <code class="highlighter-rouge">[1]</code>, which is how you access the position in an array. You cannot access a list item like you can access a mapping key.</p>
+
+<h2 id="example-5-table-of-contents">Example 5: Table of contents</h2>
+
+<p><strong>YAML:</strong></p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">toc</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">Group 1</span>
+    <span class="na">subfolderitems</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="na">page</span><span class="pi">:</span> <span class="s">Thing 1</span>
+      <span class="pi">-</span> <span class="na">page</span><span class="pi">:</span> <span class="s">Thing 2</span>
+      <span class="pi">-</span> <span class="na">page</span><span class="pi">:</span> <span class="s">Thing 3</span>
+  <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">Group 2</span>
+    <span class="na">subfolderitems</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="na">page</span><span class="pi">:</span> <span class="s">Piece 1</span>
+      <span class="pi">-</span> <span class="na">page</span><span class="pi">:</span> <span class="s">Piece 2</span>
+      <span class="pi">-</span> <span class="na">page</span><span class="pi">:</span> <span class="s">Piece 3</span>
+  <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">Group 3</span>
+    <span class="na">subfolderitems</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="na">page</span><span class="pi">:</span> <span class="s">Widget 1</span>
+      <span class="pi">-</span> <span class="na">page</span><span class="pi">:</span> <span class="s">Widget 2 it's</span>
+      <span class="pi">-</span> <span class="na">page</span><span class="pi">:</span> <span class="s">Widget 3</span>
+</code></pre></div></div>
+
+<p><strong>Markdown + Liquid:</strong></p>
+
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span>item<span class="w"> </span>in<span class="w"> </span>site.data.samplelist.toc<span class="w"> </span><span class="p">%}</span>
+&lt;h3&gt;<span class="p">{{</span><span class="nv">item</span><span class="p">.</span><span class="nv">title</span><span class="p">}}</span>&lt;/h3&gt;
+&lt;ul&gt;
+<span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span>entry<span class="w"> </span>in<span class="w"> </span>item.subfolderitems<span class="w"> </span><span class="p">%}</span>
+&lt;li&gt;<span class="p">{{</span><span class="nv">entry</span><span class="p">.</span><span class="nv">page</span><span class="p">}}</span>&lt;/li&gt;
+<span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
+&lt;/ul&gt;
+<span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
+</code></pre></div></div>
+
+<p><strong>Result:</strong></p>
+
+<div class="result">
+
+</div>
+
+<p>This example is similar to the previous one, but it’s more developed as a real table of contents.</p>
+
+<h2 id="example-6-variables">Example 6: Variables</h2>
+
+<p><strong>YAML:</strong></p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">something</span><span class="pi">:</span> <span class="nl">&amp;hello</span> <span class="s">Greetings earthling!</span>
+<span class="na">myref</span><span class="pi">:</span> <span class="nv">*hello</span>
+</code></pre></div></div>
+
+<p><strong>Markdown:</strong></p>
+
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{{</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">data</span><span class="p">.</span><span class="nv">samplelist</span><span class="p">.</span><span class="nv">myref</span><span class="w"> </span><span class="p">}}</span>
+</code></pre></div></div>
+
+<p><strong>Result:</strong></p>
+
+<div class="result">
+
+</div>
+
+<p>This example is notably different. Here I’m showing how to reuse content in YAML file. If you have the same value that you want to repeat in other mappings, you can create a variable using the <code class="highlighter-rouge">&amp;</code> symbol. Then when you want to refer to that variable’s value, you use an asterisk <code class="highlighter-rouge">*</code> followed by the name of the variable.</p>
+
+<p>In this case the variable is <code class="highlighter-rouge">&amp;hello</code> and its value is <code class="highlighter-rouge">Greetings earthling!</code> In order to reuse that same value, you just type <code class="highlighter-rouge">*hello</code>.</p>
+
+<p>I don’t use variables much, but that’s not to say they couldn’t be highly useful. For example, let’s say you put name of the product in parentheses after each title (because you have various products that you’re providing documentation for in the same site). You could create a variable for that product name so that if you change how you’re referring to it, you wouldn’t have to change all instances of it in your YAML file.</p>
+
+<h2 id="example-7-positions-in-lists">Example 7: Positions in lists</h2>
+
+<p><strong>YAML:</strong></p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">about</span><span class="pi">:</span>
+ <span class="pi">-</span> <span class="s">zero</span>
+ <span class="pi">-</span> <span class="s">one</span>
+ <span class="pi">-</span> <span class="s">two</span>
+ <span class="pi">-</span> <span class="s">three</span>
+</code></pre></div></div>
+
+<p><strong>Markdown:</strong></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{{ site.data.samplelist.about[0] }}
+</code></pre></div></div>
+
+<p><strong>Result:</strong></p>
+<div class="result">
+
+</div>
+
+<p>You can see that I’m accessing one of the items in the list using <code class="highlighter-rouge">[0]</code>. This refers to the position in the array where a list item is. Like most programming languages, you start counting at zero, not one.</p>
+
+<p>I wanted to include this example because it points to the challenge in getting a value from a specific list item. You can’t just call out a specific item in a list like you can with a mapping. This is why you usually iterate through the list items using a “for” loop.</p>
+
+<h2 id="example-8-properties-from-list-items-at-specific-positions">Example 8: Properties from list items at specific positions</h2>
+
+<p><strong>YAML:</strong></p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">numbercolors</span><span class="pi">:</span>
+ <span class="pi">-</span> <span class="na">zero</span><span class="pi">:</span>
+   <span class="na">properties</span><span class="pi">:</span> <span class="s">red</span>
+ <span class="pi">-</span> <span class="na">one</span><span class="pi">:</span>
+   <span class="na">properties</span><span class="pi">:</span> <span class="s">yellow</span>
+ <span class="pi">-</span> <span class="na">two</span><span class="pi">:</span>
+   <span class="na">properties</span><span class="pi">:</span> <span class="s">green</span>
+ <span class="pi">-</span> <span class="na">three</span><span class="pi">:</span>
+   <span class="na">properties</span><span class="pi">:</span> <span class="s">blue</span>
+</code></pre></div></div>
+
+<p><strong>Markdown + Liquid:</strong></p>
+
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{{</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">data</span><span class="p">.</span><span class="nv">samplelist</span><span class="p">.</span><span class="nv">numbercolors</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nv">properties</span><span class="w"> </span><span class="p">}}</span>
+</code></pre></div></div>
+
+<p><strong>Result:</strong></p>
+<div class="result">
+
+</div>
+
+<p>This example is similar as before; however, in this case were getting a specific property from the list item in the zero position.</p>
+
+<h2 id="example-9-conditions">Example 9: Conditions</h2>
+
+<p><strong>YAML:</strong></p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">mypages</span><span class="pi">:</span>
+<span class="pi">-</span> <span class="na">section1</span><span class="pi">:</span> <span class="s">Section 1</span>
+  <span class="na">audience</span><span class="pi">:</span> <span class="s">developers</span>
+  <span class="na">product</span><span class="pi">:</span> <span class="s">acme</span>
+  <span class="na">url</span><span class="pi">:</span> <span class="s">facebook.com</span>
+<span class="pi">-</span> <span class="na">section2</span><span class="pi">:</span> <span class="s">Section 2</span>
+  <span class="na">audience</span><span class="pi">:</span> <span class="s">writers</span>
+  <span class="na">product</span><span class="pi">:</span> <span class="s">acme</span>
+  <span class="na">url</span><span class="pi">:</span> <span class="s">google.com</span>
+<span class="pi">-</span> <span class="na">section3</span><span class="pi">:</span> <span class="s">Section 3</span>
+  <span class="na">audience</span><span class="pi">:</span> <span class="s">developers</span>
+  <span class="na">product</span><span class="pi">:</span> <span class="s">acme</span>
+  <span class="na">url</span><span class="pi">:</span> <span class="s">amazon.com</span>
+<span class="pi">-</span> <span class="na">section4</span><span class="pi">:</span> <span class="s">Section 4</span>
+  <span class="na">audience</span><span class="pi">:</span> <span class="s">writers</span>
+  <span class="na">product</span><span class="pi">:</span> <span class="s">gizmo</span>
+  <span class="na">url</span><span class="pi">:</span> <span class="s">apple.com</span>
+<span class="pi">-</span> <span class="na">section5</span><span class="pi">:</span> <span class="s">Section 5</span>
+  <span class="na">audience</span><span class="pi">:</span> <span class="s">writers</span>
+  <span class="na">product</span><span class="pi">:</span> <span class="s">acme</span>
+  <span class="na">url</span><span class="pi">:</span> <span class="s">microsoft.com</span>
+</code></pre></div></div>
+
+<p><strong>Markdown + Liquid:</strong></p>
+
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;ul&gt;
+<span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span>sec<span class="w"> </span>in<span class="w"> </span>site.data.samplelist.mypages<span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">sec</span><span class="p">.</span><span class="nv">audience</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"writers"</span><span class="w"> </span><span class="p">%}</span>
+&lt;li&gt;<span class="p">{{</span><span class="nv">sec</span><span class="p">.</span><span class="nv">url</span><span class="p">}}</span>&lt;/li&gt;
+<span class="p">{%</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
+&lt;/ul&gt;
+
+</code></pre></div></div>
+
+<p><strong>Result:</strong></p>
+<div class="result">
+<ul>
+
+</ul>
+</div>
+
+<p>This example shows how you can use conditions in order to selectively get the YAML content. In your table of contents, you might have a lot of different pages. However, you might only want to get the pages for a particular audience. Conditions lets you get only the items that meet those audience attributes.</p>
+
+<p>Now let’s adjust the condition just a little. Let’s add a second condition so that the <code class="highlighter-rouge">audience</code> property has to be <code class="highlighter-rouge">writers</code> and the <code class="highlighter-rouge">product</code> property has to be gizmo. This is how you would write it:</p>
+
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;ul&gt;
+<span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span>sec<span class="w"> </span>in<span class="w"> </span>site.data.samplelist.mypages<span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">sec</span><span class="p">.</span><span class="nv">audience</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"writers"</span><span class="w"> </span><span class="nv">and</span><span class="w"> </span><span class="nv">sec</span><span class="p">.</span><span class="nv">product</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"gizmo"</span><span class="w"> </span><span class="p">%}</span>
+&lt;li&gt;<span class="p">{{</span><span class="nv">sec</span><span class="p">.</span><span class="nv">url</span><span class="p">}}</span>&lt;/li&gt;
+<span class="p">{%</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
+&lt;/ul&gt;
+</code></pre></div></div>
+
+<p>And here is the result:</p>
+
+<div class="result">
+<ul>
+
+</ul>
+</div>
+
+
+
+    <div class="tags">
+        
+        <b>Tags: </b>
+        
+        
+        
+        
+        
+        
+        
+    </div>
+
+
+
+
+</div>
+
+
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2018 kaalam.ai. All rights reserved. <br />
+ Site last generated: Mar 4, 2018 <br />
+<p><img src="images/company_logo.png" alt="Company logo"/></p>
+                </div>
+            </div>
+</footer>
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
