@@ -1,6 +1,7 @@
 var searchData=
 [
   ['main',['main',['../jazz__main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'jazz_main.cpp']]],
+  ['main_2edox',['main.dox',['../main_8dox.html',1,'']]],
   ['main_5fserver_5fstart',['main_server_start',['../jazz__main_8cpp.html#a5178c6d4a3fa8b660a2a05ab196f03ba',1,'jazz_main.cpp']]],
   ['max_5f_5f',['MAX__',['../jazz__commons_8h.html#a78c63597e9e22fcf5f2cf0ef98f79de2',1,'jazz_commons.h']]],
   ['max_5falias_5fnamelength',['MAX_ALIAS_NAMELENGTH',['../jazz__commons_8h.html#ab88ec790f9e68430f19b781d5be5c494',1,'jazz_commons.h']]],
