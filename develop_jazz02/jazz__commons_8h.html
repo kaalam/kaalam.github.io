@@ -80,10 +80,9 @@ $(function() {
 <code>#include &lt;sys/socket.h&gt;</code><br />
 <code>#include &lt;sys/types.h&gt;</code><br />
 <code>#include &lt;unistd.h&gt;</code><br />
-<code>#include &quot;src/include/microhttpd.h&quot;</code><br />
+<code>#include &quot;microhttpd.h&quot;</code><br />
 <code>#include &lt;math.h&gt;</code><br />
-<code>#include &quot;src/include/auto_version.h&quot;</code><br />
-<code>#include &quot;src/include/auto_linux_platform.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="jazz__platform_8h_source.html">src/include/jazz_platform.h</a>&quot;</code><br />
 </div>
 <p><a href="jazz__commons_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -1418,7 +1417,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="jazz__commons_8h.html#ac901a7e8dab2a4c2b5de3462cf108837">jazzAlloc</a>((<span class="keywordtype">void</span> * &amp;)atpt, RAM_ALLOC_R_CHARSXP, 0, (<span class="keywordtype">char</span> *) str); \</div><div class="line">        jazzPtrTrack((<span class="keywordtype">void</span> * &amp;)atpt, RAM_ALLOC_R_CHARSXP, <a class="code" href="jazz__commons_8h.html#a5b1310c6089d980021e349da37f2488e">RAM_TRACK_LEARN</a>)</div><div class="ttc" id="jazz__commons_8h_html_a5b1310c6089d980021e349da37f2488e"><div class="ttname"><a href="jazz__commons_8h.html#a5b1310c6089d980021e349da37f2488e">RAM_TRACK_LEARN</a></div><div class="ttdeci">#define RAM_TRACK_LEARN</div><div class="ttdoc">Learn a new (atpt, typ) and set it as allocated. </div><div class="ttdef"><b>Definition:</b> jazz_commons.h:248</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="jazz__commons_8h.html#ac901a7e8dab2a4c2b5de3462cf108837">jazzAlloc</a>((<span class="keywordtype">void</span> * &amp;)atpt, RAM_ALLOC_R_CHARSXP, 0, (<span class="keywordtype">char</span> *) str); \</div><div class="line">        jazzPtrTrack((<span class="keywordtype">void</span> * &amp;)atpt, RAM_ALLOC_R_CHARSXP, <a class="code" href="jazz__commons_8h.html#a5b1310c6089d980021e349da37f2488e">RAM_TRACK_LEARN</a>)</div><div class="ttc" id="jazz__commons_8h_html_a5b1310c6089d980021e349da37f2488e"><div class="ttname"><a href="jazz__commons_8h.html#a5b1310c6089d980021e349da37f2488e">RAM_TRACK_LEARN</a></div><div class="ttdeci">#define RAM_TRACK_LEARN</div><div class="ttdoc">Learn a new (atpt, typ) and set it as allocated. </div><div class="ttdef"><b>Definition:</b> jazz_commons.h:247</div></div>
 <div class="ttc" id="jazz__commons_8h_html_ac901a7e8dab2a4c2b5de3462cf108837"><div class="ttname"><a href="jazz__commons_8h.html#ac901a7e8dab2a4c2b5de3462cf108837">jazzAlloc</a></div><div class="ttdeci">bool jazzAlloc(void *&amp;ptr, int alloc_type, int size, char *pstr=NULL)</div><div class="ttdoc">Implementation of the ONLY entry point for RAM allocation. This is what JAZZALLOC() and JAZZFREE() ca...</div><div class="ttdef"><b>Definition:</b> jazz_alloc.cpp:76</div></div>
 </div><!-- fragment -->
 <p>Allocate an R string element RAM_ALLOC_R_CHARSXP. </p>
