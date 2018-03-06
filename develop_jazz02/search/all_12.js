@@ -8,7 +8,6 @@ var searchData=
   ['set_5flmdb_5ffromtext',['set_lmdb_fromtext',['../classjzzBLOCKCONV.html#ac98422ec1325064477dd2fe8889834f0',1,'jzzBLOCKCONV']]],
   ['set_5fmime_5fto_5fblock',['set_mime_to_block',['../classjazzWebSource.html#ae12c190a9fe355e61f89104160270f28',1,'jazzWebSource']]],
   ['set_5furl_5fto_5fblock',['set_url_to_block',['../classjazzWebSource.html#a5c7c2f8a8cd66b8fc50219760a316c4a',1,'jazzWebSource']]],
-  ['signalhandler_5fsighup',['signalHandler_SIGHUP',['../jazz__main_8cpp.html#aa73e694ddde5f6edd13e45710b4a6677',1,'jazz_main.cpp']]],
   ['signalhandler_5fsigterm',['signalHandler_SIGTERM',['../jazz__main_8cpp.html#aca93ea4bfc86dada53a9dfcc7797f0a3',1,'jazz_main.cpp']]],
   ['signature',['signature',['../structR__binary.html#a965be7c7c710e18ea3bb89bdd6f8537d',1,'R_binary::signature()'],['../structRStr__header.html#a284a841adf596f73f46fb701275f5667',1,'RStr_header::signature()'],['../jazz__blockconv_8h.html#a7a745885960cf41a1a530159b3aa41ed',1,'signature():&#160;jazz_blockconv.h']]],
   ['size',['size',['../structjzzBlockHeader.html#a880482ea2ddf3e8ef4588706f616dbbe',1,'jzzBlockHeader']]],

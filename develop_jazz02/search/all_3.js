@@ -7,7 +7,6 @@ var searchData=
   ['close_5fall_5fsources',['close_all_sources',['../classjzzBLOCKS.html#a186f59ea73fd421b349ddd5e3b7cddbf',1,'jzzBLOCKS']]],
   ['close_5fall_5fwebsources',['close_all_websources',['../classjazzWebSource.html#a6979d3a5ba688bb05ac5e69f58023d42',1,'jazzWebSource']]],
   ['cmnd_5fhelp',['CMND_HELP',['../jazz__main_8cpp.html#a32c3b827931ad883bf0d4e18d79eac03',1,'jazz_main.cpp']]],
-  ['cmnd_5freload',['CMND_RELOAD',['../jazz__main_8cpp.html#ae566b9e115eefd4852781fe406c8a49f',1,'jazz_main.cpp']]],
   ['cmnd_5fstart',['CMND_START',['../jazz__main_8cpp.html#a71614c145c330082129fa1709b212526',1,'jazz_main.cpp']]],
   ['cmnd_5fstatus',['CMND_STATUS',['../jazz__main_8cpp.html#a81477e191d8e50592d5e201a69dc0492',1,'jazz_main.cpp']]],
   ['cmnd_5fstop',['CMND_STOP',['../jazz__main_8cpp.html#ae7fb09d0fc2ee288779d4734f7510901',1,'jazz_main.cpp']]],
