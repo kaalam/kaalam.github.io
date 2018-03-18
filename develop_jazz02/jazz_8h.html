@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Jazz 0.2+: jazz_logger.cpp File Reference</title>
+<title>Jazz 0.2+: jazz.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,44 +59,66 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_430f81bf3057a797870c5bf709d3e9bb.html">Jazz</a></li><li class="navelem"><a class="el" href="dir_970248c0e167d637c79cc313be7174ec.html">server</a></li><li class="navelem"><a class="el" href="dir_5fc8f4be9411809bf801ba630f4604fb.html">src</a></li><li class="navelem"><a class="el" href="dir_d61307b977a6abb8ab8dd474a110f55a.html">jazz01_utils</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_430f81bf3057a797870c5bf709d3e9bb.html">Jazz</a></li><li class="navelem"><a class="el" href="dir_970248c0e167d637c79cc313be7174ec.html">server</a></li><li class="navelem"><a class="el" href="dir_5fc8f4be9411809bf801ba630f4604fb.html">src</a></li><li class="navelem"><a class="el" href="dir_b7f7b1e0e61e7519df686d5b50d9a8d9.html">include</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
-<div class="title">jazz_logger.cpp File Reference</div>  </div>
+<div class="title">jazz.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;chrono&gt;</code><br />
-<code>#include &lt;fstream&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;signal.h&gt;</code><br />
-<code>#include &lt;stdarg.h&gt;</code><br />
-<code>#include &lt;unistd.h&gt;</code><br />
-<code>#include &lt;sys/syscall.h&gt;</code><br />
+<code>#include &lt;map&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;sys/socket.h&gt;</code><br />
 <code>#include &lt;sys/types.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="jazz01__commons_8h_source.html">src/include/jazz01_commons.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="jazz__blocks_8h_source.html">src/jazz01_blocks/jazz_blocks.h</a>&quot;</code><br />
-</div><table class="memberdecls">
+<code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &quot;microhttpd.h&quot;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="jazz__platform_8h_source.html">src/include/jazz_platform.h</a>&quot;</code><br />
+</div>
+<p><a href="jazz_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a3f19267d6d0808dfc50809dde0a6947e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__logger_8cpp.html#a3f19267d6d0808dfc50809dde0a6947e">LEFTAUTO</a>&#160;&#160;&#160;28</td></tr>
-<tr class="separator:a3f19267d6d0808dfc50809dde0a6947e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a61c24fd07097ce8715f7e10f7152e3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz_8h.html#a5a61c24fd07097ce8715f7e10f7152e3">MHD_PLATFORM_H</a></td></tr>
+<tr class="memdesc:a5a61c24fd07097ce8715f7e10f7152e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Basic JAZZ types and definitions.  <a href="#a5a61c24fd07097ce8715f7e10f7152e3">More...</a><br /></td></tr>
+<tr class="separator:a5a61c24fd07097ce8715f7e10f7152e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5306b984017f4ece884aedf9ad455c6e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz_8h.html#a5306b984017f4ece884aedf9ad455c6e">jzz_IG_JAZZ</a></td></tr>
+<tr class="separator:a5306b984017f4ece884aedf9ad455c6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a3f19267d6d0808dfc50809dde0a6947e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f19267d6d0808dfc50809dde0a6947e">&#9670;&nbsp;</a></span>LEFTAUTO</h2>
+<a id="a5306b984017f4ece884aedf9ad455c6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5306b984017f4ece884aedf9ad455c6e">&#9670;&nbsp;</a></span>jzz_IG_JAZZ</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define LEFTAUTO&#160;&#160;&#160;28</td>
+          <td class="memname">#define jzz_IG_JAZZ</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5a61c24fd07097ce8715f7e10f7152e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a61c24fd07097ce8715f7e10f7152e3">&#9670;&nbsp;</a></span>MHD_PLATFORM_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MHD_PLATFORM_H</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Basic JAZZ types and definitions. </p>
+<p>&lt; This file contains constants, codeless types and API-level classes. </p>
 
 </div>
 </div>
