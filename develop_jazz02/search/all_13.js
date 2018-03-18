@@ -1,7 +1,7 @@
 var searchData=
 [
   ['ten_5fbits_5frange',['TEN_BITS_RANGE',['../jazz01__commons_8h.html#a5ec787a625ec7e4c8d7207588453134e',1,'jazz01_commons.h']]],
-  ['tenbitds',['tenbitDS',['../jazz__api_8cpp.html#ac703a2ba73f4cb502674c494550aedbf',1,'jazz_api.cpp']]],
+  ['tenbitds',['tenbitDS',['../jazz01__api_8cpp.html#ac703a2ba73f4cb502674c494550aedbf',1,'jazz01_api.cpp']]],
   ['tenbits',['tenbits',['../jazz01__commons_8h.html#a564eceb2391645b02f812e47cab8e767',1,'jazz01_commons.h']]],
   ['time_5fpoint',['time_point',['../jazz01__commons_8h.html#a446a3f204afe93a99c1c74177a7d70cc',1,'jazz01_commons.h']]],
   ['translate_5fblock_5ffrom_5fr',['translate_block_FROM_R',['../classjzzBLOCKCONV.html#a70e8622aa3f9b65738a401c7105068bc',1,'jzzBLOCKCONV']]],

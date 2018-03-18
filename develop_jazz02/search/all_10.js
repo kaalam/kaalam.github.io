@@ -2,7 +2,7 @@ var searchData=
 [
   ['param',['param',['../structapifunctionParam.html#a31fcc8c8492f4f21275744f9573a4f38',1,'apifunctionParam']]],
   ['parameters',['parameters',['../structparsedURL.html#a22d9c27fd6688217f84f2c2287ff344d',1,'parsedURL']]],
-  ['parse_5farg',['parse_arg',['../jazz__main_8cpp.html#aa19155bc6c9681c7963bbd27e7f8afe7',1,'jazz_main.cpp']]],
+  ['parse_5farg',['parse_arg',['../jazz01__main_8cpp.html#aa19155bc6c9681c7963bbd27e7f8afe7',1,'jazz01_main.cpp']]],
   ['parse_5furl',['parse_url',['../classjzzAPI.html#ac9efc81bcc246ddf59cf1e948ff2f6f8',1,'jzzAPI']]],
   ['parsedurl',['parsedURL',['../structparsedURL.html',1,'']]],
   ['parsedurlhea',['parsedURLhea',['../structparsedURLhea.html',1,'']]],
