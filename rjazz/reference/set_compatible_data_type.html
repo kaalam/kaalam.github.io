@@ -29,7 +29,8 @@
   
 <meta property="og:title" content="Change the type of a data block to a binary compatible type — set_compatible_data_type" />
 
-<meta property="og:description" content="Changes the type of a data block to a binary compatible type without changing its contents. This is only valid between integer types (integer, sorted
+<meta property="og:description" content="Changes the type of a data block to a binary compatible type without changing its contents.
+This is only valid between integer types (integer, sorted
 and categorical) and real types (double and time). This can also be used to change within raw types." />
 <meta name="twitter:card" content="summary" />
 <!-- mathjax -->
@@ -86,7 +87,8 @@ and categorical) and real types (double and time). This can also be used to chan
     </div>
 
     
-    <p>Changes the type of a data block to a binary compatible type without changing its contents. This is only valid between integer types (integer, sorted
+    <p>Changes the type of a data block to a binary compatible type without changing its contents.
+This is only valid between integer types (integer, sorted
 and categorical) and real types (double and time). This can also be used to change within raw types.</p>
     
 
@@ -97,19 +99,23 @@ and categorical) and real types (double and time). This can also be used to chan
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
       <th>source</th>
-      <td><p>The Jazz source. Jazz persistence is organized in sources. All sources except 'sys' and 'www' are user defined. Sources are 15 char long alphanumeric or underscore.</p></td>
+      <td><p>The Jazz source. Jazz persistence is organized in sources. All sources except 'sys' and 'www'
+are user defined. Sources are 15 char long alphanumeric or underscore.</p></td>
     </tr>
     <tr>
       <th>block_key</th>
-      <td><p>The key identifying the block. Keys are 15 alphanumeric or underscore characters. They can be user defined or created by new_key(). Also, meshes use block keys internally.</p></td>
+      <td><p>The key identifying the block. Keys are 15 alphanumeric or underscore characters. They can
+be user defined or created by new_key(). Also, meshes use block keys internally.</p></td>
     </tr>
     <tr>
       <th>type</th>
-      <td><p>The new type of the block. Must be binary compatible with the exiting type. BLOCKTYPE_C_INTEGER to BLOCKTYPE_C_FACTOR or BLOCKTYPE_C_GRADE and BLOCKTYPE_C_REAL to BLOCKTYPE_C_TIMESEC.</p></td>
+      <td><p>The new type of the block. Must be binary compatible with the exiting type. BLOCKTYPE_C_INTEGER
+to BLOCKTYPE_C_FACTOR or BLOCKTYPE_C_GRADE and BLOCKTYPE_C_REAL to BLOCKTYPE_C_TIMESEC.</p></td>
     </tr>
     <tr>
       <th>host</th>
-      <td><p>(Optional) the name of the jazz server host (including the port). Usually set just once via set_jazz_host().</p></td>
+      <td><p>(Optional) the name of the jazz server host (including the port). Usually set just once via
+set_jazz_host().</p></td>
     </tr>
     </table>
     
@@ -149,7 +155,8 @@ create_block_seq('demo_types', 'blk_2', 3L, 6)
 
 get_block_attributes('demo_types', 'blk_2')
 
-# The block is interpreted as data by the server, it is an integer and can be converted to any integer type.
+# The block is interpreted as data by the server, it is an integer and can be converted to
+any integer type.
 set_compatible_data_type('demo_types', 'blk_2', type_const[['BLOCKTYPE_C_R_GRADE']])
 
 get_block_attributes('demo_types', 'blk_2')
@@ -188,7 +195,7 @@ delete_source('demo_types')
 
       <footer>
       <div class="copyright">
-  <p>Developed by kaalam ai.</p>
+  <p>Developed by Santiago Basaldua.</p>
 </div>
 
 <div class="pkgdown">

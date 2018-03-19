@@ -29,7 +29,8 @@
   
 <meta property="og:title" content="Read a data block as an R object — get_R_block" />
 
-<meta property="og:description" content="Reads a data block as an R object. The server automatically converts the appropriate data type into logical, integer, numeric or character." />
+<meta property="og:description" content="Reads a data block as an R object. The server automatically converts the appropriate data
+type into logical, integer, numeric or character." />
 <meta name="twitter:card" content="summary" />
 <!-- mathjax -->
 <script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
@@ -85,7 +86,8 @@
     </div>
 
     
-    <p>Reads a data block as an R object. The server automatically converts the appropriate data type into logical, integer, numeric or character.</p>
+    <p>Reads a data block as an R object. The server automatically converts the appropriate data
+type into logical, integer, numeric or character.</p>
     
 
     <pre class="usage"><span class='fu'>get_R_block</span>(<span class='no'>source</span>, <span class='no'>block_key</span>, <span class='kw'>host</span> <span class='kw'>=</span> <span class='no'>.host.</span>, <span class='kw'>buffsize</span> <span class='kw'>=</span> <span class='fl'>1048576</span>)</pre>
@@ -95,19 +97,23 @@
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
       <th>source</th>
-      <td><p>The Jazz source. Jazz persistence is organized in sources. All sources except 'sys' and 'www' are user defined. Sources are 15 char long alphanumeric or underscore.</p></td>
+      <td><p>The Jazz source. Jazz persistence is organized in sources. All sources except 'sys' and 'www'
+are user defined. Sources are 15 char long alphanumeric or underscore.</p></td>
     </tr>
     <tr>
       <th>block_key</th>
-      <td><p>The key identifying the block. Keys are 15 alphanumeric or underscore characters. They can be user defined or created by new_key(). Also, meshes use block keys internally.</p></td>
+      <td><p>The key identifying the block. Keys are 15 alphanumeric or underscore characters. They can
+be user defined or created by new_key(). Also, meshes use block keys internally.</p></td>
     </tr>
     <tr>
       <th>host</th>
-      <td><p>(Optional) the name of the jazz server host (including the port). Usually set just once via set_jazz_host().</p></td>
+      <td><p>(Optional) the name of the jazz server host (including the port). Usually set just once via
+set_jazz_host().</p></td>
     </tr>
     <tr>
       <th>buffsize</th>
-      <td><p>(Default = 1 Mb) the size of the buffer to download binary objects. Must be bigger or equal to the size of the block downloaded.</p></td>
+      <td><p>(Default = 1 Mb) the size of the buffer to download binary objects. Must be bigger or equal
+to the size of the block downloaded.</p></td>
     </tr>
     </table>
     
@@ -156,7 +162,7 @@
 
       <footer>
       <div class="copyright">
-  <p>Developed by kaalam ai.</p>
+  <p>Developed by Santiago Basaldua.</p>
 </div>
 
 <div class="pkgdown">
