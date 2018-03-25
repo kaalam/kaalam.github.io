@@ -12,6 +12,5 @@ var searchData=
   ['jazzc_5fna_5finteger',['JAZZC_NA_INTEGER',['../jazz01__commons_8h.html#ac95aa7d2becce81af2efbb6349c4a2d1',1,'jazz01_commons.h']]],
   ['jazzc_5fna_5fstring',['JAZZC_NA_STRING',['../jazz01__commons_8h.html#aaf68b167c1f86a12f9038fdc1376a6a6',1,'jazz01_commons.h']]],
   ['jazzfree',['JAZZFREE',['../jazz01__commons_8h.html#affddde2486593d1eeb42f7893d5049ee',1,'jazz01_commons.h']]],
-  ['jzz_5fig_5fjazz',['jzz_IG_JAZZ',['../jazz_8h.html#a5306b984017f4ece884aedf9ad455c6e',1,'jazz.h']]],
   ['jzz_5fig_5fjazzcommons',['jzz_IG_JAZZCOMMONS',['../jazz01__commons_8h.html#aea3a949f58831c126c8f22c830449040',1,'jazz01_commons.h']]]
 ];

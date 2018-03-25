@@ -19,7 +19,7 @@ var searchData=
   ['port',['port',['../structjazz__node.html#a69163ac70d92eb9c9465aa924947ab81',1,'jazz_node']]],
   ['prawblock',['pRawBlock',['../jazz01__commons_8h.html#aa9994b1f3f32f62097cbf195a69143c1',1,'jazz01_commons.h']]],
   ['prealblock',['pRealBlock',['../jazz01__commons_8h.html#adc22cd7c8551bf5965d062da19f3bfc1',1,'jazz01_commons.h']]],
-  ['proc_5ffind',['proc_find',['../jazz01__commons_8h.html#ae1e6eca5ba4e16de1d73058bd3572be9',1,'proc_find(const char *name):&#160;jazz_miscutils.cpp'],['../jazz__miscutils_8cpp.html#ae1e6eca5ba4e16de1d73058bd3572be9',1,'proc_find(const char *name):&#160;jazz_miscutils.cpp']]],
+  ['proc_5ffind',['proc_find',['../jazz01__commons_8h.html#ae1e6eca5ba4e16de1d73058bd3572be9',1,'proc_find(const char *name):&#160;jazz_miscutils.cpp'],['../jazz__miscutils_8cpp.html#ae1e6eca5ba4e16de1d73058bd3572be9',1,'proc_find(const char *name):&#160;jazz_miscutils.cpp'],['../jazz__utils_8cpp.html#ae1e6eca5ba4e16de1d73058bd3572be9',1,'proc_find(const char *name):&#160;jazz_utils.cpp']]],
   ['prstr_5fstream',['pRStr_stream',['../unionpRStr__stream.html',1,'']]],
   ['psource',['pSource',['../jazz__blocks_8h.html#af67b010998000a92b0f435a211beadc9',1,'jazz_blocks.h']]],
   ['pstringbuff',['pStringBuff',['../jazz01__commons_8h.html#a2c1f22d3dee37b73cda33f72eab78858',1,'jazz01_commons.h']]]

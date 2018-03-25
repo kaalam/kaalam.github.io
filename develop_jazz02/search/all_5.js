@@ -24,6 +24,6 @@ var searchData=
   ['exec_5finstr_5fput',['exec_instr_put',['../classjzzAPI.html#a1ca51c1ed5973a6e4ebd875a586457ac',1,'jzzAPI']]],
   ['exec_5finstr_5fput_5ffunction',['exec_instr_put_function',['../classjzzAPI.html#a627e045608f0ec19ea1ceb7ddfc19c7a',1,'jzzAPI']]],
   ['exec_5fwww_5fget',['exec_www_get',['../classjzzAPI.html#a98a70535e26eb591abdc2a2e8475c673',1,'jzzAPI']]],
-  ['exists',['exists',['../jazz01__commons_8h.html#aa3065154e3675f6fcbba6b023fb170e4',1,'exists(const char *fnam):&#160;jazz_miscutils.cpp'],['../jazz__miscutils_8cpp.html#aa3065154e3675f6fcbba6b023fb170e4',1,'exists(const char *fnam):&#160;jazz_miscutils.cpp']]],
-  ['expand_5fescaped',['expand_escaped',['../jazz01__commons_8h.html#a0ef758ac0489b591a45e9792bc245d0b',1,'expand_escaped(char *buff):&#160;jazz_miscutils.cpp'],['../jazz__miscutils_8cpp.html#a0ef758ac0489b591a45e9792bc245d0b',1,'expand_escaped(char *buff):&#160;jazz_miscutils.cpp']]]
+  ['exists',['exists',['../jazz01__commons_8h.html#aa3065154e3675f6fcbba6b023fb170e4',1,'exists(const char *fnam):&#160;jazz_miscutils.cpp'],['../jazz__miscutils_8cpp.html#aa3065154e3675f6fcbba6b023fb170e4',1,'exists(const char *fnam):&#160;jazz_miscutils.cpp'],['../jazz__utils_8cpp.html#aa3065154e3675f6fcbba6b023fb170e4',1,'exists(const char *fnam):&#160;jazz_utils.cpp']]],
+  ['expand_5fescaped',['expand_escaped',['../jazz01__commons_8h.html#a0ef758ac0489b591a45e9792bc245d0b',1,'expand_escaped(char *buff):&#160;jazz_miscutils.cpp'],['../jazz__miscutils_8cpp.html#a0ef758ac0489b591a45e9792bc245d0b',1,'expand_escaped(char *buff):&#160;jazz_miscutils.cpp'],['../jazz__utils_8cpp.html#a0ef758ac0489b591a45e9792bc245d0b',1,'expand_escaped(char *buff):&#160;jazz_utils.cpp']]]
 ];

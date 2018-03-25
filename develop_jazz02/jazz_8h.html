@@ -76,9 +76,15 @@ $(function() {
 <code>#include &lt;sys/socket.h&gt;</code><br />
 <code>#include &lt;sys/types.h&gt;</code><br />
 <code>#include &lt;unistd.h&gt;</code><br />
-<code>#include &quot;microhttpd.h&quot;</code><br />
 <code>#include &lt;math.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="jazz__platform_8h_source.html">src/include/jazz_platform.h</a>&quot;</code><br />
+<code>#include &quot;microhttpd.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="jazz__datablocks_8h_source.html">src/jazz_elements/jazz_datablocks.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="jazz__alloc_8h_source.html">src/jazz_elements/jazz_alloc.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="jazz__utils_8h_source.html">src/jazz_elements/jazz_utils.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="jazz__primitives_8h_source.html">src/jazz_elements/jazz_primitives.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="jazz__persistence_8h_source.html">src/jazz_elements/jazz_persistence.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="jazz__classes_8h_source.html">src/jazz_elements/jazz_classes.h</a>&quot;</code><br />
 </div>
 <p><a href="jazz_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -87,18 +93,18 @@ Macros</h2></td></tr>
 <tr class="memitem:a5a61c24fd07097ce8715f7e10f7152e3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz_8h.html#a5a61c24fd07097ce8715f7e10f7152e3">MHD_PLATFORM_H</a></td></tr>
 <tr class="memdesc:a5a61c24fd07097ce8715f7e10f7152e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Basic JAZZ types and definitions.  <a href="#a5a61c24fd07097ce8715f7e10f7152e3">More...</a><br /></td></tr>
 <tr class="separator:a5a61c24fd07097ce8715f7e10f7152e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5306b984017f4ece884aedf9ad455c6e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz_8h.html#a5306b984017f4ece884aedf9ad455c6e">jzz_IG_JAZZ</a></td></tr>
-<tr class="separator:a5306b984017f4ece884aedf9ad455c6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff10c720b6485977cc890ca0f1d6bda7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz_8h.html#aff10c720b6485977cc890ca0f1d6bda7">INCLUDED_JAZZ_INCLUDE_JAZZ</a></td></tr>
+<tr class="separator:aff10c720b6485977cc890ca0f1d6bda7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a5306b984017f4ece884aedf9ad455c6e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5306b984017f4ece884aedf9ad455c6e">&#9670;&nbsp;</a></span>jzz_IG_JAZZ</h2>
+<a id="aff10c720b6485977cc890ca0f1d6bda7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff10c720b6485977cc890ca0f1d6bda7">&#9670;&nbsp;</a></span>INCLUDED_JAZZ_INCLUDE_JAZZ</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define jzz_IG_JAZZ</td>
+          <td class="memname">#define INCLUDED_JAZZ_INCLUDE_JAZZ</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -118,7 +124,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Basic JAZZ types and definitions. </p>
-<p>&lt; This file contains constants, codeless types and API-level classes. </p>
+<p>&lt; This file merges headers in src/jazz_elements/ to define all the higher level types and root classes. This is what you need to create your own descendent classes to extend Jazz en C++. If you need the core implementations, Bebop or extending in scripting languages, you need <a class="el" href="jazz__api_8h.html">jazz_api.h</a> </p>
 
 </div>
 </div>
