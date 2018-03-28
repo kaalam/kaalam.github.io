@@ -19,11 +19,11 @@ var searchData=
   ['max_5fstring_5flength',['MAX_STRING_LENGTH',['../jazz01__commons_8h.html#a6789ebc0df71a8ef76bfbb4fb5f74aad',1,'jazz01_commons.h']]],
   ['max_5furl_5flength',['MAX_URL_LENGTH',['../jazz__websource_8h.html#a3a0a3a9d3952e2b57333ed6daceb163e',1,'jazz_websource.h']]],
   ['mhd_5fhttp_5fanyerror',['MHD_HTTP_ANYERROR',['../jazz01__api_8cpp.html#acd7fa8c1e44c1ce605992576831262b8',1,'jazz01_api.cpp']]],
-  ['mhd_5fplatform_5fh',['MHD_PLATFORM_H',['../jazz_8h.html#a5a61c24fd07097ce8715f7e10f7152e3',1,'MHD_PLATFORM_H():&#160;jazz.h'],['../jazz01__commons_8h.html#a5a61c24fd07097ce8715f7e10f7152e3',1,'MHD_PLATFORM_H():&#160;jazz01_commons.h']]],
+  ['mhd_5fplatform_5fh',['MHD_PLATFORM_H',['../jazz01__commons_8h.html#a5a61c24fd07097ce8715f7e10f7152e3',1,'MHD_PLATFORM_H():&#160;jazz01_commons.h'],['../jazz__restapi_8h.html#a5a61c24fd07097ce8715f7e10f7152e3',1,'MHD_PLATFORM_H():&#160;jazz_restapi.h']]],
   ['mode_5f_5f',['MODE__',['../jazz01__commons_8h.html#a530fcbade5899a5c48241baff2c27423',1,'jazz01_commons.h']]],
   ['mode_5fexternal_5fperimeter',['MODE_EXTERNAL_PERIMETER',['../jazz01__commons_8h.html#a18b3b1b5ca8dac7523208066129300ed',1,'jazz01_commons.h']]],
   ['mode_5finternal_5fperimeter',['MODE_INTERNAL_PERIMETER',['../jazz01__commons_8h.html#af6c57094935d2b5ebf71a993a95a6ca1',1,'jazz01_commons.h']]],
   ['mode_5fsafe_5fif_5fphysical',['MODE_SAFE_IF_PHYSICAL',['../jazz01__commons_8h.html#a20120ecec07ea5b146118cda77b22064',1,'jazz01_commons.h']]],
   ['mode_5ftrusted_5fonly',['MODE_TRUSTED_ONLY',['../jazz01__commons_8h.html#a9b5ea256c1ab5e694022ec857c228e8e',1,'jazz01_commons.h']]],
-  ['murmur_5fseed',['MURMUR_SEED',['../jazz__miscutils_8cpp.html#acf830c3140deca25e44187534c55e5a8',1,'MURMUR_SEED():&#160;jazz_miscutils.cpp'],['../jazz__utils_8cpp.html#acf830c3140deca25e44187534c55e5a8',1,'MURMUR_SEED():&#160;jazz_utils.cpp']]]
+  ['murmur_5fseed',['MURMUR_SEED',['../jazz__miscutils_8cpp.html#acf830c3140deca25e44187534c55e5a8',1,'jazz_miscutils.cpp']]]
 ];

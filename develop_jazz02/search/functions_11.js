@@ -14,6 +14,6 @@ var searchData=
   ['remote_5fkill_5fsource',['remote_kill_source',['../classjazzCommons.html#ad2d3835d2e0e52d63bd5cf4dd56c02ee',1,'jazzCommons']]],
   ['remote_5fnew_5fsource',['remote_new_source',['../classjazzCommons.html#a6ff37da61f537be33eb5ec023d166160',1,'jazzCommons']]],
   ['remote_5ftesting_5fpoint',['remote_testing_point',['../classjazzCommons.html#a30cb41a5b56b0ea52bb8181f51ad72af',1,'jazzCommons']]],
-  ['remove_5fsptab',['remove_sptab',['../jazz01__commons_8h.html#a9401b48fbc5767a1553ce310e51e76aa',1,'remove_sptab(string s):&#160;jazz_miscutils.cpp'],['../jazz__miscutils_8cpp.html#a9401b48fbc5767a1553ce310e51e76aa',1,'remove_sptab(string s):&#160;jazz_miscutils.cpp'],['../jazz__utils_8cpp.html#a9401b48fbc5767a1553ce310e51e76aa',1,'remove_sptab(string s):&#160;jazz_utils.cpp']]],
+  ['remove_5fsptab',['remove_sptab',['../jazz01__commons_8h.html#a9401b48fbc5767a1553ce310e51e76aa',1,'remove_sptab(string s):&#160;jazz_miscutils.cpp'],['../jazz__miscutils_8cpp.html#a9401b48fbc5767a1553ce310e51e76aa',1,'remove_sptab(string s):&#160;jazz_miscutils.cpp']]],
   ['return_5ferror_5fmessage',['return_error_message',['../classjzzAPI.html#a4d4f8b6d1807c79c8206b4e22760eb73',1,'jzzAPI']]]
 ];

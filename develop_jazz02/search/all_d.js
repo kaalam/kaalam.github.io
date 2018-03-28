@@ -25,7 +25,7 @@ var searchData=
   ['mesh',['mesh',['../structparsedURL.html#af61a89d0021b54417e4dd5b0e83cc05f',1,'parsedURL']]],
   ['meshname',['meshName',['../jazz01__api_8h.html#a281c719faba239b4cdd098710d519dba',1,'jazz01_api.h']]],
   ['mhd_5fhttp_5fanyerror',['MHD_HTTP_ANYERROR',['../jazz01__api_8cpp.html#acd7fa8c1e44c1ce605992576831262b8',1,'jazz01_api.cpp']]],
-  ['mhd_5fplatform_5fh',['MHD_PLATFORM_H',['../jazz_8h.html#a5a61c24fd07097ce8715f7e10f7152e3',1,'MHD_PLATFORM_H():&#160;jazz.h'],['../jazz01__commons_8h.html#a5a61c24fd07097ce8715f7e10f7152e3',1,'MHD_PLATFORM_H():&#160;jazz01_commons.h']]],
+  ['mhd_5fplatform_5fh',['MHD_PLATFORM_H',['../jazz01__commons_8h.html#a5a61c24fd07097ce8715f7e10f7152e3',1,'MHD_PLATFORM_H():&#160;jazz01_commons.h'],['../jazz__restapi_8h.html#a5a61c24fd07097ce8715f7e10f7152e3',1,'MHD_PLATFORM_H():&#160;jazz_restapi.h']]],
   ['min_5freader',['min_reader',['../structR__binary.html#a32939fed8f798c3d1ee5a7a99aebd62c',1,'R_binary::min_reader()'],['../jazz__blockconv_8h.html#aad59e45e265897a0c963e5e046f3f750',1,'min_reader():&#160;jazz_blockconv.h']]],
   ['min_5frole',['min_role',['../structjazz__node.html#ada5c6382c95f33cd84c44365ce01755a',1,'jazz_node']]],
   ['mode_5f_5f',['MODE__',['../jazz01__commons_8h.html#a530fcbade5899a5c48241baff2c27423',1,'jazz01_commons.h']]],
@@ -33,6 +33,6 @@ var searchData=
   ['mode_5finternal_5fperimeter',['MODE_INTERNAL_PERIMETER',['../jazz01__commons_8h.html#af6c57094935d2b5ebf71a993a95a6ca1',1,'jazz01_commons.h']]],
   ['mode_5fsafe_5fif_5fphysical',['MODE_SAFE_IF_PHYSICAL',['../jazz01__commons_8h.html#a20120ecec07ea5b146118cda77b22064',1,'jazz01_commons.h']]],
   ['mode_5ftrusted_5fonly',['MODE_TRUSTED_ONLY',['../jazz01__commons_8h.html#a9b5ea256c1ab5e694022ec857c228e8e',1,'jazz01_commons.h']]],
-  ['murmur_5fseed',['MURMUR_SEED',['../jazz__miscutils_8cpp.html#acf830c3140deca25e44187534c55e5a8',1,'MURMUR_SEED():&#160;jazz_miscutils.cpp'],['../jazz__utils_8cpp.html#acf830c3140deca25e44187534c55e5a8',1,'MURMUR_SEED():&#160;jazz_utils.cpp']]],
-  ['murmurhash64a',['MurmurHash64A',['../jazz01__commons_8h.html#af00a6a16d02e30654cace0aa01e68f3a',1,'MurmurHash64A(const void *key, int len):&#160;jazz_miscutils.cpp'],['../jazz__miscutils_8cpp.html#af00a6a16d02e30654cace0aa01e68f3a',1,'MurmurHash64A(const void *key, int len):&#160;jazz_miscutils.cpp'],['../jazz__utils_8cpp.html#af00a6a16d02e30654cace0aa01e68f3a',1,'MurmurHash64A(const void *key, int len):&#160;jazz_utils.cpp']]]
+  ['murmur_5fseed',['MURMUR_SEED',['../jazz__miscutils_8cpp.html#acf830c3140deca25e44187534c55e5a8',1,'jazz_miscutils.cpp']]],
+  ['murmurhash64a',['MurmurHash64A',['../jazz01__commons_8h.html#af00a6a16d02e30654cace0aa01e68f3a',1,'MurmurHash64A(const void *key, int len):&#160;jazz_miscutils.cpp'],['../jazz__miscutils_8cpp.html#af00a6a16d02e30654cace0aa01e68f3a',1,'MurmurHash64A(const void *key, int len):&#160;jazz_miscutils.cpp']]]
 ];

@@ -7,5 +7,6 @@ var searchData=
   ['compare_5fcontent',['compare_content',['../classjzzBLOCKS.html#a3a93520e5145323cef6aaa7b6153740f',1,'jzzBLOCKS']]],
   ['compare_5fheaders',['compare_headers',['../classjzzBLOCKS.html#a6a8f1d9d831c375b0adcde8157b049af',1,'jzzBLOCKS']]],
   ['configure_5fmhd_5fserver',['configure_MHD_server',['../classjazzCommons.html#add7942e2991b4da7d144f7218198c8d7',1,'jazzCommons']]],
-  ['count_5futf8_5fbytes',['count_utf8_bytes',['../jazz01__commons_8h.html#a0060848283d5a05ac981b5b982e82d78',1,'count_utf8_bytes(char *buff, int len):&#160;jazz_miscutils.cpp'],['../jazz__miscutils_8cpp.html#a0060848283d5a05ac981b5b982e82d78',1,'count_utf8_bytes(char *buff, int len):&#160;jazz_miscutils.cpp'],['../jazz__utils_8cpp.html#a0060848283d5a05ac981b5b982e82d78',1,'count_utf8_bytes(char *buff, int len):&#160;jazz_utils.cpp']]]
+  ['count_5futf8_5fbytes',['count_utf8_bytes',['../jazz01__commons_8h.html#a0060848283d5a05ac981b5b982e82d78',1,'count_utf8_bytes(char *buff, int len):&#160;jazz_miscutils.cpp'],['../jazz__miscutils_8cpp.html#a0060848283d5a05ac981b5b982e82d78',1,'count_utf8_bytes(char *buff, int len):&#160;jazz_miscutils.cpp']]],
+  ['countbytesfromutf8',['CountBytesFromUtf8',['../jazz__utils_8cpp.html#a618c140c2a41dcd68986effc79009ddc',1,'jazz_utils.cpp']]]
 ];
