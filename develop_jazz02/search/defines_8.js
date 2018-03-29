@@ -3,6 +3,7 @@ var searchData=
   ['max_5f_5f',['MAX__',['../jazz01__commons_8h.html#a78c63597e9e22fcf5f2cf0ef98f79de2',1,'jazz01_commons.h']]],
   ['max_5falias_5fnamelength',['MAX_ALIAS_NAMELENGTH',['../jazz01__commons_8h.html#ab88ec790f9e68430f19b781d5be5c494',1,'jazz01_commons.h']]],
   ['max_5fcluster_5fnodes',['MAX_CLUSTER_NODES',['../jazz01__commons_8h.html#a3a5467c97455260c0981271881d87b73',1,'jazz01_commons.h']]],
+  ['max_5ffilename_5flength',['MAX_FILENAME_LENGTH',['../jazz__utils_8h.html#a6773b93f3093658c3dcb569de3b4bdb2',1,'jazz_utils.h']]],
   ['max_5fhost_5fnamelength',['MAX_HOST_NAMELENGTH',['../jazz01__commons_8h.html#ac7b39d20db11dcc5267042a127c2a118',1,'jazz01_commons.h']]],
   ['max_5finstrument_5flength',['MAX_INSTRUMENT_LENGTH',['../jazz01__api_8h.html#a43110534aa06a6d801f0f875c3cf4f1c',1,'jazz01_api.h']]],
   ['max_5fip_5franges',['MAX_IP_RANGES',['../jazz01__commons_8h.html#a7d89a16eab17c9032fba1e93d46ef10e',1,'jazz01_commons.h']]],
@@ -25,5 +26,5 @@ var searchData=
   ['mode_5finternal_5fperimeter',['MODE_INTERNAL_PERIMETER',['../jazz01__commons_8h.html#af6c57094935d2b5ebf71a993a95a6ca1',1,'jazz01_commons.h']]],
   ['mode_5fsafe_5fif_5fphysical',['MODE_SAFE_IF_PHYSICAL',['../jazz01__commons_8h.html#a20120ecec07ea5b146118cda77b22064',1,'jazz01_commons.h']]],
   ['mode_5ftrusted_5fonly',['MODE_TRUSTED_ONLY',['../jazz01__commons_8h.html#a9b5ea256c1ab5e694022ec857c228e8e',1,'jazz01_commons.h']]],
-  ['murmur_5fseed',['MURMUR_SEED',['../jazz__miscutils_8cpp.html#acf830c3140deca25e44187534c55e5a8',1,'jazz_miscutils.cpp']]]
+  ['murmur_5fseed',['MURMUR_SEED',['../jazz__utils_8cpp.html#acf830c3140deca25e44187534c55e5a8',1,'jazz_utils.cpp']]]
 ];

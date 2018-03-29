@@ -89,7 +89,7 @@ Data Structures</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a3a0a3a9d3952e2b57333ed6daceb163e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__websource_8h.html#a3a0a3a9d3952e2b57333ed6daceb163e">MAX_URL_LENGTH</a>&#160;&#160;&#160;215</td></tr>
-<tr class="memdesc:a3a0a3a9d3952e2b57333ed6daceb163e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Root class providing all the necessary web resource functionality.  <a href="#a3a0a3a9d3952e2b57333ed6daceb163e">More...</a><br /></td></tr>
+<tr class="memdesc:a3a0a3a9d3952e2b57333ed6daceb163e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum length of a URL in the www API. (This makes the <a class="el" href="structURLattrib.html">URLattrib</a> size = 256.  <a href="#a3a0a3a9d3952e2b57333ed6daceb163e">More...</a><br /></td></tr>
 <tr class="separator:a3a0a3a9d3952e2b57333ed6daceb163e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a038bc0ac89f5dbfdf914ca08ed32676a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__websource_8h.html#a038bc0ac89f5dbfdf914ca08ed32676a">MAX_NUM_WEBSOURCES</a>&#160;&#160;&#160;100</td></tr>
 <tr class="memdesc:a038bc0ac89f5dbfdf914ca08ed32676a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of web sources. Limited to avoid buffer overflow in GET function.  <a href="#a038bc0ac89f5dbfdf914ca08ed32676a">More...</a><br /></td></tr>
@@ -129,9 +129,8 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Root class providing all the necessary web resource functionality. </p>
-<p>This class keeps a dictionary of known urls as keys, the values include: block name Content-Length, Content-Language and Last-Modified. The source name is always "www". These dictionaries are stored in persistence.</p>
-<p>The urls and all their attributes are stored in <a class="el" href="structURLattrib.html">URLattrib</a> structures. An abstract entity known as a websource organizes the links in the persistence in a way that a whole websource can be queried, created, deleted. websources are identified by name (websourceName) or index in a in internal vector queried via find_websource(). websources do no exist for the API, they are just a clean way to manage sets of urls that are created/removed together.Struct sizesMaximum length of a URL in the www API. (This makes the <a class="el" href="structURLattrib.html">URLattrib</a> size = 256 </p>
+<p>Maximum length of a URL in the www API. (This makes the <a class="el" href="structURLattrib.html">URLattrib</a> size = 256. </p>
+<p>Struct sizes </p>
 
 </div>
 </div>

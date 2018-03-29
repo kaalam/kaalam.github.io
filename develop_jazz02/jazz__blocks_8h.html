@@ -73,6 +73,7 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="jazz01__commons_8h_source.html">src/include/jazz01_commons.h</a>&quot;</code><br />
 <code>#include &quot;src/lmdb/lmdb.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="jazz_8h_source.html">src/include/jazz.h</a>&quot;</code><br />
 </div>
 <p><a href="jazz__blocks_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -86,7 +87,7 @@ Data Structures</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a5f2fa99db8442e6ce0743de30fc41e49"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__blocks_8h.html#a5f2fa99db8442e6ce0743de30fc41e49">MAX_POSSIBLE_SOURCES</a>&#160;&#160;&#160;32</td></tr>
-<tr class="memdesc:a5f2fa99db8442e6ce0743de30fc41e49"><td class="mdescLeft">&#160;</td><td class="mdescRight">The lowest level of persisted data management: the blocks.  <a href="#a5f2fa99db8442e6ce0743de30fc41e49">More...</a><br /></td></tr>
+<tr class="memdesc:a5f2fa99db8442e6ce0743de30fc41e49"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of databases is configurable via MDB_ENV_SET_MAXDBS, but cannot exceed this.  <a href="#a5f2fa99db8442e6ce0743de30fc41e49">More...</a><br /></td></tr>
 <tr class="separator:a5f2fa99db8442e6ce0743de30fc41e49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a977fac60eb1058249209aebeb116111a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__blocks_8h.html#a977fac60eb1058249209aebeb116111a">MAX_PROTECTED_BLOCKS</a>&#160;&#160;&#160;16</td></tr>
 <tr class="memdesc:a977fac60eb1058249209aebeb116111a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of blocks that can be simultaneously protected (all threads included).  <a href="#a977fac60eb1058249209aebeb116111a">More...</a><br /></td></tr>
@@ -165,8 +166,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The lowest level of persisted data management: the blocks. </p>
-<p>&lt; This module includes all the LMDB management in the server.The number of databases is configurable via MDB_ENV_SET_MAXDBS, but cannot exceed this. </p>
+<p>The number of databases is configurable via MDB_ENV_SET_MAXDBS, but cannot exceed this. </p>
 
 </div>
 </div>

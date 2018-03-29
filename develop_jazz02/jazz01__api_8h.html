@@ -72,7 +72,8 @@ $(function() {
 <div class="title">jazz01_api.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="jazz01__commons_8h_source.html">src/include/jazz01_commons.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="jazz_8h_source.html">src/include/jazz.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="jazz01__commons_8h_source.html">src/include/jazz01_commons.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="jazz__websource_8h_source.html">src/jazz01_misc/jazz_websource.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="jazz01__instances_8h_source.html">src/jazz01_main/jazz01_instances.h</a>&quot;</code><br />
 </div>
@@ -96,7 +97,6 @@ Data Structures</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a7f10cb6b44e47dd330ff60e017f24510"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz01__api_8h.html#a7f10cb6b44e47dd330ff60e017f24510">HTTP_NOTUSED</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:a7f10cb6b44e47dd330ff60e017f24510"><td class="mdescLeft">&#160;</td><td class="mdescRight">API class implementing the non-security related functionality of the Jazz server.  <a href="#a7f10cb6b44e47dd330ff60e017f24510">More...</a><br /></td></tr>
 <tr class="separator:a7f10cb6b44e47dd330ff60e017f24510"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63d4c725d922ebee7cddd485fd35adf3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz01__api_8h.html#a63d4c725d922ebee7cddd485fd35adf3">HTTP_OPTIONS</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:a63d4c725d922ebee7cddd485fd35adf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,7 +130,6 @@ Typedefs</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a78888586ae139e6b5260923aee4b3615"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classjzzAPI.html">jzzAPI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz01__api_8h.html#a78888586ae139e6b5260923aee4b3615">jAPI</a></td></tr>
-<tr class="memdesc:a78888586ae139e6b5260923aee4b3615"><td class="mdescLeft">&#160;</td><td class="mdescRight">API class implementing the non-security related functionality of the Jazz server.  <a href="#a78888586ae139e6b5260923aee4b3615">More...</a><br /></td></tr>
 <tr class="separator:a78888586ae139e6b5260923aee4b3615"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -203,10 +202,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>API class implementing the non-security related functionality of the Jazz server. </p>
-<p>This module implements both the callback function (which can be a direct callback or called through jzzPERIMETRAL) and a class that parses API calls.</p>
-<p>The callback function calls the appropriate instanced services and handles the http responses on successful url parsing or tries a jazzWebsource call with the url if not. If that call is successful it provides the resource, if not it delivers a 404 (with a possible 404 resource).Http methods </p>
+<p>Http methods </p>
 
 </div>
 </div>
@@ -315,10 +311,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>API class implementing the non-security related functionality of the Jazz server. </p>
-<p>This module implements both the callback function (which can be a direct callback or called through jzzPERIMETRAL) and a class that parses API calls.</p>
-<p>The callback function calls the appropriate instanced services and handles the http responses on successful url parsing or tries a jazzWebsource call with the url if not. If that call is successful it provides the resource, if not it delivers a 404 (with a possible 404 resource). </p>
 
 </div>
 </div>

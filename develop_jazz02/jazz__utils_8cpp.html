@@ -64,55 +64,74 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">jazz_utils.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="jazz__utils_8h_source.html">src/jazz_elements/jazz_utils.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &lt;dirent.h&gt;</code><br />
+<code>#include &lt;sys/syscall.h&gt;</code><br />
+<code>#include &lt;stdarg.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="jazz__utils_8h_source.html">src/jazz_elements/jazz_utils.h</a>&quot;</code><br />
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespacejazz__utils"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__utils.html">jazz_utils</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:acf830c3140deca25e44187534c55e5a8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__utils_8cpp.html#acf830c3140deca25e44187534c55e5a8">MURMUR_SEED</a>&#160;&#160;&#160;76493</td></tr>
+<tr class="memdesc:acf830c3140deca25e44187534c55e5a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Just a 5 digit prime.  <a href="#acf830c3140deca25e44187534c55e5a8">More...</a><br /></td></tr>
+<tr class="separator:acf830c3140deca25e44187534c55e5a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f19267d6d0808dfc50809dde0a6947e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__utils_8cpp.html#a3f19267d6d0808dfc50809dde0a6947e">LEFTAUTO</a>&#160;&#160;&#160;28</td></tr>
+<tr class="separator:a3f19267d6d0808dfc50809dde0a6947e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a618c140c2a41dcd68986effc79009ddc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__utils_8cpp.html#a618c140c2a41dcd68986effc79009ddc">CountBytesFromUtf8</a> (char *buff, int len)</td></tr>
-<tr class="separator:a618c140c2a41dcd68986effc79009ddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb81e9f3d33366f54ea987e52a438fbb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__utils.html#abb81e9f3d33366f54ea987e52a438fbb">jazz_utils::CountBytesFromUtf8</a> (char *buff, int len)</td></tr>
+<tr class="separator:abb81e9f3d33366f54ea987e52a438fbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d424cd33d74c1d3f7c2df72165f81ff"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__utils.html#a3d424cd33d74c1d3f7c2df72165f81ff">jazz_utils::ExpandEscapeSequences</a> (char *buff)</td></tr>
+<tr class="separator:a3d424cd33d74c1d3f7c2df72165f81ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ccc5223d3b9244dac4e77e3c5bbd0d0"><td class="memItemLeft" align="right" valign="top">pid_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__utils.html#a2ccc5223d3b9244dac4e77e3c5bbd0d0">jazz_utils::FindProcessIdByName</a> (const char *name)</td></tr>
+<tr class="separator:a2ccc5223d3b9244dac4e77e3c5bbd0d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92d13daf4ec6c83ba91d94892b4b6fac"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__utils.html#a92d13daf4ec6c83ba91d94892b4b6fac">jazz_utils::MurmurHash64A</a> (const void *key, int len)</td></tr>
+<tr class="separator:a92d13daf4ec6c83ba91d94892b4b6fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa804bdf15b228c69c1c269c8bb5ef6e1"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__utils.html#aa804bdf15b228c69c1c269c8bb5ef6e1">jazz_utils::CleanConfigArgument</a> (std::string s)</td></tr>
+<tr class="separator:aa804bdf15b228c69c1c269c8bb5ef6e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a618c140c2a41dcd68986effc79009ddc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a618c140c2a41dcd68986effc79009ddc">&#9670;&nbsp;</a></span>CountBytesFromUtf8()</h2>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a3f19267d6d0808dfc50809dde0a6947e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f19267d6d0808dfc50809dde0a6947e">&#9670;&nbsp;</a></span>LEFTAUTO</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int CountBytesFromUtf8 </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>buff</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">#define LEFTAUTO&#160;&#160;&#160;28</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Count the number of bytes required by an utf-8 string of len characters.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">buff</td><td>The string (not necessarily null-terminated) </td></tr>
-    <tr><td class="paramname">len</td><td>The number of characters in the string</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The numebr of bytes in the string.</dd></dl>
-<p>The RFC <a href="http://www.ietf.org/rfc/rfc3629.txt">http://www.ietf.org/rfc/rfc3629.txt</a> says:</p>
-<p>Char. number range | UTF-8 octet sequence (hexadecimal) | (binary) -----------------&mdash;+------------------------------------------&mdash; 0000 0000-0000 007F | 0xxxxxxx 0000 0080-0000 07FF | 110xxxxx 10xxxxxx 0000 0800-0000 FFFF | 1110xxxx 10xxxxxx 10xxxxxx 0001 0000-0010 FFFF | 11110xxx 10xxxxxx 10xxxxxx 10xxxxxx </p>
+
+</div>
+</div>
+<a id="acf830c3140deca25e44187534c55e5a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf830c3140deca25e44187534c55e5a8">&#9670;&nbsp;</a></span>MURMUR_SEED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MURMUR_SEED&#160;&#160;&#160;76493</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Just a 5 digit prime. </p>
 
 </div>
 </div>

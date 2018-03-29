@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ten_5fbits_5frange',['TEN_BITS_RANGE',['../jazz01__commons_8h.html#a5ec787a625ec7e4c8d7207588453134e',1,'jazz01_commons.h']]]
+  ['tenbits_5flut_5fsize',['TENBITS_LUT_SIZE',['../jazz__utils_8h.html#a87339d0dea4674c231fdd28f457af3c5',1,'jazz_utils.h']]]
 ];
