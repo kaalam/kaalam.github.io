@@ -1,7 +1,16 @@
 var searchData=
 [
+  ['jazz_5fboolean_5fna',['JAZZ_BOOLEAN_NA',['../jazz__datablocks_8h.html#adc09b20f0a00b192d8afe0f87f83ce00',1,'jazz_datablocks.h']]],
+  ['jazz_5fbyte_5fboolean_5fna',['JAZZ_BYTE_BOOLEAN_NA',['../jazz__datablocks_8h.html#a582f1ca1e0ed4377a91cb9312248e203',1,'jazz_datablocks.h']]],
   ['jazz_5fdebug_5fhome',['JAZZ_DEBUG_HOME',['../jazz__platform_8h.html#ac26325c84d31adf61f1480e8f7cd7b7f',1,'jazz_platform.h']]],
+  ['jazz_5fdouble_5fna',['JAZZ_DOUBLE_NA',['../jazz__datablocks_8h.html#a7d407ad60268ec99c1d590accd456778',1,'jazz_datablocks.h']]],
+  ['jazz_5finteger_5fna',['JAZZ_INTEGER_NA',['../jazz__datablocks_8h.html#a934aabc341e202f67b9c2b846e3e96cc',1,'jazz_datablocks.h']]],
+  ['jazz_5flong_5finteger_5fna',['JAZZ_LONG_INTEGER_NA',['../jazz__datablocks_8h.html#ae0b701848fc8a03cd66172956f6fb455',1,'jazz_datablocks.h']]],
   ['jazz_5fservice_5frhome',['JAZZ_SERVICE_RHOME',['../jazz__blockconv_8cpp.html#a6e294e5b94c7c75ab77599aa6629078c',1,'jazz_blockconv.cpp']]],
+  ['jazz_5fsingle_5fna',['JAZZ_SINGLE_NA',['../jazz__datablocks_8h.html#ab2e278b9f3c6b59cb45ff0a5754774f6',1,'jazz_datablocks.h']]],
+  ['jazz_5fstring_5fempty',['JAZZ_STRING_EMPTY',['../jazz__datablocks_8h.html#a9de0787b48728620e0dd7e931c47a48b',1,'jazz_datablocks.h']]],
+  ['jazz_5fstring_5fna',['JAZZ_STRING_NA',['../jazz__datablocks_8h.html#a87ff8b4c04603f376890ceb070b77e47',1,'jazz_datablocks.h']]],
+  ['jazz_5ftime_5fpoint_5fna',['JAZZ_TIME_POINT_NA',['../jazz__datablocks_8h.html#a10baff1f1470c385c093ab73b7753b87',1,'jazz_datablocks.h']]],
   ['jazz_5fversion',['JAZZ_VERSION',['../jazz__platform_8h.html#a948a256c8427f1f46ede7fd6fc2a7b5c',1,'jazz_platform.h']]],
   ['jazzalloc',['JAZZALLOC',['../jazz01__commons_8h.html#af5b2b15a0f1e5c3d10303c34593b2bfa',1,'jazz01_commons.h']]],
   ['jazzallocstr',['JAZZALLOCSTR',['../jazz01__commons_8h.html#a1102d6a9f1da8c0381f79eadb058e213',1,'jazz01_commons.h']]],

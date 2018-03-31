@@ -2,7 +2,7 @@ var searchData=
 [
   ['hasafunction',['hasAFunction',['../structparsedURLhea.html#a0b4644fbfe826d2ff2c6d57a91e103e5',1,'parsedURLhea']]],
   ['hasakey',['hasAKey',['../structparsedURLhea.html#a3d965d446fc811427ca387bb1a734d18',1,'parsedURLhea']]],
-  ['hash64',['hash64',['../structjzzBlockHeader.html#aa31c8771ae375fe9f71f6b254cb4c900',1,'jzzBlockHeader']]],
+  ['hash64',['hash64',['../structjzzBlockHeader.html#aa31c8771ae375fe9f71f6b254cb4c900',1,'jzzBlockHeader::hash64()'],['../structjazz__datablocks_1_1JazzBlockHeader.html#ae43d526ccb3950bd327913e539653ac5',1,'jazz_datablocks::JazzBlockHeader::hash64()']]],
   ['hash_5fblock',['hash_block',['../classjzzBLOCKS.html#a955485c62a812660310a146bd6702b53',1,'jzzBLOCKS']]],
   ['hello',['hello',['../jazz01__main_8cpp.html#a27a1864e1f4693766ae2596e6e205731',1,'jazz01_main.cpp']]],
   ['help',['help',['../jazz01__main_8cpp.html#a97ee70a8770dc30d06c744b24eb2fcfc',1,'jazz01_main.cpp']]],

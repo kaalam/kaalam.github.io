@@ -54,5 +54,5 @@ var searchData=
   ['blocktype_5fraw_5fr_5fraw',['BLOCKTYPE_RAW_R_RAW',['../jazz01__commons_8h.html#a297b13dd8712cbeb8b4805c9863c600c',1,'jazz01_commons.h']]],
   ['blocktype_5fraw_5fstrings',['BLOCKTYPE_RAW_STRINGS',['../jazz01__commons_8h.html#a3e4b64e67436cad87fd12bf9ec8b3c13',1,'jazz01_commons.h']]],
   ['blocktype_5fsource_5fattrib',['BLOCKTYPE_SOURCE_ATTRIB',['../jazz01__commons_8h.html#aaa630033c317fae7e122576b1611121c',1,'jazz01_commons.h']]],
-  ['buffer',['buffer',['../structstring__buffer.html#a0b205cf77b599385a8acb66d249725a1',1,'string_buffer']]]
+  ['buffer',['buffer',['../structstring__buffer.html#a0b205cf77b599385a8acb66d249725a1',1,'string_buffer::buffer()'],['../structjazz__datablocks_1_1JazzStringBuffer.html#ab9a56ebb9c6244d1571cbfb069b923f4',1,'jazz_datablocks::JazzStringBuffer::buffer()']]]
 ];

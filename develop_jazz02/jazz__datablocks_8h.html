@@ -64,15 +64,28 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">jazz_datablocks.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &lt;chrono&gt;</code><br />
+<code>#include &lt;limits.h&gt;</code><br />
+</div>
 <p><a href="jazz__datablocks_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__datablocks_1_1JazzBlockHeader.html">jazz_datablocks::JazzBlockHeader</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__datablocks_1_1JazzStringBuffer.html">jazz_datablocks::JazzStringBuffer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__datablocks_1_1JazzAttributesMap.html">jazz_datablocks::JazzAttributesMap</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacejazz__datablocks"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__datablocks.html">jazz_datablocks</a></td></tr>
@@ -83,8 +96,265 @@ Macros</h2></td></tr>
 <tr class="memitem:a8bc55e493927b18d575a8d28f1335e91"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__datablocks_8h.html#a8bc55e493927b18d575a8d28f1335e91">INCLUDED_JAZZ_ELEMENTS_DATABLOCKS</a></td></tr>
 <tr class="memdesc:a8bc55e493927b18d575a8d28f1335e91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Basic Jazz codeless data types and constants.  <a href="#a8bc55e493927b18d575a8d28f1335e91">More...</a><br /></td></tr>
 <tr class="separator:a8bc55e493927b18d575a8d28f1335e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ab9efa453cd99ad8a95c797aff340b9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__datablocks_8h.html#a9ab9efa453cd99ad8a95c797aff340b9">CELL_TYPE__</a></td></tr>
+<tr class="separator:a9ab9efa453cd99ad8a95c797aff340b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00ed654fef28807203d5042b4342c3fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__datablocks_8h.html#a00ed654fef28807203d5042b4342c3fb">CELL_TYPE_BYTE</a>&#160;&#160;&#160;0x001</td></tr>
+<tr class="memdesc:a00ed654fef28807203d5042b4342c3fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tensor of unsigned 8-bit binaries. NA is not defined for this type.  <a href="#a00ed654fef28807203d5042b4342c3fb">More...</a><br /></td></tr>
+<tr class="separator:a00ed654fef28807203d5042b4342c3fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d41c371fc939cf629397eeadf495c0a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__datablocks_8h.html#a2d41c371fc939cf629397eeadf495c0a">CELL_TYPE_BYTE_BOOLEAN</a>&#160;&#160;&#160;0x101</td></tr>
+<tr class="memdesc:a2d41c371fc939cf629397eeadf495c0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tensor 8-bit booleans: 0, 1, JAZZ_BYTE_BOOLEAN_NA = NA.  <a href="#a2d41c371fc939cf629397eeadf495c0a">More...</a><br /></td></tr>
+<tr class="separator:a2d41c371fc939cf629397eeadf495c0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c8ac0338590065772caf2d1406f018e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__datablocks_8h.html#a7c8ac0338590065772caf2d1406f018e">CELL_TYPE_INTEGER</a>&#160;&#160;&#160;0x004</td></tr>
+<tr class="memdesc:a7c8ac0338590065772caf2d1406f018e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tensor of 32-bit signed integers. NA is JAZZ_INTEGER_NA.  <a href="#a7c8ac0338590065772caf2d1406f018e">More...</a><br /></td></tr>
+<tr class="separator:a7c8ac0338590065772caf2d1406f018e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5ffe4c467b3a9a3e634f3fc57fce2c8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__datablocks_8h.html#ad5ffe4c467b3a9a3e634f3fc57fce2c8">CELL_TYPE_FACTOR</a>&#160;&#160;&#160;0x104</td></tr>
+<tr class="memdesc:ad5ffe4c467b3a9a3e634f3fc57fce2c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tensor of 32-bit unsorted categoricals. NA is JAZZ_INTEGER_NA.  <a href="#ad5ffe4c467b3a9a3e634f3fc57fce2c8">More...</a><br /></td></tr>
+<tr class="separator:ad5ffe4c467b3a9a3e634f3fc57fce2c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afccbaed7cf59138502dbebcd7afd7fff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__datablocks_8h.html#afccbaed7cf59138502dbebcd7afd7fff">CELL_TYPE_GRADE</a>&#160;&#160;&#160;0x204</td></tr>
+<tr class="memdesc:afccbaed7cf59138502dbebcd7afd7fff"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tensor of 32-bit sorted categoricals. NA is JAZZ_INTEGER_NA.  <a href="#afccbaed7cf59138502dbebcd7afd7fff">More...</a><br /></td></tr>
+<tr class="separator:afccbaed7cf59138502dbebcd7afd7fff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc8d8705af6dfe573a3d67eaa2f6d0f9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__datablocks_8h.html#afc8d8705af6dfe573a3d67eaa2f6d0f9">CELL_TYPE_BOOLEAN</a>&#160;&#160;&#160;0x304</td></tr>
+<tr class="memdesc:afc8d8705af6dfe573a3d67eaa2f6d0f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tensor of 32-bit booleans: 0, 1, JAZZ_BOOLEAN_NA = NA.  <a href="#afc8d8705af6dfe573a3d67eaa2f6d0f9">More...</a><br /></td></tr>
+<tr class="separator:afc8d8705af6dfe573a3d67eaa2f6d0f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6cbc5f5778c5ad50a20d9d5509d5816"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__datablocks_8h.html#ac6cbc5f5778c5ad50a20d9d5509d5816">CELL_TYPE_SINGLE</a>&#160;&#160;&#160;0x404</td></tr>
+<tr class="memdesc:ac6cbc5f5778c5ad50a20d9d5509d5816"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tensor of IEEE 754 32-bit float (aka single). NA is JAZZ_SINGLE_NA.  <a href="#ac6cbc5f5778c5ad50a20d9d5509d5816">More...</a><br /></td></tr>
+<tr class="separator:ac6cbc5f5778c5ad50a20d9d5509d5816"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a966817f69d1482fbfed4bf65b4b81b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__datablocks_8h.html#a7a966817f69d1482fbfed4bf65b4b81b">CELL_TYPE_JAZZ_STRING</a>&#160;&#160;&#160;0x504</td></tr>
+<tr class="memdesc:a7a966817f69d1482fbfed4bf65b4b81b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tensor or 32-bit offsets to unmutable strings or JAZZ_STRING_NA or JAZZ_STRING_EMPTY.  <a href="#a7a966817f69d1482fbfed4bf65b4b81b">More...</a><br /></td></tr>
+<tr class="separator:a7a966817f69d1482fbfed4bf65b4b81b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa78915add7f8cb20ecfa873ce9bad9c9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__datablocks_8h.html#aa78915add7f8cb20ecfa873ce9bad9c9">CELL_TYPE_LONG_INTEGER</a>&#160;&#160;&#160;0x008</td></tr>
+<tr class="memdesc:aa78915add7f8cb20ecfa873ce9bad9c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tensor of 64-bit signed integers. NA is JAZZ_LONG_INTEGER_NA.  <a href="#aa78915add7f8cb20ecfa873ce9bad9c9">More...</a><br /></td></tr>
+<tr class="separator:aa78915add7f8cb20ecfa873ce9bad9c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee2f75a7cdb2198acc16ffb9ff6c6a85"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__datablocks_8h.html#aee2f75a7cdb2198acc16ffb9ff6c6a85">CELL_TYPE_JAZZ_TIME</a>&#160;&#160;&#160;0x108</td></tr>
+<tr class="memdesc:aee2f75a7cdb2198acc16ffb9ff6c6a85"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tensor of 64-bit TimePoint. NA is JAZZ_TIME_POINT_NA.  <a href="#aee2f75a7cdb2198acc16ffb9ff6c6a85">More...</a><br /></td></tr>
+<tr class="separator:aee2f75a7cdb2198acc16ffb9ff6c6a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab13c9ec93d22779d56a6254e158fd166"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__datablocks_8h.html#ab13c9ec93d22779d56a6254e158fd166">CELL_TYPE_DOUBLE</a>&#160;&#160;&#160;0x208</td></tr>
+<tr class="memdesc:ab13c9ec93d22779d56a6254e158fd166"><td class="mdescLeft">&#160;</td><td class="mdescRight">A vector of floating point numbers. Binary compatible with an R REALSXP (vector of numeric).  <a href="#ab13c9ec93d22779d56a6254e158fd166">More...</a><br /></td></tr>
+<tr class="separator:ab13c9ec93d22779d56a6254e158fd166"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a582f1ca1e0ed4377a91cb9312248e203"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__datablocks_8h.html#a582f1ca1e0ed4377a91cb9312248e203">JAZZ_BYTE_BOOLEAN_NA</a>&#160;&#160;&#160;0x0ff</td></tr>
+<tr class="memdesc:a582f1ca1e0ed4377a91cb9312248e203"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA for 8-bit boolean is binary 0xff. Type does not exist in R.  <a href="#a582f1ca1e0ed4377a91cb9312248e203">More...</a><br /></td></tr>
+<tr class="separator:a582f1ca1e0ed4377a91cb9312248e203"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc09b20f0a00b192d8afe0f87f83ce00"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__datablocks_8h.html#adc09b20f0a00b192d8afe0f87f83ce00">JAZZ_BOOLEAN_NA</a>&#160;&#160;&#160;0x0ff</td></tr>
+<tr class="memdesc:adc09b20f0a00b192d8afe0f87f83ce00"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA for a 32-bit boolean is binary 0xff. This is R compatible.  <a href="#adc09b20f0a00b192d8afe0f87f83ce00">More...</a><br /></td></tr>
+<tr class="separator:adc09b20f0a00b192d8afe0f87f83ce00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a934aabc341e202f67b9c2b846e3e96cc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__datablocks_8h.html#a934aabc341e202f67b9c2b846e3e96cc">JAZZ_INTEGER_NA</a>&#160;&#160;&#160;INT_MIN</td></tr>
+<tr class="memdesc:a934aabc341e202f67b9c2b846e3e96cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA for a 32-bit integer. This is R compatible.  <a href="#a934aabc341e202f67b9c2b846e3e96cc">More...</a><br /></td></tr>
+<tr class="separator:a934aabc341e202f67b9c2b846e3e96cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2e278b9f3c6b59cb45ff0a5754774f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__datablocks_8h.html#ab2e278b9f3c6b59cb45ff0a5754774f6">JAZZ_SINGLE_NA</a>&#160;&#160;&#160;F_NA</td></tr>
+<tr class="memdesc:ab2e278b9f3c6b59cb45ff0a5754774f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA for a float is the value returned by nanf(). Type does not exist in R.  <a href="#ab2e278b9f3c6b59cb45ff0a5754774f6">More...</a><br /></td></tr>
+<tr class="separator:ab2e278b9f3c6b59cb45ff0a5754774f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87ff8b4c04603f376890ceb070b77e47"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__datablocks_8h.html#a87ff8b4c04603f376890ceb070b77e47">JAZZ_STRING_NA</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:a87ff8b4c04603f376890ceb070b77e47"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA for a string coded as CELL_TYPE_JAZZ_STRING.  <a href="#a87ff8b4c04603f376890ceb070b77e47">More...</a><br /></td></tr>
+<tr class="separator:a87ff8b4c04603f376890ceb070b77e47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9de0787b48728620e0dd7e931c47a48b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__datablocks_8h.html#a9de0787b48728620e0dd7e931c47a48b">JAZZ_STRING_EMPTY</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:a9de0787b48728620e0dd7e931c47a48b"><td class="mdescLeft">&#160;</td><td class="mdescRight">An empty string coded as CELL_TYPE_JAZZ_STRING.  <a href="#a9de0787b48728620e0dd7e931c47a48b">More...</a><br /></td></tr>
+<tr class="separator:a9de0787b48728620e0dd7e931c47a48b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0b701848fc8a03cd66172956f6fb455"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__datablocks_8h.html#ae0b701848fc8a03cd66172956f6fb455">JAZZ_LONG_INTEGER_NA</a>&#160;&#160;&#160;LLONG_MIN</td></tr>
+<tr class="memdesc:ae0b701848fc8a03cd66172956f6fb455"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA for a 64-bit integer. Type does not exist in R.  <a href="#ae0b701848fc8a03cd66172956f6fb455">More...</a><br /></td></tr>
+<tr class="separator:ae0b701848fc8a03cd66172956f6fb455"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10baff1f1470c385c093ab73b7753b87"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__datablocks_8h.html#a10baff1f1470c385c093ab73b7753b87">JAZZ_TIME_POINT_NA</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:a10baff1f1470c385c093ab73b7753b87"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA for a CELL_TYPE_JAZZ_TIME is a 64-bit zero. Type does not exist in R.  <a href="#a10baff1f1470c385c093ab73b7753b87">More...</a><br /></td></tr>
+<tr class="separator:a10baff1f1470c385c093ab73b7753b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d407ad60268ec99c1d590accd456778"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__datablocks_8h.html#a7d407ad60268ec99c1d590accd456778">JAZZ_DOUBLE_NA</a>&#160;&#160;&#160;<a class="el" href="jazz__commons_8cpp.html#aee8296dc80df1bf2da84acda63522a41">R_NA</a></td></tr>
+<tr class="memdesc:a7d407ad60268ec99c1d590accd456778"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA for a double. This is R compatible.  <a href="#a7d407ad60268ec99c1d590accd456778">More...</a><br /></td></tr>
+<tr class="separator:a7d407ad60268ec99c1d590accd456778"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a6aaf910265532463eb5989ecb7f11ed5"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="jazz01__commons_8h.html#a446a3f204afe93a99c1c74177a7d70cc">std::chrono::steady_clock::time_point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__datablocks.html#a6aaf910265532463eb5989ecb7f11ed5">jazz_datablocks::TimePoint</a></td></tr>
+<tr class="separator:a6aaf910265532463eb5989ecb7f11ed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a9ab9efa453cd99ad8a95c797aff340b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ab9efa453cd99ad8a95c797aff340b9">&#9670;&nbsp;</a></span>CELL_TYPE__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CELL_TYPE__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afc8d8705af6dfe573a3d67eaa2f6d0f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc8d8705af6dfe573a3d67eaa2f6d0f9">&#9670;&nbsp;</a></span>CELL_TYPE_BOOLEAN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CELL_TYPE_BOOLEAN&#160;&#160;&#160;0x304</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A tensor of 32-bit booleans: 0, 1, JAZZ_BOOLEAN_NA = NA. </p>
+
+</div>
+</div>
+<a id="a00ed654fef28807203d5042b4342c3fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00ed654fef28807203d5042b4342c3fb">&#9670;&nbsp;</a></span>CELL_TYPE_BYTE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CELL_TYPE_BYTE&#160;&#160;&#160;0x001</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A tensor of unsigned 8-bit binaries. NA is not defined for this type. </p>
+
+</div>
+</div>
+<a id="a2d41c371fc939cf629397eeadf495c0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d41c371fc939cf629397eeadf495c0a">&#9670;&nbsp;</a></span>CELL_TYPE_BYTE_BOOLEAN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CELL_TYPE_BYTE_BOOLEAN&#160;&#160;&#160;0x101</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A tensor 8-bit booleans: 0, 1, JAZZ_BYTE_BOOLEAN_NA = NA. </p>
+
+</div>
+</div>
+<a id="ab13c9ec93d22779d56a6254e158fd166"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab13c9ec93d22779d56a6254e158fd166">&#9670;&nbsp;</a></span>CELL_TYPE_DOUBLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CELL_TYPE_DOUBLE&#160;&#160;&#160;0x208</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A vector of floating point numbers. Binary compatible with an R REALSXP (vector of numeric). </p>
+
+</div>
+</div>
+<a id="ad5ffe4c467b3a9a3e634f3fc57fce2c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5ffe4c467b3a9a3e634f3fc57fce2c8">&#9670;&nbsp;</a></span>CELL_TYPE_FACTOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CELL_TYPE_FACTOR&#160;&#160;&#160;0x104</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A tensor of 32-bit unsorted categoricals. NA is JAZZ_INTEGER_NA. </p>
+
+</div>
+</div>
+<a id="afccbaed7cf59138502dbebcd7afd7fff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afccbaed7cf59138502dbebcd7afd7fff">&#9670;&nbsp;</a></span>CELL_TYPE_GRADE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CELL_TYPE_GRADE&#160;&#160;&#160;0x204</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A tensor of 32-bit sorted categoricals. NA is JAZZ_INTEGER_NA. </p>
+
+</div>
+</div>
+<a id="a7c8ac0338590065772caf2d1406f018e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c8ac0338590065772caf2d1406f018e">&#9670;&nbsp;</a></span>CELL_TYPE_INTEGER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CELL_TYPE_INTEGER&#160;&#160;&#160;0x004</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A tensor of 32-bit signed integers. NA is JAZZ_INTEGER_NA. </p>
+
+</div>
+</div>
+<a id="a7a966817f69d1482fbfed4bf65b4b81b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a966817f69d1482fbfed4bf65b4b81b">&#9670;&nbsp;</a></span>CELL_TYPE_JAZZ_STRING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CELL_TYPE_JAZZ_STRING&#160;&#160;&#160;0x504</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A tensor or 32-bit offsets to unmutable strings or JAZZ_STRING_NA or JAZZ_STRING_EMPTY. </p>
+
+</div>
+</div>
+<a id="aee2f75a7cdb2198acc16ffb9ff6c6a85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee2f75a7cdb2198acc16ffb9ff6c6a85">&#9670;&nbsp;</a></span>CELL_TYPE_JAZZ_TIME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CELL_TYPE_JAZZ_TIME&#160;&#160;&#160;0x108</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A tensor of 64-bit TimePoint. NA is JAZZ_TIME_POINT_NA. </p>
+
+</div>
+</div>
+<a id="aa78915add7f8cb20ecfa873ce9bad9c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa78915add7f8cb20ecfa873ce9bad9c9">&#9670;&nbsp;</a></span>CELL_TYPE_LONG_INTEGER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CELL_TYPE_LONG_INTEGER&#160;&#160;&#160;0x008</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A tensor of 64-bit signed integers. NA is JAZZ_LONG_INTEGER_NA. </p>
+
+</div>
+</div>
+<a id="ac6cbc5f5778c5ad50a20d9d5509d5816"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6cbc5f5778c5ad50a20d9d5509d5816">&#9670;&nbsp;</a></span>CELL_TYPE_SINGLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CELL_TYPE_SINGLE&#160;&#160;&#160;0x404</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A tensor of IEEE 754 32-bit float (aka single). NA is JAZZ_SINGLE_NA. </p>
+
+</div>
+</div>
 <a id="a8bc55e493927b18d575a8d28f1335e91"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8bc55e493927b18d575a8d28f1335e91">&#9670;&nbsp;</a></span>INCLUDED_JAZZ_ELEMENTS_DATABLOCKS</h2>
 
@@ -99,6 +369,150 @@ Macros</h2></td></tr>
 
 <p>Basic Jazz codeless data types and constants. </p>
 <p>&lt; This module defines the constants and codeless structures to create JazzDataBlock structures. </p>
+
+</div>
+</div>
+<a id="adc09b20f0a00b192d8afe0f87f83ce00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc09b20f0a00b192d8afe0f87f83ce00">&#9670;&nbsp;</a></span>JAZZ_BOOLEAN_NA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JAZZ_BOOLEAN_NA&#160;&#160;&#160;0x0ff</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA for a 32-bit boolean is binary 0xff. This is R compatible. </p>
+
+</div>
+</div>
+<a id="a582f1ca1e0ed4377a91cb9312248e203"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a582f1ca1e0ed4377a91cb9312248e203">&#9670;&nbsp;</a></span>JAZZ_BYTE_BOOLEAN_NA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JAZZ_BYTE_BOOLEAN_NA&#160;&#160;&#160;0x0ff</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA for 8-bit boolean is binary 0xff. Type does not exist in R. </p>
+
+</div>
+</div>
+<a id="a7d407ad60268ec99c1d590accd456778"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d407ad60268ec99c1d590accd456778">&#9670;&nbsp;</a></span>JAZZ_DOUBLE_NA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JAZZ_DOUBLE_NA&#160;&#160;&#160;<a class="el" href="jazz__commons_8cpp.html#aee8296dc80df1bf2da84acda63522a41">R_NA</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA for a double. This is R compatible. </p>
+
+</div>
+</div>
+<a id="a934aabc341e202f67b9c2b846e3e96cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a934aabc341e202f67b9c2b846e3e96cc">&#9670;&nbsp;</a></span>JAZZ_INTEGER_NA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JAZZ_INTEGER_NA&#160;&#160;&#160;INT_MIN</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA for a 32-bit integer. This is R compatible. </p>
+
+</div>
+</div>
+<a id="ae0b701848fc8a03cd66172956f6fb455"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0b701848fc8a03cd66172956f6fb455">&#9670;&nbsp;</a></span>JAZZ_LONG_INTEGER_NA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JAZZ_LONG_INTEGER_NA&#160;&#160;&#160;LLONG_MIN</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA for a 64-bit integer. Type does not exist in R. </p>
+
+</div>
+</div>
+<a id="ab2e278b9f3c6b59cb45ff0a5754774f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2e278b9f3c6b59cb45ff0a5754774f6">&#9670;&nbsp;</a></span>JAZZ_SINGLE_NA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JAZZ_SINGLE_NA&#160;&#160;&#160;F_NA</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA for a float is the value returned by nanf(). Type does not exist in R. </p>
+
+</div>
+</div>
+<a id="a9de0787b48728620e0dd7e931c47a48b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9de0787b48728620e0dd7e931c47a48b">&#9670;&nbsp;</a></span>JAZZ_STRING_EMPTY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JAZZ_STRING_EMPTY&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An empty string coded as CELL_TYPE_JAZZ_STRING. </p>
+
+</div>
+</div>
+<a id="a87ff8b4c04603f376890ceb070b77e47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87ff8b4c04603f376890ceb070b77e47">&#9670;&nbsp;</a></span>JAZZ_STRING_NA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JAZZ_STRING_NA&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA for a string coded as CELL_TYPE_JAZZ_STRING. </p>
+
+</div>
+</div>
+<a id="a10baff1f1470c385c093ab73b7753b87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10baff1f1470c385c093ab73b7753b87">&#9670;&nbsp;</a></span>JAZZ_TIME_POINT_NA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JAZZ_TIME_POINT_NA&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA for a CELL_TYPE_JAZZ_TIME is a 64-bit zero. Type does not exist in R. </p>
 
 </div>
 </div>

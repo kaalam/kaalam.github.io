@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['f_5fna',['F_NA',['../namespacejazz__datablocks.html#a89f2e2396ad5c5d8173409f2d4064a74',1,'jazz_datablocks']]],
   ['findprocessidbyname',['FindProcessIdByName',['../namespacejazz__utils.html#a2ccc5223d3b9244dac4e77e3c5bbd0d0',1,'jazz_utils']]],
   ['flags',['flags',['../structjzzBlockHeader.html#ab006e84abe47acedeb66982b9d0216a8',1,'jzzBlockHeader::flags()'],['../structjazz__lmdb__opt.html#a5e79fb7928d1be035bb31e62a5be6357',1,'jazz_lmdb_opt::flags()']]],
   ['format_5fc_5foffs_5fchars',['format_C_OFFS_CHARS',['../classjzzBLOCKS.html#a210476681839337c293c78e83c5eb5b5',1,'jzzBLOCKS']]],

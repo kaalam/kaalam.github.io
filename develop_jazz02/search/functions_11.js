@@ -1,7 +1,7 @@
 var searchData=
 [
   ['r_5fisna',['R_IsNA',['../jazz01__commons_8h.html#a44f6e16a8c26cb2bbe62804e55d4f1e2',1,'jazz01_commons.h']]],
-  ['r_5fvalueofna',['R_ValueOfNA',['../jazz__commons_8cpp.html#adba7de256829917ca0ed5b22a402550b',1,'jazz_commons.cpp']]],
+  ['r_5fvalueofna',['R_ValueOfNA',['../jazz__commons_8cpp.html#adba7de256829917ca0ed5b22a402550b',1,'R_ValueOfNA():&#160;jazz_commons.cpp'],['../namespacejazz__datablocks.html#aba3faeb0c34be4885b660bd3debe14a1',1,'jazz_datablocks::R_ValueOfNA()']]],
   ['realloc_5fc_5foffs_5fchars',['realloc_C_OFFS_CHARS',['../classjzzBLOCKS.html#ac53acaefd5beecc4e32fabe47ae48981',1,'jzzBLOCKS']]],
   ['register_5fservice',['register_service',['../classjazzServices.html#a5ba027c4e805ba3eab3ec7e533d6310c',1,'jazzServices::register_service()'],['../jazz01__main_8cpp.html#a53becd3885d25236cb4bee4e6a672ada',1,'register_service():&#160;jazz01_main.cpp']]],
   ['reinterpret_5fcast_5fblock',['reinterpret_cast_block',['../classjzzBLOCKS.html#a99a2f45f0fcfacfb3a4923b4add5a8d1',1,'jzzBLOCKS']]],
