@@ -6,6 +6,7 @@ var searchData=
   ['jazz_5fdouble_5fna',['JAZZ_DOUBLE_NA',['../jazz__datablocks_8h.html#a7d407ad60268ec99c1d590accd456778',1,'jazz_datablocks.h']]],
   ['jazz_5finteger_5fna',['JAZZ_INTEGER_NA',['../jazz__datablocks_8h.html#a934aabc341e202f67b9c2b846e3e96cc',1,'jazz_datablocks.h']]],
   ['jazz_5flong_5finteger_5fna',['JAZZ_LONG_INTEGER_NA',['../jazz__datablocks_8h.html#ae0b701848fc8a03cd66172956f6fb455',1,'jazz_datablocks.h']]],
+  ['jazz_5fmax_5ftensor_5frank',['JAZZ_MAX_TENSOR_RANK',['../jazz__datablocks_8h.html#ae28623e9cdce8dfb1b062557981e481a',1,'jazz_datablocks.h']]],
   ['jazz_5fservice_5frhome',['JAZZ_SERVICE_RHOME',['../jazz__blockconv_8cpp.html#a6e294e5b94c7c75ab77599aa6629078c',1,'jazz_blockconv.cpp']]],
   ['jazz_5fsingle_5fna',['JAZZ_SINGLE_NA',['../jazz__datablocks_8h.html#ab2e278b9f3c6b59cb45ff0a5754774f6',1,'jazz_datablocks.h']]],
   ['jazz_5fstring_5fempty',['JAZZ_STRING_EMPTY',['../jazz__datablocks_8h.html#a9de0787b48728620e0dd7e931c47a48b',1,'jazz_datablocks.h']]],

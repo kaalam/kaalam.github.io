@@ -19,6 +19,7 @@ var searchData=
   ['ram_5ftrack_5flearn',['RAM_TRACK_LEARN',['../jazz01__commons_8h.html#a5b1310c6089d980021e349da37f2488e',1,'jazz01_commons.h']]],
   ['ram_5ftrack_5fwas_5fchecked',['RAM_TRACK_WAS_CHECKED',['../jazz01__commons_8h.html#a5859fa8c31a7f362f9d836ede88b11b4',1,'jazz01_commons.h']]],
   ['range',['range',['../structjazz__http__security.html#af3da789bac3b8381fd60ebedf4aa30ab',1,'jazz_http_security']]],
+  ['rank',['rank',['../structjazz__datablocks_1_1JazzBlockHeader.html#a0f5eda4dd6f5fb86ba0fd09bb668f6fc',1,'jazz_datablocks::JazzBlockHeader']]],
   ['realloc_5fc_5foffs_5fchars',['realloc_C_OFFS_CHARS',['../classjzzBLOCKS.html#ac53acaefd5beecc4e32fabe47ae48981',1,'jzzBLOCKS']]],
   ['realsxp',['REALSXP',['../jazz01__commons_8h.html#a169d590ef6c515ee09a99c3def0e0b32',1,'jazz01_commons.h']]],
   ['register_5fservice',['register_service',['../classjazzServices.html#a5ba027c4e805ba3eab3ec7e533d6310c',1,'jazzServices::register_service()'],['../jazz01__main_8cpp.html#a53becd3885d25236cb4bee4e6a672ada',1,'register_service():&#160;jazz01_main.cpp']]],

@@ -4,6 +4,7 @@ var searchData=
   ['jazz_5flmdb_5fopt',['jazz_lmdb_opt',['../structjazz__lmdb__opt.html',1,'']]],
   ['jazz_5fnode',['jazz_node',['../structjazz__node.html',1,'']]],
   ['jazzattributesmap',['JazzAttributesMap',['../structjazz__datablocks_1_1JazzAttributesMap.html',1,'jazz_datablocks']]],
+  ['jazzblock',['JazzBlock',['../classjazz__datablocks_1_1JazzBlock.html',1,'jazz_datablocks']]],
   ['jazzblockheader',['JazzBlockHeader',['../structjazz__datablocks_1_1JazzBlockHeader.html',1,'jazz_datablocks']]],
   ['jazzcommons',['jazzCommons',['../classjazzCommons.html',1,'']]],
   ['jazzconfigfile',['JazzConfigFile',['../classjazz__utils_1_1JazzConfigFile.html',1,'jazz_utils']]],

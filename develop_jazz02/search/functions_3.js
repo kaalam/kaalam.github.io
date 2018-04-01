@@ -1,6 +1,7 @@
 var searchData=
 [
   ['cast_5flmdb_5fblock',['cast_lmdb_block',['../classjzzBLOCKCONV.html#a30abe89445537738572bf39eeecbef8c',1,'jzzBLOCKCONV']]],
+  ['cell_5fsize',['cell_size',['../classjazz__datablocks_1_1JazzBlock.html#a796b537eea9fa2ac6166e876606127fb',1,'jazz_datablocks::JazzBlock']]],
   ['char_5fto_5fkey',['char_to_key',['../classjzzBLOCKS.html#acd8ba15076849a655a5974852902c8e0',1,'jzzBLOCKS']]],
   ['cleanconfigargument',['CleanConfigArgument',['../namespacejazz__utils.html#aa804bdf15b228c69c1c269c8bb5ef6e1',1,'jazz_utils']]],
   ['close_5fall_5fsources',['close_all_sources',['../classjzzBLOCKS.html#a186f59ea73fd421b349ddd5e3b7cddbf',1,'jzzBLOCKS']]],

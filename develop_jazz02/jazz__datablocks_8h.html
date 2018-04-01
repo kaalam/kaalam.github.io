@@ -85,6 +85,8 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__datablocks_1_1JazzAttributesMap.html">jazz_datablocks::JazzAttributesMap</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__datablocks_1_1JazzBlock.html">jazz_datablocks::JazzBlock</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -96,6 +98,9 @@ Macros</h2></td></tr>
 <tr class="memitem:a8bc55e493927b18d575a8d28f1335e91"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__datablocks_8h.html#a8bc55e493927b18d575a8d28f1335e91">INCLUDED_JAZZ_ELEMENTS_DATABLOCKS</a></td></tr>
 <tr class="memdesc:a8bc55e493927b18d575a8d28f1335e91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Basic Jazz codeless data types and constants.  <a href="#a8bc55e493927b18d575a8d28f1335e91">More...</a><br /></td></tr>
 <tr class="separator:a8bc55e493927b18d575a8d28f1335e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae28623e9cdce8dfb1b062557981e481a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__datablocks_8h.html#ae28623e9cdce8dfb1b062557981e481a">JAZZ_MAX_TENSOR_RANK</a>&#160;&#160;&#160;6</td></tr>
+<tr class="memdesc:ae28623e9cdce8dfb1b062557981e481a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum rank = 6, E.g. a 2D array of raw videos (row, column, frame, x, y, color)  <a href="#ae28623e9cdce8dfb1b062557981e481a">More...</a><br /></td></tr>
+<tr class="separator:ae28623e9cdce8dfb1b062557981e481a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ab9efa453cd99ad8a95c797aff340b9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__datablocks_8h.html#a9ab9efa453cd99ad8a95c797aff340b9">CELL_TYPE__</a></td></tr>
 <tr class="separator:a9ab9efa453cd99ad8a95c797aff340b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00ed654fef28807203d5042b4342c3fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__datablocks_8h.html#a00ed654fef28807203d5042b4342c3fb">CELL_TYPE_BYTE</a>&#160;&#160;&#160;0x001</td></tr>
@@ -162,7 +167,19 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a6aaf910265532463eb5989ecb7f11ed5"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="jazz01__commons_8h.html#a446a3f204afe93a99c1c74177a7d70cc">std::chrono::steady_clock::time_point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__datablocks.html#a6aaf910265532463eb5989ecb7f11ed5">jazz_datablocks::TimePoint</a></td></tr>
+<tr class="memdesc:a6aaf910265532463eb5989ecb7f11ed5"><td class="mdescLeft">&#160;</td><td class="mdescRight">A time point stored as 8 bytes.  <a href="namespacejazz__datablocks.html#a6aaf910265532463eb5989ecb7f11ed5">More...</a><br /></td></tr>
 <tr class="separator:a6aaf910265532463eb5989ecb7f11ed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6be0f103934e5d43c01d0ae5d77e0884"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__datablocks.html#a6be0f103934e5d43c01d0ae5d77e0884">jazz_datablocks::JazzTensorDim</a>[<a class="el" href="jazz__datablocks_8h.html#ae28623e9cdce8dfb1b062557981e481a">JAZZ_MAX_TENSOR_RANK</a>]</td></tr>
+<tr class="memdesc:a6be0f103934e5d43c01d0ae5d77e0884"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dimensions for the Tensor. The product of all * (cell_type &amp; 0xff) &lt; 2Gb.  <a href="namespacejazz__datablocks.html#a6be0f103934e5d43c01d0ae5d77e0884">More...</a><br /></td></tr>
+<tr class="separator:a6be0f103934e5d43c01d0ae5d77e0884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4550331d3dbaef88edf54553217fab05"><td class="memItemLeft" align="right" valign="top">typedef JazzBlockHeader *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__datablocks.html#a4550331d3dbaef88edf54553217fab05">jazz_datablocks::pJazzBlockHeader</a></td></tr>
+<tr class="separator:a4550331d3dbaef88edf54553217fab05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77be3d91de682a94c3aafbeea8a167bb"><td class="memItemLeft" align="right" valign="top">typedef JazzStringBuffer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__datablocks.html#a77be3d91de682a94c3aafbeea8a167bb">jazz_datablocks::pJazzStringBuffer</a></td></tr>
+<tr class="separator:a77be3d91de682a94c3aafbeea8a167bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af530a851a337ebd5279dd18cb6e8464b"><td class="memItemLeft" align="right" valign="top">typedef JazzAttributesMap *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__datablocks.html#af530a851a337ebd5279dd18cb6e8464b">jazz_datablocks::pJazzAttributesMap</a></td></tr>
+<tr class="separator:af530a851a337ebd5279dd18cb6e8464b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bee86484bd6b39c61501ab08966b1de"><td class="memItemLeft" align="right" valign="top">typedef JazzBlock *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__datablocks.html#a4bee86484bd6b39c61501ab08966b1de">jazz_datablocks::pJazzBlock</a></td></tr>
+<tr class="separator:a4bee86484bd6b39c61501ab08966b1de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a9ab9efa453cd99ad8a95c797aff340b9"></a>
@@ -449,6 +466,22 @@ Typedefs</h2></td></tr>
 </div><div class="memdoc">
 
 <p>NA for a 64-bit integer. Type does not exist in R. </p>
+
+</div>
+</div>
+<a id="ae28623e9cdce8dfb1b062557981e481a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae28623e9cdce8dfb1b062557981e481a">&#9670;&nbsp;</a></span>JAZZ_MAX_TENSOR_RANK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JAZZ_MAX_TENSOR_RANK&#160;&#160;&#160;6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Maximum rank = 6, E.g. a 2D array of raw videos (row, column, frame, x, y, color) </p>
 
 </div>
 </div>
