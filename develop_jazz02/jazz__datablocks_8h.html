@@ -74,6 +74,7 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &lt;chrono&gt;</code><br />
 <code>#include &lt;limits.h&gt;</code><br />
+<code>#include &lt;map&gt;</code><br />
 </div>
 <p><a href="jazz__datablocks_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -172,12 +173,18 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a6be0f103934e5d43c01d0ae5d77e0884"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__datablocks.html#a6be0f103934e5d43c01d0ae5d77e0884">jazz_datablocks::JazzTensorDim</a>[<a class="el" href="jazz__datablocks_8h.html#ae28623e9cdce8dfb1b062557981e481a">JAZZ_MAX_TENSOR_RANK</a>]</td></tr>
 <tr class="memdesc:a6be0f103934e5d43c01d0ae5d77e0884"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dimensions for the Tensor. The product of all * (cell_type &amp; 0xff) &lt; 2Gb.  <a href="namespacejazz__datablocks.html#a6be0f103934e5d43c01d0ae5d77e0884">More...</a><br /></td></tr>
 <tr class="separator:a6be0f103934e5d43c01d0ae5d77e0884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a712f1572284a078902fc1f3ce28811ec"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; int, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__datablocks.html#a712f1572284a078902fc1f3ce28811ec">jazz_datablocks::AllAttributes</a></td></tr>
+<tr class="separator:a712f1572284a078902fc1f3ce28811ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02a0e42f48086e049d3c39f029d1adc8"><td class="memItemLeft" align="right" valign="top">typedef JazzTensorDim *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__datablocks.html#a02a0e42f48086e049d3c39f029d1adc8">jazz_datablocks::pJazzTensorDim</a></td></tr>
+<tr class="separator:a02a0e42f48086e049d3c39f029d1adc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4550331d3dbaef88edf54553217fab05"><td class="memItemLeft" align="right" valign="top">typedef JazzBlockHeader *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__datablocks.html#a4550331d3dbaef88edf54553217fab05">jazz_datablocks::pJazzBlockHeader</a></td></tr>
 <tr class="separator:a4550331d3dbaef88edf54553217fab05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77be3d91de682a94c3aafbeea8a167bb"><td class="memItemLeft" align="right" valign="top">typedef JazzStringBuffer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__datablocks.html#a77be3d91de682a94c3aafbeea8a167bb">jazz_datablocks::pJazzStringBuffer</a></td></tr>
 <tr class="separator:a77be3d91de682a94c3aafbeea8a167bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af530a851a337ebd5279dd18cb6e8464b"><td class="memItemLeft" align="right" valign="top">typedef JazzAttributesMap *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__datablocks.html#af530a851a337ebd5279dd18cb6e8464b">jazz_datablocks::pJazzAttributesMap</a></td></tr>
 <tr class="separator:af530a851a337ebd5279dd18cb6e8464b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58cd5f012c417a02b5e4bd8047f137d6"><td class="memItemLeft" align="right" valign="top">typedef AllAttributes *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__datablocks.html#a58cd5f012c417a02b5e4bd8047f137d6">jazz_datablocks::pAllAttributes</a></td></tr>
+<tr class="separator:a58cd5f012c417a02b5e4bd8047f137d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bee86484bd6b39c61501ab08966b1de"><td class="memItemLeft" align="right" valign="top">typedef JazzBlock *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__datablocks.html#a4bee86484bd6b39c61501ab08966b1de">jazz_datablocks::pJazzBlock</a></td></tr>
 <tr class="separator:a4bee86484bd6b39c61501ab08966b1de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>

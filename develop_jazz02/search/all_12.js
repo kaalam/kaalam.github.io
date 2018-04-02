@@ -1,12 +1,16 @@
 var searchData=
 [
   ['sample_5fapi_5fcall',['sample_api_call',['../classjzzAPI.html#a4aa4cb9395b22aebb92a979a41b06b78',1,'jzzAPI']]],
+  ['search_5ffor_5fmatches',['search_for_matches',['../structjazz__datablocks_1_1JazzStringBuffer.html#affb73007d976766650b3db2783b3a27c',1,'jazz_datablocks::JazzStringBuffer']]],
+  ['set_5fattributes',['set_attributes',['../classjazz__datablocks_1_1JazzBlock.html#ade7a6883bf34603447c56b4201823a6d',1,'jazz_datablocks::JazzBlock']]],
+  ['set_5fdimensions',['set_dimensions',['../classjazz__datablocks_1_1JazzBlock.html#a69a736b6e505e6b2aecde5313831c35d',1,'jazz_datablocks::JazzBlock']]],
   ['set_5ffirst_5fkey',['set_first_key',['../classjzzBLOCKS.html#a3692c1344a69622159645b90821b2bfe',1,'jzzBLOCKS']]],
   ['set_5flang_5fto_5fblock',['set_lang_to_block',['../classjazzWebSource.html#a059154479806a6e7c9569ab0de2fc574',1,'jazzWebSource']]],
   ['set_5flmdb_5fblockflags',['set_lmdb_blockflags',['../classjzzBLOCKCONV.html#a7d2c7acf8770887653e280cd245a68ec',1,'jzzBLOCKCONV']]],
   ['set_5flmdb_5ffromr',['set_lmdb_fromR',['../classjzzBLOCKCONV.html#af4ce2cabdc6350b4d390ad1271829277',1,'jzzBLOCKCONV']]],
   ['set_5flmdb_5ffromtext',['set_lmdb_fromtext',['../classjzzBLOCKCONV.html#ac98422ec1325064477dd2fe8889834f0',1,'jzzBLOCKCONV']]],
   ['set_5fmime_5fto_5fblock',['set_mime_to_block',['../classjazzWebSource.html#ae12c190a9fe355e61f89104160270f28',1,'jazzWebSource']]],
+  ['set_5fstring',['set_string',['../classjazz__datablocks_1_1JazzBlock.html#a09a07f43f3fcd215569b3fa9e38855cb',1,'jazz_datablocks::JazzBlock::set_string(pJazzTensorDim pIndex, char *pString)'],['../classjazz__datablocks_1_1JazzBlock.html#a2c717530969af1692a07c47c4b948f3e',1,'jazz_datablocks::JazzBlock::set_string(int offset, char *pString)']]],
   ['set_5furl_5fto_5fblock',['set_url_to_block',['../classjazzWebSource.html#a5c7c2f8a8cd66b8fc50219760a316c4a',1,'jazzWebSource']]],
   ['signalhandler_5fsigterm',['signalHandler_SIGTERM',['../jazz01__main_8cpp.html#aca93ea4bfc86dada53a9dfcc7797f0a3',1,'jazz01_main.cpp']]],
   ['signature',['signature',['../structR__binary.html#a965be7c7c710e18ea3bb89bdd6f8537d',1,'R_binary::signature()'],['../structRStr__header.html#a284a841adf596f73f46fb701275f5667',1,'RStr_header::signature()'],['../jazz__blockconv_8h.html#a7a745885960cf41a1a530159b3aa41ed',1,'signature():&#160;jazz_blockconv.h']]],

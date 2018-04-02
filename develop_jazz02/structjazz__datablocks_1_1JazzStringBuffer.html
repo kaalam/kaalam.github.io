@@ -77,11 +77,11 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a00067b07f1dc9e1bfdf42d7649fbd1a5"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__datablocks_1_1JazzStringBuffer.html#a00067b07f1dc9e1bfdf42d7649fbd1a5">NA</a></td></tr>
 <tr class="separator:a00067b07f1dc9e1bfdf42d7649fbd1a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f65a65b5adaa8307b44a740866e0318"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__datablocks_1_1JazzStringBuffer.html#a2f65a65b5adaa8307b44a740866e0318">EMPTY</a></td></tr>
-<tr class="memdesc:a2f65a65b5adaa8307b44a740866e0318"><td class="mdescLeft">&#160;</td><td class="mdescRight">A binary zero making a string with offset 0 (== JAZZC_NA_STRING) or 1 (== JAZZC_EMPTY_STRING) == "".  <a href="#a2f65a65b5adaa8307b44a740866e0318">More...</a><br /></td></tr>
+<tr class="memdesc:a2f65a65b5adaa8307b44a740866e0318"><td class="mdescLeft">&#160;</td><td class="mdescRight">A binary zero making a string with offset 0 (== JAZZ_STRING_NA) or 1 (== JAZZ_STRING_EMPTY) == "".  <a href="#a2f65a65b5adaa8307b44a740866e0318">More...</a><br /></td></tr>
 <tr class="separator:a2f65a65b5adaa8307b44a740866e0318"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6fad36888cf390b1d711b5ece40d97c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__datablocks_1_1JazzStringBuffer.html#ac6fad36888cf390b1d711b5ece40d97c">isBig</a></td></tr>
-<tr class="memdesc:ac6fad36888cf390b1d711b5ece40d97c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set by get_string_idx_C_OFFS_CHARS() when the number of strings &gt; STR_SEARCH_BIG_ABOVE.  <a href="#ac6fad36888cf390b1d711b5ece40d97c">More...</a><br /></td></tr>
-<tr class="separator:ac6fad36888cf390b1d711b5ece40d97c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affb73007d976766650b3db2783b3a27c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__datablocks_1_1JazzStringBuffer.html#affb73007d976766650b3db2783b3a27c">search_for_matches</a></td></tr>
+<tr class="memdesc:affb73007d976766650b3db2783b3a27c"><td class="mdescLeft">&#160;</td><td class="mdescRight">When the <a class="el" href="structjazz__datablocks_1_1JazzStringBuffer.html">JazzStringBuffer</a> is small try to match existing indices of the same string to save RAM.  <a href="#affb73007d976766650b3db2783b3a27c">More...</a><br /></td></tr>
+<tr class="separator:affb73007d976766650b3db2783b3a27c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cea7f923164e5d3061d060fbc1b207d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__datablocks_1_1JazzStringBuffer.html#a2cea7f923164e5d3061d060fbc1b207d">last_idx</a></td></tr>
 <tr class="memdesc:a2cea7f923164e5d3061d060fbc1b207d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The index to the first free space after the last stored string.  <a href="#a2cea7f923164e5d3061d060fbc1b207d">More...</a><br /></td></tr>
 <tr class="separator:a2cea7f923164e5d3061d060fbc1b207d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -118,23 +118,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>A binary zero making a string with offset 0 (== JAZZC_NA_STRING) or 1 (== JAZZC_EMPTY_STRING) == "". </p>
-
-</div>
-</div>
-<a id="ac6fad36888cf390b1d711b5ece40d97c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6fad36888cf390b1d711b5ece40d97c">&#9670;&nbsp;</a></span>isBig</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool jazz_datablocks::JazzStringBuffer::isBig</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set by get_string_idx_C_OFFS_CHARS() when the number of strings &gt; STR_SEARCH_BIG_ABOVE. </p>
+<p>A binary zero making a string with offset 0 (== JAZZ_STRING_NA) or 1 (== JAZZ_STRING_EMPTY) == "". </p>
 
 </div>
 </div>
@@ -165,6 +149,22 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="affb73007d976766650b3db2783b3a27c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affb73007d976766650b3db2783b3a27c">&#9670;&nbsp;</a></span>search_for_matches</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool jazz_datablocks::JazzStringBuffer::search_for_matches</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>When the <a class="el" href="structjazz__datablocks_1_1JazzStringBuffer.html">JazzStringBuffer</a> is small try to match existing indices of the same string to save RAM. </p>
 
 </div>
 </div>

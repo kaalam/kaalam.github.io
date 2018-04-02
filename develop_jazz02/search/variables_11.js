@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['search_5ffor_5fmatches',['search_for_matches',['../structjazz__datablocks_1_1JazzStringBuffer.html#affb73007d976766650b3db2783b3a27c',1,'jazz_datablocks::JazzStringBuffer']]],
   ['signature',['signature',['../structR__binary.html#a965be7c7c710e18ea3bb89bdd6f8537d',1,'R_binary::signature()'],['../structRStr__header.html#a284a841adf596f73f46fb701275f5667',1,'RStr_header::signature()'],['../jazz__blockconv_8h.html#a7a745885960cf41a1a530159b3aa41ed',1,'signature():&#160;jazz_blockconv.h']]],
   ['size',['size',['../structjzzBlockHeader.html#a880482ea2ddf3e8ef4588706f616dbbe',1,'jzzBlockHeader']]],
   ['source',['source',['../structparsedURL.html#aaa09298bfdd59373a985b11ad51775f5',1,'parsedURL']]],
