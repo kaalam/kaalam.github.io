@@ -90,20 +90,20 @@ Data Fields</h2></td></tr>
 <tr class="memdesc:a0f5eda4dd6f5fb86ba0fd09bb668f6fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of dimensions.  <a href="#a0f5eda4dd6f5fb86ba0fd09bb668f6fc">More...</a><br /></td></tr>
 <tr class="separator:a0f5eda4dd6f5fb86ba0fd09bb668f6fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94bf362766e84b9d50439e7417ceaa7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__datablocks.html#a6be0f103934e5d43c01d0ae5d77e0884">JazzTensorDim</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__datablocks_1_1JazzBlockHeader.html#a94bf362766e84b9d50439e7417ceaa7d">dim_offs</a></td></tr>
-<tr class="memdesc:a94bf362766e84b9d50439e7417ceaa7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The dimensions of the tensor in terms of offsets (Max. size is 2 Gb).  <a href="#a94bf362766e84b9d50439e7417ceaa7d">More...</a><br /></td></tr>
+<tr class="memdesc:a94bf362766e84b9d50439e7417ceaa7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The dimensions of the tensor in terms of offsets (Max. size is 2 Gb.)  <a href="#a94bf362766e84b9d50439e7417ceaa7d">More...</a><br /></td></tr>
 <tr class="separator:a94bf362766e84b9d50439e7417ceaa7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a088ef0488fe43f3423cb7cb8d2cd29fd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__datablocks_1_1JazzBlockHeader.html#a088ef0488fe43f3423cb7cb8d2cd29fd">jazz_class</a></td></tr>
-<tr class="memdesc:a088ef0488fe43f3423cb7cb8d2cd29fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The class to which the block belongs. See <a class="el" href="jazz__classes_8h.html">jazz_classes.h</a> for details.  <a href="#a088ef0488fe43f3423cb7cb8d2cd29fd">More...</a><br /></td></tr>
-<tr class="separator:a088ef0488fe43f3423cb7cb8d2cd29fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa9e85ef543e72d7e73b7aae94873e1e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__datablocks_1_1JazzBlockHeader.html#afa9e85ef543e72d7e73b7aae94873e1e">offset_stringbuff</a></td></tr>
-<tr class="memdesc:afa9e85ef543e72d7e73b7aae94873e1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset from tensor[] to where the <a class="el" href="structjazz__datablocks_1_1JazzStringBuffer.html">JazzStringBuffer</a> starts. (When cell_type == CELL_TYPE_JAZZ_STRING)  <a href="#afa9e85ef543e72d7e73b7aae94873e1e">More...</a><br /></td></tr>
-<tr class="separator:afa9e85ef543e72d7e73b7aae94873e1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65c6f1b65723ccb13cef65c9c674b4c1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__datablocks_1_1JazzBlockHeader.html#a65c6f1b65723ccb13cef65c9c674b4c1">offset_map</a></td></tr>
-<tr class="memdesc:a65c6f1b65723ccb13cef65c9c674b4c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset from tensor[] to where the <a class="el" href="structjazz__datablocks_1_1JazzAttributesMap.html">JazzAttributesMap</a> starts.  <a href="#a65c6f1b65723ccb13cef65c9c674b4c1">More...</a><br /></td></tr>
-<tr class="separator:a65c6f1b65723ccb13cef65c9c674b4c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cd890f38bfd75d2c1a2a562a5a775a9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__datablocks_1_1JazzBlockHeader.html#a1cd890f38bfd75d2c1a2a562a5a775a9">size</a></td></tr>
+<tr class="memdesc:a1cd890f38bfd75d2c1a2a562a5a775a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The total number of cells in the tensor.  <a href="#a1cd890f38bfd75d2c1a2a562a5a775a9">More...</a><br /></td></tr>
+<tr class="separator:a1cd890f38bfd75d2c1a2a562a5a775a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42f328a8f08ab1eff7ec1708f50f7551"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__datablocks_1_1JazzBlockHeader.html#a42f328a8f08ab1eff7ec1708f50f7551">num_attributes</a></td></tr>
+<tr class="memdesc:a42f328a8f08ab1eff7ec1708f50f7551"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of elements in the JazzAttributesMap.  <a href="#a42f328a8f08ab1eff7ec1708f50f7551">More...</a><br /></td></tr>
+<tr class="separator:a42f328a8f08ab1eff7ec1708f50f7551"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14985f88c4470854d2c958d9cb6ff36f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__datablocks_1_1JazzBlockHeader.html#a14985f88c4470854d2c958d9cb6ff36f">total_bytes</a></td></tr>
 <tr class="memdesc:a14985f88c4470854d2c958d9cb6ff36f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total size of the block everything included.  <a href="#a14985f88c4470854d2c958d9cb6ff36f">More...</a><br /></td></tr>
 <tr class="separator:a14985f88c4470854d2c958d9cb6ff36f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a088ef0488fe43f3423cb7cb8d2cd29fd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__datablocks_1_1JazzBlockHeader.html#a088ef0488fe43f3423cb7cb8d2cd29fd">jazz_class</a></td></tr>
+<tr class="memdesc:a088ef0488fe43f3423cb7cb8d2cd29fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The class to which the block belongs. See <a class="el" href="jazz__classes_8h.html">jazz_classes.h</a> for details.  <a href="#a088ef0488fe43f3423cb7cb8d2cd29fd">More...</a><br /></td></tr>
+<tr class="separator:a088ef0488fe43f3423cb7cb8d2cd29fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2621bd0130f7488e30d5ab7f48b42b04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__datablocks.html#a6aaf910265532463eb5989ecb7f11ed5">TimePoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__datablocks_1_1JazzBlockHeader.html#a2621bd0130f7488e30d5ab7f48b42b04">created</a></td></tr>
 <tr class="memdesc:a2621bd0130f7488e30d5ab7f48b42b04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timestamp when the block was created.  <a href="#a2621bd0130f7488e30d5ab7f48b42b04">More...</a><br /></td></tr>
 <tr class="separator:a2621bd0130f7488e30d5ab7f48b42b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,7 +158,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The dimensions of the tensor in terms of offsets (Max. size is 2 Gb). </p>
+<p>The dimensions of the tensor in terms of offsets (Max. size is 2 Gb.) </p>
 
 </div>
 </div>
@@ -194,35 +194,19 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a65c6f1b65723ccb13cef65c9c674b4c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65c6f1b65723ccb13cef65c9c674b4c1">&#9670;&nbsp;</a></span>offset_map</h2>
+<a id="a42f328a8f08ab1eff7ec1708f50f7551"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42f328a8f08ab1eff7ec1708f50f7551">&#9670;&nbsp;</a></span>num_attributes</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int jazz_datablocks::JazzBlockHeader::offset_map</td>
+          <td class="memname">int jazz_datablocks::JazzBlockHeader::num_attributes</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Offset from tensor[] to where the <a class="el" href="structjazz__datablocks_1_1JazzAttributesMap.html">JazzAttributesMap</a> starts. </p>
-
-</div>
-</div>
-<a id="afa9e85ef543e72d7e73b7aae94873e1e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa9e85ef543e72d7e73b7aae94873e1e">&#9670;&nbsp;</a></span>offset_stringbuff</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int jazz_datablocks::JazzBlockHeader::offset_stringbuff</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Offset from tensor[] to where the <a class="el" href="structjazz__datablocks_1_1JazzStringBuffer.html">JazzStringBuffer</a> starts. (When cell_type == CELL_TYPE_JAZZ_STRING) </p>
+<p>Number of elements in the JazzAttributesMap. </p>
 
 </div>
 </div>
@@ -239,6 +223,22 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The number of dimensions. </p>
+
+</div>
+</div>
+<a id="a1cd890f38bfd75d2c1a2a562a5a775a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cd890f38bfd75d2c1a2a562a5a775a9">&#9670;&nbsp;</a></span>size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jazz_datablocks::JazzBlockHeader::size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The total number of cells in the tensor. </p>
 
 </div>
 </div>

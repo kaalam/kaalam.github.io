@@ -2,7 +2,7 @@ var searchData=
 [
   ['sample_5fapi_5fcall',['sample_api_call',['../classjzzAPI.html#a4aa4cb9395b22aebb92a979a41b06b78',1,'jzzAPI']]],
   ['set_5fattributes',['set_attributes',['../classjazz__datablocks_1_1JazzBlock.html#ade7a6883bf34603447c56b4201823a6d',1,'jazz_datablocks::JazzBlock']]],
-  ['set_5fdimensions',['set_dimensions',['../classjazz__datablocks_1_1JazzBlock.html#a69a736b6e505e6b2aecde5313831c35d',1,'jazz_datablocks::JazzBlock']]],
+  ['set_5fdimensions',['set_dimensions',['../classjazz__datablocks_1_1JazzBlock.html#ac7414206fd3cfa3e6ecbc593f72c0ab8',1,'jazz_datablocks::JazzBlock']]],
   ['set_5ffirst_5fkey',['set_first_key',['../classjzzBLOCKS.html#a3692c1344a69622159645b90821b2bfe',1,'jzzBLOCKS']]],
   ['set_5flang_5fto_5fblock',['set_lang_to_block',['../classjazzWebSource.html#a059154479806a6e7c9569ab0de2fc574',1,'jazzWebSource']]],
   ['set_5flmdb_5fblockflags',['set_lmdb_blockflags',['../classjzzBLOCKCONV.html#a7d2c7acf8770887653e280cd245a68ec',1,'jzzBLOCKCONV']]],

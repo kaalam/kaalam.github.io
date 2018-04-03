@@ -4,7 +4,6 @@ var searchData=
   ['pboolblock',['pBoolBlock',['../jazz01__commons_8h.html#ab445aeb9ff3b0956d22aa990f41b240a',1,'jazz01_commons.h']]],
   ['pcharblock',['pCharBlock',['../jazz01__commons_8h.html#aadd3847e953c0a4cb4671bdff4805704',1,'jazz01_commons.h']]],
   ['pintblock',['pIntBlock',['../jazz01__commons_8h.html#a127962256c772083f0f393df2909f91f',1,'jazz01_commons.h']]],
-  ['pjazzattributesmap',['pJazzAttributesMap',['../namespacejazz__datablocks.html#af530a851a337ebd5279dd18cb6e8464b',1,'jazz_datablocks']]],
   ['pjazzblock',['pJazzBlock',['../jazz01__commons_8h.html#a81770bae7c18abbb26281974e3d1c296',1,'pJazzBlock():&#160;jazz01_commons.h'],['../namespacejazz__datablocks.html#a4bee86484bd6b39c61501ab08966b1de',1,'jazz_datablocks::pJazzBlock()']]],
   ['pjazzblockheader',['pJazzBlockHeader',['../namespacejazz__datablocks.html#a4550331d3dbaef88edf54553217fab05',1,'jazz_datablocks']]],
   ['pjazzstringbuffer',['pJazzStringBuffer',['../namespacejazz__datablocks.html#a77be3d91de682a94c3aafbeea8a167bb',1,'jazz_datablocks']]],

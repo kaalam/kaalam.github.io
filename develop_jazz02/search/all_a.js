@@ -79,7 +79,6 @@ var searchData=
   ['jazzalloc',['jazzAlloc',['../jazz01__commons_8h.html#ac901a7e8dab2a4c2b5de3462cf108837',1,'jazzAlloc(void *&amp;ptr, int alloc_type, int size, char *pstr=NULL):&#160;jazz01_alloc.cpp'],['../jazz01__alloc_8cpp.html#aa182a8270f58c140924a678658dab843',1,'jazzAlloc(void *&amp;ptr, int alloc_type, int size, char *pstr):&#160;jazz01_alloc.cpp'],['../jazz01__commons_8h.html#af5b2b15a0f1e5c3d10303c34593b2bfa',1,'JAZZALLOC():&#160;jazz01_commons.h']]],
   ['jazzallocstr',['JAZZALLOCSTR',['../jazz01__commons_8h.html#a1102d6a9f1da8c0381f79eadb058e213',1,'jazz01_commons.h']]],
   ['jazzallocvec',['JAZZALLOCVEC',['../jazz01__commons_8h.html#aa6f302c6c5204492e2fa8e5f4480e8ac',1,'jazz01_commons.h']]],
-  ['jazzattributesmap',['JazzAttributesMap',['../structjazz__datablocks_1_1JazzAttributesMap.html',1,'jazz_datablocks']]],
   ['jazzblock',['JazzBlock',['../classjazz__datablocks_1_1JazzBlock.html',1,'jazz_datablocks']]],
   ['jazzblockheader',['JazzBlockHeader',['../structjazz__datablocks_1_1JazzBlockHeader.html',1,'jazz_datablocks']]],
   ['jazzc_5fempty_5fstring',['JAZZC_EMPTY_STRING',['../jazz01__commons_8h.html#a82fa584f1d50303f7f93076efa6af983',1,'jazz01_commons.h']]],

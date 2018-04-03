@@ -1,10 +1,13 @@
 var searchData=
 [
-  ['r_5flength',['R_length',['../structR__binary.html#a10f86187fe566768fdcfb09a4bb3df0d',1,'R_binary::R_length()'],['../jazz__blockconv_8h.html#a4190fd59d90d713237ea01df230fd79c',1,'R_length():&#160;jazz_blockconv.h']]],
-  ['r_5fna',['R_NA',['../jazz01__commons_8h.html#aee8296dc80df1bf2da84acda63522a41',1,'R_NA():&#160;jazz_commons.cpp'],['../jazz__commons_8cpp.html#aee8296dc80df1bf2da84acda63522a41',1,'R_NA():&#160;jazz_commons.cpp'],['../namespacejazz__datablocks.html#aa3d35031952a46da1b9b49b6c88304a0',1,'jazz_datablocks::R_NA()']]],
-  ['r_5ftype',['R_type',['../structR__binary.html#a888f9a060a59a7c7c1b709765d1b4175',1,'R_binary::R_type()'],['../jazz__blockconv_8h.html#a9519181ef1cf125d6ae7b73954804402',1,'R_type():&#160;jazz_blockconv.h']]],
-  ['range',['range',['../structjazz__http__security.html#af3da789bac3b8381fd60ebedf4aa30ab',1,'jazz_http_security']]],
-  ['rank',['rank',['../structjazz__datablocks_1_1JazzBlockHeader.html#a0f5eda4dd6f5fb86ba0fd09bb668f6fc',1,'jazz_datablocks::JazzBlockHeader']]],
-  ['response_5fput_5ffail',['response_put_fail',['../jazz01__api_8cpp.html#ab133419f925117de26e1f7d48337d56b',1,'jazz01_api.cpp']]],
-  ['response_5fput_5fok',['response_put_ok',['../jazz01__api_8cpp.html#a896eab3c7cf41b069cae5b89f1261aba',1,'jazz01_api.cpp']]]
+  ['search_5ffor_5fmatches',['search_for_matches',['../structjazz__datablocks_1_1JazzStringBuffer.html#affb73007d976766650b3db2783b3a27c',1,'jazz_datablocks::JazzStringBuffer']]],
+  ['signature',['signature',['../structR__binary.html#a965be7c7c710e18ea3bb89bdd6f8537d',1,'R_binary::signature()'],['../structRStr__header.html#a284a841adf596f73f46fb701275f5667',1,'RStr_header::signature()'],['../jazz__blockconv_8h.html#a7a745885960cf41a1a530159b3aa41ed',1,'signature():&#160;jazz_blockconv.h']]],
+  ['size',['size',['../structjzzBlockHeader.html#a880482ea2ddf3e8ef4588706f616dbbe',1,'jzzBlockHeader::size()'],['../structjazz__datablocks_1_1JazzBlockHeader.html#a1cd890f38bfd75d2c1a2a562a5a775a9',1,'jazz_datablocks::JazzBlockHeader::size()']]],
+  ['source',['source',['../structparsedURL.html#aaa09298bfdd59373a985b11ad51775f5',1,'parsedURL']]],
+  ['sources',['sources',['../classjazzWebSource.html#a31fde3b86ea02c355efcb47e59e7125b',1,'jazzWebSource']]],
+  ['state_5fnew_5fcall',['state_new_call',['../jazz01__api_8cpp.html#a3994db0fd1cce88a45e592c97eb1acda',1,'jazz01_api.cpp']]],
+  ['state_5fupload_5fbadrequest',['state_upload_badrequest',['../jazz01__api_8cpp.html#a38f29c95b1043855369c5a7b9ccf61d3',1,'jazz01_api.cpp']]],
+  ['state_5fupload_5fin_5fprogress',['state_upload_in_progress',['../jazz01__api_8cpp.html#aa6cfa82a8a9ab1329927a138bc664b73',1,'jazz01_api.cpp']]],
+  ['state_5fupload_5fnotacceptable',['state_upload_notacceptable',['../jazz01__api_8cpp.html#acf78ca0c3383b9058a2918ce9a6ac578',1,'jazz01_api.cpp']]],
+  ['state_5fupload_5funavailable',['state_upload_unavailable',['../jazz01__api_8cpp.html#a81dd25004d49da6504f816ccb56440d0',1,'jazz01_api.cpp']]]
 ];
