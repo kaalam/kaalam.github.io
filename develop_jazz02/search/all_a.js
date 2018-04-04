@@ -23,7 +23,6 @@ var searchData=
   ['jazz_5fblocks_2eh',['jazz_blocks.h',['../jazz__blocks_8h.html',1,'']]],
   ['jazz_5fboolean_5fna',['JAZZ_BOOLEAN_NA',['../jazz__datablocks_8h.html#adc09b20f0a00b192d8afe0f87f83ce00',1,'jazz_datablocks.h']]],
   ['jazz_5fbyte_5fboolean_5fna',['JAZZ_BYTE_BOOLEAN_NA',['../jazz__datablocks_8h.html#a582f1ca1e0ed4377a91cb9312248e203',1,'jazz_datablocks.h']]],
-  ['jazz_5fclass',['jazz_class',['../structjazz__datablocks_1_1JazzBlockHeader.html#a088ef0488fe43f3423cb7cb8d2cd29fd',1,'jazz_datablocks::JazzBlockHeader']]],
   ['jazz_5fclasses',['jazz_classes',['../namespacejazz__classes.html',1,'']]],
   ['jazz_5fclasses_2ecpp',['jazz_classes.cpp',['../jazz__classes_8cpp.html',1,'']]],
   ['jazz_5fclasses_2eh',['jazz_classes.h',['../jazz__classes_8h.html',1,'']]],
