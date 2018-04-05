@@ -5,6 +5,7 @@ var searchData=
   ['acmode_5fsourcectl',['ACMODE_SOURCECTL',['../jazz01__commons_8h.html#a77dc72ab248a18559356a72e25c2b947',1,'jazz01_commons.h']]],
   ['alias',['alias',['../structjazz__node.html#a7fc0610596c6c87f4c2f58d99dde6ac0',1,'jazz_node']]],
   ['allattributes',['AllAttributes',['../namespacejazz__datablocks.html#a9d054f1975d67b52310cf5133afe69da',1,'jazz_datablocks']]],
+  ['alloc_5ffailed',['alloc_failed',['../structjazz__datablocks_1_1JazzStringBuffer.html#abf5a64bc3eb9228d16391cdb4449e332',1,'jazz_datablocks::JazzStringBuffer']]],
   ['apifunctionname',['apifunctionName',['../jazz01__api_8h.html#aae2531a7db62b1d9ba15bc5d315de661',1,'jazz01_api.h']]],
   ['apifunctionparam',['apifunctionParam',['../structapifunctionParam.html',1,'']]],
   ['attr',['attr',['../structblock__URLdictionary.html#ad353dbe6790b165c93973066f703dd35',1,'block_URLdictionary']]],

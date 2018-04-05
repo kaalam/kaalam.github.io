@@ -70,26 +70,48 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Structure at the end of a <a class="el" href="classjazz__datablocks_1_1JazzBlock.html">JazzBlock</a>, initially created with init_string_buffer()  
+ <a href="structjazz__datablocks_1_1JazzStringBuffer.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="jazz__datablocks_8h_source.html">jazz_datablocks.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a00067b07f1dc9e1bfdf42d7649fbd1a5"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__datablocks_1_1JazzStringBuffer.html#a00067b07f1dc9e1bfdf42d7649fbd1a5">NA</a></td></tr>
-<tr class="separator:a00067b07f1dc9e1bfdf42d7649fbd1a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f65a65b5adaa8307b44a740866e0318"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__datablocks_1_1JazzStringBuffer.html#a2f65a65b5adaa8307b44a740866e0318">EMPTY</a></td></tr>
-<tr class="memdesc:a2f65a65b5adaa8307b44a740866e0318"><td class="mdescLeft">&#160;</td><td class="mdescRight">A binary zero making a string with offset 0 (== JAZZ_STRING_NA) or 1 (== JAZZ_STRING_EMPTY) == "".  <a href="#a2f65a65b5adaa8307b44a740866e0318">More...</a><br /></td></tr>
-<tr class="separator:a2f65a65b5adaa8307b44a740866e0318"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affb73007d976766650b3db2783b3a27c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__datablocks_1_1JazzStringBuffer.html#affb73007d976766650b3db2783b3a27c">search_for_matches</a></td></tr>
-<tr class="memdesc:affb73007d976766650b3db2783b3a27c"><td class="mdescLeft">&#160;</td><td class="mdescRight">When the <a class="el" href="structjazz__datablocks_1_1JazzStringBuffer.html">JazzStringBuffer</a> is small try to match existing indices of the same string to save RAM.  <a href="#affb73007d976766650b3db2783b3a27c">More...</a><br /></td></tr>
-<tr class="separator:affb73007d976766650b3db2783b3a27c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee4c0983795ec31d2244a61d1b0ff601"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__datablocks_1_1JazzStringBuffer.html#aee4c0983795ec31d2244a61d1b0ff601">stop_check_4_match</a></td></tr>
+<tr class="memdesc:aee4c0983795ec31d2244a61d1b0ff601"><td class="mdescLeft">&#160;</td><td class="mdescRight">When the <a class="el" href="structjazz__datablocks_1_1JazzStringBuffer.html" title="Structure at the end of a JazzBlock, initially created with init_string_buffer() ">JazzStringBuffer</a> is small, try to match existing indices of the same string to save RAM.  <a href="#aee4c0983795ec31d2244a61d1b0ff601">More...</a><br /></td></tr>
+<tr class="separator:aee4c0983795ec31d2244a61d1b0ff601"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf5a64bc3eb9228d16391cdb4449e332"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__datablocks_1_1JazzStringBuffer.html#abf5a64bc3eb9228d16391cdb4449e332">alloc_failed</a></td></tr>
+<tr class="memdesc:abf5a64bc3eb9228d16391cdb4449e332"><td class="mdescLeft">&#160;</td><td class="mdescRight">A previous call to get_string_offset() failed to alloc space for a string.  <a href="#abf5a64bc3eb9228d16391cdb4449e332">More...</a><br /></td></tr>
+<tr class="separator:abf5a64bc3eb9228d16391cdb4449e332"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cea7f923164e5d3061d060fbc1b207d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__datablocks_1_1JazzStringBuffer.html#a2cea7f923164e5d3061d060fbc1b207d">last_idx</a></td></tr>
 <tr class="memdesc:a2cea7f923164e5d3061d060fbc1b207d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The index to the first free space after the last stored string.  <a href="#a2cea7f923164e5d3061d060fbc1b207d">More...</a><br /></td></tr>
 <tr class="separator:a2cea7f923164e5d3061d060fbc1b207d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5220ddc2ae0df61348ee3ae3789f00da"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__datablocks_1_1JazzStringBuffer.html#a5220ddc2ae0df61348ee3ae3789f00da">buffer_size</a></td></tr>
+<tr class="memdesc:a5220ddc2ae0df61348ee3ae3789f00da"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size in bytes of buffer[].  <a href="#a5220ddc2ae0df61348ee3ae3789f00da">More...</a><br /></td></tr>
+<tr class="separator:a5220ddc2ae0df61348ee3ae3789f00da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9a56ebb9c6244d1571cbfb069b923f4"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__datablocks_1_1JazzStringBuffer.html#ab9a56ebb9c6244d1571cbfb069b923f4">buffer</a> []</td></tr>
-<tr class="memdesc:ab9a56ebb9c6244d1571cbfb069b923f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The buffer where all the non-empty strings are stored.  <a href="#ab9a56ebb9c6244d1571cbfb069b923f4">More...</a><br /></td></tr>
+<tr class="memdesc:ab9a56ebb9c6244d1571cbfb069b923f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The buffer where strings are stored starting with two zeroes for JAZZ_STRING_NA &amp; JAZZ_STRING_EMPTY.  <a href="#ab9a56ebb9c6244d1571cbfb069b923f4">More...</a><br /></td></tr>
 <tr class="separator:ab9a56ebb9c6244d1571cbfb069b923f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Field Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Structure at the end of a <a class="el" href="classjazz__datablocks_1_1JazzBlock.html">JazzBlock</a>, initially created with init_string_buffer() </p>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a id="abf5a64bc3eb9228d16391cdb4449e332"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf5a64bc3eb9228d16391cdb4449e332">&#9670;&nbsp;</a></span>alloc_failed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool jazz_datablocks::JazzStringBuffer::alloc_failed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A previous call to get_string_offset() failed to alloc space for a string. </p>
+
+</div>
+</div>
 <a id="ab9a56ebb9c6244d1571cbfb069b923f4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab9a56ebb9c6244d1571cbfb069b923f4">&#9670;&nbsp;</a></span>buffer</h2>
 
@@ -102,23 +124,23 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The buffer where all the non-empty strings are stored. </p>
+<p>The buffer where strings are stored starting with two zeroes for JAZZ_STRING_NA &amp; JAZZ_STRING_EMPTY. </p>
 
 </div>
 </div>
-<a id="a2f65a65b5adaa8307b44a740866e0318"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f65a65b5adaa8307b44a740866e0318">&#9670;&nbsp;</a></span>EMPTY</h2>
+<a id="a5220ddc2ae0df61348ee3ae3789f00da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5220ddc2ae0df61348ee3ae3789f00da">&#9670;&nbsp;</a></span>buffer_size</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char jazz_datablocks::JazzStringBuffer::EMPTY</td>
+          <td class="memname">int jazz_datablocks::JazzStringBuffer::buffer_size</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>A binary zero making a string with offset 0 (== JAZZ_STRING_NA) or 1 (== JAZZ_STRING_EMPTY) == "". </p>
+<p>The size in bytes of buffer[]. </p>
 
 </div>
 </div>
@@ -138,33 +160,19 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a00067b07f1dc9e1bfdf42d7649fbd1a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00067b07f1dc9e1bfdf42d7649fbd1a5">&#9670;&nbsp;</a></span>NA</h2>
+<a id="aee4c0983795ec31d2244a61d1b0ff601"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee4c0983795ec31d2244a61d1b0ff601">&#9670;&nbsp;</a></span>stop_check_4_match</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char jazz_datablocks::JazzStringBuffer::NA</td>
+          <td class="memname">bool jazz_datablocks::JazzStringBuffer::stop_check_4_match</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="affb73007d976766650b3db2783b3a27c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affb73007d976766650b3db2783b3a27c">&#9670;&nbsp;</a></span>search_for_matches</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool jazz_datablocks::JazzStringBuffer::search_for_matches</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>When the <a class="el" href="structjazz__datablocks_1_1JazzStringBuffer.html">JazzStringBuffer</a> is small try to match existing indices of the same string to save RAM. </p>
+<p>When the <a class="el" href="structjazz__datablocks_1_1JazzStringBuffer.html" title="Structure at the end of a JazzBlock, initially created with init_string_buffer() ">JazzStringBuffer</a> is small, try to match existing indices of the same string to save RAM. </p>
 
 </div>
 </div>

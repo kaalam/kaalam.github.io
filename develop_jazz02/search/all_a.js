@@ -47,6 +47,7 @@ var searchData=
   ['jazz_5flong_5finteger_5fna',['JAZZ_LONG_INTEGER_NA',['../jazz__datablocks_8h.html#ae0b701848fc8a03cd66172956f6fb455',1,'jazz_datablocks.h']]],
   ['jazz_5fmain_2ecpp',['jazz_main.cpp',['../jazz__main_8cpp.html',1,'']]],
   ['jazz_5fmain_2eh',['jazz_main.h',['../jazz__main_8h.html',1,'']]],
+  ['jazz_5fmax_5fchecks_5f4_5fmatch',['JAZZ_MAX_CHECKS_4_MATCH',['../jazz__datablocks_8h.html#a40093e3a10da1976d9ea346da095d3e9',1,'jazz_datablocks.h']]],
   ['jazz_5fmax_5ftensor_5frank',['JAZZ_MAX_TENSOR_RANK',['../jazz__datablocks_8h.html#ae28623e9cdce8dfb1b062557981e481a',1,'jazz_datablocks.h']]],
   ['jazz_5fmiscutils_2ecpp',['jazz_miscutils.cpp',['../jazz__miscutils_8cpp.html',1,'']]],
   ['jazz_5fnode',['jazz_node',['../structjazz__node.html',1,'']]],

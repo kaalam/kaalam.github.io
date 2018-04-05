@@ -1,7 +1,6 @@
 var searchData=
 [
   ['sample_5fapi_5fcall',['sample_api_call',['../classjzzAPI.html#a4aa4cb9395b22aebb92a979a41b06b78',1,'jzzAPI']]],
-  ['search_5ffor_5fmatches',['search_for_matches',['../structjazz__datablocks_1_1JazzStringBuffer.html#affb73007d976766650b3db2783b3a27c',1,'jazz_datablocks::JazzStringBuffer']]],
   ['set_5fattributes',['set_attributes',['../classjazz__datablocks_1_1JazzBlock.html#a984d983634a4038b64637973a0d39d61',1,'jazz_datablocks::JazzBlock']]],
   ['set_5fdimensions',['set_dimensions',['../classjazz__datablocks_1_1JazzBlock.html#ac7414206fd3cfa3e6ecbc593f72c0ab8',1,'jazz_datablocks::JazzBlock']]],
   ['set_5ffirst_5fkey',['set_first_key',['../classjzzBLOCKS.html#a3692c1344a69622159645b90821b2bfe',1,'jzzBLOCKS']]],
@@ -38,6 +37,7 @@ var searchData=
   ['state_5fupload_5funavailable',['state_upload_unavailable',['../jazz01__api_8cpp.html#a81dd25004d49da6504f816ccb56440d0',1,'jazz01_api.cpp']]],
   ['stop',['stop',['../classjazzService.html#af76b6aacbc5635efbae36088b71909d6',1,'jazzService::stop()'],['../classjzzBLOCKCONV.html#a8a6b4e8e67453a760ef43b442b2751c4',1,'jzzBLOCKCONV::stop()'],['../classjzzBLOCKS.html#ae41357cdf599a7a763422ac0c0e2b973',1,'jzzBLOCKS::stop()'],['../classjzzAPI.html#a3eaef0ba25bb93a554cbb150bc965e3c',1,'jzzAPI::stop()'],['../classjazzWebSource.html#a56b5be58693d126e55b15cbd8de9ee08',1,'jazzWebSource::stop()']]],
   ['stop_5fall',['stop_all',['../classjazzServices.html#a9027444e09cb94dce95564bd13485b08',1,'jazzServices']]],
+  ['stop_5fcheck_5f4_5fmatch',['stop_check_4_match',['../structjazz__datablocks_1_1JazzStringBuffer.html#aee4c0983795ec31d2244a61d1b0ff601',1,'jazz_datablocks::JazzStringBuffer']]],
   ['str_5fsearch_5fbig_5fabove',['STR_SEARCH_BIG_ABOVE',['../jazz__blocks_8h.html#af408297ae8f614e0592a024770b78b8f',1,'jazz_blocks.h']]],
   ['strcmp_5fkeys',['strcmp_keys',['../classjzzBLOCKS.html#a4f8c0ed33ac6ad21feac4d120a232325',1,'jzzBLOCKS']]],
   ['string_5fbuffer',['string_buffer',['../structstring__buffer.html',1,'string_buffer'],['../jazz__blocks_8h.html#a19ac5c8026f6f1159f6b754240c3e68a',1,'STRING_BUFFER():&#160;jazz_blocks.h']]],

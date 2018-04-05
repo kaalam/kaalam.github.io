@@ -10,6 +10,7 @@ var searchData=
   ['included_5fjazz_5felements_5fprimitives',['INCLUDED_JAZZ_ELEMENTS_PRIMITIVES',['../jazz__primitives_8h.html#aa1c73fdb8853140ed0d35bc640bc85cc',1,'jazz_primitives.h']]],
   ['included_5fjazz_5felements_5futils',['INCLUDED_JAZZ_ELEMENTS_UTILS',['../jazz__utils_8h.html#a3855f9a3712280c1ba7f928b3371c3b1',1,'jazz_utils.h']]],
   ['included_5fjazz_5fmain_5frestapi',['INCLUDED_JAZZ_MAIN_RESTAPI',['../jazz__restapi_8h.html#af8322f5e4f43cc832aa40ab7a7a84a4e',1,'jazz_restapi.h']]],
+  ['init_5fstring_5fbuffer',['init_string_buffer',['../classjazz__datablocks_1_1JazzBlock.html#ad9b2b4db6a0bc2ca60847fb8fd3549ab',1,'jazz_datablocks::JazzBlock']]],
   ['instrument',['instrument',['../structparsedURL.html#ac80913160170e07db0a1090416b4ac31',1,'parsedURL']]],
   ['instumentname',['instumentName',['../structinstumentName.html',1,'']]],
   ['intsxp',['INTSXP',['../jazz01__commons_8h.html#a8c05b2e1095fb38bdf2fa97eabe773d6',1,'jazz01_commons.h']]],

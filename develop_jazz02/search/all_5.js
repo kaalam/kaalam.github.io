@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['empty',['EMPTY',['../structstring__buffer.html#a250a9fc5d8a0e29fd1e294926818b262',1,'string_buffer::EMPTY()'],['../structjazz__datablocks_1_1JazzStringBuffer.html#a2f65a65b5adaa8307b44a740866e0318',1,'jazz_datablocks::JazzStringBuffer::EMPTY()']]],
+  ['empty',['EMPTY',['../structstring__buffer.html#a250a9fc5d8a0e29fd1e294926818b262',1,'string_buffer']]],
   ['enable_5frole_5fcreator',['enable_role_creator',['../structjazz__http__security.html#a9f6f3affe959c4d52aaa710a1b236ba1',1,'jazz_http_security']]],
   ['enable_5frole_5fdatawriter',['enable_role_datawriter',['../structjazz__http__security.html#a02c8acd295073dd9a9257252f82ad418',1,'jazz_http_security']]],
   ['enable_5frole_5ffunctionwriter',['enable_role_functionwriter',['../structjazz__http__security.html#ac2cf4b54cdd2ea194a34db662bdba296',1,'jazz_http_security']]],
