@@ -1,13 +1,17 @@
 var searchData=
 [
+  ['jazz_5fblock_5fid_5fprefix_5fdistrib',['JAZZ_BLOCK_ID_PREFIX_DISTRIB',['../jazz__containers_8h.html#a21bc5d88bc4d95abeb831b74e4d49848',1,'jazz_containers.h']]],
+  ['jazz_5fblock_5fid_5fprefix_5flocal',['JAZZ_BLOCK_ID_PREFIX_LOCAL',['../jazz__containers_8h.html#a3590b5df1fc7caedaa1304973a4c54ef',1,'jazz_containers.h']]],
   ['jazz_5fboolean_5fna',['JAZZ_BOOLEAN_NA',['../jazz__datablocks_8h.html#adc09b20f0a00b192d8afe0f87f83ce00',1,'jazz_datablocks.h']]],
   ['jazz_5fbyte_5fboolean_5fna',['JAZZ_BYTE_BOOLEAN_NA',['../jazz__datablocks_8h.html#a582f1ca1e0ed4377a91cb9312248e203',1,'jazz_datablocks.h']]],
   ['jazz_5fdebug_5fhome',['JAZZ_DEBUG_HOME',['../jazz__platform_8h.html#ac26325c84d31adf61f1480e8f7cd7b7f',1,'jazz_platform.h']]],
   ['jazz_5fdouble_5fna',['JAZZ_DOUBLE_NA',['../jazz__datablocks_8h.html#a7d407ad60268ec99c1d590accd456778',1,'jazz_datablocks.h']]],
   ['jazz_5finteger_5fna',['JAZZ_INTEGER_NA',['../jazz__datablocks_8h.html#a934aabc341e202f67b9c2b846e3e96cc',1,'jazz_datablocks.h']]],
   ['jazz_5flong_5finteger_5fna',['JAZZ_LONG_INTEGER_NA',['../jazz__datablocks_8h.html#ae0b701848fc8a03cd66172956f6fb455',1,'jazz_datablocks.h']]],
+  ['jazz_5fmax_5fblock_5fid_5flength',['JAZZ_MAX_BLOCK_ID_LENGTH',['../jazz__containers_8h.html#a9256e00a0c79feab7022c0cd7871e5f5',1,'jazz_containers.h']]],
   ['jazz_5fmax_5fchecks_5f4_5fmatch',['JAZZ_MAX_CHECKS_4_MATCH',['../jazz__datablocks_8h.html#a40093e3a10da1976d9ea346da095d3e9',1,'jazz_datablocks.h']]],
   ['jazz_5fmax_5ftensor_5frank',['JAZZ_MAX_TENSOR_RANK',['../jazz__datablocks_8h.html#ae28623e9cdce8dfb1b062557981e481a',1,'jazz_datablocks.h']]],
+  ['jazz_5fregex_5fvalidate_5fblock_5fid',['JAZZ_REGEX_VALIDATE_BLOCK_ID',['../jazz__containers_8h.html#a2bb73f8840d6a76bbe3bcd1e616cd61d',1,'jazz_containers.h']]],
   ['jazz_5fservice_5frhome',['JAZZ_SERVICE_RHOME',['../jazz__blockconv_8cpp.html#a6e294e5b94c7c75ab77599aa6629078c',1,'jazz_blockconv.cpp']]],
   ['jazz_5fsingle_5fna',['JAZZ_SINGLE_NA',['../jazz__datablocks_8h.html#ab2e278b9f3c6b59cb45ff0a5754774f6',1,'jazz_datablocks.h']]],
   ['jazz_5fstring_5fempty',['JAZZ_STRING_EMPTY',['../jazz__datablocks_8h.html#a9de0787b48728620e0dd7e931c47a48b',1,'jazz_datablocks.h']]],

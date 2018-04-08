@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Jazz 0.2+: jazz_alloc.h File Reference</title>
+<title>Jazz 0.2+: jazz_containers::JazzBlockIdentifier Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,49 +59,44 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_430f81bf3057a797870c5bf709d3e9bb.html">Jazz</a></li><li class="navelem"><a class="el" href="dir_970248c0e167d637c79cc313be7174ec.html">server</a></li><li class="navelem"><a class="el" href="dir_5fc8f4be9411809bf801ba630f4604fb.html">src</a></li><li class="navelem"><a class="el" href="dir_ed9eb9f0df42fcabe8be74cbf928b351.html">jazz_elements</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacejazz__containers.html">jazz_containers</a></li><li class="navelem"><a class="el" href="structjazz__containers_1_1JazzBlockIdentifier.html">JazzBlockIdentifier</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">jazz_alloc.h File Reference</div>  </div>
+<div class="title">jazz_containers::JazzBlockIdentifier Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><a href="jazz__alloc_8h_source.html">Go to the source code of this file.</a></p>
+<p><code>#include &lt;<a class="el" href="jazz__containers_8h_source.html">jazz_containers.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespacejazz__alloc"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__alloc.html">jazz_alloc</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a09647855bc49998fef3e38f019163d13"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__alloc_8h.html#a09647855bc49998fef3e38f019163d13">INCLUDED_JAZZ_ELEMENTS_ALLOC</a></td></tr>
-<tr class="memdesc:a09647855bc49998fef3e38f019163d13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocation functions for Jazz.  <a href="#a09647855bc49998fef3e38f019163d13">More...</a><br /></td></tr>
-<tr class="separator:a09647855bc49998fef3e38f019163d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:afc6f907e8213904f0d2e5a3ed77c2ad2"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__containers_1_1JazzBlockIdentifier.html#afc6f907e8213904f0d2e5a3ed77c2ad2">key</a> [<a class="el" href="jazz__containers_8h.html#a9256e00a0c79feab7022c0cd7871e5f5">JAZZ_MAX_BLOCK_ID_LENGTH</a>]</td></tr>
+<tr class="separator:afc6f907e8213904f0d2e5a3ed77c2ad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a09647855bc49998fef3e38f019163d13"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09647855bc49998fef3e38f019163d13">&#9670;&nbsp;</a></span>INCLUDED_JAZZ_ELEMENTS_ALLOC</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A readable block identifier. It must be a string matching JAZZ_REGEX_VALIDATE_BLOCK_ID. This name is the key identifying the JazzBlock in a JazzPersistence, JazzSource or via the API source.block (local) source/block (distributed). </p>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a id="afc6f907e8213904f0d2e5a3ed77c2ad2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc6f907e8213904f0d2e5a3ed77c2ad2">&#9670;&nbsp;</a></span>key</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define INCLUDED_JAZZ_ELEMENTS_ALLOC</td>
+          <td class="memname">char jazz_containers::JazzBlockIdentifier::key[<a class="el" href="jazz__containers_8h.html#a9256e00a0c79feab7022c0cd7871e5f5">JAZZ_MAX_BLOCK_ID_LENGTH</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Allocation functions for Jazz. </p>
-<p>&lt; This module defines functions to explicitely allocate RAM for JazzDataBlock structures. The module is functional and understands ownership of pointers between persisted, volatile or one-shot JazzDataBlock structures. JazzDataObject descendants are memory-wise just JazzDataBlock structures belonging to a class, so their allocation will also be handled by this module and not via "fancy" C++ object allocation. Unlike in Jazz 0.1.+, there is no support for embedded R (or any other interpreters). </p>
-
 </div>
 </div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li><a class="el" href="jazz__containers_8h_source.html">jazz_containers.h</a></li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

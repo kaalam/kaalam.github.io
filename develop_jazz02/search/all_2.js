@@ -7,6 +7,8 @@ var searchData=
   ['block_5fc_5fraw',['block_C_RAW',['../structblock__C__RAW.html',1,'']]],
   ['block_5fc_5freal',['block_C_REAL',['../structblock__C__REAL.html',1,'']]],
   ['block_5fget',['block_get',['../classjzzBLOCKS.html#a9ab954eb93e352f79ea22d147730d958',1,'jzzBLOCKS']]],
+  ['block_5fid',['block_id',['../structjazz__containers_1_1JazzBlockKeeprItem.html#abdbc5186a8674f49c12d0aa2eb10429b',1,'jazz_containers::JazzBlockKeeprItem']]],
+  ['block_5fid64',['block_id64',['../structjazz__containers_1_1JazzBlockKeeprItem.html#ac66b8ae67466402ca8b064ff10bff853',1,'jazz_containers::JazzBlockKeeprItem']]],
   ['block_5fkill',['block_kill',['../classjzzBLOCKS.html#aac0c20e16749cda5e618c4b4e2b20697',1,'jzzBLOCKS']]],
   ['block_5fput',['block_put',['../classjzzBLOCKS.html#a6c09edf5c233d7c5d86d3bda407bae70',1,'jzzBLOCKS']]],
   ['block_5fsourceattributes',['block_SourceAttributes',['../structblock__SourceAttributes.html',1,'']]],

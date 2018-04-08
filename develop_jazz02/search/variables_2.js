@@ -1,6 +1,8 @@
 var searchData=
 [
   ['block',['block',['../structURLattrib.html#aac3385a5ecedf6afc7d1cebd3f1cc683',1,'URLattrib']]],
+  ['block_5fid',['block_id',['../structjazz__containers_1_1JazzBlockKeeprItem.html#abdbc5186a8674f49c12d0aa2eb10429b',1,'jazz_containers::JazzBlockKeeprItem']]],
+  ['block_5fid64',['block_id64',['../structjazz__containers_1_1JazzBlockKeeprItem.html#ac66b8ae67466402ca8b064ff10bff853',1,'jazz_containers::JazzBlockKeeprItem']]],
   ['blocks_5flock',['blocks_lock',['../jazz__blocks_8cpp.html#a0dd7046fb02393637233c4cb2fe0b703',1,'jazz_blocks.cpp']]],
   ['blocktype',['blocktype',['../structURLattrib.html#afa2732a21e935e09aa1911383c541cf7',1,'URLattrib']]],
   ['buffer',['buffer',['../structstring__buffer.html#a0b205cf77b599385a8acb66d249725a1',1,'string_buffer::buffer()'],['../structjazz__datablocks_1_1JazzStringBuffer.html#ab9a56ebb9c6244d1571cbfb069b923f4',1,'jazz_datablocks::JazzStringBuffer::buffer()']]],
