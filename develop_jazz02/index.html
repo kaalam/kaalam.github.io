@@ -64,19 +64,60 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>Programming Documentation of the Jazz Server</p>
-<p>You can start with the object <a href="hierarchy.html">hierarchy</a>.</p>
+<p>You can start with the class <a href="hierarchy.html">hierarchy</a>.</p>
 <p><br />
 </p>
+<h1><a class="anchor" id="jazz_blocks"></a>
+JazzBlock 101</h1>
+<div class="image">
+<img src="diagrams/jazz_block.png" alt="Jazz modules"/>
+</div>
+<p>This diagram shows the structure of a JazzBlock.<br />
+</p><ol type="1">
+<li>See <a class="el" href="jazz__datablocks_8h.html">jazz_elements/jazz_datablocks.h</a> JazzBlockHeader<br />
+</li>
+<li>See <a class="el" href="jazz__datablocks_8h.html">jazz_elements/jazz_datablocks.h</a> JazzBlockHeader.tensor[]<br />
+</li>
+<li>See <a class="el" href="jazz__datablocks_8h.html">jazz_elements/jazz_datablocks.h</a> int * - Address returned by JazzBlock.pAttribute_keys()<br />
+</li>
+<li>See <a class="el" href="jazz__datablocks_8h.html">jazz_elements/jazz_datablocks.h</a> JazzStringBuffer - Address returned by JazzBlock.pStringBuffer()<br />
+ <br />
+</li>
+</ol>
+<h1><a class="anchor" id="jazz_keepr"></a>
+JazzBlockKeepr 101</h1>
+<div class="image">
+<img src="diagrams/jazz_block_keeper.png" alt="Jazz modules"/>
+</div>
+<p>By file location:<br />
+<br />
+A. <a class="el" href="jazz__alloc_8h.html">jazz_elements/jazz_alloc.h</a><br />
+B. <a class="el" href="jazz__persistence_8h.html">jazz_elements/jazz_persistence.h</a><br />
+C. <a class="el" href="jazz__column_8h.html">jazz_functional/jazz_column.h</a><br />
+D. <a class="el" href="jazz__archive_8h.html">jazz_functional/jazz_archive.h</a><br />
+E. <a class="el" href="jazz__dataframe_8h.html">jazz_functional/jazz_dataframe.h</a><br />
+<br />
+ JazzBlocks can be:<br />
+</p><ol type="1">
+<li><b>One-shot</b> - Owned by the caller of new_jazz_block()<br />
+</li>
+<li><b>Volatile</b> - Owned by some JazzBlockKeepr descendant that is not a JazzPersistence (or descendant)<br />
+</li>
+<li><b>Persisted</b> - Owned by a JazzPersistence (or descendant), typically a JazzSource<br />
+ <br />
+</li>
+</ol>
 <h1><a class="anchor" id="jazz_mods"></a>
-Jazz Modules</h1>
+Jazz Modules 101</h1>
 <div class="image">
 <img src="diagrams/jazz_modules.png" alt="Jazz modules"/>
 </div>
-<p>This diagram shows how the different Jazz module fit. Everything except the dotted nodes is in the repository.<br />
+<p>This diagram shows how the different Jazz modules fit. Everything except the dotted nodes is in the repository.<br />
 <br />
-A. Is the folder jazz_elemets (all the pieces that work on blocks)<br />
+A. Is the folder jazz_elements (all the pieces that work on blocks)<br />
 B. Is the folder jazz_functional (all the pieces that support higher level abstractions)<br />
 C. Is the folder jazz_main (for the http server only)<br />
+F. (not in this repo) Is where front-end developpers build, see the <a href="http://kaalam.github.io/jazz_reference/rest_reference.html">REST API reference</a><br />
 <br />
 You will typically use (5) for extending the backend in C++. (noted as (x))<br />
 You will typically use (4) for connect to other languages, other than R &amp; Python.<br />
