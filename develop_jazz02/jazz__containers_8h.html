@@ -67,7 +67,8 @@ $(function() {
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">jazz_containers.h File Reference</div>  </div>
 </div><!--header-->
@@ -117,7 +118,7 @@ Macros</h2></td></tr>
 <tr class="memdesc:a3590b5df1fc7caedaa1304973a4c54ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">First char of a LOCAL JazzBlockIdentifier.  <a href="#a3590b5df1fc7caedaa1304973a4c54ef">More...</a><br /></td></tr>
 <tr class="separator:a3590b5df1fc7caedaa1304973a4c54ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21bc5d88bc4d95abeb831b74e4d49848"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__containers_8h.html#a21bc5d88bc4d95abeb831b74e4d49848">JAZZ_BLOCK_ID_PREFIX_DISTRIB</a>&#160;&#160;&#160;'/'</td></tr>
-<tr class="memdesc:a21bc5d88bc4d95abeb831b74e4d49848"><td class="mdescLeft">&#160;</td><td class="mdescRight">First char of a DITRIBUTED JazzBlockIdentifier.  <a href="#a21bc5d88bc4d95abeb831b74e4d49848">More...</a><br /></td></tr>
+<tr class="memdesc:a21bc5d88bc4d95abeb831b74e4d49848"><td class="mdescLeft">&#160;</td><td class="mdescRight">First char of a DISTRIBUTED JazzBlockIdentifier.  <a href="#a21bc5d88bc4d95abeb831b74e4d49848">More...</a><br /></td></tr>
 <tr class="separator:a21bc5d88bc4d95abeb831b74e4d49848"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -135,8 +136,21 @@ Typedefs</h2></td></tr>
 <tr class="separator:af198c216f3a72185e308f79a1ff8e8c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7f74b24e90b7f70a7112ca657c7244d"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; JazzBlockId64, const JazzBlockKeeprItem * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__containers.html#ac7f74b24e90b7f70a7112ca657c7244d">jazz_containers::JazzBlockMap</a></td></tr>
 <tr class="separator:ac7f74b24e90b7f70a7112ca657c7244d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac191f7d2412bb0859969f588675c8783"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; void *, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__containers.html#ac191f7d2412bb0859969f588675c8783">jazz_containers::Jazz</a></td></tr>
-<tr class="separator:ac191f7d2412bb0859969f588675c8783"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06c7e485c86b5abef4b319ce153ef96e"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; void *, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__containers.html#a06c7e485c86b5abef4b319ce153ef96e">jazz_containers::JazzOneShotAlloc</a></td></tr>
+<tr class="separator:a06c7e485c86b5abef4b319ce153ef96e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a2e27906e4a83d2df5365e4eef49d6379"><td class="memItemLeft" align="right" valign="top"><a class="el" href="jazz01__commons_8h.html#a81770bae7c18abbb26281974e3d1c296">pJazzBlock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__containers.html#a2e27906e4a83d2df5365e4eef49d6379">jazz_containers::new_jazz_block</a> (<a class="el" href="jazz01__commons_8h.html#a81770bae7c18abbb26281974e3d1c296">pJazzBlock</a> p_as_block, <a class="el" href="jazz01__commons_8h.html#a81770bae7c18abbb26281974e3d1c296">pJazzBlock</a> p_row_filter)</td></tr>
+<tr class="separator:a2e27906e4a83d2df5365e4eef49d6379"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d1b99ca48f6386591e819f78e3491b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="jazz01__commons_8h.html#a81770bae7c18abbb26281974e3d1c296">pJazzBlock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__containers.html#a9d1b99ca48f6386591e819f78e3491b0">jazz_containers::new_jazz_block</a> (int cell_type, JazzTensorDim *dim, <a class="el" href="namespacejazz__datablocks.html#ad78607a9a502ae46d20496d82bc8286d">AllAttributes</a> *att, int stringbuff_size)</td></tr>
+<tr class="separator:a9d1b99ca48f6386591e819f78e3491b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3831773011d6746698ebc49e499f6a17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="jazz01__commons_8h.html#a81770bae7c18abbb26281974e3d1c296">pJazzBlock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__containers.html#a3831773011d6746698ebc49e499f6a17">jazz_containers::new_jazz_block</a> (int cell_type, JazzTensorDim *dim, <a class="el" href="namespacejazz__datablocks.html#ad78607a9a502ae46d20496d82bc8286d">AllAttributes</a> *att, const char *p_text, char separator='\n')</td></tr>
+<tr class="separator:a3831773011d6746698ebc49e499f6a17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a2c9c2372cde333af0c1b02997e88c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__containers.html#a2a2c9c2372cde333af0c1b02997e88c1">jazz_containers::close_jazz_block</a> (<a class="el" href="jazz01__commons_8h.html#a81770bae7c18abbb26281974e3d1c296">pJazzBlock</a> p_block)</td></tr>
+<tr class="separator:a2a2c9c2372cde333af0c1b02997e88c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcc220e7dce04f57627c007fb10aaa2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__containers.html#afcc220e7dce04f57627c007fb10aaa2d">jazz_containers::free_jazz_block</a> (<a class="el" href="jazz01__commons_8h.html#a81770bae7c18abbb26281974e3d1c296">pJazzBlock</a> &amp;p_block)</td></tr>
+<tr class="separator:afcc220e7dce04f57627c007fb10aaa2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a5071814446b8b7f4b5cf61f04032efd6"></a>
@@ -154,13 +168,12 @@ Typedefs</h2></td></tr>
 <p>Container classes for JazzBlock objects. </p>
 <p>&lt; JazzBlock objects can be:<br />
 </p><ol type="1">
-<li>One-shot - Owned by the caller of new_jazz_block()<br />
+<li>One-shot - Owned by the caller of <a class="el" href="namespacejazz__containers.html#a3831773011d6746698ebc49e499f6a17">new_jazz_block()</a><br />
 </li>
 <li>Volatile - Owned by some JazzBlockKeepr descendant that is not a JazzPersistence (or descendant)<br />
 </li>
-<li>Persisted - Owned by a JazzPersistence (or descendant), typically a JazzSource</li>
+<li>Persisted - Owned by a JazzPersistence (or descendant), typically a JazzSource </li>
 </ol>
-<p>Unlike in Jazz 0.1.+, there is no support for embedded R (or any other interpreters). </p>
 
 </div>
 </div>
@@ -176,7 +189,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>First char of a DITRIBUTED JazzBlockIdentifier. </p>
+<p>First char of a DISTRIBUTED JazzBlockIdentifier. </p>
 
 </div>
 </div>

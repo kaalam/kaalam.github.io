@@ -20,6 +20,7 @@ var searchData=
   ['cleanconfigargument',['CleanConfigArgument',['../namespacejazz__utils.html#aa804bdf15b228c69c1c269c8bb5ef6e1',1,'jazz_utils']]],
   ['close_5fall_5fsources',['close_all_sources',['../classjzzBLOCKS.html#a186f59ea73fd421b349ddd5e3b7cddbf',1,'jzzBLOCKS']]],
   ['close_5fall_5fwebsources',['close_all_websources',['../classjazzWebSource.html#a6979d3a5ba688bb05ac5e69f58023d42',1,'jazzWebSource']]],
+  ['close_5fjazz_5fblock',['close_jazz_block',['../namespacejazz__containers.html#a2a2c9c2372cde333af0c1b02997e88c1',1,'jazz_containers']]],
   ['cmnd_5fhelp',['CMND_HELP',['../jazz01__main_8cpp.html#a32c3b827931ad883bf0d4e18d79eac03',1,'jazz01_main.cpp']]],
   ['cmnd_5fstart',['CMND_START',['../jazz01__main_8cpp.html#a71614c145c330082129fa1709b212526',1,'jazz01_main.cpp']]],
   ['cmnd_5fstatus',['CMND_STATUS',['../jazz01__main_8cpp.html#a81477e191d8e50592d5e201a69dc0492',1,'jazz01_main.cpp']]],

@@ -1,7 +1,6 @@
 var searchData=
 [
   ['japi',['jAPI',['../jazz01__api_8cpp.html#a78888586ae139e6b5260923aee4b3615',1,'jAPI():&#160;jazz01_api.cpp'],['../jazz01__api_8h.html#a78888586ae139e6b5260923aee4b3615',1,'jAPI():&#160;jazz01_api.cpp']]],
-  ['jazz',['Jazz',['../namespacejazz__containers.html#ac191f7d2412bb0859969f588675c8783',1,'jazz_containers']]],
   ['jazz_2eh',['jazz.h',['../jazz_8h.html',1,'']]],
   ['jazz01_5falloc_2ecpp',['jazz01_alloc.cpp',['../jazz01__alloc_8cpp.html',1,'']]],
   ['jazz01_5fapi_2ecpp',['jazz01_api.cpp',['../jazz01__api_8cpp.html',1,'']]],
@@ -105,6 +104,7 @@ var searchData=
   ['jazzconfigfile',['JazzConfigFile',['../classjazz__utils_1_1JazzConfigFile.html',1,'jazz_utils::JazzConfigFile'],['../classjazz__utils_1_1JazzConfigFile.html#afb06a4c365e2eefb4b819493acf76fbf',1,'jazz_utils::JazzConfigFile::JazzConfigFile()']]],
   ['jazzfree',['jazzFree',['../jazz01__commons_8h.html#a81a988f49bd723c366541b9d41ee22d2',1,'jazzFree(void *&amp;ptr, int alloc_type):&#160;jazz01_alloc.cpp'],['../jazz01__alloc_8cpp.html#a81a988f49bd723c366541b9d41ee22d2',1,'jazzFree(void *&amp;ptr, int alloc_type):&#160;jazz01_alloc.cpp'],['../jazz01__commons_8h.html#affddde2486593d1eeb42f7893d5049ee',1,'JAZZFREE():&#160;jazz01_commons.h']]],
   ['jazzlogger',['JazzLogger',['../classjazz__utils_1_1JazzLogger.html',1,'jazz_utils::JazzLogger'],['../classjazz__utils_1_1JazzLogger.html#a90f1f4e5b1ba7967abb26ac623f29623',1,'jazz_utils::JazzLogger::JazzLogger()']]],
+  ['jazzoneshotalloc',['JazzOneShotAlloc',['../namespacejazz__containers.html#a06c7e485c86b5abef4b319ce153ef96e',1,'jazz_containers']]],
   ['jazzptrtrack',['jazzPtrTrack',['../jazz01__commons_8h.html#a531517a9c96269080ff2c9b6c1705433',1,'jazzPtrTrack(void *&amp;ptr, int alloc_type, int fun):&#160;jazz01_alloc.cpp'],['../jazz01__alloc_8cpp.html#a531517a9c96269080ff2c9b6c1705433',1,'jazzPtrTrack(void *&amp;ptr, int alloc_type, int fun):&#160;jazz01_alloc.cpp']]],
   ['jazzptrtrackclose',['jazzPtrTrackClose',['../jazz01__commons_8h.html#ab46272b834d8ea181c941d1b4535a979',1,'jazzPtrTrackClose():&#160;jazz01_alloc.cpp'],['../jazz01__alloc_8cpp.html#ab46272b834d8ea181c941d1b4535a979',1,'jazzPtrTrackClose():&#160;jazz01_alloc.cpp']]],
   ['jazzqueueitem',['JazzQueueItem',['../structjazz__containers_1_1JazzQueueItem.html',1,'jazz_containers']]],

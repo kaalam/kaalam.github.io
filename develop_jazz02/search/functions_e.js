@@ -8,6 +8,7 @@ var searchData=
   ['new_5fblock_5fc_5freal_5frep',['new_block_C_REAL_rep',['../classjzzBLOCKS.html#a3df50033255473f597ee93f27abc943d',1,'jzzBLOCKS']]],
   ['new_5fblock_5fc_5freal_5fseq',['new_block_C_REAL_seq',['../classjzzBLOCKS.html#aad0143be352e704c2dbcaaa87d25b539',1,'jzzBLOCKS']]],
   ['new_5fblock_5fcopy',['new_block_copy',['../classjzzBLOCKS.html#a8f9bd486366fedb09219847e965fdccb',1,'jzzBLOCKS']]],
+  ['new_5fjazz_5fblock',['new_jazz_block',['../namespacejazz__containers.html#a2e27906e4a83d2df5365e4eef49d6379',1,'jazz_containers::new_jazz_block(pJazzBlock p_as_block, pJazzBlock p_row_filter)'],['../namespacejazz__containers.html#a9d1b99ca48f6386591e819f78e3491b0',1,'jazz_containers::new_jazz_block(int cell_type, JazzTensorDim *dim, AllAttributes *att, int stringbuff_size)'],['../namespacejazz__containers.html#a3831773011d6746698ebc49e499f6a17',1,'jazz_containers::new_jazz_block(int cell_type, JazzTensorDim *dim, AllAttributes *att, const char *p_text, char separator=&apos;\n&apos;)']]],
   ['new_5fsource',['new_source',['../classjzzBLOCKS.html#af91e7163989a8a9a6e9453c85cbe1a79',1,'jzzBLOCKS']]],
   ['new_5fwebsource',['new_websource',['../classjazzWebSource.html#a4dfa8ec29c5cc4ccbae4d7723b5de5d5',1,'jazzWebSource']]],
   ['next_5fkey',['next_key',['../classjzzBLOCKS.html#a3dc841e46577b9cf110f8bd1987efa76',1,'jzzBLOCKS']]],
