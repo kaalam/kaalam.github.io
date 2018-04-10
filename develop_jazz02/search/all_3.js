@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['can_5ffilter',['can_filter',['../classjazz__datablocks_1_1JazzFilter.html#a6938c088caea5dda4ca660ce75429389',1,'jazz_datablocks::JazzFilter']]],
   ['cast_5flmdb_5fblock',['cast_lmdb_block',['../classjzzBLOCKCONV.html#a30abe89445537738572bf39eeecbef8c',1,'jzzBLOCKCONV']]],
   ['catch_5fconfig_5fmain',['CATCH_CONFIG_MAIN',['../jazz01__main_8cpp.html#a656eb5868e824d59f489f910db438420',1,'jazz01_main.cpp']]],
   ['cell_5ftype',['cell_type',['../structjazz__datablocks_1_1JazzBlockHeader.html#ad6ebfd6abb2e8e0b204b3f27cf3e8412',1,'jazz_datablocks::JazzBlockHeader']]],

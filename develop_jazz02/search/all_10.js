@@ -23,6 +23,7 @@ var searchData=
   ['pjazzblock',['pJazzBlock',['../jazz01__commons_8h.html#a81770bae7c18abbb26281974e3d1c296',1,'pJazzBlock():&#160;jazz01_commons.h'],['../namespacejazz__datablocks.html#a4bee86484bd6b39c61501ab08966b1de',1,'jazz_datablocks::pJazzBlock()']]],
   ['pjazzblockheader',['pJazzBlockHeader',['../namespacejazz__datablocks.html#a4550331d3dbaef88edf54553217fab05',1,'jazz_datablocks']]],
   ['pjazzblockkeepritem',['pJazzBlockKeeprItem',['../namespacejazz__containers.html#ae756081452684556f7185bc90c579b02',1,'jazz_containers']]],
+  ['pjazzfilter',['pJazzFilter',['../namespacejazz__datablocks.html#a0201ff665e99d6ff420f7b7e88204ebb',1,'jazz_datablocks']]],
   ['pjazzqueueitem',['pJazzQueueItem',['../namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7',1,'jazz_containers']]],
   ['pjazzstringbuffer',['pJazzStringBuffer',['../namespacejazz__datablocks.html#a77be3d91de682a94c3aafbeea8a167bb',1,'jazz_datablocks']]],
   ['pjazztreeitem',['pJazzTreeItem',['../namespacejazz__containers.html#a8b61b7a47944422fabefe7d4d52feabc',1,'jazz_containers']]],
@@ -30,7 +31,7 @@ var searchData=
   ['port',['port',['../structjazz__node.html#a69163ac70d92eb9c9465aa924947ab81',1,'jazz_node']]],
   ['prawblock',['pRawBlock',['../jazz01__commons_8h.html#aa9994b1f3f32f62097cbf195a69143c1',1,'jazz01_commons.h']]],
   ['prealblock',['pRealBlock',['../jazz01__commons_8h.html#adc22cd7c8551bf5965d062da19f3bfc1',1,'jazz01_commons.h']]],
-  ['priority',['priority',['../structjazz__containers_1_1JazzQueueItem.html#a89ab7a017c097e966c2f10fc8eb99481',1,'jazz_containers::JazzQueueItem']]],
+  ['priority',['priority',['../structjazz__containers_1_1JazzQueueItem.html#ae42912fe361486ecbc51ecd95b06c59d',1,'jazz_containers::JazzQueueItem']]],
   ['prstr_5fstream',['pRStr_stream',['../unionpRStr__stream.html',1,'']]],
   ['psource',['pSource',['../jazz__blocks_8h.html#af67b010998000a92b0f435a211beadc9',1,'jazz_blocks.h']]],
   ['pstringbuff',['pStringBuff',['../jazz01__commons_8h.html#a2c1f22d3dee37b73cda33f72eab78858',1,'jazz01_commons.h']]]

@@ -6,6 +6,7 @@ var searchData=
   ['pjazzblock',['pJazzBlock',['../jazz01__commons_8h.html#a81770bae7c18abbb26281974e3d1c296',1,'pJazzBlock():&#160;jazz01_commons.h'],['../namespacejazz__datablocks.html#a4bee86484bd6b39c61501ab08966b1de',1,'jazz_datablocks::pJazzBlock()']]],
   ['pjazzblockheader',['pJazzBlockHeader',['../namespacejazz__datablocks.html#a4550331d3dbaef88edf54553217fab05',1,'jazz_datablocks']]],
   ['pjazzblockkeepritem',['pJazzBlockKeeprItem',['../namespacejazz__containers.html#ae756081452684556f7185bc90c579b02',1,'jazz_containers']]],
+  ['pjazzfilter',['pJazzFilter',['../namespacejazz__datablocks.html#a0201ff665e99d6ff420f7b7e88204ebb',1,'jazz_datablocks']]],
   ['pjazzqueueitem',['pJazzQueueItem',['../namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7',1,'jazz_containers']]],
   ['pjazzstringbuffer',['pJazzStringBuffer',['../namespacejazz__datablocks.html#a77be3d91de682a94c3aafbeea8a167bb',1,'jazz_datablocks']]],
   ['pjazztreeitem',['pJazzTreeItem',['../namespacejazz__containers.html#a8b61b7a47944422fabefe7d4d52feabc',1,'jazz_containers']]],

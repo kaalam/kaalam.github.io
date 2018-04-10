@@ -5,6 +5,7 @@ var searchData=
   ['tenbitsataddress',['TenBitsAtAddress',['../namespacejazz__utils.html#a61524a8077b58bf4be5ab97a3da67fd0',1,'jazz_utils']]],
   ['tensor',['tensor',['../structjazz__datablocks_1_1JazzBlockHeader.html#ad72bf0ccd3a0bef2a919b5e7c498f889',1,'jazz_datablocks::JazzBlockHeader']]],
   ['time_5fpoint',['time_point',['../jazz01__commons_8h.html#a446a3f204afe93a99c1c74177a7d70cc',1,'jazz01_commons.h']]],
+  ['time_5fto_5fbuild',['time_to_build',['../structjazz__containers_1_1JazzQueueItem.html#a0ae46d8f0ce4826abca000d426d4118e',1,'jazz_containers::JazzQueueItem']]],
   ['timepoint',['TimePoint',['../namespacejazz__datablocks.html#a6aaf910265532463eb5989ecb7f11ed5',1,'jazz_datablocks']]],
   ['total_5fbytes',['total_bytes',['../structjazz__datablocks_1_1JazzBlockHeader.html#a14985f88c4470854d2c958d9cb6ff36f',1,'jazz_datablocks::JazzBlockHeader']]],
   ['translate_5fblock_5ffrom_5fr',['translate_block_FROM_R',['../classjzzBLOCKCONV.html#a70e8622aa3f9b65738a401c7105068bc',1,'jzzBLOCKCONV']]],

@@ -90,6 +90,8 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__datablocks_1_1JazzBlock.html">jazz_datablocks::JazzBlock</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__datablocks_1_1JazzFilter.html">jazz_datablocks::JazzFilter</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -108,6 +110,7 @@ Macros</h2></td></tr>
 <tr class="memdesc:a40093e3a10da1976d9ea346da095d3e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of tries to match in get_string_offset() before setting stop_check_4_match.  <a href="#a40093e3a10da1976d9ea346da095d3e9">More...</a><br /></td></tr>
 <tr class="separator:a40093e3a10da1976d9ea346da095d3e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ab9efa453cd99ad8a95c797aff340b9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__datablocks_8h.html#a9ab9efa453cd99ad8a95c797aff340b9">CELL_TYPE__</a></td></tr>
+<tr class="memdesc:a9ab9efa453cd99ad8a95c797aff340b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Different values for JazzBlock.cell_type.  <a href="#a9ab9efa453cd99ad8a95c797aff340b9">More...</a><br /></td></tr>
 <tr class="separator:a9ab9efa453cd99ad8a95c797aff340b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00ed654fef28807203d5042b4342c3fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__datablocks_8h.html#a00ed654fef28807203d5042b4342c3fb">CELL_TYPE_BYTE</a>&#160;&#160;&#160;0x001</td></tr>
 <tr class="memdesc:a00ed654fef28807203d5042b4342c3fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tensor of unsigned 8-bit binaries. NA is not defined for this type.  <a href="#a00ed654fef28807203d5042b4342c3fb">More...</a><br /></td></tr>
@@ -169,6 +172,18 @@ Macros</h2></td></tr>
 <tr class="memitem:a7d407ad60268ec99c1d590accd456778"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__datablocks_8h.html#a7d407ad60268ec99c1d590accd456778">JAZZ_DOUBLE_NA</a>&#160;&#160;&#160;<a class="el" href="jazz__commons_8cpp.html#aee8296dc80df1bf2da84acda63522a41">R_NA</a></td></tr>
 <tr class="memdesc:a7d407ad60268ec99c1d590accd456778"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA for a double. This is R compatible.  <a href="#a7d407ad60268ec99c1d590accd456778">More...</a><br /></td></tr>
 <tr class="separator:a7d407ad60268ec99c1d590accd456778"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a361292574f794379a0c947fafa71d5da"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__datablocks_8h.html#a361292574f794379a0c947fafa71d5da">JAZZ_FILTER_TYPE_</a></td></tr>
+<tr class="memdesc:a361292574f794379a0c947fafa71d5da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Possible return values of JazzFilter.filter_type()  <a href="#a361292574f794379a0c947fafa71d5da">More...</a><br /></td></tr>
+<tr class="separator:a361292574f794379a0c947fafa71d5da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3cf62197b05e645bc24e67208c44034"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__datablocks_8h.html#ab3cf62197b05e645bc24e67208c44034">JAZZ_FILTER_TYPE_NOTAFILTER</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:ab3cf62197b05e645bc24e67208c44034"><td class="mdescLeft">&#160;</td><td class="mdescRight">This JazzBlock cannot be used as a filter. A try to use it in <a class="el" href="namespacejazz__containers.html#a4c031b1a5a025abb8fb86e8dee8ec99a">new_jazz_block()</a> will fail.  <a href="#ab3cf62197b05e645bc24e67208c44034">More...</a><br /></td></tr>
+<tr class="separator:ab3cf62197b05e645bc24e67208c44034"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd52049a19424da624e2d8493cf6e1d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__datablocks_8h.html#abd52049a19424da624e2d8493cf6e1d5">JAZZ_FILTER_TYPE_BOOLEAN</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:abd52049a19424da624e2d8493cf6e1d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This JazzBlock is a vector of CELL_TYPE_BYTE_BOOLEAN for each row.  <a href="#abd52049a19424da624e2d8493cf6e1d5">More...</a><br /></td></tr>
+<tr class="separator:abd52049a19424da624e2d8493cf6e1d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3597ae100fc7841ee52c27b15d90dbd3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__datablocks_8h.html#a3597ae100fc7841ee52c27b15d90dbd3">JAZZ_FILTER_TYPE_INTEGER</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memdesc:a3597ae100fc7841ee52c27b15d90dbd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This JazzBlock is a vector of CELL_TYPE_INTEGER containing the selected rows.  <a href="#a3597ae100fc7841ee52c27b15d90dbd3">More...</a><br /></td></tr>
+<tr class="separator:a3597ae100fc7841ee52c27b15d90dbd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -186,6 +201,8 @@ Typedefs</h2></td></tr>
 <tr class="separator:a77be3d91de682a94c3aafbeea8a167bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bee86484bd6b39c61501ab08966b1de"><td class="memItemLeft" align="right" valign="top">typedef JazzBlock *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__datablocks.html#a4bee86484bd6b39c61501ab08966b1de">jazz_datablocks::pJazzBlock</a></td></tr>
 <tr class="separator:a4bee86484bd6b39c61501ab08966b1de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0201ff665e99d6ff420f7b7e88204ebb"><td class="memItemLeft" align="right" valign="top">typedef JazzFilter *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__datablocks.html#a0201ff665e99d6ff420f7b7e88204ebb">jazz_datablocks::pJazzFilter</a></td></tr>
+<tr class="separator:a0201ff665e99d6ff420f7b7e88204ebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a9ab9efa453cd99ad8a95c797aff340b9"></a>
@@ -199,6 +216,8 @@ Typedefs</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Different values for JazzBlock.cell_type. </p>
 
 </div>
 </div>
@@ -440,6 +459,70 @@ Typedefs</h2></td></tr>
 </div><div class="memdoc">
 
 <p>NA for a double. This is R compatible. </p>
+
+</div>
+</div>
+<a id="a361292574f794379a0c947fafa71d5da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a361292574f794379a0c947fafa71d5da">&#9670;&nbsp;</a></span>JAZZ_FILTER_TYPE_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JAZZ_FILTER_TYPE_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Possible return values of JazzFilter.filter_type() </p>
+
+</div>
+</div>
+<a id="abd52049a19424da624e2d8493cf6e1d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd52049a19424da624e2d8493cf6e1d5">&#9670;&nbsp;</a></span>JAZZ_FILTER_TYPE_BOOLEAN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JAZZ_FILTER_TYPE_BOOLEAN&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This JazzBlock is a vector of CELL_TYPE_BYTE_BOOLEAN for each row. </p>
+
+</div>
+</div>
+<a id="a3597ae100fc7841ee52c27b15d90dbd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3597ae100fc7841ee52c27b15d90dbd3">&#9670;&nbsp;</a></span>JAZZ_FILTER_TYPE_INTEGER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JAZZ_FILTER_TYPE_INTEGER&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This JazzBlock is a vector of CELL_TYPE_INTEGER containing the selected rows. </p>
+
+</div>
+</div>
+<a id="ab3cf62197b05e645bc24e67208c44034"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3cf62197b05e645bc24e67208c44034">&#9670;&nbsp;</a></span>JAZZ_FILTER_TYPE_NOTAFILTER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JAZZ_FILTER_TYPE_NOTAFILTER&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This JazzBlock cannot be used as a filter. A try to use it in <a class="el" href="namespacejazz__containers.html#a4c031b1a5a025abb8fb86e8dee8ec99a">new_jazz_block()</a> will fail. </p>
 
 </div>
 </div>

@@ -11,6 +11,7 @@ var searchData=
   ['jazzcache',['JazzCache',['../classjazz__containers_1_1JazzCache.html',1,'jazz_containers']]],
   ['jazzcommons',['jazzCommons',['../classjazzCommons.html',1,'']]],
   ['jazzconfigfile',['JazzConfigFile',['../classjazz__utils_1_1JazzConfigFile.html',1,'jazz_utils']]],
+  ['jazzfilter',['JazzFilter',['../classjazz__datablocks_1_1JazzFilter.html',1,'jazz_datablocks']]],
   ['jazzlogger',['JazzLogger',['../classjazz__utils_1_1JazzLogger.html',1,'jazz_utils']]],
   ['jazzqueueitem',['JazzQueueItem',['../structjazz__containers_1_1JazzQueueItem.html',1,'jazz_containers']]],
   ['jazzservice',['jazzService',['../classjazzService.html',1,'']]],

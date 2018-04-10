@@ -10,6 +10,7 @@ var searchData=
   ['lang_5ftr_5ftr',['LANG_TR_TR',['../jazz01__commons_8h.html#a5dda8492336185edbd6ad11d0e37d546',1,'jazz01_commons.h']]],
   ['language',['language',['../structURLattrib.html#aa1d05e9b5e5b12d3d8a040912225ec2c',1,'URLattrib']]],
   ['last_5fidx',['last_idx',['../structstring__buffer.html#a186708add49f9102b959565fa8d14fc4',1,'string_buffer::last_idx()'],['../structjazz__datablocks_1_1JazzStringBuffer.html#a2cea7f923164e5d3061d060fbc1b207d',1,'jazz_datablocks::JazzStringBuffer::last_idx()']]],
+  ['last_5fused',['last_used',['../structjazz__containers_1_1JazzQueueItem.html#a46a971d929f82e6113f41ca8db1603c9',1,'jazz_containers::JazzQueueItem']]],
   ['leave_5fapi_5fcall',['leave_api_call',['../classjazzCommons.html#a95457f82eaaa5dcb1fb3e7370a9f1b30',1,'jazzCommons']]],
   ['leave_5fpersistence',['leave_persistence',['../classjazzCommons.html#a7bf915f25c3ec4ee0b5ef83ff1584c7a',1,'jazzCommons']]],
   ['leave_5fr_5finterpreter',['leave_R_interpreter',['../classjazzCommons.html#a13de0bb7c29b474cd2e759286893425d',1,'jazzCommons']]],
