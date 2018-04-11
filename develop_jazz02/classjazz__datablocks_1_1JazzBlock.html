@@ -112,6 +112,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acfaf689826f02bcf1e50ab8a5bb96de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9b2b4db6a0bc2ca60847fb8fd3549ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__datablocks_1_1JazzBlock.html#ad9b2b4db6a0bc2ca60847fb8fd3549ab">init_string_buffer</a> ()</td></tr>
 <tr class="separator:ad9b2b4db6a0bc2ca60847fb8fd3549ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98d4009ffb9630e71c55ca2ef2993df9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__datablocks_1_1JazzBlock.html#a98d4009ffb9630e71c55ca2ef2993df9">find_NAs_in_tensor</a> ()</td></tr>
+<tr class="separator:a98d4009ffb9630e71c55ca2ef2993df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -183,6 +185,26 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to where the (zero ended) string (the attribute value) is stored in the <a class="el" href="classjazz__datablocks_1_1JazzBlock.html">JazzBlock</a>. Or nullptr if the key is not found.</dd></dl>
 <p>NOTE: Search is linear since no assumptions can be made on how keys are ordered. Typically JazzBlocks have few (less than 5) attributes and that is okay. There is no limit on the number of attributes, so if you want to use the block's attributes as a dictionary containing, e.g., thousands of config keys, use <a class="el" href="classjazz__datablocks_1_1JazzBlock.html#acfaf689826f02bcf1e50ab8a5bb96de8">get_attributes()</a> instead which returns a map with all the attributes. </p>
+
+</div>
+</div>
+<a id="a98d4009ffb9630e71c55ca2ef2993df9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98d4009ffb9630e71c55ca2ef2993df9">&#9670;&nbsp;</a></span>find_NAs_in_tensor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool jazz_datablocks::JazzBlock::find_NAs_in_tensor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Scan a tensor object to see if it conaions any NA valued of the type specified in cell_type.</p>
+<dl class="section return"><dt>Returns</dt><dd>True if NA values of the give type were found.</dd></dl>
+<p>Note: For boolean types everything other than true (1) or false (0) is considered NA Note: For floating point types, only binary identity with F_NA or R_NA counts as NA </p>
 
 </div>
 </div>
