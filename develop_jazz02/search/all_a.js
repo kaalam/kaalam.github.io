@@ -126,6 +126,7 @@ var searchData=
   ['jazzservice',['jazzService',['../classjazzService.html',1,'']]],
   ['jazzservices',['jazzServices',['../classjazzServices.html',1,'']]],
   ['jazzstringbuffer',['JazzStringBuffer',['../structjazz__datablocks_1_1JazzStringBuffer.html',1,'jazz_datablocks']]],
+  ['jazztensor',['JazzTensor',['../unionjazz__datablocks_1_1JazzTensor.html',1,'jazz_datablocks']]],
   ['jazztensordim',['JazzTensorDim',['../namespacejazz__datablocks.html#a6be0f103934e5d43c01d0ae5d77e0884',1,'jazz_datablocks']]],
   ['jazztree',['JazzTree',['../classjazz__containers_1_1JazzTree.html',1,'jazz_containers']]],
   ['jazztreeitem',['JazzTreeItem',['../structjazz__containers_1_1JazzTreeItem.html',1,'jazz_containers']]],
