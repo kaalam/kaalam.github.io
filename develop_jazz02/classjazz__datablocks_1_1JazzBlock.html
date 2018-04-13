@@ -516,9 +516,10 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 <p>NOTES: 1. This writes: rank, dim_offs[] and size.</p><ol type="1">
-<li>A dimension 0 is the same as 1, only dimensions &gt;1 count for the rank.</li>
-<li>All &gt;1 dimensions must be in the beginning. 3,2,1,4 == 3,2,0,0 has rank == 2</li>
-<li>All dimensions == 0 (or 1) has rank == 1 and size == 0 or 1 depending on the first dimension being 0 or 1. </li>
+<li>Except in the first position, a dimension 0 is the same as 1, only dimensions &gt;1 count for the rank.</li>
+<li>Except in the first position, all &gt;1 dimensions must be in the beginning. 3,2,1,4 == 3,2,0,0 has rank == 2</li>
+<li>All dimensions == 0 (or 1) has rank == 1 and size == 0 or 1 depending on the first dimension being 0 or 1.</li>
+<li>First dimension == 0 (or 1) and 2nd+ &gt; 1 produce rank &gt; 1 with 0 (or 1) rows. </li>
 </ol>
 
 </div>
