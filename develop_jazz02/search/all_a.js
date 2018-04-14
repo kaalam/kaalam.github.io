@@ -105,7 +105,7 @@ var searchData=
   ['jazzblockheader',['JazzBlockHeader',['../structjazz__datablocks_1_1JazzBlockHeader.html',1,'jazz_datablocks']]],
   ['jazzblockid64',['JazzBlockId64',['../namespacejazz__containers.html#ae38bfd05b20beece8e78fa27d5b23a1e',1,'jazz_containers']]],
   ['jazzblockidentifier',['JazzBlockIdentifier',['../structjazz__containers_1_1JazzBlockIdentifier.html',1,'jazz_containers']]],
-  ['jazzblockkeepr',['JazzBlockKeepr',['../classjazz__containers_1_1JazzBlockKeepr.html',1,'jazz_containers']]],
+  ['jazzblockkeepr',['JazzBlockKeepr',['../classjazz__containers_1_1JazzBlockKeepr.html',1,'jazz_containers::JazzBlockKeepr'],['../classjazz__containers_1_1JazzBlockKeepr.html#aac30e2d43aa4b71af9783b5b9fa1d7db',1,'jazz_containers::JazzBlockKeepr::JazzBlockKeepr()']]],
   ['jazzblockkeepritem',['JazzBlockKeeprItem',['../structjazz__containers_1_1JazzBlockKeeprItem.html',1,'jazz_containers']]],
   ['jazzblockmap',['JazzBlockMap',['../namespacejazz__containers.html#ac7f74b24e90b7f70a7112ca657c7244d',1,'jazz_containers']]],
   ['jazzc_5fempty_5fstring',['JAZZC_EMPTY_STRING',['../jazz01__commons_8h.html#a82fa584f1d50303f7f93076efa6af983',1,'jazz01_commons.h']]],

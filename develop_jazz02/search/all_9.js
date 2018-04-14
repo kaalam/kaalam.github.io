@@ -18,5 +18,6 @@ var searchData=
   ['iprange',['IPrange',['../structIPrange.html',1,'']]],
   ['is_5flast_5fkey',['is_last_key',['../classjzzBLOCKS.html#a96957672c632368038a0b090c7bb4d8a',1,'jzzBLOCKS']]],
   ['isbig',['isBig',['../structstring__buffer.html#aab3f1d1cdc67371408163623f48e0638',1,'string_buffer']]],
-  ['isinstrumental',['isInstrumental',['../structparsedURLhea.html#aaf6b748e2095c7b8fd0d554dbee10404',1,'parsedURLhea']]]
+  ['isinstrumental',['isInstrumental',['../structparsedURLhea.html#aaf6b748e2095c7b8fd0d554dbee10404',1,'parsedURLhea']]],
+  ['item_5fsize',['item_size',['../classjazz__containers_1_1JazzBlockKeepr.html#a4dfe309df7ab2d0a2b347a23c076927e',1,'jazz_containers::JazzBlockKeepr::item_size()'],['../classjazz__containers_1_1JazzTree.html#a54e5e9773b95bf972074a3c62cf46a1a',1,'jazz_containers::JazzTree::item_size()'],['../classjazz__containers_1_1AATBlockQueue.html#accdbad56f4cc9f697ceb57135950c454',1,'jazz_containers::AATBlockQueue::item_size()']]]
 ];
