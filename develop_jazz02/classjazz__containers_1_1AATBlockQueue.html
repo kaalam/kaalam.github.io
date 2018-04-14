@@ -64,7 +64,9 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">jazz_containers::AATBlockQueue Class Reference</div>  </div>
 </div><!--header-->
@@ -84,9 +86,21 @@ Inheritance diagram for jazz_containers::AATBlockQueue:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a8c1d685061bb8ebf53793cf76cfb7548"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1AATBlockQueue.html#a8c1d685061bb8ebf53793cf76cfb7548">new_jazz_block</a> (const <a class="el" href="structjazz__containers_1_1JazzBlockIdentifier.html">JazzBlockIdentifier</a> *p_id, <a class="el" href="namespacejazz__datablocks.html#a2666df0f415ab9495304469e745adfda">pJazzBlock</a> p_as_block, <a class="el" href="namespacejazz__datablocks.html#a2666df0f415ab9495304469e745adfda">pJazzBlock</a> p_row_filter=nullptr, <a class="el" href="namespacejazz__datablocks.html#ad78607a9a502ae46d20496d82bc8286d">AllAttributes</a> *att=nullptr, uint64_t time_to_build=0)</td></tr>
+<tr class="separator:a8c1d685061bb8ebf53793cf76cfb7548"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe2b78bf13f64f489862e1da60097f66"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1AATBlockQueue.html#abe2b78bf13f64f489862e1da60097f66">new_jazz_block</a> (const <a class="el" href="structjazz__containers_1_1JazzBlockIdentifier.html">JazzBlockIdentifier</a> *p_id, int cell_type, JazzTensorDim *dim, <a class="el" href="namespacejazz__datablocks.html#ad78607a9a502ae46d20496d82bc8286d">AllAttributes</a> *att, int fill_tensor=<a class="el" href="jazz__containers_8h.html#a71bf55da2249f5bc6310cfa9d06b82ea">JAZZ_FILL_NEW_WITH_NA</a>, bool *p_bool_filter=nullptr, int stringbuff_size=0, const char *p_text=nullptr, char eoln='\n', uint64_t time_to_build=0)</td></tr>
+<tr class="separator:abe2b78bf13f64f489862e1da60097f66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4adf158c62abe050e69d6bf75cf38f73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1AATBlockQueue.html#a4adf158c62abe050e69d6bf75cf38f73">remove_jazz_block</a> (<a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a> p_item)</td></tr>
+<tr class="separator:a4adf158c62abe050e69d6bf75cf38f73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af149bc9097819ae434d18adf98b2aeaa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1AATBlockQueue.html#af149bc9097819ae434d18adf98b2aeaa">highest_priority_item</a> (bool remove_it=false)</td></tr>
+<tr class="separator:af149bc9097819ae434d18adf98b2aeaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a8c179b6b78834397fc4fbd992dead2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1AATBlockQueue.html#a4a8c179b6b78834397fc4fbd992dead2">lowest_priority_item</a> (bool remove_it=false)</td></tr>
+<tr class="separator:a4a8c179b6b78834397fc4fbd992dead2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accdbad56f4cc9f697ceb57135950c454"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1AATBlockQueue.html#accdbad56f4cc9f697ceb57135950c454">item_size</a> ()</td></tr>
 <tr class="memdesc:accdbad56f4cc9f697ceb57135950c454"><td class="mdescLeft">&#160;</td><td class="mdescRight">A virtual method returning the size of <a class="el" href="structjazz__containers_1_1JazzQueueItem.html">JazzQueueItem</a> that <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html">JazzBlockKeepr</a> needs for allocation.  <a href="#accdbad56f4cc9f697ceb57135950c454">More...</a><br /></td></tr>
 <tr class="separator:accdbad56f4cc9f697ceb57135950c454"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d440cc98d46dae9be45098543aaecb4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1AATBlockQueue.html#a7d440cc98d46dae9be45098543aaecb4">set_item_priority</a> (<a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a> p_item)</td></tr>
+<tr class="separator:a7d440cc98d46dae9be45098543aaecb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classjazz__containers_1_1JazzBlockKeepr"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classjazz__containers_1_1JazzBlockKeepr')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html">jazz_containers::JazzBlockKeepr</a></td></tr>
 <tr class="memitem:aac30e2d43aa4b71af9783b5b9fa1d7db inherit pub_methods_classjazz__containers_1_1JazzBlockKeepr"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#aac30e2d43aa4b71af9783b5b9fa1d7db">JazzBlockKeepr</a> ()</td></tr>
 <tr class="separator:aac30e2d43aa4b71af9783b5b9fa1d7db inherit pub_methods_classjazz__containers_1_1JazzBlockKeepr"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -98,14 +112,123 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a67de2e7c2d3747ec5d2d54c4b94cd010 inherit pub_methods_classjazz__containers_1_1JazzBlockKeepr"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab34ede7a4ae92dd4fffafded935ce099 inherit pub_methods_classjazz__containers_1_1JazzBlockKeepr"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#ab34ede7a4ae92dd4fffafded935ce099">destroy_keeprs</a> ()</td></tr>
 <tr class="separator:ab34ede7a4ae92dd4fffafded935ce099 inherit pub_methods_classjazz__containers_1_1JazzBlockKeepr"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86dd0ace950e6b385de47b01b3043505 inherit pub_methods_classjazz__containers_1_1JazzBlockKeepr"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__containers.html#ae756081452684556f7185bc90c579b02">pJazzBlockKeeprItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a86dd0ace950e6b385de47b01b3043505">new_jazz_block</a> (const <a class="el" href="structjazz__containers_1_1JazzBlockIdentifier.html">JazzBlockIdentifier</a> *pID, <a class="el" href="namespacejazz__datablocks.html#a2666df0f415ab9495304469e745adfda">pJazzBlock</a> p_as_block, <a class="el" href="namespacejazz__datablocks.html#a2666df0f415ab9495304469e745adfda">pJazzBlock</a> p_row_filter=nullptr, <a class="el" href="namespacejazz__datablocks.html#ad78607a9a502ae46d20496d82bc8286d">AllAttributes</a> *att=nullptr)</td></tr>
-<tr class="separator:a86dd0ace950e6b385de47b01b3043505 inherit pub_methods_classjazz__containers_1_1JazzBlockKeepr"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6da003fc715ab47a7685bf8677a787b1 inherit pub_methods_classjazz__containers_1_1JazzBlockKeepr"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__containers.html#ae756081452684556f7185bc90c579b02">pJazzBlockKeeprItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a6da003fc715ab47a7685bf8677a787b1">new_jazz_block</a> (const <a class="el" href="structjazz__containers_1_1JazzBlockIdentifier.html">JazzBlockIdentifier</a> *pID, int cell_type, JazzTensorDim *dim, <a class="el" href="namespacejazz__datablocks.html#ad78607a9a502ae46d20496d82bc8286d">AllAttributes</a> *att, int fill_tensor=<a class="el" href="jazz__containers_8h.html#a71bf55da2249f5bc6310cfa9d06b82ea">JAZZ_FILL_NEW_WITH_NA</a>, bool *p_bool_filter=nullptr, int stringbuff_size=0, const char *p_text=nullptr, char eoln='\n')</td></tr>
-<tr class="separator:a6da003fc715ab47a7685bf8677a787b1 inherit pub_methods_classjazz__containers_1_1JazzBlockKeepr"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78c2200cfac596d5f0b61a026a120774 inherit pub_methods_classjazz__containers_1_1JazzBlockKeepr"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a78c2200cfac596d5f0b61a026a120774">remove_jazz_block</a> (<a class="el" href="namespacejazz__containers.html#ae756081452684556f7185bc90c579b02">pJazzBlockKeeprItem</a>)</td></tr>
-<tr class="separator:a78c2200cfac596d5f0b61a026a120774 inherit pub_methods_classjazz__containers_1_1JazzBlockKeepr"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f2b8d51050935de749b31da4aaace5e inherit pub_methods_classjazz__containers_1_1JazzBlockKeepr"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__containers.html#ae756081452684556f7185bc90c579b02">pJazzBlockKeeprItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a2f2b8d51050935de749b31da4aaace5e">new_jazz_block</a> (const <a class="el" href="structjazz__containers_1_1JazzBlockIdentifier.html">JazzBlockIdentifier</a> *p_id, <a class="el" href="namespacejazz__datablocks.html#a2666df0f415ab9495304469e745adfda">pJazzBlock</a> p_as_block, <a class="el" href="namespacejazz__datablocks.html#a2666df0f415ab9495304469e745adfda">pJazzBlock</a> p_row_filter=nullptr, <a class="el" href="namespacejazz__datablocks.html#ad78607a9a502ae46d20496d82bc8286d">AllAttributes</a> *att=nullptr)</td></tr>
+<tr class="separator:a2f2b8d51050935de749b31da4aaace5e inherit pub_methods_classjazz__containers_1_1JazzBlockKeepr"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a8b4c8b47c8bfa2fb600061b578e9a3 inherit pub_methods_classjazz__containers_1_1JazzBlockKeepr"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__containers.html#ae756081452684556f7185bc90c579b02">pJazzBlockKeeprItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a1a8b4c8b47c8bfa2fb600061b578e9a3">new_jazz_block</a> (const <a class="el" href="structjazz__containers_1_1JazzBlockIdentifier.html">JazzBlockIdentifier</a> *p_id, int cell_type, JazzTensorDim *dim, <a class="el" href="namespacejazz__datablocks.html#ad78607a9a502ae46d20496d82bc8286d">AllAttributes</a> *att, int fill_tensor=<a class="el" href="jazz__containers_8h.html#a71bf55da2249f5bc6310cfa9d06b82ea">JAZZ_FILL_NEW_WITH_NA</a>, bool *p_bool_filter=nullptr, int stringbuff_size=0, const char *p_text=nullptr, char eoln='\n')</td></tr>
+<tr class="separator:a1a8b4c8b47c8bfa2fb600061b578e9a3 inherit pub_methods_classjazz__containers_1_1JazzBlockKeepr"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf12e96d3544d257e1cad0020ec36595 inherit pub_methods_classjazz__containers_1_1JazzBlockKeepr"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#aaf12e96d3544d257e1cad0020ec36595">remove_jazz_block</a> (<a class="el" href="namespacejazz__containers.html#ae756081452684556f7185bc90c579b02">pJazzBlockKeeprItem</a> p_item)</td></tr>
+<tr class="separator:aaf12e96d3544d257e1cad0020ec36595 inherit pub_methods_classjazz__containers_1_1JazzBlockKeepr"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:af683ce48f98244bdb3796c822ab75e64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1AATBlockQueue.html#af683ce48f98244bdb3796c822ab75e64">highest_priority</a> (<a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a> p_item)</td></tr>
+<tr class="separator:af683ce48f98244bdb3796c822ab75e64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f98227f0e15d1b7cd54982f8615c241"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1AATBlockQueue.html#a3f98227f0e15d1b7cd54982f8615c241">lowest_priority</a> (<a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a> p_item)</td></tr>
+<tr class="separator:a3f98227f0e15d1b7cd54982f8615c241"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c31288554cf5216b39e5f59683fcf43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1AATBlockQueue.html#a3c31288554cf5216b39e5f59683fcf43">decrease_level</a> (<a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a> p_item)</td></tr>
+<tr class="separator:a3c31288554cf5216b39e5f59683fcf43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dd3248e7cbb05183520a09b86be9e2f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1AATBlockQueue.html#a7dd3248e7cbb05183520a09b86be9e2f">skew</a> (<a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a> p_item)</td></tr>
+<tr class="separator:a7dd3248e7cbb05183520a09b86be9e2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fd2b0b807613f56c2a9d56770931131"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1AATBlockQueue.html#a0fd2b0b807613f56c2a9d56770931131">split</a> (<a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a> p_item)</td></tr>
+<tr class="separator:a0fd2b0b807613f56c2a9d56770931131"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a2facc216e67d746fb6815cb012050e27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1AATBlockQueue.html#a2facc216e67d746fb6815cb012050e27">p_queue_root</a> = nullptr</td></tr>
+<tr class="separator:a2facc216e67d746fb6815cb012050e27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html">JazzBlockKeepr</a> descendant implementing a priority queue using auto balancing AA trees. The priority of a block is set by calling a virtual function <a class="el" href="classjazz__containers_1_1AATBlockQueue.html#a7d440cc98d46dae9be45098543aaecb4">set_item_priority()</a> when the block is created or moved. This function computes the priority based on recency number of times used, time to build, size, etc.</p>
+<p>When an <a class="el" href="classjazz__containers_1_1AATBlockQueue.html">AATBlockQueue</a> fills, blocks get automatically destroyed (the lowest priority blocks, obviously).</p>
+<p>THREAD SAFETY: All public methods in <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html">JazzBlockKeepr</a> descendants must be thread safe. In the core objects, thread-safe failure in public methods is treated as a top priority bug that is inteded to be spotted in burn-in tests. Private methods can be unsafe, but the public methods calling them must be aware of their limitations and use thread-locking when necessary. (Copy this message in all descendants.) </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3c31288554cf5216b39e5f59683fcf43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c31288554cf5216b39e5f59683fcf43">&#9670;&nbsp;</a></span>decrease_level()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void jazz_containers::AATBlockQueue::decrease_level </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a>&#160;</td>
+          <td class="paramname"><em>p_item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Remove links tha skip level in an AA subtree</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_item</td><td>A tree for which we want to remove links that skip levels.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Note: This does alter the tree and requires exclusive access to the AA. </p>
+
+</div>
+</div>
+<a id="af683ce48f98244bdb3796c822ab75e64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af683ce48f98244bdb3796c822ab75e64">&#9670;&nbsp;</a></span>highest_priority()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a> jazz_containers::AATBlockQueue::highest_priority </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a>&#160;</td>
+          <td class="paramname"><em>p_item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return the highest priority node in the AA subtree without modifying the tree</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_item</td><td>The root of the AA subtree from which we want the highest priority node.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The highest priority node in the AA subtree.</dd></dl>
+<p>Note: This does not alter the tree and is thread safe with other reading threads, but incompatible with writing threads. </p>
+
+</div>
+</div>
+<a id="af149bc9097819ae434d18adf98b2aeaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af149bc9097819ae434d18adf98b2aeaa">&#9670;&nbsp;</a></span>highest_priority_item()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a> jazz_containers::AATBlockQueue::highest_priority_item </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>remove_it</em> = <code>false</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="accdbad56f4cc9f697ceb57135950c454"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#accdbad56f4cc9f697ceb57135950c454">&#9670;&nbsp;</a></span>item_size()</h2>
 
@@ -132,6 +255,318 @@ Public Member Functions</h2></td></tr>
 <p>A virtual method returning the size of <a class="el" href="structjazz__containers_1_1JazzQueueItem.html">JazzQueueItem</a> that <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html">JazzBlockKeepr</a> needs for allocation. </p>
 
 <p>Reimplemented from <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a4dfe309df7ab2d0a2b347a23c076927e">jazz_containers::JazzBlockKeepr</a>.</p>
+
+</div>
+</div>
+<a id="a3f98227f0e15d1b7cd54982f8615c241"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f98227f0e15d1b7cd54982f8615c241">&#9670;&nbsp;</a></span>lowest_priority()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a> jazz_containers::AATBlockQueue::lowest_priority </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a>&#160;</td>
+          <td class="paramname"><em>p_item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return the lowest priority node in the AA subtree without modifying the tree</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_item</td><td>The root of the AA subtree from which we want the lowest priority node.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The lowest priority node in the AA subtree.</dd></dl>
+<p>Note: This does not alter the tree and is thread safe with other reading threads, but incompatible with writing threads. </p>
+
+</div>
+</div>
+<a id="a4a8c179b6b78834397fc4fbd992dead2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a8c179b6b78834397fc4fbd992dead2">&#9670;&nbsp;</a></span>lowest_priority_item()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a> jazz_containers::AATBlockQueue::lowest_priority_item </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>remove_it</em> = <code>false</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8c1d685061bb8ebf53793cf76cfb7548"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c1d685061bb8ebf53793cf76cfb7548">&#9670;&nbsp;</a></span>new_jazz_block() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a> jazz_containers::AATBlockQueue::new_jazz_block </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structjazz__containers_1_1JazzBlockIdentifier.html">JazzBlockIdentifier</a> *&#160;</td>
+          <td class="paramname"><em>p_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacejazz__datablocks.html#a2666df0f415ab9495304469e745adfda">pJazzBlock</a>&#160;</td>
+          <td class="paramname"><em>p_as_block</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacejazz__datablocks.html#a2666df0f415ab9495304469e745adfda">pJazzBlock</a>&#160;</td>
+          <td class="paramname"><em>p_row_filter</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacejazz__datablocks.html#ad78607a9a502ae46d20496d82bc8286d">AllAttributes</a> *&#160;</td>
+          <td class="paramname"><em>att</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>time_to_build</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abe2b78bf13f64f489862e1da60097f66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe2b78bf13f64f489862e1da60097f66">&#9670;&nbsp;</a></span>new_jazz_block() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a> jazz_containers::AATBlockQueue::new_jazz_block </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structjazz__containers_1_1JazzBlockIdentifier.html">JazzBlockIdentifier</a> *&#160;</td>
+          <td class="paramname"><em>p_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cell_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">JazzTensorDim *&#160;</td>
+          <td class="paramname"><em>dim</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacejazz__datablocks.html#ad78607a9a502ae46d20496d82bc8286d">AllAttributes</a> *&#160;</td>
+          <td class="paramname"><em>att</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fill_tensor</em> = <code><a class="el" href="jazz__containers_8h.html#a71bf55da2249f5bc6310cfa9d06b82ea">JAZZ_FILL_NEW_WITH_NA</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>p_bool_filter</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>stringbuff_size</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>p_text</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>eoln</em> = <code>'\n'</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>time_to_build</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4adf158c62abe050e69d6bf75cf38f73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4adf158c62abe050e69d6bf75cf38f73">&#9670;&nbsp;</a></span>remove_jazz_block()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void jazz_containers::AATBlockQueue::remove_jazz_block </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a>&#160;</td>
+          <td class="paramname"><em>p_item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7d440cc98d46dae9be45098543aaecb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d440cc98d46dae9be45098543aaecb4">&#9670;&nbsp;</a></span>set_item_priority()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void jazz_containers::AATBlockQueue::set_item_priority </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a>&#160;</td>
+          <td class="paramname"><em>p_item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7dd3248e7cbb05183520a09b86be9e2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dd3248e7cbb05183520a09b86be9e2f">&#9670;&nbsp;</a></span>skew()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a> jazz_containers::AATBlockQueue::skew </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a>&#160;</td>
+          <td class="paramname"><em>p_item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Try to rebalance an AA subtree on its left (prev) side</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_item</td><td>a node representing an AA tree that needs to be rebalanced. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Another node representing the rebalanced AA tree.</dd></dl>
+<p>Note: This does alter the tree and requires exclusive access to the AA. </p>
+
+</div>
+</div>
+<a id="a0fd2b0b807613f56c2a9d56770931131"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fd2b0b807613f56c2a9d56770931131">&#9670;&nbsp;</a></span>split()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a> jazz_containers::AATBlockQueue::split </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a>&#160;</td>
+          <td class="paramname"><em>p_item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Try to rebalance an AA subtree on its right (next) side</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_item</td><td>A node representing an AA tree that needs to be rebalanced. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Another node representing the rebalanced AA tree.</dd></dl>
+<p>Note: This does alter the tree and requires exclusive access to the AA. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a2facc216e67d746fb6815cb012050e27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2facc216e67d746fb6815cb012050e27">&#9670;&nbsp;</a></span>p_queue_root</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a> jazz_containers::AATBlockQueue::p_queue_root = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

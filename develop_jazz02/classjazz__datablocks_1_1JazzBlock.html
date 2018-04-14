@@ -64,7 +64,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">jazz_datablocks::JazzBlock Class Reference</div>  </div>
 </div><!--header-->
@@ -115,6 +116,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a98d4009ffb9630e71c55ca2ef2993df9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__datablocks_1_1JazzBlock.html#a98d4009ffb9630e71c55ca2ef2993df9">find_NAs_in_tensor</a> ()</td></tr>
 <tr class="separator:a98d4009ffb9630e71c55ca2ef2993df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a6e70bcc3e14a83961021b3e2cd2e5de6"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__datablocks_1_1JazzBlock.html#a6e70bcc3e14a83961021b3e2cd2e5de6">align_128bit</a> (uintptr_t ipt)</td></tr>
+<tr class="separator:a6e70bcc3e14a83961021b3e2cd2e5de6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a787badd0c3c3abfbb125cca53b50e356"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__datablocks_1_1JazzBlock.html#a787badd0c3c3abfbb125cca53b50e356">pAttribute_keys</a> ()</td></tr>
+<tr class="separator:a787badd0c3c3abfbb125cca53b50e356"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d12650be6198e97ed19649e20e468c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__datablocks.html#a1b18b7b5777c05356a146ec86043440c">pJazzStringBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__datablocks_1_1JazzBlock.html#a4d12650be6198e97ed19649e20e468c4">pStringBuffer</a> ()</td></tr>
+<tr class="separator:a4d12650be6198e97ed19649e20e468c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cd7ac33f653b5f0d3878f0359d51886"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__datablocks_1_1JazzBlock.html#a8cd7ac33f653b5f0d3878f0359d51886">get_string_offset</a> (<a class="el" href="namespacejazz__datablocks.html#a1b18b7b5777c05356a146ec86043440c">pJazzStringBuffer</a> psb, const char *pString)</td></tr>
+<tr class="separator:a8cd7ac33f653b5f0d3878f0359d51886"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_attribs_structjazz__datablocks_1_1JazzBlockHeader"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_structjazz__datablocks_1_1JazzBlockHeader')"><img src="closed.png" alt="-"/>&#160;Data Fields inherited from <a class="el" href="structjazz__datablocks_1_1JazzBlockHeader.html">jazz_datablocks::JazzBlockHeader</a></td></tr>
@@ -153,6 +165,33 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>A block. Anything in Jazz is a block. A block is a <a class="el" href="structjazz__datablocks_1_1JazzBlockHeader.html" title="Header for a JazzBlock. ">JazzBlockHeader</a>, followed by a tensor, then two arrays of int of length == num_attributes, then a <a class="el" href="structjazz__datablocks_1_1JazzStringBuffer.html" title="Structure at the end of a JazzBlock, initially created with init_string_buffer() ">JazzStringBuffer</a>. Nothing in a <a class="el" href="classjazz__datablocks_1_1JazzBlock.html">JazzBlock</a> is a pointer, JazzBlocks can be copied or stored 'as is', every RAM location in a block is defined by its <a class="el" href="structjazz__datablocks_1_1JazzBlockHeader.html" title="Header for a JazzBlock. ">JazzBlockHeader</a> and computed by the methods in <a class="el" href="classjazz__datablocks_1_1JazzBlock.html">JazzBlock</a>.</p>
 <p>At this level, you only have the fields <a class="el" href="structjazz__datablocks_1_1JazzBlockHeader.html" title="Header for a JazzBlock. ">JazzBlockHeader</a> that you may read and probably only write through some methods. This is the lowest level, it does not even provide support for allocation, at this level you have support for maniputating the <a class="el" href="structjazz__datablocks_1_1JazzStringBuffer.html" title="Structure at the end of a JazzBlock, initially created with init_string_buffer() ">JazzStringBuffer</a> to read and write strings and the JazzAttributesMap to read and write attributes. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6e70bcc3e14a83961021b3e2cd2e5de6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e70bcc3e14a83961021b3e2cd2e5de6">&#9670;&nbsp;</a></span>align_128bit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int* jazz_datablocks::JazzBlock::align_128bit </td>
+          <td>(</td>
+          <td class="paramtype">uintptr_t&#160;</td>
+          <td class="paramname"><em>ipt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Align a pointer (as uintptr_t) to the next 16 byte boundary. </p>
+
+</div>
+</div>
 <a id="a3327e045f2240a6cd5532076eb6efebb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3327e045f2240a6cd5532076eb6efebb">&#9670;&nbsp;</a></span>find_attribute()</h2>
 
@@ -424,6 +463,52 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a8cd7ac33f653b5f0d3878f0359d51886"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cd7ac33f653b5f0d3878f0359d51886">&#9670;&nbsp;</a></span>get_string_offset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jazz_datablocks::JazzBlock::get_string_offset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__datablocks.html#a1b18b7b5777c05356a146ec86043440c">pJazzStringBuffer</a>&#160;</td>
+          <td class="paramname"><em>psb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pString</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Find an existing string in a block, or allocate a new one and return its offset in the <a class="el" href="structjazz__datablocks_1_1JazzStringBuffer.html#ab9a56ebb9c6244d1571cbfb069b923f4" title="The buffer where strings are stored starting with two zeroes for JAZZ_STRING_NA &amp; JAZZ_STRING_EMPTY...">JazzStringBuffer.buffer</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">psb</td><td>The address of the pJazzStringBuffer (passed to avoid calling pStringBuffer repeatedly). </td></tr>
+    <tr><td class="paramname">pString</td><td>The string to find or allocate in the <a class="el" href="structjazz__datablocks_1_1JazzStringBuffer.html" title="Structure at the end of a JazzBlock, initially created with init_string_buffer() ">JazzStringBuffer</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The offset to the (zero terminated) string inside psb-&gt;buffer[] or -1 if allocation failed.</dd></dl>
+<p>NOTE: This function is private, called by <a class="el" href="classjazz__datablocks_1_1JazzBlock.html#a984d983634a4038b64637973a0d39d61">set_attributes()</a> and <a class="el" href="classjazz__datablocks_1_1JazzBlock.html#a76c7eea07bd355e2616afb6a7f1eb1cc">set_string()</a>. Use these functions instead and read their NOTES. </p>
+
+</div>
+</div>
 <a id="ad9b2b4db6a0bc2ca60847fb8fd3549ab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad9b2b4db6a0bc2ca60847fb8fd3549ab">&#9670;&nbsp;</a></span>init_string_buffer()</h2>
 
@@ -448,6 +533,59 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Initialize the <a class="el" href="structjazz__datablocks_1_1JazzStringBuffer.html" title="Structure at the end of a JazzBlock, initially created with init_string_buffer() ">JazzStringBuffer</a> of a <a class="el" href="classjazz__datablocks_1_1JazzBlock.html">JazzBlock</a>, only when creating it.</p>
 <p>NOTE: This function is public because it has to be called by jazz_alloc.h methods. Never call it to construct you own JazzBlocks except for test cases or in jazz_alloc.h methods. Use those to build JazzBlocks instead. </p>
+
+</div>
+</div>
+<a id="a787badd0c3c3abfbb125cca53b50e356"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a787badd0c3c3abfbb125cca53b50e356">&#9670;&nbsp;</a></span>pAttribute_keys()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int* jazz_datablocks::JazzBlock::pAttribute_keys </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return the address of the vector containing both the attribute keys and the attribute ids in the <a class="el" href="structjazz__datablocks_1_1JazzStringBuffer.html" title="Structure at the end of a JazzBlock, initially created with init_string_buffer() ">JazzStringBuffer</a>.</p>
+<p>NOTE: The actual values (which are strings) are stored in the same <a class="el" href="structjazz__datablocks_1_1JazzStringBuffer.html" title="Structure at the end of a JazzBlock, initially created with init_string_buffer() ">JazzStringBuffer</a> containing the strings of the tensor (if any). This array has double the num_attributes size and stores the keys in the lower part and the offsets to the values on the upper part. </p>
+
+</div>
+</div>
+<a id="a4d12650be6198e97ed19649e20e468c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d12650be6198e97ed19649e20e468c4">&#9670;&nbsp;</a></span>pStringBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__datablocks.html#a1b18b7b5777c05356a146ec86043440c">pJazzStringBuffer</a> jazz_datablocks::JazzBlock::pStringBuffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return the address of the <a class="el" href="structjazz__datablocks_1_1JazzStringBuffer.html" title="Structure at the end of a JazzBlock, initially created with init_string_buffer() ">JazzStringBuffer</a> containing the strings in the tensor and the attribute values. </p>
 
 </div>
 </div>

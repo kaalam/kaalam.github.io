@@ -60,7 +60,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">jazzServices Class Reference</div>  </div>
 </div><!--header-->
@@ -78,6 +79,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9027444e09cb94dce95564bd13485b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a861baec68ac17052f19968ec17bdf6d6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazzServices.html#a861baec68ac17052f19968ec17bdf6d6">reload_all</a> ()</td></tr>
 <tr class="separator:a861baec68ac17052f19968ec17bdf6d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a8705f4fd2c2d82bd47d9e8b0ebae39ae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazzServices.html#a8705f4fd2c2d82bd47d9e8b0ebae39ae">num_services</a> = 0</td></tr>
+<tr class="separator:a8705f4fd2c2d82bd47d9e8b0ebae39ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09ab4b1f6778c4813477ef82c69f7b3c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazzServices.html#a09ab4b1f6778c4813477ef82c69f7b3c">started</a> [<a class="el" href="jazz01__commons_8h.html#aa584cc5d59c674a141fe3a870467f141">MAX_NUM_JAZZ_SERVICES</a>]</td></tr>
+<tr class="separator:a09ab4b1f6778c4813477ef82c69f7b3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3573a9248d60c1cd73b5ed6c62e45887"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classjazzService.html">jazzService</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazzServices.html#a3573a9248d60c1cd73b5ed6c62e45887">pService</a> [<a class="el" href="jazz01__commons_8h.html#aa584cc5d59c674a141fe3a870467f141">MAX_NUM_JAZZ_SERVICES</a>]</td></tr>
+<tr class="separator:a3573a9248d60c1cd73b5ed6c62e45887"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A collection of <a class="el" href="classjazzService.html">jazzService</a> descendants operated through a single point of access. </p>
@@ -158,6 +168,73 @@ Public Member Functions</h2></td></tr>
 <p>Stops all the registered services that have been started.</p>
 <p>In case of a service failing to stop, <a class="el" href="classjazzServices.html#a9027444e09cb94dce95564bd13485b08">stop_all()</a> will still close the rest of the started services.</p>
 <dl class="section return"><dt>Returns</dt><dd>True on success. LOG_MISS and false on any failure. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a8705f4fd2c2d82bd47d9e8b0ebae39ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8705f4fd2c2d82bd47d9e8b0ebae39ae">&#9670;&nbsp;</a></span>num_services</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jazzServices::num_services = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3573a9248d60c1cd73b5ed6c62e45887"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3573a9248d60c1cd73b5ed6c62e45887">&#9670;&nbsp;</a></span>pService</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classjazzService.html">jazzService</a>* jazzServices::pService[<a class="el" href="jazz01__commons_8h.html#aa584cc5d59c674a141fe3a870467f141">MAX_NUM_JAZZ_SERVICES</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a09ab4b1f6778c4813477ef82c69f7b3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09ab4b1f6778c4813477ef82c69f7b3c">&#9670;&nbsp;</a></span>started</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool jazzServices::started[<a class="el" href="jazz01__commons_8h.html#aa584cc5d59c674a141fe3a870467f141">MAX_NUM_JAZZ_SERVICES</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

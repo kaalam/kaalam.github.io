@@ -13,6 +13,7 @@ var searchData=
   ['init_5fstring_5fbuffer',['init_string_buffer',['../classjazz__datablocks_1_1JazzBlock.html#ad9b2b4db6a0bc2ca60847fb8fd3549ab',1,'jazz_datablocks::JazzBlock']]],
   ['instrument',['instrument',['../structparsedURL.html#ac80913160170e07db0a1090416b4ac31',1,'parsedURL']]],
   ['instumentname',['instumentName',['../structinstumentName.html',1,'']]],
+  ['internal_5fopen_5fdbi',['internal_open_dbi',['../classjzzBLOCKS.html#a02a70083948a0b0597e355b1d22a7d26',1,'jzzBLOCKS']]],
   ['intsxp',['INTSXP',['../jazz01__commons_8h.html#a8c05b2e1095fb38bdf2fa97eabe773d6',1,'jazz01_commons.h']]],
   ['ipr',['ipr',['../structIPrange.html#aaa44a478fdff7c3ec991c3fb0b260b7e',1,'IPrange']]],
   ['iprange',['IPrange',['../structIPrange.html',1,'']]],

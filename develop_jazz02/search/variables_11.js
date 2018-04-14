@@ -2,7 +2,8 @@ var searchData=
 [
   ['tenbitds',['tenbitDS',['../jazz01__api_8cpp.html#ac703a2ba73f4cb502674c494550aedbf',1,'jazz01_api.cpp']]],
   ['tensor',['tensor',['../structjazz__datablocks_1_1JazzBlockHeader.html#af95f562e5ae2048c4aaa908885aaa54b',1,'jazz_datablocks::JazzBlockHeader']]],
-  ['time_5fto_5fbuild',['time_to_build',['../structjazz__containers_1_1JazzQueueItem.html#a0ae46d8f0ce4826abca000d426d4118e',1,'jazz_containers::JazzQueueItem']]],
+  ['time_5fto_5fbuild',['time_to_build',['../structjazz__containers_1_1JazzQueueItem.html#a52198550ae80a7e8447404923e69d1fd',1,'jazz_containers::JazzQueueItem']]],
+  ['times_5fused',['times_used',['../structjazz__containers_1_1JazzQueueItem.html#a10df9e2d5067369d4a701702114e5182',1,'jazz_containers::JazzQueueItem']]],
   ['total_5fbytes',['total_bytes',['../structjazz__datablocks_1_1JazzBlockHeader.html#a14985f88c4470854d2c958d9cb6ff36f',1,'jazz_datablocks::JazzBlockHeader']]],
   ['two_5forder_5fdbl_5fepsilon',['TWO_ORDER_DBL_EPSILON',['../jazz__blocks_8cpp.html#aba9464d5192b9ec407d6665a1bc98e0d',1,'jazz_blocks.cpp']]],
   ['type',['type',['../structjzzBlockHeader.html#a3b8c2e2a40585c07dc9ab5766be0e005',1,'jzzBlockHeader']]]

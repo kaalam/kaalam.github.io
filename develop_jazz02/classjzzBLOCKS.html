@@ -60,7 +60,10 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">jzzBLOCKS Class Reference</div>  </div>
 </div><!--header-->
@@ -152,7 +155,71 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a96957672c632368038a0b090c7bb4d8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abab95b3472ae05b51381841a278ceb4a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjzzBLOCKS.html#abab95b3472ae05b51381841a278ceb4a">block_unprotect</a> (<a class="el" href="jazz01__commons_8h.html#a81770bae7c18abbb26281974e3d1c296">pJazzBlock</a> block)</td></tr>
 <tr class="separator:abab95b3472ae05b51381841a278ceb4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:aa9c7925998dc5728079b0693735bcaf4"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classjazzService.html">jazzService</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjzzBLOCKS.html#aa9c7925998dc5728079b0693735bcaf4">super</a></td></tr>
+<tr class="separator:aa9c7925998dc5728079b0693735bcaf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ab1b7d3dcad082810728d8fa3da2aeccd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjzzBLOCKS.html#ab1b7d3dcad082810728d8fa3da2aeccd">lock_get_protect_slot</a> ()</td></tr>
+<tr class="separator:ab1b7d3dcad082810728d8fa3da2aeccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bbb1cb6e5975dbaaa222dae2c121cad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjzzBLOCKS.html#a4bbb1cb6e5975dbaaa222dae2c121cad">lock_release_protect_slot</a> (int idx)</td></tr>
+<tr class="separator:a4bbb1cb6e5975dbaaa222dae2c121cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02a70083948a0b0597e355b1d22a7d26"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjzzBLOCKS.html#a02a70083948a0b0597e355b1d22a7d26">internal_open_dbi</a> (int source)</td></tr>
+<tr class="separator:a02a70083948a0b0597e355b1d22a7d26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d282bcaadac10707ece4f8b9463de49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjzzBLOCKS.html#a8d282bcaadac10707ece4f8b9463de49">log_lmdb_err_as_miss</a> (int err, const char *msg)</td></tr>
+<tr class="separator:a8d282bcaadac10707ece4f8b9463de49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a972996e51d9479e1d6b31cb29f08bd0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjzzBLOCKS.html#a972996e51d9479e1d6b31cb29f08bd0f">update_source_idx</a> (bool incremental)</td></tr>
+<tr class="separator:a972996e51d9479e1d6b31cb29f08bd0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:af3fbaf81429362b69551bc6dc4b33a7a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjzzBLOCKS.html#af3fbaf81429362b69551bc6dc4b33a7a">source_idx</a> [<a class="el" href="jazz__utils_8h.html#a87339d0dea4674c231fdd28f457af3c5">TENBITS_LUT_SIZE</a>]</td></tr>
+<tr class="separator:af3fbaf81429362b69551bc6dc4b33a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2475292567f093a55f9b04038512c9c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjzzBLOCKS.html#ac2475292567f093a55f9b04038512c9c">numsources</a></td></tr>
+<tr class="separator:ac2475292567f093a55f9b04038512c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9cdd55a87adf4440a9773b5e8cbe91b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjzzBLOCKS.html#ab9cdd55a87adf4440a9773b5e8cbe91b">prot_SP</a></td></tr>
+<tr class="separator:ab9cdd55a87adf4440a9773b5e8cbe91b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f6cf8017f5b22fab7a9db12644126d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="jazz__blocks_8h.html#a9c29cd2ce79349cc6968a2aca0a76eb1">sourceName</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjzzBLOCKS.html#a0f6cf8017f5b22fab7a9db12644126d0">source_nam</a> [<a class="el" href="jazz__blocks_8h.html#a5f2fa99db8442e6ce0743de30fc41e49">MAX_POSSIBLE_SOURCES</a>]</td></tr>
+<tr class="separator:a0f6cf8017f5b22fab7a9db12644126d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe58551617553d8886902af8d8e59d4b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjzzBLOCKS.html#afe58551617553d8886902af8d8e59d4b">source_open</a> [<a class="el" href="jazz__blocks_8h.html#a5f2fa99db8442e6ce0743de30fc41e49">MAX_POSSIBLE_SOURCES</a>]</td></tr>
+<tr class="separator:afe58551617553d8886902af8d8e59d4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeee0012848119c77933627462245cfe4"><td class="memItemLeft" align="right" valign="top">MDB_dbi&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjzzBLOCKS.html#aeee0012848119c77933627462245cfe4">source_dbi</a> [<a class="el" href="jazz__blocks_8h.html#a5f2fa99db8442e6ce0743de30fc41e49">MAX_POSSIBLE_SOURCES</a>]</td></tr>
+<tr class="separator:aeee0012848119c77933627462245cfe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed5b9ef63dd9ab7b9e5a5e40cfbae9ac"><td class="memItemLeft" align="right" valign="top">MDB_txn *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjzzBLOCKS.html#aed5b9ef63dd9ab7b9e5a5e40cfbae9ac">protect_txn</a> [<a class="el" href="jazz__blocks_8h.html#a977fac60eb1058249209aebeb116111a">MAX_PROTECTED_BLOCKS</a>]</td></tr>
+<tr class="separator:aed5b9ef63dd9ab7b9e5a5e40cfbae9ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f198da9c9e18e2432b320e389025e5b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="jazz01__commons_8h.html#a81770bae7c18abbb26281974e3d1c296">pJazzBlock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjzzBLOCKS.html#a3f198da9c9e18e2432b320e389025e5b">protect_ptr</a> [<a class="el" href="jazz__blocks_8h.html#a977fac60eb1058249209aebeb116111a">MAX_PROTECTED_BLOCKS</a>]</td></tr>
+<tr class="separator:a3f198da9c9e18e2432b320e389025e5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6d08102b0849de7fbbec9062576080c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structjazz__lmdb__opt.html">jazz_lmdb_opt</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjzzBLOCKS.html#aa6d08102b0849de7fbbec9062576080c">lmdb</a></td></tr>
+<tr class="separator:aa6d08102b0849de7fbbec9062576080c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a494c30c93dc7b6fc77e69b5d11080f3c"><td class="memItemLeft" align="right" valign="top">MDB_env *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjzzBLOCKS.html#a494c30c93dc7b6fc77e69b5d11080f3c">lmdb_env</a></td></tr>
+<tr class="separator:a494c30c93dc7b6fc77e69b5d11080f3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="aa9c7925998dc5728079b0693735bcaf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9c7925998dc5728079b0693735bcaf4">&#9670;&nbsp;</a></span>super</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classjazzService.html">jazzService</a> <a class="el" href="classjzzBLOCKS.html#aa9c7925998dc5728079b0693735bcaf4">jzzBLOCKS::super</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6d014f1137e8adecf57f89d0d86c3de1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6d014f1137e8adecf57f89d0d86c3de1">&#9670;&nbsp;</a></span>jzzBLOCKS()</h2>
@@ -623,6 +690,36 @@ for(whatever i in 0..999)
 
 </div>
 </div>
+<a id="a02a70083948a0b0597e355b1d22a7d26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02a70083948a0b0597e355b1d22a7d26">&#9670;&nbsp;</a></span>internal_open_dbi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool jzzBLOCKS::internal_open_dbi </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>source</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Open a dbi in a way it becomes available to other transactions.</p>
+<p>This is the key explanation taken from the LMDB doc to understand the necessity of this.</p>
+<p>"The database handle will be private to the current transaction until the transaction is successfully committed. If the transaction is aborted the handle will be closed automatically. After a successful commit the handle will reside in the shared environment, and may be used by other transactions."</p>
+<p>NOTE: It is only called inside this module when source_open[source] is false. </p>
+
+</div>
+</div>
 <a id="a96957672c632368038a0b090c7bb4d8a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a96957672c632368038a0b090c7bb4d8a">&#9670;&nbsp;</a></span>is_last_key()</h2>
 
@@ -671,6 +768,96 @@ for(whatever i in 0..999)
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if successful, false and log(LOG_MISS, "further details") if not.</dd></dl>
 <p>NOTE: <a class="el" href="classjzzBLOCKS.html#a6aa302c2507dc597b45e63b3e5ad79fe">kill_source()</a> is EXTREMELY not thread safe! Indices to ALL sources may change. Unsafe use of: numsources, source_nam, source_open, source_dbi. </p>
+
+</div>
+</div>
+<a id="ab1b7d3dcad082810728d8fa3da2aeccd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1b7d3dcad082810728d8fa3da2aeccd">&#9670;&nbsp;</a></span>lock_get_protect_slot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jzzBLOCKS::lock_get_protect_slot </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Not using lock_despite the name in current version (see WARNING in <a class="el" href="classjzzBLOCKS.html#abab95b3472ae05b51381841a278ceb4a">block_unprotect()</a> &amp; <a class="el" href="classjzzBLOCKS.html#a9ab954eb93e352f79ea22d147730d958">block_get()</a>.) </p>
+
+</div>
+</div>
+<a id="a4bbb1cb6e5975dbaaa222dae2c121cad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bbb1cb6e5975dbaaa222dae2c121cad">&#9670;&nbsp;</a></span>lock_release_protect_slot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void jzzBLOCKS::lock_release_protect_slot </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>idx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Not using lock_despite the name in current version (see WARNING in <a class="el" href="classjzzBLOCKS.html#abab95b3472ae05b51381841a278ceb4a">block_unprotect()</a> &amp; <a class="el" href="classjzzBLOCKS.html#a9ab954eb93e352f79ea22d147730d958">block_get()</a>.) </p>
+
+</div>
+</div>
+<a id="a8d282bcaadac10707ece4f8b9463de49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d282bcaadac10707ece4f8b9463de49">&#9670;&nbsp;</a></span>log_lmdb_err_as_miss()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void jzzBLOCKS::log_lmdb_err_as_miss </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>err</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>msg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A nicer presentation for LMDB error messages. </p>
 
 </div>
 </div>
@@ -1415,6 +1602,260 @@ No allocation, conversion or change of block headers other than the type is done
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Same as strcmp() </dd></dl>
+
+</div>
+</div>
+<a id="a972996e51d9479e1d6b31cb29f08bd0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a972996e51d9479e1d6b31cb29f08bd0f">&#9670;&nbsp;</a></span>update_source_idx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void jzzBLOCKS::update_source_idx </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>incremental</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Initialize the source_idx[] array to enable <a class="el" href="classjzzBLOCKS.html#a1e3fa0af4745c757a3b0f59daf2af9f9">get_source_idx()</a> operation.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">incremental</td><td>Just update all the references without clearing the buffer (use by <a class="el" href="classjzzBLOCKS.html#af91e7163989a8a9a6e9453c85cbe1a79">new_source()</a> only.) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="aa6d08102b0849de7fbbec9062576080c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6d08102b0849de7fbbec9062576080c">&#9670;&nbsp;</a></span>lmdb</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structjazz__lmdb__opt.html">jazz_lmdb_opt</a> jzzBLOCKS::lmdb</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a494c30c93dc7b6fc77e69b5d11080f3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a494c30c93dc7b6fc77e69b5d11080f3c">&#9670;&nbsp;</a></span>lmdb_env</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MDB_env* jzzBLOCKS::lmdb_env</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac2475292567f093a55f9b04038512c9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2475292567f093a55f9b04038512c9c">&#9670;&nbsp;</a></span>numsources</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jzzBLOCKS::numsources</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab9cdd55a87adf4440a9773b5e8cbe91b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9cdd55a87adf4440a9773b5e8cbe91b">&#9670;&nbsp;</a></span>prot_SP</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jzzBLOCKS::prot_SP</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3f198da9c9e18e2432b320e389025e5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f198da9c9e18e2432b320e389025e5b">&#9670;&nbsp;</a></span>protect_ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="jazz01__commons_8h.html#a81770bae7c18abbb26281974e3d1c296">pJazzBlock</a> jzzBLOCKS::protect_ptr[<a class="el" href="jazz__blocks_8h.html#a977fac60eb1058249209aebeb116111a">MAX_PROTECTED_BLOCKS</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aed5b9ef63dd9ab7b9e5a5e40cfbae9ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed5b9ef63dd9ab7b9e5a5e40cfbae9ac">&#9670;&nbsp;</a></span>protect_txn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MDB_txn* jzzBLOCKS::protect_txn[<a class="el" href="jazz__blocks_8h.html#a977fac60eb1058249209aebeb116111a">MAX_PROTECTED_BLOCKS</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeee0012848119c77933627462245cfe4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeee0012848119c77933627462245cfe4">&#9670;&nbsp;</a></span>source_dbi</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MDB_dbi jzzBLOCKS::source_dbi[<a class="el" href="jazz__blocks_8h.html#a5f2fa99db8442e6ce0743de30fc41e49">MAX_POSSIBLE_SOURCES</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af3fbaf81429362b69551bc6dc4b33a7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3fbaf81429362b69551bc6dc4b33a7a">&#9670;&nbsp;</a></span>source_idx</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jzzBLOCKS::source_idx[<a class="el" href="jazz__utils_8h.html#a87339d0dea4674c231fdd28f457af3c5">TENBITS_LUT_SIZE</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0f6cf8017f5b22fab7a9db12644126d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f6cf8017f5b22fab7a9db12644126d0">&#9670;&nbsp;</a></span>source_nam</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="jazz__blocks_8h.html#a9c29cd2ce79349cc6968a2aca0a76eb1">sourceName</a> jzzBLOCKS::source_nam[<a class="el" href="jazz__blocks_8h.html#a5f2fa99db8442e6ce0743de30fc41e49">MAX_POSSIBLE_SOURCES</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afe58551617553d8886902af8d8e59d4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe58551617553d8886902af8d8e59d4b">&#9670;&nbsp;</a></span>source_open</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool jzzBLOCKS::source_open[<a class="el" href="jazz__blocks_8h.html#a5f2fa99db8442e6ce0743de30fc41e49">MAX_POSSIBLE_SOURCES</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

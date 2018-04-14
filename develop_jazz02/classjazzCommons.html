@@ -60,7 +60,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">jazzCommons Class Reference</div>  </div>
 </div><!--header-->
@@ -129,6 +130,60 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0c22511e7268dc25ac76096e0070dc0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95457f82eaaa5dcb1fb3e7370a9f1b30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazzCommons.html#a95457f82eaaa5dcb1fb3e7370a9f1b30">leave_api_call</a> (int status)</td></tr>
 <tr class="separator:a95457f82eaaa5dcb1fb3e7370a9f1b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ae89640f5eca0ade9ef6b32d826ee186d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazzCommons.html#ae89640f5eca0ade9ef6b32d826ee186d">log_2_local</a> = false</td></tr>
+<tr class="memdesc:ae89640f5eca0ade9ef6b32d826ee186d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logger.  <a href="#ae89640f5eca0ade9ef6b32d826ee186d">More...</a><br /></td></tr>
+<tr class="separator:ae89640f5eca0ade9ef6b32d826ee186d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af36e71676c63a46b7eaa44ff9574128c"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazzCommons.html#af36e71676c63a46b7eaa44ff9574128c">logfilename</a> [<a class="el" href="jazz01__commons_8h.html#a94f469f03904c926fbc176483087b126">MAX_LOG_FILENAME</a>]</td></tr>
+<tr class="memdesc:af36e71676c63a46b7eaa44ff9574128c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of a file to (immediately) write logs to if log_2_local.  <a href="#af36e71676c63a46b7eaa44ff9574128c">More...</a><br /></td></tr>
+<tr class="separator:af36e71676c63a46b7eaa44ff9574128c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0afe26997093342f5e92d6cb6a6611c5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazzCommons.html#a0afe26997093342f5e92d6cb6a6611c5">log_block_size</a> = 0</td></tr>
+<tr class="separator:a0afe26997093342f5e92d6cb6a6611c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac07c3d9559b50c135149cca60a0c8c6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazzCommons.html#aac07c3d9559b50c135149cca60a0c8c6">log_keep_blocks</a></td></tr>
+<tr class="memdesc:aac07c3d9559b50c135149cca60a0c8c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of most recent blocks kept by the logger.  <a href="#aac07c3d9559b50c135149cca60a0c8c6">More...</a><br /></td></tr>
+<tr class="separator:aac07c3d9559b50c135149cca60a0c8c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6daec4e0e7ccc7671a75d703d71eaf5b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazzCommons.html#a6daec4e0e7ccc7671a75d703d71eaf5b">log_block_timeout</a></td></tr>
+<tr class="memdesc:a6daec4e0e7ccc7671a75d703d71eaf5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time in seconds after which the most recent events are written to their persistence block.  <a href="#a6daec4e0e7ccc7671a75d703d71eaf5b">More...</a><br /></td></tr>
+<tr class="separator:a6daec4e0e7ccc7671a75d703d71eaf5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48097227040cd19a02dca90629bd15c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="jazz01__commons_8h.html#a446a3f204afe93a99c1c74177a7d70cc">time_point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazzCommons.html#a48097227040cd19a02dca90629bd15c7">log_big_bang</a> = chrono::steady_clock::now()</td></tr>
+<tr class="separator:a48097227040cd19a02dca90629bd15c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80b580647d41fb461b0359436363b576"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazzCommons.html#a80b580647d41fb461b0359436363b576">cluster_num_nodes</a> = 0</td></tr>
+<tr class="memdesc:a80b580647d41fb461b0359436363b576"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clock zero for the logger.  <a href="#a80b580647d41fb461b0359436363b576">More...</a><br /></td></tr>
+<tr class="separator:a80b580647d41fb461b0359436363b576"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98b18a98be411fe32cc2ec1fe7ed6633"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazzCommons.html#a98b18a98be411fe32cc2ec1fe7ed6633">cluster_password_mode</a></td></tr>
+<tr class="memdesc:a98b18a98be411fe32cc2ec1fe7ed6633"><td class="mdescLeft">&#160;</td><td class="mdescRight">0 = use configuration variable SSH_CLUSTER_OWNER_PASS, 1 = use password less ssh.  <a href="#a98b18a98be411fe32cc2ec1fe7ed6633">More...</a><br /></td></tr>
+<tr class="separator:a98b18a98be411fe32cc2ec1fe7ed6633"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca0ebc92e4288e0338cbfa4b5a1e39ba"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazzCommons.html#aca0ebc92e4288e0338cbfa4b5a1e39ba">cluster_ssh_user</a></td></tr>
+<tr class="memdesc:aca0ebc92e4288e0338cbfa4b5a1e39ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">User name with ssh access to all nodes.  <a href="#aca0ebc92e4288e0338cbfa4b5a1e39ba">More...</a><br /></td></tr>
+<tr class="separator:aca0ebc92e4288e0338cbfa4b5a1e39ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9673c11dab279801d5305b00bcfa6ec6"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazzCommons.html#a9673c11dab279801d5305b00bcfa6ec6">cluster_ssh_password</a></td></tr>
+<tr class="memdesc:a9673c11dab279801d5305b00bcfa6ec6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Password for all nodes if SSH_NODES_PASSWORD == 0.  <a href="#a9673c11dab279801d5305b00bcfa6ec6">More...</a><br /></td></tr>
+<tr class="separator:a9673c11dab279801d5305b00bcfa6ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab063d3a7bf5b70850ed0b9dc0fd9ff0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structjazz__node.html">jazz_node</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazzCommons.html#aab063d3a7bf5b70850ed0b9dc0fd9ff0">cluster_node</a> [<a class="el" href="jazz01__commons_8h.html#a3a5467c97455260c0981271881d87b73">MAX_CLUSTER_NODES</a>]</td></tr>
+<tr class="separator:aab063d3a7bf5b70850ed0b9dc0fd9ff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad273df5445142c8e6fd5e0c95901dc2c"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazzCommons.html#ad273df5445142c8e6fd5e0c95901dc2c">server_flags</a></td></tr>
+<tr class="memdesc:ad273df5445142c8e6fd5e0c95901dc2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The definition of the nodes.  <a href="#ad273df5445142c8e6fd5e0c95901dc2c">More...</a><br /></td></tr>
+<tr class="separator:ad273df5445142c8e6fd5e0c95901dc2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acad015abef3929604b780611cb8c42f6"><td class="memItemLeft" align="right" valign="top">MHD_AcceptPolicyCallback&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazzCommons.html#acad015abef3929604b780611cb8c42f6">server_apc</a></td></tr>
+<tr class="memdesc:acad015abef3929604b780611cb8c42f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The parameter apc in MHD_start_daemon()  <a href="#acad015abef3929604b780611cb8c42f6">More...</a><br /></td></tr>
+<tr class="separator:acad015abef3929604b780611cb8c42f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fd27c8898e8b8df21e3134c402068ae"><td class="memItemLeft" align="right" valign="top">MHD_AccessHandlerCallback&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazzCommons.html#a2fd27c8898e8b8df21e3134c402068ae">server_dh</a></td></tr>
+<tr class="memdesc:a2fd27c8898e8b8df21e3134c402068ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">The parameter dh in MHD_start_daemon()  <a href="#a2fd27c8898e8b8df21e3134c402068ae">More...</a><br /></td></tr>
+<tr class="separator:a2fd27c8898e8b8df21e3134c402068ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3afff07bdc265aea540b835d5df3f086"><td class="memItemLeft" align="right" valign="top">MHD_OptionItem&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazzCommons.html#a3afff07bdc265aea540b835d5df3f086">server_options</a> [9]</td></tr>
+<tr class="memdesc:a3afff07bdc265aea540b835d5df3f086"><td class="mdescLeft">&#160;</td><td class="mdescRight">The variadic parameter MHD_OPTION_ARRAY, server_options, MHD_OPTION_END in MHD_start_daemon()  <a href="#a3afff07bdc265aea540b835d5df3f086">More...</a><br /></td></tr>
+<tr class="separator:a3afff07bdc265aea540b835d5df3f086"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35eb4814396980bef33727db86ebe0ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazzCommons.html#a35eb4814396980bef33727db86ebe0ee">server_perimetral</a></td></tr>
+<tr class="memdesc:a35eb4814396980bef33727db86ebe0ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">In range MODE_SAFE_IF_PHYSICAL..MODE_EXTERNAL_PERIMETER.  <a href="#a35eb4814396980bef33727db86ebe0ee">More...</a><br /></td></tr>
+<tr class="separator:a35eb4814396980bef33727db86ebe0ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64db1ddc08ae520bc6547651c7590421"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structjazz__http__security.html">jazz_http_security</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazzCommons.html#a64db1ddc08ae520bc6547651c7590421">security</a></td></tr>
+<tr class="memdesc:a64db1ddc08ae520bc6547651c7590421"><td class="mdescLeft">&#160;</td><td class="mdescRight">Security related options.  <a href="#a64db1ddc08ae520bc6547651c7590421">More...</a><br /></td></tr>
+<tr class="separator:a64db1ddc08ae520bc6547651c7590421"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4539d292f32bb89f86c66dfc02812e49"><td class="memItemLeft" align="right" valign="top">map&lt; string, string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazzCommons.html#a4539d292f32bb89f86c66dfc02812e49">config</a></td></tr>
+<tr class="memdesc:a4539d292f32bb89f86c66dfc02812e49"><td class="mdescLeft">&#160;</td><td class="mdescRight">The configuration.  <a href="#a4539d292f32bb89f86c66dfc02812e49">More...</a><br /></td></tr>
+<tr class="separator:a4539d292f32bb89f86c66dfc02812e49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A collection of common utils including: configuration, cryptography, html, threads, logger and profiling. </p>
@@ -977,6 +1032,437 @@ If loglevel &gt;= LOG_WARN and compiled for DEBUG, the output also goes to stder
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="aab063d3a7bf5b70850ed0b9dc0fd9ff0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab063d3a7bf5b70850ed0b9dc0fd9ff0">&#9670;&nbsp;</a></span>cluster_node</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structjazz__node.html">jazz_node</a> jazzCommons::cluster_node[<a class="el" href="jazz01__commons_8h.html#a3a5467c97455260c0981271881d87b73">MAX_CLUSTER_NODES</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a80b580647d41fb461b0359436363b576"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80b580647d41fb461b0359436363b576">&#9670;&nbsp;</a></span>cluster_num_nodes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jazzCommons::cluster_num_nodes = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Clock zero for the logger. </p>
+<p>Cluster Number of nodes in the cluster </p>
+
+</div>
+</div>
+<a id="a98b18a98be411fe32cc2ec1fe7ed6633"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98b18a98be411fe32cc2ec1fe7ed6633">&#9670;&nbsp;</a></span>cluster_password_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jazzCommons::cluster_password_mode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>0 = use configuration variable SSH_CLUSTER_OWNER_PASS, 1 = use password less ssh. </p>
+
+</div>
+</div>
+<a id="a9673c11dab279801d5305b00bcfa6ec6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9673c11dab279801d5305b00bcfa6ec6">&#9670;&nbsp;</a></span>cluster_ssh_password</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string jazzCommons::cluster_ssh_password</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Password for all nodes if SSH_NODES_PASSWORD == 0. </p>
+
+</div>
+</div>
+<a id="aca0ebc92e4288e0338cbfa4b5a1e39ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca0ebc92e4288e0338cbfa4b5a1e39ba">&#9670;&nbsp;</a></span>cluster_ssh_user</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string jazzCommons::cluster_ssh_user</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>User name with ssh access to all nodes. </p>
+
+</div>
+</div>
+<a id="a4539d292f32bb89f86c66dfc02812e49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4539d292f32bb89f86c66dfc02812e49">&#9670;&nbsp;</a></span>config</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">map&lt;string, string&gt; jazzCommons::config</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The configuration. </p>
+
+</div>
+</div>
+<a id="ae89640f5eca0ade9ef6b32d826ee186d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae89640f5eca0ade9ef6b32d826ee186d">&#9670;&nbsp;</a></span>log_2_local</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool jazzCommons::log_2_local = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Logger. </p>
+<p>Log (also) to file logfilename. Always appended, never erased. </p>
+
+</div>
+</div>
+<a id="a48097227040cd19a02dca90629bd15c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48097227040cd19a02dca90629bd15c7">&#9670;&nbsp;</a></span>log_big_bang</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="jazz01__commons_8h.html#a446a3f204afe93a99c1c74177a7d70cc">time_point</a> jazzCommons::log_big_bang = chrono::steady_clock::now()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0afe26997093342f5e92d6cb6a6611c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0afe26997093342f5e92d6cb6a6611c5">&#9670;&nbsp;</a></span>log_block_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jazzCommons::log_block_size = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Number of logging events per block. Written after a maximum of LOGGER_BLOCK_TIMEOUT seconds. For persistence logs. Set to zero disables writing to persistence and logs to stdout instead. </p>
+
+</div>
+</div>
+<a id="a6daec4e0e7ccc7671a75d703d71eaf5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6daec4e0e7ccc7671a75d703d71eaf5b">&#9670;&nbsp;</a></span>log_block_timeout</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jazzCommons::log_block_timeout</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Time in seconds after which the most recent events are written to their persistence block. </p>
+
+</div>
+</div>
+<a id="aac07c3d9559b50c135149cca60a0c8c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac07c3d9559b50c135149cca60a0c8c6">&#9670;&nbsp;</a></span>log_keep_blocks</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jazzCommons::log_keep_blocks</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Number of most recent blocks kept by the logger. </p>
+
+</div>
+</div>
+<a id="af36e71676c63a46b7eaa44ff9574128c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af36e71676c63a46b7eaa44ff9574128c">&#9670;&nbsp;</a></span>logfilename</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char jazzCommons::logfilename[<a class="el" href="jazz01__commons_8h.html#a94f469f03904c926fbc176483087b126">MAX_LOG_FILENAME</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Name of a file to (immediately) write logs to if log_2_local. </p>
+
+</div>
+</div>
+<a id="a64db1ddc08ae520bc6547651c7590421"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64db1ddc08ae520bc6547651c7590421">&#9670;&nbsp;</a></span>security</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structjazz__http__security.html">jazz_http_security</a> jazzCommons::security</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Security related options. </p>
+
+</div>
+</div>
+<a id="acad015abef3929604b780611cb8c42f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acad015abef3929604b780611cb8c42f6">&#9670;&nbsp;</a></span>server_apc</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MHD_AcceptPolicyCallback jazzCommons::server_apc</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The parameter apc in MHD_start_daemon() </p>
+
+</div>
+</div>
+<a id="a2fd27c8898e8b8df21e3134c402068ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fd27c8898e8b8df21e3134c402068ae">&#9670;&nbsp;</a></span>server_dh</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MHD_AccessHandlerCallback jazzCommons::server_dh</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The parameter dh in MHD_start_daemon() </p>
+
+</div>
+</div>
+<a id="ad273df5445142c8e6fd5e0c95901dc2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad273df5445142c8e6fd5e0c95901dc2c">&#9670;&nbsp;</a></span>server_flags</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int jazzCommons::server_flags</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The definition of the nodes. </p>
+<p>Server The parameter flags in MHD_start_daemon() </p>
+
+</div>
+</div>
+<a id="a3afff07bdc265aea540b835d5df3f086"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3afff07bdc265aea540b835d5df3f086">&#9670;&nbsp;</a></span>server_options</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MHD_OptionItem jazzCommons::server_options[9]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The variadic parameter MHD_OPTION_ARRAY, server_options, MHD_OPTION_END in MHD_start_daemon() </p>
+
+</div>
+</div>
+<a id="a35eb4814396980bef33727db86ebe0ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35eb4814396980bef33727db86ebe0ee">&#9670;&nbsp;</a></span>server_perimetral</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jazzCommons::server_perimetral</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>In range MODE_SAFE_IF_PHYSICAL..MODE_EXTERNAL_PERIMETER. </p>
 
 </div>
 </div>

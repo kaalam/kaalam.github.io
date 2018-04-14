@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['validate_5findex',['validate_index',['../classjazz__datablocks_1_1JazzBlock.html#af387a835e3f325f02748e178ac0e6880',1,'jazz_datablocks::JazzBlock']]],
-  ['validate_5foffset',['validate_offset',['../classjazz__datablocks_1_1JazzBlock.html#ac83a67c77002b4effc576d0893307453',1,'jazz_datablocks::JazzBlock']]]
+  ['update_5fsource_5fidx',['update_source_idx',['../classjzzBLOCKS.html#a972996e51d9479e1d6b31cb29f08bd0f',1,'jzzBLOCKS']]]
 ];

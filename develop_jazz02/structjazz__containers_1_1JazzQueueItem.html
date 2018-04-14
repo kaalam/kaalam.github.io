@@ -83,12 +83,18 @@ Inheritance diagram for jazz_containers::JazzQueueItem:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:ae42912fe361486ecbc51ecd95b06c59d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__containers_1_1JazzQueueItem.html#ae42912fe361486ecbc51ecd95b06c59d">priority</a></td></tr>
-<tr class="memdesc:ae42912fe361486ecbc51ecd95b06c59d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A priority value to implement a priority queue.  <a href="#ae42912fe361486ecbc51ecd95b06c59d">More...</a><br /></td></tr>
-<tr class="separator:ae42912fe361486ecbc51ecd95b06c59d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ae46d8f0ce4826abca000d426d4118e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__containers_1_1JazzQueueItem.html#a0ae46d8f0ce4826abca000d426d4118e">time_to_build</a></td></tr>
-<tr class="memdesc:a0ae46d8f0ce4826abca000d426d4118e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The time required to compute the block (real or estimated)  <a href="#a0ae46d8f0ce4826abca000d426d4118e">More...</a><br /></td></tr>
-<tr class="separator:a0ae46d8f0ce4826abca000d426d4118e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca3ebf95bf4562b25e3fdbfb97428d3d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__containers_1_1JazzQueueItem.html#aca3ebf95bf4562b25e3fdbfb97428d3d">level</a></td></tr>
+<tr class="memdesc:aca3ebf95bf4562b25e3fdbfb97428d3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Level in the AA tree (used for autobalancing)  <a href="#aca3ebf95bf4562b25e3fdbfb97428d3d">More...</a><br /></td></tr>
+<tr class="separator:aca3ebf95bf4562b25e3fdbfb97428d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10df9e2d5067369d4a701702114e5182"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__containers_1_1JazzQueueItem.html#a10df9e2d5067369d4a701702114e5182">times_used</a></td></tr>
+<tr class="memdesc:a10df9e2d5067369d4a701702114e5182"><td class="mdescLeft">&#160;</td><td class="mdescRight">Times the block has been reassigned in the queue.  <a href="#a10df9e2d5067369d4a701702114e5182">More...</a><br /></td></tr>
+<tr class="separator:a10df9e2d5067369d4a701702114e5182"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89ab7a017c097e966c2f10fc8eb99481"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__containers_1_1JazzQueueItem.html#a89ab7a017c097e966c2f10fc8eb99481">priority</a></td></tr>
+<tr class="memdesc:a89ab7a017c097e966c2f10fc8eb99481"><td class="mdescLeft">&#160;</td><td class="mdescRight">A priority value to implement a priority queue.  <a href="#a89ab7a017c097e966c2f10fc8eb99481">More...</a><br /></td></tr>
+<tr class="separator:a89ab7a017c097e966c2f10fc8eb99481"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52198550ae80a7e8447404923e69d1fd"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__containers_1_1JazzQueueItem.html#a52198550ae80a7e8447404923e69d1fd">time_to_build</a></td></tr>
+<tr class="memdesc:a52198550ae80a7e8447404923e69d1fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The time required to compute the block (real or estimated) in microseconds.  <a href="#a52198550ae80a7e8447404923e69d1fd">More...</a><br /></td></tr>
+<tr class="separator:a52198550ae80a7e8447404923e69d1fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46a971d929f82e6113f41ca8db1603c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__datablocks.html#a6aaf910265532463eb5989ecb7f11ed5">TimePoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__containers_1_1JazzQueueItem.html#a46a971d929f82e6113f41ca8db1603c9">last_used</a></td></tr>
 <tr class="memdesc:a46a971d929f82e6113f41ca8db1603c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timestamp of last use.  <a href="#a46a971d929f82e6113f41ca8db1603c9">More...</a><br /></td></tr>
 <tr class="separator:a46a971d929f82e6113f41ca8db1603c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,14 +133,30 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="ae42912fe361486ecbc51ecd95b06c59d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae42912fe361486ecbc51ecd95b06c59d">&#9670;&nbsp;</a></span>priority</h2>
+<a id="aca3ebf95bf4562b25e3fdbfb97428d3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca3ebf95bf4562b25e3fdbfb97428d3d">&#9670;&nbsp;</a></span>level</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float jazz_containers::JazzQueueItem::priority</td>
+          <td class="memname">int jazz_containers::JazzQueueItem::level</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Level in the AA tree (used for autobalancing) </p>
+
+</div>
+</div>
+<a id="a89ab7a017c097e966c2f10fc8eb99481"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89ab7a017c097e966c2f10fc8eb99481">&#9670;&nbsp;</a></span>priority</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double jazz_containers::JazzQueueItem::priority</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -143,19 +165,35 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a0ae46d8f0ce4826abca000d426d4118e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ae46d8f0ce4826abca000d426d4118e">&#9670;&nbsp;</a></span>time_to_build</h2>
+<a id="a52198550ae80a7e8447404923e69d1fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52198550ae80a7e8447404923e69d1fd">&#9670;&nbsp;</a></span>time_to_build</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float jazz_containers::JazzQueueItem::time_to_build</td>
+          <td class="memname">uint64_t jazz_containers::JazzQueueItem::time_to_build</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>The time required to compute the block (real or estimated) </p>
+<p>The time required to compute the block (real or estimated) in microseconds. </p>
+
+</div>
+</div>
+<a id="a10df9e2d5067369d4a701702114e5182"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10df9e2d5067369d4a701702114e5182">&#9670;&nbsp;</a></span>times_used</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jazz_containers::JazzQueueItem::times_used</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Times the block has been reassigned in the queue. </p>
 
 </div>
 </div>

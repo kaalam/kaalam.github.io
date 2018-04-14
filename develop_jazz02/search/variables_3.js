@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['cache',['cache',['../classjazz__containers_1_1JazzCache.html#af72daccc2a6b1060c00997ef25035035',1,'jazz_containers::JazzCache']]],
   ['cell_5fbool',['cell_bool',['../unionjazz__datablocks_1_1JazzTensor.html#a4a769eafaa2e3e8efe5f44eaf0b71f86',1,'jazz_datablocks::JazzTensor']]],
   ['cell_5fbyte',['cell_byte',['../unionjazz__datablocks_1_1JazzTensor.html#abd25be24cd1c4d7a3da181a62b7e883c',1,'jazz_datablocks::JazzTensor']]],
   ['cell_5fdouble',['cell_double',['../unionjazz__datablocks_1_1JazzTensor.html#a97b5e37328bd5e6ea2fd58563aff6478',1,'jazz_datablocks::JazzTensor']]],
@@ -9,5 +10,11 @@ var searchData=
   ['cell_5ftype',['cell_type',['../structjazz__datablocks_1_1JazzBlockHeader.html#ad6ebfd6abb2e8e0b204b3f27cf3e8412',1,'jazz_datablocks::JazzBlockHeader']]],
   ['cell_5fuint',['cell_uint',['../unionjazz__datablocks_1_1JazzTensor.html#a6826e1f2f33a75e5d000a90ce5f6b4ad',1,'jazz_datablocks::JazzTensor']]],
   ['cell_5fulongint',['cell_ulongint',['../unionjazz__datablocks_1_1JazzTensor.html#a17efd43623f8aadcad49050a7a7c5ddf',1,'jazz_datablocks::JazzTensor']]],
+  ['cluster_5fnode',['cluster_node',['../classjazzCommons.html#aab063d3a7bf5b70850ed0b9dc0fd9ff0',1,'jazzCommons']]],
+  ['cluster_5fnum_5fnodes',['cluster_num_nodes',['../classjazzCommons.html#a80b580647d41fb461b0359436363b576',1,'jazzCommons']]],
+  ['cluster_5fpassword_5fmode',['cluster_password_mode',['../classjazzCommons.html#a98b18a98be411fe32cc2ec1fe7ed6633',1,'jazzCommons']]],
+  ['cluster_5fssh_5fpassword',['cluster_ssh_password',['../classjazzCommons.html#a9673c11dab279801d5305b00bcfa6ec6',1,'jazzCommons']]],
+  ['cluster_5fssh_5fuser',['cluster_ssh_user',['../classjazzCommons.html#aca0ebc92e4288e0338cbfa4b5a1e39ba',1,'jazzCommons']]],
+  ['config',['config',['../classjazzCommons.html#a4539d292f32bb89f86c66dfc02812e49',1,'jazzCommons::config()'],['../classjazz__utils_1_1JazzConfigFile.html#a224db8e2b195d47ed6fb0d6a82389795',1,'jazz_utils::JazzConfigFile::config()']]],
   ['created',['created',['../structjazz__datablocks_1_1JazzBlockHeader.html#a2621bd0130f7488e30d5ab7f48b42b04',1,'jazz_datablocks::JazzBlockHeader']]]
 ];

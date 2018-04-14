@@ -14,5 +14,6 @@ var searchData=
   ['get_5fsource_5fidx',['get_source_idx',['../classjzzBLOCKS.html#a1e3fa0af4745c757a3b0f59daf2af9f9',1,'jzzBLOCKS']]],
   ['get_5fstring',['get_string',['../classjazz__datablocks_1_1JazzBlock.html#a7af32b76b5aab948fbba911595c8796a',1,'jazz_datablocks::JazzBlock::get_string(int *pIndex)'],['../classjazz__datablocks_1_1JazzBlock.html#ace3a9fa628e08f2222a08f02960338b2',1,'jazz_datablocks::JazzBlock::get_string(int offset)']]],
   ['get_5fstring_5fidx_5fc_5foffs_5fchars',['get_string_idx_C_OFFS_CHARS',['../classjzzBLOCKS.html#abe5acfd7a068624197b21bfc1751c553',1,'jzzBLOCKS']]],
+  ['get_5fstring_5foffset',['get_string_offset',['../classjazz__datablocks_1_1JazzBlock.html#a8cd7ac33f653b5f0d3878f0359d51886',1,'jazz_datablocks::JazzBlock']]],
   ['get_5furl',['get_url',['../classjazzWebSource.html#ac770078dcf9c87942c4cd4d3d24d0398',1,'jazzWebSource']]]
 ];

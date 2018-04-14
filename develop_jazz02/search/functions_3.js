@@ -2,7 +2,10 @@ var searchData=
 [
   ['can_5ffilter',['can_filter',['../classjazz__datablocks_1_1JazzFilter.html#aef7df6d04cf4a9b95fba31d719d794fa',1,'jazz_datablocks::JazzFilter']]],
   ['cast_5flmdb_5fblock',['cast_lmdb_block',['../classjzzBLOCKCONV.html#a30abe89445537738572bf39eeecbef8c',1,'jzzBLOCKCONV']]],
+  ['char_5fto_5finstrum_5frelaxed_5fend',['char_to_instrum_relaxed_end',['../classjzzAPI.html#aa5abfc0831357ea6b1fab94c7f81a366',1,'jzzAPI']]],
   ['char_5fto_5fkey',['char_to_key',['../classjzzBLOCKS.html#acd8ba15076849a655a5974852902c8e0',1,'jzzBLOCKS']]],
+  ['char_5fto_5fkey_5frelaxed_5fend',['char_to_key_relaxed_end',['../classjzzAPI.html#a9c54607a8a656472c0462a4e4d1c0789',1,'jzzAPI']]],
+  ['char_5fto_5fparam_5fstrict_5fend',['char_to_param_strict_end',['../classjzzAPI.html#ac6e8155504fdcd53c59f4e8f00bdbc4d',1,'jzzAPI']]],
   ['cleanconfigargument',['CleanConfigArgument',['../namespacejazz__utils.html#aa804bdf15b228c69c1c269c8bb5ef6e1',1,'jazz_utils']]],
   ['close_5fall_5fsources',['close_all_sources',['../classjzzBLOCKS.html#a186f59ea73fd421b349ddd5e3b7cddbf',1,'jzzBLOCKS']]],
   ['close_5fall_5fwebsources',['close_all_websources',['../classjazzWebSource.html#a6979d3a5ba688bb05ac5e69f58023d42',1,'jazzWebSource']]],
