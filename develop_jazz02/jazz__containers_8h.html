@@ -74,6 +74,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;map&gt;</code><br />
+<code>#include &lt;atomic&gt;</code><br />
+<code>#include &lt;thread&gt;</code><br />
+<code>#include &lt;stdarg.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="jazz__datablocks_8h_source.html">src/jazz_elements/jazz_datablocks.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="jazz__utils_8h_source.html">src/jazz_elements/jazz_utils.h</a>&quot;</code><br />
 </div>
@@ -120,6 +123,10 @@ Macros</h2></td></tr>
 <tr class="memitem:a21bc5d88bc4d95abeb831b74e4d49848"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__containers_8h.html#a21bc5d88bc4d95abeb831b74e4d49848">JAZZ_BLOCK_ID_PREFIX_DISTRIB</a>&#160;&#160;&#160;'/'</td></tr>
 <tr class="memdesc:a21bc5d88bc4d95abeb831b74e4d49848"><td class="mdescLeft">&#160;</td><td class="mdescRight">First char of a DISTRIBUTED JazzBlockIdentifier.  <a href="#a21bc5d88bc4d95abeb831b74e4d49848">More...</a><br /></td></tr>
 <tr class="separator:a21bc5d88bc4d95abeb831b74e4d49848"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a354f5b4a6ee119e61ea9a3ebb0c1dbe7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__containers_8h.html#a354f5b4a6ee119e61ea9a3ebb0c1dbe7">JAZZ_LOCK_RETRY_NUMTIMES</a>&#160;&#160;&#160;100</td></tr>
+<tr class="memdesc:a354f5b4a6ee119e61ea9a3ebb0c1dbe7"><td class="mdescLeft">&#160;</td><td class="mdescRight"><h1>immediate retries if lock fails before this_thread::yield();</h1>
+ <a href="#a354f5b4a6ee119e61ea9a3ebb0c1dbe7">More...</a><br /></td></tr>
+<tr class="separator:a354f5b4a6ee119e61ea9a3ebb0c1dbe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a605b7b4a805b2a01a4a0f978bede2640"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__containers_8h.html#a605b7b4a805b2a01a4a0f978bede2640">JAZZ_FILL_</a></td></tr>
 <tr class="memdesc:a605b7b4a805b2a01a4a0f978bede2640"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values for argument fill_tensor of <a class="el" href="namespacejazz__containers.html#a7438ec89582c66065f42e22bd854d1c3">new_jazz_block()</a>  <a href="#a605b7b4a805b2a01a4a0f978bede2640">More...</a><br /></td></tr>
 <tr class="separator:a605b7b4a805b2a01a4a0f978bede2640"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -213,6 +220,8 @@ Typedefs</h2></td></tr>
 <tr class="separator:ac7f74b24e90b7f70a7112ca657c7244d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06c7e485c86b5abef4b319ce153ef96e"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; void *, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__containers.html#a06c7e485c86b5abef4b319ce153ef96e">jazz_containers::JazzOneShotAlloc</a></td></tr>
 <tr class="separator:a06c7e485c86b5abef4b319ce153ef96e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d342cd305e5915a4d6e4d7d3a6ee864"><td class="memItemLeft" align="right" valign="top">typedef std::atomic&lt; int32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__containers.html#a5d342cd305e5915a4d6e4d7d3a6ee864">jazz_containers::JazzLock</a></td></tr>
+<tr class="separator:a5d342cd305e5915a4d6e4d7d3a6ee864"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -616,6 +625,23 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initialize with binary zero. </p>
+
+</div>
+</div>
+<a id="a354f5b4a6ee119e61ea9a3ebb0c1dbe7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a354f5b4a6ee119e61ea9a3ebb0c1dbe7">&#9670;&nbsp;</a></span>JAZZ_LOCK_RETRY_NUMTIMES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JAZZ_LOCK_RETRY_NUMTIMES&#160;&#160;&#160;100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><h1>immediate retries if lock fails before this_thread::yield();</h1>
+</p>
 
 </div>
 </div>

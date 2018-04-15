@@ -85,6 +85,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a00e24688e61bf63c74f6d64f812b7163"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa35a33d51f5f20925b229ebf927c8273"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__utils_1_1JazzLogger.html#aa35a33d51f5f20925b229ebf927c8273">log_printf</a> (int loglevel, const char *fmt,...)</td></tr>
 <tr class="separator:aa35a33d51f5f20925b229ebf927c8273"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa14896b5294346f16b9560cec917ff3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__utils_1_1JazzLogger.html#aa14896b5294346f16b9560cec917ff3b">log_printf</a> (int loglevel, const char *fmt, va_list args)</td></tr>
+<tr class="separator:aa14896b5294346f16b9560cec917ff3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -97,7 +99,10 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a399e7bbdb98cae4b9970dc9491f198cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__datablocks.html#a6aaf910265532463eb5989ecb7f11ed5">jazz_datablocks::TimePoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__utils_1_1JazzLogger.html#a399e7bbdb98cae4b9970dc9491f198cc">big_bang</a></td></tr>
 <tr class="separator:a399e7bbdb98cae4b9970dc9491f198cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A simple logger.</p>
+<p>This objects logs events one line per event. It prefixes the time since the logger was created, the trace level and the thread id as in "   0.224036 : 02 :  2872 : jzzAPI started.". A printf style version supports printing variables using variadic arguments. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a90f1f4e5b1ba7967abb26ac623f29623"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a90f1f4e5b1ba7967abb26ac623f29623">&#9670;&nbsp;</a></span>JazzLogger()</h2>
 
@@ -218,7 +223,7 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <a id="aa35a33d51f5f20925b229ebf927c8273"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa35a33d51f5f20925b229ebf927c8273">&#9670;&nbsp;</a></span>log_printf()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa35a33d51f5f20925b229ebf927c8273">&#9670;&nbsp;</a></span>log_printf() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -251,9 +256,54 @@ Private Attributes</h2></td></tr>
 <p>Create a log event with a printf style string including a variadic list of parameters.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">loglevel</td><td>The trace level. (see <a class="el" href="classjazzCommons.html#ac3e3a381a793b2c2fcd454056ff2e19c" title="In charge of providing logging functionality to the rest of the modules and directing it to persisten...">jazzCommons::log()</a>) </td></tr>
+    <tr><td class="paramname">loglevel</td><td>The trace level. (see <a class="el" href="classjazz__utils_1_1JazzLogger.html#a00e24688e61bf63c74f6d64f812b7163">JazzLogger::log()</a>) </td></tr>
     <tr><td class="paramname">fmt</td><td>The printf-style format string. </td></tr>
-    <tr><td class="paramname">...</td><td>The list of parameters. <pre class="fragment">It is a wrapper function calling jazzCommons::log(). (See jazzCommons::log() for details.)
+    <tr><td class="paramname">...</td><td>The list of parameters as a variadic list of parameters. <pre class="fragment">It is a wrapper function calling JazzLogger::log_printf(). (See JazzLogger::log() for details.)
+
+NOTE: This does not check buffer allocation! Use it for short results.</pre> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa14896b5294346f16b9560cec917ff3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa14896b5294346f16b9560cec917ff3b">&#9670;&nbsp;</a></span>log_printf() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void jazz_utils::JazzLogger::log_printf </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>loglevel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">va_list&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Create a log event with a printf style string including a variadic list of parameters.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">loglevel</td><td>The trace level. (see <a class="el" href="classjazz__utils_1_1JazzLogger.html#a00e24688e61bf63c74f6d64f812b7163">JazzLogger::log()</a>) </td></tr>
+    <tr><td class="paramname">fmt</td><td>The printf-style format string. </td></tr>
+    <tr><td class="paramname">args</td><td>The list of parameters as a va_list. <pre class="fragment">It is a wrapper function calling JazzLogger::log(). (See JazzLogger::log() for details.)
 
 NOTE: This does not check buffer allocation! Use it for short results.</pre> </td></tr>
   </table>

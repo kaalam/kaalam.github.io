@@ -93,7 +93,11 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a224db8e2b195d47ed6fb0d6a82389795"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__utils_1_1JazzConfigFile.html#a224db8e2b195d47ed6fb0d6a82389795">config</a></td></tr>
 <tr class="separator:a224db8e2b195d47ed6fb0d6a82389795"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A configuration file as a key/value store.</p>
+<p>The configuration is loaded when constructing the object and available for reading as int, double or string via <a class="el" href="classjazz__utils_1_1JazzConfigFile.html#aece5a2226ecc6f18f9902829c068548b">get_key()</a>.</p>
+<p>The input file format removes anything to the right of a // as a remark. It uses a single equal (=) character to separate the key from the value. It also performs a very simple form of quote replacement using <a class="el" href="namespacejazz__utils.html#aa804bdf15b228c69c1c269c8bb5ef6e1">CleanConfigArgument()</a>. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="afb06a4c365e2eefb4b819493acf76fbf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afb06a4c365e2eefb4b819493acf76fbf">&#9670;&nbsp;</a></span>JazzConfigFile()</h2>
 

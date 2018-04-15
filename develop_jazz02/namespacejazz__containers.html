@@ -104,6 +104,8 @@ Typedefs</h2></td></tr>
 <tr class="separator:ac7f74b24e90b7f70a7112ca657c7244d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06c7e485c86b5abef4b319ce153ef96e"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; void *, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__containers.html#a06c7e485c86b5abef4b319ce153ef96e">JazzOneShotAlloc</a></td></tr>
 <tr class="separator:a06c7e485c86b5abef4b319ce153ef96e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d342cd305e5915a4d6e4d7d3a6ee864"><td class="memItemLeft" align="right" valign="top">typedef std::atomic&lt; int32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__containers.html#a5d342cd305e5915a4d6e4d7d3a6ee864">JazzLock</a></td></tr>
+<tr class="separator:a5d342cd305e5915a4d6e4d7d3a6ee864"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -146,6 +148,21 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>A map to search a <a class="el" href="structjazz__containers_1_1JazzBlockKeeprItem.html">JazzBlockKeeprItem</a> by the block_id64 of its corresponding JazzBlock. This is the essential element that converts a queue into a cache. A cache is a queue where elements can be searched by id and lower priority items can be removed to allocate space. </p>
+
+</div>
+</div>
+<a id="a5d342cd305e5915a4d6e4d7d3a6ee864"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d342cd305e5915a4d6e4d7d3a6ee864">&#9670;&nbsp;</a></span>JazzLock</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::atomic&lt;int32_t&gt; <a class="el" href="namespacejazz__containers.html#a5d342cd305e5915a4d6e4d7d3a6ee864">jazz_containers::JazzLock</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>An atomically increased (via fetch_add() and fetch_sub()) 32 bit signed integer to use as a lock. </p>
 
 </div>
 </div>
@@ -319,7 +336,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <p>OWNERSHIP: If you create a one shot block using <a class="el" href="namespacejazz__containers.html#ad8d3c3ca8b271aa014aace02595512f9">new_jazz_block()</a>, you earn the responsibility to free it with <a class="el" href="namespacejazz__containers.html#afcc220e7dce04f57627c007fb10aaa2d">free_jazz_block()</a>. This is not the normal way to create JazzBlocks, when you use a <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html">JazzBlockKeepr</a> descendant, that object will allocate and free the JazzBlocks automatically. The same applies to JazzBlocks created in the stack of a bebop program which are also managed automatically.</p>
-<dl class="section return"><dt>Returns</dt><dd>The new JazzBlock or nullptr if failed. Also logs errors to jazz_containers::log </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The new JazzBlock or nullptr if failed. </dd></dl>
 
 </div>
 </div>
@@ -400,7 +417,7 @@ Functions</h2></td></tr>
 </dl>
 <p>NOTES: String buffer allocation should not be used to dynamically change attribute values. Attributes are inmutable and should be changed only creating a new block with new = new_jazz_block(p_as_block = old, att = new_att). String buffer allocation should only be used for cell_type == CELL_TYPE_JAZZ_STRING and either with stringbuff_size or with p_text (and eoln). If stringbuff_size is used, <a class="el" href="classjazz__datablocks_1_1JazzBlock.html#a76c7eea07bd355e2616afb6a7f1eb1cc">JazzBlock.set_string()</a> should be used afterwards. If p_text is used, the tensor is already filled and <a class="el" href="classjazz__datablocks_1_1JazzBlock.html#a76c7eea07bd355e2616afb6a7f1eb1cc">JazzBlock.set_string()</a> <b>should not</b> be called after that.</p>
 <p>OWNERSHIP: If you create a one shot block using <a class="el" href="namespacejazz__containers.html#ad8d3c3ca8b271aa014aace02595512f9">new_jazz_block()</a>, you earn the responsibility to free it with <a class="el" href="namespacejazz__containers.html#afcc220e7dce04f57627c007fb10aaa2d">free_jazz_block()</a>. This is not the normal way to create JazzBlocks, when you use a <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html">JazzBlockKeepr</a> descendant, that object will allocate and free the JazzBlocks automatically. The same applies to JazzBlocks created in the stack of a bebop program which are also managed automatically.</p>
-<dl class="section return"><dt>Returns</dt><dd>The new JazzBlock or nullptr if failed. Also logs errors to jazz_containers::log </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The new JazzBlock or nullptr if failed. </dd></dl>
 
 </div>
 </div>

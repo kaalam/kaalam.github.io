@@ -6,6 +6,7 @@ var searchData=
   ['p_5ffirst_5fchild',['p_first_child',['../structjazz__containers_1_1JazzTreeItem.html#a792ab55a555f408c9ab2ab6a2049384c',1,'jazz_containers::JazzTreeItem']]],
   ['p_5ffirst_5ffree',['p_first_free',['../classjazz__containers_1_1JazzBlockKeepr.html#ab70c7f1f9607691c4c9f1bc86b8c4bf4',1,'jazz_containers::JazzBlockKeepr']]],
   ['p_5fjazz_5fblock',['p_jazz_block',['../structjazz__containers_1_1JazzBlockKeeprItem.html#ad9fb22898959561903871a3ddae50ebf',1,'jazz_containers::JazzBlockKeeprItem']]],
+  ['p_5flog',['p_log',['../classjazz__containers_1_1JazzBlockKeepr.html#a442722d49e2ed8a02f2da9dde146b5e1',1,'jazz_containers::JazzBlockKeepr']]],
   ['p_5fnext_5fsibling',['p_next_sibling',['../structjazz__containers_1_1JazzTreeItem.html#a2cac6129d6d9d423b6e9683ded70a5d2',1,'jazz_containers::JazzTreeItem']]],
   ['p_5fparent',['p_parent',['../structjazz__containers_1_1JazzTreeItem.html#a94601d90f54cc23f446696f74ab575a6',1,'jazz_containers::JazzTreeItem']]],
   ['p_5fqueue_5froot',['p_queue_root',['../classjazz__containers_1_1AATBlockQueue.html#a2facc216e67d746fb6815cb012050e27',1,'jazz_containers::AATBlockQueue']]],
