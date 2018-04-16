@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['get_5fattributes',['get_attributes',['../classjazz__datablocks_1_1JazzBlock.html#acfaf689826f02bcf1e50ab8a5bb96de8',1,'jazz_datablocks::JazzBlock']]],
+  ['get_5fattributes',['get_attributes',['../classjazz__datablocks_1_1JazzBlock.html#a893ce7ccba5ba48b49fde07ebb0ca52e',1,'jazz_datablocks::JazzBlock']]],
   ['get_5fcluster_5fport',['get_cluster_port',['../classjazzCommons.html#a6b5f1cd534ecd974e8649d3d2e87140a',1,'jazzCommons']]],
   ['get_5fconfig_5fkey',['get_config_key',['../classjazzCommons.html#a127b588bf73ed697f66a1561aeedd02f',1,'jazzCommons::get_config_key(const char *key, int &amp;value)'],['../classjazzCommons.html#af6086e4de53a3f669b6908beb1e5994c',1,'jazzCommons::get_config_key(const char *key, double &amp;value)'],['../classjazzCommons.html#aecf7c7d07e4d27f4027a7a2d89d74270',1,'jazzCommons::get_config_key(const char *key, string &amp;value)']]],
   ['get_5fdimensions',['get_dimensions',['../classjazz__datablocks_1_1JazzBlock.html#a332219ca80eb8a94495796e1009a572b',1,'jazz_datablocks::JazzBlock']]],
