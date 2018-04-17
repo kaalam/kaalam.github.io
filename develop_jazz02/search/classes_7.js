@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['urlattrib',['URLattrib',['../structURLattrib.html',1,'']]]
+  ['string_5fbuffer',['string_buffer',['../structstring__buffer.html',1,'']]]
 ];

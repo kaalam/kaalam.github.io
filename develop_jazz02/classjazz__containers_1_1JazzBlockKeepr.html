@@ -101,7 +101,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab34ede7a4ae92dd4fffafded935ce099"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f2b8d51050935de749b31da4aaace5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__containers.html#ae756081452684556f7185bc90c579b02">pJazzBlockKeeprItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a2f2b8d51050935de749b31da4aaace5e">new_jazz_block</a> (const <a class="el" href="structjazz__containers_1_1JazzBlockIdentifier.html">JazzBlockIdentifier</a> *p_id, <a class="el" href="namespacejazz__datablocks.html#a2666df0f415ab9495304469e745adfda">pJazzBlock</a> p_as_block, <a class="el" href="namespacejazz__datablocks.html#a2666df0f415ab9495304469e745adfda">pJazzBlock</a> p_row_filter=nullptr, <a class="el" href="namespacejazz__datablocks.html#ad78607a9a502ae46d20496d82bc8286d">AllAttributes</a> *att=nullptr)</td></tr>
 <tr class="separator:a2f2b8d51050935de749b31da4aaace5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a8b4c8b47c8bfa2fb600061b578e9a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__containers.html#ae756081452684556f7185bc90c579b02">pJazzBlockKeeprItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a1a8b4c8b47c8bfa2fb600061b578e9a3">new_jazz_block</a> (const <a class="el" href="structjazz__containers_1_1JazzBlockIdentifier.html">JazzBlockIdentifier</a> *p_id, int cell_type, JazzTensorDim *dim, <a class="el" href="namespacejazz__datablocks.html#ad78607a9a502ae46d20496d82bc8286d">AllAttributes</a> *att, int fill_tensor=<a class="el" href="jazz__containers_8h.html#a71bf55da2249f5bc6310cfa9d06b82ea">JAZZ_FILL_NEW_WITH_NA</a>, bool *p_bool_filter=nullptr, int stringbuff_size=0, const char *p_text=nullptr, char eoln='\n')</td></tr>
+<tr class="memitem:a1a8b4c8b47c8bfa2fb600061b578e9a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__containers.html#ae756081452684556f7185bc90c579b02">pJazzBlockKeeprItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a1a8b4c8b47c8bfa2fb600061b578e9a3">new_jazz_block</a> (const <a class="el" href="structjazz__containers_1_1JazzBlockIdentifier.html">JazzBlockIdentifier</a> *p_id, int cell_type, <a class="el" href="unionjazz__datablocks_1_1JazzTensorDim.html">JazzTensorDim</a> *dim, <a class="el" href="namespacejazz__datablocks.html#ad78607a9a502ae46d20496d82bc8286d">AllAttributes</a> *att, int fill_tensor=<a class="el" href="jazz__containers_8h.html#a71bf55da2249f5bc6310cfa9d06b82ea">JAZZ_FILL_NEW_WITH_NA</a>, bool *p_bool_filter=nullptr, int stringbuff_size=0, const char *p_text=nullptr, char eoln='\n')</td></tr>
 <tr class="separator:a1a8b4c8b47c8bfa2fb600061b578e9a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf12e96d3544d257e1cad0020ec36595"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#aaf12e96d3544d257e1cad0020ec36595">remove_jazz_block</a> (<a class="el" href="namespacejazz__containers.html#ae756081452684556f7185bc90c579b02">pJazzBlockKeeprItem</a> p_item)</td></tr>
 <tr class="separator:aaf12e96d3544d257e1cad0020ec36595"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,14 +165,13 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Aaa</p>
+<p>Constructor for class <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html">JazzBlockKeepr</a></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">a_logger</td><td>Aaa</td></tr>
+    <tr><td class="paramname">a_logger</td><td>A running JazzLogger object that will be used to track all LOG_MISS, LOG_WARN and LOG_ERROR events if available. It is safe to ignore this parameter, in that case the events will not be logged. <pre class="fragment">This does not allocate any items, you must call alloc_keeprs () before using the object.</pre> </td></tr>
   </table>
   </dd>
 </dl>
-<p>TODO: Document <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#ad69e30f47efdd3e67b725d3372f57c14">JazzBlockKeepr::JazzBlockKeepr</a> </p>
 
 </div>
 </div>
@@ -190,7 +189,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Aaa TODO: Document <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a272401c0652d255eb972d74da64ce46c">JazzBlockKeepr::~JazzBlockKeepr</a> </p>
+<p>Destructor for class <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html">JazzBlockKeepr</a></p>
+<p>This automatically destoys all the JazzBocks and the corresponding <a class="el" href="structjazz__containers_1_1JazzBlockKeeprItem.html">JazzBlockKeeprItem</a> descendants. </p>
 
 </div>
 </div>
@@ -210,14 +210,14 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Aaa</p>
+<p>Allocate the buffer of <a class="el" href="structjazz__containers_1_1JazzBlockKeeprItem.html">JazzBlockKeeprItem</a> descendant objects</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">num_items</td><td>Aaa</td></tr>
+    <tr><td class="paramname">num_items</td><td>The number of <a class="el" href="structjazz__containers_1_1JazzBlockKeeprItem.html">JazzBlockKeeprItem</a> descendant objects </td></tr>
   </table>
   </dd>
 </dl>
-<p>TODO: Document <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#ad1e50a3552d31d10586dbe7f9769f309">JazzBlockKeepr::alloc_keeprs</a> </p>
+<dl class="section return"><dt>Returns</dt><dd>True if sucessfull. Logs errors if failed and a valid JazzLogger was given when constructing this object. Fails is called when the buffer is already allocated. </dd></dl>
 
 </div>
 </div>
@@ -235,7 +235,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Aaa TODO: Document <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#ab34ede7a4ae92dd4fffafded935ce099">JazzBlockKeepr::destroy_keeprs</a> </p>
+<p>Destroys all the JazzBocks and all the corresponding <a class="el" href="structjazz__containers_1_1JazzBlockKeeprItem.html">JazzBlockKeeprItem</a> descendants.</p>
+<p>This releases all the memory allocated by the <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html">JazzBlockKeepr</a> object and leaves it in a state where <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#ad1e50a3552d31d10586dbe7f9769f309">alloc_keeprs()</a> can be called to create a new buffer. </p>
 
 </div>
 </div>
@@ -510,17 +511,18 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Aaa</p>
+<p>Create a new JazzBlock as a selection (of possibly all) of an existing JazzBlock owned by a <a class="el" href="structjazz__containers_1_1JazzBlockKeeprItem.html">JazzBlockKeeprItem</a></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">p_id</td><td>Aaa </td></tr>
-    <tr><td class="paramname">p_as_block</td><td>Aaa </td></tr>
-    <tr><td class="paramname">p_row_filter</td><td>Aaa </td></tr>
-    <tr><td class="paramname">att</td><td>Aaa</td></tr>
+    <tr><td class="paramname">p_id</td><td>A block ID. A string matching JAZZ_REGEX_VALIDATE_BLOCK_ID to identify the block globally and locally. </td></tr>
+    <tr><td class="paramname">p_as_block</td><td>An existing block from which everything is copied, possibly with a selection over its rows. </td></tr>
+    <tr><td class="paramname">p_row_filter</td><td>A filter that is applicable to p_as_block. I.e., p_row_filter-&gt;can_filter(p_as_block) == true If p_row_filter == nullptr then p_as_block is copied into a newly allocated pointer. See parameter dim in the <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a2f2b8d51050935de749b31da4aaace5e">new_jazz_block()</a> version that uses dim to understand how selection is applied. </td></tr>
+    <tr><td class="paramname">att</td><td>An alternative source of attributes. When this parameter in != nullptr, the new block will get its attributes from att instead of copying those in p_as_block-&gt;.</td></tr>
   </table>
   </dd>
 </dl>
-<p>TODO: Document <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a2f2b8d51050935de749b31da4aaace5e">JazzBlockKeepr::new_jazz_block</a> (1) </p>
+<p>OWNERSHIP: If you create a one shot block using <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a2f2b8d51050935de749b31da4aaace5e">new_jazz_block()</a>, you earn the responsibility to free it with <a class="el" href="namespacejazz__containers.html#afcc220e7dce04f57627c007fb10aaa2d">free_jazz_block()</a>. This is not the normal way to create JazzBlocks, when you use a <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html">JazzBlockKeepr</a> descendant, that object will allocate and free the JazzBlocks automatically. The same applies to JazzBlocks created in the stack of a bebop program which are also managed automatically.</p>
+<dl class="section return"><dt>Returns</dt><dd>The address of the <a class="el" href="structjazz__containers_1_1JazzBlockKeeprItem.html">JazzBlockKeeprItem</a> owning the new JazzBlock or nullptr if failed. Will not allocate a <a class="el" href="structjazz__containers_1_1JazzBlockKeeprItem.html">JazzBlockKeeprItem</a> if allocating the JazzBlock fails. </dd></dl>
 
 </div>
 </div>
@@ -545,7 +547,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">JazzTensorDim *&#160;</td>
+          <td class="paramtype"><a class="el" href="unionjazz__datablocks_1_1JazzTensorDim.html">JazzTensorDim</a> *&#160;</td>
           <td class="paramname"><em>dim</em>, </td>
         </tr>
         <tr>
@@ -591,22 +593,24 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Aaa</p>
+<p>Create a new (one_shot) JazzBlock (including a JazzFilter) from scratch owned by a <a class="el" href="structjazz__containers_1_1JazzBlockKeeprItem.html">JazzBlockKeeprItem</a></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">p_id</td><td>Aaa </td></tr>
-    <tr><td class="paramname">cell_type</td><td>Aaa </td></tr>
-    <tr><td class="paramname">dim</td><td>Aaa </td></tr>
-    <tr><td class="paramname">att</td><td>Aaa </td></tr>
-    <tr><td class="paramname">fill_tensor</td><td>Aaa </td></tr>
-    <tr><td class="paramname">p_bool_filter</td><td>Aaa </td></tr>
-    <tr><td class="paramname">stringbuff_size</td><td>Aaa </td></tr>
-    <tr><td class="paramname">p_text</td><td>Aaa </td></tr>
-    <tr><td class="paramname">eoln</td><td>Aaa</td></tr>
+    <tr><td class="paramname">p_id</td><td>A block ID. A string matching JAZZ_REGEX_VALIDATE_BLOCK_ID to identify the block globally and locally. </td></tr>
+    <tr><td class="paramname">cell_type</td><td>The type for the tensor's cell types in [CELL_TYPE_BYTE..CELL_TYPE_DOUBLE] </td></tr>
+    <tr><td class="paramname">dim</td><td>This defines both the rank and the dimensions of the tensor. Note that, except for the first position a dimension of 0 and 1 is the same dim = {3, 1} is a vector of 3 elements with rank 1, exactly like {3, 0}. As a matter of convention, dim should always end with a 0 except when it is JAZZ_MAX_TENSOR_RANK long. For the first dimension 1 means one element and 0 means no element. Both have rank 1. The latter is the typical result of a selection where no row matches the condition. Blocks never have rank == 0 and zero-element blocks have the same rank as the block from which they were selected. When 0 rows are selected from a block of dim = {r, s, t} the resulting block is {0, s, t} with size == 0 and rank == 3. If dim == nullptr and p_text != nullptr, dim will be set automatically to the number of lines (see eoln) in p_text when cell_type == CELL_TYPE_JAZZ_STRING. </td></tr>
+    <tr><td class="paramname">att</td><td>The attributes to set when creating the block. They are be inmutable. To change the attributes of a JazzBlock use the version of <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a2f2b8d51050935de749b31da4aaace5e">new_jazz_block()</a> with parameter p_as_block. </td></tr>
+    <tr><td class="paramname">fill_tensor</td><td>How to fill the tensor. When creating anything that is not a JazzFilter, p_bool_filter is ignored and the options are: JAZZ_FILL_NEW_DONT_FILL (don't do anything with the tensor), JAZZ_FILL_NEW_WITH_ZERO (fill with binary zero no matter what the cell_type is), JAZZ_FILL_NEW_WITH_NA fill with the appropriate NA for the cell_type) When creating a filter, p_bool_filter must be a vector of length == size and the filter will be created as boolean (when fill_tensor == JAZZ_FILL_BOOLEAN_FILTER) or integer (when fill_tensor == JAZZ_FILL_INTEGER_FILTER) </td></tr>
+    <tr><td class="paramname">p_bool_filter</td><td>The vector of boolean (each true value means the corresponding row is selected) used when fill_tensor == JAZZ_FILL_BOOLEAN_FILTER and fill_tensor == JAZZ_FILL_INTEGER_FILTER </td></tr>
+    <tr><td class="paramname">stringbuff_size</td><td>One of the possible ways to allocate space for strings is declaring this size. When this is non-zero a buffer will be allocated with this size plus whatever size is required by the strings in att. <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a2f2b8d51050935de749b31da4aaace5e">new_jazz_block()</a> will only allocate the space and do nothing with it. The caller should assign strings to cells with <a class="el" href="classjazz__datablocks_1_1JazzBlock.html#a76c7eea07bd355e2616afb6a7f1eb1cc">JazzBlock.set_string()</a>. </td></tr>
+    <tr><td class="paramname">p_text</td><td>The other possible way to allocate space for strings is by declaring p_text. Imagine the content of p_text as a text file with n = size rows that will be pushed into the tensor and the string buffer. The eoln character separates the cells. (cell_type == CELL_TYPE_JAZZ_STRING &amp; p_text != nullptr) overrides any setting in fill_tensor. Also, either dim should be nullptr and set automatically or its resulting size must be the same as the number of lines in p_text. </td></tr>
+    <tr><td class="paramname">eoln</td><td>A single character that separates the cells in p_text and will not be pushed to the string buffer.</td></tr>
   </table>
   </dd>
 </dl>
-<p>TODO: Document <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a2f2b8d51050935de749b31da4aaace5e">JazzBlockKeepr::new_jazz_block</a> (2) </p>
+<p>NOTES: String buffer allocation should not be used to dynamically change attribute values. Attributes are inmutable and should be changed only creating a new block with new = new_jazz_block(p_as_block = old, att = new_att). String buffer allocation should only be used for cell_type == CELL_TYPE_JAZZ_STRING and either with stringbuff_size or with p_text (and eoln). If stringbuff_size is used, <a class="el" href="classjazz__datablocks_1_1JazzBlock.html#a76c7eea07bd355e2616afb6a7f1eb1cc">JazzBlock.set_string()</a> should be used afterwards. If p_text is used, the tensor is already filled and <a class="el" href="classjazz__datablocks_1_1JazzBlock.html#a76c7eea07bd355e2616afb6a7f1eb1cc">JazzBlock.set_string()</a> <b>should not</b> be called after that.</p>
+<p>OWNERSHIP: If you create a one shot block using <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a2f2b8d51050935de749b31da4aaace5e">new_jazz_block()</a>, you earn the responsibility to free it with <a class="el" href="namespacejazz__containers.html#afcc220e7dce04f57627c007fb10aaa2d">free_jazz_block()</a>. This is not the normal way to create JazzBlocks, when you use a <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html">JazzBlockKeepr</a> descendant, that object will allocate and free the JazzBlocks automatically. The same applies to JazzBlocks created in the stack of a bebop program which are also managed automatically.</p>
+<dl class="section return"><dt>Returns</dt><dd>The address of the <a class="el" href="structjazz__containers_1_1JazzBlockKeeprItem.html">JazzBlockKeeprItem</a> owning the new JazzBlock or nullptr if failed. Will not allocate a <a class="el" href="structjazz__containers_1_1JazzBlockKeeprItem.html">JazzBlockKeeprItem</a> if allocating the JazzBlock fails. </dd></dl>
 
 </div>
 </div>
@@ -625,14 +629,15 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Aaa</p>
+<p>Reallocate the buffer of <a class="el" href="structjazz__containers_1_1JazzBlockKeeprItem.html">JazzBlockKeeprItem</a> descendant objects</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">num_items</td><td>Aaa</td></tr>
+    <tr><td class="paramname">num_items</td><td>The new number of <a class="el" href="structjazz__containers_1_1JazzBlockKeeprItem.html">JazzBlockKeeprItem</a> descendant objects </td></tr>
   </table>
   </dd>
 </dl>
-<p>TODO: Document <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a67de2e7c2d3747ec5d2d54c4b94cd010">JazzBlockKeepr::realloc_keeprs</a> </p>
+<dl class="section return"><dt>Returns</dt><dd>True if sucessfull. Logs errors if failed and a valid JazzLogger was given when constructing this object.</dd></dl>
+<p>This keeps all previously existing JazzBlocks and assignes them inside the item of the previous buffer. </p>
 
 </div>
 </div>
@@ -651,14 +656,13 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Aaa</p>
+<p>Destroy a JazzBlock and free its owning <a class="el" href="structjazz__containers_1_1JazzBlockKeeprItem.html">JazzBlockKeeprItem</a></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">p_item</td><td>Aaa</td></tr>
+    <tr><td class="paramname">p_item</td><td>The <a class="el" href="structjazz__containers_1_1JazzBlockKeeprItem.html">JazzBlockKeeprItem</a> owning the JazzBlock that will be destroyed. </td></tr>
   </table>
   </dd>
 </dl>
-<p>TODO: Document <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#aaf12e96d3544d257e1cad0020ec36595">JazzBlockKeepr::remove_jazz_block</a> </p>
 
 </div>
 </div>

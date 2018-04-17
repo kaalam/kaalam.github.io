@@ -132,9 +132,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a0f5eda4dd6f5fb86ba0fd09bb668f6fc inherit pub_attribs_structjazz__datablocks_1_1JazzBlockHeader"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__datablocks_1_1JazzBlockHeader.html#a0f5eda4dd6f5fb86ba0fd09bb668f6fc">rank</a></td></tr>
 <tr class="memdesc:a0f5eda4dd6f5fb86ba0fd09bb668f6fc inherit pub_attribs_structjazz__datablocks_1_1JazzBlockHeader"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of dimensions.  <a href="structjazz__datablocks_1_1JazzBlockHeader.html#a0f5eda4dd6f5fb86ba0fd09bb668f6fc">More...</a><br /></td></tr>
 <tr class="separator:a0f5eda4dd6f5fb86ba0fd09bb668f6fc inherit pub_attribs_structjazz__datablocks_1_1JazzBlockHeader"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94bf362766e84b9d50439e7417ceaa7d inherit pub_attribs_structjazz__datablocks_1_1JazzBlockHeader"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__datablocks.html#a6be0f103934e5d43c01d0ae5d77e0884">JazzTensorDim</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__datablocks_1_1JazzBlockHeader.html#a94bf362766e84b9d50439e7417ceaa7d">dim_offs</a></td></tr>
-<tr class="memdesc:a94bf362766e84b9d50439e7417ceaa7d inherit pub_attribs_structjazz__datablocks_1_1JazzBlockHeader"><td class="mdescLeft">&#160;</td><td class="mdescRight">The dimensions of the tensor in terms of offsets (Max. size is 2 Gb.)  <a href="structjazz__datablocks_1_1JazzBlockHeader.html#a94bf362766e84b9d50439e7417ceaa7d">More...</a><br /></td></tr>
-<tr class="separator:a94bf362766e84b9d50439e7417ceaa7d inherit pub_attribs_structjazz__datablocks_1_1JazzBlockHeader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab88191cd826987ec1adbee63e01be67b inherit pub_attribs_structjazz__datablocks_1_1JazzBlockHeader"><td class="memItemLeft" align="right" valign="top"><a class="el" href="unionjazz__datablocks_1_1JazzTensorDim.html">JazzTensorDim</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__datablocks_1_1JazzBlockHeader.html#ab88191cd826987ec1adbee63e01be67b">range</a></td></tr>
+<tr class="memdesc:ab88191cd826987ec1adbee63e01be67b inherit pub_attribs_structjazz__datablocks_1_1JazzBlockHeader"><td class="mdescLeft">&#160;</td><td class="mdescRight">The dimensions of the tensor in terms of ranges (Max. size is 2 Gb.)  <a href="structjazz__datablocks_1_1JazzBlockHeader.html#ab88191cd826987ec1adbee63e01be67b">More...</a><br /></td></tr>
+<tr class="separator:ab88191cd826987ec1adbee63e01be67b inherit pub_attribs_structjazz__datablocks_1_1JazzBlockHeader"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cd890f38bfd75d2c1a2a562a5a775a9 inherit pub_attribs_structjazz__datablocks_1_1JazzBlockHeader"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__datablocks_1_1JazzBlockHeader.html#a1cd890f38bfd75d2c1a2a562a5a775a9">size</a></td></tr>
 <tr class="memdesc:a1cd890f38bfd75d2c1a2a562a5a775a9 inherit pub_attribs_structjazz__datablocks_1_1JazzBlockHeader"><td class="mdescLeft">&#160;</td><td class="mdescRight">The total number of cells in the tensor.  <a href="structjazz__datablocks_1_1JazzBlockHeader.html#a1cd890f38bfd75d2c1a2a562a5a775a9">More...</a><br /></td></tr>
 <tr class="separator:a1cd890f38bfd75d2c1a2a562a5a775a9 inherit pub_attribs_structjazz__datablocks_1_1JazzBlockHeader"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -300,10 +300,10 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the tensor dimensions as a JazzTensorDim array.</p>
+<p>Returns the tensor dimensions as a <a class="el" href="unionjazz__datablocks_1_1JazzTensorDim.html">JazzTensorDim</a> array.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pDim</td><td>A pointer to the JazzTensorDim containing the dimensions.</td></tr>
+    <tr><td class="paramname">pDim</td><td>A pointer to the <a class="el" href="unionjazz__datablocks_1_1JazzTensorDim.html">JazzTensorDim</a> containing the dimensions.</td></tr>
   </table>
   </dd>
 </dl>
@@ -344,11 +344,11 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Convert an offset to a tensor cell into its corresponding index (as a JazzTensorDim array) without checking its validity.</p>
+<p>Convert an offset to a tensor cell into its corresponding index (as a <a class="el" href="unionjazz__datablocks_1_1JazzTensorDim.html">JazzTensorDim</a> array) without checking its validity.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">offset</td><td>the input offset </td></tr>
-    <tr><td class="paramname">pIndex</td><td>A pointer to the JazzTensorDim to return the result. </td></tr>
+    <tr><td class="paramname">pIndex</td><td>A pointer to the <a class="el" href="unionjazz__datablocks_1_1JazzTensorDim.html">JazzTensorDim</a> to return the result. </td></tr>
   </table>
   </dd>
 </dl>
@@ -378,10 +378,10 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Convert an index (as a JazzTensorDim array) to the corresponding offset without checking its validity.</p>
+<p>Convert an index (as a <a class="el" href="unionjazz__datablocks_1_1JazzTensorDim.html">JazzTensorDim</a> array) to the corresponding offset without checking its validity.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pIndex</td><td>A pointer to the JazzTensorDim containing the index.</td></tr>
+    <tr><td class="paramname">pIndex</td><td>A pointer to the <a class="el" href="unionjazz__datablocks_1_1JazzTensorDim.html">JazzTensorDim</a> containing the index.</td></tr>
   </table>
   </dd>
 </dl>
@@ -415,7 +415,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Get a string from the tensor by index without checking index range.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pIndex</td><td>A pointer to the JazzTensorDim containing the index.</td></tr>
+    <tr><td class="paramname">pIndex</td><td>A pointer to the <a class="el" href="unionjazz__datablocks_1_1JazzTensorDim.html">JazzTensorDim</a> containing the index.</td></tr>
   </table>
   </dd>
 </dl>
@@ -634,14 +634,14 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Sets the tensor dimensions from a JazzTensorDim array.</p>
+<p>Sets the tensor dimensions from a <a class="el" href="unionjazz__datablocks_1_1JazzTensorDim.html">JazzTensorDim</a> array.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pDim</td><td>A pointer to the JazzTensorDim containing the dimensions.</td></tr>
+    <tr><td class="paramname">pDim</td><td>A pointer to the <a class="el" href="unionjazz__datablocks_1_1JazzTensorDim.html">JazzTensorDim</a> containing the dimensions.</td></tr>
   </table>
   </dd>
 </dl>
-<p>NOTES: 1. This writes: rank, dim_offs[] and size.</p><ol type="1">
+<p>NOTES: 1. This writes: rank, range[] and size.</p><ol type="1">
 <li>Except in the first position, a dimension 0 is the same as 1, only dimensions &gt;1 count for the rank.</li>
 <li>Except in the first position, all &gt;1 dimensions must be in the beginning. 3,2,1,4 == 3,2,0,0 has rank == 2</li>
 <li>All dimensions == 0 (or 1) has rank == 1 and size == 0 or 1 depending on the first dimension being 0 or 1.</li>
@@ -686,7 +686,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Set a string in the tensor, if there is enough allocation space to contain it, by index without checking index range.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pIndex</td><td>A pointer to the JazzTensorDim containing the index. </td></tr>
+    <tr><td class="paramname">pIndex</td><td>A pointer to the <a class="el" href="unionjazz__datablocks_1_1JazzTensorDim.html">JazzTensorDim</a> containing the index. </td></tr>
     <tr><td class="paramname">pString</td><td>A pointer to a (zero ended) string that will be allocated inside the <a class="el" href="classjazz__datablocks_1_1JazzBlock.html">JazzBlock</a>.</td></tr>
   </table>
   </dd>
@@ -763,10 +763,10 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns if an index (as a JazzTensorDim array) is valid for the tensor.</p>
+<p>Returns if an index (as a <a class="el" href="unionjazz__datablocks_1_1JazzTensorDim.html">JazzTensorDim</a> array) is valid for the tensor.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pIndex</td><td>A pointer to the JazzTensorDim containing the index.</td></tr>
+    <tr><td class="paramname">pIndex</td><td>A pointer to the <a class="el" href="unionjazz__datablocks_1_1JazzTensorDim.html">JazzTensorDim</a> containing the index.</td></tr>
   </table>
   </dd>
 </dl>

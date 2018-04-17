@@ -93,9 +93,9 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a0f5eda4dd6f5fb86ba0fd09bb668f6fc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__datablocks_1_1JazzBlockHeader.html#a0f5eda4dd6f5fb86ba0fd09bb668f6fc">rank</a></td></tr>
 <tr class="memdesc:a0f5eda4dd6f5fb86ba0fd09bb668f6fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of dimensions.  <a href="#a0f5eda4dd6f5fb86ba0fd09bb668f6fc">More...</a><br /></td></tr>
 <tr class="separator:a0f5eda4dd6f5fb86ba0fd09bb668f6fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94bf362766e84b9d50439e7417ceaa7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__datablocks.html#a6be0f103934e5d43c01d0ae5d77e0884">JazzTensorDim</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__datablocks_1_1JazzBlockHeader.html#a94bf362766e84b9d50439e7417ceaa7d">dim_offs</a></td></tr>
-<tr class="memdesc:a94bf362766e84b9d50439e7417ceaa7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The dimensions of the tensor in terms of offsets (Max. size is 2 Gb.)  <a href="#a94bf362766e84b9d50439e7417ceaa7d">More...</a><br /></td></tr>
-<tr class="separator:a94bf362766e84b9d50439e7417ceaa7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab88191cd826987ec1adbee63e01be67b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="unionjazz__datablocks_1_1JazzTensorDim.html">JazzTensorDim</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__datablocks_1_1JazzBlockHeader.html#ab88191cd826987ec1adbee63e01be67b">range</a></td></tr>
+<tr class="memdesc:ab88191cd826987ec1adbee63e01be67b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The dimensions of the tensor in terms of ranges (Max. size is 2 Gb.)  <a href="#ab88191cd826987ec1adbee63e01be67b">More...</a><br /></td></tr>
+<tr class="separator:ab88191cd826987ec1adbee63e01be67b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cd890f38bfd75d2c1a2a562a5a775a9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__datablocks_1_1JazzBlockHeader.html#a1cd890f38bfd75d2c1a2a562a5a775a9">size</a></td></tr>
 <tr class="memdesc:a1cd890f38bfd75d2c1a2a562a5a775a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The total number of cells in the tensor.  <a href="#a1cd890f38bfd75d2c1a2a562a5a775a9">More...</a><br /></td></tr>
 <tr class="separator:a1cd890f38bfd75d2c1a2a562a5a775a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,22 +153,6 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a94bf362766e84b9d50439e7417ceaa7d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94bf362766e84b9d50439e7417ceaa7d">&#9670;&nbsp;</a></span>dim_offs</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacejazz__datablocks.html#a6be0f103934e5d43c01d0ae5d77e0884">JazzTensorDim</a> jazz_datablocks::JazzBlockHeader::dim_offs</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The dimensions of the tensor in terms of offsets (Max. size is 2 Gb.) </p>
-
-</div>
-</div>
 <a id="aa8226dce56a923a0e051809dc2e1d461"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa8226dce56a923a0e051809dc2e1d461">&#9670;&nbsp;</a></span>has_NA</h2>
 
@@ -214,6 +198,22 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Number of elements in the JazzAttributesMap. </p>
+
+</div>
+</div>
+<a id="ab88191cd826987ec1adbee63e01be67b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab88191cd826987ec1adbee63e01be67b">&#9670;&nbsp;</a></span>range</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="unionjazz__datablocks_1_1JazzTensorDim.html">JazzTensorDim</a> jazz_datablocks::JazzBlockHeader::range</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The dimensions of the tensor in terms of ranges (Max. size is 2 Gb.) </p>
 
 </div>
 </div>

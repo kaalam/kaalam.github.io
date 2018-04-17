@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['instumentname',['instumentName',['../structinstumentName.html',1,'']]],
-  ['iprange',['IPrange',['../structIPrange.html',1,'']]]
+  ['filtersize',['FilterSize',['../structjazz__datablocks_1_1FilterSize.html',1,'jazz_datablocks']]]
 ];

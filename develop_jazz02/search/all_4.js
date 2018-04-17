@@ -6,5 +6,5 @@ var searchData=
   ['decrease_5flevel',['decrease_level',['../classjazz__containers_1_1AATBlockQueue.html#a3c31288554cf5216b39e5f59683fcf43',1,'jazz_containers::AATBlockQueue']]],
   ['deletesource',['deleteSource',['../structparsedURLhea.html#ad5eaf425feaba1400af763c751f36f27',1,'parsedURLhea']]],
   ['destroy_5fkeeprs',['destroy_keeprs',['../classjazz__containers_1_1JazzBlockKeepr.html#ab34ede7a4ae92dd4fffafded935ce099',1,'jazz_containers::JazzBlockKeepr']]],
-  ['dim_5foffs',['dim_offs',['../structjazz__datablocks_1_1JazzBlockHeader.html#a94bf362766e84b9d50439e7417ceaa7d',1,'jazz_datablocks::JazzBlockHeader']]]
+  ['dim',['dim',['../unionjazz__datablocks_1_1JazzTensorDim.html#a7bc4dd53c5f5d5a003d584fa191249a6',1,'jazz_datablocks::JazzTensorDim']]]
 ];

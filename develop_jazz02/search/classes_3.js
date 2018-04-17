@@ -1,30 +1,5 @@
 var searchData=
 [
-  ['jazz_5fhttp_5fsecurity',['jazz_http_security',['../structjazz__http__security.html',1,'']]],
-  ['jazz_5flmdb_5fopt',['jazz_lmdb_opt',['../structjazz__lmdb__opt.html',1,'']]],
-  ['jazz_5fnode',['jazz_node',['../structjazz__node.html',1,'']]],
-  ['jazzblock',['JazzBlock',['../classjazz__datablocks_1_1JazzBlock.html',1,'jazz_datablocks']]],
-  ['jazzblockheader',['JazzBlockHeader',['../structjazz__datablocks_1_1JazzBlockHeader.html',1,'jazz_datablocks']]],
-  ['jazzblockidentifier',['JazzBlockIdentifier',['../structjazz__containers_1_1JazzBlockIdentifier.html',1,'jazz_containers']]],
-  ['jazzblockkeepr',['JazzBlockKeepr',['../classjazz__containers_1_1JazzBlockKeepr.html',1,'jazz_containers']]],
-  ['jazzblockkeepritem',['JazzBlockKeeprItem',['../structjazz__containers_1_1JazzBlockKeeprItem.html',1,'jazz_containers']]],
-  ['jazzcache',['JazzCache',['../classjazz__containers_1_1JazzCache.html',1,'jazz_containers']]],
-  ['jazzcommons',['jazzCommons',['../classjazzCommons.html',1,'']]],
-  ['jazzconfigfile',['JazzConfigFile',['../classjazz__utils_1_1JazzConfigFile.html',1,'jazz_utils']]],
-  ['jazzfilter',['JazzFilter',['../classjazz__datablocks_1_1JazzFilter.html',1,'jazz_datablocks']]],
-  ['jazzlogger',['JazzLogger',['../classjazz__utils_1_1JazzLogger.html',1,'jazz_utils']]],
-  ['jazzpersistence',['JazzPersistence',['../classjazz__persistence_1_1JazzPersistence.html',1,'jazz_persistence']]],
-  ['jazzqueueitem',['JazzQueueItem',['../structjazz__containers_1_1JazzQueueItem.html',1,'jazz_containers']]],
-  ['jazzservice',['jazzService',['../classjazzService.html',1,'']]],
-  ['jazzservices',['jazzServices',['../classjazzServices.html',1,'']]],
-  ['jazzsource',['JazzSource',['../classjazz__persistence_1_1JazzSource.html',1,'jazz_persistence']]],
-  ['jazzstringbuffer',['JazzStringBuffer',['../structjazz__datablocks_1_1JazzStringBuffer.html',1,'jazz_datablocks']]],
-  ['jazztensor',['JazzTensor',['../unionjazz__datablocks_1_1JazzTensor.html',1,'jazz_datablocks']]],
-  ['jazztree',['JazzTree',['../classjazz__containers_1_1JazzTree.html',1,'jazz_containers']]],
-  ['jazztreeitem',['JazzTreeItem',['../structjazz__containers_1_1JazzTreeItem.html',1,'jazz_containers']]],
-  ['jazzwebsource',['jazzWebSource',['../classjazzWebSource.html',1,'']]],
-  ['jzzapi',['jzzAPI',['../classjzzAPI.html',1,'']]],
-  ['jzzblockconv',['jzzBLOCKCONV',['../classjzzBLOCKCONV.html',1,'']]],
-  ['jzzblockheader',['jzzBlockHeader',['../structjzzBlockHeader.html',1,'']]],
-  ['jzzblocks',['jzzBLOCKS',['../classjzzBLOCKS.html',1,'']]]
+  ['instumentname',['instumentName',['../structinstumentName.html',1,'']]],
+  ['iprange',['IPrange',['../structIPrange.html',1,'']]]
 ];

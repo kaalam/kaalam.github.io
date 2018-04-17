@@ -71,6 +71,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__datablocks_1_1FilterSize.html">FilterSize</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Two names for the first two elements in a <a class="el" href="unionjazz__datablocks_1_1JazzTensorDim.html">JazzTensorDim</a>.  <a href="structjazz__datablocks_1_1FilterSize.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__datablocks_1_1JazzBlock.html">JazzBlock</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__datablocks_1_1JazzBlockHeader.html">JazzBlockHeader</a></td></tr>
@@ -84,15 +87,14 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionjazz__datablocks_1_1JazzTensor.html">JazzTensor</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tensor of cell size 1, 4 or 8.  <a href="unionjazz__datablocks_1_1JazzTensor.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionjazz__datablocks_1_1JazzTensorDim.html">JazzTensorDim</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a6aaf910265532463eb5989ecb7f11ed5"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="jazz01__commons_8h.html#a446a3f204afe93a99c1c74177a7d70cc">std::chrono::steady_clock::time_point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__datablocks.html#a6aaf910265532463eb5989ecb7f11ed5">TimePoint</a></td></tr>
 <tr class="memdesc:a6aaf910265532463eb5989ecb7f11ed5"><td class="mdescLeft">&#160;</td><td class="mdescRight">A time point stored as 8 bytes.  <a href="#a6aaf910265532463eb5989ecb7f11ed5">More...</a><br /></td></tr>
 <tr class="separator:a6aaf910265532463eb5989ecb7f11ed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6be0f103934e5d43c01d0ae5d77e0884"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__datablocks.html#a6be0f103934e5d43c01d0ae5d77e0884">JazzTensorDim</a>[<a class="el" href="jazz__datablocks_8h.html#ae28623e9cdce8dfb1b062557981e481a">JAZZ_MAX_TENSOR_RANK</a>]</td></tr>
-<tr class="memdesc:a6be0f103934e5d43c01d0ae5d77e0884"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dimensions for the Tensor. The product of all * (cell_type &amp; 0xff) &lt; 2Gb.  <a href="#a6be0f103934e5d43c01d0ae5d77e0884">More...</a><br /></td></tr>
-<tr class="separator:a6be0f103934e5d43c01d0ae5d77e0884"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad78607a9a502ae46d20496d82bc8286d"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; int, const char * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__datablocks.html#ad78607a9a502ae46d20496d82bc8286d">AllAttributes</a></td></tr>
 <tr class="separator:ad78607a9a502ae46d20496d82bc8286d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ba0482e46d92c3bbb63432430f3a7e3"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structjazz__datablocks_1_1JazzBlockHeader.html">JazzBlockHeader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__datablocks.html#a9ba0482e46d92c3bbb63432430f3a7e3">pJazzBlockHeader</a></td></tr>
@@ -131,22 +133,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6be0f103934e5d43c01d0ae5d77e0884"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6be0f103934e5d43c01d0ae5d77e0884">&#9670;&nbsp;</a></span>JazzTensorDim</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef int jazz_datablocks::JazzTensorDim[<a class="el" href="jazz__datablocks_8h.html#ae28623e9cdce8dfb1b062557981e481a">JAZZ_MAX_TENSOR_RANK</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Dimensions for the Tensor. The product of all * (cell_type &amp; 0xff) &lt; 2Gb. </p>
 
 </div>
 </div>

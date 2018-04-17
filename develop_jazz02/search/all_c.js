@@ -17,7 +17,7 @@ var searchData=
   ['leave_5freading',['leave_reading',['../classjazz__containers_1_1JazzBlockKeepr.html#a7055243afe401d0c700da93a2fcd249d',1,'jazz_containers::JazzBlockKeepr']]],
   ['leave_5fwriting',['leave_writing',['../classjazz__containers_1_1JazzBlockKeepr.html#adcd92c7aa1ff50aac470a3f297c4cfca',1,'jazz_containers::JazzBlockKeepr']]],
   ['leftauto',['LEFTAUTO',['../jazz__logger_8cpp.html#a3f19267d6d0808dfc50809dde0a6947e',1,'LEFTAUTO():&#160;jazz_logger.cpp'],['../jazz__utils_8cpp.html#a3f19267d6d0808dfc50809dde0a6947e',1,'LEFTAUTO():&#160;jazz_utils.cpp']]],
-  ['length',['length',['../structjzzBlockHeader.html#a1a92953ce4723d8ab4d74515986ff97a',1,'jzzBlockHeader']]],
+  ['length',['length',['../structjzzBlockHeader.html#a1a92953ce4723d8ab4d74515986ff97a',1,'jzzBlockHeader::length()'],['../structjazz__datablocks_1_1FilterSize.html#a5426d9f5a5bed2015517bcac41935ac5',1,'jazz_datablocks::FilterSize::length()']]],
   ['length_5fna_5fas_5ftext',['LENGTH_NA_AS_TEXT',['../jazz__blockconv_8h.html#add13ccea0ef1a0e1e31f9c65a8b2021c',1,'jazz_blockconv.h']]],
   ['level',['level',['../structjazz__containers_1_1JazzQueueItem.html#aca3ebf95bf4562b25e3fdbfb97428d3d',1,'jazz_containers::JazzQueueItem']]],
   ['lglsxp',['LGLSXP',['../jazz01__commons_8h.html#aeec9a0dc48195fc54f3d029fa9d19a3c',1,'jazz01_commons.h']]],
