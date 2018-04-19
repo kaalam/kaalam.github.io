@@ -92,10 +92,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:abe2b78bf13f64f489862e1da60097f66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4adf158c62abe050e69d6bf75cf38f73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1AATBlockQueue.html#a4adf158c62abe050e69d6bf75cf38f73">remove_jazz_block</a> (<a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a> p_item)</td></tr>
 <tr class="separator:a4adf158c62abe050e69d6bf75cf38f73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af149bc9097819ae434d18adf98b2aeaa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1AATBlockQueue.html#af149bc9097819ae434d18adf98b2aeaa">highest_priority_item</a> (bool remove_it=false)</td></tr>
-<tr class="separator:af149bc9097819ae434d18adf98b2aeaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a8c179b6b78834397fc4fbd992dead2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1AATBlockQueue.html#a4a8c179b6b78834397fc4fbd992dead2">lowest_priority_item</a> (bool remove_it=false)</td></tr>
-<tr class="separator:a4a8c179b6b78834397fc4fbd992dead2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad25c0a009e3fed95b31ebbedda3789c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1AATBlockQueue.html#ad25c0a009e3fed95b31ebbedda3789c4">highest_priority_item</a> (bool lock_it)</td></tr>
+<tr class="separator:ad25c0a009e3fed95b31ebbedda3789c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a916bea9da6d4bbe9eafe4b12a4e65941"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1AATBlockQueue.html#a916bea9da6d4bbe9eafe4b12a4e65941">lowest_priority_item</a> (bool lock_it)</td></tr>
+<tr class="separator:a916bea9da6d4bbe9eafe4b12a4e65941"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accdbad56f4cc9f697ceb57135950c454"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1AATBlockQueue.html#accdbad56f4cc9f697ceb57135950c454">item_size</a> ()</td></tr>
 <tr class="memdesc:accdbad56f4cc9f697ceb57135950c454"><td class="mdescLeft">&#160;</td><td class="mdescRight">A virtual method returning the size of <a class="el" href="structjazz__containers_1_1JazzQueueItem.html">JazzQueueItem</a> that <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html">JazzBlockKeepr</a> needs for allocation.  <a href="#accdbad56f4cc9f697ceb57135950c454">More...</a><br /></td></tr>
 <tr class="separator:accdbad56f4cc9f697ceb57135950c454"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -227,8 +227,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="af149bc9097819ae434d18adf98b2aeaa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af149bc9097819ae434d18adf98b2aeaa">&#9670;&nbsp;</a></span>highest_priority_item()</h2>
+<a id="ad25c0a009e3fed95b31ebbedda3789c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad25c0a009e3fed95b31ebbedda3789c4">&#9670;&nbsp;</a></span>highest_priority_item()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -237,19 +237,20 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname"><a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a> jazz_containers::AATBlockQueue::highest_priority_item </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>remove_it</em> = <code>false</code></td><td>)</td>
+          <td class="paramname"><em>lock_it</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Aaa</p>
+<p>Return the <a class="el" href="structjazz__containers_1_1JazzQueueItem.html">JazzQueueItem</a> with the highest priority value in the <a class="el" href="classjazz__containers_1_1AATBlockQueue.html">AATBlockQueue</a></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">remove_it</td><td>Aaa</td></tr>
+    <tr><td class="paramname">lock_it</td><td>Locks the <a class="el" href="structjazz__containers_1_1JazzQueueItem.html">JazzQueueItem</a> to avoid it being selectd by another (possibly racing) <a class="el" href="classjazz__containers_1_1AATBlockQueue.html#ad25c0a009e3fed95b31ebbedda3789c4">highest_priority_item()</a> call. </td></tr>
   </table>
   </dd>
 </dl>
-<p>TODO: Document <a class="el" href="classjazz__containers_1_1AATBlockQueue.html#af149bc9097819ae434d18adf98b2aeaa">AATBlockQueue::highest_priority_item</a> </p>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to <a class="el" href="structjazz__containers_1_1JazzQueueItem.html">JazzQueueItem</a> holding the block or nullptr if there are no items in the <a class="el" href="classjazz__containers_1_1AATBlockQueue.html">AATBlockQueue</a>.</dd></dl>
+<p>This public method is thread safe, unlike the corresponding private method <a class="el" href="classjazz__containers_1_1AATBlockQueue.html#af683ce48f98244bdb3796c822ab75e64">highest_priority()</a>. The <a class="el" href="structjazz__containers_1_1JazzQueueItem.html">JazzQueueItem</a> has to be explicitely removed with <a class="el" href="classjazz__containers_1_1AATBlockQueue.html#a4adf158c62abe050e69d6bf75cf38f73">remove_jazz_block()</a> or unlocked with "JazzQueueItem.is_locked = false;" to make it findable again in case it is not removed. </p>
 
 </div>
 </div>
@@ -317,8 +318,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a4a8c179b6b78834397fc4fbd992dead2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a8c179b6b78834397fc4fbd992dead2">&#9670;&nbsp;</a></span>lowest_priority_item()</h2>
+<a id="a916bea9da6d4bbe9eafe4b12a4e65941"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a916bea9da6d4bbe9eafe4b12a4e65941">&#9670;&nbsp;</a></span>lowest_priority_item()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -327,19 +328,20 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname"><a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a> jazz_containers::AATBlockQueue::lowest_priority_item </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>remove_it</em> = <code>false</code></td><td>)</td>
+          <td class="paramname"><em>lock_it</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Aaa</p>
+<p>Return the <a class="el" href="structjazz__containers_1_1JazzQueueItem.html">JazzQueueItem</a> with the lowest priority value in the <a class="el" href="classjazz__containers_1_1AATBlockQueue.html">AATBlockQueue</a></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">remove_it</td><td>Aaa</td></tr>
+    <tr><td class="paramname">lock_it</td><td>Locks the <a class="el" href="structjazz__containers_1_1JazzQueueItem.html">JazzQueueItem</a> to avoid it being selectd by another (possibly racing) <a class="el" href="classjazz__containers_1_1AATBlockQueue.html#a916bea9da6d4bbe9eafe4b12a4e65941">lowest_priority_item()</a> call. </td></tr>
   </table>
   </dd>
 </dl>
-<p>TODO: Document <a class="el" href="classjazz__containers_1_1AATBlockQueue.html#a4a8c179b6b78834397fc4fbd992dead2">AATBlockQueue::lowest_priority_item</a> </p>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to <a class="el" href="structjazz__containers_1_1JazzQueueItem.html">JazzQueueItem</a> holding the block or nullptr if there are no items in the <a class="el" href="classjazz__containers_1_1AATBlockQueue.html">AATBlockQueue</a>.</dd></dl>
+<p>This public method is thread safe, unlike the corresponding private method <a class="el" href="classjazz__containers_1_1AATBlockQueue.html#a3f98227f0e15d1b7cd54982f8615c241">lowest_priority()</a>. The <a class="el" href="structjazz__containers_1_1JazzQueueItem.html">JazzQueueItem</a> has to be explicitely removed with <a class="el" href="classjazz__containers_1_1AATBlockQueue.html#a4adf158c62abe050e69d6bf75cf38f73">remove_jazz_block()</a> or unlocked with "JazzQueueItem.is_locked = false;" to make it findable again in case it is not removed. </p>
 
 </div>
 </div>
