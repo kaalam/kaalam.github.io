@@ -99,6 +99,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a67de2e7c2d3747ec5d2d54c4b94cd010"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab34ede7a4ae92dd4fffafded935ce099"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#ab34ede7a4ae92dd4fffafded935ce099">destroy_keeprs</a> ()</td></tr>
 <tr class="separator:ab34ede7a4ae92dd4fffafded935ce099"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a331553dabbcdef775a9c211526073543"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a331553dabbcdef775a9c211526073543">valid_block_identifier</a> (const char *p_id)</td></tr>
+<tr class="separator:a331553dabbcdef775a9c211526073543"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f2b8d51050935de749b31da4aaace5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__containers.html#ae756081452684556f7185bc90c579b02">pJazzBlockKeeprItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a2f2b8d51050935de749b31da4aaace5e">new_jazz_block</a> (const <a class="el" href="structjazz__containers_1_1JazzBlockIdentifier.html">JazzBlockIdentifier</a> *p_id, <a class="el" href="namespacejazz__datablocks.html#a2666df0f415ab9495304469e745adfda">pJazzBlock</a> p_as_block, <a class="el" href="namespacejazz__datablocks.html#a2666df0f415ab9495304469e745adfda">pJazzBlock</a> p_row_filter=nullptr, <a class="el" href="namespacejazz__datablocks.html#ad78607a9a502ae46d20496d82bc8286d">AllAttributes</a> *att=nullptr)</td></tr>
 <tr class="separator:a2f2b8d51050935de749b31da4aaace5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a8b4c8b47c8bfa2fb600061b578e9a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__containers.html#ae756081452684556f7185bc90c579b02">pJazzBlockKeeprItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a1a8b4c8b47c8bfa2fb600061b578e9a3">new_jazz_block</a> (const <a class="el" href="structjazz__containers_1_1JazzBlockIdentifier.html">JazzBlockIdentifier</a> *p_id, int cell_type, <a class="el" href="unionjazz__datablocks_1_1JazzTensorDim.html">JazzTensorDim</a> *dim, <a class="el" href="namespacejazz__datablocks.html#ad78607a9a502ae46d20496d82bc8286d">AllAttributes</a> *att, int fill_tensor=<a class="el" href="jazz__containers_8h.html#a71bf55da2249f5bc6310cfa9d06b82ea">JAZZ_FILL_NEW_WITH_NA</a>, bool *p_bool_filter=nullptr, int stringbuff_size=0, const char *p_text=nullptr, char eoln='\n')</td></tr>
@@ -126,6 +128,8 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:a477f2a5c350045b1377f35fe10eb43e7"><td class="memItemLeft" align="right" valign="top">std::basic_regex&lt; char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a477f2a5c350045b1377f35fe10eb43e7">block_id_rex</a> {<a class="el" href="jazz__containers_8h.html#a2bb73f8840d6a76bbe3bcd1e616cd61d">JAZZ_REGEX_VALIDATE_BLOCK_ID</a>}</td></tr>
+<tr class="separator:a477f2a5c350045b1377f35fe10eb43e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb73a566aac952101824d99602e4d3b8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#aeb73a566aac952101824d99602e4d3b8">keepr_item_size</a></td></tr>
 <tr class="separator:aeb73a566aac952101824d99602e4d3b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c526a30cfe1c39b93b334e3f3915bb0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a0c526a30cfe1c39b93b334e3f3915bb0">num_allocd_items</a></td></tr>
@@ -666,6 +670,39 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a331553dabbcdef775a9c211526073543"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a331553dabbcdef775a9c211526073543">&#9670;&nbsp;</a></span>valid_block_identifier()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool jazz_containers::JazzBlockKeepr::valid_block_identifier </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>p_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Validate a <a class="el" href="structjazz__containers_1_1JazzBlockIdentifier.html">JazzBlockIdentifier</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_id</td><td>A <a class="el" href="structjazz__containers_1_1JazzBlockIdentifier.html">JazzBlockIdentifier</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if p_id matches the regex JAZZ_REGEX_VALIDATE_BLOCK_ID </dd></dl>
+
+</div>
+</div>
 <h2 class="groupheader">Field Documentation</h2>
 <a id="a8b28bda1c23f0ec1fa6c9ca955dce52e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8b28bda1c23f0ec1fa6c9ca955dce52e">&#9670;&nbsp;</a></span>_buffer_lock_</h2>
@@ -678,6 +715,28 @@ Private Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="namespacejazz__containers.html#a5d342cd305e5915a4d6e4d7d3a6ee864">JazzLock</a> jazz_containers::JazzBlockKeepr::_buffer_lock_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a477f2a5c350045b1377f35fe10eb43e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a477f2a5c350045b1377f35fe10eb43e7">&#9670;&nbsp;</a></span>block_id_rex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::basic_regex&lt;char&gt; jazz_containers::JazzBlockKeepr::block_id_rex {<a class="el" href="jazz__containers_8h.html#a2bb73f8840d6a76bbe3bcd1e616cd61d">JAZZ_REGEX_VALIDATE_BLOCK_ID</a>}</td>
         </tr>
       </table>
   </td>

@@ -96,6 +96,8 @@ Functions</h2></td></tr>
 <tr class="separator:aa804bdf15b228c69c1c269c8bb5ef6e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61524a8077b58bf4be5ab97a3da67fd0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__utils.html#a61524a8077b58bf4be5ab97a3da67fd0">TenBitsAtAddress</a> (const char *str)</td></tr>
 <tr class="separator:a61524a8077b58bf4be5ab97a3da67fd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfde3dac8e163eac73bdf095661d06ba"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__utils.html#adfde3dac8e163eac73bdf095661d06ba">elapsed_us</a> (<a class="el" href="namespacejazz__datablocks.html#a6aaf910265532463eb5989ecb7f11ed5">jazz_datablocks::TimePoint</a> big_bang)</td></tr>
+<tr class="separator:adfde3dac8e163eac73bdf095661d06ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a5fb5b09995815e99446d2038d3b292a2"></a>
@@ -183,6 +185,40 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>The numebr of bytes in the string.</dd></dl>
 <p>The RFC <a href="http://www.ietf.org/rfc/rfc3629.txt">http://www.ietf.org/rfc/rfc3629.txt</a> says:</p>
 <p>Char. number range | UTF-8 octet sequence (hexadecimal) | (binary) -----------------&mdash;+------------------------------------------&mdash; 0000 0000-0000 007F | 0xxxxxxx 0000 0080-0000 07FF | 110xxxxx 10xxxxxx 0000 0800-0000 FFFF | 1110xxxx 10xxxxxx 10xxxxxx 0001 0000-0010 FFFF | 11110xxx 10xxxxxx 10xxxxxx 10xxxxxx </p>
+
+</div>
+</div>
+<a id="adfde3dac8e163eac73bdf095661d06ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfde3dac8e163eac73bdf095661d06ba">&#9670;&nbsp;</a></span>elapsed_us()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t jazz_utils::elapsed_us </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__datablocks.html#a6aaf910265532463eb5989ecb7f11ed5">jazz_datablocks::TimePoint</a>&#160;</td>
+          <td class="paramname"><em>big_bang</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return the time elapsed in microseconds as a 64 bit integer since a primordial event.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">big_bang</td><td>The primordial event </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The time elapsed in microseconds </dd></dl>
 
 </div>
 </div>

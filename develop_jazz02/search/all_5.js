@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['elapsed_5fus',['elapsed_us',['../namespacejazz__utils.html#adfde3dac8e163eac73bdf095661d06ba',1,'jazz_utils']]],
   ['empty',['EMPTY',['../structstring__buffer.html#a250a9fc5d8a0e29fd1e294926818b262',1,'string_buffer']]],
   ['enable_5frole_5fcreator',['enable_role_creator',['../structjazz__http__security.html#a9f6f3affe959c4d52aaa710a1b236ba1',1,'jazz_http_security']]],
   ['enable_5frole_5fdatawriter',['enable_role_datawriter',['../structjazz__http__security.html#a02c8acd295073dd9a9257252f82ad418',1,'jazz_http_security']]],

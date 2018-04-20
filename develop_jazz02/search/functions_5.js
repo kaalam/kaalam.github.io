@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['elapsed_5fus',['elapsed_us',['../namespacejazz__utils.html#adfde3dac8e163eac73bdf095661d06ba',1,'jazz_utils']]],
   ['enter_5fapi_5fcall',['enter_api_call',['../classjazzCommons.html#a0c22511e7268dc25ac76096e0070dc0c',1,'jazzCommons']]],
   ['enter_5fpersistence',['enter_persistence',['../classjazzCommons.html#a0514db83ac6aedafa4ae06153751524c',1,'jazzCommons']]],
   ['enter_5fr_5finterpreter',['enter_R_interpreter',['../classjazzCommons.html#abccd7f02e0987a5422a74b6a3bb10c38',1,'jazzCommons']]],

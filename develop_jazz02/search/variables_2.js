@@ -4,6 +4,7 @@ var searchData=
   ['block',['block',['../structURLattrib.html#aac3385a5ecedf6afc7d1cebd3f1cc683',1,'URLattrib']]],
   ['block_5fid',['block_id',['../structjazz__containers_1_1JazzBlockKeeprItem.html#abdbc5186a8674f49c12d0aa2eb10429b',1,'jazz_containers::JazzBlockKeeprItem']]],
   ['block_5fid64',['block_id64',['../structjazz__containers_1_1JazzBlockKeeprItem.html#ac66b8ae67466402ca8b064ff10bff853',1,'jazz_containers::JazzBlockKeeprItem']]],
+  ['block_5fid_5frex',['block_id_rex',['../classjazz__containers_1_1JazzBlockKeepr.html#a477f2a5c350045b1377f35fe10eb43e7',1,'jazz_containers::JazzBlockKeepr']]],
   ['block_5flang',['block_lang',['../classjazzWebSource.html#a1d6f0120458f98221ce6b045021989f2',1,'jazzWebSource']]],
   ['block_5fmime',['block_mime',['../classjazzWebSource.html#ab0a9080dd45c038fe8a3465d7197e938',1,'jazzWebSource']]],
   ['block_5fsource',['block_source',['../classjazzWebSource.html#ae33e476e97f5ca555c639236d7384f28',1,'jazzWebSource']]],
