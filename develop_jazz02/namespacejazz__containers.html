@@ -323,8 +323,42 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a7438ec89582c66065f42e22bd854d1c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7438ec89582c66065f42e22bd854d1c3">&#9670;&nbsp;</a></span>new_jazz_block() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__datablocks.html#a2666df0f415ab9495304469e745adfda">pJazzBlock</a> jazz_containers::new_jazz_block </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__datablocks.html#a2666df0f415ab9495304469e745adfda">pJazzBlock</a>&#160;</td>
+          <td class="paramname"><em>p_as_block</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacejazz__datablocks.html#a2666df0f415ab9495304469e745adfda">pJazzBlock</a>&#160;</td>
+          <td class="paramname"><em>p_row_filter</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacejazz__datablocks.html#ad78607a9a502ae46d20496d82bc8286d">AllAttributes</a> *&#160;</td>
+          <td class="paramname"><em>att</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aafaaf99bd96b4d9894e43e2349530d2b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aafaaf99bd96b4d9894e43e2349530d2b">&#9670;&nbsp;</a></span>new_jazz_block() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aafaaf99bd96b4d9894e43e2349530d2b">&#9670;&nbsp;</a></span>new_jazz_block() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -401,40 +435,6 @@ Functions</h2></td></tr>
 <p>NOTES: String buffer allocation should not be used to dynamically change attribute values. Attributes are inmutable and should be changed only creating a new block with new = new_jazz_block(p_as_block = old, att = new_att). String buffer allocation should only be used for cell_type == CELL_TYPE_JAZZ_STRING and either with stringbuff_size or with p_text (and eoln). If stringbuff_size is used, <a class="el" href="classjazz__datablocks_1_1JazzBlock.html#a76c7eea07bd355e2616afb6a7f1eb1cc">JazzBlock.set_string()</a> should be used afterwards. If p_text is used, the tensor is already filled and <a class="el" href="classjazz__datablocks_1_1JazzBlock.html#a76c7eea07bd355e2616afb6a7f1eb1cc">JazzBlock.set_string()</a> <b>should not</b> be called after that.</p>
 <p>OWNERSHIP: If you create a one shot block using <a class="el" href="namespacejazz__containers.html#ad8d3c3ca8b271aa014aace02595512f9">new_jazz_block()</a>, you earn the responsibility to free it with <a class="el" href="namespacejazz__containers.html#afcc220e7dce04f57627c007fb10aaa2d">free_jazz_block()</a>. This is not the normal way to create JazzBlocks, when you use a <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html">JazzBlockKeepr</a> descendant, that object will allocate and free the JazzBlocks automatically. The same applies to JazzBlocks created in the stack of a bebop program which are also managed automatically.</p>
 <dl class="section return"><dt>Returns</dt><dd>The new JazzBlock or nullptr if failed. </dd></dl>
-
-</div>
-</div>
-<a id="a7438ec89582c66065f42e22bd854d1c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7438ec89582c66065f42e22bd854d1c3">&#9670;&nbsp;</a></span>new_jazz_block() <span class="overload">[3/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacejazz__datablocks.html#a2666df0f415ab9495304469e745adfda">pJazzBlock</a> jazz_containers::new_jazz_block </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacejazz__datablocks.html#a2666df0f415ab9495304469e745adfda">pJazzBlock</a>&#160;</td>
-          <td class="paramname"><em>p_as_block</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacejazz__datablocks.html#a2666df0f415ab9495304469e745adfda">pJazzBlock</a>&#160;</td>
-          <td class="paramname"><em>p_row_filter</em> = <code>nullptr</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacejazz__datablocks.html#ad78607a9a502ae46d20496d82bc8286d">AllAttributes</a> *&#160;</td>
-          <td class="paramname"><em>att</em> = <code>nullptr</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>

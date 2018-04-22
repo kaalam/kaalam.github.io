@@ -12,6 +12,7 @@ var searchData=
   ['jazz_5ffill_5fnew_5fdont_5ffill',['JAZZ_FILL_NEW_DONT_FILL',['../jazz__containers_8h.html#a87b0fab1ae6af88c52de2cf6218cdd04',1,'jazz_containers.h']]],
   ['jazz_5ffill_5fnew_5fwith_5fna',['JAZZ_FILL_NEW_WITH_NA',['../jazz__containers_8h.html#a71bf55da2249f5bc6310cfa9d06b82ea',1,'jazz_containers.h']]],
   ['jazz_5ffill_5fnew_5fwith_5fzero',['JAZZ_FILL_NEW_WITH_ZERO',['../jazz__containers_8h.html#a9b7280ac9a182fc3b138b78ae9859eda',1,'jazz_containers.h']]],
+  ['jazz_5ffill_5fwith_5ftextfile',['JAZZ_FILL_WITH_TEXTFILE',['../jazz__containers_8h.html#a94e9ec2904e7c9a6c605acfdfe4ef373',1,'jazz_containers.h']]],
   ['jazz_5ffilter_5ftype_5f',['JAZZ_FILTER_TYPE_',['../jazz__datablocks_8h.html#a361292574f794379a0c947fafa71d5da',1,'jazz_datablocks.h']]],
   ['jazz_5ffilter_5ftype_5fboolean',['JAZZ_FILTER_TYPE_BOOLEAN',['../jazz__datablocks_8h.html#abd52049a19424da624e2d8493cf6e1d5',1,'jazz_datablocks.h']]],
   ['jazz_5ffilter_5ftype_5finteger',['JAZZ_FILTER_TYPE_INTEGER',['../jazz__datablocks_8h.html#a3597ae100fc7841ee52c27b15d90dbd3',1,'jazz_datablocks.h']]],
