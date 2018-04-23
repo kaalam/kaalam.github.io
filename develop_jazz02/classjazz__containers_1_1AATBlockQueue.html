@@ -136,6 +136,8 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:afecc18ef12f0c627c2fcaaf4a13967e7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1AATBlockQueue.html#afecc18ef12f0c627c2fcaaf4a13967e7">discrete_recency</a> = 0</td></tr>
+<tr class="separator:afecc18ef12f0c627c2fcaaf4a13967e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2facc216e67d746fb6815cb012050e27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1AATBlockQueue.html#a2facc216e67d746fb6815cb012050e27">p_queue_root</a> = nullptr</td></tr>
 <tr class="separator:a2facc216e67d746fb6815cb012050e27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -183,7 +185,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Remove links tha skip level in an AA subtree</p>
+<p>Remove links that skip level in an AA subtree</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">p_item</td><td>A tree for which we want to remove links that skip levels.</td></tr>
@@ -549,14 +551,14 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Aaa</p>
+<p>Evaluate the priority of a <a class="el" href="structjazz__containers_1_1JazzQueueItem.html">JazzQueueItem</a></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">p_item</td><td>Aaa</td></tr>
+    <tr><td class="paramname">p_item</td><td>A pointer to the <a class="el" href="structjazz__containers_1_1JazzQueueItem.html">JazzQueueItem</a> whose priority is to be set.</td></tr>
   </table>
   </dd>
 </dl>
-<p>TODO: Document <a class="el" href="classjazz__containers_1_1AATBlockQueue.html#ab912ed036482a03927efc4f9bfeaa102">AATBlockQueue::set_item_priority</a> </p>
+<p>Each time a new <a class="el" href="structjazz__containers_1_1JazzQueueItem.html">JazzQueueItem</a> is added to the <a class="el" href="classjazz__containers_1_1AATBlockQueue.html">AATBlockQueue</a> this virtual method will be called. The method does not return anything, so it should set p_item-&gt;priority = some_computation(). Typically, the computation will involve the recency, the size, times_used and time_to_build, etc. </p>
 
 </div>
 </div>
@@ -631,6 +633,28 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Field Documentation</h2>
+<a id="afecc18ef12f0c627c2fcaaf4a13967e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afecc18ef12f0c627c2fcaaf4a13967e7">&#9670;&nbsp;</a></span>discrete_recency</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double jazz_containers::AATBlockQueue::discrete_recency = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a2facc216e67d746fb6815cb012050e27"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2facc216e67d746fb6815cb012050e27">&#9670;&nbsp;</a></span>p_queue_root</h2>
 
