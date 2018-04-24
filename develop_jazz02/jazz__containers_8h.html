@@ -220,8 +220,8 @@ Typedefs</h2></td></tr>
 <tr class="memitem:af198c216f3a72185e308f79a1ff8e8c7"><td class="memItemLeft" align="right" valign="top">typedef struct JazzQueueItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">jazz_containers::pJazzQueueItem</a></td></tr>
 <tr class="memdesc:af198c216f3a72185e308f79a1ff8e8c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to a <a class="el" href="structjazz__containers_1_1JazzQueueItem.html">JazzQueueItem</a>.  <a href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">More...</a><br /></td></tr>
 <tr class="separator:af198c216f3a72185e308f79a1ff8e8c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7f74b24e90b7f70a7112ca657c7244d"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; JazzBlockId64, const JazzBlockKeeprItem * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__containers.html#ac7f74b24e90b7f70a7112ca657c7244d">jazz_containers::JazzBlockMap</a></td></tr>
-<tr class="separator:ac7f74b24e90b7f70a7112ca657c7244d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e20fc693a5fa1f77c19da072852a9e6"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; JazzBlockId64, pJazzQueueItem &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__containers.html#a0e20fc693a5fa1f77c19da072852a9e6">jazz_containers::JazzBlockMap</a></td></tr>
+<tr class="separator:a0e20fc693a5fa1f77c19da072852a9e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d342cd305e5915a4d6e4d7d3a6ee864"><td class="memItemLeft" align="right" valign="top">typedef std::atomic&lt; int32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__containers.html#a5d342cd305e5915a4d6e4d7d3a6ee864">jazz_containers::JazzLock</a></td></tr>
 <tr class="separator:a5d342cd305e5915a4d6e4d7d3a6ee864"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -235,6 +235,8 @@ Functions</h2></td></tr>
 <tr class="separator:a6a7ba3e2d868ec1964019819225b1590"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcc220e7dce04f57627c007fb10aaa2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__containers.html#afcc220e7dce04f57627c007fb10aaa2d">jazz_containers::free_jazz_block</a> (<a class="el" href="jazz01__commons_8h.html#a81770bae7c18abbb26281974e3d1c296">pJazzBlock</a> &amp;p_block)</td></tr>
 <tr class="separator:afcc220e7dce04f57627c007fb10aaa2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a852658d6012d4ff551db778a290842"><td class="memItemLeft" align="right" valign="top">JazzBlockId64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__containers.html#a1a852658d6012d4ff551db778a290842">jazz_containers::hash_block_id</a> (const char *p_id)</td></tr>
+<tr class="separator:a1a852658d6012d4ff551db778a290842"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ab14a8948f9b3506f1bb5cc22c37478bf"></a>
