@@ -124,10 +124,19 @@ Macros</h2></td></tr>
 <tr class="memitem:a21bc5d88bc4d95abeb831b74e4d49848"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__containers_8h.html#a21bc5d88bc4d95abeb831b74e4d49848">JAZZ_BLOCK_ID_PREFIX_DISTRIB</a>&#160;&#160;&#160;'/'</td></tr>
 <tr class="memdesc:a21bc5d88bc4d95abeb831b74e4d49848"><td class="mdescLeft">&#160;</td><td class="mdescRight">First char of a DISTRIBUTED JazzBlockIdentifier.  <a href="#a21bc5d88bc4d95abeb831b74e4d49848">More...</a><br /></td></tr>
 <tr class="separator:a21bc5d88bc4d95abeb831b74e4d49848"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a354f5b4a6ee119e61ea9a3ebb0c1dbe7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__containers_8h.html#a354f5b4a6ee119e61ea9a3ebb0c1dbe7">JAZZ_LOCK_RETRY_NUMTIMES</a>&#160;&#160;&#160;100</td></tr>
-<tr class="memdesc:a354f5b4a6ee119e61ea9a3ebb0c1dbe7"><td class="mdescLeft">&#160;</td><td class="mdescRight"><h1>immediate retries if lock fails before this_thread::yield();</h1>
- <a href="#a354f5b4a6ee119e61ea9a3ebb0c1dbe7">More...</a><br /></td></tr>
-<tr class="separator:a354f5b4a6ee119e61ea9a3ebb0c1dbe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26508184930b91db70b62cf6ad63ffb2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__containers_8h.html#a26508184930b91db70b62cf6ad63ffb2">JAZZ_LOCK_READING_RETRY_NUMTIMES</a>&#160;&#160;&#160;100</td></tr>
+<tr class="memdesc:a26508184930b91db70b62cf6ad63ffb2"><td class="mdescLeft">&#160;</td><td class="mdescRight"><h1>retries when lock fails (reading) before this_thread::yield();</h1>
+ <a href="#a26508184930b91db70b62cf6ad63ffb2">More...</a><br /></td></tr>
+<tr class="separator:a26508184930b91db70b62cf6ad63ffb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af33e452c18550a782242032ecbb7c06b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__containers_8h.html#af33e452c18550a782242032ecbb7c06b">JAZZ_LOCK_WRITING_RETRY_NUMTIMES</a>&#160;&#160;&#160;100</td></tr>
+<tr class="memdesc:af33e452c18550a782242032ecbb7c06b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><h1>retries when lock fails (writing) before this_thread::yield();</h1>
+ <a href="#af33e452c18550a782242032ecbb7c06b">More...</a><br /></td></tr>
+<tr class="separator:af33e452c18550a782242032ecbb7c06b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22a098d20edb34634f0bb118f6e38c88"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__containers_8h.html#a22a098d20edb34634f0bb118f6e38c88">JAZZ_LOCK_KICKING_RETRY_NUMTIMES</a>&#160;&#160;&#160;1000</td></tr>
+<tr class="separator:a22a098d20edb34634f0bb118f6e38c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48ebe163c3f17a33a983418bad751115"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__containers_8h.html#a48ebe163c3f17a33a983418bad751115">JAZZ_LOCK_WEIGHT_OF_WRITE</a>&#160;&#160;&#160;46341</td></tr>
+<tr class="memdesc:a48ebe163c3f17a33a983418bad751115"><td class="mdescLeft">&#160;</td><td class="mdescRight">(Approx) sqrt(2^31) == # simultaneous readers to outweight a writer == # simultaneous writers to force an overflow  <a href="#a48ebe163c3f17a33a983418bad751115">More...</a><br /></td></tr>
+<tr class="separator:a48ebe163c3f17a33a983418bad751115"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a605b7b4a805b2a01a4a0f978bede2640"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__containers_8h.html#a605b7b4a805b2a01a4a0f978bede2640">JAZZ_FILL_</a></td></tr>
 <tr class="memdesc:a605b7b4a805b2a01a4a0f978bede2640"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values for argument fill_tensor of <a class="el" href="namespacejazz__containers.html#ad8d3c3ca8b271aa014aace02595512f9">new_jazz_block()</a>  <a href="#a605b7b4a805b2a01a4a0f978bede2640">More...</a><br /></td></tr>
 <tr class="separator:a605b7b4a805b2a01a4a0f978bede2640"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -648,19 +657,67 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a354f5b4a6ee119e61ea9a3ebb0c1dbe7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a354f5b4a6ee119e61ea9a3ebb0c1dbe7">&#9670;&nbsp;</a></span>JAZZ_LOCK_RETRY_NUMTIMES</h2>
+<a id="a22a098d20edb34634f0bb118f6e38c88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22a098d20edb34634f0bb118f6e38c88">&#9670;&nbsp;</a></span>JAZZ_LOCK_KICKING_RETRY_NUMTIMES</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define JAZZ_LOCK_RETRY_NUMTIMES&#160;&#160;&#160;100</td>
+          <td class="memname">#define JAZZ_LOCK_KICKING_RETRY_NUMTIMES&#160;&#160;&#160;1000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<h1>retries when writing ok but with readers before this_thread::yield();</h1>
+
+</div>
+</div>
+<a id="a26508184930b91db70b62cf6ad63ffb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26508184930b91db70b62cf6ad63ffb2">&#9670;&nbsp;</a></span>JAZZ_LOCK_READING_RETRY_NUMTIMES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JAZZ_LOCK_READING_RETRY_NUMTIMES&#160;&#160;&#160;100</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p><h1>immediate retries if lock fails before this_thread::yield();</h1>
+<p><h1>retries when lock fails (reading) before this_thread::yield();</h1>
+</p>
+
+</div>
+</div>
+<a id="a48ebe163c3f17a33a983418bad751115"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48ebe163c3f17a33a983418bad751115">&#9670;&nbsp;</a></span>JAZZ_LOCK_WEIGHT_OF_WRITE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JAZZ_LOCK_WEIGHT_OF_WRITE&#160;&#160;&#160;46341</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>(Approx) sqrt(2^31) == # simultaneous readers to outweight a writer == # simultaneous writers to force an overflow </p>
+
+</div>
+</div>
+<a id="af33e452c18550a782242032ecbb7c06b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af33e452c18550a782242032ecbb7c06b">&#9670;&nbsp;</a></span>JAZZ_LOCK_WRITING_RETRY_NUMTIMES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JAZZ_LOCK_WRITING_RETRY_NUMTIMES&#160;&#160;&#160;100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><h1>retries when lock fails (writing) before this_thread::yield();</h1>
 </p>
 
 </div>

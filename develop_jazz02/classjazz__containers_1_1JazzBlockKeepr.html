@@ -269,7 +269,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Enter a thread exclusion code area for reading This function must be called by all the readers that enter a thread exclusion area. In this context, a reader means a thread that is incompatible with threads modifying data (writers) but any number of readers can enter the code area at the same time.</p>
 <p>It is mandatory that all paths exiting the area call <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a7055243afe401d0c700da93a2fcd249d">leave_reading()</a> as soon as the exclusion no longer applies.</p>
-<p>This method never returns on failure! The simplest failure is a writer not releasing the lock. </p><pre class="fragment">\param _lock_ The lock controlling the exclusion area. (Must be initialized as 0 before using.)</pre> 
+<p><b>This method never returns on failure!!</b> The most probable failure is a writer not releasing the lock. </p><pre class="fragment">\param _lock_ The lock controlling the exclusion area. (Must be initialized as 0 before using.)</pre> 
 </div>
 </div>
 <a id="a1be4317486665b35d3419eabe7abb059"></a>
@@ -297,7 +297,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Enter a thread exclusion code area for writing This function must be called by all the writers that enter a thread exclusion area. In this context, a writer means a thread that is incompatible with any other threads (readers or other writers).</p>
 <p>It is mandatory that all paths exiting the area call <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#adcd92c7aa1ff50aac470a3f297c4cfca">leave_writing()</a> as soon as the exclusion no longer applies.</p>
-<p>This method never returns on failure! The simplest failure is any other thread not releasing the lock. </p><pre class="fragment">\param _lock_ The lock controlling the exclusion area. (Must be initialized as 0 before using.)</pre> 
+<p><b>This method never returns on failure!!</b> The most probable failure is any other thread not releasing the lock. </p><pre class="fragment">\param _lock_ The lock controlling the exclusion area. (Must be initialized as 0 before using.)</pre> 
 </div>
 </div>
 <a id="a4dfe309df7ab2d0a2b347a23c076927e"></a>
