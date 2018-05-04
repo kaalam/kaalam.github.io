@@ -25,13 +25,16 @@
 <link href="../pkgdown.css" rel="stylesheet">
 <script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-  
-  
+
+
+
 <meta property="og:title" content="Get a data block as an R string — get_block_as_string" />
 
 <meta property="og:description" content="Converts a data block into an R string with an sprintf compatible format string controlling
 the precise output format." />
 <meta name="twitter:card" content="summary" />
+
+
 <!-- mathjax -->
 <script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
@@ -54,8 +57,12 @@ the precise output format." />
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="../index.html">rjazz</a>
+      <span class="navbar-brand">
+        <a class="navbar-link" href="../index.html">rjazz</a>
+        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">0.2.4.99</span>
+      </span>
     </div>
+
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
@@ -72,6 +79,7 @@ the precise output format." />
       <ul class="nav navbar-nav navbar-right">
         
       </ul>
+      
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
@@ -79,20 +87,24 @@ the precise output format." />
       
       </header>
 
-      <div class="row">
+<div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Get a data block as an R string</h1>
+    
+    <div class="hidden name"><code>get_block_as_string.Rd</code></div>
     </div>
 
+    <div class="ref-description">
     
     <p>Converts a data block into an R string with an sprintf compatible format string controlling
 the precise output format.</p>
     
+    </div>
 
     <pre class="usage"><span class='fu'>get_block_as_string</span>(<span class='no'>source</span>, <span class='no'>block_key</span>, <span class='no'>fmt</span>, <span class='kw'>host</span> <span class='kw'>=</span> <span class='no'>.host.</span>)</pre>
     
-    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
@@ -202,6 +214,8 @@ delete_source('demo_types')
 
       </footer>
    </div>
+
+  
 
   </body>
 </html>

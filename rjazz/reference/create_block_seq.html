@@ -25,14 +25,17 @@
 <link href="../pkgdown.css" rel="stylesheet">
 <script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-  
-  
+
+
+
 <meta property="og:title" content="Create a data block in the server with a simple linear sequence — create_block_seq" />
 
 <meta property="og:description" content="Creates an (integer or real) data block in the server and stores it in the persistence with a simple linear sequence. The type of the block can later
 be changed to a compatible type: BLOCKTYPE_C_INTEGER to BLOCKTYPE_C_FACTOR or BLOCKTYPE_C_GRADE and BLOCKTYPE_C_REAL to BLOCKTYPE_C_TIMESEC by a
 later call to set_compatible_data_type()." />
 <meta name="twitter:card" content="summary" />
+
+
 <!-- mathjax -->
 <script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
@@ -55,8 +58,12 @@ later call to set_compatible_data_type()." />
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="../index.html">rjazz</a>
+      <span class="navbar-brand">
+        <a class="navbar-link" href="../index.html">rjazz</a>
+        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">0.2.4.99</span>
+      </span>
     </div>
+
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
@@ -73,6 +80,7 @@ later call to set_compatible_data_type()." />
       <ul class="nav navbar-nav navbar-right">
         
       </ul>
+      
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
@@ -80,21 +88,25 @@ later call to set_compatible_data_type()." />
       
       </header>
 
-      <div class="row">
+<div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Create a data block in the server with a simple linear sequence</h1>
+    
+    <div class="hidden name"><code>create_block_seq.Rd</code></div>
     </div>
 
+    <div class="ref-description">
     
     <p>Creates an (integer or real) data block in the server and stores it in the persistence with a simple linear sequence. The type of the block can later
 be changed to a compatible type: BLOCKTYPE_C_INTEGER to BLOCKTYPE_C_FACTOR or BLOCKTYPE_C_GRADE and BLOCKTYPE_C_REAL to BLOCKTYPE_C_TIMESEC by a
 later call to set_compatible_data_type().</p>
     
+    </div>
 
     <pre class="usage"><span class='fu'>create_block_seq</span>(<span class='no'>source</span>, <span class='no'>block_key</span>, <span class='no'>from</span>, <span class='no'>to</span>, <span class='kw'>by</span> <span class='kw'>=</span> <span class='fl'>1</span>, <span class='kw'>host</span> <span class='kw'>=</span> <span class='no'>.host.</span>)</pre>
     
-    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
@@ -177,6 +189,8 @@ later call to set_compatible_data_type().</p>
 
       </footer>
    </div>
+
+  
 
   </body>
 </html>

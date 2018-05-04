@@ -25,12 +25,15 @@
 <link href="../pkgdown.css" rel="stylesheet">
 <script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-  
-  
+
+
+
 <meta property="og:title" content="List all the web sources on the Jazz server — list_web_sources" />
 
 <meta property="og:description" content="Lists all the web sources on the Jazz server. All www resource links and urls are grouped under a "web source" which is just a name to allow removing them with a single call." />
 <meta name="twitter:card" content="summary" />
+
+
 <!-- mathjax -->
 <script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
@@ -53,8 +56,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="../index.html">rjazz</a>
+      <span class="navbar-brand">
+        <a class="navbar-link" href="../index.html">rjazz</a>
+        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">0.2.4.99</span>
+      </span>
     </div>
+
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
@@ -71,6 +78,7 @@
       <ul class="nav navbar-nav navbar-right">
         
       </ul>
+      
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
@@ -78,19 +86,23 @@
       
       </header>
 
-      <div class="row">
+<div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>List all the web sources on the Jazz server</h1>
+    
+    <div class="hidden name"><code>list_web_sources.Rd</code></div>
     </div>
 
+    <div class="ref-description">
     
     <p>Lists all the web sources on the Jazz server. All www resource links and urls are grouped under a "web source" which is just a name to allow removing them with a single call.</p>
     
+    </div>
 
     <pre class="usage"><span class='fu'>list_web_sources</span>(<span class='kw'>host</span> <span class='kw'>=</span> <span class='no'>.host.</span>)</pre>
     
-    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
@@ -142,6 +154,8 @@
 
       </footer>
    </div>
+
+  
 
   </body>
 </html>

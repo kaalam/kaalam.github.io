@@ -25,13 +25,16 @@
 <link href="../pkgdown.css" rel="stylesheet">
 <script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-  
-  
+
+
+
 <meta property="og:title" content="Write flags into a block's header — put_block_flags" />
 
 <meta property="og:description" content="Writes a 32 bit integer named flags into a block's header. The server does not use that value
 in the block API." />
 <meta name="twitter:card" content="summary" />
+
+
 <!-- mathjax -->
 <script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
@@ -54,8 +57,12 @@ in the block API." />
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="../index.html">rjazz</a>
+      <span class="navbar-brand">
+        <a class="navbar-link" href="../index.html">rjazz</a>
+        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">0.2.4.99</span>
+      </span>
     </div>
+
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
@@ -72,6 +79,7 @@ in the block API." />
       <ul class="nav navbar-nav navbar-right">
         
       </ul>
+      
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
@@ -79,20 +87,24 @@ in the block API." />
       
       </header>
 
-      <div class="row">
+<div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Write flags into a block's header</h1>
+    
+    <div class="hidden name"><code>put_block_flags.Rd</code></div>
     </div>
 
+    <div class="ref-description">
     
     <p>Writes a 32 bit integer named flags into a block's header. The server does not use that value
 in the block API.</p>
     
+    </div>
 
     <pre class="usage"><span class='fu'>put_block_flags</span>(<span class='no'>source</span>, <span class='no'>block_key</span>, <span class='no'>flags</span>, <span class='kw'>host</span> <span class='kw'>=</span> <span class='no'>.host.</span>)</pre>
     
-    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
@@ -201,6 +213,8 @@ delete_source('demo_types')
 
       </footer>
    </div>
+
+  
 
   </body>
 </html>
