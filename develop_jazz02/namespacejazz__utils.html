@@ -84,8 +84,8 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:abb81e9f3d33366f54ea987e52a438fbb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__utils.html#abb81e9f3d33366f54ea987e52a438fbb">CountBytesFromUtf8</a> (char *buff, int len)</td></tr>
-<tr class="separator:abb81e9f3d33366f54ea987e52a438fbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bbf0485f152c6bf8f8e8d6413288d20"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__utils.html#a6bbf0485f152c6bf8f8e8d6413288d20">CountBytesFromUtf8</a> (char *buff, int length)</td></tr>
+<tr class="separator:a6bbf0485f152c6bf8f8e8d6413288d20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d424cd33d74c1d3f7c2df72165f81ff"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__utils.html#a3d424cd33d74c1d3f7c2df72165f81ff">ExpandEscapeSequences</a> (char *buff)</td></tr>
 <tr class="separator:a3d424cd33d74c1d3f7c2df72165f81ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ccc5223d3b9244dac4e77e3c5bbd0d0"><td class="memItemLeft" align="right" valign="top">pid_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__utils.html#a2ccc5223d3b9244dac4e77e3c5bbd0d0">FindProcessIdByName</a> (const char *name)</td></tr>
@@ -149,8 +149,8 @@ Functions</h2></td></tr>
 \return String without space or tab.</pre> 
 </div>
 </div>
-<a id="abb81e9f3d33366f54ea987e52a438fbb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb81e9f3d33366f54ea987e52a438fbb">&#9670;&nbsp;</a></span>CountBytesFromUtf8()</h2>
+<a id="a6bbf0485f152c6bf8f8e8d6413288d20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bbf0485f152c6bf8f8e8d6413288d20">&#9670;&nbsp;</a></span>CountBytesFromUtf8()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -165,7 +165,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -174,15 +174,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Count the number of bytes required by an utf-8 string of len characters.</p>
+<p>Count the number of bytes required by an utf-8 string of length characters.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">buff</td><td>The string (not necessarily null-terminated) </td></tr>
-    <tr><td class="paramname">len</td><td>The number of characters in the string</td></tr>
+    <tr><td class="paramname">length</td><td>The number of characters in the string</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The numebr of bytes in the string.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of bytes in the string.</dd></dl>
 <p>The RFC <a href="http://www.ietf.org/rfc/rfc3629.txt">http://www.ietf.org/rfc/rfc3629.txt</a> says:</p>
 <p>Char. number range | UTF-8 octet sequence (hexadecimal) | (binary) -----------------&mdash;+------------------------------------------&mdash; 0000 0000-0000 007F | 0xxxxxxx 0000 0080-0000 07FF | 110xxxxx 10xxxxxx 0000 0800-0000 FFFF | 1110xxxx 10xxxxxx 10xxxxxx 0001 0000-0010 FFFF | 11110xxx 10xxxxxx 10xxxxxx 10xxxxxx </p>
 
@@ -237,11 +237,11 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Expand escaped strings at runtime.</p>
+<p>Expand escaped strings at run-time.</p>
 <p>Public Domain by Jerry Coffin.</p>
-<p>Interprets a string in a manner similar to that the compiler does string literals in a program. All escape sequences are longer than their translated equivalant, so the string is translated in place and either remains the same length or becomes shorter.</p>
+<p>Interprets a string in a manner similar to that the compiler does string literals in a program. All escape sequences are longer than their translated equivalent, so the string is translated in place and either remains the same length or becomes shorter.</p>
 <p>April 17 tests built and compliant with:</p>
-<p>\a 07 Alert (Beep, Bell) (added in C89)[1] \b 08 Backspace \f 0C Formfeed \n 0A Newline (Line Feed); see notes below \r 0D Carriage Return \t 09 Horizontal Tab \v 0B Vertical Tab \\ 5C Backslash \' 27 Single quotation mark \" 22 Double quotation mark \? 3F Question mark (used to avoid trigraphs) \nnn The byte whose numerical value is given by nnn interpreted as an octal number \xhh The byte whose numerical value is given by hh… interpreted as a hexadecimal number</p>
+<p>\a 07 Alert (Beep, Bell) (added in C89)[1] \b 08 Backspace \f 0C Form-feed \n 0A Newline (Line Feed); see notes below \r 0D Carriage Return \t 09 Horizontal Tab \v 0B Vertical Tab \\ 5C Backslash \' 27 Single quotation mark \" 22 Double quotation mark \? 3F Question mark (used to avoid trigraphs) \nnn The byte whose numerical value is given by nnn interpreted as an octal number \xhh The byte whose numerical value is given by hh… interpreted as a hexadecimal number</p>
 <p><a href="https://en.wikipedia.org/wiki/Escape_sequences_in_C">https://en.wikipedia.org/wiki/Escape_sequences_in_C</a> </p>
 
 </div>
