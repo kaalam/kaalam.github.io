@@ -14,8 +14,8 @@ var searchData=
   ['leave_5fapi_5fcall',['leave_api_call',['../classjazzCommons.html#a95457f82eaaa5dcb1fb3e7370a9f1b30',1,'jazzCommons']]],
   ['leave_5fpersistence',['leave_persistence',['../classjazzCommons.html#a7bf915f25c3ec4ee0b5ef83ff1584c7a',1,'jazzCommons']]],
   ['leave_5fr_5finterpreter',['leave_R_interpreter',['../classjazzCommons.html#a13de0bb7c29b474cd2e759286893425d',1,'jazzCommons']]],
-  ['leave_5freading',['leave_reading',['../classjazz__containers_1_1JazzBlockKeepr.html#a7055243afe401d0c700da93a2fcd249d',1,'jazz_containers::JazzBlockKeepr']]],
-  ['leave_5fwriting',['leave_writing',['../classjazz__containers_1_1JazzBlockKeepr.html#adcd92c7aa1ff50aac470a3f297c4cfca',1,'jazz_containers::JazzBlockKeepr']]],
+  ['leave_5freading',['leave_reading',['../classjazz__containers_1_1JazzBlockKeepr.html#ac359ee597a82f6d7b243622361626f6f',1,'jazz_containers::JazzBlockKeepr']]],
+  ['leave_5fwriting',['leave_writing',['../classjazz__containers_1_1JazzBlockKeepr.html#a8696ec07b0b2d902a6992b0e0533c8cb',1,'jazz_containers::JazzBlockKeepr']]],
   ['leftauto',['LEFTAUTO',['../jazz__logger_8cpp.html#a3f19267d6d0808dfc50809dde0a6947e',1,'LEFTAUTO():&#160;jazz_logger.cpp'],['../jazz__utils_8cpp.html#a3f19267d6d0808dfc50809dde0a6947e',1,'LEFTAUTO():&#160;jazz_utils.cpp']]],
   ['length',['length',['../structjzzBlockHeader.html#a1a92953ce4723d8ab4d74515986ff97a',1,'jzzBlockHeader::length()'],['../structjazz__datablocks_1_1FilterSize.html#a5426d9f5a5bed2015517bcac41935ac5',1,'jazz_datablocks::FilterSize::length()']]],
   ['length_5fna_5fas_5ftext',['LENGTH_NA_AS_TEXT',['../jazz__blockconv_8h.html#add13ccea0ef1a0e1e31f9c65a8b2021c',1,'jazz_blockconv.h']]],
@@ -49,6 +49,5 @@ var searchData=
   ['logfilename',['logfilename',['../classjazzCommons.html#af36e71676c63a46b7eaa44ff9574128c',1,'jazzCommons']]],
   ['logger_5fclose',['logger_close',['../classjazzCommons.html#ae44ae611a2aa4803ac62d612cdf6d2a0',1,'jazzCommons']]],
   ['logger_5finit',['logger_init',['../classjazzCommons.html#a9e25e6836dab1140d0137ccca85c895a',1,'jazzCommons']]],
-  ['lowest_5fpriority',['lowest_priority',['../classjazz__containers_1_1AATBlockQueue.html#a3f98227f0e15d1b7cd54982f8615c241',1,'jazz_containers::AATBlockQueue']]],
-  ['lowest_5fpriority_5fitem',['lowest_priority_item',['../classjazz__containers_1_1AATBlockQueue.html#a916bea9da6d4bbe9eafe4b12a4e65941',1,'jazz_containers::AATBlockQueue']]]
+  ['lowest_5fpriority',['lowest_priority',['../classjazz__containers_1_1AATBlockQueue.html#a3f98227f0e15d1b7cd54982f8615c241',1,'jazz_containers::AATBlockQueue']]]
 ];
