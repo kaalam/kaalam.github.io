@@ -108,6 +108,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a587d8e4ad3e60c204d93d453857a3d27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80f277f771248037490f958d6dbb18ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__containers.html#ae756081452684556f7185bc90c579b02">pJazzBlockKeeprItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a80f277f771248037490f958d6dbb18ff">new_jazz_block</a> (const <a class="el" href="structjazz__containers_1_1JazzBlockIdentifier.html">JazzBlockIdentifier</a> *p_id, int cell_type, int *dim, <a class="el" href="namespacejazz__datablocks.html#ad78607a9a502ae46d20496d82bc8286d">AllAttributes</a> *att, int fill_tensor=<a class="el" href="jazz__containers_8h.html#a71bf55da2249f5bc6310cfa9d06b82ea">JAZZ_FILL_NEW_WITH_NA</a>, bool *p_bool_filter=nullptr, int stringbuff_size=0, const char *p_text=nullptr, char eoln='\n')</td></tr>
 <tr class="separator:a80f277f771248037490f958d6dbb18ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40804c27ef979e5b5c2bbacb390dbd85"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__containers.html#ae756081452684556f7185bc90c579b02">pJazzBlockKeeprItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a40804c27ef979e5b5c2bbacb390dbd85">last_item_in</a> ()</td></tr>
+<tr class="separator:a40804c27ef979e5b5c2bbacb390dbd85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a861b0f84f1ed796682dcb67ea43d3906"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a861b0f84f1ed796682dcb67ea43d3906">free_jazz_block</a> (<a class="el" href="namespacejazz__containers.html#ae756081452684556f7185bc90c579b02">pJazzBlockKeeprItem</a> p_item)</td></tr>
 <tr class="separator:a861b0f84f1ed796682dcb67ea43d3906"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4dfe309df7ab2d0a2b347a23c076927e"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a4dfe309df7ab2d0a2b347a23c076927e">item_size</a> ()</td></tr>
@@ -387,6 +389,33 @@ Private Attributes</h2></td></tr>
 <p>A virtual method returning the size of the <a class="el" href="structjazz__containers_1_1JazzBlockKeeprItem.html">JazzBlockKeeprItem</a> descendant that <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html">JazzBlockKeepr</a> needs for allocation. </p>
 
 <p>Reimplemented in <a class="el" href="classjazz__containers_1_1AATBlockQueue.html#accdbad56f4cc9f697ceb57135950c454">jazz_containers::AATBlockQueue</a>, and <a class="el" href="classjazz__containers_1_1JazzTree.html#a54e5e9773b95bf972074a3c62cf46a1a">jazz_containers::JazzTree</a>.</p>
+
+</div>
+</div>
+<a id="a40804c27ef979e5b5c2bbacb390dbd85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40804c27ef979e5b5c2bbacb390dbd85">&#9670;&nbsp;</a></span>last_item_in()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__containers.html#ae756081452684556f7185bc90c579b02">pJazzBlockKeeprItem</a> jazz_containers::JazzBlockKeepr::last_item_in </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return the last <a class="el" href="structjazz__containers_1_1JazzBlockKeeprItem.html">JazzBlockKeeprItem</a> created by <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a095fd1412befbca1459ee9c1fed29cb2">JazzBlockKeepr::new_jazz_block()</a> </p><dl class="section return"><dt>Returns</dt><dd>The value of the protected pointer p_first_item returned through a thread-safe mechanism</dd></dl>
+<p>Note: This allows using <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html">JazzBlockKeepr</a> as a LIFO stack. If necessary, the item should be removed after use with <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a861b0f84f1ed796682dcb67ea43d3906">free_jazz_block()</a>. </p>
 
 </div>
 </div>

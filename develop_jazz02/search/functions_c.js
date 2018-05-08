@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['last_5fitem_5fin',['last_item_in',['../classjazz__containers_1_1JazzBlockKeepr.html#a40804c27ef979e5b5c2bbacb390dbd85',1,'jazz_containers::JazzBlockKeepr']]],
   ['leave_5fapi_5fcall',['leave_api_call',['../classjazzCommons.html#a95457f82eaaa5dcb1fb3e7370a9f1b30',1,'jazzCommons']]],
   ['leave_5fpersistence',['leave_persistence',['../classjazzCommons.html#a7bf915f25c3ec4ee0b5ef83ff1584c7a',1,'jazzCommons']]],
   ['leave_5fr_5finterpreter',['leave_R_interpreter',['../classjazzCommons.html#a13de0bb7c29b474cd2e759286893425d',1,'jazzCommons']]],
