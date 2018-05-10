@@ -135,7 +135,7 @@ var searchData=
   ['jazzstringbuffer',['JazzStringBuffer',['../structjazz__datablocks_1_1JazzStringBuffer.html',1,'jazz_datablocks']]],
   ['jazztensor',['JazzTensor',['../unionjazz__datablocks_1_1JazzTensor.html',1,'jazz_datablocks']]],
   ['jazztensordim',['JazzTensorDim',['../unionjazz__datablocks_1_1JazzTensorDim.html',1,'jazz_datablocks']]],
-  ['jazztree',['JazzTree',['../classjazz__containers_1_1JazzTree.html',1,'jazz_containers']]],
+  ['jazztree',['JazzTree',['../classjazz__containers_1_1JazzTree.html',1,'jazz_containers::JazzTree'],['../classjazz__containers_1_1JazzTree.html#a713b08c42ba45623e70f013705a98850',1,'jazz_containers::JazzTree::JazzTree()']]],
   ['jazztreeitem',['JazzTreeItem',['../structjazz__containers_1_1JazzTreeItem.html',1,'jazz_containers']]],
   ['jazzwebsource',['jazzWebSource',['../classjazzWebSource.html',1,'jazzWebSource'],['../classjazzWebSource.html#ae35f7cc2276b568886f8d8e5268d6fe0',1,'jazzWebSource::jazzWebSource()']]],
   ['jblockc',['jBLOCKC',['../jazz01__instances_8cpp.html#a4740d264c5428ae9f295819c6e352f55',1,'jBLOCKC():&#160;jazz01_instances.cpp'],['../jazz01__instances_8h.html#a4740d264c5428ae9f295819c6e352f55',1,'jBLOCKC():&#160;jazz01_instances.cpp']]],
