@@ -145,6 +145,12 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:af683ce48f98244bdb3796c822ab75e64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f98227f0e15d1b7cd54982f8615c241"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1AATBlockQueue.html#a3f98227f0e15d1b7cd54982f8615c241">lowest_priority</a> (<a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a> p_item)</td></tr>
 <tr class="separator:a3f98227f0e15d1b7cd54982f8615c241"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a745b4e957db2c726472cac312beeed19"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1AATBlockQueue.html#a745b4e957db2c726472cac312beeed19">rebalance</a> (<a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a> p_tree)</td></tr>
+<tr class="separator:a745b4e957db2c726472cac312beeed19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a103208ee455b10d6a386a8470577ea53"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1AATBlockQueue.html#a103208ee455b10d6a386a8470577ea53">is_in_tree</a> (<a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a> p_item, <a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a> p_tree)</td></tr>
+<tr class="separator:a103208ee455b10d6a386a8470577ea53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c0bb01263fbcc3bfab9b07a08165130"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1AATBlockQueue.html#a2c0bb01263fbcc3bfab9b07a08165130">remove_go_deep</a> (<a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a> p_kill, <a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a> p_parent, <a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a> p_tree, <a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a> &amp;p_deep)</td></tr>
+<tr class="separator:a2c0bb01263fbcc3bfab9b07a08165130"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae230fb5367938b71926a0b47ecf95d4e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1AATBlockQueue.html#ae230fb5367938b71926a0b47ecf95d4e">remove</a> (<a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a> p_item, <a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a> p_tree)</td></tr>
 <tr class="separator:ae230fb5367938b71926a0b47ecf95d4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c31288554cf5216b39e5f59683fcf43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1AATBlockQueue.html#a3c31288554cf5216b39e5f59683fcf43">decrease_level</a> (<a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a> p_item)</td></tr>
@@ -472,6 +478,50 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A balanced version of p_tree including p_new </dd></dl>
+
+</div>
+</div>
+<a id="a103208ee455b10d6a386a8470577ea53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a103208ee455b10d6a386a8470577ea53">&#9670;&nbsp;</a></span>is_in_tree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool jazz_containers::AATBlockQueue::is_in_tree </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a>&#160;</td>
+          <td class="paramname"><em>p_item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a>&#160;</td>
+          <td class="paramname"><em>p_tree</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Check if a node belongs to a tree </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_item</td><td>The node checked if part of the AA subtree </td></tr>
+    <tr><td class="paramname">p_tree</td><td>The the AA subtree that may contain p_item </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the node was found in the tree Note: This is a debugging function, never used in the real code. It is a prerequisite of <a class="el" href="classjazz__containers_1_1AATBlockQueue.html#ae230fb5367938b71926a0b47ecf95d4e">remove()</a> but correct management of the JazzQueueItems makes it unnecessary. </dd></dl>
 
 </div>
 </div>
@@ -876,6 +926,39 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a745b4e957db2c726472cac312beeed19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a745b4e957db2c726472cac312beeed19">&#9670;&nbsp;</a></span>rebalance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a> jazz_containers::AATBlockQueue::rebalance </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a>&#160;</td>
+          <td class="paramname"><em>p_tree</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Rebalance the tree after <a class="el" href="classjazz__containers_1_1AATBlockQueue.html#ae230fb5367938b71926a0b47ecf95d4e">remove()</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_tree</td><td>The tree resulting of (a recursive step) in remove </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The balanced tree Decrease the level of all nodes in this level if necessary, and then skew and split all nodes in the new level. </dd></dl>
+
+</div>
+</div>
 <a id="a23c3155ece3d0db74eeb7ba578007354"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a23c3155ece3d0db74eeb7ba578007354">&#9670;&nbsp;</a></span>recursive_destroy_keeprs()</h2>
 
@@ -953,6 +1036,65 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The balanced p_tree without the node p_item</dd></dl>
 <p>Note: This is NOT thread safe and should only be used inside public methods providing the safety mechanisms. </p>
+
+</div>
+</div>
+<a id="a2c0bb01263fbcc3bfab9b07a08165130"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c0bb01263fbcc3bfab9b07a08165130">&#9670;&nbsp;</a></span>remove_go_deep()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a> jazz_containers::AATBlockQueue::remove_go_deep </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a>&#160;</td>
+          <td class="paramname"><em>p_kill</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a>&#160;</td>
+          <td class="paramname"><em>p_parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a>&#160;</td>
+          <td class="paramname"><em>p_tree</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7">pJazzQueueItem</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_deep</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Implements the "deep case" of AA tree removal. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_kill</td><td>The node that we are following towards HPLoT found by recursion </td></tr>
+    <tr><td class="paramname">p_parent</td><td>The parent of p_kill (required to rebalance the tree after every recursive step) </td></tr>
+    <tr><td class="paramname">p_tree</td><td>The (never changing) root of the subtree (we want to remove it) </td></tr>
+    <tr><td class="paramname">p_deep</td><td>A variable to store the HPLoT (found in the deepest level, applied in the shallowest) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The rebalanced HPLoT converted in the new subtree root</dd></dl>
+<p>Note: Against what is stated in AA tree literature, it is not always easy to convert an arbitrary node that has to be removed into a leaf. (Many applications only remove high or low priority node and that does not apply then.) When we need to remove a node high in the tree (far away for leaves) skewing the tree to make its predecessor the new root is feasible, but that still does not solve the problem of removing it. The safest option is removing the HPLoT (Highest Priority to the Left of Tree) which at least will have no successor, rebalancing the tree after removal and inserting it back as the root in replacement of the previous root. That is what is function does. </p>
 
 </div>
 </div>
