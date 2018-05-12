@@ -4,6 +4,7 @@ var searchData=
   ['jazz_5fapc_5fcallback',['jazz_apc_callback',['../jazz01__commons_8h.html#a01d5f135fc4da1aed8644d26cdcbbc34',1,'jazz01_commons.h']]],
   ['jazzalloc',['jazzAlloc',['../jazz01__commons_8h.html#ac901a7e8dab2a4c2b5de3462cf108837',1,'jazzAlloc(void *&amp;ptr, int alloc_type, int size, char *pstr=NULL):&#160;jazz01_alloc.cpp'],['../jazz01__alloc_8cpp.html#aa182a8270f58c140924a678658dab843',1,'jazzAlloc(void *&amp;ptr, int alloc_type, int size, char *pstr):&#160;jazz01_alloc.cpp']]],
   ['jazzblockkeepr',['JazzBlockKeepr',['../classjazz__containers_1_1JazzBlockKeepr.html#ad69e30f47efdd3e67b725d3372f57c14',1,'jazz_containers::JazzBlockKeepr']]],
+  ['jazzcache',['JazzCache',['../classjazz__containers_1_1JazzCache.html#a1be7d30a8d8d558632edf64444110599',1,'jazz_containers::JazzCache']]],
   ['jazzcommons',['jazzCommons',['../classjazzCommons.html#a0560d13f57fb6c49961b57b56e84d89d',1,'jazzCommons']]],
   ['jazzconfigfile',['JazzConfigFile',['../classjazz__utils_1_1JazzConfigFile.html#afb06a4c365e2eefb4b819493acf76fbf',1,'jazz_utils::JazzConfigFile']]],
   ['jazzfree',['jazzFree',['../jazz01__commons_8h.html#a81a988f49bd723c366541b9d41ee22d2',1,'jazzFree(void *&amp;ptr, int alloc_type):&#160;jazz01_alloc.cpp'],['../jazz01__alloc_8cpp.html#a81a988f49bd723c366541b9d41ee22d2',1,'jazzFree(void *&amp;ptr, int alloc_type):&#160;jazz01_alloc.cpp']]],

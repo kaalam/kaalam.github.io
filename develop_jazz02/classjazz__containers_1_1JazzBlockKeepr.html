@@ -241,7 +241,8 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if successful. Logs with level LOG_ERROR if failed or called on an already allocated object. Fails if called when the buffer is already allocated. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if successful. Logs with level LOG_ERROR if failed or called on an already allocated object. Fails if called when the buffer is already allocated.</dd></dl>
+<p>Note: This method can only be called once and is not thread safe by design. </p>
 
 </div>
 </div>
