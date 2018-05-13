@@ -110,8 +110,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aef0f9099c8b3b2ef27fcd7e1645f140b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40804c27ef979e5b5c2bbacb390dbd85"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__containers.html#ae756081452684556f7185bc90c579b02">pJazzBlockKeeprItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a40804c27ef979e5b5c2bbacb390dbd85">last_item_in</a> ()</td></tr>
 <tr class="separator:a40804c27ef979e5b5c2bbacb390dbd85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a861b0f84f1ed796682dcb67ea43d3906"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a861b0f84f1ed796682dcb67ea43d3906">free_jazz_block</a> (<a class="el" href="namespacejazz__containers.html#ae756081452684556f7185bc90c579b02">pJazzBlockKeeprItem</a> p_item)</td></tr>
-<tr class="separator:a861b0f84f1ed796682dcb67ea43d3906"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab312ec9e109072659d421f4c66544dec"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#ab312ec9e109072659d421f4c66544dec">free_jazz_block</a> (<a class="el" href="namespacejazz__containers.html#ae756081452684556f7185bc90c579b02">pJazzBlockKeeprItem</a> p_item, bool inside_writing=false, bool never_used=false)</td></tr>
+<tr class="separator:ab312ec9e109072659d421f4c66544dec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4dfe309df7ab2d0a2b347a23c076927e"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a4dfe309df7ab2d0a2b347a23c076927e">item_size</a> ()</td></tr>
 <tr class="memdesc:a4dfe309df7ab2d0a2b347a23c076927e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A virtual method returning the size of the <a class="el" href="structjazz__containers_1_1JazzBlockKeeprItem.html">JazzBlockKeeprItem</a> descendant that <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html">JazzBlockKeepr</a> needs for allocation.  <a href="#a4dfe309df7ab2d0a2b347a23c076927e">More...</a><br /></td></tr>
 <tr class="separator:a4dfe309df7ab2d0a2b347a23c076927e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,6 +128,8 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a06c92769e2b2918c00278c802a95f4ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8696ec07b0b2d902a6992b0e0533c8cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a8696ec07b0b2d902a6992b0e0533c8cb">leave_writing</a> ()</td></tr>
 <tr class="separator:a8696ec07b0b2d902a6992b0e0533c8cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7659889396631c428cbe0b3df1f59381"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a7659889396631c428cbe0b3df1f59381">verify_p_item</a> (<a class="el" href="namespacejazz__containers.html#ae756081452684556f7185bc90c579b02">pJazzBlockKeeprItem</a> p_item)</td></tr>
+<tr class="separator:a7659889396631c428cbe0b3df1f59381"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79af2c26eaf153c8f9f33ec2ae24acbc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a79af2c26eaf153c8f9f33ec2ae24acbc">log</a> (int loglevel, const char *message)</td></tr>
 <tr class="separator:a79af2c26eaf153c8f9f33ec2ae24acbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7701f50a1ca98cbda0a86066fef36d2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a7701f50a1ca98cbda0a86066fef36d2e">log_printf</a> (int loglevel, const char *fmt,...)</td></tr>
@@ -160,8 +162,8 @@ Private Attributes</h2></td></tr>
 <p>JazzBlocks can be allocated in three ways:</p>
 <ol type="1">
 <li>One-shot - Created with <a class="el" href="namespacejazz__containers.html#ad8d3c3ca8b271aa014aace02595512f9">jazz_containers::new_jazz_block()</a>, destroyed with <a class="el" href="namespacejazz__containers.html#ad8d3c3ca8b271aa014aace02595512f9">jazz_containers::new_jazz_block()</a>, owned by the caller.</li>
-<li>Volatile - Created with <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a095fd1412befbca1459ee9c1fed29cb2">jazz_containers::JazzBlockKeepr::new_jazz_block()</a> or (<a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html">JazzBlockKeepr</a> descendant)<a class="el" href="namespacejazz__containers.html#ad8d3c3ca8b271aa014aace02595512f9">new_jazz_block()</a> and not required to be freed, but can be freed using (<a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html">JazzBlockKeepr</a> descendant::)<a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a861b0f84f1ed796682dcb67ea43d3906">free_jazz_block()</a>. Some objects (like cache and priority queues) may remove JazzBlocks from the container to free the space for higher prioritized JazzBlocks. Volatile containers (those not descending from JazzPersistence) keep the <a class="el" href="structjazz__containers_1_1JazzBlockKeeprItem.html">JazzBlockKeeprItem</a> block containers in local RAM, but they may point to blocks physically stored across a cluster. In volatile containers <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#ad1e50a3552d31d10586dbe7f9769f309">alloc_keeprs()</a>/realloc_keeprs()/destroy_keeprs() control local allocation of the <a class="el" href="structjazz__containers_1_1JazzBlockKeeprItem.html">JazzBlockKeeprItem</a> buffer.</li>
-<li>Persisted - Created with <a class="el" href="classjazz__persistence_1_1JazzPersistence.html#a85a2939c05635f2164cc4a976dd911f8">jazz_persistence::JazzPersistence::new_jazz_block()</a> or (JazzPersistence descendant::)<a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a095fd1412befbca1459ee9c1fed29cb2">new_jazz_block()</a> and not required to be freed, but can be freed using (JazzPersistence descendant::)<a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a861b0f84f1ed796682dcb67ea43d3906">free_jazz_block()</a>. Unlike volatile JazzBlocks, persisted JazzBlocks are not controlled by a <a class="el" href="structjazz__containers_1_1JazzBlockKeeprItem.html">JazzBlockKeeprItem</a>. Difference between JazzPersistence and JazzSource is the former implements a strict <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html">JazzBlockKeepr</a> interface that can be used from c++ to do things like select information from blocks without assigning or copying them, the latter has a much simpler interface that is exported to Python and R and provides what a script language programmer would expect at the price of not always benefiting from the memory-mapped file allocation in LMDB that underlies JazzPersistence.</li>
+<li>Volatile - Created with <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a095fd1412befbca1459ee9c1fed29cb2">jazz_containers::JazzBlockKeepr::new_jazz_block()</a> or (<a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html">JazzBlockKeepr</a> descendant)<a class="el" href="namespacejazz__containers.html#ad8d3c3ca8b271aa014aace02595512f9">new_jazz_block()</a> and not required to be freed, but can be freed using (<a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html">JazzBlockKeepr</a> descendant::)<a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#ab312ec9e109072659d421f4c66544dec">free_jazz_block()</a>. Some objects (like cache and priority queues) may remove JazzBlocks from the container to free the space for higher prioritized JazzBlocks. Volatile containers (those not descending from JazzPersistence) keep the <a class="el" href="structjazz__containers_1_1JazzBlockKeeprItem.html">JazzBlockKeeprItem</a> block containers in local RAM, but they may point to blocks physically stored across a cluster. In volatile containers <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#ad1e50a3552d31d10586dbe7f9769f309">alloc_keeprs()</a>/realloc_keeprs()/destroy_keeprs() control local allocation of the <a class="el" href="structjazz__containers_1_1JazzBlockKeeprItem.html">JazzBlockKeeprItem</a> buffer.</li>
+<li>Persisted - Created with <a class="el" href="classjazz__persistence_1_1JazzPersistence.html#a85a2939c05635f2164cc4a976dd911f8">jazz_persistence::JazzPersistence::new_jazz_block()</a> or (JazzPersistence descendant::)<a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a095fd1412befbca1459ee9c1fed29cb2">new_jazz_block()</a> and not required to be freed, but can be freed using (JazzPersistence descendant::)<a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#ab312ec9e109072659d421f4c66544dec">free_jazz_block()</a>. Unlike volatile JazzBlocks, persisted JazzBlocks are not controlled by a <a class="el" href="structjazz__containers_1_1JazzBlockKeeprItem.html">JazzBlockKeeprItem</a>. Difference between JazzPersistence and JazzSource is the former implements a strict <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html">JazzBlockKeepr</a> interface that can be used from c++ to do things like select information from blocks without assigning or copying them, the latter has a much simpler interface that is exported to Python and R and provides what a script language programmer would expect at the price of not always benefiting from the memory-mapped file allocation in LMDB that underlies JazzPersistence.</li>
 </ol>
 <p>When an <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html">JazzBlockKeepr</a> fills, blocks fail to allocate but never get automatically destroyed.</p>
 <p>THREAD SAFETY: All public methods in <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html">JazzBlockKeepr</a> descendants must be thread safe. In the core objects, thread-safe failure in public methods is treated as a top priority bug that is intended to be spotted in burn-in tests. Private methods can be unsafe, but the public methods calling them must be aware of their limitations and use thread-locking when necessary. (Copy this message in all descendants.) </p>
@@ -330,8 +332,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a861b0f84f1ed796682dcb67ea43d3906"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a861b0f84f1ed796682dcb67ea43d3906">&#9670;&nbsp;</a></span>free_jazz_block()</h2>
+<a id="ab312ec9e109072659d421f4c66544dec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab312ec9e109072659d421f4c66544dec">&#9670;&nbsp;</a></span>free_jazz_block()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -343,8 +345,24 @@ Private Attributes</h2></td></tr>
           <td class="memname">void jazz_containers::JazzBlockKeepr::free_jazz_block </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacejazz__containers.html#ae756081452684556f7185bc90c579b02">pJazzBlockKeeprItem</a>&#160;</td>
-          <td class="paramname"><em>p_item</em></td><td>)</td>
+          <td class="paramname"><em>p_item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>inside_writing</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>never_used</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -356,7 +374,9 @@ Private Attributes</h2></td></tr>
 <p>Destroy a JazzBlock and free its owning <a class="el" href="structjazz__containers_1_1JazzBlockKeeprItem.html">JazzBlockKeeprItem</a></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">p_item</td><td>The <a class="el" href="structjazz__containers_1_1JazzBlockKeeprItem.html">JazzBlockKeeprItem</a> owning the JazzBlock that will be destroyed.</td></tr>
+    <tr><td class="paramname">p_item</td><td>The <a class="el" href="structjazz__containers_1_1JazzBlockKeeprItem.html">JazzBlockKeeprItem</a> owning the JazzBlock that will be destroyed. </td></tr>
+    <tr><td class="paramname">inside_writing</td><td>The caller already has called <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a06c92769e2b2918c00278c802a95f4ba">enter_writing()</a>, it should not be called again. </td></tr>
+    <tr><td class="paramname">never_used</td><td>The item was allocated but the block creation failed, ignore p_jazz_block.</td></tr>
   </table>
   </dd>
 </dl>
@@ -416,7 +436,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Return the last <a class="el" href="structjazz__containers_1_1JazzBlockKeeprItem.html">JazzBlockKeeprItem</a> created by <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a095fd1412befbca1459ee9c1fed29cb2">JazzBlockKeepr::new_jazz_block()</a> </p><dl class="section return"><dt>Returns</dt><dd>The value of the protected pointer p_first_item returned through a thread-safe mechanism</dd></dl>
-<p>Note: This allows using <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html">JazzBlockKeepr</a> as a LIFO stack. If necessary, the item should be removed after use with <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a861b0f84f1ed796682dcb67ea43d3906">free_jazz_block()</a>. </p>
+<p>Note: This allows using <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html">JazzBlockKeepr</a> as a LIFO stack. If necessary, the item should be removed after use with <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#ab312ec9e109072659d421f4c66544dec">free_jazz_block()</a>. </p>
 
 </div>
 </div>
@@ -616,7 +636,7 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>OWNERSHIP: If you create a one shot block using <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a095fd1412befbca1459ee9c1fed29cb2">new_jazz_block()</a>, you earn the responsibility to free it with <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a861b0f84f1ed796682dcb67ea43d3906">free_jazz_block()</a>. This is not the normal way to create JazzBlocks, when you use a <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html">JazzBlockKeepr</a> descendant, that object will allocate and free the JazzBlocks automatically. The same applies to JazzBlocks created in the stack of a bebop program which are also managed automatically.</p>
+<p>OWNERSHIP: If you create a one shot block using <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a095fd1412befbca1459ee9c1fed29cb2">new_jazz_block()</a>, you earn the responsibility to free it with <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#ab312ec9e109072659d421f4c66544dec">free_jazz_block()</a>. This is not the normal way to create JazzBlocks, when you use a <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html">JazzBlockKeepr</a> descendant, that object will allocate and free the JazzBlocks automatically. The same applies to JazzBlocks created in the stack of a bebop program which are also managed automatically.</p>
 <dl class="section return"><dt>Returns</dt><dd>The address of the <a class="el" href="structjazz__containers_1_1JazzBlockKeeprItem.html">JazzBlockKeeprItem</a> owning the new JazzBlock or nullptr if failed. Will not allocate a <a class="el" href="structjazz__containers_1_1JazzBlockKeeprItem.html">JazzBlockKeeprItem</a> if allocating the JazzBlock fails.</dd></dl>
 <p>Logs with level LOG_ERROR on any error condition. </p>
 
@@ -705,7 +725,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <p>NOTES: String buffer allocation should not be used to dynamically change attribute values. Attributes are immutable and should be changed only creating a new block with new = new_jazz_block(p_as_block = old, att = new_att). String buffer allocation should only be used for cell_type == CELL_TYPE_JAZZ_STRING and either with stringbuff_size or with p_text (and eoln). If stringbuff_size is used, <a class="el" href="classjazz__datablocks_1_1JazzBlock.html#a76c7eea07bd355e2616afb6a7f1eb1cc">JazzBlock.set_string()</a> should be used afterwards. If p_text is used, the tensor is already filled and <a class="el" href="classjazz__datablocks_1_1JazzBlock.html#a76c7eea07bd355e2616afb6a7f1eb1cc">JazzBlock.set_string()</a> <b>should not</b> be called after that.</p>
-<p>OWNERSHIP: If you create a one shot block using <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a095fd1412befbca1459ee9c1fed29cb2">new_jazz_block()</a>, you earn the responsibility to free it with <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a861b0f84f1ed796682dcb67ea43d3906">free_jazz_block()</a>. This is not the normal way to create JazzBlocks, when you use a <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html">JazzBlockKeepr</a> descendant, that object will allocate and free the JazzBlocks automatically. The same applies to JazzBlocks created in the stack of a bebop program which are also managed automatically.</p>
+<p>OWNERSHIP: If you create a one shot block using <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a095fd1412befbca1459ee9c1fed29cb2">new_jazz_block()</a>, you earn the responsibility to free it with <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#ab312ec9e109072659d421f4c66544dec">free_jazz_block()</a>. This is not the normal way to create JazzBlocks, when you use a <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html">JazzBlockKeepr</a> descendant, that object will allocate and free the JazzBlocks automatically. The same applies to JazzBlocks created in the stack of a bebop program which are also managed automatically.</p>
 <dl class="section return"><dt>Returns</dt><dd>The address of the <a class="el" href="structjazz__containers_1_1JazzBlockKeeprItem.html">JazzBlockKeeprItem</a> owning the new JazzBlock or nullptr if failed. Will not allocate a <a class="el" href="structjazz__containers_1_1JazzBlockKeeprItem.html">JazzBlockKeeprItem</a> if allocating the JazzBlock fails.</dd></dl>
 <p>Logs with level LOG_ERROR on any error condition. </p>
 
@@ -758,7 +778,7 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>OWNERSHIP: If you create a one shot block using <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a095fd1412befbca1459ee9c1fed29cb2">new_jazz_block()</a>, you earn the responsibility to free it with <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a861b0f84f1ed796682dcb67ea43d3906">free_jazz_block()</a>. This is not the normal way to create JazzBlocks, when you use a <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html">JazzBlockKeepr</a> descendant, that object will allocate and free the JazzBlocks automatically. The same applies to JazzBlocks created in the stack of a bebop program which are also managed automatically.</p>
+<p>OWNERSHIP: If you create a one shot block using <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a095fd1412befbca1459ee9c1fed29cb2">new_jazz_block()</a>, you earn the responsibility to free it with <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#ab312ec9e109072659d421f4c66544dec">free_jazz_block()</a>. This is not the normal way to create JazzBlocks, when you use a <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html">JazzBlockKeepr</a> descendant, that object will allocate and free the JazzBlocks automatically. The same applies to JazzBlocks created in the stack of a bebop program which are also managed automatically.</p>
 <dl class="section return"><dt>Returns</dt><dd>The address of the <a class="el" href="structjazz__containers_1_1JazzBlockKeeprItem.html">JazzBlockKeeprItem</a> owning the new JazzBlock or nullptr if failed. Will not allocate a <a class="el" href="structjazz__containers_1_1JazzBlockKeeprItem.html">JazzBlockKeeprItem</a> if allocating the JazzBlock fails.</dd></dl>
 <p>Logs with level LOG_ERROR on any error condition. </p>
 
@@ -847,7 +867,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <p>NOTES: String buffer allocation should not be used to dynamically change attribute values. Attributes are immutable and should be changed only creating a new block with new = new_jazz_block(p_as_block = old, att = new_att). String buffer allocation should only be used for cell_type == CELL_TYPE_JAZZ_STRING and either with stringbuff_size or with p_text (and eoln). If stringbuff_size is used, <a class="el" href="classjazz__datablocks_1_1JazzBlock.html#a76c7eea07bd355e2616afb6a7f1eb1cc">JazzBlock.set_string()</a> should be used afterwards. If p_text is used, the tensor is already filled and <a class="el" href="classjazz__datablocks_1_1JazzBlock.html#a76c7eea07bd355e2616afb6a7f1eb1cc">JazzBlock.set_string()</a> <b>should not</b> be called after that.</p>
-<p>OWNERSHIP: If you create a one shot block using <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a095fd1412befbca1459ee9c1fed29cb2">new_jazz_block()</a>, you earn the responsibility to free it with <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a861b0f84f1ed796682dcb67ea43d3906">free_jazz_block()</a>. This is not the normal way to create JazzBlocks, when you use a <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html">JazzBlockKeepr</a> descendant, that object will allocate and free the JazzBlocks automatically. The same applies to JazzBlocks created in the stack of a bebop program which are also managed automatically.</p>
+<p>OWNERSHIP: If you create a one shot block using <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#a095fd1412befbca1459ee9c1fed29cb2">new_jazz_block()</a>, you earn the responsibility to free it with <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html#ab312ec9e109072659d421f4c66544dec">free_jazz_block()</a>. This is not the normal way to create JazzBlocks, when you use a <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html">JazzBlockKeepr</a> descendant, that object will allocate and free the JazzBlocks automatically. The same applies to JazzBlocks created in the stack of a bebop program which are also managed automatically.</p>
 <dl class="section return"><dt>Returns</dt><dd>The address of the <a class="el" href="structjazz__containers_1_1JazzBlockKeeprItem.html">JazzBlockKeeprItem</a> owning the new JazzBlock or nullptr if failed. Will not allocate a <a class="el" href="structjazz__containers_1_1JazzBlockKeeprItem.html">JazzBlockKeeprItem</a> if allocating the JazzBlock fails.</dd></dl>
 <p>Logs with level LOG_ERROR on any error condition. </p>
 
@@ -912,6 +932,40 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if p_id matches the regex JAZZ_REGEX_VALIDATE_BLOCK_ID </dd></dl>
+
+</div>
+</div>
+<a id="a7659889396631c428cbe0b3df1f59381"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7659889396631c428cbe0b3df1f59381">&#9670;&nbsp;</a></span>verify_p_item()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool jazz_containers::JazzBlockKeepr::verify_p_item </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__containers.html#ae756081452684556f7185bc90c579b02">pJazzBlockKeeprItem</a>&#160;</td>
+          <td class="paramname"><em>p_item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Aaa</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">aaa</td><td>Aaa </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Aaa </dd></dl>
 
 </div>
 </div>
