@@ -17,5 +17,6 @@ var searchData=
   ['http_5fmimetype_5fstring',['HTTP_MIMETYPE_STRING',['../jazz01__commons_8h.html#a60d50418bdf6ee2fcb069f7818f482d8',1,'HTTP_MIMETYPE_STRING():&#160;jazz_http.cpp'],['../jazz__http_8cpp.html#a90d4705dce873cd56e931d131be173d1',1,'HTTP_MIMETYPE_STRING():&#160;jazz_http.cpp']]],
   ['http_5fnotused',['HTTP_NOTUSED',['../jazz01__api_8h.html#a7f10cb6b44e47dd330ff60e017f24510',1,'jazz01_api.h']]],
   ['http_5foptions',['HTTP_OPTIONS',['../jazz01__api_8h.html#a63d4c725d922ebee7cddd485fd35adf3',1,'jazz01_api.h']]],
-  ['http_5fput',['HTTP_PUT',['../jazz01__api_8h.html#ad0e84459f11d4b8762fa7c5adc775602',1,'jazz01_api.h']]]
+  ['http_5fput',['HTTP_PUT',['../jazz01__api_8h.html#ad0e84459f11d4b8762fa7c5adc775602',1,'jazz01_api.h']]],
+  ['httpclient_5fcallback',['httpclient_callback',['../jazz__httpclient_8cpp.html#a1f0eb9d20eacdc59abc3d8ea5436bcb7',1,'jazz_httpclient.cpp']]]
 ];

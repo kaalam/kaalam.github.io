@@ -66,7 +66,8 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">jazz_persistence.h File Reference</div>  </div>
 </div><!--header-->
@@ -80,6 +81,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__persistence_1_1JazzPersistenceItem.html">jazz_persistence::JazzPersistenceItem</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__persistence_1_1JazzPersistence.html">jazz_persistence::JazzPersistence</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__persistence_1_1JazzSource.html">jazz_persistence::JazzSource</a></td></tr>
@@ -95,6 +98,27 @@ Macros</h2></td></tr>
 <tr class="memitem:a5e0eaf5d0a6d5f645acf6a49029b3f08"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__persistence_8h.html#a5e0eaf5d0a6d5f645acf6a49029b3f08">INCLUDED_JAZZ_ELEMENTS_PERSISTENCE</a></td></tr>
 <tr class="memdesc:a5e0eaf5d0a6d5f645acf6a49029b3f08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Jazz class JazzPersistedSource.  <a href="#a5e0eaf5d0a6d5f645acf6a49029b3f08">More...</a><br /></td></tr>
 <tr class="separator:a5e0eaf5d0a6d5f645acf6a49029b3f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac50ed9ecec7a1f43e752171c9178da33"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__persistence_8h.html#ac50ed9ecec7a1f43e752171c9178da33">JAZZ_PERSISTENCE_CACHE_READ_ONLY</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:ac50ed9ecec7a1f43e752171c9178da33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do not cache write operations.  <a href="#ac50ed9ecec7a1f43e752171c9178da33">More...</a><br /></td></tr>
+<tr class="separator:ac50ed9ecec7a1f43e752171c9178da33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6117ec9063639bc7ea50c5f10cefe2e4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__persistence_8h.html#a6117ec9063639bc7ea50c5f10cefe2e4">JAZZ_PERSISTENCE_CACHE_READ_WRITE</a>&#160;&#160;&#160;3</td></tr>
+<tr class="memdesc:a6117ec9063639bc7ea50c5f10cefe2e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cache write operations.  <a href="#a6117ec9063639bc7ea50c5f10cefe2e4">More...</a><br /></td></tr>
+<tr class="separator:a6117ec9063639bc7ea50c5f10cefe2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7387fe3803e7dec3c4f46e8ef1afd51a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__persistence_8h.html#a7387fe3803e7dec3c4f46e8ef1afd51a">JAZZ_SOURCE_MODE_READ_ONLY</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:a7387fe3803e7dec3c4f46e8ef1afd51a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a JazzPersistence as read only.  <a href="#a7387fe3803e7dec3c4f46e8ef1afd51a">More...</a><br /></td></tr>
+<tr class="separator:a7387fe3803e7dec3c4f46e8ef1afd51a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58a553faefdcddf1126a703f56b0b2b0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__persistence_8h.html#a58a553faefdcddf1126a703f56b0b2b0">JAZZ_SOURCE_MODE_READ_WRITE</a>&#160;&#160;&#160;3</td></tr>
+<tr class="memdesc:a58a553faefdcddf1126a703f56b0b2b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a JazzPersistence with read/write access.  <a href="#a58a553faefdcddf1126a703f56b0b2b0">More...</a><br /></td></tr>
+<tr class="separator:a58a553faefdcddf1126a703f56b0b2b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:aa98d26bb20eeed9a1143b97939b5941a"><td class="memItemLeft" align="right" valign="top">typedef struct JazzPersistenceItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__persistence.html#aa98d26bb20eeed9a1143b97939b5941a">jazz_persistence::pJazzPersistenceItem</a></td></tr>
+<tr class="memdesc:aa98d26bb20eeed9a1143b97939b5941a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to a <a class="el" href="structjazz__persistence_1_1JazzPersistenceItem.html">JazzPersistenceItem</a>.  <a href="namespacejazz__persistence.html#aa98d26bb20eeed9a1143b97939b5941a">More...</a><br /></td></tr>
+<tr class="separator:aa98d26bb20eeed9a1143b97939b5941a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6007704f7aac5106d9c08213bc482edd"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structjazz__containers_1_1JazzBlockIdentifier.html">JazzBlockIdentifier</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__persistence.html#a6007704f7aac5106d9c08213bc482edd">jazz_persistence::JazzBlockList</a>[]</td></tr>
+<tr class="memdesc:a6007704f7aac5106d9c08213bc482edd"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to an array of JazzBlockIdentifier.  <a href="namespacejazz__persistence.html#a6007704f7aac5106d9c08213bc482edd">More...</a><br /></td></tr>
+<tr class="separator:a6007704f7aac5106d9c08213bc482edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a5e0eaf5d0a6d5f645acf6a49029b3f08"></a>
@@ -110,7 +134,71 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Jazz class JazzPersistedSource. </p>
-<p>&lt; This module defines the class JazzPersistedSource to store the data in memory mapped node-local files called "sources". The persistence is a thread safe key-value store based on LMDB. </p>
+<p>&lt;TODO: Write the module description </p>
+
+</div>
+</div>
+<a id="ac50ed9ecec7a1f43e752171c9178da33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac50ed9ecec7a1f43e752171c9178da33">&#9670;&nbsp;</a></span>JAZZ_PERSISTENCE_CACHE_READ_ONLY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JAZZ_PERSISTENCE_CACHE_READ_ONLY&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Do not cache write operations. </p>
+
+</div>
+</div>
+<a id="a6117ec9063639bc7ea50c5f10cefe2e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6117ec9063639bc7ea50c5f10cefe2e4">&#9670;&nbsp;</a></span>JAZZ_PERSISTENCE_CACHE_READ_WRITE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JAZZ_PERSISTENCE_CACHE_READ_WRITE&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cache write operations. </p>
+
+</div>
+</div>
+<a id="a7387fe3803e7dec3c4f46e8ef1afd51a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7387fe3803e7dec3c4f46e8ef1afd51a">&#9670;&nbsp;</a></span>JAZZ_SOURCE_MODE_READ_ONLY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JAZZ_SOURCE_MODE_READ_ONLY&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Open a JazzPersistence as read only. </p>
+
+</div>
+</div>
+<a id="a58a553faefdcddf1126a703f56b0b2b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58a553faefdcddf1126a703f56b0b2b0">&#9670;&nbsp;</a></span>JAZZ_SOURCE_MODE_READ_WRITE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JAZZ_SOURCE_MODE_READ_WRITE&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Open a JazzPersistence with read/write access. </p>
 
 </div>
 </div>
