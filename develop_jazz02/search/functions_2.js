@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['block_5fget',['block_get',['../classjzzBLOCKS.html#a9ab954eb93e352f79ea22d147730d958',1,'jzzBLOCKS']]],
-  ['block_5fkill',['block_kill',['../classjzzBLOCKS.html#aac0c20e16749cda5e618c4b4e2b20697',1,'jzzBLOCKS']]],
-  ['block_5fput',['block_put',['../classjzzBLOCKS.html#a6c09edf5c233d7c5d86d3bda407bae70',1,'jzzBLOCKS']]],
-  ['block_5funprotect',['block_unprotect',['../classjzzBLOCKS.html#abab95b3472ae05b51381841a278ceb4a',1,'jzzBLOCKS']]]
+  ['debug_5fput',['debug_put',['../classjazz__utils_1_1JazzConfigFile.html#a614b92525aad92559c08d3fb65adb337',1,'jazz_utils::JazzConfigFile']]],
+  ['decrease_5flevel',['decrease_level',['../classjazz__containers_1_1AATBlockQueue.html#a3c31288554cf5216b39e5f59683fcf43',1,'jazz_containers::AATBlockQueue']]],
+  ['destroy_5fkeeprs',['destroy_keeprs',['../classjazz__containers_1_1JazzBlockKeepr.html#ab34ede7a4ae92dd4fffafded935ce099',1,'jazz_containers::JazzBlockKeepr::destroy_keeprs()'],['../classjazz__containers_1_1AATBlockQueue.html#ac66ad5c6d0d264df3578bd9d73e26233',1,'jazz_containers::AATBlockQueue::destroy_keeprs()'],['../classjazz__persistence_1_1JazzPersistence.html#ab0597085ff10817b8b3488f502bc27d8',1,'jazz_persistence::JazzPersistence::destroy_keeprs()'],['../classjazz__persistence_1_1JazzSource.html#a4c2d9624cb8540ba2c613bb5984a03db',1,'jazz_persistence::JazzSource::destroy_keeprs()']]]
 ];

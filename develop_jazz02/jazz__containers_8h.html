@@ -78,7 +78,6 @@ $(function() {
 <code>#include &lt;thread&gt;</code><br />
 <code>#include &lt;stdarg.h&gt;</code><br />
 <code>#include &lt;regex&gt;</code><br />
-<code>#include &quot;<a class="el" href="jazz__datablocks_8h_source.html">src/jazz_elements/jazz_datablocks.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="jazz__utils_8h_source.html">src/jazz_elements/jazz_utils.h</a>&quot;</code><br />
 </div>
 <p><a href="jazz__containers_8h_source.html">Go to the source code of this file.</a></p>
@@ -105,13 +104,11 @@ Data Structures</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacejazz__containers"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__containers.html">jazz_containers</a></td></tr>
+<tr class="memdesc:namespacejazz__containers"><td class="mdescLeft">&#160;</td><td class="mdescRight">Container classes for JazzBlock objects. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a5071814446b8b7f4b5cf61f04032efd6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__containers_8h.html#a5071814446b8b7f4b5cf61f04032efd6">INCLUDED_JAZZ_ELEMENTS_CONTAINERS</a></td></tr>
-<tr class="memdesc:a5071814446b8b7f4b5cf61f04032efd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Container classes for JazzBlock objects.  <a href="#a5071814446b8b7f4b5cf61f04032efd6">More...</a><br /></td></tr>
-<tr class="separator:a5071814446b8b7f4b5cf61f04032efd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad66e05b64a2a38279693444f92e75022"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__containers_8h.html#ad66e05b64a2a38279693444f92e75022">JAZZ_REGEX_VALID_CHARS</a>&#160;&#160;&#160;&quot;^[a-zA-Z0-9\\+\\*\\.\\$\\(\\)\\?\\-_,;%@&amp;:=/!]*$&quot;</td></tr>
 <tr class="separator:ad66e05b64a2a38279693444f92e75022"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd4dea9f7ad4157afab3d1df0f6f486c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__containers_8h.html#afd4dea9f7ad4157afab3d1df0f6f486c">JAZZ_REGEX_VALID_SPACING</a>&#160;&#160;&#160;&quot;[\\n\\r \\t]&quot;</td></tr>
@@ -244,13 +241,13 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ad8d3c3ca8b271aa014aace02595512f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="jazz01__commons_8h.html#a81770bae7c18abbb26281974e3d1c296">pJazzBlock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__containers.html#ad8d3c3ca8b271aa014aace02595512f9">jazz_containers::new_jazz_block</a> (<a class="el" href="jazz01__commons_8h.html#a81770bae7c18abbb26281974e3d1c296">pJazzBlock</a> p_as_block, pJazzFilter p_row_filter, AllAttributes *att)</td></tr>
+<tr class="memitem:ad8d3c3ca8b271aa014aace02595512f9"><td class="memItemLeft" align="right" valign="top">pJazzBlock&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__containers.html#ad8d3c3ca8b271aa014aace02595512f9">jazz_containers::new_jazz_block</a> (pJazzBlock p_as_block, pJazzFilter p_row_filter, AllAttributes *att)</td></tr>
 <tr class="separator:ad8d3c3ca8b271aa014aace02595512f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafaaf99bd96b4d9894e43e2349530d2b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="jazz01__commons_8h.html#a81770bae7c18abbb26281974e3d1c296">pJazzBlock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__containers.html#aafaaf99bd96b4d9894e43e2349530d2b">jazz_containers::new_jazz_block</a> (int cell_type, int *dim, AllAttributes *att, int fill_tensor, bool *p_bool_filter, int stringbuff_size, const char *p_text, char eoln)</td></tr>
+<tr class="memitem:aafaaf99bd96b4d9894e43e2349530d2b"><td class="memItemLeft" align="right" valign="top">pJazzBlock&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__containers.html#aafaaf99bd96b4d9894e43e2349530d2b">jazz_containers::new_jazz_block</a> (int cell_type, int *dim, AllAttributes *att, int fill_tensor, bool *p_bool_filter, int stringbuff_size, const char *p_text, char eoln)</td></tr>
 <tr class="separator:aafaaf99bd96b4d9894e43e2349530d2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a7ba3e2d868ec1964019819225b1590"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__containers.html#a6a7ba3e2d868ec1964019819225b1590">jazz_containers::close_jazz_block</a> (<a class="el" href="jazz01__commons_8h.html#a81770bae7c18abbb26281974e3d1c296">pJazzBlock</a> p_block, int set_has_NA=<a class="el" href="jazz__containers_8h.html#a9b505ff7745da8c28cc61769ba5c4a1f">JAZZ_SET_HAS_NA_AUTO</a>)</td></tr>
+<tr class="memitem:a6a7ba3e2d868ec1964019819225b1590"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__containers.html#a6a7ba3e2d868ec1964019819225b1590">jazz_containers::close_jazz_block</a> (<a class="el" href="namespacejazz__datablocks.html#a2666df0f415ab9495304469e745adfda">pJazzBlock</a> p_block, int set_has_NA=<a class="el" href="jazz__containers_8h.html#a9b505ff7745da8c28cc61769ba5c4a1f">JAZZ_SET_HAS_NA_AUTO</a>)</td></tr>
 <tr class="separator:a6a7ba3e2d868ec1964019819225b1590"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcc220e7dce04f57627c007fb10aaa2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__containers.html#afcc220e7dce04f57627c007fb10aaa2d">jazz_containers::free_jazz_block</a> (<a class="el" href="jazz01__commons_8h.html#a81770bae7c18abbb26281974e3d1c296">pJazzBlock</a> &amp;p_block)</td></tr>
+<tr class="memitem:afcc220e7dce04f57627c007fb10aaa2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__containers.html#afcc220e7dce04f57627c007fb10aaa2d">jazz_containers::free_jazz_block</a> (pJazzBlock &amp;p_block)</td></tr>
 <tr class="separator:afcc220e7dce04f57627c007fb10aaa2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a852658d6012d4ff551db778a290842"><td class="memItemLeft" align="right" valign="top">JazzBlockId64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__containers.html#a1a852658d6012d4ff551db778a290842">jazz_containers::hash_block_id</a> (const char *p_id)</td></tr>
 <tr class="separator:a1a852658d6012d4ff551db778a290842"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -494,30 +491,6 @@ Functions</h2></td></tr>
 
 <p>Values for the keys of the attributes in JazzBlock. </p>
 <p>Maximum number of keys per section </p>
-
-</div>
-</div>
-<a id="a5071814446b8b7f4b5cf61f04032efd6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5071814446b8b7f4b5cf61f04032efd6">&#9670;&nbsp;</a></span>INCLUDED_JAZZ_ELEMENTS_CONTAINERS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define INCLUDED_JAZZ_ELEMENTS_CONTAINERS</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Container classes for JazzBlock objects. </p>
-<p>&lt; JazzBlock objects can be:<br />
-</p><ol type="1">
-<li>One-shot - Owned by the caller of <a class="el" href="namespacejazz__containers.html#ad8d3c3ca8b271aa014aace02595512f9">new_jazz_block()</a><br />
-</li>
-<li>Volatile - Owned by some JazzBlockKeepr descendant that is not a JazzPersistence (or descendant)<br />
-</li>
-<li>Persisted - Owned by a JazzPersistence (or descendant), typically a JazzSource </li>
-</ol>
 
 </div>
 </div>

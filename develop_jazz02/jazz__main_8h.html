@@ -63,12 +63,99 @@ $(function() {
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
 <div class="title">jazz_main.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;signal.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="jazz_8h_source.html">src/include/jazz.h</a>&quot;</code><br />
+</div>
 <p><a href="jazz__main_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a32c3b827931ad883bf0d4e18d79eac03"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__main_8h.html#a32c3b827931ad883bf0d4e18d79eac03">CMND_HELP</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:a32c3b827931ad883bf0d4e18d79eac03"><td class="mdescLeft">&#160;</td><td class="mdescRight">The application entry point.  <a href="#a32c3b827931ad883bf0d4e18d79eac03">More...</a><br /></td></tr>
+<tr class="separator:a32c3b827931ad883bf0d4e18d79eac03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71614c145c330082129fa1709b212526"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__main_8h.html#a71614c145c330082129fa1709b212526">CMND_START</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:a71614c145c330082129fa1709b212526"><td class="mdescLeft">&#160;</td><td class="mdescRight">Command 'start' as a numerical constant (see <a class="el" href="jazz__main_8cpp.html#aa19155bc6c9681c7963bbd27e7f8afe7">parse_arg()</a>)  <a href="#a71614c145c330082129fa1709b212526">More...</a><br /></td></tr>
+<tr class="separator:a71614c145c330082129fa1709b212526"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7fb09d0fc2ee288779d4734f7510901"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__main_8h.html#ae7fb09d0fc2ee288779d4734f7510901">CMND_STOP</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memdesc:ae7fb09d0fc2ee288779d4734f7510901"><td class="mdescLeft">&#160;</td><td class="mdescRight">Command 'stop' as a numerical constant (see <a class="el" href="jazz__main_8cpp.html#aa19155bc6c9681c7963bbd27e7f8afe7">parse_arg()</a>)  <a href="#ae7fb09d0fc2ee288779d4734f7510901">More...</a><br /></td></tr>
+<tr class="separator:ae7fb09d0fc2ee288779d4734f7510901"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81477e191d8e50592d5e201a69dc0492"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jazz__main_8h.html#a81477e191d8e50592d5e201a69dc0492">CMND_STATUS</a>&#160;&#160;&#160;3</td></tr>
+<tr class="memdesc:a81477e191d8e50592d5e201a69dc0492"><td class="mdescLeft">&#160;</td><td class="mdescRight">Command 'status' as a numerical constant (see <a class="el" href="jazz__main_8cpp.html#aa19155bc6c9681c7963bbd27e7f8afe7">parse_arg()</a>)  <a href="#a81477e191d8e50592d5e201a69dc0492">More...</a><br /></td></tr>
+<tr class="separator:a81477e191d8e50592d5e201a69dc0492"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a32c3b827931ad883bf0d4e18d79eac03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32c3b827931ad883bf0d4e18d79eac03">&#9670;&nbsp;</a></span>CMND_HELP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CMND_HELP&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The application entry point. </p>
+<p>&lt; Most high level server logic: see the description of <a class="el" href="jazz__main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main()</a> The entry point is replaced by the catch2 entry point for unit testing.Command 'help' as a numerical constant (see <a class="el" href="jazz__main_8cpp.html#aa19155bc6c9681c7963bbd27e7f8afe7">parse_arg()</a>) </p>
+
+</div>
+</div>
+<a id="a71614c145c330082129fa1709b212526"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71614c145c330082129fa1709b212526">&#9670;&nbsp;</a></span>CMND_START</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CMND_START&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Command 'start' as a numerical constant (see <a class="el" href="jazz__main_8cpp.html#aa19155bc6c9681c7963bbd27e7f8afe7">parse_arg()</a>) </p>
+
+</div>
+</div>
+<a id="a81477e191d8e50592d5e201a69dc0492"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81477e191d8e50592d5e201a69dc0492">&#9670;&nbsp;</a></span>CMND_STATUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CMND_STATUS&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Command 'status' as a numerical constant (see <a class="el" href="jazz__main_8cpp.html#aa19155bc6c9681c7963bbd27e7f8afe7">parse_arg()</a>) </p>
+
+</div>
+</div>
+<a id="ae7fb09d0fc2ee288779d4734f7510901"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7fb09d0fc2ee288779d4734f7510901">&#9670;&nbsp;</a></span>CMND_STOP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CMND_STOP&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Command 'stop' as a numerical constant (see <a class="el" href="jazz__main_8cpp.html#aa19155bc6c9681c7963bbd27e7f8afe7">parse_arg()</a>) </p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

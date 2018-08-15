@@ -67,6 +67,9 @@ $(function() {
 <div class="title">jazz_containers Namespace Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Container classes for JazzBlock objects.  
+<a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -118,7 +121,17 @@ Functions</h2></td></tr>
 <tr class="memitem:a1a852658d6012d4ff551db778a290842"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__containers.html#ae38bfd05b20beece8e78fa27d5b23a1e">JazzBlockId64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__containers.html#a1a852658d6012d4ff551db778a290842">hash_block_id</a> (const char *p_id)</td></tr>
 <tr class="separator:a1a852658d6012d4ff551db778a290842"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Container classes for JazzBlock objects. </p>
+<p>&lt; JazzBlock objects can be:<br />
+</p><ol type="1">
+<li>One-shot - Owned by the caller of <a class="el" href="namespacejazz__containers.html#ad8d3c3ca8b271aa014aace02595512f9">new_jazz_block()</a><br />
+</li>
+<li>Volatile - Owned by some <a class="el" href="classjazz__containers_1_1JazzBlockKeepr.html">JazzBlockKeepr</a> descendant that is not a JazzPersistence (or descendant)<br />
+</li>
+<li>Persisted - Owned by a JazzPersistence (or descendant), typically a JazzSource </li>
+</ol>
+</div><h2 class="groupheader">Typedef Documentation</h2>
 <a id="ae38bfd05b20beece8e78fa27d5b23a1e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae38bfd05b20beece8e78fa27d5b23a1e">&#9670;&nbsp;</a></span>JazzBlockId64</h2>
 

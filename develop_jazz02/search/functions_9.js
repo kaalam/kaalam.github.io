@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['init_5fstring_5fbuffer',['init_string_buffer',['../classjazz__datablocks_1_1JazzBlock.html#ad9b2b4db6a0bc2ca60847fb8fd3549ab',1,'jazz_datablocks::JazzBlock']]],
-  ['insert',['insert',['../classjazz__containers_1_1AATBlockQueue.html#a1037b4de20d50545acc97a5a39626325',1,'jazz_containers::AATBlockQueue']]],
-  ['internal_5fopen_5fdbi',['internal_open_dbi',['../classjzzBLOCKS.html#a02a70083948a0b0597e355b1d22a7d26',1,'jzzBLOCKS']]],
-  ['is_5fin_5ftree',['is_in_tree',['../classjazz__containers_1_1AATBlockQueue.html#a103208ee455b10d6a386a8470577ea53',1,'jazz_containers::AATBlockQueue']]],
-  ['is_5flast_5fkey',['is_last_key',['../classjzzBLOCKS.html#a96957672c632368038a0b090c7bb4d8a',1,'jzzBLOCKS']]],
-  ['item_5fsize',['item_size',['../classjazz__containers_1_1JazzBlockKeepr.html#a4dfe309df7ab2d0a2b347a23c076927e',1,'jazz_containers::JazzBlockKeepr::item_size()'],['../classjazz__containers_1_1JazzTree.html#a54e5e9773b95bf972074a3c62cf46a1a',1,'jazz_containers::JazzTree::item_size()'],['../classjazz__containers_1_1AATBlockQueue.html#accdbad56f4cc9f697ceb57135950c454',1,'jazz_containers::AATBlockQueue::item_size()'],['../classjazz__persistence_1_1JazzPersistence.html#a807b05635aa27e1be811bfbb86f75788',1,'jazz_persistence::JazzPersistence::item_size()'],['../classjazz__persistence_1_1JazzSource.html#a4a2de33915b0894c5e6b51642a87c374',1,'jazz_persistence::JazzSource::item_size()']]]
+  ['last_5fitem_5fin',['last_item_in',['../classjazz__containers_1_1JazzBlockKeepr.html#a40804c27ef979e5b5c2bbacb390dbd85',1,'jazz_containers::JazzBlockKeepr']]],
+  ['leave_5freading',['leave_reading',['../classjazz__containers_1_1JazzBlockKeepr.html#ac359ee597a82f6d7b243622361626f6f',1,'jazz_containers::JazzBlockKeepr']]],
+  ['leave_5fwriting',['leave_writing',['../classjazz__containers_1_1JazzBlockKeepr.html#a8696ec07b0b2d902a6992b0e0533c8cb',1,'jazz_containers::JazzBlockKeepr']]],
+  ['log',['log',['../classjazz__containers_1_1JazzBlockKeepr.html#a79af2c26eaf153c8f9f33ec2ae24acbc',1,'jazz_containers::JazzBlockKeepr::log()'],['../classjazz__utils_1_1JazzLogger.html#a00e24688e61bf63c74f6d64f812b7163',1,'jazz_utils::JazzLogger::log()']]],
+  ['log_5fprintf',['log_printf',['../classjazz__containers_1_1JazzBlockKeepr.html#a7701f50a1ca98cbda0a86066fef36d2e',1,'jazz_containers::JazzBlockKeepr::log_printf()'],['../classjazz__utils_1_1JazzLogger.html#aa35a33d51f5f20925b229ebf927c8273',1,'jazz_utils::JazzLogger::log_printf(int loglevel, const char *fmt,...)'],['../classjazz__utils_1_1JazzLogger.html#aa14896b5294346f16b9560cec917ff3b',1,'jazz_utils::JazzLogger::log_printf(int loglevel, const char *fmt, va_list args)']]],
+  ['lowest_5fpriority',['lowest_priority',['../classjazz__containers_1_1AATBlockQueue.html#a3f98227f0e15d1b7cd54982f8615c241',1,'jazz_containers::AATBlockQueue']]]
 ];

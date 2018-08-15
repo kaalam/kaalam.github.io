@@ -1,22 +1,10 @@
 var searchData=
 [
   ['has_5fna',['has_NA',['../structjazz__datablocks_1_1JazzBlockHeader.html#aa8226dce56a923a0e051809dc2e1d461',1,'jazz_datablocks::JazzBlockHeader']]],
-  ['hasafunction',['hasAFunction',['../structparsedURLhea.html#a0b4644fbfe826d2ff2c6d57a91e103e5',1,'parsedURLhea']]],
-  ['hasakey',['hasAKey',['../structparsedURLhea.html#a3d965d446fc811427ca387bb1a734d18',1,'parsedURLhea']]],
-  ['hash64',['hash64',['../structjzzBlockHeader.html#aa31c8771ae375fe9f71f6b254cb4c900',1,'jzzBlockHeader::hash64()'],['../structjazz__datablocks_1_1JazzBlockHeader.html#a2c6da34bffee7e960bbace47202d86c3',1,'jazz_datablocks::JazzBlockHeader::hash64()']]],
-  ['hash_5fblock',['hash_block',['../classjzzBLOCKS.html#a955485c62a812660310a146bd6702b53',1,'jzzBLOCKS']]],
+  ['hash64',['hash64',['../structjazz__datablocks_1_1JazzBlockHeader.html#a2c6da34bffee7e960bbace47202d86c3',1,'jazz_datablocks::JazzBlockHeader']]],
   ['hash_5fblock_5fid',['hash_block_id',['../namespacejazz__containers.html#a1a852658d6012d4ff551db778a290842',1,'jazz_containers']]],
-  ['hello',['hello',['../jazz01__main_8cpp.html#a27a1864e1f4693766ae2596e6e205731',1,'jazz01_main.cpp']]],
-  ['help',['help',['../jazz01__main_8cpp.html#a97ee70a8770dc30d06c744b24eb2fcfc',1,'jazz01_main.cpp']]],
+  ['hello',['hello',['../jazz__main_8cpp.html#a27a1864e1f4693766ae2596e6e205731',1,'jazz_main.cpp']]],
+  ['help',['help',['../jazz__main_8cpp.html#a97ee70a8770dc30d06c744b24eb2fcfc',1,'jazz_main.cpp']]],
   ['highest_5fpriority',['highest_priority',['../classjazz__containers_1_1AATBlockQueue.html#af683ce48f98244bdb3796c822ab75e64',1,'jazz_containers::AATBlockQueue']]],
-  ['host_5for_5fip',['host_or_ip',['../structjazz__node.html#a1f6388bfea55b7e5e04932eeda523b94',1,'jazz_node']]],
-  ['http_5fdelete',['HTTP_DELETE',['../jazz01__api_8h.html#a80131cf3bb8aa236a18cb067c14c23b6',1,'jazz01_api.h']]],
-  ['http_5fget',['HTTP_GET',['../jazz01__api_8h.html#aa276b433bb7caee9ec1bb1386063707b',1,'jazz01_api.h']]],
-  ['http_5fhead',['HTTP_HEAD',['../jazz01__api_8h.html#a4e69ea7b8d7e381ceaf2601e10471059',1,'jazz01_api.h']]],
-  ['http_5flanguage_5fstring',['HTTP_LANGUAGE_STRING',['../jazz01__commons_8h.html#a97580ec467c6dbf9b64faf028c7b38f2',1,'HTTP_LANGUAGE_STRING():&#160;jazz_http.cpp'],['../jazz__http_8cpp.html#a7ab3611455614c9dd370f00859d3c011',1,'HTTP_LANGUAGE_STRING():&#160;jazz_http.cpp']]],
-  ['http_5fmimetype_5fstring',['HTTP_MIMETYPE_STRING',['../jazz01__commons_8h.html#a60d50418bdf6ee2fcb069f7818f482d8',1,'HTTP_MIMETYPE_STRING():&#160;jazz_http.cpp'],['../jazz__http_8cpp.html#a90d4705dce873cd56e931d131be173d1',1,'HTTP_MIMETYPE_STRING():&#160;jazz_http.cpp']]],
-  ['http_5fnotused',['HTTP_NOTUSED',['../jazz01__api_8h.html#a7f10cb6b44e47dd330ff60e017f24510',1,'jazz01_api.h']]],
-  ['http_5foptions',['HTTP_OPTIONS',['../jazz01__api_8h.html#a63d4c725d922ebee7cddd485fd35adf3',1,'jazz01_api.h']]],
-  ['http_5fput',['HTTP_PUT',['../jazz01__api_8h.html#ad0e84459f11d4b8762fa7c5adc775602',1,'jazz01_api.h']]],
-  ['httpclient_5fcallback',['httpclient_callback',['../jazz__httpclient_8cpp.html#a1f0eb9d20eacdc59abc3d8ea5436bcb7',1,'jazz_httpclient.cpp']]]
+  ['httpclient_5fcallback',['httpclient_callback',['../namespacejazz__httpclient.html#a0a189362dbb2f76da850e185c88f4c1e',1,'jazz_httpclient']]]
 ];

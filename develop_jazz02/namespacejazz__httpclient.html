@@ -59,10 +59,89 @@ $(function() {
 
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">jazz_httpclient Namespace Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Simplest functionality to operate as an http client to GET, PUT, DELETE JazzBlock descendants to/from other Jazz nodes or any http servers.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a0a189362dbb2f76da850e185c88f4c1e"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__httpclient.html#a0a189362dbb2f76da850e185c88f4c1e">httpclient_callback</a> (char *ptr, size_t size, size_t nmemb, void *p_keepr)</td></tr>
+<tr class="separator:a0a189362dbb2f76da850e185c88f4c1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33970ec13d457bc8bafe95f5f7248c94"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__httpclient.html#a33970ec13d457bc8bafe95f5f7248c94">remote_testing_point</a> ()</td></tr>
+<tr class="separator:a33970ec13d457bc8bafe95f5f7248c94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Simplest functionality to operate as an http client to GET, PUT, DELETE JazzBlock descendants to/from other Jazz nodes or any http servers. </p>
+<p>&lt; This module uses curl in combination with JazzBlock and Jazz allocators (one shot or volatile) to simplify the communication from remote sources or across Jazz nodes.</p>
+<p>TODO: Extend module description for <a class="el" href="namespacejazz__httpclient.html" title="Simplest functionality to operate as an http client to GET, PUT, DELETE JazzBlock descendants to/from...">jazz_httpclient</a> when implemented. </p>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a0a189362dbb2f76da850e185c88f4c1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a189362dbb2f76da850e185c88f4c1e">&#9670;&nbsp;</a></span>httpclient_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t jazz_httpclient::httpclient_callback </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>nmemb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>p_keepr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A test write callback.</p>
+<p>(see <a href="https://curl.haxx.se/libcurl/c/CURLOPT_WRITEFUNCTION.html">https://curl.haxx.se/libcurl/c/CURLOPT_WRITEFUNCTION.html</a>) </p>
+
+</div>
+</div>
+<a id="a33970ec13d457bc8bafe95f5f7248c94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33970ec13d457bc8bafe95f5f7248c94">&#9670;&nbsp;</a></span>remote_testing_point()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool jazz_httpclient::remote_testing_point </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Any test implemented as a jazzCommons method for convenience.</p>
+<dl class="section return"><dt>Returns</dt><dd>true if successful, false and log(LOG_MISS, "further details") if not. </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

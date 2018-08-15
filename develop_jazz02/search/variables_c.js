@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['max_5frole',['max_role',['../structjazz__node.html#a83e23259bbf81a529a6a51be4e96764d',1,'jazz_node']]],
-  ['mesh',['mesh',['../structparsedURL.html#af61a89d0021b54417e4dd5b0e83cc05f',1,'parsedURL']]],
-  ['min_5freader',['min_reader',['../structR__binary.html#a32939fed8f798c3d1ee5a7a99aebd62c',1,'R_binary::min_reader()'],['../jazz__blockconv_8h.html#aad59e45e265897a0c963e5e046f3f750',1,'min_reader():&#160;jazz_blockconv.h']]],
-  ['min_5frole',['min_role',['../structjazz__node.html#ada5c6382c95f33cd84c44365ce01755a',1,'jazz_node']]]
+  ['r_5fna',['R_NA',['../namespacejazz__datablocks.html#aa3d35031952a46da1b9b49b6c88304a0',1,'jazz_datablocks']]],
+  ['range',['range',['../structjazz__datablocks_1_1JazzBlockHeader.html#ab88191cd826987ec1adbee63e01be67b',1,'jazz_datablocks::JazzBlockHeader']]],
+  ['rank',['rank',['../structjazz__datablocks_1_1JazzBlockHeader.html#a0f5eda4dd6f5fb86ba0fd09bb668f6fc',1,'jazz_datablocks::JazzBlockHeader']]]
 ];
