@@ -12,13 +12,14 @@ var searchData=
   ['linux_5fplatform',['LINUX_PLATFORM',['../jazz__platform_8h.html#aea13f49a32fd1c0e4c8936040892c6bd',1,'jazz_platform.h']]],
   ['linux_5fprocessor',['LINUX_PROCESSOR',['../jazz__platform_8h.html#a9fe308e808a05364a550fa9cf72fde31',1,'jazz_platform.h']]],
   ['linux_5fversion',['LINUX_VERSION',['../jazz__platform_8h.html#ae664f4fd6431eae2bb5db419fd7154c8',1,'jazz_platform.h']]],
-  ['log',['log',['../classjazz__containers_1_1JazzBlockKeepr.html#a79af2c26eaf153c8f9f33ec2ae24acbc',1,'jazz_containers::JazzBlockKeepr::log()'],['../classjazz__utils_1_1JazzLogger.html#a00e24688e61bf63c74f6d64f812b7163',1,'jazz_utils::JazzLogger::log()']]],
+  ['load_5fconfig',['load_config',['../classjazz__utils_1_1JazzConfigFile.html#abd518e3077ae9ed678a3ad891ab1935f',1,'jazz_utils::JazzConfigFile']]],
+  ['log',['log',['../classjazz__containers_1_1JazzBlockKeepr.html#a79af2c26eaf153c8f9f33ec2ae24acbc',1,'jazz_containers::JazzBlockKeepr::log()'],['../classjazz__utils_1_1JazzLogger.html#a00e24688e61bf63c74f6d64f812b7163',1,'jazz_utils::JazzLogger::log()'],['../classjazz__bebop_1_1Bebop.html#ad4e20dae6af1cb970f3a907134b5bf7f',1,'jazz_bebop::Bebop::log()'],['../classjazz__cluster_1_1JazzCluster.html#ace443cef82ed1e4276761252026c23fa',1,'jazz_cluster::JazzCluster::log()']]],
   ['log_5f_5f',['LOG__',['../jazz__utils_8h.html#a951d4516410f5848849d2cf017ea6286',1,'jazz_utils.h']]],
   ['log_5fdebug',['LOG_DEBUG',['../jazz__utils_8h.html#a6ff63e8955665c4a58b1598f2b07c51a',1,'jazz_utils.h']]],
   ['log_5ferror',['LOG_ERROR',['../jazz__utils_8h.html#aced66975c154ea0e2a8ec3bc818b4e08',1,'jazz_utils.h']]],
   ['log_5finfo',['LOG_INFO',['../jazz__utils_8h.html#aeb4f36db01bd128c7afeac5889dac311',1,'jazz_utils.h']]],
   ['log_5fmiss',['LOG_MISS',['../jazz__utils_8h.html#affb5af35aaf7d7e3224c67db2230a68a',1,'jazz_utils.h']]],
-  ['log_5fprintf',['log_printf',['../classjazz__containers_1_1JazzBlockKeepr.html#a7701f50a1ca98cbda0a86066fef36d2e',1,'jazz_containers::JazzBlockKeepr::log_printf()'],['../classjazz__utils_1_1JazzLogger.html#aa35a33d51f5f20925b229ebf927c8273',1,'jazz_utils::JazzLogger::log_printf(int loglevel, const char *fmt,...)'],['../classjazz__utils_1_1JazzLogger.html#aa14896b5294346f16b9560cec917ff3b',1,'jazz_utils::JazzLogger::log_printf(int loglevel, const char *fmt, va_list args)']]],
+  ['log_5fprintf',['log_printf',['../classjazz__containers_1_1JazzBlockKeepr.html#a7701f50a1ca98cbda0a86066fef36d2e',1,'jazz_containers::JazzBlockKeepr::log_printf()'],['../classjazz__utils_1_1JazzLogger.html#aa35a33d51f5f20925b229ebf927c8273',1,'jazz_utils::JazzLogger::log_printf(int loglevel, const char *fmt,...)'],['../classjazz__utils_1_1JazzLogger.html#aa14896b5294346f16b9560cec917ff3b',1,'jazz_utils::JazzLogger::log_printf(int loglevel, const char *fmt, va_list args)'],['../classjazz__bebop_1_1Bebop.html#a2cc14675a142012c733f9f93e8169c7b',1,'jazz_bebop::Bebop::log_printf()'],['../classjazz__cluster_1_1JazzCluster.html#a667f1d03f4aea087828d607f502c9ff5',1,'jazz_cluster::JazzCluster::log_printf()']]],
   ['log_5fwarn',['LOG_WARN',['../jazz__utils_8h.html#aea3f57d6dcc5b4ac957e2679e87dde27',1,'jazz_utils.h']]],
   ['lowest_5fpriority',['lowest_priority',['../classjazz__containers_1_1AATBlockQueue.html#a3f98227f0e15d1b7cd54982f8615c241',1,'jazz_containers::AATBlockQueue']]]
 ];

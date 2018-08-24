@@ -1,21 +1,4 @@
 var searchData=
 [
-  ['jazzblock',['JazzBlock',['../classjazz__datablocks_1_1JazzBlock.html',1,'jazz_datablocks']]],
-  ['jazzblockheader',['JazzBlockHeader',['../structjazz__datablocks_1_1JazzBlockHeader.html',1,'jazz_datablocks']]],
-  ['jazzblockidentifier',['JazzBlockIdentifier',['../structjazz__containers_1_1JazzBlockIdentifier.html',1,'jazz_containers']]],
-  ['jazzblockkeepr',['JazzBlockKeepr',['../classjazz__containers_1_1JazzBlockKeepr.html',1,'jazz_containers']]],
-  ['jazzblockkeepritem',['JazzBlockKeeprItem',['../structjazz__containers_1_1JazzBlockKeeprItem.html',1,'jazz_containers']]],
-  ['jazzcache',['JazzCache',['../classjazz__containers_1_1JazzCache.html',1,'jazz_containers']]],
-  ['jazzconfigfile',['JazzConfigFile',['../classjazz__utils_1_1JazzConfigFile.html',1,'jazz_utils']]],
-  ['jazzfilter',['JazzFilter',['../classjazz__datablocks_1_1JazzFilter.html',1,'jazz_datablocks']]],
-  ['jazzlogger',['JazzLogger',['../classjazz__utils_1_1JazzLogger.html',1,'jazz_utils']]],
-  ['jazzpersistence',['JazzPersistence',['../classjazz__persistence_1_1JazzPersistence.html',1,'jazz_persistence']]],
-  ['jazzpersistenceitem',['JazzPersistenceItem',['../structjazz__persistence_1_1JazzPersistenceItem.html',1,'jazz_persistence']]],
-  ['jazzqueueitem',['JazzQueueItem',['../structjazz__containers_1_1JazzQueueItem.html',1,'jazz_containers']]],
-  ['jazzsource',['JazzSource',['../classjazz__persistence_1_1JazzSource.html',1,'jazz_persistence']]],
-  ['jazzstringbuffer',['JazzStringBuffer',['../structjazz__datablocks_1_1JazzStringBuffer.html',1,'jazz_datablocks']]],
-  ['jazztensor',['JazzTensor',['../unionjazz__datablocks_1_1JazzTensor.html',1,'jazz_datablocks']]],
-  ['jazztensordim',['JazzTensorDim',['../unionjazz__datablocks_1_1JazzTensorDim.html',1,'jazz_datablocks']]],
-  ['jazztree',['JazzTree',['../classjazz__containers_1_1JazzTree.html',1,'jazz_containers']]],
-  ['jazztreeitem',['JazzTreeItem',['../structjazz__containers_1_1JazzTreeItem.html',1,'jazz_containers']]]
+  ['densemapping',['DenseMapping',['../classjazz__column_1_1DenseMapping.html',1,'jazz_column']]]
 ];

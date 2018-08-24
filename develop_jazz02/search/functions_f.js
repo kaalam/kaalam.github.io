@@ -1,9 +1,10 @@
 var searchData=
 [
-  ['set_5fattributes',['set_attributes',['../classjazz__datablocks_1_1JazzBlock.html#aaa590f644264b3080f305a58de99ca7b',1,'jazz_datablocks::JazzBlock']]],
-  ['set_5fdimensions',['set_dimensions',['../classjazz__datablocks_1_1JazzBlock.html#ac7414206fd3cfa3e6ecbc593f72c0ab8',1,'jazz_datablocks::JazzBlock']]],
-  ['set_5fitem_5fpriority',['set_item_priority',['../classjazz__containers_1_1AATBlockQueue.html#ab912ed036482a03927efc4f9bfeaa102',1,'jazz_containers::AATBlockQueue']]],
-  ['set_5fstring',['set_string',['../classjazz__datablocks_1_1JazzBlock.html#a76c7eea07bd355e2616afb6a7f1eb1cc',1,'jazz_datablocks::JazzBlock::set_string(int *pIndex, const char *pString)'],['../classjazz__datablocks_1_1JazzBlock.html#a96b147e283b349d5e9ef22c9bf596897',1,'jazz_datablocks::JazzBlock::set_string(int offset, const char *pString)']]],
-  ['skew',['skew',['../classjazz__containers_1_1AATBlockQueue.html#a7dd3248e7cbb05183520a09b86be9e2f',1,'jazz_containers::AATBlockQueue']]],
-  ['split',['split',['../classjazz__containers_1_1AATBlockQueue.html#a0fd2b0b807613f56c2a9d56770931131',1,'jazz_containers::AATBlockQueue']]]
+  ['r_5fvalueofna',['R_ValueOfNA',['../namespacejazz__datablocks.html#aba3faeb0c34be4885b660bd3debe14a1',1,'jazz_datablocks']]],
+  ['rapi',['rAPI',['../classjazz__api_1_1rAPI.html#aa61aeaa6d7c952f9e39ec64f9653d4a1',1,'jazz_api::rAPI']]],
+  ['rebalance',['rebalance',['../classjazz__containers_1_1AATBlockQueue.html#a745b4e957db2c726472cac312beeed19',1,'jazz_containers::AATBlockQueue']]],
+  ['recursive_5fdestroy_5fkeeprs',['recursive_destroy_keeprs',['../classjazz__containers_1_1AATBlockQueue.html#a23c3155ece3d0db74eeb7ba578007354',1,'jazz_containers::AATBlockQueue']]],
+  ['remote_5ftesting_5fpoint',['remote_testing_point',['../namespacejazz__httpclient.html#a33970ec13d457bc8bafe95f5f7248c94',1,'jazz_httpclient']]],
+  ['remove',['remove',['../classjazz__containers_1_1AATBlockQueue.html#ae230fb5367938b71926a0b47ecf95d4e',1,'jazz_containers::AATBlockQueue']]],
+  ['remove_5fgo_5fdeep',['remove_go_deep',['../classjazz__containers_1_1AATBlockQueue.html#a2c0bb01263fbcc3bfab9b07a08165130',1,'jazz_containers::AATBlockQueue']]]
 ];

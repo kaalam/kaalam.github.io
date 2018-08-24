@@ -77,6 +77,8 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:afb06a4c365e2eefb4b819493acf76fbf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__utils_1_1JazzConfigFile.html#afb06a4c365e2eefb4b819493acf76fbf">JazzConfigFile</a> (const char *input_file_name)</td></tr>
 <tr class="separator:afb06a4c365e2eefb4b819493acf76fbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd518e3077ae9ed678a3ad891ab1935f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__utils_1_1JazzConfigFile.html#abd518e3077ae9ed678a3ad891ab1935f">load_config</a> (const char *input_file_name)</td></tr>
+<tr class="separator:abd518e3077ae9ed678a3ad891ab1935f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f40c25a3056ed3c803532f9d2e4f304"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__utils_1_1JazzConfigFile.html#a8f40c25a3056ed3c803532f9d2e4f304">num_keys</a> ()</td></tr>
 <tr class="separator:a8f40c25a3056ed3c803532f9d2e4f304"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aece5a2226ecc6f18f9902829c068548b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__utils_1_1JazzConfigFile.html#aece5a2226ecc6f18f9902829c068548b">get_key</a> (const char *key, int &amp;value)</td></tr>
@@ -113,8 +115,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Load a configuration from a file.</p>
-<p>Configuration is stored in: map&lt;string, string&gt; config which is private and read using the function <a class="el" href="classjazz__utils_1_1JazzConfigFile.html#aece5a2226ecc6f18f9902829c068548b">get_key()</a>.</p>
+<p>Build a <a class="el" href="classjazz__utils_1_1JazzConfigFile.html">JazzConfigFile</a> by calling <a class="el" href="classjazz__utils_1_1JazzConfigFile.html#abd518e3077ae9ed678a3ad891ab1935f">load_config()</a></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">input_file_name</td><td>The input file name containing a configuration</td></tr>
@@ -270,6 +271,33 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True when the key exists and can be returned with the specific (overloaded) type. </dd></dl>
+
+</div>
+</div>
+<a id="abd518e3077ae9ed678a3ad891ab1935f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd518e3077ae9ed678a3ad891ab1935f">&#9670;&nbsp;</a></span>load_config()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool jazz_utils::JazzConfigFile::load_config </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>input_file_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Load a configuration from a file.</p>
+<p>Configuration is stored in: map&lt;string, string&gt; config which is private and read using the function <a class="el" href="classjazz__utils_1_1JazzConfigFile.html#aece5a2226ecc6f18f9902829c068548b">get_key()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input_file_name</td><td>The input file name containing a configuration</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if some keys were read. (There is no systematic error checking.) </dd></dl>
 
 </div>
 </div>

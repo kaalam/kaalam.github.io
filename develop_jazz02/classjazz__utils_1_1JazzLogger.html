@@ -65,6 +65,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">jazz_utils::JazzLogger Class Reference</div>  </div>
@@ -77,6 +78,8 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a90f1f4e5b1ba7967abb26ac623f29623"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__utils_1_1JazzLogger.html#a90f1f4e5b1ba7967abb26ac623f29623">JazzLogger</a> (const char *output_file_name)</td></tr>
 <tr class="separator:a90f1f4e5b1ba7967abb26ac623f29623"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87f6199d3386de90f904dc8d30fcf483"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__utils_1_1JazzLogger.html#a87f6199d3386de90f904dc8d30fcf483">JazzLogger</a> (<a class="el" href="classjazz__utils_1_1JazzConfigFile.html">JazzConfigFile</a> config, const char *config_key)</td></tr>
+<tr class="separator:a87f6199d3386de90f904dc8d30fcf483"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac03b6b6daa86502bff2a5ea0e17258f5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__utils_1_1JazzLogger.html#ac03b6b6daa86502bff2a5ea0e17258f5">~JazzLogger</a> ()</td></tr>
 <tr class="separator:ac03b6b6daa86502bff2a5ea0e17258f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06bbc6d1882fcc6d4bd6538bf23f79e8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__utils_1_1JazzLogger.html#a06bbc6d1882fcc6d4bd6538bf23f79e8">get_output_file_name</a> (char *buff, int buff_size)</td></tr>
@@ -87,6 +90,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa35a33d51f5f20925b229ebf927c8273"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa14896b5294346f16b9560cec917ff3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__utils_1_1JazzLogger.html#aa14896b5294346f16b9560cec917ff3b">log_printf</a> (int loglevel, const char *fmt, va_list args)</td></tr>
 <tr class="separator:aa14896b5294346f16b9560cec917ff3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a4e9f9f1fde7073ecac025c11e7cd3cf7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__utils_1_1JazzLogger.html#a4e9f9f1fde7073ecac025c11e7cd3cf7">InitLogger</a> ()</td></tr>
+<tr class="separator:a4e9f9f1fde7073ecac025c11e7cd3cf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -104,7 +112,7 @@ Private Attributes</h2></td></tr>
 <p>This objects logs events one line per event. It prefixes the time since the logger was created, the trace level and the thread id as in "   0.224036 : 02 :  2872 : jzzAPI started.". A printf style version supports printing variables using variadic arguments. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a90f1f4e5b1ba7967abb26ac623f29623"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90f1f4e5b1ba7967abb26ac623f29623">&#9670;&nbsp;</a></span>JazzLogger()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a90f1f4e5b1ba7967abb26ac623f29623">&#9670;&nbsp;</a></span>JazzLogger() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -118,8 +126,38 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Initialize the <a class="el" href="classjazz__utils_1_1JazzLogger.html">JazzLogger</a>.</p>
-<p>Stores a copy of the file name, Sets the stopwatch origin in big_bang. Tries to open the file .. .. if successful, logs out a new execution message with level LOG_INFO .. if failed, clears the file_name (that can be queried via <a class="el" href="classjazz__utils_1_1JazzLogger.html#a06bbc6d1882fcc6d4bd6538bf23f79e8">get_output_file_name()</a>) </p>
+<p>Initialize the <a class="el" href="classjazz__utils_1_1JazzLogger.html">JazzLogger</a> (Method 1: by directly giving it the output_file_name).</p>
+<p>Stores a copy of the file name, Calls <a class="el" href="classjazz__utils_1_1JazzLogger.html#a4e9f9f1fde7073ecac025c11e7cd3cf7">InitLogger()</a> for the rest of the initialization. </p>
+
+</div>
+</div>
+<a id="a87f6199d3386de90f904dc8d30fcf483"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87f6199d3386de90f904dc8d30fcf483">&#9670;&nbsp;</a></span>JazzLogger() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">jazz_utils::JazzLogger::JazzLogger </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classjazz__utils_1_1JazzConfigFile.html">JazzConfigFile</a>&#160;</td>
+          <td class="paramname"><em>config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>config_key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Initialize the <a class="el" href="classjazz__utils_1_1JazzLogger.html">JazzLogger</a> (Method 2: with a configuration file and a configuration key).</p>
+<p>Stores a copy of the file name, Calls <a class="el" href="classjazz__utils_1_1JazzLogger.html#a4e9f9f1fde7073ecac025c11e7cd3cf7">InitLogger()</a> for the rest of the initialization. </p>
 
 </div>
 </div>
@@ -177,6 +215,33 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Zero if opening the file failed, the length of the name instead. </dd></dl>
+
+</div>
+</div>
+<a id="a4e9f9f1fde7073ecac025c11e7cd3cf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e9f9f1fde7073ecac025c11e7cd3cf7">&#9670;&nbsp;</a></span>InitLogger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void jazz_utils::JazzLogger::InitLogger </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Common part of the constructor has been emancipated as a private argument-less method to avoid repeating code.</p>
+<p>Sets the stopwatch origin in big_bang. Tries to open the file .. .. if successful, logs out a new execution message with level LOG_INFO .. if failed, clears the file_name (that can be queried via <a class="el" href="classjazz__utils_1_1JazzLogger.html#a06bbc6d1882fcc6d4bd6538bf23f79e8">get_output_file_name()</a>) </p>
 
 </div>
 </div>

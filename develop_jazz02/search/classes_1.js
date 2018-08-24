@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['filtersize',['FilterSize',['../structjazz__datablocks_1_1FilterSize.html',1,'jazz_datablocks']]]
+  ['bebop',['Bebop',['../classjazz__bebop_1_1Bebop.html',1,'jazz_bebop']]]
 ];

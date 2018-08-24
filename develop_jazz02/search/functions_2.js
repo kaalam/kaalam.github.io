@@ -1,6 +1,10 @@
 var searchData=
 [
-  ['debug_5fput',['debug_put',['../classjazz__utils_1_1JazzConfigFile.html#a614b92525aad92559c08d3fb65adb337',1,'jazz_utils::JazzConfigFile']]],
-  ['decrease_5flevel',['decrease_level',['../classjazz__containers_1_1AATBlockQueue.html#a3c31288554cf5216b39e5f59683fcf43',1,'jazz_containers::AATBlockQueue']]],
-  ['destroy_5fkeeprs',['destroy_keeprs',['../classjazz__containers_1_1JazzBlockKeepr.html#ab34ede7a4ae92dd4fffafded935ce099',1,'jazz_containers::JazzBlockKeepr::destroy_keeprs()'],['../classjazz__containers_1_1AATBlockQueue.html#ac66ad5c6d0d264df3578bd9d73e26233',1,'jazz_containers::AATBlockQueue::destroy_keeprs()'],['../classjazz__persistence_1_1JazzPersistence.html#ab0597085ff10817b8b3488f502bc27d8',1,'jazz_persistence::JazzPersistence::destroy_keeprs()'],['../classjazz__persistence_1_1JazzSource.html#a4c2d9624cb8540ba2c613bb5984a03db',1,'jazz_persistence::JazzSource::destroy_keeprs()']]]
+  ['can_5ffilter',['can_filter',['../classjazz__datablocks_1_1JazzFilter.html#aef7df6d04cf4a9b95fba31d719d794fa',1,'jazz_datablocks::JazzFilter']]],
+  ['cleanconfigargument',['CleanConfigArgument',['../namespacejazz__utils.html#aa804bdf15b228c69c1c269c8bb5ef6e1',1,'jazz_utils']]],
+  ['close_5fjazz_5fblock',['close_jazz_block',['../namespacejazz__containers.html#a6a7ba3e2d868ec1964019819225b1590',1,'jazz_containers']]],
+  ['close_5fjazz_5ffile',['close_jazz_file',['../classjazz__persistence_1_1JazzPersistence.html#af65df849971f2210b98dce4a48807e56',1,'jazz_persistence::JazzPersistence::close_jazz_file()'],['../classjazz__persistence_1_1JazzSource.html#ad677064c3e69563f08280626f6a8559f',1,'jazz_persistence::JazzSource::close_jazz_file()']]],
+  ['copy_5ffrom_5fkeepr',['copy_from_keepr',['../classjazz__persistence_1_1JazzPersistence.html#a1a1320205c8b9d7e4accc46132be069b',1,'jazz_persistence::JazzPersistence::copy_from_keepr()'],['../classjazz__persistence_1_1JazzSource.html#afa13a8e97305785386aa3930772cc512',1,'jazz_persistence::JazzSource::copy_from_keepr()']]],
+  ['copy_5fto_5fkeepr',['copy_to_keepr',['../classjazz__persistence_1_1JazzPersistence.html#a093a52cdf7103fa5b0a36e3c0832bda0',1,'jazz_persistence::JazzPersistence::copy_to_keepr()'],['../classjazz__persistence_1_1JazzSource.html#ad02574f7b34f6abdfd91352c23fb4704',1,'jazz_persistence::JazzSource::copy_to_keepr()']]],
+  ['countbytesfromutf8',['CountBytesFromUtf8',['../namespacejazz__utils.html#a6bbf0485f152c6bf8f8e8d6413288d20',1,'jazz_utils']]]
 ];
