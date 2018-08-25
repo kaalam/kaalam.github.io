@@ -24,6 +24,7 @@ var searchData=
   ['cell_5ftype_5fsingle',['CELL_TYPE_SINGLE',['../jazz__datablocks_8h.html#ac6cbc5f5778c5ad50a20d9d5509d5816',1,'jazz_datablocks.h']]],
   ['cell_5fuint',['cell_uint',['../unionjazz__datablocks_1_1JazzTensor.html#a6826e1f2f33a75e5d000a90ce5f6b4ad',1,'jazz_datablocks::JazzTensor']]],
   ['cell_5fulongint',['cell_ulongint',['../unionjazz__datablocks_1_1JazzTensor.html#a17efd43623f8aadcad49050a7a7c5ddf',1,'jazz_datablocks::JazzTensor']]],
+  ['charsxp',['CHARSXP',['../jazz__stdcore_8cpp.html#a8c6a57ad13f96a2140e4ebde79c8ed5f',1,'jazz_stdcore.cpp']]],
   ['cleanconfigargument',['CleanConfigArgument',['../namespacejazz__utils.html#aa804bdf15b228c69c1c269c8bb5ef6e1',1,'jazz_utils']]],
   ['close_5fjazz_5fblock',['close_jazz_block',['../namespacejazz__containers.html#a6a7ba3e2d868ec1964019819225b1590',1,'jazz_containers']]],
   ['close_5fjazz_5ffile',['close_jazz_file',['../classjazz__persistence_1_1JazzPersistence.html#af65df849971f2210b98dce4a48807e56',1,'jazz_persistence::JazzPersistence::close_jazz_file()'],['../classjazz__persistence_1_1JazzSource.html#ad677064c3e69563f08280626f6a8559f',1,'jazz_persistence::JazzSource::close_jazz_file()']]],

@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['last_5fidx',['last_idx',['../structjazz__datablocks_1_1JazzStringBuffer.html#a2cea7f923164e5d3061d060fbc1b207d',1,'jazz_datablocks::JazzStringBuffer']]],
-  ['last_5fused',['last_used',['../structjazz__containers_1_1JazzQueueItem.html#a46a971d929f82e6113f41ca8db1603c9',1,'jazz_containers::JazzQueueItem']]],
-  ['length',['length',['../structjazz__datablocks_1_1FilterSize.html#a5426d9f5a5bed2015517bcac41935ac5',1,'jazz_datablocks::FilterSize']]],
-  ['level',['level',['../structjazz__containers_1_1JazzQueueItem.html#aca3ebf95bf4562b25e3fdbfb97428d3d',1,'jazz_containers::JazzQueueItem']]]
+  ['keepr_5fitem_5fsize',['keepr_item_size',['../classjazz__containers_1_1JazzBlockKeepr.html#aeb73a566aac952101824d99602e4d3b8',1,'jazz_containers::JazzBlockKeepr']]],
+  ['key',['key',['../structjazz__containers_1_1JazzBlockIdentifier.html#afc6f907e8213904f0d2e5a3ed77c2ad2',1,'jazz_containers::JazzBlockIdentifier']]]
 ];

@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['f_5fbuff',['f_buff',['../classjazz__utils_1_1JazzLogger.html#aa77f570412e57c2c1c1e71335b506c57',1,'jazz_utils::JazzLogger']]],
-  ['f_5fna',['F_NA',['../namespacejazz__datablocks.html#a89f2e2396ad5c5d8173409f2d4064a74',1,'jazz_datablocks']]],
-  ['f_5fstream',['f_stream',['../classjazz__utils_1_1JazzLogger.html#a79b4a4565702ab4c4829d9228b95b40a',1,'jazz_utils::JazzLogger']]],
-  ['file_5fname',['file_name',['../classjazz__utils_1_1JazzLogger.html#aa7a93e44784334e01585838a58677d1b',1,'jazz_utils::JazzLogger']]],
-  ['filter',['filter',['../unionjazz__datablocks_1_1JazzTensorDim.html#ab6b60166beb803a31bcc848312df4f93',1,'jazz_datablocks::JazzTensorDim']]]
+  ['env_5fset_5fmapsize',['env_set_mapsize',['../structjazz__persistence_1_1JazzLmdbOptions.html#a8a4a4aa3e9077233033cb26863656a29',1,'jazz_persistence::JazzLmdbOptions']]],
+  ['env_5fset_5fmaxdbs',['env_set_maxdbs',['../structjazz__persistence_1_1JazzLmdbOptions.html#a8b09f93fbb29a2141cc8c67e01153dd9',1,'jazz_persistence::JazzLmdbOptions']]],
+  ['env_5fset_5fmaxreaders',['env_set_maxreaders',['../structjazz__persistence_1_1JazzLmdbOptions.html#aced6b88104f7240a931f78386c5e71f1',1,'jazz_persistence::JazzLmdbOptions']]]
 ];

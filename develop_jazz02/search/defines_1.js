@@ -13,6 +13,7 @@ var searchData=
   ['cell_5ftype_5fjazz_5ftime',['CELL_TYPE_JAZZ_TIME',['../jazz__datablocks_8h.html#aee2f75a7cdb2198acc16ffb9ff6c6a85',1,'jazz_datablocks.h']]],
   ['cell_5ftype_5flong_5finteger',['CELL_TYPE_LONG_INTEGER',['../jazz__datablocks_8h.html#aa78915add7f8cb20ecfa873ce9bad9c9',1,'jazz_datablocks.h']]],
   ['cell_5ftype_5fsingle',['CELL_TYPE_SINGLE',['../jazz__datablocks_8h.html#ac6cbc5f5778c5ad50a20d9d5509d5816',1,'jazz_datablocks.h']]],
+  ['charsxp',['CHARSXP',['../jazz__stdcore_8cpp.html#a8c6a57ad13f96a2140e4ebde79c8ed5f',1,'jazz_stdcore.cpp']]],
   ['cmnd_5fhelp',['CMND_HELP',['../jazz__main_8h.html#a32c3b827931ad883bf0d4e18d79eac03',1,'jazz_main.h']]],
   ['cmnd_5fstart',['CMND_START',['../jazz__main_8h.html#a71614c145c330082129fa1709b212526',1,'jazz_main.h']]],
   ['cmnd_5fstatus',['CMND_STATUS',['../jazz__main_8h.html#a81477e191d8e50592d5e201a69dc0492',1,'jazz_main.h']]],

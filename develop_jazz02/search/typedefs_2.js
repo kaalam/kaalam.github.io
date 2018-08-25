@@ -9,5 +9,7 @@ var searchData=
   ['pjazzpersistenceitem',['pJazzPersistenceItem',['../namespacejazz__persistence.html#aa98d26bb20eeed9a1143b97939b5941a',1,'jazz_persistence']]],
   ['pjazzqueueitem',['pJazzQueueItem',['../namespacejazz__containers.html#af198c216f3a72185e308f79a1ff8e8c7',1,'jazz_containers']]],
   ['pjazzstringbuffer',['pJazzStringBuffer',['../namespacejazz__datablocks.html#a1b18b7b5777c05356a146ec86043440c',1,'jazz_datablocks']]],
-  ['pjazztreeitem',['pJazzTreeItem',['../namespacejazz__containers.html#a8b61b7a47944422fabefe7d4d52feabc',1,'jazz_containers']]]
+  ['pjazztreeitem',['pJazzTreeItem',['../namespacejazz__containers.html#a8b61b7a47944422fabefe7d4d52feabc',1,'jazz_containers']]],
+  ['pmhd_5fdaemon',['pMHD_Daemon',['../namespacejazz__restapi.html#ad8e6d89f033ad5dd1341f1d6f9c85eff',1,'jazz_restapi']]],
+  ['psignalhandler',['pSignalHandler',['../namespacejazz__restapi.html#afa940b249b29393af1b34da7618e50cb',1,'jazz_restapi']]]
 ];
