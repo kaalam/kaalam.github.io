@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>kaalam.ai</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<!--[if lte IE 8]><script src="/kaalam/assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="/kaalam/assets/css/main.css" />
+	<!--[if lte IE 9]><link rel="stylesheet" href="/kaalam/assets/css/ie9.css" /><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" href="/kaalam/assets/css/ie8.css" /><![endif]-->
+</head>
+
+
+<body>
+
+    <!-- Wrapper -->
+<div id="wrapper">
+
+<!-- Header -->
+<header id="header">
+	<a href="https://kaalam.github.io/kaalam/" class="logo"><strong>kaalam.ai</strong> <span>The Authors of Jazz</span></a>
+	<nav>
+		<a href="#menu">Menu</a>
+	</nav>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+	<ul class="links">
+        
+		    
+		        <li><a href="https://kaalam.github.io/kaalam/">Home</a></li>
+	    	
+		
+		    
+		
+		
+		    
+		
+		    
+		
+
+		<li><a href="/jazz_reference/">User's Manual</a></li>
+		<li><a href="/develop/">Developer's Reference</a></li>
+		<li><a href="/rjazz/">R client Reference</a></li>
+		<li><a href="/pyjazz/">Python client Reference</a></li>
+	</ul>
+</nav>
+ 
+    
+    
+<!-- Main -->
+<div id="main" class="alt">
+
+<!-- One -->
+<section id="one">
+	<div class="inner">
+		<header class="major">
+			<h1>How is Jazz a solution</h1>
+		</header>
+		<span class="image main"><img src="/kaalam/assets/images/top_solution.jpg" alt="" /></span>
+		<p><div id="main" class="alt">
+<section id="one">
+
+<h4>Related pages</h4>
+<ul class="actions vertical small">
+	<li><a href="/kaalam/2018/10/02/reviewing_the_motive.html" class="button small">Part 1 the Motive for Jazz</a></li>
+	<li><a href="/jazz_reference/basics_jazz_vision.html" class="button small">Technically, what is Jazz?</a></li>
+</ul>
+
+
+<p>In the <a href="/kaalam/2018/10/02/reviewing_the_motive.html"><b>first part</b></a> we identified seven opportunities for improvement. In
+this post we discuss how Jazz addresses them to better understand why Jazz was created. We also add final bonus questions to clarify
+the relationship with other platforms. Hopefully, this helps clarifying Jazz's vision and intentions. We apologize for getting <b>maybe too
+technical</b>, in the end it is a debate on technical solutions to technical problems.</p>
+
+<h4><b>One:</b> The efficiency of current systems is broken, unless all you need is pushing <b>rectangles</b> into other rectangles.</h4>
+
+<p>Okay, it is a strong headline, but it means: when you train and predict using deep neural networks, current platforms are amazing and
+they can make use of all the hardware you can throw at them very efficiently. When you ask simple questions like <i>"do I really need all
+the connections?"</i> you could argue <i>"For training I do, how else would I know which ones are useless until I train?"</i> and it sounds
+like a fair point, but for prediction, defining <b>useless</b> as a connection that can never make a change in the final result because of
+its weights: <i>"Do I have 1% of useless connections or 99%?"</i>. The answer could be: <i>"who cares? the optimization would break if you
+start cherry picking connections."</i> Well, apparently, <b>brains do</b>.</p>
+<p>So maybe, we would benefit from cherry picking as we mention in issue three. But, for the moment, let's say we need the <b>power
+to express complex ideas at low level</b>. And by low level, we mean the "things" that are executed millions of times (per core, thread and
+second) rather that those that get executed thousands of times or less.</p>
+<blockquote>
+And by "express ideas" we mean, provide a <b>programming language</b>. Of course, extending the standard core in C++ is also an option
+in some cases, but that is too hard for most users. And only few things make sense in a <b>standard core</b> by definition.
+<b>Jazz has a full language</b> not just a way to define combinations of primitives constrained by requirements such as differentiability.
+<a href="/jazz_reference/vision_bebop.html"><b>Bebop</b></a>
+</blockquote>
+
+<h4><b>Two:</b> Current platforms can sometimes be more a hindrance than a help in the exploration of <b>new ideas</b>.</h4>
+
+<p>This argument sounds similar to the previous one, but with a key difference, it targets the science rather than the technology.
+Platforms can act like a hammer looking for everything to be a nail. All our models are differentiable end to end because "we" only know
+backprop as a learning mechanism. Should we try RL with tree search, a genetic algorithm or something new, it would get deeply
+handicapped by platforms just because it is on the wrong side of the optimization pyramid.
+<h5>Two ideas make Jazz different in this way:</h5>
+<blockquote>
+<ul>
+<li>Jazz provides "out of the box" efficient structures to do things like tree search. This can easily make three orders of magnitude
+ (Mevals/sec vs. Kevals/sec) difference.
+<a href="/jazz_reference/vision_blocks_keeprs.html"><b>Blocks and keeprs</b></a></li>
+<li>Jazz's language, Bebop, is created with automatic programming in mind. It has support for exploring incrementally in a natural way
+and trying out without breaking things. It's biological inspiration is more evolution than neurons.
+<a href="/jazz_reference/reference_bop_basics.html"><b>Bebop's design ideas</b></a></li>
+</ul>
+</blockquote>
+</p>
+
+<h4><b>Three:</b> Current solutions are not giving any thought (at platform level) to efficient <b>quick exploration</b>.</h4>
+
+<p>This is exactly why Jazz was created in the first place. We had to provide analysis based on millions (to billions) of data rows
+to thousands of users. The overhead of waiting for queries that took minutes was too much for the average case and the infrastructure
+could not handle giving access to querying to thousands of users. We had to focus on partial results taken from random samples and
+leveraging cached results as much as possible. Before deciding that we needed Jazz, we wrote code running in the back-end of existing
+distributed key-value stores. That almost did the job, but was very short sighted in terms of product life cycle. We learned a lot about
+distributing data and, at some point, we found the courage to tell our bosses that we needed to write the storage (almost) from scratch,
+in C++, to own a platform to do data computation for the future, <b>in a bank</b>! Jazz uses LMDB as the persistence, but, and here we
+join with issue four, Jazz is the only monolithic process.</p>
+<p>It is only possible to get access to randomly selected rows of data with zero overhead when the persistence and the computing
+platform are the same process.</p>
+<blockquote>
+Being in the same process is necessary, but not sufficient. The magic comes when <b>selection in a block is a first class citizen</b> as
+in Jazz. Also, forcing functions to be "true functions" and caching allows reusing results of computations rather than just rows of data.
+</blockquote>
+<p>We cannot stress more how <b>important this is for AI</b>. Besides having solved this problem in a different domain, We have decades of
+AI research behind. Learning is all about verifying hypothesis and confirmation/disproof based of small sets of data can leverage learning
+speed orders of magnitude.</p>
+
+<h4><b>Four:</b> Using <b>external processes</b> for creating REST APIs, storing data or computing with interpreters isn't the fastest choice.</h4>
+
+<p>As we just mentioned, at least the persistence and the processing platforms should be in the same process if you want to benefit from
+fast random access to data. Thanks to C++ and OSS, we can do better than that: we have persistence (LMDB-based), an http server
+(libmicrohttpd-based), an http client (libcurl-based) and a computing platform in the same process. Everything is re-entrant and
+multi-threaded. Everything is <b>as fast as it can be built</b> and everything, except the computing platform, is broadly used by millions
+of users. The original Jazz had an embedded R interpreter. That was some kind of a technical "tour de force", it was very efficient, but
+single threaded, kind of breaking the whole idea. Jazz still has direct binary support for R vectors inherited from the original code
+base.</p>
+
+<div class="box">
+<p><b>We resisted all we could</b> before accepting that we had to <b>create another programming language</b>, but finally
+surrendered.</p>
+</div>
+
+<blockquote>
+In the end, <b>Jazz runs on top of Linux and does not require anything else</b>. It persists data, does computation, scales across a cluster,
+and serves final applications that only need a web browser or a mobile app to connect to it. Just <b>one monolithic process</b> that is
+<b>extremely lightweight</b> and <b>conceptually very simple</b>. Should there be complexity, it is in the application code written in
+<b>Bebop</b> or in the front end technologies written for the browser.
+</blockquote>
+
+<h4><b>Five:</b> Using CPU/GPU to do neural networks while <b>expecting neural networks to do what the CPU does</b> is broken.</h4>
+
+<p>This is kind of waking up from the <i>"GOFAI is the past of AI"</i> dream and finding out that just adding layers to DNN architectures
+did not solve the <b>next problem</b>. We could digress a lot on what kind of cognitive functions are like perception and which are like
+causal inference and what requires what, but we save it by just stating: as of today, nobody knows how to build human-like reasoning.</p>
+
+<blockquote>
+<b>Jazz</b> does not have this problem at all. Jazz has a language that can do arithmetic, logic and everything a CPU can do. It does not
+need to "grow a network that multiplies", it can just use the <b>mul</b> instruction. If we let a program learn multiplication, we just
+give it the opportunity to "play" with the <b>mul</b> instruction. Digital devices are superhuman doing almost everything they do. The
+problem is hard enough to add constraints.
+</blockquote>
+
+<h4><b>Six: Scripting languages</b> are great for exploration. In production, they are slow, memory hungry and challenge architecture.</h4>
+
+<p>Despite that being true, it is always possible to argue: <i>"Human hours are more expensive that computing hours."</i> or <i>"Resources
+are much better spent building new things than optimizing things that are already good enough."</i> and many other <b>perfect sense making
+points</b>. In short: there is not always a compelling reason to "get rid of scripting languages".</p>
+
+<blockquote>
+If we implied that <b>Jazz</b> requires getting rid of scripting languages, we apologize, <b>it does not</b>. You can perfectly run
+a Jazz solution from Python or R forever if that is what you want.
+</blockquote>
+
+<p>Now, look at it form the other side: When you have a working solution, how long does it take to convert that into something lightweight,
+parallelized that does not require the interpreter anymore? That is what Jazz development is about, when you have developed your solution
+using Jazz, <b>you already have it</b>. See <a href="/jazz_reference/vision_apis_http.html"><b>API vision</b></a></p>
+
+<h4><b>Seven:</b> Working with different kinds of <b>data files</b> and <b>services</b> is tedious and error prone.</h4>
+
+<p>Data integration is the ugliest part of data analytics. It is already bad when we only have tabular data. Who knows how many hours are spent
+fixing character encodings and date formats. In AI it is even worse, since AI is about "unstructured" data. We have myriads of binary
+formats for images, sound, video, text files and more. Some algorithms also expect data to be transformed: images to be scaled, normalized,
+etc.</p>
+<p>On the other side, we have myriads of tools to do these things that have limitations and different argument syntax. The knowledge on
+what to use on what to produce what is stored as human readable text.</p>
+
+<blockquote>
+Making the knowledge <b>machine understandable</b> rather than human understandable makes sense to us. If there was a universal tool for
+this (in the way git is the universal version control system), we wouldn't even mention it. But, there is no such tool and the first thing
+we need to make it happen is tagging the files with attributes specifying what they are and what tools can produce what and how. In Jazz
+files are blocks and blocks have attributes as first class citizen. Just like a web resource has mime types, languages, a url, etc. any
+file could have attributes defining what can be done with it.
+</blockquote>
+
+<p>In Jazz we could declare a reference to "100x100 scaled image of frame 12345 from a video inside my_trip_to_london.tar.gz" as a promise.
+When the picture is needed, Jazz extracts the video, uses the appropriate codec to render the specific frame, scales it to 100x100 and
+returns it.</p>
+
+<h4><b>Bonus question 1:</b> Do you plan to use Jazz <b>instead</b> of other platforms?</h4>
+
+<p><b>Not instead</b>! The wonderful part of OSS is, you don't have to chose one or the other! Even in the best case scenario in which Jazz
+is a success, it is very unlikely that it becomes the best option for training deep learning models. We will not spend development
+resources in a direction in which there is a well established industry and solutions already work near perfectly.</p>
+
+<h4><b>Bonus question 2:</b> Will you implement what other platforms have to compute pre-trained models?</h4>
+
+<p><b>Yes</b> and <b>no</b>!</p>
+
+<p>It is still to be decided what the roadmap is and in what order things will be implemented. It is amazing how other platforms are providing
+useful ready-to-use components like those of <b>mxnet Gluon</b>. We want to focus development in creating projects on Jazz already in 2019.
+It early stages, we want to focus on what other platforms cannot do, and not on what other platforms excel at. Should we need pre-trained
+models at this stage, we will foreseeably compute them on separate processes running mxnet or something else.</p>
+
+<p>Nevertheless, if we had enough community traction to have people working on implementing standard core functionality and model converters,
+the ideal world would probably include Jazz running DNNs imported from other platforms.</p>
+
+<blockquote>
+<b>The ideal world as a user is</b>: With no effort, we import a trained model from a different platform and run it in Jazz. The model
+automatically benefits from lightweight multi-threaded scalability and gets deployed. Other Jazz services can also use it as part of more
+complex ideas. We can even maintain a collection of useful models pre-trained as text-to-speech, voice recognition, etc.
+<a href="/jazz_reference/reference_docker_latest_server.html"><b>Jazz à la carte</b></a>
+</blockquote>
+
+<h4><b>Bonus question 3:</b> Wouldn't it have been much simpler to extend an existing platform instead of creating a new one?</h4>
+
+<p>Again, probably <b>yes</b> and <b>no</b>.</p>
+
+<p>Solutions including other platforms are not monolithic, let's assume we can live with that. They have languages for creating DNNs that
+are efficient, but that is <b>not</b> the kind of language we are talking about. We could fork another platform and build a
+language on top, but then, we would diverge and create a hell to keep up to date with the original community. Also, other platforms have
+many things we find unnecessary and that just add overhead to our projects. <b>mxnet</b> has a key-value store, but that's not how we
+want the persistence to be,  ...</p>
+
+<p>We have spent a lot of time pondering on this. We also looked for <b>perfect matches</b> (like LMDB, Libmicrohttpd and libCurl) on the
+tensor arithmetic side that provide most of what we need out of the box. Projects like tiny-dnn, ... It is still not a final decision,
+maybe we end up transforming some OSS code to help implementing the standard core like we are already doing in other parts of Jazz.</p>
+
+<p>We could also have extended a platform as a partial solution just to build something similar to what we want. This is, again, how
+Jazz was born: understanding that sometimes you need to take the time to <b>create the tool you need</b> instead of patching something that
+does the job "more or less".</p>
+
+<p>Or <b>we may simply be wrong</b> and should be doing what everyone else is doing. (No sarcasm.)</p>
+
+</section>
+</div>
+</p>
+	</div>
+</section>
+
+</div>
+
+    <!-- Contact -->
+<section id="contact">
+	<div class="inner">
+		<section>
+			<form action="https://formspree.io/kaalam@kaalam.ai" method="POST">
+				<div class="field half first">
+					<label for="name">Name</label>
+					<input type="text" name="name" id="name" />
+				</div>
+				<div class="field half">
+					<label for="email">Email</label>
+					<input type="text" name="_replyto" id="email" />
+				</div>
+				<div class="field">
+					<label for="message">Message</label>
+					<textarea name="message" id="message" rows="6"></textarea>
+				</div>
+				<ul class="actions">
+					<li><input type="submit" value="Send Message" class="special" /></li>
+					<li><input type="reset" value="Clear" /></li>
+				</ul>
+			</form>
+		</section>
+		<section class="split">
+			<section>
+				<div class="contact-method">
+					<span class="icon alt fa-envelope"></span>
+					<h3>Email</h3>
+					<a href="#">kaalam@kaalam.ai</a>
+				</div>
+			</section>
+			<section>
+				<div class="contact-method">
+					<span class="icon alt fa-home"></span>
+					<h3>Address</h3>
+					<span>
+					
+					
+					
+					
+					
+					    Madrid and the whole planet (for now).
+					
+					</span>
+				</div>
+			</section>
+		</section>
+	</div>
+</section>
+
+<!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+			<ul class="icons">
+				
+				<li><a href="https://twitter.com/kaalam_ai" class="icon alt fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+				
+				
+				
+				
+				
+				
+				
+				
+				<li><a href="https://github.com/kaalam" class="icon alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+				
+				
+				<li><a href="https://kaalam-ai.slack.com" class="icon alt fa-slack" target="_blank"><span class="label">Slack</span></a></li>
+				
+				
+			</ul>
+		</div>
+	</footer>
+
+</div>
+
+<!-- Scripts -->
+	<script src="https://kaalam.github.io/kaalam/assets/js/jquery.min.js"></script>
+	<script src="https://kaalam.github.io/kaalam/assets/js/jquery.scrolly.min.js"></script>
+	<script src="https://kaalam.github.io/kaalam/assets/js/jquery.scrollex.min.js"></script>
+	<script src="https://kaalam.github.io/kaalam/assets/js/skel.min.js"></script>
+	<script src="https://kaalam.github.io/kaalam/assets/js/util.js"></script>
+	<!--[if lte IE 8]><script src="https://kaalam.github.io/kaalam/assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="https://kaalam.github.io/kaalam/assets/js/main.js"></script>
+
+
+</body>
+
+</html>
