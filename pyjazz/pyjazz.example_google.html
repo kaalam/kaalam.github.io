@@ -8,7 +8,7 @@
 <td valign=bottom>&nbsp;<br>
 <font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="pyjazz.html"><font color="#ffffff">pyjazz</font></a>.example_google</strong></big></big></font></td
 ><td align=right valign=bottom
-><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/jadmin/anaconda3/lib/python3.6/site-packages/pyjazz/example_google.py">/home/jadmin/anaconda3/lib/python3.6/site-packages/pyjazz/example_google.py</a></font></td></tr></table>
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/jadmin/anaconda3/lib/python3.7/site-packages/pyjazz/example_google.py">/home/jadmin/anaconda3/lib/python3.7/site-packages/pyjazz/example_google.py</a></font></td></tr></table>
     <p><tt>Example&nbsp;Google&nbsp;style&nbsp;docstrings.<br>
 &nbsp;<br>
 This&nbsp;module&nbsp;demonstrates&nbsp;documentation&nbsp;as&nbsp;specified&nbsp;by&nbsp;the&nbsp;`Google&nbsp;Python<br>
@@ -68,7 +68,9 @@ Todo:<br>
 <font color="#000000" face="helvetica, arial"><a name="ExampleClass">class <strong>ExampleClass</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
     
 <tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
-<td colspan=2><tt>The&nbsp;summary&nbsp;line&nbsp;for&nbsp;a&nbsp;class&nbsp;docstring&nbsp;should&nbsp;fit&nbsp;on&nbsp;one&nbsp;line.<br>
+<td colspan=2><tt><a href="#ExampleClass">ExampleClass</a>(param1,&nbsp;param2,&nbsp;param3)<br>
+&nbsp;<br>
+The&nbsp;summary&nbsp;line&nbsp;for&nbsp;a&nbsp;class&nbsp;docstring&nbsp;should&nbsp;fit&nbsp;on&nbsp;one&nbsp;line.<br>
 &nbsp;<br>
 If&nbsp;the&nbsp;class&nbsp;has&nbsp;public&nbsp;attributes,&nbsp;they&nbsp;may&nbsp;be&nbsp;documented&nbsp;here<br>
 in&nbsp;an&nbsp;``Attributes``&nbsp;section&nbsp;and&nbsp;follow&nbsp;the&nbsp;same&nbsp;formatting&nbsp;as&nbsp;a<br>
@@ -151,7 +153,9 @@ mentioned&nbsp;here.</tt></dd>
 <font color="#000000" face="helvetica, arial"><a name="ExampleError">class <strong>ExampleError</strong></a>(<a href="builtins.html#Exception">builtins.Exception</a>)</font></td></tr>
     
 <tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
-<td colspan=2><tt>Exceptions&nbsp;are&nbsp;documented&nbsp;in&nbsp;the&nbsp;same&nbsp;way&nbsp;as&nbsp;classes.<br>
+<td colspan=2><tt><a href="#ExampleError">ExampleError</a>(msg,&nbsp;code)<br>
+&nbsp;<br>
+Exceptions&nbsp;are&nbsp;documented&nbsp;in&nbsp;the&nbsp;same&nbsp;way&nbsp;as&nbsp;classes.<br>
 &nbsp;<br>
 The&nbsp;__init__&nbsp;method&nbsp;may&nbsp;be&nbsp;documented&nbsp;in&nbsp;either&nbsp;the&nbsp;class&nbsp;level<br>
 docstring,&nbsp;or&nbsp;as&nbsp;a&nbsp;docstring&nbsp;on&nbsp;the&nbsp;__init__&nbsp;method&nbsp;itself.<br>
@@ -186,7 +190,7 @@ Data descriptors defined here:<br>
 <dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
 </dl>
 <hr>
-Methods inherited from <a href="builtins.html#Exception">builtins.Exception</a>:<br>
+Static methods inherited from <a href="builtins.html#Exception">builtins.Exception</a>:<br>
 <dl><dt><a name="ExampleError-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;<a href="builtins.html#object">object</a>.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
 
 <hr>
@@ -195,7 +199,7 @@ Methods inherited from <a href="builtins.html#BaseException">builtins.BaseExcept
 
 <dl><dt><a name="ExampleError-__getattribute__"><strong>__getattribute__</strong></a>(self, name, /)</dt><dd><tt>Return&nbsp;getattr(self,&nbsp;name).</tt></dd></dl>
 
-<dl><dt><a name="ExampleError-__reduce__"><strong>__reduce__</strong></a>(...)</dt><dd><tt>helper&nbsp;for&nbsp;pickle</tt></dd></dl>
+<dl><dt><a name="ExampleError-__reduce__"><strong>__reduce__</strong></a>(...)</dt><dd><tt>Helper&nbsp;for&nbsp;pickle.</tt></dd></dl>
 
 <dl><dt><a name="ExampleError-__repr__"><strong>__repr__</strong></a>(self, /)</dt><dd><tt>Return&nbsp;repr(self).</tt></dd></dl>
 
@@ -245,7 +249,7 @@ Examples:<br>
 &nbsp;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&nbsp;print([i&nbsp;for&nbsp;i&nbsp;in&nbsp;<a href="#-example_generator">example_generator</a>(4)])<br>
 &nbsp;&nbsp;&nbsp;&nbsp;[0,&nbsp;1,&nbsp;2,&nbsp;3]</tt></dd></dl>
- <dl><dt><a name="-function_with_pep484_type_annotations"><strong>function_with_pep484_type_annotations</strong></a>(param1:int, param2:str) -&gt; bool</dt><dd><tt>Example&nbsp;function&nbsp;with&nbsp;<a href="http://www.python.org/dev/peps/pep-0484/">PEP&nbsp;484</a>&nbsp;type&nbsp;annotations.<br>
+ <dl><dt><a name="-function_with_pep484_type_annotations"><strong>function_with_pep484_type_annotations</strong></a>(param1: int, param2: str) -&gt; bool</dt><dd><tt>Example&nbsp;function&nbsp;with&nbsp;<a href="http://www.python.org/dev/peps/pep-0484/">PEP&nbsp;484</a>&nbsp;type&nbsp;annotations.<br>
 &nbsp;<br>
 Args:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;param1:&nbsp;The&nbsp;first&nbsp;parameter.<br>

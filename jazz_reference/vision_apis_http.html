@@ -600,15 +600,15 @@ inside R friendlier.</div>
 
 <p>The Python API is identical to the R API:</p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Assuming "/.a_class.attrib" exists and contains something that can be returned as a Python object</span>
-<span class="n">a</span> <span class="o">=</span> <span class="n">jazz_get</span><span class="p">(</span><span class="s">"/.a_class.attrib"</span><span class="p">)</span>      <span class="c"># a is a Python object, eg. a list of strings.</span>
-
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Assuming "/.a_class.attrib" exists and contains something that can be returned as a Python object
+</span><span class="n">a</span> <span class="o">=</span> <span class="n">jazz_get</span><span class="p">(</span><span class="s">"/.a_class.attrib"</span><span class="p">)</span>      <span class="c1"># a is a Python object, eg. a list of strings.
+</span>
 <span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="s">"Monday"</span><span class="p">,</span> <span class="s">"Tuesday"</span><span class="p">,</span> <span class="s">"Whatever"</span><span class="p">]</span>
-<span class="n">jazz_put</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="s">"/.a"</span><span class="p">)</span>                    <span class="c"># "/.a" (which is a valid lvalue) is created as a vector of 3 strings</span>
-
-<span class="n">jazz_assign</span><span class="p">(</span><span class="s">"/.b"</span><span class="p">,</span> <span class="s">"/.a"</span><span class="p">)</span>             <span class="c"># "/.b" is a copy of "/.a"</span>
-<span class="n">jazz_delete</span><span class="p">(</span><span class="s">"/.a"</span><span class="p">)</span>                    <span class="c"># deletes "/.a"</span>
-</code></pre></div></div>
+<span class="n">jazz_put</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="s">"/.a"</span><span class="p">)</span>                    <span class="c1"># "/.a" (which is a valid lvalue) is created as a vector of 3 strings
+</span>
+<span class="n">jazz_assign</span><span class="p">(</span><span class="s">"/.b"</span><span class="p">,</span> <span class="s">"/.a"</span><span class="p">)</span>             <span class="c1"># "/.b" is a copy of "/.a"
+</span><span class="n">jazz_delete</span><span class="p">(</span><span class="s">"/.a"</span><span class="p">)</span>                    <span class="c1"># deletes "/.a"
+</span></code></pre></div></div>
 
 <p>Same as before, objects are Python vectors, not numpy or Pandas objects, so similar limitations apply.</p>
 
@@ -654,7 +654,7 @@ straightforward, but making it <strong>Pythonic</strong> may require other packa
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2019 kaalam.ai. All rights reserved. <br />
- Site last generated: Jun 16, 2019 <br />
+ Site last generated: Sep 18, 2019 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

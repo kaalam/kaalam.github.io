@@ -537,12 +537,12 @@ was run successfully. You should start inside the docker folder.</div>
 <span class="nb">cd</span> ../server <span class="o">||</span> <span class="k">return </span>1
 
 make jazz
-cp jazz ../docker
+<span class="nb">cp </span>jazz ../docker
 make clean
 
 <span class="nb">cd</span> <span class="s2">"</span><span class="nv">$docker_pwd</span><span class="s2">"</span> <span class="o">||</span> <span class="k">return </span>1
 
-cp ../server/config/jazz_config.ini <span class="nb">.</span>
+<span class="nb">cp</span> ../server/config/jazz_config.ini <span class="nb">.</span>
 
 docker build <span class="nt">-t</span> jazz_ref_stable <span class="nb">.</span>
 
@@ -551,8 +551,8 @@ docker login
 docker tag jazz_ref_stable kaalam/jazz_neat:0.3.1
 docker push kaalam/jazz_neat:0.3.1
 
-rm jazz
-rm jazz_config.ini
+<span class="nb">rm </span>jazz
+<span class="nb">rm </span>jazz_config.ini
 </code></pre></div></div>
 
 <p>You can use this to run the docker image in debug mode (allowing login into the Linux image).</p>
@@ -573,11 +573,11 @@ rm jazz_config.ini
 
 <span class="k">WORKDIR</span><span class="s"> /home/jadmin</span>
 
-<span class="k">RUN </span>apt-get update <span class="o">&amp;&amp;</span> apt-get install <span class="nt">-y</span> libmicrohttpd-dev
+<span class="k">RUN </span>apt-get update <span class="o">&amp;&amp;</span> apt-get <span class="nb">install</span> <span class="nt">-y</span> libmicrohttpd-dev
 
-<span class="k">RUN </span>ln <span class="nt">-s</span> /usr/lib/x86_64-linux-gnu/libmicrohttpd.so.10 /usr/lib/x86_64-linux-gnu/libmicrohttpd.so.12
+<span class="k">RUN </span><span class="nb">ln</span> <span class="nt">-s</span> /usr/lib/x86_64-linux-gnu/libmicrohttpd.so.10 /usr/lib/x86_64-linux-gnu/libmicrohttpd.so.12
 
-<span class="k">RUN </span>mkdir /home/jadmin/mdb
+<span class="k">RUN </span><span class="nb">mkdir</span> /home/jadmin/mdb
 
 <span class="k">ADD</span><span class="s"> ./start.sh /home/jadmin</span>
 <span class="k">ADD</span><span class="s"> ./jazz /home/jadmin</span>
@@ -611,7 +611,7 @@ working.</div>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2019 kaalam.ai. All rights reserved. <br />
- Site last generated: Jun 16, 2019 <br />
+ Site last generated: Sep 18, 2019 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>
