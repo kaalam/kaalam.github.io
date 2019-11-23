@@ -7,5 +7,4 @@ rm -rf develop_jazz02/
 rm -rf jazz_reference/
 rm -rf kaalam/
 # rm -rf news/
-rm -rf pyjazz/
 rm -rf rjazz/
