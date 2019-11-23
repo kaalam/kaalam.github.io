@@ -181,7 +181,7 @@
                 
 
 <ul id="mysidebar" class="nav">
-  <li class="sidebarTitle">Jazz 0.3.2</li>
+  <li class="sidebarTitle">Jazz 0.4.1</li>
   
   
   
@@ -504,28 +504,6 @@ $('#toc').on('click', 'a', function() {
     
 
   <h2 id="api-elements">API elements</h2>
-
-<h3 id="api-flavors">API “flavors”</h3>
-
-<p>The API describes access to blocks in a Jazz server. Blocks can be functions, classes, keepers, etc. The API is identical for Bebop, R, Python
-and http with only a few caveats:</p>
-
-<p><span class="label label-info">R</span>
-<span class="label label-info">Python</span></p>
-<ul>
-  <li>R and Python will <strong>put</strong> and <strong>get</strong> native R and Python objects rather than binary objects. This is limited to vectors of basic types like
-boolean, integer, double and string.</li>
-</ul>
-
-<p><span class="label label-success">Http</span></p>
-<ul>
-  <li>Http objects will automatically be returned with mime types specified as attributes and be available at urls specified as attributes.</li>
-</ul>
-
-<p><span class="label label-success">Http</span></p>
-<ul>
-  <li>The http API has character encoding limitations like all urls have. (E.g., space must be encoded as <code class="highlighter-rouge">%20</code>.)</li>
-</ul>
 
 <h3 id="string-constants">String constants</h3>
 

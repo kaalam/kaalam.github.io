@@ -181,7 +181,7 @@
                 
 
 <ul id="mysidebar" class="nav">
-  <li class="sidebarTitle">Jazz 0.3.2</li>
+  <li class="sidebarTitle">Jazz 0.4.1</li>
   
   
   
@@ -589,9 +589,9 @@ to a class written in Bebop.</div>
   <li><strong>JazzPersistence</strong> - Is an abstract class that provides a <strong>file saving</strong> interface and a <strong>pipeline interface</strong> to read/write to/from
 other keeprs any number of blocks in one call.</li>
   <li><strong>JazzSource</strong> - Is the implementation of JazzPersistence using <strong>LMDB</strong>. Therefore, a Jazz file is an LMDB file of persisted blocks.
-You can even use command line LMDB utilities to backup a Jazz server while running or access the same file from more than one process.
-E.g., Open a <strong>source in a running http server</strong> from a Python interpreter to see/fix it while running.</li>
+You can even use command line LMDB utilities to backup a Jazz server while running or access the same file from more than one process.</li>
 </ul>
+
 <div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> Because LMDB is a transactionally consistent key/value store, Jazz is “out of the box” <strong>a distributed
 key/value store second to none in terms of efficiency</strong>.</div>
 

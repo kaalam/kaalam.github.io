@@ -181,7 +181,7 @@
                 
 
 <ul id="mysidebar" class="nav">
-  <li class="sidebarTitle">Jazz 0.3.2</li>
+  <li class="sidebarTitle">Jazz 0.4.1</li>
   
   
   
@@ -507,46 +507,9 @@ $('#toc').on('click', 'a', function() {
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> The API is a <strong>keepr</strong> named <strong>/</strong> (root in Unix) where all the keeprs and blocks are linked.</div>
 
-<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> Jazz can be used as a server, a cluster of servers or just an R or Python package. As packages, Jazz can
-have its own resource allocation or even access the persistence of a running server.</div>
-
 <h2 id="apis">APIs</h2>
 
-<p>The API is the same for all the languages including REST (where root is <strong>//</strong> since just one / is used in normal urls.)</p>
-
-<p>Any API call can be seen as an assignment. In an assignment, X = Y there are two sides, the left side (X) called <strong>lvalue</strong> and the right
-side (Y) called <strong>rvalue</strong>. This is C++ naming.</p>
-
-<p><span class="label label-info">lvalue</span></p>
-
-<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> You can view a <strong>get</strong> operation as an assignment to a new block that is returned via some API.</div>
-
-<div class="bs-callout bs-callout-">In Jazz an <strong>lvalue</strong> is a chain of keeprs abstracted as block ids starting from root ending with the
-name of a block. They must all exist except, possibly, the last one. This is a <code class="highlighter-rouge">set</code> assignment. Attributes <code class="highlighter-rouge">only_if_exists</code> and
-<code class="highlighter-rouge">only_if_new</code> may apply.</div>
-
-<p><span class="label label-info">rvalue</span></p>
-
-<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> You can view a <strong>put</strong> operation as an assignment from a block passed via some API. You can also view a
-<strong>delete</strong> operation as a special kind of assignment that “assigns destroying” to an existing block.</div>
-
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> A <strong>block constructor</strong> is a short constant expression that can be used to build a block from it like
-“repeat 1,2,3 thousand times”.</div>
-
-<div class="bs-callout bs-callout-">In Jazz an <strong>rvalue</strong> is a block constructor, a chain of blocks starting from root including function
-calls with other rvalues as arguments for the function calls.</div>
-
-<p><span class="label label-warning">safe and idempotent</span></p>
-
-<p>Since the API is intended for using over a network:</p>
-
-<ul>
-  <li>All rvalue evaluations are <strong>safe</strong>. They cannot have side effects. Function calls cannot have side effects.</li>
-  <li>All lvalue assignments are <strong>idempotent</strong>. Assigning twice has the same effect than assigning once. There is no += operator.</li>
-</ul>
-
-<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> There is <strong>one API</strong> not three (R, Python and REST), there are some differences, especially in the
-supported internal types that are mentioned in the R and Python package references.</div>
+<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> In version 0.4.1 the API has been redesigned. Details will be updated.</div>
 
 <h3 id="rest">REST</h3>
 
@@ -569,26 +532,7 @@ supported internal types that are mentioned in the R and Python package referenc
 
 <p><span class="label label-info">R</span></p>
 
-<p>The R API has four methods: jazz_get(rvalue), jazz_put(object, lvalue), jazz_delete(lvalue) and jazz_assign(lvalue, rvalue).</p>
-
-<div class="bs-callout bs-callout-">All methods return error codes, except jazz_get() which returns R vectors. R objects are limited to R core
-vectors, so not all the possible complexity of Jazz types is directly usable from R. It is possible to create complex Jazz objects by
-“assembling” them from parts using <strong>Bebop functions written inside R</strong>. Other R packages built on top of <strong>rjazz</strong> can make working
-inside R friendlier.</div>
-
 <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> The R package <strong>rjazz</strong> also includes built-in http client support to use the REST API from R.</div>
-
-<p>A simple R snippet could be:</p>
-
-<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Assuming '/.a_class.attrib' exists and contains something that can be returned as a Python object</span><span class="w">
-</span><span class="n">a</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">jazz_get</span><span class="p">(</span><span class="s1">'/.a_class.attrib'</span><span class="p">)</span><span class="w">       </span><span class="c1"># a is a Python object, eg. a list of strings.</span><span class="w">
-
-</span><span class="n">b</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s1">'Monday'</span><span class="p">,</span><span class="w"> </span><span class="s1">'Tuesday'</span><span class="p">,</span><span class="w"> </span><span class="s1">'Whatever'</span><span class="p">)</span><span class="w">
-</span><span class="n">jazz_put</span><span class="p">(</span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="s1">'/.a'</span><span class="p">)</span><span class="w">                      </span><span class="c1"># '/.a' (which is a valid lvalue) is created as a vector of 3 strings</span><span class="w">
-
-</span><span class="n">jazz_assign</span><span class="p">(</span><span class="s1">'/.b'</span><span class="p">,</span><span class="w"> </span><span class="s1">'/.a'</span><span class="p">)</span><span class="w">               </span><span class="c1"># '/.b' is a copy of '/.a'</span><span class="w">
-</span><span class="n">jazz_delete</span><span class="p">(</span><span class="s1">'/.a'</span><span class="p">)</span><span class="w">                      </span><span class="c1"># deletes '/.a'</span><span class="w">
-</span></code></pre></div></div>
 
 <p><br /></p>
 
