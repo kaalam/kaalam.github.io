@@ -20,7 +20,6 @@ var searchData=
   ['_7ejazzobject',['~JazzObject',['../classjazz__containers_1_1JazzObject.html#a8323a8f6eb1385059bfa90700ef79d1b',1,'jazz_containers::JazzObject']]],
   ['_7ejazzremotesource',['~JazzRemoteSource',['../classjazz__filesystem_1_1JazzRemoteSource.html#a6da3754d5b7623808dc73e0c30cdc512',1,'jazz_filesystem::JazzRemoteSource']]],
   ['_7ejazzsource',['~JazzSource',['../classjazz__persistence_1_1JazzSource.html#ab3ab380da6ee91f5e3202772e599423c',1,'jazz_persistence::JazzSource']]],
-  ['_7epyapi',['~pyAPI',['../classjazz__api_1_1pyAPI.html#aadbbff0fa57cfa649a517375f0d758b4',1,'jazz_api::pyAPI']]],
   ['_7erapi',['~rAPI',['../classjazz__api_1_1rAPI.html#a27f388dee0a8d37ee6e8f2098ae98081',1,'jazz_api::rAPI']]],
   ['_7esparsemapping',['~SparseMapping',['../classjazz__column_1_1SparseMapping.html#afe2c5abca27dbd7c67eadf2bbba002f0',1,'jazz_column::SparseMapping']]]
 ];

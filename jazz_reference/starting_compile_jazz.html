@@ -156,10 +156,6 @@
                         
                         
                         
-                        <li><a href="/pyjazz/" target="_blank">Python client Reference</a></li>
-                        
-                        
-                        
                         <li><a href="basics_jazz_today.html">What is the usable part of Jazz today?</a></li>
                         
                         
@@ -554,20 +550,8 @@ if you find missing tools or version conflicts.</div>
       <td>To dynamically analyze the server.</td>
     </tr>
     <tr>
-      <td><strong>Swig</strong></td>
-      <td>To build both packages.</td>
-    </tr>
-    <tr>
       <td><strong>Docker</strong></td>
       <td>To build and run images.</td>
-    </tr>
-    <tr>
-      <td><strong>Python</strong></td>
-      <td>To build the Python package.</td>
-    </tr>
-    <tr>
-      <td>Python package <strong>setuptools</strong></td>
-      <td>Required by the Python package installer.</td>
     </tr>
     <tr>
       <td><strong>R</strong></td>
@@ -614,9 +598,6 @@ You will now override:
   - server/src/main.dox (main page for Doxygen)
   - r_package/rjazz/DESCRIPTION (With version information for R)
   - r_package/build.sh (to build, test and install the R package)
-  - py_package/pyjazz/pyjazz/get_jazz_version.py (Vers. for Python)
-  - py_package/pyjazz/setup.py (Versioned setuptools script)
-  - py_package/html/index.md (Versioned main doc page for Python)
   - docker/upload_docker.sh (build &amp; upload reference Docker image)
 
 Do you want to continue? [y/N] y
@@ -626,9 +607,6 @@ Writing: server/Makefile ... Ok.
 Writing: server/src/main.dox ... Ok.
 Writing: r_package/rjazz/DESCRIPTION ... Ok.
 Writing: r_package/build.sh ... Ok.
-Writing: py_package/pyjazz/pyjazz/get_jazz_version.py ... Ok.
-Writing: py_package/pyjazz/setup.py ... Ok.
-Writing: py_package/html/index.md ... Ok.
 Writing: docker/upload_docker.sh ... Ok.
 
   Congratulations, you have successfully configured your project. Now,
@@ -644,11 +622,6 @@ you should be able to:
   2. Build the R package
 
   - cd r_package
-  - ./build.sh
-
-  3. Build the Python package
-
-  - cd py_package
   - ./build.sh
 </code></pre></div></div>
 
@@ -670,12 +643,6 @@ variables.</div>
 
 <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> You can also type “<strong>./build_doc.sh</strong>” to build the documentation website. (Assuming you installed pkgdown.)</div>
 
-<h2 id="build-the-python-package">Build the Python package</h2>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd py_package
-./build.sh
-</code></pre></div></div>
-
 <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> Unless you have a correctly configured PyPI account, you will not be able to upload the package you built.)</div>
 
 
@@ -691,7 +658,7 @@ variables.</div>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2019 kaalam.ai. All rights reserved. <br />
- Site last generated: Oct 21, 2019 <br />
+ Site last generated: Nov 23, 2019 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

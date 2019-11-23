@@ -35,6 +35,5 @@ var searchData=
   ['prstr_5fstream',['pRStr_stream',['../unionjazz__stdcore_1_1pRStr__stream.html',1,'jazz_stdcore']]],
   ['psignalhandler',['pSignalHandler',['../namespacejazz__restapi.html#afa940b249b29393af1b34da7618e50cb',1,'jazz_restapi']]],
   ['put_5ffrom_5fkeepr',['put_from_keepr',['../classjazz__httpclient_1_1JazzHttpclient.html#a5d571e20d4781457a1698f59e643e042',1,'jazz_httpclient::JazzHttpclient']]],
-  ['put_5fjazz_5fblock',['put_jazz_block',['../classjazz__httpclient_1_1JazzHttpclient.html#aca329467a7cf42d05fe4dd60c731431e',1,'jazz_httpclient::JazzHttpclient']]],
-  ['pyapi',['pyAPI',['../classjazz__api_1_1pyAPI.html',1,'jazz_api::pyAPI'],['../classjazz__api_1_1pyAPI.html#a1111f3ecf2debe40e5f8ff29e54c6361',1,'jazz_api::pyAPI::pyAPI()']]]
+  ['put_5fjazz_5fblock',['put_jazz_block',['../classjazz__httpclient_1_1JazzHttpclient.html#aca329467a7cf42d05fe4dd60c731431e',1,'jazz_httpclient::JazzHttpclient']]]
 ];
