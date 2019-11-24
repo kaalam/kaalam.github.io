@@ -27,7 +27,7 @@ Licensed under the Apache License, Version 2.0 (the "License"); you may not use 
 http://www.apache.org/licenses/LICENSE-2.0
   
 
-### New documentation of the Jazz 0.2+ server and client:
+### New documentation of the Jazz 0.2.x, 0.3.x (deprecated) and 0.4+ server and client:
 
   (c) 2018-2019 The Authors of Jazz 
   
