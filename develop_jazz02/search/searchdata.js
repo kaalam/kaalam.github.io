@@ -1,18 +1,27 @@
 var indexSectionsWithContent =
 {
-  0: "m",
-  1: "m"
+  0: "abcefijlmrstu",
+  1: "j",
+  2: "abcefijmrstu",
+  3: "m",
+  4: "cijl"
 };
 
 var indexSectionNames =
 {
   0: "all",
-  1: "files"
+  1: "namespaces",
+  2: "files",
+  3: "functions",
+  4: "defines"
 };
 
 var indexSectionLabels =
 {
   0: "All",
-  1: "Files"
+  1: "Namespaces",
+  2: "Files",
+  3: "Functions",
+  4: "Macros"
 };
 
