@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="What will Jazz be if everything is finally implemented as it is imagined today.">
+<meta name="description" content="What will Jazz be when everything is finally implemented.">
 <meta name="keywords" content=" ">
 <title>What is the vision? What does Jazz want to be? | Jazz User's Manual</title>
 <link rel="stylesheet" href="css/syntax.css">
@@ -132,7 +132,7 @@
                     <ul class="dropdown-menu">
                         
                         
-                        <li class="dropdownActive"><a href="basics_jazz_vision.html">What is the vision? What does Jazz want to become?</a></li>
+                        <li><a href="basics_jazz_vision.html">What is the vision? What does Jazz want to become?</a></li>
                         
                         
                         
@@ -198,7 +198,7 @@
           
           
           
-          <li class="active"><a href="basics_jazz_vision.html">What is the vision? What does Jazz want to be?</a></li>
+          <li class="active"><a href="vision_intro_page.html">What is the vision? What does Jazz want to be?</a></li>
           
           
           
@@ -232,6 +232,77 @@
                   
               </ul>
           </li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">Bebop fundamentals</a>
+      <ul>
+          
+          
+          
+          <li><a href="bop_ref_elements.html">Bebop elements</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">API fundamentals</a>
+      <ul>
+          
+          
+          
+          <li><a href="api_ref_elements.html">API elements</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">Docker reference</a>
+      <ul>
+          
+          
+          
+          <li><a href="reference_docker_how_to_build.html">How to build your own Jazz Docker image</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="reference_docker_latest_server.html">Jazz (LSS) Latest Stable Server</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">Server Reference</a>
+      <ul>
+          
+          
+          
+          <li><a href="reference_server_setup.html">Server internals and setup</a></li>
           
           
           
@@ -279,105 +350,6 @@
    </li>
      
       
-  
-  <li>
-      <a href="#">Server Reference</a>
-      <ul>
-          
-          
-          
-          <li><a href="reference_server_setup.html">Server internals and setup</a></li>
-          
-          
-          
-          
-      </ul>
-   </li>
-     
-      
-  
-  <li>
-      <a href="#">API fundamentals</a>
-      <ul>
-          
-          
-          
-          <li><a href="api_ref_elements.html">API elements</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="api_ref_block_constructors.html">Block constructors</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="api_ref_block_selections.html">Block selections</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="api_ref_block_attributes.html">Block attributes</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="api_ref_predicates.html">Predicates</a></li>
-          
-          
-          
-          
-      </ul>
-   </li>
-     
-      
-  
-  <li>
-      <a href="#">Bebop fundamentals</a>
-      <ul>
-          
-          
-          
-          <li><a href="bop_ref_elements.html">Bebop elements</a></li>
-          
-          
-          
-          
-      </ul>
-   </li>
-     
-      
-  
-  <li>
-      <a href="#">Docker reference</a>
-      <ul>
-          
-          
-          
-          <li><a href="reference_docker_how_to_build.html">How to build your own Jazz Docker image</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="reference_docker_latest_server.html">Jazz (LSS) Latest Stable Server</a></li>
-          
-          
-          
-          
-      </ul>
-   </li>
-     
-      
       
       <!-- if you aren't using the accordion, uncomment this block:
          <p class="external">
@@ -404,7 +376,7 @@
 <div class="post-content">
 
    
-    <div class="summary">What will Jazz be if everything is finally implemented as it is imagined today.</div>
+    <div class="summary">What will Jazz be when everything is finally implemented.</div>
    
 
     
@@ -445,21 +417,24 @@ change the name to the latter. Take this as <strong>This is Jazz</strong> but mo
 
 <p>Before a detailed introduction, in case you feel the need to put a label on Jazz or want to pitch it in 10 seconds, you may ask…</p>
 
-<h3 id="is-it-a-distributed-no-sql-database-a-language-an-http-server-a-deep-learning-framework">Is it a distributed no-sql database, a language, an http server, a deep learning framework?</h3>
+<h3 id="is-it-a-distributed-no-sql-database-a-language-an-http-server-a-machine-learning-framework">Is it a distributed no-sql database, a language, an http server, a machine learning framework?</h3>
 
-<p>Jazz is a new kind of data product. It combines all these things and some others (an automated creator of APIs, an abstraction over data
-sources, …) while being <strong>just one</strong> extremely lightweight process. It is free software created on top of third party free software.
-It is written in C++, available through a REST API. The framework is Linux only, but, since it is an http back-end, Jazz consumers include
-all devices and operating systems. Jazz is designed for millions of users interacting concurrently with large clusters.</p>
+<p>Jazz is a new kind of data product. It combines all these things and some others: a programming language that extends by learning, an automated creator of APIs while being <strong>just one</strong> extremely lightweight process. It is free software created on top of third party free software. It is written in C++, available through a REST API. The framework is Linux only, but, since it is an http back-end, Jazz consumers include all devices and operating systems. Jazz is designed for millions of users interacting concurrently with large clusters.</p>
 
-<p>Now, let’s explain the concepts one by one.</p>
+<p>Now, let’s explain the main ideas:</p>
 
 <ul>
-  <li><a href="vision_blocks_keeprs.html">Blocks and keeprs</a></li>
-  <li><a href="vision_core_functions.html">Core functions</a></li>
-  <li><a href="vision_distributed_containers.html">Distributed containers</a></li>
-  <li><a href="vision_bebop.html">Bebop</a></li>
-  <li><a href="vision_apis_http.html">APIs</a></li>
+  <li><a href="vision_blocks_containers.html">Blocks, Filestores and Containers</a></li>
+  <li><a href="vision_bop_fields_contexts.html">Bebop, Fields and Contexts</a></li>
+  <li><a href="vision_relations_finder.html">Relations and the Finder</a></li>
+  <li><a href="vision_apis_services.html">APIs and Services</a></li>
+</ul>
+
+<p>See also:</p>
+
+<ul>
+  <li><a href="bop_ref_elements.html">Bebop</a></li>
+  <li><a href="api_ref_elements.html">APIs</a></li>
 </ul>
 
 <p><br /></p>
@@ -470,7 +445,7 @@ all devices and operating systems. Jazz is designed for millions of users intera
       <td><span class="label label-info">Next …</span></td>
     </tr>
     <tr>
-      <td><a href="vision_blocks_keeprs.html">Blocks and keeprs</a></td>
+      <td><a href="vision_blocks_containers.html">Blocks, Filestores and Containers</a></td>
     </tr>
   </tbody>
 </table>
@@ -488,7 +463,7 @@ all devices and operating systems. Jazz is designed for millions of users intera
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2020 kaalam.ai. All rights reserved. <br />
- Site last generated: Jan 18, 2020 <br />
+ Site last generated: Jan 19, 2020 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>
