@@ -98,18 +98,13 @@ in some cases, but that is too hard for most users. And only few things make sen
 Platforms can act like a hammer looking for everything to be a nail. All our models are differentiable end to end because "we" only know
 backprop as a learning mechanism. Should we try RL with tree search, a genetic algorithm or something new, it would get deeply
 handicapped by platforms just because it is on the wrong side of the optimization pyramid.
-<h5>Two ideas make Jazz different in this way:</h5>
-<blockquote>
-<ul>
-<li>Jazz provides "out of the box" efficient structures to do things like tree search. This can easily make three orders of magnitude
- (Mevals/sec vs. Kevals/sec) difference.
-<a href="/jazz_reference/vision_blocks_keeprs.html"><b>Blocks and keeprs</b></a></li>
-<li>Jazz's language, Bebop, is created with automatic programming in mind. It has support for exploring incrementally in a natural way
-and trying out without breaking things. It's biological inspiration is more evolution than neurons.
-<a href="/jazz_reference/reference_bop_basics.html"><b>Bebop's design ideas</b></a></li>
-</ul>
-</blockquote>
+
 </p>
+
+<blockquote>
+Neither this page nor the <a href="/jazz_reference/vision_intro_page.html"><b>vision page</b></a> keeps updated with the kind of ideas Jazz is born to support. You will have to check our publications and see the releases to see our advances in automatic programming, which is one of the many ideas that require different frameworks.
+</blockquote>
+
 
 <h4><b>Three:</b> Current solutions are not giving any thought (at platform level) to efficient <b>quick exploration</b>.</h4>
 
@@ -174,7 +169,7 @@ points</b>. In short: there is not always a compelling reason to "get rid of scr
 
 <p>Now, look at it form the other side: When you have a working solution, how long does it take to convert that into something lightweight,
 parallelized that does not require the interpreter anymore? That is what Jazz development is about, when you have developed your solution
-using Jazz, <b>you already have it</b>. See <a href="/jazz_reference/vision_apis_http.html"><b>API vision</b></a></p>
+using Jazz, <b>you already have it</b>.
 
 <h4><b>Seven:</b> Working with different kinds of <b>data files</b> and <b>services</b> is tedious and error prone.</h4>
 
@@ -193,57 +188,8 @@ files are blocks and blocks have attributes as first class citizen. Just like a 
 file could have attributes defining what can be done with it.
 </blockquote>
 
-<p>In Jazz we could declare a reference to "100x100 scaled image of frame 12345 from a video inside my_trip_to_london.tar.gz" as a promise.
-When the picture is needed, Jazz extracts the video, uses the appropriate codec to render the specific frame, scales it to 100x100 and
-returns it.</p>
-
-<h4><b>Bonus question 1:</b> Do you plan to use Jazz <b>instead</b> of other platforms?</h4>
-
-<p><b>Not instead</b>! The wonderful part of OSS is, you don't have to chose one or the other! Even in the best case scenario in which Jazz
-is a success, it is very unlikely that it becomes the best option for training deep learning models. We will not spend development
-resources in a direction in which there is a well established industry and solutions already work near perfectly.</p>
-
-<h4><b>Bonus question 2:</b> Will you implement what other platforms have to compute pre-trained models?</h4>
-
-<p><b>Yes</b> and <b>no</b>!</p>
-
-<p>It is still to be decided what the roadmap is and in what order things will be implemented. It is amazing how other platforms are providing
-useful ready-to-use components like those of <b>mxnet Gluon</b>. We want to focus development in creating projects on Jazz already in 2019.
-It early stages, we want to focus on what other platforms cannot do, and not on what other platforms excel at. Should we need pre-trained
-models at this stage, we will foreseeably compute them on separate processes running mxnet or something else.</p>
-
-<p>Nevertheless, if we had enough community traction to have people working on implementing standard core functionality and model converters,
-the ideal world would probably include Jazz running DNNs imported from other platforms.</p>
-
-<blockquote>
-<b>The ideal world as a user is</b>: With no effort, we import a trained model from a different platform and run it in Jazz. The model
-automatically benefits from lightweight multi-threaded scalability and gets deployed. Other Jazz services can also use it as part of more
-complex ideas. We can even maintain a collection of useful models pre-trained as text-to-speech, voice recognition, etc.
-<a href="/jazz_reference/reference_docker_latest_server.html"><b>Jazz à la carte</b></a>
-</blockquote>
-
-<h4><b>Bonus question 3:</b> Wouldn't it have been much simpler to extend an existing platform instead of creating a new one?</h4>
-
-<p>Again, probably <b>yes</b> and <b>no</b>.</p>
-
-<p>Solutions including other platforms are not monolithic, let's assume we can live with that. They have languages for creating DNNs that
-are efficient, but that is <b>not</b> the kind of language we are talking about. We could fork another platform and build a
-language on top, but then, we would diverge and create a hell to keep up to date with the original community. Also, other platforms have
-many things we find unnecessary and that just add overhead to our projects. <b>mxnet</b> has a key-value store, but that's not how we
-want the persistence to be,  ...</p>
-
-<p>We have spent a lot of time pondering on this. We also looked for <b>perfect matches</b> (like LMDB, Libmicrohttpd and libCurl) on the
-tensor arithmetic side that provide most of what we need out of the box. Projects like tiny-dnn, ... It is still not a final decision,
-maybe we end up transforming some OSS code to help implementing the standard core like we are already doing in other parts of Jazz.</p>
-
-<p>We could also have extended a platform as a partial solution just to build something similar to what we want. This is, again, how
-Jazz was born: understanding that sometimes you need to take the time to <b>create the tool you need</b> instead of patching something that
-does the job "more or less".</p>
-
-<p>Or <b>we may simply be wrong</b> and should be doing what everyone else is doing. (No sarcasm.)</p>
-
-</section>
-</div>
+<p>This idea has evolved since version 0.4.x and is now "naturally" implemented using specialized <a href="/jazz_reference/vision_bop_fields_contexts.html#introducing-fields"><b>fields</b></a> and LocMap <a href="/jazz_reference/vision_blocks_containers.html#introducing-containers"><b>containers</b></a>.</p>
+</p></section></div>
 </p>
 	</div>
 </section>
