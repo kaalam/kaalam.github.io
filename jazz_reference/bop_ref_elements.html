@@ -410,412 +410,79 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <h2 id="this-is-a-template">This is a template!</h2>
+  <h2 id="language-basics">Language basics</h2>
 
-<p>When linking to an external site, use Markdown formatting because it’s simplest:</p>
+<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning:</b> Designing the language while implementing it using <strong>flex</strong> and <strong>bison</strong> is not a good idea.
+For the moment, this page only defines “where to go” but finding some elegant “how to do it” should be given some thoughts.</div>
 
-<p><a href="http://google.com">Google</a></p>
-
-<p>And internal link is, see <a href="index.html">Getting Started</a>.</p>
-
-<h2 id="highlighted-text">Highlighted text</h2>
-
-<p>As expected, you can use <strong>bold</strong> and <em>italic</em>. Also, special words like <code class="highlighter-rouge">if</code> and <code class="highlighter-rouge">endif</code> can be drawn in “red on gray”.</p>
-
-<h2 id="bullet-points">Bullet points</h2>
-
-<p>Some of the more prominent features of this theme include the following:</p>
+<h2 id="bebop-allows-inclusion-and-aliases">Bebop allows inclusion and aliases</h2>
 
 <ul>
-  <li>Bootstrap framework</li>
-  <li>Ability to specify different sidebars for different products</li>
-  <li>Top navigation bar with drop-down menus</li>
-  <li>Notes, tips, and warning information notes</li>
-  <li>Tags for alternative navigation</li>
+  <li>There must be some support for modules: E.g., “import rnn”</li>
+  <li>Aliases and other syntactic sugar: E.g., <strong>using</strong> /xxx.yy.zz <strong>as</strong> <em>z</em></li>
 </ul>
 
-<h2 id="numbered-list">Numbered list</h2>
-
-<ol>
-  <li>First item.</li>
-  <li>Second item.</li>
-  <li>Third item.</li>
-</ol>
-
-<h2 id="complex-lists">Complex Lists</h2>
-
-<ol>
-  <li>
-    <p>Sample first item.</p>
-
-    <ul>
-      <li>sub-bullet one</li>
-      <li>sub-bullet two</li>
-    </ul>
-  </li>
-  <li>
-    <p>Continuing the list</p>
-
-    <ol>
-      <li>sub-list numbered one</li>
-      <li>sub-list numbered two</li>
-    </ol>
-  </li>
-  <li>
-    <p>Another list item.</p>
-  </li>
-</ol>
-
-<h2 id="another-complex-list">Another Complex List</h2>
-
-<ol>
-  <li>
-    <p>Sample first item.</p>
-
-    <p>This is a result statement that talks about something….</p>
-  </li>
-  <li>
-    <p>Continuing the list</p>
-
-    <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Remember to do this. If you have “quotes”, you must escape them.</div>
-
-    <p>Here’s a list in here:</p>
-
-    <ul>
-      <li>first item</li>
-      <li>second item</li>
-    </ul>
-  </li>
-  <li>
-    <p>Another list item.</p>
-
-    <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">alert</span><span class="p">(</span><span class="s2">"hello"</span><span class="p">);</span>
-</code></pre></div>    </div>
-  </li>
-  <li>
-    <p>Another item.</p>
-  </li>
-</ol>
-
-<h3 id="key-principle-to-remember-with-lists">Key Principle to Remember with Lists</h3>
-
-<p>The key principle is to line up the first character after the dot following the number:</p>
-
-<figure><img class="docimage" src="images/liningup.png" alt="" /><figcaption>Lining up the left edge ensures the list stays in tact.</figcaption></figure>
-
-<p>For the sake of simplicity, use two spaces after the dot for numbers 1 through 9. Use one space for numbers 10 and up. If any part of
-your list doesn’t align symmetrically on this left edge, the list will not render correctly. Also note that this is characteristic of
-kramdown-flavored Markdown and may not yield the same results in other Markdown flavors.</p>
-
-<h2 id="notes-tips-etc">Notes, Tips, etc.</h2>
-
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Remember to do this. If you have “quotes”, you must escape them.</div>
-
-<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> In the descriptions of the build scripts, “mydoc” is used as the sample project. Substitute in whatever
-your real project name is.</div>
-<div class="bs-callout bs-callout-">Lazy people will read this more than other text. <strong>Maybe even more if it is bold.</strong>. Assuming you do
-not abuse this thing too much.</div>
-
-<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning:</b> Beware of the dog!</div>
-<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> The dog is dead.</div>
-
-<h2 id="images">Images</h2>
-
-<figure><img class="docimage" src="images/jazz_block.png" alt="" /><figcaption>An image</figcaption></figure>
-
-<p>Text, text, text.</p>
-
-<figure><img class="docimage" src="images/jazz_block.png" alt="This shows when the image fails" style="max-width: 320px" /><figcaption>This always shows</figcaption></figure>
-
-<p>Text, text, text, <img class="inline" src="images/logo_80.png" alt="kaalam.ai" />
-, text.</p>
-
-<h2 id="video">Video</h2>
-
-<p>See the following Jekyll cast for more info about using parameters with includes:</p>
-
-<iframe width="640" height="480" src="https://www.youtube.com/embed/kzpGqdEMbIs" frameborder="0" allowfullscreen=""></iframe>
-
-<h2 id="tables">Tables</h2>
-
-<p>The available include properties are as follows:</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Property</th>
-      <th>description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>file</td>
-      <td>The name of the file. Reference the subfolder path here, like this: <code class="highlighter-rouge">my_subfolder/jekyll.png</code></td>
-    </tr>
-    <tr>
-      <td>url</td>
-      <td>Whether to link the image to a URL</td>
-    </tr>
-    <tr>
-      <td>alt</td>
-      <td>Alternative image text for accessibility and SEO</td>
-    </tr>
-    <tr>
-      <td>caption</td>
-      <td>A caption for the image</td>
-    </tr>
-    <tr>
-      <td>max-width</td>
-      <td>a maximum width for the image (in pixels). Just specify the number, not px.</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3 id="table-without-a-header">Table without a header</h3>
-
-<table>
-  <tbody>
-    <tr>
-      <td>annotate, blame</td>
-      <td>show changeset information by line for each file</td>
-    </tr>
-    <tr>
-      <td>diff</td>
-      <td>diff repository (or selected files)</td>
-    </tr>
-    <tr>
-      <td>forget {filename}</td>
-      <td>forget the specified files on the next commit</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 id="htmltables">HTML Tables</h2>
-
-<p>If you need a more sophisticated table syntax, use HTML syntax for the table. Although you’re using HTML, you can use Markdown inside the
-table cells by adding <code class="highlighter-rouge">markdown="span"</code> as an attribute for the <code class="highlighter-rouge">td</code> tag, as shown in the following table. You can also control the column
-widths.</p>
-
-<table>
-<colgroup>
-<col width="30%" />
-<col width="70%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Field</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>First column <strong>fields</strong></td>
-<td>Some descriptive text. This is a markdown link to <a href="http://google.com">Google</a>. Or see [some link][mydoc_tags].</td>
-</tr>
-<tr>
-<td>Second column <strong>fields</strong></td>
-<td>Some more descriptive text.
-</td>
-</tr>
-</tbody>
-</table>
-
-<h2 id="jquery-datatables">jQuery DataTables</h2>
-
-<p>You also have the option of using a <a href="https://www.datatables.net/">jQuery DataTable</a>, which gives you some additional capabilities. To use
-a jQuery DataTable in a page, include <code class="highlighter-rouge">datatable: true</code> in a page’s front matter. This tells the default layout to load the necessary CSS
-and javascript bits and to include a <code class="highlighter-rouge">$(document).ready()</code> function that initializes the DataTables library.</p>
-
-<p>You can change the options used to initialize the DataTables library by editing the call to <code class="highlighter-rouge">$('table.display').DataTable()</code> in the default
-layout.  The available options for Data tables are described in the <a href="https://www.datatables.net/manual/options">DataTable documentation</a>,
-which is excellent.</p>
-
-<p>You also must add a class of <code class="highlighter-rouge">display</code> to your tables.  You can change the class, but then you’ll need to change the trigger defined in
-the <code class="highlighter-rouge">$(document).ready()</code> function in the default layout from <code class="highlighter-rouge">table.display</code> to the class you prefer.</p>
-
-<p>You can also add page-specific triggers (by copying the <code class="highlighter-rouge">&lt;script&gt;&lt;/script&gt;</code> block from the default layout into the page) and classes,
-which lets you use different options on different tables.</p>
-
-<p>If you use an HTML table, adding <code class="highlighter-rouge">class="display"</code> to the <code class="highlighter-rouge">&lt;table&gt;</code> tag is sufficient.</p>
-
-<p>Markdown, however, doesn’t allow you to add classes to tables, so you’ll need to use a trick: add <code class="highlighter-rouge">&lt;div class="datatable-begin"&gt;&lt;/div&gt;</code>
-before the table and <code class="highlighter-rouge">&lt;div class="datatable-end"&gt;&lt;/div&gt;</code> after the table.  The default layout includes a jQuery snippet that automatically
-adds the <code class="highlighter-rouge">display</code> class to any table it finds between those two markers.  So you can start with this (we’ve trimmed the descriptions for
-display):</p>
-
-<div class="datatable-begin"></div>
-
-<table>
-  <thead>
-    <tr>
-      <th>Food</th>
-      <th>Description</th>
-      <th>Category</th>
-      <th>Sample type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Apples</td>
-      <td>A small, somewhat round and often red-colored, crispy fruit grown on trees.</td>
-      <td>Fruit</td>
-      <td>Fuji</td>
-    </tr>
-    <tr>
-      <td>Bananas</td>
-      <td>A long and curved, often-yellow, sweet and soft fruit that grows in bunches in tropical climates.</td>
-      <td>Fruit</td>
-      <td>Snow</td>
-    </tr>
-    <tr>
-      <td>Kiwis</td>
-      <td>A small, hairy-skinned sweet fruit with green-colored insides and seeds.</td>
-      <td>Fruit</td>
-      <td>Golden</td>
-    </tr>
-    <tr>
-      <td>Oranges</td>
-      <td>A spherical, orange-colored sweet fruit commonly grown in Florida and California.</td>
-      <td>Fruit</td>
-      <td>Navel</td>
-    </tr>
-  </tbody>
-</table>
-
-<div class="datatable-end"></div>
-
-<p>Notice a few features:</p>
+<h2 id="bebop-makes-things-easy">Bebop makes things easy</h2>
 
 <ul>
-  <li>You can keyword search the table. When you type a word, the table filters to match your word.</li>
-  <li>You can sort the column order.</li>
-  <li>You can page the results so that you show only a certain number of values on the first page and then require users to click next to see
-more entries.</li>
+  <li>There is a clear <strong>type inference</strong> mechanism. Primitive types meet on the minimum common enclosing type (bool -&gt; int -&gt; double). Classes meet on the closest ancestor if a-&gt;b-&gt;c and a-&gt;b-&gt;d  c and d meet on b.</li>
+  <li>There is a clear <strong>shape inference</strong> mechanism. We make things simple by translating ideas like “with the dimensions of”, “with the number of rows of” or “repeated as necessary”, etc. into code, like “a + 2” meaning, as expected, element-wise addition of 2 to any tensor of any shape and numeric type.</li>
 </ul>
 
-<p>Read more of the <a href="https://www.datatables.net/manual/options">DataTable documentation</a> to get a sense of the options you can configure. You
-should probably only use DataTables when you have long, massive tables full of information.</p>
+<h2 id="bebop-is-functional">Bebop is functional</h2>
 
-<h2 id="code">Code</h2>
-
-<p>Here’s the code for the above (with the filler text abbreviated):</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">"profileTabs"</span> <span class="na">class=</span><span class="s">"nav nav-tabs"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#profile"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span><span class="nt">&gt;</span>Profile<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#about"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span><span class="nt">&gt;</span>About<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#match"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span><span class="nt">&gt;</span>Match<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-<span class="nt">&lt;/ul&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tab-content"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"tabpanel"</span> <span class="na">class=</span><span class="s">"tab-pane active"</span> <span class="na">id=</span><span class="s">"profile"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;h2&gt;</span>Profile<span class="nt">&lt;/h2&gt;</span>
-<span class="nt">&lt;p&gt;</span>The quick brown fox....<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"tabpanel"</span> <span class="na">class=</span><span class="s">"tab-pane"</span> <span class="na">id=</span><span class="s">"about"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;h2&gt;</span>About<span class="nt">&lt;/h2&gt;</span>
-    <span class="nt">&lt;p&gt;</span>Lorem ipsum ...<span class="nt">&lt;/p&gt;&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"tabpanel"</span> <span class="na">class=</span><span class="s">"tab-pane"</span> <span class="na">id=</span><span class="s">"match"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;h2&gt;</span>Match<span class="nt">&lt;/h2&gt;</span>
-    <span class="nt">&lt;p&gt;</span>jumps over ....<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</code></pre></div></div>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Silly thing</span>
-	<span class="k">for</span> <span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="mi">3</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="n">a</span> <span class="o">+=</span> <span class="n">b</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
-
-	<span class="n">std</span><span class="p">.</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Sum is"</span> <span class="o">&lt;&lt;</span> <span class="n">a</span><span class="p">;</span>
-</code></pre></div></div>
-
-<h2 id="nav-tabs-demo">Nav tabs demo</h2>
-
-<p>The following is a demo of a nav tab. Refresh your page to see the tab you selected remain active.</p>
-
-<ul id="profileTabs" class="nav nav-tabs">
-    <li class="active"><a class="noCrossRef" href="#profile" data-toggle="tab">Profile</a></li>
-    <li><a class="noCrossRef" href="#about" data-toggle="tab">About</a></li>
-    <li><a class="noCrossRef" href="#match" data-toggle="tab">Match</a></li>
+<ul>
+  <li>Functions can be arguments of functions.</li>
+  <li>Functions can return functions.</li>
+  <li>Operators are defined as functions (core or Bebop).</li>
+  <li>Functions cannot have side effects. More explicitly: Everything a function reads is either an argument or a public member of one of its parent classes. Everything a function uses can be a cached value which is indistinguishable from the “real” value and cannot be modified by design.</li>
+  <li><strong>Maintainers</strong> are functions that, unlike ordinary functions, can create/update/delete class members. Constructors are maintainers. Maintainers should be avoided when possible because they will interfere with automatic optimization.</li>
+  <li>Blocks are immutable.</li>
+  <li>Reads are safe.</li>
+  <li>Writes are idempotent.</li>
 </ul>
-<div class="tab-content">
-<div role="tabpanel" class="tab-pane active" id="profile">
-    <h2 id="profile">Profile</h2>
 
-    <p>The quick brown fox,</p>
+<h2 id="bebop-is-object-oriented">Bebop is object oriented</h2>
 
-    <ol>
-      <li>jumps over</li>
-      <li>the lazy animals
-        <ul>
-          <li>including the lazy dog</li>
-          <li>and a hamster</li>
-        </ul>
-      </li>
-    </ol>
+<ul>
+  <li>Classes are keeprs.</li>
+  <li>Multiple inheritance is possible.</li>
+  <li>For starters: All members are public, there are no virtual methods or implicit calling, parent classes are referred by name.</li>
+</ul>
 
-    <blockquote>
-      <p>And the zoo keeper</p>
-    </blockquote>
-  </div>
+<h2 id="bebop-supports-automatic-programming">Bebop supports automatic programming</h2>
 
-<div role="tabpanel" class="tab-pane" id="about">
-    <h2>About</h2>
-    <p>The quick brown fox jumps over the lazy dog a few times and then has a nap.</p></div>
+<h3 id="object-forking">Object forking</h3>
 
-<div role="tabpanel" class="tab-pane" id="match">
-    <h2>Match</h2>
-    <p>The quick brown fox jumps over the lazy dog a few times and then has a nap. (again)</p>
-</div>
-</div>
+<p>This gives natural support for (Lamarckian) evolution. A new trait competes with an existing trait, it is some minor mutation ceteris
+paribus. This is efficient in speed and resources. The object searches all its “404s” in his parent and uses the “lowest hanging”
+implementation of every member.</p>
 
-<h2 id="design-constraints">Design constraints</h2>
+<h3 id="pattern-matching">Pattern matching</h3>
 
-<p>Bootstrap automatically clears any floats after the nav tab. Make sure you aren’t trying to float any element to the right of your nav tabs,
-or there will be some awkward space in your layout.</p>
+<p>Selecting methods by type as in overloading, but done with type pattern matching. Again, naturally supporting ideas like “executing”
+could be “making happen” when applied to “business plan”, “running” when applied to “program” and “killing” when applied to “prisoner”.</p>
 
-<h2 id="appearance-in-the-mini-toc">Appearance in the mini-TOC</h2>
+<h3 id="alternative-function">Alternative function</h3>
 
-<p>If you put a heading in the nav tab content, that heading will appear in the mini-TOC as long as the heading tag has an ID. If you don’t
-want the headings for each nav tab section to appear in the mini-TOC, omit the ID attribute from the heading tag. Without this ID attribute
-in the heading, the mini-TOC won’t insert the heading title into the mini-TOC.</p>
+<p>It should be natural for mutated functions to fail gracefully. One option is calling the “non mutated” function when a function fails and
+using its result instead. Even having non informative completely failsafe functions as the last resource make sense. E.g., the function
+i_dont_know() returning (boolean) NA for all yes/no questions.</p>
 
-<h2 id="must-use-html">Must use HTML</h2>
+<h2 id="automatic-parallelization">Automatic parallelization</h2>
 
-<p>You must use HTML within the nav tab content because each nav tab section is surrounded with HTML, and you can’t use Markdown inside HTML.</p>
+<p>Automatic parallelization is not as hard as it looks. The thread pool in the server and the server’s reentrant code already guarantees that
+any n functions can run concurrently in isolation. Making it happen, both locally and globally is just a matter of triggering computation
+using the appropriate abstractions:</p>
 
-<h2 id="match-up-id-tags">Match up ID tags</h2>
+<ul>
+  <li><strong>Locally</strong> (explicitly): Implementing primitives like <strong>map</strong> to functions.</li>
+  <li><strong>Locally</strong> (implicitly): Classes like JazzColumn, JazzDataframe and JazzFileSystem should use distributing primitives under the hood.</li>
+  <li><strong>Globally</strong>: JazzCluster, JazzClusterFileSystem, JazzDataframe …</li>
+  <li><strong>Cron jobs</strong>: JazzRemoteSource and other classes should be able to “compute on schedule” in parallel with “on demand”.</li>
+</ul>
 
-<p>Each tab’s <code class="highlighter-rouge">href</code> attribute must match the <code class="highlighter-rouge">id</code> attribute of the tab content’s <code class="highlighter-rouge">div</code> section. So if your tab has <code class="highlighter-rouge">href="#acme"</code>, then you
-add <code class="highlighter-rouge">acme</code> as the ID attribute in <code class="highlighter-rouge">&lt;div role="tabpanel" class="tab-pane" id="acme"&gt;</code>.</p>
-
-<h2 id="set-an-active-tab">Set an active tab</h2>
-<p>One of the tabs needs to be set as active, depending on what tab you want to be open by default (usually the first one).</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"tabpanel"</span> <span class="na">class=</span><span class="s">"tab-pane active"</span> <span class="na">id=</span><span class="s">"acme"</span><span class="nt">&gt;</span>
-</code></pre></div></div>
-
-<h2 id="about-labels">About labels</h2>
-<p>Labels might come in handy for adding button-like tags next to elements, such as POST, DELETE, UPDATE methods for endpoints. You can use
-any classes from Bootstrap in your content.</p>
-
-<p><span class="label label-default">Default</span>
-<span class="label label-primary">Primary</span>
-<span class="label label-success">Success</span>
-<span class="label label-info">Info</span>
-<span class="label label-warning">Warning</span>
-<span class="label label-danger">Danger</span></p>
-
-<p>You can have a label appear within a heading simply by including the span tag in the heading. However, you can’t mix Markdown syntax with
-HTML, so you’d have to hard-code the heading ID for the auto-TOC to work.</p>
-
-<h2 id="pdf-download">PDF download</h2>
-
-<p>You can see an example of the finished product here:</p>
-
-<p><a target="\_blank" class="noCrossRef" href="pdf/mydoc.pdf"><button type="button" class="btn btn-default" aria-label="Left Align">
-<span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> PDF Download</button></a></p>
-
-<p>To generate the PDF, follow all the instructions in the documentation template site.</p>
+<p><br /></p>
 
 
 
@@ -830,7 +497,7 @@ HTML, so you’d have to hard-code the heading ID for the auto-TOC to work.</p>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2020 kaalam.ai. All rights reserved. <br />
- Site last generated: Jan 26, 2020 <br />
+ Site last generated: Jan 28, 2020 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>
