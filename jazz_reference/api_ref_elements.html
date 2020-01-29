@@ -412,6 +412,35 @@ $('#toc').on('click', 'a', function() {
 
   <h2 id="api-elements">API elements</h2>
 
+<h2 id="apis">APIs</h2>
+
+<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> In version 0.4.1 the API has been redesigned. Details will be updated.</div>
+
+<h3 id="rest">REST</h3>
+
+<p><span class="label label-info">REST API</span></p>
+
+<p>The REST API supports <strong>standard http commands</strong>.</p>
+
+<ul>
+  <li><strong>GET</strong> with a valid <strong>rvalue</strong>. To read from Jazz.</li>
+  <li><strong>HEAD</strong> with a valid <strong>rvalue</strong>. Internally the same as GET, but returns the header only.</li>
+  <li><strong>PUT</strong> with a valid <strong>lvalue</strong>. To write blocks into a Jazz keepr.</li>
+  <li><strong>DELETE</strong> with a valid <strong>lvalue</strong>. To delete blocks or keeprs (at any level of the tree).</li>
+  <li><strong>OPTIONS</strong> with a string. Parses the string and returns the commands that would accept that string as a URL.</li>
+  <li><strong>GET</strong> with <strong>lvalue=rvalue</strong>. Assignment in the server. Similar to “PUT(lvalue, GET(rvalue))” without traffic.</li>
+</ul>
+
+<p>There is no support for POST or TRACE, any functions other than those mentioned return an error.</p>
+
+<h3 id="r-api">R API</h3>
+
+<p><span class="label label-info">R</span></p>
+
+<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> The R package <strong>rjazz</strong> also includes built-in http client support to use the REST API from R.</div>
+
+<p><br /></p>
+
 <h3 id="string-constants">String constants</h3>
 
 <p>String constants are part of Bebop, they are applied separated by double quote <code class="highlighter-rouge">"</code> with a simple C-like escape sequence mechanism. Look for the
@@ -550,7 +579,7 @@ you use, for details see <a href="reference_api_predicates.html">API predicates<
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2020 kaalam.ai. All rights reserved. <br />
- Site last generated: Jan 28, 2020 <br />
+ Site last generated: Jan 29, 2020 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

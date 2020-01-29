@@ -410,23 +410,44 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <h2 id="other-relevant-classes-required-to-understand-the-architecture">Other relevant classes required to understand the architecture</h2>
+  <div class="bs-callout bs-callout-">And finally, <strong>the API</strong>. Thanks for reading this far !!</div>
+
+<h2 id="other-relevant-classes-required-to-understand-the-architecture">Other relevant classes required to understand the architecture</h2>
 
 <div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> This forth vision page completes the architectural vision at the moment of inception. Some of the internal layers are just drafts for the moment but are included to show the place they fit in. This page will probably interest you if you plan to hack with the source code. You can probably skip it otherwise.</div>
-
-<figure><img class="docimage" src="images/jazz_modules.png" alt="" style="max-width: 880px" /><figcaption>Jazz modules</figcaption></figure>
-
-<h3 id="jazz-elements">Jazz elements</h3>
-
-<h3 id="jazz-innate">Jazz innate</h3>
-
-<h3 id="jazz-learn">Jazz learn</h3>
 
 <h2 id="services">Services</h2>
 
 <h2 id="instances">Instances</h2>
 
 <h2 id="the-api">The API</h2>
+
+<h2 id="jazz-source-code-project-organization">Jazz source code project organization</h2>
+
+<p>The source code is organized in four layers, corresponding to folders in the project (+ includes and third part) and to the yellow columns in the diagram below.</p>
+
+<figure><img class="docimage" src="images/jazz_modules.png" alt="" style="max-width: 880px" /><figcaption>Jazz modules</figcaption></figure>
+
+<h3 id="jazz-elements">Jazz elements</h3>
+
+<p>In this folder (right on the diagram, lowest level in terms of dependencies) we have the basic classes we have seen so far in the previous pages. The <strong>Formal Field</strong> implementation. Completing this layer is top priority and most of the content is already written requiring some degree of refactoring.</p>
+
+<ul>
+  <li><a href="vision_blocks_containers.html">The current state of development</a></li>
+  <li><a href="vision_bop_fields_contexts.html">Developer documentation</a></li>
+</ul>
+
+<h3 id="jazz-innate">Jazz innate</h3>
+
+<p>Abusing the “innate vs. acquired” postulate, we group all the content of <strong>standard (innate) fields</strong> in this folder. The content is inherited by the <strong>learned (acquired) fields</strong>. This includes from low hanging fruit like file format converters, arithmetic, algebra to geographic information, English grammar, vocoders, etc. To be curated as Jazz is used in both research and industrial projects.</p>
+
+<h3 id="jazz-learn">Jazz learn</h3>
+
+<p>We want Jazz to have learning algorithms we know well and have experience using/coding. Mostly in the field of <strong>reinforcement learning</strong>. This includes experimenting on agency. Again, to be curated as projects are implemented.</p>
+
+<h3 id="the-server">The server</h3>
+
+<p>From version 0.4.x on, as we did in the original pre-2018 Jazz, we want this layer to be complete as a priority. We want the whole development to be driven by functional testing an processing. Again, this layer was already complete in the 2018 version but requires refactoring.</p>
 
 
 
@@ -441,7 +462,7 @@ $('#toc').on('click', 'a', function() {
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2020 kaalam.ai. All rights reserved. <br />
- Site last generated: Jan 28, 2020 <br />
+ Site last generated: Jan 29, 2020 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

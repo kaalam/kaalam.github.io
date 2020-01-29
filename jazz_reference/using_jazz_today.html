@@ -410,7 +410,7 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <h2 id="what-is-complete">What is complete</h2>
+  <h2 id="what-is-complete">What is complete?</h2>
 
 <p>This page is a snapshot of the current state of development in terms of Jazz modules. It is updated after the completion (meaning
 implementation, documentation and testing) of modules and the percentages of executions are rough estimates, except for complete. The
@@ -461,7 +461,7 @@ details of development are updated in the <a href="/develop/">developer’s refe
   </tbody>
 </table>
 
-<h2 id="what-is-still-refactoring-from-jazz-01x">What is still refactoring from Jazz 0.1.x</h2>
+<h2 id="what-is-still-refactoring-from-jazz-03x">What is still refactoring from Jazz 0.3.x?</h2>
 
 <p>These modules include code that supports most or all the necessary functionality, but still requires refactoring to the new structures.</p>
 
@@ -490,7 +490,7 @@ details of development are updated in the <a href="/develop/">developer’s refe
   </tbody>
 </table>
 
-<h2 id="what-is-under-development">What is under development</h2>
+<h2 id="what-is-under-development">What is under development?</h2>
 
 <table>
   <thead>
@@ -529,7 +529,7 @@ details of development are updated in the <a href="/develop/">developer’s refe
   </tbody>
 </table>
 
-<h2 id="what-is-to-be-done">What is to be done</h2>
+<h2 id="what-is-to-be-done">What is to be done?</h2>
 
 <table>
   <thead>
@@ -574,6 +574,66 @@ details of development are updated in the <a href="/develop/">developer’s refe
   </tbody>
 </table>
 
+<h2 id="what-can-i-try-out-from-jazz-04">What can I try out from Jazz 0.4+?</h2>
+
+<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> Jazz is still under development to create the first Jazz 0.4.1 MVP. There is no PoC for the latest
+version.</div>
+
+<h2 id="what-can-i-try-out-from-jazz-02--03">What can I try out from Jazz 0.2+ &amp; 0.3+?</h2>
+
+<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> Versions 0.2.x and 0.3.x are deprecated.</div>
+
+<h2 id="what-can-i-try-out-from-jazz-017">What can I try out from Jazz 0.1.7?</h2>
+
+<p>You can run a Jazz 0.1.7 server (still implemented as legacy in Jazz 0.2.x) using Docker from Docker Hub.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run <span class="nt">-p8888</span>:8888 kaalam/jazz_neat:0.2.1.99
+</code></pre></div></div>
+
+<p>Check <a href="https://hub.docker.com/r/kaalam/jazz_neat/tags/">docker hub</a> to find the name of the latest image.</p>
+
+<p>Point a browser to http://localhost:8888/// to see if the server is running, you should get a page similar to</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Jazz
+
+ version : 0.1.07
+ build   : RELEASE
+ artifact: Ubuntu_04.1
+ myname  : Jazz1
+ sysname : Linux
+ hostname: j424x4
+ kernel  : 4.15.0-36-generic
+ sysvers : #39-Ubuntu SMP Mon Sep 24 16:19:09 UTC 2018
+ machine : x86_64
+</code></pre></div></div>
+
+<p>You can install the R package from CRAN …</p>
+
+<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">install.packages</span><span class="p">(</span><span class="s1">'rjazz'</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p>… and play with some example (Edit the line with set_jazz_host() as necessary.)</p>
+<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">set_jazz_host</span><span class="p">(</span><span class="s1">'127.0.0.1:8888'</span><span class="p">)</span><span class="w">
+</span><span class="n">page</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s1">'&lt;html&gt;\n&lt;body&gt;\n&lt;br/&gt;Hello world!\n&lt;/body&gt;\n&lt;/html&gt;'</span><span class="w">
+</span><span class="n">create_web_resource</span><span class="p">(</span><span class="s1">'my_test'</span><span class="p">,</span><span class="w">
+                    </span><span class="s1">'/my_test/hello.html'</span><span class="p">,</span><span class="w">
+                    </span><span class="n">type_const</span><span class="p">[[</span><span class="s1">'BLOCKTYPE_RAW_MIME_HTML'</span><span class="p">]],</span><span class="w">
+                    </span><span class="n">page</span><span class="p">)</span><span class="w">
+</span><span class="c1"># See http://127.0.0.1:8888/my_test/hello.html with a browser.</span><span class="w">
+
+</span><span class="n">list_web_sources</span><span class="p">()</span><span class="w">
+</span><span class="n">delete_web_source</span><span class="p">(</span><span class="s1">'my_test'</span><span class="p">)</span><span class="w">
+</span><span class="n">set_jazz_host</span><span class="p">(</span><span class="n">host</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="a-real-world-use-of-jazz-as-an-http-server">A real world use of Jazz as an http server</h2>
+
+<p>The manual you are just reading, Jazz’s developer’s website, kaalam’s website, the package reference and more are developed using Jazz
+as the development server. You can find the source code of the automation on github.</p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> The website automation is intended of internal use even if it is OSS. There is no support for it, but if
+you feel comfortable with R, you can probably make it work or ping the author.</div>
+
 
 
 
@@ -587,7 +647,7 @@ details of development are updated in the <a href="/develop/">developer’s refe
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2020 kaalam.ai. All rights reserved. <br />
- Site last generated: Jan 28, 2020 <br />
+ Site last generated: Jan 29, 2020 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>
