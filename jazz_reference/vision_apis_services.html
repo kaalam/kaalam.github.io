@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="What is Jazz (part 4) Introducing the architecture.">
+<meta name="description" content="What is Jazz (part 4) More on the architecture.">
 <meta name="keywords" content=" ">
-<title>APIs and Services | Jazz User's Manual</title>
+<title>API, Services, Instances, etc. | Jazz User's Manual</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -226,7 +226,7 @@
                   
                   
                   
-                  <li class="active"><a href="vision_apis_services.html">APIs and Services</a></li>
+                  <li class="active"><a href="vision_apis_services.html">API, Services, Instances, etc.</a></li>
                   
                   
                   
@@ -368,7 +368,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">APIs and Services</h1>
+   <h1 class="post-title-main">API, Services, Instances, etc.</h1>
 </div>
 
 
@@ -376,7 +376,7 @@
 <div class="post-content">
 
    
-    <div class="summary">What is Jazz (part 4) Introducing the architecture.</div>
+    <div class="summary">What is Jazz (part 4) More on the architecture.</div>
    
 
     
@@ -410,7 +410,7 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <div class="bs-callout bs-callout-">And finally, <strong>the API</strong>. Thanks for reading this far !!</div>
+  <div class="bs-callout bs-callout-">Thank you for for reading this far. This final page on the vision covers some necessary not yet mentioned elements.</div>
 
 <h2 id="other-relevant-classes-required-to-understand-the-architecture">Other relevant classes required to understand the architecture</h2>
 
@@ -418,9 +418,25 @@ $('#toc').on('click', 'a', function() {
 
 <h2 id="services">Services</h2>
 
+<p><span class="label label-info">Service</span></p>
+
+<p>In Jazz, the class <code class="highlighter-rouge">Service</code> provides the necessary abstractions to deal with parts that will be instantiated and configured. Services have things such as: configuration files, loggers and are instantiated. In Jazz, services allocate most of the memory. Services include things like the http server itself and the classes that return any container.</p>
+
+<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> E.g., A Chart container is created by asking the service Charts to create a new Chart.</div>
+
+<p>Services are available via API and can be called from C++, Bop and http.</p>
+
 <h2 id="instances">Instances</h2>
 
+<p>Since Jazz is an http server, resource allocation serves thousands of clients per node. The server’s RAM space is distributed in a configurable way among its services. Every service has just one instance of it per node. These instances of all the classes derived from <code class="highlighter-rouge">Service</code> and some simple ones like a logger or a system timer available to all classes are the instances that are <strong>created as global variables</strong> and exist through the life of the server. That’s what is meant by <strong>instances</strong> in Jazz terms.</p>
+
 <h2 id="the-api">The API</h2>
+
+<p>Remember “anything is a block”, “blocks have identifiers” and “blocks have owners”? Well, putting all that together with some simple syntax, joined by characters that make the whole thing readable and http compatible, is what the http API is about. These locators are available from C++, Bop and http. Functions are also blocks and function calls use parenthesis and comma separated arguments as you would expect.</p>
+
+<ul>
+  <li>The details in <a href="api_ref_elements.html">API reference</a></li>
+</ul>
 
 <h2 id="jazz-source-code-project-organization">Jazz source code project organization</h2>
 
@@ -462,7 +478,7 @@ $('#toc').on('click', 'a', function() {
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2020 kaalam.ai. All rights reserved. <br />
- Site last generated: Jan 30, 2020 <br />
+ Site last generated: Feb 4, 2020 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>
