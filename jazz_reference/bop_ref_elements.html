@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="How Bebop is implemented in terms of the language itself and support for automatic programming.">
+<meta name="description" content="How Bebop is designed in terms of the language itself and support for automatic programming.">
 <meta name="keywords" content=" ">
 <title>Bebop elements | Jazz User's Manual</title>
 <link rel="stylesheet" href="css/syntax.css">
@@ -376,7 +376,7 @@
 <div class="post-content">
 
    
-    <div class="summary">How Bebop is implemented in terms of the language itself and support for automatic programming.</div>
+    <div class="summary">How Bebop is designed in terms of the language itself and support for automatic programming.</div>
    
 
     
@@ -410,76 +410,25 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <h2 id="language-basics">Language basics</h2>
+  <h2 id="about-this-page">About this page</h2>
 
-<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning:</b> Designing the language while implementing it using <strong>flex</strong> and <strong>bison</strong> is not a good idea.
-For the moment, this page only defines “where to go” but finding some elegant “how to do it” should be given some thoughts.</div>
+<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> This page is intentionally not called Bebop Reference, it is way too early for that. This is the place where details about the language will be described as implemented.</div>
 
-<h2 id="bebop-allows-inclusion-and-aliases">Bebop allows inclusion and aliases</h2>
+<h2 id="the-idea-behind-bebop">The idea behind Bebop</h2>
 
-<ul>
-  <li>There must be some support for modules: E.g., “import rnn”</li>
-  <li>Aliases and other syntactic sugar: E.g., <strong>using</strong> /xxx.yy.zz <strong>as</strong> <em>z</em></li>
-</ul>
+<p><span class="label label-info">Bebop</span></p>
 
-<h2 id="bebop-makes-things-easy">Bebop makes things easy</h2>
+<p><code class="highlighter-rouge">Bebop</code> aka. <code class="highlighter-rouge">Bop</code> introduces a new kind abstraction, the <a href="vision_bop_fields_contexts.html#introducing-fields">field</a>. The definition of the language itself is stored in the fields (in plural) from which it inherits. And the language extends itself functionally. The result being that anything (any formal text, any natural text, but even data) could be Bop code in some field. The whole idea is introduced as <a href="vision_bop_fields_contexts.html#what-is-that-jazz-magic">Jazz magic</a></p>
+
+<h2 id="fundamental-ideas">Fundamental ideas</h2>
 
 <ul>
-  <li>There is a clear <strong>type inference</strong> mechanism. Primitive types meet on the minimum common enclosing type (bool -&gt; int -&gt; double). Classes meet on the closest ancestor if a-&gt;b-&gt;c and a-&gt;b-&gt;d  c and d meet on b.</li>
-  <li>There is a clear <strong>shape inference</strong> mechanism. We make things simple by translating ideas like “with the dimensions of”, “with the number of rows of” or “repeated as necessary”, etc. into code, like “a + 2” meaning, as expected, element-wise addition of 2 to any tensor of any shape and numeric type.</li>
-</ul>
-
-<h2 id="bebop-is-functional">Bebop is functional</h2>
-
-<ul>
-  <li>Functions can be arguments of functions.</li>
-  <li>Functions can return functions.</li>
-  <li>Operators are defined as functions (core or Bebop).</li>
-  <li>Functions cannot have side effects. More explicitly: Everything a function reads is either an argument or a public member of one of its parent classes. Everything a function uses can be a cached value which is indistinguishable from the “real” value and cannot be modified by design.</li>
-  <li><strong>Maintainers</strong> are functions that, unlike ordinary functions, can create/update/delete class members. Constructors are maintainers. Maintainers should be avoided when possible because they will interfere with automatic optimization.</li>
-  <li>Blocks are immutable.</li>
-  <li>Reads are safe.</li>
-  <li>Writes are idempotent.</li>
-</ul>
-
-<h2 id="bebop-is-object-oriented">Bebop is object oriented</h2>
-
-<ul>
-  <li>Classes are keeprs.</li>
-  <li>Multiple inheritance is possible.</li>
-  <li>For starters: All members are public, there are no virtual methods or implicit calling, parent classes are referred by name.</li>
-</ul>
-
-<h2 id="bebop-supports-automatic-programming">Bebop supports automatic programming</h2>
-
-<h3 id="object-forking">Object forking</h3>
-
-<p>This gives natural support for (Lamarckian) evolution. A new trait competes with an existing trait, it is some minor mutation ceteris
-paribus. This is efficient in speed and resources. The object searches all its “404s” in his parent and uses the “lowest hanging”
-implementation of every member.</p>
-
-<h3 id="pattern-matching">Pattern matching</h3>
-
-<p>Selecting methods by type as in overloading, but done with type pattern matching. Again, naturally supporting ideas like “executing”
-could be “making happen” when applied to “business plan”, “running” when applied to “program” and “killing” when applied to “prisoner”.</p>
-
-<h3 id="alternative-function">Alternative function</h3>
-
-<p>It should be natural for mutated functions to fail gracefully. One option is calling the “non mutated” function when a function fails and
-using its result instead. Even having non informative completely failsafe functions as the last resource make sense. E.g., the function
-i_dont_know() returning (boolean) NA for all yes/no questions.</p>
-
-<h2 id="automatic-parallelization">Automatic parallelization</h2>
-
-<p>Automatic parallelization is not as hard as it looks. The thread pool in the server and the server’s reentrant code already guarantees that
-any n functions can run concurrently in isolation. Making it happen, both locally and globally is just a matter of triggering computation
-using the appropriate abstractions:</p>
-
-<ul>
-  <li><strong>Locally</strong> (explicitly): Implementing primitives like <strong>map</strong> to functions.</li>
-  <li><strong>Locally</strong> (implicitly): Classes like JazzColumn, JazzDataframe and JazzFileSystem should use distributing primitives under the hood.</li>
-  <li><strong>Globally</strong>: JazzCluster, JazzClusterFileSystem, JazzDataframe …</li>
-  <li><strong>Cron jobs</strong>: JazzRemoteSource and other classes should be able to “compute on schedule” in parallel with “on demand”.</li>
+  <li><a href="vision_bop_fields_contexts.html#bebop-operates-at-source-and-bytecode-level">Bebop operates at source and bytecode level</a></li>
+  <li><a href="vision_bop_fields_contexts.html#bebop-is-object-oriented-in-its-own-way">Bebop is object oriented (in its own way)</a></li>
+  <li><a href="vision_bop_fields_contexts.html#bebop-is-functional">Bebop is functional</a></li>
+  <li><a href="vision_bop_fields_contexts.html#bebop-is-safe">Bebop is safe</a></li>
+  <li><a href="vision_bop_fields_contexts.html#bebop-forks">Bebop forks</a></li>
+  <li><a href="vision_bop_fields_contexts.html#automatic-function-result-caching">Automatic function result caching</a></li>
 </ul>
 
 <p><br /></p>
@@ -497,7 +446,7 @@ using the appropriate abstractions:</p>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2020 kaalam.ai. All rights reserved. <br />
- Site last generated: Feb 4, 2020 <br />
+ Site last generated: Feb 7, 2020 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

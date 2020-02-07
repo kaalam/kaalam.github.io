@@ -410,57 +410,49 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> In version 0.4.1 the API has been redesigned. Details will be updated.</div>
+  <h2 id="api-elements">API elements</h2>
 
-<h2 id="api-elements">API elements</h2>
+<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> In version 0.4.1 the API has been redesigned. Details will be updated. This page contains parts of previous specification that have not changed, but is not a complete specification anymore.</div>
 
-<h2 id="apis">APIs</h2>
+<h3 id="lvalue-and-rvalue"><code class="highlighter-rouge">lvalue</code> and <code class="highlighter-rouge">rvalue</code></h3>
 
-<h3 id="rest">REST</h3>
+<p>Take their names from formal language theory. They are the parts of an assignment. The left of the <code class="highlighter-rouge">=</code> operator is what “is assigned to” is the <code class="highlighter-rouge">lvalue</code> and the right what “is evaluated” is the <code class="highlighter-rouge">rvalue</code>.</p>
+
+<h3 id="rest-predicates">REST predicates</h3>
 
 <p><span class="label label-info">REST API</span></p>
 
 <p>The REST API supports <strong>standard http commands</strong>.</p>
 
 <ul>
-  <li><strong>GET</strong> with a valid <strong>rvalue</strong>. To read from Jazz.</li>
-  <li><strong>HEAD</strong> with a valid <strong>rvalue</strong>. Internally the same as GET, but returns the header only.</li>
-  <li><strong>PUT</strong> with a valid <strong>lvalue</strong>. To write blocks into a Jazz keepr.</li>
-  <li><strong>DELETE</strong> with a valid <strong>lvalue</strong>. To delete blocks or keeprs (at any level of the tree).</li>
+  <li><strong>GET</strong> with a valid <code class="highlighter-rouge">rvalue</code>. To read from Jazz.</li>
+  <li><strong>HEAD</strong> with a valid <code class="highlighter-rouge">rvalue</code>. Internally the same as GET, but returns the header only.</li>
+  <li><strong>PUT</strong> with a valid <code class="highlighter-rouge">lvalue</code>. To write blocks into a Jazz keepr.</li>
+  <li><strong>DELETE</strong> with a valid <code class="highlighter-rouge">lvalue</code>. To delete blocks or containers (at any level of the tree).</li>
   <li><strong>OPTIONS</strong> with a string. Parses the string and returns the commands that would accept that string as a URL.</li>
-  <li><strong>GET</strong> with <strong>lvalue=rvalue</strong>. Assignment in the server. Similar to “PUT(lvalue, GET(rvalue))” without traffic.</li>
+  <li><strong>GET</strong> with <code class="highlighter-rouge">lvalue</code>=<code class="highlighter-rouge">rvalue</code>. Assignment in the server. Similar to “PUT(lvalue, GET(rvalue))” without traffic.</li>
 </ul>
 
 <p>There is no support for POST or TRACE, any functions other than those mentioned return an error.</p>
 
-<h3 id="r-api">R API</h3>
+<p>Compression is not supported for now. (Will probably change.)</p>
 
-<p><span class="label label-info">R</span></p>
+<p>CACHE HEADERS are not supported for now. (Will probably change.)</p>
 
-<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> The R package <strong>rjazz</strong> also includes built-in http client support to use the REST API from R.</div>
-
-<p><br /></p>
-
-<h3 id="string-constants">String constants</h3>
-
-<p>String constants are part of Bebop, they are applied separated by double quote <code class="highlighter-rouge">"</code> with a simple C-like escape sequence mechanism. Look for the
-function ExpandEscapeSequences <a href="/develop_jazz02/namespacejazz__utils.html">here</a> for details. Inside a url, url encoding should be used.</p>
-
-<h2 id="blocks">Blocks</h2>
+<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> All reads are safe, all writes are idempotent.</div>
 
 <h3 id="block-names">Block names</h3>
 
-<p>A block name is a sequence of case-sensitive alphanumeric characters or underscores of maximum length JAZZ_MAX_BLOCK_ID_LENGTH - 1 (actually 31)
+<p>A block name is a sequence of case-sensitive alphanumeric characters or underscores of maximum length MAX_BLOCK_ID_LENGTH - 1 (actually 31)
 starting with a letter.</p>
 
-<p>The regex JAZZ_REGEX_VALIDATE_BLOCK_ID validates a block identifier.</p>
+<p>The regex REGEX_VALIDATE_BLOCK_ID validates a block identifier.</p>
 
 <h3 id="block-attributes">Block attributes</h3>
 
 <p>In some <code class="highlighter-rouge">http</code> cases, when attributes are relevant to the protocol, they are automatically converted to mime types and urls. In all cases,
-attributes of a block can be read using the function get_block_attributes() and written with set_block_attributes(). These functions exist
-in all APIs. They are implemented as standard code functions so that $std.get_block_attributes() and $std.set_block_attributes() work
-everywhere. Attribute reference is <a href="reference_api_block_attributes.html">here</a></p>
+attributes of a block can be read using the function get_attributes() and written with set_attributes(). These functions exist
+in all APIs.</p>
 
 <h3 id="anchor-keepers">Anchor keepers</h3>
 
@@ -483,7 +475,7 @@ everywhere. Attribute reference is <a href="reference_api_block_attributes.html"
     <tr>
       <td><code class="highlighter-rouge">@</code></td>
       <td>forward</td>
-      <td>Requires forwarding to the appropriate node in the cluster. All <code class="highlighter-rouge">@</code> requests are transformed to <code class="highlighter-rouge">/</code> on some node. In reading using http, the call is actually forwarded. In assignment, <code class="highlighter-rouge">@</code> on both the left and right sides, performs a <strong>map</strong> operation, on the right side only, an <strong>aggregate</strong>.</td>
+      <td>Requires forwarding to the appropriate node in the cluster. All <code class="highlighter-rouge">@</code> requests are transformed to <code class="highlighter-rouge">/</code> on some node.</td>
     </tr>
     <tr>
       <td><code class="highlighter-rouge">$</code></td>
@@ -492,20 +484,6 @@ everywhere. Attribute reference is <a href="reference_api_block_attributes.html"
     </tr>
   </tbody>
 </table>
-
-<h3 id="block-modifiers">Block modifiers</h3>
-
-<p>Modifiers have the form	<code class="highlighter-rouge">?(</code><em>expression</em><code class="highlighter-rouge">)</code>, depending on <em>expression</em>, a modifier can be:</p>
-
-<ul>
-  <li>A <strong>block constructor</strong>. The definition of a block as a constant.</li>
-  <li>A <strong>block selection</strong>. A selection applied to a block.</li>
-  <li>A <strong>predicate modifier</strong>. Some extra condition applied to a predicate such as “only if exists”, “only if new”, etc.</li>
-</ul>
-
-<h2 id="function-calls">Function calls</h2>
-
-<p>Function calls have the form <em>name</em><code class="highlighter-rouge">(</code><em>arguments</em><code class="highlighter-rouge">)</code>.</p>
 
 <h2 id="operators">Operators</h2>
 
@@ -561,10 +539,15 @@ everywhere. Attribute reference is <a href="reference_api_block_attributes.html"
   </tbody>
 </table>
 
-<h2 id="api-predicates">API predicates</h2>
+<h3 id="r-api">R API</h3>
 
-<p>Predicates are the basic API functions such as create, read, update, assign and delete. They are implicit in the API function or http command
-you use, for details see <a href="reference_api_predicates.html">API predicates</a>.</p>
+<p><span class="label label-info">R</span></p>
+
+<p>The new design goes back to the original concept of <code class="highlighter-rouge">C++</code> and <code class="highlighter-rouge">http</code>. An R package to manage the <code class="highlighter-rouge">http</code> client will still be included.</p>
+
+<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> The R package <strong>rjazz</strong> also includes built-in http client support to use the REST API from R.</div>
+
+<p><br /></p>
 
 
 
@@ -579,7 +562,7 @@ you use, for details see <a href="reference_api_predicates.html">API predicates<
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2020 kaalam.ai. All rights reserved. <br />
- Site last generated: Feb 4, 2020 <br />
+ Site last generated: Feb 7, 2020 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>
