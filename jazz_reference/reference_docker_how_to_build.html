@@ -435,7 +435,7 @@ was run successfully. You should start inside the docker folder.</div>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
 
-<span class="nv">docker_pwd</span><span class="o">=</span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>
+<span class="nv">docker_pwd</span><span class="o">=</span><span class="si">$(</span><span class="nb">pwd</span><span class="si">)</span>
 
 <span class="nb">cd</span> ../server <span class="o">||</span> <span class="k">return </span>1
 
@@ -493,7 +493,7 @@ docker push kaalam/jazz_neat:0.3.1
 
 <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> To make it more efficient, you can group all the ADD commands into one joining them with “+”.</div>
 
-<p>The start.sh file is found in the docker folder, but it’s just a call to <code class="highlighter-rouge">jazz start</code>.</p>
+<p>The start.sh file is found in the docker folder, but it’s just a call to <code class="language-plaintext highlighter-rouge">jazz start</code>.</p>
 
 <div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> The previous example does not include loading anything into the Jazz server. For a more realistic
 application, you should develop using a development server. Then, persist the state of the JazzSource object containing all the magic
@@ -516,7 +516,7 @@ working.</div>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2020 kaalam.ai. All rights reserved. <br />
- Site last generated: Jul 27, 2020 <br />
+ Site last generated: Jul 31, 2020 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

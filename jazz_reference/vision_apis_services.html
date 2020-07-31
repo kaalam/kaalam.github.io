@@ -420,7 +420,7 @@ $('#toc').on('click', 'a', function() {
 
 <p><span class="label label-info">Service</span></p>
 
-<p>In Jazz, the class <code class="highlighter-rouge">Service</code> provides the necessary abstractions to deal with parts that will be instantiated and configured. Services have things such as: configuration files, loggers and are instantiated. In Jazz, services allocate most of the memory. Services include things like the http server itself and the classes that return any container.</p>
+<p>In Jazz, the class <code class="language-plaintext highlighter-rouge">Service</code> provides the necessary abstractions to deal with parts that will be instantiated and configured. Services have things such as: configuration files, loggers and are instantiated. In Jazz, services allocate most of the memory. Services include things like the http server itself and the classes that return any container.</p>
 
 <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> E.g., A Chart container is created by asking the service Charts to create a new Chart.</div>
 
@@ -430,7 +430,7 @@ $('#toc').on('click', 'a', function() {
 
 <h2 id="instances">Instances</h2>
 
-<p>Since Jazz is an http server, resource allocation serves thousands of clients per node. The server’s RAM space is distributed in a configurable way among its services. Every service has just one instance of it per node. These instances of all the classes derived from <code class="highlighter-rouge">Service</code> and some simple ones like a logger or a system timer available to all classes are the instances that are <strong>created as global variables</strong> and exist through the life of the server. That’s what is meant by <strong>instances</strong> in Jazz terms.</p>
+<p>Since Jazz is an http server, resource allocation serves thousands of clients per node. The server’s RAM space is distributed in a configurable way among its services. Every service has just one instance of it per node. These instances of all the classes derived from <code class="language-plaintext highlighter-rouge">Service</code> and some simple ones like a logger or a system timer available to all classes are the instances that are <strong>created as global variables</strong> and exist through the life of the server. That’s what is meant by <strong>instances</strong> in Jazz terms.</p>
 
 <h2 id="the-api">The API</h2>
 
@@ -493,7 +493,7 @@ $('#toc').on('click', 'a', function() {
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2020 kaalam.ai. All rights reserved. <br />
- Site last generated: Jul 27, 2020 <br />
+ Site last generated: Jul 31, 2020 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

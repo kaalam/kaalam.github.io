@@ -414,9 +414,9 @@ $('#toc').on('click', 'a', function() {
 
 <div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> In version 0.4.1 the API has been redesigned. Details will be updated. This page contains parts of previous specification that have not changed, but is not a complete specification anymore.</div>
 
-<h3 id="lvalue-and-rvalue"><code class="highlighter-rouge">lvalue</code> and <code class="highlighter-rouge">rvalue</code></h3>
+<h3 id="lvalue-and-rvalue"><code class="language-plaintext highlighter-rouge">lvalue</code> and <code class="language-plaintext highlighter-rouge">rvalue</code></h3>
 
-<p>Take their names from formal language theory. They are the parts of an assignment. The left of the <code class="highlighter-rouge">=</code> operator is what “is assigned to” is the <code class="highlighter-rouge">lvalue</code> and the right what “is evaluated” is the <code class="highlighter-rouge">rvalue</code>.</p>
+<p>Take their names from formal language theory. They are the parts of an assignment. The left of the <code class="language-plaintext highlighter-rouge">=</code> operator is what “is assigned to” is the <code class="language-plaintext highlighter-rouge">lvalue</code> and the right what “is evaluated” is the <code class="language-plaintext highlighter-rouge">rvalue</code>.</p>
 
 <h3 id="rest-predicates">REST predicates</h3>
 
@@ -425,12 +425,12 @@ $('#toc').on('click', 'a', function() {
 <p>The REST API supports <strong>standard http commands</strong>.</p>
 
 <ul>
-  <li><strong>GET</strong> with a valid <code class="highlighter-rouge">rvalue</code>. To read from Jazz.</li>
-  <li><strong>HEAD</strong> with a valid <code class="highlighter-rouge">rvalue</code>. Internally the same as GET, but returns the header only.</li>
-  <li><strong>PUT</strong> with a valid <code class="highlighter-rouge">lvalue</code>. To write blocks into a Jazz keepr.</li>
-  <li><strong>DELETE</strong> with a valid <code class="highlighter-rouge">lvalue</code>. To delete blocks or containers (at any level of the tree).</li>
+  <li><strong>GET</strong> with a valid <code class="language-plaintext highlighter-rouge">rvalue</code>. To read from Jazz.</li>
+  <li><strong>HEAD</strong> with a valid <code class="language-plaintext highlighter-rouge">rvalue</code>. Internally the same as GET, but returns the header only.</li>
+  <li><strong>PUT</strong> with a valid <code class="language-plaintext highlighter-rouge">lvalue</code>. To write blocks into a Jazz keepr.</li>
+  <li><strong>DELETE</strong> with a valid <code class="language-plaintext highlighter-rouge">lvalue</code>. To delete blocks or containers (at any level of the tree).</li>
   <li><strong>OPTIONS</strong> with a string. Parses the string and returns the commands that would accept that string as a URL.</li>
-  <li><strong>GET</strong> with <code class="highlighter-rouge">lvalue</code>=<code class="highlighter-rouge">rvalue</code>. Assignment in the server. Similar to “PUT(lvalue, GET(rvalue))” without traffic.</li>
+  <li><strong>GET</strong> with <code class="language-plaintext highlighter-rouge">lvalue</code>=<code class="language-plaintext highlighter-rouge">rvalue</code>. Assignment in the server. Similar to “PUT(lvalue, GET(rvalue))” without traffic.</li>
 </ul>
 
 <p>There is no support for POST or TRACE, any functions other than those mentioned return an error.</p>
@@ -450,7 +450,7 @@ starting with a letter.</p>
 
 <h3 id="block-attributes">Block attributes</h3>
 
-<p>In some <code class="highlighter-rouge">http</code> cases, when attributes are relevant to the protocol, they are automatically converted to mime types and urls. In all cases,
+<p>In some <code class="language-plaintext highlighter-rouge">http</code> cases, when attributes are relevant to the protocol, they are automatically converted to mime types and urls. In all cases,
 attributes of a block can be read using the function get_attributes() and written with set_attributes(). These functions exist
 in all APIs.</p>
 
@@ -468,17 +468,17 @@ in all APIs.</p>
   </thead>
   <tbody>
     <tr>
-      <td><code class="highlighter-rouge">/</code></td>
+      <td><code class="language-plaintext highlighter-rouge">/</code></td>
       <td>local root</td>
       <td>Is the root keeper of the current node (the only node if a Jazz cluster isn’t defined).</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">@</code></td>
+      <td><code class="language-plaintext highlighter-rouge">@</code></td>
       <td>forward</td>
-      <td>Requires forwarding to the appropriate node in the cluster. All <code class="highlighter-rouge">@</code> requests are transformed to <code class="highlighter-rouge">/</code> on some node.</td>
+      <td>Requires forwarding to the appropriate node in the cluster. All <code class="language-plaintext highlighter-rouge">@</code> requests are transformed to <code class="language-plaintext highlighter-rouge">/</code> on some node.</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">$</code></td>
+      <td><code class="language-plaintext highlighter-rouge">$</code></td>
       <td>ubiquitous</td>
       <td>If reading, the resource is everywhere in the cluster like the cluster definition itself or the standard core. If writing, it is broadcasted to the whole cluster.</td>
     </tr>
@@ -497,42 +497,42 @@ in all APIs.</p>
   </thead>
   <tbody>
     <tr>
-      <td><code class="highlighter-rouge">.</code></td>
+      <td><code class="language-plaintext highlighter-rouge">.</code></td>
       <td>NO</td>
-      <td>Defines the right argument belonging to the keeper on the left. Is <strong>not</strong> used after <code class="highlighter-rouge">/</code>, <code class="highlighter-rouge">@</code> and <code class="highlighter-rouge">$</code>. E.g., <code class="highlighter-rouge">/fraud.indices.bl001</code> should be read as: <code class="highlighter-rouge">bl001</code> is in <code class="highlighter-rouge">indices</code> which is in <code class="highlighter-rouge">fraud</code> which is in <code class="highlighter-rouge">/</code> (local root).</td>
+      <td>Defines the right argument belonging to the keeper on the left. Is <strong>not</strong> used after <code class="language-plaintext highlighter-rouge">/</code>, <code class="language-plaintext highlighter-rouge">@</code> and <code class="language-plaintext highlighter-rouge">$</code>. E.g., <code class="language-plaintext highlighter-rouge">/fraud.indices.bl001</code> should be read as: <code class="language-plaintext highlighter-rouge">bl001</code> is in <code class="language-plaintext highlighter-rouge">indices</code> which is in <code class="language-plaintext highlighter-rouge">fraud</code> which is in <code class="language-plaintext highlighter-rouge">/</code> (local root).</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">=</code></td>
+      <td><code class="language-plaintext highlighter-rouge">=</code></td>
       <td>NO</td>
       <td>Assignment.</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">+</code>, <code class="highlighter-rouge">-</code>, <code class="highlighter-rouge">*</code>, <code class="highlighter-rouge">/</code>, <code class="highlighter-rouge">^</code></td>
+      <td><code class="language-plaintext highlighter-rouge">+</code>, <code class="language-plaintext highlighter-rouge">-</code>, <code class="language-plaintext highlighter-rouge">*</code>, <code class="language-plaintext highlighter-rouge">/</code>, <code class="language-plaintext highlighter-rouge">^</code></td>
       <td>NO</td>
-      <td>Arithmetic operators. Defined on numbers only. The <code class="highlighter-rouge">^</code> has an alternative form, <code class="highlighter-rouge">:pow:</code> that should be used in urls.</td>
+      <td>Arithmetic operators. Defined on numbers only. The <code class="language-plaintext highlighter-rouge">^</code> has an alternative form, <code class="language-plaintext highlighter-rouge">:pow:</code> that should be used in urls.</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">&amp;</code>, <code class="highlighter-rouge">:and:</code></td>
+      <td><code class="language-plaintext highlighter-rouge">&amp;</code>, <code class="language-plaintext highlighter-rouge">:and:</code></td>
       <td>NO</td>
-      <td>Logic <code class="highlighter-rouge">and</code> operator (any of the two).</td>
+      <td>Logic <code class="language-plaintext highlighter-rouge">and</code> operator (any of the two).</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">|</code>, <code class="highlighter-rouge">:or:</code></td>
+      <td><code class="language-plaintext highlighter-rouge">|</code>, <code class="language-plaintext highlighter-rouge">:or:</code></td>
       <td>NO</td>
-      <td>Logic <code class="highlighter-rouge">or</code> operator (any of the two). The vertical <code class="highlighter-rouge">|</code> version should not be used in a url.</td>
+      <td>Logic <code class="language-plaintext highlighter-rouge">or</code> operator (any of the two). The vertical <code class="language-plaintext highlighter-rouge">|</code> version should not be used in a url.</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">!</code>, <code class="highlighter-rouge">:not:</code></td>
+      <td><code class="language-plaintext highlighter-rouge">!</code>, <code class="language-plaintext highlighter-rouge">:not:</code></td>
       <td>NO</td>
-      <td>Logic <code class="highlighter-rouge">negation</code> operator.</td>
+      <td>Logic <code class="language-plaintext highlighter-rouge">negation</code> operator.</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">:xor:</code></td>
+      <td><code class="language-plaintext highlighter-rouge">:xor:</code></td>
       <td>NO</td>
-      <td>Logic <code class="highlighter-rouge">xor</code> operator.</td>
+      <td>Logic <code class="language-plaintext highlighter-rouge">xor</code> operator.</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">:</code><em>name</em><code class="highlighter-rouge">:</code></td>
+      <td><code class="language-plaintext highlighter-rouge">:</code><em>name</em><code class="language-plaintext highlighter-rouge">:</code></td>
       <td>YES</td>
       <td>User defined operator. In an operator, <em>name</em> can only contain lowercase letters avoiding the reserved names in this table.</td>
     </tr>
@@ -543,7 +543,7 @@ in all APIs.</p>
 
 <p><span class="label label-info">R</span></p>
 
-<p>The new design goes back to the original concept of <code class="highlighter-rouge">C++</code> and <code class="highlighter-rouge">http</code>. An R package to manage the <code class="highlighter-rouge">http</code> client will still be included.</p>
+<p>The new design goes back to the original concept of <code class="language-plaintext highlighter-rouge">C++</code> and <code class="language-plaintext highlighter-rouge">http</code>. An R package to manage the <code class="language-plaintext highlighter-rouge">http</code> client will still be included.</p>
 
 <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> The R package <strong>rjazz</strong> also includes built-in http client support to use the REST API from R.</div>
 
@@ -562,7 +562,7 @@ in all APIs.</p>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2020 kaalam.ai. All rights reserved. <br />
- Site last generated: Jul 27, 2020 <br />
+ Site last generated: Jul 31, 2020 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

@@ -412,7 +412,7 @@ $('#toc').on('click', 'a', function() {
 
   <h2 id="introducing-relations">Introducing Relations</h2>
 
-<p>The class <code class="highlighter-rouge">Field</code> is the implementation of the idea of <strong>Formal Fields</strong>. For now, we said they are “something like OOP classes”, but each of them has a language, Bebop, defined by a set of functions inherited from other fields or extended in Bebop. We also mentioned that anything, including a poem in English or a video is Bop source code in some <code class="highlighter-rouge">Field</code> and may be compiled to bytecode, but we did not explain how that works.</p>
+<p>The class <code class="language-plaintext highlighter-rouge">Field</code> is the implementation of the idea of <strong>Formal Fields</strong>. For now, we said they are “something like OOP classes”, but each of them has a language, Bebop, defined by a set of functions inherited from other fields or extended in Bebop. We also mentioned that anything, including a poem in English or a video is Bop source code in some <code class="language-plaintext highlighter-rouge">Field</code> and may be compiled to bytecode, but we did not explain how that works.</p>
 
 <p>To truly understand the notion of <strong>Formal Fields</strong> and how that is very different from classes, the first important idea to understand is that <strong>computation does not really happen in the fields</strong>, instead, <strong>it happens in the connections between one field and another</strong>.</p>
 
@@ -420,15 +420,15 @@ $('#toc').on('click', 'a', function() {
 
 <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> Our first paper on <strong>Formal Fields</strong> is currently in preparation. To be submitted early March 2020. Stay tuned!</div>
 
-<p>Imagine a simple voice commanded system that just understands commands like “turn on the light”. It will have some <code class="highlighter-rouge">Field</code> named <strong>“SoundWave”</strong> that holds vectors of 16 bit integers at speech frequency, say 44 kHz. <strong>“SoundWave”</strong> itself is happy to just contain data of the right shape and type, it does not know how to do anything with it.</p>
+<p>Imagine a simple voice commanded system that just understands commands like “turn on the light”. It will have some <code class="language-plaintext highlighter-rouge">Field</code> named <strong>“SoundWave”</strong> that holds vectors of 16 bit integers at speech frequency, say 44 kHz. <strong>“SoundWave”</strong> itself is happy to just contain data of the right shape and type, it does not know how to do anything with it.</p>
 
-<p>There is another <code class="highlighter-rouge">Field</code> named <strong>“Vocoder”</strong> that knows how to store a tuple of (fundamental frequency, envelope, aperiodic components at a lower frequency, say 100 Hz). There is a <code class="highlighter-rouge">Bond</code> from <strong>“SoundWave”</strong> to <strong>“Vocoder”</strong> that, with some parameters executes the code from <strong>“SoundWave”</strong> into <strong>“Vocoder”</strong>.</p>
+<p>There is another <code class="language-plaintext highlighter-rouge">Field</code> named <strong>“Vocoder”</strong> that knows how to store a tuple of (fundamental frequency, envelope, aperiodic components at a lower frequency, say 100 Hz). There is a <code class="language-plaintext highlighter-rouge">Bond</code> from <strong>“SoundWave”</strong> to <strong>“Vocoder”</strong> that, with some parameters executes the code from <strong>“SoundWave”</strong> into <strong>“Vocoder”</strong>.</p>
 
-<p>Later, a <code class="highlighter-rouge">Field</code> named <strong>“PhoneticFrames”</strong> has a <code class="highlighter-rouge">Bond</code> from <strong>“Vocoder”</strong> that guesses most likely models. Then, a <code class="highlighter-rouge">Field</code> named <strong>“Text”</strong> guesses about the code in <strong>“PhoneticFrames”</strong>. Finally, a <code class="highlighter-rouge">Field</code> named <strong>“Actions”</strong> guesses from another <code class="highlighter-rouge">Field</code> named <strong>“English”</strong> that itself guesses form <strong>“Text”</strong>, …</p>
+<p>Later, a <code class="language-plaintext highlighter-rouge">Field</code> named <strong>“PhoneticFrames”</strong> has a <code class="language-plaintext highlighter-rouge">Bond</code> from <strong>“Vocoder”</strong> that guesses most likely models. Then, a <code class="language-plaintext highlighter-rouge">Field</code> named <strong>“Text”</strong> guesses about the code in <strong>“PhoneticFrames”</strong>. Finally, a <code class="language-plaintext highlighter-rouge">Field</code> named <strong>“Actions”</strong> guesses from another <code class="language-plaintext highlighter-rouge">Field</code> named <strong>“English”</strong> that itself guesses form <strong>“Text”</strong>, …</p>
 
-<p>We use the word “guesses” intentionally to indicate that the posterior likelihood is key in disambiguating imperfect matches in the bonds. The whole chain of bonds acts as if it was a direct bond from <strong>“SoundWave”</strong> to <strong>“Actions”</strong> and is called a <code class="highlighter-rouge">Compound</code>.</p>
+<p>We use the word “guesses” intentionally to indicate that the posterior likelihood is key in disambiguating imperfect matches in the bonds. The whole chain of bonds acts as if it was a direct bond from <strong>“SoundWave”</strong> to <strong>“Actions”</strong> and is called a <code class="language-plaintext highlighter-rouge">Compound</code>.</p>
 
-<p>A simpler type of bonds, that can only succeed of fail (disk full, etc.) and have no learned parameters is called a <code class="highlighter-rouge">Way</code>. There could be a way from <strong>“SoundWave”</strong> to <strong>“MP3file”</strong> that would just be a “save as mp3” function.</p>
+<p>A simpler type of bonds, that can only succeed of fail (disk full, etc.) and have no learned parameters is called a <code class="language-plaintext highlighter-rouge">Way</code>. There could be a way from <strong>“SoundWave”</strong> to <strong>“MP3file”</strong> that would just be a “save as mp3” function.</p>
 
 <figure><img class="docimage" src="images/jazz_relation.png" alt="" /><figcaption>Relations between any two Fields</figcaption></figure>
 
@@ -436,9 +436,9 @@ $('#toc').on('click', 'a', function() {
 
 <figure><img class="docimage" src="images/jazz_finder.png" alt="" /><figcaption>The Finder, a Chart of all Fields and Relations</figcaption></figure>
 
-<p>A complete <code class="highlighter-rouge">Chart</code> (A <code class="highlighter-rouge">Chart</code> is a <code class="highlighter-rouge">Container</code> that holds graphs efficiently) of all the <code class="highlighter-rouge">Field</code> descendants and all their ways and bonds is updated automatically by the classes at Jazz node level and is known as the <code class="highlighter-rouge">Finder</code>.</p>
+<p>A complete <code class="language-plaintext highlighter-rouge">Chart</code> (A <code class="language-plaintext highlighter-rouge">Chart</code> is a <code class="language-plaintext highlighter-rouge">Container</code> that holds graphs efficiently) of all the <code class="language-plaintext highlighter-rouge">Field</code> descendants and all their ways and bonds is updated automatically by the classes at Jazz node level and is known as the <code class="language-plaintext highlighter-rouge">Finder</code>.</p>
 
-<p>Because finding working <code class="highlighter-rouge">Compound</code> chains is not as easy as finding paths in graphs, compounds need to be learned. A special multi-path chain of bonds, named a <code class="highlighter-rouge">Kinship</code> is required by some <code class="highlighter-rouge">Compound</code> identifying algorithms yet to be published.</p>
+<p>Because finding working <code class="language-plaintext highlighter-rouge">Compound</code> chains is not as easy as finding paths in graphs, compounds need to be learned. A special multi-path chain of bonds, named a <code class="language-plaintext highlighter-rouge">Kinship</code> is required by some <code class="language-plaintext highlighter-rouge">Compound</code> identifying algorithms yet to be published.</p>
 
 <p><br /></p>
 
@@ -476,7 +476,7 @@ $('#toc').on('click', 'a', function() {
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2020 kaalam.ai. All rights reserved. <br />
- Site last generated: Jul 27, 2020 <br />
+ Site last generated: Jul 31, 2020 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

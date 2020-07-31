@@ -414,7 +414,7 @@ $('#toc').on('click', 'a', function() {
 
 <p><span class="label label-info">Block</span></p>
 
-<p>In Jazz <strong>everything is a</strong> <code class="highlighter-rouge">Block</code>. This means all the classes, data, functions, Bop programs and static objects that make a system are
+<p>In Jazz <strong>everything is a</strong> <code class="language-plaintext highlighter-rouge">Block</code>. This means all the classes, data, functions, Bop programs and static objects that make a system are
 stored as blocks. Even block containers are stored as blocks. Let’s start with what blocks are made of.</p>
 
 <figure><img class="docimage" src="images/jazz_block.png" alt="" style="max-width: 540px" /><figcaption>A jazz block</figcaption></figure>
@@ -425,13 +425,13 @@ stored as blocks. Even block containers are stored as blocks. Let’s start with
 include what you expect in any language: Boolean, integer, float, string of different sizes. Data blocks are typically small, as
 in tenths of thousands of cells, but can be bigger to avoid cross-block boundaries when processing bigger objects (e.g. high resolution
 video). Also, rigorous data analytics is supported: All types (except byte) support a NA (Not Available) logic. There are <strong>sorted factor</strong>,
-<strong>unsorted factor</strong> and <strong>strings as factor</strong> types. Bear in mind that <strong>any file</strong> is a <code class="highlighter-rouge">Block</code>, since it is a vector (tensor or rank 1)  of
+<strong>unsorted factor</strong> and <strong>strings as factor</strong> types. Bear in mind that <strong>any file</strong> is a <code class="language-plaintext highlighter-rouge">Block</code>, since it is a vector (tensor or rank 1)  of
 bytes. Besides that, there are multi-block abstractions (columns, tables, etc.), which are, again, implemented as blocks.</p>
 
 <h3 id="a-block-has-attributes">A Block has attributes</h3>
 
 <p>Blocks have attributes as first class citizen. Attributes are maps from integer to string. Attributes are contained inside the
-<code class="highlighter-rouge">Block</code>. Possible attributes are:</p>
+<code class="language-plaintext highlighter-rouge">Block</code>. Possible attributes are:</p>
 
 <ul>
   <li><strong>Urls</strong>. This automatically exposes the object under that url in the http server.</li>
@@ -441,29 +441,29 @@ bytes. Besides that, there are multi-block abstractions (columns, tables, etc.),
   <li><strong>Jazz fields</strong>. Last but not least: Functions are blocks, fields are blocks, … More on that on the next page.</li>
 </ul>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Since any resource is a <code class="highlighter-rouge">Block</code> and blocks can have urls. A Jazz server is the only http server you need
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Since any resource is a <code class="language-plaintext highlighter-rouge">Block</code> and blocks can have urls. A Jazz server is the only http server you need
 to support any web technology, from static webpages to Typescript and JS frameworks such as Angular and Ionic.</div>
 
 <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> For the final user, Jazz is a website or mobile app that does “AI Magic”.</div>
 
 <h3 id="a-block-has-an-owner">A Block has an owner</h3>
 
-<p>A <code class="highlighter-rouge">Block</code> is binary moveable, quasi-immutable and has an owner, called a <code class="highlighter-rouge">Container</code>.
+<p>A <code class="language-plaintext highlighter-rouge">Block</code> is binary moveable, quasi-immutable and has an owner, called a <code class="language-plaintext highlighter-rouge">Container</code>.
 This means:</p>
 
 <ul>
   <li><strong>Binary moveable</strong> - It can be copied “as is” because it has no pointers.</li>
   <li><strong>Quasi-immutable</strong> - Via the API, it appears as immutable. Of course, in C++ you can still change its content for performance reasons and
 provide an interface that abstracts that out.</li>
-  <li><strong>Owner</strong> - According to the owner, a <code class="highlighter-rouge">Block</code> can be: <strong>one shot</strong>, <strong>volatile</strong> or <strong>persisted</strong>. <strong>One shot</strong> is possible only in C++, it
-means the creator owns the <code class="highlighter-rouge">Block</code>. All other blocks have a <strong>container</strong>. Via the API, blocks can only be created inside <code class="highlighter-rouge">Container</code> descendants. Some containers have a <code class="highlighter-rouge">Filestore</code>. In that case their blocks are <strong>persisted</strong>, i.e., they exist on a memory mapped file to/from which they can be saved/loaded. Other containers, e.g., a tree used in a tree search, do not need to be persisted. Their blocks are named <strong>volatile</strong> in this case.</li>
+  <li><strong>Owner</strong> - According to the owner, a <code class="language-plaintext highlighter-rouge">Block</code> can be: <strong>one shot</strong>, <strong>volatile</strong> or <strong>persisted</strong>. <strong>One shot</strong> is possible only in C++, it
+means the creator owns the <code class="language-plaintext highlighter-rouge">Block</code>. All other blocks have a <strong>container</strong>. Via the API, blocks can only be created inside <code class="language-plaintext highlighter-rouge">Container</code> descendants. Some containers have a <code class="language-plaintext highlighter-rouge">Filestore</code>. In that case their blocks are <strong>persisted</strong>, i.e., they exist on a memory mapped file to/from which they can be saved/loaded. Other containers, e.g., a tree used in a tree search, do not need to be persisted. Their blocks are named <strong>volatile</strong> in this case.</li>
 </ul>
 
 <h2 id="introducing-filestores">Introducing Filestores</h2>
 
 <p><span class="label label-info">Filestore</span></p>
 
-<p>The class <code class="highlighter-rouge">Filestore</code> implements persistence of all Jazz objects using <strong>LMDB</strong>. Therefore, a Jazz file is an LMDB file of persisted blocks.
+<p>The class <code class="language-plaintext highlighter-rouge">Filestore</code> implements persistence of all Jazz objects using <strong>LMDB</strong>. Therefore, a Jazz file is an LMDB file of persisted blocks.
 You can even use command line LMDB utilities to backup a Jazz server while running or access the same file from more than one process.</p>
 
 <div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> Because LMDB is a transactionally consistent key/value store, Jazz is “out of the box” <strong>a distributed
@@ -473,24 +473,24 @@ key/value store second to none in terms of efficiency</strong>.</div>
 
 <h3 id="filestores-can-contain-any-number-of-containers">Filestores can contain any number of containers</h3>
 
-<p><code class="highlighter-rouge">Filestore</code> is not inherited. Instead, all <code class="highlighter-rouge">Container</code> descendants can be grounded in a <code class="highlighter-rouge">Filestore</code>, when they do, they inherit the store’s Get/Put API. This design allows any number of containers being stored in any number of filestores, of course, each one belonging to just one filestore.</p>
+<p><code class="language-plaintext highlighter-rouge">Filestore</code> is not inherited. Instead, all <code class="language-plaintext highlighter-rouge">Container</code> descendants can be grounded in a <code class="language-plaintext highlighter-rouge">Filestore</code>, when they do, they inherit the store’s Get/Put API. This design allows any number of containers being stored in any number of filestores, of course, each one belonging to just one filestore.</p>
 
 <h2 id="introducing-containers">Introducing Containers</h2>
 
 <p><span class="label label-info">Container</span></p>
 
-<p>The class <code class="highlighter-rouge">Container</code>is an abstract class. It defines an API to manage blocks (possibly persisted) with a consistent interface. The containers themselves are just efficient data structures required by different algorithms. You can think of it as the C++ STL. Actually,
+<p>The class <code class="language-plaintext highlighter-rouge">Container</code>is an abstract class. It defines an API to manage blocks (possibly persisted) with a consistent interface. The containers themselves are just efficient data structures required by different algorithms. You can think of it as the C++ STL. Actually,
 some containers are just wrappers around STL containers, others are implemented from scratch or using more than one STL container.</p>
 
 <figure><img class="docimage" src="images/jazz_container.png" alt="" /><figcaption>Containers class</figcaption></figure>
 
 <h3 id="blocks-and-containers-have-identifiers-jazz-clusters-have-global-paths">Blocks and containers have identifiers, Jazz clusters have global paths</h3>
 
-<p>Jazz blocks have identifiers. Identifiers are unique in the context of their container. Containers themselves, since they are blocks, have identifiers. Adding <code class="highlighter-rouge">Filestore</code> IDs and even Jazz node IDs we get “global” distributed paths (valid over a cluster of Jazz nodes).</p>
+<p>Jazz blocks have identifiers. Identifiers are unique in the context of their container. Containers themselves, since they are blocks, have identifiers. Adding <code class="language-plaintext highlighter-rouge">Filestore</code> IDs and even Jazz node IDs we get “global” distributed paths (valid over a cluster of Jazz nodes).</p>
 
 <p><br /></p>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> You can create <strong>trees of containers</strong> of any complexity using the API. The only limitation is: Once any container is grounded in a <code class="highlighter-rouge">FileStore</code>, all its descendants can only be grounded in the same <code class="highlighter-rouge">FileStore</code>. This behavior is handled by the class automatically.</div>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> You can create <strong>trees of containers</strong> of any complexity using the API. The only limitation is: Once any container is grounded in a <code class="language-plaintext highlighter-rouge">FileStore</code>, all its descendants can only be grounded in the same <code class="language-plaintext highlighter-rouge">FileStore</code>. This behavior is handled by the class automatically.</div>
 
 <p><br /></p>
 
@@ -536,7 +536,7 @@ some containers are just wrappers around STL containers, others are implemented 
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2020 kaalam.ai. All rights reserved. <br />
- Site last generated: Jul 27, 2020 <br />
+ Site last generated: Jul 31, 2020 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

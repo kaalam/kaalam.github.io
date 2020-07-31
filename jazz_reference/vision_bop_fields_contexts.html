@@ -414,7 +414,7 @@ $('#toc').on('click', 'a', function() {
 
 <p>Until now, we introduced blocks, filestores and containers that somehow (we will get there) are accessed via http. That part is just a very efficient and hopefully simple way to manage already known things. The basement of Jazz so to say. The question is still: “why bother using Jazz instead of any other platform with more traction that implements these things?” Hint: Efficiency and simplicity alone are not good enough reasons.</p>
 
-<p>Before we talk about <code class="highlighter-rouge">Field</code>, <code class="highlighter-rouge">Relation</code>,<code class="highlighter-rouge">Context</code> and some other classes, we need to explain where we want to go. What we want to build is a platform that does distributed computation building on top of simple programs (functions).</p>
+<p>Before we talk about <code class="language-plaintext highlighter-rouge">Field</code>, <code class="language-plaintext highlighter-rouge">Relation</code>,<code class="language-plaintext highlighter-rouge">Context</code> and some other classes, we need to explain where we want to go. What we want to build is a platform that does distributed computation building on top of simple programs (functions).</p>
 
 <p>You can look at artificial neurons as programs, they are, and at deep learning (DL) as “software 2.0”, that has been said already. Does that mean we will never need anything other than DL? DL can find incredible functions matching images into labels, text into sound waves, … what not.</p>
 
@@ -450,15 +450,15 @@ $('#toc').on('click', 'a', function() {
 
 <h3 id="bebop-operates-at-source-and-bytecode-level">Bebop operates at source and bytecode level</h3>
 
-<p>After years considering different designs (starting after years trying to use existing languages) we picked a design that extremely simplifies parsing while extending Bop to make it as simple as natural language or multimedia sources. The price is, at least for the moment, you cannot code in Bop without understanding its <strong>bytecode</strong>. Bytecode is just a name, actually it is a vector or 32 bit integers with a special attribute identifying the owning <code class="highlighter-rouge">Field</code>. Positive numbers define functions, negative numbers define arguments (this includes constants, local variables, values passed by reference, constants passed by reference, etc.). The bytecode is executed as a stream of function calls with arguments passed on a stack. Conditionals jumps are supported via special functions.</p>
+<p>After years considering different designs (starting after years trying to use existing languages) we picked a design that extremely simplifies parsing while extending Bop to make it as simple as natural language or multimedia sources. The price is, at least for the moment, you cannot code in Bop without understanding its <strong>bytecode</strong>. Bytecode is just a name, actually it is a vector or 32 bit integers with a special attribute identifying the owning <code class="language-plaintext highlighter-rouge">Field</code>. Positive numbers define functions, negative numbers define arguments (this includes constants, local variables, values passed by reference, constants passed by reference, etc.). The bytecode is executed as a stream of function calls with arguments passed on a stack. Conditionals jumps are supported via special functions.</p>
 
-<p>Bebop compiles anything to <strong>bytecode</strong> on request. Of course, many times it will fail, that is part of the game. Anything includes blocks containing binary files. Take a block containing an .mp3 compressed audio file. A <code class="highlighter-rouge">Field</code> named “wave data” could compile the file resulting in a function call that takes the file as an argument an decompresses it into a vector of integers.</p>
+<p>Bebop compiles anything to <strong>bytecode</strong> on request. Of course, many times it will fail, that is part of the game. Anything includes blocks containing binary files. Take a block containing an .mp3 compressed audio file. A <code class="language-plaintext highlighter-rouge">Field</code> named “wave data” could compile the file resulting in a function call that takes the file as an argument an decompresses it into a vector of integers.</p>
 
 <p>Besides anything potentially being considered <strong>code</strong>, Bop has a source code (text identified by a special attribute) that is just a human friendly way to manage the bytecode including basic things as: comments, includes, variable names, brackets to define code blocks, but not much more.</p>
 
 <h3 id="bebop-is-object-oriented-in-its-own-way">Bebop is object oriented (in its own way)</h3>
 
-<p>Anything provided by OOP: organization, abstraction, inheritance is provided by the class <code class="highlighter-rouge">Field</code>. This makes it unnecessary to build again classes in Bop as contemplated by previous designs. Inheritance is multiple, this implies creating a virtual <code class="highlighter-rouge">Field</code> which is the union of the inherited fields. It also creates new bytecode key assignment.</p>
+<p>Anything provided by OOP: organization, abstraction, inheritance is provided by the class <code class="language-plaintext highlighter-rouge">Field</code>. This makes it unnecessary to build again classes in Bop as contemplated by previous designs. Inheritance is multiple, this implies creating a virtual <code class="language-plaintext highlighter-rouge">Field</code> which is the union of the inherited fields. It also creates new bytecode key assignment.</p>
 
 <h3 id="bebop-is-functional">Bebop is functional</h3>
 
@@ -480,7 +480,7 @@ $('#toc').on('click', 'a', function() {
 
 <p><span class="label label-info">Field</span></p>
 
-<p>As mentioned, a <code class="highlighter-rouge">Field</code> is an abstraction that has many of the features classes have in OOP. It is also similar to a package or library. Some STL fields will include efficient functions to do arithmetic, algebra, text manipulation, etc. Fields can also be purely created in Bop. Fields relate to each other, not just by a DAG like code dependencies, but by and arbitrary complex graph of <code class="highlighter-rouge">Field</code> relations. Reading the next page on relations will shed light on the role fields play in Jazz.</p>
+<p>As mentioned, a <code class="language-plaintext highlighter-rouge">Field</code> is an abstraction that has many of the features classes have in OOP. It is also similar to a package or library. Some STL fields will include efficient functions to do arithmetic, algebra, text manipulation, etc. Fields can also be purely created in Bop. Fields relate to each other, not just by a DAG like code dependencies, but by and arbitrary complex graph of <code class="language-plaintext highlighter-rouge">Field</code> relations. Reading the next page on relations will shed light on the role fields play in Jazz.</p>
 
 <figure><img class="docimage" src="images/jazz_field.png" alt="" /><figcaption>Field class</figcaption></figure>
 
@@ -488,7 +488,7 @@ $('#toc').on('click', 'a', function() {
 
 <p><span class="label label-info">Context</span></p>
 
-<p>A <code class="highlighter-rouge">Context</code> can be seen as an actionable log file. This is a requirement for reproducibility and is also required to compare learning methods. The precise definition of a context will surely change over time. So take <code class="highlighter-rouge">Context</code> informally as “everything required to reproduce a result”. It could be a conversation with a chatbot, a text corpus used to answer questions, … Ideally, in a format like a macro that records and plays back interactions, possibly one by one, with the same or different code.</p>
+<p>A <code class="language-plaintext highlighter-rouge">Context</code> can be seen as an actionable log file. This is a requirement for reproducibility and is also required to compare learning methods. The precise definition of a context will surely change over time. So take <code class="language-plaintext highlighter-rouge">Context</code> informally as “everything required to reproduce a result”. It could be a conversation with a chatbot, a text corpus used to answer questions, … Ideally, in a format like a macro that records and plays back interactions, possibly one by one, with the same or different code.</p>
 
 <figure><img class="docimage" src="images/jazz_context.png" alt="" /><figcaption>Context class</figcaption></figure>
 
@@ -528,7 +528,7 @@ $('#toc').on('click', 'a', function() {
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2020 kaalam.ai. All rights reserved. <br />
- Site last generated: Jul 27, 2020 <br />
+ Site last generated: Jul 31, 2020 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>
