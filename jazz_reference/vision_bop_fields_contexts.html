@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="What is Jazz (part 2) Introduction to Bebop, fields and contexts.">
+<meta name="description" content="What is Jazz (part 2) Introduction to Bebop, fields and code generation.">
 <meta name="keywords" content=" ">
-<title>Bebop, Fields and Contexts | Jazz User's Manual</title>
+<title>Bebop, Formal Fields and Code Generation | Jazz User's Manual</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -208,13 +208,13 @@
                   
                   
                   
-                  <li><a href="vision_blocks_containers.html">Blocks, Filestores and Containers</a></li>
+                  <li><a href="vision_blocks_containers.html">Blocks, Storage and Containers</a></li>
                   
                   
                   
                   
                   
-                  <li class="active"><a href="vision_bop_fields_contexts.html">Bebop, Fields and Contexts</a></li>
+                  <li class="active"><a href="vision_bop_fields_contexts.html">Bebop, Formal Fields and Code Generation</a></li>
                   
                   
                   
@@ -368,7 +368,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Bebop, Fields and Contexts</h1>
+   <h1 class="post-title-main">Bebop, Formal Fields and Code Generation</h1>
 </div>
 
 
@@ -376,7 +376,7 @@
 <div class="post-content">
 
    
-    <div class="summary">What is Jazz (part 2) Introduction to Bebop, fields and contexts.</div>
+    <div class="summary">What is Jazz (part 2) Introduction to Bebop, fields and code generation.</div>
    
 
     
@@ -410,9 +410,12 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <h2 id="what-is-that-jazz-magic">What is that “Jazz Magic”?</h2>
+  <div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> This page is outdated. See the <a href="https://arxiv.org/abs/2007.14075">the Formal Fields Paper</a> for an up to date
+reference on Formal Fields as already implemented in the PoC and currently being implemented in the main Jazz project.</div>
 
-<p>Until now, we introduced blocks, filestores and containers that somehow (we will get there) are accessed via http. That part is just a very efficient and hopefully simple way to manage already known things. The basement of Jazz so to say. The question is still: “why bother using Jazz instead of any other platform with more traction that implements these things?” Hint: Efficiency and simplicity alone are not good enough reasons.</p>
+<h2 id="what-is-that-jazz-magic">What is that “Jazz Magic”?</h2>
+
+<p>Until now, we introduced blocks, storage and containers that somehow (we will get there) are accessed via http. That part is just a very efficient and hopefully simple way to manage already known things. The basement of Jazz so to say. The question is still: “why bother using Jazz instead of any other platform with more traction that implements these things?” Hint: Efficiency and simplicity alone are not good enough reasons.</p>
 
 <p>Before we talk about <code class="language-plaintext highlighter-rouge">Field</code>, <code class="language-plaintext highlighter-rouge">Relation</code>,<code class="language-plaintext highlighter-rouge">Context</code> and some other classes, we need to explain where we want to go. What we want to build is a platform that does distributed computation building on top of simple programs (functions).</p>
 
@@ -484,14 +487,6 @@ $('#toc').on('click', 'a', function() {
 
 <figure><img class="docimage" src="images/jazz_field.png" alt="" /><figcaption>Field class</figcaption></figure>
 
-<h2 id="introducing-contexts">Introducing Contexts</h2>
-
-<p><span class="label label-info">Context</span></p>
-
-<p>A <code class="language-plaintext highlighter-rouge">Context</code> can be seen as an actionable log file. This is a requirement for reproducibility and is also required to compare learning methods. The precise definition of a context will surely change over time. So take <code class="language-plaintext highlighter-rouge">Context</code> informally as “everything required to reproduce a result”. It could be a conversation with a chatbot, a text corpus used to answer questions, … Ideally, in a format like a macro that records and plays back interactions, possibly one by one, with the same or different code.</p>
-
-<figure><img class="docimage" src="images/jazz_context.png" alt="" /><figcaption>Context class</figcaption></figure>
-
 <p><br /></p>
 
 <table>
@@ -505,7 +500,7 @@ $('#toc').on('click', 'a', function() {
       <td><span class="label label-info">Next …</span></td>
     </tr>
     <tr>
-      <td><a href="vision_blocks_containers.html">Blocks, Filestores and Containers</a></td>
+      <td><a href="vision_blocks_containers.html">Blocks, Storage and Containers</a></td>
       <td> </td>
       <td> </td>
       <td> </td>
@@ -528,7 +523,7 @@ $('#toc').on('click', 'a', function() {
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2020 kaalam.ai. All rights reserved. <br />
- Site last generated: Jul 31, 2020 <br />
+ Site last generated: Aug 5, 2020 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

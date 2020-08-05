@@ -208,13 +208,13 @@
                   
                   
                   
-                  <li><a href="vision_blocks_containers.html">Blocks, Filestores and Containers</a></li>
+                  <li><a href="vision_blocks_containers.html">Blocks, Storage and Containers</a></li>
                   
                   
                   
                   
                   
-                  <li><a href="vision_bop_fields_contexts.html">Bebop, Fields and Contexts</a></li>
+                  <li><a href="vision_bop_fields_contexts.html">Bebop, Formal Fields and Code Generation</a></li>
                   
                   
                   
@@ -410,7 +410,10 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <h2 id="introducing-relations">Introducing Relations</h2>
+  <div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> This page is outdated. See the <a href="https://arxiv.org/abs/2007.14075">the Formal Fields Paper</a> for an up to date
+reference on Formal Fields as already implemented in the PoC and currently being implemented in the main Jazz project.</div>
+
+<h2 id="introducing-relations">Introducing Relations</h2>
 
 <p>The class <code class="language-plaintext highlighter-rouge">Field</code> is the implementation of the idea of <strong>Formal Fields</strong>. For now, we said they are “something like OOP classes”, but each of them has a language, Bebop, defined by a set of functions inherited from other fields or extended in Bebop. We also mentioned that anything, including a poem in English or a video is Bop source code in some <code class="language-plaintext highlighter-rouge">Field</code> and may be compiled to bytecode, but we did not explain how that works.</p>
 
@@ -430,11 +433,7 @@ $('#toc').on('click', 'a', function() {
 
 <p>A simpler type of bonds, that can only succeed of fail (disk full, etc.) and have no learned parameters is called a <code class="language-plaintext highlighter-rouge">Way</code>. There could be a way from <strong>“SoundWave”</strong> to <strong>“MP3file”</strong> that would just be a “save as mp3” function.</p>
 
-<figure><img class="docimage" src="images/jazz_relation.png" alt="" /><figcaption>Relations between any two Fields</figcaption></figure>
-
 <h2 id="introducing-the-finder">Introducing The Finder</h2>
-
-<figure><img class="docimage" src="images/jazz_finder.png" alt="" /><figcaption>The Finder, a Chart of all Fields and Relations</figcaption></figure>
 
 <p>A complete <code class="language-plaintext highlighter-rouge">Chart</code> (A <code class="language-plaintext highlighter-rouge">Chart</code> is a <code class="language-plaintext highlighter-rouge">Container</code> that holds graphs efficiently) of all the <code class="language-plaintext highlighter-rouge">Field</code> descendants and all their ways and bonds is updated automatically by the classes at Jazz node level and is known as the <code class="language-plaintext highlighter-rouge">Finder</code>.</p>
 
@@ -453,7 +452,7 @@ $('#toc').on('click', 'a', function() {
       <td><span class="label label-info">Next …</span></td>
     </tr>
     <tr>
-      <td><a href="vision_bop_fields_contexts.html">Bebop, Fields and Contexts</a></td>
+      <td><a href="vision_bop_fields_contexts.html">Bebop, Formal Fields and Code Generation</a></td>
       <td> </td>
       <td> </td>
       <td> </td>
@@ -476,7 +475,7 @@ $('#toc').on('click', 'a', function() {
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2020 kaalam.ai. All rights reserved. <br />
- Site last generated: Jul 31, 2020 <br />
+ Site last generated: Aug 5, 2020 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>
