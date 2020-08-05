@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['linux_5fdistro_172',['LINUX_DISTRO',['../jazz__platform_8h.html#a604895b0d8875d97115c9bebbf5f519b',1,'jazz_platform.h']]],
-  ['linux_5fplatform_173',['LINUX_PLATFORM',['../jazz__platform_8h.html#aea13f49a32fd1c0e4c8936040892c6bd',1,'jazz_platform.h']]],
-  ['linux_5fprocessor_174',['LINUX_PROCESSOR',['../jazz__platform_8h.html#a9fe308e808a05364a550fa9cf72fde31',1,'jazz_platform.h']]],
-  ['linux_5fversion_175',['LINUX_VERSION',['../jazz__platform_8h.html#ae664f4fd6431eae2bb5db419fd7154c8',1,'jazz_platform.h']]]
+  ['filter_5ftype_5f_377',['FILTER_TYPE_',['../types_8h.html#a73ecd7dc95d36e569f91dbac3ec2d6df',1,'types.h']]],
+  ['filter_5ftype_5fboolean_378',['FILTER_TYPE_BOOLEAN',['../types_8h.html#a2a326fa953bd95451f02064edffb1e2b',1,'types.h']]],
+  ['filter_5ftype_5finteger_379',['FILTER_TYPE_INTEGER',['../types_8h.html#a6dc19db547353db903ecb71161ae449c',1,'types.h']]],
+  ['filter_5ftype_5fnotafilter_380',['FILTER_TYPE_NOTAFILTER',['../types_8h.html#a5abba7b90934a98d6f63ca2bf2c512e3',1,'types.h']]]
 ];

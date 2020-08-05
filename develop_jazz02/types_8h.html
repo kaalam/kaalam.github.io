@@ -67,15 +67,34 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">types.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &lt;chrono&gt;</code><br />
+</div>
 <p><a href="types_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1FilterSize.html">jazz_elements::FilterSize</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionjazz__elements_1_1TensorDim.html">jazz_elements::TensorDim</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionjazz__elements_1_1Tensor.html">jazz_elements::Tensor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tensor of cell size 1, 4 or 8.  <a href="unionjazz__elements_1_1Tensor.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1BlockHeader.html">jazz_elements::BlockHeader</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header for a <a class="el" href="classjazz__elements_1_1Block.html">Block</a>.  <a href="structjazz__elements_1_1BlockHeader.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1StringBuffer.html">jazz_elements::StringBuffer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure at the end of a <a class="el" href="classjazz__elements_1_1Block.html">Block</a>, initially created with init_string_buffer()  <a href="structjazz__elements_1_1StringBuffer.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacejazz__elements"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html">jazz_elements</a></td></tr>
@@ -84,10 +103,401 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a198723ea7b77deeeb47c9c3e21319143"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a198723ea7b77deeeb47c9c3e21319143">INCLUDED_JAZZ_ELEMENTS_TYPES</a></td></tr>
-<tr class="memdesc:a198723ea7b77deeeb47c9c3e21319143"><td class="mdescLeft">&#160;</td><td class="mdescRight">One liner.  <a href="types_8h.html#a198723ea7b77deeeb47c9c3e21319143">More...</a><br /></td></tr>
+<tr class="memdesc:a198723ea7b77deeeb47c9c3e21319143"><td class="mdescLeft">&#160;</td><td class="mdescRight">Basic Jazz code-less structures and constants.  <a href="types_8h.html#a198723ea7b77deeeb47c9c3e21319143">More...</a><br /></td></tr>
 <tr class="separator:a198723ea7b77deeeb47c9c3e21319143"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dfd5a365563c2e8cf13a83a127af9ac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a5dfd5a365563c2e8cf13a83a127af9ac">MAX_TENSOR_RANK</a>&#160;&#160;&#160;6</td></tr>
+<tr class="memdesc:a5dfd5a365563c2e8cf13a83a127af9ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum rank = 6, E.g. a 2D array of raw videos (row, column, frame, x, y, color)  <a href="types_8h.html#a5dfd5a365563c2e8cf13a83a127af9ac">More...</a><br /></td></tr>
+<tr class="separator:a5dfd5a365563c2e8cf13a83a127af9ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a4d6ca6f3612a6f6f377b5abe382b5b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a5a4d6ca6f3612a6f6f377b5abe382b5b">MAX_CHECKS_4_MATCH</a>&#160;&#160;&#160;25</td></tr>
+<tr class="memdesc:a5a4d6ca6f3612a6f6f377b5abe382b5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of tries to match in get_string_offset() before setting stop_check_4_match.  <a href="types_8h.html#a5a4d6ca6f3612a6f6f377b5abe382b5b">More...</a><br /></td></tr>
+<tr class="separator:a5a4d6ca6f3612a6f6f377b5abe382b5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ab9efa453cd99ad8a95c797aff340b9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a9ab9efa453cd99ad8a95c797aff340b9">CELL_TYPE__</a></td></tr>
+<tr class="memdesc:a9ab9efa453cd99ad8a95c797aff340b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Different values for Block.cell_type.  <a href="types_8h.html#a9ab9efa453cd99ad8a95c797aff340b9">More...</a><br /></td></tr>
+<tr class="separator:a9ab9efa453cd99ad8a95c797aff340b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00ed654fef28807203d5042b4342c3fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a00ed654fef28807203d5042b4342c3fb">CELL_TYPE_BYTE</a>&#160;&#160;&#160;0x001</td></tr>
+<tr class="memdesc:a00ed654fef28807203d5042b4342c3fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tensor of unsigned 8-bit binaries. NA is not defined for this type.  <a href="types_8h.html#a00ed654fef28807203d5042b4342c3fb">More...</a><br /></td></tr>
+<tr class="separator:a00ed654fef28807203d5042b4342c3fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d41c371fc939cf629397eeadf495c0a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a2d41c371fc939cf629397eeadf495c0a">CELL_TYPE_BYTE_BOOLEAN</a>&#160;&#160;&#160;0x101</td></tr>
+<tr class="memdesc:a2d41c371fc939cf629397eeadf495c0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tensor 8-bit booleans: 0, 1, BYTE_BOOLEAN_NA = NA.  <a href="types_8h.html#a2d41c371fc939cf629397eeadf495c0a">More...</a><br /></td></tr>
+<tr class="separator:a2d41c371fc939cf629397eeadf495c0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c8ac0338590065772caf2d1406f018e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a7c8ac0338590065772caf2d1406f018e">CELL_TYPE_INTEGER</a>&#160;&#160;&#160;0x004</td></tr>
+<tr class="memdesc:a7c8ac0338590065772caf2d1406f018e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tensor of 32-bit signed integers. NA is INTEGER_NA.  <a href="types_8h.html#a7c8ac0338590065772caf2d1406f018e">More...</a><br /></td></tr>
+<tr class="separator:a7c8ac0338590065772caf2d1406f018e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5ffe4c467b3a9a3e634f3fc57fce2c8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#ad5ffe4c467b3a9a3e634f3fc57fce2c8">CELL_TYPE_FACTOR</a>&#160;&#160;&#160;0x104</td></tr>
+<tr class="memdesc:ad5ffe4c467b3a9a3e634f3fc57fce2c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tensor of 32-bit unsorted categorical. NA is INTEGER_NA.  <a href="types_8h.html#ad5ffe4c467b3a9a3e634f3fc57fce2c8">More...</a><br /></td></tr>
+<tr class="separator:ad5ffe4c467b3a9a3e634f3fc57fce2c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afccbaed7cf59138502dbebcd7afd7fff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#afccbaed7cf59138502dbebcd7afd7fff">CELL_TYPE_GRADE</a>&#160;&#160;&#160;0x204</td></tr>
+<tr class="memdesc:afccbaed7cf59138502dbebcd7afd7fff"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tensor of 32-bit sorted categorical. NA is INTEGER_NA.  <a href="types_8h.html#afccbaed7cf59138502dbebcd7afd7fff">More...</a><br /></td></tr>
+<tr class="separator:afccbaed7cf59138502dbebcd7afd7fff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc8d8705af6dfe573a3d67eaa2f6d0f9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#afc8d8705af6dfe573a3d67eaa2f6d0f9">CELL_TYPE_BOOLEAN</a>&#160;&#160;&#160;0x304</td></tr>
+<tr class="memdesc:afc8d8705af6dfe573a3d67eaa2f6d0f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tensor of 32-bit booleans: 0, 1, BOOLEAN_NA = NA.  <a href="types_8h.html#afc8d8705af6dfe573a3d67eaa2f6d0f9">More...</a><br /></td></tr>
+<tr class="separator:afc8d8705af6dfe573a3d67eaa2f6d0f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6cbc5f5778c5ad50a20d9d5509d5816"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#ac6cbc5f5778c5ad50a20d9d5509d5816">CELL_TYPE_SINGLE</a>&#160;&#160;&#160;0x404</td></tr>
+<tr class="memdesc:ac6cbc5f5778c5ad50a20d9d5509d5816"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tensor of IEEE 754 32-bit float (aka single). NA is SINGLE_NA.  <a href="types_8h.html#ac6cbc5f5778c5ad50a20d9d5509d5816">More...</a><br /></td></tr>
+<tr class="separator:ac6cbc5f5778c5ad50a20d9d5509d5816"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1fba65253baccfdd3fe7776e167cfd2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#ad1fba65253baccfdd3fe7776e167cfd2">CELL_TYPE_STRING</a>&#160;&#160;&#160;0x504</td></tr>
+<tr class="memdesc:ad1fba65253baccfdd3fe7776e167cfd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tensor or 32-bit offsets to immutable strings or STRING_NA or STRING_EMPTY.  <a href="types_8h.html#ad1fba65253baccfdd3fe7776e167cfd2">More...</a><br /></td></tr>
+<tr class="separator:ad1fba65253baccfdd3fe7776e167cfd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa78915add7f8cb20ecfa873ce9bad9c9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#aa78915add7f8cb20ecfa873ce9bad9c9">CELL_TYPE_LONG_INTEGER</a>&#160;&#160;&#160;0x008</td></tr>
+<tr class="memdesc:aa78915add7f8cb20ecfa873ce9bad9c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tensor of 64-bit signed integers. NA is LONG_INTEGER_NA.  <a href="types_8h.html#aa78915add7f8cb20ecfa873ce9bad9c9">More...</a><br /></td></tr>
+<tr class="separator:aa78915add7f8cb20ecfa873ce9bad9c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab43509220e959be3a7f8b963471d59f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#aab43509220e959be3a7f8b963471d59f">CELL_TYPE_TIME</a>&#160;&#160;&#160;0x108</td></tr>
+<tr class="memdesc:aab43509220e959be3a7f8b963471d59f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tensor of 64-bit TimePoint. NA is TIME_POINT_NA.  <a href="types_8h.html#aab43509220e959be3a7f8b963471d59f">More...</a><br /></td></tr>
+<tr class="separator:aab43509220e959be3a7f8b963471d59f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab13c9ec93d22779d56a6254e158fd166"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#ab13c9ec93d22779d56a6254e158fd166">CELL_TYPE_DOUBLE</a>&#160;&#160;&#160;0x208</td></tr>
+<tr class="memdesc:ab13c9ec93d22779d56a6254e158fd166"><td class="mdescLeft">&#160;</td><td class="mdescRight">A vector of floating point numbers. Binary compatible with an R REALSXP (vector of numeric)  <a href="types_8h.html#ab13c9ec93d22779d56a6254e158fd166">More...</a><br /></td></tr>
+<tr class="separator:ab13c9ec93d22779d56a6254e158fd166"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a848460d85f2782cc1a6dcb735193ec2c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a848460d85f2782cc1a6dcb735193ec2c">BYTE_BOOLEAN_NA</a>&#160;&#160;&#160;0x0ff</td></tr>
+<tr class="memdesc:a848460d85f2782cc1a6dcb735193ec2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA for 8-bit boolean is binary 0xff. Type does not exist in R.  <a href="types_8h.html#a848460d85f2782cc1a6dcb735193ec2c">More...</a><br /></td></tr>
+<tr class="separator:a848460d85f2782cc1a6dcb735193ec2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaed51ff6508ecf551edd855b99e2da39"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#aaed51ff6508ecf551edd855b99e2da39">BOOLEAN_NA</a>&#160;&#160;&#160;0x0ff</td></tr>
+<tr class="memdesc:aaed51ff6508ecf551edd855b99e2da39"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA for a 32-bit boolean is binary 0xff. This is R compatible.  <a href="types_8h.html#aaed51ff6508ecf551edd855b99e2da39">More...</a><br /></td></tr>
+<tr class="separator:aaed51ff6508ecf551edd855b99e2da39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5552fe209cb40f52acd534917ba02003"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a5552fe209cb40f52acd534917ba02003">INTEGER_NA</a>&#160;&#160;&#160;INT_MIN</td></tr>
+<tr class="memdesc:a5552fe209cb40f52acd534917ba02003"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA for a 32-bit integer. This is R compatible.  <a href="types_8h.html#a5552fe209cb40f52acd534917ba02003">More...</a><br /></td></tr>
+<tr class="separator:a5552fe209cb40f52acd534917ba02003"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a654cf0e7a3ce4a4086e50034da7ca382"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a654cf0e7a3ce4a4086e50034da7ca382">SINGLE_NA</a>&#160;&#160;&#160;F_NA</td></tr>
+<tr class="memdesc:a654cf0e7a3ce4a4086e50034da7ca382"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA for a float is the value returned by nanf(). Type does not exist in R.  <a href="types_8h.html#a654cf0e7a3ce4a4086e50034da7ca382">More...</a><br /></td></tr>
+<tr class="separator:a654cf0e7a3ce4a4086e50034da7ca382"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28e3ab24f96726efb6644ce6fa0604dc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a28e3ab24f96726efb6644ce6fa0604dc">STRING_NA</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:a28e3ab24f96726efb6644ce6fa0604dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA for a string coded as CELL_TYPE_STRING.  <a href="types_8h.html#a28e3ab24f96726efb6644ce6fa0604dc">More...</a><br /></td></tr>
+<tr class="separator:a28e3ab24f96726efb6644ce6fa0604dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade89d8e9a2967c917e13e49e6cbc600a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#ade89d8e9a2967c917e13e49e6cbc600a">STRING_EMPTY</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:ade89d8e9a2967c917e13e49e6cbc600a"><td class="mdescLeft">&#160;</td><td class="mdescRight">An empty string coded as CELL_TYPE_STRING.  <a href="types_8h.html#ade89d8e9a2967c917e13e49e6cbc600a">More...</a><br /></td></tr>
+<tr class="separator:ade89d8e9a2967c917e13e49e6cbc600a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a957a36b73d62c6c1377de4f7736f4f13"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a957a36b73d62c6c1377de4f7736f4f13">LONG_INTEGER_NA</a>&#160;&#160;&#160;LLONG_MIN</td></tr>
+<tr class="memdesc:a957a36b73d62c6c1377de4f7736f4f13"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA for a 64-bit integer. Type does not exist in R.  <a href="types_8h.html#a957a36b73d62c6c1377de4f7736f4f13">More...</a><br /></td></tr>
+<tr class="separator:a957a36b73d62c6c1377de4f7736f4f13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84734246632d208bbe94f23af82d3d07"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a84734246632d208bbe94f23af82d3d07">TIME_POINT_NA</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:a84734246632d208bbe94f23af82d3d07"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA for a CELL_TYPE_TIME is a 64-bit zero. Type does not exist in R.  <a href="types_8h.html#a84734246632d208bbe94f23af82d3d07">More...</a><br /></td></tr>
+<tr class="separator:a84734246632d208bbe94f23af82d3d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0e222767f0998f79ffeb691e5e4a7c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#ac0e222767f0998f79ffeb691e5e4a7c1">DOUBLE_NA</a>&#160;&#160;&#160;R_NA</td></tr>
+<tr class="memdesc:ac0e222767f0998f79ffeb691e5e4a7c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA for a double. This is R compatible.  <a href="types_8h.html#ac0e222767f0998f79ffeb691e5e4a7c1">More...</a><br /></td></tr>
+<tr class="separator:ac0e222767f0998f79ffeb691e5e4a7c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73ecd7dc95d36e569f91dbac3ec2d6df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a73ecd7dc95d36e569f91dbac3ec2d6df">FILTER_TYPE_</a></td></tr>
+<tr class="memdesc:a73ecd7dc95d36e569f91dbac3ec2d6df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Possible return values of Filter.filter_type()  <a href="types_8h.html#a73ecd7dc95d36e569f91dbac3ec2d6df">More...</a><br /></td></tr>
+<tr class="separator:a73ecd7dc95d36e569f91dbac3ec2d6df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5abba7b90934a98d6f63ca2bf2c512e3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a5abba7b90934a98d6f63ca2bf2c512e3">FILTER_TYPE_NOTAFILTER</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:a5abba7b90934a98d6f63ca2bf2c512e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This Block cannot be used as a filter. A try to use it in new_jazz_block() will fail.  <a href="types_8h.html#a5abba7b90934a98d6f63ca2bf2c512e3">More...</a><br /></td></tr>
+<tr class="separator:a5abba7b90934a98d6f63ca2bf2c512e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a326fa953bd95451f02064edffb1e2b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a2a326fa953bd95451f02064edffb1e2b">FILTER_TYPE_BOOLEAN</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:a2a326fa953bd95451f02064edffb1e2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This Block is a vector of CELL_TYPE_BYTE_BOOLEAN for each row.  <a href="types_8h.html#a2a326fa953bd95451f02064edffb1e2b">More...</a><br /></td></tr>
+<tr class="separator:a2a326fa953bd95451f02064edffb1e2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dc19db547353db903ecb71161ae449c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a6dc19db547353db903ecb71161ae449c">FILTER_TYPE_INTEGER</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memdesc:a6dc19db547353db903ecb71161ae449c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This Block is a vector of CELL_TYPE_INTEGER containing the selected rows.  <a href="types_8h.html#a6dc19db547353db903ecb71161ae449c">More...</a><br /></td></tr>
+<tr class="separator:a6dc19db547353db903ecb71161ae449c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:aa7e5adf7a32b3080ea959153d2b6aee9"><td class="memItemLeft" align="right" valign="top">typedef std::chrono::steady_clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#aa7e5adf7a32b3080ea959153d2b6aee9">jazz_elements::TimePoint</a></td></tr>
+<tr class="memdesc:aa7e5adf7a32b3080ea959153d2b6aee9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A time point stored as 8 bytes.  <a href="namespacejazz__elements.html#aa7e5adf7a32b3080ea959153d2b6aee9">More...</a><br /></td></tr>
+<tr class="separator:aa7e5adf7a32b3080ea959153d2b6aee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="aaed51ff6508ecf551edd855b99e2da39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaed51ff6508ecf551edd855b99e2da39">&#9670;&nbsp;</a></span>BOOLEAN_NA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOOLEAN_NA&#160;&#160;&#160;0x0ff</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA for a 32-bit boolean is binary 0xff. This is R compatible. </p>
+
+</div>
+</div>
+<a id="a848460d85f2782cc1a6dcb735193ec2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a848460d85f2782cc1a6dcb735193ec2c">&#9670;&nbsp;</a></span>BYTE_BOOLEAN_NA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BYTE_BOOLEAN_NA&#160;&#160;&#160;0x0ff</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA for 8-bit boolean is binary 0xff. Type does not exist in R. </p>
+
+</div>
+</div>
+<a id="a9ab9efa453cd99ad8a95c797aff340b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ab9efa453cd99ad8a95c797aff340b9">&#9670;&nbsp;</a></span>CELL_TYPE__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CELL_TYPE__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Different values for Block.cell_type. </p>
+
+</div>
+</div>
+<a id="afc8d8705af6dfe573a3d67eaa2f6d0f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc8d8705af6dfe573a3d67eaa2f6d0f9">&#9670;&nbsp;</a></span>CELL_TYPE_BOOLEAN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CELL_TYPE_BOOLEAN&#160;&#160;&#160;0x304</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A tensor of 32-bit booleans: 0, 1, BOOLEAN_NA = NA. </p>
+
+</div>
+</div>
+<a id="a00ed654fef28807203d5042b4342c3fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00ed654fef28807203d5042b4342c3fb">&#9670;&nbsp;</a></span>CELL_TYPE_BYTE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CELL_TYPE_BYTE&#160;&#160;&#160;0x001</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A tensor of unsigned 8-bit binaries. NA is not defined for this type. </p>
+
+</div>
+</div>
+<a id="a2d41c371fc939cf629397eeadf495c0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d41c371fc939cf629397eeadf495c0a">&#9670;&nbsp;</a></span>CELL_TYPE_BYTE_BOOLEAN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CELL_TYPE_BYTE_BOOLEAN&#160;&#160;&#160;0x101</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A tensor 8-bit booleans: 0, 1, BYTE_BOOLEAN_NA = NA. </p>
+
+</div>
+</div>
+<a id="ab13c9ec93d22779d56a6254e158fd166"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab13c9ec93d22779d56a6254e158fd166">&#9670;&nbsp;</a></span>CELL_TYPE_DOUBLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CELL_TYPE_DOUBLE&#160;&#160;&#160;0x208</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A vector of floating point numbers. Binary compatible with an R REALSXP (vector of numeric) </p>
+
+</div>
+</div>
+<a id="ad5ffe4c467b3a9a3e634f3fc57fce2c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5ffe4c467b3a9a3e634f3fc57fce2c8">&#9670;&nbsp;</a></span>CELL_TYPE_FACTOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CELL_TYPE_FACTOR&#160;&#160;&#160;0x104</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A tensor of 32-bit unsorted categorical. NA is INTEGER_NA. </p>
+
+</div>
+</div>
+<a id="afccbaed7cf59138502dbebcd7afd7fff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afccbaed7cf59138502dbebcd7afd7fff">&#9670;&nbsp;</a></span>CELL_TYPE_GRADE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CELL_TYPE_GRADE&#160;&#160;&#160;0x204</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A tensor of 32-bit sorted categorical. NA is INTEGER_NA. </p>
+
+</div>
+</div>
+<a id="a7c8ac0338590065772caf2d1406f018e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c8ac0338590065772caf2d1406f018e">&#9670;&nbsp;</a></span>CELL_TYPE_INTEGER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CELL_TYPE_INTEGER&#160;&#160;&#160;0x004</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A tensor of 32-bit signed integers. NA is INTEGER_NA. </p>
+
+</div>
+</div>
+<a id="aa78915add7f8cb20ecfa873ce9bad9c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa78915add7f8cb20ecfa873ce9bad9c9">&#9670;&nbsp;</a></span>CELL_TYPE_LONG_INTEGER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CELL_TYPE_LONG_INTEGER&#160;&#160;&#160;0x008</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A tensor of 64-bit signed integers. NA is LONG_INTEGER_NA. </p>
+
+</div>
+</div>
+<a id="ac6cbc5f5778c5ad50a20d9d5509d5816"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6cbc5f5778c5ad50a20d9d5509d5816">&#9670;&nbsp;</a></span>CELL_TYPE_SINGLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CELL_TYPE_SINGLE&#160;&#160;&#160;0x404</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A tensor of IEEE 754 32-bit float (aka single). NA is SINGLE_NA. </p>
+
+</div>
+</div>
+<a id="ad1fba65253baccfdd3fe7776e167cfd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1fba65253baccfdd3fe7776e167cfd2">&#9670;&nbsp;</a></span>CELL_TYPE_STRING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CELL_TYPE_STRING&#160;&#160;&#160;0x504</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A tensor or 32-bit offsets to immutable strings or STRING_NA or STRING_EMPTY. </p>
+
+</div>
+</div>
+<a id="aab43509220e959be3a7f8b963471d59f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab43509220e959be3a7f8b963471d59f">&#9670;&nbsp;</a></span>CELL_TYPE_TIME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CELL_TYPE_TIME&#160;&#160;&#160;0x108</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A tensor of 64-bit TimePoint. NA is TIME_POINT_NA. </p>
+
+</div>
+</div>
+<a id="ac0e222767f0998f79ffeb691e5e4a7c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0e222767f0998f79ffeb691e5e4a7c1">&#9670;&nbsp;</a></span>DOUBLE_NA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DOUBLE_NA&#160;&#160;&#160;R_NA</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA for a double. This is R compatible. </p>
+
+</div>
+</div>
+<a id="a73ecd7dc95d36e569f91dbac3ec2d6df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73ecd7dc95d36e569f91dbac3ec2d6df">&#9670;&nbsp;</a></span>FILTER_TYPE_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FILTER_TYPE_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Possible return values of Filter.filter_type() </p>
+
+</div>
+</div>
+<a id="a2a326fa953bd95451f02064edffb1e2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a326fa953bd95451f02064edffb1e2b">&#9670;&nbsp;</a></span>FILTER_TYPE_BOOLEAN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FILTER_TYPE_BOOLEAN&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This Block is a vector of CELL_TYPE_BYTE_BOOLEAN for each row. </p>
+
+</div>
+</div>
+<a id="a6dc19db547353db903ecb71161ae449c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dc19db547353db903ecb71161ae449c">&#9670;&nbsp;</a></span>FILTER_TYPE_INTEGER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FILTER_TYPE_INTEGER&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This Block is a vector of CELL_TYPE_INTEGER containing the selected rows. </p>
+
+</div>
+</div>
+<a id="a5abba7b90934a98d6f63ca2bf2c512e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5abba7b90934a98d6f63ca2bf2c512e3">&#9670;&nbsp;</a></span>FILTER_TYPE_NOTAFILTER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FILTER_TYPE_NOTAFILTER&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This Block cannot be used as a filter. A try to use it in new_jazz_block() will fail. </p>
+
+</div>
+</div>
 <a id="a198723ea7b77deeeb47c9c3e21319143"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a198723ea7b77deeeb47c9c3e21319143">&#9670;&nbsp;</a></span>INCLUDED_JAZZ_ELEMENTS_TYPES</h2>
 
@@ -100,8 +510,136 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>One liner. </p>
-<p>TODO: Write this! </p>
+<p>Basic Jazz code-less structures and constants. </p>
+<p>This module defines constant and structures used by Block. A Block is a class derived from a structure BlockHeader. </p>
+
+</div>
+</div>
+<a id="a5552fe209cb40f52acd534917ba02003"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5552fe209cb40f52acd534917ba02003">&#9670;&nbsp;</a></span>INTEGER_NA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define INTEGER_NA&#160;&#160;&#160;INT_MIN</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA for a 32-bit integer. This is R compatible. </p>
+
+</div>
+</div>
+<a id="a957a36b73d62c6c1377de4f7736f4f13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a957a36b73d62c6c1377de4f7736f4f13">&#9670;&nbsp;</a></span>LONG_INTEGER_NA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LONG_INTEGER_NA&#160;&#160;&#160;LLONG_MIN</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA for a 64-bit integer. Type does not exist in R. </p>
+
+</div>
+</div>
+<a id="a5a4d6ca6f3612a6f6f377b5abe382b5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a4d6ca6f3612a6f6f377b5abe382b5b">&#9670;&nbsp;</a></span>MAX_CHECKS_4_MATCH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_CHECKS_4_MATCH&#160;&#160;&#160;25</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Maximum number of tries to match in get_string_offset() before setting stop_check_4_match. </p>
+
+</div>
+</div>
+<a id="a5dfd5a365563c2e8cf13a83a127af9ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dfd5a365563c2e8cf13a83a127af9ac">&#9670;&nbsp;</a></span>MAX_TENSOR_RANK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_TENSOR_RANK&#160;&#160;&#160;6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Maximum rank = 6, E.g. a 2D array of raw videos (row, column, frame, x, y, color) </p>
+
+</div>
+</div>
+<a id="a654cf0e7a3ce4a4086e50034da7ca382"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a654cf0e7a3ce4a4086e50034da7ca382">&#9670;&nbsp;</a></span>SINGLE_NA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SINGLE_NA&#160;&#160;&#160;F_NA</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA for a float is the value returned by nanf(). Type does not exist in R. </p>
+
+</div>
+</div>
+<a id="ade89d8e9a2967c917e13e49e6cbc600a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade89d8e9a2967c917e13e49e6cbc600a">&#9670;&nbsp;</a></span>STRING_EMPTY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STRING_EMPTY&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An empty string coded as CELL_TYPE_STRING. </p>
+
+</div>
+</div>
+<a id="a28e3ab24f96726efb6644ce6fa0604dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28e3ab24f96726efb6644ce6fa0604dc">&#9670;&nbsp;</a></span>STRING_NA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STRING_NA&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA for a string coded as CELL_TYPE_STRING. </p>
+
+</div>
+</div>
+<a id="a84734246632d208bbe94f23af82d3d07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84734246632d208bbe94f23af82d3d07">&#9670;&nbsp;</a></span>TIME_POINT_NA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TIME_POINT_NA&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA for a CELL_TYPE_TIME is a 64-bit zero. Type does not exist in R. </p>
 
 </div>
 </div>

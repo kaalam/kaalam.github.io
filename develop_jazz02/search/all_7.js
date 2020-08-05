@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['linux_5fdistro_62',['LINUX_DISTRO',['../jazz__platform_8h.html#a604895b0d8875d97115c9bebbf5f519b',1,'jazz_platform.h']]],
-  ['linux_5fplatform_63',['LINUX_PLATFORM',['../jazz__platform_8h.html#aea13f49a32fd1c0e4c8936040892c6bd',1,'jazz_platform.h']]],
-  ['linux_5fprocessor_64',['LINUX_PROCESSOR',['../jazz__platform_8h.html#a9fe308e808a05364a550fa9cf72fde31',1,'jazz_platform.h']]],
-  ['linux_5fversion_65',['LINUX_VERSION',['../jazz__platform_8h.html#ae664f4fd6431eae2bb5db419fd7154c8',1,'jazz_platform.h']]]
+  ['has_5fna_91',['has_NA',['../structjazz__elements_1_1BlockHeader.html#a6f9d802a4dfacc3213e77431577ea448',1,'jazz_elements::BlockHeader']]],
+  ['hash64_92',['hash64',['../structjazz__elements_1_1BlockHeader.html#a9718cc9c15e696e6e2ff1d044d65b47a',1,'jazz_elements::BlockHeader']]]
 ];
