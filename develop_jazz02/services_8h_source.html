@@ -125,13 +125,55 @@ $(function() {
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacejazz__elements.html">jazz_elements</a></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;} <span class="comment">// namespace jazz_elements</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="services_8h.html#aa584cc5d59c674a141fe3a870467f141">   61</a></span>&#160;<span class="preprocessor">#define MAX_NUM_JAZZ_SERVICES      8    </span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor"></span> </div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif // ifndef INCLUDED_JAZZ_ELEMENTS_SERVICES</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classjazz__elements_1_1jazzService.html">   66</a></span>&#160;<span class="keyword">class </span><a class="code" href="classjazz__elements_1_1jazzService.html">jazzService</a> {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classjazz__elements_1_1jazzService.html#a740ab5d3fabc89ce2be7ae689f1ee319">start</a>  ();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classjazz__elements_1_1jazzService.html#a403805a1c9b6fda91797a7b58b2e0c8f">stop</a>   ();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classjazz__elements_1_1jazzService.html#a7f67e912ff3fb38e344bffa36a25fb8d">reload</a> ();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classjazz__elements_1_1jazzServices.html">   78</a></span>&#160;<span class="keyword">class </span><a class="code" href="classjazz__elements_1_1jazzServices.html">jazzServices</a> {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classjazz__elements_1_1jazzServices.html#a9401730aa8fcbde4d63ded607c50ee4e">register_service</a>(<a class="code" href="classjazz__elements_1_1jazzService.html">jazzService</a> * service);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classjazz__elements_1_1jazzServices.html#a97acc7c64f41296df39e94057bc149cc">start_all</a>  ();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classjazz__elements_1_1jazzServices.html#a4f3cd1aca37e4f4628eab887e6fc31e7">stop_all</a>   ();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classjazz__elements_1_1jazzServices.html#a951c5ec4b8e9a3c09d3d9ebdc7540b2b">reload_all</a> ();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="classjazz__elements_1_1jazzServices.html#a2262f423f7393e43a4b6c80677c7f37b">   90</a></span>&#160;        <span class="keywordtype">int</span>          <a class="code" href="classjazz__elements_1_1jazzServices.html#a2262f423f7393e43a4b6c80677c7f37b">num_services</a> = 0;</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="classjazz__elements_1_1jazzServices.html#a7755f2822ddb61f38af1e19ea63b8457">   91</a></span>&#160;        <span class="keywordtype">bool</span>         <a class="code" href="classjazz__elements_1_1jazzServices.html#a7755f2822ddb61f38af1e19ea63b8457">started</a> [<a class="code" href="services_8h.html#aa584cc5d59c674a141fe3a870467f141">MAX_NUM_JAZZ_SERVICES</a>];</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="classjazz__elements_1_1jazzServices.html#a7de877acd4faf6bea95f8dd4e722cd8e">   92</a></span>&#160;        <a class="code" href="classjazz__elements_1_1jazzService.html">jazzService</a>* <a class="code" href="classjazz__elements_1_1jazzServices.html#a7de877acd4faf6bea95f8dd4e722cd8e">pService</a>[<a class="code" href="services_8h.html#aa584cc5d59c674a141fe3a870467f141">MAX_NUM_JAZZ_SERVICES</a>];</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;};</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;} <span class="comment">// namespace jazz_elements</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#endif // ifndef INCLUDED_JAZZ_ELEMENTS_SERVICES</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassjazz__elements_1_1jazzServices_html"><div class="ttname"><a href="classjazz__elements_1_1jazzServices.html">jazz_elements::jazzServices</a></div><div class="ttdef"><b>Definition:</b> services.h:78</div></div>
+<div class="ttc" id="aclassjazz__elements_1_1jazzServices_html_a4f3cd1aca37e4f4628eab887e6fc31e7"><div class="ttname"><a href="classjazz__elements_1_1jazzServices.html#a4f3cd1aca37e4f4628eab887e6fc31e7">jazz_elements::jazzServices::stop_all</a></div><div class="ttdeci">bool stop_all()</div><div class="ttdef"><b>Definition:</b> services.cpp:145</div></div>
+<div class="ttc" id="aclassjazz__elements_1_1jazzService_html_a740ab5d3fabc89ce2be7ae689f1ee319"><div class="ttname"><a href="classjazz__elements_1_1jazzService.html#a740ab5d3fabc89ce2be7ae689f1ee319">jazz_elements::jazzService::start</a></div><div class="ttdeci">virtual bool start()</div><div class="ttdef"><b>Definition:</b> services.cpp:57</div></div>
+<div class="ttc" id="aservices_8h_html_aa584cc5d59c674a141fe3a870467f141"><div class="ttname"><a href="services_8h.html#aa584cc5d59c674a141fe3a870467f141">MAX_NUM_JAZZ_SERVICES</a></div><div class="ttdeci">#define MAX_NUM_JAZZ_SERVICES</div><div class="ttdoc">The maximum number of jazzService instances stored in a jazzServices.</div><div class="ttdef"><b>Definition:</b> services.h:61</div></div>
+<div class="ttc" id="aclassjazz__elements_1_1jazzServices_html_a9401730aa8fcbde4d63ded607c50ee4e"><div class="ttname"><a href="classjazz__elements_1_1jazzServices.html#a9401730aa8fcbde4d63ded607c50ee4e">jazz_elements::jazzServices::register_service</a></div><div class="ttdeci">bool register_service(jazzService *service)</div><div class="ttdef"><b>Definition:</b> services.cpp:97</div></div>
+<div class="ttc" id="aclassjazz__elements_1_1jazzService_html_a403805a1c9b6fda91797a7b58b2e0c8f"><div class="ttname"><a href="classjazz__elements_1_1jazzService.html#a403805a1c9b6fda91797a7b58b2e0c8f">jazz_elements::jazzService::stop</a></div><div class="ttdeci">virtual bool stop()</div><div class="ttdef"><b>Definition:</b> services.cpp:71</div></div>
+<div class="ttc" id="aclassjazz__elements_1_1jazzServices_html_a2262f423f7393e43a4b6c80677c7f37b"><div class="ttname"><a href="classjazz__elements_1_1jazzServices.html#a2262f423f7393e43a4b6c80677c7f37b">jazz_elements::jazzServices::num_services</a></div><div class="ttdeci">int num_services</div><div class="ttdef"><b>Definition:</b> services.h:90</div></div>
+<div class="ttc" id="aclassjazz__elements_1_1jazzService_html_a7f67e912ff3fb38e344bffa36a25fb8d"><div class="ttname"><a href="classjazz__elements_1_1jazzService.html#a7f67e912ff3fb38e344bffa36a25fb8d">jazz_elements::jazzService::reload</a></div><div class="ttdeci">virtual bool reload()</div><div class="ttdef"><b>Definition:</b> services.cpp:86</div></div>
+<div class="ttc" id="aclassjazz__elements_1_1jazzService_html"><div class="ttname"><a href="classjazz__elements_1_1jazzService.html">jazz_elements::jazzService</a></div><div class="ttdef"><b>Definition:</b> services.h:66</div></div>
 <div class="ttc" id="anamespacejazz__elements_html"><div class="ttname"><a href="namespacejazz__elements.html">jazz_elements</a></div><div class="ttdef"><b>Definition:</b> blocks.cpp:41</div></div>
+<div class="ttc" id="aclassjazz__elements_1_1jazzServices_html_a7755f2822ddb61f38af1e19ea63b8457"><div class="ttname"><a href="classjazz__elements_1_1jazzServices.html#a7755f2822ddb61f38af1e19ea63b8457">jazz_elements::jazzServices::started</a></div><div class="ttdeci">bool started[MAX_NUM_JAZZ_SERVICES]</div><div class="ttdef"><b>Definition:</b> services.h:91</div></div>
+<div class="ttc" id="aclassjazz__elements_1_1jazzServices_html_a97acc7c64f41296df39e94057bc149cc"><div class="ttname"><a href="classjazz__elements_1_1jazzServices.html#a97acc7c64f41296df39e94057bc149cc">jazz_elements::jazzServices::start_all</a></div><div class="ttdeci">bool start_all()</div><div class="ttdef"><b>Definition:</b> services.cpp:119</div></div>
+<div class="ttc" id="aclassjazz__elements_1_1jazzServices_html_a951c5ec4b8e9a3c09d3d9ebdc7540b2b"><div class="ttname"><a href="classjazz__elements_1_1jazzServices.html#a951c5ec4b8e9a3c09d3d9ebdc7540b2b">jazz_elements::jazzServices::reload_all</a></div><div class="ttdeci">bool reload_all()</div><div class="ttdef"><b>Definition:</b> services.cpp:171</div></div>
+<div class="ttc" id="aclassjazz__elements_1_1jazzServices_html_a7de877acd4faf6bea95f8dd4e722cd8e"><div class="ttname"><a href="classjazz__elements_1_1jazzServices.html#a7de877acd4faf6bea95f8dd4e722cd8e">jazz_elements::jazzServices::pService</a></div><div class="ttdeci">jazzService * pService[MAX_NUM_JAZZ_SERVICES]</div><div class="ttdef"><b>Definition:</b> services.h:92</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
