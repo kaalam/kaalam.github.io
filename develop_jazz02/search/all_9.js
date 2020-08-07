@@ -10,7 +10,5 @@ var searchData=
   ['jazz_5frelations_127',['jazz_relations',['../namespacejazz__relations.html',1,'']]],
   ['jazz_5frelations_2eh_128',['jazz_relations.h',['../jazz__relations_8h.html',1,'']]],
   ['jazz_5fversion_129',['JAZZ_VERSION',['../jazz__platform_8h.html#a948a256c8427f1f46ede7fd6fc2a7b5c',1,'jazz_platform.h']]],
-  ['jazz_5fyears_130',['JAZZ_YEARS',['../jazz__platform_8h.html#a494e5cc1a5686d905af0917e584806bf',1,'jazz_platform.h']]],
-  ['jazzservice_131',['jazzService',['../classjazz__elements_1_1jazzService.html',1,'jazz_elements']]],
-  ['jazzservices_132',['jazzServices',['../classjazz__elements_1_1jazzServices.html',1,'jazz_elements']]]
+  ['jazz_5fyears_130',['JAZZ_YEARS',['../jazz__platform_8h.html#a494e5cc1a5686d905af0917e584806bf',1,'jazz_platform.h']]]
 ];

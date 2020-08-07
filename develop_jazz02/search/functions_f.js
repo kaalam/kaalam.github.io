@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_7elogger_336',['~Logger',['../classjazz__elements_1_1Logger.html#a710c1cfbf72eb6a38faad7198bdd0543',1,'jazz_elements::Logger']]]
+  ['write_5fcallback_341',['write_callback',['../namespacejazz__elements.html#a1a5f20cce9610a421e72a17fae481ea4',1,'jazz_elements']]]
 ];

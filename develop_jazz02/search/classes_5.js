@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['stringbuffer_233',['StringBuffer',['../structjazz__elements_1_1StringBuffer.html',1,'jazz_elements']]]
+  ['tensor_237',['Tensor',['../unionjazz__elements_1_1Tensor.html',1,'jazz_elements']]],
+  ['tensordim_238',['TensorDim',['../unionjazz__elements_1_1TensorDim.html',1,'jazz_elements']]]
 ];
