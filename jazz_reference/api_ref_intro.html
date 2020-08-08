@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="This is the reference documentation for Jazz (the server), Bebop (the language), the Jazz API and core Docker images.">
+<meta name="description" content="An introduction to the API basics, storage details, function calls and the http REST API.">
 <meta name="keywords" content=" ">
-<title>Welcome to Jazz! | Jazz User's Manual</title>
+<title>API introduction | Jazz User's Manual</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -148,7 +148,7 @@
                         
                         
                         
-                        <li><a href="api_ref_intro.html">Jazz API introduction</a></li>
+                        <li class="dropdownActive"><a href="api_ref_intro.html">Jazz API introduction</a></li>
                         
                         
                         
@@ -191,7 +191,7 @@
           
           
           
-          <li class="active"><a href="index.html">Welcome to Jazz!</a></li>
+          <li><a href="index.html">Welcome to Jazz!</a></li>
           
           
           
@@ -263,7 +263,7 @@
           
           
           
-          <li><a href="api_ref_intro.html">API introduction</a></li>
+          <li class="active"><a href="api_ref_intro.html">API introduction</a></li>
           
           
           
@@ -375,7 +375,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Welcome to Jazz!</h1>
+   <h1 class="post-title-main">API introduction</h1>
 </div>
 
 
@@ -383,7 +383,7 @@
 <div class="post-content">
 
    
-    <div class="summary">This is the reference documentation for Jazz (the server), Bebop (the language), the Jazz API and core Docker images.</div>
+    <div class="summary">An introduction to the API basics, storage details, function calls and the http REST API.</div>
    
 
     
@@ -417,38 +417,26 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>Thank you for your interest in Jazz, this is the place to start.</p>
+  <h2 id="api-introduction">API introduction</h2>
 
-<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> Jazz is still under development to produce the first Minimum Viable Product (MVP), so don’t expect
-this reference to be very stable. Things are changing and this manual <strong>is the place</strong> to keep materials that are “following the
-movement”.</div>
+<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> In version 0.4.1 the API has been redesigned. This is updated frequently.</div>
 
-<h2 id="basic-questions-on-jazz">Basic Questions on Jazz</h2>
+<h3 id="lvalue-and-rvalue"><code class="language-plaintext highlighter-rouge">lvalue</code> and <code class="language-plaintext highlighter-rouge">rvalue</code></h3>
 
-<ul>
-  <li><a href="vision_intro_page.html">What is the vision? What does Jazz want to become?</a></li>
-</ul>
+<p>Take their names from formal language theory. They are the parts of an assignment. The left of the <code class="language-plaintext highlighter-rouge">=</code> operator is what “is assigned to” is the <code class="language-plaintext highlighter-rouge">lvalue</code> and the right what “is evaluated” is the <code class="language-plaintext highlighter-rouge">rvalue</code>.</p>
 
-<h2 id="using-jazz">Using Jazz</h2>
+<p><br /></p>
 
-<ul>
-  <li><a href="using_jazz_today.html">What is the usable part of Jazz today?</a></li>
-  <li><a href="using_compile_jazz.html">How can I compile Jazz and the clients?</a></li>
-</ul>
-
-<h2 id="contributing-to-jazz">Contributing to Jazz</h2>
-
-<ul>
-  <li><a href="contributing_welcome_all.html">What kind of skills can be helpful?</a></li>
-</ul>
-
-<h2 id="references">References</h2>
-
-<ul>
-  <li><a href="bop_ref_elements.html">Bebop</a></li>
-  <li><a href="api_ref_elements.html">API reference and clients</a></li>
-  <li><a href="reference_server_setup.html">Server internals and setup</a></li>
-</ul>
+<table>
+  <tbody>
+    <tr>
+      <td><span class="label label-info">Next …</span></td>
+    </tr>
+    <tr>
+      <td><a href="api_ref_details.html">API reference</a></td>
+    </tr>
+  </tbody>
+</table>
 
 
 
