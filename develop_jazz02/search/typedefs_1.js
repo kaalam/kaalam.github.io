@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['pblock_382',['pBlock',['../namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6',1,'jazz_elements']]],
-  ['pblockheader_383',['pBlockHeader',['../namespacejazz__elements.html#a96544e338b7cc4cbd8cb03658a044228',1,'jazz_elements']]],
-  ['pconfigfile_384',['pConfigFile',['../namespacejazz__elements.html#a2ea64c8750eeedeb68690603dacceeab',1,'jazz_elements']]],
-  ['pfilter_385',['pFilter',['../namespacejazz__elements.html#a863c3671e3732a582cd79d8c04f6df39',1,'jazz_elements']]],
-  ['plogger_386',['pLogger',['../namespacejazz__elements.html#a54e0e020637fffc86de95ffdd302f4a8',1,'jazz_elements']]],
-  ['pstringbuffer_387',['pStringBuffer',['../namespacejazz__elements.html#a2275810354345e22c1c5ca21a8bb714b',1,'jazz_elements']]]
+  ['pblock_384',['pBlock',['../namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6',1,'jazz_elements']]],
+  ['pblockheader_385',['pBlockHeader',['../namespacejazz__elements.html#a96544e338b7cc4cbd8cb03658a044228',1,'jazz_elements']]],
+  ['pconfigfile_386',['pConfigFile',['../namespacejazz__elements.html#a2ea64c8750eeedeb68690603dacceeab',1,'jazz_elements']]],
+  ['pfilter_387',['pFilter',['../namespacejazz__elements.html#a863c3671e3732a582cd79d8c04f6df39',1,'jazz_elements']]],
+  ['plogger_388',['pLogger',['../namespacejazz__elements.html#a54e0e020637fffc86de95ffdd302f4a8',1,'jazz_elements']]],
+  ['pstringbuffer_389',['pStringBuffer',['../namespacejazz__elements.html#a2275810354345e22c1c5ca21a8bb714b',1,'jazz_elements']]]
 ];
