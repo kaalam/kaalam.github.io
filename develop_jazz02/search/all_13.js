@@ -1,9 +1,5 @@
 var searchData=
 [
-  ['udas_2ecpp_218',['UDAs.cpp',['../UDAs_8cpp.html',1,'']]],
-  ['udas_2eh_219',['UDAs.h',['../UDAs_8h.html',1,'']]],
-  ['udfs_2ecpp_220',['UDFs.cpp',['../UDFs_8cpp.html',1,'']]],
-  ['udfs_2eh_221',['UDFs.h',['../UDFs_8h.html',1,'']]],
-  ['utils_2ecpp_222',['utils.cpp',['../utils_8cpp.html',1,'']]],
-  ['utils_2eh_223',['utils.h',['../utils_8h.html',1,'']]]
+  ['validate_5findex_188',['validate_index',['../classjazz__elements_1_1Block.html#a74f9026d59db6cc3d9165c08f41cc960',1,'jazz_elements::Block']]],
+  ['validate_5foffset_189',['validate_offset',['../classjazz__elements_1_1Block.html#a3a9f80168b8cc49169a0c906c65c1467',1,'jazz_elements::Block']]]
 ];

@@ -1,11 +1,18 @@
 var searchData=
 [
-  ['r_5fna_175',['R_NA',['../namespacejazz__elements.html#a0ca8f9758d7f2438f120412cbb0fcc43',1,'jazz_elements']]],
-  ['r_5fvalueofna_176',['R_ValueOfNA',['../namespacejazz__elements.html#a4d46e4f3ad15a5b0395e1daffbe5b950',1,'jazz_elements']]],
-  ['range_177',['range',['../structjazz__elements_1_1BlockHeader.html#a8fa258a4e087633971ff268fe5607a00',1,'jazz_elements::BlockHeader']]],
-  ['rank_178',['rank',['../structjazz__elements_1_1BlockHeader.html#aafa8121fb2c2091b32cc688ea711002c',1,'jazz_elements::BlockHeader']]],
-  ['register_5fservice_179',['register_service',['../classjazz__elements_1_1Services.html#a194bb38adeeb406e0893b2f052513f1e',1,'jazz_elements::Services']]],
-  ['reload_180',['reload',['../classjazz__elements_1_1Service.html#ab0b3c238b24214b0166ebe816337b884',1,'jazz_elements::Service']]],
-  ['reload_5fall_181',['reload_all',['../classjazz__elements_1_1Services.html#a6d66bcb620cff665375e14b1b8297734',1,'jazz_elements::Services']]],
-  ['remote_5ftesting_5fpoint_182',['remote_testing_point',['../namespacejazz__elements.html#a8adb030d4c0542aa3efbab96080cc982',1,'jazz_elements']]]
+  ['server_2ecpp_160',['server.cpp',['../server_8cpp.html',1,'']]],
+  ['server_2eh_161',['server.h',['../server_8h.html',1,'']]],
+  ['service_2ecpp_162',['service.cpp',['../service_8cpp.html',1,'']]],
+  ['service_2eh_163',['service.h',['../service_8h.html',1,'']]],
+  ['set_5fattributes_164',['set_attributes',['../classjazz__elements_1_1Block.html#a11b9c687540a3402a422afa5ec3642e9',1,'jazz_elements::Block']]],
+  ['set_5fdimensions_165',['set_dimensions',['../classjazz__elements_1_1Block.html#a0064d4050c179054579217c07c972019',1,'jazz_elements::Block']]],
+  ['set_5fstring_166',['set_string',['../classjazz__elements_1_1Block.html#a0e5e141d272fcf0b40009b2c24a90fd3',1,'jazz_elements::Block::set_string(int *pIndex, const char *pString)'],['../classjazz__elements_1_1Block.html#aca70d62fedf1d72c9dfc6491a30a3bb2',1,'jazz_elements::Block::set_string(int offset, const char *pString)']]],
+  ['single_5fna_167',['SINGLE_NA',['../types_8h.html#a654cf0e7a3ce4a4086e50034da7ca382',1,'types.h']]],
+  ['size_168',['size',['../structjazz__elements_1_1BlockHeader.html#a4783f7f789daa2d4afcb84e85721aeee',1,'jazz_elements::BlockHeader']]],
+  ['stop_5fcheck_5f4_5fmatch_169',['stop_check_4_match',['../structjazz__elements_1_1StringBuffer.html#a4056d062ef9438589e77aefca08d8c60',1,'jazz_elements::StringBuffer']]],
+  ['storage_2ecpp_170',['storage.cpp',['../storage_8cpp.html',1,'']]],
+  ['storage_2eh_171',['storage.h',['../storage_8h.html',1,'']]],
+  ['string_5fempty_172',['STRING_EMPTY',['../types_8h.html#ade89d8e9a2967c917e13e49e6cbc600a',1,'types.h']]],
+  ['string_5fna_173',['STRING_NA',['../types_8h.html#a28e3ab24f96726efb6644ce6fa0604dc',1,'types.h']]],
+  ['stringbuffer_174',['StringBuffer',['../structjazz__elements_1_1StringBuffer.html',1,'jazz_elements']]]
 ];

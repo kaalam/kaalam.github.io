@@ -28,16 +28,10 @@ var searchData=
   ['cmnd_5fstart_43',['CMND_START',['../main_8h.html#a71614c145c330082129fa1709b212526',1,'main.h']]],
   ['cmnd_5fstatus_44',['CMND_STATUS',['../main_8h.html#a81477e191d8e50592d5e201a69dc0492',1,'main.h']]],
   ['cmnd_5fstop_45',['CMND_STOP',['../main_8h.html#ae7fb09d0fc2ee288779d4734f7510901',1,'main.h']]],
-  ['codebase_2ecpp_46',['codebase.cpp',['../codebase_8cpp.html',1,'']]],
-  ['codebase_2eh_47',['codebase.h',['../codebase_8h.html',1,'']]],
-  ['config_48',['config',['../classjazz__elements_1_1ConfigFile.html#a742ade6ac89b41888851f3d4aafcbe31',1,'jazz_elements::ConfigFile']]],
-  ['configfile_49',['ConfigFile',['../classjazz__elements_1_1ConfigFile.html',1,'jazz_elements::ConfigFile'],['../classjazz__elements_1_1ConfigFile.html#a5783ab78accbf1666500ad1095aef9ec',1,'jazz_elements::ConfigFile::ConfigFile()']]],
-  ['connect_2ecpp_50',['connect.cpp',['../connect_8cpp.html',1,'']]],
-  ['connect_2eh_51',['connect.h',['../connect_8h.html',1,'']]],
-  ['containers_2ecpp_52',['containers.cpp',['../containers_8cpp.html',1,'']]],
-  ['containers_2eh_53',['containers.h',['../containers_8h.html',1,'']]],
-  ['core_2ecpp_54',['core.cpp',['../core_8cpp.html',1,'']]],
-  ['core_2eh_55',['core.h',['../core_8h.html',1,'']]],
-  ['countbytesfromutf8_56',['CountBytesFromUtf8',['../namespacejazz__elements.html#a7474f4883f1062d103d1278d57628cf4',1,'jazz_elements']]],
-  ['created_57',['created',['../structjazz__elements_1_1BlockHeader.html#a581c7cd356bad27167467db5cce09291',1,'jazz_elements::BlockHeader']]]
+  ['config_46',['config',['../classjazz__elements_1_1ConfigFile.html#a742ade6ac89b41888851f3d4aafcbe31',1,'jazz_elements::ConfigFile']]],
+  ['configfile_47',['ConfigFile',['../classjazz__elements_1_1ConfigFile.html',1,'jazz_elements::ConfigFile'],['../classjazz__elements_1_1ConfigFile.html#a5783ab78accbf1666500ad1095aef9ec',1,'jazz_elements::ConfigFile::ConfigFile()']]],
+  ['core_2ecpp_48',['core.cpp',['../core_8cpp.html',1,'']]],
+  ['core_2eh_49',['core.h',['../core_8h.html',1,'']]],
+  ['countbytesfromutf8_50',['CountBytesFromUtf8',['../namespacejazz__elements.html#a7474f4883f1062d103d1278d57628cf4',1,'jazz_elements']]],
+  ['created_51',['created',['../structjazz__elements_1_1BlockHeader.html#a581c7cd356bad27167467db5cce09291',1,'jazz_elements::BlockHeader']]]
 ];
