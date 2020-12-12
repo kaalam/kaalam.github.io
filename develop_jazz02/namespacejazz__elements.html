@@ -85,7 +85,15 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1FilterSize.html">FilterSize</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Index.html">Index</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Kind.html">Kind</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Logger.html">Logger</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Service.html">Service</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Services.html">Services</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1StringBuffer.html">StringBuffer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure at the end of a <a class="el" href="classjazz__elements_1_1Block.html">Block</a>, initially created with init_string_buffer()  <a href="structjazz__elements_1_1StringBuffer.html#details">More...</a><br /></td></tr>
@@ -94,6 +102,8 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tensor of cell size 1, 4 or 8.  <a href="unionjazz__elements_1_1Tensor.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionjazz__elements_1_1TensorDim.html">TensorDim</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Tuple.html">Tuple</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -118,6 +128,10 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a1a5f20cce9610a421e72a17fae481ea4"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a1a5f20cce9610a421e72a17fae481ea4">write_callback</a> (char *ptr, size_t size, size_t nmemb, void *userdata)</td></tr>
+<tr class="separator:a1a5f20cce9610a421e72a17fae481ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8adb030d4c0542aa3efbab96080cc982"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a8adb030d4c0542aa3efbab96080cc982">remote_testing_point</a> ()</td></tr>
+<tr class="separator:a8adb030d4c0542aa3efbab96080cc982"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d46e4f3ad15a5b0395e1daffbe5b950"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a4d46e4f3ad15a5b0395e1daffbe5b950">R_ValueOfNA</a> ()</td></tr>
 <tr class="memdesc:a4d46e4f3ad15a5b0395e1daffbe5b950"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an R-compatible numeric NA.  <a href="namespacejazz__elements.html#a4d46e4f3ad15a5b0395e1daffbe5b950">More...</a><br /></td></tr>
 <tr class="separator:a4d46e4f3ad15a5b0395e1daffbe5b950"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -494,6 +508,23 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a8adb030d4c0542aa3efbab96080cc982"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8adb030d4c0542aa3efbab96080cc982">&#9670;&nbsp;</a></span>remote_testing_point()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool jazz_elements::remote_testing_point </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a3761a7b394e72d1cb065477fa8af2c7f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3761a7b394e72d1cb065477fa8af2c7f">&#9670;&nbsp;</a></span>TenBitsAtAddress()</h2>
 
@@ -518,6 +549,48 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Get ten bits taking the least significant 5 of the first two characters of a string. Warning: No pointer validation or length check. Never use on nullptr or "". </p>
+
+</div>
+</div>
+<a id="a1a5f20cce9610a421e72a17fae481ea4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a5f20cce9610a421e72a17fae481ea4">&#9670;&nbsp;</a></span>write_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t jazz_elements::write_callback </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>nmemb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userdata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A test write callback.</p>
+<p>(see <a href="https://curl.haxx.se/libcurl/c/CURLOPT_WRITEFUNCTION.html">https://curl.haxx.se/libcurl/c/CURLOPT_WRITEFUNCTION.html</a>) </p>
 
 </div>
 </div>

@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['tensor_312',['tensor',['../structjazz__elements_1_1BlockHeader.html#a04878e00333fb81bcdc404914109eef1',1,'jazz_elements::BlockHeader']]],
-  ['total_5fbytes_313',['total_bytes',['../structjazz__elements_1_1BlockHeader.html#a19962d3aafd5b6ac89ce52701cf901c6',1,'jazz_elements::BlockHeader']]]
+  ['size_350',['size',['../structjazz__elements_1_1BlockHeader.html#a4783f7f789daa2d4afcb84e85721aeee',1,'jazz_elements::BlockHeader']]],
+  ['started_351',['started',['../classjazz__elements_1_1Services.html#af718b22e41b7a131476390107289fceb',1,'jazz_elements::Services']]],
+  ['stop_5fcheck_5f4_5fmatch_352',['stop_check_4_match',['../structjazz__elements_1_1StringBuffer.html#a4056d062ef9438589e77aefca08d8c60',1,'jazz_elements::StringBuffer']]]
 ];

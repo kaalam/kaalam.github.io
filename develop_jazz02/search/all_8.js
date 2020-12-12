@@ -6,7 +6,7 @@ var searchData=
   ['included_5fjazz_5felements_5fblock_5falloc_90',['INCLUDED_JAZZ_ELEMENTS_BLOCK_ALLOC',['../block__alloc_8h.html#a1de8ca151944d32cae4cda23b5de4070',1,'block_alloc.h']]],
   ['included_5fjazz_5felements_5fflux_91',['INCLUDED_JAZZ_ELEMENTS_FLUX',['../flux_8h.html#ad69f9f9e2aff40033029d692deec2454',1,'flux.h']]],
   ['included_5fjazz_5felements_5fhttp_5fclient_92',['INCLUDED_JAZZ_ELEMENTS_HTTP_CLIENT',['../http__client_8h.html#a229ceaa334aa77fa9e7411f66b6387ee',1,'http_client.h']]],
-  ['included_5fjazz_5felements_5fservice_93',['INCLUDED_JAZZ_ELEMENTS_SERVICE',['../service_8h.html#a26016fcebbdfbf995eee8c083063f74e',1,'service.h']]],
+  ['included_5fjazz_5felements_5fservices_93',['INCLUDED_JAZZ_ELEMENTS_SERVICES',['../service_8h.html#a4d83caf540eed03de65aea95e7495f4c',1,'service.h']]],
   ['included_5fjazz_5felements_5fstorage_94',['INCLUDED_JAZZ_ELEMENTS_STORAGE',['../storage_8h.html#af4995705cdf6b4c24d12d8e47784e851',1,'storage.h']]],
   ['included_5fjazz_5felements_5ftuple_95',['INCLUDED_JAZZ_ELEMENTS_TUPLE',['../tuple_8h.html#a24ccc02d01df37dbe5f7dacab92e5564',1,'tuple.h']]],
   ['included_5fjazz_5felements_5ftypes_96',['INCLUDED_JAZZ_ELEMENTS_TYPES',['../types_8h.html#a198723ea7b77deeeb47c9c3e21319143',1,'types.h']]],
@@ -15,9 +15,10 @@ var searchData=
   ['included_5fjazz_5fmain_5finstances_99',['INCLUDED_JAZZ_MAIN_INSTANCES',['../instances_8h.html#abbcc777f5789d02d267ec3c1e3627aeb',1,'instances.h']]],
   ['included_5fjazz_5fmain_5fmain_100',['INCLUDED_JAZZ_MAIN_MAIN',['../main_8h.html#aafe98bdf3f6512398d0a30834f207b9d',1,'main.h']]],
   ['included_5fjazz_5fmain_5fserver_101',['INCLUDED_JAZZ_MAIN_SERVER',['../server_8h.html#a727c83284d0dc9e7646d1071508bf255',1,'server.h']]],
-  ['init_5fstring_5fbuffer_102',['init_string_buffer',['../classjazz__elements_1_1Block.html#a1e7432d6f585a346fd6b713a697dc635',1,'jazz_elements::Block']]],
-  ['initlogger_103',['InitLogger',['../classjazz__elements_1_1Logger.html#a2e28f31a318bc65d7d65dd7c4882558d',1,'jazz_elements::Logger']]],
-  ['instances_2ecpp_104',['instances.cpp',['../instances_8cpp.html',1,'']]],
-  ['instances_2eh_105',['instances.h',['../instances_8h.html',1,'']]],
-  ['integer_5fna_106',['INTEGER_NA',['../types_8h.html#a5552fe209cb40f52acd534917ba02003',1,'types.h']]]
+  ['index_102',['Index',['../classjazz__elements_1_1Index.html',1,'jazz_elements::Index'],['../classjazz__elements_1_1Index.html#ad445ab1ce9cee8e467f533f5dbc85677',1,'jazz_elements::Index::Index()']]],
+  ['init_5fstring_5fbuffer_103',['init_string_buffer',['../classjazz__elements_1_1Block.html#a1e7432d6f585a346fd6b713a697dc635',1,'jazz_elements::Block']]],
+  ['initlogger_104',['InitLogger',['../classjazz__elements_1_1Logger.html#a2e28f31a318bc65d7d65dd7c4882558d',1,'jazz_elements::Logger']]],
+  ['instances_2ecpp_105',['instances.cpp',['../instances_8cpp.html',1,'']]],
+  ['instances_2eh_106',['instances.h',['../instances_8h.html',1,'']]],
+  ['integer_5fna_107',['INTEGER_NA',['../types_8h.html#a5552fe209cb40f52acd534917ba02003',1,'types.h']]]
 ];

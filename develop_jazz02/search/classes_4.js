@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['stringbuffer_197',['StringBuffer',['../structjazz__elements_1_1StringBuffer.html',1,'jazz_elements']]]
+  ['kind_216',['Kind',['../classjazz__elements_1_1Kind.html',1,'jazz_elements']]]
 ];

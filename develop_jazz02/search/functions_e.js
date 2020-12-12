@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['validate_5findex_277',['validate_index',['../classjazz__elements_1_1Block.html#a74f9026d59db6cc3d9165c08f41cc960',1,'jazz_elements::Block']]],
-  ['validate_5foffset_278',['validate_offset',['../classjazz__elements_1_1Block.html#a3a9f80168b8cc49169a0c906c65c1467',1,'jazz_elements::Block']]]
+  ['tenbitsataddress_311',['TenBitsAtAddress',['../namespacejazz__elements.html#a3761a7b394e72d1cb065477fa8af2c7f',1,'jazz_elements']]],
+  ['tuple_312',['Tuple',['../classjazz__elements_1_1Tuple.html#a4f90fb310055197b940e1de4a6759597',1,'jazz_elements::Tuple']]]
 ];
