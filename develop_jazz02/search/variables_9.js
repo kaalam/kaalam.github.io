@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['plog_345',['pLog',['../classjazz__elements_1_1Services.html#a8ae14167ec605ed6b8931e180385ed04',1,'jazz_elements::Services']]],
-  ['pservice_346',['pService',['../classjazz__elements_1_1Services.html#a02696160c0449e1f3bf34543bb7b93b1',1,'jazz_elements::Services']]]
+  ['one_367',['one',['../structjazz__elements_1_1FilterSize.html#a24555fa36d66aad0c705101d5dff7812',1,'jazz_elements::FilterSize']]]
 ];
