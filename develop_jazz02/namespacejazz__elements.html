@@ -91,6 +91,8 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Logger.html">Logger</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Service.html">Service</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1StringBuffer.html">StringBuffer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure at the end of a <a class="el" href="classjazz__elements_1_1Block.html">Block</a>, initially created with init_string_buffer()  <a href="structjazz__elements_1_1StringBuffer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,6 +119,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:aa7e5adf7a32b3080ea959153d2b6aee9"><td class="memItemLeft" align="right" valign="top">typedef std::chrono::steady_clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#aa7e5adf7a32b3080ea959153d2b6aee9">TimePoint</a></td></tr>
 <tr class="memdesc:aa7e5adf7a32b3080ea959153d2b6aee9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A time point stored as 8 bytes.  <a href="namespacejazz__elements.html#aa7e5adf7a32b3080ea959153d2b6aee9">More...</a><br /></td></tr>
 <tr class="separator:aa7e5adf7a32b3080ea959153d2b6aee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3afa055be2491c07ae68adccc6d730a5"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a3afa055be2491c07ae68adccc6d730a5">Service_ErrorCode</a></td></tr>
+<tr class="memdesc:a3afa055be2491c07ae68adccc6d730a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type returned by the <a class="el" href="classjazz__elements_1_1Service.html">Service</a> API.  <a href="namespacejazz__elements.html#a3afa055be2491c07ae68adccc6d730a5">More...</a><br /></td></tr>
+<tr class="separator:a3afa055be2491c07ae68adccc6d730a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ea64c8750eeedeb68690603dacceeab"><td class="memItemLeft" align="right" valign="top">typedef class <a class="el" href="classjazz__elements_1_1ConfigFile.html">ConfigFile</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a2ea64c8750eeedeb68690603dacceeab">pConfigFile</a></td></tr>
 <tr class="separator:a2ea64c8750eeedeb68690603dacceeab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54e0e020637fffc86de95ffdd302f4a8"><td class="memItemLeft" align="right" valign="top">typedef class <a class="el" href="classjazz__elements_1_1Logger.html">Logger</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a54e0e020637fffc86de95ffdd302f4a8">pLogger</a></td></tr>
@@ -256,6 +261,22 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a3afa055be2491c07ae68adccc6d730a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3afa055be2491c07ae68adccc6d730a5">&#9670;&nbsp;</a></span>Service_ErrorCode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int <a class="el" href="namespacejazz__elements.html#a3afa055be2491c07ae68adccc6d730a5">jazz_elements::Service_ErrorCode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Type returned by the <a class="el" href="classjazz__elements_1_1Service.html">Service</a> API. </p>
+
+</div>
+</div>
 <a id="aa7e5adf7a32b3080ea959153d2b6aee9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa7e5adf7a32b3080ea959153d2b6aee9">&#9670;&nbsp;</a></span>TimePoint</h2>
 
@@ -356,10 +377,10 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Return the time elapsed in microseconds as a 64 bit integer since a primordial event.</p>
+<p>Return server running time in microseconds as a 64 bit integer.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">big_bang</td><td>The primordial event </td></tr>
+    <tr><td class="paramname">big_bang</td><td>The primordial event (== Jazz server start ;) </td></tr>
   </table>
   </dd>
 </dl>

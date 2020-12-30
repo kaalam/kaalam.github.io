@@ -95,6 +95,8 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Logger.html">jazz_elements::Logger</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Service.html">jazz_elements::Service</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -109,8 +111,6 @@ Macros</h2></td></tr>
 <tr class="memitem:a87339d0dea4674c231fdd28f457af3c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#a87339d0dea4674c231fdd28f457af3c5">TENBITS_LUT_SIZE</a>&#160;&#160;&#160;1024</td></tr>
 <tr class="memdesc:a87339d0dea4674c231fdd28f457af3c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of a table indexable by all possible output values of <a class="el" href="namespacejazz__elements.html#a3761a7b394e72d1cb065477fa8af2c7f">TenBitsAtAddress()</a>  <a href="utils_8h.html#a87339d0dea4674c231fdd28f457af3c5">More...</a><br /></td></tr>
 <tr class="separator:a87339d0dea4674c231fdd28f457af3c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a951d4516410f5848849d2cf017ea6286"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#a951d4516410f5848849d2cf017ea6286">LOG__</a></td></tr>
-<tr class="separator:a951d4516410f5848849d2cf017ea6286"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ff63e8955665c4a58b1598f2b07c51a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#a6ff63e8955665c4a58b1598f2b07c51a">LOG_DEBUG</a>&#160;&#160;&#160;1</td></tr>
 <tr class="memdesc:a6ff63e8955665c4a58b1598f2b07c51a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Just for checking, normally not logged, should not exist in case of NDEBUG. In that case, it becomes a LOG_WARN to force removing it.  <a href="utils_8h.html#a6ff63e8955665c4a58b1598f2b07c51a">More...</a><br /></td></tr>
 <tr class="separator:a6ff63e8955665c4a58b1598f2b07c51a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,9 +129,27 @@ Macros</h2></td></tr>
 <tr class="memitem:a6773b93f3093658c3dcb569de3b4bdb2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#a6773b93f3093658c3dcb569de3b4bdb2">MAX_FILENAME_LENGTH</a>&#160;&#160;&#160;256</td></tr>
 <tr class="memdesc:a6773b93f3093658c3dcb569de3b4bdb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum length for file names in ConfigFile and Logger.  <a href="utils_8h.html#a6773b93f3093658c3dcb569de3b4bdb2">More...</a><br /></td></tr>
 <tr class="separator:a6773b93f3093658c3dcb569de3b4bdb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb0492c64e0634fc8e4e06ef54e8b176"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#afb0492c64e0634fc8e4e06ef54e8b176">SERVICE_NO_ERROR</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:afb0492c64e0634fc8e4e06ef54e8b176"><td class="mdescLeft">&#160;</td><td class="mdescRight">No errors found processing the API call.  <a href="utils_8h.html#afb0492c64e0634fc8e4e06ef54e8b176">More...</a><br /></td></tr>
+<tr class="separator:afb0492c64e0634fc8e4e06ef54e8b176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef62dd0addbabc03039bd3c6d4c4a668"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#aef62dd0addbabc03039bd3c6d4c4a668">SERVICE_ERROR_BAD_CONFIG</a>&#160;&#160;&#160;-1</td></tr>
+<tr class="memdesc:aef62dd0addbabc03039bd3c6d4c4a668"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic error related with configuration parsing.  <a href="utils_8h.html#aef62dd0addbabc03039bd3c6d4c4a668">More...</a><br /></td></tr>
+<tr class="separator:aef62dd0addbabc03039bd3c6d4c4a668"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b7224b36f5b3bd04828318c211139f4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#a0b7224b36f5b3bd04828318c211139f4">SERVICE_ERROR_STARTING</a>&#160;&#160;&#160;-2</td></tr>
+<tr class="memdesc:a0b7224b36f5b3bd04828318c211139f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic error related with starting a service.  <a href="utils_8h.html#a0b7224b36f5b3bd04828318c211139f4">More...</a><br /></td></tr>
+<tr class="separator:a0b7224b36f5b3bd04828318c211139f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43c6165ae0442cdacc9e2cf862aa6659"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#a43c6165ae0442cdacc9e2cf862aa6659">SERVICE_ERROR_NO_MEM</a>&#160;&#160;&#160;-3</td></tr>
+<tr class="memdesc:a43c6165ae0442cdacc9e2cf862aa6659"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specific error where configured allocation RAM failed.  <a href="utils_8h.html#a43c6165ae0442cdacc9e2cf862aa6659">More...</a><br /></td></tr>
+<tr class="separator:a43c6165ae0442cdacc9e2cf862aa6659"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13e3b5996b11b29bd2ba71d6bb4a4259"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#a13e3b5996b11b29bd2ba71d6bb4a4259">SERVICE_NOT_IMPLEMENTED</a>&#160;&#160;&#160;-4</td></tr>
+<tr class="memdesc:a13e3b5996b11b29bd2ba71d6bb4a4259"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returned by the Service class (only descendents should be called.).  <a href="utils_8h.html#a13e3b5996b11b29bd2ba71d6bb4a4259">More...</a><br /></td></tr>
+<tr class="separator:a13e3b5996b11b29bd2ba71d6bb4a4259"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:a3afa055be2491c07ae68adccc6d730a5"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a3afa055be2491c07ae68adccc6d730a5">jazz_elements::Service_ErrorCode</a></td></tr>
+<tr class="memdesc:a3afa055be2491c07ae68adccc6d730a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type returned by the <a class="el" href="classjazz__elements_1_1Service.html">Service</a> API.  <a href="namespacejazz__elements.html#a3afa055be2491c07ae68adccc6d730a5">More...</a><br /></td></tr>
+<tr class="separator:a3afa055be2491c07ae68adccc6d730a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ea64c8750eeedeb68690603dacceeab"><td class="memItemLeft" align="right" valign="top">typedef class ConfigFile *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a2ea64c8750eeedeb68690603dacceeab">jazz_elements::pConfigFile</a></td></tr>
 <tr class="separator:a2ea64c8750eeedeb68690603dacceeab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54e0e020637fffc86de95ffdd302f4a8"><td class="memItemLeft" align="right" valign="top">typedef class Logger *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a54e0e020637fffc86de95ffdd302f4a8">jazz_elements::pLogger</a></td></tr>
@@ -174,21 +192,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a951d4516410f5848849d2cf017ea6286"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a951d4516410f5848849d2cf017ea6286">&#9670;&nbsp;</a></span>LOG__</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define LOG__</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>The trace levels for argument loglevel in Logger.log() </p>
-
-</div>
-</div>
 <a id="a6ff63e8955665c4a58b1598f2b07c51a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6ff63e8955665c4a58b1598f2b07c51a">&#9670;&nbsp;</a></span>LOG_DEBUG</h2>
 
@@ -202,6 +205,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Just for checking, normally not logged, should not exist in case of NDEBUG. In that case, it becomes a LOG_WARN to force removing it. </p>
+<p>The trace levels for argument loglevel in Logger.log() </p>
 
 </div>
 </div>
@@ -282,6 +286,87 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Maximum length for file names in ConfigFile and Logger. </p>
+
+</div>
+</div>
+<a id="aef62dd0addbabc03039bd3c6d4c4a668"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef62dd0addbabc03039bd3c6d4c4a668">&#9670;&nbsp;</a></span>SERVICE_ERROR_BAD_CONFIG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SERVICE_ERROR_BAD_CONFIG&#160;&#160;&#160;-1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generic error related with configuration parsing. </p>
+
+</div>
+</div>
+<a id="a43c6165ae0442cdacc9e2cf862aa6659"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43c6165ae0442cdacc9e2cf862aa6659">&#9670;&nbsp;</a></span>SERVICE_ERROR_NO_MEM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SERVICE_ERROR_NO_MEM&#160;&#160;&#160;-3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Specific error where configured allocation RAM failed. </p>
+
+</div>
+</div>
+<a id="a0b7224b36f5b3bd04828318c211139f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b7224b36f5b3bd04828318c211139f4">&#9670;&nbsp;</a></span>SERVICE_ERROR_STARTING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SERVICE_ERROR_STARTING&#160;&#160;&#160;-2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generic error related with starting a service. </p>
+
+</div>
+</div>
+<a id="afb0492c64e0634fc8e4e06ef54e8b176"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb0492c64e0634fc8e4e06ef54e8b176">&#9670;&nbsp;</a></span>SERVICE_NO_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SERVICE_NO_ERROR&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>No errors found processing the API call. </p>
+<p>Constants for Service_ErrorCode values </p>
+
+</div>
+</div>
+<a id="a13e3b5996b11b29bd2ba71d6bb4a4259"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13e3b5996b11b29bd2ba71d6bb4a4259">&#9670;&nbsp;</a></span>SERVICE_NOT_IMPLEMENTED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SERVICE_NOT_IMPLEMENTED&#160;&#160;&#160;-4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returned by the Service class (only descendents should be called.). </p>
 
 </div>
 </div>
