@@ -106,7 +106,7 @@ $(function() {
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">// #include &lt;stl_whatever&gt;</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">// #include &quot;src/jazz_agency/xxx.h&quot;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="jazz__bebop_8h.html">src/include/jazz_bebop.h</a>&quot;</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#if defined CATCH_TEST</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#ifndef INCLUDED_JAZZ_CATCH2</span></div>
@@ -122,16 +122,36 @@ $(function() {
 <div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="agency_8h.html#a05afa99f0e2fe39c1ded83c4fd304f25">   50</a></span>&#160;<span class="preprocessor">#define INCLUDED_JAZZ_AGENCY_AGENCY</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacejazz__agency.html">jazz_agency</a></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacejazz__agency.html">jazz_agency</a></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;} <span class="comment">// namespace jazz_agency</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacejazz__elements.html">jazz_elements</a>;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif // ifndef INCLUDED_JAZZ_AGENCY_AGENCY</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classjazz__agency_1_1Agency.html">   68</a></span>&#160;<span class="keyword">class </span><a class="code" href="classjazz__agency_1_1Agency.html">Agency</a> : <span class="keyword">public</span> <a class="code" href="classjazz__elements_1_1Service.html">Service</a> {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="code" href="classjazz__agency_1_1Agency.html">Agency</a> (<a class="code" href="namespacejazz__elements.html#a54e0e020637fffc86de95ffdd302f4a8">pLogger</a>     a_logger,</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                <a class="code" href="namespacejazz__elements.html#a2ea64c8750eeedeb68690603dacceeab">pConfigFile</a> a_config);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <a class="code" href="namespacejazz__elements.html#a3afa055be2491c07ae68adccc6d730a5">Service_ErrorCode</a> start     ();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <a class="code" href="namespacejazz__elements.html#a3afa055be2491c07ae68adccc6d730a5">Service_ErrorCode</a> shut_down (<span class="keywordtype">bool</span> restarting_service = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;};</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;} <span class="comment">// namespace jazz_agency</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif // ifndef INCLUDED_JAZZ_AGENCY_AGENCY</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="anamespacejazz__agency_html"><div class="ttname"><a href="namespacejazz__agency.html">jazz_agency</a></div><div class="ttdef"><b>Definition:</b> agency.cpp:41</div></div>
+<div class="ttc" id="anamespacejazz__elements_html_a2ea64c8750eeedeb68690603dacceeab"><div class="ttname"><a href="namespacejazz__elements.html#a2ea64c8750eeedeb68690603dacceeab">jazz_elements::pConfigFile</a></div><div class="ttdeci">class ConfigFile * pConfigFile</div><div class="ttdef"><b>Definition:</b> utils.h:133</div></div>
+<div class="ttc" id="aclassjazz__elements_1_1Service_html"><div class="ttname"><a href="classjazz__elements_1_1Service.html">jazz_elements::Service</a></div><div class="ttdef"><b>Definition:</b> utils.h:206</div></div>
+<div class="ttc" id="aclassjazz__agency_1_1Agency_html"><div class="ttname"><a href="classjazz__agency_1_1Agency.html">jazz_agency::Agency</a></div><div class="ttdoc">Agency: A Service to manage flʌkpilers and agents.</div><div class="ttdef"><b>Definition:</b> agency.h:68</div></div>
+<div class="ttc" id="anamespacejazz__elements_html_a54e0e020637fffc86de95ffdd302f4a8"><div class="ttname"><a href="namespacejazz__elements.html#a54e0e020637fffc86de95ffdd302f4a8">jazz_elements::pLogger</a></div><div class="ttdeci">class Logger * pLogger</div><div class="ttdef"><b>Definition:</b> utils.h:134</div></div>
+<div class="ttc" id="anamespacejazz__elements_html_a3afa055be2491c07ae68adccc6d730a5"><div class="ttname"><a href="namespacejazz__elements.html#a3afa055be2491c07ae68adccc6d730a5">jazz_elements::Service_ErrorCode</a></div><div class="ttdeci">int Service_ErrorCode</div><div class="ttdoc">Type returned by the Service API.</div><div class="ttdef"><b>Definition:</b> utils.h:102</div></div>
+<div class="ttc" id="ajazz__bebop_8h_html"><div class="ttname"><a href="jazz__bebop_8h.html">jazz_bebop.h</a></div></div>
+<div class="ttc" id="anamespacejazz__elements_html"><div class="ttname"><a href="namespacejazz__elements.html">jazz_elements</a></div><div class="ttdoc">Basic Jazz code-less structures and constants.</div><div class="ttdef"><b>Definition:</b> block.cpp:41</div></div>
+<div class="ttc" id="anamespacejazz__agency_html"><div class="ttname"><a href="namespacejazz__agency.html">jazz_agency</a></div><div class="ttdoc">Agency: learning, building flʌkpilers and graphs of flʌkpilers (== Agents).</div><div class="ttdef"><b>Definition:</b> agency.cpp:41</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

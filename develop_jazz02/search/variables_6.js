@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['j_5fconfig_354',['J_CONFIG',['../namespacejazz__main.html#a074fca87d4429c97c0303303038828c5',1,'jazz_main']]],
-  ['j_5fhttp_5fserver_355',['J_HTTP_SERVER',['../namespacejazz__main.html#ab4ca3cf62c71af4136823788e9cbae72',1,'jazz_main']]],
-  ['j_5flogger_356',['J_LOGGER',['../namespacejazz__main.html#ac29962cb4e41968666cb7acd2b8bb84f',1,'jazz_main']]],
-  ['jazz_5fmhd_5fdaemon_357',['Jazz_MHD_Daemon',['../namespacejazz__main.html#a9af1d41451e6cfe5e88cddebec1ba954',1,'jazz_main']]]
+  ['has_5fna_377',['has_NA',['../structjazz__elements_1_1BlockHeader.html#a6f9d802a4dfacc3213e77431577ea448',1,'jazz_elements::BlockHeader']]],
+  ['hash64_378',['hash64',['../structjazz__elements_1_1BlockHeader.html#a9718cc9c15e696e6e2ff1d044d65b47a',1,'jazz_elements::BlockHeader']]],
+  ['http_379',['HTTP',['../namespacejazz__main.html#a7903fed0038168d55f0f50d619d6d1dc',1,'jazz_main']]]
 ];

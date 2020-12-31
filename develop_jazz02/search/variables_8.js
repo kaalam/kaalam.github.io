@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['num_5fattributes_360',['num_attributes',['../structjazz__elements_1_1BlockHeader.html#ade1168fe2f507da3c64a90ef3d8f5e17',1,'jazz_elements::BlockHeader']]]
+  ['last_5fidx_381',['last_idx',['../structjazz__elements_1_1StringBuffer.html#a3bce2a089e52c3b868885f6c6c191356',1,'jazz_elements::StringBuffer']]],
+  ['length_382',['length',['../structjazz__elements_1_1FilterSize.html#a70ae0efca81a4fb3ffbb56c27d884fb2',1,'jazz_elements::FilterSize']]],
+  ['logger_383',['LOGGER',['../namespacejazz__main.html#aebd5be2fc5b704c5db25e81de84f200e',1,'jazz_main']]]
 ];

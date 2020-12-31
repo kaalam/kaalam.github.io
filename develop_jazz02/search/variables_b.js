@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['r_5fna_364',['R_NA',['../namespacejazz__elements.html#a0ca8f9758d7f2438f120412cbb0fcc43',1,'jazz_elements']]],
-  ['range_365',['range',['../structjazz__elements_1_1BlockHeader.html#a8fa258a4e087633971ff268fe5607a00',1,'jazz_elements::BlockHeader']]],
-  ['rank_366',['rank',['../structjazz__elements_1_1BlockHeader.html#aafa8121fb2c2091b32cc688ea711002c',1,'jazz_elements::BlockHeader']]]
+  ['p_5fconf_386',['p_conf',['../classjazz__elements_1_1Service.html#aef0f516befa73bb353fa5ac244fbebe4',1,'jazz_elements::Service']]],
+  ['p_5flog_387',['p_log',['../classjazz__elements_1_1Service.html#a9c9c71fccf7602a67853a1d6ab5c6ac2',1,'jazz_elements::Service']]]
 ];

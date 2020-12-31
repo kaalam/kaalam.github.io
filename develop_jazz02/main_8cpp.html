@@ -86,6 +86,8 @@ Functions</h2></td></tr>
 <tr class="separator:aca18335e0d9f5b12f9b8ffaf4d36570c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78bf8646c074be1959943f73bd7458c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a78bf8646c074be1959943f73bd7458c0">show_usage</a> ()</td></tr>
 <tr class="separator:a78bf8646c074be1959943f73bd7458c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35ed3cd6ea33e76f6ee96284111cdd95"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a35ed3cd6ea33e76f6ee96284111cdd95">parse_command</a> (const char *arg)</td></tr>
+<tr class="separator:a35ed3cd6ea33e76f6ee96284111cdd95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
 <tr class="separator:a0ddf1224851353fc92bfbff6f499fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -130,6 +132,45 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Entry point.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">argc</td><td>(Linux) number of arguments, counting the name of the executable. </td></tr>
+    <tr><td class="paramname">argv</td><td>(Linux) each argument, argv[0] being the name of the executable.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>EXIT_FAILURE or EXIT_SUCCESS</dd></dl>
+<p>When the command is "start": if running already, message + EXIT_FAILURE if configuration declared, but does no exist, message + EXIT_FAILURE else try to start the server calling main_server_start()</p>
+<p>When the command is "stop": if not running already, message + EXIT_FAILURE else send a SIGTERM to the server and wait to check if it closes if the server closes before 20 seconds, message + EXIT_SUCCESS else message + EXIT_FAILURE</p>
+<p>When the command is "status": if not running already, message + EXIT_FAILURE else message + EXIT_SUCCESS</p>
+<p>When the command is anything else, too many or too few: show help + EXIT_FAILURE </p>
+
+</div>
+</div>
+<a id="a35ed3cd6ea33e76f6ee96284111cdd95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35ed3cd6ea33e76f6ee96284111cdd95">&#9670;&nbsp;</a></span>parse_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int parse_command </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>arg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Parse the command line argument (start, stop, ...) into a numeric constant, CMD_START, CMD_STOP, ...</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arg</td><td>The argument as typed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the numeric constant and CMD_HELP when not known. </dd></dl>
 
 </div>
 </div>

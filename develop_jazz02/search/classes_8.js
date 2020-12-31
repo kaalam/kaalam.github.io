@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['tensor_233',['Tensor',['../unionjazz__elements_1_1Tensor.html',1,'jazz_elements']]],
-  ['tensordim_234',['TensorDim',['../unionjazz__elements_1_1TensorDim.html',1,'jazz_elements']]],
-  ['tuple_235',['Tuple',['../classjazz__elements_1_1Tuple.html',1,'jazz_elements']]]
+  ['service_244',['Service',['../classjazz__elements_1_1Service.html',1,'jazz_elements']]],
+  ['stringbuffer_245',['StringBuffer',['../structjazz__elements_1_1StringBuffer.html',1,'jazz_elements']]]
 ];

@@ -75,6 +75,22 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="utils_8h_source.html">utils.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for jazz_elements::Service:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classjazz__elements_1_1Service.png" usemap="#jazz_5Felements::Service_map" alt=""/>
+  <map id="jazz_5Felements::Service_map" name="jazz_5Felements::Service_map">
+<area href="classjazz__agency_1_1Agency.html" title="Agency: A Service to manage flʌkpilers and agents." alt="jazz_agency::Agency" shape="rect" coords="0,56,148,80"/>
+<area href="classjazz__bebop_1_1Bebop.html" title="Bebop: A Service to manage running cores and code bases." alt="jazz_bebop::Bebop" shape="rect" coords="158,56,306,80"/>
+<area href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM." alt="jazz_elements::Volatile" shape="rect" coords="316,56,464,80"/>
+<area href="classjazz__main_1_1Api.html" title="Api: A Service to manage the REST API." alt="jazz_main::Api" shape="rect" coords="474,56,622,80"/>
+<area href="classjazz__main_1_1HttpServer.html" alt="jazz_main::HttpServer" shape="rect" coords="632,56,780,80"/>
+<area href="classjazz__elements_1_1Persisted.html" title="Persisted: A Service to manage data objects in LMDB." alt="jazz_elements::Persisted" shape="rect" coords="316,112,464,136"/>
+<area href="classjazz__elements_1_1Cluster.html" title="Cluster: A Service to manage data objects across a cluster of Jazz servers." alt="jazz_elements::Cluster" shape="rect" coords="316,168,464,192"/>
+<area href="classjazz__elements_1_1Flux.html" title="Flux: A Service to manage data object streams as fluxes." alt="jazz_elements::Flux" shape="rect" coords="316,224,464,248"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -85,17 +101,28 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a21eb061601ebc8b8e0611b97c727ecf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb5117f0eb61a887dcc54f629b27b23c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__elements.html#a3afa055be2491c07ae68adccc6d730a5">Service_ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Service.html#abb5117f0eb61a887dcc54f629b27b23c">shut_down</a> (bool restarting_service=false)</td></tr>
 <tr class="separator:abb5117f0eb61a887dcc54f629b27b23c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43ae5f53f29c382d1f5ff1ac8f63b5be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Service.html#a43ae5f53f29c382d1f5ff1ac8f63b5be">log</a> (int loglevel, const char *message)</td></tr>
+<tr class="separator:a43ae5f53f29c382d1f5ff1ac8f63b5be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8290451b2815ea470b8518493023e605"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Service.html#a8290451b2815ea470b8518493023e605">log_printf</a> (int loglevel, const char *fmt,...)</td></tr>
+<tr class="separator:a8290451b2815ea470b8518493023e605"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ca88fd7aa5eb3e29c214d98e905f20f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Service.html#a3ca88fd7aa5eb3e29c214d98e905f20f">get_conf_key</a> (const char *key, int &amp;value)</td></tr>
+<tr class="separator:a3ca88fd7aa5eb3e29c214d98e905f20f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae470b76019bcbcecc6ac1b516c51bb74"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Service.html#ae470b76019bcbcecc6ac1b516c51bb74">get_conf_key</a> (const char *key, double &amp;value)</td></tr>
+<tr class="separator:ae470b76019bcbcecc6ac1b516c51bb74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d5b766d5214ffb88d58acc6f66e2e29"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Service.html#a7d5b766d5214ffb88d58acc6f66e2e29">get_conf_key</a> (const char *key, std::string &amp;value)</td></tr>
+<tr class="separator:a7d5b766d5214ffb88d58acc6f66e2e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a17f7d4a11dfe52b6dd8dbf9de682905e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#a54e0e020637fffc86de95ffdd302f4a8">pLogger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Service.html#a17f7d4a11dfe52b6dd8dbf9de682905e">pLog</a></td></tr>
-<tr class="separator:a17f7d4a11dfe52b6dd8dbf9de682905e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada3e3aea0a74b6069d19df507fdc35da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#a2ea64c8750eeedeb68690603dacceeab">pConfigFile</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Service.html#ada3e3aea0a74b6069d19df507fdc35da">pConf</a></td></tr>
-<tr class="separator:ada3e3aea0a74b6069d19df507fdc35da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c9c71fccf7602a67853a1d6ab5c6ac2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#a54e0e020637fffc86de95ffdd302f4a8">pLogger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Service.html#a9c9c71fccf7602a67853a1d6ab5c6ac2">p_log</a></td></tr>
+<tr class="separator:a9c9c71fccf7602a67853a1d6ab5c6ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef0f516befa73bb353fa5ac244fbebe4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#a2ea64c8750eeedeb68690603dacceeab">pConfigFile</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Service.html#aef0f516befa73bb353fa5ac244fbebe4">p_conf</a></td></tr>
+<tr class="separator:aef0f516befa73bb353fa5ac244fbebe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A Jazz <a class="el" href="classjazz__elements_1_1Service.html">Service</a> logger.</p>
-<p>A service is anything that requires configuration and a logger. Only a service can own (alloc from the system) RAM, anything else allocates RAM from a service. Only Services (and some callback functions) are instantiated in Jazz instances and there is only one of each. The abstract class just defines the API. </p>
+<p>A service is anything that requires configuration and a logger. Only a service can own (alloc from the system) RAM, anything else allocates RAM from a service. Only Services (and some callback functions) are instantiated in Jazz instances and there is only one of each. The abstract class just defines the API.</p>
+<p>A <a class="el" href="classjazz__elements_1_1Service.html">Service</a> should NOT read the configuration before its .<a class="el" href="classjazz__elements_1_1Service.html#a21eb061601ebc8b8e0611b97c727ecf1" title="A simple start()/shut_down() interface (Restart is: shut_down(TRUE):start())">start()</a> method is called as it may change between construction (at loading) and .<a class="el" href="classjazz__elements_1_1Service.html#a21eb061601ebc8b8e0611b97c727ecf1" title="A simple start()/shut_down() interface (Restart is: shut_down(TRUE):start())">start()</a> (at running). </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a08b2c5b3bcd2e343b163468d01c5127d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a08b2c5b3bcd2e343b163468d01c5127d">&#9670;&nbsp;</a></span>Service()</h2>
@@ -125,15 +152,231 @@ Private Attributes</h2></td></tr>
 <p>Initialize the <a class="el" href="classjazz__elements_1_1Service.html">Service</a> without starting it.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">a_logger</td><td>A valid logger (cannot be NULL). </td></tr>
+    <tr><td class="paramname">a_logger</td><td>A <a class="el" href="classjazz__elements_1_1Logger.html">Logger</a>. </td></tr>
     <tr><td class="paramname">a_config</td><td>Possibly a configuration file as a <a class="el" href="classjazz__elements_1_1ConfigFile.html">ConfigFile</a> object. NULL is okay if the object does not expect any configuration.</td></tr>
   </table>
   </dd>
 </dl>
+<p>Rather than using the private p_log and p_conf pointers, it is recommended to use the inline methods <a class="el" href="classjazz__elements_1_1Service.html#a43ae5f53f29c382d1f5ff1ac8f63b5be">log()</a> and <a class="el" href="classjazz__elements_1_1Service.html#a8290451b2815ea470b8518493023e605">log_printf()</a> for logging and <a class="el" href="classjazz__elements_1_1Service.html#a3ca88fd7aa5eb3e29c214d98e905f20f">get_conf_key()</a> for acessing the configuration. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae470b76019bcbcecc6ac1b516c51bb74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae470b76019bcbcecc6ac1b516c51bb74">&#9670;&nbsp;</a></span>get_conf_key() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool jazz_elements::Service::get_conf_key </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3ca88fd7aa5eb3e29c214d98e905f20f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ca88fd7aa5eb3e29c214d98e905f20f">&#9670;&nbsp;</a></span>get_conf_key() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool jazz_elements::Service::get_conf_key </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Wrapper method to get configuration values when the <a class="el" href="classjazz__elements_1_1ConfigFile.html">ConfigFile</a> was passed to the constructor of this class.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The configuration key to be searched. </td></tr>
+    <tr><td class="paramname">value</td><td>Value to be returned only when the function returns true. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True when the key exists and can be returned with the specific (overloaded) type.</dd></dl>
+<p>See <a class="el" href="classjazz__elements_1_1ConfigFile.html">ConfigFile</a> for details. </p>
+
+</div>
+</div>
+<a id="a7d5b766d5214ffb88d58acc6f66e2e29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d5b766d5214ffb88d58acc6f66e2e29">&#9670;&nbsp;</a></span>get_conf_key() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool jazz_elements::Service::get_conf_key </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a43ae5f53f29c382d1f5ff1ac8f63b5be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43ae5f53f29c382d1f5ff1ac8f63b5be">&#9670;&nbsp;</a></span>log()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void jazz_elements::Service::log </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>loglevel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>message</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Wrapper method logging events through a <a class="el" href="classjazz__elements_1_1Logger.html">Logger</a> when the logger was passed to the constructor of this class.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">loglevel</td><td>The trace level. </td></tr>
+    <tr><td class="paramname">message</td><td>A message.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>See <a class="el" href="classjazz__elements_1_1Logger.html">Logger</a> for details. </p>
+
+</div>
+</div>
+<a id="a8290451b2815ea470b8518493023e605"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8290451b2815ea470b8518493023e605">&#9670;&nbsp;</a></span>log_printf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void jazz_elements::Service::log_printf </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>loglevel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Wrapper method logging events through a <a class="el" href="classjazz__elements_1_1Logger.html">Logger</a> when the logger was passed to the constructor of this class.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">loglevel</td><td>The trace level. </td></tr>
+    <tr><td class="paramname">fmt</td><td>The printf-style format string. </td></tr>
+    <tr><td class="paramname">...</td><td>The list of parameters as a variadic list of parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>See <a class="el" href="classjazz__elements_1_1Logger.html">Logger</a> for details. </p>
+
+</div>
+</div>
 <a id="abb5117f0eb61a887dcc54f629b27b23c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abb5117f0eb61a887dcc54f629b27b23c">&#9670;&nbsp;</a></span>shut_down()</h2>
 
@@ -167,6 +410,8 @@ Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR if successful, some error if not.</dd></dl>
 <p>This method should be overriden by something that actually stops the service, possibly using the configuration file in pConf. </p>
 
+<p>Reimplemented in <a class="el" href="classjazz__main_1_1HttpServer.html#ad32ed46715ba6986c2334adc3ae2621b">jazz_main::HttpServer</a>, <a class="el" href="classjazz__agency_1_1Agency.html#a873d9d8666d1078d8d2aaa71368803f3">jazz_agency::Agency</a>, <a class="el" href="classjazz__bebop_1_1Bebop.html#a7bb8e94b2735f943f91e11c0942cbf48">jazz_bebop::Bebop</a>, <a class="el" href="classjazz__main_1_1Api.html#a5009eb222437b58cebf8a74e283a0ee1">jazz_main::Api</a>, <a class="el" href="classjazz__elements_1_1Cluster.html#aeae2deba9d1a53b05dcbda21e33ba385">jazz_elements::Cluster</a>, <a class="el" href="classjazz__elements_1_1Persisted.html#aa77269dd4a152dda88d079b04f0d3fe7">jazz_elements::Persisted</a>, <a class="el" href="classjazz__elements_1_1Volatile.html#a8abfdca408f69f020b7a03434faf614a">jazz_elements::Volatile</a>, and <a class="el" href="classjazz__elements_1_1Flux.html#ad4033cb9bc24cc8e4a581b3264e77e8c">jazz_elements::Flux</a>.</p>
+
 </div>
 </div>
 <a id="a21eb061601ebc8b8e0611b97c727ecf1"></a>
@@ -197,11 +442,13 @@ Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR if successful, some error if not.</dd></dl>
 <p>This method should be overriden by something that actually starts the service, possibly using the configuration file in pConf. </p>
 
+<p>Reimplemented in <a class="el" href="classjazz__agency_1_1Agency.html#a381f72acfc1c50086bee8fd230af2f81">jazz_agency::Agency</a>, <a class="el" href="classjazz__bebop_1_1Bebop.html#a1df480f1455489026c2bf783befcbbbd">jazz_bebop::Bebop</a>, <a class="el" href="classjazz__main_1_1Api.html#a2054adec4ac54b6d204fd692ebf8a617">jazz_main::Api</a>, <a class="el" href="classjazz__elements_1_1Cluster.html#a9e2970ae3ddae187bb8468bd36aa93f3">jazz_elements::Cluster</a>, <a class="el" href="classjazz__elements_1_1Persisted.html#a68d835af4742de035023b976e1f9769a">jazz_elements::Persisted</a>, <a class="el" href="classjazz__elements_1_1Volatile.html#a5375915dbf891254573d08e539b8d7e3">jazz_elements::Volatile</a>, and <a class="el" href="classjazz__elements_1_1Flux.html#a41fa8aabe70edae76d65353b0b8902c4">jazz_elements::Flux</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Field Documentation</h2>
-<a id="ada3e3aea0a74b6069d19df507fdc35da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada3e3aea0a74b6069d19df507fdc35da">&#9670;&nbsp;</a></span>pConf</h2>
+<a id="aef0f516befa73bb353fa5ac244fbebe4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef0f516befa73bb353fa5ac244fbebe4">&#9670;&nbsp;</a></span>p_conf</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -210,7 +457,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacejazz__elements.html#a2ea64c8750eeedeb68690603dacceeab">pConfigFile</a> jazz_elements::Service::pConf</td>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#a2ea64c8750eeedeb68690603dacceeab">pConfigFile</a> jazz_elements::Service::p_conf</td>
         </tr>
       </table>
   </td>
@@ -222,8 +469,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a17f7d4a11dfe52b6dd8dbf9de682905e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17f7d4a11dfe52b6dd8dbf9de682905e">&#9670;&nbsp;</a></span>pLog</h2>
+<a id="a9c9c71fccf7602a67853a1d6ab5c6ac2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c9c71fccf7602a67853a1d6ab5c6ac2">&#9670;&nbsp;</a></span>p_log</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -232,7 +479,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacejazz__elements.html#a54e0e020637fffc86de95ffdd302f4a8">pLogger</a> jazz_elements::Service::pLog</td>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#a54e0e020637fffc86de95ffdd302f4a8">pLogger</a> jazz_elements::Service::p_log</td>
         </tr>
       </table>
   </td>

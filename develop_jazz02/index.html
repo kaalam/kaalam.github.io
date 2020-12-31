@@ -85,14 +85,19 @@ Jazz Modules Diagram</h1>
 <td class="markdownTableBodyNone">[FUTURE] </td><td class="markdownTableBodyNone">Code not under active development. Working on PoC.  </td></tr>
 </table>
 <p><br  />
- There are three C++ namespaces:</p>
+ There are three C++ namespaces, intended for general c++ Jazz programming, possibly using external Jazz servers, but not necessarily as implemented as an http server:</p>
 <ol type="1">
-<li><a class="el" href="namespacejazz__elements.html">jazz_elements</a> (all the pieces: blocks, tuples, storage, fluxes, communication, services, ...)<br  />
+<li><a class="el" href="namespacejazz__elements.html" title="Basic Jazz code-less structures and constants.">jazz_elements</a> (all the pieces: blocks, tuples, storage, fluxes, communication, services, ...)<br  />
 </li>
-<li><a class="el" href="namespacejazz__bebop.html">jazz_bebop</a> (everything to create bebop code, run it and expand Formal Fields)<br  />
+<li><a class="el" href="namespacejazz__bebop.html" title="Bebop, cores, kernel and extending the language.">jazz_bebop</a> (everything to create bebop code, run it and expand Formal Fields)<br  />
 </li>
-<li><a class="el" href="namespacejazz__agency.html">jazz_agency</a> (agency as graphs of fields)<br  />
- Additionally, (4.), since everything is an http server, front-end developers build on the REST API<br  />
+<li><a class="el" href="namespacejazz__agency.html" title="Agency: learning, building flʌkpilers and graphs of flʌkpilers (== Agents).">jazz_agency</a> (agency as graphs of fields)<br  />
+<br  />
+ Additionally, there is a namespace for the server: <br  />
+<br  />
+</li>
+<li><a class="el" href="namespacejazz__main.html" title="The http API, instancing and building the server.">jazz_main</a> (putting it all together, the http API and the server) <br  />
+ And, of course, Jazz development is about making the server run Bebop code and interfacing via REST using python or any front-end tech via the REST API.<br  />
  <br  />
 </li>
 </ol>

@@ -1,11 +1,10 @@
 var searchData=
 [
-  ['get_5fattributes_291',['get_attributes',['../classjazz__elements_1_1Block.html#a4ce7c489a14bb723f54a376fe8b26e4c',1,'jazz_elements::Block']]],
-  ['get_5fdimensions_292',['get_dimensions',['../classjazz__elements_1_1Block.html#ad20737ab93ad92ee08bce8af85308556',1,'jazz_elements::Block']]],
-  ['get_5findex_293',['get_index',['../classjazz__elements_1_1Block.html#ab5c09272eb9b28206de372537f447aae',1,'jazz_elements::Block']]],
-  ['get_5fkey_294',['get_key',['../classjazz__elements_1_1ConfigFile.html#a820f5e105f17b00fd8d6ee97afa69eb0',1,'jazz_elements::ConfigFile::get_key(const char *key, int &amp;value)'],['../classjazz__elements_1_1ConfigFile.html#a1eb0d81e26827780316ec0d514d9efaf',1,'jazz_elements::ConfigFile::get_key(const char *key, double &amp;value)'],['../classjazz__elements_1_1ConfigFile.html#a5d5de95dd538ddc18a91d77e4c026b75',1,'jazz_elements::ConfigFile::get_key(const char *key, std::string &amp;value)']]],
-  ['get_5foffset_295',['get_offset',['../classjazz__elements_1_1Block.html#a29755d8810419c0f253a30e965c32ddc',1,'jazz_elements::Block']]],
-  ['get_5foutput_5ffile_5fname_296',['get_output_file_name',['../classjazz__elements_1_1Logger.html#a7ec7a74b330b3b97daea038f1081cef9',1,'jazz_elements::Logger']]],
-  ['get_5fstring_297',['get_string',['../classjazz__elements_1_1Block.html#a0bab51dfa2ea8ecd3cd2d3fd3201b503',1,'jazz_elements::Block::get_string(int *pIndex)'],['../classjazz__elements_1_1Block.html#a40e9f06db839c503050fcc5f10c96ae4',1,'jazz_elements::Block::get_string(int offset)']]],
-  ['get_5fstring_5foffset_298',['get_string_offset',['../classjazz__elements_1_1Block.html#ada7a86857917f098340b836df6b81bf3',1,'jazz_elements::Block']]]
+  ['fileexists_303',['FileExists',['../namespacejazz__elements.html#a9b3cfd7adaf27184b08bbf9bd82c45f7',1,'jazz_elements']]],
+  ['filter_5faudit_304',['filter_audit',['../classjazz__elements_1_1Filter.html#a4c7722400a0147152d2a927e0ffd0da8',1,'jazz_elements::Filter']]],
+  ['filter_5ftype_305',['filter_type',['../classjazz__elements_1_1Filter.html#a81c29e896ad391f8ff21b4a5b338c414',1,'jazz_elements::Filter']]],
+  ['find_5fattribute_306',['find_attribute',['../classjazz__elements_1_1Block.html#a967f54fa8714c2fd58ac13968675e62d',1,'jazz_elements::Block']]],
+  ['find_5fnas_5fin_5ftensor_307',['find_NAs_in_tensor',['../classjazz__elements_1_1Block.html#ae9bc8c5a8a015bcad22d01b219c845f5',1,'jazz_elements::Block']]],
+  ['findprocessidbyname_308',['FindProcessIdByName',['../namespacejazz__elements.html#ad3fcdaf6929f0360f2388eaa7561e1b8',1,'jazz_elements']]],
+  ['flux_309',['Flux',['../classjazz__elements_1_1Flux.html#af66f1c1c3a0c70aad9c2539cb6df20a1',1,'jazz_elements::Flux']]]
 ];

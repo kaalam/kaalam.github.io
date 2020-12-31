@@ -71,11 +71,16 @@ $(function() {
 <div class="title">jazz_main Namespace Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The http API, instancing and building the server.  
+<a href="namespacejazz__main.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html">Api</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classjazz__main_1_1Api.html" title="Api: A Service to manage the REST API.">Api</a>: A Service to manage the REST API.  <a href="classjazz__main_1_1Api.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1HttpServer.html">HttpServer</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">TODO.  <a href="classjazz__main_1_1HttpServer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -83,6 +88,7 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a578cf47cfadacf0e9c6735b8cb53e6b0"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#a578cf47cfadacf0e9c6735b8cb53e6b0">pSignalHandler</a>) (int signum)</td></tr>
 <tr class="separator:a578cf47cfadacf0e9c6735b8cb53e6b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1cdb9105d6b720548eed5b8df38823b"><td class="memItemLeft" align="right" valign="top">typedef MHD_Daemon *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#ae1cdb9105d6b720548eed5b8df38823b">pMHD_Daemon</a></td></tr>
+<tr class="memdesc:ae1cdb9105d6b720548eed5b8df38823b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classjazz__main_1_1HttpServer.html">HttpServer</a>: The http server is also a Service.  <a href="namespacejazz__main.html#ae1cdb9105d6b720548eed5b8df38823b">More...</a><br /></td></tr>
 <tr class="separator:ae1cdb9105d6b720548eed5b8df38823b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -92,16 +98,27 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a074fca87d4429c97c0303303038828c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classjazz__elements_1_1ConfigFile.html">ConfigFile</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#a074fca87d4429c97c0303303038828c5">J_CONFIG</a> (<a class="el" href="instances_8h.html#a89e9b1adbdda91381feed325f8f086b7">JAZZ_DEFAULT_CONFIG_PATH</a>)</td></tr>
-<tr class="separator:a074fca87d4429c97c0303303038828c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac29962cb4e41968666cb7acd2b8bb84f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classjazz__elements_1_1Logger.html">Logger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#ac29962cb4e41968666cb7acd2b8bb84f">J_LOGGER</a> (<a class="el" href="namespacejazz__main.html#a074fca87d4429c97c0303303038828c5">J_CONFIG</a>, &quot;LOGGER_PATH&quot;)</td></tr>
-<tr class="separator:ac29962cb4e41968666cb7acd2b8bb84f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a255f8360c29618bbb1c9b89cc50cf8f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classjazz__elements_1_1ConfigFile.html">ConfigFile</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#a255f8360c29618bbb1c9b89cc50cf8f6">CONFIG</a> (<a class="el" href="instances_8h.html#a89e9b1adbdda91381feed325f8f086b7">JAZZ_DEFAULT_CONFIG_PATH</a>)</td></tr>
+<tr class="separator:a255f8360c29618bbb1c9b89cc50cf8f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebd5be2fc5b704c5db25e81de84f200e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classjazz__elements_1_1Logger.html">Logger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#aebd5be2fc5b704c5db25e81de84f200e">LOGGER</a> (<a class="el" href="namespacejazz__main.html#a255f8360c29618bbb1c9b89cc50cf8f6">CONFIG</a>, &quot;LOGGER_PATH&quot;)</td></tr>
+<tr class="separator:aebd5be2fc5b704c5db25e81de84f200e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9af1d41451e6cfe5e88cddebec1ba954"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__main.html#ae1cdb9105d6b720548eed5b8df38823b">pMHD_Daemon</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#a9af1d41451e6cfe5e88cddebec1ba954">Jazz_MHD_Daemon</a></td></tr>
 <tr class="separator:a9af1d41451e6cfe5e88cddebec1ba954"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4ca3cf62c71af4136823788e9cbae72"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classjazz__main_1_1HttpServer.html">HttpServer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#ab4ca3cf62c71af4136823788e9cbae72">J_HTTP_SERVER</a></td></tr>
-<tr class="separator:ab4ca3cf62c71af4136823788e9cbae72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c722b98e2a81f2170fb35b52a0eef3e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classjazz__elements_1_1Flux.html">Flux</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#a5c722b98e2a81f2170fb35b52a0eef3e">BEAT</a></td></tr>
+<tr class="separator:a5c722b98e2a81f2170fb35b52a0eef3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ca7a8bf12b10561fe17582720e6fbc4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classjazz__bebop_1_1Bebop.html">Bebop</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#a7ca7a8bf12b10561fe17582720e6fbc4">BOP</a></td></tr>
+<tr class="separator:a7ca7a8bf12b10561fe17582720e6fbc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b82979f33b26c70a17fcb5de1dc581e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classjazz__agency_1_1Agency.html">Agency</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#a1b82979f33b26c70a17fcb5de1dc581e">EPI</a></td></tr>
+<tr class="separator:a1b82979f33b26c70a17fcb5de1dc581e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ab84c888580c3dfffe9832ddb5026a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classjazz__main_1_1Api.html">Api</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#a6ab84c888580c3dfffe9832ddb5026a7">API</a></td></tr>
+<tr class="separator:a6ab84c888580c3dfffe9832ddb5026a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7903fed0038168d55f0f50d619d6d1dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classjazz__main_1_1HttpServer.html">HttpServer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#a7903fed0038168d55f0f50d619d6d1dc">HTTP</a></td></tr>
+<tr class="separator:a7903fed0038168d55f0f50d619d6d1dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The http API, instancing and building the server. </p>
+<p>This small namespace is about the server running and putting everything together. Unlike <a class="el" href="namespacejazz__elements.html" title="Basic Jazz code-less structures and constants.">jazz_elements</a>, <a class="el" href="namespacejazz__bebop.html" title="Bebop, cores, kernel and extending the language.">jazz_bebop</a> and <a class="el" href="namespacejazz__agency.html" title="Agency: learning, building flʌkpilers and graphs of flʌkpilers (== Agents).">jazz_agency</a> it is not intended to build other applications than the server. </p>
+</div><h2 class="groupheader">Typedef Documentation</h2>
 <a id="ae1cdb9105d6b720548eed5b8df38823b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae1cdb9105d6b720548eed5b8df38823b">&#9670;&nbsp;</a></span>pMHD_Daemon</h2>
 
@@ -113,6 +130,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p><a class="el" href="classjazz__main_1_1HttpServer.html">HttpServer</a>: The http server is also a Service. </p>
 <p>The server's MHD_Daemon created by MHD_start_daemon() and needed for MHD_stop_daemon() </p>
 
 </div>
@@ -154,42 +173,84 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a074fca87d4429c97c0303303038828c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a074fca87d4429c97c0303303038828c5">&#9670;&nbsp;</a></span>J_CONFIG</h2>
+<a id="a6ab84c888580c3dfffe9832ddb5026a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ab84c888580c3dfffe9832ddb5026a7">&#9670;&nbsp;</a></span>API</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classjazz__elements_1_1ConfigFile.html">ConfigFile</a> jazz_main::J_CONFIG</td>
+          <td class="memname"><a class="el" href="classjazz__main_1_1Api.html">Api</a> jazz_main::API</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ab4ca3cf62c71af4136823788e9cbae72"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab4ca3cf62c71af4136823788e9cbae72">&#9670;&nbsp;</a></span>J_HTTP_SERVER</h2>
+<a id="a5c722b98e2a81f2170fb35b52a0eef3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c722b98e2a81f2170fb35b52a0eef3e">&#9670;&nbsp;</a></span>BEAT</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classjazz__main_1_1HttpServer.html">HttpServer</a> jazz_main::J_HTTP_SERVER</td>
+          <td class="memname"><a class="el" href="classjazz__elements_1_1Flux.html">Flux</a> jazz_main::BEAT</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ac29962cb4e41968666cb7acd2b8bb84f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac29962cb4e41968666cb7acd2b8bb84f">&#9670;&nbsp;</a></span>J_LOGGER</h2>
+<a id="a7ca7a8bf12b10561fe17582720e6fbc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ca7a8bf12b10561fe17582720e6fbc4">&#9670;&nbsp;</a></span>BOP</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classjazz__elements_1_1Logger.html">Logger</a> jazz_main::J_LOGGER</td>
+          <td class="memname"><a class="el" href="classjazz__bebop_1_1Bebop.html">Bebop</a> jazz_main::BOP</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a255f8360c29618bbb1c9b89cc50cf8f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a255f8360c29618bbb1c9b89cc50cf8f6">&#9670;&nbsp;</a></span>CONFIG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classjazz__elements_1_1ConfigFile.html">ConfigFile</a> jazz_main::CONFIG</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1b82979f33b26c70a17fcb5de1dc581e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b82979f33b26c70a17fcb5de1dc581e">&#9670;&nbsp;</a></span>EPI</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classjazz__agency_1_1Agency.html">Agency</a> jazz_main::EPI</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7903fed0038168d55f0f50d619d6d1dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7903fed0038168d55f0f50d619d6d1dc">&#9670;&nbsp;</a></span>HTTP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classjazz__main_1_1HttpServer.html">HttpServer</a> jazz_main::HTTP</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -204,6 +265,20 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="namespacejazz__main.html#ae1cdb9105d6b720548eed5b8df38823b">pMHD_Daemon</a> jazz_main::Jazz_MHD_Daemon</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aebd5be2fc5b704c5db25e81de84f200e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebd5be2fc5b704c5db25e81de84f200e">&#9670;&nbsp;</a></span>LOGGER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classjazz__elements_1_1Logger.html">Logger</a> jazz_main::LOGGER</td>
         </tr>
       </table>
 </div><div class="memdoc">
