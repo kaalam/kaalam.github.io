@@ -93,11 +93,39 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a6c153d2441379b609b60dde6bce9f811"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#a6c153d2441379b609b60dde6bce9f811">http_request_callback</a> (void *cls, struct MHD_Connection *connection, const char *url, const char *method, const char *version, const char *upload_data, size_t *upload_data_size, void **con_cls)</td></tr>
+<tr class="separator:a6c153d2441379b609b60dde6bce9f811"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa96b225c13eebee49a375d73fa3ebba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#afa96b225c13eebee49a375d73fa3ebba">signalHandler_SIGTERM</a> (int signum)</td></tr>
 <tr class="separator:afa96b225c13eebee49a375d73fa3ebba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:af2fa037a022e990a671be02bce5a22e6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#af2fa037a022e990a671be02bce5a22e6">state_new_call</a> = 0</td></tr>
+<tr class="memdesc:af2fa037a022e990a671be02bce5a22e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointers to these global variables control the state of a PUT call.  <a href="namespacejazz__main.html#af2fa037a022e990a671be02bce5a22e6">More...</a><br /></td></tr>
+<tr class="separator:af2fa037a022e990a671be02bce5a22e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28aada798032070becff5f4a6128a80c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#a28aada798032070becff5f4a6128a80c">state_upload_in_progress</a> = 1</td></tr>
+<tr class="memdesc:a28aada798032070becff5f4a6128a80c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data was uploaded, the function was executed and it returned true.  <a href="namespacejazz__main.html#a28aada798032070becff5f4a6128a80c">More...</a><br /></td></tr>
+<tr class="separator:a28aada798032070becff5f4a6128a80c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc8371586ace9d08730eb5d9e1627c1e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#abc8371586ace9d08730eb5d9e1627c1e">state_upload_notacceptable</a> = 2</td></tr>
+<tr class="memdesc:abc8371586ace9d08730eb5d9e1627c1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data upload failed, the function executed and failed. Will return MHD_HTTP_NOT_ACCEPTABLE.  <a href="namespacejazz__main.html#abc8371586ace9d08730eb5d9e1627c1e">More...</a><br /></td></tr>
+<tr class="separator:abc8371586ace9d08730eb5d9e1627c1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a588fc3226bc08234d5b85ab8c2372705"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#a588fc3226bc08234d5b85ab8c2372705">state_upload_unavailable</a> = 3</td></tr>
+<tr class="memdesc:a588fc3226bc08234d5b85ab8c2372705"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data upload failed, enter_persistence() failed. Must end with MHD_HTTP_SERVICE_UNAVAILABLE.  <a href="namespacejazz__main.html#a588fc3226bc08234d5b85ab8c2372705">More...</a><br /></td></tr>
+<tr class="separator:a588fc3226bc08234d5b85ab8c2372705"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7d8001b027c4e53a2e826aeb02cad53"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#af7d8001b027c4e53a2e826aeb02cad53">state_upload_badrequest</a> = 4</td></tr>
+<tr class="memdesc:af7d8001b027c4e53a2e826aeb02cad53"><td class="mdescLeft">&#160;</td><td class="mdescRight">PUT call malformed, Must end with MHD_HTTP_BAD_REQUEST.  <a href="namespacejazz__main.html#af7d8001b027c4e53a2e826aeb02cad53">More...</a><br /></td></tr>
+<tr class="separator:af7d8001b027c4e53a2e826aeb02cad53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1266718e0c60fa99cb934933e13f565f"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#a1266718e0c60fa99cb934933e13f565f">response_put_ok</a> [] = &quot;0&quot;</td></tr>
+<tr class="separator:a1266718e0c60fa99cb934933e13f565f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f301bae0aebe84fd12580831e960ec3"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#a8f301bae0aebe84fd12580831e960ec3">response_put_fail</a> [] = &quot;1&quot;</td></tr>
+<tr class="separator:a8f301bae0aebe84fd12580831e960ec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cf7efcd8efb7a26d4aae5f586806947"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#a0cf7efcd8efb7a26d4aae5f586806947">no_storage</a></td></tr>
+<tr class="separator:a0cf7efcd8efb7a26d4aae5f586806947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcb351d6fb5924221acbbd862b93975f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#afcb351d6fb5924221acbbd862b93975f">no_webpages</a></td></tr>
+<tr class="separator:afcb351d6fb5924221acbbd862b93975f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1cf7460e9503479f65c9e2f924a24c5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#af1cf7460e9503479f65c9e2f924a24c5">tenbitDS</a></td></tr>
+<tr class="memdesc:af1cf7460e9503479f65c9e2f924a24c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The binary ten bits of "//" double-slash to identify web source interface.  <a href="namespacejazz__main.html#af1cf7460e9503479f65c9e2f924a24c5">More...</a><br /></td></tr>
+<tr class="separator:af1cf7460e9503479f65c9e2f924a24c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a255f8360c29618bbb1c9b89cc50cf8f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classjazz__elements_1_1ConfigFile.html">ConfigFile</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#a255f8360c29618bbb1c9b89cc50cf8f6">CONFIG</a> (<a class="el" href="instances_8h.html#a89e9b1adbdda91381feed325f8f086b7">JAZZ_DEFAULT_CONFIG_PATH</a>)</td></tr>
 <tr class="separator:a255f8360c29618bbb1c9b89cc50cf8f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebd5be2fc5b704c5db25e81de84f200e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classjazz__elements_1_1Logger.html">Logger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#aebd5be2fc5b704c5db25e81de84f200e">LOGGER</a> (<a class="el" href="namespacejazz__main.html#a255f8360c29618bbb1c9b89cc50cf8f6">CONFIG</a>, &quot;LOGGER_PATH&quot;)</td></tr>
@@ -152,6 +180,76 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a6c153d2441379b609b60dde6bce9f811"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c153d2441379b609b60dde6bce9f811">&#9670;&nbsp;</a></span>http_request_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jazz_main::http_request_callback </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct MHD_Connection *&#160;</td>
+          <td class="paramname"><em>connection</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>url</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>method</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>version</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>upload_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>upload_data_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>con_cls</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Callback function for MHD. See: <a href="https://www.gnu.org/software/libmicrohttpd/tutorial.html">https://www.gnu.org/software/libmicrohttpd/tutorial.html</a></p>
+<p>Jazz does not use post processor callbacks linked with MHD_create_post_processor(). Jazz does not use request completed callbacks linked with MHD_start_daemon().</p>
+<p>The only callback functions are: </p><pre class="fragment">1. This (http_request_callback): The full operational blocks and instrumental API.
+2. http_apc_callback():          An IP based (firewall like) that can filter based on called IPs.
+</pre><p>This function is multithreaded with the default configuration settings. (Other settings are untested for the moment.)</p>
+<p>The internal operation of the callback function is subject to change and the remarks in the source code are the description of it. </p>
+
+</div>
+</div>
 <a id="afa96b225c13eebee49a375d73fa3ebba"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afa96b225c13eebee49a375d73fa3ebba">&#9670;&nbsp;</a></span>signalHandler_SIGTERM()</h2>
 
@@ -282,6 +380,159 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0cf7efcd8efb7a26d4aae5f586806947"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cf7efcd8efb7a26d4aae5f586806947">&#9670;&nbsp;</a></span>no_storage</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool jazz_main::no_storage</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afcb351d6fb5924221acbbd862b93975f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcb351d6fb5924221acbbd862b93975f">&#9670;&nbsp;</a></span>no_webpages</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool jazz_main::no_webpages</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8f301bae0aebe84fd12580831e960ec3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f301bae0aebe84fd12580831e960ec3">&#9670;&nbsp;</a></span>response_put_fail</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char jazz_main::response_put_fail[] = &quot;1&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1266718e0c60fa99cb934933e13f565f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1266718e0c60fa99cb934933e13f565f">&#9670;&nbsp;</a></span>response_put_ok</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char jazz_main::response_put_ok[] = &quot;0&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af2fa037a022e990a671be02bce5a22e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2fa037a022e990a671be02bce5a22e6">&#9670;&nbsp;</a></span>state_new_call</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jazz_main::state_new_call = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pointers to these global variables control the state of a PUT call. </p>
+<p>Default state: connection open for any call </p>
+
+</div>
+</div>
+<a id="af7d8001b027c4e53a2e826aeb02cad53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7d8001b027c4e53a2e826aeb02cad53">&#9670;&nbsp;</a></span>state_upload_badrequest</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jazz_main::state_upload_badrequest = 4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>PUT call malformed, Must end with MHD_HTTP_BAD_REQUEST. </p>
+
+</div>
+</div>
+<a id="a28aada798032070becff5f4a6128a80c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28aada798032070becff5f4a6128a80c">&#9670;&nbsp;</a></span>state_upload_in_progress</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jazz_main::state_upload_in_progress = 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Data was uploaded, the function was executed and it returned true. </p>
+
+</div>
+</div>
+<a id="abc8371586ace9d08730eb5d9e1627c1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc8371586ace9d08730eb5d9e1627c1e">&#9670;&nbsp;</a></span>state_upload_notacceptable</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jazz_main::state_upload_notacceptable = 2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Data upload failed, the function executed and failed. Will return MHD_HTTP_NOT_ACCEPTABLE. </p>
+
+</div>
+</div>
+<a id="a588fc3226bc08234d5b85ab8c2372705"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a588fc3226bc08234d5b85ab8c2372705">&#9670;&nbsp;</a></span>state_upload_unavailable</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jazz_main::state_upload_unavailable = 3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Data upload failed, enter_persistence() failed. Must end with MHD_HTTP_SERVICE_UNAVAILABLE. </p>
+
+</div>
+</div>
+<a id="af1cf7460e9503479f65c9e2f924a24c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1cf7460e9503479f65c9e2f924a24c5">&#9670;&nbsp;</a></span>tenbitDS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jazz_main::tenbitDS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The binary ten bits of "//" double-slash to identify web source interface. </p>
 
 </div>
 </div>

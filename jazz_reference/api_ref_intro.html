@@ -417,13 +417,38 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <h2 id="api-introduction">API introduction</h2>
+  <div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> In version 0.5+ the API is full redesigned. This frequently updated document is the reference
+on what is currently being implemented.</div>
 
-<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> In version 0.4.1 the API has been redesigned. This is updated frequently.</div>
+<h2 id="api-introduction-the-different-apis">API introduction: the different APIs</h2>
 
-<h3 id="lvalue-and-rvalue"><code class="language-plaintext highlighter-rouge">lvalue</code> and <code class="language-plaintext highlighter-rouge">rvalue</code></h3>
+<h3 id="the-c-api">The C++ API</h3>
 
-<p>Take their names from formal language theory. They are the parts of an assignment. The left of the <code class="language-plaintext highlighter-rouge">=</code> operator is what “is assigned to” is the <code class="language-plaintext highlighter-rouge">lvalue</code> and the right what “is evaluated” is the <code class="language-plaintext highlighter-rouge">rvalue</code>.</p>
+<p>Direct linking of C++ objects into scripting languages has been abandoned. Now Jazz is a C++ framework that can be (and usually is)
+implemented as an http server. You can use any of the levels of the C++ framework (jazz_elements, jazz_bebop and jazz_agency) that
+exist below the http server and create unlimited Jazz applications. This is the C++ API. The reference are the methods of the main
+classes as found in the <a href="develop_jazz02/index.html">programming documentation </a>.</p>
+
+<h3 id="the-beat-api">The BEAT API</h3>
+
+<p>The classes used to handle data and code, are <code class="language-plaintext highlighter-rouge">Block</code>, <code class="language-plaintext highlighter-rouge">Tuple</code>, <code class="language-plaintext highlighter-rouge">Kind</code> and <code class="language-plaintext highlighter-rouge">Field</code>. They all inherit from <code class="language-plaintext highlighter-rouge">Block</code>, so we will
+refer to them generically as blocks. Blocks require some <code class="language-plaintext highlighter-rouge">Container</code> (which is a <code class="language-plaintext highlighter-rouge">Service</code>) to keep them. At the minimum, they will be
+just memory blocks allocated by a service. The four services providing different functionality: allocation, persistence, networking and
+streaming are known respectively as: <code class="language-plaintext highlighter-rouge">Volatile</code>, <code class="language-plaintext highlighter-rouge">Persisted</code>, <code class="language-plaintext highlighter-rouge">Cluster</code> and <code class="language-plaintext highlighter-rouge">Flux</code>. They all inherit from the one to their left, so the
+service <code class="language-plaintext highlighter-rouge">Flux</code> can provide the whole block management API.</p>
+
+<p>The http server has an instance of a <code class="language-plaintext highlighter-rouge">Flux</code> object known as <code class="language-plaintext highlighter-rouge">BEAT</code> (Capitalized since it is a global variable in the C++ server).</p>
+
+<p>The BEAT API contains everything required to create, (complete or partial) read, (complete or partial) update and delete blocks of data
+and code. It does not include running, linking nor compiling opcodes or Bebop functions.</p>
+
+<h4 id="using-beat-in-bebop">Using BEAT in Bebop</h4>
+
+<h4 id="using-beat-from-the-rest-api">Using BEAT from the REST API</h4>
+
+<p>blocks ()</p>
+
+<h3 id="the-rest-api">The REST API</h3>
 
 <p><br /></p>
 
@@ -451,7 +476,7 @@ $('#toc').on('click', 'a', function() {
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2021 kaalam.ai. All rights reserved. <br />
- Site last generated: Jan 3, 2021 <br />
+ Site last generated: Jan 4, 2021 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>
