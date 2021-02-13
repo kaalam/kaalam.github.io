@@ -29,7 +29,7 @@ var searchData=
   ['cmd_5fstart_47',['CMD_START',['../main_8h.html#ab905e6aff2332984df0552c6b50203f2',1,'main.h']]],
   ['cmd_5fstatus_48',['CMD_STATUS',['../main_8h.html#a25e21625c1e6a3d5fefce646e33344e8',1,'main.h']]],
   ['cmd_5fstop_49',['CMD_STOP',['../main_8h.html#a46dc7ae84992bfe62cc00731959a67f4',1,'main.h']]],
-  ['config_50',['config',['../classjazz__elements_1_1ConfigFile.html#a742ade6ac89b41888851f3d4aafcbe31',1,'jazz_elements::ConfigFile::config()'],['../namespacejazz__main.html#a255f8360c29618bbb1c9b89cc50cf8f6',1,'jazz_main::CONFIG()']]],
+  ['config_50',['config',['../classjazz__elements_1_1ConfigFile.html#a742ade6ac89b41888851f3d4aafcbe31',1,'jazz_elements::ConfigFile::config()'],['../namespacejazz__main.html#a84b0e5c69e4a0011482591eaf87fbdb6',1,'jazz_main::CONFIG()'],['../namespacejazz__main.html#a255f8360c29618bbb1c9b89cc50cf8f6',1,'jazz_main::CONFIG(JAZZ_DEFAULT_CONFIG_PATH)']]],
   ['configfile_51',['ConfigFile',['../classjazz__elements_1_1ConfigFile.html',1,'jazz_elements::ConfigFile'],['../classjazz__elements_1_1ConfigFile.html#a5783ab78accbf1666500ad1095aef9ec',1,'jazz_elements::ConfigFile::ConfigFile()']]],
   ['core_2ecpp_52',['core.cpp',['../core_8cpp.html',1,'']]],
   ['core_2eh_53',['core.h',['../core_8h.html',1,'']]],
