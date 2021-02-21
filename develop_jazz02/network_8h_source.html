@@ -106,7 +106,7 @@ $(function() {
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">// #include &lt;stl_whatever&gt;</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="tuple_8h.html">src/jazz_elements/tuple.h</a>&quot;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="persisted_8h.html">src/jazz_elements/persisted.h</a>&quot;</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#if defined CATCH_TEST</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#ifndef INCLUDED_JAZZ_CATCH2</span></div>
@@ -125,32 +125,48 @@ $(function() {
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacejazz__elements.html">jazz_elements</a></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classjazz__elements_1_1Cluster.html">   61</a></span>&#160;<span class="keyword">class </span><a class="code" href="classjazz__elements_1_1Cluster.html">Cluster</a> : <span class="keyword">public</span> <a class="code" href="classjazz__elements_1_1Service.html">Service</a> {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="classjazz__elements_1_1Cluster.html#ad7eb991444afe3a4571499d03e24b2f2">Cluster</a> (<a class="code" href="namespacejazz__elements.html#a54e0e020637fffc86de95ffdd302f4a8">pLogger</a>     a_logger,</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                 <a class="code" href="namespacejazz__elements.html#a2ea64c8750eeedeb68690603dacceeab">pConfigFile</a> a_config);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <a class="code" href="namespacejazz__elements.html#a3afa055be2491c07ae68adccc6d730a5">Service_ErrorCode</a> <a class="code" href="classjazz__elements_1_1Cluster.html#a9e2970ae3ddae187bb8468bd36aa93f3">start</a>     ();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="namespacejazz__elements.html#a3afa055be2491c07ae68adccc6d730a5">Service_ErrorCode</a> <a class="code" href="classjazz__elements_1_1Cluster.html#aeae2deba9d1a53b05dcbda21e33ba385">shut_down</a> (<span class="keywordtype">bool</span> restarting_service = <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classjazz__elements_1_1Cluster.html">   60</a></span>&#160;<span class="keyword">class </span><a class="code" href="classjazz__elements_1_1Cluster.html">Cluster</a> : <span class="keyword">public</span> <a class="code" href="classjazz__elements_1_1Service.html">Service</a> {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;};</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classjazz__elements_1_1Remote.html">   71</a></span>&#160;<span class="keyword">class </span><a class="code" href="classjazz__elements_1_1Remote.html">Remote</a> : <span class="keyword">public</span> <a class="code" href="classjazz__elements_1_1Container.html">Container</a> {</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;} <span class="comment">// namespace jazz_elements</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif // ifndef INCLUDED_JAZZ_ELEMENTS_NETWORK</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;};</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classjazz__elements_1_1Group.html">   82</a></span>&#160;<span class="keyword">class </span><a class="code" href="classjazz__elements_1_1Group.html">Group</a> : <span class="keyword">public</span> <a class="code" href="classjazz__elements_1_1Tuple.html">Tuple</a> {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;};</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="classjazz__elements_1_1Index.html">   93</a></span>&#160;<span class="keyword">class </span><a class="code" href="classjazz__elements_1_1Index.html">Index</a> : <span class="keyword">public</span> <a class="code" href="classjazz__elements_1_1Block.html">Block</a> {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;};</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;} <span class="comment">// namespace jazz_elements</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#endif // ifndef INCLUDED_JAZZ_ELEMENTS_NETWORK</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="anamespacejazz__elements_html_a2ea64c8750eeedeb68690603dacceeab"><div class="ttname"><a href="namespacejazz__elements.html#a2ea64c8750eeedeb68690603dacceeab">jazz_elements::pConfigFile</a></div><div class="ttdeci">class ConfigFile * pConfigFile</div><div class="ttdef"><b>Definition:</b> utils.h:133</div></div>
-<div class="ttc" id="aclassjazz__elements_1_1Service_html"><div class="ttname"><a href="classjazz__elements_1_1Service.html">jazz_elements::Service</a></div><div class="ttdef"><b>Definition:</b> utils.h:206</div></div>
-<div class="ttc" id="anamespacejazz__elements_html_a54e0e020637fffc86de95ffdd302f4a8"><div class="ttname"><a href="namespacejazz__elements.html#a54e0e020637fffc86de95ffdd302f4a8">jazz_elements::pLogger</a></div><div class="ttdeci">class Logger * pLogger</div><div class="ttdef"><b>Definition:</b> utils.h:134</div></div>
-<div class="ttc" id="anamespacejazz__elements_html_a3afa055be2491c07ae68adccc6d730a5"><div class="ttname"><a href="namespacejazz__elements.html#a3afa055be2491c07ae68adccc6d730a5">jazz_elements::Service_ErrorCode</a></div><div class="ttdeci">int Service_ErrorCode</div><div class="ttdoc">Type returned by the Service API.</div><div class="ttdef"><b>Definition:</b> utils.h:102</div></div>
-<div class="ttc" id="aclassjazz__elements_1_1Cluster_html_aeae2deba9d1a53b05dcbda21e33ba385"><div class="ttname"><a href="classjazz__elements_1_1Cluster.html#aeae2deba9d1a53b05dcbda21e33ba385">jazz_elements::Cluster::shut_down</a></div><div class="ttdeci">Service_ErrorCode shut_down(bool restarting_service=false)</div><div class="ttdef"><b>Definition:</b> network.cpp:108</div></div>
+<div class="ttc" id="aclassjazz__elements_1_1Container_html"><div class="ttname"><a href="classjazz__elements_1_1Container.html">jazz_elements::Container</a></div><div class="ttdoc">Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...</div><div class="ttdef"><b>Definition:</b> container.h:66</div></div>
+<div class="ttc" id="aclassjazz__elements_1_1Group_html"><div class="ttname"><a href="classjazz__elements_1_1Group.html">jazz_elements::Group</a></div><div class="ttdef"><b>Definition:</b> network.h:82</div></div>
+<div class="ttc" id="aclassjazz__elements_1_1Service_html"><div class="ttname"><a href="classjazz__elements_1_1Service.html">jazz_elements::Service</a></div><div class="ttdef"><b>Definition:</b> utils.h:207</div></div>
+<div class="ttc" id="apersisted_8h_html"><div class="ttname"><a href="persisted_8h.html">persisted.h</a></div></div>
+<div class="ttc" id="aclassjazz__elements_1_1Block_html"><div class="ttname"><a href="classjazz__elements_1_1Block.html">jazz_elements::Block</a></div><div class="ttdef"><b>Definition:</b> block.h:83</div></div>
 <div class="ttc" id="anamespacejazz__elements_html"><div class="ttname"><a href="namespacejazz__elements.html">jazz_elements</a></div><div class="ttdoc">Basic Jazz code-less structures and constants.</div><div class="ttdef"><b>Definition:</b> block.cpp:41</div></div>
-<div class="ttc" id="aclassjazz__elements_1_1Cluster_html_ad7eb991444afe3a4571499d03e24b2f2"><div class="ttname"><a href="classjazz__elements_1_1Cluster.html#ad7eb991444afe3a4571499d03e24b2f2">jazz_elements::Cluster::Cluster</a></div><div class="ttdeci">Cluster(pLogger a_logger, pConfigFile a_config)</div><div class="ttdef"><b>Definition:</b> network.cpp:93</div></div>
-<div class="ttc" id="atuple_8h_html"><div class="ttname"><a href="tuple_8h.html">tuple.h</a></div></div>
-<div class="ttc" id="aclassjazz__elements_1_1Cluster_html_a9e2970ae3ddae187bb8468bd36aa93f3"><div class="ttname"><a href="classjazz__elements_1_1Cluster.html#a9e2970ae3ddae187bb8468bd36aa93f3">jazz_elements::Cluster::start</a></div><div class="ttdeci">Service_ErrorCode start()</div><div class="ttdef"><b>Definition:</b> network.cpp:98</div></div>
-<div class="ttc" id="aclassjazz__elements_1_1Cluster_html"><div class="ttname"><a href="classjazz__elements_1_1Cluster.html">jazz_elements::Cluster</a></div><div class="ttdoc">Cluster: A Service to manage data objects across a cluster of Jazz servers.</div><div class="ttdef"><b>Definition:</b> network.h:61</div></div>
+<div class="ttc" id="aclassjazz__elements_1_1Index_html"><div class="ttname"><a href="classjazz__elements_1_1Index.html">jazz_elements::Index</a></div><div class="ttdef"><b>Definition:</b> network.h:93</div></div>
+<div class="ttc" id="aclassjazz__elements_1_1Remote_html"><div class="ttname"><a href="classjazz__elements_1_1Remote.html">jazz_elements::Remote</a></div><div class="ttdef"><b>Definition:</b> network.h:71</div></div>
+<div class="ttc" id="aclassjazz__elements_1_1Tuple_html"><div class="ttname"><a href="classjazz__elements_1_1Tuple.html">jazz_elements::Tuple</a></div><div class="ttdoc">A tuple is a tree of blocks where each edge has a name. A kind is a tuple with indexed dimensions.</div><div class="ttdef"><b>Definition:</b> tuple.h:68</div></div>
+<div class="ttc" id="aclassjazz__elements_1_1Cluster_html"><div class="ttname"><a href="classjazz__elements_1_1Cluster.html">jazz_elements::Cluster</a></div><div class="ttdoc">aaa: aaa.</div><div class="ttdef"><b>Definition:</b> network.h:60</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

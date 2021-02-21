@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['logger_263',['Logger',['../classjazz__elements_1_1Logger.html',1,'jazz_elements']]]
+  ['index_275',['Index',['../classjazz__elements_1_1Index.html',1,'jazz_elements']]]
 ];
