@@ -95,7 +95,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6f3d67058dba17a47ae9a5a2a7e4a263"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a6f3d67058dba17a47ae9a5a2a7e4a263">Container</a> (<a class="el" href="namespacejazz__elements.html#a54e0e020637fffc86de95ffdd302f4a8">pLogger</a> a_logger, <a class="el" href="namespacejazz__elements.html#a2ea64c8750eeedeb68690603dacceeab">pConfigFile</a> a_config)</td></tr>
 <tr class="separator:a6f3d67058dba17a47ae9a5a2a7e4a263"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5951a598732231b0aee40b58b9d8de78"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#a3afa055be2491c07ae68adccc6d730a5">Service_ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a5951a598732231b0aee40b58b9d8de78">start</a> ()</td></tr>
-<tr class="memdesc:a5951a598732231b0aee40b58b9d8de78"><td class="mdescLeft">&#160;</td><td class="mdescRight">A simple <a class="el" href="classjazz__elements_1_1Container.html#a5951a598732231b0aee40b58b9d8de78" title="A simple start()/shut_down() interface (Restart is: shut_down(TRUE):start())">start()</a>/shut_down() interface (Restart is: shut_down(TRUE):<a class="el" href="classjazz__elements_1_1Container.html#a5951a598732231b0aee40b58b9d8de78" title="A simple start()/shut_down() interface (Restart is: shut_down(TRUE):start())">start()</a>)  <a href="classjazz__elements_1_1Container.html#a5951a598732231b0aee40b58b9d8de78">More...</a><br /></td></tr>
 <tr class="separator:a5951a598732231b0aee40b58b9d8de78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e3786a7689c1050b787666ca775d171"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#a3afa055be2491c07ae68adccc6d730a5">Service_ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a1e3786a7689c1050b787666ca775d171">shut_down</a> (bool restarting_service=false)</td></tr>
 <tr class="separator:a1e3786a7689c1050b787666ca775d171"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,19 +168,11 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Stop the <a class="el" href="classjazz__elements_1_1Service.html">Service</a></p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">restarting_service</td><td>Informs the service that it is a restart. If a restart is error free, all services will be started again. If not, it is a server shutdown.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR if successful, some error if not.</dd></dl>
-<p>This method should be overriden by something that actually stops the service, possibly using the configuration file in pConf. </p>
+<p>TODO: Document <a class="el" href="classjazz__elements_1_1Container.html#a1e3786a7689c1050b787666ca775d171">Container::shut_down()</a> </p>
 
 <p>Reimplemented from <a class="el" href="classjazz__elements_1_1Service.html#abb5117f0eb61a887dcc54f629b27b23c">jazz_elements::Service</a>.</p>
 
-<p>Reimplemented in <a class="el" href="classjazz__elements_1_1Persisted.html#aa77269dd4a152dda88d079b04f0d3fe7">jazz_elements::Persisted</a>, and <a class="el" href="classjazz__elements_1_1Volatile.html#a8abfdca408f69f020b7a03434faf614a">jazz_elements::Volatile</a>.</p>
+<p>Reimplemented in <a class="el" href="classjazz__elements_1_1Remote.html#a159bf86fd2b1b07b90f65201c0b2cb37">jazz_elements::Remote</a>, <a class="el" href="classjazz__elements_1_1Persisted.html#aa77269dd4a152dda88d079b04f0d3fe7">jazz_elements::Persisted</a>, and <a class="el" href="classjazz__elements_1_1Volatile.html#a8abfdca408f69f020b7a03434faf614a">jazz_elements::Volatile</a>.</p>
 
 </div>
 </div>
@@ -207,20 +198,17 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>A simple <a class="el" href="classjazz__elements_1_1Container.html#a5951a598732231b0aee40b58b9d8de78" title="A simple start()/shut_down() interface (Restart is: shut_down(TRUE):start())">start()</a>/shut_down() interface (Restart is: shut_down(TRUE):<a class="el" href="classjazz__elements_1_1Container.html#a5951a598732231b0aee40b58b9d8de78" title="A simple start()/shut_down() interface (Restart is: shut_down(TRUE):start())">start()</a>) </p>
-<p>Start (or restart) the <a class="el" href="classjazz__elements_1_1Service.html">Service</a></p>
-<dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR if successful, some error if not.</dd></dl>
-<p>This method should be overriden by something that actually starts the service, possibly using the configuration file in pConf. </p>
+<p>TODO: Document <a class="el" href="classjazz__elements_1_1Container.html#a5951a598732231b0aee40b58b9d8de78">Container::start()</a> </p>
 
 <p>Reimplemented from <a class="el" href="classjazz__elements_1_1Service.html#a21eb061601ebc8b8e0611b97c727ecf1">jazz_elements::Service</a>.</p>
 
-<p>Reimplemented in <a class="el" href="classjazz__elements_1_1Persisted.html#a68d835af4742de035023b976e1f9769a">jazz_elements::Persisted</a>, and <a class="el" href="classjazz__elements_1_1Volatile.html#a5375915dbf891254573d08e539b8d7e3">jazz_elements::Volatile</a>.</p>
+<p>Reimplemented in <a class="el" href="classjazz__elements_1_1Remote.html#a193d2979534cb6acc3dda867abfa5dff">jazz_elements::Remote</a>, <a class="el" href="classjazz__elements_1_1Persisted.html#a68d835af4742de035023b976e1f9769a">jazz_elements::Persisted</a>, and <a class="el" href="classjazz__elements_1_1Volatile.html#a5375915dbf891254573d08e539b8d7e3">jazz_elements::Volatile</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="container_8h_source.html">container.h</a></li>
+<li><a class="el" href="container_8cpp.html">container.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
