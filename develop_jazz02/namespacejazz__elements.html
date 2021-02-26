@@ -93,8 +93,6 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html">Container</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>: A <a class="el" href="classjazz__elements_1_1Service.html">Service</a> to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of this.  <a href="classjazz__elements_1_1Container.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Filter.html">Filter</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1FilterSize.html">FilterSize</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Flux.html">Flux</a></td></tr>
@@ -103,6 +101,9 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Group.html">Group</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Index.html">Index</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1ItemHeader.html">ItemHeader</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header for an item (of a <a class="el" href="classjazz__elements_1_1Kind.html">Kind</a> or <a class="el" href="classjazz__elements_1_1Tuple.html" title="A tuple is a tree of blocks where each edge has a name. A kind is a tuple with indexed dimensions.">Tuple</a>)  <a href="structjazz__elements_1_1ItemHeader.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Kind.html">Kind</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -122,7 +123,7 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">aaa: aaa.  <a href="classjazz__elements_1_1Table.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionjazz__elements_1_1Tensor.html">Tensor</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tensor of cell size 1, 4 or 8.  <a href="unionjazz__elements_1_1Tensor.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tensor of cell size 1, 4, 8 or sizeof(BlockHeader)  <a href="unionjazz__elements_1_1Tensor.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionjazz__elements_1_1TensorDim.html">TensorDim</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,22 +136,24 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ae1feef773dac451ae5a84749295b9374"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; int, const char * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#ae1feef773dac451ae5a84749295b9374">AllAttributes</a></td></tr>
-<tr class="separator:ae1feef773dac451ae5a84749295b9374"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2f703c26500ad2cdcec139a7e2000c4"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; int, const char * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#ad2f703c26500ad2cdcec139a7e2000c4">AttributeMap</a></td></tr>
+<tr class="separator:ad2f703c26500ad2cdcec139a7e2000c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96544e338b7cc4cbd8cb03658a044228"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structjazz__elements_1_1BlockHeader.html">BlockHeader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a96544e338b7cc4cbd8cb03658a044228">pBlockHeader</a></td></tr>
 <tr class="separator:a96544e338b7cc4cbd8cb03658a044228"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2275810354345e22c1c5ca21a8bb714b"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structjazz__elements_1_1StringBuffer.html">StringBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a2275810354345e22c1c5ca21a8bb714b">pStringBuffer</a></td></tr>
 <tr class="separator:a2275810354345e22c1c5ca21a8bb714b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89b6ae8b08dfbb376caafc742840adf6"><td class="memItemLeft" align="right" valign="top">typedef class <a class="el" href="classjazz__elements_1_1Block.html">Block</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a></td></tr>
 <tr class="separator:a89b6ae8b08dfbb376caafc742840adf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a863c3671e3732a582cd79d8c04f6df39"><td class="memItemLeft" align="right" valign="top">typedef class <a class="el" href="classjazz__elements_1_1Filter.html">Filter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a863c3671e3732a582cd79d8c04f6df39">pFilter</a></td></tr>
-<tr class="separator:a863c3671e3732a582cd79d8c04f6df39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99c0160368f44b8120e563d29a1c1939"><td class="memItemLeft" align="right" valign="top">typedef class <a class="el" href="classjazz__elements_1_1Kind.html">Kind</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a99c0160368f44b8120e563d29a1c1939">pKind</a></td></tr>
 <tr class="memdesc:a99c0160368f44b8120e563d29a1c1939"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classjazz__elements_1_1Kind.html">Kind</a>: A type definition for complex Jazz objects.  <a href="namespacejazz__elements.html#a99c0160368f44b8120e563d29a1c1939">More...</a><br /></td></tr>
 <tr class="separator:a99c0160368f44b8120e563d29a1c1939"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7e5adf7a32b3080ea959153d2b6aee9"><td class="memItemLeft" align="right" valign="top">typedef std::chrono::steady_clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#aa7e5adf7a32b3080ea959153d2b6aee9">TimePoint</a></td></tr>
 <tr class="memdesc:aa7e5adf7a32b3080ea959153d2b6aee9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A time point stored as 8 bytes.  <a href="namespacejazz__elements.html#aa7e5adf7a32b3080ea959153d2b6aee9">More...</a><br /></td></tr>
 <tr class="separator:aa7e5adf7a32b3080ea959153d2b6aee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ad860bc61f166feee18a3da3ac44868"><td class="memItemLeft" align="right" valign="top">typedef char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a4ad860bc61f166feee18a3da3ac44868">ApiBuffer</a>[<a class="el" href="types_8h.html#a45237870b6d0f174599247c678d20f12">MAX_API_BUFF_LENGTH</a>]</td></tr>
+<tr class="separator:a4ad860bc61f166feee18a3da3ac44868"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b0a4554188d19aab214be35e1ea094d"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="namespacejazz__elements.html#a4ad860bc61f166feee18a3da3ac44868">ApiBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a6b0a4554188d19aab214be35e1ea094d">pApiBuffer</a></td></tr>
+<tr class="separator:a6b0a4554188d19aab214be35e1ea094d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3afa055be2491c07ae68adccc6d730a5"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a3afa055be2491c07ae68adccc6d730a5">Service_ErrorCode</a></td></tr>
 <tr class="memdesc:a3afa055be2491c07ae68adccc6d730a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type returned by the <a class="el" href="classjazz__elements_1_1Service.html">Service</a> API.  <a href="namespacejazz__elements.html#a3afa055be2491c07ae68adccc6d730a5">More...</a><br /></td></tr>
 <tr class="separator:a3afa055be2491c07ae68adccc6d730a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -201,14 +204,42 @@ Variables</h2></td></tr>
 <p>This namespace includes utilities, types, constants and structures used by <a class="el" href="classjazz__elements_1_1Block.html">Block</a>, all different block-based data and code structures (<a class="el" href="classjazz__elements_1_1Tuple.html" title="A tuple is a tree of blocks where each edge has a name. A kind is a tuple with indexed dimensions.">Tuple</a>, <a class="el" href="classjazz__elements_1_1Kind.html">Kind</a> and Field). All the Services used to allocate/store and communicate blocks (<a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a>, <a class="el" href="classjazz__elements_1_1Persisted.html" title="Persisted: A Service to manage data objects in LMDB.">Persisted</a>, <a class="el" href="classjazz__elements_1_1Cluster.html" title="aaa: aaa.">Cluster</a> and <a class="el" href="classjazz__elements_1_1Flux.html" title="aaa: aaa.">Flux</a>).</p>
 <p>All together is instanced in the server as the BEAT (of Jazz). </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
-<a id="ae1feef773dac451ae5a84749295b9374"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae1feef773dac451ae5a84749295b9374">&#9670;&nbsp;</a></span>AllAttributes</h2>
+<a id="a4ad860bc61f166feee18a3da3ac44868"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ad860bc61f166feee18a3da3ac44868">&#9670;&nbsp;</a></span>ApiBuffer</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::map&lt;int, const char *&gt; <a class="el" href="namespacejazz__elements.html#ae1feef773dac451ae5a84749295b9374">jazz_elements::AllAttributes</a></td>
+          <td class="memname">typedef char jazz_elements::ApiBuffer[<a class="el" href="types_8h.html#a45237870b6d0f174599247c678d20f12">MAX_API_BUFF_LENGTH</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad2f703c26500ad2cdcec139a7e2000c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2f703c26500ad2cdcec139a7e2000c4">&#9670;&nbsp;</a></span>AttributeMap</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::map&lt;int, const char *&gt; <a class="el" href="namespacejazz__elements.html#ad2f703c26500ad2cdcec139a7e2000c4">jazz_elements::AttributeMap</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6b0a4554188d19aab214be35e1ea094d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b0a4554188d19aab214be35e1ea094d">&#9670;&nbsp;</a></span>pApiBuffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="namespacejazz__elements.html#a4ad860bc61f166feee18a3da3ac44868">ApiBuffer</a>* <a class="el" href="namespacejazz__elements.html#a6b0a4554188d19aab214be35e1ea094d">jazz_elements::pApiBuffer</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -251,20 +282,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">typedef class <a class="el" href="classjazz__elements_1_1ConfigFile.html">ConfigFile</a>* <a class="el" href="namespacejazz__elements.html#a2ea64c8750eeedeb68690603dacceeab">jazz_elements::pConfigFile</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a863c3671e3732a582cd79d8c04f6df39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a863c3671e3732a582cd79d8c04f6df39">&#9670;&nbsp;</a></span>pFilter</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef class <a class="el" href="classjazz__elements_1_1Filter.html">Filter</a>* <a class="el" href="namespacejazz__elements.html#a863c3671e3732a582cd79d8c04f6df39">jazz_elements::pFilter</a></td>
         </tr>
       </table>
 </div><div class="memdoc">

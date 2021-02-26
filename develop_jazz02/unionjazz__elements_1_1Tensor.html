@@ -73,7 +73,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>A tensor of cell size 1, 4 or 8.  
+<p>A tensor of cell size 1, 4, 8 or sizeof(BlockHeader)  
  <a href="unionjazz__elements_1_1Tensor.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="types_8h_source.html">types.h</a>&gt;</code></p>
@@ -84,29 +84,32 @@ Data Fields</h2></td></tr>
 <tr class="memdesc:a71bf76d56fec26eb3942d5201a51079c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cell size for CELL_TYPE_BYTE.  <a href="unionjazz__elements_1_1Tensor.html#a71bf76d56fec26eb3942d5201a51079c">More...</a><br /></td></tr>
 <tr class="separator:a71bf76d56fec26eb3942d5201a51079c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae30a8d68c986364a55a8ceafd9075be"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionjazz__elements_1_1Tensor.html#aae30a8d68c986364a55a8ceafd9075be">cell_bool</a> [0]</td></tr>
-<tr class="memdesc:aae30a8d68c986364a55a8ceafd9075be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cell size for CELL_TYPE_BYTE_BOOLEAN.  <a href="unionjazz__elements_1_1Tensor.html#aae30a8d68c986364a55a8ceafd9075be">More...</a><br /></td></tr>
+<tr class="memdesc:aae30a8d68c986364a55a8ceafd9075be"><td class="mdescLeft">&#160;</td><td class="mdescRight">.. CELL_TYPE_BYTE_BOOLEAN  <a href="unionjazz__elements_1_1Tensor.html#aae30a8d68c986364a55a8ceafd9075be">More...</a><br /></td></tr>
 <tr class="separator:aae30a8d68c986364a55a8ceafd9075be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4367f7a5bb16411a689c5a4cf7eda6d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionjazz__elements_1_1Tensor.html#ad4367f7a5bb16411a689c5a4cf7eda6d">cell_int</a> [0]</td></tr>
-<tr class="memdesc:ad4367f7a5bb16411a689c5a4cf7eda6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cell size for CELL_TYPE_INTEGER, CELL_TYPE_FACTOR, CELL_TYPE_GRADE, CELL_TYPE_BOOLEAN and CELL_TYPE_STRING.  <a href="unionjazz__elements_1_1Tensor.html#ad4367f7a5bb16411a689c5a4cf7eda6d">More...</a><br /></td></tr>
+<tr class="memdesc:ad4367f7a5bb16411a689c5a4cf7eda6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">.. CELL_TYPE_INTEGER, CELL_TYPE_FACTOR, CELL_TYPE_GRADE, CELL_TYPE_BOOLEAN and CELL_TYPE_STRING  <a href="unionjazz__elements_1_1Tensor.html#ad4367f7a5bb16411a689c5a4cf7eda6d">More...</a><br /></td></tr>
 <tr class="separator:ad4367f7a5bb16411a689c5a4cf7eda6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fbaf6b2848c1091188a74ba20d40b66"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionjazz__elements_1_1Tensor.html#a4fbaf6b2848c1091188a74ba20d40b66">cell_uint</a> [0]</td></tr>
-<tr class="memdesc:a4fbaf6b2848c1091188a74ba20d40b66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cell size for matching CELL_TYPE_SINGLE or CELL_TYPE_BOOLEAN as 32 bit unsigned.  <a href="unionjazz__elements_1_1Tensor.html#a4fbaf6b2848c1091188a74ba20d40b66">More...</a><br /></td></tr>
+<tr class="memdesc:a4fbaf6b2848c1091188a74ba20d40b66"><td class="mdescLeft">&#160;</td><td class="mdescRight">.. CELL_TYPE_SINGLE or CELL_TYPE_BOOLEAN as 32 bit unsigned  <a href="unionjazz__elements_1_1Tensor.html#a4fbaf6b2848c1091188a74ba20d40b66">More...</a><br /></td></tr>
 <tr class="separator:a4fbaf6b2848c1091188a74ba20d40b66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af92d25a600f67f5474f20ee16ac53e08"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionjazz__elements_1_1Tensor.html#af92d25a600f67f5474f20ee16ac53e08">cell_single</a> [0]</td></tr>
-<tr class="memdesc:af92d25a600f67f5474f20ee16ac53e08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cell size for CELL_TYPE_SINGLE.  <a href="unionjazz__elements_1_1Tensor.html#af92d25a600f67f5474f20ee16ac53e08">More...</a><br /></td></tr>
+<tr class="memdesc:af92d25a600f67f5474f20ee16ac53e08"><td class="mdescLeft">&#160;</td><td class="mdescRight">.. CELL_TYPE_SINGLE  <a href="unionjazz__elements_1_1Tensor.html#af92d25a600f67f5474f20ee16ac53e08">More...</a><br /></td></tr>
 <tr class="separator:af92d25a600f67f5474f20ee16ac53e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af05deaffcf6e5c0f1b9bd5ca5c2276dc"><td class="memItemLeft" align="right" valign="top">long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionjazz__elements_1_1Tensor.html#af05deaffcf6e5c0f1b9bd5ca5c2276dc">cell_longint</a> [0]</td></tr>
-<tr class="memdesc:af05deaffcf6e5c0f1b9bd5ca5c2276dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cell size for CELL_TYPE_LONG_INTEGER and CELL_TYPE_TIME.  <a href="unionjazz__elements_1_1Tensor.html#af05deaffcf6e5c0f1b9bd5ca5c2276dc">More...</a><br /></td></tr>
+<tr class="memdesc:af05deaffcf6e5c0f1b9bd5ca5c2276dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">.. CELL_TYPE_LONG_INTEGER and CELL_TYPE_TIME  <a href="unionjazz__elements_1_1Tensor.html#af05deaffcf6e5c0f1b9bd5ca5c2276dc">More...</a><br /></td></tr>
 <tr class="separator:af05deaffcf6e5c0f1b9bd5ca5c2276dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9902620604520df8840e73d8b05b50e4"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionjazz__elements_1_1Tensor.html#a9902620604520df8840e73d8b05b50e4">cell_ulongint</a> [0]</td></tr>
-<tr class="memdesc:a9902620604520df8840e73d8b05b50e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cell size for matching CELL_TYPE_DOUBLE or CELL_TYPE_TIME as 64 bit unsigned.  <a href="unionjazz__elements_1_1Tensor.html#a9902620604520df8840e73d8b05b50e4">More...</a><br /></td></tr>
+<tr class="memdesc:a9902620604520df8840e73d8b05b50e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">.. CELL_TYPE_DOUBLE or CELL_TYPE_TIME as 64 bit unsigned  <a href="unionjazz__elements_1_1Tensor.html#a9902620604520df8840e73d8b05b50e4">More...</a><br /></td></tr>
 <tr class="separator:a9902620604520df8840e73d8b05b50e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01e0eb193675392963585ea3f3fe94e0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionjazz__elements_1_1Tensor.html#a01e0eb193675392963585ea3f3fe94e0">cell_double</a> [0]</td></tr>
-<tr class="memdesc:a01e0eb193675392963585ea3f3fe94e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cell size for CELL_TYPE_DOUBLE.  <a href="unionjazz__elements_1_1Tensor.html#a01e0eb193675392963585ea3f3fe94e0">More...</a><br /></td></tr>
+<tr class="memdesc:a01e0eb193675392963585ea3f3fe94e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">.. CELL_TYPE_DOUBLE  <a href="unionjazz__elements_1_1Tensor.html#a01e0eb193675392963585ea3f3fe94e0">More...</a><br /></td></tr>
 <tr class="separator:a01e0eb193675392963585ea3f3fe94e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19ea224974468e9f7206892e6a6d1b61"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structjazz__elements_1_1ItemHeader.html">ItemHeader</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionjazz__elements_1_1Tensor.html#a19ea224974468e9f7206892e6a6d1b61">cell_item</a> [0]</td></tr>
+<tr class="memdesc:a19ea224974468e9f7206892e6a6d1b61"><td class="mdescLeft">&#160;</td><td class="mdescRight">.. An array of <a class="el" href="structjazz__elements_1_1BlockHeader.html" title="Header for a Block.">BlockHeader</a> used by Kinds and Tuples  <a href="unionjazz__elements_1_1Tensor.html#a19ea224974468e9f7206892e6a6d1b61">More...</a><br /></td></tr>
+<tr class="separator:a19ea224974468e9f7206892e6a6d1b61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A tensor of cell size 1, 4 or 8. </p>
+<div class="textblock"><p>A tensor of cell size 1, 4, 8 or sizeof(BlockHeader) </p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="aae30a8d68c986364a55a8ceafd9075be"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aae30a8d68c986364a55a8ceafd9075be">&#9670;&nbsp;</a></span>cell_bool</h2>
@@ -120,7 +123,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Cell size for CELL_TYPE_BYTE_BOOLEAN. </p>
+<p>.. CELL_TYPE_BYTE_BOOLEAN </p>
 
 </div>
 </div>
@@ -152,7 +155,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Cell size for CELL_TYPE_DOUBLE. </p>
+<p>.. CELL_TYPE_DOUBLE </p>
 
 </div>
 </div>
@@ -168,7 +171,23 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Cell size for CELL_TYPE_INTEGER, CELL_TYPE_FACTOR, CELL_TYPE_GRADE, CELL_TYPE_BOOLEAN and CELL_TYPE_STRING. </p>
+<p>.. CELL_TYPE_INTEGER, CELL_TYPE_FACTOR, CELL_TYPE_GRADE, CELL_TYPE_BOOLEAN and CELL_TYPE_STRING </p>
+
+</div>
+</div>
+<a id="a19ea224974468e9f7206892e6a6d1b61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19ea224974468e9f7206892e6a6d1b61">&#9670;&nbsp;</a></span>cell_item</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structjazz__elements_1_1ItemHeader.html">ItemHeader</a> jazz_elements::Tensor::cell_item[0]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>.. An array of <a class="el" href="structjazz__elements_1_1BlockHeader.html" title="Header for a Block.">BlockHeader</a> used by Kinds and Tuples </p>
 
 </div>
 </div>
@@ -184,7 +203,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Cell size for CELL_TYPE_LONG_INTEGER and CELL_TYPE_TIME. </p>
+<p>.. CELL_TYPE_LONG_INTEGER and CELL_TYPE_TIME </p>
 
 </div>
 </div>
@@ -200,7 +219,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Cell size for CELL_TYPE_SINGLE. </p>
+<p>.. CELL_TYPE_SINGLE </p>
 
 </div>
 </div>
@@ -216,7 +235,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Cell size for matching CELL_TYPE_SINGLE or CELL_TYPE_BOOLEAN as 32 bit unsigned. </p>
+<p>.. CELL_TYPE_SINGLE or CELL_TYPE_BOOLEAN as 32 bit unsigned </p>
 
 </div>
 </div>
@@ -232,7 +251,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Cell size for matching CELL_TYPE_DOUBLE or CELL_TYPE_TIME as 64 bit unsigned. </p>
+<p>.. CELL_TYPE_DOUBLE or CELL_TYPE_TIME as 64 bit unsigned </p>
 
 </div>
 </div>

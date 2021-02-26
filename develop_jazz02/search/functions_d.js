@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['r_5fvalueofna_378',['R_ValueOfNA',['../namespacejazz__elements.html#a4d46e4f3ad15a5b0395e1daffbe5b950',1,'jazz_elements']]],
-  ['remote_379',['Remote',['../classjazz__elements_1_1Remote.html#a1f22ee7f300519cccf8bc8045a04963e',1,'jazz_elements::Remote']]],
-  ['remote_5ftesting_5fpoint_380',['remote_testing_point',['../namespacejazz__elements.html#a8adb030d4c0542aa3efbab96080cc982',1,'jazz_elements']]]
+  ['p_5fattribute_5fkeys_404',['p_attribute_keys',['../classjazz__elements_1_1Block.html#afeda09c2d7670146634988b40fc4ab5e',1,'jazz_elements::Block']]],
+  ['p_5fstring_5fbuffer_405',['p_string_buffer',['../classjazz__elements_1_1Block.html#a9d2b455977ea1760446d088f68b63d4f',1,'jazz_elements::Block']]],
+  ['parse_5fcommand_406',['parse_command',['../main_8cpp.html#a35ed3cd6ea33e76f6ee96284111cdd95',1,'main.cpp']]],
+  ['persisted_407',['Persisted',['../classjazz__elements_1_1Persisted.html#a1d7eff67e2869078bb4bbdaa0eea9424',1,'jazz_elements::Persisted']]]
 ];

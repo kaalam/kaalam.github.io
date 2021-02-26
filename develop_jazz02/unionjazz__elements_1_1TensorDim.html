@@ -78,15 +78,15 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a0c68e45ee5af23f5041bca88a3b32137"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionjazz__elements_1_1TensorDim.html#a0c68e45ee5af23f5041bca88a3b32137">dim</a> [<a class="el" href="types_8h.html#a5dfd5a365563c2e8cf13a83a127af9ac">MAX_TENSOR_RANK</a>]</td></tr>
-<tr class="memdesc:a0c68e45ee5af23f5041bca88a3b32137"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dimensions for the <a class="el" href="unionjazz__elements_1_1Tensor.html" title="A tensor of cell size 1, 4 or 8.">Tensor</a>. The product of all * (cell_type &amp; 0xff) &lt; 2 Gb.  <a href="unionjazz__elements_1_1TensorDim.html#a0c68e45ee5af23f5041bca88a3b32137">More...</a><br /></td></tr>
+<tr class="memdesc:a0c68e45ee5af23f5041bca88a3b32137"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dimensions for the <a class="el" href="unionjazz__elements_1_1Tensor.html" title="A tensor of cell size 1, 4, 8 or sizeof(BlockHeader)">Tensor</a>. The product of all * (cell_type &amp; 0xff) &lt; 2 Gb.  <a href="unionjazz__elements_1_1TensorDim.html#a0c68e45ee5af23f5041bca88a3b32137">More...</a><br /></td></tr>
 <tr class="separator:a0c68e45ee5af23f5041bca88a3b32137"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a894af6e8431a14c22f42206fbd757ee5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structjazz__elements_1_1FilterSize.html">FilterSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionjazz__elements_1_1TensorDim.html#a894af6e8431a14c22f42206fbd757ee5">filter</a></td></tr>
-<tr class="memdesc:a894af6e8431a14c22f42206fbd757ee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">When object is a <a class="el" href="classjazz__elements_1_1Filter.html">Filter</a> the second element is named filter.length rather than dim[1].  <a href="unionjazz__elements_1_1TensorDim.html#a894af6e8431a14c22f42206fbd757ee5">More...</a><br /></td></tr>
+<tr class="memdesc:a894af6e8431a14c22f42206fbd757ee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">When object is a Filter the second element is named filter.length rather than dim[1].  <a href="unionjazz__elements_1_1TensorDim.html#a894af6e8431a14c22f42206fbd757ee5">More...</a><br /></td></tr>
 <tr class="separator:a894af6e8431a14c22f42206fbd757ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The dimension of a tensor.</p>
-<p>The structure is declared as a union to make filter operation more elegant. A filter is a record that always has rank 1 and a size, but has an extra parameter, its length. Since dim[1] is not used (as rank is 1), it is a good place to store the length but remembering that dim[1] is the length is ugly. Therefore, the more elegant filter.length is an alias for dim[1]. </p>
+<p>The structure is declared as a union to make filter operation more elegant. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="a0c68e45ee5af23f5041bca88a3b32137"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0c68e45ee5af23f5041bca88a3b32137">&#9670;&nbsp;</a></span>dim</h2>
@@ -100,7 +100,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Dimensions for the <a class="el" href="unionjazz__elements_1_1Tensor.html" title="A tensor of cell size 1, 4 or 8.">Tensor</a>. The product of all * (cell_type &amp; 0xff) &lt; 2 Gb. </p>
+<p>Dimensions for the <a class="el" href="unionjazz__elements_1_1Tensor.html" title="A tensor of cell size 1, 4, 8 or sizeof(BlockHeader)">Tensor</a>. The product of all * (cell_type &amp; 0xff) &lt; 2 Gb. </p>
 
 </div>
 </div>
@@ -116,7 +116,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>When object is a <a class="el" href="classjazz__elements_1_1Filter.html">Filter</a> the second element is named filter.length rather than dim[1]. </p>
+<p>When object is a Filter the second element is named filter.length rather than dim[1]. </p>
 
 </div>
 </div>

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['allattributes_455',['AllAttributes',['../namespacejazz__elements.html#ae1feef773dac451ae5a84749295b9374',1,'jazz_elements']]]
+  ['apibuffer_490',['ApiBuffer',['../namespacejazz__elements.html#a4ad860bc61f166feee18a3da3ac44868',1,'jazz_elements']]],
+  ['attributemap_491',['AttributeMap',['../namespacejazz__elements.html#ad2f703c26500ad2cdcec139a7e2000c4',1,'jazz_elements']]]
 ];
