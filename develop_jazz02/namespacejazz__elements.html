@@ -103,9 +103,10 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Index.html">Index</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1ItemHeader.html">ItemHeader</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header for an item (of a <a class="el" href="classjazz__elements_1_1Kind.html">Kind</a> or <a class="el" href="classjazz__elements_1_1Tuple.html" title="A tuple is a tree of blocks where each edge has a name. A kind is a tuple with indexed dimensions.">Tuple</a>)  <a href="structjazz__elements_1_1ItemHeader.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header for an item (of a <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a> or <a class="el" href="classjazz__elements_1_1Tuple.html" title="A tuple is a tree of blocks where each edge has a name. A kind is a tuple with indexed dimensions.">Tuple</a>)  <a href="structjazz__elements_1_1ItemHeader.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Kind.html">Kind</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a>: A type definition for complex Jazz objects.  <a href="classjazz__elements_1_1Kind.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Logger.html">Logger</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,7 +146,6 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a89b6ae8b08dfbb376caafc742840adf6"><td class="memItemLeft" align="right" valign="top">typedef class <a class="el" href="classjazz__elements_1_1Block.html">Block</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a></td></tr>
 <tr class="separator:a89b6ae8b08dfbb376caafc742840adf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99c0160368f44b8120e563d29a1c1939"><td class="memItemLeft" align="right" valign="top">typedef class <a class="el" href="classjazz__elements_1_1Kind.html">Kind</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a99c0160368f44b8120e563d29a1c1939">pKind</a></td></tr>
-<tr class="memdesc:a99c0160368f44b8120e563d29a1c1939"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classjazz__elements_1_1Kind.html">Kind</a>: A type definition for complex Jazz objects.  <a href="namespacejazz__elements.html#a99c0160368f44b8120e563d29a1c1939">More...</a><br /></td></tr>
 <tr class="separator:a99c0160368f44b8120e563d29a1c1939"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7e5adf7a32b3080ea959153d2b6aee9"><td class="memItemLeft" align="right" valign="top">typedef std::chrono::steady_clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#aa7e5adf7a32b3080ea959153d2b6aee9">TimePoint</a></td></tr>
 <tr class="memdesc:aa7e5adf7a32b3080ea959153d2b6aee9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A time point stored as 8 bytes.  <a href="namespacejazz__elements.html#aa7e5adf7a32b3080ea959153d2b6aee9">More...</a><br /></td></tr>
@@ -201,7 +201,7 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Basic Jazz code-less structures and constants. </p>
-<p>This namespace includes utilities, types, constants and structures used by <a class="el" href="classjazz__elements_1_1Block.html">Block</a>, all different block-based data and code structures (<a class="el" href="classjazz__elements_1_1Tuple.html" title="A tuple is a tree of blocks where each edge has a name. A kind is a tuple with indexed dimensions.">Tuple</a>, <a class="el" href="classjazz__elements_1_1Kind.html">Kind</a> and Field). All the Services used to allocate/store and communicate blocks (<a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a>, <a class="el" href="classjazz__elements_1_1Persisted.html" title="Persisted: A Service to manage data objects in LMDB.">Persisted</a>, <a class="el" href="classjazz__elements_1_1Cluster.html" title="aaa: aaa.">Cluster</a> and <a class="el" href="classjazz__elements_1_1Flux.html" title="aaa: aaa.">Flux</a>).</p>
+<p>This namespace includes utilities, types, constants and structures used by <a class="el" href="classjazz__elements_1_1Block.html">Block</a>, all different block-based data and code structures (<a class="el" href="classjazz__elements_1_1Tuple.html" title="A tuple is a tree of blocks where each edge has a name. A kind is a tuple with indexed dimensions.">Tuple</a>, <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a> and Field). All the Services used to allocate/store and communicate blocks (<a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a>, <a class="el" href="classjazz__elements_1_1Persisted.html" title="Persisted: A Service to manage data objects in LMDB.">Persisted</a>, <a class="el" href="classjazz__elements_1_1Cluster.html" title="aaa: aaa.">Cluster</a> and <a class="el" href="classjazz__elements_1_1Flux.html" title="aaa: aaa.">Flux</a>).</p>
 <p>All together is instanced in the server as the BEAT (of Jazz). </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
 <a id="a4ad860bc61f166feee18a3da3ac44868"></a>
@@ -299,10 +299,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p><a class="el" href="classjazz__elements_1_1Kind.html">Kind</a>: A type definition for complex Jazz objects. </p>
-<p><a class="el" href="classjazz__elements_1_1Kind.html">Kind</a> objects contain the metadata only. A <a class="el" href="classjazz__elements_1_1Tuple.html" title="A tuple is a tree of blocks where each edge has a name. A kind is a tuple with indexed dimensions.">Tuple</a> is a data object of a <a class="el" href="classjazz__elements_1_1Kind.html">Kind</a>. Kinds define more complex types than (raw) Blocks, even if they are blocks. E.g., A <a class="el" href="classjazz__elements_1_1Block.html">Block</a> can store a video of a fixed shape (image only or soundtrack only). A <a class="el" href="classjazz__elements_1_1Kind.html">Kind</a> can store both and have dimensions** defining things like: image_width, image_height, number_of_frames and, possibly, a subtitle track as another vector of strings.</p>
-<p>It is a block with special attributes to store a tree of (primitive type, block, kind). A <a class="el" href="classjazz__elements_1_1Kind.html">Kind</a> is a single Block! A kind has <b>dimensions</b> which are integer variables that are used to define variable shapes. </p>
 
 </div>
 </div>
