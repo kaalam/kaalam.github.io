@@ -83,10 +83,10 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header for a <a class="el" href="classjazz__elements_1_1Block.html">Block</a>.  <a href="structjazz__elements_1_1BlockHeader.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Cluster.html">Cluster</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">aaa: aaa.  <a href="classjazz__elements_1_1Cluster.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A service keeping a configuration of all the Jazz nodes that may be acccessed remotely.  <a href="classjazz__elements_1_1Cluster.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Column.html">Column</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">aaa: aaa.  <a href="classjazz__elements_1_1Column.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of Tuples of the same <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a>.  <a href="classjazz__elements_1_1Column.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1ConfigFile.html">ConfigFile</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -96,14 +96,16 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1FilterSize.html">FilterSize</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Flux.html">Flux</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">aaa: aaa.  <a href="classjazz__elements_1_1Flux.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A table of two columns <b>source</b> and <b>destination</b>, with only one special index <b>time</b>.  <a href="classjazz__elements_1_1Flux.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Group.html">Group</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="classjazz__elements_1_1Group.html" title="A Group of Jazz nodes (selected from the Cluster) that can own a Table or Column by sharding it acros...">Group</a> of Jazz nodes (selected from the <a class="el" href="classjazz__elements_1_1Cluster.html" title="A service keeping a configuration of all the Jazz nodes that may be acccessed remotely.">Cluster</a>) that can own a <a class="el" href="classjazz__elements_1_1Table.html" title="A set of Columns sharing the same indices.">Table</a> or <a class="el" href="classjazz__elements_1_1Column.html" title="A list of Tuples of the same Kind.">Column</a> by sharding it across the group.  <a href="classjazz__elements_1_1Group.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Index.html">Index</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A local, sharded or streaming map from anything (numeric or categorical) to an absolute locator of Tuples.  <a href="classjazz__elements_1_1Index.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1ItemHeader.html">ItemHeader</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header for an item (of a <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a> or <a class="el" href="classjazz__elements_1_1Tuple.html" title="A tuple is a tree of blocks where each edge has a name. A kind is a tuple with indexed dimensions.">Tuple</a>)  <a href="structjazz__elements_1_1ItemHeader.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header for an item (of a <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a> or <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz data block of a Kind.">Tuple</a>)  <a href="structjazz__elements_1_1ItemHeader.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Kind.html">Kind</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a>: A type definition for complex Jazz objects.  <a href="classjazz__elements_1_1Kind.html#details">More...</a><br /></td></tr>
@@ -114,6 +116,7 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classjazz__elements_1_1Persisted.html" title="Persisted: A Service to manage data objects in LMDB.">Persisted</a>: A <a class="el" href="classjazz__elements_1_1Service.html">Service</a> to manage data objects in LMDB.  <a href="classjazz__elements_1_1Persisted.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Remote.html">Remote</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> that treats a remote node (mostly a Jazz node, but also a web API) as persistence.  <a href="classjazz__elements_1_1Remote.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Service.html">Service</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -121,7 +124,7 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure at the end of a <a class="el" href="classjazz__elements_1_1Block.html">Block</a>, initially created with init_string_buffer()  <a href="structjazz__elements_1_1StringBuffer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Table.html">Table</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">aaa: aaa.  <a href="classjazz__elements_1_1Table.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of Columns sharing the same indices.  <a href="classjazz__elements_1_1Table.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionjazz__elements_1_1Tensor.html">Tensor</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tensor of cell size 1, 4, 8 or sizeof(BlockHeader)  <a href="unionjazz__elements_1_1Tensor.html#details">More...</a><br /></td></tr>
@@ -129,7 +132,7 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionjazz__elements_1_1TensorDim.html">TensorDim</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Tuple.html">Tuple</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tuple is a tree of blocks where each edge has a name. A kind is a tuple with indexed dimensions.  <a href="classjazz__elements_1_1Tuple.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz data block of a Kind.">Tuple</a>: A Jazz data block of a <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a>.  <a href="classjazz__elements_1_1Tuple.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Volatile.html">Volatile</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a>: A <a class="el" href="classjazz__elements_1_1Service.html">Service</a> to manage data objects in RAM.  <a href="classjazz__elements_1_1Volatile.html#details">More...</a><br /></td></tr>
@@ -147,6 +150,8 @@ Typedefs</h2></td></tr>
 <tr class="separator:a89b6ae8b08dfbb376caafc742840adf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99c0160368f44b8120e563d29a1c1939"><td class="memItemLeft" align="right" valign="top">typedef class <a class="el" href="classjazz__elements_1_1Kind.html">Kind</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a99c0160368f44b8120e563d29a1c1939">pKind</a></td></tr>
 <tr class="separator:a99c0160368f44b8120e563d29a1c1939"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dff44c9f24dc0324606d6576663d94d"><td class="memItemLeft" align="right" valign="top">typedef class <a class="el" href="classjazz__elements_1_1Tuple.html">Tuple</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a6dff44c9f24dc0324606d6576663d94d">pTuple</a></td></tr>
+<tr class="separator:a6dff44c9f24dc0324606d6576663d94d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7e5adf7a32b3080ea959153d2b6aee9"><td class="memItemLeft" align="right" valign="top">typedef std::chrono::steady_clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#aa7e5adf7a32b3080ea959153d2b6aee9">TimePoint</a></td></tr>
 <tr class="memdesc:aa7e5adf7a32b3080ea959153d2b6aee9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A time point stored as 8 bytes.  <a href="namespacejazz__elements.html#aa7e5adf7a32b3080ea959153d2b6aee9">More...</a><br /></td></tr>
 <tr class="separator:aa7e5adf7a32b3080ea959153d2b6aee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -187,8 +192,8 @@ Functions</h2></td></tr>
 <tr class="separator:a97aefc77eb6fbbb85dabfba528a6efb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3761a7b394e72d1cb065477fa8af2c7f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a3761a7b394e72d1cb065477fa8af2c7f">TenBitsAtAddress</a> (const char *str)</td></tr>
 <tr class="separator:a3761a7b394e72d1cb065477fa8af2c7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac29d58754bc2beba31eb6a5d11241dc7"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#ac29d58754bc2beba31eb6a5d11241dc7">elapsed_us</a> (<a class="el" href="namespacejazz__elements.html#aa7e5adf7a32b3080ea959153d2b6aee9">jazz_elements::TimePoint</a> big_bang)</td></tr>
-<tr class="separator:ac29d58754bc2beba31eb6a5d11241dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefef260977adfc6f0108cdc0538aa1a2"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#aefef260977adfc6f0108cdc0538aa1a2">elapsed_mu_sec</a> (<a class="el" href="namespacejazz__elements.html#aa7e5adf7a32b3080ea959153d2b6aee9">jazz_elements::TimePoint</a> big_bang)</td></tr>
+<tr class="separator:aefef260977adfc6f0108cdc0538aa1a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -201,7 +206,7 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Basic Jazz code-less structures and constants. </p>
-<p>This namespace includes utilities, types, constants and structures used by <a class="el" href="classjazz__elements_1_1Block.html">Block</a>, all different block-based data and code structures (<a class="el" href="classjazz__elements_1_1Tuple.html" title="A tuple is a tree of blocks where each edge has a name. A kind is a tuple with indexed dimensions.">Tuple</a>, <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a> and Field). All the Services used to allocate/store and communicate blocks (<a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a>, <a class="el" href="classjazz__elements_1_1Persisted.html" title="Persisted: A Service to manage data objects in LMDB.">Persisted</a>, <a class="el" href="classjazz__elements_1_1Cluster.html" title="aaa: aaa.">Cluster</a> and <a class="el" href="classjazz__elements_1_1Flux.html" title="aaa: aaa.">Flux</a>).</p>
+<p>This namespace includes utilities, types, constants and structures used by <a class="el" href="classjazz__elements_1_1Block.html">Block</a>, all different block-based data and code structures (<a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz data block of a Kind.">Tuple</a>, <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a> and Field). All the Services used to allocate/store and communicate blocks (<a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a>, <a class="el" href="classjazz__elements_1_1Persisted.html" title="Persisted: A Service to manage data objects in LMDB.">Persisted</a>, <a class="el" href="classjazz__elements_1_1Cluster.html" title="A service keeping a configuration of all the Jazz nodes that may be acccessed remotely.">Cluster</a> and <a class="el" href="classjazz__elements_1_1Flux.html" title="A table of two columns source and destination, with only one special index time.">Flux</a>).</p>
 <p>All together is instanced in the server as the BEAT (of Jazz). </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
 <a id="a4ad860bc61f166feee18a3da3ac44868"></a>
@@ -344,6 +349,20 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a6dff44c9f24dc0324606d6576663d94d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dff44c9f24dc0324606d6576663d94d">&#9670;&nbsp;</a></span>pTuple</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef class <a class="el" href="classjazz__elements_1_1Tuple.html">Tuple</a>* <a class="el" href="namespacejazz__elements.html#a6dff44c9f24dc0324606d6576663d94d">jazz_elements::pTuple</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a3afa055be2491c07ae68adccc6d730a5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3afa055be2491c07ae68adccc6d730a5">&#9670;&nbsp;</a></span>Service_ErrorCode</h2>
 
@@ -393,9 +412,15 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Remove quotes and (space and tab) outside quotes from a string.</p>
-<p>Removes space and tab characters except inside a string declared with a double quote '"'. After doing that, it removes the quotes. This is used by <a class="el" href="classjazz__elements_1_1ConfigFile.html">ConfigFile</a> and has obvious limitations but is used for its simplicity and easily predictable results. </p><pre class="fragment">\param s Input string
-\return  String without space or tab.
-</pre> 
+<p>Removes space and tab characters except inside a string declared with a double quote '"'. After doing that, it removes the quotes. This is used by <a class="el" href="classjazz__elements_1_1ConfigFile.html">ConfigFile</a> and has obvious limitations but is used for its simplicity and easily predictable results.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Input string </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>String without space or tab. </dd></dl>
+
 </div>
 </div>
 <a id="a7474f4883f1062d103d1278d57628cf4"></a>
@@ -432,13 +457,18 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The number of bytes in the string.</dd></dl>
-<p>The RFC <a href="http://www.ietf.org/rfc/rfc3629.txt">http://www.ietf.org/rfc/rfc3629.txt</a> says:</p>
-<p>Char. number range | UTF-8 octet sequence (hexadecimal) | (binary) -----------------&mdash;+------------------------------------------&mdash; 0000 0000-0000 007F | 0xxxxxxx 0000 0080-0000 07FF | 110xxxxx 10xxxxxx 0000 0800-0000 FFFF | 1110xxxx 10xxxxxx 10xxxxxx 0001 0000-0010 FFFF | 11110xxx 10xxxxxx 10xxxxxx 10xxxxxx </p>
-
+<p>The RFC <a href="http://www.ietf.org/rfc/rfc3629.txt">http://www.ietf.org/rfc/rfc3629.txt</a> says: </p><pre class="fragment">Char. number range  | UTF-8 octet sequence
+(hexadecimal)       | (binary)
+--------------------+---------------------------------------------
+0000 0000-0000 007F | 0xxxxxxx
+0000 0080-0000 07FF | 110xxxxx 10xxxxxx
+0000 0800-0000 FFFF | 1110xxxx 10xxxxxx 10xxxxxx
+0001 0000-0010 FFFF | 11110xxx 10xxxxxx 10xxxxxx 10xxxxxx
+</pre> 
 </div>
 </div>
-<a id="ac29d58754bc2beba31eb6a5d11241dc7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac29d58754bc2beba31eb6a5d11241dc7">&#9670;&nbsp;</a></span>elapsed_us()</h2>
+<a id="aefef260977adfc6f0108cdc0538aa1a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefef260977adfc6f0108cdc0538aa1a2">&#9670;&nbsp;</a></span>elapsed_mu_sec()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -447,7 +477,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int64_t jazz_elements::elapsed_us </td>
+          <td class="memname">int64_t jazz_elements::elapsed_mu_sec </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacejazz__elements.html#aa7e5adf7a32b3080ea959153d2b6aee9">jazz_elements::TimePoint</a>&#160;</td>
           <td class="paramname"><em>big_bang</em></td><td>)</td>
@@ -489,9 +519,20 @@ Variables</h2></td></tr>
 <p>Expand escaped strings at run-time.</p>
 <p>Public Domain by Jerry Coffin.</p>
 <p>Interprets a string in a manner similar to that the compiler does string literals in a program. All escape sequences are longer than their translated equivalent, so the string is translated in place and either remains the same length or becomes shorter.</p>
-<p>April 17 tests built and compliant with:</p>
-<p>\a 07 Alert (Beep, Bell) (added in C89)[1] \b 08 Backspace \f 0C Form-feed \n 0A Newline (Line Feed); see notes below \r 0D Carriage Return \t 09 Horizontal Tab \v 0B Vertical Tab \\ 5C Backslash \' 27 Single quotation mark \" 22 Double quotation mark \? 3F Question mark (used to avoid trigraphs) \nnn The byte whose numerical value is given by nnn interpreted as an octal number \xhh The byte whose numerical value is given by hh… interpreted as a hexadecimal number</p>
-<p><a href="https://en.wikipedia.org/wiki/Escape_sequences_in_C">https://en.wikipedia.org/wiki/Escape_sequences_in_C</a> </p>
+<p>April 17 tests built and compliant with: </p><pre class="fragment">\\a   07  Alert (Beep, Bell) (added in C89)[1]
+\\b   08  Backspace
+\\f   0C  Form-feed
+\\n   0A  Newline (Line Feed); see notes below
+\\r   0D  Carriage Return
+\\t   09  Horizontal Tab
+\\v   0B  Vertical Tab
+\\\\  5C  Backslash
+\\'   27  Single quotation mark
+\\"   22  Double quotation mark
+\\?   3F  Question mark (used to avoid trigraphs)
+\\nnn     The byte whose numerical value is given by nnn interpreted as an octal number
+\\xhh     The byte whose numerical value is given by hh… interpreted as a hexadecimal number
+</pre><p><a href="https://en.wikipedia.org/wiki/Escape_sequences_in_C">https://en.wikipedia.org/wiki/Escape_sequences_in_C</a> </p>
 
 </div>
 </div>
@@ -574,10 +615,17 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>MurmurHash2, 64-bit versions, by Austin Appleby</p>
-<p>(from <a href="https://sites.google.com/site/murmurhash/">https://sites.google.com/site/murmurhash/</a>)</p>
+<p>(from <a href="https://sites.google.com/site/murmurhash/">https://sites.google.com/site/murmurhash/</a>) a 64-bit hash for 64-bit platforms</p>
 <p>All code is released to the public domain. For business purposes, Murmurhash is under the MIT license.</p>
 <p>The same caveats as 32-bit MurmurHash2 apply here - beware of alignment and endian-ness issues if used across multiple platforms.</p>
-<p>64-bit hash for 64-bit platforms </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>address of the memory block to hash. </td></tr>
+    <tr><td class="paramname">len</td><td>Number of bytes to hash. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>64-bit hash of the memory block. </dd></dl>
 
 </div>
 </div>

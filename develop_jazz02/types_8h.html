@@ -87,7 +87,7 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionjazz__elements_1_1TensorDim.html">jazz_elements::TensorDim</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1ItemHeader.html">jazz_elements::ItemHeader</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header for an item (of a <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a> or <a class="el" href="classjazz__elements_1_1Tuple.html" title="A tuple is a tree of blocks where each edge has a name. A kind is a tuple with indexed dimensions.">Tuple</a>)  <a href="structjazz__elements_1_1ItemHeader.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header for an item (of a <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a> or <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz data block of a Kind.">Tuple</a>)  <a href="structjazz__elements_1_1ItemHeader.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionjazz__elements_1_1Tensor.html">jazz_elements::Tensor</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tensor of cell size 1, 4, 8 or sizeof(BlockHeader)  <a href="unionjazz__elements_1_1Tensor.html#details">More...</a><br /></td></tr>
@@ -184,7 +184,7 @@ Macros</h2></td></tr>
 <tr class="memdesc:ac0e222767f0998f79ffeb691e5e4a7c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA for a double. This is R compatible.  <a href="types_8h.html#ac0e222767f0998f79ffeb691e5e4a7c1">More...</a><br /></td></tr>
 <tr class="separator:ac0e222767f0998f79ffeb691e5e4a7c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73ecd7dc95d36e569f91dbac3ec2d6df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a73ecd7dc95d36e569f91dbac3ec2d6df">FILTER_TYPE_</a></td></tr>
-<tr class="memdesc:a73ecd7dc95d36e569f91dbac3ec2d6df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Possible return values of Filter.filter_type()  <a href="types_8h.html#a73ecd7dc95d36e569f91dbac3ec2d6df">More...</a><br /></td></tr>
+<tr class="memdesc:a73ecd7dc95d36e569f91dbac3ec2d6df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Possible return values of Block.filter_type() and Block.filter_audit()  <a href="types_8h.html#a73ecd7dc95d36e569f91dbac3ec2d6df">More...</a><br /></td></tr>
 <tr class="separator:a73ecd7dc95d36e569f91dbac3ec2d6df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5abba7b90934a98d6f63ca2bf2c512e3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a5abba7b90934a98d6f63ca2bf2c512e3">FILTER_TYPE_NOTAFILTER</a>&#160;&#160;&#160;0</td></tr>
 <tr class="memdesc:a5abba7b90934a98d6f63ca2bf2c512e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This Block cannot be used as a filter. A try to use it in new_jazz_block() will fail.  <a href="types_8h.html#a5abba7b90934a98d6f63ca2bf2c512e3">More...</a><br /></td></tr>
@@ -195,6 +195,18 @@ Macros</h2></td></tr>
 <tr class="memitem:a6dc19db547353db903ecb71161ae449c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a6dc19db547353db903ecb71161ae449c">FILTER_TYPE_INTEGER</a>&#160;&#160;&#160;2</td></tr>
 <tr class="memdesc:a6dc19db547353db903ecb71161ae449c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This Block is a vector of CELL_TYPE_INTEGER containing the selected rows.  <a href="types_8h.html#a6dc19db547353db903ecb71161ae449c">More...</a><br /></td></tr>
 <tr class="separator:a6dc19db547353db903ecb71161ae449c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8002d26924d9e68cc1c5bbe96097b747"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a8002d26924d9e68cc1c5bbe96097b747">KIND_TYPE_</a></td></tr>
+<tr class="memdesc:a8002d26924d9e68cc1c5bbe96097b747"><td class="mdescLeft">&#160;</td><td class="mdescRight">Possible return values of Kind.kind_audit() and Tuple.tuple_audit()  <a href="types_8h.html#a8002d26924d9e68cc1c5bbe96097b747">More...</a><br /></td></tr>
+<tr class="separator:a8002d26924d9e68cc1c5bbe96097b747"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c06f00f3589fcb0c0cd778e8bba7735"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a8c06f00f3589fcb0c0cd778e8bba7735">KIND_TYPE_NOTAKIND</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:a8c06f00f3589fcb0c0cd778e8bba7735"><td class="mdescLeft">&#160;</td><td class="mdescRight">The kind fails audit (wrong or duplicate item names, wrong dimensions, ...).  <a href="types_8h.html#a8c06f00f3589fcb0c0cd778e8bba7735">More...</a><br /></td></tr>
+<tr class="separator:a8c06f00f3589fcb0c0cd778e8bba7735"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adffaa7a483445b56ec3a976adf786ef5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#adffaa7a483445b56ec3a976adf786ef5">KIND_TYPE_KIND</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:adffaa7a483445b56ec3a976adf786ef5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This Block is a valid Kind.  <a href="types_8h.html#adffaa7a483445b56ec3a976adf786ef5">More...</a><br /></td></tr>
+<tr class="separator:adffaa7a483445b56ec3a976adf786ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee26cee2c2dcb7df88fe62837a867aa2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#aee26cee2c2dcb7df88fe62837a867aa2">KIND_TYPE_TUPLE</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memdesc:aee26cee2c2dcb7df88fe62837a867aa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This Block is a valid Tuple.  <a href="types_8h.html#aee26cee2c2dcb7df88fe62837a867aa2">More...</a><br /></td></tr>
+<tr class="separator:aee26cee2c2dcb7df88fe62837a867aa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addb3f9c44e627a81c7471f876c0de7a7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#addb3f9c44e627a81c7471f876c0de7a7">BLOCK_ATTRIB_</a></td></tr>
 <tr class="separator:addb3f9c44e627a81c7471f876c0de7a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd653b24f4c6faa6c0abbca98396ee14"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#abd653b24f4c6faa6c0abbca98396ee14">BLOCK_ATTRIB_BLOCKTYPE</a>&#160;&#160;&#160;0</td></tr>
@@ -624,7 +636,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Possible return values of Filter.filter_type() </p>
+<p>Possible return values of Block.filter_type() and Block.filter_audit() </p>
 
 </div>
 </div>
@@ -703,6 +715,70 @@ Typedefs</h2></td></tr>
 </div><div class="memdoc">
 
 <p>NA for a 32-bit integer. This is R compatible. </p>
+
+</div>
+</div>
+<a id="a8002d26924d9e68cc1c5bbe96097b747"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8002d26924d9e68cc1c5bbe96097b747">&#9670;&nbsp;</a></span>KIND_TYPE_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KIND_TYPE_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Possible return values of Kind.kind_audit() and Tuple.tuple_audit() </p>
+
+</div>
+</div>
+<a id="adffaa7a483445b56ec3a976adf786ef5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adffaa7a483445b56ec3a976adf786ef5">&#9670;&nbsp;</a></span>KIND_TYPE_KIND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KIND_TYPE_KIND&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This Block is a valid Kind. </p>
+
+</div>
+</div>
+<a id="a8c06f00f3589fcb0c0cd778e8bba7735"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c06f00f3589fcb0c0cd778e8bba7735">&#9670;&nbsp;</a></span>KIND_TYPE_NOTAKIND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KIND_TYPE_NOTAKIND&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The kind fails audit (wrong or duplicate item names, wrong dimensions, ...). </p>
+
+</div>
+</div>
+<a id="aee26cee2c2dcb7df88fe62837a867aa2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee26cee2c2dcb7df88fe62837a867aa2">&#9670;&nbsp;</a></span>KIND_TYPE_TUPLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KIND_TYPE_TUPLE&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This Block is a valid Tuple. </p>
 
 </div>
 </div>

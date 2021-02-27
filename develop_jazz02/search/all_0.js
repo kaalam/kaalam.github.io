@@ -9,6 +9,5 @@ var searchData=
   ['api_2ecpp_6',['api.cpp',['../api_8cpp.html',1,'']]],
   ['api_2eh_7',['api.h',['../api_8h.html',1,'']]],
   ['apibuffer_8',['ApiBuffer',['../namespacejazz__elements.html#a4ad860bc61f166feee18a3da3ac44868',1,'jazz_elements']]],
-  ['as_5ftext_9',['as_text',['../classjazz__elements_1_1Kind.html#a6d9e3b5a53fc1789e88c920b4c163c42',1,'jazz_elements::Kind']]],
-  ['attributemap_10',['AttributeMap',['../namespacejazz__elements.html#ad2f703c26500ad2cdcec139a7e2000c4',1,'jazz_elements']]]
+  ['attributemap_9',['AttributeMap',['../namespacejazz__elements.html#ad2f703c26500ad2cdcec139a7e2000c4',1,'jazz_elements']]]
 ];

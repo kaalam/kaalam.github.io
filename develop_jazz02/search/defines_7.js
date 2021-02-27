@@ -1,10 +1,14 @@
 var searchData=
 [
-  ['max_5fapi_5fbuff_5flength_572',['MAX_API_BUFF_LENGTH',['../types_8h.html#a45237870b6d0f174599247c678d20f12',1,'types.h']]],
-  ['max_5fchecks_5f4_5fmatch_573',['MAX_CHECKS_4_MATCH',['../types_8h.html#a5a4d6ca6f3612a6f6f377b5abe382b5b',1,'types.h']]],
-  ['max_5ffilename_5flength_574',['MAX_FILENAME_LENGTH',['../utils_8h.html#a6773b93f3093658c3dcb569de3b4bdb2',1,'utils.h']]],
-  ['max_5ftensor_5frank_575',['MAX_TENSOR_RANK',['../types_8h.html#a5dfd5a365563c2e8cf13a83a127af9ac',1,'types.h']]],
-  ['mhd_5fhttp_5fanyerror_576',['MHD_HTTP_ANYERROR',['../api_8cpp.html#acd7fa8c1e44c1ce605992576831262b8',1,'api.cpp']]],
-  ['mhd_5fplatform_5fh_577',['MHD_PLATFORM_H',['../api_8h.html#a5a61c24fd07097ce8715f7e10f7152e3',1,'api.h']]],
-  ['murmur_5fseed_578',['MURMUR_SEED',['../utils_8cpp.html#acf830c3140deca25e44187534c55e5a8',1,'utils.cpp']]]
+  ['leftauto_566',['LEFTAUTO',['../utils_8cpp.html#a3f19267d6d0808dfc50809dde0a6947e',1,'utils.cpp']]],
+  ['linux_5fdistro_567',['LINUX_DISTRO',['../jazz__platform_8h.html#a604895b0d8875d97115c9bebbf5f519b',1,'jazz_platform.h']]],
+  ['linux_5fplatform_568',['LINUX_PLATFORM',['../jazz__platform_8h.html#aea13f49a32fd1c0e4c8936040892c6bd',1,'jazz_platform.h']]],
+  ['linux_5fprocessor_569',['LINUX_PROCESSOR',['../jazz__platform_8h.html#a9fe308e808a05364a550fa9cf72fde31',1,'jazz_platform.h']]],
+  ['linux_5fversion_570',['LINUX_VERSION',['../jazz__platform_8h.html#ae664f4fd6431eae2bb5db419fd7154c8',1,'jazz_platform.h']]],
+  ['log_5fdebug_571',['LOG_DEBUG',['../utils_8h.html#a6ff63e8955665c4a58b1598f2b07c51a',1,'utils.h']]],
+  ['log_5ferror_572',['LOG_ERROR',['../utils_8h.html#aced66975c154ea0e2a8ec3bc818b4e08',1,'utils.h']]],
+  ['log_5finfo_573',['LOG_INFO',['../utils_8h.html#aeb4f36db01bd128c7afeac5889dac311',1,'utils.h']]],
+  ['log_5fmiss_574',['LOG_MISS',['../utils_8h.html#affb5af35aaf7d7e3224c67db2230a68a',1,'utils.h']]],
+  ['log_5fwarn_575',['LOG_WARN',['../utils_8h.html#aea3f57d6dcc5b4ac957e2679e87dde27',1,'utils.h']]],
+  ['long_5finteger_5fna_576',['LONG_INTEGER_NA',['../types_8h.html#a957a36b73d62c6c1377de4f7736f4f13',1,'types.h']]]
 ];

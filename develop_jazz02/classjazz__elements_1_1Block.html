@@ -81,13 +81,13 @@ Inheritance diagram for jazz_elements::Block:</div>
   <img src="classjazz__elements_1_1Block.png" usemap="#jazz_5Felements::Block_map" alt=""/>
   <map id="jazz_5Felements::Block_map" name="jazz_5Felements::Block_map">
 <area href="structjazz__elements_1_1BlockHeader.html" title="Header for a Block." alt="jazz_elements::BlockHeader" shape="rect" coords="268,0,437,24"/>
-<area href="classjazz__elements_1_1Column.html" title="aaa: aaa." alt="jazz_elements::Column" shape="rect" coords="0,112,169,136"/>
-<area href="classjazz__elements_1_1Index.html" alt="jazz_elements::Index" shape="rect" coords="179,112,348,136"/>
+<area href="classjazz__elements_1_1Column.html" title="A list of Tuples of the same Kind." alt="jazz_elements::Column" shape="rect" coords="0,112,169,136"/>
+<area href="classjazz__elements_1_1Index.html" title="A local, sharded or streaming map from anything (numeric or categorical) to an absolute locator of Tu..." alt="jazz_elements::Index" shape="rect" coords="179,112,348,136"/>
 <area href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects." alt="jazz_elements::Kind" shape="rect" coords="358,112,527,136"/>
-<area href="classjazz__elements_1_1Tuple.html" title="A tuple is a tree of blocks where each edge has a name. A kind is a tuple with indexed dimensions." alt="jazz_elements::Tuple" shape="rect" coords="537,112,706,136"/>
-<area href="classjazz__elements_1_1Flux.html" title="aaa: aaa." alt="jazz_elements::Flux" shape="rect" coords="358,168,527,192"/>
-<area href="classjazz__elements_1_1Group.html" alt="jazz_elements::Group" shape="rect" coords="537,168,706,192"/>
-<area href="classjazz__elements_1_1Table.html" title="aaa: aaa." alt="jazz_elements::Table" shape="rect" coords="716,168,885,192"/>
+<area href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz data block of a Kind." alt="jazz_elements::Tuple" shape="rect" coords="537,112,706,136"/>
+<area href="classjazz__elements_1_1Flux.html" title="A table of two columns source and destination, with only one special index time." alt="jazz_elements::Flux" shape="rect" coords="358,168,527,192"/>
+<area href="classjazz__elements_1_1Group.html" title="A Group of Jazz nodes (selected from the Cluster) that can own a Table or Column by sharding it acros..." alt="jazz_elements::Group" shape="rect" coords="537,168,706,192"/>
+<area href="classjazz__elements_1_1Table.html" title="A set of Columns sharing the same indices." alt="jazz_elements::Table" shape="rect" coords="716,168,885,192"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -175,8 +175,8 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A block. Anything in Jazz is a block. A block is a <a class="el" href="structjazz__elements_1_1BlockHeader.html" title="Header for a Block.">BlockHeader</a>, followed by a tensor, then two arrays of int of length == num_attributes, then a <a class="el" href="structjazz__elements_1_1StringBuffer.html" title="Structure at the end of a Block, initially created with init_string_buffer()">StringBuffer</a>. Nothing in a <a class="el" href="classjazz__elements_1_1Block.html">Block</a> is a pointer, Blocks can be copied or stored 'as is', every RAM location in a block is defined by its <a class="el" href="structjazz__elements_1_1BlockHeader.html" title="Header for a Block.">BlockHeader</a> and computed by the methods in <a class="el" href="classjazz__elements_1_1Block.html">Block</a>.</p>
 <p>At this level, you only have the fields <a class="el" href="structjazz__elements_1_1BlockHeader.html" title="Header for a Block.">BlockHeader</a> that you may read and probably only write through some methods. This is the lowest level, it does not even provide support for allocation, at this level you have support for manipulating the <a class="el" href="structjazz__elements_1_1StringBuffer.html" title="Structure at the end of a Block, initially created with init_string_buffer()">StringBuffer</a> to read and write strings and the JazzAttributesMap to read and write attributes.</p>
-<p>A <b>Filter</b> (is not a separate class anymore) is just a <a class="el" href="classjazz__elements_1_1Block.html">Block</a> with a strict structure and extra methods.</p>
-<p>The structure of a Filter is strictly:</p>
+<p>A <b>filter</b> (is not a separate class anymore) is just a <a class="el" href="classjazz__elements_1_1Block.html">Block</a> with a strict structure and extra methods.</p>
+<p>The structure of a filter is strictly:</p>
 <ul>
 <li>.cell_type CELL_TYPE_BYTE_BOOLEAN or CELL_TYPE_INTEGER</li>
 <li>.rank == 1</li>
@@ -245,7 +245,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Check (fast) if a Filter is valid and can be applied to filter inside a specific <a class="el" href="classjazz__elements_1_1Block.html">Block</a></p>
+<p>Check (fast) if a filter is valid and can be applied to filter inside a specific <a class="el" href="classjazz__elements_1_1Block.html">Block</a></p>
 <p>This is verifies (size == number of rows) and calls <a class="el" href="classjazz__elements_1_1Block.html#a7c4c1d50d06799ffec5a0d253528fd2e">filter_type()</a> to check its requirements too.</p>
 <dl class="section return"><dt>Returns</dt><dd>true if it is a valid filter of that type. </dd></dl>
 
@@ -265,7 +265,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Check (in depth) the validity of a Filter and return its type or FILTER_TYPE_NOTAFILTER if invalid</p>
+<p>Check (in depth) the validity of a filter and return its type or FILTER_TYPE_NOTAFILTER if invalid</p>
 <p>This checks both the values in the header and the validity of the data in .tensor[]</p>
 <dl class="section return"><dt>Returns</dt><dd>FILTER_TYPE_BOOLEAN or FILTER_TYPE_INTEGER if it is a valid filter of that type, FILTER_TYPE_NOTAFILTER if not. </dd></dl>
 
@@ -293,7 +293,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Check (fast) the validity of a Filter and return its type or FILTER_TYPE_NOTAFILTER if invalid</p>
+<p>Check (fast) the validity of a filter and return its type or FILTER_TYPE_NOTAFILTER if invalid</p>
 <p>This checks the values in the header, but not the validity of the data in .tensor[]</p>
 <dl class="section return"><dt>Returns</dt><dd>FILTER_TYPE_BOOLEAN or FILTER_TYPE_INTEGER if it is a valid filter of that type, FILTER_TYPE_NOTAFILTER if not. </dd></dl>
 

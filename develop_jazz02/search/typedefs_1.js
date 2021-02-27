@@ -9,5 +9,6 @@ var searchData=
   ['pmhd_5fdaemon_498',['pMHD_Daemon',['../namespacejazz__main.html#ae1cdb9105d6b720548eed5b8df38823b',1,'jazz_main']]],
   ['pservice_499',['pService',['../namespacejazz__elements.html#a72401460d35f24aec283c9bbc5337a28',1,'jazz_elements']]],
   ['psignalhandler_500',['pSignalHandler',['../namespacejazz__main.html#a578cf47cfadacf0e9c6735b8cb53e6b0',1,'jazz_main']]],
-  ['pstringbuffer_501',['pStringBuffer',['../namespacejazz__elements.html#a2275810354345e22c1c5ca21a8bb714b',1,'jazz_elements']]]
+  ['pstringbuffer_501',['pStringBuffer',['../namespacejazz__elements.html#a2275810354345e22c1c5ca21a8bb714b',1,'jazz_elements']]],
+  ['ptuple_502',['pTuple',['../namespacejazz__elements.html#a6dff44c9f24dc0324606d6576663d94d',1,'jazz_elements']]]
 ];
