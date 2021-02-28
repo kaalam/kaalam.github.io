@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="The precise API implementation details, syntax, encoding, etc.">
+<meta name="description" content="What is Jazz (part 4) Code Automation.">
 <meta name="keywords" content=" ">
-<title>API details | Jazz User's Manual</title>
+<title>Agency - Code Automation | Jazz User's Manual</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -208,19 +208,25 @@
                   
                   
                   
-                  <li><a href="vision_blocks_containers.html">Blocks, Storage and Containers</a></li>
+                  <li><a href="vision_elements_block_kind_etc.html">Elements - Blocks, Kinds, Tuples, Tables and Fluxes</a></li>
                   
                   
                   
                   
                   
-                  <li><a href="vision_bop_fields_contexts.html">Bebop, Formal Fields and Code Generation</a></li>
+                  <li><a href="vision_elements_containers.html">Elements - Containers - Volatile, Remote and Persisted</a></li>
                   
                   
                   
                   
                   
-                  <li><a href="vision_relations_finder.html">Relations and the Finder</a></li>
+                  <li><a href="vision_code_bebop.html">Code Generation - Formal Fields and Bebop</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li class="active"><a href="vision_agency_code.html">Agency - Code Automation</a></li>
                   
                   
                   
@@ -247,7 +253,23 @@
           
           
           
-          <li><a href="bop_ref_elements.html">Bebop elements</a></li>
+          <li><a href="bop_elements.html">Bebop elements</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">Agency fundamentals</a>
+      <ul>
+          
+          
+          
+          <li><a href="agency_elements.html">Agency elements</a></li>
           
           
           
@@ -263,14 +285,56 @@
           
           
           
-          <li><a href="api_ref_intro.html">API introduction</a></li>
+          <li><a href="api_ref_intro.html">API reference - Introduction</a></li>
           
           
           
           
           
           
-          <li class="active"><a href="api_ref_details.html">API details</a></li>
+          <li><a href="api_ref_modules_.html">API reference - How it works</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_http_api.html">API reference - The http API</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_names.html">API reference - Names</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_locators.html">API reference - Locators</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_const.html">API reference - Constants</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_slicing.html">API reference - Block and tuple slicing</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_contracts.html">API reference - Block and tuple contracts</a></li>
           
           
           
@@ -294,6 +358,13 @@
           
           
           <li><a href="reference_docker_latest_server.html">Jazz (LSS) Latest Stable Server</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="reference_docker_tangle_server.html">Jazz (TNG) The Tangle Server</a></li>
           
           
           
@@ -375,7 +446,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">API details</h1>
+   <h1 class="post-title-main">Agency - Code Automation</h1>
 </div>
 
 
@@ -383,7 +454,7 @@
 <div class="post-content">
 
    
-    <div class="summary">The precise API implementation details, syntax, encoding, etc.</div>
+    <div class="summary">What is Jazz (part 4) Code Automation.</div>
    
 
     
@@ -417,80 +488,11 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <h2 id="api-reference">API reference</h2>
-
-<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> In version 0.5.x the API has been redesigned. The true reference is the documentation of the methods in api.cpp and api.h This is will be updated as the spec gets stable.</div>
-
-<h3 id="rest-predicates">REST predicates</h3>
-
-<p><span class="label label-info">REST API</span></p>
-
-<p>The REST API supports <strong>standard http commands</strong>.</p>
+  <h2 id="this-is-not-yet-implemented-in-the-c-project-but-there-is-a-poc">This is not yet implemented in the C++ project, but there is a PoC.</h2>
 
 <ul>
-  <li><strong>GET</strong> with a valid <code class="language-plaintext highlighter-rouge">rvalue</code>. To read from Jazz.</li>
-  <li><strong>HEAD</strong> with a valid <code class="language-plaintext highlighter-rouge">rvalue</code>. Internally the same as GET, but returns the header only.</li>
-  <li><strong>PUT</strong> with a valid <code class="language-plaintext highlighter-rouge">lvalue</code>. To write blocks into a Jazz keepr.</li>
-  <li><strong>DELETE</strong> with a valid <code class="language-plaintext highlighter-rouge">lvalue</code>. To delete blocks or containers (at any level of the tree).</li>
-  <li><strong>OPTIONS</strong> with a string. Parses the string and returns the commands that would accept that string as a URL.</li>
-  <li><strong>HEAD</strong> with <code class="language-plaintext highlighter-rouge">lvalue</code>=<code class="language-plaintext highlighter-rouge">rvalue</code>. Assignment in the server. Similar to “PUT(lvalue, GET(rvalue))” without traffic.</li>
+  <li>See <a href="agency_elements.html">Agency</a></li>
 </ul>
-
-<h4 id="limitations-in-version-05x">Limitations in version 0.5.x</h4>
-
-<ul>
-  <li>No support for POST or TRACE.</li>
-  <li>Compression is not supported.</li>
-  <li>CACHE HEADERS are not supported.</li>
-</ul>
-
-<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> All reads are safe, all writes are idempotent.</div>
-
-<h3 id="anchors">Anchors</h3>
-
-<p>Three special characters (the anchor) start every <code class="language-plaintext highlighter-rouge">lvalue</code> and <code class="language-plaintext highlighter-rouge">rvalue</code>.</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Character</th>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">/</code></td>
-      <td>local root</td>
-      <td>Is the root container of the current node (the only node if a Jazz cluster isn’t defined).</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">@</code></td>
-      <td>forward</td>
-      <td>Requires forwarding to the appropriate node in the cluster. All <code class="language-plaintext highlighter-rouge">@</code> requests are transformed to <code class="language-plaintext highlighter-rouge">/</code> of some node.</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">$</code></td>
-      <td>ubiquitous</td>
-      <td>If reading, the resource is everywhere in the cluster (like the cluster definition itself). If writing, it is broadcasted to the whole cluster.</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3 id="block-names">Block names</h3>
-
-<p>A block name is a sequence of case-sensitive alphanumeric characters or underscores of maximum length MAX_BLOCK_ID_LENGTH - 1 (actually 31)
-starting with a letter.</p>
-
-<p>The regex REGEX_VALIDATE_BLOCK_ID validates a block identifier.</p>
-
-<h2 id="r-api">R API</h2>
-
-<p><span class="label label-info">R</span></p>
-
-<p>The new design goes back to the original concept of <code class="language-plaintext highlighter-rouge">C++</code> and <code class="language-plaintext highlighter-rouge">http</code>. An R package to manage the <code class="language-plaintext highlighter-rouge">http</code> client will still be included.</p>
-
-<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> The R package <strong>rjazz</strong> also includes built-in http client support to use the REST API from R.</div>
 
 <p><br /></p>
 
@@ -498,9 +500,19 @@ starting with a letter.</p>
   <tbody>
     <tr>
       <td><span class="label label-default">Previous …</span></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="label label-info">Next …</span></td>
     </tr>
     <tr>
-      <td><a href="api_ref_intro.html">API introduction</a></td>
+      <td><a href="vision_code_bebop.html">Code Generation - Bebop</a></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><a href="vision_apis_services.html">API, Services, Instances</a></td>
     </tr>
   </tbody>
 </table>
@@ -518,7 +530,7 @@ starting with a letter.</p>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2021 kaalam.ai. All rights reserved. <br />
- Site last generated: Feb 27, 2021 <br />
+ Site last generated: Feb 28, 2021 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

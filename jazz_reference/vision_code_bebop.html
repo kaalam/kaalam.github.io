@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="What is Jazz (part 2) Introduction to Bebop, fields and code generation.">
+<meta name="description" content="What is Jazz (part 3) Introduction to Bebop, fields and code generation.">
 <meta name="keywords" content=" ">
-<title>Bebop, Formal Fields and Code Generation | Jazz User's Manual</title>
+<title>Code Generation - Formal Fields and Bebop | Jazz User's Manual</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -208,19 +208,25 @@
                   
                   
                   
-                  <li><a href="vision_blocks_containers.html">Blocks, Storage and Containers</a></li>
+                  <li><a href="vision_elements_block_kind_etc.html">Elements - Blocks, Kinds, Tuples, Tables and Fluxes</a></li>
                   
                   
                   
                   
                   
-                  <li class="active"><a href="vision_bop_fields_contexts.html">Bebop, Formal Fields and Code Generation</a></li>
+                  <li><a href="vision_elements_containers.html">Elements - Containers - Volatile, Remote and Persisted</a></li>
                   
                   
                   
                   
                   
-                  <li><a href="vision_relations_finder.html">Relations and the Finder</a></li>
+                  <li class="active"><a href="vision_code_bebop.html">Code Generation - Formal Fields and Bebop</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="vision_agency_code.html">Agency - Code Automation</a></li>
                   
                   
                   
@@ -247,7 +253,23 @@
           
           
           
-          <li><a href="bop_ref_elements.html">Bebop elements</a></li>
+          <li><a href="bop_elements.html">Bebop elements</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">Agency fundamentals</a>
+      <ul>
+          
+          
+          
+          <li><a href="agency_elements.html">Agency elements</a></li>
           
           
           
@@ -263,14 +285,56 @@
           
           
           
-          <li><a href="api_ref_intro.html">API introduction</a></li>
+          <li><a href="api_ref_intro.html">API reference - Introduction</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_details.html">API details</a></li>
+          <li><a href="api_ref_modules_.html">API reference - How it works</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_http_api.html">API reference - The http API</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_names.html">API reference - Names</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_locators.html">API reference - Locators</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_const.html">API reference - Constants</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_slicing.html">API reference - Block and tuple slicing</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_contracts.html">API reference - Block and tuple contracts</a></li>
           
           
           
@@ -294,6 +358,13 @@
           
           
           <li><a href="reference_docker_latest_server.html">Jazz (LSS) Latest Stable Server</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="reference_docker_tangle_server.html">Jazz (TNG) The Tangle Server</a></li>
           
           
           
@@ -375,7 +446,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Bebop, Formal Fields and Code Generation</h1>
+   <h1 class="post-title-main">Code Generation - Formal Fields and Bebop</h1>
 </div>
 
 
@@ -383,7 +454,7 @@
 <div class="post-content">
 
    
-    <div class="summary">What is Jazz (part 2) Introduction to Bebop, fields and code generation.</div>
+    <div class="summary">What is Jazz (part 3) Introduction to Bebop, fields and code generation.</div>
    
 
     
@@ -417,14 +488,11 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> This page is outdated. See the <a href="https://arxiv.org/abs/2007.14075">the Formal Fields Paper</a> for an up to date
-reference on Formal Fields as already implemented in the PoC and currently being implemented in the main Jazz project.</div>
-
-<h2 id="what-is-that-jazz-magic">What is that “Jazz Magic”?</h2>
+  <h2 id="what-is-that-jazz-magic">What is that “Jazz Magic”?</h2>
 
 <p>Until now, we introduced blocks, storage and containers that somehow (we will get there) are accessed via http. That part is just a very efficient and hopefully simple way to manage already known things. The basement of Jazz so to say. The question is still: “why bother using Jazz instead of any other platform with more traction that implements these things?” Hint: Efficiency and simplicity alone are not good enough reasons.</p>
 
-<p>Before we talk about <code class="language-plaintext highlighter-rouge">Field</code>, <code class="language-plaintext highlighter-rouge">Relation</code>,<code class="language-plaintext highlighter-rouge">Context</code> and some other classes, we need to explain where we want to go. What we want to build is a platform that does distributed computation building on top of simple programs (functions).</p>
+<p>Before we talk about <code class="language-plaintext highlighter-rouge">Field</code>, <code class="language-plaintext highlighter-rouge">Core</code>, <code class="language-plaintext highlighter-rouge">Agency</code> and some other classes, we need to explain where we want to go. What we want to build is a platform that does distributed computation building on top of simple programs (functions).</p>
 
 <p>You can look at artificial neurons as programs, they are, and at deep learning (DL) as “software 2.0”, that has been said already. Does that mean we will never need anything other than DL? DL can find incredible functions matching images into labels, text into sound waves, … what not.</p>
 
@@ -440,7 +508,7 @@ reference on Formal Fields as already implemented in the PoC and currently being
 
 <p>We want to learn these programs, which is why we need efficient persistence to support their lifecycle. But we do not want to learn them through SGD, that’s why we don’t need the differentiable part. We want to learn few parameters at a time.</p>
 
-<p><strong>Caveat</strong>: Automatic programming has been the holy grail of AI since the times of von Neumann. Minsky even stated that von Neumann’s architecure was created with the intention to do automatic programming <em>(previous architectures had a hard code/data separation and code was not modifiable while running)</em>. Other languages, including Lisp, clearly had automated programming in mind when designed.</p>
+<p><strong>Caveat</strong>: Automatic programming has been the holy grail of AI since the times of von Neumann. Minsky even stated that von Neumann’s architecture was created with the intention to do automatic programming <em>(previous architectures had a hard code/data separation and code was not modifiable while running)</em>. Other languages, including Lisp, clearly had automated programming in mind when designed.</p>
 
 <p>The search space is virtually infinite, <strong>why do you want to fail again?</strong></p>
 
@@ -478,13 +546,11 @@ reference on Formal Fields as already implemented in the PoC and currently being
 
 <p>Bop supports both static and dynamic analysis of its own code. Static allows analyzing the code without running it. The mechanism implemented is described in a paper that will be shared soon. Dynamic allows defining alternative code in case of failure, called forking a function.</p>
 
-<h3 id="bebop-forks">Bebop forks</h3>
+<h3 id="bebop-is-pure-just-in-time-linked-c">Bebop is pure just-in-time linked C++</h3>
 
-<p>Pure functions can be forked from other pure functions. A <strong>forked forked</strong> points to its ancestor which can be called as an alternative in case the function raises an error. This requires functions to be pure functions (not have arguments passed by reference). This mechanism enormously simplifies the implementation of genetic algorithms by “undo mutation on error”.</p>
-
-<h3 id="automatic-function-result-caching">Automatic function result caching</h3>
-
-<p>Pure functions can be optionally cached (memoized) by a directive. This makes caching simple, reliable and potentially hugely profitable. Function caching can also be used as a algorithmic strategy as in <strong>dynamic programming</strong>.</p>
+<p>Bop only needs one tuple as an argument and one tuple as a return (which is no limitation since the complexity of a tuple is unlimited).
+A kernel bytecode instruction is just a just-in-time linked c++ function. Alternatively, a bytecode instruction can be a bop function which
+can be learned of written in the kernel.</p>
 
 <h2 id="introducing-fields">Introducing Fields</h2>
 
@@ -507,12 +573,12 @@ reference on Formal Fields as already implemented in the PoC and currently being
       <td><span class="label label-info">Next …</span></td>
     </tr>
     <tr>
-      <td><a href="vision_blocks_containers.html">Blocks, Storage and Containers</a></td>
+      <td><a href="vision_elements_containers.html">Elements - Containers</a></td>
       <td> </td>
       <td> </td>
       <td> </td>
       <td> </td>
-      <td><a href="vision_relations_finder.html">Relations and the Finder</a></td>
+      <td><a href="vision_agency_code.html">Agency - Code Automation</a></td>
     </tr>
   </tbody>
 </table>
@@ -530,7 +596,7 @@ reference on Formal Fields as already implemented in the PoC and currently being
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2021 kaalam.ai. All rights reserved. <br />
- Site last generated: Feb 27, 2021 <br />
+ Site last generated: Feb 28, 2021 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

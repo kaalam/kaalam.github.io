@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="What is Jazz (part 3) How fields stick together, relations and the Finder.">
+<meta name="description" content="Overview of formal fields, bebop (the language), cores (code running infrastructure) and the jit linker.">
 <meta name="keywords" content=" ">
-<title>Relations and the Finder | Jazz User's Manual</title>
+<title>Bebop elements | Jazz User's Manual</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -208,19 +208,25 @@
                   
                   
                   
-                  <li><a href="vision_blocks_containers.html">Blocks, Storage and Containers</a></li>
+                  <li><a href="vision_elements_block_kind_etc.html">Elements - Blocks, Kinds, Tuples, Tables and Fluxes</a></li>
                   
                   
                   
                   
                   
-                  <li><a href="vision_bop_fields_contexts.html">Bebop, Formal Fields and Code Generation</a></li>
+                  <li><a href="vision_elements_containers.html">Elements - Containers - Volatile, Remote and Persisted</a></li>
                   
                   
                   
                   
                   
-                  <li class="active"><a href="vision_relations_finder.html">Relations and the Finder</a></li>
+                  <li><a href="vision_code_bebop.html">Code Generation - Formal Fields and Bebop</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="vision_agency_code.html">Agency - Code Automation</a></li>
                   
                   
                   
@@ -247,7 +253,23 @@
           
           
           
-          <li><a href="bop_ref_elements.html">Bebop elements</a></li>
+          <li class="active"><a href="bop_elements.html">Bebop elements</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">Agency fundamentals</a>
+      <ul>
+          
+          
+          
+          <li><a href="agency_elements.html">Agency elements</a></li>
           
           
           
@@ -263,14 +285,56 @@
           
           
           
-          <li><a href="api_ref_intro.html">API introduction</a></li>
+          <li><a href="api_ref_intro.html">API reference - Introduction</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_details.html">API details</a></li>
+          <li><a href="api_ref_modules_.html">API reference - How it works</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_http_api.html">API reference - The http API</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_names.html">API reference - Names</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_locators.html">API reference - Locators</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_const.html">API reference - Constants</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_slicing.html">API reference - Block and tuple slicing</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_contracts.html">API reference - Block and tuple contracts</a></li>
           
           
           
@@ -294,6 +358,13 @@
           
           
           <li><a href="reference_docker_latest_server.html">Jazz (LSS) Latest Stable Server</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="reference_docker_tangle_server.html">Jazz (TNG) The Tangle Server</a></li>
           
           
           
@@ -375,7 +446,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Relations and the Finder</h1>
+   <h1 class="post-title-main">Bebop elements</h1>
 </div>
 
 
@@ -383,7 +454,7 @@
 <div class="post-content">
 
    
-    <div class="summary">What is Jazz (part 3) How fields stick together, relations and the Finder.</div>
+    <div class="summary">Overview of formal fields, bebop (the language), cores (code running infrastructure) and the jit linker.</div>
    
 
     
@@ -417,57 +488,19 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> This page is outdated. See the <a href="https://arxiv.org/abs/2007.14075">the Formal Fields Paper</a> for an up to date
-reference on Formal Fields as already implemented in the PoC and currently being implemented in the main Jazz project.</div>
+  <div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> Implementation of bebop has not started in the C++ project. The future version 0.6+ will start the
+implementation. For now, most PoC projects and notes are private, except the one listed below.</div>
 
-<h2 id="introducing-relations">Introducing Relations</h2>
+<h2 id="poc-for-jazzs-automated-code-generation">PoC for Jazz’s automated code generation</h2>
 
-<p>The class <code class="language-plaintext highlighter-rouge">Field</code> is the implementation of the idea of <strong>Formal Fields</strong>. For now, we said they are “something like OOP classes”, but each of them has a language, Bebop, defined by a set of functions inherited from other fields or extended in Bebop. We also mentioned that anything, including a poem in English or a video is Bop source code in some <code class="language-plaintext highlighter-rouge">Field</code> and may be compiled to bytecode, but we did not explain how that works.</p>
+<p>The system generates code automatically using human-written examples and learns in few shots. The whole PoC is implemented in Python
+applied to the <a href="https://www.kaggle.com/c/abstraction-and-reasoning-challenge">ARC challenge</a>.</p>
 
-<p>To truly understand the notion of <strong>Formal Fields</strong> and how that is very different from classes, the first important idea to understand is that <strong>computation does not really happen in the fields</strong>, instead, <strong>it happens in the connections between one field and another</strong>.</p>
-
-<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> We have to build Jazz before we can experiment most of the learning ideas. The resulting algorithms will be published over time. For now, we will give some examples.</div>
-
-<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> Our first paper on <strong>Formal Fields</strong> is currently in preparation. To be submitted early March 2020. Stay tuned!</div>
-
-<p>Imagine a simple voice commanded system that just understands commands like “turn on the light”. It will have some <code class="language-plaintext highlighter-rouge">Field</code> named <strong>“SoundWave”</strong> that holds vectors of 16 bit integers at speech frequency, say 44 kHz. <strong>“SoundWave”</strong> itself is happy to just contain data of the right shape and type, it does not know how to do anything with it.</p>
-
-<p>There is another <code class="language-plaintext highlighter-rouge">Field</code> named <strong>“Vocoder”</strong> that knows how to store a tuple of (fundamental frequency, envelope, aperiodic components at a lower frequency, say 100 Hz). There is a <code class="language-plaintext highlighter-rouge">Bond</code> from <strong>“SoundWave”</strong> to <strong>“Vocoder”</strong> that, with some parameters executes the code from <strong>“SoundWave”</strong> into <strong>“Vocoder”</strong>.</p>
-
-<p>Later, a <code class="language-plaintext highlighter-rouge">Field</code> named <strong>“PhoneticFrames”</strong> has a <code class="language-plaintext highlighter-rouge">Bond</code> from <strong>“Vocoder”</strong> that guesses most likely models. Then, a <code class="language-plaintext highlighter-rouge">Field</code> named <strong>“Text”</strong> guesses about the code in <strong>“PhoneticFrames”</strong>. Finally, a <code class="language-plaintext highlighter-rouge">Field</code> named <strong>“Actions”</strong> guesses from another <code class="language-plaintext highlighter-rouge">Field</code> named <strong>“English”</strong> that itself guesses form <strong>“Text”</strong>, …</p>
-
-<p>We use the word “guesses” intentionally to indicate that the posterior likelihood is key in disambiguating imperfect matches in the bonds. The whole chain of bonds acts as if it was a direct bond from <strong>“SoundWave”</strong> to <strong>“Actions”</strong> and is called a <code class="language-plaintext highlighter-rouge">Compound</code>.</p>
-
-<p>A simpler type of bonds, that can only succeed of fail (disk full, etc.) and have no learned parameters is called a <code class="language-plaintext highlighter-rouge">Way</code>. There could be a way from <strong>“SoundWave”</strong> to <strong>“MP3file”</strong> that would just be a “save as mp3” function.</p>
-
-<h2 id="introducing-the-finder">Introducing The Finder</h2>
-
-<p>A complete <code class="language-plaintext highlighter-rouge">Chart</code> (A <code class="language-plaintext highlighter-rouge">Chart</code> is a <code class="language-plaintext highlighter-rouge">Container</code> that holds graphs efficiently) of all the <code class="language-plaintext highlighter-rouge">Field</code> descendants and all their ways and bonds is updated automatically by the classes at Jazz node level and is known as the <code class="language-plaintext highlighter-rouge">Finder</code>.</p>
-
-<p>Because finding working <code class="language-plaintext highlighter-rouge">Compound</code> chains is not as easy as finding paths in graphs, compounds need to be learned. A special multi-path chain of bonds, named a <code class="language-plaintext highlighter-rouge">Kinship</code> is required by some <code class="language-plaintext highlighter-rouge">Compound</code> identifying algorithms yet to be published.</p>
-
-<p><br /></p>
-
-<table>
-  <tbody>
-    <tr>
-      <td><span class="label label-default">Previous …</span></td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td><span class="label label-info">Next …</span></td>
-    </tr>
-    <tr>
-      <td><a href="vision_bop_fields_contexts.html">Bebop, Formal Fields and Code Generation</a></td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td><a href="vision_apis_services.html">APIs and Services</a></td>
-    </tr>
-  </tbody>
-</table>
+<ul>
+  <li><a href="https://github.com/kaalam/JazzARC">github project</a></li>
+  <li><a href="https://arxiv.org/abs/2007.14075">Formal Fields paper</a></li>
+  <li><a href="https://www.slideshare.net/SantiagoBasalda/jazz-open-expo-europe-june-2020">slides</a></li>
+</ul>
 
 
 
@@ -482,7 +515,7 @@ reference on Formal Fields as already implemented in the PoC and currently being
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2021 kaalam.ai. All rights reserved. <br />
- Site last generated: Feb 27, 2021 <br />
+ Site last generated: Feb 28, 2021 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

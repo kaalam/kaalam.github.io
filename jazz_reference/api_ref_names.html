@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="What is Jazz (part 1) Introduction to blocks, storage and containers. These classes are the basement for the "Jazz Magic".">
+<meta name="description" content="Syntax of item, block, kind and tuple names.">
 <meta name="keywords" content=" ">
-<title>Blocks, Storage and Containers | Jazz User's Manual</title>
+<title>API reference - Names | Jazz User's Manual</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -208,19 +208,25 @@
                   
                   
                   
-                  <li class="active"><a href="vision_blocks_containers.html">Blocks, Storage and Containers</a></li>
+                  <li><a href="vision_elements_block_kind_etc.html">Elements - Blocks, Kinds, Tuples, Tables and Fluxes</a></li>
                   
                   
                   
                   
                   
-                  <li><a href="vision_bop_fields_contexts.html">Bebop, Formal Fields and Code Generation</a></li>
+                  <li><a href="vision_elements_containers.html">Elements - Containers - Volatile, Remote and Persisted</a></li>
                   
                   
                   
                   
                   
-                  <li><a href="vision_relations_finder.html">Relations and the Finder</a></li>
+                  <li><a href="vision_code_bebop.html">Code Generation - Formal Fields and Bebop</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="vision_agency_code.html">Agency - Code Automation</a></li>
                   
                   
                   
@@ -247,7 +253,23 @@
           
           
           
-          <li><a href="bop_ref_elements.html">Bebop elements</a></li>
+          <li><a href="bop_elements.html">Bebop elements</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">Agency fundamentals</a>
+      <ul>
+          
+          
+          
+          <li><a href="agency_elements.html">Agency elements</a></li>
           
           
           
@@ -263,14 +285,56 @@
           
           
           
-          <li><a href="api_ref_intro.html">API introduction</a></li>
+          <li><a href="api_ref_intro.html">API reference - Introduction</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_details.html">API details</a></li>
+          <li><a href="api_ref_modules_.html">API reference - How it works</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_http_api.html">API reference - The http API</a></li>
+          
+          
+          
+          
+          
+          
+          <li class="active"><a href="api_ref_names.html">API reference - Names</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_locators.html">API reference - Locators</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_const.html">API reference - Constants</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_slicing.html">API reference - Block and tuple slicing</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_contracts.html">API reference - Block and tuple contracts</a></li>
           
           
           
@@ -294,6 +358,13 @@
           
           
           <li><a href="reference_docker_latest_server.html">Jazz (LSS) Latest Stable Server</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="reference_docker_tangle_server.html">Jazz (TNG) The Tangle Server</a></li>
           
           
           
@@ -375,7 +446,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Blocks, Storage and Containers</h1>
+   <h1 class="post-title-main">API reference - Names</h1>
 </div>
 
 
@@ -383,7 +454,7 @@
 <div class="post-content">
 
    
-    <div class="summary">What is Jazz (part 1) Introduction to blocks, storage and containers. These classes are the basement for the "Jazz Magic".</div>
+    <div class="summary">Syntax of item, block, kind and tuple names.</div>
    
 
     
@@ -417,130 +488,23 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <h2 id="introducing-blocks">Introducing Blocks</h2>
+  <div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> Jazz is still under development to produce the first Minimum Viable Product (MVP) after the original 0.1.7.
+This is incomplete, but what is here is up to date.</div>
 
-<p><span class="label label-info">Block</span></p>
+<h3 id="block-names">Block names</h3>
 
-<p>In Jazz <strong>everything is a</strong> <code class="language-plaintext highlighter-rouge">Block</code>. This means all the classes, data, functions, Bop programs and static objects that make a system are
-stored as blocks. Even block containers are stored as blocks. Let’s start with what blocks are made of.</p>
+<p>A block name is a sequence of case-sensitive alphanumeric characters or underscores of maximum length MAX_BLOCK_ID_LENGTH - 1 (actually 31)
+starting with a letter.</p>
 
-<figure><img class="docimage" src="images/jazz_block.png" alt="" style="max-width: 540px" /><figcaption>A jazz block</figcaption></figure>
+<p>The regex REGEX_VALIDATE_BLOCK_ID validates a block identifier.</p>
 
-<h3 id="a-block-is-a-tensor">A Block is a tensor</h3>
+<p><span class="label label-info">R</span></p>
 
-<p>A tensor is just a vector of vectors of vectors of … <strong>one type</strong>. E.g., a video is a tensor of rank 4 (frame #, x, y, rgb). Types
-include what you expect in any language: Boolean, integer, float, string of different sizes. Data blocks are typically small, as
-in tenths of thousands of cells, but can be bigger to avoid cross-block boundaries when processing bigger objects (e.g. high resolution
-video). Also, rigorous data analytics is supported: All types (except byte) support a NA (Not Available) logic. There are <strong>sorted factor</strong>,
-<strong>unsorted factor</strong> and <strong>strings as factor</strong> types. Bear in mind that <strong>any file</strong> is a <code class="language-plaintext highlighter-rouge">Block</code>, since it is a vector (tensor or rank 1)
-of bytes. Besides that, there are multi-block abstractions (columns, tables, etc.), which are, again, implemented as blocks.</p>
+<p>The new design goes back to the original concept of <code class="language-plaintext highlighter-rouge">C++</code> and <code class="language-plaintext highlighter-rouge">http</code>. An R package to manage the <code class="language-plaintext highlighter-rouge">http</code> client will still be included.</p>
 
-<h3 id="a-block-has-attributes">A Block has attributes</h3>
-
-<p>Blocks have attributes as first class citizen. Attributes are maps from integer to string. Attributes are contained inside the
-<code class="language-plaintext highlighter-rouge">Block</code>. Possible attributes are:</p>
-
-<ul>
-  <li><strong>Urls</strong>. This automatically exposes the object under that url in the http server.</li>
-  <li>Http <strong>mime types</strong>. How should a browser treat this thing? What is the language of the content? …</li>
-  <li><strong>File system</strong> attributes. E.g., what software can compress/decompress this.</li>
-  <li><strong>Media</strong> attributes. This is a compressed video of: running time, x, y, codec, …</li>
-  <li><strong>Jazz fields</strong>. Last but not least: Functions are blocks, fields are blocks, … More on that on the next page.</li>
-</ul>
-
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Since any resource is a <code class="language-plaintext highlighter-rouge">Block</code> and blocks can have urls. A Jazz server is the only http server you need
-to support any web technology, from static webpages to Typescript and JS frameworks such as Angular and Ionic.</div>
-
-<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> For the final user, Jazz is a website or mobile app that does “AI Magic”.</div>
-
-<h3 id="a-block-has-an-owner">A Block has an owner</h3>
-
-<p>A <code class="language-plaintext highlighter-rouge">Block</code> is binary moveable, quasi-immutable and has an owner, called a <code class="language-plaintext highlighter-rouge">Container</code>.
-This means:</p>
-
-<ul>
-  <li><strong>Binary moveable</strong> - It can be copied “as is” because it has no pointers.</li>
-  <li><strong>Quasi-immutable</strong> - Via the API, it appears as immutable. Of course, in C++ you can still change its content for performance reasons
-and provide an interface that abstracts that out.</li>
-  <li><strong>Owner</strong> - According to the owner, a <code class="language-plaintext highlighter-rouge">Block</code> can be: <strong>one shot</strong>, <strong>volatile</strong> or <strong>persisted</strong>. <strong>One shot</strong> is possible only in C++,
-it means the creator owns the <code class="language-plaintext highlighter-rouge">Block</code>. All other blocks have a <strong>container</strong>. Via the API, blocks can only be created inside <code class="language-plaintext highlighter-rouge">Container</code>
-descendants. Some containers have a <code class="language-plaintext highlighter-rouge">Storage</code>. In that case their blocks are <strong>persisted</strong>, i.e., they exist on a memory mapped file
-to/from which they can be saved/loaded. Other containers, e.g., a tree used in a tree search, do not need to be persisted. Their blocks are
-named <strong>volatile</strong> in this case.</li>
-</ul>
-
-<h2 id="introducing-storage">Introducing Storage</h2>
-
-<p><span class="label label-info">storage</span></p>
-
-<p>The class <code class="language-plaintext highlighter-rouge">Storage</code> implements persistence of all Jazz objects using <strong>LMDB</strong>. Therefore, a Jazz file is an LMDB file of persisted blocks.
-You can even use command line LMDB utilities to backup a Jazz server while running or access the same file from more than one process.</p>
-
-<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> Because LMDB is a transactionally consistent key/value store, Jazz is “out of the box” <strong>a distributed
-key/value store second to none in terms of efficiency</strong>.</div>
-
-<figure><img class="docimage" src="images/jazz_storage.png" alt="" /><figcaption>Storage class</figcaption></figure>
-
-<h3 id="storage-can-contain-any-number-of-containers">Storage can contain any number of containers</h3>
-
-<p><code class="language-plaintext highlighter-rouge">Storage</code> is not inherited. Instead, all <code class="language-plaintext highlighter-rouge">Container</code> descendants can be grounded in a <code class="language-plaintext highlighter-rouge">Storage</code>, when they do, they inherit the store’s
-Get/Put API. This design allows any number of containers being stored in any number of <code class="language-plaintext highlighter-rouge">Storage</code> objects, of course, each one belonging
-to just one <code class="language-plaintext highlighter-rouge">Storage</code>.</p>
-
-<h2 id="introducing-containers">Introducing Containers</h2>
-
-<p><span class="label label-info">Container</span></p>
-
-<p>The class <code class="language-plaintext highlighter-rouge">Container</code>is an abstract class. It defines an API to manage blocks (possibly persisted) with a consistent interface. The
-containers themselves are just efficient data structures required by different algorithms. You can think of it as the C++ STL. Actually,
-some containers are just wrappers around STL containers, others are implemented from scratch or using more than one STL container.</p>
-
-<figure><img class="docimage" src="images/jazz_container.png" alt="" /><figcaption>Containers class</figcaption></figure>
-
-<h3 id="blocks-and-containers-have-identifiers-jazz-clusters-have-global-paths">Blocks and containers have identifiers, Jazz clusters have global paths</h3>
-
-<p>Jazz blocks have identifiers. Identifiers are unique in the context of their container. Containers themselves, since they are blocks, have
-identifiers. Adding <code class="language-plaintext highlighter-rouge">Storage</code> IDs and even Jazz node IDs we get “global” distributed paths (valid over a cluster of Jazz nodes).</p>
+<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> The R package <strong>rjazz</strong> also includes built-in http client support to use the REST API from R.</div>
 
 <p><br /></p>
-
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> You can create <strong>trees of containers</strong> of any complexity using the API. The only limitation is: Once any
-container is grounded in a <code class="language-plaintext highlighter-rouge">Storage</code>, all its descendants can only be grounded in the same <code class="language-plaintext highlighter-rouge">Storage</code>. This behavior is handled by the class
-automatically.</div>
-
-<p><br /></p>
-
-<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> Since containers are efficient data structures, many Jazz classes inherit them. E.g.,
-The Finder is a Chart.</div>
-
-<h3 id="container-descendant-reference">Container descendant reference</h3>
-
-<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> The reference for each Container descendant is included in its source code and available via the
-<a href="/develop/">developer documentation</a>. At least until definitions are so stable that we consider backward compatibility a priority, there
-is no other reference.</div>
-
-<p><br /></p>
-
-<table>
-  <tbody>
-    <tr>
-      <td><span class="label label-default">Previous …</span></td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td><span class="label label-info">Next …</span></td>
-    </tr>
-    <tr>
-      <td><a href="vision_intro_page.html">What is the vision?</a></td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td><a href="vision_bop_fields_contexts.html">Bebop, Formal Fields and Code Generation</a></td>
-    </tr>
-  </tbody>
-</table>
 
 
 
@@ -555,7 +519,7 @@ is no other reference.</div>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2021 kaalam.ai. All rights reserved. <br />
- Site last generated: Feb 27, 2021 <br />
+ Site last generated: Feb 28, 2021 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

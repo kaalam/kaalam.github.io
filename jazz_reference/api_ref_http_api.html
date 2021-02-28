@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="How Bebop is designed in terms of the language itself and support for automatic programming.">
+<meta name="description" content="Http API operation">
 <meta name="keywords" content=" ">
-<title>Bebop elements | Jazz User's Manual</title>
+<title>API reference - The http API | Jazz User's Manual</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -208,19 +208,25 @@
                   
                   
                   
-                  <li><a href="vision_blocks_containers.html">Blocks, Storage and Containers</a></li>
+                  <li><a href="vision_elements_block_kind_etc.html">Elements - Blocks, Kinds, Tuples, Tables and Fluxes</a></li>
                   
                   
                   
                   
                   
-                  <li><a href="vision_bop_fields_contexts.html">Bebop, Formal Fields and Code Generation</a></li>
+                  <li><a href="vision_elements_containers.html">Elements - Containers - Volatile, Remote and Persisted</a></li>
                   
                   
                   
                   
                   
-                  <li><a href="vision_relations_finder.html">Relations and the Finder</a></li>
+                  <li><a href="vision_code_bebop.html">Code Generation - Formal Fields and Bebop</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="vision_agency_code.html">Agency - Code Automation</a></li>
                   
                   
                   
@@ -247,7 +253,23 @@
           
           
           
-          <li class="active"><a href="bop_ref_elements.html">Bebop elements</a></li>
+          <li><a href="bop_elements.html">Bebop elements</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">Agency fundamentals</a>
+      <ul>
+          
+          
+          
+          <li><a href="agency_elements.html">Agency elements</a></li>
           
           
           
@@ -263,14 +285,56 @@
           
           
           
-          <li><a href="api_ref_intro.html">API introduction</a></li>
+          <li><a href="api_ref_intro.html">API reference - Introduction</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_details.html">API details</a></li>
+          <li><a href="api_ref_modules_.html">API reference - How it works</a></li>
+          
+          
+          
+          
+          
+          
+          <li class="active"><a href="api_ref_http_api.html">API reference - The http API</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_names.html">API reference - Names</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_locators.html">API reference - Locators</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_const.html">API reference - Constants</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_slicing.html">API reference - Block and tuple slicing</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_contracts.html">API reference - Block and tuple contracts</a></li>
           
           
           
@@ -294,6 +358,13 @@
           
           
           <li><a href="reference_docker_latest_server.html">Jazz (LSS) Latest Stable Server</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="reference_docker_tangle_server.html">Jazz (TNG) The Tangle Server</a></li>
           
           
           
@@ -375,7 +446,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Bebop elements</h1>
+   <h1 class="post-title-main">API reference - The http API</h1>
 </div>
 
 
@@ -383,7 +454,7 @@
 <div class="post-content">
 
    
-    <div class="summary">How Bebop is designed in terms of the language itself and support for automatic programming.</div>
+    <div class="summary">Http API operation</div>
    
 
     
@@ -417,26 +488,45 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <h2 id="about-this-page">About this page</h2>
+  <div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> Jazz is still under development to produce the first Minimum Viable Product (MVP) after the original 0.1.7.
+This is incomplete, but what is here is up to date.</div>
 
-<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> This page is intentionally not called Bebop Reference, it is way too early for that. This is the place where details about the language will be described as implemented.</div>
+<h3 id="rest-predicates">REST predicates</h3>
+<p><br /></p>
 
-<h2 id="the-idea-behind-bebop">The idea behind Bebop</h2>
+<table>
+  <tbody>
+    <tr>
+      <td><span class="label label-info">Next …</span></td>
+    </tr>
+    <tr>
+      <td><a href="api_ref_details.html">API reference</a></td>
+    </tr>
+  </tbody>
+</table>
 
-<p><span class="label label-info">Bebop</span></p>
+<p><span class="label label-info">REST API</span></p>
 
-<p><code class="language-plaintext highlighter-rouge">Bebop</code> aka. <code class="language-plaintext highlighter-rouge">Bop</code> introduces a new kind abstraction, the <a href="vision_bop_fields_contexts.html#introducing-fields">field</a>. The definition of the language itself is stored in the fields (in plural) from which it inherits. And the language extends itself functionally. The result being that anything (any formal text, any natural text, but even data) could be Bop code in some field. The whole idea is introduced as <a href="vision_bop_fields_contexts.html#what-is-that-jazz-magic">Jazz magic</a></p>
-
-<h2 id="fundamental-ideas">Fundamental ideas</h2>
+<p>The REST API supports <strong>standard http commands</strong>.</p>
 
 <ul>
-  <li><a href="vision_bop_fields_contexts.html#bebop-operates-at-source-and-bytecode-level">Bebop operates at source and bytecode level</a></li>
-  <li><a href="vision_bop_fields_contexts.html#bebop-is-object-oriented-in-its-own-way">Bebop is object oriented (in its own way)</a></li>
-  <li><a href="vision_bop_fields_contexts.html#bebop-is-functional">Bebop is functional</a></li>
-  <li><a href="vision_bop_fields_contexts.html#bebop-is-safe">Bebop is safe</a></li>
-  <li><a href="vision_bop_fields_contexts.html#bebop-forks">Bebop forks</a></li>
-  <li><a href="vision_bop_fields_contexts.html#automatic-function-result-caching">Automatic function result caching</a></li>
+  <li><strong>GET</strong> with a valid <code class="language-plaintext highlighter-rouge">rvalue</code>. To read from Jazz.</li>
+  <li><strong>HEAD</strong> with a valid <code class="language-plaintext highlighter-rouge">rvalue</code>. Internally the same as GET, but returns the header only.</li>
+  <li><strong>PUT</strong> with a valid <code class="language-plaintext highlighter-rouge">lvalue</code>. To write blocks into a Jazz keepr.</li>
+  <li><strong>DELETE</strong> with a valid <code class="language-plaintext highlighter-rouge">lvalue</code>. To delete blocks or containers (at any level of the tree).</li>
+  <li><strong>OPTIONS</strong> with a string. Parses the string and returns the commands that would accept that string as a URL.</li>
+  <li><strong>HEAD</strong> with <code class="language-plaintext highlighter-rouge">lvalue</code>=<code class="language-plaintext highlighter-rouge">rvalue</code>. Assignment in the server. Similar to “PUT(lvalue, GET(rvalue))” without traffic.</li>
 </ul>
+
+<h4 id="limitations-in-version-05x">Limitations in version 0.5.x</h4>
+
+<ul>
+  <li>No support for POST or TRACE.</li>
+  <li>Compression is not supported.</li>
+  <li>CACHE HEADERS are not supported.</li>
+</ul>
+
+<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> All reads are safe, all writes are idempotent.</div>
 
 <p><br /></p>
 
@@ -453,7 +543,7 @@ $('#toc').on('click', 'a', function() {
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2021 kaalam.ai. All rights reserved. <br />
- Site last generated: Feb 27, 2021 <br />
+ Site last generated: Feb 28, 2021 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

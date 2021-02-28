@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="An introduction to the API basics and the ToC.">
+<meta name="description" content="What is Jazz (part 1) Introduction to blocks, kinds, etc. These classes are the basement for the "Jazz Magic".">
 <meta name="keywords" content=" ">
-<title>API reference - Introduction | Jazz User's Manual</title>
+<title>Elements - Blocks, Kinds, Tuples, Tables and Fluxes | Jazz User's Manual</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -148,7 +148,7 @@
                         
                         
                         
-                        <li class="dropdownActive"><a href="api_ref_intro.html">Jazz API introduction</a></li>
+                        <li><a href="api_ref_intro.html">Jazz API introduction</a></li>
                         
                         
                         
@@ -208,7 +208,7 @@
                   
                   
                   
-                  <li><a href="vision_elements_block_kind_etc.html">Elements - Blocks, Kinds, Tuples, Tables and Fluxes</a></li>
+                  <li class="active"><a href="vision_elements_block_kind_etc.html">Elements - Blocks, Kinds, Tuples, Tables and Fluxes</a></li>
                   
                   
                   
@@ -285,7 +285,7 @@
           
           
           
-          <li class="active"><a href="api_ref_intro.html">API reference - Introduction</a></li>
+          <li><a href="api_ref_intro.html">API reference - Introduction</a></li>
           
           
           
@@ -446,7 +446,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">API reference - Introduction</h1>
+   <h1 class="post-title-main">Elements - Blocks, Kinds, Tuples, Tables and Fluxes</h1>
 </div>
 
 
@@ -454,7 +454,7 @@
 <div class="post-content">
 
    
-    <div class="summary">An introduction to the API basics and the ToC.</div>
+    <div class="summary">What is Jazz (part 1) Introduction to blocks, kinds, etc. These classes are the basement for the "Jazz Magic".</div>
    
 
     
@@ -488,34 +488,104 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <h2 id="api-introduction-the-different-apis">API introduction: the different APIs</h2>
+  <h2 id="introducing-blocks">Introducing Blocks</h2>
 
-<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> Jazz is still under development to produce the first Minimum Viable Product (MVP) after the original 0.1.7.
-This is incomplete, but what is here is up to date.</div>
+<p><span class="label label-info">Block</span></p>
 
-<h3 id="the-c-api">The C++ API</h3>
+<p>In Jazz <strong>everything is stored as</strong> <code class="language-plaintext highlighter-rouge">Block</code>. That includes simple structures: tensor, tuple, kind and flux. Also complex structures
+that point to other blocks: index, column, table, and, of course, code and formal fields. Blocks are stored in containers.</p>
 
-<h3 id="the-bebop-api">The Bebop API</h3>
+<figure><img class="docimage" src="images/jazz_block.png" alt="" style="max-width: 540px" /><figcaption>A jazz block</figcaption></figure>
 
-<h3 id="the-http-api">The http API</h3>
+<h3 id="a-tensor-is-a-block">A tensor is a block</h3>
 
-<h3 id="python-and-r-api">Python and R API</h3>
+<p>A tensor is just a vector of vectors of vectors of … <strong>one type</strong>. E.g., a video is a tensor of rank 4 (frame #, x, y, rgb). Types
+include what you expect in any language: Boolean, integer, float, string of different sizes. Data blocks are typically small, as
+in tenths of thousands of cells, but can be bigger to avoid cross-block boundaries when processing bigger objects (e.g. high resolution
+video). Also, rigorous data analytics is supported: All types (except byte) support a NA (Not Available) logic. There are <strong>sorted factor</strong>,
+<strong>unsorted factor</strong> and <strong>strings as factor</strong> types. Bear in mind that <strong>any file</strong> is a <code class="language-plaintext highlighter-rouge">Block</code>, since it is a vector (tensor or rank 1)
+of bytes. Besides that, there are multi-block abstractions (columns, tables, etc.), which are, again, implemented as blocks.</p>
 
-<p><br /></p>
+<h3 id="a-block-has-attributes">A Block has attributes</h3>
 
-<p>See also:</p>
+<p>Blocks have attributes as first class citizen. Attributes are maps from integer to string. Attributes are contained inside the
+<code class="language-plaintext highlighter-rouge">Block</code>. Possible attributes are:</p>
 
 <ul>
-  <li><a href="api_ref_modules_.html">How modules work to serve API calls</a></li>
-  <li><a href="api_ref_http_api.html">http API</a></li>
-  <li><a href="api_ref_names.html">Names</a></li>
-  <li><a href="api_ref_locators.html">Locators</a></li>
-  <li><a href="api_ref_const.html">Constants</a></li>
-  <li><a href="api_ref_slicing.html">Slicing</a></li>
-  <li><a href="api_ref_contracts.html">Contracts</a></li>
+  <li><strong>Urls</strong>. This automatically exposes the object under that url in the http server.</li>
+  <li>Http <strong>mime types</strong>. How should a browser treat this thing? What is the language of the content? …</li>
+  <li><strong>File system</strong> attributes. E.g., what software can compress/decompress this.</li>
+  <li><strong>Media</strong> attributes. This is a compressed video of: running time, x, y, codec, …</li>
+  <li><strong>Jazz fields</strong>. Last but not least: Functions are blocks, fields are blocks, … More on that on the next page.</li>
+</ul>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Since any resource is a <code class="language-plaintext highlighter-rouge">Block</code> and blocks can have urls. A Jazz server is the only http server you need
+to support any web technology, from static webpages to Typescript and JS frameworks such as Angular and Ionic.</div>
+
+<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> For the final user, Jazz is a website or mobile app that does “AI Magic”.</div>
+
+<h3 id="a-block-has-an-owner">A Block has an owner</h3>
+
+<p>A <code class="language-plaintext highlighter-rouge">Block</code> is binary moveable, quasi-immutable and has an owner, called a <code class="language-plaintext highlighter-rouge">Container</code>.
+This means:</p>
+
+<ul>
+  <li><strong>Binary moveable</strong> - It can be copied “as is” because it has no pointers.</li>
+  <li><strong>Quasi-immutable</strong> - Via the API, it appears as immutable. Of course, in C++ you can still change its content for performance reasons
+and provide an interface that abstracts that out.</li>
+  <li><strong>Owner</strong> - According to the owner, a <code class="language-plaintext highlighter-rouge">Block</code> can be: <strong>one shot</strong>, <strong>volatile</strong>, <strong>remote</strong> or <strong>persisted</strong>. <strong>One shot</strong> is internal
+to C++ mostly required by intermediate operations. All other blocks have a <strong>locator</strong>. Via the API, blocks can only be created inside a
+<code class="language-plaintext highlighter-rouge">Container</code>. Some containers have a <code class="language-plaintext highlighter-rouge">Storage</code>. In that case their blocks are <strong>persisted</strong>, i.e., they exist on a memory mapped file
+to/from which they can be saved/loaded. Other containers, e.g., a tree used in a tree search, do not need to be persisted. Their blocks are
+named <strong>volatile</strong> in this case.</li>
+</ul>
+
+<h2 id="introducing-kinds">Introducing Kinds</h2>
+
+<ul>
+  <li>See C++ ref <a href="/develop_jazz02/classjazz__elements_1_1Kind.html">Kind</a></li>
+</ul>
+
+<h2 id="introducing-tuples">Introducing Tuples</h2>
+
+<ul>
+  <li>See C++ ref <a href="/develop_jazz02/classjazz__elements_1_1Tuple.html">Tuple</a></li>
+</ul>
+
+<h2 id="introducing-tables">Introducing Tables</h2>
+
+<ul>
+  <li>See C++ ref <a href="/develop_jazz02/classjazz__elements_1_1Table.html">Table</a></li>
+</ul>
+
+<h2 id="introducing-fluxes">Introducing Fluxes</h2>
+
+<ul>
+  <li>See C++ ref <a href="/develop_jazz02/classjazz__elements_1_1Flux.html">Flux</a></li>
 </ul>
 
 <p><br /></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><span class="label label-default">Previous …</span></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="label label-info">Next …</span></td>
+    </tr>
+    <tr>
+      <td><a href="vision_intro_page.html">What is the vision?</a></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><a href="vision_elements_containers.html">Elements - Containers</a></td>
+    </tr>
+  </tbody>
+</table>
 
 
 
