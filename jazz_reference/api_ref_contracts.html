@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Item, block, kind, tuple, column and table contracts">
+<meta name="description" content="Item, Block, Kind, Tuple, Column, Table, Flux, Container, Volatile, Remote and Persisted contracts">
 <meta name="keywords" content=" ">
-<title>API reference - Block and tuple contracts | Jazz User's Manual</title>
+<title>API reference - Block and Container contracts | Jazz User's Manual</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -334,7 +334,7 @@
           
           
           
-          <li class="active"><a href="api_ref_contracts.html">API reference - Block and tuple contracts</a></li>
+          <li class="active"><a href="api_ref_contracts.html">API reference - Block and Container contracts</a></li>
           
           
           
@@ -446,7 +446,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">API reference - Block and tuple contracts</h1>
+   <h1 class="post-title-main">API reference - Block and Container contracts</h1>
 </div>
 
 
@@ -454,7 +454,7 @@
 <div class="post-content">
 
    
-    <div class="summary">Item, block, kind, tuple, column and table contracts</div>
+    <div class="summary">Item, Block, Kind, Tuple, Column, Table, Flux, Container, Volatile, Remote and Persisted contracts</div>
    
 
     
@@ -491,6 +491,76 @@ $('#toc').on('click', 'a', function() {
   <div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> Jazz is still under development to produce the first Minimum Viable Product (MVP) after the original 0.1.7.
 This is incomplete, but what is here is up to date.</div>
 
+<h2 id="what-are-contracts">What are contracts?</h2>
+
+<p>API-wise, contracts act like a methods of an object. See <a href="api_ref_intro.html">this</a> and <a href="api_ref_modules_.html">this</a> for a more detailed
+explanation. In the following lists, contracts without &lt; and &gt; should be written just “as is”. Others, like .&lt;call&gt;, .&lt;item&gt; have
+their syntax explained below. All contracts are GET (or any read predicate), except those marked as (PUT).</p>
+
+<h2 id="contracts-for-block-and-descendants">Contracts for Block and descendants</h2>
+
+<h3 id="as_cpp">.as_cpp()</h3>
+
+<h3 id="as_json">.as_json()</h3>
+
+<h3 id="as_text">.as_text()</h3>
+
+<h3 id="blocktype">.blocktype()</h3>
+
+<h3 id="bytesdimensions">.bytes(&lt;dimensions&gt;)</h3>
+
+<h3 id="call">.&lt;call&gt;</h3>
+
+<h3 id="column">.&lt;column&gt;</h3>
+
+<h3 id="columns">.columns()</h3>
+
+<h3 id="dimensions">.dimensions()</h3>
+
+<h3 id="events">.events()</h3>
+
+<h3 id="item">.&lt;item&gt;</h3>
+
+<h3 id="items">.items()</h3>
+
+<h3 id="kindsourcedest">.kind(&lt;source|dest&gt;)</h3>
+
+<h3 id="lengthdimensions">.length(&lt;dimensions&gt;)</h3>
+
+<h3 id="listendimensions-handler">.listen(&lt;dimensions&gt;, &lt;handler&gt;)</h3>
+
+<h3 id="meta">.meta()</h3>
+
+<h3 id="mime">.mime()</h3>
+
+<h3 id="raw">.&lt;raw&gt;</h3>
+
+<h3 id="shape">.shape()</h3>
+
+<h3 id="sizedimensions">.size(&lt;dimensions&gt;)</h3>
+
+<h3 id="slice">.&lt;slice&gt;</h3>
+
+<h3 id="type">.type()</h3>
+
+<h3 id="url">.url()</h3>
+
+<h2 id="contracts-for-container-and-descendants">Contracts for Container and descendants</h2>
+
+<h3 id="put-assignlocator-rvalue">(PUT) .assign(&lt;locator&gt;, &lt;rvalue&gt;)</h3>
+
+<h3 id="put-from_jsonlocator">(PUT) .from_json(&lt;locator&gt;)</h3>
+
+<h3 id="put-from_textlocator">(PUT) .from_text(&lt;locator&gt;)</h3>
+
+<h3 id="put-newlocator">(PUT) .new(&lt;locator&gt;)</h3>
+
+<h3 id="put-new_tuplelocator_1-locator_2-">(PUT) .new_tuple(&lt;locator_1&gt;, &lt;locator_2&gt;, …)</h3>
+
+<h3 id="put-set_attributeslocator-rvalue">(PUT) .set_attributes(&lt;locator&gt;, &lt;rvalue&gt;)</h3>
+
+<h3 id="tuplelocator_1-locator_2-">.tuple(&lt;locator_1&gt;, &lt;locator_2&gt;, …)</h3>
+
 <p><br /></p>
 
 
@@ -506,7 +576,7 @@ This is incomplete, but what is here is up to date.</div>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2021 kaalam.ai. All rights reserved. <br />
- Site last generated: Feb 28, 2021 <br />
+ Site last generated: Mar 1, 2021 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

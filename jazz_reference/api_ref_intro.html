@@ -334,7 +334,7 @@
           
           
           
-          <li><a href="api_ref_contracts.html">API reference - Block and tuple contracts</a></li>
+          <li><a href="api_ref_contracts.html">API reference - Block and Container contracts</a></li>
           
           
           
@@ -493,13 +493,64 @@ $('#toc').on('click', 'a', function() {
 <div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> Jazz is still under development to produce the first Minimum Viable Product (MVP) after the original 0.1.7.
 This is incomplete, but what is here is up to date.</div>
 
+<h3 id="how-it-works-brief-intro">How it works (brief intro)</h3>
+
+<p>Jazz is designed for performance. It is a server that can use as much CPU and RAM as available with near 100% efficiency serving thousands
+of concurrent API calls. This comes with some strict architectural decisions that are better kept in mind to understand how the APIs work.
+Blocks, which are everything (data, metadata, indices, code, etc.), and are possibly persisted, are just binary movable structures
+(structures that do not contain pointers). Most things (everything except Columns and Tables) are made of just one Block.</p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> <b>First thing</b>: Blocks cannot allocate RAM. Only Services can. In our case, <b>Containers</b>, which are
+Services allocate RAM!</div>
+
+<p>Note that even simple operations like slicing a block as <code class="language-plaintext highlighter-rouge">my_block[1,2,3]</code> require converting the string <code class="language-plaintext highlighter-rouge">[1,2,3]</code> into a (one shot) block
+and using that block to select rows inside <code class="language-plaintext highlighter-rouge">my_block</code>, the result being another block. This block needs some RAM allocation and only a
+Container can do that.</p>
+
+<p>So unless you are using the C++ API only (which works as you probably expect), the petitions you are doing to blocks are served by one or
+more containers and put together by a special API Service.</p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> What looks to the user like a method of a block, is called <b>a contract</b> and it is computed
+inside a Service. The reason behind the word contract is, all Block descendants are entitled to provide the same service, with the same
+name and coherent behavior. Besides block contracts, Services have contracts too.</div>
+
+<p>See more details <a href="api_ref_modules_.html">here</a></p>
+
 <h3 id="the-c-api">The C++ API</h3>
+
+<p>The C++ API is designed, for the moment, to just merge the source code in another project, using the three different namespaces, each one
+containing the previous ones.</p>
+
+<ul>
+  <li><strong>jazz_elements</strong> (all the pieces: blocks, tuples, storage, fluxes, communication, services, …)</li>
+  <li><strong>jazz_bebop</strong> (everything to create bebop code, run it and expand Formal Fields)</li>
+  <li><strong>jazz_agency</strong> (agency as graphs of fields)</li>
+</ul>
+
+<p>See technical documentation <a href="/develop/">here</a></p>
 
 <h3 id="the-bebop-api">The Bebop API</h3>
 
+<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> Bebop implementation in C++ will start with Jazz version 0.6.x. For the moment, consider the bebop API
+just like the current http API without the restrictions of http predicates and with function calls. Functions are just Blocks and
+function arguments are Tuples.</div>
+
 <h3 id="the-http-api">The http API</h3>
 
-<h3 id="python-and-r-api">Python and R API</h3>
+<p>The http API is what this documentation is about. It has two parts, one http specific (http predicates and encoding specifics) and a
+general syntax of queries with is defined by its parts (names, locators, constants, slicing and contracts). Before that, it is important
+to read how the different modules fit together and what the different APIS /, // and /// are.</p>
+
+<h3 id="python-and-r-apis">Python and R APIs</h3>
+
+<p>To focus on the important parts and advance AI research without the overhead of creating tools we do not need, Jazz dropped the
+implementation of native R and Python packages that existed in Jazz 0.2x. The native APIs (c++ and Bebop) are orders of magnitude more
+efficient than anything that can be implemented in scripting languages. Nevertheless, both projects (rjazz and pyjazz) will be converted
+(by the end of 0.5.xx, before 0.6.1) into http clients that provide the minimum functionality (API calls exchanging data serialized as
+JSON) as clients of a Jazz server.</p>
+
+<p>Ideally, both projects find enough traction to be taken over by groups with some stake in them and become more that just minimum
+functionality clients. Ideally, also a Javascript client joins the project someday.</p>
 
 <p><br /></p>
 
@@ -530,7 +581,7 @@ This is incomplete, but what is here is up to date.</div>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2021 kaalam.ai. All rights reserved. <br />
- Site last generated: Feb 28, 2021 <br />
+ Site last generated: Mar 1, 2021 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>
