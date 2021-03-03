@@ -499,13 +499,59 @@ their syntax explained below. All contracts are GET (or any read predicate), exc
 
 <h2 id="contracts-for-block-and-descendants">Contracts for Block and descendants</h2>
 
-<h3 id="as_cpp">.as_cpp()</h3>
+<h3 id="as_cpp">.as_cpp</h3>
 
-<h3 id="as_json">.as_json()</h3>
+<table>
+  <thead>
+    <tr>
+      <th>.as_cpp</th>
+      <th>Return the C++ interface of a Kind</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Applies to</td>
+      <td>A <code class="language-plaintext highlighter-rouge">Kind</code> or <code class="language-plaintext highlighter-rouge">Tuple</code>.</td>
+    </tr>
+    <tr>
+      <td>Returns</td>
+      <td>A compilable C/C++ <code class="language-plaintext highlighter-rouge">struct</code> that allows writing C/C++ code accessing all the data in every Tuple of that Kind.</td>
+    </tr>
+    <tr>
+      <td>Notes</td>
+      <td>This is used by Bebop to support kernel writing in C++ and also underlies the just-in-time linking of Tuples.</td>
+    </tr>
+  </tbody>
+</table>
 
-<h3 id="as_text">.as_text()</h3>
+<h3 id="as_json">.as_json</h3>
 
-<h3 id="blocktype">.blocktype()</h3>
+<h3 id="as_text">.as_text</h3>
+
+<h3 id="blocktype">.blocktype</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>.blocktype</th>
+      <th>Return the fundamental block type: tensor, filter, kind or tuple</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Applies to</td>
+      <td>Any <code class="language-plaintext highlighter-rouge">Block descendant</code>.</td>
+    </tr>
+    <tr>
+      <td>Returns</td>
+      <td>A <code class="language-plaintext highlighter-rouge">string</code> with the one of the four possibilities (tensor, filter, kind or tuple).</td>
+    </tr>
+    <tr>
+      <td>Notes</td>
+      <td>This just gets the attribute BLOCK_ATTRIB_TYPE of the block. Many complex classes are tuples, <code class="language-plaintext highlighter-rouge">.type</code> gets the class name.</td>
+    </tr>
+  </tbody>
+</table>
 
 <h3 id="bytesdimensions">.bytes(&lt;dimensions&gt;)</h3>
 
@@ -513,15 +559,15 @@ their syntax explained below. All contracts are GET (or any read predicate), exc
 
 <h3 id="column">.&lt;column&gt;</h3>
 
-<h3 id="columns">.columns()</h3>
+<h3 id="columns">.columns</h3>
 
-<h3 id="dimensions">.dimensions()</h3>
+<h3 id="dimensions">.dimensions</h3>
 
-<h3 id="events">.events()</h3>
+<h3 id="events">.events</h3>
 
 <h3 id="item">.&lt;item&gt;</h3>
 
-<h3 id="items">.items()</h3>
+<h3 id="items">.items</h3>
 
 <h3 id="kindsourcedest">.kind(&lt;source|dest&gt;)</h3>
 
@@ -529,23 +575,73 @@ their syntax explained below. All contracts are GET (or any read predicate), exc
 
 <h3 id="listendimensions-handler">.listen(&lt;dimensions&gt;, &lt;handler&gt;)</h3>
 
-<h3 id="meta">.meta()</h3>
+<h3 id="meta">.meta</h3>
 
-<h3 id="mime">.mime()</h3>
+<h3 id="mime">.mime</h3>
 
 <h3 id="raw">.&lt;raw&gt;</h3>
 
-<h3 id="shape">.shape()</h3>
+<h3 id="shape">.shape</h3>
 
 <h3 id="sizedimensions">.size(&lt;dimensions&gt;)</h3>
 
 <h3 id="slice">.&lt;slice&gt;</h3>
 
-<h3 id="type">.type()</h3>
+<h3 id="type">.type</h3>
 
-<h3 id="url">.url()</h3>
+<table>
+  <thead>
+    <tr>
+      <th>.type</th>
+      <th>Return the name to the cpp class stored as the block</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Applies to</td>
+      <td>Any <code class="language-plaintext highlighter-rouge">Block descendant</code>.</td>
+    </tr>
+    <tr>
+      <td>Returns</td>
+      <td>A <code class="language-plaintext highlighter-rouge">string</code> with the name.</td>
+    </tr>
+    <tr>
+      <td>Notes</td>
+      <td>This just gets the attribute BLOCK_ATTRIB_TYPE of the block.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="url">.url</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>.url</th>
+      <th>Return the static http url assigned to a block</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Applies to</td>
+      <td>A <code class="language-plaintext highlighter-rouge">Block</code>. Most likely a file == vector of CELL_TYPE_BYTE with some mime type.</td>
+    </tr>
+    <tr>
+      <td>Returns</td>
+      <td>A <code class="language-plaintext highlighter-rouge">string</code> with the url without the http://server part. Static http resources are not sharded.</td>
+    </tr>
+    <tr>
+      <td>Notes</td>
+      <td>This just gets the attribute BLOCK_ATTRIB_URL of the block.</td>
+    </tr>
+  </tbody>
+</table>
 
 <h2 id="contracts-for-container-and-descendants">Contracts for Container and descendants</h2>
+
+<h3 id="put-add_basename">(PUT) .add_base(&lt;name&gt;)</h3>
+
+<h3 id="put-add_containername">(PUT) .add_container(&lt;name&gt;)</h3>
 
 <h3 id="put-assignlocator-rvalue">(PUT) .assign(&lt;locator&gt;, &lt;rvalue&gt;)</h3>
 
@@ -576,7 +672,7 @@ their syntax explained below. All contracts are GET (or any read predicate), exc
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2021 kaalam.ai. All rights reserved. <br />
- Site last generated: Mar 2, 2021 <br />
+ Site last generated: Mar 3, 2021 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>
