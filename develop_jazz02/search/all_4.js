@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['debug_5fput_73',['debug_put',['../classjazz__elements_1_1ConfigFile.html#a971c3b7d978717f3099572c022b4a1f5',1,'jazz_elements::ConfigFile']]],
-  ['dim_74',['dim',['../unionjazz__elements_1_1TensorDim.html#a0c68e45ee5af23f5041bca88a3b32137',1,'jazz_elements::TensorDim']]],
-  ['dim_5fname_75',['dim_name',['../structjazz__elements_1_1ItemHeader.html#aa89fa132d9b2d9d31b00877d8728cd78',1,'jazz_elements::ItemHeader']]],
-  ['dimension_5fnames_76',['dimension_names',['../classjazz__elements_1_1Kind.html#abc551ddbf4673941da5078290d7aaf05',1,'jazz_elements::Kind']]],
-  ['double_5fna_77',['DOUBLE_NA',['../types_8h.html#ac0e222767f0998f79ffeb691e5e4a7c1',1,'types.h']]]
+  ['elapsed_5fmu_5fsec_77',['elapsed_mu_sec',['../namespacejazz__elements.html#aefef260977adfc6f0108cdc0538aa1a2',1,'jazz_elements']]],
+  ['epi_78',['EPI',['../namespacejazz__main.html#a1b82979f33b26c70a17fcb5de1dc581e',1,'jazz_main']]],
+  ['expandescapesequences_79',['ExpandEscapeSequences',['../namespacejazz__elements.html#acd88c9d26ad86930e276f94959feb634',1,'jazz_elements']]]
 ];

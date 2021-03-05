@@ -67,9 +67,9 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
 <div class="title">container.h File Reference</div>  </div>
 </div><!--header-->
@@ -78,24 +78,22 @@ $(function() {
 </div>
 <p><a href="container_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html">jazz_elements::Container</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>: A <a class="el" href="classjazz__elements_1_1Service.html">Service</a> to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of this.  <a href="classjazz__elements_1_1Container.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespacejazz__elements"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html">jazz_elements</a></td></tr>
+<tr class="memdesc:namespacejazz__elements"><td class="mdescLeft">&#160;</td><td class="mdescRight">Basic Jazz code-less structures and constants. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a607a0b73de9c3e6bc9ecdf3fa3f11d59"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a607a0b73de9c3e6bc9ecdf3fa3f11d59">INCLUDED_JAZZ_ELEMENTS_CONTAINER</a></td></tr>
 <tr class="separator:a607a0b73de9c3e6bc9ecdf3fa3f11d59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ada3cae961c3fcd7348120095bd833f96"><td class="memItemLeft" align="right" valign="top">Service_ErrorCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#ada3cae961c3fcd7348120095bd833f96">start</a> ()</td></tr>
-<tr class="separator:ada3cae961c3fcd7348120095bd833f96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a018e045ed311a64ac2647341e33bad18"><td class="memItemLeft" align="right" valign="top">Service_ErrorCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a018e045ed311a64ac2647341e33bad18">shut_down</a> (bool restarting_service=false)</td></tr>
-<tr class="separator:a018e045ed311a64ac2647341e33bad18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a08d7fb43ef2c9da376df980688335297"><td class="memItemLeft" align="right" valign="top">https&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a08d7fb43ef2c9da376df980688335297">__pad0__</a></td></tr>
-<tr class="separator:a08d7fb43ef2c9da376df980688335297"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa079d788e29274bf6fe7c63f5a596276"><td class="memItemLeft" align="right" valign="top">https pConfigFile&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#aa079d788e29274bf6fe7c63f5a596276">a_config</a></td></tr>
-<tr class="separator:aa079d788e29274bf6fe7c63f5a596276"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a607a0b73de9c3e6bc9ecdf3fa3f11d59"></a>
@@ -106,71 +104,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define INCLUDED_JAZZ_ELEMENTS_CONTAINER</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a018e045ed311a64ac2647341e33bad18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a018e045ed311a64ac2647341e33bad18">&#9670;&nbsp;</a></span>shut_down()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Service_ErrorCode shut_down </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>restarting_service</em> = <code>false</code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ada3cae961c3fcd7348120095bd833f96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada3cae961c3fcd7348120095bd833f96">&#9670;&nbsp;</a></span>start()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Service_ErrorCode start </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a08d7fb43ef2c9da376df980688335297"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08d7fb43ef2c9da376df980688335297">&#9670;&nbsp;</a></span>__pad0__</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">https __pad0__</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa079d788e29274bf6fe7c63f5a596276"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa079d788e29274bf6fe7c63f5a596276">&#9670;&nbsp;</a></span>a_config</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">https pConfigFile a_config</td>
         </tr>
       </table>
 </div><div class="memdoc">

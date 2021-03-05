@@ -1,16 +1,11 @@
 var searchData=
 [
-  ['jazz_5fagency_144',['jazz_agency',['../namespacejazz__agency.html',1,'']]],
-  ['jazz_5fagency_2eh_145',['jazz_agency.h',['../jazz__agency_8h.html',1,'']]],
-  ['jazz_5fbebop_146',['jazz_bebop',['../namespacejazz__bebop.html',1,'']]],
-  ['jazz_5fbebop_2eh_147',['jazz_bebop.h',['../jazz__bebop_8h.html',1,'']]],
-  ['jazz_5fdebug_5fhome_148',['JAZZ_DEBUG_HOME',['../jazz__platform_8h.html#ac26325c84d31adf61f1480e8f7cd7b7f',1,'jazz_platform.h']]],
-  ['jazz_5fdefault_5fconfig_5fpath_149',['JAZZ_DEFAULT_CONFIG_PATH',['../instances_8h.html#a89e9b1adbdda91381feed325f8f086b7',1,'instances.h']]],
-  ['jazz_5felements_150',['jazz_elements',['../namespacejazz__elements.html',1,'']]],
-  ['jazz_5felements_2eh_151',['jazz_elements.h',['../jazz__elements_8h.html',1,'']]],
-  ['jazz_5fmain_152',['jazz_main',['../namespacejazz__main.html',1,'']]],
-  ['jazz_5fmhd_5fdaemon_153',['Jazz_MHD_Daemon',['../namespacejazz__main.html#a9af1d41451e6cfe5e88cddebec1ba954',1,'jazz_main']]],
-  ['jazz_5fplatform_2eh_154',['jazz_platform.h',['../jazz__platform_8h.html',1,'']]],
-  ['jazz_5fversion_155',['JAZZ_VERSION',['../jazz__platform_8h.html#a948a256c8427f1f46ede7fd6fc2a7b5c',1,'jazz_platform.h']]],
-  ['jazz_5fyears_156',['JAZZ_YEARS',['../jazz__platform_8h.html#a494e5cc1a5686d905af0917e584806bf',1,'jazz_platform.h']]]
+  ['kind_156',['Kind',['../classjazz__elements_1_1Kind.html',1,'jazz_elements']]],
+  ['kind_2ecpp_157',['kind.cpp',['../kind_8cpp.html',1,'']]],
+  ['kind_2eh_158',['kind.h',['../kind_8h.html',1,'']]],
+  ['kind_5faudit_159',['kind_audit',['../classjazz__elements_1_1Kind.html#ac3361bb0bf8e5401e72e2c4d7d9747de',1,'jazz_elements::Kind']]],
+  ['kind_5ftype_5f_160',['KIND_TYPE_',['../types_8h.html#a8002d26924d9e68cc1c5bbe96097b747',1,'types.h']]],
+  ['kind_5ftype_5fkind_161',['KIND_TYPE_KIND',['../types_8h.html#adffaa7a483445b56ec3a976adf786ef5',1,'types.h']]],
+  ['kind_5ftype_5fnotakind_162',['KIND_TYPE_NOTAKIND',['../types_8h.html#a8c06f00f3589fcb0c0cd778e8bba7735',1,'types.h']]],
+  ['kind_5ftype_5ftuple_163',['KIND_TYPE_TUPLE',['../types_8h.html#aee26cee2c2dcb7df88fe62837a867aa2',1,'types.h']]]
 ];

@@ -1,21 +1,15 @@
 var searchData=
 [
-  ['last_5fidx_165',['last_idx',['../structjazz__elements_1_1StringBuffer.html#a3bce2a089e52c3b868885f6c6c191356',1,'jazz_elements::StringBuffer']]],
-  ['leftauto_166',['LEFTAUTO',['../utils_8cpp.html#a3f19267d6d0808dfc50809dde0a6947e',1,'utils.cpp']]],
-  ['length_167',['length',['../structjazz__elements_1_1FilterSize.html#a70ae0efca81a4fb3ffbb56c27d884fb2',1,'jazz_elements::FilterSize']]],
-  ['level_168',['level',['../structjazz__elements_1_1ItemHeader.html#a21c6929d96af41a00a541a337c7c2bac',1,'jazz_elements::ItemHeader']]],
-  ['linux_5fdistro_169',['LINUX_DISTRO',['../jazz__platform_8h.html#a604895b0d8875d97115c9bebbf5f519b',1,'jazz_platform.h']]],
-  ['linux_5fplatform_170',['LINUX_PLATFORM',['../jazz__platform_8h.html#aea13f49a32fd1c0e4c8936040892c6bd',1,'jazz_platform.h']]],
-  ['linux_5fprocessor_171',['LINUX_PROCESSOR',['../jazz__platform_8h.html#a9fe308e808a05364a550fa9cf72fde31',1,'jazz_platform.h']]],
-  ['linux_5fversion_172',['LINUX_VERSION',['../jazz__platform_8h.html#ae664f4fd6431eae2bb5db419fd7154c8',1,'jazz_platform.h']]],
-  ['load_5fconfig_173',['load_config',['../classjazz__elements_1_1ConfigFile.html#a86b7edd94d23a7bbdc7c5364e1accfad',1,'jazz_elements::ConfigFile']]],
-  ['log_174',['log',['../classjazz__elements_1_1Logger.html#a0ad64ce2159712169ded90c2d8459216',1,'jazz_elements::Logger::log()'],['../classjazz__elements_1_1Service.html#a43ae5f53f29c382d1f5ff1ac8f63b5be',1,'jazz_elements::Service::log()']]],
-  ['log_5fdebug_175',['LOG_DEBUG',['../utils_8h.html#a6ff63e8955665c4a58b1598f2b07c51a',1,'utils.h']]],
-  ['log_5ferror_176',['LOG_ERROR',['../utils_8h.html#aced66975c154ea0e2a8ec3bc818b4e08',1,'utils.h']]],
-  ['log_5finfo_177',['LOG_INFO',['../utils_8h.html#aeb4f36db01bd128c7afeac5889dac311',1,'utils.h']]],
-  ['log_5fmiss_178',['LOG_MISS',['../utils_8h.html#affb5af35aaf7d7e3224c67db2230a68a',1,'utils.h']]],
-  ['log_5fprintf_179',['log_printf',['../classjazz__elements_1_1Logger.html#a0a78222ffe95b784eac088545c656f67',1,'jazz_elements::Logger::log_printf(int loglevel, const char *fmt,...)'],['../classjazz__elements_1_1Logger.html#afe14c93dbf7a400f4f5ffd4b947f3963',1,'jazz_elements::Logger::log_printf(int loglevel, const char *fmt, va_list args)'],['../classjazz__elements_1_1Service.html#a8290451b2815ea470b8518493023e605',1,'jazz_elements::Service::log_printf()']]],
-  ['log_5fwarn_180',['LOG_WARN',['../utils_8h.html#aea3f57d6dcc5b4ac957e2679e87dde27',1,'utils.h']]],
-  ['logger_181',['Logger',['../classjazz__elements_1_1Logger.html',1,'jazz_elements::Logger'],['../classjazz__elements_1_1Logger.html#a0f3e274cb8138efb05c8f060f3bbbb20',1,'jazz_elements::Logger::Logger(const char *output_file_name)'],['../classjazz__elements_1_1Logger.html#a8362638f64d5e52bbf1c7b916353532a',1,'jazz_elements::Logger::Logger(ConfigFile config, const char *config_key)'],['../namespacejazz__main.html#ae18d0fb5841441ab5a2831734f349328',1,'jazz_main::LOGGER()'],['../namespacejazz__main.html#aebd5be2fc5b704c5db25e81de84f200e',1,'jazz_main::LOGGER(CONFIG, &quot;LOGGER_PATH&quot;)']]],
-  ['long_5finteger_5fna_182',['LONG_INTEGER_NA',['../types_8h.html#a957a36b73d62c6c1377de4f7736f4f13',1,'types.h']]]
+  ['main_182',['main',['../main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main.cpp']]],
+  ['main_2ecpp_183',['main.cpp',['../main_8cpp.html',1,'']]],
+  ['main_2edox_184',['main.dox',['../main_8dox.html',1,'']]],
+  ['main_2eh_185',['main.h',['../main_8h.html',1,'']]],
+  ['max_5fapi_5fbuff_5flength_186',['MAX_API_BUFF_LENGTH',['../types_8h.html#a45237870b6d0f174599247c678d20f12',1,'types.h']]],
+  ['max_5fchecks_5f4_5fmatch_187',['MAX_CHECKS_4_MATCH',['../types_8h.html#a5a4d6ca6f3612a6f6f377b5abe382b5b',1,'types.h']]],
+  ['max_5ffilename_5flength_188',['MAX_FILENAME_LENGTH',['../utils_8h.html#a6773b93f3093658c3dcb569de3b4bdb2',1,'utils.h']]],
+  ['max_5ftensor_5frank_189',['MAX_TENSOR_RANK',['../types_8h.html#a5dfd5a365563c2e8cf13a83a127af9ac',1,'types.h']]],
+  ['mhd_5fhttp_5fanyerror_190',['MHD_HTTP_ANYERROR',['../api_8cpp.html#acd7fa8c1e44c1ce605992576831262b8',1,'api.cpp']]],
+  ['mhd_5fplatform_5fh_191',['MHD_PLATFORM_H',['../api_8h.html#a5a61c24fd07097ce8715f7e10f7152e3',1,'api.h']]],
+  ['murmur_5fseed_192',['MURMUR_SEED',['../utils_8cpp.html#acf830c3140deca25e44187534c55e5a8',1,'utils.cpp']]],
+  ['murmurhash64a_193',['MurmurHash64A',['../namespacejazz__elements.html#a50e37200ae3572b04b417c7e899712bb',1,'jazz_elements']]]
 ];
