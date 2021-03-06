@@ -69,17 +69,37 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">container.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="tuple_8h_source.html">src/jazz_elements/tuple.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;map&gt;</code><br />
+<code>#include &lt;atomic&gt;</code><br />
+<code>#include &lt;thread&gt;</code><br />
+<code>#include &lt;stdarg.h&gt;</code><br />
+<code>#include &lt;regex&gt;</code><br />
+<code>#include &quot;<a class="el" href="tuple_8h_source.html">src/jazz_elements/tuple.h</a>&quot;</code><br />
 </div>
 <p><a href="container_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1OneShotDeque.html">jazz_elements::OneShotDeque</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionjazz__elements_1_1KeeperData.html">jazz_elements::KeeperData</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1BlockKeeper.html">jazz_elements::BlockKeeper</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1Locator.html">jazz_elements::Locator</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1ContractRequest.html">jazz_elements::ContractRequest</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1Lvalue.html">jazz_elements::Lvalue</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1Rvalue.html">jazz_elements::Rvalue</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html">jazz_elements::Container</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>: A <a class="el" href="classjazz__elements_1_1Service.html">Service</a> to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of this.  <a href="classjazz__elements_1_1Container.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -94,6 +114,38 @@ Namespaces</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a607a0b73de9c3e6bc9ecdf3fa3f11d59"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a607a0b73de9c3e6bc9ecdf3fa3f11d59">INCLUDED_JAZZ_ELEMENTS_CONTAINER</a></td></tr>
 <tr class="separator:a607a0b73de9c3e6bc9ecdf3fa3f11d59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a834e9a379307f869a10f4da078be5786"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a834e9a379307f869a10f4da078be5786">NAME_SIZE</a>&#160;&#160;&#160;32</td></tr>
+<tr class="memdesc:a834e9a379307f869a10f4da078be5786"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block API (dimensions of structures)  <a href="container_8h.html#a834e9a379307f869a10f4da078be5786">More...</a><br /></td></tr>
+<tr class="separator:a834e9a379307f869a10f4da078be5786"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af71324c57f05ff9e24bd384925dd6b17"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#af71324c57f05ff9e24bd384925dd6b17">NAME_LENGTH</a>&#160;&#160;&#160;<a class="el" href="container_8h.html#a834e9a379307f869a10f4da078be5786">NAME_SIZE</a> - 1</td></tr>
+<tr class="memdesc:af71324c57f05ff9e24bd384925dd6b17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum length of a Name.name.  <a href="container_8h.html#af71324c57f05ff9e24bd384925dd6b17">More...</a><br /></td></tr>
+<tr class="separator:af71324c57f05ff9e24bd384925dd6b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a750fb3424958c323675b387001e39ba8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a750fb3424958c323675b387001e39ba8">MAX_CONTAINERS_IN_LOCATOR</a>&#160;&#160;&#160;7</td></tr>
+<tr class="memdesc:a750fb3424958c323675b387001e39ba8"><td class="mdescLeft">&#160;</td><td class="mdescRight">A locator has (max) this # of container/sub-container names + block name.  <a href="container_8h.html#a750fb3424958c323675b387001e39ba8">More...</a><br /></td></tr>
+<tr class="separator:a750fb3424958c323675b387001e39ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4d67ac57cb42906110481f405af4979"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#ad4d67ac57cb42906110481f405af4979">MAX_CONTRACTS_IN_RVALUE</a>&#160;&#160;&#160;6</td></tr>
+<tr class="memdesc:ad4d67ac57cb42906110481f405af4979"><td class="mdescLeft">&#160;</td><td class="mdescRight">An rvalue operation can apply (max) that many contracts.  <a href="container_8h.html#ad4d67ac57cb42906110481f405af4979">More...</a><br /></td></tr>
+<tr class="separator:ad4d67ac57cb42906110481f405af4979"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4592825487c8f673a12811927628d9a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a4592825487c8f673a12811927628d9a9">QUERY_LENGTH</a>&#160;&#160;&#160;4096</td></tr>
+<tr class="memdesc:a4592825487c8f673a12811927628d9a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum length of an API query.  <a href="container_8h.html#a4592825487c8f673a12811927628d9a9">More...</a><br /></td></tr>
+<tr class="separator:a4592825487c8f673a12811927628d9a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a8bfd610ac1e273cd0522d1b7169f68"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a7a8bfd610ac1e273cd0522d1b7169f68">REGEX_VALIDATE_NAME</a>&#160;&#160;&#160;&quot;^[a-zA-Z][a-zA-Z0-9_]{0,30}$&quot;</td></tr>
+<tr class="memdesc:a7a8bfd610ac1e273cd0522d1b7169f68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block API (syntax related)  <a href="container_8h.html#a7a8bfd610ac1e273cd0522d1b7169f68">More...</a><br /></td></tr>
+<tr class="separator:a7a8bfd610ac1e273cd0522d1b7169f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a97c097c96fd6364c46569536e8cbc535"><td class="memItemLeft" align="right" valign="top">typedef char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a97c097c96fd6364c46569536e8cbc535">jazz_elements::Name</a>[<a class="el" href="container_8h.html#a834e9a379307f869a10f4da078be5786">NAME_SIZE</a>]</td></tr>
+<tr class="memdesc:a97c097c96fd6364c46569536e8cbc535"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classjazz__elements_1_1Block.html">Block</a> API (method arguments)  <a href="namespacejazz__elements.html#a97c097c96fd6364c46569536e8cbc535">More...</a><br /></td></tr>
+<tr class="separator:a97c097c96fd6364c46569536e8cbc535"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e6d98f21e446010dd09ba4c9d5c372c"><td class="memItemLeft" align="right" valign="top">typedef uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a4e6d98f21e446010dd09ba4c9d5c372c">jazz_elements::BlockId64</a></td></tr>
+<tr class="separator:a4e6d98f21e446010dd09ba4c9d5c372c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3d6e1b4aca91c99b80bdc759a73699f"><td class="memItemLeft" align="right" valign="top">typedef std::atomic&lt; int32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#ac3d6e1b4aca91c99b80bdc759a73699f">jazz_elements::Lock32</a></td></tr>
+<tr class="separator:ac3d6e1b4aca91c99b80bdc759a73699f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1443efd13a9f5f24bee92041fffc8820"><td class="memItemLeft" align="right" valign="top">typedef struct BlockKeeper *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a1443efd13a9f5f24bee92041fffc8820">jazz_elements::pBlockKeeper</a></td></tr>
+<tr class="separator:a1443efd13a9f5f24bee92041fffc8820"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf7bf339ba5505b0ecbf219889a6ca8f"><td class="memItemLeft" align="right" valign="top">typedef class Container *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#acf7bf339ba5505b0ecbf219889a6ca8f">jazz_elements::pContainer</a></td></tr>
+<tr class="separator:acf7bf339ba5505b0ecbf219889a6ca8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a607a0b73de9c3e6bc9ecdf3fa3f11d59"></a>
@@ -107,6 +159,104 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a750fb3424958c323675b387001e39ba8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a750fb3424958c323675b387001e39ba8">&#9670;&nbsp;</a></span>MAX_CONTAINERS_IN_LOCATOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_CONTAINERS_IN_LOCATOR&#160;&#160;&#160;7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A locator has (max) this # of container/sub-container names + block name. </p>
+
+</div>
+</div>
+<a id="ad4d67ac57cb42906110481f405af4979"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4d67ac57cb42906110481f405af4979">&#9670;&nbsp;</a></span>MAX_CONTRACTS_IN_RVALUE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_CONTRACTS_IN_RVALUE&#160;&#160;&#160;6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An rvalue operation can apply (max) that many contracts. </p>
+
+</div>
+</div>
+<a id="af71324c57f05ff9e24bd384925dd6b17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af71324c57f05ff9e24bd384925dd6b17">&#9670;&nbsp;</a></span>NAME_LENGTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NAME_LENGTH&#160;&#160;&#160;<a class="el" href="container_8h.html#a834e9a379307f869a10f4da078be5786">NAME_SIZE</a> - 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Maximum length of a Name.name. </p>
+
+</div>
+</div>
+<a id="a834e9a379307f869a10f4da078be5786"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a834e9a379307f869a10f4da078be5786">&#9670;&nbsp;</a></span>NAME_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NAME_SIZE&#160;&#160;&#160;32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Block API (dimensions of structures) </p>
+<p>Size of a Name (ending 0 included) </p>
+
+</div>
+</div>
+<a id="a4592825487c8f673a12811927628d9a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4592825487c8f673a12811927628d9a9">&#9670;&nbsp;</a></span>QUERY_LENGTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define QUERY_LENGTH&#160;&#160;&#160;4096</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Maximum length of an API query. </p>
+
+</div>
+</div>
+<a id="a7a8bfd610ac1e273cd0522d1b7169f68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a8bfd610ac1e273cd0522d1b7169f68">&#9670;&nbsp;</a></span>REGEX_VALIDATE_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REGEX_VALIDATE_NAME&#160;&#160;&#160;&quot;^[a-zA-Z][a-zA-Z0-9_]{0,30}$&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Block API (syntax related) </p>
+<p>Regex validating a Name </p>
 
 </div>
 </div>

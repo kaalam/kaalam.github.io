@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['remote_305',['Remote',['../classjazz__elements_1_1Remote.html',1,'jazz_elements']]]
+  ['persisted_342',['Persisted',['../classjazz__elements_1_1Persisted.html',1,'jazz_elements']]]
 ];
