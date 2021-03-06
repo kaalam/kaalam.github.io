@@ -114,7 +114,25 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>: A <a class="el" href="classjazz__elements_1_1Service.html">Service</a> to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of this. </p>
-<p>This is the root class for all containers. It has memory alloc for one-shot block allocation and methods for filtering and serialization. Its descendants are: <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a>, <a class="el" href="classjazz__elements_1_1Remote.html" title="A Container that treats a remote node (mostly a Jazz node, but also a web API) as persistence.">Remote</a> and <a class="el" href="classjazz__elements_1_1Persisted.html" title="Persisted: A Service to manage data objects in LMDB.">Persisted</a>, completing all possible block allocations: one-shot, volatile, remote and persisted. </p>
+<p>This is the root class for all containers. It has memory alloc for one-shot block allocation and methods for filtering and serialization. Its descendants are: <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a>, <a class="el" href="classjazz__elements_1_1Remote.html" title="A Container that treats a remote node (mostly a Jazz node, but also a web API) as persistence.">Remote</a> and <a class="el" href="classjazz__elements_1_1Persisted.html" title="Persisted: A Service to manage data objects in LMDB.">Persisted</a>, completing all possible block allocations: one-shot, volatile, remote and persisted.</p>
+<p>It provides, "rules of the game" for all descendants;</p>
+<ul>
+<li>A <a class="el" href="classjazz__elements_1_1Block.html">Block</a> locator mechanism: <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> name, <a class="el" href="classjazz__elements_1_1Block.html">Block</a> name and contracts</li>
+<li>The struc BlockKeeper to store Blocks</li>
+<li>Thread safety (and thread specific storage just for this class)</li>
+<li>An allocation API .new(locked=True), .lock(), .unlock()</li>
+<li>A crud API .get(), .put(only_if=PUT_ALWAYS), .delete()</li>
+<li>Support for <a class="el" href="classjazz__elements_1_1Block.html">Block</a> contracts</li>
+<li>A configuration style that will be honored by all descendants</li>
+</ul>
+<p>It provides, specifically for the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> class;</p>
+<ul>
+<li>A deque of BlockKeeper structures: .l_push(), .l_pop(), .l_peek(), .r_push(), .r_pop(), .r_peek()</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md0"></a>
+One-shot Block allocation</h2>
+<p>This is the only container providing one-shot <a class="el" href="classjazz__elements_1_1Block.html">Block</a> allocation. This does not mean, unlike in previous versions, the caller owns the pointer. One-shot <a class="el" href="classjazz__elements_1_1Block.html">Block</a> allocation is intended for computing intermediate blocks like: blocks generated from constants, from slicing, returned by functions, etc. In these blocks, the locator is meaningless, the caller will typically allocate by l_push() and recover by l_pop(). A <a class="el" href="classjazz__elements_1_1Block.html">Block</a> returned via l_pop() is still owned by the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> and requires explicit .unlock()-ing by the caller.</p>
+<p>This also the only container that is thread specific. Anywhere else, blocks are uniquely identified by their locators in a thread-transparent way for the caller. Since blocks here do not have locators, the whole operation happens in the context of a <code>thread_idx</code>. The <code>thread_idx</code> is <b>not</b> a thread id as returned by <code>pthread_self()</code>, it is an index in the thread pool. Thread-aware services (normally API and Bebop cores) have a <code>thread_idx</code> valid during the lifetime of whatever operations require call to this <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6f3d67058dba17a47ae9a5a2a7e4a263"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6f3d67058dba17a47ae9a5a2a7e4a263">&#9670;&nbsp;</a></span>Container()</h2>
