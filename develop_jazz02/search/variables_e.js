@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['tenbitds_555',['tenbitDS',['../namespacejazz__main.html#af1cf7460e9503479f65c9e2f924a24c5',1,'jazz_main']]],
-  ['tensor_556',['tensor',['../structjazz__elements_1_1BlockHeader.html#a04878e00333fb81bcdc404914109eef1',1,'jazz_elements::BlockHeader']]],
-  ['text_557',['text',['../structjazz__elements_1_1Answer.html#a4e73e9043ab8c18d016545ddad16a29d',1,'jazz_elements::Answer']]],
-  ['total_5fbytes_558',['total_bytes',['../structjazz__elements_1_1BlockHeader.html#a19962d3aafd5b6ac89ce52701cf901c6',1,'jazz_elements::BlockHeader']]]
+  ['r_5fna_595',['R_NA',['../namespacejazz__elements.html#a0ca8f9758d7f2438f120412cbb0fcc43',1,'jazz_elements']]],
+  ['range_596',['range',['../structjazz__elements_1_1ItemHeader.html#aa3092a59584b9e50c1026b2bab697352',1,'jazz_elements::ItemHeader::range()'],['../structjazz__elements_1_1BlockHeader.html#a8fa258a4e087633971ff268fe5607a00',1,'jazz_elements::BlockHeader::range()']]],
+  ['rank_597',['rank',['../structjazz__elements_1_1ItemHeader.html#adbd96699e6550df6aadf3d717c306583',1,'jazz_elements::ItemHeader::rank()'],['../structjazz__elements_1_1BlockHeader.html#aafa8121fb2c2091b32cc688ea711002c',1,'jazz_elements::BlockHeader::rank()']]],
+  ['remote_598',['REMOTE',['../namespacejazz__main.html#ade933df5150302cccb05edd38d42eeec',1,'jazz_main']]],
+  ['response_5fput_5ffail_599',['response_put_fail',['../namespacejazz__main.html#a8f301bae0aebe84fd12580831e960ec3',1,'jazz_main']]],
+  ['response_5fput_5fok_600',['response_put_ok',['../namespacejazz__main.html#a1266718e0c60fa99cb934933e13f565f',1,'jazz_main']]]
 ];

@@ -100,6 +100,8 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1R__value.html">jazz_elements::R_value</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1Items.html">jazz_elements::Items</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html">jazz_elements::Container</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>: A <a class="el" href="classjazz__elements_1_1Service.html">Service</a> to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of this.  <a href="classjazz__elements_1_1Container.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,6 +128,9 @@ Macros</h2></td></tr>
 <tr class="memitem:a13082378d0a60913f0b5a5b69a769360"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a13082378d0a60913f0b5a5b69a769360">MAX_CONTRACTS_IN_R_VALUE</a>&#160;&#160;&#160;4</td></tr>
 <tr class="memdesc:a13082378d0a60913f0b5a5b69a769360"><td class="mdescLeft">&#160;</td><td class="mdescRight">An rvalue operation can apply (max) that many contracts.  <a href="container_8h.html#a13082378d0a60913f0b5a5b69a769360">More...</a><br /></td></tr>
 <tr class="separator:a13082378d0a60913f0b5a5b69a769360"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6febfed9e29227d1e7746768c0404093"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a6febfed9e29227d1e7746768c0404093">MAX_ITEMS_IN_TUPLE</a>&#160;&#160;&#160;64</td></tr>
+<tr class="memdesc:a6febfed9e29227d1e7746768c0404093"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of items merged into a tuple (array of BlockKeeper).  <a href="container_8h.html#a6febfed9e29227d1e7746768c0404093">More...</a><br /></td></tr>
+<tr class="separator:a6febfed9e29227d1e7746768c0404093"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4592825487c8f673a12811927628d9a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a4592825487c8f673a12811927628d9a9">QUERY_LENGTH</a>&#160;&#160;&#160;4096</td></tr>
 <tr class="memdesc:a4592825487c8f673a12811927628d9a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum length of an API query.  <a href="container_8h.html#a4592825487c8f673a12811927628d9a9">More...</a><br /></td></tr>
 <tr class="separator:a4592825487c8f673a12811927628d9a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,6 +152,39 @@ Macros</h2></td></tr>
 <tr class="memitem:a2c57e29ff7d1d83236f137899ea846e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a2c57e29ff7d1d83236f137899ea846e1">FILL_WITH_TEXTFILE</a>&#160;&#160;&#160;3</td></tr>
 <tr class="memdesc:a2c57e29ff7d1d83236f137899ea846e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a tensor with the content of argument p_text in new_jazz_block().  <a href="container_8h.html#a2c57e29ff7d1d83236f137899ea846e1">More...</a><br /></td></tr>
 <tr class="separator:a2c57e29ff7d1d83236f137899ea846e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06ad0260c76f8e6c33f94e7a5df148fc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a06ad0260c76f8e6c33f94e7a5df148fc">AS_JSON</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:a06ad0260c76f8e6c33f94e7a5df148fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize data as JSON.  <a href="container_8h.html#a06ad0260c76f8e6c33f94e7a5df148fc">More...</a><br /></td></tr>
+<tr class="separator:a06ad0260c76f8e6c33f94e7a5df148fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5950f65e58ff35f5dad8c5224a9b2c80"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a5950f65e58ff35f5dad8c5224a9b2c80">AS_BEBOP</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memdesc:a5950f65e58ff35f5dad8c5224a9b2c80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize data and metadata.  <a href="container_8h.html#a5950f65e58ff35f5dad8c5224a9b2c80">More...</a><br /></td></tr>
+<tr class="separator:a5950f65e58ff35f5dad8c5224a9b2c80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3987a3312a08cf295f7c2b34a702514"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#ac3987a3312a08cf295f7c2b34a702514">AS_CPP</a>&#160;&#160;&#160;3</td></tr>
+<tr class="memdesc:ac3987a3312a08cf295f7c2b34a702514"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize metadata as compilable C++ that can be dynamically linked.  <a href="container_8h.html#ac3987a3312a08cf295f7c2b34a702514">More...</a><br /></td></tr>
+<tr class="separator:ac3987a3312a08cf295f7c2b34a702514"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afedeca28cf0eafaafddf47fc7dda1b59"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#afedeca28cf0eafaafddf47fc7dda1b59">BUILD_TUPLE</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:afedeca28cf0eafaafddf47fc7dda1b59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build a Tuple out of data items or fail.  <a href="container_8h.html#afedeca28cf0eafaafddf47fc7dda1b59">More...</a><br /></td></tr>
+<tr class="separator:afedeca28cf0eafaafddf47fc7dda1b59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4b61bc7c4d1ff4e151eb984914e902a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#ae4b61bc7c4d1ff4e151eb984914e902a">BUILD_KIND</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memdesc:ae4b61bc7c4d1ff4e151eb984914e902a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build a Kind out of metadata items or fail.  <a href="container_8h.html#ae4b61bc7c4d1ff4e151eb984914e902a">More...</a><br /></td></tr>
+<tr class="separator:ae4b61bc7c4d1ff4e151eb984914e902a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e8189787b2b391c56d3ee8a6107af96"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a7e8189787b2b391c56d3ee8a6107af96">NEW_MAP</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:a7e8189787b2b391c56d3ee8a6107af96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Container.new_block(6)(what) constant: Create a new named map inside Volatile.  <a href="container_8h.html#a7e8189787b2b391c56d3ee8a6107af96">More...</a><br /></td></tr>
+<tr class="separator:a7e8189787b2b391c56d3ee8a6107af96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96d1bbfaf8d75a4ad4c7e543904eebb9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a96d1bbfaf8d75a4ad4c7e543904eebb9">NEW_DEQUE</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memdesc:a96d1bbfaf8d75a4ad4c7e543904eebb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Container.new_block(6)(what) constant: Create a new named deque inside Volatile.  <a href="container_8h.html#a96d1bbfaf8d75a4ad4c7e543904eebb9">More...</a><br /></td></tr>
+<tr class="separator:a96d1bbfaf8d75a4ad4c7e543904eebb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a901ae42ce2ef0acc237cb53afd85a723"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a901ae42ce2ef0acc237cb53afd85a723">NEW_TREE</a>&#160;&#160;&#160;3</td></tr>
+<tr class="memdesc:a901ae42ce2ef0acc237cb53afd85a723"><td class="mdescLeft">&#160;</td><td class="mdescRight">Container.new_block(6)(what) constant: Create a new named tree inside Volatile.  <a href="container_8h.html#a901ae42ce2ef0acc237cb53afd85a723">More...</a><br /></td></tr>
+<tr class="separator:a901ae42ce2ef0acc237cb53afd85a723"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71359eb918d74c8caee980aaba38518b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a71359eb918d74c8caee980aaba38518b">NEW_QUEUE</a>&#160;&#160;&#160;4</td></tr>
+<tr class="memdesc:a71359eb918d74c8caee980aaba38518b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Container.new_block(6)(what) constant: Create a new named queue inside Volatile.  <a href="container_8h.html#a71359eb918d74c8caee980aaba38518b">More...</a><br /></td></tr>
+<tr class="separator:a71359eb918d74c8caee980aaba38518b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a124d9ee46c6c49cec350a24f3fdb92ed"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a124d9ee46c6c49cec350a24f3fdb92ed">NEW_CACHE</a>&#160;&#160;&#160;5</td></tr>
+<tr class="memdesc:a124d9ee46c6c49cec350a24f3fdb92ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Container.new_block(6)(what) constant: Create a new named cache inside Volatile.  <a href="container_8h.html#a124d9ee46c6c49cec350a24f3fdb92ed">More...</a><br /></td></tr>
+<tr class="separator:a124d9ee46c6c49cec350a24f3fdb92ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a078a3ef824031a9eb85b57094284d3a4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a078a3ef824031a9eb85b57094284d3a4">NEW_DATABASE</a>&#160;&#160;&#160;6</td></tr>
+<tr class="memdesc:a078a3ef824031a9eb85b57094284d3a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Container.new_block(6)(what) constant: Create a new named database inside Persisted.  <a href="container_8h.html#a078a3ef824031a9eb85b57094284d3a4">More...</a><br /></td></tr>
+<tr class="separator:a078a3ef824031a9eb85b57094284d3a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afca414656562222aaf2632260566ecb9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#afca414656562222aaf2632260566ecb9">BLOCK_STATUS_READY</a>&#160;&#160;&#160;0</td></tr>
 <tr class="memdesc:afca414656562222aaf2632260566ecb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block API (error and status codes)  <a href="container_8h.html#afca414656562222aaf2632260566ecb9">More...</a><br /></td></tr>
 <tr class="separator:afca414656562222aaf2632260566ecb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,6 +213,8 @@ Typedefs</h2></td></tr>
 <tr class="separator:a1443efd13a9f5f24bee92041fffc8820"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf7bf339ba5505b0ecbf219889a6ca8f"><td class="memItemLeft" align="right" valign="top">typedef class Container *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#acf7bf339ba5505b0ecbf219889a6ca8f">jazz_elements::pContainer</a></td></tr>
 <tr class="separator:acf7bf339ba5505b0ecbf219889a6ca8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1ee282228d329b2175b2efa7add9385"><td class="memItemLeft" align="right" valign="top">typedef Name *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#aa1ee282228d329b2175b2efa7add9385">jazz_elements::pName</a></td></tr>
+<tr class="separator:aa1ee282228d329b2175b2efa7add9385"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5c3f57ec69caa19191f00178de0c927"><td class="memItemLeft" align="right" valign="top">typedef struct Answer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#ab5c3f57ec69caa19191f00178de0c927">jazz_elements::pAnswer</a></td></tr>
 <tr class="separator:ab5c3f57ec69caa19191f00178de0c927"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a610c62b4b5180ee4bc90df9665e433aa"><td class="memItemLeft" align="right" valign="top">typedef struct Locator *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a610c62b4b5180ee4bc90df9665e433aa">jazz_elements::pLocator</a></td></tr>
@@ -183,6 +223,8 @@ Typedefs</h2></td></tr>
 <tr class="separator:a79708585f234be0562fc73f87fb3556b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54a83e0b328971cad4f882dca87e71e9"><td class="memItemLeft" align="right" valign="top">typedef struct R_value *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a54a83e0b328971cad4f882dca87e71e9">jazz_elements::pR_value</a></td></tr>
 <tr class="separator:a54a83e0b328971cad4f882dca87e71e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab16f53ff259f783f290f347b277fa62d"><td class="memItemLeft" align="right" valign="top">typedef struct Items *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#ab16f53ff259f783f290f347b277fa62d">jazz_elements::pItems</a></td></tr>
+<tr class="separator:ab16f53ff259f783f290f347b277fa62d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ac79f33730ff818dedd0fcfcc69d6e1"><td class="memItemLeft" align="right" valign="top">typedef Locator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a4ac79f33730ff818dedd0fcfcc69d6e1">jazz_elements::L_value</a></td></tr>
 <tr class="separator:a4ac79f33730ff818dedd0fcfcc69d6e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8dd34a46d8fb42f85ffb4b95ba8a5f3"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; int, const char * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#ad8dd34a46d8fb42f85ffb4b95ba8a5f3">jazz_elements::Attributes</a></td></tr>
@@ -202,6 +244,54 @@ Typedefs</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Maximum length of an Answer. </p>
+
+</div>
+</div>
+<a id="a5950f65e58ff35f5dad8c5224a9b2c80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5950f65e58ff35f5dad8c5224a9b2c80">&#9670;&nbsp;</a></span>AS_BEBOP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AS_BEBOP&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Serialize data and metadata. </p>
+
+</div>
+</div>
+<a id="ac3987a3312a08cf295f7c2b34a702514"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3987a3312a08cf295f7c2b34a702514">&#9670;&nbsp;</a></span>AS_CPP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AS_CPP&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Serialize metadata as compilable C++ that can be dynamically linked. </p>
+
+</div>
+</div>
+<a id="a06ad0260c76f8e6c33f94e7a5df148fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06ad0260c76f8e6c33f94e7a5df148fc">&#9670;&nbsp;</a></span>AS_JSON</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AS_JSON&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Serialize data as JSON. </p>
 
 </div>
 </div>
@@ -283,6 +373,38 @@ Typedefs</h2></td></tr>
 </div><div class="memdoc">
 
 <p>BlockKeeper.status: block destroying, do nothing, forget the pointer. </p>
+
+</div>
+</div>
+<a id="ae4b61bc7c4d1ff4e151eb984914e902a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4b61bc7c4d1ff4e151eb984914e902a">&#9670;&nbsp;</a></span>BUILD_KIND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BUILD_KIND&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Build a Kind out of metadata items or fail. </p>
+
+</div>
+</div>
+<a id="afedeca28cf0eafaafddf47fc7dda1b59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afedeca28cf0eafaafddf47fc7dda1b59">&#9670;&nbsp;</a></span>BUILD_TUPLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BUILD_TUPLE&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Build a Tuple out of data items or fail. </p>
 
 </div>
 </div>
@@ -381,6 +503,22 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
+<a id="a6febfed9e29227d1e7746768c0404093"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6febfed9e29227d1e7746768c0404093">&#9670;&nbsp;</a></span>MAX_ITEMS_IN_TUPLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_ITEMS_IN_TUPLE&#160;&#160;&#160;64</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The number of items merged into a tuple (array of BlockKeeper). </p>
+
+</div>
+</div>
 <a id="af20b03f68d82af0a66d9e6c28e390147"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af20b03f68d82af0a66d9e6c28e390147">&#9670;&nbsp;</a></span>MAX_NESTED_CONTAINERS</h2>
 
@@ -427,6 +565,102 @@ Typedefs</h2></td></tr>
 
 <p>Block API (dimensions of structures) </p>
 <p>Size of a Name (ending 0 included) </p>
+
+</div>
+</div>
+<a id="a124d9ee46c6c49cec350a24f3fdb92ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a124d9ee46c6c49cec350a24f3fdb92ed">&#9670;&nbsp;</a></span>NEW_CACHE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NEW_CACHE&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Container.new_block(6)(what) constant: Create a new named cache inside Volatile. </p>
+
+</div>
+</div>
+<a id="a078a3ef824031a9eb85b57094284d3a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a078a3ef824031a9eb85b57094284d3a4">&#9670;&nbsp;</a></span>NEW_DATABASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NEW_DATABASE&#160;&#160;&#160;6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Container.new_block(6)(what) constant: Create a new named database inside Persisted. </p>
+
+</div>
+</div>
+<a id="a96d1bbfaf8d75a4ad4c7e543904eebb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96d1bbfaf8d75a4ad4c7e543904eebb9">&#9670;&nbsp;</a></span>NEW_DEQUE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NEW_DEQUE&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Container.new_block(6)(what) constant: Create a new named deque inside Volatile. </p>
+
+</div>
+</div>
+<a id="a7e8189787b2b391c56d3ee8a6107af96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e8189787b2b391c56d3ee8a6107af96">&#9670;&nbsp;</a></span>NEW_MAP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NEW_MAP&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Container.new_block(6)(what) constant: Create a new named map inside Volatile. </p>
+
+</div>
+</div>
+<a id="a71359eb918d74c8caee980aaba38518b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71359eb918d74c8caee980aaba38518b">&#9670;&nbsp;</a></span>NEW_QUEUE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NEW_QUEUE&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Container.new_block(6)(what) constant: Create a new named queue inside Volatile. </p>
+
+</div>
+</div>
+<a id="a901ae42ce2ef0acc237cb53afd85a723"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a901ae42ce2ef0acc237cb53afd85a723">&#9670;&nbsp;</a></span>NEW_TREE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NEW_TREE&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Container.new_block(6)(what) constant: Create a new named tree inside Volatile. </p>
 
 </div>
 </div>

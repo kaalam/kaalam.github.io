@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Jazz 0.5+: jazz_elements::Rvalue Struct Reference</title>
+<title>Jazz 0.5+: jazz_elements::Items Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,14 +62,14 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespacejazz__elements.html">jazz_elements</a></li><li class="navelem"><a class="el" href="structjazz__elements_1_1Rvalue.html">Rvalue</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacejazz__elements.html">jazz_elements</a></li><li class="navelem"><a class="el" href="structjazz__elements_1_1Items.html">Items</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">jazz_elements::Rvalue Struct Reference</div>  </div>
+<div class="title">jazz_elements::Items Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -77,37 +77,26 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a37b47d4099071538a339cc661739ef10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structjazz__elements_1_1Locator.html">Locator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1Rvalue.html#a37b47d4099071538a339cc661739ef10">path</a></td></tr>
-<tr class="separator:a37b47d4099071538a339cc661739ef10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4407c71dd2f4d09c392653804ff0d419"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structjazz__elements_1_1ContractRequest.html">ContractRequest</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1Rvalue.html#a4407c71dd2f4d09c392653804ff0d419">contract</a> [<a class="el" href="container_8h.html#ad4d67ac57cb42906110481f405af4979">MAX_CONTRACTS_IN_RVALUE</a>]</td></tr>
-<tr class="separator:a4407c71dd2f4d09c392653804ff0d419"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa50911f20504503af6e1a6f09c14ba72"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structjazz__elements_1_1BlockKeeper.html">BlockKeeper</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1Items.html#aa50911f20504503af6e1a6f09c14ba72">item</a> [<a class="el" href="container_8h.html#a6febfed9e29227d1e7746768c0404093">MAX_ITEMS_IN_TUPLE</a>]</td></tr>
+<tr class="memdesc:aa50911f20504503af6e1a6f09c14ba72"><td class="mdescLeft">&#160;</td><td class="mdescRight">The items. First p_block == nullptrs breaks.  <a href="structjazz__elements_1_1Items.html#aa50911f20504503af6e1a6f09c14ba72">More...</a><br /></td></tr>
+<tr class="separator:aa50911f20504503af6e1a6f09c14ba72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Field Documentation</h2>
-<a id="a4407c71dd2f4d09c392653804ff0d419"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4407c71dd2f4d09c392653804ff0d419">&#9670;&nbsp;</a></span>contract</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>An array of <a class="el" href="structjazz__elements_1_1Items.html">Items</a> (Blocks and Tuples) to be merged into a new <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz data block of a Kind.">Tuple</a> or an array of <a class="el" href="structjazz__elements_1_1Items.html">Items</a> (BlockHeaders and Kinds) to be merged into a new <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a>. </p>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a id="aa50911f20504503af6e1a6f09c14ba72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa50911f20504503af6e1a6f09c14ba72">&#9670;&nbsp;</a></span>item</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structjazz__elements_1_1ContractRequest.html">ContractRequest</a> jazz_elements::Rvalue::contract[<a class="el" href="container_8h.html#ad4d67ac57cb42906110481f405af4979">MAX_CONTRACTS_IN_RVALUE</a>]</td>
+          <td class="memname"><a class="el" href="structjazz__elements_1_1BlockKeeper.html">BlockKeeper</a> jazz_elements::Items::item[<a class="el" href="container_8h.html#a6febfed9e29227d1e7746768c0404093">MAX_ITEMS_IN_TUPLE</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="a37b47d4099071538a339cc661739ef10"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37b47d4099071538a339cc661739ef10">&#9670;&nbsp;</a></span>path</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structjazz__elements_1_1Locator.html">Locator</a> jazz_elements::Rvalue::path</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>The items. First p_block == nullptrs breaks. </p>
 
 </div>
 </div>
