@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Jazz 0.5+: jazz_elements::Name Struct Reference</title>
+<title>Jazz 0.5+: jazz_elements::Answer Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,42 +62,41 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespacejazz__elements.html">jazz_elements</a></li><li class="navelem"><a class="el" href="structjazz__elements_1_1Name.html">Name</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacejazz__elements.html">jazz_elements</a></li><li class="navelem"><a class="el" href="structjazz__elements_1_1Answer.html">Answer</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">jazz_elements::Name Struct Reference</div>  </div>
+<div class="title">jazz_elements::Answer Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p><a class="el" href="classjazz__elements_1_1Block.html">Block</a> API (method arguments)  
- <a href="structjazz__elements_1_1Name.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="container_8h_source.html">container.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a29a4867540919e28f8fe653be1d6f497"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1Name.html#a29a4867540919e28f8fe653be1d6f497">name</a> [<a class="el" href="container_8h.html#a834e9a379307f869a10f4da078be5786">NAME_SIZE</a>]</td></tr>
-<tr class="separator:a29a4867540919e28f8fe653be1d6f497"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e73e9043ab8c18d016545ddad16a29d"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1Answer.html#a4e73e9043ab8c18d016545ddad16a29d">text</a> [<a class="el" href="container_8h.html#a4511c6b8167369401ab5eefd0c5d2b0a">ANSWER_LENGTH</a>]</td></tr>
+<tr class="memdesc:a4e73e9043ab8c18d016545ddad16a29d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A message, metadata, lists of items, columns, etc.  <a href="structjazz__elements_1_1Answer.html#a4e73e9043ab8c18d016545ddad16a29d">More...</a><br /></td></tr>
+<tr class="separator:a4e73e9043ab8c18d016545ddad16a29d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classjazz__elements_1_1Block.html">Block</a> API (method arguments) </p>
-<p><a class="el" href="classjazz__elements_1_1Block.html">Block</a> API (error codes) The identifier of a <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> type, a container inside another container, a <a class="el" href="classjazz__elements_1_1Block.html">Block</a> descendant in a container, a field in a <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz data block of a Kind.">Tuple</a> or <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a>, or the name of a contract. It must be a string matching REGEX_VALIDATE_NAME. </p>
+<div class="textblock"><p>A string possibly returned by a contract. Contracts return either a block or an answer. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="a29a4867540919e28f8fe653be1d6f497"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29a4867540919e28f8fe653be1d6f497">&#9670;&nbsp;</a></span>name</h2>
+<a id="a4e73e9043ab8c18d016545ddad16a29d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e73e9043ab8c18d016545ddad16a29d">&#9670;&nbsp;</a></span>text</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char jazz_elements::Name::name[<a class="el" href="container_8h.html#a834e9a379307f869a10f4da078be5786">NAME_SIZE</a>]</td>
+          <td class="memname">char jazz_elements::Answer::text[<a class="el" href="container_8h.html#a4511c6b8167369401ab5eefd0c5d2b0a">ANSWER_LENGTH</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>A message, metadata, lists of items, columns, etc. </p>
 
 </div>
 </div>

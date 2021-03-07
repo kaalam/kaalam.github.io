@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['service_5ferrorcode_564',['Service_ErrorCode',['../namespacejazz__elements.html#a3afa055be2491c07ae68adccc6d730a5',1,'jazz_elements']]]
+  ['statuscode_584',['StatusCode',['../namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f',1,'jazz_elements']]]
 ];

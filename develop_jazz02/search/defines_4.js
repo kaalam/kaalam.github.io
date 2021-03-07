@@ -1,23 +1,11 @@
 var searchData=
 [
-  ['included_5fjazz_5fagency_5fagency_599',['INCLUDED_JAZZ_AGENCY_AGENCY',['../agency_8h.html#a05afa99f0e2fe39c1ded83c4fd304f25',1,'agency.h']]],
-  ['included_5fjazz_5fbebop_5fcore_600',['INCLUDED_JAZZ_BEBOP_CORE',['../core_8h.html#a1894fdddded67115394bebffdacb2e73',1,'core.h']]],
-  ['included_5fjazz_5fbebop_5ffield_601',['INCLUDED_JAZZ_BEBOP_FIELD',['../field_8h.html#ad260bab9786ad30d9554b42e8f8e47d5',1,'field.h']]],
-  ['included_5fjazz_5felements_5fblock_602',['INCLUDED_JAZZ_ELEMENTS_BLOCK',['../block_8h.html#a1a65dece4c0c77253a83717f6af633c2',1,'block.h']]],
-  ['included_5fjazz_5felements_5fcolumn_603',['INCLUDED_JAZZ_ELEMENTS_COLUMN',['../column_8h.html#a812347fc852a71926eed69b234272727',1,'column.h']]],
-  ['included_5fjazz_5felements_5fcontainer_604',['INCLUDED_JAZZ_ELEMENTS_CONTAINER',['../container_8h.html#a607a0b73de9c3e6bc9ecdf3fa3f11d59',1,'container.h']]],
-  ['included_5fjazz_5felements_5fflux_605',['INCLUDED_JAZZ_ELEMENTS_FLUX',['../flux_8h.html#ad69f9f9e2aff40033029d692deec2454',1,'flux.h']]],
-  ['included_5fjazz_5felements_5fkind_606',['INCLUDED_JAZZ_ELEMENTS_KIND',['../kind_8h.html#a4a4a42a0c3c4b960de11dc2f20a86aa1',1,'kind.h']]],
-  ['included_5fjazz_5felements_5fnetwork_607',['INCLUDED_JAZZ_ELEMENTS_NETWORK',['../network_8h.html#aca63ad2e10d70458d64bba7bd69ea551',1,'network.h']]],
-  ['included_5fjazz_5felements_5fpersisted_608',['INCLUDED_JAZZ_ELEMENTS_PERSISTED',['../persisted_8h.html#a074499c790e4d470c2f52f03026b8dc0',1,'persisted.h']]],
-  ['included_5fjazz_5felements_5ftable_609',['INCLUDED_JAZZ_ELEMENTS_TABLE',['../table_8h.html#a0341816a7822a77f5204bb2202c9eeef',1,'table.h']]],
-  ['included_5fjazz_5felements_5ftuple_610',['INCLUDED_JAZZ_ELEMENTS_TUPLE',['../tuple_8h.html#a24ccc02d01df37dbe5f7dacab92e5564',1,'tuple.h']]],
-  ['included_5fjazz_5felements_5ftypes_611',['INCLUDED_JAZZ_ELEMENTS_TYPES',['../types_8h.html#a198723ea7b77deeeb47c9c3e21319143',1,'types.h']]],
-  ['included_5fjazz_5felements_5futils_612',['INCLUDED_JAZZ_ELEMENTS_UTILS',['../utils_8h.html#a3855f9a3712280c1ba7f928b3371c3b1',1,'utils.h']]],
-  ['included_5fjazz_5felements_5fvolatile_613',['INCLUDED_JAZZ_ELEMENTS_VOLATILE',['../volatile_8h.html#a75e9aa621488a6b97ff47bf7cbf7d4a9',1,'volatile.h']]],
-  ['included_5fjazz_5fmain_5fapi_614',['INCLUDED_JAZZ_MAIN_API',['../api_8h.html#a5b67636a89515762f34b814ecf2e8fe1',1,'api.h']]],
-  ['included_5fjazz_5fmain_5finstances_615',['INCLUDED_JAZZ_MAIN_INSTANCES',['../instances_8h.html#abbcc777f5789d02d267ec3c1e3627aeb',1,'instances.h']]],
-  ['included_5fjazz_5fmain_5fmain_616',['INCLUDED_JAZZ_MAIN_MAIN',['../main_8h.html#aafe98bdf3f6512398d0a30834f207b9d',1,'main.h']]],
-  ['included_5fjazz_5fmain_5fserver_617',['INCLUDED_JAZZ_MAIN_SERVER',['../server_8h.html#a727c83284d0dc9e7646d1071508bf255',1,'server.h']]],
-  ['integer_5fna_618',['INTEGER_NA',['../types_8h.html#a5552fe209cb40f52acd534917ba02003',1,'types.h']]]
+  ['fill_5fnew_5fdont_5ffill_621',['FILL_NEW_DONT_FILL',['../container_8h.html#acceef3cf4c09cd8099b55a84e0fb3d6f',1,'container.h']]],
+  ['fill_5fnew_5fwith_5fna_622',['FILL_NEW_WITH_NA',['../container_8h.html#a1d16b9b4da7601d4b9e29ac69c16147d',1,'container.h']]],
+  ['fill_5fnew_5fwith_5fzero_623',['FILL_NEW_WITH_ZERO',['../container_8h.html#a3164b8d4bc53e4473640af041a905115',1,'container.h']]],
+  ['fill_5fwith_5ftextfile_624',['FILL_WITH_TEXTFILE',['../container_8h.html#a2c57e29ff7d1d83236f137899ea846e1',1,'container.h']]],
+  ['filter_5ftype_5f_625',['FILTER_TYPE_',['../types_8h.html#a73ecd7dc95d36e569f91dbac3ec2d6df',1,'types.h']]],
+  ['filter_5ftype_5fboolean_626',['FILTER_TYPE_BOOLEAN',['../types_8h.html#a2a326fa953bd95451f02064edffb1e2b',1,'types.h']]],
+  ['filter_5ftype_5finteger_627',['FILTER_TYPE_INTEGER',['../types_8h.html#a6dc19db547353db903ecb71161ae449c',1,'types.h']]],
+  ['filter_5ftype_5fnotafilter_628',['FILTER_TYPE_NOTAFILTER',['../types_8h.html#a5abba7b90934a98d6f63ca2bf2c512e3',1,'types.h']]]
 ];

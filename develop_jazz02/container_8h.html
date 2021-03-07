@@ -86,6 +86,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1Answer.html">jazz_elements::Answer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1OneShotDeque.html">jazz_elements::OneShotDeque</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionjazz__elements_1_1KeeperData.html">jazz_elements::KeeperData</a></td></tr>
@@ -94,11 +96,9 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1Locator.html">jazz_elements::Locator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1ContractRequest.html">jazz_elements::ContractRequest</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1ContractStep.html">jazz_elements::ContractStep</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1Lvalue.html">jazz_elements::Lvalue</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1Rvalue.html">jazz_elements::Rvalue</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1R__value.html">jazz_elements::R_value</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html">jazz_elements::Container</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>: A <a class="el" href="classjazz__elements_1_1Service.html">Service</a> to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of this.  <a href="classjazz__elements_1_1Container.html#details">More...</a><br /></td></tr>
@@ -120,23 +120,52 @@ Macros</h2></td></tr>
 <tr class="memitem:af71324c57f05ff9e24bd384925dd6b17"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#af71324c57f05ff9e24bd384925dd6b17">NAME_LENGTH</a>&#160;&#160;&#160;<a class="el" href="container_8h.html#a834e9a379307f869a10f4da078be5786">NAME_SIZE</a> - 1</td></tr>
 <tr class="memdesc:af71324c57f05ff9e24bd384925dd6b17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum length of a Name.name.  <a href="container_8h.html#af71324c57f05ff9e24bd384925dd6b17">More...</a><br /></td></tr>
 <tr class="separator:af71324c57f05ff9e24bd384925dd6b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a750fb3424958c323675b387001e39ba8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a750fb3424958c323675b387001e39ba8">MAX_CONTAINERS_IN_LOCATOR</a>&#160;&#160;&#160;7</td></tr>
-<tr class="memdesc:a750fb3424958c323675b387001e39ba8"><td class="mdescLeft">&#160;</td><td class="mdescRight">A locator has (max) this # of container/sub-container names + block name.  <a href="container_8h.html#a750fb3424958c323675b387001e39ba8">More...</a><br /></td></tr>
-<tr class="separator:a750fb3424958c323675b387001e39ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4d67ac57cb42906110481f405af4979"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#ad4d67ac57cb42906110481f405af4979">MAX_CONTRACTS_IN_RVALUE</a>&#160;&#160;&#160;6</td></tr>
-<tr class="memdesc:ad4d67ac57cb42906110481f405af4979"><td class="mdescLeft">&#160;</td><td class="mdescRight">An rvalue operation can apply (max) that many contracts.  <a href="container_8h.html#ad4d67ac57cb42906110481f405af4979">More...</a><br /></td></tr>
-<tr class="separator:ad4d67ac57cb42906110481f405af4979"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af20b03f68d82af0a66d9e6c28e390147"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#af20b03f68d82af0a66d9e6c28e390147">MAX_NESTED_CONTAINERS</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memdesc:af20b03f68d82af0a66d9e6c28e390147"><td class="mdescLeft">&#160;</td><td class="mdescRight">(max) sub-container names in a locator (base is resolved to a pointer).  <a href="container_8h.html#af20b03f68d82af0a66d9e6c28e390147">More...</a><br /></td></tr>
+<tr class="separator:af20b03f68d82af0a66d9e6c28e390147"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13082378d0a60913f0b5a5b69a769360"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a13082378d0a60913f0b5a5b69a769360">MAX_CONTRACTS_IN_R_VALUE</a>&#160;&#160;&#160;4</td></tr>
+<tr class="memdesc:a13082378d0a60913f0b5a5b69a769360"><td class="mdescLeft">&#160;</td><td class="mdescRight">An rvalue operation can apply (max) that many contracts.  <a href="container_8h.html#a13082378d0a60913f0b5a5b69a769360">More...</a><br /></td></tr>
+<tr class="separator:a13082378d0a60913f0b5a5b69a769360"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4592825487c8f673a12811927628d9a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a4592825487c8f673a12811927628d9a9">QUERY_LENGTH</a>&#160;&#160;&#160;4096</td></tr>
 <tr class="memdesc:a4592825487c8f673a12811927628d9a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum length of an API query.  <a href="container_8h.html#a4592825487c8f673a12811927628d9a9">More...</a><br /></td></tr>
 <tr class="separator:a4592825487c8f673a12811927628d9a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4511c6b8167369401ab5eefd0c5d2b0a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a4511c6b8167369401ab5eefd0c5d2b0a">ANSWER_LENGTH</a>&#160;&#160;&#160;4096</td></tr>
+<tr class="memdesc:a4511c6b8167369401ab5eefd0c5d2b0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum length of an Answer.  <a href="container_8h.html#a4511c6b8167369401ab5eefd0c5d2b0a">More...</a><br /></td></tr>
+<tr class="separator:a4511c6b8167369401ab5eefd0c5d2b0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a8bfd610ac1e273cd0522d1b7169f68"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a7a8bfd610ac1e273cd0522d1b7169f68">REGEX_VALIDATE_NAME</a>&#160;&#160;&#160;&quot;^[a-zA-Z][a-zA-Z0-9_]{0,30}$&quot;</td></tr>
 <tr class="memdesc:a7a8bfd610ac1e273cd0522d1b7169f68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block API (syntax related)  <a href="container_8h.html#a7a8bfd610ac1e273cd0522d1b7169f68">More...</a><br /></td></tr>
 <tr class="separator:a7a8bfd610ac1e273cd0522d1b7169f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acceef3cf4c09cd8099b55a84e0fb3d6f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#acceef3cf4c09cd8099b55a84e0fb3d6f">FILL_NEW_DONT_FILL</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:acceef3cf4c09cd8099b55a84e0fb3d6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block API (method arguments)  <a href="container_8h.html#acceef3cf4c09cd8099b55a84e0fb3d6f">More...</a><br /></td></tr>
+<tr class="separator:acceef3cf4c09cd8099b55a84e0fb3d6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3164b8d4bc53e4473640af041a905115"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a3164b8d4bc53e4473640af041a905115">FILL_NEW_WITH_ZERO</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:a3164b8d4bc53e4473640af041a905115"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize with binary zero.  <a href="container_8h.html#a3164b8d4bc53e4473640af041a905115">More...</a><br /></td></tr>
+<tr class="separator:a3164b8d4bc53e4473640af041a905115"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d16b9b4da7601d4b9e29ac69c16147d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a1d16b9b4da7601d4b9e29ac69c16147d">FILL_NEW_WITH_NA</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memdesc:a1d16b9b4da7601d4b9e29ac69c16147d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize with the appropriate NA for the cell_type.  <a href="container_8h.html#a1d16b9b4da7601d4b9e29ac69c16147d">More...</a><br /></td></tr>
+<tr class="separator:a1d16b9b4da7601d4b9e29ac69c16147d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c57e29ff7d1d83236f137899ea846e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a2c57e29ff7d1d83236f137899ea846e1">FILL_WITH_TEXTFILE</a>&#160;&#160;&#160;3</td></tr>
+<tr class="memdesc:a2c57e29ff7d1d83236f137899ea846e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a tensor with the content of argument p_text in new_jazz_block().  <a href="container_8h.html#a2c57e29ff7d1d83236f137899ea846e1">More...</a><br /></td></tr>
+<tr class="separator:a2c57e29ff7d1d83236f137899ea846e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afca414656562222aaf2632260566ecb9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#afca414656562222aaf2632260566ecb9">BLOCK_STATUS_READY</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:afca414656562222aaf2632260566ecb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block API (error and status codes)  <a href="container_8h.html#afca414656562222aaf2632260566ecb9">More...</a><br /></td></tr>
+<tr class="separator:afca414656562222aaf2632260566ecb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab26b3f8a113aaa73ace0d72a60c375d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#ab26b3f8a113aaa73ace0d72a60c375d4">BLOCK_STATUS_ASYNC_WAIT</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:ab26b3f8a113aaa73ace0d72a60c375d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">BlockKeeper.status: async content pending, wait or call p_owner-&gt;sleep()  <a href="container_8h.html#ab26b3f8a113aaa73ace0d72a60c375d4">More...</a><br /></td></tr>
+<tr class="separator:ab26b3f8a113aaa73ace0d72a60c375d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa16cbf08b2b2aa76c5b3e60a131c3406"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#aa16cbf08b2b2aa76c5b3e60a131c3406">BLOCK_STATUS_ASYNC_FAIL</a>&#160;&#160;&#160;-1</td></tr>
+<tr class="memdesc:aa16cbf08b2b2aa76c5b3e60a131c3406"><td class="mdescLeft">&#160;</td><td class="mdescRight">BlockKeeper.status: async failed, still locked, call p_owner-&gt;unlock()  <a href="container_8h.html#aa16cbf08b2b2aa76c5b3e60a131c3406">More...</a><br /></td></tr>
+<tr class="separator:aa16cbf08b2b2aa76c5b3e60a131c3406"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac86ffdac274440fb9807640cde901907"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#ac86ffdac274440fb9807640cde901907">BLOCK_STATUS_SYNC_FAIL</a>&#160;&#160;&#160;-2</td></tr>
+<tr class="memdesc:ac86ffdac274440fb9807640cde901907"><td class="mdescLeft">&#160;</td><td class="mdescRight">BlockKeeper.status: sync failed, still locked, call p_owner-&gt;unlock()  <a href="container_8h.html#ac86ffdac274440fb9807640cde901907">More...</a><br /></td></tr>
+<tr class="separator:ac86ffdac274440fb9807640cde901907"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b9ea0b37119c24999820299556e5761"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a4b9ea0b37119c24999820299556e5761">BLOCK_STATUS_SYNC_UNLOCKED</a>&#160;&#160;&#160;-3</td></tr>
+<tr class="memdesc:a4b9ea0b37119c24999820299556e5761"><td class="mdescLeft">&#160;</td><td class="mdescRight">BlockKeeper.status: block destroying, do nothing, forget the pointer.  <a href="container_8h.html#a4b9ea0b37119c24999820299556e5761">More...</a><br /></td></tr>
+<tr class="separator:a4b9ea0b37119c24999820299556e5761"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a97c097c96fd6364c46569536e8cbc535"><td class="memItemLeft" align="right" valign="top">typedef char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a97c097c96fd6364c46569536e8cbc535">jazz_elements::Name</a>[<a class="el" href="container_8h.html#a834e9a379307f869a10f4da078be5786">NAME_SIZE</a>]</td></tr>
-<tr class="memdesc:a97c097c96fd6364c46569536e8cbc535"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classjazz__elements_1_1Block.html">Block</a> API (method arguments)  <a href="namespacejazz__elements.html#a97c097c96fd6364c46569536e8cbc535">More...</a><br /></td></tr>
 <tr class="separator:a97c097c96fd6364c46569536e8cbc535"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e6d98f21e446010dd09ba4c9d5c372c"><td class="memItemLeft" align="right" valign="top">typedef uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a4e6d98f21e446010dd09ba4c9d5c372c">jazz_elements::BlockId64</a></td></tr>
 <tr class="separator:a4e6d98f21e446010dd09ba4c9d5c372c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,8 +175,182 @@ Typedefs</h2></td></tr>
 <tr class="separator:a1443efd13a9f5f24bee92041fffc8820"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf7bf339ba5505b0ecbf219889a6ca8f"><td class="memItemLeft" align="right" valign="top">typedef class Container *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#acf7bf339ba5505b0ecbf219889a6ca8f">jazz_elements::pContainer</a></td></tr>
 <tr class="separator:acf7bf339ba5505b0ecbf219889a6ca8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5c3f57ec69caa19191f00178de0c927"><td class="memItemLeft" align="right" valign="top">typedef struct Answer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#ab5c3f57ec69caa19191f00178de0c927">jazz_elements::pAnswer</a></td></tr>
+<tr class="separator:ab5c3f57ec69caa19191f00178de0c927"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a610c62b4b5180ee4bc90df9665e433aa"><td class="memItemLeft" align="right" valign="top">typedef struct Locator *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a610c62b4b5180ee4bc90df9665e433aa">jazz_elements::pLocator</a></td></tr>
+<tr class="separator:a610c62b4b5180ee4bc90df9665e433aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79708585f234be0562fc73f87fb3556b"><td class="memItemLeft" align="right" valign="top">typedef struct Locator *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a79708585f234be0562fc73f87fb3556b">jazz_elements::pL_value</a></td></tr>
+<tr class="separator:a79708585f234be0562fc73f87fb3556b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54a83e0b328971cad4f882dca87e71e9"><td class="memItemLeft" align="right" valign="top">typedef struct R_value *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a54a83e0b328971cad4f882dca87e71e9">jazz_elements::pR_value</a></td></tr>
+<tr class="separator:a54a83e0b328971cad4f882dca87e71e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ac79f33730ff818dedd0fcfcc69d6e1"><td class="memItemLeft" align="right" valign="top">typedef Locator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a4ac79f33730ff818dedd0fcfcc69d6e1">jazz_elements::L_value</a></td></tr>
+<tr class="separator:a4ac79f33730ff818dedd0fcfcc69d6e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8dd34a46d8fb42f85ffb4b95ba8a5f3"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; int, const char * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#ad8dd34a46d8fb42f85ffb4b95ba8a5f3">jazz_elements::Attributes</a></td></tr>
+<tr class="separator:ad8dd34a46d8fb42f85ffb4b95ba8a5f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a4511c6b8167369401ab5eefd0c5d2b0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4511c6b8167369401ab5eefd0c5d2b0a">&#9670;&nbsp;</a></span>ANSWER_LENGTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ANSWER_LENGTH&#160;&#160;&#160;4096</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Maximum length of an Answer. </p>
+
+</div>
+</div>
+<a id="aa16cbf08b2b2aa76c5b3e60a131c3406"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa16cbf08b2b2aa76c5b3e60a131c3406">&#9670;&nbsp;</a></span>BLOCK_STATUS_ASYNC_FAIL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BLOCK_STATUS_ASYNC_FAIL&#160;&#160;&#160;-1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>BlockKeeper.status: async failed, still locked, call p_owner-&gt;unlock() </p>
+
+</div>
+</div>
+<a id="ab26b3f8a113aaa73ace0d72a60c375d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab26b3f8a113aaa73ace0d72a60c375d4">&#9670;&nbsp;</a></span>BLOCK_STATUS_ASYNC_WAIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BLOCK_STATUS_ASYNC_WAIT&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>BlockKeeper.status: async content pending, wait or call p_owner-&gt;sleep() </p>
+
+</div>
+</div>
+<a id="afca414656562222aaf2632260566ecb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afca414656562222aaf2632260566ecb9">&#9670;&nbsp;</a></span>BLOCK_STATUS_READY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BLOCK_STATUS_READY&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Block API (error and status codes) </p>
+<p>BlockKeeper.status: p_block-&gt; is safe to use </p>
+
+</div>
+</div>
+<a id="ac86ffdac274440fb9807640cde901907"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac86ffdac274440fb9807640cde901907">&#9670;&nbsp;</a></span>BLOCK_STATUS_SYNC_FAIL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BLOCK_STATUS_SYNC_FAIL&#160;&#160;&#160;-2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>BlockKeeper.status: sync failed, still locked, call p_owner-&gt;unlock() </p>
+
+</div>
+</div>
+<a id="a4b9ea0b37119c24999820299556e5761"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b9ea0b37119c24999820299556e5761">&#9670;&nbsp;</a></span>BLOCK_STATUS_SYNC_UNLOCKED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BLOCK_STATUS_SYNC_UNLOCKED&#160;&#160;&#160;-3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>BlockKeeper.status: block destroying, do nothing, forget the pointer. </p>
+
+</div>
+</div>
+<a id="acceef3cf4c09cd8099b55a84e0fb3d6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acceef3cf4c09cd8099b55a84e0fb3d6f">&#9670;&nbsp;</a></span>FILL_NEW_DONT_FILL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FILL_NEW_DONT_FILL&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Block API (method arguments) </p>
+<p>Don't initialize at all. </p>
+
+</div>
+</div>
+<a id="a1d16b9b4da7601d4b9e29ac69c16147d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d16b9b4da7601d4b9e29ac69c16147d">&#9670;&nbsp;</a></span>FILL_NEW_WITH_NA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FILL_NEW_WITH_NA&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize with the appropriate NA for the cell_type. </p>
+
+</div>
+</div>
+<a id="a3164b8d4bc53e4473640af041a905115"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3164b8d4bc53e4473640af041a905115">&#9670;&nbsp;</a></span>FILL_NEW_WITH_ZERO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FILL_NEW_WITH_ZERO&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize with binary zero. </p>
+
+</div>
+</div>
+<a id="a2c57e29ff7d1d83236f137899ea846e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c57e29ff7d1d83236f137899ea846e1">&#9670;&nbsp;</a></span>FILL_WITH_TEXTFILE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FILL_WITH_TEXTFILE&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize a tensor with the content of argument p_text in new_jazz_block(). </p>
+
+</div>
+</div>
 <a id="a607a0b73de9c3e6bc9ecdf3fa3f11d59"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a607a0b73de9c3e6bc9ecdf3fa3f11d59">&#9670;&nbsp;</a></span>INCLUDED_JAZZ_ELEMENTS_CONTAINER</h2>
 
@@ -162,35 +365,35 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="a750fb3424958c323675b387001e39ba8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a750fb3424958c323675b387001e39ba8">&#9670;&nbsp;</a></span>MAX_CONTAINERS_IN_LOCATOR</h2>
+<a id="a13082378d0a60913f0b5a5b69a769360"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13082378d0a60913f0b5a5b69a769360">&#9670;&nbsp;</a></span>MAX_CONTRACTS_IN_R_VALUE</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MAX_CONTAINERS_IN_LOCATOR&#160;&#160;&#160;7</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>A locator has (max) this # of container/sub-container names + block name. </p>
-
-</div>
-</div>
-<a id="ad4d67ac57cb42906110481f405af4979"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4d67ac57cb42906110481f405af4979">&#9670;&nbsp;</a></span>MAX_CONTRACTS_IN_RVALUE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MAX_CONTRACTS_IN_RVALUE&#160;&#160;&#160;6</td>
+          <td class="memname">#define MAX_CONTRACTS_IN_R_VALUE&#160;&#160;&#160;4</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>An rvalue operation can apply (max) that many contracts. </p>
+
+</div>
+</div>
+<a id="af20b03f68d82af0a66d9e6c28e390147"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af20b03f68d82af0a66d9e6c28e390147">&#9670;&nbsp;</a></span>MAX_NESTED_CONTAINERS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_NESTED_CONTAINERS&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>(max) sub-container names in a locator (base is resolved to a pointer). </p>
 
 </div>
 </div>
