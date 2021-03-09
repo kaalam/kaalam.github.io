@@ -86,8 +86,6 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1Answer.html">jazz_elements::Answer</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1OneShotDeque.html">jazz_elements::OneShotDeque</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionjazz__elements_1_1KeeperData.html">jazz_elements::KeeperData</a></td></tr>
@@ -131,12 +129,6 @@ Macros</h2></td></tr>
 <tr class="memitem:a6febfed9e29227d1e7746768c0404093"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a6febfed9e29227d1e7746768c0404093">MAX_ITEMS_IN_TUPLE</a>&#160;&#160;&#160;64</td></tr>
 <tr class="memdesc:a6febfed9e29227d1e7746768c0404093"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of items merged into a tuple (array of BlockKeeper).  <a href="container_8h.html#a6febfed9e29227d1e7746768c0404093">More...</a><br /></td></tr>
 <tr class="separator:a6febfed9e29227d1e7746768c0404093"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4592825487c8f673a12811927628d9a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a4592825487c8f673a12811927628d9a9">QUERY_LENGTH</a>&#160;&#160;&#160;4096</td></tr>
-<tr class="memdesc:a4592825487c8f673a12811927628d9a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum length of an API query.  <a href="container_8h.html#a4592825487c8f673a12811927628d9a9">More...</a><br /></td></tr>
-<tr class="separator:a4592825487c8f673a12811927628d9a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4511c6b8167369401ab5eefd0c5d2b0a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a4511c6b8167369401ab5eefd0c5d2b0a">ANSWER_LENGTH</a>&#160;&#160;&#160;4096</td></tr>
-<tr class="memdesc:a4511c6b8167369401ab5eefd0c5d2b0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum length of an Answer.  <a href="container_8h.html#a4511c6b8167369401ab5eefd0c5d2b0a">More...</a><br /></td></tr>
-<tr class="separator:a4511c6b8167369401ab5eefd0c5d2b0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a8bfd610ac1e273cd0522d1b7169f68"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a7a8bfd610ac1e273cd0522d1b7169f68">REGEX_VALIDATE_NAME</a>&#160;&#160;&#160;&quot;^[a-zA-Z][a-zA-Z0-9_]{0,30}$&quot;</td></tr>
 <tr class="memdesc:a7a8bfd610ac1e273cd0522d1b7169f68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block API (syntax related)  <a href="container_8h.html#a7a8bfd610ac1e273cd0522d1b7169f68">More...</a><br /></td></tr>
 <tr class="separator:a7a8bfd610ac1e273cd0522d1b7169f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -200,6 +192,12 @@ Macros</h2></td></tr>
 <tr class="memitem:a4b9ea0b37119c24999820299556e5761"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a4b9ea0b37119c24999820299556e5761">BLOCK_STATUS_SYNC_UNLOCKED</a>&#160;&#160;&#160;-3</td></tr>
 <tr class="memdesc:a4b9ea0b37119c24999820299556e5761"><td class="mdescLeft">&#160;</td><td class="mdescRight">BlockKeeper.status: block destroying, do nothing, forget the pointer.  <a href="container_8h.html#a4b9ea0b37119c24999820299556e5761">More...</a><br /></td></tr>
 <tr class="separator:a4b9ea0b37119c24999820299556e5761"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d08ecdef5fd0e91817f4e6b880659e9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a4d08ecdef5fd0e91817f4e6b880659e9">LOCK_NUM_RETRIES_BEFORE_YIELD</a>&#160;&#160;&#160;100</td></tr>
+<tr class="memdesc:a4d08ecdef5fd0e91817f4e6b880659e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread safety.  <a href="container_8h.html#a4d08ecdef5fd0e91817f4e6b880659e9">More...</a><br /></td></tr>
+<tr class="separator:a4d08ecdef5fd0e91817f4e6b880659e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d6ec9f0667f58f74bfaa81980d4f0ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a1d6ec9f0667f58f74bfaa81980d4f0ab">LOCK_WEIGHT_OF_WRITE</a>&#160;&#160;&#160;46341</td></tr>
+<tr class="memdesc:a1d6ec9f0667f58f74bfaa81980d4f0ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">sqrt(2^31) == # simultaneous readers to outweight a writer == # simultaneous writers to force an overflow  <a href="container_8h.html#a1d6ec9f0667f58f74bfaa81980d4f0ab">More...</a><br /></td></tr>
+<tr class="separator:a1d6ec9f0667f58f74bfaa81980d4f0ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -215,8 +213,6 @@ Typedefs</h2></td></tr>
 <tr class="separator:acf7bf339ba5505b0ecbf219889a6ca8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1ee282228d329b2175b2efa7add9385"><td class="memItemLeft" align="right" valign="top">typedef Name *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#aa1ee282228d329b2175b2efa7add9385">jazz_elements::pName</a></td></tr>
 <tr class="separator:aa1ee282228d329b2175b2efa7add9385"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5c3f57ec69caa19191f00178de0c927"><td class="memItemLeft" align="right" valign="top">typedef struct Answer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#ab5c3f57ec69caa19191f00178de0c927">jazz_elements::pAnswer</a></td></tr>
-<tr class="separator:ab5c3f57ec69caa19191f00178de0c927"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a610c62b4b5180ee4bc90df9665e433aa"><td class="memItemLeft" align="right" valign="top">typedef struct Locator *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a610c62b4b5180ee4bc90df9665e433aa">jazz_elements::pLocator</a></td></tr>
 <tr class="separator:a610c62b4b5180ee4bc90df9665e433aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79708585f234be0562fc73f87fb3556b"><td class="memItemLeft" align="right" valign="top">typedef struct Locator *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a79708585f234be0562fc73f87fb3556b">jazz_elements::pL_value</a></td></tr>
@@ -231,22 +227,6 @@ Typedefs</h2></td></tr>
 <tr class="separator:ad8dd34a46d8fb42f85ffb4b95ba8a5f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a4511c6b8167369401ab5eefd0c5d2b0a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4511c6b8167369401ab5eefd0c5d2b0a">&#9670;&nbsp;</a></span>ANSWER_LENGTH</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ANSWER_LENGTH&#160;&#160;&#160;4096</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Maximum length of an Answer. </p>
-
-</div>
-</div>
 <a id="a5950f65e58ff35f5dad8c5224a9b2c80"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5950f65e58ff35f5dad8c5224a9b2c80">&#9670;&nbsp;</a></span>AS_BEBOP</h2>
 
@@ -487,6 +467,39 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
+<a id="a4d08ecdef5fd0e91817f4e6b880659e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d08ecdef5fd0e91817f4e6b880659e9">&#9670;&nbsp;</a></span>LOCK_NUM_RETRIES_BEFORE_YIELD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOCK_NUM_RETRIES_BEFORE_YIELD&#160;&#160;&#160;100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Thread safety. </p>
+<p>Number of retries when lock fails before calling this_thread::yield() </p>
+
+</div>
+</div>
+<a id="a1d6ec9f0667f58f74bfaa81980d4f0ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d6ec9f0667f58f74bfaa81980d4f0ab">&#9670;&nbsp;</a></span>LOCK_WEIGHT_OF_WRITE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOCK_WEIGHT_OF_WRITE&#160;&#160;&#160;46341</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>sqrt(2^31) == # simultaneous readers to outweight a writer == # simultaneous writers to force an overflow </p>
+
+</div>
+</div>
 <a id="a13082378d0a60913f0b5a5b69a769360"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a13082378d0a60913f0b5a5b69a769360">&#9670;&nbsp;</a></span>MAX_CONTRACTS_IN_R_VALUE</h2>
 
@@ -661,22 +674,6 @@ Typedefs</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Container.new_block(6)(what) constant: Create a new named tree inside Volatile. </p>
-
-</div>
-</div>
-<a id="a4592825487c8f673a12811927628d9a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4592825487c8f673a12811927628d9a9">&#9670;&nbsp;</a></span>QUERY_LENGTH</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define QUERY_LENGTH&#160;&#160;&#160;4096</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Maximum length of an API query. </p>
 
 </div>
 </div>

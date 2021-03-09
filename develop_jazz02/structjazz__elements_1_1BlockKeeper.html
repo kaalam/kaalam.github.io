@@ -86,9 +86,9 @@ Data Fields</h2></td></tr>
 <tr class="memitem:ac47c204dba5444a0f32680c09abfff84"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#a4e6d98f21e446010dd09ba4c9d5c372c">BlockId64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1BlockKeeper.html#ac47c204dba5444a0f32680c09abfff84">block_id</a></td></tr>
 <tr class="memdesc:ac47c204dba5444a0f32680c09abfff84"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 64 bit binary block id. Can be a hash of the block locator, but not necessarily.  <a href="structjazz__elements_1_1BlockKeeper.html#ac47c204dba5444a0f32680c09abfff84">More...</a><br /></td></tr>
 <tr class="separator:ac47c204dba5444a0f32680c09abfff84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61e0822c07932cead3d59e48651db8f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ac3d6e1b4aca91c99b80bdc759a73699f">Lock32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1BlockKeeper.html#a61e0822c07932cead3d59e48651db8f8">lock</a></td></tr>
-<tr class="memdesc:a61e0822c07932cead3d59e48651db8f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">An atomically updated int to lock the Keeper (can only be used via p_owner-&gt;<a class="el" href="structjazz__elements_1_1BlockKeeper.html#a61e0822c07932cead3d59e48651db8f8" title="An atomically updated int to lock the Keeper (can only be used via p_owner-&gt;lock(),...">lock()</a>, ..)  <a href="structjazz__elements_1_1BlockKeeper.html#a61e0822c07932cead3d59e48651db8f8">More...</a><br /></td></tr>
-<tr class="separator:a61e0822c07932cead3d59e48651db8f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15ccc5c9e402fde327bf7187c63c12de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ac3d6e1b4aca91c99b80bdc759a73699f">Lock32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1BlockKeeper.html#a15ccc5c9e402fde327bf7187c63c12de">_lock_</a></td></tr>
+<tr class="memdesc:a15ccc5c9e402fde327bf7187c63c12de"><td class="mdescLeft">&#160;</td><td class="mdescRight">An atomically updated int to lock the Keeper to support modifying the <a class="el" href="classjazz__elements_1_1Block.html">Block</a>.  <a href="structjazz__elements_1_1BlockKeeper.html#a15ccc5c9e402fde327bf7187c63c12de">More...</a><br /></td></tr>
+<tr class="separator:a15ccc5c9e402fde327bf7187c63c12de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3de27345f6215939c2dabbb459641cae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1BlockKeeper.html#a3de27345f6215939c2dabbb459641cae">status</a></td></tr>
 <tr class="memdesc:a3de27345f6215939c2dabbb459641cae"><td class="mdescLeft">&#160;</td><td class="mdescRight">The status of the block request (sync or async errors, wait, ready, etc.)  <a href="structjazz__elements_1_1BlockKeeper.html#a3de27345f6215939c2dabbb459641cae">More...</a><br /></td></tr>
 <tr class="separator:a3de27345f6215939c2dabbb459641cae"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -99,6 +99,22 @@ Data Fields</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The minimum struc to keep track of block allocation in a <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>. The descendants will use classes with more data inheriting from this. The caller can <b>only read</b> the data from here by using the pBlockKeeper returned by the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> API. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
+<a id="a15ccc5c9e402fde327bf7187c63c12de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15ccc5c9e402fde327bf7187c63c12de">&#9670;&nbsp;</a></span>_lock_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#ac3d6e1b4aca91c99b80bdc759a73699f">Lock32</a> jazz_elements::BlockKeeper::_lock_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An atomically updated int to lock the Keeper to support modifying the <a class="el" href="classjazz__elements_1_1Block.html">Block</a>. </p>
+
+</div>
+</div>
 <a id="ac47c204dba5444a0f32680c09abfff84"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac47c204dba5444a0f32680c09abfff84">&#9670;&nbsp;</a></span>block_id</h2>
 
@@ -128,22 +144,6 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Some data used by the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> service. </p>
-
-</div>
-</div>
-<a id="a61e0822c07932cead3d59e48651db8f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a61e0822c07932cead3d59e48651db8f8">&#9670;&nbsp;</a></span>lock</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacejazz__elements.html#ac3d6e1b4aca91c99b80bdc759a73699f">Lock32</a> jazz_elements::BlockKeeper::lock</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>An atomically updated int to lock the Keeper (can only be used via p_owner-&gt;<a class="el" href="structjazz__elements_1_1BlockKeeper.html#a61e0822c07932cead3d59e48651db8f8" title="An atomically updated int to lock the Keeper (can only be used via p_owner-&gt;lock(),...">lock()</a>, ..) </p>
 
 </div>
 </div>

@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['has_5fna_565',['has_NA',['../structjazz__elements_1_1BlockHeader.html#a6f9d802a4dfacc3213e77431577ea448',1,'jazz_elements::BlockHeader']]],
-  ['hash64_566',['hash64',['../structjazz__elements_1_1BlockHeader.html#a9718cc9c15e696e6e2ff1d044d65b47a',1,'jazz_elements::BlockHeader']]],
-  ['http_567',['HTTP',['../namespacejazz__main.html#a7903fed0038168d55f0f50d619d6d1dc',1,'jazz_main']]]
+  ['f_5fbuff_573',['f_buff',['../classjazz__elements_1_1Logger.html#a44cf3c42fc2332c0eb226fee16bd3683',1,'jazz_elements::Logger']]],
+  ['f_5fna_574',['F_NA',['../namespacejazz__elements.html#abdb5cec635864c993c6bc9f88a555cd3',1,'jazz_elements']]],
+  ['f_5fstream_575',['f_stream',['../classjazz__elements_1_1Logger.html#a9ba9577d038ac1fcafa70115913d9b91',1,'jazz_elements::Logger']]],
+  ['fail_5falloc_5fbytes_576',['fail_alloc_bytes',['../classjazz__elements_1_1Container.html#ac76487ead6f2e334882d5d250cc02724',1,'jazz_elements::Container']]],
+  ['file_5fname_577',['file_name',['../classjazz__elements_1_1Logger.html#a4d787c78ad25b3fbc78ddeaece61a566',1,'jazz_elements::Logger']]],
+  ['filter_578',['filter',['../unionjazz__elements_1_1TensorDim.html#a894af6e8431a14c22f42206fbd757ee5',1,'jazz_elements::TensorDim']]]
 ];

@@ -102,6 +102,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0496a435ee9330f73091a6ad41f07161"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a426e67b24c8eebf7b714106b6aa6d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a6a426e67b24c8eebf7b714106b6aa6d2">shut_down</a> (bool restarting_service=false)</td></tr>
 <tr class="separator:a6a426e67b24c8eebf7b714106b6aa6d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d480b5defe819c8444b2e48e3178522"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a4d480b5defe819c8444b2e48e3178522">enter_read</a> (<a class="el" href="namespacejazz__elements.html#a1443efd13a9f5f24bee92041fffc8820">pBlockKeeper</a> p_keeper)</td></tr>
+<tr class="separator:a4d480b5defe819c8444b2e48e3178522"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fb22086977f00cb4f3f5b835deb5c6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a4fb22086977f00cb4f3f5b835deb5c6b">enter_write</a> (<a class="el" href="namespacejazz__elements.html#a1443efd13a9f5f24bee92041fffc8820">pBlockKeeper</a> p_keeper)</td></tr>
+<tr class="separator:a4fb22086977f00cb4f3f5b835deb5c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab10c20e4b4035dce948061b30d9b4f0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#ab10c20e4b4035dce948061b30d9b4f0c">leave_read</a> (<a class="el" href="namespacejazz__elements.html#a1443efd13a9f5f24bee92041fffc8820">pBlockKeeper</a> p_keeper)</td></tr>
+<tr class="separator:ab10c20e4b4035dce948061b30d9b4f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea1c4fb54be1594ca194b7a8c45f102c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#aea1c4fb54be1594ca194b7a8c45f102c">leave_write</a> (<a class="el" href="namespacejazz__elements.html#a1443efd13a9f5f24bee92041fffc8820">pBlockKeeper</a> p_keeper)</td></tr>
+<tr class="separator:aea1c4fb54be1594ca194b7a8c45f102c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2845202c3fedd27eaed20bde00d79d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#ae2845202c3fedd27eaed20bde00d79d4">new_block</a> (<a class="el" href="namespacejazz__elements.html#a1443efd13a9f5f24bee92041fffc8820">pBlockKeeper</a> *p_keeper, int cell_type, int *dim, <a class="el" href="namespacejazz__elements.html#ad8dd34a46d8fb42f85ffb4b95ba8a5f3">Attributes</a> *att=nullptr, int fill_tensor=<a class="el" href="container_8h.html#acceef3cf4c09cd8099b55a84e0fb3d6f">FILL_NEW_DONT_FILL</a>, bool *p_bool_filter=nullptr, int stringbuff_size=0, const char *p_text=nullptr, char eol='\n')</td></tr>
 <tr class="separator:ae2845202c3fedd27eaed20bde00d79d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac86d2b07587db97632b805230972ed71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#ac86d2b07587db97632b805230972ed71">new_block</a> (<a class="el" href="namespacejazz__elements.html#a1443efd13a9f5f24bee92041fffc8820">pBlockKeeper</a> *p_keeper, <a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a> p_as_block, <a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a> p_row_filter=nullptr, <a class="el" href="namespacejazz__elements.html#ad8dd34a46d8fb42f85ffb4b95ba8a5f3">Attributes</a> *att=nullptr)</td></tr>
@@ -144,6 +152,10 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
+<tr class="memitem:a3b00418cc5f5f425b2ac7353d5f87094"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a3b00418cc5f5f425b2ac7353d5f87094">lock_container</a> ()</td></tr>
+<tr class="separator:a3b00418cc5f5f425b2ac7353d5f87094"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39e73d3ee200010809ad7c4b3540dd51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a39e73d3ee200010809ad7c4b3540dd51">unlock_container</a> ()</td></tr>
+<tr class="separator:a39e73d3ee200010809ad7c4b3540dd51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ecc4ba001b31b0be81c99350eb6827e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a6ecc4ba001b31b0be81c99350eb6827e">new_container</a> ()</td></tr>
 <tr class="separator:a6ecc4ba001b31b0be81c99350eb6827e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e0efc28d7f6d1d1aa253e68badaf170"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a1e0efc28d7f6d1d1aa253e68badaf170">destroy_container</a> ()</td></tr>
@@ -169,6 +181,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:abc300758d681a102dd4fe4ebbbffd8cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f8bc18f21d0ca5249f1bb83187af96b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#a1443efd13a9f5f24bee92041fffc8820">pBlockKeeper</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a2f8bc18f21d0ca5249f1bb83187af96b">p_right</a></td></tr>
 <tr class="separator:a2f8bc18f21d0ca5249f1bb83187af96b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74e94f772ce3681a21cde6e427356e4f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ac3d6e1b4aca91c99b80bdc759a73699f">Lock32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a74e94f772ce3681a21cde6e427356e4f">_lock_</a></td></tr>
+<tr class="separator:a74e94f772ce3681a21cde6e427356e4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>: A <a class="el" href="classjazz__elements_1_1Service.html">Service</a> to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of this. </p>
@@ -181,7 +195,7 @@ Private Attributes</h2></td></tr>
 </ul>
 <p>It provides a neat API for all descendants, including:</p>
 <ul>
-<li>Transparent thread safety</li>
+<li>Transparent thread safety .<a class="el" href="classjazz__elements_1_1Container.html#a4d480b5defe819c8444b2e48e3178522">enter_read()</a> .<a class="el" href="classjazz__elements_1_1Container.html#a4fb22086977f00cb4f3f5b835deb5c6b">enter_write()</a> .<a class="el" href="classjazz__elements_1_1Container.html#ab10c20e4b4035dce948061b30d9b4f0c">leave_read()</a> .<a class="el" href="classjazz__elements_1_1Container.html#aea1c4fb54be1594ca194b7a8c45f102c">leave_write()</a> .<a class="el" href="classjazz__elements_1_1Container.html#a3b00418cc5f5f425b2ac7353d5f87094">lock_container()</a> .<a class="el" href="classjazz__elements_1_1Container.html#a39e73d3ee200010809ad7c4b3540dd51">unlock_container()</a></li>
 <li>An API for async calls (<a class="el" href="classjazz__elements_1_1Remote.html" title="A Container that treats a remote node (mostly a Jazz node, but also a web API) as persistence.">Remote</a>): .<a class="el" href="classjazz__elements_1_1Container.html#ab2934d8517d915b258729760f834b8db">sleep()</a> .<a class="el" href="classjazz__elements_1_1Container.html#aed6738171742f55d15b2c9c2af2e1447">callback()</a></li>
 <li>Allocation: .<a class="el" href="classjazz__elements_1_1Container.html#ae2845202c3fedd27eaed20bde00d79d4">new_block()</a>, .<a class="el" href="classjazz__elements_1_1Container.html#a862eb012d2cbd9d796d450391ad9a677">lock()</a>, .<a class="el" href="classjazz__elements_1_1Container.html#a3b878441661ec025285c8950c31f0d1e">unlock()</a></li>
 <li>Crud: .<a class="el" href="classjazz__elements_1_1Container.html#a3ff305d9f586f346d1062bca73f6e2d2">put()</a>, .<a class="el" href="classjazz__elements_1_1Container.html#a5fe58ee303a8bd9b7b3b6945db04cf5d">remove()</a></li>
@@ -314,6 +328,58 @@ Instances and inheritance</h2>
 </pre> 
 </div>
 </div>
+<a id="a4d480b5defe819c8444b2e48e3178522"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d480b5defe819c8444b2e48e3178522">&#9670;&nbsp;</a></span>enter_read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void jazz_elements::Container::enter_read </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a1443efd13a9f5f24bee92041fffc8820">pBlockKeeper</a>&#160;</td>
+          <td class="paramname"><em>p_keeper</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Enter (soft lock) a <a class="el" href="classjazz__elements_1_1Block.html">Block</a> for reading. Many readers are allowed simultaneously, but it is incompatible with writing.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_keeper</td><td>The address of the <a class="el" href="classjazz__elements_1_1Block.html">Block</a>'s <a class="el" href="structjazz__elements_1_1BlockKeeper.html">BlockKeeper</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>NOTE: This is not used in API queries or normal Bop execution. In those cases, Blocks are immutable. This allows for mutable blocks in multithreaded algorithms like MCTS. </p>
+
+</div>
+</div>
+<a id="a4fb22086977f00cb4f3f5b835deb5c6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fb22086977f00cb4f3f5b835deb5c6b">&#9670;&nbsp;</a></span>enter_write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void jazz_elements::Container::enter_write </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a1443efd13a9f5f24bee92041fffc8820">pBlockKeeper</a>&#160;</td>
+          <td class="paramname"><em>p_keeper</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Enter (hard lock) a <a class="el" href="classjazz__elements_1_1Block.html">Block</a> for writing. No readers are allowed during writing.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_keeper</td><td>The address of the <a class="el" href="classjazz__elements_1_1Block.html">Block</a>'s <a class="el" href="structjazz__elements_1_1BlockKeeper.html">BlockKeeper</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>NOTE: This is not used in API queries or normal Bop execution. In those cases, Blocks are immutable. This allows for mutable blocks in multithreaded algorithms like MCTS. </p>
+
+</div>
+</div>
 <a id="a120c67d2559ce9fed582542ba5a53ee8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a120c67d2559ce9fed582542ba5a53ee8">&#9670;&nbsp;</a></span>get()</h2>
 
@@ -358,6 +424,58 @@ Instances and inheritance</h2>
 </pre> 
 </div>
 </div>
+<a id="ab10c20e4b4035dce948061b30d9b4f0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab10c20e4b4035dce948061b30d9b4f0c">&#9670;&nbsp;</a></span>leave_read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void jazz_elements::Container::leave_read </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a1443efd13a9f5f24bee92041fffc8820">pBlockKeeper</a>&#160;</td>
+          <td class="paramname"><em>p_keeper</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Release the soft lock of <a class="el" href="classjazz__elements_1_1Block.html">Block</a> after reading. This is mandatory for each <a class="el" href="classjazz__elements_1_1Container.html#a4d480b5defe819c8444b2e48e3178522">enter_read()</a> call or it may result in permanent locking.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_keeper</td><td>The address of the <a class="el" href="classjazz__elements_1_1Block.html">Block</a>'s <a class="el" href="structjazz__elements_1_1BlockKeeper.html">BlockKeeper</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>NOTE: This is not used in API queries or normal Bop execution. In those cases, Blocks are immutable. This allows for mutable blocks in multithreaded algorithms like MCTS. </p>
+
+</div>
+</div>
+<a id="aea1c4fb54be1594ca194b7a8c45f102c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea1c4fb54be1594ca194b7a8c45f102c">&#9670;&nbsp;</a></span>leave_write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void jazz_elements::Container::leave_write </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a1443efd13a9f5f24bee92041fffc8820">pBlockKeeper</a>&#160;</td>
+          <td class="paramname"><em>p_keeper</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Release the hard lock of <a class="el" href="classjazz__elements_1_1Block.html">Block</a> after writing. This is mandatory for each <a class="el" href="classjazz__elements_1_1Container.html#a4fb22086977f00cb4f3f5b835deb5c6b">enter_write()</a> call or it may result in permanent locking.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_keeper</td><td>The address of the <a class="el" href="classjazz__elements_1_1Block.html">Block</a>'s <a class="el" href="structjazz__elements_1_1BlockKeeper.html">BlockKeeper</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>NOTE: This is not used in API queries or normal Bop execution. In those cases, Blocks are immutable. This allows for mutable blocks in multithreaded algorithms like MCTS. </p>
+
+</div>
+</div>
 <a id="a862eb012d2cbd9d796d450391ad9a677"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a862eb012d2cbd9d796d450391ad9a677">&#9670;&nbsp;</a></span>lock()</h2>
 
@@ -400,6 +518,33 @@ Instances and inheritance</h2>
 
 \return Bla
 </pre> 
+</div>
+</div>
+<a id="a3b00418cc5f5f425b2ac7353d5f87094"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b00418cc5f5f425b2ac7353d5f87094">&#9670;&nbsp;</a></span>lock_container()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void jazz_elements::Container::lock_container </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A private hard lock for Container-critical operations. E.g., Adding a new block to the deque.</p>
+<p>Needeless to say: Use only for a few clockcycles over the critical part and always <a class="el" href="classjazz__elements_1_1Container.html#a39e73d3ee200010809ad7c4b3540dd51">unlock_container()</a> no matter what. </p>
+
 </div>
 </div>
 <a id="a1704bddecfdb93db963c1966bd50c3af"></a>
@@ -914,7 +1059,55 @@ Instances and inheritance</h2>
 </pre> 
 </div>
 </div>
+<a id="a39e73d3ee200010809ad7c4b3540dd51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39e73d3ee200010809ad7c4b3540dd51">&#9670;&nbsp;</a></span>unlock_container()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void jazz_elements::Container::unlock_container </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Release the private hard lock for Container-critical operations. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Field Documentation</h2>
+<a id="a74e94f772ce3681a21cde6e427356e4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74e94f772ce3681a21cde6e427356e4f">&#9670;&nbsp;</a></span>_lock_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#ac3d6e1b4aca91c99b80bdc759a73699f">Lock32</a> jazz_elements::Container::_lock_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a7a4180f46f2820502f48df99fe2b88b1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7a4180f46f2820502f48df99fe2b88b1">&#9670;&nbsp;</a></span>alloc_bytes</h2>
 

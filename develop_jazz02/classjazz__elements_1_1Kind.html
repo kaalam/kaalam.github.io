@@ -92,8 +92,8 @@ Inheritance diagram for jazz_elements::Kind:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a6f51bbc324666ee4eb3a9f304960c356"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Kind.html#a6f51bbc324666ee4eb3a9f304960c356">num_dimensions</a> ()</td></tr>
 <tr class="separator:a6f51bbc324666ee4eb3a9f304960c356"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc551ddbf4673941da5078290d7aaf05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Kind.html#abc551ddbf4673941da5078290d7aaf05">dimension_names</a> (<a class="el" href="namespacejazz__elements.html#a6b0a4554188d19aab214be35e1ea094d">pApiBuffer</a> p_buff)</td></tr>
-<tr class="separator:abc551ddbf4673941da5078290d7aaf05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1e9c2011e9f94f6168d6d2c641b8bca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Kind.html#ae1e9c2011e9f94f6168d6d2c641b8bca">dimension_names</a> (<a class="el" href="namespacejazz__elements.html#ab5c3f57ec69caa19191f00178de0c927">pAnswer</a> p_buff)</td></tr>
+<tr class="separator:ae1e9c2011e9f94f6168d6d2c641b8bca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3361bb0bf8e5401e72e2c4d7d9747de"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Kind.html#ac3361bb0bf8e5401e72e2c4d7d9747de">kind_audit</a> ()</td></tr>
 <tr class="separator:ac3361bb0bf8e5401e72e2c4d7d9747de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classjazz__elements_1_1Block"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classjazz__elements_1_1Block')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classjazz__elements_1_1Block.html">jazz_elements::Block</a></td></tr>
@@ -188,8 +188,8 @@ Additional Inherited Members</h2></td></tr>
 </ul>
 <p>Since kinds keep only metadata, the space is uninterrupted as in a normal block: (header, vector of CELL_TYPE_TUPLE_ITEM, attribute keys, <a class="el" href="structjazz__elements_1_1StringBuffer.html" title="Structure at the end of a Block, initially created with init_string_buffer()">StringBuffer</a>), which is the only difference between a <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a> an a tuple (besides BLOCK_ATTRIB_BLOCKTYPE and BLOCK_ATTRIB_TYPE values). </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="abc551ddbf4673941da5078290d7aaf05"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc551ddbf4673941da5078290d7aaf05">&#9670;&nbsp;</a></span>dimension_names()</h2>
+<a id="ae1e9c2011e9f94f6168d6d2c641b8bca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1e9c2011e9f94f6168d6d2c641b8bca">&#9670;&nbsp;</a></span>dimension_names()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -200,7 +200,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void jazz_elements::Kind::dimension_names </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a6b0a4554188d19aab214be35e1ea094d">pApiBuffer</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#ab5c3f57ec69caa19191f00178de0c927">pAnswer</a>&#160;</td>
           <td class="paramname"><em>p_buff</em></td><td>)</td>
           <td></td>
         </tr>
@@ -211,7 +211,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the names of the dimensions as a \t (tab separated) list of names.</p>
+<p>Returns the names of the dimensions as a tab separated list of names.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">p_buff</td><td>The address of an ApiBuffer to store the answer. </td></tr>

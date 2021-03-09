@@ -98,6 +98,8 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1StringBuffer.html">jazz_elements::StringBuffer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure at the end of a <a class="el" href="classjazz__elements_1_1Block.html">Block</a>, initially created with init_string_buffer()  <a href="structjazz__elements_1_1StringBuffer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1Answer.html">jazz_elements::Answer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -109,8 +111,13 @@ Namespaces</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a198723ea7b77deeeb47c9c3e21319143"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a198723ea7b77deeeb47c9c3e21319143">INCLUDED_JAZZ_ELEMENTS_TYPES</a></td></tr>
 <tr class="separator:a198723ea7b77deeeb47c9c3e21319143"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45237870b6d0f174599247c678d20f12"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a45237870b6d0f174599247c678d20f12">MAX_API_BUFF_LENGTH</a>&#160;&#160;&#160;1024</td></tr>
-<tr class="separator:a45237870b6d0f174599247c678d20f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4511c6b8167369401ab5eefd0c5d2b0a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a4511c6b8167369401ab5eefd0c5d2b0a">ANSWER_LENGTH</a>&#160;&#160;&#160;4096</td></tr>
+<tr class="separator:a4511c6b8167369401ab5eefd0c5d2b0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66db4a37d11679cd51897ddd6fdf4c63"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a66db4a37d11679cd51897ddd6fdf4c63">SAFE_URL_LENGTH</a>&#160;&#160;&#160;2048</td></tr>
+<tr class="memdesc:a66db4a37d11679cd51897ddd6fdf4c63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum safe assumption of URL length for both parsing and forwarding.  <a href="types_8h.html#a66db4a37d11679cd51897ddd6fdf4c63">More...</a><br /></td></tr>
+<tr class="separator:a66db4a37d11679cd51897ddd6fdf4c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ca562590a5d4d166dfef09d15c7f3ac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a5ca562590a5d4d166dfef09d15c7f3ac">JAZZ_MAX_NUM_THREADS</a>&#160;&#160;&#160;64</td></tr>
+<tr class="separator:a5ca562590a5d4d166dfef09d15c7f3ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5dfd5a365563c2e8cf13a83a127af9ac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a5dfd5a365563c2e8cf13a83a127af9ac">MAX_TENSOR_RANK</a>&#160;&#160;&#160;6</td></tr>
 <tr class="memdesc:a5dfd5a365563c2e8cf13a83a127af9ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum rank = 6, E.g. a 2D array of raw videos (row, column, frame, x, y, color)  <a href="types_8h.html#a5dfd5a365563c2e8cf13a83a127af9ac">More...</a><br /></td></tr>
 <tr class="separator:a5dfd5a365563c2e8cf13a83a127af9ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -237,12 +244,25 @@ Typedefs</h2></td></tr>
 <tr class="memitem:aa7e5adf7a32b3080ea959153d2b6aee9"><td class="memItemLeft" align="right" valign="top">typedef std::chrono::steady_clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#aa7e5adf7a32b3080ea959153d2b6aee9">jazz_elements::TimePoint</a></td></tr>
 <tr class="memdesc:aa7e5adf7a32b3080ea959153d2b6aee9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A time point stored as 8 bytes.  <a href="namespacejazz__elements.html#aa7e5adf7a32b3080ea959153d2b6aee9">More...</a><br /></td></tr>
 <tr class="separator:aa7e5adf7a32b3080ea959153d2b6aee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ad860bc61f166feee18a3da3ac44868"><td class="memItemLeft" align="right" valign="top">typedef char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a4ad860bc61f166feee18a3da3ac44868">jazz_elements::ApiBuffer</a>[<a class="el" href="types_8h.html#a45237870b6d0f174599247c678d20f12">MAX_API_BUFF_LENGTH</a>]</td></tr>
-<tr class="separator:a4ad860bc61f166feee18a3da3ac44868"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b0a4554188d19aab214be35e1ea094d"><td class="memItemLeft" align="right" valign="top">typedef ApiBuffer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a6b0a4554188d19aab214be35e1ea094d">jazz_elements::pApiBuffer</a></td></tr>
-<tr class="separator:a6b0a4554188d19aab214be35e1ea094d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5c3f57ec69caa19191f00178de0c927"><td class="memItemLeft" align="right" valign="top">typedef struct Answer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#ab5c3f57ec69caa19191f00178de0c927">jazz_elements::pAnswer</a></td></tr>
+<tr class="separator:ab5c3f57ec69caa19191f00178de0c927"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a4511c6b8167369401ab5eefd0c5d2b0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4511c6b8167369401ab5eefd0c5d2b0a">&#9670;&nbsp;</a></span>ANSWER_LENGTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ANSWER_LENGTH&#160;&#160;&#160;4096</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>API buffers limit the size of http API calls, but also anything like lists of item names, dimension names, types, blocktypes, etc. Since Blocks do allocate RAM, when they communicate these kind of text operations, they expect the caller to assign a buffer of ANSWER_LENGTH chars. Of course, data serialization does not have any limits it is done by containers creating new blocks. </p>
+
+</div>
+</div>
 <a id="addb3f9c44e627a81c7471f876c0de7a7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#addb3f9c44e627a81c7471f876c0de7a7">&#9670;&nbsp;</a></span>BLOCK_ATTRIB_</h2>
 
@@ -721,6 +741,21 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
+<a id="a5ca562590a5d4d166dfef09d15c7f3ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ca562590a5d4d166dfef09d15c7f3ac">&#9670;&nbsp;</a></span>JAZZ_MAX_NUM_THREADS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JAZZ_MAX_NUM_THREADS&#160;&#160;&#160;64</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Number of elements preallocated in thread-specific buffers. Jazz is thread safe in a caller transparent way. The Block level API does not normally modify blocks. The few exceptions have a block-specific lock in the BlockKeeper. Services also have a service-specific lock. The few services that require full thread awareness (Bebop and API) will allocate a number of Core or APIexecutor objects equal to JAZZ_MAX_NUM_THREADS inside the service. This number can be modified down (but not up) via the configuration keys: MHD_THREAD_POOL_SIZE and BEBOP_NUM_CORES. As expected, MHD_THREAD_POOL_SIZE also defines the thread pool size allocated in libmicrohttpd. </p>
+
+</div>
+</div>
 <a id="a8002d26924d9e68cc1c5bbe96097b747"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8002d26924d9e68cc1c5bbe96097b747">&#9670;&nbsp;</a></span>KIND_TYPE_</h2>
 
@@ -801,21 +836,6 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="a45237870b6d0f174599247c678d20f12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45237870b6d0f174599247c678d20f12">&#9670;&nbsp;</a></span>MAX_API_BUFF_LENGTH</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MAX_API_BUFF_LENGTH&#160;&#160;&#160;1024</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>API buffers limit the size of http API calls, but also anything like lists of item names, dimension names, types, blocktypes, etc. Since Blocks do allocate RAM, when they communicate these kind of text operations, they expect the caller to assign a buffer of MAX_API_BUFF_LENGTH chars. Of course, data serialization does not have any limits, that's why it is done by containers and not by blocks. </p>
-
-</div>
-</div>
 <a id="a5a4d6ca6f3612a6f6f377b5abe382b5b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5a4d6ca6f3612a6f6f377b5abe382b5b">&#9670;&nbsp;</a></span>MAX_CHECKS_4_MATCH</h2>
 
@@ -845,6 +865,22 @@ Typedefs</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Maximum rank = 6, E.g. a 2D array of raw videos (row, column, frame, x, y, color) </p>
+
+</div>
+</div>
+<a id="a66db4a37d11679cd51897ddd6fdf4c63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66db4a37d11679cd51897ddd6fdf4c63">&#9670;&nbsp;</a></span>SAFE_URL_LENGTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SAFE_URL_LENGTH&#160;&#160;&#160;2048</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Maximum safe assumption of URL length for both parsing and forwarding. </p>
 
 </div>
 </div>
