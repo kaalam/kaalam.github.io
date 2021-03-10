@@ -132,6 +132,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5fe58ee303a8bd9b7b3b6945db04cf5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a120c67d2559ce9fed582542ba5a53ee8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a120c67d2559ce9fed582542ba5a53ee8">get</a> (<a class="el" href="namespacejazz__elements.html#a1443efd13a9f5f24bee92041fffc8820">pBlockKeeper</a> *p_keeper, <a class="el" href="namespacejazz__elements.html#a54a83e0b328971cad4f882dca87e71e9">pR_value</a> p_rvalue, <a class="el" href="namespacejazz__elements.html#acf7bf339ba5505b0ecbf219889a6ca8f">pContainer</a> p_sender=nullptr, <a class="el" href="namespacejazz__elements.html#a4e6d98f21e446010dd09ba4c9d5c372c">BlockId64</a> block_id=0)</td></tr>
 <tr class="separator:a120c67d2559ce9fed582542ba5a53ee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a269ababe36d3957fdd7429740e07af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a3a269ababe36d3957fdd7429740e07af">get</a> (<a class="el" href="namespacejazz__elements.html#a1443efd13a9f5f24bee92041fffc8820">pBlockKeeper</a> *p_keeper, <a class="el" href="namespacejazz__elements.html#a610c62b4b5180ee4bc90df9665e433aa">pLocator</a> p_what)</td></tr>
+<tr class="separator:a3a269ababe36d3957fdd7429740e07af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2934d8517d915b258729760f834b8db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#ab2934d8517d915b258729760f834b8db">sleep</a> (<a class="el" href="namespacejazz__elements.html#a1443efd13a9f5f24bee92041fffc8820">pBlockKeeper</a> *p_keeper)</td></tr>
 <tr class="separator:ab2934d8517d915b258729760f834b8db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed6738171742f55d15b2c9c2af2e1447"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#aed6738171742f55d15b2c9c2af2e1447">callback</a> (<a class="el" href="namespacejazz__elements.html#a4e6d98f21e446010dd09ba4c9d5c372c">BlockId64</a> block_id, <a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> result)</td></tr>
@@ -380,8 +382,40 @@ Instances and inheritance</h2>
 
 </div>
 </div>
+<a id="a3a269ababe36d3957fdd7429740e07af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a269ababe36d3957fdd7429740e07af">&#9670;&nbsp;</a></span>get() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> jazz_elements::Container::get </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a1443efd13a9f5f24bee92041fffc8820">pBlockKeeper</a> *&#160;</td>
+          <td class="paramname"><em>p_keeper</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a610c62b4b5180ee4bc90df9665e433aa">pLocator</a>&#160;</td>
+          <td class="paramname"><em>p_what</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get a <a class="el" href="classjazz__elements_1_1Block.html">Block</a> (2) : Simple <a class="el" href="classjazz__elements_1_1Container.html#a120c67d2559ce9fed582542ba5a53ee8">get()</a> implementing only local, sync, full block "as is" <a class="el" href="classjazz__elements_1_1Container.html#a120c67d2559ce9fed582542ba5a53ee8">get()</a>.</p>
+<p>TODO: Document get(2) </p><pre class="fragment">\param aaa      Bla, bla
+
+\return Bla
+</pre> 
+</div>
+</div>
 <a id="a120c67d2559ce9fed582542ba5a53ee8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a120c67d2559ce9fed582542ba5a53ee8">&#9670;&nbsp;</a></span>get()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a120c67d2559ce9fed582542ba5a53ee8">&#9670;&nbsp;</a></span>get() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -417,7 +451,7 @@ Instances and inheritance</h2>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Bla, bla, bla</p>
+<p>Get a <a class="el" href="classjazz__elements_1_1Block.html">Block</a> (1) : Complete <a class="el" href="classjazz__elements_1_1Container.html#a120c67d2559ce9fed582542ba5a53ee8">get()</a> implementing a full <a class="el" href="structjazz__elements_1_1R__value.html">R_value</a> with contract and async calls</p>
 <p>TODO: Document get(1) </p><pre class="fragment">\param aaa      Bla, bla
 
 \return Bla

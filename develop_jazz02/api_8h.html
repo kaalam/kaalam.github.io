@@ -70,6 +70,8 @@ $(function() {
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">api.h File Reference</div>  </div>
@@ -82,6 +84,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__main_1_1APIParseBuffer.html">jazz_main::APIParseBuffer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html">jazz_main::Api</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classjazz__main_1_1Api.html" title="Api: A Service to manage the REST API.">Api</a>: A Service to manage the REST API.  <a href="classjazz__main_1_1Api.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -98,6 +102,34 @@ Macros</h2></td></tr>
 <tr class="separator:a5b67636a89515762f34b814ecf2e8fe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a61c24fd07097ce8715f7e10f7152e3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a5a61c24fd07097ce8715f7e10f7152e3">MHD_PLATFORM_H</a></td></tr>
 <tr class="separator:a5a61c24fd07097ce8715f7e10f7152e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f10cb6b44e47dd330ff60e017f24510"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a7f10cb6b44e47dd330ff60e017f24510">HTTP_NOTUSED</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a7f10cb6b44e47dd330ff60e017f24510"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63d4c725d922ebee7cddd485fd35adf3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a63d4c725d922ebee7cddd485fd35adf3">HTTP_OPTIONS</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a63d4c725d922ebee7cddd485fd35adf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e69ea7b8d7e381ceaf2601e10471059"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a4e69ea7b8d7e381ceaf2601e10471059">HTTP_HEAD</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a4e69ea7b8d7e381ceaf2601e10471059"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa276b433bb7caee9ec1bb1386063707b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#aa276b433bb7caee9ec1bb1386063707b">HTTP_GET</a>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:aa276b433bb7caee9ec1bb1386063707b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0e84459f11d4b8762fa7c5adc775602"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#ad0e84459f11d4b8762fa7c5adc775602">HTTP_PUT</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:ad0e84459f11d4b8762fa7c5adc775602"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80131cf3bb8aa236a18cb067c14c23b6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a80131cf3bb8aa236a18cb067c14c23b6">HTTP_DELETE</a>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:a80131cf3bb8aa236a18cb067c14c23b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e3b689e9483994cfcd85954cba23338"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a4e3b689e9483994cfcd85954cba23338">MAX_RECURSION_DEPTH</a>&#160;&#160;&#160;16</td></tr>
+<tr class="memdesc:a4e3b689e9483994cfcd85954cba23338"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parser limits.  <a href="api_8h.html#a4e3b689e9483994cfcd85954cba23338">More...</a><br /></td></tr>
+<tr class="separator:a4e3b689e9483994cfcd85954cba23338"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9108cd1d4c34413cc6e69b4585b5f9e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a9108cd1d4c34413cc6e69b4585b5f9e2">PARSE_OK</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:a9108cd1d4c34413cc6e69b4585b5f9e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parser return codes.  <a href="api_8h.html#a9108cd1d4c34413cc6e69b4585b5f9e2">More...</a><br /></td></tr>
+<tr class="separator:a9108cd1d4c34413cc6e69b4585b5f9e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a9d502f9732a9b9206a07f3a78c42fe18"><td class="memItemLeft" align="right" valign="top">typedef struct MHD_Response *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#a9d502f9732a9b9206a07f3a78c42fe18">jazz_main::pMHD_Response</a></td></tr>
+<tr class="separator:a9d502f9732a9b9206a07f3a78c42fe18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a6c153d2441379b609b60dde6bce9f811"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#a6c153d2441379b609b60dde6bce9f811">jazz_main::http_request_callback</a> (void *cls, struct MHD_Connection *connection, const char *url, const char *method, const char *version, const char *upload_data, size_t *upload_data_size, void **con_cls)</td></tr>
+<tr class="separator:a6c153d2441379b609b60dde6bce9f811"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -105,8 +137,95 @@ Variables</h2></td></tr>
 <tr class="separator:a84b0e5c69e4a0011482591eaf87fbdb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae18d0fb5841441ab5a2831734f349328"><td class="memItemLeft" align="right" valign="top">Logger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#ae18d0fb5841441ab5a2831734f349328">jazz_main::LOGGER</a></td></tr>
 <tr class="separator:ae18d0fb5841441ab5a2831734f349328"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ab84c888580c3dfffe9832ddb5026a7"><td class="memItemLeft" align="right" valign="top">Api&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#a6ab84c888580c3dfffe9832ddb5026a7">jazz_main::API</a></td></tr>
+<tr class="separator:a6ab84c888580c3dfffe9832ddb5026a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a80131cf3bb8aa236a18cb067c14c23b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80131cf3bb8aa236a18cb067c14c23b6">&#9670;&nbsp;</a></span>HTTP_DELETE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HTTP_DELETE&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa276b433bb7caee9ec1bb1386063707b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa276b433bb7caee9ec1bb1386063707b">&#9670;&nbsp;</a></span>HTTP_GET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HTTP_GET&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4e69ea7b8d7e381ceaf2601e10471059"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e69ea7b8d7e381ceaf2601e10471059">&#9670;&nbsp;</a></span>HTTP_HEAD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HTTP_HEAD&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7f10cb6b44e47dd330ff60e017f24510"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f10cb6b44e47dd330ff60e017f24510">&#9670;&nbsp;</a></span>HTTP_NOTUSED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HTTP_NOTUSED&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Http methods </p>
+
+</div>
+</div>
+<a id="a63d4c725d922ebee7cddd485fd35adf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63d4c725d922ebee7cddd485fd35adf3">&#9670;&nbsp;</a></span>HTTP_OPTIONS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HTTP_OPTIONS&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad0e84459f11d4b8762fa7c5adc775602"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0e84459f11d4b8762fa7c5adc775602">&#9670;&nbsp;</a></span>HTTP_PUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HTTP_PUT&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a5b67636a89515762f34b814ecf2e8fe1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5b67636a89515762f34b814ecf2e8fe1">&#9670;&nbsp;</a></span>INCLUDED_JAZZ_MAIN_API</h2>
 
@@ -121,6 +240,23 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a4e3b689e9483994cfcd85954cba23338"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e3b689e9483994cfcd85954cba23338">&#9670;&nbsp;</a></span>MAX_RECURSION_DEPTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_RECURSION_DEPTH&#160;&#160;&#160;16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parser limits. </p>
+<p>Max number of nested block references in a query. </p>
+
+</div>
+</div>
 <a id="a5a61c24fd07097ce8715f7e10f7152e3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5a61c24fd07097ce8715f7e10f7152e3">&#9670;&nbsp;</a></span>MHD_PLATFORM_H</h2>
 
@@ -132,6 +268,23 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9108cd1d4c34413cc6e69b4585b5f9e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9108cd1d4c34413cc6e69b4585b5f9e2">&#9670;&nbsp;</a></span>PARSE_OK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PARSE_OK&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parser return codes. </p>
+<p>Success. </p>
 
 </div>
 </div>

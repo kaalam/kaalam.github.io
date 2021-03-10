@@ -167,7 +167,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>TODO: Document <a class="el" href="classjazz__main_1_1HttpServer.html#adb1588c670ff9826e85534f50e404540">HttpServer::shut_down()</a> </p>
+<p>Server closing method.</p>
+<p>This overrides the Service <a class="el" href="classjazz__main_1_1HttpServer.html#adb1588c670ff9826e85534f50e404540">shut_down()</a> just to set the return to SERVICE_NO_ERROR.</p>
+<p>The true closing mechanism is a: MHD_stop_daemon (Jazz_MHD_Daemon); done by the <a class="el" href="namespacejazz__main.html#afa96b225c13eebee49a375d73fa3ebba">signalHandler_SIGTERM()</a> callback that captures SIGTERM. </p>
 
 <p>Reimplemented from <a class="el" href="classjazz__elements_1_1Service.html#ab04ea0eeb2c881abc68788b795e7a70e">jazz_elements::Service</a>.</p>
 
@@ -198,7 +200,27 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>TODO: Document <a class="el" href="classjazz__elements_1_1Service.html#ae4883dfb5573ae5911fc97e01f06afe2" title="A simple start()/shut_down() interface (Restart is: shut_down(TRUE):start())">HttpServer::start()</a> </p>
+<p>Start the Jazz server.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_sig_handler</td><td>A function (of type pSignalHandler) that will be called when the process receives a SIGTERM signal. </td></tr>
+    <tr><td class="paramname">p_daemon</td><td>Returns by reference the pointer that will be used to control the MHD_Daemon.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>On failure, EXIT_FAILURE. On success, the thread forks and only the parent process returns EXIT_SUCCESS, the child does not return. The application is stopped when callback signalHandler_SIGTERM exits with EXIT_SUCCESS if shutting all services was successful or with EXIT_FAILURE if not. On failure, the caller is responsible of stopping all started services (see jazz_main.cpp).</dd></dl>
+<p>Starting logic:</p>
+<ol type="1">
+<li><p class="startli">Get all the MHD server config settings via <a class="el" href="classjazz__elements_1_1Service.html#a3ca88fd7aa5eb3e29c214d98e905f20f">get_conf_key()</a></p>
+<p class="startli">The default config file is JAZZ_DEFAULT_CONFIG_PATH but that can be changed via command line argument (see jazz_main.cpp).</p>
+</li>
+<li>Registers the signal handlers for SIGTERM. (See argument p_sig_handler)</li>
+<li>Forks (== The parent exits with EXIT_SUCCESS, the child continues to call MHD_start_daemon().)</li>
+<li><p class="startli">Calls MHD_start_daemon()</p>
+<p class="startli">Then calls setsid() This creates a new session if the calling process is not a process group leader. The calling process is the leader of the new session, the process group leader of the new process group, and has no controlling terminal.</p>
+<p class="startli">And sleeps forever! (Remember, it is the child of the original caller who exited with EXIT_SUCCESS.) </p>
+</li>
+</ol>
 
 </div>
 </div>

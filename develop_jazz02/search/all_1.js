@@ -9,12 +9,13 @@ var searchData=
   ['alloc_5ffailed_7',['alloc_failed',['../structjazz__elements_1_1StringBuffer.html#aae699f7385bb6797bfba1e8ced8ecbe2',1,'jazz_elements::StringBuffer']]],
   ['answer_8',['Answer',['../structjazz__elements_1_1Answer.html',1,'jazz_elements']]],
   ['answer_5flength_9',['ANSWER_LENGTH',['../types_8h.html#a4511c6b8167369401ab5eefd0c5d2b0a',1,'types.h']]],
-  ['api_10',['Api',['../classjazz__main_1_1Api.html',1,'jazz_main::Api'],['../classjazz__main_1_1Api.html#a666cef78db3106d881add491b6aacfeb',1,'jazz_main::Api::Api()'],['../namespacejazz__main.html#a6ab84c888580c3dfffe9832ddb5026a7',1,'jazz_main::API()']]],
+  ['api_10',['Api',['../classjazz__main_1_1Api.html',1,'jazz_main::Api'],['../classjazz__main_1_1Api.html#a9b0f04272196b0d767a565313f197c07',1,'jazz_main::Api::Api()'],['../namespacejazz__main.html#a6ab84c888580c3dfffe9832ddb5026a7',1,'jazz_main::API()']]],
   ['api_2ecpp_11',['api.cpp',['../api_8cpp.html',1,'']]],
   ['api_2eh_12',['api.h',['../api_8h.html',1,'']]],
-  ['as_5fbebop_13',['AS_BEBOP',['../container_8h.html#a5950f65e58ff35f5dad8c5224a9b2c80',1,'container.h']]],
-  ['as_5fcpp_14',['AS_CPP',['../container_8h.html#ac3987a3312a08cf295f7c2b34a702514',1,'container.h']]],
-  ['as_5fjson_15',['AS_JSON',['../container_8h.html#a06ad0260c76f8e6c33f94e7a5df148fc',1,'container.h']]],
-  ['attributemap_16',['AttributeMap',['../namespacejazz__elements.html#ad2f703c26500ad2cdcec139a7e2000c4',1,'jazz_elements']]],
-  ['attributes_17',['Attributes',['../namespacejazz__elements.html#ad8dd34a46d8fb42f85ffb4b95ba8a5f3',1,'jazz_elements']]]
+  ['apiparsebuffer_13',['APIParseBuffer',['../structjazz__main_1_1APIParseBuffer.html',1,'jazz_main']]],
+  ['as_5fbebop_14',['AS_BEBOP',['../container_8h.html#a5950f65e58ff35f5dad8c5224a9b2c80',1,'container.h']]],
+  ['as_5fcpp_15',['AS_CPP',['../container_8h.html#ac3987a3312a08cf295f7c2b34a702514',1,'container.h']]],
+  ['as_5fjson_16',['AS_JSON',['../container_8h.html#a06ad0260c76f8e6c33f94e7a5df148fc',1,'container.h']]],
+  ['attributemap_17',['AttributeMap',['../namespacejazz__elements.html#ad2f703c26500ad2cdcec139a7e2000c4',1,'jazz_elements']]],
+  ['attributes_18',['Attributes',['../namespacejazz__elements.html#ad8dd34a46d8fb42f85ffb4b95ba8a5f3',1,'jazz_elements']]]
 ];
