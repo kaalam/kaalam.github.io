@@ -67,7 +67,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">jazz_main::HttpServer Class Reference</div>  </div>
 </div><!--header-->
@@ -91,8 +92,8 @@ Inheritance diagram for jazz_main::HttpServer:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ada53191e49340839395c6b27c29e9bc3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1HttpServer.html#ada53191e49340839395c6b27c29e9bc3">HttpServer</a> (<a class="el" href="namespacejazz__elements.html#a54e0e020637fffc86de95ffdd302f4a8">pLogger</a> a_logger, <a class="el" href="namespacejazz__elements.html#a2ea64c8750eeedeb68690603dacceeab">pConfigFile</a> a_config)</td></tr>
 <tr class="separator:ada53191e49340839395c6b27c29e9bc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a320bcc9d4a29b54868693f19746a168f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1HttpServer.html#a320bcc9d4a29b54868693f19746a168f">start</a> (<a class="el" href="namespacejazz__main.html#a578cf47cfadacf0e9c6735b8cb53e6b0">pSignalHandler</a> p_sig_handler, <a class="el" href="namespacejazz__main.html#ae1cdb9105d6b720548eed5b8df38823b">pMHD_Daemon</a> &amp;p_daemon)</td></tr>
-<tr class="separator:a320bcc9d4a29b54868693f19746a168f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b1b847f6a122858ab18729ad49c3702"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1HttpServer.html#a8b1b847f6a122858ab18729ad49c3702">start</a> (<a class="el" href="namespacejazz__main.html#a578cf47cfadacf0e9c6735b8cb53e6b0">pSignalHandler</a> p_sig_handler, <a class="el" href="namespacejazz__main.html#ae1cdb9105d6b720548eed5b8df38823b">pMHD_Daemon</a> &amp;p_daemon, MHD_AccessHandlerCallback dh)</td></tr>
+<tr class="separator:a8b1b847f6a122858ab18729ad49c3702"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb1588c670ff9826e85534f50e404540"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1HttpServer.html#adb1588c670ff9826e85534f50e404540">shut_down</a> (bool restarting_service=false)</td></tr>
 <tr class="separator:adb1588c670ff9826e85534f50e404540"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classjazz__elements_1_1Service"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classjazz__elements_1_1Service')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classjazz__elements_1_1Service.html">jazz_elements::Service</a></td></tr>
@@ -111,6 +112,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae470b76019bcbcecc6ac1b516c51bb74 inherit pub_methods_classjazz__elements_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d5b766d5214ffb88d58acc6f66e2e29 inherit pub_methods_classjazz__elements_1_1Service"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Service.html#a7d5b766d5214ffb88d58acc6f66e2e29">get_conf_key</a> (const char *key, std::string &amp;value)</td></tr>
 <tr class="separator:a7d5b766d5214ffb88d58acc6f66e2e29 inherit pub_methods_classjazz__elements_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a2a47289895c302045a8aa21fb72a80dd"><td class="memItemLeft" align="right" valign="top">MHD_OptionItem&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1HttpServer.html#a2a47289895c302045a8aa21fb72a80dd">server_options</a> [9]</td></tr>
+<tr class="separator:a2a47289895c302045a8aa21fb72a80dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classjazz__main_1_1HttpServer.html" title="HttpServer: The http server is also a Service.">HttpServer</a>: The http server is also a Service. </p>
@@ -175,8 +181,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a320bcc9d4a29b54868693f19746a168f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a320bcc9d4a29b54868693f19746a168f">&#9670;&nbsp;</a></span>start()</h2>
+<a id="a8b1b847f6a122858ab18729ad49c3702"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b1b847f6a122858ab18729ad49c3702">&#9670;&nbsp;</a></span>start()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -191,7 +197,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="namespacejazz__main.html#ae1cdb9105d6b720548eed5b8df38823b">pMHD_Daemon</a> &amp;&#160;</td>
-          <td class="paramname"><em>p_daemon</em>&#160;</td>
+          <td class="paramname"><em>p_daemon</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MHD_AccessHandlerCallback&#160;</td>
+          <td class="paramname"><em>dh</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -221,6 +233,29 @@ Public Member Functions</h2></td></tr>
 <p class="startli">And sleeps forever! (Remember, it is the child of the original caller who exited with EXIT_SUCCESS.) </p>
 </li>
 </ol>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a2a47289895c302045a8aa21fb72a80dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a47289895c302045a8aa21fb72a80dd">&#9670;&nbsp;</a></span>server_options</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MHD_OptionItem jazz_main::HttpServer::server_options[9]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
