@@ -135,6 +135,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a120c67d2559ce9fed582542ba5a53ee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a269ababe36d3957fdd7429740e07af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a3a269ababe36d3957fdd7429740e07af">get</a> (<a class="el" href="namespacejazz__elements.html#a1443efd13a9f5f24bee92041fffc8820">pBlockKeeper</a> *p_keeper, <a class="el" href="namespacejazz__elements.html#a610c62b4b5180ee4bc90df9665e433aa">pLocator</a> p_what)</td></tr>
 <tr class="separator:a3a269ababe36d3957fdd7429740e07af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94a9f090fc004a0eddfce10a8cd150de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a94a9f090fc004a0eddfce10a8cd150de">base_names</a> (<a class="el" href="namespacejazz__elements.html#aadf1e411ca544a525c767f3e30010202">BaseNames</a> &amp;base_names)</td></tr>
+<tr class="separator:a94a9f090fc004a0eddfce10a8cd150de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2934d8517d915b258729760f834b8db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#ab2934d8517d915b258729760f834b8db">sleep</a> (<a class="el" href="namespacejazz__elements.html#a1443efd13a9f5f24bee92041fffc8820">pBlockKeeper</a> *p_keeper)</td></tr>
 <tr class="separator:ab2934d8517d915b258729760f834b8db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed6738171742f55d15b2c9c2af2e1447"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#aed6738171742f55d15b2c9c2af2e1447">callback</a> (<a class="el" href="namespacejazz__elements.html#a4e6d98f21e446010dd09ba4c9d5c372c">BlockId64</a> block_id, <a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> result)</td></tr>
@@ -203,6 +205,7 @@ Private Attributes</h2></td></tr>
 <li>Allocation: .<a class="el" href="classjazz__elements_1_1Container.html#ae2845202c3fedd27eaed20bde00d79d4">new_block()</a>, .<a class="el" href="classjazz__elements_1_1Container.html#a862eb012d2cbd9d796d450391ad9a677">lock()</a>, .<a class="el" href="classjazz__elements_1_1Container.html#a3b878441661ec025285c8950c31f0d1e">unlock()</a></li>
 <li>Crud: .<a class="el" href="classjazz__elements_1_1Container.html#a3ff305d9f586f346d1062bca73f6e2d2">put()</a>, .<a class="el" href="classjazz__elements_1_1Container.html#a5fe58ee303a8bd9b7b3b6945db04cf5d">remove()</a></li>
 <li>Support for contracts: .<a class="el" href="classjazz__elements_1_1Container.html#a120c67d2559ce9fed582542ba5a53ee8">get()</a></li>
+<li>Support for container names in the API .<a class="el" href="classjazz__elements_1_1Container.html#a94a9f090fc004a0eddfce10a8cd150de">base_names()</a></li>
 <li>A configuration style for all descendants</li>
 </ul>
 <p>It provides, exposed by the root <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> class, but also used internally by descendants;</p>
@@ -262,6 +265,32 @@ Instances and inheritance</h2>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a94a9f090fc004a0eddfce10a8cd150de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94a9f090fc004a0eddfce10a8cd150de">&#9670;&nbsp;</a></span>base_names()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void jazz_elements::Container::base_names </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#aadf1e411ca544a525c767f3e30010202">BaseNames</a> &amp;&#160;</td>
+          <td class="paramname"><em>base_names</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Add the base names for this <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">base_names</td><td>A BaseNames map passed by reference to which the base names of this object are added by this call.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The root class <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> does not add any base names. </p>
+
+</div>
+</div>
 <a id="aed6738171742f55d15b2c9c2af2e1447"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aed6738171742f55d15b2c9c2af2e1447">&#9670;&nbsp;</a></span>callback()</h2>
 

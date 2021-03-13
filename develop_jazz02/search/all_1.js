@@ -9,7 +9,7 @@ var searchData=
   ['alloc_5ffailed_7',['alloc_failed',['../structjazz__elements_1_1StringBuffer.html#aae699f7385bb6797bfba1e8ced8ecbe2',1,'jazz_elements::StringBuffer']]],
   ['answer_8',['Answer',['../structjazz__elements_1_1Answer.html',1,'jazz_elements']]],
   ['answer_5flength_9',['ANSWER_LENGTH',['../types_8h.html#a4511c6b8167369401ab5eefd0c5d2b0a',1,'types.h']]],
-  ['api_10',['Api',['../classjazz__main_1_1Api.html',1,'jazz_main::Api'],['../classjazz__main_1_1Api.html#a9b0f04272196b0d767a565313f197c07',1,'jazz_main::Api::Api()'],['../namespacejazz__main.html#a6ab84c888580c3dfffe9832ddb5026a7',1,'jazz_main::API()']]],
+  ['api_10',['Api',['../classjazz__main_1_1Api.html',1,'jazz_main::Api'],['../classjazz__main_1_1Api.html#aeccb1d29db165f1475d50444027a752e',1,'jazz_main::Api::Api()'],['../namespacejazz__main.html#a6ab84c888580c3dfffe9832ddb5026a7',1,'jazz_main::API()']]],
   ['api_2ecpp_11',['api.cpp',['../api_8cpp.html',1,'']]],
   ['api_2eh_12',['api.h',['../api_8h.html',1,'']]],
   ['apiparsebuffer_13',['APIParseBuffer',['../structjazz__main_1_1APIParseBuffer.html',1,'jazz_main']]],
