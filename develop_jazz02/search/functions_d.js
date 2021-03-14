@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['p_5fattribute_5fkeys_547',['p_attribute_keys',['../classjazz__elements_1_1Block.html#afeda09c2d7670146634988b40fc4ab5e',1,'jazz_elements::Block']]],
-  ['p_5fstring_5fbuffer_548',['p_string_buffer',['../classjazz__elements_1_1Block.html#a9d2b455977ea1760446d088f68b63d4f',1,'jazz_elements::Block']]],
-  ['parse_549',['parse',['../classjazz__main_1_1Api.html#a20fa96a348efb22d9cff1099e9d1cc1b',1,'jazz_main::Api']]],
-  ['parse_5fcommand_550',['parse_command',['../main_8cpp.html#a35ed3cd6ea33e76f6ee96284111cdd95',1,'main.cpp']]],
-  ['persisted_551',['Persisted',['../classjazz__elements_1_1Persisted.html#a1d7eff67e2869078bb4bbdaa0eea9424',1,'jazz_elements::Persisted']]],
-  ['put_552',['put',['../classjazz__elements_1_1Container.html#a3ff305d9f586f346d1062bca73f6e2d2',1,'jazz_elements::Container']]]
+  ['new_5fblock_558',['new_block',['../classjazz__elements_1_1Container.html#ae2845202c3fedd27eaed20bde00d79d4',1,'jazz_elements::Container::new_block(pBlockKeeper *p_keeper, int cell_type, int *dim, Attributes *att=nullptr, int fill_tensor=FILL_NEW_DONT_FILL, bool *p_bool_filter=nullptr, int stringbuff_size=0, const char *p_text=nullptr, char eol=&apos;\n&apos;)'],['../classjazz__elements_1_1Container.html#ac86d2b07587db97632b805230972ed71',1,'jazz_elements::Container::new_block(pBlockKeeper *p_keeper, pBlock p_as_block, pBlock p_row_filter=nullptr, Attributes *att=nullptr)'],['../classjazz__elements_1_1Container.html#a1704bddecfdb93db963c1966bd50c3af',1,'jazz_elements::Container::new_block(pBlockKeeper *p_keeper, const char *p_text, pBlockHeader p_as_block=nullptr, Attributes *att=nullptr)'],['../classjazz__elements_1_1Container.html#a1a742da9679fb6747374a607898718d5',1,'jazz_elements::Container::new_block(pBlockKeeper *p_keeper, pBlock p_block, int format=AS_JSON)'],['../classjazz__elements_1_1Container.html#adffb2fe7001093029f24a28c2c6ee31d',1,'jazz_elements::Container::new_block(pBlockKeeper *p_keeper, pItems p_items, int build=BUILD_TUPLE)'],['../classjazz__elements_1_1Container.html#a0aeafa56846245baf91437106338b812',1,'jazz_elements::Container::new_block(pBlockKeeper *p_keeper, pLocator p_where, pName p_name, int what=NEW_MAP)']]],
+  ['new_5fcontainer_559',['new_container',['../classjazz__elements_1_1Container.html#a6ecc4ba001b31b0be81c99350eb6827e',1,'jazz_elements::Container']]],
+  ['num_5fdimensions_560',['num_dimensions',['../classjazz__elements_1_1Kind.html#a6f51bbc324666ee4eb3a9f304960c356',1,'jazz_elements::Kind']]],
+  ['num_5fkeys_561',['num_keys',['../classjazz__elements_1_1ConfigFile.html#a002fadb3b1aa6a933a9bdb5907987b67',1,'jazz_elements::ConfigFile']]]
 ];

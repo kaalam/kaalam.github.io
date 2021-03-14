@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['keeperdata_427',['KeeperData',['../unionjazz__elements_1_1KeeperData.html',1,'jazz_elements']]],
-  ['kind_428',['Kind',['../classjazz__elements_1_1Kind.html',1,'jazz_elements']]]
+  ['locator_440',['Locator',['../structjazz__elements_1_1Locator.html',1,'jazz_elements']]],
+  ['logger_441',['Logger',['../classjazz__elements_1_1Logger.html',1,'jazz_elements']]]
 ];

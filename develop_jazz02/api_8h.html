@@ -77,7 +77,8 @@ $(function() {
 <div class="title">api.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="jazz__agency_8h_source.html">src/include/jazz_agency.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;map&gt;</code><br />
+<code>#include &quot;<a class="el" href="jazz__agency_8h_source.html">src/include/jazz_agency.h</a>&quot;</code><br />
 <code>#include &quot;microhttpd.h&quot;</code><br />
 </div>
 <p><a href="api_8h_source.html">Go to the source code of this file.</a></p>
@@ -128,11 +129,25 @@ Macros</h2></td></tr>
 <tr class="memitem:a74f084dbb6264feba77d193f39e5ff7c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a74f084dbb6264feba77d193f39e5ff7c">GET_OK</a>&#160;&#160;&#160;0</td></tr>
 <tr class="memdesc:a74f084dbb6264feba77d193f39e5ff7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Success.  <a href="api_8h.html#a74f084dbb6264feba77d193f39e5ff7c">More...</a><br /></td></tr>
 <tr class="separator:a74f084dbb6264feba77d193f39e5ff7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e548b263fbcdfebd32bdbc999493d21"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a6e548b263fbcdfebd32bdbc999493d21">PARSE_ERROR_INVALID_CHAR</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:a6e548b263fbcdfebd32bdbc999493d21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error unexpected char.  <a href="api_8h.html#a6e548b263fbcdfebd32bdbc999493d21">More...</a><br /></td></tr>
+<tr class="separator:a6e548b263fbcdfebd32bdbc999493d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83fd4a02ad003d470ef07c6c716babb5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a83fd4a02ad003d470ef07c6c716babb5">PARSE_ERROR_INVALID_SHAPE</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memdesc:a83fd4a02ad003d470ef07c6c716babb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sequence of [] is inconsistent with a tensor.  <a href="api_8h.html#a83fd4a02ad003d470ef07c6c716babb5">More...</a><br /></td></tr>
+<tr class="separator:a83fd4a02ad003d470ef07c6c716babb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a100b4dc0e0a91f6d5e9c8f6e19e8033b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a100b4dc0e0a91f6d5e9c8f6e19e8033b">PARSE_ERROR_ENCODING</a>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:a100b4dc0e0a91f6d5e9c8f6e19e8033b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5346f36ea672903cb718842eef90683c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a5346f36ea672903cb718842eef90683c">PARSE_ERROR_NOT_A_STRING</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:a5346f36ea672903cb718842eef90683c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:af94739654622218689ff802558bd97fb"><td class="memItemLeft" align="right" valign="top">typedef bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#af94739654622218689ff802558bd97fb">jazz_main::CharLUT</a>[<a class="el" href="api_8h.html#a7dfe57f98086163fe1947f55bcdac9bc">EIGHT_BIT_LONG</a>]</td></tr>
 <tr class="separator:af94739654622218689ff802558bd97fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37b96ec9a8ba9e91cab88828a2ab90aa"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#a37b96ec9a8ba9e91cab88828a2ab90aa">jazz_main::Url2Name</a></td></tr>
+<tr class="separator:a37b96ec9a8ba9e91cab88828a2ab90aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adecdbe219ae6c8a78b2e9f5fad04e3fb"><td class="memItemLeft" align="right" valign="top">typedef char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#adecdbe219ae6c8a78b2e9f5fad04e3fb">jazz_main::pChar</a></td></tr>
+<tr class="separator:adecdbe219ae6c8a78b2e9f5fad04e3fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d502f9732a9b9206a07f3a78c42fe18"><td class="memItemLeft" align="right" valign="top">typedef struct MHD_Response *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#a9d502f9732a9b9206a07f3a78c42fe18">jazz_main::pMHD_Response</a></td></tr>
 <tr class="separator:a9d502f9732a9b9206a07f3a78c42fe18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -321,6 +336,66 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define MHD_PLATFORM_H</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a100b4dc0e0a91f6d5e9c8f6e19e8033b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a100b4dc0e0a91f6d5e9c8f6e19e8033b">&#9670;&nbsp;</a></span>PARSE_ERROR_ENCODING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PARSE_ERROR_ENCODING&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6e548b263fbcdfebd32bdbc999493d21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e548b263fbcdfebd32bdbc999493d21">&#9670;&nbsp;</a></span>PARSE_ERROR_INVALID_CHAR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PARSE_ERROR_INVALID_CHAR&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Error unexpected char. </p>
+
+</div>
+</div>
+<a id="a83fd4a02ad003d470ef07c6c716babb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83fd4a02ad003d470ef07c6c716babb5">&#9670;&nbsp;</a></span>PARSE_ERROR_INVALID_SHAPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PARSE_ERROR_INVALID_SHAPE&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sequence of [] is inconsistent with a tensor. </p>
+
+</div>
+</div>
+<a id="a5346f36ea672903cb718842eef90683c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5346f36ea672903cb718842eef90683c">&#9670;&nbsp;</a></span>PARSE_ERROR_NOT_A_STRING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PARSE_ERROR_NOT_A_STRING&#160;&#160;&#160;4</td>
         </tr>
       </table>
 </div><div class="memdoc">

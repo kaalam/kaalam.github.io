@@ -67,7 +67,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">jazz_elements::Remote Class Reference</div>  </div>
 </div><!--header-->
@@ -90,8 +91,8 @@ Inheritance diagram for jazz_elements::Remote:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1f22ee7f300519cccf8bc8045a04963e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Remote.html#a1f22ee7f300519cccf8bc8045a04963e">Remote</a> (<a class="el" href="namespacejazz__elements.html#a54e0e020637fffc86de95ffdd302f4a8">pLogger</a> a_logger, <a class="el" href="namespacejazz__elements.html#a2ea64c8750eeedeb68690603dacceeab">pConfigFile</a> a_config)</td></tr>
-<tr class="separator:a1f22ee7f300519cccf8bc8045a04963e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14c03728a2103189339cd76c599b995a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Remote.html#a14c03728a2103189339cd76c599b995a">Remote</a> (<a class="el" href="namespacejazz__elements.html#a54e0e020637fffc86de95ffdd302f4a8">pLogger</a> a_logger, <a class="el" href="namespacejazz__elements.html#a2ea64c8750eeedeb68690603dacceeab">pConfigFile</a> a_config, <a class="el" href="namespacejazz__elements.html#adf5bbcc3f6b205bd70e7b46a235ca283">pCluster</a> a_cluster)</td></tr>
+<tr class="separator:a14c03728a2103189339cd76c599b995a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b4ce90b2dc9f0baa1fe0ba0716f3daf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Remote.html#a5b4ce90b2dc9f0baa1fe0ba0716f3daf">start</a> ()</td></tr>
 <tr class="separator:a5b4ce90b2dc9f0baa1fe0ba0716f3daf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdd2f42ae29f53658a0ba1c2badea992"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Remote.html#afdd2f42ae29f53658a0ba1c2badea992">shut_down</a> (bool restarting_service=false)</td></tr>
@@ -154,12 +155,17 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae470b76019bcbcecc6ac1b516c51bb74 inherit pub_methods_classjazz__elements_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d5b766d5214ffb88d58acc6f66e2e29 inherit pub_methods_classjazz__elements_1_1Service"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Service.html#a7d5b766d5214ffb88d58acc6f66e2e29">get_conf_key</a> (const char *key, std::string &amp;value)</td></tr>
 <tr class="separator:a7d5b766d5214ffb88d58acc6f66e2e29 inherit pub_methods_classjazz__elements_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a55ffab9a832f42384b30e39445a16d17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#adf5bbcc3f6b205bd70e7b46a235ca283">pCluster</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Remote.html#a55ffab9a832f42384b30e39445a16d17">p_cluster</a></td></tr>
+<tr class="separator:a55ffab9a832f42384b30e39445a16d17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> that treats a remote node (mostly a Jazz node, but also a web API) as persistence. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a1f22ee7f300519cccf8bc8045a04963e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f22ee7f300519cccf8bc8045a04963e">&#9670;&nbsp;</a></span>Remote()</h2>
+<a id="a14c03728a2103189339cd76c599b995a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14c03728a2103189339cd76c599b995a">&#9670;&nbsp;</a></span>Remote()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -174,7 +180,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a2ea64c8750eeedeb68690603dacceeab">pConfigFile</a>&#160;</td>
-          <td class="paramname"><em>a_config</em>&#160;</td>
+          <td class="paramname"><em>a_config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#adf5bbcc3f6b205bd70e7b46a235ca283">pCluster</a>&#160;</td>
+          <td class="paramname"><em>a_cluster</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -266,6 +278,29 @@ Public Member Functions</h2></td></tr>
 <p>TODO: Document <a class="el" href="classjazz__elements_1_1Remote.html#a5b4ce90b2dc9f0baa1fe0ba0716f3daf">Remote::start()</a> </p>
 
 <p>Reimplemented from <a class="el" href="classjazz__elements_1_1Container.html#a0496a435ee9330f73091a6ad41f07161">jazz_elements::Container</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a55ffab9a832f42384b30e39445a16d17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55ffab9a832f42384b30e39445a16d17">&#9670;&nbsp;</a></span>p_cluster</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#adf5bbcc3f6b205bd70e7b46a235ca283">pCluster</a> jazz_elements::Remote::p_cluster</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

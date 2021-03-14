@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="How the different services work to serve API calls and how it works in Bebop and C++.">
+<meta name="description" content="API terminology and how the different services work to serve API calls and how it works in Bebop and C++.">
 <meta name="keywords" content=" ">
 <title>API reference - How it works | Jazz User's Manual</title>
 <link rel="stylesheet" href="css/syntax.css">
@@ -489,7 +489,7 @@
 <div class="post-content">
 
    
-    <div class="summary">How the different services work to serve API calls and how it works in Bebop and C++.</div>
+    <div class="summary">API terminology and how the different services work to serve API calls and how it works in Bebop and C++.</div>
    
 
     
@@ -538,8 +538,7 @@ with just one / after the host name: (E.g., `http://kaalam.ai/kaalam/). This Api
 <ol>
   <li>The content of the folder configured as STATIC_HTML_AT_START will be uploaded automatically. The mime type will be guessed from the
 file extension.</li>
-  <li>Uploading a block (as raw binary) with the content to //static/ with the attributes BLOCK_ATTRIB_URL and BLOCK_ATTRIB_MIMETYPE set
-to match the desired url.</li>
+  <li>Uploading a block (as raw binary) with the content to //static/ with the attributes BLOCK_ATTRIB_URL, BLOCK_ATTRIB_MIMETYPE and BLOCK_ATTRIB_LANGUAGE set to match the desired url.</li>
 </ol>
 
 <h3 id="the--api-1">The /// API</h3>
@@ -550,6 +549,61 @@ returning things like: build versions, statistics, configuration settings, etc.<
 <h3 id="the--api-2">The // API</h3>
 
 <p>Is the real http API for anything (GET, PUT, DELETE, OPTIONS, HEAD) with blocks, contracts, function calls and event handling.</p>
+
+<h2 id="how-modules-fit-together">How modules fit together</h2>
+
+<h3 id="all-the-api-is-steered-by-an-instance-of-the-class-api">All the API is steered by an instance of the class Api</h3>
+
+<p>You can see how containers inherit each other <a href="/develop_jazz02/classjazz__elements_1_1Container.html">here</a>. There is one instance of
+each of these services. The API is called by the http server’s callback function and “distributes the game”.</p>
+
+<h3 id="api-is-a-container">API is a container</h3>
+
+<p>The API inherits from Container (which is the one shot container) and, therefore, can allocate one shot blocks (used in constant
+conversion, etc.). Executing an API query has two parts, <strong>parsing</strong> and <strong>executing</strong> (getting, locking, unlocking, running a contract,
+etc.). The API parses the queries and forwards the execution to the appropriate container. In the case of the <code class="language-plaintext highlighter-rouge">///</code> API, that container
+is the API itself.</p>
+
+<h3 id="how-things-are-forwarded">How things are forwarded</h3>
+
+<p>There are two mechanisms by which a container is implicitly specified in an API query: <strong>reserved contracts</strong> and <strong>reserved base names</strong>.
+Priority-wise, reserved contracts have higher priority. E.g., A function call will always be forwarded to <strong>Bebop</strong> and Bebop may use
+reserved base names to locate the data.</p>
+
+<p>There are only two reserved contracts: <strong>function calls</strong> and <strong>event connections</strong>. Function calls are identified by the enclosing
+brackets <code class="language-plaintext highlighter-rouge">(</code> and <code class="language-plaintext highlighter-rouge">)</code>. Function calls are forwarded to <code class="language-plaintext highlighter-rouge">Bebop</code>. Event connections are identified by the <code class="language-plaintext highlighter-rouge">@</code> (connect), <code class="language-plaintext highlighter-rouge">!@</code> (disconnect)
+and <code class="language-plaintext highlighter-rouge">?</code> (send a constant value into a connection) and forwarded to <code class="language-plaintext highlighter-rouge">Agency</code>.</p>
+
+<p>Reserved base names can be found in this table. Anything that is not in the list of reserved names will be forwarded to <code class="language-plaintext highlighter-rouge">Persisted</code>
+assuming it is a database name. The reserved names from <code class="language-plaintext highlighter-rouge">Persisted</code> are also database names, but those databases are special and managed
+by the Jazz node.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Container</th>
+      <th>Reserved base names</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>API</td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;empty&gt;</code> is the empty base name. As a consequence <code class="language-plaintext highlighter-rouge">///</code> calls are executed in the API itself.</td>
+    </tr>
+    <tr>
+      <td>Volatile</td>
+      <td><code class="language-plaintext highlighter-rouge">deque</code>, <code class="language-plaintext highlighter-rouge">map</code>, <code class="language-plaintext highlighter-rouge">tree</code>, <code class="language-plaintext highlighter-rouge">queue</code>. <br />E.g., (GET) <code class="language-plaintext highlighter-rouge">//deque.new("waiting_list")</code> <br />followed by (PUT) <code class="language-plaintext highlighter-rouge">//deque/waiting_list.l_push([1,2])</code></td>
+    </tr>
+    <tr>
+      <td>Persisted</td>
+      <td><code class="language-plaintext highlighter-rouge">sys</code>, <code class="language-plaintext highlighter-rouge">group</code>, <code class="language-plaintext highlighter-rouge">kind</code>, <code class="language-plaintext highlighter-rouge">field</code>, <code class="language-plaintext highlighter-rouge">flux</code>, <code class="language-plaintext highlighter-rouge">agent</code> and <code class="language-plaintext highlighter-rouge">static</code>. Are special databases to keep system config and all the groups, kinds, fields, fluxes, agents and static http served objects.</td>
+    </tr>
+    <tr>
+      <td>Remote</td>
+      <td><code class="language-plaintext highlighter-rouge">jazz_get</code> and <code class="language-plaintext highlighter-rouge">jazz_put</code> are the normal way to address sharded resources. <br /><code class="language-plaintext highlighter-rouge">jazz_broadcast</code> is generated automatically to keep cluster level synchronization, <br /><code class="language-plaintext highlighter-rouge">http_get</code> and <code class="language-plaintext highlighter-rouge">http_put</code> allow accessing REST APIs or resources outside the Jazz cluster.</td>
+    </tr>
+  </tbody>
+</table>
 
 <h2 id="api-terminology">API terminology:</h2>
 
@@ -630,7 +684,7 @@ directed to the agency service.</p>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2021 kaalam.ai. All rights reserved. <br />
- Site last generated: Mar 13, 2021 <br />
+ Site last generated: Mar 14, 2021 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

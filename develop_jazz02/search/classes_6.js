@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['index_424',['Index',['../classjazz__elements_1_1Index.html',1,'jazz_elements']]],
-  ['itemheader_425',['ItemHeader',['../structjazz__elements_1_1ItemHeader.html',1,'jazz_elements']]],
-  ['items_426',['Items',['../structjazz__elements_1_1Items.html',1,'jazz_elements']]]
+  ['keeperdata_438',['KeeperData',['../unionjazz__elements_1_1KeeperData.html',1,'jazz_elements']]],
+  ['kind_439',['Kind',['../classjazz__elements_1_1Kind.html',1,'jazz_elements']]]
 ];

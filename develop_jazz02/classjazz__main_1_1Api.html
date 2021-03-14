@@ -68,6 +68,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">jazz_main::Api Class Reference</div>  </div>
@@ -91,8 +92,8 @@ Inheritance diagram for jazz_main::Api:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aeccb1d29db165f1475d50444027a752e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html#aeccb1d29db165f1475d50444027a752e">Api</a> (<a class="el" href="namespacejazz__elements.html#a54e0e020637fffc86de95ffdd302f4a8">pLogger</a> a_logger, <a class="el" href="namespacejazz__elements.html#a2ea64c8750eeedeb68690603dacceeab">pConfigFile</a> a_config, <a class="el" href="namespacejazz__elements.html#ac6341b3438e1ebf7c955533e71e9b6ac">pVolatile</a> a_volatile, <a class="el" href="namespacejazz__elements.html#a99c6e90779887c86f5c0c87f3f2b2704">pRemote</a> a_remote, <a class="el" href="namespacejazz__elements.html#a27d61abf542d89735a56bc7bb9e1657a">pPersisted</a> a_persisted, <a class="el" href="namespacejazz__elements.html#adf5bbcc3f6b205bd70e7b46a235ca283">pCluster</a> a_cluster, <a class="el" href="namespacejazz__bebop.html#a06af987e609b0abf47b183d2aa084262">pBebop</a> a_bebop)</td></tr>
-<tr class="separator:aeccb1d29db165f1475d50444027a752e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfd410f76a5cb97512a7d660675474a1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html#adfd410f76a5cb97512a7d660675474a1">Api</a> (<a class="el" href="namespacejazz__elements.html#a54e0e020637fffc86de95ffdd302f4a8">pLogger</a> a_logger, <a class="el" href="namespacejazz__elements.html#a2ea64c8750eeedeb68690603dacceeab">pConfigFile</a> a_config, <a class="el" href="namespacejazz__elements.html#ac6341b3438e1ebf7c955533e71e9b6ac">pVolatile</a> a_volatile, <a class="el" href="namespacejazz__elements.html#a99c6e90779887c86f5c0c87f3f2b2704">pRemote</a> a_remote, <a class="el" href="namespacejazz__elements.html#a27d61abf542d89735a56bc7bb9e1657a">pPersisted</a> a_persisted, <a class="el" href="namespacejazz__bebop.html#a06af987e609b0abf47b183d2aa084262">pBebop</a> a_bebop, <a class="el" href="namespacejazz__agency.html#a3ee7a532c395851824243cd58ed2bde8">pAgency</a> a_agency)</td></tr>
+<tr class="separator:adfd410f76a5cb97512a7d660675474a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5527ac854705e198aed8975976311b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html#af5527ac854705e198aed8975976311b1">start</a> ()</td></tr>
 <tr class="separator:af5527ac854705e198aed8975976311b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e94b0611d566341f97a11f77f8e6558"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html#a9e94b0611d566341f97a11f77f8e6558">shut_down</a> (bool restarting_service=false)</td></tr>
@@ -170,6 +171,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7d5b766d5214ffb88d58acc6f66e2e29 inherit pub_methods_classjazz__elements_1_1Service"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Service.html#a7d5b766d5214ffb88d58acc6f66e2e29">get_conf_key</a> (const char *key, std::string &amp;value)</td></tr>
 <tr class="separator:a7d5b766d5214ffb88d58acc6f66e2e29 inherit pub_methods_classjazz__elements_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:afde7fe95eec1152224f38c6f85897c13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html#afde7fe95eec1152224f38c6f85897c13">_parse_recurse</a> (<a class="el" href="namespacejazz__main.html#adecdbe219ae6c8a78b2e9f5fad04e3fb">pChar</a> &amp;p_url, int method, <a class="el" href="namespacejazz__elements.html#a4ac79f33730ff818dedd0fcfcc69d6e1">L_value</a> &amp;l_value, <a class="el" href="structjazz__elements_1_1R__value.html">R_value</a> &amp;r_value, bool execution, int rec_level)</td></tr>
+<tr class="separator:afde7fe95eec1152224f38c6f85897c13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc65b94e74a145b76ee31b8a25e07c88"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html#afc65b94e74a145b76ee31b8a25e07c88">_parse_exec_stage</a> (<a class="el" href="namespacejazz__main.html#adecdbe219ae6c8a78b2e9f5fad04e3fb">pChar</a> &amp;p_url, int method, <a class="el" href="namespacejazz__elements.html#a4ac79f33730ff818dedd0fcfcc69d6e1">L_value</a> &amp;l_value, <a class="el" href="structjazz__elements_1_1R__value.html">R_value</a> &amp;r_value)</td></tr>
+<tr class="separator:afc65b94e74a145b76ee31b8a25e07c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25ac2bf9b2890c1b079d7133257b41f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html#a25ac2bf9b2890c1b079d7133257b41f0">_parse_const_meta</a> (<a class="el" href="namespacejazz__main.html#adecdbe219ae6c8a78b2e9f5fad04e3fb">pChar</a> &amp;p_url, <a class="el" href="structjazz__elements_1_1BlockHeader.html">BlockHeader</a> &amp;hea)</td></tr>
+<tr class="separator:a25ac2bf9b2890c1b079d7133257b41f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15522eed62578261db6910a679a2a802"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html#a15522eed62578261db6910a679a2a802">_parse_const_data</a> (<a class="el" href="namespacejazz__main.html#adecdbe219ae6c8a78b2e9f5fad04e3fb">pChar</a> &amp;p_url, <a class="el" href="namespacejazz__elements.html#a1443efd13a9f5f24bee92041fffc8820">pBlockKeeper</a> *p_keeper)</td></tr>
+<tr class="separator:a15522eed62578261db6910a679a2a802"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a3a9c409553ce5eedf88a3fd60dcdae18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ac6341b3438e1ebf7c955533e71e9b6ac">pVolatile</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html#a3a9c409553ce5eedf88a3fd60dcdae18">p_volatile</a></td></tr>
@@ -178,19 +190,21 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a012e1e59578dcea3365d538e88178521"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08ef7d8b440db7e5b207644f28313e13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#a27d61abf542d89735a56bc7bb9e1657a">pPersisted</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html#a08ef7d8b440db7e5b207644f28313e13">p_persisted</a></td></tr>
 <tr class="separator:a08ef7d8b440db7e5b207644f28313e13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c0d75cca529525ef80203a3533649eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#adf5bbcc3f6b205bd70e7b46a235ca283">pCluster</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html#a1c0d75cca529525ef80203a3533649eb">p_cluster</a></td></tr>
-<tr class="separator:a1c0d75cca529525ef80203a3533649eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90a9bc0852149dd794e7186d96376bef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__bebop.html#a06af987e609b0abf47b183d2aa084262">pBebop</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html#a90a9bc0852149dd794e7186d96376bef">p_bebop</a></td></tr>
 <tr class="separator:a90a9bc0852149dd794e7186d96376bef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d121c9fe1532ba2561234c6c806fcdc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__agency.html#a3ee7a532c395851824243cd58ed2bde8">pAgency</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html#a0d121c9fe1532ba2561234c6c806fcdc">p_agency</a></td></tr>
+<tr class="separator:a0d121c9fe1532ba2561234c6c806fcdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fb8862153b3118d14f09757864b021f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#aadf1e411ca544a525c767f3e30010202">BaseNames</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html#a0fb8862153b3118d14f09757864b021f">base</a></td></tr>
 <tr class="separator:a0fb8862153b3118d14f09757864b021f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4554fa366bbdbe06acd62172736165b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__main.html#a37b96ec9a8ba9e91cab88828a2ab90aa">Url2Name</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html#a4554fa366bbdbe06acd62172736165b3">url_name</a></td></tr>
+<tr class="separator:a4554fa366bbdbe06acd62172736165b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classjazz__main_1_1Api.html" title="Api: A Service to manage the REST API.">Api</a>: A Service to manage the REST API. </p>
-<p>This service parses and executes http queries. It is aware a redistributes to all the appropriate services and is called directly by the http callback <a class="el" href="namespacejazz__main.html#a6c153d2441379b609b60dde6bce9f811">http_request_callback()</a>. </p>
+<p>This service parses and executes http queries. It is aware and redistributes to all the appropriate services. It is called directly by the http callback <a class="el" href="namespacejazz__main.html#a6c153d2441379b609b60dde6bce9f811">http_request_callback()</a>. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aeccb1d29db165f1475d50444027a752e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeccb1d29db165f1475d50444027a752e">&#9670;&nbsp;</a></span>Api()</h2>
+<a id="adfd410f76a5cb97512a7d660675474a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfd410f76a5cb97512a7d660675474a1">&#9670;&nbsp;</a></span>Api()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -228,14 +242,14 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#adf5bbcc3f6b205bd70e7b46a235ca283">pCluster</a>&#160;</td>
-          <td class="paramname"><em>a_cluster</em>, </td>
+          <td class="paramtype"><a class="el" href="namespacejazz__bebop.html#a06af987e609b0abf47b183d2aa084262">pBebop</a>&#160;</td>
+          <td class="paramname"><em>a_bebop</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacejazz__bebop.html#a06af987e609b0abf47b183d2aa084262">pBebop</a>&#160;</td>
-          <td class="paramname"><em>a_bebop</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__agency.html#a3ee7a532c395851824243cd58ed2bde8">pAgency</a>&#160;</td>
+          <td class="paramname"><em>a_agency</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -248,6 +262,186 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a15522eed62578261db6910a679a2a802"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15522eed62578261db6910a679a2a802">&#9670;&nbsp;</a></span>_parse_const_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> jazz_main::Api::_parse_const_data </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__main.html#adecdbe219ae6c8a78b2e9f5fad04e3fb">pChar</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_url</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a1443efd13a9f5f24bee92041fffc8820">pBlockKeeper</a> *&#160;</td>
+          <td class="paramname"><em>p_keeper</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a25ac2bf9b2890c1b079d7133257b41f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25ac2bf9b2890c1b079d7133257b41f0">&#9670;&nbsp;</a></span>_parse_const_meta()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> jazz_main::Api::_parse_const_meta </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__main.html#adecdbe219ae6c8a78b2e9f5fad04e3fb">pChar</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_url</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structjazz__elements_1_1BlockHeader.html">BlockHeader</a> &amp;&#160;</td>
+          <td class="paramname"><em>hea</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afc65b94e74a145b76ee31b8a25e07c88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc65b94e74a145b76ee31b8a25e07c88">&#9670;&nbsp;</a></span>_parse_exec_stage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> jazz_main::Api::_parse_exec_stage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__main.html#adecdbe219ae6c8a78b2e9f5fad04e3fb">pChar</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_url</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>method</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a4ac79f33730ff818dedd0fcfcc69d6e1">L_value</a> &amp;&#160;</td>
+          <td class="paramname"><em>l_value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structjazz__elements_1_1R__value.html">R_value</a> &amp;&#160;</td>
+          <td class="paramname"><em>r_value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afde7fe95eec1152224f38c6f85897c13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afde7fe95eec1152224f38c6f85897c13">&#9670;&nbsp;</a></span>_parse_recurse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> jazz_main::Api::_parse_recurse </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__main.html#adecdbe219ae6c8a78b2e9f5fad04e3fb">pChar</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_url</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>method</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a4ac79f33730ff818dedd0fcfcc69d6e1">L_value</a> &amp;&#160;</td>
+          <td class="paramname"><em>l_value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structjazz__elements_1_1R__value.html">R_value</a> &amp;&#160;</td>
+          <td class="paramname"><em>r_value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>execution</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rec_level</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab26b574686864f2bc8cb45f24f331dc0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab26b574686864f2bc8cb45f24f331dc0">&#9670;&nbsp;</a></span>base_names()</h2>
 
@@ -529,7 +723,13 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>TODO: Document <a class="el" href="classjazz__main_1_1Api.html#af5527ac854705e198aed8975976311b1">Api::start()</a> </p>
+<p>Starts the API service</p>
+<p>Configuration-wise the API has just two keys:</p>
+<ul>
+<li>STATIC_HTML_AT_START: which defines a path to a tree of static objects that should be uploaded on start.</li>
+<li>REMOVE_STATICS_ON_CLOSE: removes the whole database Persisted //static when this service closes.</li>
+</ul>
+<p>Besides that, this function initializes global (and object) variables used by the parser (mostly CharLUT). </p>
 
 <p>Reimplemented from <a class="el" href="classjazz__elements_1_1Container.html#a0496a435ee9330f73091a6ad41f07161">jazz_elements::Container</a>.</p>
 
@@ -599,8 +799,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a90a9bc0852149dd794e7186d96376bef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90a9bc0852149dd794e7186d96376bef">&#9670;&nbsp;</a></span>p_bebop</h2>
+<a id="a0d121c9fe1532ba2561234c6c806fcdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d121c9fe1532ba2561234c6c806fcdc">&#9670;&nbsp;</a></span>p_agency</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -609,7 +809,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacejazz__bebop.html#a06af987e609b0abf47b183d2aa084262">pBebop</a> jazz_main::Api::p_bebop</td>
+          <td class="memname"><a class="el" href="namespacejazz__agency.html#a3ee7a532c395851824243cd58ed2bde8">pAgency</a> jazz_main::Api::p_agency</td>
         </tr>
       </table>
   </td>
@@ -621,8 +821,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a1c0d75cca529525ef80203a3533649eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c0d75cca529525ef80203a3533649eb">&#9670;&nbsp;</a></span>p_cluster</h2>
+<a id="a90a9bc0852149dd794e7186d96376bef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90a9bc0852149dd794e7186d96376bef">&#9670;&nbsp;</a></span>p_bebop</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -631,7 +831,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacejazz__elements.html#adf5bbcc3f6b205bd70e7b46a235ca283">pCluster</a> jazz_main::Api::p_cluster</td>
+          <td class="memname"><a class="el" href="namespacejazz__bebop.html#a06af987e609b0abf47b183d2aa084262">pBebop</a> jazz_main::Api::p_bebop</td>
         </tr>
       </table>
   </td>
@@ -698,6 +898,28 @@ Private Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="namespacejazz__elements.html#ac6341b3438e1ebf7c955533e71e9b6ac">pVolatile</a> jazz_main::Api::p_volatile</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4554fa366bbdbe06acd62172736165b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4554fa366bbdbe06acd62172736165b3">&#9670;&nbsp;</a></span>url_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__main.html#a37b96ec9a8ba9e91cab88828a2ab90aa">Url2Name</a> jazz_main::Api::url_name</td>
         </tr>
       </table>
   </td>
