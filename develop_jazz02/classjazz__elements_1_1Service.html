@@ -100,8 +100,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae4883dfb5573ae5911fc97e01f06afe2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Service.html#ae4883dfb5573ae5911fc97e01f06afe2">start</a> ()</td></tr>
 <tr class="memdesc:ae4883dfb5573ae5911fc97e01f06afe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">A simple <a class="el" href="classjazz__elements_1_1Service.html#ae4883dfb5573ae5911fc97e01f06afe2" title="A simple start()/shut_down() interface (Restart is: shut_down(TRUE):start())">start()</a>/shut_down() interface (Restart is: shut_down(TRUE):<a class="el" href="classjazz__elements_1_1Service.html#ae4883dfb5573ae5911fc97e01f06afe2" title="A simple start()/shut_down() interface (Restart is: shut_down(TRUE):start())">start()</a>)  <a href="classjazz__elements_1_1Service.html#ae4883dfb5573ae5911fc97e01f06afe2">More...</a><br /></td></tr>
 <tr class="separator:ae4883dfb5573ae5911fc97e01f06afe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab04ea0eeb2c881abc68788b795e7a70e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Service.html#ab04ea0eeb2c881abc68788b795e7a70e">shut_down</a> (bool restarting_service=false)</td></tr>
-<tr class="separator:ab04ea0eeb2c881abc68788b795e7a70e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9c7e6ebcd6ec69fdbf94ea6cc1edff5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Service.html#af9c7e6ebcd6ec69fdbf94ea6cc1edff5">shut_down</a> ()</td></tr>
+<tr class="separator:af9c7e6ebcd6ec69fdbf94ea6cc1edff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43ae5f53f29c382d1f5ff1ac8f63b5be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Service.html#a43ae5f53f29c382d1f5ff1ac8f63b5be">log</a> (int loglevel, const char *message)</td></tr>
 <tr class="separator:a43ae5f53f29c382d1f5ff1ac8f63b5be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8290451b2815ea470b8518493023e605"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Service.html#a8290451b2815ea470b8518493023e605">log_printf</a> (int loglevel, const char *fmt,...)</td></tr>
@@ -378,8 +378,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ab04ea0eeb2c881abc68788b795e7a70e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab04ea0eeb2c881abc68788b795e7a70e">&#9670;&nbsp;</a></span>shut_down()</h2>
+<a id="af9c7e6ebcd6ec69fdbf94ea6cc1edff5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9c7e6ebcd6ec69fdbf94ea6cc1edff5">&#9670;&nbsp;</a></span>shut_down()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -390,8 +390,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> jazz_elements::Service::shut_down </td>
           <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>restarting_service</em> = <code>false</code></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -402,16 +401,10 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Stop the <a class="el" href="classjazz__elements_1_1Service.html">Service</a></p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">restarting_service</td><td>Informs the service that it is a restart. If a restart is error free, all services will be started again. If not, it is a server shutdown.</td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR if successful, some error if not.</dd></dl>
 <p>This method should be overriden by something that actually stops the service, possibly using the configuration file in pConf. </p>
 
-<p>Reimplemented in <a class="el" href="classjazz__elements_1_1Container.html#a6a426e67b24c8eebf7b714106b6aa6d2">jazz_elements::Container</a>, <a class="el" href="classjazz__main_1_1Api.html#a9e94b0611d566341f97a11f77f8e6558">jazz_main::Api</a>, <a class="el" href="classjazz__elements_1_1Remote.html#afdd2f42ae29f53658a0ba1c2badea992">jazz_elements::Remote</a>, <a class="el" href="classjazz__elements_1_1Cluster.html#ad9acb0d9b8c2c838cb66774420a962a4">jazz_elements::Cluster</a>, <a class="el" href="classjazz__agency_1_1Agency.html#aa2049f88bff5b23a0cf4bb536d6a1308">jazz_agency::Agency</a>, <a class="el" href="classjazz__bebop_1_1Bebop.html#a6479755bcd9d2dfa68b3f1a4300f9cd9">jazz_bebop::Bebop</a>, <a class="el" href="classjazz__main_1_1HttpServer.html#adb1588c670ff9826e85534f50e404540">jazz_main::HttpServer</a>, <a class="el" href="classjazz__elements_1_1Persisted.html#a35c7df7ab0892982403037817dd617d5">jazz_elements::Persisted</a>, and <a class="el" href="classjazz__elements_1_1Volatile.html#ad0fb3ef2b61eb40e3154aeb5f8bfa24f">jazz_elements::Volatile</a>.</p>
+<p>Reimplemented in <a class="el" href="classjazz__elements_1_1Container.html#af1cdde44708880c4577f0202e90fa4f6">jazz_elements::Container</a>, <a class="el" href="classjazz__main_1_1Api.html#a82e1c6758b2218186400e499d7bcf16f">jazz_main::Api</a>, <a class="el" href="classjazz__elements_1_1Remote.html#a02376fda6e678fdb38e15908c26db24b">jazz_elements::Remote</a>, <a class="el" href="classjazz__elements_1_1Cluster.html#aff69dfd8950adb4c2e717e9c00c7d67c">jazz_elements::Cluster</a>, <a class="el" href="classjazz__agency_1_1Agency.html#a3aeebe0bce42ea97c8e37ed708c02843">jazz_agency::Agency</a>, <a class="el" href="classjazz__bebop_1_1Bebop.html#a8b131fca6b8845e03da07c015523026f">jazz_bebop::Bebop</a>, <a class="el" href="classjazz__main_1_1HttpServer.html#a641a8b251d7e78db6e08a3ea4b38836a">jazz_main::HttpServer</a>, <a class="el" href="classjazz__elements_1_1Persisted.html#a2b2348933f2cc979351770567bc89ac3">jazz_elements::Persisted</a>, and <a class="el" href="classjazz__elements_1_1Volatile.html#a59169b050f6239b6f12ea21e6f7c8837">jazz_elements::Volatile</a>.</p>
 
 </div>
 </div>

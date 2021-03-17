@@ -103,8 +103,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8e8a7b8af91fd8a578560cf2cb9dd1f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0496a435ee9330f73091a6ad41f07161"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a0496a435ee9330f73091a6ad41f07161">start</a> ()</td></tr>
 <tr class="separator:a0496a435ee9330f73091a6ad41f07161"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a426e67b24c8eebf7b714106b6aa6d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a6a426e67b24c8eebf7b714106b6aa6d2">shut_down</a> (bool restarting_service=false)</td></tr>
-<tr class="separator:a6a426e67b24c8eebf7b714106b6aa6d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1cdde44708880c4577f0202e90fa4f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#af1cdde44708880c4577f0202e90fa4f6">shut_down</a> ()</td></tr>
+<tr class="separator:af1cdde44708880c4577f0202e90fa4f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d480b5defe819c8444b2e48e3178522"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a4d480b5defe819c8444b2e48e3178522">enter_read</a> (<a class="el" href="namespacejazz__elements.html#a1443efd13a9f5f24bee92041fffc8820">pBlockKeeper</a> p_keeper)</td></tr>
 <tr class="separator:a4d480b5defe819c8444b2e48e3178522"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fb22086977f00cb4f3f5b835deb5c6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a4fb22086977f00cb4f3f5b835deb5c6b">enter_write</a> (<a class="el" href="namespacejazz__elements.html#a1443efd13a9f5f24bee92041fffc8820">pBlockKeeper</a> p_keeper)</td></tr>
@@ -214,10 +214,10 @@ Private Attributes</h2></td></tr>
 <ul>
 <li>A transparent deque of <a class="el" href="structjazz__elements_1_1BlockKeeper.html">BlockKeeper</a> structures</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md0"></a>
+<h2><a class="anchor" id="autotoc_md4"></a>
 One-shot Block allocation</h2>
 <p>This is the only container providing one-shot <a class="el" href="classjazz__elements_1_1Block.html">Block</a> allocation. This does not mean, unlike in previous versions, the caller owns the pointer. One-shot <a class="el" href="classjazz__elements_1_1Block.html">Block</a> allocation is intended for computing intermediate blocks like: blocks generated from constants, from slicing, returned by functions, etc. In these blocks, the locator is meaningless, the caller will create it by <a class="el" href="classjazz__elements_1_1Container.html#ae2845202c3fedd27eaed20bde00d79d4">new_block()</a>, use it and call <a class="el" href="classjazz__elements_1_1Container.html#a3b878441661ec025285c8950c31f0d1e">unlock()</a> when done.</p>
-<h2><a class="anchor" id="autotoc_md1"></a>
+<h2><a class="anchor" id="autotoc_md5"></a>
 Instances and inheritance</h2>
 <p>Note that the descendants don't inherit each other. E.g., <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a> does not have a <a class="el" href="classjazz__elements_1_1Remote.html" title="A Container that treats a remote node (mostly a Jazz node, but also a web API) as persistence.">Remote</a> implementation, but they all have the basic deque mechanism inherited from <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>: i.e., they can all allocate new blocks for their own purposes. Configuration-wise the allocations set by ONE_SHOT_MAX_KEEPERS, ONE_SHOT_WARN_BLOCK_KBYTES, ... only apply to the instance of the class <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>, the descendants use their own limits in which they include this allocation combined with whatever other allocations they do. The total allocation of the Jazz node is the sum of all (plus some small amount used by libraries, etc. that is not dependant on data size). </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -485,9 +485,16 @@ Instances and inheritance</h2>
 </div><div class="memdoc">
 <p>Get a <a class="el" href="classjazz__elements_1_1Block.html">Block</a> (1) : Complete <a class="el" href="classjazz__elements_1_1Container.html#a120c67d2559ce9fed582542ba5a53ee8">get()</a> implementing a full <a class="el" href="structjazz__elements_1_1R__value.html">R_value</a> with contract and async calls</p>
 <p>TODO: Document get(1) </p><pre class="fragment">\param aaa      Bla, bla
+\param p_sender This argument, together with block_id, enables the async interface, used by Remote only. (See Async interface below)
+\param block_id Used by the async interface. (See Async interface below)
 
 \return Bla
-</pre> 
+</pre><h2><a class="anchor" id="autotoc_md3"></a>
+Async Interface</h2>
+<p>The async interface is used by <a class="el" href="classjazz__elements_1_1Remote.html" title="A Container that treats a remote node (mostly a Jazz node, but also a web API) as persistence.">Remote</a> to track delayed operations. The call itself, when no immediate error applies, returns a SERVICE_ONGOING_ASYNC_OP code and continues via a .<a class="el" href="classjazz__elements_1_1Container.html#aed6738171742f55d15b2c9c2af2e1447">callback()</a> call.</p>
+<p>The caller must be a <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> descendant and pass its own address as p_sender. It must also provide some block_id used to track the operation via the <a class="el" href="classjazz__elements_1_1Container.html#aed6738171742f55d15b2c9c2af2e1447">callback()</a>. When a successfull or error completion code is available, the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> will receive a .<a class="el" href="classjazz__elements_1_1Container.html#aed6738171742f55d15b2c9c2af2e1447">callback()</a> call.</p>
+<p>A <b>NOTE for <a class="el" href="classjazz__elements_1_1Container.html#a120c67d2559ce9fed582542ba5a53ee8">get()</a></b>: The returned p_keeper is owned by the <a class="el" href="classjazz__elements_1_1Remote.html" title="A Container that treats a remote node (mostly a Jazz node, but also a web API) as persistence.">Remote</a>. Before the .<a class="el" href="classjazz__elements_1_1Container.html#aed6738171742f55d15b2c9c2af2e1447">callback()</a> event, it will have p_keeper-&gt;status == BLOCK_STATUS_ASYNC_WAIT. After an error is returned, the caller should forget the p_keeper and not use it. After a success is returned, the caller will get: p_keeper-&gt;status == BLOCK_STATUS_READY and a valid p_block. In this case, the caller must** .<a class="el" href="classjazz__elements_1_1Container.html#a3b878441661ec025285c8950c31f0d1e">unlock()</a> the p_keeper when done with it. </p>
+
 </div>
 </div>
 <a id="ab10c20e4b4035dce948061b30d9b4f0c"></a>
@@ -581,9 +588,16 @@ Instances and inheritance</h2>
 </div><div class="memdoc">
 <p>Bla, bla, bla</p>
 <p>TODO: Document <a class="el" href="classjazz__elements_1_1Container.html#a862eb012d2cbd9d796d450391ad9a677">lock()</a> </p><pre class="fragment">\param aaa      Bla, bla
+\param p_sender This argument, together with block_id, enables the async interface, used by Remote only. (See Async interface below)
+\param block_id Used by the async interface. (See Async interface below)
 
 \return Bla
-</pre> 
+</pre><h2><a class="anchor" id="autotoc_md0"></a>
+Async Interface</h2>
+<p>The async interface is used by <a class="el" href="classjazz__elements_1_1Remote.html" title="A Container that treats a remote node (mostly a Jazz node, but also a web API) as persistence.">Remote</a> to track delayed operations. The call itself, when no immediate error applies, returns a SERVICE_ONGOING_ASYNC_OP code and continues via a .<a class="el" href="classjazz__elements_1_1Container.html#aed6738171742f55d15b2c9c2af2e1447">callback()</a> call.</p>
+<p>The caller must be a <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> descendant and pass its own address as p_sender. It must also provide some block_id used to track the operation via the <a class="el" href="classjazz__elements_1_1Container.html#aed6738171742f55d15b2c9c2af2e1447">callback()</a>. When a successfull or error completion code is available, the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> will receive a .<a class="el" href="classjazz__elements_1_1Container.html#aed6738171742f55d15b2c9c2af2e1447">callback()</a> call.</p>
+<p>A <b>NOTE for <a class="el" href="classjazz__elements_1_1Container.html#a862eb012d2cbd9d796d450391ad9a677">lock()</a></b>: The returned p_keeper is owned by the <a class="el" href="classjazz__elements_1_1Remote.html" title="A Container that treats a remote node (mostly a Jazz node, but also a web API) as persistence.">Remote</a>. Before the .<a class="el" href="classjazz__elements_1_1Container.html#aed6738171742f55d15b2c9c2af2e1447">callback()</a> event, it will have p_keeper-&gt;status == BLOCK_STATUS_ASYNC_WAIT. After an error is returned, the caller should forget the p_keeper and not use it. After a success is returned, the caller will get: p_keeper-&gt;status == BLOCK_STATUS_READY and a valid p_block. In this case, the caller must** .<a class="el" href="classjazz__elements_1_1Container.html#a3b878441661ec025285c8950c31f0d1e">unlock()</a> the p_keeper when done with it. </p>
+
 </div>
 </div>
 <a id="a3b00418cc5f5f425b2ac7353d5f87094"></a>
@@ -977,8 +991,15 @@ Instances and inheritance</h2>
 </div><div class="memdoc">
 <p>Bla, bla, bla</p>
 <p>TODO: Document <a class="el" href="classjazz__elements_1_1Container.html#a3ff305d9f586f346d1062bca73f6e2d2">put()</a> </p><pre class="fragment">\param aaa      Bla, bla
+\param p_sender This argument, together with block_id, enables the async interface, used by Remote only. (See Async interface below)
+\param block_id Used by the async interface. (See Async interface below)
 
 \return Bla
+</pre><h2><a class="anchor" id="autotoc_md1"></a>
+Async Interface</h2>
+<p>The async interface is used by <a class="el" href="classjazz__elements_1_1Remote.html" title="A Container that treats a remote node (mostly a Jazz node, but also a web API) as persistence.">Remote</a> to track delayed operations. The call itself, when no immediate error applies, returns a SERVICE_ONGOING_ASYNC_OP code and continues via a .<a class="el" href="classjazz__elements_1_1Container.html#aed6738171742f55d15b2c9c2af2e1447">callback()</a> call.</p>
+<p>The caller must be a <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> descendant and pass its own address as p_sender. It must also provide some block_id used to track the operation via the <a class="el" href="classjazz__elements_1_1Container.html#aed6738171742f55d15b2c9c2af2e1447">callback()</a>. When a successfull or error completion code is available, the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> will receive a .<a class="el" href="classjazz__elements_1_1Container.html#aed6738171742f55d15b2c9c2af2e1447">callback()</a> call.</p>
+<p>A <b>NOTE for <a class="el" href="classjazz__elements_1_1Container.html#a3ff305d9f586f346d1062bca73f6e2d2">put()</a></b>: The <a class="el" href="classjazz__elements_1_1Container.html#aed6738171742f55d15b2c9c2af2e1447">callback()</a> will return the completion status for the caller to know (retry, notify, etc.). In either (error or success) case, there are no further actions to take. </p><pre class="fragment">\return Bla
 </pre> 
 </div>
 </div>
@@ -1015,13 +1036,20 @@ Instances and inheritance</h2>
 </div><div class="memdoc">
 <p>Bla, bla, bla</p>
 <p>TODO: Document <a class="el" href="classjazz__elements_1_1Container.html#a5fe58ee303a8bd9b7b3b6945db04cf5d">remove()</a> </p><pre class="fragment">\param aaa      Bla, bla
+\param p_sender This argument, together with block_id, enables the async interface, used by Remote only. (See Async interface below)
+\param block_id Used by the async interface. (See Async interface below)
 
 \return Bla
+</pre><h2><a class="anchor" id="autotoc_md2"></a>
+Async Interface</h2>
+<p>The async interface is used by <a class="el" href="classjazz__elements_1_1Remote.html" title="A Container that treats a remote node (mostly a Jazz node, but also a web API) as persistence.">Remote</a> to track delayed operations. The call itself, when no immediate error applies, returns a SERVICE_ONGOING_ASYNC_OP code and continues via a .<a class="el" href="classjazz__elements_1_1Container.html#aed6738171742f55d15b2c9c2af2e1447">callback()</a> call.</p>
+<p>The caller must be a <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> descendant and pass its own address as p_sender. It must also provide some block_id used to track the operation via the <a class="el" href="classjazz__elements_1_1Container.html#aed6738171742f55d15b2c9c2af2e1447">callback()</a>. When a successfull or error completion code is available, the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> will receive a .<a class="el" href="classjazz__elements_1_1Container.html#aed6738171742f55d15b2c9c2af2e1447">callback()</a> call.</p>
+<p>A <b>NOTE for <a class="el" href="classjazz__elements_1_1Container.html#a5fe58ee303a8bd9b7b3b6945db04cf5d">remove()</a></b>: The <a class="el" href="classjazz__elements_1_1Container.html#aed6738171742f55d15b2c9c2af2e1447">callback()</a> will return the completion status for the caller to know (retry, notify, etc.). In either (error or success) case, there are no further actions to take. </p><pre class="fragment">\return Bla
 </pre> 
 </div>
 </div>
-<a id="a6a426e67b24c8eebf7b714106b6aa6d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a426e67b24c8eebf7b714106b6aa6d2">&#9670;&nbsp;</a></span>shut_down()</h2>
+<a id="af1cdde44708880c4577f0202e90fa4f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1cdde44708880c4577f0202e90fa4f6">&#9670;&nbsp;</a></span>shut_down()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1032,8 +1060,7 @@ Instances and inheritance</h2>
         <tr>
           <td class="memname"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> jazz_elements::Container::shut_down </td>
           <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>restarting_service</em> = <code>false</code></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1045,9 +1072,9 @@ Instances and inheritance</h2>
 </div><div class="memdoc">
 <p>Destroys everything and zeroes allocation. </p>
 
-<p>Reimplemented from <a class="el" href="classjazz__elements_1_1Service.html#ab04ea0eeb2c881abc68788b795e7a70e">jazz_elements::Service</a>.</p>
+<p>Reimplemented from <a class="el" href="classjazz__elements_1_1Service.html#af9c7e6ebcd6ec69fdbf94ea6cc1edff5">jazz_elements::Service</a>.</p>
 
-<p>Reimplemented in <a class="el" href="classjazz__main_1_1Api.html#a9e94b0611d566341f97a11f77f8e6558">jazz_main::Api</a>, <a class="el" href="classjazz__elements_1_1Remote.html#afdd2f42ae29f53658a0ba1c2badea992">jazz_elements::Remote</a>, <a class="el" href="classjazz__elements_1_1Persisted.html#a35c7df7ab0892982403037817dd617d5">jazz_elements::Persisted</a>, and <a class="el" href="classjazz__elements_1_1Volatile.html#ad0fb3ef2b61eb40e3154aeb5f8bfa24f">jazz_elements::Volatile</a>.</p>
+<p>Reimplemented in <a class="el" href="classjazz__main_1_1Api.html#a82e1c6758b2218186400e499d7bcf16f">jazz_main::Api</a>, <a class="el" href="classjazz__elements_1_1Remote.html#a02376fda6e678fdb38e15908c26db24b">jazz_elements::Remote</a>, <a class="el" href="classjazz__elements_1_1Persisted.html#a2b2348933f2cc979351770567bc89ac3">jazz_elements::Persisted</a>, and <a class="el" href="classjazz__elements_1_1Volatile.html#a59169b050f6239b6f12ea21e6f7c8837">jazz_elements::Volatile</a>.</p>
 
 </div>
 </div>
