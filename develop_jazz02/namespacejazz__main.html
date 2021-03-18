@@ -85,11 +85,19 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1HttpServer.html">HttpServer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classjazz__main_1_1HttpServer.html" title="HttpServer: The http server is also a Service.">HttpServer</a>: The http server is also a Service.  <a href="classjazz__main_1_1HttpServer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__main_1_1NextStateLUT.html">NextStateLUT</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__main_1_1StateSwitch.html">StateSwitch</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__main_1_1StateTransition.html">StateTransition</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:af94739654622218689ff802558bd97fb"><td class="memItemLeft" align="right" valign="top">typedef bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#af94739654622218689ff802558bd97fb">CharLUT</a>[<a class="el" href="api_8h.html#a7dfe57f98086163fe1947f55bcdac9bc">EIGHT_BIT_LONG</a>]</td></tr>
-<tr class="separator:af94739654622218689ff802558bd97fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab273ea9d5b5d4b8914ca36b8d232d6c4"><td class="memItemLeft" align="right" valign="top">typedef bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#ab273ea9d5b5d4b8914ca36b8d232d6c4">CharGroupLUT</a>[<a class="el" href="api_8h.html#a7dfe57f98086163fe1947f55bcdac9bc">EIGHT_BIT_LONG</a>]</td></tr>
+<tr class="separator:ab273ea9d5b5d4b8914ca36b8d232d6c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a043aa4cce0f03bfc881110fa18232a79"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structjazz__main_1_1StateTransition.html">StateTransition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#a043aa4cce0f03bfc881110fa18232a79">StateTransitions</a>[<a class="el" href="api_8h.html#a2af6bcc5187fe6040a315da36a4b6b6a">NUM_STATE_TRANSITIONS</a>]</td></tr>
+<tr class="separator:a043aa4cce0f03bfc881110fa18232a79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37b96ec9a8ba9e91cab88828a2ab90aa"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#a37b96ec9a8ba9e91cab88828a2ab90aa">Url2Name</a></td></tr>
 <tr class="separator:a37b96ec9a8ba9e91cab88828a2ab90aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adecdbe219ae6c8a78b2e9f5fad04e3fb"><td class="memItemLeft" align="right" valign="top">typedef char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#adecdbe219ae6c8a78b2e9f5fad04e3fb">pChar</a></td></tr>
@@ -142,6 +150,10 @@ Variables</h2></td></tr>
 <tr class="memitem:a4a0e4ad909a0e0f8a672f1f192c03217"><td class="memItemLeft" align="right" valign="top">TenBitsLUT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#a4a0e4ad909a0e0f8a672f1f192c03217">http_methods</a></td></tr>
 <tr class="memdesc:a4a0e4ad909a0e0f8a672f1f192c03217"><td class="mdescLeft">&#160;</td><td class="mdescRight">A LUT to convert argument const char *method int an integer code.  <a href="namespacejazz__main.html#a4a0e4ad909a0e0f8a672f1f192c03217">More...</a><br /></td></tr>
 <tr class="separator:a4a0e4ad909a0e0f8a672f1f192c03217"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79ef500638b80bf0c75622fa73ded176"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__main.html#a043aa4cce0f03bfc881110fa18232a79">StateTransitions</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#a79ef500638b80bf0c75622fa73ded176">state_tr</a></td></tr>
+<tr class="separator:a79ef500638b80bf0c75622fa73ded176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38ddb2de058c5a99085d080a63e3cde9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structjazz__main_1_1StateSwitch.html">StateSwitch</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#a38ddb2de058c5a99085d080a63e3cde9">parser_state</a></td></tr>
+<tr class="separator:a38ddb2de058c5a99085d080a63e3cde9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84b0e5c69e4a0011482591eaf87fbdb6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classjazz__elements_1_1ConfigFile.html">ConfigFile</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#a84b0e5c69e4a0011482591eaf87fbdb6">CONFIG</a></td></tr>
 <tr class="separator:a84b0e5c69e4a0011482591eaf87fbdb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae18d0fb5841441ab5a2831734f349328"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classjazz__elements_1_1Logger.html">Logger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#ae18d0fb5841441ab5a2831734f349328">LOGGER</a></td></tr>
@@ -169,18 +181,18 @@ Variables</h2></td></tr>
 <div class="textblock"><p>The http API, instancing and building the server. </p>
 <p>This small namespace is about the server running and putting everything together. Unlike <a class="el" href="namespacejazz__elements.html" title="Basic Jazz code-less structures and constants.">jazz_elements</a>, <a class="el" href="namespacejazz__bebop.html" title="Bebop, cores, kernel and extending the language.">jazz_bebop</a> and <a class="el" href="namespacejazz__agency.html" title="Agency: learning, building flʌkpilers and graphs of flʌkpilers (== Agents).">jazz_agency</a> it is not intended to build other applications than the server. </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
-<a id="af94739654622218689ff802558bd97fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af94739654622218689ff802558bd97fb">&#9670;&nbsp;</a></span>CharLUT</h2>
+<a id="ab273ea9d5b5d4b8914ca36b8d232d6c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab273ea9d5b5d4b8914ca36b8d232d6c4">&#9670;&nbsp;</a></span>CharGroupLUT</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef bool jazz_main::CharLUT[<a class="el" href="api_8h.html#a7dfe57f98086163fe1947f55bcdac9bc">EIGHT_BIT_LONG</a>]</td>
+          <td class="memname">typedef bool jazz_main::CharGroupLUT[<a class="el" href="api_8h.html#a7dfe57f98086163fe1947f55bcdac9bc">EIGHT_BIT_LONG</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>A lookup table for all the possible values of a char. </p>
+<p>A lookup table for all the possible values of a char mapped into a a bool. </p>
 
 </div>
 </div>
@@ -240,6 +252,21 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Callback function used to handle a POSIX signal. </p>
+
+</div>
+</div>
+<a id="a043aa4cce0f03bfc881110fa18232a79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a043aa4cce0f03bfc881110fa18232a79">&#9670;&nbsp;</a></span>StateTransitions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="structjazz__main_1_1StateTransition.html">StateTransition</a> jazz_main::StateTransitions[<a class="el" href="api_8h.html#a2af6bcc5187fe6040a315da36a4b6b6a">NUM_STATE_TRANSITIONS</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A vector of StateTransition.l This only runs once, when contruction the API object, initializes the LUTs from a sequence of <a class="el" href="structjazz__main_1_1StateTransition.html">StateTransition</a> constants in the source of <a class="el" href="api_8cpp.html">api.cpp</a>. </p>
 
 </div>
 </div>
@@ -602,6 +629,20 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a38ddb2de058c5a99085d080a63e3cde9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38ddb2de058c5a99085d080a63e3cde9">&#9670;&nbsp;</a></span>parser_state</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structjazz__main_1_1StateSwitch.html">StateSwitch</a> jazz_main::parser_state</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a74ff457be971f30738df31df7bd704af"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a74ff457be971f30738df31df7bd704af">&#9670;&nbsp;</a></span>PERSISTED</h2>
 
@@ -673,6 +714,46 @@ Variables</h2></td></tr>
 <p>Pointers to these global variables control the state of a PUT call. </p>
 <p>Default state: connection open for any call </p>
 
+</div>
+</div>
+<a id="a79ef500638b80bf0c75622fa73ded176"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79ef500638b80bf0c75622fa73ded176">&#9670;&nbsp;</a></span>state_tr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__main.html#a043aa4cce0f03bfc881110fa18232a79">StateTransitions</a> jazz_main::state_tr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    {<a class="code" href="api_8h.html#ab2507748406b0bedd5eaf95ec95d7dd7">PSTATE_INITIAL</a>,        <a class="code" href="api_8h.html#a05832775c600af970254a652c8be6137">PSTATE_CONST_INT</a>,       <span class="stringliteral">&quot;[0-9\\-]&quot;</span>},</div>
+<div class="line"> </div>
+<div class="line">    {<a class="code" href="api_8h.html#a05832775c600af970254a652c8be6137">PSTATE_CONST_INT</a>,      <a class="code" href="api_8h.html#a05832775c600af970254a652c8be6137">PSTATE_CONST_INT</a>,       <span class="stringliteral">&quot;[0-9]&quot;</span>},</div>
+<div class="line">    {<a class="code" href="api_8h.html#a05832775c600af970254a652c8be6137">PSTATE_CONST_INT</a>,      <a class="code" href="api_8h.html#aef653fdd3a9a3050162119d7d96d5e68">PSTATE_CONST_SEP_INT</a>,   <span class="stringliteral">&quot;[,]&quot;</span>},</div>
+<div class="line">    {<a class="code" href="api_8h.html#a05832775c600af970254a652c8be6137">PSTATE_CONST_INT</a>,      <a class="code" href="api_8h.html#a8d07ccf8e5a0d110069666ab6f45ffee">PSTATE_CONST_END_INT</a>,   <span class="stringliteral">&quot;[\\0\\x29\\x5b]&quot;</span>},</div>
+<div class="line">    {<a class="code" href="api_8h.html#a05832775c600af970254a652c8be6137">PSTATE_CONST_INT</a>,      <a class="code" href="api_8h.html#a8ff2fdd968019a5544f21f91a317192a">PSTATE_CONST_REAL</a>,      <span class="stringliteral">&quot;[e\\.]&quot;</span>},</div>
+<div class="line"> </div>
+<div class="line">    {<a class="code" href="api_8h.html#a8ff2fdd968019a5544f21f91a317192a">PSTATE_CONST_REAL</a>,     <a class="code" href="api_8h.html#a8ff2fdd968019a5544f21f91a317192a">PSTATE_CONST_REAL</a>,      <span class="stringliteral">&quot;[0-9\\-]&quot;</span>},</div>
+<div class="line">    {<a class="code" href="api_8h.html#a8ff2fdd968019a5544f21f91a317192a">PSTATE_CONST_REAL</a>,     <a class="code" href="api_8h.html#a9e5a61c3c52d2b880da32917fbefec8d">PSTATE_CONST_SEP_REAL</a>,  <span class="stringliteral">&quot;[,]&quot;</span>},</div>
+<div class="line">    {<a class="code" href="api_8h.html#a8ff2fdd968019a5544f21f91a317192a">PSTATE_CONST_REAL</a>,     <a class="code" href="api_8h.html#ad7f1866b10f2eafc07b51e681d04d875">PSTATE_CONST_END_REAL</a>,  <span class="stringliteral">&quot;[\\0\\x29\\x5b]&quot;</span>},</div>
+<div class="line"> </div>
+<div class="line">    {<a class="code" href="api_8h.html#ab2507748406b0bedd5eaf95ec95d7dd7">PSTATE_INITIAL</a>,        <a class="code" href="api_8h.html#a70f6dcf9383b6e7c3307f0522d77761f">PSTATE_CONST_STR</a>,       <span class="stringliteral">&quot;[\\x22]&quot;</span>},</div>
+<div class="line"> </div>
+<div class="line">    {<a class="code" href="api_8h.html#a70f6dcf9383b6e7c3307f0522d77761f">PSTATE_CONST_STR</a>,      <a class="code" href="api_8h.html#a70f6dcf9383b6e7c3307f0522d77761f">PSTATE_CONST_STR</a>,       <span class="stringliteral">&quot;[A-Za-z0-9\\-_\\.~]&quot;</span>},</div>
+<div class="line">    {<a class="code" href="api_8h.html#a70f6dcf9383b6e7c3307f0522d77761f">PSTATE_CONST_STR</a>,      <a class="code" href="api_8h.html#a8b5ed634e1d73ca0f86efbe1862cc85d">PSTATE_CONST_SEP_STR</a>,   <span class="stringliteral">&quot;[\\x22]&quot;</span>},</div>
+<div class="line">    {<a class="code" href="api_8h.html#a70f6dcf9383b6e7c3307f0522d77761f">PSTATE_CONST_STR</a>,      <a class="code" href="api_8h.html#aa7e7dba1b101b62ba57890b07e09865b">PSTATE_CONST_END_STR</a>,   <span class="stringliteral">&quot;[\\0\\x29\\x5b]&quot;</span>},</div>
+<div class="line">    {<a class="code" href="api_8h.html#a70f6dcf9383b6e7c3307f0522d77761f">PSTATE_CONST_STR</a>,      <a class="code" href="api_8h.html#ae5ad3f4e8b0820323e2de057e0d6d5b1">PSTATE_CONST_STR_ENC</a>,   <span class="stringliteral">&quot;[0-9\\-]&quot;</span>},</div>
+<div class="line"> </div>
+<div class="line">    {<a class="code" href="api_8h.html#a8b5ed634e1d73ca0f86efbe1862cc85d">PSTATE_CONST_SEP_STR</a>,  <a class="code" href="api_8h.html#a8b5ed634e1d73ca0f86efbe1862cc85d">PSTATE_CONST_SEP_STR</a>,   <span class="stringliteral">&quot;[,]&quot;</span>},</div>
+<div class="line"> </div>
+<div class="line">    {<a class="code" href="api_8h.html#ae5ad3f4e8b0820323e2de057e0d6d5b1">PSTATE_CONST_STR_ENC</a>,  <a class="code" href="api_8h.html#ae5ad3f4e8b0820323e2de057e0d6d5b1">PSTATE_CONST_STR_ENC</a>,   <span class="stringliteral">&quot;[0-9\\-]&quot;</span>},</div>
+<div class="line">    {<a class="code" href="api_8h.html#ae5ad3f4e8b0820323e2de057e0d6d5b1">PSTATE_CONST_STR_ENC</a>,  <a class="code" href="api_8h.html#a70f6dcf9383b6e7c3307f0522d77761f">PSTATE_CONST_STR</a>,       <span class="stringliteral">&quot;[0-9\\-]&quot;</span>},</div>
+<div class="line"> </div>
+<div class="line">    {0, 0, <span class="stringliteral">&quot;&quot;</span>}</div>
+<div class="line">}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af7d8001b027c4e53a2e826aeb02cad53"></a>
@@ -754,6 +835,17 @@ Variables</h2></td></tr>
 </div>
 </div>
 </div><!-- contents -->
+<div class="ttc" id="aapi_8h_html_ae5ad3f4e8b0820323e2de057e0d6d5b1"><div class="ttname"><a href="api_8h.html#ae5ad3f4e8b0820323e2de057e0d6d5b1">PSTATE_CONST_STR_ENC</a></div><div class="ttdeci">#define PSTATE_CONST_STR_ENC</div><div class="ttdoc">Parser state: Parsing url-encoding inside a string.</div><div class="ttdef"><b>Definition:</b> api.h:106</div></div>
+<div class="ttc" id="aapi_8h_html_a70f6dcf9383b6e7c3307f0522d77761f"><div class="ttname"><a href="api_8h.html#a70f6dcf9383b6e7c3307f0522d77761f">PSTATE_CONST_STR</a></div><div class="ttdeci">#define PSTATE_CONST_STR</div><div class="ttdoc">Parser state: Parsing strings.</div><div class="ttdef"><b>Definition:</b> api.h:105</div></div>
+<div class="ttc" id="aapi_8h_html_a9e5a61c3c52d2b880da32917fbefec8d"><div class="ttname"><a href="api_8h.html#a9e5a61c3c52d2b880da32917fbefec8d">PSTATE_CONST_SEP_REAL</a></div><div class="ttdeci">#define PSTATE_CONST_SEP_REAL</div><div class="ttdoc">Parser state: Reached a cell separator while parsing real numbers.</div><div class="ttdef"><b>Definition:</b> api.h:109</div></div>
+<div class="ttc" id="aapi_8h_html_a05832775c600af970254a652c8be6137"><div class="ttname"><a href="api_8h.html#a05832775c600af970254a652c8be6137">PSTATE_CONST_INT</a></div><div class="ttdeci">#define PSTATE_CONST_INT</div><div class="ttdoc">Parser state: Parsing integers.</div><div class="ttdef"><b>Definition:</b> api.h:103</div></div>
+<div class="ttc" id="aapi_8h_html_ab2507748406b0bedd5eaf95ec95d7dd7"><div class="ttname"><a href="api_8h.html#ab2507748406b0bedd5eaf95ec95d7dd7">PSTATE_INITIAL</a></div><div class="ttdeci">#define PSTATE_INITIAL</div><div class="ttdoc">Parser state: Fist char of source string being parsed.</div><div class="ttdef"><b>Definition:</b> api.h:102</div></div>
+<div class="ttc" id="aapi_8h_html_a8d07ccf8e5a0d110069666ab6f45ffee"><div class="ttname"><a href="api_8h.html#a8d07ccf8e5a0d110069666ab6f45ffee">PSTATE_CONST_END_INT</a></div><div class="ttdeci">#define PSTATE_CONST_END_INT</div><div class="ttdoc">Parser state: Reached end of part or expression while parsing integers.</div><div class="ttdef"><b>Definition:</b> api.h:111</div></div>
+<div class="ttc" id="aapi_8h_html_a8b5ed634e1d73ca0f86efbe1862cc85d"><div class="ttname"><a href="api_8h.html#a8b5ed634e1d73ca0f86efbe1862cc85d">PSTATE_CONST_SEP_STR</a></div><div class="ttdeci">#define PSTATE_CONST_SEP_STR</div><div class="ttdoc">Parser state: Reached a cell separator while parsing string.</div><div class="ttdef"><b>Definition:</b> api.h:110</div></div>
+<div class="ttc" id="aapi_8h_html_a8ff2fdd968019a5544f21f91a317192a"><div class="ttname"><a href="api_8h.html#a8ff2fdd968019a5544f21f91a317192a">PSTATE_CONST_REAL</a></div><div class="ttdeci">#define PSTATE_CONST_REAL</div><div class="ttdoc">Parser state: Parsing real numbers.</div><div class="ttdef"><b>Definition:</b> api.h:104</div></div>
+<div class="ttc" id="aapi_8h_html_aa7e7dba1b101b62ba57890b07e09865b"><div class="ttname"><a href="api_8h.html#aa7e7dba1b101b62ba57890b07e09865b">PSTATE_CONST_END_STR</a></div><div class="ttdeci">#define PSTATE_CONST_END_STR</div><div class="ttdoc">Parser state: Reached end of part or expression while parsing string.</div><div class="ttdef"><b>Definition:</b> api.h:113</div></div>
+<div class="ttc" id="aapi_8h_html_aef653fdd3a9a3050162119d7d96d5e68"><div class="ttname"><a href="api_8h.html#aef653fdd3a9a3050162119d7d96d5e68">PSTATE_CONST_SEP_INT</a></div><div class="ttdeci">#define PSTATE_CONST_SEP_INT</div><div class="ttdoc">Parser state: Reached a cell separator while parsing integers.</div><div class="ttdef"><b>Definition:</b> api.h:108</div></div>
+<div class="ttc" id="aapi_8h_html_ad7f1866b10f2eafc07b51e681d04d875"><div class="ttname"><a href="api_8h.html#ad7f1866b10f2eafc07b51e681d04d875">PSTATE_CONST_END_REAL</a></div><div class="ttdeci">#define PSTATE_CONST_END_REAL</div><div class="ttdoc">Parser state: Reached end of part or expression while parsing real numbers.</div><div class="ttdef"><b>Definition:</b> api.h:112</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

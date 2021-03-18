@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['charlut_701',['CharLUT',['../namespacejazz__main.html#af94739654622218689ff802558bd97fb',1,'jazz_main']]]
+  ['chargrouplut_736',['CharGroupLUT',['../namespacejazz__main.html#ab273ea9d5b5d4b8914ca36b8d232d6c4',1,'jazz_main']]]
 ];

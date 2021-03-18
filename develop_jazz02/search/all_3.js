@@ -26,7 +26,7 @@ var searchData=
   ['cell_5ftype_5ftuple_5fitem_80',['CELL_TYPE_TUPLE_ITEM',['../types_8h.html#a7957a6fa4db70b288f07f80953849764',1,'types.h']]],
   ['cell_5fuint_81',['cell_uint',['../unionjazz__elements_1_1Tensor.html#a4fbaf6b2848c1091188a74ba20d40b66',1,'jazz_elements::Tensor']]],
   ['cell_5fulongint_82',['cell_ulongint',['../unionjazz__elements_1_1Tensor.html#a9902620604520df8840e73d8b05b50e4',1,'jazz_elements::Tensor']]],
-  ['charlut_83',['CharLUT',['../namespacejazz__main.html#af94739654622218689ff802558bd97fb',1,'jazz_main']]],
+  ['chargrouplut_83',['CharGroupLUT',['../namespacejazz__main.html#ab273ea9d5b5d4b8914ca36b8d232d6c4',1,'jazz_main']]],
   ['cleanconfigargument_84',['CleanConfigArgument',['../namespacejazz__elements.html#a97aefc77eb6fbbb85dabfba528a6efb7',1,'jazz_elements']]],
   ['cluster_85',['Cluster',['../classjazz__elements_1_1Cluster.html',1,'jazz_elements::Cluster'],['../classjazz__elements_1_1Cluster.html#ad7eb991444afe3a4571499d03e24b2f2',1,'jazz_elements::Cluster::Cluster()'],['../namespacejazz__main.html#ad3ca0a848610ebbd98206b5b40b10207',1,'jazz_main::CLUSTER()']]],
   ['cmd_5fhelp_86',['CMD_HELP',['../main_8h.html#a42553adbbb23a03ca876697c00ea44b1',1,'main.h']]],
