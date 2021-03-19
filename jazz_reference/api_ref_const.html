@@ -599,7 +599,18 @@ to that instead of the original tuple.</p>
 
 <h3 id="syntax-2">Syntax</h3>
 
-<p>E.g., <code class="language-plaintext highlighter-rouge">image::red[width, heigth]:BYTE, green[width, heigth]:BYTE, blue[width, heigth]:BYTE</code></p>
+<p>E.g.:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>image:: red: BYTE[width, height], green: BYTE[width, height], blue: BYTE[width, height]
+image:: buff: SINGLE[width, height, 3], title: STRING[1], category: INTEGER[1]
+image:: buff: SINGLE[width, height, 3], title: STRING, category: INTEGER
+image_mono640x480:: buff: SINGLE[640, 480], description: BYTE[128]
+voice::wave:INTEGER[num_channels,num_samples],frames_per_Sec:INTEGER
+</code></pre></div></div>
+<p>Note:</p>
+<ul>
+  <li>shape <code class="language-plaintext highlighter-rouge">[1]</code> can be omitted. INTEGER[1] is the same as INTEGER</li>
+  <li>STRING[1] Is a vector of one string (== STRING), <strong>not</strong> a string of one character. String length is not limited.</li>
+</ul>
 
 <p>Valid types are:</p>
 
@@ -637,7 +648,7 @@ CELL_TYPE_DOUBLE        - A vector of floating point numbers. Binary compatible 
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2021 kaalam.ai. All rights reserved. <br />
- Site last generated: Mar 18, 2021 <br />
+ Site last generated: Mar 19, 2021 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>
