@@ -557,7 +557,7 @@ of type string. Strings support url-encoding starting with a <code class="langua
 is not parsed as the beginning or end of an element which provides a mechanism to include double quotes inside the string.
 A use of the <code class="language-plaintext highlighter-rouge">%</code> char that does not form a valid (possibly multi-byte) url-encode (E.g., 1 byte <code class="language-plaintext highlighter-rouge">%81</code>, 2 bytes <code class="language-plaintext highlighter-rouge">%C6%92</code>,
 3 bytes <code class="language-plaintext highlighter-rouge">%E2%80%A6</code>) produces PARSE_ERROR_ENCODING. When parsing a tensor of strings (inferred from the first element) any
-element that is not a string will produce PARSE_ERROR_NOT_A_STRING.</p>
+element that is not a string will produce PARSE_ERROR_INVALID_CHAR (because of a mismatch with the expected “).</p>
 
 <h4 id="type-double">Type double</h4>
 
@@ -648,7 +648,7 @@ CELL_TYPE_DOUBLE        - A vector of floating point numbers. Binary compatible 
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2021 kaalam.ai. All rights reserved. <br />
- Site last generated: Mar 19, 2021 <br />
+ Site last generated: Mar 20, 2021 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

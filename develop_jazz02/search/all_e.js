@@ -13,7 +13,7 @@ var searchData=
   ['new_5fmap_277',['NEW_MAP',['../container_8h.html#a7e8189787b2b391c56d3ee8a6107af96',1,'container.h']]],
   ['new_5fqueue_278',['NEW_QUEUE',['../container_8h.html#a71359eb918d74c8caee980aaba38518b',1,'container.h']]],
   ['new_5ftree_279',['NEW_TREE',['../container_8h.html#a901ae42ce2ef0acc237cb53afd85a723',1,'container.h']]],
-  ['next_280',['next',['../structjazz__main_1_1NextStateLUT.html#aefe42bc145003234e58e90a808f1e9d9',1,'jazz_main::NextStateLUT::next()'],['../structjazz__main_1_1StateSwitch.html#a50d8f65b6c0b781f339cf996312cc8dc',1,'jazz_main::StateSwitch::next()']]],
+  ['next_280',['next',['../structjazz__main_1_1NextStateLUT.html#aefe42bc145003234e58e90a808f1e9d9',1,'jazz_main::NextStateLUT']]],
   ['nextstatelut_281',['NextStateLUT',['../structjazz__main_1_1NextStateLUT.html',1,'jazz_main']]],
   ['num_5fattributes_282',['num_attributes',['../structjazz__elements_1_1BlockHeader.html#ade1168fe2f507da3c64a90ef3d8f5e17',1,'jazz_elements::BlockHeader']]],
   ['num_5fdimensions_283',['num_dimensions',['../classjazz__elements_1_1Kind.html#a6f51bbc324666ee4eb3a9f304960c356',1,'jazz_elements::Kind']]],
