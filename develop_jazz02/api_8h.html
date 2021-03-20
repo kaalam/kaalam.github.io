@@ -146,7 +146,13 @@ Macros</h2></td></tr>
 <tr class="memitem:a100b4dc0e0a91f6d5e9c8f6e19e8033b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a100b4dc0e0a91f6d5e9c8f6e19e8033b">PARSE_ERROR_ENCODING</a>&#160;&#160;&#160;3</td></tr>
 <tr class="memdesc:a100b4dc0e0a91f6d5e9c8f6e19e8033b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrong utf8 decoding (length does not match expected length).  <a href="api_8h.html#a100b4dc0e0a91f6d5e9c8f6e19e8033b">More...</a><br /></td></tr>
 <tr class="separator:a100b4dc0e0a91f6d5e9c8f6e19e8033b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10e327a147a2e3f7ff810be83e4e46b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a10e327a147a2e3f7ff810be83e4e46b4">MAX_NUM_PSTATES</a>&#160;&#160;&#160;38</td></tr>
+<tr class="memitem:a67117946db70d1fc291d6c936847815b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a67117946db70d1fc291d6c936847815b">PARSE_ERROR_TOO_DEEP</a>&#160;&#160;&#160;4</td></tr>
+<tr class="memdesc:a67117946db70d1fc291d6c936847815b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of shape dimensions exceed MAX_TENSOR_RANK in a constant.  <a href="api_8h.html#a67117946db70d1fc291d6c936847815b">More...</a><br /></td></tr>
+<tr class="separator:a67117946db70d1fc291d6c936847815b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45d23c884693382f5554e513a4f5b693"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a45d23c884693382f5554e513a4f5b693">PARSE_BRACKET_MISMATCH</a>&#160;&#160;&#160;5</td></tr>
+<tr class="memdesc:a45d23c884693382f5554e513a4f5b693"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of [ in constant does not match number of ].  <a href="api_8h.html#a45d23c884693382f5554e513a4f5b693">More...</a><br /></td></tr>
+<tr class="separator:a45d23c884693382f5554e513a4f5b693"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10e327a147a2e3f7ff810be83e4e46b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a10e327a147a2e3f7ff810be83e4e46b4">MAX_NUM_PSTATES</a>&#160;&#160;&#160;39</td></tr>
 <tr class="memdesc:a10e327a147a2e3f7ff810be83e4e46b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parsing states.  <a href="api_8h.html#a10e327a147a2e3f7ff810be83e4e46b4">More...</a><br /></td></tr>
 <tr class="separator:a10e327a147a2e3f7ff810be83e4e46b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf382d32aa8c95baa4066359ea13143a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#adf382d32aa8c95baa4066359ea13143a">MAX_TRANSITION_REGEX_LEN</a>&#160;&#160;&#160;48</td></tr>
@@ -200,73 +206,76 @@ Macros</h2></td></tr>
 <tr class="memitem:ae03a2ec527d6b124c7007c36e11cbfa6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#ae03a2ec527d6b124c7007c36e11cbfa6">PSTATE_CONST_IN_STR</a>&#160;&#160;&#160;14</td></tr>
 <tr class="memdesc:ae03a2ec527d6b124c7007c36e11cbfa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parser state: Reached "[" (shape in) while parsing string.  <a href="api_8h.html#ae03a2ec527d6b124c7007c36e11cbfa6">More...</a><br /></td></tr>
 <tr class="separator:ae03a2ec527d6b124c7007c36e11cbfa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bdca3e0544263a3cfbab699235a6150"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a3bdca3e0544263a3cfbab699235a6150">PSTATE_CONST_OUT_INT</a>&#160;&#160;&#160;15</td></tr>
+<tr class="memitem:a4c40265d7b1bb026640ec58b13f19030"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a4c40265d7b1bb026640ec58b13f19030">PSTATE_CONST_IN_UNK</a>&#160;&#160;&#160;15</td></tr>
+<tr class="memdesc:a4c40265d7b1bb026640ec58b13f19030"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parser state: Reached "[" (shape in) before knowing what we are parsing.  <a href="api_8h.html#a4c40265d7b1bb026640ec58b13f19030">More...</a><br /></td></tr>
+<tr class="separator:a4c40265d7b1bb026640ec58b13f19030"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bdca3e0544263a3cfbab699235a6150"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a3bdca3e0544263a3cfbab699235a6150">PSTATE_CONST_OUT_INT</a>&#160;&#160;&#160;16</td></tr>
 <tr class="memdesc:a3bdca3e0544263a3cfbab699235a6150"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parser state: Reached "]" (shape out) while parsing integers.  <a href="api_8h.html#a3bdca3e0544263a3cfbab699235a6150">More...</a><br /></td></tr>
 <tr class="separator:a3bdca3e0544263a3cfbab699235a6150"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d1e8bbb60be7d6b552022be43720c38"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a2d1e8bbb60be7d6b552022be43720c38">PSTATE_CONST_OUT_REAL</a>&#160;&#160;&#160;16</td></tr>
+<tr class="memitem:a2d1e8bbb60be7d6b552022be43720c38"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a2d1e8bbb60be7d6b552022be43720c38">PSTATE_CONST_OUT_REAL</a>&#160;&#160;&#160;17</td></tr>
 <tr class="memdesc:a2d1e8bbb60be7d6b552022be43720c38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parser state: Reached "]" (shape out) while parsing real numbers.  <a href="api_8h.html#a2d1e8bbb60be7d6b552022be43720c38">More...</a><br /></td></tr>
 <tr class="separator:a2d1e8bbb60be7d6b552022be43720c38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba5f7378038651cd7c8482c78ecfed02"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#aba5f7378038651cd7c8482c78ecfed02">PSTATE_CONST_OUT_STR</a>&#160;&#160;&#160;17</td></tr>
+<tr class="memitem:aba5f7378038651cd7c8482c78ecfed02"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#aba5f7378038651cd7c8482c78ecfed02">PSTATE_CONST_OUT_STR</a>&#160;&#160;&#160;18</td></tr>
 <tr class="memdesc:aba5f7378038651cd7c8482c78ecfed02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parser state: Reached "]" (shape out) while parsing string.  <a href="api_8h.html#aba5f7378038651cd7c8482c78ecfed02">More...</a><br /></td></tr>
 <tr class="separator:aba5f7378038651cd7c8482c78ecfed02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d07ccf8e5a0d110069666ab6f45ffee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a8d07ccf8e5a0d110069666ab6f45ffee">PSTATE_CONST_END_INT</a>&#160;&#160;&#160;18</td></tr>
+<tr class="memitem:a8d07ccf8e5a0d110069666ab6f45ffee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a8d07ccf8e5a0d110069666ab6f45ffee">PSTATE_CONST_END_INT</a>&#160;&#160;&#160;19</td></tr>
 <tr class="memdesc:a8d07ccf8e5a0d110069666ab6f45ffee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parser state: Reached end of part or expression while parsing integers.  <a href="api_8h.html#a8d07ccf8e5a0d110069666ab6f45ffee">More...</a><br /></td></tr>
 <tr class="separator:a8d07ccf8e5a0d110069666ab6f45ffee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7f1866b10f2eafc07b51e681d04d875"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#ad7f1866b10f2eafc07b51e681d04d875">PSTATE_CONST_END_REAL</a>&#160;&#160;&#160;19</td></tr>
+<tr class="memitem:ad7f1866b10f2eafc07b51e681d04d875"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#ad7f1866b10f2eafc07b51e681d04d875">PSTATE_CONST_END_REAL</a>&#160;&#160;&#160;20</td></tr>
 <tr class="memdesc:ad7f1866b10f2eafc07b51e681d04d875"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parser state: Reached end of part or expression while parsing real numbers.  <a href="api_8h.html#ad7f1866b10f2eafc07b51e681d04d875">More...</a><br /></td></tr>
 <tr class="separator:ad7f1866b10f2eafc07b51e681d04d875"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7e7dba1b101b62ba57890b07e09865b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#aa7e7dba1b101b62ba57890b07e09865b">PSTATE_CONST_END_STR</a>&#160;&#160;&#160;20</td></tr>
+<tr class="memitem:aa7e7dba1b101b62ba57890b07e09865b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#aa7e7dba1b101b62ba57890b07e09865b">PSTATE_CONST_END_STR</a>&#160;&#160;&#160;21</td></tr>
 <tr class="memdesc:aa7e7dba1b101b62ba57890b07e09865b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parser state: Reached end of part or expression while parsing string.  <a href="api_8h.html#aa7e7dba1b101b62ba57890b07e09865b">More...</a><br /></td></tr>
 <tr class="separator:aa7e7dba1b101b62ba57890b07e09865b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afec889e6d369579a998b02408f477757"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#afec889e6d369579a998b02408f477757">PSTATE_BASE_NAME</a>&#160;&#160;&#160;21</td></tr>
+<tr class="memitem:afec889e6d369579a998b02408f477757"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#afec889e6d369579a998b02408f477757">PSTATE_BASE_NAME</a>&#160;&#160;&#160;22</td></tr>
 <tr class="memdesc:afec889e6d369579a998b02408f477757"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parser state: Parsing a base name.  <a href="api_8h.html#afec889e6d369579a998b02408f477757">More...</a><br /></td></tr>
 <tr class="separator:afec889e6d369579a998b02408f477757"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a139e00bc968e8a4fd981f58b5ed43a06"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a139e00bc968e8a4fd981f58b5ed43a06">PSTATE_CONTAINER_NAME</a>&#160;&#160;&#160;22</td></tr>
+<tr class="memitem:a139e00bc968e8a4fd981f58b5ed43a06"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a139e00bc968e8a4fd981f58b5ed43a06">PSTATE_CONTAINER_NAME</a>&#160;&#160;&#160;23</td></tr>
 <tr class="memdesc:a139e00bc968e8a4fd981f58b5ed43a06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parser state: Parsing a container name.  <a href="api_8h.html#a139e00bc968e8a4fd981f58b5ed43a06">More...</a><br /></td></tr>
 <tr class="separator:a139e00bc968e8a4fd981f58b5ed43a06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a8ecaaa718d0eceb345759659d0c52d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a5a8ecaaa718d0eceb345759659d0c52d">PSTATE_BLOCK_NAME</a>&#160;&#160;&#160;23</td></tr>
+<tr class="memitem:a5a8ecaaa718d0eceb345759659d0c52d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a5a8ecaaa718d0eceb345759659d0c52d">PSTATE_BLOCK_NAME</a>&#160;&#160;&#160;24</td></tr>
 <tr class="memdesc:a5a8ecaaa718d0eceb345759659d0c52d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parser state: Parsing a block name.  <a href="api_8h.html#a5a8ecaaa718d0eceb345759659d0c52d">More...</a><br /></td></tr>
 <tr class="separator:a5a8ecaaa718d0eceb345759659d0c52d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9812e63822401d877061b304f3a1a196"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a9812e63822401d877061b304f3a1a196">PSTATE_CONTRACT_NAME</a>&#160;&#160;&#160;24</td></tr>
+<tr class="memitem:a9812e63822401d877061b304f3a1a196"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a9812e63822401d877061b304f3a1a196">PSTATE_CONTRACT_NAME</a>&#160;&#160;&#160;25</td></tr>
 <tr class="memdesc:a9812e63822401d877061b304f3a1a196"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parser state: Parsing a contract name.  <a href="api_8h.html#a9812e63822401d877061b304f3a1a196">More...</a><br /></td></tr>
 <tr class="separator:a9812e63822401d877061b304f3a1a196"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4087055b16ebc200c376649bf7d79272"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a4087055b16ebc200c376649bf7d79272">PSTATE_KIND_NAME</a>&#160;&#160;&#160;25</td></tr>
+<tr class="memitem:a4087055b16ebc200c376649bf7d79272"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a4087055b16ebc200c376649bf7d79272">PSTATE_KIND_NAME</a>&#160;&#160;&#160;26</td></tr>
 <tr class="memdesc:a4087055b16ebc200c376649bf7d79272"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parser state: Parsing a kind name.  <a href="api_8h.html#a4087055b16ebc200c376649bf7d79272">More...</a><br /></td></tr>
 <tr class="separator:a4087055b16ebc200c376649bf7d79272"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca06d35f4bbc0bf9ee344d8734c71730"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#aca06d35f4bbc0bf9ee344d8734c71730">PSTATE_ITEM_NAME</a>&#160;&#160;&#160;26</td></tr>
+<tr class="memitem:aca06d35f4bbc0bf9ee344d8734c71730"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#aca06d35f4bbc0bf9ee344d8734c71730">PSTATE_ITEM_NAME</a>&#160;&#160;&#160;27</td></tr>
 <tr class="memdesc:aca06d35f4bbc0bf9ee344d8734c71730"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parser state: Parsing an item name.  <a href="api_8h.html#aca06d35f4bbc0bf9ee344d8734c71730">More...</a><br /></td></tr>
 <tr class="separator:aca06d35f4bbc0bf9ee344d8734c71730"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a436e3d670be0449c247a371878b6f62e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a436e3d670be0449c247a371878b6f62e">PSTATE_DIMENSION_NAME</a>&#160;&#160;&#160;27</td></tr>
+<tr class="memitem:a436e3d670be0449c247a371878b6f62e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a436e3d670be0449c247a371878b6f62e">PSTATE_DIMENSION_NAME</a>&#160;&#160;&#160;28</td></tr>
 <tr class="memdesc:a436e3d670be0449c247a371878b6f62e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parser state: Parsing a dimension name.  <a href="api_8h.html#a436e3d670be0449c247a371878b6f62e">More...</a><br /></td></tr>
 <tr class="separator:a436e3d670be0449c247a371878b6f62e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8106df913c8b01f1ff861e60160518a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a8106df913c8b01f1ff861e60160518a9">PSTATE_TYPE_NAME</a>&#160;&#160;&#160;28</td></tr>
+<tr class="memitem:a8106df913c8b01f1ff861e60160518a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a8106df913c8b01f1ff861e60160518a9">PSTATE_TYPE_NAME</a>&#160;&#160;&#160;29</td></tr>
 <tr class="memdesc:a8106df913c8b01f1ff861e60160518a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parser state: Parsing a type name.  <a href="api_8h.html#a8106df913c8b01f1ff861e60160518a9">More...</a><br /></td></tr>
 <tr class="separator:a8106df913c8b01f1ff861e60160518a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e14c0b35d5c31e7cc4724c1eb217c12"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a1e14c0b35d5c31e7cc4724c1eb217c12">PSTATE_SLICE</a>&#160;&#160;&#160;29</td></tr>
+<tr class="memitem:a1e14c0b35d5c31e7cc4724c1eb217c12"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a1e14c0b35d5c31e7cc4724c1eb217c12">PSTATE_SLICE</a>&#160;&#160;&#160;30</td></tr>
 <tr class="memdesc:a1e14c0b35d5c31e7cc4724c1eb217c12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parser state: Parsing slicer "[" in a block.  <a href="api_8h.html#a1e14c0b35d5c31e7cc4724c1eb217c12">More...</a><br /></td></tr>
 <tr class="separator:a1e14c0b35d5c31e7cc4724c1eb217c12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad241b506d56a85a97e78e8debb5acd6d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#ad241b506d56a85a97e78e8debb5acd6d">PSTATE_BLOCK_CALL</a>&#160;&#160;&#160;30</td></tr>
+<tr class="memitem:ad241b506d56a85a97e78e8debb5acd6d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#ad241b506d56a85a97e78e8debb5acd6d">PSTATE_BLOCK_CALL</a>&#160;&#160;&#160;31</td></tr>
 <tr class="memdesc:ad241b506d56a85a97e78e8debb5acd6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parser state: Parsing call "(" in a block.  <a href="api_8h.html#ad241b506d56a85a97e78e8debb5acd6d">More...</a><br /></td></tr>
 <tr class="separator:ad241b506d56a85a97e78e8debb5acd6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c3d63d1c1f62f70071d3077c0a6f2f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a0c3d63d1c1f62f70071d3077c0a6f2f1">PSTATE_CONTRACT_CALL</a>&#160;&#160;&#160;31</td></tr>
+<tr class="memitem:a0c3d63d1c1f62f70071d3077c0a6f2f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a0c3d63d1c1f62f70071d3077c0a6f2f1">PSTATE_CONTRACT_CALL</a>&#160;&#160;&#160;32</td></tr>
 <tr class="memdesc:a0c3d63d1c1f62f70071d3077c0a6f2f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parser state: Parsing call "(" in a contract.  <a href="api_8h.html#a0c3d63d1c1f62f70071d3077c0a6f2f1">More...</a><br /></td></tr>
 <tr class="separator:a0c3d63d1c1f62f70071d3077c0a6f2f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f517a4c129028d6812cc3e7b6feffd4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a3f517a4c129028d6812cc3e7b6feffd4">PSTATE_END_CALL</a>&#160;&#160;&#160;32</td></tr>
+<tr class="memitem:a3f517a4c129028d6812cc3e7b6feffd4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a3f517a4c129028d6812cc3e7b6feffd4">PSTATE_END_CALL</a>&#160;&#160;&#160;33</td></tr>
 <tr class="memdesc:a3f517a4c129028d6812cc3e7b6feffd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parser state: Parsing closing call ")".  <a href="api_8h.html#a3f517a4c129028d6812cc3e7b6feffd4">More...</a><br /></td></tr>
 <tr class="separator:a3f517a4c129028d6812cc3e7b6feffd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a041828a185013ac8cf7a60e5f0711a2b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a041828a185013ac8cf7a60e5f0711a2b">PSTATE_LAST_COLON</a>&#160;&#160;&#160;33</td></tr>
+<tr class="memitem:a041828a185013ac8cf7a60e5f0711a2b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a041828a185013ac8cf7a60e5f0711a2b">PSTATE_LAST_COLON</a>&#160;&#160;&#160;34</td></tr>
 <tr class="memdesc:a041828a185013ac8cf7a60e5f0711a2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parser state: A single ":" after and item mane of another ":" followed by [.  <a href="api_8h.html#a041828a185013ac8cf7a60e5f0711a2b">More...</a><br /></td></tr>
 <tr class="separator:a041828a185013ac8cf7a60e5f0711a2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1f46bbced466632981812d3984fa7e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#aa1f46bbced466632981812d3984fa7e0">PSTATE_DOUBLE_COLON</a>&#160;&#160;&#160;34</td></tr>
+<tr class="memitem:aa1f46bbced466632981812d3984fa7e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#aa1f46bbced466632981812d3984fa7e0">PSTATE_DOUBLE_COLON</a>&#160;&#160;&#160;35</td></tr>
 <tr class="memdesc:aa1f46bbced466632981812d3984fa7e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parser state: The first ":" after a knd name.  <a href="api_8h.html#aa1f46bbced466632981812d3984fa7e0">More...</a><br /></td></tr>
 <tr class="separator:aa1f46bbced466632981812d3984fa7e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a508e249006a9644651d031901150628e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a508e249006a9644651d031901150628e">PSTATE_SEP_ITEM</a>&#160;&#160;&#160;35</td></tr>
+<tr class="memitem:a508e249006a9644651d031901150628e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a508e249006a9644651d031901150628e">PSTATE_SEP_ITEM</a>&#160;&#160;&#160;36</td></tr>
 <tr class="memdesc:a508e249006a9644651d031901150628e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parser state: The "," that separates items.  <a href="api_8h.html#a508e249006a9644651d031901150628e">More...</a><br /></td></tr>
 <tr class="separator:a508e249006a9644651d031901150628e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab14eab9760fb3da0a6c99493244bd8c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#ab14eab9760fb3da0a6c99493244bd8c2">PSTATE_SLASH</a>&#160;&#160;&#160;36</td></tr>
+<tr class="memitem:ab14eab9760fb3da0a6c99493244bd8c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#ab14eab9760fb3da0a6c99493244bd8c2">PSTATE_SLASH</a>&#160;&#160;&#160;37</td></tr>
 <tr class="memdesc:ab14eab9760fb3da0a6c99493244bd8c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parser state: Parsing slash "/".  <a href="api_8h.html#ab14eab9760fb3da0a6c99493244bd8c2">More...</a><br /></td></tr>
 <tr class="separator:ab14eab9760fb3da0a6c99493244bd8c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e51a5405cb8a9c05ea5b68a2d178936"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a3e51a5405cb8a9c05ea5b68a2d178936">PSTATE_DOT</a>&#160;&#160;&#160;37</td></tr>
+<tr class="memitem:a3e51a5405cb8a9c05ea5b68a2d178936"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a3e51a5405cb8a9c05ea5b68a2d178936">PSTATE_DOT</a>&#160;&#160;&#160;38</td></tr>
 <tr class="memdesc:a3e51a5405cb8a9c05ea5b68a2d178936"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parser state: Parsing dor ".".  <a href="api_8h.html#a3e51a5405cb8a9c05ea5b68a2d178936">More...</a><br /></td></tr>
 <tr class="separator:a3e51a5405cb8a9c05ea5b68a2d178936"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ae2cf4df7c3575c0f54d1b4c5d466e5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a3ae2cf4df7c3575c0f54d1b4c5d466e5">PSTATE_INVALID_CHAR</a>&#160;&#160;&#160;255</td></tr>
@@ -453,7 +462,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MAX_NUM_PSTATES&#160;&#160;&#160;38</td>
+          <td class="memname">#define MAX_NUM_PSTATES&#160;&#160;&#160;39</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -526,6 +535,22 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a45d23c884693382f5554e513a4f5b693"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45d23c884693382f5554e513a4f5b693">&#9670;&nbsp;</a></span>PARSE_BRACKET_MISMATCH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PARSE_BRACKET_MISMATCH&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Number of [ in constant does not match number of ]. </p>
+
+</div>
+</div>
 <a id="a100b4dc0e0a91f6d5e9c8f6e19e8033b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a100b4dc0e0a91f6d5e9c8f6e19e8033b">&#9670;&nbsp;</a></span>PARSE_ERROR_ENCODING</h2>
 
@@ -574,6 +599,22 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a67117946db70d1fc291d6c936847815b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67117946db70d1fc291d6c936847815b">&#9670;&nbsp;</a></span>PARSE_ERROR_TOO_DEEP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PARSE_ERROR_TOO_DEEP&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Number of shape dimensions exceed MAX_TENSOR_RANK in a constant. </p>
+
+</div>
+</div>
 <a id="af21f19c98d9ed1fe21d8c1b963dfe4c3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af21f19c98d9ed1fe21d8c1b963dfe4c3">&#9670;&nbsp;</a></span>PARSE_NOT_IMPLEMENTED</h2>
 
@@ -612,7 +653,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PSTATE_BASE_NAME&#160;&#160;&#160;21</td>
+          <td class="memname">#define PSTATE_BASE_NAME&#160;&#160;&#160;22</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -628,7 +669,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PSTATE_BLOCK_CALL&#160;&#160;&#160;30</td>
+          <td class="memname">#define PSTATE_BLOCK_CALL&#160;&#160;&#160;31</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -644,7 +685,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PSTATE_BLOCK_NAME&#160;&#160;&#160;23</td>
+          <td class="memname">#define PSTATE_BLOCK_NAME&#160;&#160;&#160;24</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -660,7 +701,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PSTATE_CONST_END_INT&#160;&#160;&#160;18</td>
+          <td class="memname">#define PSTATE_CONST_END_INT&#160;&#160;&#160;19</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -676,7 +717,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PSTATE_CONST_END_REAL&#160;&#160;&#160;19</td>
+          <td class="memname">#define PSTATE_CONST_END_REAL&#160;&#160;&#160;20</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -692,7 +733,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PSTATE_CONST_END_STR&#160;&#160;&#160;20</td>
+          <td class="memname">#define PSTATE_CONST_END_STR&#160;&#160;&#160;21</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -749,6 +790,22 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a4c40265d7b1bb026640ec58b13f19030"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c40265d7b1bb026640ec58b13f19030">&#9670;&nbsp;</a></span>PSTATE_CONST_IN_UNK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PSTATE_CONST_IN_UNK&#160;&#160;&#160;15</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parser state: Reached "[" (shape in) before knowing what we are parsing. </p>
+
+</div>
+</div>
 <a id="a05832775c600af970254a652c8be6137"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a05832775c600af970254a652c8be6137">&#9670;&nbsp;</a></span>PSTATE_CONST_INT</h2>
 
@@ -772,7 +829,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PSTATE_CONST_OUT_INT&#160;&#160;&#160;15</td>
+          <td class="memname">#define PSTATE_CONST_OUT_INT&#160;&#160;&#160;16</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -788,7 +845,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PSTATE_CONST_OUT_REAL&#160;&#160;&#160;16</td>
+          <td class="memname">#define PSTATE_CONST_OUT_REAL&#160;&#160;&#160;17</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -804,7 +861,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PSTATE_CONST_OUT_STR&#160;&#160;&#160;17</td>
+          <td class="memname">#define PSTATE_CONST_OUT_STR&#160;&#160;&#160;18</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -980,7 +1037,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PSTATE_CONTAINER_NAME&#160;&#160;&#160;22</td>
+          <td class="memname">#define PSTATE_CONTAINER_NAME&#160;&#160;&#160;23</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -996,7 +1053,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PSTATE_CONTRACT_CALL&#160;&#160;&#160;31</td>
+          <td class="memname">#define PSTATE_CONTRACT_CALL&#160;&#160;&#160;32</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1012,7 +1069,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PSTATE_CONTRACT_NAME&#160;&#160;&#160;24</td>
+          <td class="memname">#define PSTATE_CONTRACT_NAME&#160;&#160;&#160;25</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1028,7 +1085,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PSTATE_DIMENSION_NAME&#160;&#160;&#160;27</td>
+          <td class="memname">#define PSTATE_DIMENSION_NAME&#160;&#160;&#160;28</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1044,7 +1101,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PSTATE_DOT&#160;&#160;&#160;37</td>
+          <td class="memname">#define PSTATE_DOT&#160;&#160;&#160;38</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1060,7 +1117,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PSTATE_DOUBLE_COLON&#160;&#160;&#160;34</td>
+          <td class="memname">#define PSTATE_DOUBLE_COLON&#160;&#160;&#160;35</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1076,7 +1133,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PSTATE_END_CALL&#160;&#160;&#160;32</td>
+          <td class="memname">#define PSTATE_END_CALL&#160;&#160;&#160;33</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1124,7 +1181,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PSTATE_ITEM_NAME&#160;&#160;&#160;26</td>
+          <td class="memname">#define PSTATE_ITEM_NAME&#160;&#160;&#160;27</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1140,7 +1197,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PSTATE_KIND_NAME&#160;&#160;&#160;25</td>
+          <td class="memname">#define PSTATE_KIND_NAME&#160;&#160;&#160;26</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1156,7 +1213,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PSTATE_LAST_COLON&#160;&#160;&#160;33</td>
+          <td class="memname">#define PSTATE_LAST_COLON&#160;&#160;&#160;34</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1172,7 +1229,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PSTATE_SEP_ITEM&#160;&#160;&#160;35</td>
+          <td class="memname">#define PSTATE_SEP_ITEM&#160;&#160;&#160;36</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1188,7 +1245,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PSTATE_SLASH&#160;&#160;&#160;36</td>
+          <td class="memname">#define PSTATE_SLASH&#160;&#160;&#160;37</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1204,7 +1261,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PSTATE_SLICE&#160;&#160;&#160;29</td>
+          <td class="memname">#define PSTATE_SLICE&#160;&#160;&#160;30</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1220,7 +1277,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PSTATE_TYPE_NAME&#160;&#160;&#160;28</td>
+          <td class="memname">#define PSTATE_TYPE_NAME&#160;&#160;&#160;29</td>
         </tr>
       </table>
 </div><div class="memdoc">

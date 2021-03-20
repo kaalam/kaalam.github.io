@@ -179,8 +179,8 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:afde7fe95eec1152224f38c6f85897c13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc65b94e74a145b76ee31b8a25e07c88"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html#afc65b94e74a145b76ee31b8a25e07c88">_parse_exec_stage</a> (<a class="el" href="namespacejazz__main.html#adecdbe219ae6c8a78b2e9f5fad04e3fb">pChar</a> &amp;p_url, int method, <a class="el" href="namespacejazz__elements.html#a4ac79f33730ff818dedd0fcfcc69d6e1">L_value</a> &amp;l_value, <a class="el" href="structjazz__elements_1_1R__value.html">R_value</a> &amp;r_value)</td></tr>
 <tr class="separator:afc65b94e74a145b76ee31b8a25e07c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25ac2bf9b2890c1b079d7133257b41f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html#a25ac2bf9b2890c1b079d7133257b41f0">_parse_const_meta</a> (<a class="el" href="namespacejazz__main.html#adecdbe219ae6c8a78b2e9f5fad04e3fb">pChar</a> &amp;p_url, <a class="el" href="structjazz__elements_1_1BlockHeader.html">BlockHeader</a> &amp;hea)</td></tr>
-<tr class="separator:a25ac2bf9b2890c1b079d7133257b41f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaef3506e7fcc3254ea3bc64cf3b4949e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html#aaef3506e7fcc3254ea3bc64cf3b4949e">_parse_const_meta</a> (<a class="el" href="namespacejazz__main.html#adecdbe219ae6c8a78b2e9f5fad04e3fb">pChar</a> &amp;p_url, <a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a> p_block)</td></tr>
+<tr class="separator:aaef3506e7fcc3254ea3bc64cf3b4949e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3253366ea102219e75176e24f7352109"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html#a3253366ea102219e75176e24f7352109">_parse_const_data</a> (<a class="el" href="namespacejazz__main.html#adecdbe219ae6c8a78b2e9f5fad04e3fb">pChar</a> &amp;p_url, <a class="el" href="structjazz__elements_1_1BlockHeader.html">BlockHeader</a> &amp;hea, <a class="el" href="namespacejazz__elements.html#a1443efd13a9f5f24bee92041fffc8820">pBlockKeeper</a> *p_keeper)</td></tr>
 <tr class="separator:a3253366ea102219e75176e24f7352109"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -344,7 +344,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This is a private submethod of <a class="el" href="classjazz__main_1_1Api.html#a20fa96a348efb22d9cff1099e9d1cc1b">parse()</a> creating blocks with the data of a constant previously checked by <a class="el" href="classjazz__main_1_1Api.html#a25ac2bf9b2890c1b079d7133257b41f0">_parse_const_meta()</a></p>
+<p>This is a private submethod of <a class="el" href="classjazz__main_1_1Api.html#a20fa96a348efb22d9cff1099e9d1cc1b">parse()</a> creating blocks with the data of a constant previously checked by <a class="el" href="classjazz__main_1_1Api.html#aaef3506e7fcc3254ea3bc64cf3b4949e">_parse_const_meta()</a></p>
 <p>It returns a locked (one shot) block that must be unlocked in the same http query. </p><pre class="fragment">\param p_url    A pointer to the first character of the constant.
 \param hea      A BlockHeader created in a successful _parse_const_meta.
 \param p_keeper A pointer to a BlockKeeper passed by reference. If successful, the Container will return a pointer to a
@@ -354,8 +354,8 @@ Private Attributes</h2></td></tr>
 </pre> 
 </div>
 </div>
-<a id="a25ac2bf9b2890c1b079d7133257b41f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25ac2bf9b2890c1b079d7133257b41f0">&#9670;&nbsp;</a></span>_parse_const_meta()</h2>
+<a id="aaef3506e7fcc3254ea3bc64cf3b4949e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaef3506e7fcc3254ea3bc64cf3b4949e">&#9670;&nbsp;</a></span>_parse_const_meta()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -372,8 +372,8 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structjazz__elements_1_1BlockHeader.html">BlockHeader</a> &amp;&#160;</td>
-          <td class="paramname"><em>hea</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a>&#160;</td>
+          <td class="paramname"><em>p_block</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -388,8 +388,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>This is a private submethod of <a class="el" href="classjazz__main_1_1Api.html#a20fa96a348efb22d9cff1099e9d1cc1b">parse()</a> parsing constants for syntax checking and retrieving the metadata.</p>
-<p>It returns a BlockHeader that is necessary to allocate a block calling <a class="el" href="classjazz__main_1_1Api.html#a3253366ea102219e75176e24f7352109">_parse_const_data()</a> with it. </p><pre class="fragment">\param p_url A pointer to the first character of the constant.
-\param hea   A BlockHeader passed by reference that will be filled of success, possibly partially on failure.
+<p>It returns a BlockHeader that is necessary to allocate a block calling <a class="el" href="classjazz__main_1_1Api.html#a3253366ea102219e75176e24f7352109">_parse_const_data()</a> with it. </p><pre class="fragment">\param p_url    A pointer to the first character of the constant.
+\param p_block  A pointer to a BlockHeader (A Block with no alloc) that will be filled on success.
 
 \return      Some error code or SERVICE_NO_ERROR if successful.
 </pre> 
