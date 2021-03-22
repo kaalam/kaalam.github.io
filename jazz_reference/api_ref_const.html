@@ -523,20 +523,27 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> Jazz is still under development to produce the first Minimum Viable Product (MVP) after the original 0.1.7.
-This is incomplete, but what is here is up to date.</div>
-
-<h2 id="constants">Constants</h2>
+  <h2 id="constants">Constants</h2>
 
 <h3 id="definition">Definition</h3>
 
 <p>A constant is a string in a query that defines a tensor, tuple or kind. If parsed successfully, it will be converted into a one shot block
-and will be used in a contract (block slicing, function call or assignment).</p>
+and will be used in a contract (block slicing, function call, etc.) or an assignment.</p>
 
 <h2 id="spacing">Spacing</h2>
 
-<p>Space and tab characters are ignored everywhere except inside a name, a number or the content of a string. The first two result in
-PARSE_ERROR_INVALID_CHAR and the third in the space being part of the string.</p>
+<p>Space and tab characters <code class="language-plaintext highlighter-rouge">\t</code> are ignored <strong>*almost everywhere</strong>. The definition is: everywhere, except:</p>
+
+<ul>
+  <li>Inside a string (between the starting and the ending double quotes <code class="language-plaintext highlighter-rouge">"</code>) it becomes part of string.</li>
+  <li>“Around” a number they produce PARSE_ERROR_INVALID_CHAR. The number starts at its first <code class="language-plaintext highlighter-rouge">-</code> or <code class="language-plaintext highlighter-rouge">0-9</code> digit and ends by: a separator,
+a closer, a semicolon, the end of the query, etc. Space is <strong>never</strong> part of a number. All these are equally wrong: <code class="language-plaintext highlighter-rouge">- 12,</code>, <code class="language-plaintext highlighter-rouge">-1 2,</code> and
+<code class="language-plaintext highlighter-rouge">-12 ,</code>. For efficiency reasons, queries are parsed without copying or modifying them. The space is not part of the number. Implementing
+workarounds just to allow a bad practice is not how we design Jazz. Simply <strong>do not separate numbers</strong> from whatever follows them.</li>
+  <li>Names cannot contain spaces producing PARSE_ERROR_INVALID_CHAR.</li>
+</ul>
+
+<p>Otherwise, space is ok. <code class="language-plaintext highlighter-rouge">" [ [ [ 1, 2, 3]\t ,\t [4, 5, 6] ] , [ [ 1,\t -2,\t-3], [ 4, 5, 6] ] ]\t"</code> parses ok.</p>
 
 <h2 id="constant-tensors">Constant tensors</h2>
 
@@ -556,13 +563,24 @@ a space, a square bracket or a comma produces a PARSE_ERROR_INVALID_CHAR.</p>
 of type string. Strings support url-encoding starting with a <code class="language-plaintext highlighter-rouge">%</code> for all character sizes in utf8. A url-encoded double quote <code class="language-plaintext highlighter-rouge">"</code> (<code class="language-plaintext highlighter-rouge">%22</code>)
 is not parsed as the beginning or end of an element which provides a mechanism to include double quotes inside the string.
 A use of the <code class="language-plaintext highlighter-rouge">%</code> char that does not form a valid (possibly multi-byte) url-encode (E.g., 1 byte <code class="language-plaintext highlighter-rouge">%81</code>, 2 bytes <code class="language-plaintext highlighter-rouge">%C6%92</code>,
-3 bytes <code class="language-plaintext highlighter-rouge">%E2%80%A6</code>) produces PARSE_ERROR_ENCODING. When parsing a tensor of strings (inferred from the first element) any
-element that is not a string will produce PARSE_ERROR_INVALID_CHAR (because of a mismatch with the expected “).</p>
+3 bytes <code class="language-plaintext highlighter-rouge">%E2%80%A6</code> and 4 bytes <code class="language-plaintext highlighter-rouge">%f0%92%80%bb</code>) produces PARSE_ERROR_ENCODING. Hex letters <code class="language-plaintext highlighter-rouge">a</code> to <code class="language-plaintext highlighter-rouge">f</code> can be given both uppercase or
+lowercase. When parsing a tensor of strings (inferred from the first element) any cell that is not a string will produce
+PARSE_ERROR_INVALID_CHAR.</p>
+
+<p>All characters other than:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ABCDE FGHIJ KLMNO PQRST UVW XYZ
+abcde fghij klmno pqrst uvw xyz
+01234 56789
+\t -_.~!#$&amp;'()*+,/:;=?@[]
+</code></pre></div></div>
+<p>must be url-encoded.</p>
 
 <h4 id="type-double">Type double</h4>
 
-<p>The type double is inferred by the use of the decimal point <code class="language-plaintext highlighter-rouge">.</code> in a number, otherwise the number is an integer. Any number of the tensor
-being a double makes the whole tensor of type double.</p>
+<p>The type double is inferred by the use of the decimal point <code class="language-plaintext highlighter-rouge">.</code> or the <code class="language-plaintext highlighter-rouge">e</code> (e.g., <code class="language-plaintext highlighter-rouge">1e9</code>) in a number, otherwise the number is an integer.
+The first character of a number cannot be a <code class="language-plaintext highlighter-rouge">.</code> E.g., <code class="language-plaintext highlighter-rouge">.5</code> is wrong, you must write <code class="language-plaintext highlighter-rouge">0.5</code>. Any cell of the tensor being a double makes the
+whole tensor of type double.</p>
 
 <h2 id="constant-tuples">Constant tuples</h2>
 
@@ -576,12 +594,10 @@ names and tensors.</p>
 
 <h3 id="syntax-1">Syntax</h3>
 
-<p>The tuple is a succession of item names followed by a colon <code class="language-plaintext highlighter-rouge">:</code> and a tensor. Note the in one-element tensors, the <code class="language-plaintext highlighter-rouge">[]</code> can be omitted.</p>
+<p>The tuple is a succession of item names followed by a colon <code class="language-plaintext highlighter-rouge">:</code> and a tensor, separated by a semicolon <code class="language-plaintext highlighter-rouge">;</code>. Note the in one-element
+tensors, the <code class="language-plaintext highlighter-rouge">[]</code> can be omitted.</p>
 
-<p>E.g. <code class="language-plaintext highlighter-rouge">wave:[2,3,5],encoding:"json",volume:3.5</code> is a valid tuple and the same as <code class="language-plaintext highlighter-rouge">wave:[2,3,5],encoding:["json"],volume:[3.5]</code>.</p>
-
-<p><strong>Note</strong> that the tuple does not include bounding <code class="language-plaintext highlighter-rouge">[]</code> or <code class="language-plaintext highlighter-rouge">()</code>.  <code class="language-plaintext highlighter-rouge">a(.tuple.)</code> or <code class="language-plaintext highlighter-rouge">a[.tuple.]</code> are just syntactic sugar for the contracts
-&lt;call&gt; and &lt;slice&gt; respectively.</p>
+<p>E.g. <code class="language-plaintext highlighter-rouge">wave:[2,3,5];encoding:"json";volume:3.5</code> is a valid tuple and the same as <code class="language-plaintext highlighter-rouge">wave:[2,3,5];encoding:["json"];volume:[3.5]</code>.</p>
 
 <h2 id="constant-kinds">Constant kinds</h2>
 
@@ -590,7 +606,7 @@ names and tensors.</p>
 <ul>
   <li>Their tensors do not contain data, only types and shapes.</li>
   <li>Shapes can be defined by integer constants (like in Tuples) or by <strong>dimensions</strong>. (Names that may have different values in different tuples of a kind, but must have the same value in the same tuple when used more than once.)</li>
-  <li>Kinds have a name and that name is unique across the whole cluster.</li>
+  <li>Kinds have a name defined followed by a double colon <code class="language-plaintext highlighter-rouge">::</code>.</li>
 </ul>
 
 <p><strong>Note that</strong>: Tuples themselves define a specific kind, but that kind has no name. Tuples can be of more than one Kind: A tuple is of any
@@ -600,11 +616,11 @@ to that instead of the original tuple.</p>
 <h3 id="syntax-2">Syntax</h3>
 
 <p>E.g.:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>image:: red: BYTE[width, height], green: BYTE[width, height], blue: BYTE[width, height]
-image:: buff: SINGLE[width, height, 3], title: STRING[1], category: INTEGER[1]
-image:: buff: SINGLE[width, height, 3], title: STRING, category: INTEGER
-image_mono640x480:: buff: SINGLE[640, 480], description: BYTE[128]
-voice::wave:INTEGER[num_channels,num_samples],frames_per_Sec:INTEGER
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>image:: red: BYTE[width, height]; green: BYTE[width, height]; blue: BYTE[width, height]
+image:: buff: SINGLE[width, height, 3]; title: STRING[1]; category: INTEGER[1]
+image:: buff: SINGLE[width, height, 3]; title: STRING; category: INTEGER
+image_mono640x480:: buff: SINGLE[640, 480]; description: BYTE[128]
+voice::wave:INTEGER[num_channels,num_samples];frames_per_Sec:INTEGER
 </code></pre></div></div>
 <p>Note:</p>
 <ul>
@@ -648,7 +664,7 @@ CELL_TYPE_DOUBLE        - A vector of floating point numbers. Binary compatible 
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2021 kaalam.ai. All rights reserved. <br />
- Site last generated: Mar 21, 2021 <br />
+ Site last generated: Mar 22, 2021 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

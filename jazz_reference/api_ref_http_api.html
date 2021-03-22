@@ -523,40 +523,28 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> Jazz is still under development to produce the first Minimum Viable Product (MVP) after the original 0.1.7.
-This is incomplete, but what is here is up to date.</div>
+  <h2 id="http-considerations">HTTP considerations</h2>
 
-<h3 id="rest-predicates">REST predicates</h3>
-<p><br /></p>
+<p>HTTP-wise, the protocol is very simple. This page describes the basic http model. Wherever syntax are discussed, what http predicate apply
+will also be described.</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td><span class="label label-info">Next …</span></td>
-    </tr>
-    <tr>
-      <td><a href="api_ref_details.html">API reference</a></td>
-    </tr>
-  </tbody>
-</table>
-
-<p><span class="label label-info">REST API</span></p>
+<h3 id="http-predicates">HTTP predicates</h3>
 
 <p>The REST API supports <strong>standard http commands</strong>.</p>
 
 <ul>
-  <li><strong>GET</strong> with a valid <code class="language-plaintext highlighter-rouge">rvalue</code>. To read from Jazz.</li>
-  <li><strong>HEAD</strong> with a valid <code class="language-plaintext highlighter-rouge">rvalue</code>. Internally the same as GET, but returns the header only.</li>
-  <li><strong>PUT</strong> with a valid <code class="language-plaintext highlighter-rouge">lvalue</code>. To write blocks into a Jazz keepr.</li>
-  <li><strong>DELETE</strong> with a valid <code class="language-plaintext highlighter-rouge">lvalue</code>. To delete blocks or containers (at any level of the tree).</li>
-  <li><strong>OPTIONS</strong> with a string. Parses the string and returns the commands that would accept that string as a URL.</li>
-  <li><strong>HEAD</strong> with <code class="language-plaintext highlighter-rouge">lvalue</code>=<code class="language-plaintext highlighter-rouge">rvalue</code>. Assignment in the server. Similar to “PUT(lvalue, GET(rvalue))” without traffic.</li>
+  <li><strong>GET</strong> with a valid <code class="language-plaintext highlighter-rouge">R-value</code>. To read from Jazz.</li>
+  <li><strong>HEAD</strong> with a valid <code class="language-plaintext highlighter-rouge">R-value</code>. Internally the same as GET, but returns the header only.</li>
+  <li><strong>PUT</strong> with a valid <code class="language-plaintext highlighter-rouge">L-value</code>. To write blocks into a Jazz container.</li>
+  <li><strong>DELETE</strong> with a valid <code class="language-plaintext highlighter-rouge">L-value</code>. To delete blocks or containers (at any level of the tree).</li>
+  <li><strong>OPTIONS</strong> with a string. Parses the string and returns the http predicates that would accept that string as a query.</li>
+  <li>Assignment calls (calls doing <code class="language-plaintext highlighter-rouge">L-value = R-value</code> ) are <strong>GET</strong> calls returning just an answer (some status code).</li>
 </ul>
 
-<h4 id="limitations-in-version-05x">Limitations in version 0.5.x</h4>
+<h3 id="limitations-in-version-05x">Limitations in version 0.5.x</h3>
 
 <ul>
-  <li>No support for POST or TRACE.</li>
+  <li>No support for <strong>POST</strong> or <strong>TRACE</strong>.</li>
   <li>Compression is not supported.</li>
   <li>CACHE HEADERS are not supported.</li>
 </ul>
@@ -578,7 +566,7 @@ This is incomplete, but what is here is up to date.</div>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2021 kaalam.ai. All rights reserved. <br />
- Site last generated: Mar 21, 2021 <br />
+ Site last generated: Mar 22, 2021 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

@@ -523,12 +523,7 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <h2 id="api-introduction-the-different-apis">API introduction: the different APIs</h2>
-
-<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> Jazz is still under development to produce the first Minimum Viable Product (MVP) after the original 0.1.7.
-This is incomplete, but what is here is up to date.</div>
-
-<h3 id="how-it-works-brief-intro">How it works (brief intro)</h3>
+  <h2 id="how-it-works-short-intro">How it works (short intro)</h2>
 
 <p>Jazz is designed for performance. It is a server that can use as much CPU and RAM as available with near 100% efficiency serving thousands
 of concurrent API calls. This comes with some strict architectural decisions that are better kept in mind to understand how the APIs work.
@@ -551,6 +546,8 @@ name and coherent behavior. Besides block contracts, Services have contracts too
 
 <p>See more details <a href="api_ref_modules_.html">here</a></p>
 
+<h2 id="the-different-apis">The different APIs</h2>
+
 <h3 id="the-c-api">The C++ API</h3>
 
 <p>The C++ API is designed, for the moment, to just merge the source code in another project, using the three different namespaces, each one
@@ -567,13 +564,12 @@ containing the previous ones.</p>
 <h3 id="the-bebop-api">The Bebop API</h3>
 
 <div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> Bebop implementation in C++ will start with Jazz version 0.6.x. For the moment, consider the bebop API
-just like the current http API without the restrictions of http predicates and with function calls. Functions are just Blocks and
-function arguments are Tuples.</div>
+just like the current http API without the restrictions of http predicates. Functions are just Blocks and function arguments are Tuples.</div>
 
 <h3 id="the-http-api">The http API</h3>
 
 <p>The http API is what this documentation is about. It has two parts, one http specific (http predicates and encoding specifics) and a
-general syntax of queries with is defined by its parts (names, locators, constants, slicing and contracts). Before that, it is important
+general syntax of queries which is defined by its parts: (names, locators, constants, slicing, …). Before that, it is important
 to read how the different modules fit together and what the different APIS /, // and /// are.</p>
 
 <h3 id="python-and-r-apis">Python and R APIs</h3>
@@ -621,7 +617,7 @@ functionality clients. Ideally, also a Javascript client joins the project somed
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2021 kaalam.ai. All rights reserved. <br />
- Site last generated: Mar 21, 2021 <br />
+ Site last generated: Mar 22, 2021 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

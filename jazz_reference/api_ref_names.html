@@ -523,21 +523,62 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> Jazz is still under development to produce the first Minimum Viable Product (MVP) after the original 0.1.7.
-This is incomplete, but what is here is up to date.</div>
+  <h2 id="name">Name</h2>
 
-<h3 id="block-names">Block names</h3>
+<h3 id="definition-of-name">Definition of name</h3>
 
-<p>A block name is a sequence of case-sensitive alphanumeric characters or underscores of maximum length MAX_BLOCK_ID_LENGTH - 1 (actually 31)
-starting with a letter.</p>
+<p>A name is a string of letters, numbers and underscores, starting with a letter, up to 31 characters long.</p>
 
-<p>The regex REGEX_VALIDATE_BLOCK_ID validates a block identifier.</p>
+<p>The regex REGEX_VALIDATE_NAME validates a name. See <a href="/develop_jazz02/container_8h.html#a7a8bfd610ac1e273cd0522d1b7169f68">search for REGEX_VALIDATE_NAME</a>.</p>
 
-<p><span class="label label-info">R</span></p>
+<p>Names are combined to form locators as referenced <a href="api_ref_locators.html">here</a>.</p>
 
-<p>The new design goes back to the original concept of <code class="language-plaintext highlighter-rouge">C++</code> and <code class="language-plaintext highlighter-rouge">http</code>. An R package to manage the <code class="language-plaintext highlighter-rouge">http</code> client will still be included.</p>
+<h3 id="use-of-names">Use of names</h3>
 
-<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> The R package <strong>rjazz</strong> also includes built-in http client support to use the REST API from R.</div>
+<p>Names are use in all these places:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parser state</th>
+      <th>Reserved base names</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BASE_NAME</td>
+      <td>Is the first name in both an <code class="language-plaintext highlighter-rouge">L-value</code> and an <code class="language-plaintext highlighter-rouge">R-value</code>, always followed by <code class="language-plaintext highlighter-rouge">/</code>.</td>
+    </tr>
+    <tr>
+      <td>CONTAINER_NAME</td>
+      <td>Anything (possibly nothing) between the base name and the block name, separated by <code class="language-plaintext highlighter-rouge">/</code>. There is a limit of MAX_NESTED_CONTAINERS to how many names can be defined before a block name.</td>
+    </tr>
+    <tr>
+      <td>BLOCK_NAME</td>
+      <td>The last name in an <code class="language-plaintext highlighter-rouge">L-value</code> or the last name <strong>not</strong> followed by <code class="language-plaintext highlighter-rouge">/</code> in an <code class="language-plaintext highlighter-rouge">R-value</code></td>
+    </tr>
+    <tr>
+      <td>CONTRACT_NAME</td>
+      <td>A name following a block name or another contract name separated by a <code class="language-plaintext highlighter-rouge">.</code> There is a limit of MAX_CONTRACTS_IN_R_VALUE to how many contracts can be chained to a block.</td>
+    </tr>
+    <tr>
+      <td>KIND_NAME</td>
+      <td>In a constant defining a Kind, the first name. It is identified by being the only name followed by a double colon <code class="language-plaintext highlighter-rouge">::</code>. See <a href="api_ref_const.html#constant-kinds">constant kind</a>.</td>
+    </tr>
+    <tr>
+      <td>ITEM_NAME</td>
+      <td>Is the name of an item (some tensor) inside a constant defining a kind or a tuple. It is followed by a single colon <code class="language-plaintext highlighter-rouge">:</code>.</td>
+    </tr>
+    <tr>
+      <td>DIMENSION_NAME</td>
+      <td>In a constant defining a Kind, a dimension of a tensor that is defined by a name instead of by its value. E.g., <code class="language-plaintext highlighter-rouge">width</code>, <code class="language-plaintext highlighter-rouge">height</code> in <a href="api_ref_const.html#constant-kinds">constant kind</a>.</td>
+    </tr>
+    <tr>
+      <td>TYPE_NAME</td>
+      <td>In a constant defining a Kind, the cell type of a tensor. E.g., <code class="language-plaintext highlighter-rouge">BYTE_BOOLEAN</code>, <code class="language-plaintext highlighter-rouge">INTEGER</code>, <code class="language-plaintext highlighter-rouge">TIME</code>, <code class="language-plaintext highlighter-rouge">DOUBLE</code>, etc.</td>
+    </tr>
+  </tbody>
+</table>
 
 <p><br /></p>
 
@@ -554,7 +595,7 @@ starting with a letter.</p>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2021 kaalam.ai. All rights reserved. <br />
- Site last generated: Mar 21, 2021 <br />
+ Site last generated: Mar 22, 2021 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>
