@@ -99,54 +99,6 @@ Data Fields</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The minimum struc to keep track of block allocation in a <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>. The descendants will use classes with more data inheriting from this. The caller can <b>only read</b> the data from here by using the pBlockKeeper returned by the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> API. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="a15ccc5c9e402fde327bf7187c63c12de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a15ccc5c9e402fde327bf7187c63c12de">&#9670;&nbsp;</a></span>_lock_</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacejazz__elements.html#ac3d6e1b4aca91c99b80bdc759a73699f">Lock32</a> jazz_elements::BlockKeeper::_lock_</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>An atomically updated int to lock the Keeper to support modifying the <a class="el" href="classjazz__elements_1_1Block.html">Block</a>. </p>
-
-</div>
-</div>
-<a id="ac47c204dba5444a0f32680c09abfff84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac47c204dba5444a0f32680c09abfff84">&#9670;&nbsp;</a></span>block_id</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacejazz__elements.html#a4e6d98f21e446010dd09ba4c9d5c372c">BlockId64</a> jazz_elements::BlockKeeper::block_id</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>A 64 bit binary block id. Can be a hash of the block locator, but not necessarily. </p>
-
-</div>
-</div>
-<a id="a174f6f58e5e919301776b676566d20ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a174f6f58e5e919301776b676566d20ed">&#9670;&nbsp;</a></span>data</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="unionjazz__elements_1_1KeeperData.html">KeeperData</a> jazz_elements::BlockKeeper::data</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Some data used by the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> service. </p>
-
-</div>
-</div>
 <a id="aa7dc453a49b83aac350a49b9164db4bc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa7dc453a49b83aac350a49b9164db4bc">&#9670;&nbsp;</a></span>p_block</h2>
 
@@ -179,6 +131,38 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a id="ac47c204dba5444a0f32680c09abfff84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac47c204dba5444a0f32680c09abfff84">&#9670;&nbsp;</a></span>block_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#a4e6d98f21e446010dd09ba4c9d5c372c">BlockId64</a> jazz_elements::BlockKeeper::block_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A 64 bit binary block id. Can be a hash of the block locator, but not necessarily. </p>
+
+</div>
+</div>
+<a id="a15ccc5c9e402fde327bf7187c63c12de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15ccc5c9e402fde327bf7187c63c12de">&#9670;&nbsp;</a></span>_lock_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#ac3d6e1b4aca91c99b80bdc759a73699f">Lock32</a> jazz_elements::BlockKeeper::_lock_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An atomically updated int to lock the Keeper to support modifying the <a class="el" href="classjazz__elements_1_1Block.html">Block</a>. </p>
+
+</div>
+</div>
 <a id="a3de27345f6215939c2dabbb459641cae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3de27345f6215939c2dabbb459641cae">&#9670;&nbsp;</a></span>status</h2>
 
@@ -192,6 +176,22 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The status of the block request (sync or async errors, wait, ready, etc.) </p>
+
+</div>
+</div>
+<a id="a174f6f58e5e919301776b676566d20ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a174f6f58e5e919301776b676566d20ed">&#9670;&nbsp;</a></span>data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="unionjazz__elements_1_1KeeperData.html">KeeperData</a> jazz_elements::BlockKeeper::data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Some data used by the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> service. </p>
 
 </div>
 </div>

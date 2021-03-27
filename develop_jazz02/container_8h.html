@@ -100,6 +100,8 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1Items.html">jazz_elements::Items</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1Names.html">jazz_elements::Names</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html">jazz_elements::Container</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>: A <a class="el" href="classjazz__elements_1_1Service.html">Service</a> to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of this.  <a href="classjazz__elements_1_1Container.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -213,6 +215,8 @@ Typedefs</h2></td></tr>
 <tr class="separator:acf7bf339ba5505b0ecbf219889a6ca8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1ee282228d329b2175b2efa7add9385"><td class="memItemLeft" align="right" valign="top">typedef Name *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#aa1ee282228d329b2175b2efa7add9385">jazz_elements::pName</a></td></tr>
 <tr class="separator:aa1ee282228d329b2175b2efa7add9385"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5f94c0c0a698c9a23e8a5bd1c63f701"><td class="memItemLeft" align="right" valign="top">typedef struct Names *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#af5f94c0c0a698c9a23e8a5bd1c63f701">jazz_elements::pNames</a></td></tr>
+<tr class="separator:af5f94c0c0a698c9a23e8a5bd1c63f701"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a610c62b4b5180ee4bc90df9665e433aa"><td class="memItemLeft" align="right" valign="top">typedef struct Locator *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a610c62b4b5180ee4bc90df9665e433aa">jazz_elements::pLocator</a></td></tr>
 <tr class="separator:a610c62b4b5180ee4bc90df9665e433aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79708585f234be0562fc73f87fb3556b"><td class="memItemLeft" align="right" valign="top">typedef struct Locator *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a79708585f234be0562fc73f87fb3556b">jazz_elements::pL_value</a></td></tr>
@@ -229,232 +233,6 @@ Typedefs</h2></td></tr>
 <tr class="separator:ad8dd34a46d8fb42f85ffb4b95ba8a5f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a5950f65e58ff35f5dad8c5224a9b2c80"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5950f65e58ff35f5dad8c5224a9b2c80">&#9670;&nbsp;</a></span>AS_BEBOP</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define AS_BEBOP&#160;&#160;&#160;2</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Serialize data and metadata. </p>
-
-</div>
-</div>
-<a id="ac3987a3312a08cf295f7c2b34a702514"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3987a3312a08cf295f7c2b34a702514">&#9670;&nbsp;</a></span>AS_CPP</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define AS_CPP&#160;&#160;&#160;3</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Serialize metadata as compilable C++ that can be dynamically linked. </p>
-
-</div>
-</div>
-<a id="a06ad0260c76f8e6c33f94e7a5df148fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06ad0260c76f8e6c33f94e7a5df148fc">&#9670;&nbsp;</a></span>AS_JSON</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define AS_JSON&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Serialize data as JSON. </p>
-
-</div>
-</div>
-<a id="aa16cbf08b2b2aa76c5b3e60a131c3406"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa16cbf08b2b2aa76c5b3e60a131c3406">&#9670;&nbsp;</a></span>BLOCK_STATUS_ASYNC_FAIL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define BLOCK_STATUS_ASYNC_FAIL&#160;&#160;&#160;-1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>BlockKeeper.status: async failed, still locked, call p_owner-&gt;unlock() </p>
-
-</div>
-</div>
-<a id="ab26b3f8a113aaa73ace0d72a60c375d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab26b3f8a113aaa73ace0d72a60c375d4">&#9670;&nbsp;</a></span>BLOCK_STATUS_ASYNC_WAIT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define BLOCK_STATUS_ASYNC_WAIT&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>BlockKeeper.status: async content pending, wait or call p_owner-&gt;sleep() </p>
-
-</div>
-</div>
-<a id="afca414656562222aaf2632260566ecb9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afca414656562222aaf2632260566ecb9">&#9670;&nbsp;</a></span>BLOCK_STATUS_READY</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define BLOCK_STATUS_READY&#160;&#160;&#160;0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Block API (error and status codes) </p>
-<p>BlockKeeper.status: p_block-&gt; is safe to use </p>
-
-</div>
-</div>
-<a id="ac86ffdac274440fb9807640cde901907"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac86ffdac274440fb9807640cde901907">&#9670;&nbsp;</a></span>BLOCK_STATUS_SYNC_FAIL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define BLOCK_STATUS_SYNC_FAIL&#160;&#160;&#160;-2</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>BlockKeeper.status: sync failed, still locked, call p_owner-&gt;unlock() </p>
-
-</div>
-</div>
-<a id="a4b9ea0b37119c24999820299556e5761"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b9ea0b37119c24999820299556e5761">&#9670;&nbsp;</a></span>BLOCK_STATUS_SYNC_UNLOCKED</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define BLOCK_STATUS_SYNC_UNLOCKED&#160;&#160;&#160;-3</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>BlockKeeper.status: block destroying, do nothing, forget the pointer. </p>
-
-</div>
-</div>
-<a id="ae4b61bc7c4d1ff4e151eb984914e902a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4b61bc7c4d1ff4e151eb984914e902a">&#9670;&nbsp;</a></span>BUILD_KIND</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define BUILD_KIND&#160;&#160;&#160;2</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Build a Kind out of metadata items or fail. </p>
-
-</div>
-</div>
-<a id="afedeca28cf0eafaafddf47fc7dda1b59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afedeca28cf0eafaafddf47fc7dda1b59">&#9670;&nbsp;</a></span>BUILD_TUPLE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define BUILD_TUPLE&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Build a Tuple out of data items or fail. </p>
-
-</div>
-</div>
-<a id="acceef3cf4c09cd8099b55a84e0fb3d6f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acceef3cf4c09cd8099b55a84e0fb3d6f">&#9670;&nbsp;</a></span>FILL_NEW_DONT_FILL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define FILL_NEW_DONT_FILL&#160;&#160;&#160;0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Block API (method arguments) </p>
-<p>Don't initialize at all. </p>
-
-</div>
-</div>
-<a id="a1d16b9b4da7601d4b9e29ac69c16147d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d16b9b4da7601d4b9e29ac69c16147d">&#9670;&nbsp;</a></span>FILL_NEW_WITH_NA</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define FILL_NEW_WITH_NA&#160;&#160;&#160;2</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initialize with the appropriate NA for the cell_type. </p>
-
-</div>
-</div>
-<a id="a3164b8d4bc53e4473640af041a905115"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3164b8d4bc53e4473640af041a905115">&#9670;&nbsp;</a></span>FILL_NEW_WITH_ZERO</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define FILL_NEW_WITH_ZERO&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initialize with binary zero. </p>
-
-</div>
-</div>
-<a id="a2c57e29ff7d1d83236f137899ea846e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c57e29ff7d1d83236f137899ea846e1">&#9670;&nbsp;</a></span>FILL_WITH_TEXTFILE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define FILL_WITH_TEXTFILE&#160;&#160;&#160;3</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initialize a tensor with the content of argument p_text in new_jazz_block(). </p>
-
-</div>
-</div>
 <a id="a607a0b73de9c3e6bc9ecdf3fa3f11d59"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a607a0b73de9c3e6bc9ecdf3fa3f11d59">&#9670;&nbsp;</a></span>INCLUDED_JAZZ_ELEMENTS_CONTAINER</h2>
 
@@ -469,36 +247,52 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="a4d08ecdef5fd0e91817f4e6b880659e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d08ecdef5fd0e91817f4e6b880659e9">&#9670;&nbsp;</a></span>LOCK_NUM_RETRIES_BEFORE_YIELD</h2>
+<a id="a834e9a379307f869a10f4da078be5786"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a834e9a379307f869a10f4da078be5786">&#9670;&nbsp;</a></span>NAME_SIZE</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define LOCK_NUM_RETRIES_BEFORE_YIELD&#160;&#160;&#160;100</td>
+          <td class="memname">#define NAME_SIZE&#160;&#160;&#160;32</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Thread safety. </p>
-<p>Number of retries when lock fails before calling this_thread::yield() </p>
+<p>Block API (dimensions of structures) </p>
+<p>Size of a Name (ending 0 included) </p>
 
 </div>
 </div>
-<a id="a1d6ec9f0667f58f74bfaa81980d4f0ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d6ec9f0667f58f74bfaa81980d4f0ab">&#9670;&nbsp;</a></span>LOCK_WEIGHT_OF_WRITE</h2>
+<a id="af71324c57f05ff9e24bd384925dd6b17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af71324c57f05ff9e24bd384925dd6b17">&#9670;&nbsp;</a></span>NAME_LENGTH</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define LOCK_WEIGHT_OF_WRITE&#160;&#160;&#160;46341</td>
+          <td class="memname">#define NAME_LENGTH&#160;&#160;&#160;<a class="el" href="container_8h.html#a834e9a379307f869a10f4da078be5786">NAME_SIZE</a> - 1</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>sqrt(2^31) == # simultaneous readers to outweight a writer == # simultaneous writers to force an overflow </p>
+<p>Maximum length of a Name.name. </p>
+
+</div>
+</div>
+<a id="af20b03f68d82af0a66d9e6c28e390147"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af20b03f68d82af0a66d9e6c28e390147">&#9670;&nbsp;</a></span>MAX_NESTED_CONTAINERS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_NESTED_CONTAINERS&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>(max) sub-container names in a locator (base is resolved to a pointer). </p>
 
 </div>
 </div>
@@ -534,52 +328,229 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="af20b03f68d82af0a66d9e6c28e390147"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af20b03f68d82af0a66d9e6c28e390147">&#9670;&nbsp;</a></span>MAX_NESTED_CONTAINERS</h2>
+<a id="a7a8bfd610ac1e273cd0522d1b7169f68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a8bfd610ac1e273cd0522d1b7169f68">&#9670;&nbsp;</a></span>REGEX_VALIDATE_NAME</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MAX_NESTED_CONTAINERS&#160;&#160;&#160;2</td>
+          <td class="memname">#define REGEX_VALIDATE_NAME&#160;&#160;&#160;&quot;^[a-zA-Z][a-zA-Z0-9_]{0,30}$&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>(max) sub-container names in a locator (base is resolved to a pointer). </p>
+<p>Block API (syntax related) </p>
+<p>Regex validating a Name </p>
 
 </div>
 </div>
-<a id="af71324c57f05ff9e24bd384925dd6b17"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af71324c57f05ff9e24bd384925dd6b17">&#9670;&nbsp;</a></span>NAME_LENGTH</h2>
+<a id="acceef3cf4c09cd8099b55a84e0fb3d6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acceef3cf4c09cd8099b55a84e0fb3d6f">&#9670;&nbsp;</a></span>FILL_NEW_DONT_FILL</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define NAME_LENGTH&#160;&#160;&#160;<a class="el" href="container_8h.html#a834e9a379307f869a10f4da078be5786">NAME_SIZE</a> - 1</td>
+          <td class="memname">#define FILL_NEW_DONT_FILL&#160;&#160;&#160;0</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Maximum length of a Name.name. </p>
+<p>Block API (method arguments) </p>
+<p>Don't initialize at all. </p>
 
 </div>
 </div>
-<a id="a834e9a379307f869a10f4da078be5786"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a834e9a379307f869a10f4da078be5786">&#9670;&nbsp;</a></span>NAME_SIZE</h2>
+<a id="a3164b8d4bc53e4473640af041a905115"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3164b8d4bc53e4473640af041a905115">&#9670;&nbsp;</a></span>FILL_NEW_WITH_ZERO</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define NAME_SIZE&#160;&#160;&#160;32</td>
+          <td class="memname">#define FILL_NEW_WITH_ZERO&#160;&#160;&#160;1</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Block API (dimensions of structures) </p>
-<p>Size of a Name (ending 0 included) </p>
+<p>Initialize with binary zero. </p>
+
+</div>
+</div>
+<a id="a1d16b9b4da7601d4b9e29ac69c16147d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d16b9b4da7601d4b9e29ac69c16147d">&#9670;&nbsp;</a></span>FILL_NEW_WITH_NA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FILL_NEW_WITH_NA&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize with the appropriate NA for the cell_type. </p>
+
+</div>
+</div>
+<a id="a2c57e29ff7d1d83236f137899ea846e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c57e29ff7d1d83236f137899ea846e1">&#9670;&nbsp;</a></span>FILL_WITH_TEXTFILE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FILL_WITH_TEXTFILE&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize a tensor with the content of argument p_text in new_jazz_block(). </p>
+
+</div>
+</div>
+<a id="a06ad0260c76f8e6c33f94e7a5df148fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06ad0260c76f8e6c33f94e7a5df148fc">&#9670;&nbsp;</a></span>AS_JSON</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AS_JSON&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Serialize data as JSON. </p>
+
+</div>
+</div>
+<a id="a5950f65e58ff35f5dad8c5224a9b2c80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5950f65e58ff35f5dad8c5224a9b2c80">&#9670;&nbsp;</a></span>AS_BEBOP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AS_BEBOP&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Serialize data and metadata. </p>
+
+</div>
+</div>
+<a id="ac3987a3312a08cf295f7c2b34a702514"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3987a3312a08cf295f7c2b34a702514">&#9670;&nbsp;</a></span>AS_CPP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AS_CPP&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Serialize metadata as compilable C++ that can be dynamically linked. </p>
+
+</div>
+</div>
+<a id="afedeca28cf0eafaafddf47fc7dda1b59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afedeca28cf0eafaafddf47fc7dda1b59">&#9670;&nbsp;</a></span>BUILD_TUPLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BUILD_TUPLE&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Build a Tuple out of data items or fail. </p>
+
+</div>
+</div>
+<a id="ae4b61bc7c4d1ff4e151eb984914e902a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4b61bc7c4d1ff4e151eb984914e902a">&#9670;&nbsp;</a></span>BUILD_KIND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BUILD_KIND&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Build a Kind out of metadata items or fail. </p>
+
+</div>
+</div>
+<a id="a7e8189787b2b391c56d3ee8a6107af96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e8189787b2b391c56d3ee8a6107af96">&#9670;&nbsp;</a></span>NEW_MAP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NEW_MAP&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Container.new_block(6)(what) constant: Create a new named map inside Volatile. </p>
+
+</div>
+</div>
+<a id="a96d1bbfaf8d75a4ad4c7e543904eebb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96d1bbfaf8d75a4ad4c7e543904eebb9">&#9670;&nbsp;</a></span>NEW_DEQUE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NEW_DEQUE&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Container.new_block(6)(what) constant: Create a new named deque inside Volatile. </p>
+
+</div>
+</div>
+<a id="a901ae42ce2ef0acc237cb53afd85a723"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a901ae42ce2ef0acc237cb53afd85a723">&#9670;&nbsp;</a></span>NEW_TREE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NEW_TREE&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Container.new_block(6)(what) constant: Create a new named tree inside Volatile. </p>
+
+</div>
+</div>
+<a id="a71359eb918d74c8caee980aaba38518b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71359eb918d74c8caee980aaba38518b">&#9670;&nbsp;</a></span>NEW_QUEUE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NEW_QUEUE&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Container.new_block(6)(what) constant: Create a new named queue inside Volatile. </p>
 
 </div>
 </div>
@@ -615,84 +586,117 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="a96d1bbfaf8d75a4ad4c7e543904eebb9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96d1bbfaf8d75a4ad4c7e543904eebb9">&#9670;&nbsp;</a></span>NEW_DEQUE</h2>
+<a id="afca414656562222aaf2632260566ecb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afca414656562222aaf2632260566ecb9">&#9670;&nbsp;</a></span>BLOCK_STATUS_READY</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define NEW_DEQUE&#160;&#160;&#160;2</td>
+          <td class="memname">#define BLOCK_STATUS_READY&#160;&#160;&#160;0</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Container.new_block(6)(what) constant: Create a new named deque inside Volatile. </p>
+<p>Block API (error and status codes) </p>
+<p>BlockKeeper.status: p_block-&gt; is safe to use </p>
 
 </div>
 </div>
-<a id="a7e8189787b2b391c56d3ee8a6107af96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e8189787b2b391c56d3ee8a6107af96">&#9670;&nbsp;</a></span>NEW_MAP</h2>
+<a id="ab26b3f8a113aaa73ace0d72a60c375d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab26b3f8a113aaa73ace0d72a60c375d4">&#9670;&nbsp;</a></span>BLOCK_STATUS_ASYNC_WAIT</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define NEW_MAP&#160;&#160;&#160;1</td>
+          <td class="memname">#define BLOCK_STATUS_ASYNC_WAIT&#160;&#160;&#160;1</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Container.new_block(6)(what) constant: Create a new named map inside Volatile. </p>
+<p>BlockKeeper.status: async content pending, wait or call p_owner-&gt;sleep() </p>
 
 </div>
 </div>
-<a id="a71359eb918d74c8caee980aaba38518b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71359eb918d74c8caee980aaba38518b">&#9670;&nbsp;</a></span>NEW_QUEUE</h2>
+<a id="aa16cbf08b2b2aa76c5b3e60a131c3406"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa16cbf08b2b2aa76c5b3e60a131c3406">&#9670;&nbsp;</a></span>BLOCK_STATUS_ASYNC_FAIL</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define NEW_QUEUE&#160;&#160;&#160;4</td>
+          <td class="memname">#define BLOCK_STATUS_ASYNC_FAIL&#160;&#160;&#160;-1</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Container.new_block(6)(what) constant: Create a new named queue inside Volatile. </p>
+<p>BlockKeeper.status: async failed, still locked, call p_owner-&gt;unlock() </p>
 
 </div>
 </div>
-<a id="a901ae42ce2ef0acc237cb53afd85a723"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a901ae42ce2ef0acc237cb53afd85a723">&#9670;&nbsp;</a></span>NEW_TREE</h2>
+<a id="ac86ffdac274440fb9807640cde901907"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac86ffdac274440fb9807640cde901907">&#9670;&nbsp;</a></span>BLOCK_STATUS_SYNC_FAIL</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define NEW_TREE&#160;&#160;&#160;3</td>
+          <td class="memname">#define BLOCK_STATUS_SYNC_FAIL&#160;&#160;&#160;-2</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Container.new_block(6)(what) constant: Create a new named tree inside Volatile. </p>
+<p>BlockKeeper.status: sync failed, still locked, call p_owner-&gt;unlock() </p>
 
 </div>
 </div>
-<a id="a7a8bfd610ac1e273cd0522d1b7169f68"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a8bfd610ac1e273cd0522d1b7169f68">&#9670;&nbsp;</a></span>REGEX_VALIDATE_NAME</h2>
+<a id="a4b9ea0b37119c24999820299556e5761"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b9ea0b37119c24999820299556e5761">&#9670;&nbsp;</a></span>BLOCK_STATUS_SYNC_UNLOCKED</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define REGEX_VALIDATE_NAME&#160;&#160;&#160;&quot;^[a-zA-Z][a-zA-Z0-9_]{0,30}$&quot;</td>
+          <td class="memname">#define BLOCK_STATUS_SYNC_UNLOCKED&#160;&#160;&#160;-3</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Block API (syntax related) </p>
-<p>Regex validating a Name </p>
+<p>BlockKeeper.status: block destroying, do nothing, forget the pointer. </p>
+
+</div>
+</div>
+<a id="a4d08ecdef5fd0e91817f4e6b880659e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d08ecdef5fd0e91817f4e6b880659e9">&#9670;&nbsp;</a></span>LOCK_NUM_RETRIES_BEFORE_YIELD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOCK_NUM_RETRIES_BEFORE_YIELD&#160;&#160;&#160;100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Thread safety. </p>
+<p>Number of retries when lock fails before calling this_thread::yield() </p>
+
+</div>
+</div>
+<a id="a1d6ec9f0667f58f74bfaa81980d4f0ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d6ec9f0667f58f74bfaa81980d4f0ab">&#9670;&nbsp;</a></span>LOCK_WEIGHT_OF_WRITE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOCK_WEIGHT_OF_WRITE&#160;&#160;&#160;46341</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>sqrt(2^31) == # simultaneous readers to outweight a writer == # simultaneous writers to force an overflow </p>
 
 </div>
 </div>

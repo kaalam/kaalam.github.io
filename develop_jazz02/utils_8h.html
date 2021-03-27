@@ -199,6 +199,22 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a87339d0dea4674c231fdd28f457af3c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87339d0dea4674c231fdd28f457af3c5">&#9670;&nbsp;</a></span>TENBITS_LUT_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TENBITS_LUT_SIZE&#160;&#160;&#160;1024</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The size of a table indexable by all possible output values of <a class="el" href="namespacejazz__elements.html#a3761a7b394e72d1cb065477fa8af2c7f">TenBitsAtAddress()</a> </p>
+
+</div>
+</div>
 <a id="a6ff63e8955665c4a58b1598f2b07c51a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6ff63e8955665c4a58b1598f2b07c51a">&#9670;&nbsp;</a></span>LOG_DEBUG</h2>
 
@@ -213,22 +229,6 @@ Functions</h2></td></tr>
 
 <p>Just for checking, normally not logged, should not exist in case of NDEBUG. In that case, it becomes a LOG_WARN to force removing it. </p>
 <p>The trace levels for argument loglevel in Logger.log() </p>
-
-</div>
-</div>
-<a id="aced66975c154ea0e2a8ec3bc818b4e08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aced66975c154ea0e2a8ec3bc818b4e08">&#9670;&nbsp;</a></span>LOG_ERROR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define LOG_ERROR&#160;&#160;&#160;5</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Something known to be a requisite is failing. The program or task halts due to this. </p>
 
 </div>
 </div>
@@ -280,6 +280,22 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aced66975c154ea0e2a8ec3bc818b4e08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aced66975c154ea0e2a8ec3bc818b4e08">&#9670;&nbsp;</a></span>LOG_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_ERROR&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Something known to be a requisite is failing. The program or task halts due to this. </p>
+
+</div>
+</div>
 <a id="a6773b93f3093658c3dcb569de3b4bdb2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6773b93f3093658c3dcb569de3b4bdb2">&#9670;&nbsp;</a></span>MAX_FILENAME_LENGTH</h2>
 
@@ -293,70 +309,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Maximum length for file names in ConfigFile and Logger. </p>
-
-</div>
-</div>
-<a id="aef62dd0addbabc03039bd3c6d4c4a668"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef62dd0addbabc03039bd3c6d4c4a668">&#9670;&nbsp;</a></span>SERVICE_ERROR_BAD_CONFIG</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SERVICE_ERROR_BAD_CONFIG&#160;&#160;&#160;-2</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Generic error related with configuration parsing. </p>
-
-</div>
-</div>
-<a id="a668a5e75bde99f34bd7e98911e16ff64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a668a5e75bde99f34bd7e98911e16ff64">&#9670;&nbsp;</a></span>SERVICE_ERROR_LOADING_STAT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SERVICE_ERROR_LOADING_STAT&#160;&#160;&#160;-5</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Error happened while loading static resources. </p>
-
-</div>
-</div>
-<a id="a43c6165ae0442cdacc9e2cf862aa6659"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43c6165ae0442cdacc9e2cf862aa6659">&#9670;&nbsp;</a></span>SERVICE_ERROR_NO_MEM</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SERVICE_ERROR_NO_MEM&#160;&#160;&#160;-4</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Specific error where configured allocation RAM failed. </p>
-
-</div>
-</div>
-<a id="a0b7224b36f5b3bd04828318c211139f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b7224b36f5b3bd04828318c211139f4">&#9670;&nbsp;</a></span>SERVICE_ERROR_STARTING</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SERVICE_ERROR_STARTING&#160;&#160;&#160;-3</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Generic error related with starting a service. </p>
 
 </div>
 </div>
@@ -377,22 +329,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a13e3b5996b11b29bd2ba71d6bb4a4259"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13e3b5996b11b29bd2ba71d6bb4a4259">&#9670;&nbsp;</a></span>SERVICE_NOT_IMPLEMENTED</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SERVICE_NOT_IMPLEMENTED&#160;&#160;&#160;-1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returned by the Service class (only descendents should be called.). </p>
-
-</div>
-</div>
 <a id="a48d0664bb96b71c28e02a43f4a9ae405"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a48d0664bb96b71c28e02a43f4a9ae405">&#9670;&nbsp;</a></span>SERVICE_ONGOING_ASYNC_OP</h2>
 
@@ -409,19 +345,83 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a87339d0dea4674c231fdd28f457af3c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a87339d0dea4674c231fdd28f457af3c5">&#9670;&nbsp;</a></span>TENBITS_LUT_SIZE</h2>
+<a id="a13e3b5996b11b29bd2ba71d6bb4a4259"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13e3b5996b11b29bd2ba71d6bb4a4259">&#9670;&nbsp;</a></span>SERVICE_NOT_IMPLEMENTED</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define TENBITS_LUT_SIZE&#160;&#160;&#160;1024</td>
+          <td class="memname">#define SERVICE_NOT_IMPLEMENTED&#160;&#160;&#160;-1</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>The size of a table indexable by all possible output values of <a class="el" href="namespacejazz__elements.html#a3761a7b394e72d1cb065477fa8af2c7f">TenBitsAtAddress()</a> </p>
+<p>Returned by the Service class (only descendents should be called.). </p>
+
+</div>
+</div>
+<a id="aef62dd0addbabc03039bd3c6d4c4a668"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef62dd0addbabc03039bd3c6d4c4a668">&#9670;&nbsp;</a></span>SERVICE_ERROR_BAD_CONFIG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SERVICE_ERROR_BAD_CONFIG&#160;&#160;&#160;-2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generic error related with configuration parsing. </p>
+
+</div>
+</div>
+<a id="a0b7224b36f5b3bd04828318c211139f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b7224b36f5b3bd04828318c211139f4">&#9670;&nbsp;</a></span>SERVICE_ERROR_STARTING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SERVICE_ERROR_STARTING&#160;&#160;&#160;-3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generic error related with starting a service. </p>
+
+</div>
+</div>
+<a id="a43c6165ae0442cdacc9e2cf862aa6659"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43c6165ae0442cdacc9e2cf862aa6659">&#9670;&nbsp;</a></span>SERVICE_ERROR_NO_MEM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SERVICE_ERROR_NO_MEM&#160;&#160;&#160;-4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Specific error where configured allocation RAM failed. </p>
+
+</div>
+</div>
+<a id="a668a5e75bde99f34bd7e98911e16ff64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a668a5e75bde99f34bd7e98911e16ff64">&#9670;&nbsp;</a></span>SERVICE_ERROR_LOADING_STAT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SERVICE_ERROR_LOADING_STAT&#160;&#160;&#160;-5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Error happened while loading static resources. </p>
 
 </div>
 </div>

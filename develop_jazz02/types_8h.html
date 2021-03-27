@@ -160,11 +160,11 @@ Macros</h2></td></tr>
 <tr class="memitem:ab13c9ec93d22779d56a6254e158fd166"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#ab13c9ec93d22779d56a6254e158fd166">CELL_TYPE_DOUBLE</a>&#160;&#160;&#160;0x208</td></tr>
 <tr class="memdesc:ab13c9ec93d22779d56a6254e158fd166"><td class="mdescLeft">&#160;</td><td class="mdescRight">A vector of floating point numbers. Binary compatible with an R REALSXP (vector of numeric)  <a href="types_8h.html#ab13c9ec93d22779d56a6254e158fd166">More...</a><br /></td></tr>
 <tr class="separator:ab13c9ec93d22779d56a6254e158fd166"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7957a6fa4db70b288f07f80953849764"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a7957a6fa4db70b288f07f80953849764">CELL_TYPE_TUPLE_ITEM</a>&#160;&#160;&#160;0x040</td></tr>
-<tr class="memdesc:a7957a6fa4db70b288f07f80953849764"><td class="mdescLeft">&#160;</td><td class="mdescRight">A vector of TensorDim (in a Tuple)  <a href="types_8h.html#a7957a6fa4db70b288f07f80953849764">More...</a><br /></td></tr>
+<tr class="memitem:a7957a6fa4db70b288f07f80953849764"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a7957a6fa4db70b288f07f80953849764">CELL_TYPE_TUPLE_ITEM</a>&#160;&#160;&#160;0x030</td></tr>
+<tr class="memdesc:a7957a6fa4db70b288f07f80953849764"><td class="mdescLeft">&#160;</td><td class="mdescRight">A vector of ItemHeader (in a Tuple)  <a href="types_8h.html#a7957a6fa4db70b288f07f80953849764">More...</a><br /></td></tr>
 <tr class="separator:a7957a6fa4db70b288f07f80953849764"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae848294698519fda41816831fb4d953e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#ae848294698519fda41816831fb4d953e">CELL_TYPE_KIND_ITEM</a>&#160;&#160;&#160;0x140</td></tr>
-<tr class="memdesc:ae848294698519fda41816831fb4d953e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A vector of TensorDim (in a Kind)  <a href="types_8h.html#ae848294698519fda41816831fb4d953e">More...</a><br /></td></tr>
+<tr class="memitem:ae848294698519fda41816831fb4d953e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#ae848294698519fda41816831fb4d953e">CELL_TYPE_KIND_ITEM</a>&#160;&#160;&#160;0x130</td></tr>
+<tr class="memdesc:ae848294698519fda41816831fb4d953e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A vector of ItemHeader (in a Kind)  <a href="types_8h.html#ae848294698519fda41816831fb4d953e">More...</a><br /></td></tr>
 <tr class="separator:ae848294698519fda41816831fb4d953e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a848460d85f2782cc1a6dcb735193ec2c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a848460d85f2782cc1a6dcb735193ec2c">BYTE_BOOLEAN_NA</a>&#160;&#160;&#160;0x0ff</td></tr>
 <tr class="memdesc:a848460d85f2782cc1a6dcb735193ec2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA for 8-bit boolean is binary 0xff. Type does not exist in R.  <a href="types_8h.html#a848460d85f2782cc1a6dcb735193ec2c">More...</a><br /></td></tr>
@@ -254,6 +254,20 @@ Typedefs</h2></td></tr>
 <tr class="separator:ab5c3f57ec69caa19191f00178de0c927"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a198723ea7b77deeeb47c9c3e21319143"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a198723ea7b77deeeb47c9c3e21319143">&#9670;&nbsp;</a></span>INCLUDED_JAZZ_ELEMENTS_TYPES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define INCLUDED_JAZZ_ELEMENTS_TYPES</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a4511c6b8167369401ab5eefd0c5d2b0a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4511c6b8167369401ab5eefd0c5d2b0a">&#9670;&nbsp;</a></span>ANSWER_LENGTH</h2>
 
@@ -269,179 +283,66 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="addb3f9c44e627a81c7471f876c0de7a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#addb3f9c44e627a81c7471f876c0de7a7">&#9670;&nbsp;</a></span>BLOCK_ATTRIB_</h2>
+<a id="a66db4a37d11679cd51897ddd6fdf4c63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66db4a37d11679cd51897ddd6fdf4c63">&#9670;&nbsp;</a></span>SAFE_URL_LENGTH</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define BLOCK_ATTRIB_</td>
+          <td class="memname">#define SAFE_URL_LENGTH&#160;&#160;&#160;2048</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Attribute types for Block descendants. </p>
+<p>Maximum safe assumption of URL length for both parsing and forwarding. </p>
 
 </div>
 </div>
-<a id="abd653b24f4c6faa6c0abbca98396ee14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd653b24f4c6faa6c0abbca98396ee14">&#9670;&nbsp;</a></span>BLOCK_ATTRIB_BLOCKTYPE</h2>
+<a id="a5ca562590a5d4d166dfef09d15c7f3ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ca562590a5d4d166dfef09d15c7f3ac">&#9670;&nbsp;</a></span>JAZZ_MAX_NUM_THREADS</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define BLOCK_ATTRIB_BLOCKTYPE&#160;&#160;&#160;0</td>
+          <td class="memname">#define JAZZ_MAX_NUM_THREADS&#160;&#160;&#160;64</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>The fundamental block type (E.g., all tuples are tuple, filter exists, but table doesn't.) </p>
+<p>Number of elements preallocated in thread-specific buffers. Jazz is thread safe in a caller transparent way. The Block level API does not normally modify blocks. The few exceptions have a block-specific lock in the BlockKeeper. Services also have a service-specific lock. The few services that require full thread awareness (Bebop and API) will allocate a number of Core or APIexecutor objects equal to JAZZ_MAX_NUM_THREADS inside the service. This number can be modified down (but not up) via the configuration keys: MHD_THREAD_POOL_SIZE and BEBOP_NUM_CORES. As expected, MHD_THREAD_POOL_SIZE also defines the thread pool size allocated in libmicrohttpd. </p>
 
 </div>
 </div>
-<a id="a1632b46de9c3aee2960a13b603f02aa8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1632b46de9c3aee2960a13b603f02aa8">&#9670;&nbsp;</a></span>BLOCK_ATTRIB_DESTKIND</h2>
+<a id="a5dfd5a365563c2e8cf13a83a127af9ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dfd5a365563c2e8cf13a83a127af9ac">&#9670;&nbsp;</a></span>MAX_TENSOR_RANK</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define BLOCK_ATTRIB_DESTKIND&#160;&#160;&#160;4</td>
+          <td class="memname">#define MAX_TENSOR_RANK&#160;&#160;&#160;6</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>The location of the destination kind (for fields, fluxes and thing with two Kinds) </p>
+<p>Maximum rank = 6, E.g. a 2D array of raw videos (row, column, frame, x, y, color) </p>
 
 </div>
 </div>
-<a id="a9d7c2949a514753102e9e8d5cdc4c377"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d7c2949a514753102e9e8d5cdc4c377">&#9670;&nbsp;</a></span>BLOCK_ATTRIB_KIND</h2>
+<a id="a5a4d6ca6f3612a6f6f377b5abe382b5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a4d6ca6f3612a6f6f377b5abe382b5b">&#9670;&nbsp;</a></span>MAX_CHECKS_4_MATCH</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define BLOCK_ATTRIB_KIND&#160;&#160;&#160;2</td>
+          <td class="memname">#define MAX_CHECKS_4_MATCH&#160;&#160;&#160;25</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>The location of the kind (for tuples and descendants) </p>
-
-</div>
-</div>
-<a id="ac6ecb0dac73e0a6c0623db06dfb99cb0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6ecb0dac73e0a6c0623db06dfb99cb0">&#9670;&nbsp;</a></span>BLOCK_ATTRIB_LANGUAGE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define BLOCK_ATTRIB_LANGUAGE&#160;&#160;&#160;7</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>An http language identifier that will be returned in a / interface GET call. </p>
-
-</div>
-</div>
-<a id="a58f5d93b0afc788551f9971045c520e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58f5d93b0afc788551f9971045c520e2">&#9670;&nbsp;</a></span>BLOCK_ATTRIB_MIMETYPE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define BLOCK_ATTRIB_MIMETYPE&#160;&#160;&#160;5</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The mime type (can also be some proprietary file spec. E.g., "Adobe PhotoShop Image") </p>
-
-</div>
-</div>
-<a id="a5f1676adc03a84fe7e486ab708b29ed2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f1676adc03a84fe7e486ab708b29ed2">&#9670;&nbsp;</a></span>BLOCK_ATTRIB_SOURCEKIND</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define BLOCK_ATTRIB_SOURCEKIND&#160;&#160;&#160;3</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The location of the source kind (for fields, fluxes and thing with two Kinds) </p>
-
-</div>
-</div>
-<a id="a4e204ce79c0ad0844c02037c327a6844"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e204ce79c0ad0844c02037c327a6844">&#9670;&nbsp;</a></span>BLOCK_ATTRIB_TYPE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define BLOCK_ATTRIB_TYPE&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The name of the c++ class (Flux, Group, Table, ... but also Block or Kind) </p>
-
-</div>
-</div>
-<a id="aa79dbbdad5dd1fa8943cb14a55221622"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa79dbbdad5dd1fa8943cb14a55221622">&#9670;&nbsp;</a></span>BLOCK_ATTRIB_URL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define BLOCK_ATTRIB_URL&#160;&#160;&#160;6</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>A url for the server to expose the file by. </p>
-
-</div>
-</div>
-<a id="aaed51ff6508ecf551edd855b99e2da39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaed51ff6508ecf551edd855b99e2da39">&#9670;&nbsp;</a></span>BOOLEAN_NA</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define BOOLEAN_NA&#160;&#160;&#160;0x0ff</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>NA for a 32-bit boolean is binary 0xff. This is R compatible. </p>
-
-</div>
-</div>
-<a id="a848460d85f2782cc1a6dcb735193ec2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a848460d85f2782cc1a6dcb735193ec2c">&#9670;&nbsp;</a></span>BYTE_BOOLEAN_NA</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define BYTE_BOOLEAN_NA&#160;&#160;&#160;0x0ff</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>NA for 8-bit boolean is binary 0xff. Type does not exist in R. </p>
+<p>Maximum number of tries to match in get_string_offset() before setting stop_check_4_match. </p>
 
 </div>
 </div>
@@ -458,22 +359,6 @@ Typedefs</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Different values for Block.cell_type. </p>
-
-</div>
-</div>
-<a id="afc8d8705af6dfe573a3d67eaa2f6d0f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc8d8705af6dfe573a3d67eaa2f6d0f9">&#9670;&nbsp;</a></span>CELL_TYPE_BOOLEAN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CELL_TYPE_BOOLEAN&#160;&#160;&#160;0x304</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>A tensor of 32-bit booleans: 0, 1, BOOLEAN_NA = NA. </p>
 
 </div>
 </div>
@@ -509,19 +394,19 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="ab13c9ec93d22779d56a6254e158fd166"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab13c9ec93d22779d56a6254e158fd166">&#9670;&nbsp;</a></span>CELL_TYPE_DOUBLE</h2>
+<a id="a7c8ac0338590065772caf2d1406f018e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c8ac0338590065772caf2d1406f018e">&#9670;&nbsp;</a></span>CELL_TYPE_INTEGER</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define CELL_TYPE_DOUBLE&#160;&#160;&#160;0x208</td>
+          <td class="memname">#define CELL_TYPE_INTEGER&#160;&#160;&#160;0x004</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>A vector of floating point numbers. Binary compatible with an R REALSXP (vector of numeric) </p>
+<p>A tensor of 32-bit signed integers. NA is INTEGER_NA. </p>
 
 </div>
 </div>
@@ -557,51 +442,19 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="a7c8ac0338590065772caf2d1406f018e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c8ac0338590065772caf2d1406f018e">&#9670;&nbsp;</a></span>CELL_TYPE_INTEGER</h2>
+<a id="afc8d8705af6dfe573a3d67eaa2f6d0f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc8d8705af6dfe573a3d67eaa2f6d0f9">&#9670;&nbsp;</a></span>CELL_TYPE_BOOLEAN</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define CELL_TYPE_INTEGER&#160;&#160;&#160;0x004</td>
+          <td class="memname">#define CELL_TYPE_BOOLEAN&#160;&#160;&#160;0x304</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>A tensor of 32-bit signed integers. NA is INTEGER_NA. </p>
-
-</div>
-</div>
-<a id="ae848294698519fda41816831fb4d953e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae848294698519fda41816831fb4d953e">&#9670;&nbsp;</a></span>CELL_TYPE_KIND_ITEM</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CELL_TYPE_KIND_ITEM&#160;&#160;&#160;0x140</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>A vector of TensorDim (in a Kind) </p>
-
-</div>
-</div>
-<a id="aa78915add7f8cb20ecfa873ce9bad9c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa78915add7f8cb20ecfa873ce9bad9c9">&#9670;&nbsp;</a></span>CELL_TYPE_LONG_INTEGER</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CELL_TYPE_LONG_INTEGER&#160;&#160;&#160;0x008</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>A tensor of 64-bit signed integers. NA is LONG_INTEGER_NA. </p>
+<p>A tensor of 32-bit booleans: 0, 1, BOOLEAN_NA = NA. </p>
 
 </div>
 </div>
@@ -637,6 +490,22 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
+<a id="aa78915add7f8cb20ecfa873ce9bad9c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa78915add7f8cb20ecfa873ce9bad9c9">&#9670;&nbsp;</a></span>CELL_TYPE_LONG_INTEGER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CELL_TYPE_LONG_INTEGER&#160;&#160;&#160;0x008</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A tensor of 64-bit signed integers. NA is LONG_INTEGER_NA. </p>
+
+</div>
+</div>
 <a id="aab43509220e959be3a7f8b963471d59f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aab43509220e959be3a7f8b963471d59f">&#9670;&nbsp;</a></span>CELL_TYPE_TIME</h2>
 
@@ -653,6 +522,22 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
+<a id="ab13c9ec93d22779d56a6254e158fd166"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab13c9ec93d22779d56a6254e158fd166">&#9670;&nbsp;</a></span>CELL_TYPE_DOUBLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CELL_TYPE_DOUBLE&#160;&#160;&#160;0x208</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A vector of floating point numbers. Binary compatible with an R REALSXP (vector of numeric) </p>
+
+</div>
+</div>
 <a id="a7957a6fa4db70b288f07f80953849764"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7957a6fa4db70b288f07f80953849764">&#9670;&nbsp;</a></span>CELL_TYPE_TUPLE_ITEM</h2>
 
@@ -660,12 +545,156 @@ Typedefs</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define CELL_TYPE_TUPLE_ITEM&#160;&#160;&#160;0x040</td>
+          <td class="memname">#define CELL_TYPE_TUPLE_ITEM&#160;&#160;&#160;0x030</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>A vector of TensorDim (in a Tuple) </p>
+<p>A vector of ItemHeader (in a Tuple) </p>
+
+</div>
+</div>
+<a id="ae848294698519fda41816831fb4d953e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae848294698519fda41816831fb4d953e">&#9670;&nbsp;</a></span>CELL_TYPE_KIND_ITEM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CELL_TYPE_KIND_ITEM&#160;&#160;&#160;0x130</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A vector of ItemHeader (in a Kind) </p>
+
+</div>
+</div>
+<a id="a848460d85f2782cc1a6dcb735193ec2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a848460d85f2782cc1a6dcb735193ec2c">&#9670;&nbsp;</a></span>BYTE_BOOLEAN_NA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BYTE_BOOLEAN_NA&#160;&#160;&#160;0x0ff</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA for 8-bit boolean is binary 0xff. Type does not exist in R. </p>
+
+</div>
+</div>
+<a id="aaed51ff6508ecf551edd855b99e2da39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaed51ff6508ecf551edd855b99e2da39">&#9670;&nbsp;</a></span>BOOLEAN_NA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOOLEAN_NA&#160;&#160;&#160;0x0ff</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA for a 32-bit boolean is binary 0xff. This is R compatible. </p>
+
+</div>
+</div>
+<a id="a5552fe209cb40f52acd534917ba02003"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5552fe209cb40f52acd534917ba02003">&#9670;&nbsp;</a></span>INTEGER_NA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define INTEGER_NA&#160;&#160;&#160;INT_MIN</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA for a 32-bit integer. This is R compatible. </p>
+
+</div>
+</div>
+<a id="a654cf0e7a3ce4a4086e50034da7ca382"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a654cf0e7a3ce4a4086e50034da7ca382">&#9670;&nbsp;</a></span>SINGLE_NA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SINGLE_NA&#160;&#160;&#160;F_NA</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA for a float is the value returned by nanf(). Type does not exist in R. </p>
+
+</div>
+</div>
+<a id="a28e3ab24f96726efb6644ce6fa0604dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28e3ab24f96726efb6644ce6fa0604dc">&#9670;&nbsp;</a></span>STRING_NA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STRING_NA&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA for a string coded as CELL_TYPE_STRING. </p>
+
+</div>
+</div>
+<a id="ade89d8e9a2967c917e13e49e6cbc600a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade89d8e9a2967c917e13e49e6cbc600a">&#9670;&nbsp;</a></span>STRING_EMPTY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STRING_EMPTY&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An empty string coded as CELL_TYPE_STRING. </p>
+
+</div>
+</div>
+<a id="a957a36b73d62c6c1377de4f7736f4f13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a957a36b73d62c6c1377de4f7736f4f13">&#9670;&nbsp;</a></span>LONG_INTEGER_NA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LONG_INTEGER_NA&#160;&#160;&#160;LLONG_MIN</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA for a 64-bit integer. Type does not exist in R. </p>
+
+</div>
+</div>
+<a id="a84734246632d208bbe94f23af82d3d07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84734246632d208bbe94f23af82d3d07">&#9670;&nbsp;</a></span>TIME_POINT_NA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TIME_POINT_NA&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NA for a CELL_TYPE_TIME is a 64-bit zero. Type does not exist in R. </p>
 
 </div>
 </div>
@@ -701,6 +730,22 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
+<a id="a5abba7b90934a98d6f63ca2bf2c512e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5abba7b90934a98d6f63ca2bf2c512e3">&#9670;&nbsp;</a></span>FILTER_TYPE_NOTAFILTER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FILTER_TYPE_NOTAFILTER&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This Block cannot be used as a filter. A try to use it in new_jazz_block() will fail. </p>
+
+</div>
+</div>
 <a id="a2a326fa953bd95451f02064edffb1e2b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2a326fa953bd95451f02064edffb1e2b">&#9670;&nbsp;</a></span>FILTER_TYPE_BOOLEAN</h2>
 
@@ -733,67 +778,6 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="a5abba7b90934a98d6f63ca2bf2c512e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5abba7b90934a98d6f63ca2bf2c512e3">&#9670;&nbsp;</a></span>FILTER_TYPE_NOTAFILTER</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define FILTER_TYPE_NOTAFILTER&#160;&#160;&#160;0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This Block cannot be used as a filter. A try to use it in new_jazz_block() will fail. </p>
-
-</div>
-</div>
-<a id="a198723ea7b77deeeb47c9c3e21319143"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a198723ea7b77deeeb47c9c3e21319143">&#9670;&nbsp;</a></span>INCLUDED_JAZZ_ELEMENTS_TYPES</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define INCLUDED_JAZZ_ELEMENTS_TYPES</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5552fe209cb40f52acd534917ba02003"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5552fe209cb40f52acd534917ba02003">&#9670;&nbsp;</a></span>INTEGER_NA</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define INTEGER_NA&#160;&#160;&#160;INT_MIN</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>NA for a 32-bit integer. This is R compatible. </p>
-
-</div>
-</div>
-<a id="a5ca562590a5d4d166dfef09d15c7f3ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ca562590a5d4d166dfef09d15c7f3ac">&#9670;&nbsp;</a></span>JAZZ_MAX_NUM_THREADS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define JAZZ_MAX_NUM_THREADS&#160;&#160;&#160;64</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Number of elements preallocated in thread-specific buffers. Jazz is thread safe in a caller transparent way. The Block level API does not normally modify blocks. The few exceptions have a block-specific lock in the BlockKeeper. Services also have a service-specific lock. The few services that require full thread awareness (Bebop and API) will allocate a number of Core or APIexecutor objects equal to JAZZ_MAX_NUM_THREADS inside the service. This number can be modified down (but not up) via the configuration keys: MHD_THREAD_POOL_SIZE and BEBOP_NUM_CORES. As expected, MHD_THREAD_POOL_SIZE also defines the thread pool size allocated in libmicrohttpd. </p>
-
-</div>
-</div>
 <a id="a8002d26924d9e68cc1c5bbe96097b747"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8002d26924d9e68cc1c5bbe96097b747">&#9670;&nbsp;</a></span>KIND_TYPE_</h2>
 
@@ -807,22 +791,6 @@ Typedefs</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Possible return values of Kind.kind_audit() and Tuple.tuple_audit() </p>
-
-</div>
-</div>
-<a id="adffaa7a483445b56ec3a976adf786ef5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adffaa7a483445b56ec3a976adf786ef5">&#9670;&nbsp;</a></span>KIND_TYPE_KIND</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define KIND_TYPE_KIND&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This Block is a valid Kind. </p>
 
 </div>
 </div>
@@ -842,6 +810,22 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
+<a id="adffaa7a483445b56ec3a976adf786ef5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adffaa7a483445b56ec3a976adf786ef5">&#9670;&nbsp;</a></span>KIND_TYPE_KIND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KIND_TYPE_KIND&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This Block is a valid Kind. </p>
+
+</div>
+</div>
 <a id="aee26cee2c2dcb7df88fe62837a867aa2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aee26cee2c2dcb7df88fe62837a867aa2">&#9670;&nbsp;</a></span>KIND_TYPE_TUPLE</h2>
 
@@ -858,131 +842,147 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="a957a36b73d62c6c1377de4f7736f4f13"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a957a36b73d62c6c1377de4f7736f4f13">&#9670;&nbsp;</a></span>LONG_INTEGER_NA</h2>
+<a id="addb3f9c44e627a81c7471f876c0de7a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addb3f9c44e627a81c7471f876c0de7a7">&#9670;&nbsp;</a></span>BLOCK_ATTRIB_</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define LONG_INTEGER_NA&#160;&#160;&#160;LLONG_MIN</td>
+          <td class="memname">#define BLOCK_ATTRIB_</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>NA for a 64-bit integer. Type does not exist in R. </p>
+<p>Attribute types for Block descendants. </p>
 
 </div>
 </div>
-<a id="a5a4d6ca6f3612a6f6f377b5abe382b5b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a4d6ca6f3612a6f6f377b5abe382b5b">&#9670;&nbsp;</a></span>MAX_CHECKS_4_MATCH</h2>
+<a id="abd653b24f4c6faa6c0abbca98396ee14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd653b24f4c6faa6c0abbca98396ee14">&#9670;&nbsp;</a></span>BLOCK_ATTRIB_BLOCKTYPE</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MAX_CHECKS_4_MATCH&#160;&#160;&#160;25</td>
+          <td class="memname">#define BLOCK_ATTRIB_BLOCKTYPE&#160;&#160;&#160;0</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Maximum number of tries to match in get_string_offset() before setting stop_check_4_match. </p>
+<p>The fundamental block type (E.g., all tuples are tuple, filter exists, but table doesn't.) </p>
 
 </div>
 </div>
-<a id="a5dfd5a365563c2e8cf13a83a127af9ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5dfd5a365563c2e8cf13a83a127af9ac">&#9670;&nbsp;</a></span>MAX_TENSOR_RANK</h2>
+<a id="a4e204ce79c0ad0844c02037c327a6844"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e204ce79c0ad0844c02037c327a6844">&#9670;&nbsp;</a></span>BLOCK_ATTRIB_TYPE</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MAX_TENSOR_RANK&#160;&#160;&#160;6</td>
+          <td class="memname">#define BLOCK_ATTRIB_TYPE&#160;&#160;&#160;1</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Maximum rank = 6, E.g. a 2D array of raw videos (row, column, frame, x, y, color) </p>
+<p>The name of the c++ class (Flux, Group, Table, ... but also Block or Kind) </p>
 
 </div>
 </div>
-<a id="a66db4a37d11679cd51897ddd6fdf4c63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66db4a37d11679cd51897ddd6fdf4c63">&#9670;&nbsp;</a></span>SAFE_URL_LENGTH</h2>
+<a id="a9d7c2949a514753102e9e8d5cdc4c377"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d7c2949a514753102e9e8d5cdc4c377">&#9670;&nbsp;</a></span>BLOCK_ATTRIB_KIND</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define SAFE_URL_LENGTH&#160;&#160;&#160;2048</td>
+          <td class="memname">#define BLOCK_ATTRIB_KIND&#160;&#160;&#160;2</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Maximum safe assumption of URL length for both parsing and forwarding. </p>
+<p>The location of the kind (for tuples and descendants) </p>
 
 </div>
 </div>
-<a id="a654cf0e7a3ce4a4086e50034da7ca382"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a654cf0e7a3ce4a4086e50034da7ca382">&#9670;&nbsp;</a></span>SINGLE_NA</h2>
+<a id="a5f1676adc03a84fe7e486ab708b29ed2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f1676adc03a84fe7e486ab708b29ed2">&#9670;&nbsp;</a></span>BLOCK_ATTRIB_SOURCEKIND</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define SINGLE_NA&#160;&#160;&#160;F_NA</td>
+          <td class="memname">#define BLOCK_ATTRIB_SOURCEKIND&#160;&#160;&#160;3</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>NA for a float is the value returned by nanf(). Type does not exist in R. </p>
+<p>The location of the source kind (for fields, fluxes and thing with two Kinds) </p>
 
 </div>
 </div>
-<a id="ade89d8e9a2967c917e13e49e6cbc600a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade89d8e9a2967c917e13e49e6cbc600a">&#9670;&nbsp;</a></span>STRING_EMPTY</h2>
+<a id="a1632b46de9c3aee2960a13b603f02aa8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1632b46de9c3aee2960a13b603f02aa8">&#9670;&nbsp;</a></span>BLOCK_ATTRIB_DESTKIND</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define STRING_EMPTY&#160;&#160;&#160;1</td>
+          <td class="memname">#define BLOCK_ATTRIB_DESTKIND&#160;&#160;&#160;4</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>An empty string coded as CELL_TYPE_STRING. </p>
+<p>The location of the destination kind (for fields, fluxes and thing with two Kinds) </p>
 
 </div>
 </div>
-<a id="a28e3ab24f96726efb6644ce6fa0604dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28e3ab24f96726efb6644ce6fa0604dc">&#9670;&nbsp;</a></span>STRING_NA</h2>
+<a id="a58f5d93b0afc788551f9971045c520e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58f5d93b0afc788551f9971045c520e2">&#9670;&nbsp;</a></span>BLOCK_ATTRIB_MIMETYPE</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define STRING_NA&#160;&#160;&#160;0</td>
+          <td class="memname">#define BLOCK_ATTRIB_MIMETYPE&#160;&#160;&#160;5</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>NA for a string coded as CELL_TYPE_STRING. </p>
+<p>The mime type (can also be some proprietary file spec. E.g., "Adobe PhotoShop Image") </p>
 
 </div>
 </div>
-<a id="a84734246632d208bbe94f23af82d3d07"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84734246632d208bbe94f23af82d3d07">&#9670;&nbsp;</a></span>TIME_POINT_NA</h2>
+<a id="aa79dbbdad5dd1fa8943cb14a55221622"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa79dbbdad5dd1fa8943cb14a55221622">&#9670;&nbsp;</a></span>BLOCK_ATTRIB_URL</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define TIME_POINT_NA&#160;&#160;&#160;0</td>
+          <td class="memname">#define BLOCK_ATTRIB_URL&#160;&#160;&#160;6</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>NA for a CELL_TYPE_TIME is a 64-bit zero. Type does not exist in R. </p>
+<p>A url for the server to expose the file by. </p>
+
+</div>
+</div>
+<a id="ac6ecb0dac73e0a6c0623db06dfb99cb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6ecb0dac73e0a6c0623db06dfb99cb0">&#9670;&nbsp;</a></span>BLOCK_ATTRIB_LANGUAGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BLOCK_ATTRIB_LANGUAGE&#160;&#160;&#160;7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An http language identifier that will be returned in a / interface GET call. </p>
 
 </div>
 </div>

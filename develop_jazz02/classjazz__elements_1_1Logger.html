@@ -221,33 +221,6 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a2e28f31a318bc65d7d65dd7c4882558d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e28f31a318bc65d7d65dd7c4882558d">&#9670;&nbsp;</a></span>InitLogger()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void jazz_elements::Logger::InitLogger </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Common part of the constructor has been emancipated as a private argument-less method to avoid repeating code.</p>
-<p>Sets the stopwatch origin in big_bang. Tries to open the file .. .. if successful, logs out a new execution message with level LOG_INFO .. if failed, clears the file_name (that can be queried via <a class="el" href="classjazz__elements_1_1Logger.html#a7ec7a74b330b3b97daea038f1081cef9">get_output_file_name()</a>) </p>
-
-</div>
-</div>
 <a id="a0ad64ce2159712169ded90c2d8459216"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0ad64ce2159712169ded90c2d8459216">&#9670;&nbsp;</a></span>log()</h2>
 
@@ -291,54 +264,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="afe14c93dbf7a400f4f5ffd4b947f3963"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe14c93dbf7a400f4f5ffd4b947f3963">&#9670;&nbsp;</a></span>log_printf() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void jazz_elements::Logger::log_printf </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>loglevel</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>fmt</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">va_list&#160;</td>
-          <td class="paramname"><em>args</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Create a log event with a printf style string including a variadic list of parameters.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">loglevel</td><td>The trace level. (see <a class="el" href="classjazz__elements_1_1Logger.html#a0ad64ce2159712169ded90c2d8459216">Logger::log()</a>) </td></tr>
-    <tr><td class="paramname">fmt</td><td>The printf-style format string. </td></tr>
-    <tr><td class="paramname">args</td><td>The list of parameters as a va_list. <pre class="fragment">It is a wrapper function calling Logger::log(). (See Logger::log() for details.)
-
-NOTE: This does not check buffer allocation! Use it for short results.
-</pre> </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a0a78222ffe95b784eac088545c656f67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a78222ffe95b784eac088545c656f67">&#9670;&nbsp;</a></span>log_printf() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a78222ffe95b784eac088545c656f67">&#9670;&nbsp;</a></span>log_printf() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -383,9 +310,54 @@ NOTE: This does not check buffer allocation! Use it for short results.
 
 </div>
 </div>
-<h2 class="groupheader">Field Documentation</h2>
-<a id="a07020eabf3e6c31bc7acf679fb4e2267"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07020eabf3e6c31bc7acf679fb4e2267">&#9670;&nbsp;</a></span>big_bang</h2>
+<a id="afe14c93dbf7a400f4f5ffd4b947f3963"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe14c93dbf7a400f4f5ffd4b947f3963">&#9670;&nbsp;</a></span>log_printf() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void jazz_elements::Logger::log_printf </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>loglevel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">va_list&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Create a log event with a printf style string including a variadic list of parameters.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">loglevel</td><td>The trace level. (see <a class="el" href="classjazz__elements_1_1Logger.html#a0ad64ce2159712169ded90c2d8459216">Logger::log()</a>) </td></tr>
+    <tr><td class="paramname">fmt</td><td>The printf-style format string. </td></tr>
+    <tr><td class="paramname">args</td><td>The list of parameters as a va_list. <pre class="fragment">It is a wrapper function calling Logger::log(). (See Logger::log() for details.)
+
+NOTE: This does not check buffer allocation! Use it for short results.
+</pre> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2e28f31a318bc65d7d65dd7c4882558d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e28f31a318bc65d7d65dd7c4882558d">&#9670;&nbsp;</a></span>InitLogger()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -394,7 +366,10 @@ NOTE: This does not check buffer allocation! Use it for short results.
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacejazz__elements.html#aa7e5adf7a32b3080ea959153d2b6aee9">jazz_elements::TimePoint</a> jazz_elements::Logger::big_bang</td>
+          <td class="memname">void jazz_elements::Logger::InitLogger </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -403,11 +378,14 @@ NOTE: This does not check buffer allocation! Use it for short results.
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Common part of the constructor has been emancipated as a private argument-less method to avoid repeating code.</p>
+<p>Sets the stopwatch origin in big_bang. Tries to open the file .. .. if successful, logs out a new execution message with level LOG_INFO .. if failed, clears the file_name (that can be queried via <a class="el" href="classjazz__elements_1_1Logger.html#a7ec7a74b330b3b97daea038f1081cef9">get_output_file_name()</a>) </p>
 
 </div>
 </div>
-<a id="a44cf3c42fc2332c0eb226fee16bd3683"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a44cf3c42fc2332c0eb226fee16bd3683">&#9670;&nbsp;</a></span>f_buff</h2>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a4d787c78ad25b3fbc78ddeaece61a566"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d787c78ad25b3fbc78ddeaece61a566">&#9670;&nbsp;</a></span>file_name</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -416,7 +394,7 @@ NOTE: This does not check buffer allocation! Use it for short results.
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::filebuf* jazz_elements::Logger::f_buff</td>
+          <td class="memname">char jazz_elements::Logger::file_name[<a class="el" href="utils_8h.html#a6773b93f3093658c3dcb569de3b4bdb2">MAX_FILENAME_LENGTH</a>]</td>
         </tr>
       </table>
   </td>
@@ -450,8 +428,8 @@ NOTE: This does not check buffer allocation! Use it for short results.
 
 </div>
 </div>
-<a id="a4d787c78ad25b3fbc78ddeaece61a566"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d787c78ad25b3fbc78ddeaece61a566">&#9670;&nbsp;</a></span>file_name</h2>
+<a id="a44cf3c42fc2332c0eb226fee16bd3683"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44cf3c42fc2332c0eb226fee16bd3683">&#9670;&nbsp;</a></span>f_buff</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -460,7 +438,29 @@ NOTE: This does not check buffer allocation! Use it for short results.
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">char jazz_elements::Logger::file_name[<a class="el" href="utils_8h.html#a6773b93f3093658c3dcb569de3b4bdb2">MAX_FILENAME_LENGTH</a>]</td>
+          <td class="memname">std::filebuf* jazz_elements::Logger::f_buff</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a07020eabf3e6c31bc7acf679fb4e2267"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07020eabf3e6c31bc7acf679fb4e2267">&#9670;&nbsp;</a></span>big_bang</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#aa7e5adf7a32b3080ea959153d2b6aee9">jazz_elements::TimePoint</a> jazz_elements::Logger::big_bang</td>
         </tr>
       </table>
   </td>

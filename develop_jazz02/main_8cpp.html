@@ -107,6 +107,68 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="aca18335e0d9f5b12f9b8ffaf4d36570c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca18335e0d9f5b12f9b8ffaf4d36570c">&#9670;&nbsp;</a></span>show_credits()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void show_credits </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Display the Jazz logo message automatically appending JAZZ_VERSION. </p>
+
+</div>
+</div>
+<a id="a78bf8646c074be1959943f73bd7458c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78bf8646c074be1959943f73bd7458c0">&#9670;&nbsp;</a></span>show_usage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void show_usage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Explain usage of the command line interface to stdout. </p>
+
+</div>
+</div>
+<a id="a35ed3cd6ea33e76f6ee96284111cdd95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35ed3cd6ea33e76f6ee96284111cdd95">&#9670;&nbsp;</a></span>parse_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int parse_command </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>arg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Parse the command line argument (start, stop, ...) into a numeric constant, CMD_START, CMD_STOP, ...</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arg</td><td>The argument as typed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the numeric constant and CMD_HELP when not known. </dd></dl>
+
+</div>
+</div>
 <a id="a0ddf1224851353fc92bfbff6f499fa97"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0ddf1224851353fc92bfbff6f499fa97">&#9670;&nbsp;</a></span>main()</h2>
 
@@ -145,68 +207,6 @@ Functions</h2></td></tr>
 <p>When the command is "stop": if not running already, message + EXIT_FAILURE else send a SIGTERM to the server and wait to check if it closes if the server closes before 20 seconds, message + EXIT_SUCCESS else message + EXIT_FAILURE</p>
 <p>When the command is "status": if not running already, message + EXIT_FAILURE else message + EXIT_SUCCESS</p>
 <p>When the command is anything else, too many or too few: show help + EXIT_FAILURE </p>
-
-</div>
-</div>
-<a id="a35ed3cd6ea33e76f6ee96284111cdd95"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35ed3cd6ea33e76f6ee96284111cdd95">&#9670;&nbsp;</a></span>parse_command()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int parse_command </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>arg</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Parse the command line argument (start, stop, ...) into a numeric constant, CMD_START, CMD_STOP, ...</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">arg</td><td>The argument as typed. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the numeric constant and CMD_HELP when not known. </dd></dl>
-
-</div>
-</div>
-<a id="aca18335e0d9f5b12f9b8ffaf4d36570c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca18335e0d9f5b12f9b8ffaf4d36570c">&#9670;&nbsp;</a></span>show_credits()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void show_credits </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Display the Jazz logo message automatically appending JAZZ_VERSION. </p>
-
-</div>
-</div>
-<a id="a78bf8646c074be1959943f73bd7458c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a78bf8646c074be1959943f73bd7458c0">&#9670;&nbsp;</a></span>show_usage()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void show_usage </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Explain usage of the command line interface to stdout. </p>
 
 </div>
 </div>

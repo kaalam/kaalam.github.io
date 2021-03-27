@@ -163,8 +163,8 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae470b76019bcbcecc6ac1b516c51bb74"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae470b76019bcbcecc6ac1b516c51bb74">&#9670;&nbsp;</a></span>get_conf_key() <span class="overload">[1/3]</span></h2>
+<a id="ae4883dfb5573ae5911fc97e01f06afe2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4883dfb5573ae5911fc97e01f06afe2">&#9670;&nbsp;</a></span>start()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -173,34 +173,30 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool jazz_elements::Service::get_conf_key </td>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> jazz_elements::Service::start </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
+<p>A simple <a class="el" href="classjazz__elements_1_1Service.html#ae4883dfb5573ae5911fc97e01f06afe2" title="A simple start()/shut_down() interface (Restart is: shut_down(TRUE):start())">start()</a>/shut_down() interface (Restart is: shut_down(TRUE):<a class="el" href="classjazz__elements_1_1Service.html#ae4883dfb5573ae5911fc97e01f06afe2" title="A simple start()/shut_down() interface (Restart is: shut_down(TRUE):start())">start()</a>) </p>
+<p>Start (or restart) the <a class="el" href="classjazz__elements_1_1Service.html">Service</a></p>
+<dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR if successful, some error if not.</dd></dl>
+<p>This method should be overriden by something that actually starts the service, possibly using the configuration file in pConf. </p>
+
+<p>Reimplemented in <a class="el" href="classjazz__elements_1_1Container.html#a0496a435ee9330f73091a6ad41f07161">jazz_elements::Container</a>, <a class="el" href="classjazz__main_1_1Api.html#af5527ac854705e198aed8975976311b1">jazz_main::Api</a>, <a class="el" href="classjazz__elements_1_1Remote.html#a5b4ce90b2dc9f0baa1fe0ba0716f3daf">jazz_elements::Remote</a>, <a class="el" href="classjazz__elements_1_1Cluster.html#a72debc407ef511502d200f2b481153e8">jazz_elements::Cluster</a>, <a class="el" href="classjazz__agency_1_1Agency.html#aa55c7201873063d3a442133be0a9cad6">jazz_agency::Agency</a>, <a class="el" href="classjazz__bebop_1_1Bebop.html#a45bc91cd5bab380c224c72eb6f3d7aea">jazz_bebop::Bebop</a>, <a class="el" href="classjazz__elements_1_1Persisted.html#ac71e44e58eadb4289c98ba79755ec369">jazz_elements::Persisted</a>, and <a class="el" href="classjazz__elements_1_1Volatile.html#ad13b77c09c8ae17eaf4908e4350f636d">jazz_elements::Volatile</a>.</p>
+
 </div>
 </div>
-<a id="a3ca88fd7aa5eb3e29c214d98e905f20f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ca88fd7aa5eb3e29c214d98e905f20f">&#9670;&nbsp;</a></span>get_conf_key() <span class="overload">[2/3]</span></h2>
+<a id="af9c7e6ebcd6ec69fdbf94ea6cc1edff5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9c7e6ebcd6ec69fdbf94ea6cc1edff5">&#9670;&nbsp;</a></span>shut_down()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -209,75 +205,23 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool jazz_elements::Service::get_conf_key </td>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> jazz_elements::Service::shut_down </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">int &amp;&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Wrapper method to get configuration values when the <a class="el" href="classjazz__elements_1_1ConfigFile.html">ConfigFile</a> was passed to the constructor of this class.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">key</td><td>The configuration key to be searched. </td></tr>
-    <tr><td class="paramname">value</td><td>Value to be returned only when the function returns true. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True when the key exists and can be returned with the specific (overloaded) type.</dd></dl>
-<p>See <a class="el" href="classjazz__elements_1_1ConfigFile.html">ConfigFile</a> for details. </p>
+<p>Stop the <a class="el" href="classjazz__elements_1_1Service.html">Service</a></p>
+<dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR if successful, some error if not.</dd></dl>
+<p>This method should be overriden by something that actually stops the service, possibly using the configuration file in pConf. </p>
 
-</div>
-</div>
-<a id="a7d5b766d5214ffb88d58acc6f66e2e29"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d5b766d5214ffb88d58acc6f66e2e29">&#9670;&nbsp;</a></span>get_conf_key() <span class="overload">[3/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool jazz_elements::Service::get_conf_key </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::string &amp;&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>Reimplemented in <a class="el" href="classjazz__elements_1_1Container.html#af1cdde44708880c4577f0202e90fa4f6">jazz_elements::Container</a>, <a class="el" href="classjazz__main_1_1Api.html#a82e1c6758b2218186400e499d7bcf16f">jazz_main::Api</a>, <a class="el" href="classjazz__elements_1_1Remote.html#a02376fda6e678fdb38e15908c26db24b">jazz_elements::Remote</a>, <a class="el" href="classjazz__elements_1_1Cluster.html#aff69dfd8950adb4c2e717e9c00c7d67c">jazz_elements::Cluster</a>, <a class="el" href="classjazz__agency_1_1Agency.html#a3aeebe0bce42ea97c8e37ed708c02843">jazz_agency::Agency</a>, <a class="el" href="classjazz__bebop_1_1Bebop.html#a8b131fca6b8845e03da07c015523026f">jazz_bebop::Bebop</a>, <a class="el" href="classjazz__main_1_1HttpServer.html#a641a8b251d7e78db6e08a3ea4b38836a">jazz_main::HttpServer</a>, <a class="el" href="classjazz__elements_1_1Persisted.html#a2b2348933f2cc979351770567bc89ac3">jazz_elements::Persisted</a>, and <a class="el" href="classjazz__elements_1_1Volatile.html#a59169b050f6239b6f12ea21e6f7c8837">jazz_elements::Volatile</a>.</p>
 
 </div>
 </div>
@@ -378,8 +322,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="af9c7e6ebcd6ec69fdbf94ea6cc1edff5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9c7e6ebcd6ec69fdbf94ea6cc1edff5">&#9670;&nbsp;</a></span>shut_down()</h2>
+<a id="a3ca88fd7aa5eb3e29c214d98e905f20f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ca88fd7aa5eb3e29c214d98e905f20f">&#9670;&nbsp;</a></span>get_conf_key() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -388,28 +332,44 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> jazz_elements::Service::shut_down </td>
+          <td class="memname">bool jazz_elements::Service::get_conf_key </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Stop the <a class="el" href="classjazz__elements_1_1Service.html">Service</a></p>
-<dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR if successful, some error if not.</dd></dl>
-<p>This method should be overriden by something that actually stops the service, possibly using the configuration file in pConf. </p>
-
-<p>Reimplemented in <a class="el" href="classjazz__elements_1_1Container.html#af1cdde44708880c4577f0202e90fa4f6">jazz_elements::Container</a>, <a class="el" href="classjazz__main_1_1Api.html#a82e1c6758b2218186400e499d7bcf16f">jazz_main::Api</a>, <a class="el" href="classjazz__elements_1_1Remote.html#a02376fda6e678fdb38e15908c26db24b">jazz_elements::Remote</a>, <a class="el" href="classjazz__elements_1_1Cluster.html#aff69dfd8950adb4c2e717e9c00c7d67c">jazz_elements::Cluster</a>, <a class="el" href="classjazz__agency_1_1Agency.html#a3aeebe0bce42ea97c8e37ed708c02843">jazz_agency::Agency</a>, <a class="el" href="classjazz__bebop_1_1Bebop.html#a8b131fca6b8845e03da07c015523026f">jazz_bebop::Bebop</a>, <a class="el" href="classjazz__main_1_1HttpServer.html#a641a8b251d7e78db6e08a3ea4b38836a">jazz_main::HttpServer</a>, <a class="el" href="classjazz__elements_1_1Persisted.html#a2b2348933f2cc979351770567bc89ac3">jazz_elements::Persisted</a>, and <a class="el" href="classjazz__elements_1_1Volatile.html#a59169b050f6239b6f12ea21e6f7c8837">jazz_elements::Volatile</a>.</p>
+<p>Wrapper method to get configuration values when the <a class="el" href="classjazz__elements_1_1ConfigFile.html">ConfigFile</a> was passed to the constructor of this class.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The configuration key to be searched. </td></tr>
+    <tr><td class="paramname">value</td><td>Value to be returned only when the function returns true. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True when the key exists and can be returned with the specific (overloaded) type.</dd></dl>
+<p>See <a class="el" href="classjazz__elements_1_1ConfigFile.html">ConfigFile</a> for details. </p>
 
 </div>
 </div>
-<a id="ae4883dfb5573ae5911fc97e01f06afe2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4883dfb5573ae5911fc97e01f06afe2">&#9670;&nbsp;</a></span>start()</h2>
+<a id="ae470b76019bcbcecc6ac1b516c51bb74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae470b76019bcbcecc6ac1b516c51bb74">&#9670;&nbsp;</a></span>get_conf_key() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -418,51 +378,69 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> jazz_elements::Service::start </td>
+          <td class="memname">bool jazz_elements::Service::get_conf_key </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>A simple <a class="el" href="classjazz__elements_1_1Service.html#ae4883dfb5573ae5911fc97e01f06afe2" title="A simple start()/shut_down() interface (Restart is: shut_down(TRUE):start())">start()</a>/shut_down() interface (Restart is: shut_down(TRUE):<a class="el" href="classjazz__elements_1_1Service.html#ae4883dfb5573ae5911fc97e01f06afe2" title="A simple start()/shut_down() interface (Restart is: shut_down(TRUE):start())">start()</a>) </p>
-<p>Start (or restart) the <a class="el" href="classjazz__elements_1_1Service.html">Service</a></p>
-<dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR if successful, some error if not.</dd></dl>
-<p>This method should be overriden by something that actually starts the service, possibly using the configuration file in pConf. </p>
+</div>
+</div>
+<a id="a7d5b766d5214ffb88d58acc6f66e2e29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d5b766d5214ffb88d58acc6f66e2e29">&#9670;&nbsp;</a></span>get_conf_key() <span class="overload">[3/3]</span></h2>
 
-<p>Reimplemented in <a class="el" href="classjazz__elements_1_1Container.html#a0496a435ee9330f73091a6ad41f07161">jazz_elements::Container</a>, <a class="el" href="classjazz__main_1_1Api.html#af5527ac854705e198aed8975976311b1">jazz_main::Api</a>, <a class="el" href="classjazz__elements_1_1Remote.html#a5b4ce90b2dc9f0baa1fe0ba0716f3daf">jazz_elements::Remote</a>, <a class="el" href="classjazz__elements_1_1Cluster.html#a72debc407ef511502d200f2b481153e8">jazz_elements::Cluster</a>, <a class="el" href="classjazz__agency_1_1Agency.html#aa55c7201873063d3a442133be0a9cad6">jazz_agency::Agency</a>, <a class="el" href="classjazz__bebop_1_1Bebop.html#a45bc91cd5bab380c224c72eb6f3d7aea">jazz_bebop::Bebop</a>, <a class="el" href="classjazz__elements_1_1Persisted.html#ac71e44e58eadb4289c98ba79755ec369">jazz_elements::Persisted</a>, and <a class="el" href="classjazz__elements_1_1Volatile.html#ad13b77c09c8ae17eaf4908e4350f636d">jazz_elements::Volatile</a>.</p>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool jazz_elements::Service::get_conf_key </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
 <h2 class="groupheader">Field Documentation</h2>
-<a id="aef0f516befa73bb353fa5ac244fbebe4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef0f516befa73bb353fa5ac244fbebe4">&#9670;&nbsp;</a></span>p_conf</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacejazz__elements.html#a2ea64c8750eeedeb68690603dacceeab">pConfigFile</a> jazz_elements::Service::p_conf</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a9c9c71fccf7602a67853a1d6ab5c6ac2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9c9c71fccf7602a67853a1d6ab5c6ac2">&#9670;&nbsp;</a></span>p_log</h2>
 
@@ -474,6 +452,28 @@ Private Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="namespacejazz__elements.html#a54e0e020637fffc86de95ffdd302f4a8">pLogger</a> jazz_elements::Service::p_log</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aef0f516befa73bb353fa5ac244fbebe4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef0f516befa73bb353fa5ac244fbebe4">&#9670;&nbsp;</a></span>p_conf</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#a2ea64c8750eeedeb68690603dacceeab">pConfigFile</a> jazz_elements::Service::p_conf</td>
         </tr>
       </table>
   </td>

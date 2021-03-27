@@ -121,6 +121,8 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Logger.html">Logger</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1Names.html">Names</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1OneShotDeque.html">OneShotDeque</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html">Persisted</a></td></tr>
@@ -173,6 +175,8 @@ Typedefs</h2></td></tr>
 <tr class="separator:acf7bf339ba5505b0ecbf219889a6ca8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1ee282228d329b2175b2efa7add9385"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="namespacejazz__elements.html#a97c097c96fd6364c46569536e8cbc535">Name</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#aa1ee282228d329b2175b2efa7add9385">pName</a></td></tr>
 <tr class="separator:aa1ee282228d329b2175b2efa7add9385"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5f94c0c0a698c9a23e8a5bd1c63f701"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structjazz__elements_1_1Names.html">Names</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#af5f94c0c0a698c9a23e8a5bd1c63f701">pNames</a></td></tr>
+<tr class="separator:af5f94c0c0a698c9a23e8a5bd1c63f701"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a610c62b4b5180ee4bc90df9665e433aa"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structjazz__elements_1_1Locator.html">Locator</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a610c62b4b5180ee4bc90df9665e433aa">pLocator</a></td></tr>
 <tr class="separator:a610c62b4b5180ee4bc90df9665e433aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79708585f234be0562fc73f87fb3556b"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structjazz__elements_1_1Locator.html">Locator</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a79708585f234be0562fc73f87fb3556b">pL_value</a></td></tr>
@@ -272,124 +276,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ad8dd34a46d8fb42f85ffb4b95ba8a5f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8dd34a46d8fb42f85ffb4b95ba8a5f3">&#9670;&nbsp;</a></span>Attributes</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef std::map&lt;int, const char *&gt; <a class="el" href="namespacejazz__elements.html#ad8dd34a46d8fb42f85ffb4b95ba8a5f3">jazz_elements::Attributes</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>An std::map containing all the attributes of a block in one structure. </p>
-
-</div>
-</div>
-<a id="aadf1e411ca544a525c767f3e30010202"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aadf1e411ca544a525c767f3e30010202">&#9670;&nbsp;</a></span>BaseNames</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef std::map&lt;std::string, <a class="el" href="namespacejazz__elements.html#acf7bf339ba5505b0ecbf219889a6ca8f">pContainer</a>&gt; <a class="el" href="namespacejazz__elements.html#aadf1e411ca544a525c767f3e30010202">jazz_elements::BaseNames</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A map of names for the containers (or structure engines like "map" or "tree" inside <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a>). </p>
-
-</div>
-</div>
-<a id="a4e6d98f21e446010dd09ba4c9d5c372c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e6d98f21e446010dd09ba4c9d5c372c">&#9670;&nbsp;</a></span>BlockId64</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef uint64_t <a class="el" href="namespacejazz__elements.html#a4e6d98f21e446010dd09ba4c9d5c372c">jazz_elements::BlockId64</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A binary block identifier internal to the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>. Typically a MurmurHash64A of the <a class="el" href="classjazz__elements_1_1Block.html">Block</a> name. </p>
-
-</div>
-</div>
-<a id="a4ac79f33730ff818dedd0fcfcc69d6e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ac79f33730ff818dedd0fcfcc69d6e1">&#9670;&nbsp;</a></span>L_value</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="structjazz__elements_1_1Locator.html">Locator</a> <a class="el" href="namespacejazz__elements.html#a4ac79f33730ff818dedd0fcfcc69d6e1">jazz_elements::L_value</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>An L_value is just a <a class="el" href="structjazz__elements_1_1Locator.html">Locator</a> </p>
-
-</div>
-</div>
-<a id="ac3d6e1b4aca91c99b80bdc759a73699f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3d6e1b4aca91c99b80bdc759a73699f">&#9670;&nbsp;</a></span>Lock32</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef std::atomic&lt;int32_t&gt; <a class="el" href="namespacejazz__elements.html#ac3d6e1b4aca91c99b80bdc759a73699f">jazz_elements::Lock32</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>An atomically increased (via fetch_add() and fetch_sub()) 32 bit signed integer to use as a lock. </p>
-
-</div>
-</div>
-<a id="a97c097c96fd6364c46569536e8cbc535"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97c097c96fd6364c46569536e8cbc535">&#9670;&nbsp;</a></span>Name</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef char jazz_elements::Name[<a class="el" href="container_8h.html#a834e9a379307f869a10f4da078be5786">NAME_SIZE</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>The identifier of a <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> type, a container inside another container, a <a class="el" href="classjazz__elements_1_1Block.html">Block</a> descendant in a container, a field in a <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz data block of a Kind.">Tuple</a> or <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a>, or the name of a contract. It must be a string matching REGEX_VALIDATE_NAME. </p>
-
-</div>
-</div>
-<a id="ab5c3f57ec69caa19191f00178de0c927"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5c3f57ec69caa19191f00178de0c927">&#9670;&nbsp;</a></span>pAnswer</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef struct <a class="el" href="structjazz__elements_1_1Answer.html">Answer</a>* <a class="el" href="namespacejazz__elements.html#ab5c3f57ec69caa19191f00178de0c927">jazz_elements::pAnswer</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a89b6ae8b08dfbb376caafc742840adf6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89b6ae8b08dfbb376caafc742840adf6">&#9670;&nbsp;</a></span>pBlock</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef class <a class="el" href="classjazz__elements_1_1Block.html">Block</a>* <a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">jazz_elements::pBlock</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a96544e338b7cc4cbd8cb03658a044228"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a96544e338b7cc4cbd8cb03658a044228">&#9670;&nbsp;</a></span>pBlockHeader</h2>
 
@@ -398,216 +284,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">typedef struct <a class="el" href="structjazz__elements_1_1BlockHeader.html">BlockHeader</a>* <a class="el" href="namespacejazz__elements.html#a96544e338b7cc4cbd8cb03658a044228">jazz_elements::pBlockHeader</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1443efd13a9f5f24bee92041fffc8820"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1443efd13a9f5f24bee92041fffc8820">&#9670;&nbsp;</a></span>pBlockKeeper</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef struct <a class="el" href="structjazz__elements_1_1BlockKeeper.html">BlockKeeper</a>* <a class="el" href="namespacejazz__elements.html#a1443efd13a9f5f24bee92041fffc8820">jazz_elements::pBlockKeeper</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="adf5bbcc3f6b205bd70e7b46a235ca283"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf5bbcc3f6b205bd70e7b46a235ca283">&#9670;&nbsp;</a></span>pCluster</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef class <a class="el" href="classjazz__elements_1_1Cluster.html">Cluster</a>* <a class="el" href="namespacejazz__elements.html#adf5bbcc3f6b205bd70e7b46a235ca283">jazz_elements::pCluster</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2ea64c8750eeedeb68690603dacceeab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ea64c8750eeedeb68690603dacceeab">&#9670;&nbsp;</a></span>pConfigFile</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef class <a class="el" href="classjazz__elements_1_1ConfigFile.html">ConfigFile</a>* <a class="el" href="namespacejazz__elements.html#a2ea64c8750eeedeb68690603dacceeab">jazz_elements::pConfigFile</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="acf7bf339ba5505b0ecbf219889a6ca8f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf7bf339ba5505b0ecbf219889a6ca8f">&#9670;&nbsp;</a></span>pContainer</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef class <a class="el" href="classjazz__elements_1_1Container.html">Container</a>* <a class="el" href="namespacejazz__elements.html#acf7bf339ba5505b0ecbf219889a6ca8f">jazz_elements::pContainer</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a497072b3a4acfea0e6f94b7f73331d0d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a497072b3a4acfea0e6f94b7f73331d0d">&#9670;&nbsp;</a></span>pIndex</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef class <a class="el" href="classjazz__elements_1_1Index.html">Index</a>* <a class="el" href="namespacejazz__elements.html#a497072b3a4acfea0e6f94b7f73331d0d">jazz_elements::pIndex</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab16f53ff259f783f290f347b277fa62d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab16f53ff259f783f290f347b277fa62d">&#9670;&nbsp;</a></span>pItems</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef struct <a class="el" href="structjazz__elements_1_1Items.html">Items</a>* <a class="el" href="namespacejazz__elements.html#ab16f53ff259f783f290f347b277fa62d">jazz_elements::pItems</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a99c0160368f44b8120e563d29a1c1939"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99c0160368f44b8120e563d29a1c1939">&#9670;&nbsp;</a></span>pKind</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef class <a class="el" href="classjazz__elements_1_1Kind.html">Kind</a>* <a class="el" href="namespacejazz__elements.html#a99c0160368f44b8120e563d29a1c1939">jazz_elements::pKind</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a79708585f234be0562fc73f87fb3556b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79708585f234be0562fc73f87fb3556b">&#9670;&nbsp;</a></span>pL_value</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef struct <a class="el" href="structjazz__elements_1_1Locator.html">Locator</a> * <a class="el" href="namespacejazz__elements.html#a79708585f234be0562fc73f87fb3556b">jazz_elements::pL_value</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a610c62b4b5180ee4bc90df9665e433aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a610c62b4b5180ee4bc90df9665e433aa">&#9670;&nbsp;</a></span>pLocator</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef struct <a class="el" href="structjazz__elements_1_1Locator.html">Locator</a>* <a class="el" href="namespacejazz__elements.html#a610c62b4b5180ee4bc90df9665e433aa">jazz_elements::pLocator</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a54e0e020637fffc86de95ffdd302f4a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54e0e020637fffc86de95ffdd302f4a8">&#9670;&nbsp;</a></span>pLogger</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef class <a class="el" href="classjazz__elements_1_1Logger.html">Logger</a>* <a class="el" href="namespacejazz__elements.html#a54e0e020637fffc86de95ffdd302f4a8">jazz_elements::pLogger</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa1ee282228d329b2175b2efa7add9385"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa1ee282228d329b2175b2efa7add9385">&#9670;&nbsp;</a></span>pName</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="namespacejazz__elements.html#a97c097c96fd6364c46569536e8cbc535">Name</a>* <a class="el" href="namespacejazz__elements.html#aa1ee282228d329b2175b2efa7add9385">jazz_elements::pName</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a27d61abf542d89735a56bc7bb9e1657a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27d61abf542d89735a56bc7bb9e1657a">&#9670;&nbsp;</a></span>pPersisted</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef class <a class="el" href="classjazz__elements_1_1Persisted.html">Persisted</a>* <a class="el" href="namespacejazz__elements.html#a27d61abf542d89735a56bc7bb9e1657a">jazz_elements::pPersisted</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a54a83e0b328971cad4f882dca87e71e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54a83e0b328971cad4f882dca87e71e9">&#9670;&nbsp;</a></span>pR_value</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef struct <a class="el" href="structjazz__elements_1_1R__value.html">R_value</a>* <a class="el" href="namespacejazz__elements.html#a54a83e0b328971cad4f882dca87e71e9">jazz_elements::pR_value</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a99c6e90779887c86f5c0c87f3f2b2704"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99c6e90779887c86f5c0c87f3f2b2704">&#9670;&nbsp;</a></span>pRemote</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef class <a class="el" href="classjazz__elements_1_1Remote.html">Remote</a>* <a class="el" href="namespacejazz__elements.html#a99c6e90779887c86f5c0c87f3f2b2704">jazz_elements::pRemote</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a72401460d35f24aec283c9bbc5337a28"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72401460d35f24aec283c9bbc5337a28">&#9670;&nbsp;</a></span>pService</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef class <a class="el" href="classjazz__elements_1_1Service.html">Service</a>* <a class="el" href="namespacejazz__elements.html#a72401460d35f24aec283c9bbc5337a28">jazz_elements::pService</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -628,6 +304,292 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a89b6ae8b08dfbb376caafc742840adf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89b6ae8b08dfbb376caafc742840adf6">&#9670;&nbsp;</a></span>pBlock</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef class <a class="el" href="classjazz__elements_1_1Block.html">Block</a>* <a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">jazz_elements::pBlock</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a97c097c96fd6364c46569536e8cbc535"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97c097c96fd6364c46569536e8cbc535">&#9670;&nbsp;</a></span>Name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef char jazz_elements::Name[<a class="el" href="container_8h.html#a834e9a379307f869a10f4da078be5786">NAME_SIZE</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The identifier of a <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> type, a container inside another container, a <a class="el" href="classjazz__elements_1_1Block.html">Block</a> descendant in a container, a field in a <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz data block of a Kind.">Tuple</a> or <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a>, or the name of a contract. It must be a string matching REGEX_VALIDATE_NAME. </p>
+
+</div>
+</div>
+<a id="a4e6d98f21e446010dd09ba4c9d5c372c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e6d98f21e446010dd09ba4c9d5c372c">&#9670;&nbsp;</a></span>BlockId64</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef uint64_t <a class="el" href="namespacejazz__elements.html#a4e6d98f21e446010dd09ba4c9d5c372c">jazz_elements::BlockId64</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A binary block identifier internal to the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>. Typically a MurmurHash64A of the <a class="el" href="classjazz__elements_1_1Block.html">Block</a> name. </p>
+
+</div>
+</div>
+<a id="ac3d6e1b4aca91c99b80bdc759a73699f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3d6e1b4aca91c99b80bdc759a73699f">&#9670;&nbsp;</a></span>Lock32</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::atomic&lt;int32_t&gt; <a class="el" href="namespacejazz__elements.html#ac3d6e1b4aca91c99b80bdc759a73699f">jazz_elements::Lock32</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>An atomically increased (via fetch_add() and fetch_sub()) 32 bit signed integer to use as a lock. </p>
+
+</div>
+</div>
+<a id="a1443efd13a9f5f24bee92041fffc8820"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1443efd13a9f5f24bee92041fffc8820">&#9670;&nbsp;</a></span>pBlockKeeper</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structjazz__elements_1_1BlockKeeper.html">BlockKeeper</a>* <a class="el" href="namespacejazz__elements.html#a1443efd13a9f5f24bee92041fffc8820">jazz_elements::pBlockKeeper</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acf7bf339ba5505b0ecbf219889a6ca8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf7bf339ba5505b0ecbf219889a6ca8f">&#9670;&nbsp;</a></span>pContainer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef class <a class="el" href="classjazz__elements_1_1Container.html">Container</a>* <a class="el" href="namespacejazz__elements.html#acf7bf339ba5505b0ecbf219889a6ca8f">jazz_elements::pContainer</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa1ee282228d329b2175b2efa7add9385"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1ee282228d329b2175b2efa7add9385">&#9670;&nbsp;</a></span>pName</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="namespacejazz__elements.html#a97c097c96fd6364c46569536e8cbc535">Name</a>* <a class="el" href="namespacejazz__elements.html#aa1ee282228d329b2175b2efa7add9385">jazz_elements::pName</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af5f94c0c0a698c9a23e8a5bd1c63f701"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5f94c0c0a698c9a23e8a5bd1c63f701">&#9670;&nbsp;</a></span>pNames</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structjazz__elements_1_1Names.html">Names</a>* <a class="el" href="namespacejazz__elements.html#af5f94c0c0a698c9a23e8a5bd1c63f701">jazz_elements::pNames</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a610c62b4b5180ee4bc90df9665e433aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a610c62b4b5180ee4bc90df9665e433aa">&#9670;&nbsp;</a></span>pLocator</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structjazz__elements_1_1Locator.html">Locator</a>* <a class="el" href="namespacejazz__elements.html#a610c62b4b5180ee4bc90df9665e433aa">jazz_elements::pLocator</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a79708585f234be0562fc73f87fb3556b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79708585f234be0562fc73f87fb3556b">&#9670;&nbsp;</a></span>pL_value</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structjazz__elements_1_1Locator.html">Locator</a> * <a class="el" href="namespacejazz__elements.html#a79708585f234be0562fc73f87fb3556b">jazz_elements::pL_value</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a54a83e0b328971cad4f882dca87e71e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54a83e0b328971cad4f882dca87e71e9">&#9670;&nbsp;</a></span>pR_value</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structjazz__elements_1_1R__value.html">R_value</a>* <a class="el" href="namespacejazz__elements.html#a54a83e0b328971cad4f882dca87e71e9">jazz_elements::pR_value</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab16f53ff259f783f290f347b277fa62d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab16f53ff259f783f290f347b277fa62d">&#9670;&nbsp;</a></span>pItems</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structjazz__elements_1_1Items.html">Items</a>* <a class="el" href="namespacejazz__elements.html#ab16f53ff259f783f290f347b277fa62d">jazz_elements::pItems</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aadf1e411ca544a525c767f3e30010202"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadf1e411ca544a525c767f3e30010202">&#9670;&nbsp;</a></span>BaseNames</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::map&lt;std::string, <a class="el" href="namespacejazz__elements.html#acf7bf339ba5505b0ecbf219889a6ca8f">pContainer</a>&gt; <a class="el" href="namespacejazz__elements.html#aadf1e411ca544a525c767f3e30010202">jazz_elements::BaseNames</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A map of names for the containers (or structure engines like "map" or "tree" inside <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a>). </p>
+
+</div>
+</div>
+<a id="a4ac79f33730ff818dedd0fcfcc69d6e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ac79f33730ff818dedd0fcfcc69d6e1">&#9670;&nbsp;</a></span>L_value</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="structjazz__elements_1_1Locator.html">Locator</a> <a class="el" href="namespacejazz__elements.html#a4ac79f33730ff818dedd0fcfcc69d6e1">jazz_elements::L_value</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>An L_value is just a <a class="el" href="structjazz__elements_1_1Locator.html">Locator</a> </p>
+
+</div>
+</div>
+<a id="ad8dd34a46d8fb42f85ffb4b95ba8a5f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8dd34a46d8fb42f85ffb4b95ba8a5f3">&#9670;&nbsp;</a></span>Attributes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::map&lt;int, const char *&gt; <a class="el" href="namespacejazz__elements.html#ad8dd34a46d8fb42f85ffb4b95ba8a5f3">jazz_elements::Attributes</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>An std::map containing all the attributes of a block in one structure. </p>
+
+</div>
+</div>
+<a id="a99c0160368f44b8120e563d29a1c1939"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99c0160368f44b8120e563d29a1c1939">&#9670;&nbsp;</a></span>pKind</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef class <a class="el" href="classjazz__elements_1_1Kind.html">Kind</a>* <a class="el" href="namespacejazz__elements.html#a99c0160368f44b8120e563d29a1c1939">jazz_elements::pKind</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adf5bbcc3f6b205bd70e7b46a235ca283"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf5bbcc3f6b205bd70e7b46a235ca283">&#9670;&nbsp;</a></span>pCluster</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef class <a class="el" href="classjazz__elements_1_1Cluster.html">Cluster</a>* <a class="el" href="namespacejazz__elements.html#adf5bbcc3f6b205bd70e7b46a235ca283">jazz_elements::pCluster</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a497072b3a4acfea0e6f94b7f73331d0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a497072b3a4acfea0e6f94b7f73331d0d">&#9670;&nbsp;</a></span>pIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef class <a class="el" href="classjazz__elements_1_1Index.html">Index</a>* <a class="el" href="namespacejazz__elements.html#a497072b3a4acfea0e6f94b7f73331d0d">jazz_elements::pIndex</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a99c6e90779887c86f5c0c87f3f2b2704"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99c6e90779887c86f5c0c87f3f2b2704">&#9670;&nbsp;</a></span>pRemote</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef class <a class="el" href="classjazz__elements_1_1Remote.html">Remote</a>* <a class="el" href="namespacejazz__elements.html#a99c6e90779887c86f5c0c87f3f2b2704">jazz_elements::pRemote</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a27d61abf542d89735a56bc7bb9e1657a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27d61abf542d89735a56bc7bb9e1657a">&#9670;&nbsp;</a></span>pPersisted</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef class <a class="el" href="classjazz__elements_1_1Persisted.html">Persisted</a>* <a class="el" href="namespacejazz__elements.html#a27d61abf542d89735a56bc7bb9e1657a">jazz_elements::pPersisted</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a6dff44c9f24dc0324606d6576663d94d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6dff44c9f24dc0324606d6576663d94d">&#9670;&nbsp;</a></span>pTuple</h2>
 
@@ -642,14 +604,30 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ac6341b3438e1ebf7c955533e71e9b6ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6341b3438e1ebf7c955533e71e9b6ac">&#9670;&nbsp;</a></span>pVolatile</h2>
+<a id="aa7e5adf7a32b3080ea959153d2b6aee9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7e5adf7a32b3080ea959153d2b6aee9">&#9670;&nbsp;</a></span>TimePoint</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef class <a class="el" href="classjazz__elements_1_1Volatile.html">Volatile</a>* <a class="el" href="namespacejazz__elements.html#ac6341b3438e1ebf7c955533e71e9b6ac">jazz_elements::pVolatile</a></td>
+          <td class="memname">typedef std::chrono::steady_clock::time_point <a class="el" href="namespacejazz__elements.html#aa7e5adf7a32b3080ea959153d2b6aee9">jazz_elements::TimePoint</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A time point stored as 8 bytes. </p>
+
+</div>
+</div>
+<a id="ab5c3f57ec69caa19191f00178de0c927"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5c3f57ec69caa19191f00178de0c927">&#9670;&nbsp;</a></span>pAnswer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structjazz__elements_1_1Answer.html">Answer</a>* <a class="el" href="namespacejazz__elements.html#ab5c3f57ec69caa19191f00178de0c927">jazz_elements::pAnswer</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -687,47 +665,172 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aa7e5adf7a32b3080ea959153d2b6aee9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7e5adf7a32b3080ea959153d2b6aee9">&#9670;&nbsp;</a></span>TimePoint</h2>
+<a id="a2ea64c8750eeedeb68690603dacceeab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ea64c8750eeedeb68690603dacceeab">&#9670;&nbsp;</a></span>pConfigFile</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::chrono::steady_clock::time_point <a class="el" href="namespacejazz__elements.html#aa7e5adf7a32b3080ea959153d2b6aee9">jazz_elements::TimePoint</a></td>
+          <td class="memname">typedef class <a class="el" href="classjazz__elements_1_1ConfigFile.html">ConfigFile</a>* <a class="el" href="namespacejazz__elements.html#a2ea64c8750eeedeb68690603dacceeab">jazz_elements::pConfigFile</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>A time point stored as 8 bytes. </p>
+</div>
+</div>
+<a id="a54e0e020637fffc86de95ffdd302f4a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54e0e020637fffc86de95ffdd302f4a8">&#9670;&nbsp;</a></span>pLogger</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef class <a class="el" href="classjazz__elements_1_1Logger.html">Logger</a>* <a class="el" href="namespacejazz__elements.html#a54e0e020637fffc86de95ffdd302f4a8">jazz_elements::pLogger</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a72401460d35f24aec283c9bbc5337a28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72401460d35f24aec283c9bbc5337a28">&#9670;&nbsp;</a></span>pService</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef class <a class="el" href="classjazz__elements_1_1Service.html">Service</a>* <a class="el" href="namespacejazz__elements.html#a72401460d35f24aec283c9bbc5337a28">jazz_elements::pService</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac6341b3438e1ebf7c955533e71e9b6ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6341b3438e1ebf7c955533e71e9b6ac">&#9670;&nbsp;</a></span>pVolatile</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef class <a class="el" href="classjazz__elements_1_1Volatile.html">Volatile</a>* <a class="el" href="namespacejazz__elements.html#ac6341b3438e1ebf7c955533e71e9b6ac">jazz_elements::pVolatile</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a97aefc77eb6fbbb85dabfba528a6efb7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97aefc77eb6fbbb85dabfba528a6efb7">&#9670;&nbsp;</a></span>CleanConfigArgument()</h2>
+<a id="a1a5f20cce9610a421e72a17fae481ea4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a5f20cce9610a421e72a17fae481ea4">&#9670;&nbsp;</a></span>write_callback()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::string jazz_elements::CleanConfigArgument </td>
+          <td class="memname">size_t jazz_elements::write_callback </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>s</em></td><td>)</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>nmemb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userdata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A test write callback.</p>
+<p>(see <a href="https://curl.haxx.se/libcurl/c/CURLOPT_WRITEFUNCTION.html">https://curl.haxx.se/libcurl/c/CURLOPT_WRITEFUNCTION.html</a>) </p>
+
+</div>
+</div>
+<a id="a8adb030d4c0542aa3efbab96080cc982"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8adb030d4c0542aa3efbab96080cc982">&#9670;&nbsp;</a></span>remote_testing_point()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool jazz_elements::remote_testing_point </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Remove quotes and (space and tab) outside quotes from a string.</p>
-<p>Removes space and tab characters except inside a string declared with a double quote '"'. After doing that, it removes the quotes. This is used by <a class="el" href="classjazz__elements_1_1ConfigFile.html">ConfigFile</a> and has obvious limitations but is used for its simplicity and easily predictable results.</p>
+
+</div>
+</div>
+<a id="a4d46e4f3ad15a5b0395e1daffbe5b950"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d46e4f3ad15a5b0395e1daffbe5b950">&#9670;&nbsp;</a></span>R_ValueOfNA()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double jazz_elements::R_ValueOfNA </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns an R-compatible numeric NA. </p>
+
+</div>
+</div>
+<a id="a9b3cfd7adaf27184b08bbf9bd82c45f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b3cfd7adaf27184b08bbf9bd82c45f7">&#9670;&nbsp;</a></span>FileExists()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool jazz_elements::FileExists </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Check if a file exists.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">s</td><td>Input string </td></tr>
+    <tr><td class="paramname">file_name</td><td>The file name. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>String without space or tab. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the file exists </dd></dl>
 
 </div>
 </div>
@@ -775,40 +878,6 @@ Variables</h2></td></tr>
 </pre> 
 </div>
 </div>
-<a id="aefef260977adfc6f0108cdc0538aa1a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aefef260977adfc6f0108cdc0538aa1a2">&#9670;&nbsp;</a></span>elapsed_mu_sec()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int64_t jazz_elements::elapsed_mu_sec </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#aa7e5adf7a32b3080ea959153d2b6aee9">jazz_elements::TimePoint</a>&#160;</td>
-          <td class="paramname"><em>big_bang</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Return server running time in microseconds as a 64 bit integer.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">big_bang</td><td>The primordial event (== Jazz server start ;) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The time elapsed in microseconds </dd></dl>
-
-</div>
-</div>
 <a id="acd88c9d26ad86930e276f94959feb634"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acd88c9d26ad86930e276f94959feb634">&#9670;&nbsp;</a></span>ExpandEscapeSequences()</h2>
 
@@ -841,32 +910,6 @@ Variables</h2></td></tr>
 \\nnn     The byte whose numerical value is given by nnn interpreted as an octal number
 \\xhh     The byte whose numerical value is given by hh… interpreted as a hexadecimal number
 </pre><p><a href="https://en.wikipedia.org/wiki/Escape_sequences_in_C">https://en.wikipedia.org/wiki/Escape_sequences_in_C</a> </p>
-
-</div>
-</div>
-<a id="a9b3cfd7adaf27184b08bbf9bd82c45f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b3cfd7adaf27184b08bbf9bd82c45f7">&#9670;&nbsp;</a></span>FileExists()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool jazz_elements::FileExists </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>file_name</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Check if a file exists.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">file_name</td><td>The file name. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the file exists </dd></dl>
 
 </div>
 </div>
@@ -937,47 +980,30 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a4d46e4f3ad15a5b0395e1daffbe5b950"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d46e4f3ad15a5b0395e1daffbe5b950">&#9670;&nbsp;</a></span>R_ValueOfNA()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double jazz_elements::R_ValueOfNA </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns an R-compatible numeric NA. </p>
-
-</div>
-</div>
-<a id="a8adb030d4c0542aa3efbab96080cc982"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8adb030d4c0542aa3efbab96080cc982">&#9670;&nbsp;</a></span>remote_testing_point()</h2>
+<a id="a97aefc77eb6fbbb85dabfba528a6efb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97aefc77eb6fbbb85dabfba528a6efb7">&#9670;&nbsp;</a></span>CleanConfigArgument()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool jazz_elements::remote_testing_point </td>
+          <td class="memname">std::string jazz_elements::CleanConfigArgument </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Remove quotes and (space and tab) outside quotes from a string.</p>
+<p>Removes space and tab characters except inside a string declared with a double quote '"'. After doing that, it removes the quotes. This is used by <a class="el" href="classjazz__elements_1_1ConfigFile.html">ConfigFile</a> and has obvious limitations but is used for its simplicity and easily predictable results.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Input string </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>String without space or tab. </dd></dl>
 
 </div>
 </div>
@@ -1008,45 +1034,37 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a1a5f20cce9610a421e72a17fae481ea4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a5f20cce9610a421e72a17fae481ea4">&#9670;&nbsp;</a></span>write_callback()</h2>
+<a id="aefef260977adfc6f0108cdc0538aa1a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefef260977adfc6f0108cdc0538aa1a2">&#9670;&nbsp;</a></span>elapsed_mu_sec()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t jazz_elements::write_callback </td>
+          <td class="memname">int64_t jazz_elements::elapsed_mu_sec </td>
           <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>ptr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#aa7e5adf7a32b3080ea959153d2b6aee9">jazz_elements::TimePoint</a>&#160;</td>
+          <td class="paramname"><em>big_bang</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>size</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>nmemb</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>userdata</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>A test write callback.</p>
-<p>(see <a href="https://curl.haxx.se/libcurl/c/CURLOPT_WRITEFUNCTION.html">https://curl.haxx.se/libcurl/c/CURLOPT_WRITEFUNCTION.html</a>) </p>
+<p>Return server running time in microseconds as a 64 bit integer.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">big_bang</td><td>The primordial event (== Jazz server start ;) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The time elapsed in microseconds </dd></dl>
 
 </div>
 </div>

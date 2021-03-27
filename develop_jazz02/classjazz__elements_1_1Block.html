@@ -194,8 +194,8 @@ Additional Inherited Members</h2></td></tr>
 <li>A FILTER_TYPE_INTEGER is a vector of ordered CELL_TYPE_INTEGER in 0..(size-1) whose length is stored in .range.filter.length. As expected, .range.filter.length == 0 means nothing is selected, .range.filter.length == .size means everything is selected regardless of .tensor[] </li>
 </ol>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a90d95624762acefc83ecb038e7c4f949"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90d95624762acefc83ecb038e7c4f949">&#9670;&nbsp;</a></span>align_128bit()</h2>
+<a id="a0064d4050c179054579217c07c972019"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0064d4050c179054579217c07c972019">&#9670;&nbsp;</a></span>set_dimensions()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -204,10 +204,10 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int* jazz_elements::Block::align_128bit </td>
+          <td class="memname">void jazz_elements::Block::set_dimensions </td>
           <td>(</td>
-          <td class="paramtype">uintptr_t&#160;</td>
-          <td class="paramname"><em>ipt</em></td><td>)</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>pDim</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -217,173 +217,17 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Align a pointer (as uintptr_t) to the next 16 byte boundary. </p>
-
-</div>
-</div>
-<a id="a7f43dead9f6ba3222b619b5c9d5165de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f43dead9f6ba3222b619b5c9d5165de">&#9670;&nbsp;</a></span>can_filter()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool jazz_elements::Block::can_filter </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a>&#160;</td>
-          <td class="paramname"><em>p_block</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Check (fast) if a filter is valid and can be applied to filter inside a specific <a class="el" href="classjazz__elements_1_1Block.html">Block</a></p>
-<p>This is verifies (size == number of rows) and calls <a class="el" href="classjazz__elements_1_1Block.html#a7c4c1d50d06799ffec5a0d253528fd2e">filter_type()</a> to check its requirements too.</p>
-<dl class="section return"><dt>Returns</dt><dd>true if it is a valid filter of that type. </dd></dl>
-
-</div>
-</div>
-<a id="aab7759b2dd66a071066c3c0eeb51eaf5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab7759b2dd66a071066c3c0eeb51eaf5">&#9670;&nbsp;</a></span>filter_audit()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int jazz_elements::Block::filter_audit </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Check (in depth) the validity of a filter and return its type or FILTER_TYPE_NOTAFILTER if invalid</p>
-<p>This checks both the values in the header and the validity of the data in .tensor[]</p>
-<dl class="section return"><dt>Returns</dt><dd>FILTER_TYPE_BOOLEAN or FILTER_TYPE_INTEGER if it is a valid filter of that type, FILTER_TYPE_NOTAFILTER if not. </dd></dl>
-
-</div>
-</div>
-<a id="a7c4c1d50d06799ffec5a0d253528fd2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c4c1d50d06799ffec5a0d253528fd2e">&#9670;&nbsp;</a></span>filter_type()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int jazz_elements::Block::filter_type </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Check (fast) the validity of a filter and return its type or FILTER_TYPE_NOTAFILTER if invalid</p>
-<p>This checks the values in the header, but not the validity of the data in .tensor[]</p>
-<dl class="section return"><dt>Returns</dt><dd>FILTER_TYPE_BOOLEAN or FILTER_TYPE_INTEGER if it is a valid filter of that type, FILTER_TYPE_NOTAFILTER if not. </dd></dl>
-
-</div>
-</div>
-<a id="a967f54fa8714c2fd58ac13968675e62d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a967f54fa8714c2fd58ac13968675e62d">&#9670;&nbsp;</a></span>find_attribute()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">char* jazz_elements::Block::find_attribute </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>attribute_id</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Find an attribute by its attribute_id (key).</p>
+<p>Sets the tensor dimensions from a <a class="el" href="unionjazz__elements_1_1TensorDim.html">TensorDim</a> array.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">attribute_id</td><td>A unique 32-bit id defining what the attribute is: e.g., a Jazz class, a url, a mime type, ...</td></tr>
+    <tr><td class="paramname">pDim</td><td>A pointer to the <a class="el" href="unionjazz__elements_1_1TensorDim.html">TensorDim</a> containing the dimensions.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to where the (zero ended) string (the attribute value) is stored in the <a class="el" href="classjazz__elements_1_1Block.html">Block</a>. Or nullptr if the key is not found.</dd></dl>
-<p>NOTE: Search is linear since no assumptions can be made on how keys are ordered. Typically Blocks have few (less than 5) attributes and that is okay. There is no limit on the number of attributes, so if you want to use the block's attributes as a dictionary containing, e.g., thousands of config keys, use <a class="el" href="classjazz__elements_1_1Block.html#a2c5b1b95f818b9f1eae87d3ed245e9e8">get_attributes()</a> instead which returns a map with all the attributes. </p>
-
-</div>
-</div>
-<a id="ae9bc8c5a8a015bcad22d01b219c845f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae9bc8c5a8a015bcad22d01b219c845f5">&#9670;&nbsp;</a></span>find_NAs_in_tensor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool jazz_elements::Block::find_NAs_in_tensor </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Scan a tensor object to see if it contains any NA valued of the type specified in cell_type.</p>
-<dl class="section return"><dt>Returns</dt><dd>True if NA values of the give type were found.</dd></dl>
-<p>Note: For boolean types everything other than true (1) or false (0) is considered NA Note: For floating point types, only binary identity with F_NA or R_NA counts as NA </p>
-
-</div>
-</div>
-<a id="a2c5b1b95f818b9f1eae87d3ed245e9e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c5b1b95f818b9f1eae87d3ed245e9e8">&#9670;&nbsp;</a></span>get_attributes()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void jazz_elements::Block::get_attributes </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#ad2f703c26500ad2cdcec139a7e2000c4">AttributeMap</a> *&#160;</td>
-          <td class="paramname"><em>all_att</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get all attributes of a <a class="el" href="classjazz__elements_1_1Block.html">Block</a> storing them inside a map.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">all_att</td><td>A (typically empty) map where all the attributes will be stored.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>NOTE: You can use a non-empty map. This will keep existing key/values not found in the <a class="el" href="classjazz__elements_1_1Block.html">Block</a> and create/override those in the <a class="el" href="classjazz__elements_1_1Block.html">Block</a> by using a normal 'map[key] = value' instruction. </p>
+<p>NOTES: 1. This writes: rank, range[] and size.</p><ol type="1">
+<li>rank counts the number of dimension &gt;0, except, when all dimensions == 0 produces: rank == 1, size == 0</li>
+<li>size returns the size in number of cells, not bytes. </li>
+</ol>
 
 </div>
 </div>
@@ -418,6 +262,108 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 <p>NOTES: See notes on <a class="el" href="classjazz__elements_1_1Block.html#a0064d4050c179054579217c07c972019">set_dimensions()</a> to understand why in case of 0 and 1, it may return different values than those passed when the block was created with a <a class="el" href="classjazz__elements_1_1Block.html#a0064d4050c179054579217c07c972019">set_dimensions()</a> call. </p>
+
+</div>
+</div>
+<a id="a74f9026d59db6cc3d9165c08f41cc960"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74f9026d59db6cc3d9165c08f41cc960">&#9670;&nbsp;</a></span>validate_index()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool jazz_elements::Block::validate_index </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>pIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns if an index (as a <a class="el" href="unionjazz__elements_1_1TensorDim.html">TensorDim</a> array) is valid for the tensor.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pIndex</td><td>A pointer to the <a class="el" href="unionjazz__elements_1_1TensorDim.html">TensorDim</a> containing the index.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the index is valid. </dd></dl>
+
+</div>
+</div>
+<a id="a3a9f80168b8cc49169a0c906c65c1467"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a9f80168b8cc49169a0c906c65c1467">&#9670;&nbsp;</a></span>validate_offset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jazz_elements::Block::validate_offset </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>offset</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns if an offset (as an integer) is valid for the tensor.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">offset</td><td>An offset corresponding to the cell as if the tensor was a linear vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the offset is valid. </dd></dl>
+
+</div>
+</div>
+<a id="a29755d8810419c0f253a30e965c32ddc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29755d8810419c0f253a30e965c32ddc">&#9670;&nbsp;</a></span>get_offset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jazz_elements::Block::get_offset </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>pIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Convert an index (as a <a class="el" href="unionjazz__elements_1_1TensorDim.html">TensorDim</a> array) to the corresponding offset without checking its validity.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pIndex</td><td>A pointer to the <a class="el" href="unionjazz__elements_1_1TensorDim.html">TensorDim</a> containing the index.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The offset corresponding to the same cell if the index was in a valid range. </dd></dl>
 
 </div>
 </div>
@@ -462,40 +408,6 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a29755d8810419c0f253a30e965c32ddc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29755d8810419c0f253a30e965c32ddc">&#9670;&nbsp;</a></span>get_offset()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int jazz_elements::Block::get_offset </td>
-          <td>(</td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>pIndex</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Convert an index (as a <a class="el" href="unionjazz__elements_1_1TensorDim.html">TensorDim</a> array) to the corresponding offset without checking its validity.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pIndex</td><td>A pointer to the <a class="el" href="unionjazz__elements_1_1TensorDim.html">TensorDim</a> containing the index.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The offset corresponding to the same cell if the index was in a valid range. </dd></dl>
 
 </div>
 </div>
@@ -566,195 +478,6 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to where the (zero ended) string is stored in the <a class="el" href="classjazz__elements_1_1Block.html">Block</a>.</dd></dl>
 <p>NOTE: Use the pointer as read-only (more than one cell may point to the same value) and never try to free it. </p>
-
-</div>
-</div>
-<a id="ada7a86857917f098340b836df6b81bf3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada7a86857917f098340b836df6b81bf3">&#9670;&nbsp;</a></span>get_string_offset()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int jazz_elements::Block::get_string_offset </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a2275810354345e22c1c5ca21a8bb714b">pStringBuffer</a>&#160;</td>
-          <td class="paramname"><em>psb</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>pString</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Find an existing string in a block, or allocate a new one and return its offset in the <a class="el" href="structjazz__elements_1_1StringBuffer.html#aad4fda4c16c6eddb4ff3b2c56079bca1" title="The buffer where strings are stored starting with two zeroes for STRING_NA &amp; STRING_EMPTY.">StringBuffer.buffer</a>.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">psb</td><td>The address of the pStringBuffer (passed to avoid calling p_string_buffer repeatedly). </td></tr>
-    <tr><td class="paramname">pString</td><td>The string to find or allocate in the <a class="el" href="structjazz__elements_1_1StringBuffer.html" title="Structure at the end of a Block, initially created with init_string_buffer()">StringBuffer</a>.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The offset to the (zero terminated) string inside psb-&gt;buffer[] or -1 if allocation failed.</dd></dl>
-<p>NOTE: This function is private, called by <a class="el" href="classjazz__elements_1_1Block.html#af5ab27c383bd0fdd923f943dcad2c9de">set_attributes()</a> and <a class="el" href="classjazz__elements_1_1Block.html#a0e5e141d272fcf0b40009b2c24a90fd3">set_string()</a>. Use these functions instead and read their NOTES. </p>
-
-</div>
-</div>
-<a id="a1e7432d6f585a346fd6b713a697dc635"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e7432d6f585a346fd6b713a697dc635">&#9670;&nbsp;</a></span>init_string_buffer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void jazz_elements::Block::init_string_buffer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Initialize the <a class="el" href="structjazz__elements_1_1StringBuffer.html" title="Structure at the end of a Block, initially created with init_string_buffer()">StringBuffer</a> of a <a class="el" href="classjazz__elements_1_1Block.html">Block</a>, only when creating it.</p>
-<p>NOTE: This function is public because it has to be called by jazz_alloc.h methods. Never call it to construct you own Blocks except for test cases or in jazz_alloc.h methods. Use those to build Blocks instead. </p>
-
-</div>
-</div>
-<a id="afeda09c2d7670146634988b40fc4ab5e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afeda09c2d7670146634988b40fc4ab5e">&#9670;&nbsp;</a></span>p_attribute_keys()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int* jazz_elements::Block::p_attribute_keys </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Return the address of the vector containing both the attribute keys and the attribute ids in the <a class="el" href="structjazz__elements_1_1StringBuffer.html" title="Structure at the end of a Block, initially created with init_string_buffer()">StringBuffer</a>.</p>
-<p>NOTE: The actual values (which are strings) are stored in the same <a class="el" href="structjazz__elements_1_1StringBuffer.html" title="Structure at the end of a Block, initially created with init_string_buffer()">StringBuffer</a> containing the strings of the tensor (if any). This array has double the num_attributes size and stores the keys in the lower part and the offsets to the values on the upper part. </p>
-
-</div>
-</div>
-<a id="a9d2b455977ea1760446d088f68b63d4f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d2b455977ea1760446d088f68b63d4f">&#9670;&nbsp;</a></span>p_string_buffer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacejazz__elements.html#a2275810354345e22c1c5ca21a8bb714b">pStringBuffer</a> jazz_elements::Block::p_string_buffer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Return the address of the <a class="el" href="structjazz__elements_1_1StringBuffer.html" title="Structure at the end of a Block, initially created with init_string_buffer()">StringBuffer</a> containing the strings in the tensor and the attribute values. </p>
-
-</div>
-</div>
-<a id="af5ab27c383bd0fdd923f943dcad2c9de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5ab27c383bd0fdd923f943dcad2c9de">&#9670;&nbsp;</a></span>set_attributes()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void jazz_elements::Block::set_attributes </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#ad2f703c26500ad2cdcec139a7e2000c4">AttributeMap</a> *&#160;</td>
-          <td class="paramname"><em>all_att</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Set all attributes of a <a class="el" href="classjazz__elements_1_1Block.html">Block</a>, only when creating it, using a map.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">all_att</td><td>A map containing all the attributes for the block.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>NOTE: This function is public because it has to be called by jazz_alloc.h methods. <a class="el" href="classjazz__elements_1_1Block.html#af5ab27c383bd0fdd923f943dcad2c9de">set_attributes()</a> can only be called once, so it will do nothing if called after a <a class="el" href="classjazz__elements_1_1Block.html">Block</a> is built. Blocks are near-immutable objects, if you need to change a <a class="el" href="classjazz__elements_1_1Block.html">Block</a>'s attributes create a new object using jazz_alloc.h methods. </p>
-
-</div>
-</div>
-<a id="a0064d4050c179054579217c07c972019"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0064d4050c179054579217c07c972019">&#9670;&nbsp;</a></span>set_dimensions()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void jazz_elements::Block::set_dimensions </td>
-          <td>(</td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>pDim</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Sets the tensor dimensions from a <a class="el" href="unionjazz__elements_1_1TensorDim.html">TensorDim</a> array.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pDim</td><td>A pointer to the <a class="el" href="unionjazz__elements_1_1TensorDim.html">TensorDim</a> containing the dimensions.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>NOTES: 1. This writes: rank, range[] and size.</p><ol type="1">
-<li>rank counts the number of dimension &gt;0, except, when all dimensions == 0 produces: rank == 1, size == 0</li>
-<li>size returns the size in number of cells, not bytes. </li>
-</ol>
 
 </div>
 </div>
@@ -848,8 +571,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a74f9026d59db6cc3d9165c08f41cc960"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74f9026d59db6cc3d9165c08f41cc960">&#9670;&nbsp;</a></span>validate_index()</h2>
+<a id="a967f54fa8714c2fd58ac13968675e62d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a967f54fa8714c2fd58ac13968675e62d">&#9670;&nbsp;</a></span>find_attribute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -858,44 +581,10 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool jazz_elements::Block::validate_index </td>
-          <td>(</td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>pIndex</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Returns if an index (as a <a class="el" href="unionjazz__elements_1_1TensorDim.html">TensorDim</a> array) is valid for the tensor.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pIndex</td><td>A pointer to the <a class="el" href="unionjazz__elements_1_1TensorDim.html">TensorDim</a> containing the index.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the index is valid. </dd></dl>
-
-</div>
-</div>
-<a id="a3a9f80168b8cc49169a0c906c65c1467"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a9f80168b8cc49169a0c906c65c1467">&#9670;&nbsp;</a></span>validate_offset()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int jazz_elements::Block::validate_offset </td>
+          <td class="memname">char* jazz_elements::Block::find_attribute </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>offset</em></td><td>)</td>
+          <td class="paramname"><em>attribute_id</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -905,14 +594,325 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns if an offset (as an integer) is valid for the tensor.</p>
+<p>Find an attribute by its attribute_id (key).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">offset</td><td>An offset corresponding to the cell as if the tensor was a linear vector.</td></tr>
+    <tr><td class="paramname">attribute_id</td><td>A unique 32-bit id defining what the attribute is: e.g., a Jazz class, a url, a mime type, ...</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the offset is valid. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to where the (zero ended) string (the attribute value) is stored in the <a class="el" href="classjazz__elements_1_1Block.html">Block</a>. Or nullptr if the key is not found.</dd></dl>
+<p>NOTE: Search is linear since no assumptions can be made on how keys are ordered. Typically Blocks have few (less than 5) attributes and that is okay. There is no limit on the number of attributes, so if you want to use the block's attributes as a dictionary containing, e.g., thousands of config keys, use <a class="el" href="classjazz__elements_1_1Block.html#a2c5b1b95f818b9f1eae87d3ed245e9e8">get_attributes()</a> instead which returns a map with all the attributes. </p>
+
+</div>
+</div>
+<a id="af5ab27c383bd0fdd923f943dcad2c9de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5ab27c383bd0fdd923f943dcad2c9de">&#9670;&nbsp;</a></span>set_attributes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void jazz_elements::Block::set_attributes </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#ad2f703c26500ad2cdcec139a7e2000c4">AttributeMap</a> *&#160;</td>
+          <td class="paramname"><em>all_att</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set all attributes of a <a class="el" href="classjazz__elements_1_1Block.html">Block</a>, only when creating it, using a map.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">all_att</td><td>A map containing all the attributes for the block.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>NOTE: This function is public because it has to be called by jazz_alloc.h methods. <a class="el" href="classjazz__elements_1_1Block.html#af5ab27c383bd0fdd923f943dcad2c9de">set_attributes()</a> can only be called once, so it will do nothing if called after a <a class="el" href="classjazz__elements_1_1Block.html">Block</a> is built. Blocks are near-immutable objects, if you need to change a <a class="el" href="classjazz__elements_1_1Block.html">Block</a>'s attributes create a new object using jazz_alloc.h methods. </p>
+
+</div>
+</div>
+<a id="a2c5b1b95f818b9f1eae87d3ed245e9e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c5b1b95f818b9f1eae87d3ed245e9e8">&#9670;&nbsp;</a></span>get_attributes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void jazz_elements::Block::get_attributes </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#ad2f703c26500ad2cdcec139a7e2000c4">AttributeMap</a> *&#160;</td>
+          <td class="paramname"><em>all_att</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get all attributes of a <a class="el" href="classjazz__elements_1_1Block.html">Block</a> storing them inside a map.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">all_att</td><td>A (typically empty) map where all the attributes will be stored.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>NOTE: You can use a non-empty map. This will keep existing key/values not found in the <a class="el" href="classjazz__elements_1_1Block.html">Block</a> and create/override those in the <a class="el" href="classjazz__elements_1_1Block.html">Block</a> by using a normal 'map[key] = value' instruction. </p>
+
+</div>
+</div>
+<a id="a1e7432d6f585a346fd6b713a697dc635"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e7432d6f585a346fd6b713a697dc635">&#9670;&nbsp;</a></span>init_string_buffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void jazz_elements::Block::init_string_buffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Initialize the <a class="el" href="structjazz__elements_1_1StringBuffer.html" title="Structure at the end of a Block, initially created with init_string_buffer()">StringBuffer</a> of a <a class="el" href="classjazz__elements_1_1Block.html">Block</a>, only when creating it.</p>
+<p>NOTE: This function is public because it has to be called by jazz_alloc.h methods. Never call it to construct you own Blocks except for test cases or in jazz_alloc.h methods. Use those to build Blocks instead. </p>
+
+</div>
+</div>
+<a id="ae9bc8c5a8a015bcad22d01b219c845f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9bc8c5a8a015bcad22d01b219c845f5">&#9670;&nbsp;</a></span>find_NAs_in_tensor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool jazz_elements::Block::find_NAs_in_tensor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Scan a tensor object to see if it contains any NA valued of the type specified in cell_type.</p>
+<dl class="section return"><dt>Returns</dt><dd>True if NA values of the give type were found.</dd></dl>
+<p>Note: For boolean types everything other than true (1) or false (0) is considered NA Note: For floating point types, only binary identity with F_NA or R_NA counts as NA </p>
+
+</div>
+</div>
+<a id="a90d95624762acefc83ecb038e7c4f949"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90d95624762acefc83ecb038e7c4f949">&#9670;&nbsp;</a></span>align_128bit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int* jazz_elements::Block::align_128bit </td>
+          <td>(</td>
+          <td class="paramtype">uintptr_t&#160;</td>
+          <td class="paramname"><em>ipt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Align a pointer (as uintptr_t) to the next 16 byte boundary. </p>
+
+</div>
+</div>
+<a id="afeda09c2d7670146634988b40fc4ab5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afeda09c2d7670146634988b40fc4ab5e">&#9670;&nbsp;</a></span>p_attribute_keys()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int* jazz_elements::Block::p_attribute_keys </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return the address of the vector containing both the attribute keys and the attribute ids in the <a class="el" href="structjazz__elements_1_1StringBuffer.html" title="Structure at the end of a Block, initially created with init_string_buffer()">StringBuffer</a>.</p>
+<p>NOTE: The actual values (which are strings) are stored in the same <a class="el" href="structjazz__elements_1_1StringBuffer.html" title="Structure at the end of a Block, initially created with init_string_buffer()">StringBuffer</a> containing the strings of the tensor (if any). This array has double the num_attributes size and stores the keys in the lower part and the offsets to the values on the upper part. </p>
+
+</div>
+</div>
+<a id="a9d2b455977ea1760446d088f68b63d4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d2b455977ea1760446d088f68b63d4f">&#9670;&nbsp;</a></span>p_string_buffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#a2275810354345e22c1c5ca21a8bb714b">pStringBuffer</a> jazz_elements::Block::p_string_buffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return the address of the <a class="el" href="structjazz__elements_1_1StringBuffer.html" title="Structure at the end of a Block, initially created with init_string_buffer()">StringBuffer</a> containing the strings in the tensor and the attribute values. </p>
+
+</div>
+</div>
+<a id="ada7a86857917f098340b836df6b81bf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada7a86857917f098340b836df6b81bf3">&#9670;&nbsp;</a></span>get_string_offset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jazz_elements::Block::get_string_offset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a2275810354345e22c1c5ca21a8bb714b">pStringBuffer</a>&#160;</td>
+          <td class="paramname"><em>psb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pString</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Find an existing string in a block, or allocate a new one and return its offset in the <a class="el" href="structjazz__elements_1_1StringBuffer.html#aad4fda4c16c6eddb4ff3b2c56079bca1" title="The buffer where strings are stored starting with two zeroes for STRING_NA &amp; STRING_EMPTY.">StringBuffer.buffer</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">psb</td><td>The address of the pStringBuffer (passed to avoid calling p_string_buffer repeatedly). </td></tr>
+    <tr><td class="paramname">pString</td><td>The string to find or allocate in the <a class="el" href="structjazz__elements_1_1StringBuffer.html" title="Structure at the end of a Block, initially created with init_string_buffer()">StringBuffer</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The offset to the (zero terminated) string inside psb-&gt;buffer[] or -1 if allocation failed.</dd></dl>
+<p>NOTE: This function is private, called by <a class="el" href="classjazz__elements_1_1Block.html#af5ab27c383bd0fdd923f943dcad2c9de">set_attributes()</a> and <a class="el" href="classjazz__elements_1_1Block.html#a0e5e141d272fcf0b40009b2c24a90fd3">set_string()</a>. Use these functions instead and read their NOTES. </p>
+
+</div>
+</div>
+<a id="a7c4c1d50d06799ffec5a0d253528fd2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c4c1d50d06799ffec5a0d253528fd2e">&#9670;&nbsp;</a></span>filter_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jazz_elements::Block::filter_type </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Check (fast) the validity of a filter and return its type or FILTER_TYPE_NOTAFILTER if invalid</p>
+<p>This checks the values in the header, but not the validity of the data in .tensor[]</p>
+<dl class="section return"><dt>Returns</dt><dd>FILTER_TYPE_BOOLEAN or FILTER_TYPE_INTEGER if it is a valid filter of that type, FILTER_TYPE_NOTAFILTER if not. </dd></dl>
+
+</div>
+</div>
+<a id="aab7759b2dd66a071066c3c0eeb51eaf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab7759b2dd66a071066c3c0eeb51eaf5">&#9670;&nbsp;</a></span>filter_audit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jazz_elements::Block::filter_audit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Check (in depth) the validity of a filter and return its type or FILTER_TYPE_NOTAFILTER if invalid</p>
+<p>This checks both the values in the header and the validity of the data in .tensor[]</p>
+<dl class="section return"><dt>Returns</dt><dd>FILTER_TYPE_BOOLEAN or FILTER_TYPE_INTEGER if it is a valid filter of that type, FILTER_TYPE_NOTAFILTER if not. </dd></dl>
+
+</div>
+</div>
+<a id="a7f43dead9f6ba3222b619b5c9d5165de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f43dead9f6ba3222b619b5c9d5165de">&#9670;&nbsp;</a></span>can_filter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool jazz_elements::Block::can_filter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a>&#160;</td>
+          <td class="paramname"><em>p_block</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Check (fast) if a filter is valid and can be applied to filter inside a specific <a class="el" href="classjazz__elements_1_1Block.html">Block</a></p>
+<p>This is verifies (size == number of rows) and calls <a class="el" href="classjazz__elements_1_1Block.html#a7c4c1d50d06799ffec5a0d253528fd2e">filter_type()</a> to check its requirements too.</p>
+<dl class="section return"><dt>Returns</dt><dd>true if it is a valid filter of that type. </dd></dl>
 
 </div>
 </div>

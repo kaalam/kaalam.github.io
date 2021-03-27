@@ -111,22 +111,6 @@ Data Fields</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A tensor of cell size 1, 4, 8 or sizeof(BlockHeader) </p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="aae30a8d68c986364a55a8ceafd9075be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae30a8d68c986364a55a8ceafd9075be">&#9670;&nbsp;</a></span>cell_bool</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool jazz_elements::Tensor::cell_bool[0]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>.. CELL_TYPE_BYTE_BOOLEAN </p>
-
-</div>
-</div>
 <a id="a71bf76d56fec26eb3942d5201a51079c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a71bf76d56fec26eb3942d5201a51079c">&#9670;&nbsp;</a></span>cell_byte</h2>
 
@@ -143,19 +127,19 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a01e0eb193675392963585ea3f3fe94e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01e0eb193675392963585ea3f3fe94e0">&#9670;&nbsp;</a></span>cell_double</h2>
+<a id="aae30a8d68c986364a55a8ceafd9075be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae30a8d68c986364a55a8ceafd9075be">&#9670;&nbsp;</a></span>cell_bool</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double jazz_elements::Tensor::cell_double[0]</td>
+          <td class="memname">bool jazz_elements::Tensor::cell_bool[0]</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>.. CELL_TYPE_DOUBLE </p>
+<p>.. CELL_TYPE_BYTE_BOOLEAN </p>
 
 </div>
 </div>
@@ -175,35 +159,19 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a19ea224974468e9f7206892e6a6d1b61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19ea224974468e9f7206892e6a6d1b61">&#9670;&nbsp;</a></span>cell_item</h2>
+<a id="a4fbaf6b2848c1091188a74ba20d40b66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fbaf6b2848c1091188a74ba20d40b66">&#9670;&nbsp;</a></span>cell_uint</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structjazz__elements_1_1ItemHeader.html">ItemHeader</a> jazz_elements::Tensor::cell_item[0]</td>
+          <td class="memname">uint32_t jazz_elements::Tensor::cell_uint[0]</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>.. An array of <a class="el" href="structjazz__elements_1_1BlockHeader.html" title="Header for a Block.">BlockHeader</a> used by Kinds and Tuples </p>
-
-</div>
-</div>
-<a id="af05deaffcf6e5c0f1b9bd5ca5c2276dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af05deaffcf6e5c0f1b9bd5ca5c2276dc">&#9670;&nbsp;</a></span>cell_longint</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">long long jazz_elements::Tensor::cell_longint[0]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>.. CELL_TYPE_LONG_INTEGER and CELL_TYPE_TIME </p>
+<p>.. CELL_TYPE_SINGLE or CELL_TYPE_BOOLEAN as 32 bit unsigned </p>
 
 </div>
 </div>
@@ -223,19 +191,19 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a4fbaf6b2848c1091188a74ba20d40b66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4fbaf6b2848c1091188a74ba20d40b66">&#9670;&nbsp;</a></span>cell_uint</h2>
+<a id="af05deaffcf6e5c0f1b9bd5ca5c2276dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af05deaffcf6e5c0f1b9bd5ca5c2276dc">&#9670;&nbsp;</a></span>cell_longint</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t jazz_elements::Tensor::cell_uint[0]</td>
+          <td class="memname">long long jazz_elements::Tensor::cell_longint[0]</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>.. CELL_TYPE_SINGLE or CELL_TYPE_BOOLEAN as 32 bit unsigned </p>
+<p>.. CELL_TYPE_LONG_INTEGER and CELL_TYPE_TIME </p>
 
 </div>
 </div>
@@ -252,6 +220,38 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>.. CELL_TYPE_DOUBLE or CELL_TYPE_TIME as 64 bit unsigned </p>
+
+</div>
+</div>
+<a id="a01e0eb193675392963585ea3f3fe94e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01e0eb193675392963585ea3f3fe94e0">&#9670;&nbsp;</a></span>cell_double</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double jazz_elements::Tensor::cell_double[0]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>.. CELL_TYPE_DOUBLE </p>
+
+</div>
+</div>
+<a id="a19ea224974468e9f7206892e6a6d1b61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19ea224974468e9f7206892e6a6d1b61">&#9670;&nbsp;</a></span>cell_item</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structjazz__elements_1_1ItemHeader.html">ItemHeader</a> jazz_elements::Tensor::cell_item[0]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>.. An array of <a class="el" href="structjazz__elements_1_1BlockHeader.html" title="Header for a Block.">BlockHeader</a> used by Kinds and Tuples </p>
 
 </div>
 </div>

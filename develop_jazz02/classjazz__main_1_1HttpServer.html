@@ -150,36 +150,6 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a641a8b251d7e78db6e08a3ea4b38836a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a641a8b251d7e78db6e08a3ea4b38836a">&#9670;&nbsp;</a></span>shut_down()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> jazz_main::HttpServer::shut_down </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Server closing method.</p>
-<p>This overrides the Service <a class="el" href="classjazz__main_1_1HttpServer.html#a641a8b251d7e78db6e08a3ea4b38836a">shut_down()</a> just to set the return to SERVICE_NO_ERROR.</p>
-<p>The true closing mechanism is a: MHD_stop_daemon (Jazz_MHD_Daemon); done by the <a class="el" href="namespacejazz__main.html#afa96b225c13eebee49a375d73fa3ebba">signalHandler_SIGTERM()</a> callback that captures SIGTERM. </p>
-
-<p>Reimplemented from <a class="el" href="classjazz__elements_1_1Service.html#af9c7e6ebcd6ec69fdbf94ea6cc1edff5">jazz_elements::Service</a>.</p>
-
-</div>
-</div>
 <a id="a8b1b847f6a122858ab18729ad49c3702"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8b1b847f6a122858ab18729ad49c3702">&#9670;&nbsp;</a></span>start()</h2>
 
@@ -233,6 +203,36 @@ Private Attributes</h2></td></tr>
 <p class="startli">And sleeps forever! (Remember, it is the child of the original caller who exited with EXIT_SUCCESS.) </p>
 </li>
 </ol>
+
+</div>
+</div>
+<a id="a641a8b251d7e78db6e08a3ea4b38836a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a641a8b251d7e78db6e08a3ea4b38836a">&#9670;&nbsp;</a></span>shut_down()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> jazz_main::HttpServer::shut_down </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Server closing method.</p>
+<p>This overrides the Service <a class="el" href="classjazz__main_1_1HttpServer.html#a641a8b251d7e78db6e08a3ea4b38836a">shut_down()</a> just to set the return to SERVICE_NO_ERROR.</p>
+<p>The true closing mechanism is a: MHD_stop_daemon (Jazz_MHD_Daemon); done by the <a class="el" href="namespacejazz__main.html#afa96b225c13eebee49a375d73fa3ebba">signalHandler_SIGTERM()</a> callback that captures SIGTERM. </p>
+
+<p>Reimplemented from <a class="el" href="classjazz__elements_1_1Service.html#af9c7e6ebcd6ec69fdbf94ea6cc1edff5">jazz_elements::Service</a>.</p>
 
 </div>
 </div>

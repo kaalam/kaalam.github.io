@@ -145,67 +145,19 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a581c7cd356bad27167467db5cce09291"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a581c7cd356bad27167467db5cce09291">&#9670;&nbsp;</a></span>created</h2>
+<a id="aafa8121fb2c2091b32cc688ea711002c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafa8121fb2c2091b32cc688ea711002c">&#9670;&nbsp;</a></span>rank</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacejazz__elements.html#aa7e5adf7a32b3080ea959153d2b6aee9">TimePoint</a> jazz_elements::BlockHeader::created</td>
+          <td class="memname">int jazz_elements::BlockHeader::rank</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Timestamp when the block was created. </p>
-
-</div>
-</div>
-<a id="a6f9d802a4dfacc3213e77431577ea448"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f9d802a4dfacc3213e77431577ea448">&#9670;&nbsp;</a></span>has_NA</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool jazz_elements::BlockHeader::has_NA</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>If true, at least one value in the tensor is a NA and block requires NA-aware arithmetic. </p>
-
-</div>
-</div>
-<a id="a9718cc9c15e696e6e2ff1d044d65b47a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9718cc9c15e696e6e2ff1d044d65b47a">&#9670;&nbsp;</a></span>hash64</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint64_t jazz_elements::BlockHeader::hash64</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Hash of everything but the header. </p>
-
-</div>
-</div>
-<a id="ade1168fe2f507da3c64a90ef3d8f5e17"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade1168fe2f507da3c64a90ef3d8f5e17">&#9670;&nbsp;</a></span>num_attributes</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int jazz_elements::BlockHeader::num_attributes</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Number of elements in the JazzAttributesMap. </p>
+<p>The number of dimensions. </p>
 
 </div>
 </div>
@@ -225,22 +177,6 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="aafa8121fb2c2091b32cc688ea711002c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aafa8121fb2c2091b32cc688ea711002c">&#9670;&nbsp;</a></span>rank</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int jazz_elements::BlockHeader::rank</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The number of dimensions. </p>
-
-</div>
-</div>
 <a id="a4783f7f789daa2d4afcb84e85721aeee"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4783f7f789daa2d4afcb84e85721aeee">&#9670;&nbsp;</a></span>size</h2>
 
@@ -257,19 +193,19 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a04878e00333fb81bcdc404914109eef1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04878e00333fb81bcdc404914109eef1">&#9670;&nbsp;</a></span>tensor</h2>
+<a id="ade1168fe2f507da3c64a90ef3d8f5e17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade1168fe2f507da3c64a90ef3d8f5e17">&#9670;&nbsp;</a></span>num_attributes</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="unionjazz__elements_1_1Tensor.html">Tensor</a> jazz_elements::BlockHeader::tensor</td>
+          <td class="memname">int jazz_elements::BlockHeader::num_attributes</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>A tensor for type cell_type and dimensions set by <a class="el" href="classjazz__elements_1_1Block.html#a0064d4050c179054579217c07c972019">Block.set_dimensions()</a> </p>
+<p>Number of elements in the JazzAttributesMap. </p>
 
 </div>
 </div>
@@ -286,6 +222,70 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Total size of the block everything included. </p>
+
+</div>
+</div>
+<a id="a6f9d802a4dfacc3213e77431577ea448"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f9d802a4dfacc3213e77431577ea448">&#9670;&nbsp;</a></span>has_NA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool jazz_elements::BlockHeader::has_NA</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If true, at least one value in the tensor is a NA and block requires NA-aware arithmetic. </p>
+
+</div>
+</div>
+<a id="a581c7cd356bad27167467db5cce09291"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a581c7cd356bad27167467db5cce09291">&#9670;&nbsp;</a></span>created</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#aa7e5adf7a32b3080ea959153d2b6aee9">TimePoint</a> jazz_elements::BlockHeader::created</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Timestamp when the block was created. </p>
+
+</div>
+</div>
+<a id="a9718cc9c15e696e6e2ff1d044d65b47a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9718cc9c15e696e6e2ff1d044d65b47a">&#9670;&nbsp;</a></span>hash64</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t jazz_elements::BlockHeader::hash64</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Hash of everything but the header. </p>
+
+</div>
+</div>
+<a id="a04878e00333fb81bcdc404914109eef1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04878e00333fb81bcdc404914109eef1">&#9670;&nbsp;</a></span>tensor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="unionjazz__elements_1_1Tensor.html">Tensor</a> jazz_elements::BlockHeader::tensor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A tensor for type cell_type and dimensions set by <a class="el" href="classjazz__elements_1_1Block.html#a0064d4050c179054579217c07c972019">Block.set_dimensions()</a> </p>
 
 </div>
 </div>

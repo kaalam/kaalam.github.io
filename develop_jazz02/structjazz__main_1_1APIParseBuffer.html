@@ -93,22 +93,6 @@ Data Fields</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A buffer to keep the state while parsing/executing a query </p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="a123b007945411a058c62a4d0c58e6673"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a123b007945411a058c62a4d0c58e6673">&#9670;&nbsp;</a></span>l_value</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacejazz__elements.html#a4ac79f33730ff818dedd0fcfcc69d6e1">L_value</a> jazz_main::APIParseBuffer::l_value[<a class="el" href="api_8h.html#a4e3b689e9483994cfcd85954cba23338">MAX_RECURSION_DEPTH</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>A stack of L_value used during parsing/executing. </p>
-
-</div>
-</div>
 <a id="abaf983fd5e9fdcf60e4cca5f3a3da2ac"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abaf983fd5e9fdcf60e4cca5f3a3da2ac">&#9670;&nbsp;</a></span>p_owner</h2>
 
@@ -125,22 +109,6 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a2f15a0d1b9dbaf9662a1dd0e004e7b91"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f15a0d1b9dbaf9662a1dd0e004e7b91">&#9670;&nbsp;</a></span>r_value</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structjazz__elements_1_1R__value.html">R_value</a> jazz_main::APIParseBuffer::r_value[<a class="el" href="api_8h.html#a4e3b689e9483994cfcd85954cba23338">MAX_RECURSION_DEPTH</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>A stack of R_value used during parsing/executing. </p>
-
-</div>
-</div>
 <a id="a0bdc3c2069271791554ffbc72632dc07"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0bdc3c2069271791554ffbc72632dc07">&#9670;&nbsp;</a></span>stack_size</h2>
 
@@ -154,6 +122,38 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The stack size. Avoids having to memset() the whole <a class="el" href="structjazz__main_1_1APIParseBuffer.html">APIParseBuffer</a>. </p>
+
+</div>
+</div>
+<a id="a123b007945411a058c62a4d0c58e6673"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a123b007945411a058c62a4d0c58e6673">&#9670;&nbsp;</a></span>l_value</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#a4ac79f33730ff818dedd0fcfcc69d6e1">L_value</a> jazz_main::APIParseBuffer::l_value[<a class="el" href="api_8h.html#a4e3b689e9483994cfcd85954cba23338">MAX_RECURSION_DEPTH</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A stack of L_value used during parsing/executing. </p>
+
+</div>
+</div>
+<a id="a2f15a0d1b9dbaf9662a1dd0e004e7b91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f15a0d1b9dbaf9662a1dd0e004e7b91">&#9670;&nbsp;</a></span>r_value</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structjazz__elements_1_1R__value.html">R_value</a> jazz_main::APIParseBuffer::r_value[<a class="el" href="api_8h.html#a4e3b689e9483994cfcd85954cba23338">MAX_RECURSION_DEPTH</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A stack of R_value used during parsing/executing. </p>
 
 </div>
 </div>

@@ -180,14 +180,44 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p><a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a>: A type definition for complex Jazz objects. </p>
 <p><a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a> objects contain the metadata only. A <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz data block of a Kind.">Tuple</a> is a data object of a <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a>. Kinds define more complex types than (raw) Blocks, even if they are blocks. E.g., A <a class="el" href="classjazz__elements_1_1Block.html">Block</a> can store a video of a fixed shape (image only or soundtrack only). A <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a> can store both and have dimensions** defining things like: image_width, image_height, number_of_frames and, possibly, a subtitle track as another vector of strings.</p>
 <p>It is a block with special attributes to store a tree of (primitive type, block, kind). A <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a> is a single Block! A kind has <b>dimensions</b> which are integer variables that are used to define variable shapes.</p>
-<p>Technically, a kind is a <a class="el" href="classjazz__elements_1_1Block.html">Block</a> of type CELL_TYPE_TUPLE_ITEM. Each item has data (is a <a class="el" href="unionjazz__elements_1_1Tensor.html" title="A tensor of cell size 1, 4, 8 or sizeof(BlockHeader)">Tensor</a>). The way a <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a> can include other Kinds is by merging them together and that increases the <a class="el" href="structjazz__elements_1_1ItemHeader.html#a21c6929d96af41a00a541a337c7c2bac" title="The 0-based level (== depth of this item in the tree of items)">ItemHeader.level</a> by one. E.g, a <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a> x is made of tensors (a, b) and a <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a> y is made of (c, d, e), we can create a kind (f, x, y) as we merge it together we will just have: (f, x_a, x_b, y_c, y_d, y_e) all of them will have level 1, except f which will be level 0. The naming convention (merging with an underscore) is what a <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> would do by default when merging Kinds, but, in manually created Kinds each item can have arbitrary (but different) names. They may have dimensions named length, width, num_items or whatever and any of them can use these names to define variable dimensions of their tensors anywhere. They do so by having the names stored as strings and referring to the name (by its index) in the <a class="el" href="structjazz__elements_1_1ItemHeader.html#aa89fa132d9b2d9d31b00877d8728cd78" title="The names of the dimensions (anything 0 in rank is non-zero here and viceversa.), again as indices.">ItemHeader.dim_name</a>[·] where that dimension applies.</p>
+<p>Technically, a kind is a <a class="el" href="classjazz__elements_1_1Block.html">Block</a> of type CELL_TYPE_KIND_ITEM. Each item contains data (is a <a class="el" href="unionjazz__elements_1_1Tensor.html" title="A tensor of cell size 1, 4, 8 or sizeof(BlockHeader)">Tensor</a>). Even if kinds extend other kinds, only the leaves of the tree (the tensors) are included in the resulting kind with the appropriate level. See <a class="el" href="unionjazz__elements_1_1TensorDim.html">TensorDim</a>.</p>
+<p>Since kinds keep only metadata, the space, unlike in Tuples, is uninterrupted as in a normal block: (header, vector of CELL_TYPE_KIND_ITEM, attribute keys, <a class="el" href="structjazz__elements_1_1StringBuffer.html" title="Structure at the end of a Block, initially created with init_string_buffer()">StringBuffer</a>).</p>
+<p>The <a class="el" href="structjazz__elements_1_1StringBuffer.html" title="Structure at the end of a Block, initially created with init_string_buffer()">StringBuffer</a> contains the item names and dimension names. See <a class="el" href="unionjazz__elements_1_1TensorDim.html">TensorDim</a>.</p>
+<p>Many <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a> functionalities (including creating kinds and creating kinds from merging kinds) are done by Containers. This object just has a minimum of functionality to check the content of a kind (items, dimesions) anf to source a kind.</p>
+<p>The way a <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a> can include other Kinds is by merging them together and that increases the <a class="el" href="structjazz__elements_1_1ItemHeader.html#a21c6929d96af41a00a541a337c7c2bac" title="The 0-based level (== depth of this item in the tree of items)">ItemHeader.level</a> by one. E.g, a <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a> x is made of tensors (a, b) and a <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a> y is made of (c, d, e), we can create a kind (f, x, y) as we merge it together we will just have: (f, x_a, x_b, y_c, y_d, y_e) all of them will have level 1, except f which will be level 0. The naming convention (merging with an underscore) is what this method does. I kinds are created Kinds each item can have arbitrary (but different) names. They may have dimensions named length, width, num_items or whatever and any of them can use these names to define variable dimensions of their tensors anywhere. They do so by having the names stored as strings and referring to the name (by its index) in the ItemHeader.dim_name[·] where that dimension applies.</p>
 <p>Also, kinds always define, at least, these attributes:</p>
 <ul>
 <li>BLOCK_ATTRIB_BLOCKTYPE as the const "kind"</li>
-<li>BLOCK_ATTRIB_TYPE as the const "Kind"</li>
+<li>BLOCK_ATTRIB_TYPE as the const "Kind" </li>
 </ul>
-<p>Since kinds keep only metadata, the space is uninterrupted as in a normal block: (header, vector of CELL_TYPE_TUPLE_ITEM, attribute keys, <a class="el" href="structjazz__elements_1_1StringBuffer.html" title="Structure at the end of a Block, initially created with init_string_buffer()">StringBuffer</a>), which is the only difference between a <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a> an a tuple (besides BLOCK_ATTRIB_BLOCKTYPE and BLOCK_ATTRIB_TYPE values). </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6f51bbc324666ee4eb3a9f304960c356"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f51bbc324666ee4eb3a9f304960c356">&#9670;&nbsp;</a></span>num_dimensions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jazz_elements::Kind::num_dimensions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the number of dimensions in a <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a>.</p>
+<dl class="section return"><dt>Returns</dt><dd>Number of dimensions </dd></dl>
+
+</div>
+</div>
 <a id="ae1e9c2011e9f94f6168d6d2c641b8bca"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae1e9c2011e9f94f6168d6d2c641b8bca">&#9670;&nbsp;</a></span>dimension_names()</h2>
 
@@ -235,36 +265,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Check the internal validity of a <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a> (item structure, dimensions, etc.)</p>
-<dl class="section return"><dt>Returns</dt><dd>KIND_TYPE_NOTAKIND on error or KIND_TYPE_KIND if every check passes ok. </dd></dl>
-
-</div>
-</div>
-<a id="a6f51bbc324666ee4eb3a9f304960c356"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f51bbc324666ee4eb3a9f304960c356">&#9670;&nbsp;</a></span>num_dimensions()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int jazz_elements::Kind::num_dimensions </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Returns the number of dimensions in a <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a>.</p>
-<dl class="section return"><dt>Returns</dt><dd>Number of dimensions </dd></dl>
-
+<p>Check the internal validity of a <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a> (item structure, dimensions, etc.) not repeated of invalid item names. </p><pre class="fragment">\return KIND_TYPE_NOTAKIND on error or KIND_TYPE_KIND if every check passes ok.
+</pre> 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>

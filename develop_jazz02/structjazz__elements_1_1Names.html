@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Jazz 0.5+: jazz_main::StateTransition Struct Reference</title>
+<title>Jazz 0.5+: jazz_elements::Names Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,75 +62,46 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespacejazz__main.html">jazz_main</a></li><li class="navelem"><a class="el" href="structjazz__main_1_1StateTransition.html">StateTransition</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacejazz__elements.html">jazz_elements</a></li><li class="navelem"><a class="el" href="structjazz__elements_1_1Names.html">Names</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">jazz_main::StateTransition Struct Reference</div>  </div>
+<div class="title">jazz_elements::Names Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="api_8h_source.html">api.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="container_8h_source.html">container.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a5cddbfa0f1f0fe219603946d502bd145"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__main_1_1StateTransition.html#a5cddbfa0f1f0fe219603946d502bd145">from</a></td></tr>
-<tr class="separator:a5cddbfa0f1f0fe219603946d502bd145"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d5bfa3610d17b8a744a127756436490"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__main_1_1StateTransition.html#a3d5bfa3610d17b8a744a127756436490">to</a></td></tr>
-<tr class="separator:a3d5bfa3610d17b8a744a127756436490"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a831d3d9188a0ede3ea8d086f91587e9e"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__main_1_1StateTransition.html#a831d3d9188a0ede3ea8d086f91587e9e">rex</a> [<a class="el" href="api_8h.html#adf382d32aa8c95baa4066359ea13143a">MAX_TRANSITION_REGEX_LEN</a>]</td></tr>
-<tr class="separator:a831d3d9188a0ede3ea8d086f91587e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02531408cc098c12007e6fc83783c342"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#a97c097c96fd6364c46569536e8cbc535">Name</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1Names.html#a02531408cc098c12007e6fc83783c342">name</a> [<a class="el" href="container_8h.html#a6febfed9e29227d1e7746768c0404093">MAX_ITEMS_IN_TUPLE</a>]</td></tr>
+<tr class="memdesc:a02531408cc098c12007e6fc83783c342"><td class="mdescLeft">&#160;</td><td class="mdescRight">The item names. First zero breaks.  <a href="structjazz__elements_1_1Names.html#a02531408cc098c12007e6fc83783c342">More...</a><br /></td></tr>
+<tr class="separator:a02531408cc098c12007e6fc83783c342"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A way to build constants defining the transtition from one state to the next via a regex. </p>
+<div class="textblock"><p>An array of Item names (used to select items in a <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz data block of a Kind.">Tuple</a>). </p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="a5cddbfa0f1f0fe219603946d502bd145"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5cddbfa0f1f0fe219603946d502bd145">&#9670;&nbsp;</a></span>from</h2>
+<a id="a02531408cc098c12007e6fc83783c342"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02531408cc098c12007e6fc83783c342">&#9670;&nbsp;</a></span>name</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int jazz_main::StateTransition::from</td>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#a97c097c96fd6364c46569536e8cbc535">Name</a> jazz_elements::Names::name[<a class="el" href="container_8h.html#a6febfed9e29227d1e7746768c0404093">MAX_ITEMS_IN_TUPLE</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="a3d5bfa3610d17b8a744a127756436490"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d5bfa3610d17b8a744a127756436490">&#9670;&nbsp;</a></span>to</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int jazz_main::StateTransition::to</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a831d3d9188a0ede3ea8d086f91587e9e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a831d3d9188a0ede3ea8d086f91587e9e">&#9670;&nbsp;</a></span>rex</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char jazz_main::StateTransition::rex[<a class="el" href="api_8h.html#adf382d32aa8c95baa4066359ea13143a">MAX_TRANSITION_REGEX_LEN</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>The item names. First zero breaks. </p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="api_8h_source.html">api.h</a></li>
+<li><a class="el" href="container_8h_source.html">container.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

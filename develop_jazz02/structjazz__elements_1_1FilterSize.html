@@ -85,24 +85,8 @@ Data Fields</h2></td></tr>
 <tr class="separator:a70ae0efca81a4fb3ffbb56c27d884fb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Names for elements in a <a class="el" href="unionjazz__elements_1_1TensorDim.html">TensorDim</a> to make filter operation more elegant. A filter is a record that always has rank 1 and a size, but has an extra parameter, its length. </p>
+<div class="textblock"><p><a class="el" href="structjazz__elements_1_1Names.html">Names</a> for elements in a <a class="el" href="unionjazz__elements_1_1TensorDim.html">TensorDim</a> to make filter operation more elegant. A filter is a record that always has rank 1 and a size, but has an extra parameter, its length. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="a70ae0efca81a4fb3ffbb56c27d884fb2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70ae0efca81a4fb3ffbb56c27d884fb2">&#9670;&nbsp;</a></span>length</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int jazz_elements::FilterSize::length</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Since dim[1] is not used (as rank is 1), it is a good place to store the length of the block this can filter. </p>
-
-</div>
-</div>
 <a id="a24555fa36d66aad0c705101d5dff7812"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a24555fa36d66aad0c705101d5dff7812">&#9670;&nbsp;</a></span>one</h2>
 
@@ -116,6 +100,22 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>This is dim[0]. Since the filter is a block (of rank 1). This is always == 1 (see <a class="el" href="classjazz__elements_1_1Block.html#a29755d8810419c0f253a30e965c32ddc">Block.get_offset()</a>). </p>
+
+</div>
+</div>
+<a id="a70ae0efca81a4fb3ffbb56c27d884fb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70ae0efca81a4fb3ffbb56c27d884fb2">&#9670;&nbsp;</a></span>length</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jazz_elements::FilterSize::length</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Since dim[1] is not used (as rank is 1), it is a good place to store the length of the block this can filter. </p>
 
 </div>
 </div>
