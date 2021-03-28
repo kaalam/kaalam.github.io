@@ -17,5 +17,6 @@ var searchData=
   ['as_5fcpp_19',['AS_CPP',['../container_8h.html#ac3987a3312a08cf295f7c2b34a702514',1,'container.h']]],
   ['as_5fjson_20',['AS_JSON',['../container_8h.html#a06ad0260c76f8e6c33f94e7a5df148fc',1,'container.h']]],
   ['attributemap_21',['AttributeMap',['../namespacejazz__elements.html#ad2f703c26500ad2cdcec139a7e2000c4',1,'jazz_elements']]],
-  ['attributes_22',['Attributes',['../namespacejazz__elements.html#ad8dd34a46d8fb42f85ffb4b95ba8a5f3',1,'jazz_elements']]]
+  ['attributes_22',['Attributes',['../namespacejazz__elements.html#ad8dd34a46d8fb42f85ffb4b95ba8a5f3',1,'jazz_elements']]],
+  ['audit_23',['audit',['../classjazz__elements_1_1Kind.html#a0f07793b25f14849be4e700030ef787f',1,'jazz_elements::Kind::audit()'],['../classjazz__elements_1_1Tuple.html#abd67dcd506ff0ea51e3375ba630ddfc7',1,'jazz_elements::Tuple::audit()']]]
 ];

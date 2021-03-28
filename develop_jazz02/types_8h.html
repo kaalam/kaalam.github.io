@@ -116,6 +116,12 @@ Macros</h2></td></tr>
 <tr class="memitem:a66db4a37d11679cd51897ddd6fdf4c63"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a66db4a37d11679cd51897ddd6fdf4c63">SAFE_URL_LENGTH</a>&#160;&#160;&#160;2048</td></tr>
 <tr class="memdesc:a66db4a37d11679cd51897ddd6fdf4c63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum safe assumption of URL length for both parsing and forwarding.  <a href="types_8h.html#a66db4a37d11679cd51897ddd6fdf4c63">More...</a><br /></td></tr>
 <tr class="separator:a66db4a37d11679cd51897ddd6fdf4c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a834e9a379307f869a10f4da078be5786"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a834e9a379307f869a10f4da078be5786">NAME_SIZE</a>&#160;&#160;&#160;32</td></tr>
+<tr class="memdesc:a834e9a379307f869a10f4da078be5786"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of a Name (ending 0 included)  <a href="types_8h.html#a834e9a379307f869a10f4da078be5786">More...</a><br /></td></tr>
+<tr class="separator:a834e9a379307f869a10f4da078be5786"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a8bfd610ac1e273cd0522d1b7169f68"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a7a8bfd610ac1e273cd0522d1b7169f68">REGEX_VALIDATE_NAME</a>&#160;&#160;&#160;&quot;^[a-zA-Z][a-zA-Z0-9_]{0,30}$&quot;</td></tr>
+<tr class="memdesc:a7a8bfd610ac1e273cd0522d1b7169f68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block API (syntax related)  <a href="types_8h.html#a7a8bfd610ac1e273cd0522d1b7169f68">More...</a><br /></td></tr>
+<tr class="separator:a7a8bfd610ac1e273cd0522d1b7169f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ca562590a5d4d166dfef09d15c7f3ac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a5ca562590a5d4d166dfef09d15c7f3ac">JAZZ_MAX_NUM_THREADS</a>&#160;&#160;&#160;64</td></tr>
 <tr class="separator:a5ca562590a5d4d166dfef09d15c7f3ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5dfd5a365563c2e8cf13a83a127af9ac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a5dfd5a365563c2e8cf13a83a127af9ac">MAX_TENSOR_RANK</a>&#160;&#160;&#160;6</td></tr>
@@ -250,6 +256,13 @@ Typedefs</h2></td></tr>
 <tr class="memitem:aa7e5adf7a32b3080ea959153d2b6aee9"><td class="memItemLeft" align="right" valign="top">typedef std::chrono::steady_clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#aa7e5adf7a32b3080ea959153d2b6aee9">jazz_elements::TimePoint</a></td></tr>
 <tr class="memdesc:aa7e5adf7a32b3080ea959153d2b6aee9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A time point stored as 8 bytes.  <a href="namespacejazz__elements.html#aa7e5adf7a32b3080ea959153d2b6aee9">More...</a><br /></td></tr>
 <tr class="separator:aa7e5adf7a32b3080ea959153d2b6aee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97c097c96fd6364c46569536e8cbc535"><td class="memItemLeft" align="right" valign="top">typedef char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a97c097c96fd6364c46569536e8cbc535">jazz_elements::Name</a>[<a class="el" href="types_8h.html#a834e9a379307f869a10f4da078be5786">NAME_SIZE</a>]</td></tr>
+<tr class="separator:a97c097c96fd6364c46569536e8cbc535"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b6f709ede20f91ff26fa9166a7cc9da"><td class="memItemLeft" align="right" valign="top">typedef char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">jazz_elements::pChar</a></td></tr>
+<tr class="memdesc:a7b6f709ede20f91ff26fa9166a7cc9da"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to char.  <a href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">More...</a><br /></td></tr>
+<tr class="separator:a7b6f709ede20f91ff26fa9166a7cc9da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1ee282228d329b2175b2efa7add9385"><td class="memItemLeft" align="right" valign="top">typedef Name *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#aa1ee282228d329b2175b2efa7add9385">jazz_elements::pName</a></td></tr>
+<tr class="separator:aa1ee282228d329b2175b2efa7add9385"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5c3f57ec69caa19191f00178de0c927"><td class="memItemLeft" align="right" valign="top">typedef struct Answer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#ab5c3f57ec69caa19191f00178de0c927">jazz_elements::pAnswer</a></td></tr>
 <tr class="separator:ab5c3f57ec69caa19191f00178de0c927"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -296,6 +309,39 @@ Typedefs</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Maximum safe assumption of URL length for both parsing and forwarding. </p>
+
+</div>
+</div>
+<a id="a834e9a379307f869a10f4da078be5786"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a834e9a379307f869a10f4da078be5786">&#9670;&nbsp;</a></span>NAME_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NAME_SIZE&#160;&#160;&#160;32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Size of a Name (ending 0 included) </p>
+
+</div>
+</div>
+<a id="a7a8bfd610ac1e273cd0522d1b7169f68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a8bfd610ac1e273cd0522d1b7169f68">&#9670;&nbsp;</a></span>REGEX_VALIDATE_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REGEX_VALIDATE_NAME&#160;&#160;&#160;&quot;^[a-zA-Z][a-zA-Z0-9_]{0,30}$&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Block API (syntax related) </p>
+<p>Regex validating a Name </p>
 
 </div>
 </div>

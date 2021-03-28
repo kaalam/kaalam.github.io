@@ -17,7 +17,6 @@ var searchData=
   ['tuple_471',['Tuple',['../classjazz__elements_1_1Tuple.html',1,'jazz_elements']]],
   ['tuple_2ecpp_472',['tuple.cpp',['../tuple_8cpp.html',1,'']]],
   ['tuple_2eh_473',['tuple.h',['../tuple_8h.html',1,'']]],
-  ['tuple_5faudit_474',['tuple_audit',['../classjazz__elements_1_1Tuple.html#af802813b443ac84738b3a18ce45c115e',1,'jazz_elements::Tuple']]],
-  ['types_2ecpp_475',['types.cpp',['../types_8cpp.html',1,'']]],
-  ['types_2eh_476',['types.h',['../types_8h.html',1,'']]]
+  ['types_2ecpp_474',['types.cpp',['../types_8cpp.html',1,'']]],
+  ['types_2eh_475',['types.h',['../types_8h.html',1,'']]]
 ];

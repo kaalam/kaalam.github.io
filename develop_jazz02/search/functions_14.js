@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['write_5fcallback_670',['write_callback',['../namespacejazz__elements.html#a1a5f20cce9610a421e72a17fae481ea4',1,'jazz_elements']]]
+  ['_7econtainer_671',['~Container',['../classjazz__elements_1_1Container.html#a8e8a7b8af91fd8a578560cf2cb9dd1f1',1,'jazz_elements::Container']]],
+  ['_7elogger_672',['~Logger',['../classjazz__elements_1_1Logger.html#a710c1cfbf72eb6a38faad7198bdd0543',1,'jazz_elements::Logger']]]
 ];
