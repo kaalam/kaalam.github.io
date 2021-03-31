@@ -27,6 +27,7 @@ var searchData=
   ['integer_5fna_196',['INTEGER_NA',['../types_8h.html#a5552fe209cb40f52acd534917ba02003',1,'types.h']]],
   ['is_5fa_197',['is_a',['../classjazz__elements_1_1Tuple.html#a4f590a216d5122299474dd31aaa5ceb3',1,'jazz_elements::Tuple']]],
   ['item_198',['item',['../structjazz__elements_1_1Items.html#aa50911f20504503af6e1a6f09c14ba72',1,'jazz_elements::Items']]],
-  ['itemheader_199',['ItemHeader',['../structjazz__elements_1_1ItemHeader.html',1,'jazz_elements']]],
-  ['items_200',['Items',['../structjazz__elements_1_1Items.html',1,'jazz_elements']]]
+  ['item_5fname_199',['item_name',['../classjazz__elements_1_1Kind.html#a90f3967586b72becda3f3c7ddc9af37a',1,'jazz_elements::Kind']]],
+  ['itemheader_200',['ItemHeader',['../structjazz__elements_1_1ItemHeader.html',1,'jazz_elements']]],
+  ['items_201',['Items',['../structjazz__elements_1_1Items.html',1,'jazz_elements']]]
 ];

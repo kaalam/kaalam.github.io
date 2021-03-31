@@ -90,6 +90,8 @@ Inheritance diagram for jazz_elements::Kind:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a90f3967586b72becda3f3c7ddc9af37a"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Kind.html#a90f3967586b72becda3f3c7ddc9af37a">item_name</a> (int idx)</td></tr>
+<tr class="separator:a90f3967586b72becda3f3c7ddc9af37a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f51bbc324666ee4eb3a9f304960c356"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Kind.html#a6f51bbc324666ee4eb3a9f304960c356">num_dimensions</a> ()</td></tr>
 <tr class="separator:a6f51bbc324666ee4eb3a9f304960c356"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1e9c2011e9f94f6168d6d2c641b8bca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Kind.html#ae1e9c2011e9f94f6168d6d2c641b8bca">dimension_names</a> (<a class="el" href="namespacejazz__elements.html#ab5c3f57ec69caa19191f00178de0c927">pAnswer</a> p_buff)</td></tr>
@@ -190,6 +192,41 @@ Additional Inherited Members</h2></td></tr>
 <li>BLOCK_ATTRIB_TYPE as the const "Kind" </li>
 </ul>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a90f3967586b72becda3f3c7ddc9af37a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90f3967586b72becda3f3c7ddc9af37a">&#9670;&nbsp;</a></span>item_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* jazz_elements::Kind::item_name </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>idx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the name for an item by index without checking index range.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">idx</td><td>The index of the item.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to where the (zero ended) string is stored in the <a class="el" href="classjazz__elements_1_1Block.html">Block</a>.</dd></dl>
+<p>NOTE: Use the pointer as read-only (more than one cell may point to the same value) and never try to free it. </p>
+
+</div>
+</div>
 <a id="a6f51bbc324666ee4eb3a9f304960c356"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6f51bbc324666ee4eb3a9f304960c356">&#9670;&nbsp;</a></span>num_dimensions()</h2>
 
