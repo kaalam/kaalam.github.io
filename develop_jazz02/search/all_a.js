@@ -1,17 +1,17 @@
 var searchData=
 [
-  ['jazz_5fagency_202',['jazz_agency',['../namespacejazz__agency.html',1,'']]],
-  ['jazz_5fagency_2eh_203',['jazz_agency.h',['../jazz__agency_8h.html',1,'']]],
-  ['jazz_5fbebop_204',['jazz_bebop',['../namespacejazz__bebop.html',1,'']]],
-  ['jazz_5fbebop_2eh_205',['jazz_bebop.h',['../jazz__bebop_8h.html',1,'']]],
-  ['jazz_5fdebug_5fhome_206',['JAZZ_DEBUG_HOME',['../jazz__platform_8h.html#ac26325c84d31adf61f1480e8f7cd7b7f',1,'jazz_platform.h']]],
-  ['jazz_5fdefault_5fconfig_5fpath_207',['JAZZ_DEFAULT_CONFIG_PATH',['../api_8h.html#a89e9b1adbdda91381feed325f8f086b7',1,'api.h']]],
-  ['jazz_5felements_208',['jazz_elements',['../namespacejazz__elements.html',1,'']]],
-  ['jazz_5felements_2eh_209',['jazz_elements.h',['../jazz__elements_8h.html',1,'']]],
-  ['jazz_5fmain_210',['jazz_main',['../namespacejazz__main.html',1,'']]],
-  ['jazz_5fmax_5fnum_5fthreads_211',['JAZZ_MAX_NUM_THREADS',['../types_8h.html#a5ca562590a5d4d166dfef09d15c7f3ac',1,'types.h']]],
-  ['jazz_5fmhd_5fdaemon_212',['Jazz_MHD_Daemon',['../namespacejazz__main.html#a9af1d41451e6cfe5e88cddebec1ba954',1,'jazz_main']]],
-  ['jazz_5fplatform_2eh_213',['jazz_platform.h',['../jazz__platform_8h.html',1,'']]],
-  ['jazz_5fversion_214',['JAZZ_VERSION',['../jazz__platform_8h.html#a948a256c8427f1f46ede7fd6fc2a7b5c',1,'jazz_platform.h']]],
-  ['jazz_5fyears_215',['JAZZ_YEARS',['../jazz__platform_8h.html#a494e5cc1a5686d905af0917e584806bf',1,'jazz_platform.h']]]
+  ['jazz_5fagency_204',['jazz_agency',['../namespacejazz__agency.html',1,'']]],
+  ['jazz_5fagency_2eh_205',['jazz_agency.h',['../jazz__agency_8h.html',1,'']]],
+  ['jazz_5fbebop_206',['jazz_bebop',['../namespacejazz__bebop.html',1,'']]],
+  ['jazz_5fbebop_2eh_207',['jazz_bebop.h',['../jazz__bebop_8h.html',1,'']]],
+  ['jazz_5fdebug_5fhome_208',['JAZZ_DEBUG_HOME',['../jazz__platform_8h.html#ac26325c84d31adf61f1480e8f7cd7b7f',1,'jazz_platform.h']]],
+  ['jazz_5fdefault_5fconfig_5fpath_209',['JAZZ_DEFAULT_CONFIG_PATH',['../api_8h.html#a89e9b1adbdda91381feed325f8f086b7',1,'api.h']]],
+  ['jazz_5felements_210',['jazz_elements',['../namespacejazz__elements.html',1,'']]],
+  ['jazz_5felements_2eh_211',['jazz_elements.h',['../jazz__elements_8h.html',1,'']]],
+  ['jazz_5fmain_212',['jazz_main',['../namespacejazz__main.html',1,'']]],
+  ['jazz_5fmax_5fnum_5fthreads_213',['JAZZ_MAX_NUM_THREADS',['../types_8h.html#a5ca562590a5d4d166dfef09d15c7f3ac',1,'types.h']]],
+  ['jazz_5fmhd_5fdaemon_214',['Jazz_MHD_Daemon',['../namespacejazz__main.html#a9af1d41451e6cfe5e88cddebec1ba954',1,'jazz_main']]],
+  ['jazz_5fplatform_2eh_215',['jazz_platform.h',['../jazz__platform_8h.html',1,'']]],
+  ['jazz_5fversion_216',['JAZZ_VERSION',['../jazz__platform_8h.html#a948a256c8427f1f46ede7fd6fc2a7b5c',1,'jazz_platform.h']]],
+  ['jazz_5fyears_217',['JAZZ_YEARS',['../jazz__platform_8h.html#a494e5cc1a5686d905af0917e584806bf',1,'jazz_platform.h']]]
 ];

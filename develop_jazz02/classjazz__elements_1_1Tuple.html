@@ -92,6 +92,16 @@ Inheritance diagram for jazz_elements::Tuple:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a0c2fea215929f8994a5efceba4ba7d10"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Tuple.html#a0c2fea215929f8994a5efceba4ba7d10">p_attribute_keys</a> ()</td></tr>
+<tr class="separator:a0c2fea215929f8994a5efceba4ba7d10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71b1e32248aef8b7434cd4b1d4d46aa2"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Tuple.html#a71b1e32248aef8b7434cd4b1d4d46aa2">item_name</a> (int idx)</td></tr>
+<tr class="separator:a71b1e32248aef8b7434cd4b1d4d46aa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a677bf26596cf6510140da94edfb78aed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Tuple.html#a677bf26596cf6510140da94edfb78aed">new_tuple</a> (int num_bytes)</td></tr>
+<tr class="separator:a677bf26596cf6510140da94edfb78aed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefe31d12ae0350285a90bccd9f096078"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Tuple.html#aefe31d12ae0350285a90bccd9f096078">add_item</a> (<a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a> p_block)</td></tr>
+<tr class="separator:aefe31d12ae0350285a90bccd9f096078"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d8fc2be7b1f5db84f4111956add5511"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Tuple.html#a4d8fc2be7b1f5db84f4111956add5511">close_tuple</a> (<a class="el" href="namespacejazz__elements.html#af5f94c0c0a698c9a23e8a5bd1c63f701">pNames</a> p_names, <a class="el" href="namespacejazz__elements.html#ad2f703c26500ad2cdcec139a7e2000c4">AttributeMap</a> &amp;attr, int *p_levels=nullptr)</td></tr>
+<tr class="separator:a4d8fc2be7b1f5db84f4111956add5511"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f590a216d5122299474dd31aaa5ceb3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Tuple.html#a4f590a216d5122299474dd31aaa5ceb3">is_a</a> (<a class="el" href="namespacejazz__elements.html#a99c0160368f44b8120e563d29a1c1939">pKind</a> kind)</td></tr>
 <tr class="separator:a4f590a216d5122299474dd31aaa5ceb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd67dcd506ff0ea51e3375ba630ddfc7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Tuple.html#abd67dcd506ff0ea51e3375ba630ddfc7">audit</a> ()</td></tr>
@@ -184,13 +194,195 @@ Additional Inherited Members</h2></td></tr>
 <li>It has constant values for the dimensions. E.g., all instances of "image_width" across all items where applicable are, say 640.</li>
 <li>It has different attributes than a <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz data block of a Kind.">Tuple</a>.</li>
 </ul>
-<p>Also, tuples always define, at least, these attributes:</p>
+<p>Also, tuples always define, if the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> sets them as expected, these attributes:</p>
 <ul>
 <li>BLOCK_ATTRIB_BLOCKTYPE as the const "tuple"</li>
 <li>BLOCK_ATTRIB_TYPE as whatever the inherited class name is ("Tuple" for the main class)</li>
 <li>BLOCK_ATTRIB_KIND as the locator to the definition of the <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a> it satisfies. (Can be a tab separated list.) </li>
 </ul>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0c2fea215929f8994a5efceba4ba7d10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c2fea215929f8994a5efceba4ba7d10">&#9670;&nbsp;</a></span>p_attribute_keys()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int* jazz_elements::Tuple::p_attribute_keys </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return the address of the vector containing both the attribute keys for a <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz data block of a Kind.">Tuple</a>.</p>
+<p>NOTE: The tuple, besides metadata, contains data and therefore, the first tensor of <a class="el" href="structjazz__elements_1_1ItemHeader.html" title="Header for an item (of a Kind or Tuple)">ItemHeader</a> corresponding to each item is followed by the tensors containing the data of each item. This changes the logic </p>
+
+</div>
+</div>
+<a id="a71b1e32248aef8b7434cd4b1d4d46aa2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71b1e32248aef8b7434cd4b1d4d46aa2">&#9670;&nbsp;</a></span>item_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* jazz_elements::Tuple::item_name </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>idx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the name for an item of a <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz data block of a Kind.">Tuple</a> by index without checking index range.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">idx</td><td>The index of the item.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to where the (zero ended) string is stored in the <a class="el" href="classjazz__elements_1_1Block.html">Block</a>.</dd></dl>
+<p>NOTE: Use the pointer as read-only (more than one cell may point to the same value) and never try to free it. </p>
+
+</div>
+</div>
+<a id="a677bf26596cf6510140da94edfb78aed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a677bf26596cf6510140da94edfb78aed">&#9670;&nbsp;</a></span>new_tuple()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool jazz_elements::Tuple::new_tuple </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num_bytes</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Initializes a <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz data block of a Kind.">Tuple</a> object (step 1): Allocates the space.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">num_bytes</td><td>The size in bytes allocated. Should be enough for all names, data, ItemHeaders and attributes.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>False on error (insufficient alloc size for a very conservative minimum). </dd></dl>
+
+</div>
+</div>
+<a id="aefe31d12ae0350285a90bccd9f096078"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefe31d12ae0350285a90bccd9f096078">&#9670;&nbsp;</a></span>add_item()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool jazz_elements::Tuple::add_item </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a>&#160;</td>
+          <td class="paramname"><em>p_block</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Initializes a <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz data block of a Kind.">Tuple</a> object (step 2): Adds an item to the (unfinished) tuple.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_block</td><td>A tensor to be copied into the <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz data block of a Kind.">Tuple</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>False on error (insufficient alloc space or wrong block type). </dd></dl>
+
+</div>
+</div>
+<a id="a4d8fc2be7b1f5db84f4111956add5511"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d8fc2be7b1f5db84f4111956add5511">&#9670;&nbsp;</a></span>close_tuple()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool jazz_elements::Tuple::close_tuple </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#af5f94c0c0a698c9a23e8a5bd1c63f701">pNames</a>&#160;</td>
+          <td class="paramname"><em>p_names</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#ad2f703c26500ad2cdcec139a7e2000c4">AttributeMap</a> &amp;&#160;</td>
+          <td class="paramname"><em>attr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>p_levels</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Initializes a <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz data block of a Kind.">Tuple</a> object (step 3): Set names, levels and attributes.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_names</td><td>A pointer to the names of all the items. </td></tr>
+    <tr><td class="paramname">attr</td><td>The attributes for the <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz data block of a Kind.">Tuple</a>. Set "as is", without adding BLOCK_ATTRIB_BLOCKTYPE or BLOCK_ATTRIB_TYPE. </td></tr>
+    <tr><td class="paramname">p_levels</td><td>A pointer to an array with the level of each item. (Allows to create a tree structure. nullptr =&gt; All == 0)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>False on error (insufficient alloc space for the strings). </dd></dl>
+
+</div>
+</div>
 <a id="a4f590a216d5122299474dd31aaa5ceb3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4f590a216d5122299474dd31aaa5ceb3">&#9670;&nbsp;</a></span>is_a()</h2>
 
