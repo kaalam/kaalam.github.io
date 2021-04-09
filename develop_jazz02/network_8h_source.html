@@ -106,100 +106,61 @@ $(function() {
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">// #include &lt;stl_whatever&gt;</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="persisted_8h.html">src/jazz_elements/persisted.h</a>&quot;</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#if defined CATCH_TEST</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#ifndef INCLUDED_JAZZ_CATCH2</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#define INCLUDED_JAZZ_CATCH2</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#include &quot;src/catch2/catch.hpp&quot;</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="utils_8h.html">src/jazz_elements/utils.h</a>&quot;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#if defined CATCH_TEST</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#ifndef INCLUDED_JAZZ_CATCH2</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#define INCLUDED_JAZZ_CATCH2</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &quot;src/catch2/catch.hpp&quot;</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#ifndef INCLUDED_JAZZ_ELEMENTS_NETWORK</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="network_8h.html#aca63ad2e10d70458d64bba7bd69ea551">   50</a></span>&#160;<span class="preprocessor">#define INCLUDED_JAZZ_ELEMENTS_NETWORK</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#ifndef INCLUDED_JAZZ_ELEMENTS_NETWORK</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="network_8h.html#aca63ad2e10d70458d64bba7bd69ea551">   51</a></span>&#160;<span class="preprocessor">#define INCLUDED_JAZZ_ELEMENTS_NETWORK</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacejazz__elements.html">jazz_elements</a></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacejazz__elements.html">jazz_elements</a></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">// Forward pointer types:</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
 <div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="namespacejazz__elements.html#adf5bbcc3f6b205bd70e7b46a235ca283">   59</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">class  </span><a class="code" href="classjazz__elements_1_1Cluster.html">Cluster</a>  *<a class="code" href="namespacejazz__elements.html#adf5bbcc3f6b205bd70e7b46a235ca283">pCluster</a>;</div>
 <div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="namespacejazz__elements.html#a497072b3a4acfea0e6f94b7f73331d0d">   60</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">class  </span><a class="code" href="classjazz__elements_1_1Index.html">Index</a>    *<a class="code" href="namespacejazz__elements.html#a497072b3a4acfea0e6f94b7f73331d0d">pIndex</a>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="namespacejazz__elements.html#a99c6e90779887c86f5c0c87f3f2b2704">   61</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">class  </span><a class="code" href="classjazz__elements_1_1Remote.html">Remote</a>   *<a class="code" href="namespacejazz__elements.html#a99c6e90779887c86f5c0c87f3f2b2704">pRemote</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classjazz__elements_1_1Cluster.html">   75</a></span>&#160;<span class="keyword">class </span><a class="code" href="classjazz__elements_1_1Cluster.html">Cluster</a> : <span class="keyword">public</span> <a class="code" href="classjazz__elements_1_1Service.html">Service</a> {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <a class="code" href="classjazz__elements_1_1Cluster.html#ad7eb991444afe3a4571499d03e24b2f2">Cluster</a> (<a class="code" href="namespacejazz__elements.html#a54e0e020637fffc86de95ffdd302f4a8">pLogger</a>     a_logger,</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                 <a class="code" href="namespacejazz__elements.html#a2ea64c8750eeedeb68690603dacceeab">pConfigFile</a> a_config);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <a class="code" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> <a class="code" href="classjazz__elements_1_1Cluster.html#a72debc407ef511502d200f2b481153e8">start</a>     ();</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <a class="code" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> <a class="code" href="classjazz__elements_1_1Cluster.html#aff69dfd8950adb4c2e717e9c00c7d67c">shut_down</a> ();</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;};</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classjazz__elements_1_1Cluster.html">   74</a></span>&#160;<span class="keyword">class </span><a class="code" href="classjazz__elements_1_1Cluster.html">Cluster</a> : <span class="keyword">public</span> <a class="code" href="classjazz__elements_1_1Service.html">Service</a> {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <a class="code" href="classjazz__elements_1_1Cluster.html#ad7eb991444afe3a4571499d03e24b2f2">Cluster</a> (<a class="code" href="namespacejazz__elements.html#a54e0e020637fffc86de95ffdd302f4a8">pLogger</a>     a_logger,</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                 <a class="code" href="namespacejazz__elements.html#a2ea64c8750eeedeb68690603dacceeab">pConfigFile</a> a_config);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <a class="code" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> <a class="code" href="classjazz__elements_1_1Cluster.html#a72debc407ef511502d200f2b481153e8">start</a>     ();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <a class="code" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> <a class="code" href="classjazz__elements_1_1Cluster.html#aff69dfd8950adb4c2e717e9c00c7d67c">shut_down</a> ();</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;};</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;} <span class="comment">// namespace jazz_elements</span></div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="classjazz__elements_1_1Index.html">   93</a></span>&#160;<span class="keyword">class </span><a class="code" href="classjazz__elements_1_1Index.html">Index</a> : <span class="keyword">public</span> <a class="code" href="classjazz__elements_1_1Block.html">Block</a> {</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;};</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="classjazz__elements_1_1Remote.html">  103</a></span>&#160;<span class="keyword">class </span><a class="code" href="classjazz__elements_1_1Remote.html">Remote</a> : <span class="keyword">public</span> <a class="code" href="classjazz__elements_1_1Container.html">Container</a> {</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <a class="code" href="classjazz__elements_1_1Remote.html#a14c03728a2103189339cd76c599b995a">Remote</a> (<a class="code" href="namespacejazz__elements.html#a54e0e020637fffc86de95ffdd302f4a8">pLogger</a>     a_logger,</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                <a class="code" href="namespacejazz__elements.html#a2ea64c8750eeedeb68690603dacceeab">pConfigFile</a> a_config,</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                <a class="code" href="namespacejazz__elements.html#adf5bbcc3f6b205bd70e7b46a235ca283">pCluster</a>    a_cluster);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <a class="code" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> <a class="code" href="classjazz__elements_1_1Remote.html#a5b4ce90b2dc9f0baa1fe0ba0716f3daf">start</a>     ();</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <a class="code" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> <a class="code" href="classjazz__elements_1_1Remote.html#a02376fda6e678fdb38e15908c26db24b">shut_down</a> ();</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classjazz__elements_1_1Remote.html#a33712d943164f3235987f0c87ba5d2c4">base_names</a> (<a class="code" href="namespacejazz__elements.html#aadf1e411ca544a525c767f3e30010202">BaseNames</a> &amp;<a class="code" href="classjazz__elements_1_1Remote.html#a33712d943164f3235987f0c87ba5d2c4">base_names</a>);</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#ifndef CATCH_TEST</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
-<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="classjazz__elements_1_1Remote.html#a55ffab9a832f42384b30e39445a16d17">  120</a></span>&#160;        <a class="code" href="namespacejazz__elements.html#adf5bbcc3f6b205bd70e7b46a235ca283">pCluster</a> <a class="code" href="classjazz__elements_1_1Remote.html#a55ffab9a832f42384b30e39445a16d17">p_cluster</a>;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;};</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;} <span class="comment">// namespace jazz_elements</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">#endif // ifndef INCLUDED_JAZZ_ELEMENTS_NETWORK</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#endif // ifndef INCLUDED_JAZZ_ELEMENTS_NETWORK</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassjazz__elements_1_1Container_html"><div class="ttname"><a href="classjazz__elements_1_1Container.html">jazz_elements::Container</a></div><div class="ttdoc">Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...</div><div class="ttdef"><b>Definition:</b> container.h:244</div></div>
-<div class="ttc" id="aclassjazz__elements_1_1Remote_html_a55ffab9a832f42384b30e39445a16d17"><div class="ttname"><a href="classjazz__elements_1_1Remote.html#a55ffab9a832f42384b30e39445a16d17">jazz_elements::Remote::p_cluster</a></div><div class="ttdeci">pCluster p_cluster</div><div class="ttdef"><b>Definition:</b> network.h:120</div></div>
-<div class="ttc" id="aclassjazz__elements_1_1Remote_html_a02376fda6e678fdb38e15908c26db24b"><div class="ttname"><a href="classjazz__elements_1_1Remote.html#a02376fda6e678fdb38e15908c26db24b">jazz_elements::Remote::shut_down</a></div><div class="ttdeci">StatusCode shut_down()</div><div class="ttdef"><b>Definition:</b> network.cpp:138</div></div>
 <div class="ttc" id="anamespacejazz__elements_html_a2ea64c8750eeedeb68690603dacceeab"><div class="ttname"><a href="namespacejazz__elements.html#a2ea64c8750eeedeb68690603dacceeab">jazz_elements::pConfigFile</a></div><div class="ttdeci">class ConfigFile * pConfigFile</div><div class="ttdef"><b>Definition:</b> utils.h:168</div></div>
 <div class="ttc" id="aclassjazz__elements_1_1Service_html"><div class="ttname"><a href="classjazz__elements_1_1Service.html">jazz_elements::Service</a></div><div class="ttdef"><b>Definition:</b> utils.h:242</div></div>
 <div class="ttc" id="anamespacejazz__elements_html_a54e0e020637fffc86de95ffdd302f4a8"><div class="ttname"><a href="namespacejazz__elements.html#a54e0e020637fffc86de95ffdd302f4a8">jazz_elements::pLogger</a></div><div class="ttdeci">class Logger * pLogger</div><div class="ttdef"><b>Definition:</b> utils.h:169</div></div>
+<div class="ttc" id="autils_8h_html"><div class="ttname"><a href="utils_8h.html">utils.h</a></div></div>
 <div class="ttc" id="aclassjazz__elements_1_1Cluster_html_aff69dfd8950adb4c2e717e9c00c7d67c"><div class="ttname"><a href="classjazz__elements_1_1Cluster.html#aff69dfd8950adb4c2e717e9c00c7d67c">jazz_elements::Cluster::shut_down</a></div><div class="ttdeci">StatusCode shut_down()</div><div class="ttdef"><b>Definition:</b> network.cpp:109</div></div>
-<div class="ttc" id="apersisted_8h_html"><div class="ttname"><a href="persisted_8h.html">persisted.h</a></div></div>
 <div class="ttc" id="anamespacejazz__elements_html_a497072b3a4acfea0e6f94b7f73331d0d"><div class="ttname"><a href="namespacejazz__elements.html#a497072b3a4acfea0e6f94b7f73331d0d">jazz_elements::pIndex</a></div><div class="ttdeci">class Index * pIndex</div><div class="ttdef"><b>Definition:</b> network.h:60</div></div>
-<div class="ttc" id="anamespacejazz__elements_html_aadf1e411ca544a525c767f3e30010202"><div class="ttname"><a href="namespacejazz__elements.html#aadf1e411ca544a525c767f3e30010202">jazz_elements::BaseNames</a></div><div class="ttdeci">std::map&lt; std::string, pContainer &gt; BaseNames</div><div class="ttdef"><b>Definition:</b> container.h:124</div></div>
-<div class="ttc" id="aclassjazz__elements_1_1Remote_html_a5b4ce90b2dc9f0baa1fe0ba0716f3daf"><div class="ttname"><a href="classjazz__elements_1_1Remote.html#a5b4ce90b2dc9f0baa1fe0ba0716f3daf">jazz_elements::Remote::start</a></div><div class="ttdeci">StatusCode start()</div><div class="ttdef"><b>Definition:</b> network.cpp:128</div></div>
-<div class="ttc" id="aclassjazz__elements_1_1Block_html"><div class="ttname"><a href="classjazz__elements_1_1Block.html">jazz_elements::Block</a></div><div class="ttdef"><b>Definition:</b> block.h:104</div></div>
-<div class="ttc" id="aclassjazz__elements_1_1Remote_html_a14c03728a2103189339cd76c599b995a"><div class="ttname"><a href="classjazz__elements_1_1Remote.html#a14c03728a2103189339cd76c599b995a">jazz_elements::Remote::Remote</a></div><div class="ttdeci">Remote(pLogger a_logger, pConfigFile a_config, pCluster a_cluster)</div><div class="ttdef"><b>Definition:</b> network.cpp:120</div></div>
-<div class="ttc" id="anamespacejazz__elements_html"><div class="ttname"><a href="namespacejazz__elements.html">jazz_elements</a></div><div class="ttdoc">Basic Jazz code-less structures and constants.</div><div class="ttdef"><b>Definition:</b> block.cpp:41</div></div>
-<div class="ttc" id="aclassjazz__elements_1_1Remote_html"><div class="ttname"><a href="classjazz__elements_1_1Remote.html">jazz_elements::Remote</a></div><div class="ttdoc">A Container that treats a remote node (mostly a Jazz node, but also a web API) as persistence.</div><div class="ttdef"><b>Definition:</b> network.h:103</div></div>
-<div class="ttc" id="aclassjazz__elements_1_1Index_html"><div class="ttname"><a href="classjazz__elements_1_1Index.html">jazz_elements::Index</a></div><div class="ttdoc">A local, sharded or streaming map from anything (numeric or categorical) to an absolute locator of Tu...</div><div class="ttdef"><b>Definition:</b> network.h:93</div></div>
-<div class="ttc" id="anamespacejazz__elements_html_a99c6e90779887c86f5c0c87f3f2b2704"><div class="ttname"><a href="namespacejazz__elements.html#a99c6e90779887c86f5c0c87f3f2b2704">jazz_elements::pRemote</a></div><div class="ttdeci">class Remote * pRemote</div><div class="ttdef"><b>Definition:</b> network.h:61</div></div>
+<div class="ttc" id="anamespacejazz__elements_html"><div class="ttname"><a href="namespacejazz__elements.html">jazz_elements</a></div><div class="ttdoc">Basic Jazz code-less structures and constants.</div><div class="ttdef"><b>Definition:</b> abstraction.cpp:41</div></div>
+<div class="ttc" id="aclassjazz__elements_1_1Index_html"><div class="ttname"><a href="classjazz__elements_1_1Index.html">jazz_elements::Index</a></div><div class="ttdoc">A local, sharded or streaming map from anything (numeric or categorical) to locators.</div><div class="ttdef"><b>Definition:</b> index.h:62</div></div>
 <div class="ttc" id="aclassjazz__elements_1_1Cluster_html_ad7eb991444afe3a4571499d03e24b2f2"><div class="ttname"><a href="classjazz__elements_1_1Cluster.html#ad7eb991444afe3a4571499d03e24b2f2">jazz_elements::Cluster::Cluster</a></div><div class="ttdeci">Cluster(pLogger a_logger, pConfigFile a_config)</div><div class="ttdef"><b>Definition:</b> network.cpp:94</div></div>
 <div class="ttc" id="anamespacejazz__elements_html_ad1de9f0d4fc6192bb22f21e2862add3f"><div class="ttname"><a href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">jazz_elements::StatusCode</a></div><div class="ttdeci">int StatusCode</div><div class="ttdoc">Type returned by the Service API.</div><div class="ttdef"><b>Definition:</b> utils.h:105</div></div>
 <div class="ttc" id="aclassjazz__elements_1_1Cluster_html_a72debc407ef511502d200f2b481153e8"><div class="ttname"><a href="classjazz__elements_1_1Cluster.html#a72debc407ef511502d200f2b481153e8">jazz_elements::Cluster::start</a></div><div class="ttdeci">StatusCode start()</div><div class="ttdef"><b>Definition:</b> network.cpp:99</div></div>
 <div class="ttc" id="anamespacejazz__elements_html_adf5bbcc3f6b205bd70e7b46a235ca283"><div class="ttname"><a href="namespacejazz__elements.html#adf5bbcc3f6b205bd70e7b46a235ca283">jazz_elements::pCluster</a></div><div class="ttdeci">class Cluster * pCluster</div><div class="ttdef"><b>Definition:</b> network.h:59</div></div>
-<div class="ttc" id="aclassjazz__elements_1_1Remote_html_a33712d943164f3235987f0c87ba5d2c4"><div class="ttname"><a href="classjazz__elements_1_1Remote.html#a33712d943164f3235987f0c87ba5d2c4">jazz_elements::Remote::base_names</a></div><div class="ttdeci">void base_names(BaseNames &amp;base_names)</div><div class="ttdef"><b>Definition:</b> network.cpp:151</div></div>
-<div class="ttc" id="aclassjazz__elements_1_1Cluster_html"><div class="ttname"><a href="classjazz__elements_1_1Cluster.html">jazz_elements::Cluster</a></div><div class="ttdoc">A service keeping a configuration of all the Jazz nodes that may be acccessed remotely.</div><div class="ttdef"><b>Definition:</b> network.h:75</div></div>
+<div class="ttc" id="aclassjazz__elements_1_1Cluster_html"><div class="ttname"><a href="classjazz__elements_1_1Cluster.html">jazz_elements::Cluster</a></div><div class="ttdoc">A service keeping a configuration of all the Jazz nodes that may be acccessed remotely.</div><div class="ttdef"><b>Definition:</b> network.h:74</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

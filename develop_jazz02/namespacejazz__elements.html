@@ -77,6 +77,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Abstraction.html">Abstraction</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An <a class="el" href="classjazz__elements_1_1Abstraction.html" title="An Abstraction is a kind that can include one index to another abstraction.">Abstraction</a> is a kind that can include one index to another abstraction.  <a href="classjazz__elements_1_1Abstraction.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1Answer.html">Answer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Block.html">Block</a></td></tr>
@@ -105,7 +108,7 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A table of two columns <b>source</b> and <b>destination</b>, with only one special index <b>time</b>.  <a href="classjazz__elements_1_1Flux.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Index.html">Index</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A local, sharded or streaming map from anything (numeric or categorical) to an absolute locator of Tuples.  <a href="classjazz__elements_1_1Index.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A local, sharded or streaming map from anything (numeric or categorical) to locators.  <a href="classjazz__elements_1_1Index.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1ItemHeader.html">ItemHeader</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header for an item (of a <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a> or <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz data block of a Kind.">Tuple</a>)  <a href="structjazz__elements_1_1ItemHeader.html#details">More...</a><br /></td></tr>
@@ -116,6 +119,9 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Kind.html">Kind</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a>: A type definition for complex Jazz objects.  <a href="classjazz__elements_1_1Kind.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Lead.html">Lead</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">is a map from one (numeric, categorical or string) key to many locators and possibly filters.  <a href="classjazz__elements_1_1Lead.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1Locator.html">Locator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,7 +145,7 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure at the end of a <a class="el" href="classjazz__elements_1_1Block.html">Block</a>, initially created with init_string_buffer()  <a href="structjazz__elements_1_1StringBuffer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Table.html">Table</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of Columns sharing the same indices.  <a href="classjazz__elements_1_1Table.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tables are sets of columns that share exactly the same indexing tree, but have possibly different final data tuples. Tables can be ordinary data tables (with just one index: "row number") or complex structures like the same book in many languages translated sentence by sentence.  <a href="classjazz__elements_1_1Table.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionjazz__elements_1_1Tensor.html">Tensor</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tensor of cell size 1, 4, 8 or sizeof(BlockHeader)  <a href="unionjazz__elements_1_1Tensor.html#details">More...</a><br /></td></tr>
@@ -167,6 +173,8 @@ Typedefs</h2></td></tr>
 <tr class="separator:a4e6d98f21e446010dd09ba4c9d5c372c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3d6e1b4aca91c99b80bdc759a73699f"><td class="memItemLeft" align="right" valign="top">typedef std::atomic&lt; int32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#ac3d6e1b4aca91c99b80bdc759a73699f">Lock32</a></td></tr>
 <tr class="separator:ac3d6e1b4aca91c99b80bdc759a73699f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5f94c0c0a698c9a23e8a5bd1c63f701"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structjazz__elements_1_1Names.html">Names</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#af5f94c0c0a698c9a23e8a5bd1c63f701">pNames</a></td></tr>
+<tr class="separator:af5f94c0c0a698c9a23e8a5bd1c63f701"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1443efd13a9f5f24bee92041fffc8820"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structjazz__elements_1_1BlockKeeper.html">BlockKeeper</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a1443efd13a9f5f24bee92041fffc8820">pBlockKeeper</a></td></tr>
 <tr class="separator:a1443efd13a9f5f24bee92041fffc8820"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf7bf339ba5505b0ecbf219889a6ca8f"><td class="memItemLeft" align="right" valign="top">typedef class <a class="el" href="classjazz__elements_1_1Container.html">Container</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#acf7bf339ba5505b0ecbf219889a6ca8f">pContainer</a></td></tr>
@@ -187,16 +195,14 @@ Typedefs</h2></td></tr>
 <tr class="separator:ad8dd34a46d8fb42f85ffb4b95ba8a5f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99c0160368f44b8120e563d29a1c1939"><td class="memItemLeft" align="right" valign="top">typedef class <a class="el" href="classjazz__elements_1_1Kind.html">Kind</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a99c0160368f44b8120e563d29a1c1939">pKind</a></td></tr>
 <tr class="separator:a99c0160368f44b8120e563d29a1c1939"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5f94c0c0a698c9a23e8a5bd1c63f701"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structjazz__elements_1_1Names.html">Names</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#af5f94c0c0a698c9a23e8a5bd1c63f701">pNames</a></td></tr>
-<tr class="separator:af5f94c0c0a698c9a23e8a5bd1c63f701"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf5bbcc3f6b205bd70e7b46a235ca283"><td class="memItemLeft" align="right" valign="top">typedef class <a class="el" href="classjazz__elements_1_1Cluster.html">Cluster</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#adf5bbcc3f6b205bd70e7b46a235ca283">pCluster</a></td></tr>
 <tr class="separator:adf5bbcc3f6b205bd70e7b46a235ca283"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a497072b3a4acfea0e6f94b7f73331d0d"><td class="memItemLeft" align="right" valign="top">typedef class <a class="el" href="classjazz__elements_1_1Index.html">Index</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a497072b3a4acfea0e6f94b7f73331d0d">pIndex</a></td></tr>
 <tr class="separator:a497072b3a4acfea0e6f94b7f73331d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99c6e90779887c86f5c0c87f3f2b2704"><td class="memItemLeft" align="right" valign="top">typedef class <a class="el" href="classjazz__elements_1_1Remote.html">Remote</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a99c6e90779887c86f5c0c87f3f2b2704">pRemote</a></td></tr>
-<tr class="separator:a99c6e90779887c86f5c0c87f3f2b2704"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27d61abf542d89735a56bc7bb9e1657a"><td class="memItemLeft" align="right" valign="top">typedef class <a class="el" href="classjazz__elements_1_1Persisted.html">Persisted</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a27d61abf542d89735a56bc7bb9e1657a">pPersisted</a></td></tr>
 <tr class="separator:a27d61abf542d89735a56bc7bb9e1657a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99c6e90779887c86f5c0c87f3f2b2704"><td class="memItemLeft" align="right" valign="top">typedef class <a class="el" href="classjazz__elements_1_1Remote.html">Remote</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a99c6e90779887c86f5c0c87f3f2b2704">pRemote</a></td></tr>
+<tr class="separator:a99c6e90779887c86f5c0c87f3f2b2704"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6dff44c9f24dc0324606d6576663d94d"><td class="memItemLeft" align="right" valign="top">typedef class <a class="el" href="classjazz__elements_1_1Tuple.html">Tuple</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a6dff44c9f24dc0324606d6576663d94d">pTuple</a></td></tr>
 <tr class="separator:a6dff44c9f24dc0324606d6576663d94d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7e5adf7a32b3080ea959153d2b6aee9"><td class="memItemLeft" align="right" valign="top">typedef std::chrono::steady_clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#aa7e5adf7a32b3080ea959153d2b6aee9">TimePoint</a></td></tr>
@@ -353,6 +359,20 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="af5f94c0c0a698c9a23e8a5bd1c63f701"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5f94c0c0a698c9a23e8a5bd1c63f701">&#9670;&nbsp;</a></span>pNames</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structjazz__elements_1_1Names.html">Names</a>* <a class="el" href="namespacejazz__elements.html#af5f94c0c0a698c9a23e8a5bd1c63f701">jazz_elements::pNames</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a1443efd13a9f5f24bee92041fffc8820"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1443efd13a9f5f24bee92041fffc8820">&#9670;&nbsp;</a></span>pBlockKeeper</h2>
 
@@ -496,20 +516,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="af5f94c0c0a698c9a23e8a5bd1c63f701"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5f94c0c0a698c9a23e8a5bd1c63f701">&#9670;&nbsp;</a></span>pNames</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef struct <a class="el" href="structjazz__elements_1_1Names.html">Names</a>* <a class="el" href="namespacejazz__elements.html#af5f94c0c0a698c9a23e8a5bd1c63f701">jazz_elements::pNames</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="adf5bbcc3f6b205bd70e7b46a235ca283"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adf5bbcc3f6b205bd70e7b46a235ca283">&#9670;&nbsp;</a></span>pCluster</h2>
 
@@ -538,20 +544,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a99c6e90779887c86f5c0c87f3f2b2704"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99c6e90779887c86f5c0c87f3f2b2704">&#9670;&nbsp;</a></span>pRemote</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef class <a class="el" href="classjazz__elements_1_1Remote.html">Remote</a>* <a class="el" href="namespacejazz__elements.html#a99c6e90779887c86f5c0c87f3f2b2704">jazz_elements::pRemote</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a27d61abf542d89735a56bc7bb9e1657a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a27d61abf542d89735a56bc7bb9e1657a">&#9670;&nbsp;</a></span>pPersisted</h2>
 
@@ -560,6 +552,20 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">typedef class <a class="el" href="classjazz__elements_1_1Persisted.html">Persisted</a>* <a class="el" href="namespacejazz__elements.html#a27d61abf542d89735a56bc7bb9e1657a">jazz_elements::pPersisted</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a99c6e90779887c86f5c0c87f3f2b2704"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99c6e90779887c86f5c0c87f3f2b2704">&#9670;&nbsp;</a></span>pRemote</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef class <a class="el" href="classjazz__elements_1_1Remote.html">Remote</a>* <a class="el" href="namespacejazz__elements.html#a99c6e90779887c86f5c0c87f3f2b2704">jazz_elements::pRemote</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
