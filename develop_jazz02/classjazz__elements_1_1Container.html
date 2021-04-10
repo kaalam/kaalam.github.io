@@ -161,10 +161,16 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a3b00418cc5f5f425b2ac7353d5f87094"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39e73d3ee200010809ad7c4b3540dd51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a39e73d3ee200010809ad7c4b3540dd51">unlock_container</a> ()</td></tr>
 <tr class="separator:a39e73d3ee200010809ad7c4b3540dd51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ecc4ba001b31b0be81c99350eb6827e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a6ecc4ba001b31b0be81c99350eb6827e">new_container</a> ()</td></tr>
+<tr class="memitem:ace779799b60976cc06be328e2f94d9fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#ace779799b60976cc06be328e2f94d9fa">new_keeper</a> (<a class="el" href="namespacejazz__elements.html#a1443efd13a9f5f24bee92041fffc8820">pBlockKeeper</a> *p_keeper)</td></tr>
+<tr class="separator:ace779799b60976cc06be328e2f94d9fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6519a46c395492895becc6e73a0184d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#ac6519a46c395492895becc6e73a0184d">free_keeper</a> (<a class="el" href="namespacejazz__elements.html#a1443efd13a9f5f24bee92041fffc8820">pBlockKeeper</a> *p_keeper)</td></tr>
+<tr class="separator:ac6519a46c395492895becc6e73a0184d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ecc4ba001b31b0be81c99350eb6827e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a6ecc4ba001b31b0be81c99350eb6827e">new_container</a> ()</td></tr>
 <tr class="separator:a6ecc4ba001b31b0be81c99350eb6827e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e0efc28d7f6d1d1aa253e68badaf170"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a1e0efc28d7f6d1d1aa253e68badaf170">destroy_container</a> ()</td></tr>
+<tr class="memitem:a1e0efc28d7f6d1d1aa253e68badaf170"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a1e0efc28d7f6d1d1aa253e68badaf170">destroy_container</a> ()</td></tr>
 <tr class="separator:a1e0efc28d7f6d1d1aa253e68badaf170"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a256e918b696772139096b2a270f5b1"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a8a256e918b696772139096b2a270f5b1">malloc</a> (size_t size)</td></tr>
+<tr class="separator:a8a256e918b696772139096b2a270f5b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -576,7 +582,7 @@ Instances and inheritance</h2>
 How Tuples and Kinds merge</h2>
 <p>The way a <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a> can include other Kinds is by merging them together in a tree. That increases the <a class="el" href="structjazz__elements_1_1ItemHeader.html#a21c6929d96af41a00a541a337c7c2bac" title="The 0-based level (== depth of this item in the tree of items)">ItemHeader.level</a> by one. E.g, a <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a> x is made of tensors (a, b), a <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a> y is made of (c, d, e) and f is a tensor. We create a kind (f, x, y). As we merge it together we will get: (f, x_a, x_b, y_c, y_d, y_e) all of them will have level 1, except f which will be level 0. The naming convention (merging with an underscore) is what this method does.</p>
 <p>Note that: The "level-trick" makes the structure much simpler by just storing the tensors, the tree is encoded in the levels of each tensor but not necessary to match tuples to kinds. The resulting names must all be different or it will return an error.</p>
-<pre class="fragment">\return Bla
+<pre class="fragment">\return SERVICE_NO_ERROR on success (and a valid p_keeper), or some negative value (error). There is no async interface in this method.
 </pre> 
 </div>
 </div>
@@ -1126,6 +1132,58 @@ Async Interface</h2>
 
 </div>
 </div>
+<a id="ace779799b60976cc06be328e2f94d9fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace779799b60976cc06be328e2f94d9fa">&#9670;&nbsp;</a></span>new_keeper()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> jazz_elements::Container::new_keeper </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a1443efd13a9f5f24bee92041fffc8820">pBlockKeeper</a> *&#160;</td>
+          <td class="paramname"><em>p_keeper</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac6519a46c395492895becc6e73a0184d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6519a46c395492895becc6e73a0184d">&#9670;&nbsp;</a></span>free_keeper()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> jazz_elements::Container::free_keeper </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a1443efd13a9f5f24bee92041fffc8820">pBlockKeeper</a> *&#160;</td>
+          <td class="paramname"><em>p_keeper</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a6ecc4ba001b31b0be81c99350eb6827e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6ecc4ba001b31b0be81c99350eb6827e">&#9670;&nbsp;</a></span>new_container()</h2>
 
@@ -1144,7 +1202,7 @@ Async Interface</h2>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1173,7 +1231,7 @@ Async Interface</h2>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1182,6 +1240,32 @@ Async Interface</h2>
 
 \return Bla
 </pre> 
+</div>
+</div>
+<a id="a8a256e918b696772139096b2a270f5b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a256e918b696772139096b2a270f5b1">&#9670;&nbsp;</a></span>malloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* jazz_elements::Container::malloc </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <h2 class="groupheader">Field Documentation</h2>
