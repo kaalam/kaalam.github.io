@@ -1,14 +1,17 @@
 var searchData=
 [
-  ['safe_5furl_5flength_1043',['SAFE_URL_LENGTH',['../types_8h.html#a66db4a37d11679cd51897ddd6fdf4c63',1,'types.h']]],
-  ['service_5ferror_5fbad_5fconfig_1044',['SERVICE_ERROR_BAD_CONFIG',['../utils_8h.html#aef62dd0addbabc03039bd3c6d4c4a668',1,'utils.h']]],
-  ['service_5ferror_5floading_5fstat_1045',['SERVICE_ERROR_LOADING_STAT',['../utils_8h.html#a668a5e75bde99f34bd7e98911e16ff64',1,'utils.h']]],
-  ['service_5ferror_5fno_5fmem_1046',['SERVICE_ERROR_NO_MEM',['../utils_8h.html#a43c6165ae0442cdacc9e2cf862aa6659',1,'utils.h']]],
-  ['service_5ferror_5fstarting_1047',['SERVICE_ERROR_STARTING',['../utils_8h.html#a0b7224b36f5b3bd04828318c211139f4',1,'utils.h']]],
-  ['service_5fno_5ferror_1048',['SERVICE_NO_ERROR',['../utils_8h.html#afb0492c64e0634fc8e4e06ef54e8b176',1,'utils.h']]],
-  ['service_5fnot_5fimplemented_1049',['SERVICE_NOT_IMPLEMENTED',['../utils_8h.html#a13e3b5996b11b29bd2ba71d6bb4a4259',1,'utils.h']]],
-  ['service_5fongoing_5fasync_5fop_1050',['SERVICE_ONGOING_ASYNC_OP',['../utils_8h.html#a48d0664bb96b71c28e02a43f4a9ae405',1,'utils.h']]],
-  ['single_5fna_1051',['SINGLE_NA',['../types_8h.html#a654cf0e7a3ce4a4086e50034da7ca382',1,'types.h']]],
-  ['string_5fempty_1052',['STRING_EMPTY',['../types_8h.html#ade89d8e9a2967c917e13e49e6cbc600a',1,'types.h']]],
-  ['string_5fna_1053',['STRING_NA',['../types_8h.html#a28e3ab24f96726efb6644ce6fa0604dc',1,'types.h']]]
+  ['regex_5fvalidate_5fname_1038',['REGEX_VALIDATE_NAME',['../types_8h.html#a7a8bfd610ac1e273cd0522d1b7169f68',1,'types.h']]],
+  ['rex_5fall_5fspaces_1039',['REX_ALL_SPACES',['../api_8cpp.html#ac577cab5cd192096ddf2d6fe25212975',1,'api.cpp']]],
+  ['rex_5fcolon_1040',['REX_COLON',['../api_8cpp.html#acd7a0f1eb4a04a7e89825bf6514c3d86',1,'api.cpp']]],
+  ['rex_5fcomma_1041',['REX_COMMA',['../api_8cpp.html#a6b55ce4f2ae1d575fe4467bacabd238e',1,'api.cpp']]],
+  ['rex_5fdoublequote_1042',['REX_DOUBLEQUOTE',['../api_8cpp.html#a864e9ee5a3b06996359eb425ae984c43',1,'api.cpp']]],
+  ['rex_5fhex_5fchar_1043',['REX_HEX_CHAR',['../api_8cpp.html#a1dc10e5e443c1bad0d15a891a601dbb0',1,'api.cpp']]],
+  ['rex_5fleft_5fsquare_5fbr_1044',['REX_LEFT_SQUARE_BR',['../api_8cpp.html#a40aacefd18235e3c08c98d3f568a1c99',1,'api.cpp']]],
+  ['rex_5fname_5fany_1045',['REX_NAME_ANY',['../api_8cpp.html#acc21b817d36f17a8effcdb441d1a9fc9',1,'api.cpp']]],
+  ['rex_5fname_5ffirst_1046',['REX_NAME_FIRST',['../api_8cpp.html#a62654b46a9df8aa56765d51108462e58',1,'api.cpp']]],
+  ['rex_5fnon_5furlencoded_1047',['REX_NON_URLENCODED',['../api_8cpp.html#a4a93716399d6117821d8578af07f2f5a',1,'api.cpp']]],
+  ['rex_5fpercent_1048',['REX_PERCENT',['../api_8cpp.html#a248c92eba621749092a7eae0c510e5f2',1,'api.cpp']]],
+  ['rex_5fright_5fsquare_5fbr_1049',['REX_RIGHT_SQUARE_BR',['../api_8cpp.html#a6d408dbb6e9b165030eb50759bbec2fe',1,'api.cpp']]],
+  ['rex_5fsemicolon_1050',['REX_SEMICOLON',['../api_8cpp.html#a7fc0cfcfc11bcb1bd407dc066d6a5608',1,'api.cpp']]],
+  ['rex_5fzero_1051',['REX_ZERO',['../api_8cpp.html#a3e35b5006758afe93373dba313f93dad',1,'api.cpp']]]
 ];

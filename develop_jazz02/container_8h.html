@@ -140,6 +140,12 @@ Macros</h2></td></tr>
 <tr class="memitem:a2c57e29ff7d1d83236f137899ea846e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a2c57e29ff7d1d83236f137899ea846e1">FILL_WITH_TEXTFILE</a>&#160;&#160;&#160;3</td></tr>
 <tr class="memdesc:a2c57e29ff7d1d83236f137899ea846e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a tensor with the content of argument p_text in new_jazz_block().  <a href="container_8h.html#a2c57e29ff7d1d83236f137899ea846e1">More...</a><br /></td></tr>
 <tr class="separator:a2c57e29ff7d1d83236f137899ea846e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40468585259008374098bd930a5b07ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a40468585259008374098bd930a5b07ab">FILL_BOOLEAN_FILTER</a>&#160;&#160;&#160;4</td></tr>
+<tr class="memdesc:a40468585259008374098bd930a5b07ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a boolean (CELL_TYPE_BYTE_BOOLEAN) filter with the values in p_bool_filter.  <a href="container_8h.html#a40468585259008374098bd930a5b07ab">More...</a><br /></td></tr>
+<tr class="separator:a40468585259008374098bd930a5b07ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e4b1945cf171d643cef5b108f76a709"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a4e4b1945cf171d643cef5b108f76a709">FILL_INTEGER_FILTER</a>&#160;&#160;&#160;5</td></tr>
+<tr class="memdesc:a4e4b1945cf171d643cef5b108f76a709"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an integer (CELL_TYPE_INTEGER) filter with the values in p_bool_filter.  <a href="container_8h.html#a4e4b1945cf171d643cef5b108f76a709">More...</a><br /></td></tr>
+<tr class="separator:a4e4b1945cf171d643cef5b108f76a709"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5950f65e58ff35f5dad8c5224a9b2c80"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a5950f65e58ff35f5dad8c5224a9b2c80">AS_BEBOP</a>&#160;&#160;&#160;1</td></tr>
 <tr class="memdesc:a5950f65e58ff35f5dad8c5224a9b2c80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize data and metadata.  <a href="container_8h.html#a5950f65e58ff35f5dad8c5224a9b2c80">More...</a><br /></td></tr>
 <tr class="separator:a5950f65e58ff35f5dad8c5224a9b2c80"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,8 +182,11 @@ Macros</h2></td></tr>
 <tr class="memitem:afca414656562222aaf2632260566ecb9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#afca414656562222aaf2632260566ecb9">BLOCK_STATUS_READY</a>&#160;&#160;&#160;0</td></tr>
 <tr class="memdesc:afca414656562222aaf2632260566ecb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block API (error and status codes)  <a href="container_8h.html#afca414656562222aaf2632260566ecb9">More...</a><br /></td></tr>
 <tr class="separator:afca414656562222aaf2632260566ecb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab26b3f8a113aaa73ace0d72a60c375d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#ab26b3f8a113aaa73ace0d72a60c375d4">BLOCK_STATUS_ASYNC_WAIT</a>&#160;&#160;&#160;1</td></tr>
-<tr class="memdesc:ab26b3f8a113aaa73ace0d72a60c375d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">BlockKeeper.status: async content pending, wait or call p_owner-&gt;sleep()  <a href="container_8h.html#ab26b3f8a113aaa73ace0d72a60c375d4">More...</a><br /></td></tr>
+<tr class="memitem:a75d0ee06672436e6e02aa42652f33ea6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a75d0ee06672436e6e02aa42652f33ea6">BLOCK_STATUS_EMPTY</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:a75d0ee06672436e6e02aa42652f33ea6"><td class="mdescLeft">&#160;</td><td class="mdescRight">BlockKeeper.status: successful new_keeper() and new_block() or get() in progress.  <a href="container_8h.html#a75d0ee06672436e6e02aa42652f33ea6">More...</a><br /></td></tr>
+<tr class="separator:a75d0ee06672436e6e02aa42652f33ea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab26b3f8a113aaa73ace0d72a60c375d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#ab26b3f8a113aaa73ace0d72a60c375d4">BLOCK_STATUS_ASYNC_WAIT</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memdesc:ab26b3f8a113aaa73ace0d72a60c375d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">BlockKeeper.status: async content pending, wait for a .callback() call.  <a href="container_8h.html#ab26b3f8a113aaa73ace0d72a60c375d4">More...</a><br /></td></tr>
 <tr class="separator:ab26b3f8a113aaa73ace0d72a60c375d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa16cbf08b2b2aa76c5b3e60a131c3406"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#aa16cbf08b2b2aa76c5b3e60a131c3406">BLOCK_STATUS_ASYNC_FAIL</a>&#160;&#160;&#160;-1</td></tr>
 <tr class="memdesc:aa16cbf08b2b2aa76c5b3e60a131c3406"><td class="mdescLeft">&#160;</td><td class="mdescRight">BlockKeeper.status: async failed, still locked, call p_owner-&gt;unlock()  <a href="container_8h.html#aa16cbf08b2b2aa76c5b3e60a131c3406">More...</a><br /></td></tr>
@@ -364,6 +373,38 @@ Typedefs</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initialize a tensor with the content of argument p_text in new_jazz_block(). </p>
+
+</div>
+</div>
+<a id="a40468585259008374098bd930a5b07ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40468585259008374098bd930a5b07ab">&#9670;&nbsp;</a></span>FILL_BOOLEAN_FILTER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FILL_BOOLEAN_FILTER&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a boolean (CELL_TYPE_BYTE_BOOLEAN) filter with the values in p_bool_filter. </p>
+
+</div>
+</div>
+<a id="a4e4b1945cf171d643cef5b108f76a709"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e4b1945cf171d643cef5b108f76a709">&#9670;&nbsp;</a></span>FILL_INTEGER_FILTER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FILL_INTEGER_FILTER&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create an integer (CELL_TYPE_INTEGER) filter with the values in p_bool_filter. </p>
 
 </div>
 </div>
@@ -560,6 +601,22 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
+<a id="a75d0ee06672436e6e02aa42652f33ea6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75d0ee06672436e6e02aa42652f33ea6">&#9670;&nbsp;</a></span>BLOCK_STATUS_EMPTY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BLOCK_STATUS_EMPTY&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>BlockKeeper.status: successful new_keeper() and new_block() or get() in progress. </p>
+
+</div>
+</div>
 <a id="ab26b3f8a113aaa73ace0d72a60c375d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab26b3f8a113aaa73ace0d72a60c375d4">&#9670;&nbsp;</a></span>BLOCK_STATUS_ASYNC_WAIT</h2>
 
@@ -567,12 +624,12 @@ Typedefs</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define BLOCK_STATUS_ASYNC_WAIT&#160;&#160;&#160;1</td>
+          <td class="memname">#define BLOCK_STATUS_ASYNC_WAIT&#160;&#160;&#160;2</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>BlockKeeper.status: async content pending, wait or call p_owner-&gt;sleep() </p>
+<p>BlockKeeper.status: async content pending, wait for a .callback() call. </p>
 
 </div>
 </div>

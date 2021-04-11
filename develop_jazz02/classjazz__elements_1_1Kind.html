@@ -189,7 +189,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Technically, a kind is a <a class="el" href="classjazz__elements_1_1Block.html">Block</a> of type CELL_TYPE_KIND_ITEM. Each item contains data (is a <a class="el" href="unionjazz__elements_1_1Tensor.html" title="A tensor of cell size 1, 4, 8 or sizeof(BlockHeader)">Tensor</a>). Even if kinds extend other kinds, only the leaves of the tree (the tensors) are included in the resulting kind with the appropriate level. See <a class="el" href="unionjazz__elements_1_1TensorDim.html">TensorDim</a>.</p>
 <p>Since kinds keep only metadata, the space, unlike in Tuples, is uninterrupted as in a normal block: (header, vector of CELL_TYPE_KIND_ITEM, attribute keys, <a class="el" href="structjazz__elements_1_1StringBuffer.html" title="Structure at the end of a Block, initially created with init_string_buffer()">StringBuffer</a>).</p>
 <p>The <a class="el" href="structjazz__elements_1_1StringBuffer.html" title="Structure at the end of a Block, initially created with init_string_buffer()">StringBuffer</a> contains the item names and dimension names. See <a class="el" href="unionjazz__elements_1_1TensorDim.html">TensorDim</a>.</p>
-<h2><a class="anchor" id="autotoc_md6"></a>
+<h2><a class="anchor" id="autotoc_md5"></a>
 Creating Kinds</h2>
 <p>Many <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a> functionalities (including creating kinds and creating kinds from merging kinds) are done by Containers. This object, nevetheless has a minimum of functionality to build by parts: <a class="el" href="classjazz__elements_1_1Kind.html#a8d9cc0f15a5ef02139fd3c3552c9a874">new_kind()</a>, <a class="el" href="classjazz__elements_1_1Kind.html#a6d5bd8053c6da79fcb82dc3d1ff68237">add_item()</a> to do the basic building which will be called by the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>. It also has function to check the content and validate a kind.</p>
 <p>Also, kinds should define, these attributes, but that it left to the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>:</p>
@@ -415,7 +415,7 @@ Creating Kinds</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>False on error (insufficient alloc space, wrong shape, wrong dimension names).</dd></dl>
-<h2><a class="anchor" id="autotoc_md7"></a>
+<h2><a class="anchor" id="autotoc_md6"></a>
 How dimensions are defined.</h2>
 <p>Dimensions are placehoders in the tensor shapes that contain an integer variable such as "width" instade of a constant. They are defined by placing a unique negative number for each dimension in the tensor and giving it a name inside the dims map. E.g., if an image has shape [-1, -2, 3] and dims[-1] == "width" and dims[-2] == "height", The kind will store these variable dimensions together with their names. </p>
 
