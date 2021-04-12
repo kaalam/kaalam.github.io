@@ -138,6 +138,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aab7759b2dd66a071066c3c0eeb51eaf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f43dead9f6ba3222b619b5c9d5165de"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Block.html#a7f43dead9f6ba3222b619b5c9d5165de">can_filter</a> (<a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a> p_block)</td></tr>
 <tr class="separator:a7f43dead9f6ba3222b619b5c9d5165de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f713c74160918adf9126f27c3591812"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Block.html#a7f713c74160918adf9126f27c3591812">finish_creation</a> (int set_has_NA=<a class="el" href="types_8h.html#a38c86dbe02c8e95ad46331bbace308d5">SET_HAS_NA_AUTO</a>, bool set_hash=true, bool set_time=true)</td></tr>
+<tr class="separator:a7f713c74160918adf9126f27c3591812"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -915,6 +917,57 @@ Additional Inherited Members</h2></td></tr>
 <p>Check (fast) if a filter is valid and can be applied to filter inside a specific <a class="el" href="classjazz__elements_1_1Block.html">Block</a></p>
 <p>This is verifies (size == number of rows) and calls <a class="el" href="classjazz__elements_1_1Block.html#a7c4c1d50d06799ffec5a0d253528fd2e">filter_type()</a> to check its requirements too.</p>
 <dl class="section return"><dt>Returns</dt><dd>true if it is a valid filter of that type. </dd></dl>
+
+</div>
+</div>
+<a id="a7f713c74160918adf9126f27c3591812"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f713c74160918adf9126f27c3591812">&#9670;&nbsp;</a></span>finish_creation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void jazz_elements::Block::finish_creation </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>set_has_NA</em> = <code><a class="el" href="types_8h.html#a38c86dbe02c8e95ad46331bbace308d5">SET_HAS_NA_AUTO</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>set_hash</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>set_time</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set has_NA, the creation time and the hash64 of a JazzBlock based on the content of the tensor</p>
+<p>Despite its name, this function does not actually "close" anything. JazzBlock manipulation is based on "good will", after calling close_jazz_block() the owner should not change the content. If you do, you should close_jazz_block() again after.</p>
+<p>close_jazz_block() can be called any number of times on the same block.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_block</td><td>The block to be "closed". </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
