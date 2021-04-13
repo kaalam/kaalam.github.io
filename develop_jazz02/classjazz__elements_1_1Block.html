@@ -960,11 +960,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Set has_NA, the creation time and the hash64 of a JazzBlock based on the content of the tensor</p>
-<p>Despite its name, this function does not actually "close" anything. JazzBlock manipulation is based on "good will", after calling close_jazz_block() the owner should not change the content. If you do, you should close_jazz_block() again after.</p>
-<p>close_jazz_block() can be called any number of times on the same block.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">p_block</td><td>The block to be "closed". </td></tr>
+    <tr><td class="paramname">set_has_NA</td><td>SET_HAS_NA_FALSE (set the attribute as no NA without checking), SET_HAS_NA_TRUE (set it as true which is always safe) or SET_HAS_NA_AUTO (search the whole tensor for NA and set accordingly). </td></tr>
+    <tr><td class="paramname">set_hash</td><td>Compute MurmurHash64A and set attribute <code>hash64</code> accordinly. </td></tr>
+    <tr><td class="paramname">set_time</td><td>Set attribute <code>created</code> as the current time. </td></tr>
   </table>
   </dd>
 </dl>
