@@ -127,8 +127,11 @@ Macros</h2></td></tr>
 <tr class="memitem:a80131cf3bb8aa236a18cb067c14c23b6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a80131cf3bb8aa236a18cb067c14c23b6">HTTP_DELETE</a>&#160;&#160;&#160;5</td></tr>
 <tr class="memdesc:a80131cf3bb8aa236a18cb067c14c23b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">http predicate DELETE  <a href="api_8h.html#a80131cf3bb8aa236a18cb067c14c23b6">More...</a><br /></td></tr>
 <tr class="separator:a80131cf3bb8aa236a18cb067c14c23b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66db4a37d11679cd51897ddd6fdf4c63"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a66db4a37d11679cd51897ddd6fdf4c63">SAFE_URL_LENGTH</a>&#160;&#160;&#160;2048</td></tr>
+<tr class="memdesc:a66db4a37d11679cd51897ddd6fdf4c63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parser limits.  <a href="api_8h.html#a66db4a37d11679cd51897ddd6fdf4c63">More...</a><br /></td></tr>
+<tr class="separator:a66db4a37d11679cd51897ddd6fdf4c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e3b689e9483994cfcd85954cba23338"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a4e3b689e9483994cfcd85954cba23338">MAX_RECURSION_DEPTH</a>&#160;&#160;&#160;16</td></tr>
-<tr class="memdesc:a4e3b689e9483994cfcd85954cba23338"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parser limits.  <a href="api_8h.html#a4e3b689e9483994cfcd85954cba23338">More...</a><br /></td></tr>
+<tr class="memdesc:a4e3b689e9483994cfcd85954cba23338"><td class="mdescLeft">&#160;</td><td class="mdescRight">Max number of nested block references in a query.  <a href="api_8h.html#a4e3b689e9483994cfcd85954cba23338">More...</a><br /></td></tr>
 <tr class="separator:a4e3b689e9483994cfcd85954cba23338"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7dfe57f98086163fe1947f55bcdac9bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a7dfe57f98086163fe1947f55bcdac9bc">EIGHT_BIT_LONG</a>&#160;&#160;&#160;256</td></tr>
 <tr class="memdesc:a7dfe57f98086163fe1947f55bcdac9bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length of a CharLUT.  <a href="api_8h.html#a7dfe57f98086163fe1947f55bcdac9bc">More...</a><br /></td></tr>
@@ -431,6 +434,23 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a66db4a37d11679cd51897ddd6fdf4c63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66db4a37d11679cd51897ddd6fdf4c63">&#9670;&nbsp;</a></span>SAFE_URL_LENGTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SAFE_URL_LENGTH&#160;&#160;&#160;2048</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parser limits. </p>
+<p>Maximum safe assumption of URL length for both parsing and forwarding. </p>
+
+</div>
+</div>
 <a id="a4e3b689e9483994cfcd85954cba23338"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4e3b689e9483994cfcd85954cba23338">&#9670;&nbsp;</a></span>MAX_RECURSION_DEPTH</h2>
 
@@ -443,7 +463,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Parser limits. </p>
 <p>Max number of nested block references in a query. </p>
 
 </div>

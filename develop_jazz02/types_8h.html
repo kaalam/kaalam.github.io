@@ -83,8 +83,10 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1FilterSize.html">jazz_elements::FilterSize</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Another way to describe a <a class="el" href="unionjazz__elements_1_1TensorDim.html" title="The dimension of a tensor.">TensorDim</a> to make filtering syntactically nicer.  <a href="structjazz__elements_1_1FilterSize.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionjazz__elements_1_1TensorDim.html">jazz_elements::TensorDim</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The dimension of a tensor.  <a href="unionjazz__elements_1_1TensorDim.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1ItemHeader.html">jazz_elements::ItemHeader</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header for an item (of a <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a> or <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz data block of a Kind.">Tuple</a>)  <a href="structjazz__elements_1_1ItemHeader.html#details">More...</a><br /></td></tr>
@@ -93,18 +95,19 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tensor of cell size 1, 4, 8 or sizeof(BlockHeader)  <a href="unionjazz__elements_1_1Tensor.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1BlockHeader.html">jazz_elements::BlockHeader</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header for a <a class="el" href="classjazz__elements_1_1Block.html">Block</a>.  <a href="structjazz__elements_1_1BlockHeader.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header for a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a>.  <a href="structjazz__elements_1_1BlockHeader.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1StringBuffer.html">jazz_elements::StringBuffer</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure at the end of a <a class="el" href="classjazz__elements_1_1Block.html">Block</a>, initially created with init_string_buffer()  <a href="structjazz__elements_1_1StringBuffer.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure at the end of a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a>, initially created with init_string_buffer()  <a href="structjazz__elements_1_1StringBuffer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1Answer.html">jazz_elements::Answer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string possibly returned by a contract.  <a href="structjazz__elements_1_1Answer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacejazz__elements"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html">jazz_elements</a></td></tr>
-<tr class="memdesc:namespacejazz__elements"><td class="mdescLeft">&#160;</td><td class="mdescRight">Basic Jazz code-less structures and constants. <br /></td></tr>
+<tr class="memdesc:namespacejazz__elements"><td class="mdescLeft">&#160;</td><td class="mdescRight">The namespace for Jazz Utils, Blocks, Kinds, Tuples, Containers, etc. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -112,15 +115,11 @@ Macros</h2></td></tr>
 <tr class="memitem:a198723ea7b77deeeb47c9c3e21319143"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a198723ea7b77deeeb47c9c3e21319143">INCLUDED_JAZZ_ELEMENTS_TYPES</a></td></tr>
 <tr class="separator:a198723ea7b77deeeb47c9c3e21319143"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4511c6b8167369401ab5eefd0c5d2b0a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a4511c6b8167369401ab5eefd0c5d2b0a">ANSWER_LENGTH</a>&#160;&#160;&#160;4096</td></tr>
+<tr class="memdesc:a4511c6b8167369401ab5eefd0c5d2b0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of an Answer buffer.  <a href="types_8h.html#a4511c6b8167369401ab5eefd0c5d2b0a">More...</a><br /></td></tr>
 <tr class="separator:a4511c6b8167369401ab5eefd0c5d2b0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66db4a37d11679cd51897ddd6fdf4c63"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a66db4a37d11679cd51897ddd6fdf4c63">SAFE_URL_LENGTH</a>&#160;&#160;&#160;2048</td></tr>
-<tr class="memdesc:a66db4a37d11679cd51897ddd6fdf4c63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum safe assumption of URL length for both parsing and forwarding.  <a href="types_8h.html#a66db4a37d11679cd51897ddd6fdf4c63">More...</a><br /></td></tr>
-<tr class="separator:a66db4a37d11679cd51897ddd6fdf4c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a834e9a379307f869a10f4da078be5786"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a834e9a379307f869a10f4da078be5786">NAME_SIZE</a>&#160;&#160;&#160;32</td></tr>
 <tr class="memdesc:a834e9a379307f869a10f4da078be5786"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of a Name (ending 0 included)  <a href="types_8h.html#a834e9a379307f869a10f4da078be5786">More...</a><br /></td></tr>
 <tr class="separator:a834e9a379307f869a10f4da078be5786"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0e54695b83da41f2059f4250df44def"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#ad0e54695b83da41f2059f4250df44def">ONE_KB</a>&#160;&#160;&#160;1024</td></tr>
-<tr class="separator:ad0e54695b83da41f2059f4250df44def"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8b35ff47d090412d8aceeb428f8b9e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#aa8b35ff47d090412d8aceeb428f8b9e2">ONE_MB</a>&#160;&#160;&#160;(1024*1024)</td></tr>
 <tr class="separator:aa8b35ff47d090412d8aceeb428f8b9e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a8bfd610ac1e273cd0522d1b7169f68"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a7a8bfd610ac1e273cd0522d1b7169f68">REGEX_VALIDATE_NAME</a>&#160;&#160;&#160;&quot;^[a-zA-Z][a-zA-Z0-9_]{0,30}$&quot;</td></tr>
@@ -282,8 +281,8 @@ Typedefs</h2></td></tr>
 <tr class="separator:a7b6f709ede20f91ff26fa9166a7cc9da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1ee282228d329b2175b2efa7add9385"><td class="memItemLeft" align="right" valign="top">typedef Name *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#aa1ee282228d329b2175b2efa7add9385">jazz_elements::pName</a></td></tr>
 <tr class="separator:aa1ee282228d329b2175b2efa7add9385"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5c3f57ec69caa19191f00178de0c927"><td class="memItemLeft" align="right" valign="top">typedef struct Answer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#ab5c3f57ec69caa19191f00178de0c927">jazz_elements::pAnswer</a></td></tr>
-<tr class="separator:ab5c3f57ec69caa19191f00178de0c927"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05e38fc056b1c3ce4ac21a542aacdf59"><td class="memItemLeft" align="right" valign="top">typedef Answer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a05e38fc056b1c3ce4ac21a542aacdf59">jazz_elements::pAnswer</a></td></tr>
+<tr class="separator:a05e38fc056b1c3ce4ac21a542aacdf59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a198723ea7b77deeeb47c9c3e21319143"></a>
@@ -311,23 +310,9 @@ Typedefs</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Size of an Answer buffer. </p>
 <p>API buffers limit the size of http API calls, but also anything like lists of item names, dimension names, types, blocktypes, etc. Since Blocks do allocate RAM, when they communicate these kind of text operations, they expect the caller to assign a buffer of ANSWER_LENGTH chars. Of course, data serialization does not have any limits it is done by containers creating new blocks. </p>
-
-</div>
-</div>
-<a id="a66db4a37d11679cd51897ddd6fdf4c63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66db4a37d11679cd51897ddd6fdf4c63">&#9670;&nbsp;</a></span>SAFE_URL_LENGTH</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SAFE_URL_LENGTH&#160;&#160;&#160;2048</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Maximum safe assumption of URL length for both parsing and forwarding. </p>
 
 </div>
 </div>
@@ -344,20 +329,6 @@ Typedefs</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Size of a Name (ending 0 included) </p>
-
-</div>
-</div>
-<a id="ad0e54695b83da41f2059f4250df44def"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0e54695b83da41f2059f4250df44def">&#9670;&nbsp;</a></span>ONE_KB</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ONE_KB&#160;&#160;&#160;1024</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>

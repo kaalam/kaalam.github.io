@@ -83,7 +83,7 @@ Inheritance diagram for jazz_elements::Tuple:</div>
  <div class="center">
   <img src="classjazz__elements_1_1Tuple.png" usemap="#jazz_5Felements::Tuple_map" alt=""/>
   <map id="jazz_5Felements::Tuple_map" name="jazz_5Felements::Tuple_map">
-<area href="classjazz__elements_1_1Block.html" alt="jazz_elements::Block" shape="rect" coords="0,56,169,80"/>
+<area href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer." alt="jazz_elements::Block" shape="rect" coords="0,56,169,80"/>
 <area href="structjazz__elements_1_1BlockHeader.html" title="Header for a Block." alt="jazz_elements::BlockHeader" shape="rect" coords="0,0,169,24"/>
   </map>
 </div></div>
@@ -361,7 +361,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Overrides the <a class="el" href="classjazz__elements_1_1Block.html">Block</a>'s <a class="el" href="classjazz__elements_1_1Tuple.html#a0c2fea215929f8994a5efceba4ba7d10">p_attribute_keys()</a> - Return the address of the vector containing both the attribute keys for a <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz data block of a Kind.">Tuple</a>.</p>
+<p>Overrides the <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a>'s <a class="el" href="classjazz__elements_1_1Tuple.html#a0c2fea215929f8994a5efceba4ba7d10">p_attribute_keys()</a> - Return the address of the vector containing both the attribute keys for a <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz data block of a Kind.">Tuple</a>.</p>
 <p>NOTE: The tuple, besides metadata, contains data and therefore, the first tensor of <a class="el" href="structjazz__elements_1_1ItemHeader.html" title="Header for an item (of a Kind or Tuple)">ItemHeader</a> corresponding to each item is followed by the tensors containing the data of each item. This changes the logic </p>
 
 </div>
@@ -396,7 +396,7 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to where the (zero ended) string is stored in the <a class="el" href="classjazz__elements_1_1Block.html">Block</a>.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to where the (zero ended) string is stored in the <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a>.</dd></dl>
 <p>NOTE: Use the pointer as read-only (more than one cell may point to the same value) and never try to free it. </p>
 
 </div>
@@ -434,11 +434,11 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the tensor dimensions as a <a class="el" href="unionjazz__elements_1_1TensorDim.html">TensorDim</a> array.</p>
+<p>Returns the tensor dimensions as a <a class="el" href="unionjazz__elements_1_1TensorDim.html" title="The dimension of a tensor.">TensorDim</a> array.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">item</td><td>The index of the tuple item. </td></tr>
-    <tr><td class="paramname">p_dim</td><td>A pointer to the <a class="el" href="unionjazz__elements_1_1TensorDim.html">TensorDim</a> containing the dimensions.</td></tr>
+    <tr><td class="paramname">p_dim</td><td>A pointer to the <a class="el" href="unionjazz__elements_1_1TensorDim.html" title="The dimension of a tensor.">TensorDim</a> containing the dimensions.</td></tr>
   </table>
   </dd>
 </dl>
@@ -479,11 +479,11 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns if an index (as a <a class="el" href="unionjazz__elements_1_1TensorDim.html">TensorDim</a> array) is valid for the tensor.</p>
+<p>Returns if an index (as a <a class="el" href="unionjazz__elements_1_1TensorDim.html" title="The dimension of a tensor.">TensorDim</a> array) is valid for the tensor.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">item</td><td>The index of the tuple item. </td></tr>
-    <tr><td class="paramname">p_idx</td><td>A pointer to the <a class="el" href="unionjazz__elements_1_1TensorDim.html">TensorDim</a> containing the index.</td></tr>
+    <tr><td class="paramname">p_idx</td><td>A pointer to the <a class="el" href="unionjazz__elements_1_1TensorDim.html" title="The dimension of a tensor.">TensorDim</a> containing the index.</td></tr>
   </table>
   </dd>
 </dl>
@@ -569,11 +569,11 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Convert an index (as a <a class="el" href="unionjazz__elements_1_1TensorDim.html">TensorDim</a> array) to the corresponding offset without checking its validity.</p>
+<p>Convert an index (as a <a class="el" href="unionjazz__elements_1_1TensorDim.html" title="The dimension of a tensor.">TensorDim</a> array) to the corresponding offset without checking its validity.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">item</td><td>The index of the tuple item. </td></tr>
-    <tr><td class="paramname">p_idx</td><td>A pointer to the <a class="el" href="unionjazz__elements_1_1TensorDim.html">TensorDim</a> containing the index.</td></tr>
+    <tr><td class="paramname">p_idx</td><td>A pointer to the <a class="el" href="unionjazz__elements_1_1TensorDim.html" title="The dimension of a tensor.">TensorDim</a> containing the index.</td></tr>
   </table>
   </dd>
 </dl>
@@ -620,12 +620,12 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Convert an offset to a tensor cell into its corresponding index (as a <a class="el" href="unionjazz__elements_1_1TensorDim.html">TensorDim</a> array) without checking its validity.</p>
+<p>Convert an offset to a tensor cell into its corresponding index (as a <a class="el" href="unionjazz__elements_1_1TensorDim.html" title="The dimension of a tensor.">TensorDim</a> array) without checking its validity.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">item</td><td>The index of the tuple item. </td></tr>
     <tr><td class="paramname">offset</td><td>The input offset </td></tr>
-    <tr><td class="paramname">p_idx</td><td>A pointer to the <a class="el" href="unionjazz__elements_1_1TensorDim.html">TensorDim</a> to return the result. </td></tr>
+    <tr><td class="paramname">p_idx</td><td>A pointer to the <a class="el" href="unionjazz__elements_1_1TensorDim.html" title="The dimension of a tensor.">TensorDim</a> to return the result. </td></tr>
   </table>
   </dd>
 </dl>
@@ -669,11 +669,11 @@ Additional Inherited Members</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">item</td><td>The index of the tuple item. </td></tr>
-    <tr><td class="paramname">p_idx</td><td>A pointer to the <a class="el" href="unionjazz__elements_1_1TensorDim.html">TensorDim</a> containing the index.</td></tr>
+    <tr><td class="paramname">p_idx</td><td>A pointer to the <a class="el" href="unionjazz__elements_1_1TensorDim.html" title="The dimension of a tensor.">TensorDim</a> containing the index.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to where the (zero ended) string is stored in the <a class="el" href="classjazz__elements_1_1Block.html">Block</a>.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to where the (zero ended) string is stored in the <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a>.</dd></dl>
 <p>NOTE: Use the pointer as read-only (more than one cell may point to the same value) and never try to free it. </p>
 
 </div>
@@ -719,7 +719,7 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to where the (zero ended) string is stored in the <a class="el" href="classjazz__elements_1_1Block.html">Block</a>.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to where the (zero ended) string is stored in the <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a>.</dd></dl>
 <p>NOTE: Use the pointer as read-only (more than one cell may point to the same value) and never try to free it. </p>
 
 </div>
@@ -767,12 +767,12 @@ Additional Inherited Members</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">item</td><td>The index of the tuple item. </td></tr>
-    <tr><td class="paramname">p_idx</td><td>A pointer to the <a class="el" href="unionjazz__elements_1_1TensorDim.html">TensorDim</a> containing the index. </td></tr>
-    <tr><td class="paramname">p_str</td><td>A pointer to a (zero ended) string that will be allocated inside the <a class="el" href="classjazz__elements_1_1Block.html">Block</a>.</td></tr>
+    <tr><td class="paramname">p_idx</td><td>A pointer to the <a class="el" href="unionjazz__elements_1_1TensorDim.html" title="The dimension of a tensor.">TensorDim</a> containing the index. </td></tr>
+    <tr><td class="paramname">p_str</td><td>A pointer to a (zero ended) string that will be allocated inside the <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a>.</td></tr>
   </table>
   </dd>
 </dl>
-<p>NOTE: Allocation inside a <a class="el" href="classjazz__elements_1_1Block.html">Block</a> is typically hard since they are created with "just enough space", a <a class="el" href="classjazz__elements_1_1Block.html">Block</a> is typically immutable. jazz_alloc.h contains methods that make a <a class="el" href="classjazz__elements_1_1Block.html">Block</a> bigger if that is necessary. This one doesn't. The 100% safe way is creating a new block from the immutable one using jazz_alloc.h methods. Otherwise, use at your own risk or not at all. When this fails, it sets the variable alloc_failed in the <a class="el" href="structjazz__elements_1_1StringBuffer.html" title="Structure at the end of a Block, initially created with init_string_buffer()">StringBuffer</a>. When alloc_failed is true, it doesn't even try to allocate. </p>
+<p>NOTE: Allocation inside a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> is typically hard since they are created with "just enough space", a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> is typically immutable. jazz_alloc.h contains methods that make a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> bigger if that is necessary. This one doesn't. The 100% safe way is creating a new block from the immutable one using jazz_alloc.h methods. Otherwise, use at your own risk or not at all. When this fails, it sets the variable alloc_failed in the <a class="el" href="structjazz__elements_1_1StringBuffer.html" title="Structure at the end of a Block, initially created with init_string_buffer()">StringBuffer</a>. When alloc_failed is true, it doesn't even try to allocate. </p>
 
 </div>
 </div>
@@ -820,11 +820,11 @@ Additional Inherited Members</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">item</td><td>The index of the tuple item. </td></tr>
     <tr><td class="paramname">offset</td><td>An offset corresponding to the cell as if the tensor was a linear vector. </td></tr>
-    <tr><td class="paramname">p_str</td><td>A pointer to a (zero ended) string that will be allocated inside the <a class="el" href="classjazz__elements_1_1Block.html">Block</a>.</td></tr>
+    <tr><td class="paramname">p_str</td><td>A pointer to a (zero ended) string that will be allocated inside the <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a>.</td></tr>
   </table>
   </dd>
 </dl>
-<p>NOTE: Allocation inside a <a class="el" href="classjazz__elements_1_1Block.html">Block</a> is typically hard since they are created with "just enough space", a <a class="el" href="classjazz__elements_1_1Block.html">Block</a> is typically immutable. jazz_alloc.h contains methods that make a <a class="el" href="classjazz__elements_1_1Block.html">Block</a> bigger if that is necessary. This one doesn't. The 100% safe way is creating a new block from the immutable one using jazz_alloc.h methods. Otherwise, use at your own risk or not at all. When this fails, it sets the variable alloc_failed in the <a class="el" href="structjazz__elements_1_1StringBuffer.html" title="Structure at the end of a Block, initially created with init_string_buffer()">StringBuffer</a>. When alloc_failed is true, it doesn't even try to allocate. </p>
+<p>NOTE: Allocation inside a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> is typically hard since they are created with "just enough space", a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> is typically immutable. jazz_alloc.h contains methods that make a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> bigger if that is necessary. This one doesn't. The 100% safe way is creating a new block from the immutable one using jazz_alloc.h methods. Otherwise, use at your own risk or not at all. When this fails, it sets the variable alloc_failed in the <a class="el" href="structjazz__elements_1_1StringBuffer.html" title="Structure at the end of a Block, initially created with init_string_buffer()">StringBuffer</a>. When alloc_failed is true, it doesn't even try to allocate. </p>
 
 </div>
 </div>
