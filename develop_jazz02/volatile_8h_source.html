@@ -107,7 +107,7 @@ $(function() {
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">// #include &lt;stl_whatever&gt;</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="tuple_8h.html">src/jazz_elements/tuple.h</a>&quot;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="channel_8h.html">src/jazz_elements/channel.h</a>&quot;</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#if defined CATCH_TEST</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#ifndef INCLUDED_JAZZ_CATCH2</span></div>
@@ -131,27 +131,28 @@ $(function() {
 <div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="namespacejazz__elements.html#ac6341b3438e1ebf7c955533e71e9b6ac">   59</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">class  </span><a class="code" href="classjazz__elements_1_1Volatile.html">Volatile</a> *<a class="code" href="namespacejazz__elements.html#ac6341b3438e1ebf7c955533e71e9b6ac">pVolatile</a>;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classjazz__elements_1_1Volatile.html">   67</a></span>&#160;<span class="keyword">class </span><a class="code" href="classjazz__elements_1_1Volatile.html">Volatile</a> : <span class="keyword">public</span> <a class="code" href="classjazz__elements_1_1Container.html">Container</a> {</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classjazz__elements_1_1Volatile.html">   65</a></span>&#160;<span class="keyword">class </span><a class="code" href="classjazz__elements_1_1Volatile.html">Volatile</a> : <span class="keyword">public</span> <a class="code" href="classjazz__elements_1_1Container.html">Container</a> {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="code" href="classjazz__elements_1_1Volatile.html#a17fc85e77d71206a5a4675a51209e0cc">Volatile</a> (<a class="code" href="classjazz__elements_1_1Logger.html">pLogger</a>     a_logger,</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                  <a class="code" href="classjazz__elements_1_1ConfigFile.html">pConfigFile</a> a_config);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <a class="code" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> <a class="code" href="classjazz__elements_1_1Volatile.html#ad13b77c09c8ae17eaf4908e4350f636d">start</a>     ();</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <a class="code" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> <a class="code" href="classjazz__elements_1_1Volatile.html#a59169b050f6239b6f12ea21e6f7c8837">shut_down</a> ();</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classjazz__elements_1_1Volatile.html#ae1b83228aebd8e7571356b3af8895c2d">base_names</a> (<a class="code" href="namespacejazz__elements.html#aadf1e411ca544a525c767f3e30010202">BaseNames</a> &amp;<a class="code" href="classjazz__elements_1_1Volatile.html#ae1b83228aebd8e7571356b3af8895c2d">base_names</a>);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;};</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="classjazz__elements_1_1Volatile.html#a17fc85e77d71206a5a4675a51209e0cc">Volatile</a> (<a class="code" href="classjazz__elements_1_1Logger.html">pLogger</a>     a_logger,</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                  <a class="code" href="classjazz__elements_1_1ConfigFile.html">pConfigFile</a> a_config);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="code" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> <a class="code" href="classjazz__elements_1_1Volatile.html#ad13b77c09c8ae17eaf4908e4350f636d">start</a>     ();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <a class="code" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> <a class="code" href="classjazz__elements_1_1Volatile.html#a59169b050f6239b6f12ea21e6f7c8837">shut_down</a> ();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classjazz__elements_1_1Volatile.html#ae1b83228aebd8e7571356b3af8895c2d">base_names</a> (<a class="code" href="namespacejazz__elements.html#aadf1e411ca544a525c767f3e30010202">BaseNames</a> &amp;<a class="code" href="classjazz__elements_1_1Volatile.html#ae1b83228aebd8e7571356b3af8895c2d">base_names</a>);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;} <span class="comment">// namespace jazz_elements</span></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;} <span class="comment">// namespace jazz_elements</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif // ifndef INCLUDED_JAZZ_ELEMENTS_VOLATILE</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif // ifndef INCLUDED_JAZZ_ELEMENTS_VOLATILE</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassjazz__elements_1_1Logger_html"><div class="ttname"><a href="classjazz__elements_1_1Logger.html">jazz_elements::Logger</a></div><div class="ttdoc">A simple logger.</div><div class="ttdef"><b>Definition:</b> utils.h:208</div></div>
 <div class="ttc" id="aclassjazz__elements_1_1Container_html"><div class="ttname"><a href="classjazz__elements_1_1Container.html">jazz_elements::Container</a></div><div class="ttdoc">Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...</div><div class="ttdef"><b>Definition:</b> container.h:250</div></div>
+<div class="ttc" id="achannel_8h_html"><div class="ttname"><a href="channel_8h.html">channel.h</a></div></div>
 <div class="ttc" id="aclassjazz__elements_1_1Volatile_html_a59169b050f6239b6f12ea21e6f7c8837"><div class="ttname"><a href="classjazz__elements_1_1Volatile.html#a59169b050f6239b6f12ea21e6f7c8837">jazz_elements::Volatile::shut_down</a></div><div class="ttdeci">StatusCode shut_down()</div><div class="ttdef"><b>Definition:</b> volatile.cpp:63</div></div>
-<div class="ttc" id="aclassjazz__elements_1_1Volatile_html"><div class="ttname"><a href="classjazz__elements_1_1Volatile.html">jazz_elements::Volatile</a></div><div class="ttdoc">Volatile: A Service to manage data objects in RAM.</div><div class="ttdef"><b>Definition:</b> volatile.h:67</div></div>
+<div class="ttc" id="aclassjazz__elements_1_1Volatile_html"><div class="ttname"><a href="classjazz__elements_1_1Volatile.html">jazz_elements::Volatile</a></div><div class="ttdoc">Volatile: A Service to manage data objects in RAM.</div><div class="ttdef"><b>Definition:</b> volatile.h:65</div></div>
 <div class="ttc" id="aclassjazz__elements_1_1Volatile_html_ae1b83228aebd8e7571356b3af8895c2d"><div class="ttname"><a href="classjazz__elements_1_1Volatile.html#ae1b83228aebd8e7571356b3af8895c2d">jazz_elements::Volatile::base_names</a></div><div class="ttdeci">void base_names(BaseNames &amp;base_names)</div><div class="ttdef"><b>Definition:</b> volatile.cpp:76</div></div>
 <div class="ttc" id="anamespacejazz__elements_html_ac6341b3438e1ebf7c955533e71e9b6ac"><div class="ttname"><a href="namespacejazz__elements.html#ac6341b3438e1ebf7c955533e71e9b6ac">jazz_elements::pVolatile</a></div><div class="ttdeci">class Volatile * pVolatile</div><div class="ttdef"><b>Definition:</b> volatile.h:59</div></div>
 <div class="ttc" id="anamespacejazz__elements_html_aadf1e411ca544a525c767f3e30010202"><div class="ttname"><a href="namespacejazz__elements.html#aadf1e411ca544a525c767f3e30010202">jazz_elements::BaseNames</a></div><div class="ttdeci">std::map&lt; std::string, pContainer &gt; BaseNames</div><div class="ttdef"><b>Definition:</b> container.h:128</div></div>
@@ -160,7 +161,6 @@ $(function() {
 <div class="ttc" id="anamespacejazz__elements_html"><div class="ttname"><a href="namespacejazz__elements.html">jazz_elements</a></div><div class="ttdoc">The namespace for Jazz Utils, Blocks, Kinds, Tuples, Containers, etc.</div><div class="ttdef"><b>Definition:</b> block.cpp:41</div></div>
 <div class="ttc" id="aclassjazz__elements_1_1Volatile_html_a17fc85e77d71206a5a4675a51209e0cc"><div class="ttname"><a href="classjazz__elements_1_1Volatile.html#a17fc85e77d71206a5a4675a51209e0cc">jazz_elements::Volatile::Volatile</a></div><div class="ttdeci">Volatile(pLogger a_logger, pConfigFile a_config)</div><div class="ttdef"><b>Definition:</b> volatile.cpp:48</div></div>
 <div class="ttc" id="anamespacejazz__elements_html_ad1de9f0d4fc6192bb22f21e2862add3f"><div class="ttname"><a href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">jazz_elements::StatusCode</a></div><div class="ttdeci">int StatusCode</div><div class="ttdoc">Type returned by the Service API.</div><div class="ttdef"><b>Definition:</b> utils.h:110</div></div>
-<div class="ttc" id="atuple_8h_html"><div class="ttname"><a href="tuple_8h.html">tuple.h</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

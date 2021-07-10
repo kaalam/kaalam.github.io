@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['tenbit_5fdouble_5fslash_757',['tenbit_double_slash',['../namespacejazz__main.html#a18229e93c789ba68bb69f01f2e23d700',1,'jazz_main']]],
-  ['tensor_758',['tensor',['../structjazz__elements_1_1BlockHeader.html#a04878e00333fb81bcdc404914109eef1',1,'jazz_elements::BlockHeader']]],
-  ['text_759',['text',['../structjazz__elements_1_1Answer.html#a4e73e9043ab8c18d016545ddad16a29d',1,'jazz_elements::Answer']]],
-  ['to_760',['to',['../structjazz__main_1_1StateTransition.html#a3d5bfa3610d17b8a744a127756436490',1,'jazz_main::StateTransition']]],
-  ['total_5fbytes_761',['total_bytes',['../structjazz__elements_1_1BlockHeader.html#a19962d3aafd5b6ac89ce52701cf901c6',1,'jazz_elements::BlockHeader']]]
+  ['tenbit_5fdouble_5fslash_761',['tenbit_double_slash',['../namespacejazz__main.html#a18229e93c789ba68bb69f01f2e23d700',1,'jazz_main']]],
+  ['tensor_762',['tensor',['../structjazz__elements_1_1BlockHeader.html#a04878e00333fb81bcdc404914109eef1',1,'jazz_elements::BlockHeader']]],
+  ['text_763',['text',['../structjazz__elements_1_1Answer.html#a4e73e9043ab8c18d016545ddad16a29d',1,'jazz_elements::Answer']]],
+  ['to_764',['to',['../structjazz__main_1_1StateTransition.html#a3d5bfa3610d17b8a744a127756436490',1,'jazz_main::StateTransition']]],
+  ['total_5fbytes_765',['total_bytes',['../structjazz__elements_1_1BlockHeader.html#a19962d3aafd5b6ac89ce52701cf901c6',1,'jazz_elements::BlockHeader']]]
 ];

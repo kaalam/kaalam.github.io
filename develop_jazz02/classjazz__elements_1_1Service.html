@@ -84,13 +84,14 @@ Inheritance diagram for jazz_elements::Service:</div>
  <div class="center">
   <img src="classjazz__elements_1_1Service.png" usemap="#jazz_5Felements::Service_map" alt=""/>
   <map id="jazz_5Felements::Service_map" name="jazz_5Felements::Service_map">
-<area href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th..." alt="jazz_elements::Container" shape="rect" coords="322,56,473,80"/>
-<area href="classjazz__main_1_1HttpServer.html" title="HttpServer: The http server is also a Service." alt="jazz_main::HttpServer" shape="rect" coords="483,56,634,80"/>
+<area href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th..." alt="jazz_elements::Container" shape="rect" coords="402,56,553,80"/>
+<area href="classjazz__main_1_1HttpServer.html" title="HttpServer: The http server is also a Service." alt="jazz_main::HttpServer" shape="rect" coords="563,56,714,80"/>
 <area href="classjazz__agency_1_1Agency.html" title="Agency: A Service to manage flʌkpilers and agents." alt="jazz_agency::Agency" shape="rect" coords="0,112,151,136"/>
 <area href="classjazz__bebop_1_1Bebop.html" title="Bebop: A Service to manage running cores and code bases." alt="jazz_bebop::Bebop" shape="rect" coords="161,112,312,136"/>
-<area href="classjazz__elements_1_1Persisted.html" title="Persisted: A Service to manage data objects in LMDB." alt="jazz_elements::Persisted" shape="rect" coords="322,112,473,136"/>
-<area href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM." alt="jazz_elements::Volatile" shape="rect" coords="483,112,634,136"/>
-<area href="classjazz__main_1_1Api.html" title="Api: A Service to manage the REST API." alt="jazz_main::Api" shape="rect" coords="644,112,795,136"/>
+<area href="classjazz__elements_1_1Channels.html" title="Channels: A Service to manage Channel objects." alt="jazz_elements::Channels" shape="rect" coords="322,112,473,136"/>
+<area href="classjazz__elements_1_1Persisted.html" title="Persisted: A Service to manage data objects in LMDB." alt="jazz_elements::Persisted" shape="rect" coords="483,112,634,136"/>
+<area href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM." alt="jazz_elements::Volatile" shape="rect" coords="644,112,795,136"/>
+<area href="classjazz__main_1_1Api.html" title="Api: A Service to manage the REST API." alt="jazz_main::Api" shape="rect" coords="805,112,956,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -192,7 +193,7 @@ Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR if successful, some error if not.</dd></dl>
 <p>This method should be overriden by something that actually starts the service, possibly using the configuration file in pConf. </p>
 
-<p>Reimplemented in <a class="el" href="classjazz__elements_1_1Container.html#a0496a435ee9330f73091a6ad41f07161">jazz_elements::Container</a>, <a class="el" href="classjazz__main_1_1Api.html#af5527ac854705e198aed8975976311b1">jazz_main::Api</a>, <a class="el" href="classjazz__agency_1_1Agency.html#aa55c7201873063d3a442133be0a9cad6">jazz_agency::Agency</a>, <a class="el" href="classjazz__bebop_1_1Bebop.html#a45bc91cd5bab380c224c72eb6f3d7aea">jazz_bebop::Bebop</a>, <a class="el" href="classjazz__elements_1_1Persisted.html#ac71e44e58eadb4289c98ba79755ec369">jazz_elements::Persisted</a>, and <a class="el" href="classjazz__elements_1_1Volatile.html#ad13b77c09c8ae17eaf4908e4350f636d">jazz_elements::Volatile</a>.</p>
+<p>Reimplemented in <a class="el" href="classjazz__elements_1_1Container.html#a0496a435ee9330f73091a6ad41f07161">jazz_elements::Container</a>, <a class="el" href="classjazz__main_1_1Api.html#af5527ac854705e198aed8975976311b1">jazz_main::Api</a>, <a class="el" href="classjazz__agency_1_1Agency.html#aa55c7201873063d3a442133be0a9cad6">jazz_agency::Agency</a>, <a class="el" href="classjazz__bebop_1_1Bebop.html#a45bc91cd5bab380c224c72eb6f3d7aea">jazz_bebop::Bebop</a>, <a class="el" href="classjazz__elements_1_1Persisted.html#ac71e44e58eadb4289c98ba79755ec369">jazz_elements::Persisted</a>, <a class="el" href="classjazz__elements_1_1Channels.html#a94db3886e6f783abf9e012baeac22aae">jazz_elements::Channels</a>, and <a class="el" href="classjazz__elements_1_1Volatile.html#ad13b77c09c8ae17eaf4908e4350f636d">jazz_elements::Volatile</a>.</p>
 
 </div>
 </div>
@@ -222,7 +223,7 @@ Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR if successful, some error if not.</dd></dl>
 <p>This method should be overriden by something that actually stops the service, possibly using the configuration file in pConf. </p>
 
-<p>Reimplemented in <a class="el" href="classjazz__elements_1_1Container.html#af1cdde44708880c4577f0202e90fa4f6">jazz_elements::Container</a>, <a class="el" href="classjazz__main_1_1Api.html#a82e1c6758b2218186400e499d7bcf16f">jazz_main::Api</a>, <a class="el" href="classjazz__agency_1_1Agency.html#a3aeebe0bce42ea97c8e37ed708c02843">jazz_agency::Agency</a>, <a class="el" href="classjazz__bebop_1_1Bebop.html#a8b131fca6b8845e03da07c015523026f">jazz_bebop::Bebop</a>, <a class="el" href="classjazz__main_1_1HttpServer.html#a641a8b251d7e78db6e08a3ea4b38836a">jazz_main::HttpServer</a>, <a class="el" href="classjazz__elements_1_1Persisted.html#a2b2348933f2cc979351770567bc89ac3">jazz_elements::Persisted</a>, and <a class="el" href="classjazz__elements_1_1Volatile.html#a59169b050f6239b6f12ea21e6f7c8837">jazz_elements::Volatile</a>.</p>
+<p>Reimplemented in <a class="el" href="classjazz__elements_1_1Container.html#af1cdde44708880c4577f0202e90fa4f6">jazz_elements::Container</a>, <a class="el" href="classjazz__main_1_1Api.html#a82e1c6758b2218186400e499d7bcf16f">jazz_main::Api</a>, <a class="el" href="classjazz__agency_1_1Agency.html#a3aeebe0bce42ea97c8e37ed708c02843">jazz_agency::Agency</a>, <a class="el" href="classjazz__bebop_1_1Bebop.html#a8b131fca6b8845e03da07c015523026f">jazz_bebop::Bebop</a>, <a class="el" href="classjazz__main_1_1HttpServer.html#a641a8b251d7e78db6e08a3ea4b38836a">jazz_main::HttpServer</a>, <a class="el" href="classjazz__elements_1_1Persisted.html#a2b2348933f2cc979351770567bc89ac3">jazz_elements::Persisted</a>, <a class="el" href="classjazz__elements_1_1Channels.html#a798fceeca7c9ed64874a3389ed7268f7">jazz_elements::Channels</a>, and <a class="el" href="classjazz__elements_1_1Volatile.html#a59169b050f6239b6f12ea21e6f7c8837">jazz_elements::Volatile</a>.</p>
 
 </div>
 </div>
