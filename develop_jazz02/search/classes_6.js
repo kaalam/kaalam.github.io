@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['keeperdata_508',['KeeperData',['../unionjazz__elements_1_1KeeperData.html',1,'jazz_elements']]],
-  ['kind_509',['Kind',['../classjazz__elements_1_1Kind.html',1,'jazz_elements']]]
+  ['kind_485',['Kind',['../classjazz__elements_1_1Kind.html',1,'jazz_elements']]]
 ];

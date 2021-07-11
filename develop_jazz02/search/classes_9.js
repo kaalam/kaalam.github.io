@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['oneshotdeque_514',['OneShotDeque',['../structjazz__elements_1_1OneShotDeque.html',1,'jazz_elements']]]
+  ['persisted_490',['Persisted',['../classjazz__elements_1_1Persisted.html',1,'jazz_elements']]]
 ];

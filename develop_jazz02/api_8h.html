@@ -91,6 +91,12 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__main_1_1StateTransition.html">jazz_main::StateTransition</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__main_1_1Locator.html">jazz_main::Locator</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__main_1_1ContractStep.html">jazz_main::ContractStep</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__main_1_1R__value.html">jazz_main::R_value</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__main_1_1APIParseBuffer.html">jazz_main::APIParseBuffer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html">jazz_main::Api</a></td></tr>
@@ -282,6 +288,8 @@ Macros</h2></td></tr>
 <tr class="memitem:a3ae2cf4df7c3575c0f54d1b4c5d466e5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a3ae2cf4df7c3575c0f54d1b4c5d466e5">PSTATE_INVALID_CHAR</a>&#160;&#160;&#160;255</td></tr>
 <tr class="memdesc:a3ae2cf4df7c3575c0f54d1b4c5d466e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parser state: The MOST GENERIC parsing error: char goes to invalid state.  <a href="api_8h.html#a3ae2cf4df7c3575c0f54d1b4c5d466e5">More...</a><br /></td></tr>
 <tr class="separator:a3ae2cf4df7c3575c0f54d1b4c5d466e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13082378d0a60913f0b5a5b69a769360"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a13082378d0a60913f0b5a5b69a769360">MAX_CONTRACTS_IN_R_VALUE</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:a13082378d0a60913f0b5a5b69a769360"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -291,6 +299,10 @@ Typedefs</h2></td></tr>
 <tr class="separator:a043aa4cce0f03bfc881110fa18232a79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37b96ec9a8ba9e91cab88828a2ab90aa"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#a37b96ec9a8ba9e91cab88828a2ab90aa">jazz_main::Url2Name</a></td></tr>
 <tr class="separator:a37b96ec9a8ba9e91cab88828a2ab90aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a000b38cf55bd985f1e539008fd116cbb"><td class="memItemLeft" align="right" valign="top">typedef Locator *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#a000b38cf55bd985f1e539008fd116cbb">jazz_main::pLocator</a></td></tr>
+<tr class="separator:a000b38cf55bd985f1e539008fd116cbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03e45b974957fc4b51ac388562dd4c95"><td class="memItemLeft" align="right" valign="top">typedef Locator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#a03e45b974957fc4b51ac388562dd4c95">jazz_main::L_value</a></td></tr>
+<tr class="separator:a03e45b974957fc4b51ac388562dd4c95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d502f9732a9b9206a07f3a78c42fe18"><td class="memItemLeft" align="right" valign="top">typedef struct MHD_Response *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#a9d502f9732a9b9206a07f3a78c42fe18">jazz_main::pMHD_Response</a></td></tr>
 <tr class="separator:a9d502f9732a9b9206a07f3a78c42fe18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -1264,6 +1276,20 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Parser state: The MOST GENERIC parsing error: char goes to invalid state. </p>
+
+</div>
+</div>
+<a id="a13082378d0a60913f0b5a5b69a769360"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13082378d0a60913f0b5a5b69a769360">&#9670;&nbsp;</a></span>MAX_CONTRACTS_IN_R_VALUE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_CONTRACTS_IN_R_VALUE&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

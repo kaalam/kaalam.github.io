@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['item_714',['item',['../structjazz__elements_1_1Items.html#ab799fccd7c1ca17cbb9820f1328e7dde',1,'jazz_elements::Items']]]
+  ['jazz_5fmhd_5fdaemon_688',['Jazz_MHD_Daemon',['../namespacejazz__main.html#a9af1d41451e6cfe5e88cddebec1ba954',1,'jazz_main']]]
 ];

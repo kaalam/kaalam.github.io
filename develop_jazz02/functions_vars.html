@@ -66,15 +66,15 @@ $(function() {
 
 <h3><a id="index__5F"></a>- _ -</h3><ul>
 <li>_lock_
-: <a class="el" href="structjazz__elements_1_1BlockKeeper.html#a15ccc5c9e402fde327bf7187c63c12de">jazz_elements::BlockKeeper</a>
-, <a class="el" href="classjazz__elements_1_1Container.html#a74e94f772ce3681a21cde6e427356e4f">jazz_elements::Container</a>
+: <a class="el" href="classjazz__elements_1_1Container.html#a74e94f772ce3681a21cde6e427356e4f">jazz_elements::Container</a>
+, <a class="el" href="structjazz__elements_1_1Transaction.html#a6ee5319c75e4665a66be4fe17188182c">jazz_elements::Transaction</a>
 </li>
 </ul>
 
 
 <h3><a id="index_a"></a>- a -</h3><ul>
 <li>action
-: <a class="el" href="structjazz__elements_1_1ContractStep.html#a9baa2ee459d93c00285dff78a04d28a3">jazz_elements::ContractStep</a>
+: <a class="el" href="structjazz__main_1_1ContractStep.html#a71408464d64f608b7fb0c7ce35ddf619">jazz_main::ContractStep</a>
 </li>
 <li>alloc_bytes
 : <a class="el" href="classjazz__elements_1_1Container.html#a7a4180f46f2820502f48df99fe2b88b1">jazz_elements::Container</a>
@@ -96,10 +96,7 @@ $(function() {
 : <a class="el" href="classjazz__elements_1_1Logger.html#a07020eabf3e6c31bc7acf679fb4e2267">jazz_elements::Logger</a>
 </li>
 <li>block
-: <a class="el" href="structjazz__elements_1_1Locator.html#ac6e31e3355f0c1e5cac27a42d5037043">jazz_elements::Locator</a>
-</li>
-<li>block_id
-: <a class="el" href="structjazz__elements_1_1BlockKeeper.html#ac47c204dba5444a0f32680c09abfff84">jazz_elements::BlockKeeper</a>
+: <a class="el" href="structjazz__main_1_1Locator.html#a2efd7db6eb7776b0bce96b4413177e71">jazz_main::Locator</a>
 </li>
 <li>buffer
 : <a class="el" href="structjazz__elements_1_1StringBuffer.html#aad4fda4c16c6eddb4ff3b2c56079bca1">jazz_elements::StringBuffer</a>
@@ -146,10 +143,10 @@ $(function() {
 : <a class="el" href="classjazz__elements_1_1ConfigFile.html#a742ade6ac89b41888851f3d4aafcbe31">jazz_elements::ConfigFile</a>
 </li>
 <li>container
-: <a class="el" href="structjazz__elements_1_1Locator.html#a35847b130c6252376caaa5c9d10bb5ec">jazz_elements::Locator</a>
+: <a class="el" href="structjazz__main_1_1Locator.html#ab7fcfece2447f1af0c73e302193f6ff4">jazz_main::Locator</a>
 </li>
 <li>contract
-: <a class="el" href="structjazz__elements_1_1R__value.html#a192a6d680293f2a67af074b3100b813f">jazz_elements::R_value</a>
+: <a class="el" href="structjazz__main_1_1R__value.html#acf8415f73b254c5d20b2ed2e77a5c67f">jazz_main::R_value</a>
 </li>
 <li>created
 : <a class="el" href="structjazz__elements_1_1BlockHeader.html#a581c7cd356bad27167467db5cce09291">jazz_elements::BlockHeader</a>
@@ -158,14 +155,8 @@ $(function() {
 
 
 <h3><a id="index_d"></a>- d -</h3><ul>
-<li>data
-: <a class="el" href="structjazz__elements_1_1BlockKeeper.html#a174f6f58e5e919301776b676566d20ed">jazz_elements::BlockKeeper</a>
-</li>
 <li>data_start
 : <a class="el" href="structjazz__elements_1_1ItemHeader.html#a327442ae9113fe6f91281a1cd38e1f9b">jazz_elements::ItemHeader</a>
-</li>
-<li>deque
-: <a class="el" href="unionjazz__elements_1_1KeeperData.html#adbc0f87f258c148bac1017c7c018ff55">jazz_elements::KeeperData</a>
 </li>
 <li>dim
 : <a class="el" href="structjazz__elements_1_1ItemHeader.html#a6ced5026e75f982993bcc181f09cc3b8">jazz_elements::ItemHeader</a>
@@ -206,13 +197,6 @@ $(function() {
 </ul>
 
 
-<h3><a id="index_i"></a>- i -</h3><ul>
-<li>item
-: <a class="el" href="structjazz__elements_1_1Items.html#ab799fccd7c1ca17cbb9820f1328e7dde">jazz_elements::Items</a>
-</li>
-</ul>
-
-
 <h3><a id="index_l"></a>- l -</h3><ul>
 <li>l_value
 : <a class="el" href="structjazz__main_1_1APIParseBuffer.html#a123b007945411a058c62a4d0c58e6673">jazz_main::APIParseBuffer</a>
@@ -239,7 +223,6 @@ $(function() {
 <h3><a id="index_n"></a>- n -</h3><ul>
 <li>name
 : <a class="el" href="structjazz__elements_1_1ItemHeader.html#a3321ce424cd5678433e28e91dcb0bbc5">jazz_elements::ItemHeader</a>
-, <a class="el" href="unionjazz__elements_1_1KeeperData.html#a9c083fdefefc1cdfa59cca06242e45f8">jazz_elements::KeeperData</a>
 , <a class="el" href="structjazz__elements_1_1Names.html#a6bc0e86ce9197f4cc307ce61c9b7c83b">jazz_elements::Names</a>
 </li>
 <li>next
@@ -263,41 +246,47 @@ $(function() {
 : <a class="el" href="classjazz__main_1_1Api.html#a0d121c9fe1532ba2561234c6c806fcdc">jazz_main::Api</a>
 </li>
 <li>p_alloc
-: <a class="el" href="classjazz__elements_1_1Container.html#ac76957df1b8adeb2d9f295450afb897b">jazz_elements::Container</a>
+: <a class="el" href="classjazz__elements_1_1Container.html#a3ef8fef612fe3be95dda58867039a979">jazz_elements::Container</a>
 </li>
 <li>p_args
-: <a class="el" href="structjazz__elements_1_1ContractStep.html#a1eb10e6a1eccdcf1f90eb00fe8bcbcee">jazz_elements::ContractStep</a>
+: <a class="el" href="structjazz__main_1_1ContractStep.html#a844a66b83e8b0ee45bf6263660fb49e0">jazz_main::ContractStep</a>
 </li>
 <li>p_bebop
 : <a class="el" href="classjazz__main_1_1Api.html#a90a9bc0852149dd794e7186d96376bef">jazz_main::Api</a>
 </li>
 <li>p_block
-: <a class="el" href="structjazz__elements_1_1BlockKeeper.html#aa7dc453a49b83aac350a49b9164db4bc">jazz_elements::BlockKeeper</a>
+: <a class="el" href="structjazz__elements_1_1Transaction.html#aef29e5845f2fa4beb52d795b5f585118">jazz_elements::Transaction</a>
 </li>
 <li>p_buffer
-: <a class="el" href="classjazz__elements_1_1Container.html#ad545fb9a695eb191b0c7cfc1715ec092">jazz_elements::Container</a>
+: <a class="el" href="classjazz__elements_1_1Container.html#a7667a1eb1e33e033c2d03205a246d3d5">jazz_elements::Container</a>
+</li>
+<li>p_channels
+: <a class="el" href="classjazz__main_1_1Api.html#a786df3ee1d0d9db7c7a422884f9a4862">jazz_main::Api</a>
 </li>
 <li>p_conf
 : <a class="el" href="classjazz__elements_1_1Service.html#aef0f516befa73bb353fa5ac244fbebe4">jazz_elements::Service</a>
 </li>
 <li>p_free
-: <a class="el" href="classjazz__elements_1_1Container.html#a81ed89f8c7a410901ce745cdf68cb462">jazz_elements::Container</a>
+: <a class="el" href="classjazz__elements_1_1Container.html#afadaa39549456f5c5c33a068cfd12cd3">jazz_elements::Container</a>
 </li>
 <li>p_log
 : <a class="el" href="classjazz__elements_1_1Service.html#a9c9c71fccf7602a67853a1d6ab5c6ac2">jazz_elements::Service</a>
 </li>
 <li>p_next
-: <a class="el" href="structjazz__elements_1_1OneShotDeque.html#a0112dca4d7ebb7421366458643685f0b">jazz_elements::OneShotDeque</a>
+: <a class="el" href="structjazz__elements_1_1StoredTransaction.html#a64e23ecb08c6c778b0388feb2e458fa2">jazz_elements::StoredTransaction</a>
 </li>
 <li>p_owner
-: <a class="el" href="structjazz__elements_1_1BlockKeeper.html#a822228ff003f4ce2ea895e7de022f6e9">jazz_elements::BlockKeeper</a>
+: <a class="el" href="structjazz__elements_1_1Transaction.html#af5b0ee5e9f8bc77edf59bc1d73e6dfee">jazz_elements::Transaction</a>
 , <a class="el" href="structjazz__main_1_1APIParseBuffer.html#abaf983fd5e9fdcf60e4cca5f3a3da2ac">jazz_main::APIParseBuffer</a>
 </li>
 <li>p_persisted
 : <a class="el" href="classjazz__main_1_1Api.html#a08ef7d8b440db7e5b207644f28313e13">jazz_main::Api</a>
 </li>
 <li>p_prev
-: <a class="el" href="structjazz__elements_1_1OneShotDeque.html#a352db7a47f612fbe770329a0ea85c7a6">jazz_elements::OneShotDeque</a>
+: <a class="el" href="structjazz__elements_1_1StoredTransaction.html#a51b532a27ebfa1694e2320f71fef24fb">jazz_elements::StoredTransaction</a>
+</li>
+<li>p_route
+: <a class="el" href="structjazz__elements_1_1Transaction.html#a7f74e442c7e4249949ac38c6f02accd3">jazz_elements::Transaction</a>
 </li>
 <li>p_volatile
 : <a class="el" href="classjazz__main_1_1Api.html#a3a9c409553ce5eedf88a3fd60dcdae18">jazz_main::Api</a>
@@ -340,7 +329,7 @@ $(function() {
 : <a class="el" href="structjazz__main_1_1StateSwitch.html#a9828a3efc815b7961c1888a160ff889c">jazz_main::StateSwitch</a>
 </li>
 <li>status
-: <a class="el" href="structjazz__elements_1_1BlockKeeper.html#a3de27345f6215939c2dabbb459641cae">jazz_elements::BlockKeeper</a>
+: <a class="el" href="structjazz__elements_1_1Transaction.html#a964e305c69ac42991cf3e6bfef4e5522">jazz_elements::Transaction</a>
 </li>
 <li>stop_check_4_match
 : <a class="el" href="structjazz__elements_1_1StringBuffer.html#a4056d062ef9438589e77aefca08d8c60">jazz_elements::StringBuffer</a>
