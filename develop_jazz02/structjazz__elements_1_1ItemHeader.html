@@ -73,7 +73,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Header for an item (of a <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a> or <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz data block of a Kind.">Tuple</a>)  
+<p>Header for an item (of a <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for Jazz Blocks and Tuples.">Kind</a> or <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz Block with multiple Tensors.">Tuple</a>)  
  <a href="structjazz__elements_1_1ItemHeader.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="types_8h_source.html">types.h</a>&gt;</code></p>
@@ -83,27 +83,21 @@ Data Fields</h2></td></tr>
 <tr class="memitem:ae1a3f9d632242c84a39c8a9c0fa52db6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1ItemHeader.html#ae1a3f9d632242c84a39c8a9c0fa52db6">cell_type</a></td></tr>
 <tr class="memdesc:ae1a3f9d632242c84a39c8a9c0fa52db6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type for the cells in the item. See CELL_TYPE_*.  <a href="structjazz__elements_1_1ItemHeader.html#ae1a3f9d632242c84a39c8a9c0fa52db6">More...</a><br /></td></tr>
 <tr class="separator:ae1a3f9d632242c84a39c8a9c0fa52db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbd96699e6550df6aadf3d717c306583"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1ItemHeader.html#adbd96699e6550df6aadf3d717c306583">rank</a></td></tr>
-<tr class="memdesc:adbd96699e6550df6aadf3d717c306583"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of dimensions.  <a href="structjazz__elements_1_1ItemHeader.html#adbd96699e6550df6aadf3d717c306583">More...</a><br /></td></tr>
-<tr class="separator:adbd96699e6550df6aadf3d717c306583"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21c6929d96af41a00a541a337c7c2bac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1ItemHeader.html#a21c6929d96af41a00a541a337c7c2bac">level</a></td></tr>
-<tr class="memdesc:a21c6929d96af41a00a541a337c7c2bac"><td class="mdescLeft">&#160;</td><td class="mdescRight">The 0-based level (== depth of this item in the tree of items)  <a href="structjazz__elements_1_1ItemHeader.html#a21c6929d96af41a00a541a337c7c2bac">More...</a><br /></td></tr>
-<tr class="separator:a21c6929d96af41a00a541a337c7c2bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3321ce424cd5678433e28e91dcb0bbc5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1ItemHeader.html#a3321ce424cd5678433e28e91dcb0bbc5">name</a></td></tr>
 <tr class="memdesc:a3321ce424cd5678433e28e91dcb0bbc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of this item as an offset in <a class="el" href="structjazz__elements_1_1StringBuffer.html" title="Structure at the end of a Block, initially created with init_string_buffer()">StringBuffer</a>.  <a href="structjazz__elements_1_1ItemHeader.html#a3321ce424cd5678433e28e91dcb0bbc5">More...</a><br /></td></tr>
 <tr class="separator:a3321ce424cd5678433e28e91dcb0bbc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7782462a82f00ee974a83b5ff7fc8c19"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1ItemHeader.html#a7782462a82f00ee974a83b5ff7fc8c19">size</a></td></tr>
-<tr class="memdesc:a7782462a82f00ee974a83b5ff7fc8c19"><td class="mdescLeft">&#160;</td><td class="mdescRight">The total number of cells in the item's tensor. (If is is a <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz data block of a Kind.">Tuple</a>.)  <a href="structjazz__elements_1_1ItemHeader.html#a7782462a82f00ee974a83b5ff7fc8c19">More...</a><br /></td></tr>
-<tr class="separator:a7782462a82f00ee974a83b5ff7fc8c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a327442ae9113fe6f91281a1cd38e1f9b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1ItemHeader.html#a327442ae9113fe6f91281a1cd38e1f9b">data_start</a></td></tr>
-<tr class="memdesc:a327442ae9113fe6f91281a1cd38e1f9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The data start of this tensor as an offset of &amp;<a class="el" href="structjazz__elements_1_1BlockHeader.html#a04878e00333fb81bcdc404914109eef1" title="A tensor for type cell_type and dimensions set by Block.set_dimensions()">BlockHeader.tensor</a>. (If is is a <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz data block of a Kind.">Tuple</a>.)  <a href="structjazz__elements_1_1ItemHeader.html#a327442ae9113fe6f91281a1cd38e1f9b">More...</a><br /></td></tr>
-<tr class="separator:a327442ae9113fe6f91281a1cd38e1f9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbd96699e6550df6aadf3d717c306583"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1ItemHeader.html#adbd96699e6550df6aadf3d717c306583">rank</a></td></tr>
+<tr class="memdesc:adbd96699e6550df6aadf3d717c306583"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of dimensions.  <a href="structjazz__elements_1_1ItemHeader.html#adbd96699e6550df6aadf3d717c306583">More...</a><br /></td></tr>
+<tr class="separator:adbd96699e6550df6aadf3d717c306583"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ced5026e75f982993bcc181f09cc3b8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1ItemHeader.html#a6ced5026e75f982993bcc181f09cc3b8">dim</a> [<a class="el" href="types_8h.html#a5dfd5a365563c2e8cf13a83a127af9ac">MAX_TENSOR_RANK</a>]</td></tr>
-<tr class="memdesc:a6ced5026e75f982993bcc181f09cc3b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dimensions for the <a class="el" href="unionjazz__elements_1_1Tensor.html" title="A tensor of cell size 1, 4, 8 or sizeof(BlockHeader)">Tensor</a>. For <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a>: negative numbers are dimension names as -offset in <a class="el" href="structjazz__elements_1_1StringBuffer.html" title="Structure at the end of a Block, initially created with init_string_buffer()">StringBuffer</a>.  <a href="structjazz__elements_1_1ItemHeader.html#a6ced5026e75f982993bcc181f09cc3b8">More...</a><br /></td></tr>
+<tr class="memdesc:a6ced5026e75f982993bcc181f09cc3b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dimensions for the <a class="el" href="unionjazz__elements_1_1Tensor.html" title="A tensor of cell size 1, 4, 8 or sizeof(BlockHeader)">Tensor</a>. For <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for Jazz Blocks and Tuples.">Kind</a>: negative numbers are dimension names as -offset in <a class="el" href="structjazz__elements_1_1StringBuffer.html" title="Structure at the end of a Block, initially created with init_string_buffer()">StringBuffer</a>.  <a href="structjazz__elements_1_1ItemHeader.html#a6ced5026e75f982993bcc181f09cc3b8">More...</a><br /></td></tr>
 <tr class="separator:a6ced5026e75f982993bcc181f09cc3b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a327442ae9113fe6f91281a1cd38e1f9b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1ItemHeader.html#a327442ae9113fe6f91281a1cd38e1f9b">data_start</a></td></tr>
+<tr class="memdesc:a327442ae9113fe6f91281a1cd38e1f9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The data start of this tensor as an offset of &amp;<a class="el" href="structjazz__elements_1_1BlockHeader.html#a04878e00333fb81bcdc404914109eef1" title="A tensor for type cell_type and dimensions set by Block.set_dimensions()">BlockHeader.tensor</a>. (If is is a <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz Block with multiple Tensors.">Tuple</a>.)  <a href="structjazz__elements_1_1ItemHeader.html#a327442ae9113fe6f91281a1cd38e1f9b">More...</a><br /></td></tr>
+<tr class="separator:a327442ae9113fe6f91281a1cd38e1f9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Header for an item (of a <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a> or <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz data block of a Kind.">Tuple</a>) </p>
+<div class="textblock"><p>Header for an item (of a <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for Jazz Blocks and Tuples.">Kind</a> or <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz Block with multiple Tensors.">Tuple</a>) </p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="ae1a3f9d632242c84a39c8a9c0fa52db6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae1a3f9d632242c84a39c8a9c0fa52db6">&#9670;&nbsp;</a></span>cell_type</h2>
@@ -118,38 +112,6 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The type for the cells in the item. See CELL_TYPE_*. </p>
-
-</div>
-</div>
-<a id="adbd96699e6550df6aadf3d717c306583"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adbd96699e6550df6aadf3d717c306583">&#9670;&nbsp;</a></span>rank</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int jazz_elements::ItemHeader::rank</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The number of dimensions. </p>
-
-</div>
-</div>
-<a id="a21c6929d96af41a00a541a337c7c2bac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21c6929d96af41a00a541a337c7c2bac">&#9670;&nbsp;</a></span>level</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int jazz_elements::ItemHeader::level</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The 0-based level (== depth of this item in the tree of items) </p>
 
 </div>
 </div>
@@ -169,35 +131,19 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a7782462a82f00ee974a83b5ff7fc8c19"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7782462a82f00ee974a83b5ff7fc8c19">&#9670;&nbsp;</a></span>size</h2>
+<a id="adbd96699e6550df6aadf3d717c306583"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbd96699e6550df6aadf3d717c306583">&#9670;&nbsp;</a></span>rank</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int jazz_elements::ItemHeader::size</td>
+          <td class="memname">int jazz_elements::ItemHeader::rank</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>The total number of cells in the item's tensor. (If is is a <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz data block of a Kind.">Tuple</a>.) </p>
-
-</div>
-</div>
-<a id="a327442ae9113fe6f91281a1cd38e1f9b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a327442ae9113fe6f91281a1cd38e1f9b">&#9670;&nbsp;</a></span>data_start</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int jazz_elements::ItemHeader::data_start</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The data start of this tensor as an offset of &amp;<a class="el" href="structjazz__elements_1_1BlockHeader.html#a04878e00333fb81bcdc404914109eef1" title="A tensor for type cell_type and dimensions set by Block.set_dimensions()">BlockHeader.tensor</a>. (If is is a <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz data block of a Kind.">Tuple</a>.) </p>
+<p>The number of dimensions. </p>
 
 </div>
 </div>
@@ -213,7 +159,23 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Dimensions for the <a class="el" href="unionjazz__elements_1_1Tensor.html" title="A tensor of cell size 1, 4, 8 or sizeof(BlockHeader)">Tensor</a>. For <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a>: negative numbers are dimension names as -offset in <a class="el" href="structjazz__elements_1_1StringBuffer.html" title="Structure at the end of a Block, initially created with init_string_buffer()">StringBuffer</a>. </p>
+<p>Dimensions for the <a class="el" href="unionjazz__elements_1_1Tensor.html" title="A tensor of cell size 1, 4, 8 or sizeof(BlockHeader)">Tensor</a>. For <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for Jazz Blocks and Tuples.">Kind</a>: negative numbers are dimension names as -offset in <a class="el" href="structjazz__elements_1_1StringBuffer.html" title="Structure at the end of a Block, initially created with init_string_buffer()">StringBuffer</a>. </p>
+
+</div>
+</div>
+<a id="a327442ae9113fe6f91281a1cd38e1f9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a327442ae9113fe6f91281a1cd38e1f9b">&#9670;&nbsp;</a></span>data_start</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jazz_elements::ItemHeader::data_start</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The data start of this tensor as an offset of &amp;<a class="el" href="structjazz__elements_1_1BlockHeader.html#a04878e00333fb81bcdc404914109eef1" title="A tensor for type cell_type and dimensions set by Block.set_dimensions()">BlockHeader.tensor</a>. (If is is a <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz Block with multiple Tensors.">Tuple</a>.) </p>
 
 </div>
 </div>

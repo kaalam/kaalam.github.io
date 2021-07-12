@@ -104,64 +104,62 @@ $(function() {
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">// #include &lt;stl_whatever&gt;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="api_8h.html">src/jazz_main/api.h</a>&quot;</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="api_8h.html">src/jazz_main/api.h</a>&quot;</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#if defined CATCH_TEST</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#ifndef INCLUDED_JAZZ_CATCH2</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#define INCLUDED_JAZZ_CATCH2</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#if defined CATCH_TEST</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#ifndef INCLUDED_JAZZ_CATCH2</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#define INCLUDED_JAZZ_CATCH2</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &quot;src/catch2/catch.hpp&quot;</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#include &quot;src/catch2/catch.hpp&quot;</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#ifndef INCLUDED_JAZZ_MAIN_SERVER</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="server_8h.html#a727c83284d0dc9e7646d1071508bf255">   50</a></span>&#160;<span class="preprocessor">#define INCLUDED_JAZZ_MAIN_SERVER</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacejazz__main.html">jazz_main</a></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#ifndef INCLUDED_JAZZ_MAIN_SERVER</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="server_8h.html#a727c83284d0dc9e7646d1071508bf255">   48</a></span>&#160;<span class="preprocessor">#define INCLUDED_JAZZ_MAIN_SERVER</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacejazz__main.html">jazz_main</a></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacejazz__elements.html">jazz_elements</a>;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacejazz__elements.html">jazz_elements</a>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="namespacejazz__main.html#a578cf47cfadacf0e9c6735b8cb53e6b0">   59</a></span>&#160;<span class="keyword">typedef</span> void (*<a class="code" href="namespacejazz__main.html#a578cf47cfadacf0e9c6735b8cb53e6b0">pSignalHandler</a>) (<span class="keywordtype">int</span> signum);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="namespacejazz__main.html#ae1cdb9105d6b720548eed5b8df38823b">   64</a></span>&#160;<span class="keyword">typedef</span> MHD_Daemon * <a class="code" href="namespacejazz__main.html#ae1cdb9105d6b720548eed5b8df38823b">pMHD_Daemon</a>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classjazz__main_1_1HttpServer.html">   70</a></span>&#160;<span class="keyword">class </span><a class="code" href="classjazz__main_1_1HttpServer.html">HttpServer</a> : <span class="keyword">public</span> <a class="code" href="classjazz__elements_1_1Service.html">Service</a> {</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="namespacejazz__main.html#a578cf47cfadacf0e9c6735b8cb53e6b0">   57</a></span>&#160;<span class="keyword">typedef</span> void (*<a class="code" href="namespacejazz__main.html#a578cf47cfadacf0e9c6735b8cb53e6b0">pSignalHandler</a>) (<span class="keywordtype">int</span> signum);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="namespacejazz__main.html#ae1cdb9105d6b720548eed5b8df38823b">   62</a></span>&#160;<span class="keyword">typedef</span> MHD_Daemon * <a class="code" href="namespacejazz__main.html#ae1cdb9105d6b720548eed5b8df38823b">pMHD_Daemon</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classjazz__main_1_1HttpServer.html">   68</a></span>&#160;<span class="keyword">class </span><a class="code" href="classjazz__main_1_1HttpServer.html">HttpServer</a> : <span class="keyword">public</span> <a class="code" href="classjazz__elements_1_1Service.html">Service</a> {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <a class="code" href="classjazz__main_1_1HttpServer.html">HttpServer</a> (<a class="code" href="classjazz__elements_1_1Logger.html">pLogger</a>     a_logger,</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                    <a class="code" href="classjazz__elements_1_1ConfigFile.html">pConfigFile</a> a_config);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <a class="code" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> start    (<a class="code" href="namespacejazz__main.html#a578cf47cfadacf0e9c6735b8cb53e6b0">pSignalHandler</a>             p_sig_handler,</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                             <a class="code" href="namespacejazz__main.html#ae1cdb9105d6b720548eed5b8df38823b">pMHD_Daemon</a>               &amp;p_daemon,</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                             MHD_AccessHandlerCallback  dh);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <a class="code" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> shut_down();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="code" href="classjazz__main_1_1HttpServer.html">HttpServer</a> (<a class="code" href="classjazz__elements_1_1Logger.html">pLogger</a>     a_logger,</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                    <a class="code" href="classjazz__elements_1_1ConfigFile.html">pConfigFile</a> a_config);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <a class="code" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> start    (<a class="code" href="namespacejazz__main.html#a578cf47cfadacf0e9c6735b8cb53e6b0">pSignalHandler</a>             p_sig_handler,</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                             <a class="code" href="namespacejazz__main.html#ae1cdb9105d6b720548eed5b8df38823b">pMHD_Daemon</a>               &amp;p_daemon,</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                             MHD_AccessHandlerCallback  dh);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <a class="code" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> shut_down();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classjazz__main_1_1HttpServer.html#a2a47289895c302045a8aa21fb72a80dd">   84</a></span>&#160;        MHD_OptionItem server_options[9];   <span class="comment">// Variadic parameter MHD_OPTION_ARRAY, server_options, MHD_OPTION_END in MHD_start_daemon()</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;};</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classjazz__main_1_1HttpServer.html#a2a47289895c302045a8aa21fb72a80dd">   82</a></span>&#160;        MHD_OptionItem server_options[9];   <span class="comment">// Variadic parameter MHD_OPTION_ARRAY, server_options, MHD_OPTION_END in MHD_start_daemon()</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;};</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;} <span class="comment">// namespace jazz_main</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;} <span class="comment">// namespace jazz_main</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#endif // ifndef INCLUDED_JAZZ_MAIN_SERVER</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif // ifndef INCLUDED_JAZZ_MAIN_SERVER</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassjazz__elements_1_1Logger_html"><div class="ttname"><a href="classjazz__elements_1_1Logger.html">jazz_elements::Logger</a></div><div class="ttdoc">A simple logger.</div><div class="ttdef"><b>Definition:</b> utils.h:208</div></div>
-<div class="ttc" id="aclassjazz__elements_1_1Service_html"><div class="ttname"><a href="classjazz__elements_1_1Service.html">jazz_elements::Service</a></div><div class="ttdoc">A Jazz Service is a globally instanced configurable object that may allocate RAM.</div><div class="ttdef"><b>Definition:</b> utils.h:244</div></div>
-<div class="ttc" id="anamespacejazz__main_html_a578cf47cfadacf0e9c6735b8cb53e6b0"><div class="ttname"><a href="namespacejazz__main.html#a578cf47cfadacf0e9c6735b8cb53e6b0">jazz_main::pSignalHandler</a></div><div class="ttdeci">void(* pSignalHandler)(int signum)</div><div class="ttdef"><b>Definition:</b> server.h:59</div></div>
-<div class="ttc" id="aclassjazz__main_1_1HttpServer_html"><div class="ttname"><a href="classjazz__main_1_1HttpServer.html">jazz_main::HttpServer</a></div><div class="ttdoc">HttpServer: The http server is also a Service.</div><div class="ttdef"><b>Definition:</b> server.h:70</div></div>
-<div class="ttc" id="aclassjazz__elements_1_1ConfigFile_html"><div class="ttname"><a href="classjazz__elements_1_1ConfigFile.html">jazz_elements::ConfigFile</a></div><div class="ttdoc">A configuration file as a key/value store.</div><div class="ttdef"><b>Definition:</b> utils.h:180</div></div>
-<div class="ttc" id="anamespacejazz__elements_html"><div class="ttname"><a href="namespacejazz__elements.html">jazz_elements</a></div><div class="ttdoc">The namespace for Jazz Utils, Blocks, Kinds, Tuples, Containers, etc.</div><div class="ttdef"><b>Definition:</b> block.cpp:41</div></div>
-<div class="ttc" id="anamespacejazz__main_html_ae1cdb9105d6b720548eed5b8df38823b"><div class="ttname"><a href="namespacejazz__main.html#ae1cdb9105d6b720548eed5b8df38823b">jazz_main::pMHD_Daemon</a></div><div class="ttdeci">MHD_Daemon * pMHD_Daemon</div><div class="ttdef"><b>Definition:</b> server.h:64</div></div>
-<div class="ttc" id="anamespacejazz__elements_html_ad1de9f0d4fc6192bb22f21e2862add3f"><div class="ttname"><a href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">jazz_elements::StatusCode</a></div><div class="ttdeci">int StatusCode</div><div class="ttdoc">Type returned by the Service API.</div><div class="ttdef"><b>Definition:</b> utils.h:110</div></div>
-<div class="ttc" id="anamespacejazz__main_html"><div class="ttname"><a href="namespacejazz__main.html">jazz_main</a></div><div class="ttdoc">The http API, instancing and building the server.</div><div class="ttdef"><b>Definition:</b> api.cpp:41</div></div>
+<div class="ttc" id="aclassjazz__elements_1_1Logger_html"><div class="ttname"><a href="classjazz__elements_1_1Logger.html">jazz_elements::Logger</a></div><div class="ttdoc">A simple logger.</div><div class="ttdef"><b>Definition:</b> utils.h:211</div></div>
+<div class="ttc" id="aclassjazz__elements_1_1Service_html"><div class="ttname"><a href="classjazz__elements_1_1Service.html">jazz_elements::Service</a></div><div class="ttdoc">A Jazz Service is a globally instanced configurable object that may allocate RAM.</div><div class="ttdef"><b>Definition:</b> utils.h:247</div></div>
+<div class="ttc" id="anamespacejazz__main_html_a578cf47cfadacf0e9c6735b8cb53e6b0"><div class="ttname"><a href="namespacejazz__main.html#a578cf47cfadacf0e9c6735b8cb53e6b0">jazz_main::pSignalHandler</a></div><div class="ttdeci">void(* pSignalHandler)(int signum)</div><div class="ttdef"><b>Definition:</b> server.h:57</div></div>
+<div class="ttc" id="aclassjazz__main_1_1HttpServer_html"><div class="ttname"><a href="classjazz__main_1_1HttpServer.html">jazz_main::HttpServer</a></div><div class="ttdoc">HttpServer: The http server is also a Service.</div><div class="ttdef"><b>Definition:</b> server.h:68</div></div>
+<div class="ttc" id="aclassjazz__elements_1_1ConfigFile_html"><div class="ttname"><a href="classjazz__elements_1_1ConfigFile.html">jazz_elements::ConfigFile</a></div><div class="ttdoc">A configuration file as a key/value store.</div><div class="ttdef"><b>Definition:</b> utils.h:183</div></div>
+<div class="ttc" id="anamespacejazz__elements_html"><div class="ttname"><a href="namespacejazz__elements.html">jazz_elements</a></div><div class="ttdoc">The namespace for Jazz Utils, Blocks, Kinds, Tuples, Containers, etc.</div><div class="ttdef"><b>Definition:</b> block.cpp:38</div></div>
+<div class="ttc" id="anamespacejazz__main_html_ae1cdb9105d6b720548eed5b8df38823b"><div class="ttname"><a href="namespacejazz__main.html#ae1cdb9105d6b720548eed5b8df38823b">jazz_main::pMHD_Daemon</a></div><div class="ttdeci">MHD_Daemon * pMHD_Daemon</div><div class="ttdef"><b>Definition:</b> server.h:62</div></div>
+<div class="ttc" id="anamespacejazz__elements_html_ad1de9f0d4fc6192bb22f21e2862add3f"><div class="ttname"><a href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">jazz_elements::StatusCode</a></div><div class="ttdeci">int StatusCode</div><div class="ttdoc">Type returned by the Service API.</div><div class="ttdef"><b>Definition:</b> utils.h:113</div></div>
+<div class="ttc" id="anamespacejazz__main_html"><div class="ttname"><a href="namespacejazz__main.html">jazz_main</a></div><div class="ttdoc">The http API, instancing and building the server.</div><div class="ttdef"><b>Definition:</b> api.cpp:38</div></div>
 <div class="ttc" id="aapi_8h_html"><div class="ttname"><a href="api_8h.html">api.h</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

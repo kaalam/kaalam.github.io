@@ -83,7 +83,7 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1Names.html">jazz_elements::Names</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of Item names (used to select items in a <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz data block of a Kind.">Tuple</a>).  <a href="structjazz__elements_1_1Names.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of Item names (used to select items in a <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz Block with multiple Tensors.">Tuple</a>).  <a href="structjazz__elements_1_1Names.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1FilterSize.html">jazz_elements::FilterSize</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Another way to describe a <a class="el" href="unionjazz__elements_1_1TensorDim.html" title="The dimension of a tensor.">TensorDim</a> to make filtering syntactically nicer.  <a href="structjazz__elements_1_1FilterSize.html#details">More...</a><br /></td></tr>
@@ -92,7 +92,7 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The dimension of a tensor.  <a href="unionjazz__elements_1_1TensorDim.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1ItemHeader.html">jazz_elements::ItemHeader</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header for an item (of a <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for complex Jazz objects.">Kind</a> or <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz data block of a Kind.">Tuple</a>)  <a href="structjazz__elements_1_1ItemHeader.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header for an item (of a <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for Jazz Blocks and Tuples.">Kind</a> or <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz Block with multiple Tensors.">Tuple</a>)  <a href="structjazz__elements_1_1ItemHeader.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionjazz__elements_1_1Tensor.html">jazz_elements::Tensor</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tensor of cell size 1, 4, 8 or sizeof(BlockHeader)  <a href="unionjazz__elements_1_1Tensor.html#details">More...</a><br /></td></tr>
@@ -172,10 +172,10 @@ Macros</h2></td></tr>
 <tr class="memitem:ab13c9ec93d22779d56a6254e158fd166"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#ab13c9ec93d22779d56a6254e158fd166">CELL_TYPE_DOUBLE</a>&#160;&#160;&#160;0x208</td></tr>
 <tr class="memdesc:ab13c9ec93d22779d56a6254e158fd166"><td class="mdescLeft">&#160;</td><td class="mdescRight">A vector of floating point numbers. Binary compatible with an R REALSXP (vector of numeric)  <a href="types_8h.html#ab13c9ec93d22779d56a6254e158fd166">More...</a><br /></td></tr>
 <tr class="separator:ab13c9ec93d22779d56a6254e158fd166"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7957a6fa4db70b288f07f80953849764"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a7957a6fa4db70b288f07f80953849764">CELL_TYPE_TUPLE_ITEM</a>&#160;&#160;&#160;0x030</td></tr>
+<tr class="memitem:a7957a6fa4db70b288f07f80953849764"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a7957a6fa4db70b288f07f80953849764">CELL_TYPE_TUPLE_ITEM</a>&#160;&#160;&#160;0x028</td></tr>
 <tr class="memdesc:a7957a6fa4db70b288f07f80953849764"><td class="mdescLeft">&#160;</td><td class="mdescRight">A vector of ItemHeader (in a Tuple)  <a href="types_8h.html#a7957a6fa4db70b288f07f80953849764">More...</a><br /></td></tr>
 <tr class="separator:a7957a6fa4db70b288f07f80953849764"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae848294698519fda41816831fb4d953e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#ae848294698519fda41816831fb4d953e">CELL_TYPE_KIND_ITEM</a>&#160;&#160;&#160;0x130</td></tr>
+<tr class="memitem:ae848294698519fda41816831fb4d953e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#ae848294698519fda41816831fb4d953e">CELL_TYPE_KIND_ITEM</a>&#160;&#160;&#160;0x128</td></tr>
 <tr class="memdesc:ae848294698519fda41816831fb4d953e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A vector of ItemHeader (in a Kind)  <a href="types_8h.html#ae848294698519fda41816831fb4d953e">More...</a><br /></td></tr>
 <tr class="separator:ae848294698519fda41816831fb4d953e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a848460d85f2782cc1a6dcb735193ec2c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a848460d85f2782cc1a6dcb735193ec2c">BYTE_BOOLEAN_NA</a>&#160;&#160;&#160;0x0ff</td></tr>
@@ -217,18 +217,18 @@ Macros</h2></td></tr>
 <tr class="memitem:a6dc19db547353db903ecb71161ae449c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a6dc19db547353db903ecb71161ae449c">FILTER_TYPE_INTEGER</a>&#160;&#160;&#160;2</td></tr>
 <tr class="memdesc:a6dc19db547353db903ecb71161ae449c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This Block is a vector of CELL_TYPE_INTEGER containing the selected rows.  <a href="types_8h.html#a6dc19db547353db903ecb71161ae449c">More...</a><br /></td></tr>
 <tr class="separator:a6dc19db547353db903ecb71161ae449c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8002d26924d9e68cc1c5bbe96097b747"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a8002d26924d9e68cc1c5bbe96097b747">KIND_TYPE_</a></td></tr>
-<tr class="memdesc:a8002d26924d9e68cc1c5bbe96097b747"><td class="mdescLeft">&#160;</td><td class="mdescRight">Possible return values of Kind.kind_audit() and Tuple.tuple_audit()  <a href="types_8h.html#a8002d26924d9e68cc1c5bbe96097b747">More...</a><br /></td></tr>
-<tr class="separator:a8002d26924d9e68cc1c5bbe96097b747"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c06f00f3589fcb0c0cd778e8bba7735"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a8c06f00f3589fcb0c0cd778e8bba7735">KIND_TYPE_NOTAKIND</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:a8c06f00f3589fcb0c0cd778e8bba7735"><td class="mdescLeft">&#160;</td><td class="mdescRight">The kind fails audit (wrong or duplicate item names, wrong dimensions, ...).  <a href="types_8h.html#a8c06f00f3589fcb0c0cd778e8bba7735">More...</a><br /></td></tr>
-<tr class="separator:a8c06f00f3589fcb0c0cd778e8bba7735"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adffaa7a483445b56ec3a976adf786ef5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#adffaa7a483445b56ec3a976adf786ef5">KIND_TYPE_KIND</a>&#160;&#160;&#160;1</td></tr>
-<tr class="memdesc:adffaa7a483445b56ec3a976adf786ef5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This Block is a valid Kind.  <a href="types_8h.html#adffaa7a483445b56ec3a976adf786ef5">More...</a><br /></td></tr>
-<tr class="separator:adffaa7a483445b56ec3a976adf786ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee26cee2c2dcb7df88fe62837a867aa2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#aee26cee2c2dcb7df88fe62837a867aa2">KIND_TYPE_TUPLE</a>&#160;&#160;&#160;2</td></tr>
-<tr class="memdesc:aee26cee2c2dcb7df88fe62837a867aa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This Block is a valid Tuple.  <a href="types_8h.html#aee26cee2c2dcb7df88fe62837a867aa2">More...</a><br /></td></tr>
-<tr class="separator:aee26cee2c2dcb7df88fe62837a867aa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2f99a8a416921dbce5661741fed1231"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#aa2f99a8a416921dbce5661741fed1231">MIXED_TYPE_</a></td></tr>
+<tr class="memdesc:aa2f99a8a416921dbce5661741fed1231"><td class="mdescLeft">&#160;</td><td class="mdescRight">Possible return values of Kind.kind_audit() and Tuple.tuple_audit()  <a href="types_8h.html#aa2f99a8a416921dbce5661741fed1231">More...</a><br /></td></tr>
+<tr class="separator:aa2f99a8a416921dbce5661741fed1231"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a683112e92b397edff58c899c8cb64eb3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a683112e92b397edff58c899c8cb64eb3">MIXED_TYPE_INVALID</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:a683112e92b397edff58c899c8cb64eb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The kind fails audit (wrong or duplicate item names, wrong dimensions, ...).  <a href="types_8h.html#a683112e92b397edff58c899c8cb64eb3">More...</a><br /></td></tr>
+<tr class="separator:a683112e92b397edff58c899c8cb64eb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a143df485be2b3ce14e4f72b97ef96980"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a143df485be2b3ce14e4f72b97ef96980">MIXED_TYPE_KIND</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:a143df485be2b3ce14e4f72b97ef96980"><td class="mdescLeft">&#160;</td><td class="mdescRight">This Block is a valid Kind.  <a href="types_8h.html#a143df485be2b3ce14e4f72b97ef96980">More...</a><br /></td></tr>
+<tr class="separator:a143df485be2b3ce14e4f72b97ef96980"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a882d6d8e2f6fbe2c72034b810c10cb42"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a882d6d8e2f6fbe2c72034b810c10cb42">MIXED_TYPE_TUPLE</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memdesc:a882d6d8e2f6fbe2c72034b810c10cb42"><td class="mdescLeft">&#160;</td><td class="mdescRight">This Block is a valid Tuple.  <a href="types_8h.html#a882d6d8e2f6fbe2c72034b810c10cb42">More...</a><br /></td></tr>
+<tr class="separator:a882d6d8e2f6fbe2c72034b810c10cb42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addb3f9c44e627a81c7471f876c0de7a7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#addb3f9c44e627a81c7471f876c0de7a7">BLOCK_ATTRIB_</a></td></tr>
 <tr class="memdesc:addb3f9c44e627a81c7471f876c0de7a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attribute types for Block descendants.  <a href="types_8h.html#addb3f9c44e627a81c7471f876c0de7a7">More...</a><br /></td></tr>
 <tr class="separator:addb3f9c44e627a81c7471f876c0de7a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -236,28 +236,22 @@ Macros</h2></td></tr>
 <tr class="memdesc:a7d40ed4c26a6ef1a3d497b073a870dd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The block has no attributes.  <a href="types_8h.html#a7d40ed4c26a6ef1a3d497b073a870dd8">More...</a><br /></td></tr>
 <tr class="separator:a7d40ed4c26a6ef1a3d497b073a870dd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd653b24f4c6faa6c0abbca98396ee14"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#abd653b24f4c6faa6c0abbca98396ee14">BLOCK_ATTRIB_BLOCKTYPE</a>&#160;&#160;&#160;1</td></tr>
-<tr class="memdesc:abd653b24f4c6faa6c0abbca98396ee14"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fundamental block type (E.g., all tuples are tuple, filter exists, but table doesn't.)  <a href="types_8h.html#abd653b24f4c6faa6c0abbca98396ee14">More...</a><br /></td></tr>
+<tr class="memdesc:abd653b24f4c6faa6c0abbca98396ee14"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fundamental block type: Tensor, Kind or Tuple. Can also be extended.  <a href="types_8h.html#abd653b24f4c6faa6c0abbca98396ee14">More...</a><br /></td></tr>
 <tr class="separator:abd653b24f4c6faa6c0abbca98396ee14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e204ce79c0ad0844c02037c327a6844"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a4e204ce79c0ad0844c02037c327a6844">BLOCK_ATTRIB_TYPE</a>&#160;&#160;&#160;2</td></tr>
-<tr class="memdesc:a4e204ce79c0ad0844c02037c327a6844"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the c++ class (Flux, Group, Table, ... but also Block or Kind)  <a href="types_8h.html#a4e204ce79c0ad0844c02037c327a6844">More...</a><br /></td></tr>
-<tr class="separator:a4e204ce79c0ad0844c02037c327a6844"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d7c2949a514753102e9e8d5cdc4c377"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a9d7c2949a514753102e9e8d5cdc4c377">BLOCK_ATTRIB_KIND</a>&#160;&#160;&#160;3</td></tr>
-<tr class="memdesc:a9d7c2949a514753102e9e8d5cdc4c377"><td class="mdescLeft">&#160;</td><td class="mdescRight">The location of the kind (for tuples and descendants)  <a href="types_8h.html#a9d7c2949a514753102e9e8d5cdc4c377">More...</a><br /></td></tr>
-<tr class="separator:a9d7c2949a514753102e9e8d5cdc4c377"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f1676adc03a84fe7e486ab708b29ed2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a5f1676adc03a84fe7e486ab708b29ed2">BLOCK_ATTRIB_SOURCEKIND</a>&#160;&#160;&#160;4</td></tr>
-<tr class="memdesc:a5f1676adc03a84fe7e486ab708b29ed2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The location of the source kind (for fields, fluxes and thing with two Kinds)  <a href="types_8h.html#a5f1676adc03a84fe7e486ab708b29ed2">More...</a><br /></td></tr>
-<tr class="separator:a5f1676adc03a84fe7e486ab708b29ed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1632b46de9c3aee2960a13b603f02aa8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a1632b46de9c3aee2960a13b603f02aa8">BLOCK_ATTRIB_DESTKIND</a>&#160;&#160;&#160;5</td></tr>
-<tr class="memdesc:a1632b46de9c3aee2960a13b603f02aa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The location of the destination kind (for fields, fluxes and thing with two Kinds)  <a href="types_8h.html#a1632b46de9c3aee2960a13b603f02aa8">More...</a><br /></td></tr>
-<tr class="separator:a1632b46de9c3aee2960a13b603f02aa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58f5d93b0afc788551f9971045c520e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a58f5d93b0afc788551f9971045c520e2">BLOCK_ATTRIB_MIMETYPE</a>&#160;&#160;&#160;6</td></tr>
+<tr class="memitem:a84d7057716ab87391cf0607a9c77bbf4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a84d7057716ab87391cf0607a9c77bbf4">BLOCK_ATTRIB_SOURCE</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memdesc:a84d7057716ab87391cf0607a9c77bbf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The location of the source set by Channels, also Source of a Kind in Persisted.  <a href="types_8h.html#a84d7057716ab87391cf0607a9c77bbf4">More...</a><br /></td></tr>
+<tr class="separator:a84d7057716ab87391cf0607a9c77bbf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7adccd0e15de55dcd39559e0312c94eb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a7adccd0e15de55dcd39559e0312c94eb">BLOCK_ATTRIB_DEST</a>&#160;&#160;&#160;3</td></tr>
+<tr class="memdesc:a7adccd0e15de55dcd39559e0312c94eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The location of the destination. Less frequent, but may help Channels for a PUT.  <a href="types_8h.html#a7adccd0e15de55dcd39559e0312c94eb">More...</a><br /></td></tr>
+<tr class="separator:a7adccd0e15de55dcd39559e0312c94eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58f5d93b0afc788551f9971045c520e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a58f5d93b0afc788551f9971045c520e2">BLOCK_ATTRIB_MIMETYPE</a>&#160;&#160;&#160;4</td></tr>
 <tr class="memdesc:a58f5d93b0afc788551f9971045c520e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mime type (can also be some proprietary file spec. E.g., "Adobe PhotoShop Image")  <a href="types_8h.html#a58f5d93b0afc788551f9971045c520e2">More...</a><br /></td></tr>
 <tr class="separator:a58f5d93b0afc788551f9971045c520e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa79dbbdad5dd1fa8943cb14a55221622"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#aa79dbbdad5dd1fa8943cb14a55221622">BLOCK_ATTRIB_URL</a>&#160;&#160;&#160;7</td></tr>
+<tr class="memitem:aa79dbbdad5dd1fa8943cb14a55221622"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#aa79dbbdad5dd1fa8943cb14a55221622">BLOCK_ATTRIB_URL</a>&#160;&#160;&#160;5</td></tr>
 <tr class="memdesc:aa79dbbdad5dd1fa8943cb14a55221622"><td class="mdescLeft">&#160;</td><td class="mdescRight">A url for the server to expose the file by.  <a href="types_8h.html#aa79dbbdad5dd1fa8943cb14a55221622">More...</a><br /></td></tr>
 <tr class="separator:aa79dbbdad5dd1fa8943cb14a55221622"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6ecb0dac73e0a6c0623db06dfb99cb0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#ac6ecb0dac73e0a6c0623db06dfb99cb0">BLOCK_ATTRIB_LANGUAGE</a>&#160;&#160;&#160;8</td></tr>
-<tr class="memdesc:ac6ecb0dac73e0a6c0623db06dfb99cb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">An http language identifier that will be returned in a / interface GET call.  <a href="types_8h.html#ac6ecb0dac73e0a6c0623db06dfb99cb0">More...</a><br /></td></tr>
+<tr class="memitem:ac6ecb0dac73e0a6c0623db06dfb99cb0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#ac6ecb0dac73e0a6c0623db06dfb99cb0">BLOCK_ATTRIB_LANGUAGE</a>&#160;&#160;&#160;6</td></tr>
+<tr class="memdesc:ac6ecb0dac73e0a6c0623db06dfb99cb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">An http language identifier that will be returned in an API GET call.  <a href="types_8h.html#ac6ecb0dac73e0a6c0623db06dfb99cb0">More...</a><br /></td></tr>
 <tr class="separator:ac6ecb0dac73e0a6c0623db06dfb99cb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ba6b39bf11d28a0a8440d23099337da"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a9ba6b39bf11d28a0a8440d23099337da">SET_HAS_NA_</a></td></tr>
 <tr class="memdesc:a9ba6b39bf11d28a0a8440d23099337da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values for argument set_has_NA of finish_creation()  <a href="types_8h.html#a9ba6b39bf11d28a0a8440d23099337da">More...</a><br /></td></tr>
@@ -618,7 +612,7 @@ Typedefs</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define CELL_TYPE_TUPLE_ITEM&#160;&#160;&#160;0x030</td>
+          <td class="memname">#define CELL_TYPE_TUPLE_ITEM&#160;&#160;&#160;0x028</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -634,7 +628,7 @@ Typedefs</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define CELL_TYPE_KIND_ITEM&#160;&#160;&#160;0x130</td>
+          <td class="memname">#define CELL_TYPE_KIND_ITEM&#160;&#160;&#160;0x128</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -851,14 +845,14 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="a8002d26924d9e68cc1c5bbe96097b747"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8002d26924d9e68cc1c5bbe96097b747">&#9670;&nbsp;</a></span>KIND_TYPE_</h2>
+<a id="aa2f99a8a416921dbce5661741fed1231"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2f99a8a416921dbce5661741fed1231">&#9670;&nbsp;</a></span>MIXED_TYPE_</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define KIND_TYPE_</td>
+          <td class="memname">#define MIXED_TYPE_</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -867,14 +861,14 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="a8c06f00f3589fcb0c0cd778e8bba7735"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c06f00f3589fcb0c0cd778e8bba7735">&#9670;&nbsp;</a></span>KIND_TYPE_NOTAKIND</h2>
+<a id="a683112e92b397edff58c899c8cb64eb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a683112e92b397edff58c899c8cb64eb3">&#9670;&nbsp;</a></span>MIXED_TYPE_INVALID</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define KIND_TYPE_NOTAKIND&#160;&#160;&#160;0</td>
+          <td class="memname">#define MIXED_TYPE_INVALID&#160;&#160;&#160;0</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -883,14 +877,14 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="adffaa7a483445b56ec3a976adf786ef5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adffaa7a483445b56ec3a976adf786ef5">&#9670;&nbsp;</a></span>KIND_TYPE_KIND</h2>
+<a id="a143df485be2b3ce14e4f72b97ef96980"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a143df485be2b3ce14e4f72b97ef96980">&#9670;&nbsp;</a></span>MIXED_TYPE_KIND</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define KIND_TYPE_KIND&#160;&#160;&#160;1</td>
+          <td class="memname">#define MIXED_TYPE_KIND&#160;&#160;&#160;1</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -899,14 +893,14 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="aee26cee2c2dcb7df88fe62837a867aa2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee26cee2c2dcb7df88fe62837a867aa2">&#9670;&nbsp;</a></span>KIND_TYPE_TUPLE</h2>
+<a id="a882d6d8e2f6fbe2c72034b810c10cb42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a882d6d8e2f6fbe2c72034b810c10cb42">&#9670;&nbsp;</a></span>MIXED_TYPE_TUPLE</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define KIND_TYPE_TUPLE&#160;&#160;&#160;2</td>
+          <td class="memname">#define MIXED_TYPE_TUPLE&#160;&#160;&#160;2</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -959,71 +953,39 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The fundamental block type (E.g., all tuples are tuple, filter exists, but table doesn't.) </p>
+<p>The fundamental block type: Tensor, Kind or Tuple. Can also be extended. </p>
 
 </div>
 </div>
-<a id="a4e204ce79c0ad0844c02037c327a6844"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e204ce79c0ad0844c02037c327a6844">&#9670;&nbsp;</a></span>BLOCK_ATTRIB_TYPE</h2>
+<a id="a84d7057716ab87391cf0607a9c77bbf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84d7057716ab87391cf0607a9c77bbf4">&#9670;&nbsp;</a></span>BLOCK_ATTRIB_SOURCE</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define BLOCK_ATTRIB_TYPE&#160;&#160;&#160;2</td>
+          <td class="memname">#define BLOCK_ATTRIB_SOURCE&#160;&#160;&#160;2</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>The name of the c++ class (Flux, Group, Table, ... but also Block or Kind) </p>
+<p>The location of the source set by Channels, also Source of a Kind in Persisted. </p>
 
 </div>
 </div>
-<a id="a9d7c2949a514753102e9e8d5cdc4c377"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d7c2949a514753102e9e8d5cdc4c377">&#9670;&nbsp;</a></span>BLOCK_ATTRIB_KIND</h2>
+<a id="a7adccd0e15de55dcd39559e0312c94eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7adccd0e15de55dcd39559e0312c94eb">&#9670;&nbsp;</a></span>BLOCK_ATTRIB_DEST</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define BLOCK_ATTRIB_KIND&#160;&#160;&#160;3</td>
+          <td class="memname">#define BLOCK_ATTRIB_DEST&#160;&#160;&#160;3</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>The location of the kind (for tuples and descendants) </p>
-
-</div>
-</div>
-<a id="a5f1676adc03a84fe7e486ab708b29ed2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f1676adc03a84fe7e486ab708b29ed2">&#9670;&nbsp;</a></span>BLOCK_ATTRIB_SOURCEKIND</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define BLOCK_ATTRIB_SOURCEKIND&#160;&#160;&#160;4</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The location of the source kind (for fields, fluxes and thing with two Kinds) </p>
-
-</div>
-</div>
-<a id="a1632b46de9c3aee2960a13b603f02aa8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1632b46de9c3aee2960a13b603f02aa8">&#9670;&nbsp;</a></span>BLOCK_ATTRIB_DESTKIND</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define BLOCK_ATTRIB_DESTKIND&#160;&#160;&#160;5</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The location of the destination kind (for fields, fluxes and thing with two Kinds) </p>
+<p>The location of the destination. Less frequent, but may help Channels for a PUT. </p>
 
 </div>
 </div>
@@ -1034,7 +996,7 @@ Typedefs</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define BLOCK_ATTRIB_MIMETYPE&#160;&#160;&#160;6</td>
+          <td class="memname">#define BLOCK_ATTRIB_MIMETYPE&#160;&#160;&#160;4</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1050,7 +1012,7 @@ Typedefs</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define BLOCK_ATTRIB_URL&#160;&#160;&#160;7</td>
+          <td class="memname">#define BLOCK_ATTRIB_URL&#160;&#160;&#160;5</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1066,12 +1028,12 @@ Typedefs</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define BLOCK_ATTRIB_LANGUAGE&#160;&#160;&#160;8</td>
+          <td class="memname">#define BLOCK_ATTRIB_LANGUAGE&#160;&#160;&#160;6</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>An http language identifier that will be returned in a / interface GET call. </p>
+<p>An http language identifier that will be returned in an API GET call. </p>
 
 </div>
 </div>

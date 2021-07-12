@@ -4,7 +4,7 @@ var searchData=
   ['new_5fcontainer_608',['new_container',['../classjazz__elements_1_1Container.html#a6ecc4ba001b31b0be81c99350eb6827e',1,'jazz_elements::Container']]],
   ['new_5fkind_609',['new_kind',['../classjazz__elements_1_1Kind.html#a8d9cc0f15a5ef02139fd3c3552c9a874',1,'jazz_elements::Kind']]],
   ['new_5ftransaction_610',['new_transaction',['../classjazz__elements_1_1Container.html#a643dd6fa71f43582948064498fb9422f',1,'jazz_elements::Container']]],
-  ['new_5ftuple_611',['new_tuple',['../classjazz__elements_1_1Tuple.html#a677bf26596cf6510140da94edfb78aed',1,'jazz_elements::Tuple']]],
+  ['new_5ftuple_611',['new_tuple',['../classjazz__elements_1_1Tuple.html#a8d54e45fd46528e9c562b2f12740d9fa',1,'jazz_elements::Tuple']]],
   ['num_5fdimensions_612',['num_dimensions',['../classjazz__elements_1_1Kind.html#a6f51bbc324666ee4eb3a9f304960c356',1,'jazz_elements::Kind']]],
   ['num_5fkeys_613',['num_keys',['../classjazz__elements_1_1ConfigFile.html#a002fadb3b1aa6a933a9bdb5907987b67',1,'jazz_elements::ConfigFile']]]
 ];

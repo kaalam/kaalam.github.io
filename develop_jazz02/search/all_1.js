@@ -1,7 +1,7 @@
 var searchData=
 [
   ['action_5',['action',['../structjazz__main_1_1ContractStep.html#a71408464d64f608b7fb0c7ce35ddf619',1,'jazz_main::ContractStep']]],
-  ['add_5fitem_6',['add_item',['../classjazz__elements_1_1Kind.html#a6d5bd8053c6da79fcb82dc3d1ff68237',1,'jazz_elements::Kind::add_item()'],['../classjazz__elements_1_1Tuple.html#aefe31d12ae0350285a90bccd9f096078',1,'jazz_elements::Tuple::add_item()']]],
+  ['add_5fitem_6',['add_item',['../classjazz__elements_1_1Kind.html#a8b65fa72c255b8cf8a151f1562a32fd6',1,'jazz_elements::Kind']]],
   ['agency_7',['Agency',['../classjazz__agency_1_1Agency.html',1,'jazz_agency::Agency'],['../classjazz__agency_1_1Agency.html#a7fb4dcad71df4486293fe6389aff0a37',1,'jazz_agency::Agency::Agency()']]],
   ['agency_2ecpp_8',['agency.cpp',['../agency_8cpp.html',1,'']]],
   ['agency_2eh_9',['agency.h',['../agency_8h.html',1,'']]],
