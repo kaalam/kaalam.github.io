@@ -75,7 +75,8 @@ $(function() {
 <div class="title">channel.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="container_8h_source.html">src/jazz_elements/container.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;map&gt;</code><br />
+<code>#include &quot;<a class="el" href="container_8h_source.html">src/jazz_elements/container.h</a>&quot;</code><br />
 </div>
 <p><a href="channel_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -95,9 +96,93 @@ Namespaces</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a96f6aa718704cc59c65ee5c701ba4bac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8h.html#a96f6aa718704cc59c65ee5c701ba4bac">INCLUDED_JAZZ_ELEMENTS_CHANNEL</a></td></tr>
 <tr class="separator:a96f6aa718704cc59c65ee5c701ba4bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2637f8e044b02e559eb59eb41d0e2ba4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8h.html#a2637f8e044b02e559eb59eb41d0e2ba4">CHANNEL__</a></td></tr>
+<tr class="memdesc:a2637f8e044b02e559eb59eb41d0e2ba4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Different values for Block.cell_type.  <a href="channel_8h.html#a2637f8e044b02e559eb59eb41d0e2ba4">More...</a><br /></td></tr>
+<tr class="separator:a2637f8e044b02e559eb59eb41d0e2ba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a632f9ee4e604bd0c8ecb4b258089cd95"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8h.html#a632f9ee4e604bd0c8ecb4b258089cd95">CHANNEL_FILE_READ</a>&#160;&#160;&#160;0x0001</td></tr>
+<tr class="memdesc:a632f9ee4e604bd0c8ecb4b258089cd95"><td class="mdescLeft">&#160;</td><td class="mdescRight">A channel reading from a file into a Tensor of byte.  <a href="channel_8h.html#a632f9ee4e604bd0c8ecb4b258089cd95">More...</a><br /></td></tr>
+<tr class="separator:a632f9ee4e604bd0c8ecb4b258089cd95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fa1a9f7ece56f70fc2516915ebc04f4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8h.html#a8fa1a9f7ece56f70fc2516915ebc04f4">CHANNEL_FOLDER_READ</a>&#160;&#160;&#160;0x0002</td></tr>
+<tr class="memdesc:a8fa1a9f7ece56f70fc2516915ebc04f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A channel reading from a folder into a Tensor of strings.  <a href="channel_8h.html#a8fa1a9f7ece56f70fc2516915ebc04f4">More...</a><br /></td></tr>
+<tr class="separator:a8fa1a9f7ece56f70fc2516915ebc04f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad95d235a756d33d372b1de7a70b3ce9d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8h.html#ad95d235a756d33d372b1de7a70b3ce9d">CHANNEL_DISK_READ</a>&#160;&#160;&#160;0x0003</td></tr>
+<tr class="memdesc:ad95d235a756d33d372b1de7a70b3ce9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A channel reading from a file path either as a CHANNEL_FILE_RD or a CHANNEL_FOLDER_RD.  <a href="channel_8h.html#ad95d235a756d33d372b1de7a70b3ce9d">More...</a><br /></td></tr>
+<tr class="separator:ad95d235a756d33d372b1de7a70b3ce9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae709c60a5905e1dd7dc6b54683d51ef9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8h.html#ae709c60a5905e1dd7dc6b54683d51ef9">CHANNEL_URL_GET</a>&#160;&#160;&#160;0x0004</td></tr>
+<tr class="memdesc:ae709c60a5905e1dd7dc6b54683d51ef9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A channel reading via a libcurl GET into a Tensor.  <a href="channel_8h.html#ae709c60a5905e1dd7dc6b54683d51ef9">More...</a><br /></td></tr>
+<tr class="separator:ae709c60a5905e1dd7dc6b54683d51ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3d9cc609a81fb53374e99ad915b2fc9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8h.html#ae3d9cc609a81fb53374e99ad915b2fc9">CHANNEL_URL_BLOCK_GET</a>&#160;&#160;&#160;0x0008</td></tr>
+<tr class="memdesc:ae3d9cc609a81fb53374e99ad915b2fc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A channel reading (from Jazz) via a libcurl GET a complete Block, Kind or Tuple.  <a href="channel_8h.html#ae3d9cc609a81fb53374e99ad915b2fc9">More...</a><br /></td></tr>
+<tr class="separator:ae3d9cc609a81fb53374e99ad915b2fc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57ef85290b2ec915f96668f3b91c9c1c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8h.html#a57ef85290b2ec915f96668f3b91c9c1c">CHANNEL_INDEX_II_SAVE</a>&#160;&#160;&#160;0x0010</td></tr>
+<tr class="memdesc:a57ef85290b2ec915f96668f3b91c9c1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A channel serializing an IndexII into a Tuple of (int, int)  <a href="channel_8h.html#a57ef85290b2ec915f96668f3b91c9c1c">More...</a><br /></td></tr>
+<tr class="separator:a57ef85290b2ec915f96668f3b91c9c1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a109f6d3ec8077e1490e94909745fd88b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8h.html#a109f6d3ec8077e1490e94909745fd88b">CHANNEL_INDEX_IS_SAVE</a>&#160;&#160;&#160;0x0020</td></tr>
+<tr class="memdesc:a109f6d3ec8077e1490e94909745fd88b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A channel serializing an IndexIS into a Tuple of (int, string)  <a href="channel_8h.html#a109f6d3ec8077e1490e94909745fd88b">More...</a><br /></td></tr>
+<tr class="separator:a109f6d3ec8077e1490e94909745fd88b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95ad4fbbd320bc3c57f672fae545e8f4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8h.html#a95ad4fbbd320bc3c57f672fae545e8f4">CHANNEL_INDEX_SI_SAVE</a>&#160;&#160;&#160;0x0040</td></tr>
+<tr class="memdesc:a95ad4fbbd320bc3c57f672fae545e8f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A channel serializing an IndexSI into a Tuple of (string, int)  <a href="channel_8h.html#a95ad4fbbd320bc3c57f672fae545e8f4">More...</a><br /></td></tr>
+<tr class="separator:a95ad4fbbd320bc3c57f672fae545e8f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ac9936d8ea9c6b7d01a706bfcf678d7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8h.html#a3ac9936d8ea9c6b7d01a706bfcf678d7">CHANNEL_INDEX_SS_SAVE</a>&#160;&#160;&#160;0x0080</td></tr>
+<tr class="memdesc:a3ac9936d8ea9c6b7d01a706bfcf678d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">A channel serializing an IndexSS into a Tuple of (string, string)  <a href="channel_8h.html#a3ac9936d8ea9c6b7d01a706bfcf678d7">More...</a><br /></td></tr>
+<tr class="separator:a3ac9936d8ea9c6b7d01a706bfcf678d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a1379b0f9a85391b3ee6c6b9b8376f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8h.html#a3a1379b0f9a85391b3ee6c6b9b8376f2">CHANNEL_CONTAINER_GET</a>&#160;&#160;&#160;0x0100</td></tr>
+<tr class="memdesc:a3a1379b0f9a85391b3ee6c6b9b8376f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">A channel reading any Block, Kind or Tuple from a Container or descendant.  <a href="channel_8h.html#a3a1379b0f9a85391b3ee6c6b9b8376f2">More...</a><br /></td></tr>
+<tr class="separator:a3a1379b0f9a85391b3ee6c6b9b8376f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85ff134e862d1a66474a3df67499b876"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8h.html#a85ff134e862d1a66474a3df67499b876">CHANNEL_SHELL_EXEC</a>&#160;&#160;&#160;0x0200</td></tr>
+<tr class="memdesc:a85ff134e862d1a66474a3df67499b876"><td class="mdescLeft">&#160;</td><td class="mdescRight">A channel reading the output of a shell command into a Tensor of strings.  <a href="channel_8h.html#a85ff134e862d1a66474a3df67499b876">More...</a><br /></td></tr>
+<tr class="separator:a85ff134e862d1a66474a3df67499b876"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab15253edd61c7f7dfb2ee076bb8ae000"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8h.html#ab15253edd61c7f7dfb2ee076bb8ae000">CHANNEL_FILE_WRITE</a>&#160;&#160;&#160;0x1001</td></tr>
+<tr class="memdesc:ab15253edd61c7f7dfb2ee076bb8ae000"><td class="mdescLeft">&#160;</td><td class="mdescRight">A channel writing the tensor inside a Tensor to a binary file.  <a href="channel_8h.html#ab15253edd61c7f7dfb2ee076bb8ae000">More...</a><br /></td></tr>
+<tr class="separator:ab15253edd61c7f7dfb2ee076bb8ae000"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4df361fe922a9c7bd8c11f7dacf48d3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8h.html#ac4df361fe922a9c7bd8c11f7dacf48d3">CHANNEL_URL_PUT</a>&#160;&#160;&#160;0x1004</td></tr>
+<tr class="memdesc:ac4df361fe922a9c7bd8c11f7dacf48d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">A channel writing the tensor inside a Tensor via a libcurl PUT.  <a href="channel_8h.html#ac4df361fe922a9c7bd8c11f7dacf48d3">More...</a><br /></td></tr>
+<tr class="separator:ac4df361fe922a9c7bd8c11f7dacf48d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac088a80a3a5d3a404e6f3f1312251a79"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8h.html#ac088a80a3a5d3a404e6f3f1312251a79">CHANNEL_URL_BLOCK_PUT</a>&#160;&#160;&#160;0x1008</td></tr>
+<tr class="memdesc:ac088a80a3a5d3a404e6f3f1312251a79"><td class="mdescLeft">&#160;</td><td class="mdescRight">A channel writing any complete Block, Kind or Tuple via a libcurl PUT to a Jazz server.  <a href="channel_8h.html#ac088a80a3a5d3a404e6f3f1312251a79">More...</a><br /></td></tr>
+<tr class="separator:ac088a80a3a5d3a404e6f3f1312251a79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b695df7760214e3141b550804f719ee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8h.html#a7b695df7760214e3141b550804f719ee">CHANNEL_INDEX_II_LOAD</a>&#160;&#160;&#160;0x1010</td></tr>
+<tr class="memdesc:a7b695df7760214e3141b550804f719ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">A channel serializing a Tuple of (int, int) into an IndexII.  <a href="channel_8h.html#a7b695df7760214e3141b550804f719ee">More...</a><br /></td></tr>
+<tr class="separator:a7b695df7760214e3141b550804f719ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c00b5efe7418c7c41deb79f06830911"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8h.html#a6c00b5efe7418c7c41deb79f06830911">CHANNEL_INDEX_IS_LOAD</a>&#160;&#160;&#160;0x1020</td></tr>
+<tr class="memdesc:a6c00b5efe7418c7c41deb79f06830911"><td class="mdescLeft">&#160;</td><td class="mdescRight">A channel serializing a Tuple of (int, string) into an IndexIS.  <a href="channel_8h.html#a6c00b5efe7418c7c41deb79f06830911">More...</a><br /></td></tr>
+<tr class="separator:a6c00b5efe7418c7c41deb79f06830911"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45ef7e762e2345be06e9b118ae27ea48"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8h.html#a45ef7e762e2345be06e9b118ae27ea48">CHANNEL_INDEX_SI_LOAD</a>&#160;&#160;&#160;0x1040</td></tr>
+<tr class="memdesc:a45ef7e762e2345be06e9b118ae27ea48"><td class="mdescLeft">&#160;</td><td class="mdescRight">A channel serializing a Tuple of (string, int) into an IndexSI.  <a href="channel_8h.html#a45ef7e762e2345be06e9b118ae27ea48">More...</a><br /></td></tr>
+<tr class="separator:a45ef7e762e2345be06e9b118ae27ea48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19462be9b8f73b12cfa135bb431b062a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8h.html#a19462be9b8f73b12cfa135bb431b062a">CHANNEL_INDEX_SS_LOAD</a>&#160;&#160;&#160;0x1080</td></tr>
+<tr class="memdesc:a19462be9b8f73b12cfa135bb431b062a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A channel serializing a Tuple of (string, string) into an IndexSS.  <a href="channel_8h.html#a19462be9b8f73b12cfa135bb431b062a">More...</a><br /></td></tr>
+<tr class="separator:a19462be9b8f73b12cfa135bb431b062a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71f9ee1369abc6c513d6bd04950e6d56"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8h.html#a71f9ee1369abc6c513d6bd04950e6d56">CHANNEL_CONTAINER_PUT</a>&#160;&#160;&#160;0x1100</td></tr>
+<tr class="memdesc:a71f9ee1369abc6c513d6bd04950e6d56"><td class="mdescLeft">&#160;</td><td class="mdescRight">A channel writing any Block, Kind or Tuple from any Container or descendant.  <a href="channel_8h.html#a71f9ee1369abc6c513d6bd04950e6d56">More...</a><br /></td></tr>
+<tr class="separator:a71f9ee1369abc6c513d6bd04950e6d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30f1a4f163ecc9466a5cf4b826f0793d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8h.html#a30f1a4f163ecc9466a5cf4b826f0793d">CHANNEL_FILE_UNLINK</a>&#160;&#160;&#160;0x2001</td></tr>
+<tr class="memdesc:a30f1a4f163ecc9466a5cf4b826f0793d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A channel deleting a file.  <a href="channel_8h.html#a30f1a4f163ecc9466a5cf4b826f0793d">More...</a><br /></td></tr>
+<tr class="separator:a30f1a4f163ecc9466a5cf4b826f0793d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a874348a1cffdf2c92eb78de8a3077f5a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8h.html#a874348a1cffdf2c92eb78de8a3077f5a">CHANNEL_FOLDER_REMOVE_ALL</a>&#160;&#160;&#160;0x2002</td></tr>
+<tr class="memdesc:a874348a1cffdf2c92eb78de8a3077f5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A channel deleting a folder with anything in it.  <a href="channel_8h.html#a874348a1cffdf2c92eb78de8a3077f5a">More...</a><br /></td></tr>
+<tr class="separator:a874348a1cffdf2c92eb78de8a3077f5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b397297b5b81355dda63d1ba03bdc01"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8h.html#a3b397297b5b81355dda63d1ba03bdc01">CHANNEL_URL_DELETE</a>&#160;&#160;&#160;0x2004</td></tr>
+<tr class="memdesc:a3b397297b5b81355dda63d1ba03bdc01"><td class="mdescLeft">&#160;</td><td class="mdescRight">A channel deleting via a libcurl DELETE.  <a href="channel_8h.html#a3b397297b5b81355dda63d1ba03bdc01">More...</a><br /></td></tr>
+<tr class="separator:a3b397297b5b81355dda63d1ba03bdc01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd32e22521e0002ad7f0bf98e9a93e0b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8h.html#afd32e22521e0002ad7f0bf98e9a93e0b">CHANNEL_CONTAINER_REMOVE</a>&#160;&#160;&#160;0x2100</td></tr>
+<tr class="memdesc:afd32e22521e0002ad7f0bf98e9a93e0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A channel deleting any Block, Kind or Tuple inside a Container or descendant.  <a href="channel_8h.html#afd32e22521e0002ad7f0bf98e9a93e0b">More...</a><br /></td></tr>
+<tr class="separator:afd32e22521e0002ad7f0bf98e9a93e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:a21ef56e0ae0b19ab246376047a94b301"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a21ef56e0ae0b19ab246376047a94b301">jazz_elements::IndexII</a></td></tr>
+<tr class="memdesc:a21ef56e0ae0b19ab246376047a94b301"><td class="mdescLeft">&#160;</td><td class="mdescRight">An Index kept in RAM by <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a> implemented as an stdlib map (int, int)  <a href="namespacejazz__elements.html#a21ef56e0ae0b19ab246376047a94b301">More...</a><br /></td></tr>
+<tr class="separator:a21ef56e0ae0b19ab246376047a94b301"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaedb854e75f5cd59005006996f594124"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; int, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#aaedb854e75f5cd59005006996f594124">jazz_elements::IndexIS</a></td></tr>
+<tr class="memdesc:aaedb854e75f5cd59005006996f594124"><td class="mdescLeft">&#160;</td><td class="mdescRight">An Index kept in RAM by <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a> implemented as an stdlib map (int, string)  <a href="namespacejazz__elements.html#aaedb854e75f5cd59005006996f594124">More...</a><br /></td></tr>
+<tr class="separator:aaedb854e75f5cd59005006996f594124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6c36959b138f2f01f181fed65c9f3e9"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::string, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#af6c36959b138f2f01f181fed65c9f3e9">jazz_elements::IndexSI</a></td></tr>
+<tr class="memdesc:af6c36959b138f2f01f181fed65c9f3e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">An Index kept in RAM by <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a> implemented as an stdlib map (string, int)  <a href="namespacejazz__elements.html#af6c36959b138f2f01f181fed65c9f3e9">More...</a><br /></td></tr>
+<tr class="separator:af6c36959b138f2f01f181fed65c9f3e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a308b39ce977ebbfae2611b6ba4476fbe"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a308b39ce977ebbfae2611b6ba4476fbe">jazz_elements::IndexSS</a></td></tr>
+<tr class="memdesc:a308b39ce977ebbfae2611b6ba4476fbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">An Index kept in RAM by <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a> implemented as an stdlib map (string, string)  <a href="namespacejazz__elements.html#a308b39ce977ebbfae2611b6ba4476fbe">More...</a><br /></td></tr>
+<tr class="separator:a308b39ce977ebbfae2611b6ba4476fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a612e435984d430c34312ed9fa76395d7"><td class="memItemLeft" align="right" valign="top">typedef Channels *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a612e435984d430c34312ed9fa76395d7">jazz_elements::pChannels</a></td></tr>
 <tr class="separator:a612e435984d430c34312ed9fa76395d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -113,6 +198,390 @@ Typedefs</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2637f8e044b02e559eb59eb41d0e2ba4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2637f8e044b02e559eb59eb41d0e2ba4">&#9670;&nbsp;</a></span>CHANNEL__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHANNEL__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Different values for Block.cell_type. </p>
+
+</div>
+</div>
+<a id="a632f9ee4e604bd0c8ecb4b258089cd95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a632f9ee4e604bd0c8ecb4b258089cd95">&#9670;&nbsp;</a></span>CHANNEL_FILE_READ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHANNEL_FILE_READ&#160;&#160;&#160;0x0001</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A channel reading from a file into a Tensor of byte. </p>
+
+</div>
+</div>
+<a id="a8fa1a9f7ece56f70fc2516915ebc04f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fa1a9f7ece56f70fc2516915ebc04f4">&#9670;&nbsp;</a></span>CHANNEL_FOLDER_READ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHANNEL_FOLDER_READ&#160;&#160;&#160;0x0002</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A channel reading from a folder into a Tensor of strings. </p>
+
+</div>
+</div>
+<a id="ad95d235a756d33d372b1de7a70b3ce9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad95d235a756d33d372b1de7a70b3ce9d">&#9670;&nbsp;</a></span>CHANNEL_DISK_READ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHANNEL_DISK_READ&#160;&#160;&#160;0x0003</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A channel reading from a file path either as a CHANNEL_FILE_RD or a CHANNEL_FOLDER_RD. </p>
+
+</div>
+</div>
+<a id="ae709c60a5905e1dd7dc6b54683d51ef9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae709c60a5905e1dd7dc6b54683d51ef9">&#9670;&nbsp;</a></span>CHANNEL_URL_GET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHANNEL_URL_GET&#160;&#160;&#160;0x0004</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A channel reading via a libcurl GET into a Tensor. </p>
+
+</div>
+</div>
+<a id="ae3d9cc609a81fb53374e99ad915b2fc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3d9cc609a81fb53374e99ad915b2fc9">&#9670;&nbsp;</a></span>CHANNEL_URL_BLOCK_GET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHANNEL_URL_BLOCK_GET&#160;&#160;&#160;0x0008</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A channel reading (from Jazz) via a libcurl GET a complete Block, Kind or Tuple. </p>
+
+</div>
+</div>
+<a id="a57ef85290b2ec915f96668f3b91c9c1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57ef85290b2ec915f96668f3b91c9c1c">&#9670;&nbsp;</a></span>CHANNEL_INDEX_II_SAVE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHANNEL_INDEX_II_SAVE&#160;&#160;&#160;0x0010</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A channel serializing an IndexII into a Tuple of (int, int) </p>
+
+</div>
+</div>
+<a id="a109f6d3ec8077e1490e94909745fd88b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a109f6d3ec8077e1490e94909745fd88b">&#9670;&nbsp;</a></span>CHANNEL_INDEX_IS_SAVE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHANNEL_INDEX_IS_SAVE&#160;&#160;&#160;0x0020</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A channel serializing an IndexIS into a Tuple of (int, string) </p>
+
+</div>
+</div>
+<a id="a95ad4fbbd320bc3c57f672fae545e8f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95ad4fbbd320bc3c57f672fae545e8f4">&#9670;&nbsp;</a></span>CHANNEL_INDEX_SI_SAVE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHANNEL_INDEX_SI_SAVE&#160;&#160;&#160;0x0040</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A channel serializing an IndexSI into a Tuple of (string, int) </p>
+
+</div>
+</div>
+<a id="a3ac9936d8ea9c6b7d01a706bfcf678d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ac9936d8ea9c6b7d01a706bfcf678d7">&#9670;&nbsp;</a></span>CHANNEL_INDEX_SS_SAVE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHANNEL_INDEX_SS_SAVE&#160;&#160;&#160;0x0080</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A channel serializing an IndexSS into a Tuple of (string, string) </p>
+
+</div>
+</div>
+<a id="a3a1379b0f9a85391b3ee6c6b9b8376f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a1379b0f9a85391b3ee6c6b9b8376f2">&#9670;&nbsp;</a></span>CHANNEL_CONTAINER_GET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHANNEL_CONTAINER_GET&#160;&#160;&#160;0x0100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A channel reading any Block, Kind or Tuple from a Container or descendant. </p>
+
+</div>
+</div>
+<a id="a85ff134e862d1a66474a3df67499b876"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85ff134e862d1a66474a3df67499b876">&#9670;&nbsp;</a></span>CHANNEL_SHELL_EXEC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHANNEL_SHELL_EXEC&#160;&#160;&#160;0x0200</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A channel reading the output of a shell command into a Tensor of strings. </p>
+
+</div>
+</div>
+<a id="ab15253edd61c7f7dfb2ee076bb8ae000"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab15253edd61c7f7dfb2ee076bb8ae000">&#9670;&nbsp;</a></span>CHANNEL_FILE_WRITE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHANNEL_FILE_WRITE&#160;&#160;&#160;0x1001</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A channel writing the tensor inside a Tensor to a binary file. </p>
+
+</div>
+</div>
+<a id="ac4df361fe922a9c7bd8c11f7dacf48d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4df361fe922a9c7bd8c11f7dacf48d3">&#9670;&nbsp;</a></span>CHANNEL_URL_PUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHANNEL_URL_PUT&#160;&#160;&#160;0x1004</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A channel writing the tensor inside a Tensor via a libcurl PUT. </p>
+
+</div>
+</div>
+<a id="ac088a80a3a5d3a404e6f3f1312251a79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac088a80a3a5d3a404e6f3f1312251a79">&#9670;&nbsp;</a></span>CHANNEL_URL_BLOCK_PUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHANNEL_URL_BLOCK_PUT&#160;&#160;&#160;0x1008</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A channel writing any complete Block, Kind or Tuple via a libcurl PUT to a Jazz server. </p>
+
+</div>
+</div>
+<a id="a7b695df7760214e3141b550804f719ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b695df7760214e3141b550804f719ee">&#9670;&nbsp;</a></span>CHANNEL_INDEX_II_LOAD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHANNEL_INDEX_II_LOAD&#160;&#160;&#160;0x1010</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A channel serializing a Tuple of (int, int) into an IndexII. </p>
+
+</div>
+</div>
+<a id="a6c00b5efe7418c7c41deb79f06830911"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c00b5efe7418c7c41deb79f06830911">&#9670;&nbsp;</a></span>CHANNEL_INDEX_IS_LOAD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHANNEL_INDEX_IS_LOAD&#160;&#160;&#160;0x1020</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A channel serializing a Tuple of (int, string) into an IndexIS. </p>
+
+</div>
+</div>
+<a id="a45ef7e762e2345be06e9b118ae27ea48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45ef7e762e2345be06e9b118ae27ea48">&#9670;&nbsp;</a></span>CHANNEL_INDEX_SI_LOAD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHANNEL_INDEX_SI_LOAD&#160;&#160;&#160;0x1040</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A channel serializing a Tuple of (string, int) into an IndexSI. </p>
+
+</div>
+</div>
+<a id="a19462be9b8f73b12cfa135bb431b062a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19462be9b8f73b12cfa135bb431b062a">&#9670;&nbsp;</a></span>CHANNEL_INDEX_SS_LOAD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHANNEL_INDEX_SS_LOAD&#160;&#160;&#160;0x1080</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A channel serializing a Tuple of (string, string) into an IndexSS. </p>
+
+</div>
+</div>
+<a id="a71f9ee1369abc6c513d6bd04950e6d56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71f9ee1369abc6c513d6bd04950e6d56">&#9670;&nbsp;</a></span>CHANNEL_CONTAINER_PUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHANNEL_CONTAINER_PUT&#160;&#160;&#160;0x1100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A channel writing any Block, Kind or Tuple from any Container or descendant. </p>
+
+</div>
+</div>
+<a id="a30f1a4f163ecc9466a5cf4b826f0793d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30f1a4f163ecc9466a5cf4b826f0793d">&#9670;&nbsp;</a></span>CHANNEL_FILE_UNLINK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHANNEL_FILE_UNLINK&#160;&#160;&#160;0x2001</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A channel deleting a file. </p>
+
+</div>
+</div>
+<a id="a874348a1cffdf2c92eb78de8a3077f5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a874348a1cffdf2c92eb78de8a3077f5a">&#9670;&nbsp;</a></span>CHANNEL_FOLDER_REMOVE_ALL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHANNEL_FOLDER_REMOVE_ALL&#160;&#160;&#160;0x2002</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A channel deleting a folder with anything in it. </p>
+
+</div>
+</div>
+<a id="a3b397297b5b81355dda63d1ba03bdc01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b397297b5b81355dda63d1ba03bdc01">&#9670;&nbsp;</a></span>CHANNEL_URL_DELETE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHANNEL_URL_DELETE&#160;&#160;&#160;0x2004</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A channel deleting via a libcurl DELETE. </p>
+
+</div>
+</div>
+<a id="afd32e22521e0002ad7f0bf98e9a93e0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd32e22521e0002ad7f0bf98e9a93e0b">&#9670;&nbsp;</a></span>CHANNEL_CONTAINER_REMOVE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHANNEL_CONTAINER_REMOVE&#160;&#160;&#160;0x2100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A channel deleting any Block, Kind or Tuple inside a Container or descendant. </p>
 
 </div>
 </div>

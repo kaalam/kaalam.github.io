@@ -143,6 +143,18 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a89b6ae8b08dfbb376caafc742840adf6"><td class="memItemLeft" align="right" valign="top">typedef class <a class="el" href="classjazz__elements_1_1Block.html">Block</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a></td></tr>
 <tr class="memdesc:a89b6ae8b08dfbb376caafc742840adf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">A (forward defined) pointer to a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a>.  <a href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">More...</a><br /></td></tr>
 <tr class="separator:a89b6ae8b08dfbb376caafc742840adf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21ef56e0ae0b19ab246376047a94b301"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a21ef56e0ae0b19ab246376047a94b301">IndexII</a></td></tr>
+<tr class="memdesc:a21ef56e0ae0b19ab246376047a94b301"><td class="mdescLeft">&#160;</td><td class="mdescRight">An Index kept in RAM by <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a> implemented as an stdlib map (int, int)  <a href="namespacejazz__elements.html#a21ef56e0ae0b19ab246376047a94b301">More...</a><br /></td></tr>
+<tr class="separator:a21ef56e0ae0b19ab246376047a94b301"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaedb854e75f5cd59005006996f594124"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; int, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#aaedb854e75f5cd59005006996f594124">IndexIS</a></td></tr>
+<tr class="memdesc:aaedb854e75f5cd59005006996f594124"><td class="mdescLeft">&#160;</td><td class="mdescRight">An Index kept in RAM by <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a> implemented as an stdlib map (int, string)  <a href="namespacejazz__elements.html#aaedb854e75f5cd59005006996f594124">More...</a><br /></td></tr>
+<tr class="separator:aaedb854e75f5cd59005006996f594124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6c36959b138f2f01f181fed65c9f3e9"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::string, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#af6c36959b138f2f01f181fed65c9f3e9">IndexSI</a></td></tr>
+<tr class="memdesc:af6c36959b138f2f01f181fed65c9f3e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">An Index kept in RAM by <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a> implemented as an stdlib map (string, int)  <a href="namespacejazz__elements.html#af6c36959b138f2f01f181fed65c9f3e9">More...</a><br /></td></tr>
+<tr class="separator:af6c36959b138f2f01f181fed65c9f3e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a308b39ce977ebbfae2611b6ba4476fbe"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a308b39ce977ebbfae2611b6ba4476fbe">IndexSS</a></td></tr>
+<tr class="memdesc:a308b39ce977ebbfae2611b6ba4476fbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">An Index kept in RAM by <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a> implemented as an stdlib map (string, string)  <a href="namespacejazz__elements.html#a308b39ce977ebbfae2611b6ba4476fbe">More...</a><br /></td></tr>
+<tr class="separator:a308b39ce977ebbfae2611b6ba4476fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a612e435984d430c34312ed9fa76395d7"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classjazz__elements_1_1Channels.html">Channels</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a612e435984d430c34312ed9fa76395d7">pChannels</a></td></tr>
 <tr class="separator:a612e435984d430c34312ed9fa76395d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3d6e1b4aca91c99b80bdc759a73699f"><td class="memItemLeft" align="right" valign="top">typedef std::atomic&lt; int32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#ac3d6e1b4aca91c99b80bdc759a73699f">Lock32</a></td></tr>
@@ -274,6 +286,70 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>A (forward defined) pointer to a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a>. </p>
+
+</div>
+</div>
+<a id="a21ef56e0ae0b19ab246376047a94b301"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21ef56e0ae0b19ab246376047a94b301">&#9670;&nbsp;</a></span>IndexII</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::map&lt;int, int&gt; <a class="el" href="namespacejazz__elements.html#a21ef56e0ae0b19ab246376047a94b301">jazz_elements::IndexII</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An Index kept in RAM by <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a> implemented as an stdlib map (int, int) </p>
+
+</div>
+</div>
+<a id="aaedb854e75f5cd59005006996f594124"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaedb854e75f5cd59005006996f594124">&#9670;&nbsp;</a></span>IndexIS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::map&lt;int, std::string&gt; <a class="el" href="namespacejazz__elements.html#aaedb854e75f5cd59005006996f594124">jazz_elements::IndexIS</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An Index kept in RAM by <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a> implemented as an stdlib map (int, string) </p>
+
+</div>
+</div>
+<a id="af6c36959b138f2f01f181fed65c9f3e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6c36959b138f2f01f181fed65c9f3e9">&#9670;&nbsp;</a></span>IndexSI</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::map&lt;std::string, int&gt; <a class="el" href="namespacejazz__elements.html#af6c36959b138f2f01f181fed65c9f3e9">jazz_elements::IndexSI</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An Index kept in RAM by <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a> implemented as an stdlib map (string, int) </p>
+
+</div>
+</div>
+<a id="a308b39ce977ebbfae2611b6ba4476fbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a308b39ce977ebbfae2611b6ba4476fbe">&#9670;&nbsp;</a></span>IndexSS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::map&lt;std::string, std::string&gt; <a class="el" href="namespacejazz__elements.html#a308b39ce977ebbfae2611b6ba4476fbe">jazz_elements::IndexSS</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An Index kept in RAM by <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a> implemented as an stdlib map (string, string) </p>
 
 </div>
 </div>
