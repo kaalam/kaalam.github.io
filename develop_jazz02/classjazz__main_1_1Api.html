@@ -102,8 +102,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a20fa96a348efb22d9cff1099e9d1cc1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af326dc725326e9e73434aeb9a99538f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html#af326dc725326e9e73434aeb9a99538f2">get_static</a> (const char *url, <a class="el" href="namespacejazz__main.html#a9d502f9732a9b9206a07f3a78c42fe18">pMHD_Response</a> &amp;response, bool execution=true)</td></tr>
 <tr class="separator:af326dc725326e9e73434aeb9a99538f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27c60802797de45fd6929cdbdef910f9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html#a27c60802797de45fd6929cdbdef910f9">return_error_message</a> (struct MHD_Connection *connection, int http_status)</td></tr>
-<tr class="separator:a27c60802797de45fd6929cdbdef910f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e6caba34dc6f3cf66624d47374ed1d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="api_8h.html#addfe8a731ae492e2afd535f4eea99308">MHD_Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html#a5e6caba34dc6f3cf66624d47374ed1d8">return_error_message</a> (struct MHD_Connection *connection, int http_status)</td></tr>
+<tr class="separator:a5e6caba34dc6f3cf66624d47374ed1d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c1f84c4f94dcffa2380da91dcc46b03"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html#a6c1f84c4f94dcffa2380da91dcc46b03">upload</a> (<a class="el" href="structjazz__main_1_1APIParseBuffer.html">APIParseBuffer</a> &amp;parse_buff, const char *upload, size_t size, bool continue_upload)</td></tr>
 <tr class="separator:a6c1f84c4f94dcffa2380da91dcc46b03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55ea51590dce1704b56e16e33b0c4f2c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html#a55ea51590dce1704b56e16e33b0c4f2c">remove</a> (<a class="el" href="structjazz__main_1_1APIParseBuffer.html">APIParseBuffer</a> &amp;parse_buff)</td></tr>
@@ -187,7 +187,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classjazz__main_1_1Api.html" title="Api: A Service to manage the REST API.">Api</a>: A Service to manage the REST API. </p>
-<p>This service parses and executes http queries. It is aware and redistributes to all the appropriate services. It is called directly by the http callback <a class="el" href="namespacejazz__main.html#a6c153d2441379b609b60dde6bce9f811">http_request_callback()</a>. </p>
+<p>This service parses and executes http queries. It is aware and redistributes to all the appropriate services. It is called directly by the http callback <a class="el" href="namespacejazz__main.html#a2c4e34ed7c375c90202bb1d22dd5ff8f">http_request_callback()</a>. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a67c4802ac915634f74e18ff01f6095c6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a67c4802ac915634f74e18ff01f6095c6">&#9670;&nbsp;</a></span>Api()</h2>
@@ -418,14 +418,14 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a27c60802797de45fd6929cdbdef910f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27c60802797de45fd6929cdbdef910f9">&#9670;&nbsp;</a></span>return_error_message()</h2>
+<a id="a5e6caba34dc6f3cf66624d47374ed1d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e6caba34dc6f3cf66624d47374ed1d8">&#9670;&nbsp;</a></span>return_error_message()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int jazz_main::Api::return_error_message </td>
+          <td class="memname"><a class="el" href="api_8h.html#addfe8a731ae492e2afd535f4eea99308">MHD_Result</a> jazz_main::Api::return_error_message </td>
           <td>(</td>
           <td class="paramtype">struct MHD_Connection *&#160;</td>
           <td class="paramname"><em>connection</em>, </td>

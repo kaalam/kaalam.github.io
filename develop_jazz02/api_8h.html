@@ -293,6 +293,9 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:addfe8a731ae492e2afd535f4eea99308"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#addfe8a731ae492e2afd535f4eea99308">MHD_Result</a></td></tr>
+<tr class="memdesc:addfe8a731ae492e2afd535f4eea99308"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replacement type for the future (libmicrohttpd-dev 0.9.72-2)  <a href="api_8h.html#addfe8a731ae492e2afd535f4eea99308">More...</a><br /></td></tr>
+<tr class="separator:addfe8a731ae492e2afd535f4eea99308"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab273ea9d5b5d4b8914ca36b8d232d6c4"><td class="memItemLeft" align="right" valign="top">typedef bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#ab273ea9d5b5d4b8914ca36b8d232d6c4">jazz_main::CharGroupLUT</a>[<a class="el" href="api_8h.html#a7dfe57f98086163fe1947f55bcdac9bc">EIGHT_BIT_LONG</a>]</td></tr>
 <tr class="separator:ab273ea9d5b5d4b8914ca36b8d232d6c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a043aa4cce0f03bfc881110fa18232a79"><td class="memItemLeft" align="right" valign="top">typedef StateTransition&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#a043aa4cce0f03bfc881110fa18232a79">jazz_main::StateTransitions</a>[<a class="el" href="api_8h.html#a2af6bcc5187fe6040a315da36a4b6b6a">NUM_STATE_TRANSITIONS</a>]</td></tr>
@@ -308,8 +311,8 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6c153d2441379b609b60dde6bce9f811"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#a6c153d2441379b609b60dde6bce9f811">jazz_main::http_request_callback</a> (void *cls, struct MHD_Connection *connection, const char *url, const char *method, const char *version, const char *upload_data, size_t *upload_data_size, void **con_cls)</td></tr>
-<tr class="separator:a6c153d2441379b609b60dde6bce9f811"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c4e34ed7c375c90202bb1d22dd5ff8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="api_8h.html#addfe8a731ae492e2afd535f4eea99308">MHD_Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#a2c4e34ed7c375c90202bb1d22dd5ff8f">jazz_main::http_request_callback</a> (void *cls, struct MHD_Connection *connection, const char *url, const char *method, const char *version, const char *upload_data, size_t *upload_data_size, void **con_cls)</td></tr>
+<tr class="separator:a2c4e34ed7c375c90202bb1d22dd5ff8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -1290,6 +1293,25 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="addfe8a731ae492e2afd535f4eea99308"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addfe8a731ae492e2afd535f4eea99308">&#9670;&nbsp;</a></span>MHD_Result</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int <a class="el" href="api_8h.html#addfe8a731ae492e2afd535f4eea99308">MHD_Result</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Replacement type for the future (libmicrohttpd-dev 0.9.72-2) </p>
+<p>In a version somewhere between &gt; 0.9.66-1 and &lt;= 0.9.72-2 libmicrohttpd changed the return type of int MHD_YES and MHD_NO to a:</p>
+<p>enum MHD_Result {MHD_NO = 0, MHD_YES = 1}; </p>
 
 </div>
 </div>
