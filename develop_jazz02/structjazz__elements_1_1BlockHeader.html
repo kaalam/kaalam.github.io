@@ -73,57 +73,55 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Header for a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a>.  
+<p>Header for a Movable <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> (<a class="el" href="unionjazz__elements_1_1Tensor.html" title="A tensor of cell size 1, 4, 8 or sizeof(BlockHeader)">Tensor</a>, <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for Jazz Blocks and Tuples.">Kind</a> or <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz Block with multiple Tensors.">Tuple</a>) or a Dynamic <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> (<a class="el" href="unionjazz__elements_1_1Index.html" title="A union abstracting all the individual Index types.">Index</a>)  
  <a href="structjazz__elements_1_1BlockHeader.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="types_8h_source.html">types.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for jazz_elements::BlockHeader:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="structjazz__elements_1_1BlockHeader.png" usemap="#jazz_5Felements::BlockHeader_map" alt=""/>
-  <map id="jazz_5Felements::BlockHeader_map" name="jazz_5Felements::BlockHeader_map">
-<area href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer." alt="jazz_elements::Block" shape="rect" coords="89,56,258,80"/>
-<area href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for Jazz Blocks and Tuples." alt="jazz_elements::Kind" shape="rect" coords="0,112,169,136"/>
-<area href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz Block with multiple Tensors." alt="jazz_elements::Tuple" shape="rect" coords="179,112,348,136"/>
-  </map>
-</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a74b600fb9d8a9afce9285d79c035b33b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1BlockHeader.html#a74b600fb9d8a9afce9285d79c035b33b">cell_type</a></td></tr>
 <tr class="memdesc:a74b600fb9d8a9afce9285d79c035b33b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type for the cells in the tensor. See CELL_TYPE_*.  <a href="structjazz__elements_1_1BlockHeader.html#a74b600fb9d8a9afce9285d79c035b33b">More...</a><br /></td></tr>
 <tr class="separator:a74b600fb9d8a9afce9285d79c035b33b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafa8121fb2c2091b32cc688ea711002c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1BlockHeader.html#aafa8121fb2c2091b32cc688ea711002c">rank</a></td></tr>
-<tr class="memdesc:aafa8121fb2c2091b32cc688ea711002c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of dimensions.  <a href="structjazz__elements_1_1BlockHeader.html#aafa8121fb2c2091b32cc688ea711002c">More...</a><br /></td></tr>
-<tr class="separator:aafa8121fb2c2091b32cc688ea711002c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fa258a4e087633971ff268fe5607a00"><td class="memItemLeft" align="right" valign="top"><a class="el" href="unionjazz__elements_1_1TensorDim.html">TensorDim</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1BlockHeader.html#a8fa258a4e087633971ff268fe5607a00">range</a></td></tr>
-<tr class="memdesc:a8fa258a4e087633971ff268fe5607a00"><td class="mdescLeft">&#160;</td><td class="mdescRight">The dimensions of the tensor in terms of ranges (Max. size is 2 Gb.)  <a href="structjazz__elements_1_1BlockHeader.html#a8fa258a4e087633971ff268fe5607a00">More...</a><br /></td></tr>
-<tr class="separator:a8fa258a4e087633971ff268fe5607a00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4783f7f789daa2d4afcb84e85721aeee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1BlockHeader.html#a4783f7f789daa2d4afcb84e85721aeee">size</a></td></tr>
 <tr class="memdesc:a4783f7f789daa2d4afcb84e85721aeee"><td class="mdescLeft">&#160;</td><td class="mdescRight">The total number of cells in the tensor.  <a href="structjazz__elements_1_1BlockHeader.html#a4783f7f789daa2d4afcb84e85721aeee">More...</a><br /></td></tr>
 <tr class="separator:a4783f7f789daa2d4afcb84e85721aeee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade1168fe2f507da3c64a90ef3d8f5e17"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1BlockHeader.html#ade1168fe2f507da3c64a90ef3d8f5e17">num_attributes</a></td></tr>
-<tr class="memdesc:ade1168fe2f507da3c64a90ef3d8f5e17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of elements in the JazzAttributesMap.  <a href="structjazz__elements_1_1BlockHeader.html#ade1168fe2f507da3c64a90ef3d8f5e17">More...</a><br /></td></tr>
-<tr class="separator:ade1168fe2f507da3c64a90ef3d8f5e17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19962d3aafd5b6ac89ce52701cf901c6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1BlockHeader.html#a19962d3aafd5b6ac89ce52701cf901c6">total_bytes</a></td></tr>
-<tr class="memdesc:a19962d3aafd5b6ac89ce52701cf901c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total size of the block everything included.  <a href="structjazz__elements_1_1BlockHeader.html#a19962d3aafd5b6ac89ce52701cf901c6">More...</a><br /></td></tr>
-<tr class="separator:a19962d3aafd5b6ac89ce52701cf901c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f9d802a4dfacc3213e77431577ea448"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1BlockHeader.html#a6f9d802a4dfacc3213e77431577ea448">has_NA</a></td></tr>
-<tr class="memdesc:a6f9d802a4dfacc3213e77431577ea448"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, at least one value in the tensor is a NA and block requires NA-aware arithmetic.  <a href="structjazz__elements_1_1BlockHeader.html#a6f9d802a4dfacc3213e77431577ea448">More...</a><br /></td></tr>
-<tr class="separator:a6f9d802a4dfacc3213e77431577ea448"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a581c7cd356bad27167467db5cce09291"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#aa7e5adf7a32b3080ea959153d2b6aee9">TimePoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1BlockHeader.html#a581c7cd356bad27167467db5cce09291">created</a></td></tr>
 <tr class="memdesc:a581c7cd356bad27167467db5cce09291"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timestamp when the block was created.  <a href="structjazz__elements_1_1BlockHeader.html#a581c7cd356bad27167467db5cce09291">More...</a><br /></td></tr>
 <tr class="separator:a581c7cd356bad27167467db5cce09291"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9718cc9c15e696e6e2ff1d044d65b47a"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1BlockHeader.html#a9718cc9c15e696e6e2ff1d044d65b47a">hash64</a></td></tr>
-<tr class="memdesc:a9718cc9c15e696e6e2ff1d044d65b47a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hash of everything but the header.  <a href="structjazz__elements_1_1BlockHeader.html#a9718cc9c15e696e6e2ff1d044d65b47a">More...</a><br /></td></tr>
-<tr class="separator:a9718cc9c15e696e6e2ff1d044d65b47a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04878e00333fb81bcdc404914109eef1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="unionjazz__elements_1_1Tensor.html">Tensor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1BlockHeader.html#a04878e00333fb81bcdc404914109eef1">tensor</a></td></tr>
-<tr class="memdesc:a04878e00333fb81bcdc404914109eef1"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tensor for type cell_type and dimensions set by <a class="el" href="classjazz__elements_1_1Block.html#a78f49018438850141502a3c7e49c52bd">Block.set_dimensions()</a>  <a href="structjazz__elements_1_1BlockHeader.html#a04878e00333fb81bcdc404914109eef1">More...</a><br /></td></tr>
-<tr class="separator:a04878e00333fb81bcdc404914109eef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81fd303fdc33ba11329904f5b78e1a8e"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:ae0a69d253a3462caf0d303acff9568f7"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:aa7458e6d4b2d9b8fb4d740d6b8633dd7"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;int&#160;&#160;&#160;<a class="el" href="structjazz__elements_1_1BlockHeader.html#aafa8121fb2c2091b32cc688ea711002c">rank</a></td></tr>
+<tr class="memdesc:aa7458e6d4b2d9b8fb4d740d6b8633dd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of dimensions.  <a href="structjazz__elements_1_1BlockHeader_1_1_0d2_1_1_0d4.html#aa7458e6d4b2d9b8fb4d740d6b8633dd7">More...</a><br /></td></tr>
+<tr class="separator:aa7458e6d4b2d9b8fb4d740d6b8633dd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85e5492f326bb9e7df0e4d448ec66af4"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="unionjazz__elements_1_1TensorDim.html">TensorDim</a>&#160;&#160;&#160;<a class="el" href="structjazz__elements_1_1BlockHeader.html#a8fa258a4e087633971ff268fe5607a00">range</a></td></tr>
+<tr class="memdesc:a85e5492f326bb9e7df0e4d448ec66af4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The dimensions of the tensor in terms of ranges (Max. size is 2 Gb.)  <a href="structjazz__elements_1_1BlockHeader_1_1_0d2_1_1_0d4.html#a85e5492f326bb9e7df0e4d448ec66af4">More...</a><br /></td></tr>
+<tr class="separator:a85e5492f326bb9e7df0e4d448ec66af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a354163502630fb422af449c664a29c"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;int&#160;&#160;&#160;<a class="el" href="structjazz__elements_1_1BlockHeader.html#ade1168fe2f507da3c64a90ef3d8f5e17">num_attributes</a></td></tr>
+<tr class="memdesc:a4a354163502630fb422af449c664a29c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of elements in the JazzAttributesMap.  <a href="structjazz__elements_1_1BlockHeader_1_1_0d2_1_1_0d4.html#a4a354163502630fb422af449c664a29c">More...</a><br /></td></tr>
+<tr class="separator:a4a354163502630fb422af449c664a29c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14d0ae22baecb802f4a572c6296eb421"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;int&#160;&#160;&#160;<a class="el" href="structjazz__elements_1_1BlockHeader.html#a19962d3aafd5b6ac89ce52701cf901c6">total_bytes</a></td></tr>
+<tr class="memdesc:a14d0ae22baecb802f4a572c6296eb421"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total size of the block everything included.  <a href="structjazz__elements_1_1BlockHeader_1_1_0d2_1_1_0d4.html#a14d0ae22baecb802f4a572c6296eb421">More...</a><br /></td></tr>
+<tr class="separator:a14d0ae22baecb802f4a572c6296eb421"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a456b60b510c2f0f8b7dad182e4be4608"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;bool&#160;&#160;&#160;<a class="el" href="structjazz__elements_1_1BlockHeader.html#a6f9d802a4dfacc3213e77431577ea448">has_NA</a></td></tr>
+<tr class="memdesc:a456b60b510c2f0f8b7dad182e4be4608"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, at least one value in the tensor is a NA and block requires NA-aware arithmetic.  <a href="structjazz__elements_1_1BlockHeader_1_1_0d2_1_1_0d4.html#a456b60b510c2f0f8b7dad182e4be4608">More...</a><br /></td></tr>
+<tr class="separator:a456b60b510c2f0f8b7dad182e4be4608"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1720abae41013c6d753f294206233dd9"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<a class="el" href="structjazz__elements_1_1BlockHeader.html#a9718cc9c15e696e6e2ff1d044d65b47a">hash64</a></td></tr>
+<tr class="memdesc:a1720abae41013c6d753f294206233dd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hash of everything but the header.  <a href="structjazz__elements_1_1BlockHeader_1_1_0d2_1_1_0d4.html#a1720abae41013c6d753f294206233dd9">More...</a><br /></td></tr>
+<tr class="separator:a1720abae41013c6d753f294206233dd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a154d8038463a17d6379312f80b887f76"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="unionjazz__elements_1_1Tensor.html">Tensor</a>&#160;&#160;&#160;<a class="el" href="structjazz__elements_1_1BlockHeader.html#a04878e00333fb81bcdc404914109eef1">tensor</a></td></tr>
+<tr class="memdesc:a154d8038463a17d6379312f80b887f76"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tensor for type cell_type and dimensions set by <a class="el" href="classjazz__elements_1_1Block.html#a78f49018438850141502a3c7e49c52bd">Block.set_dimensions()</a>  <a href="structjazz__elements_1_1BlockHeader_1_1_0d2_1_1_0d4.html#a154d8038463a17d6379312f80b887f76">More...</a><br /></td></tr>
+<tr class="separator:a154d8038463a17d6379312f80b887f76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0a69d253a3462caf0d303acff9568f7"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:ae0a69d253a3462caf0d303acff9568f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a965086e80df17bdacd3928e70a892038"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="unionjazz__elements_1_1Index.html">Index</a>&#160;&#160;&#160;<a class="el" href="structjazz__elements_1_1BlockHeader.html#a2ab9f8c189a25a1aab3ce12ec02fcddf">index</a></td></tr>
+<tr class="memdesc:a965086e80df17bdacd3928e70a892038"><td class="mdescLeft">&#160;</td><td class="mdescRight">Any kind of <a class="el" href="unionjazz__elements_1_1Index.html" title="A union abstracting all the individual Index types.">Index</a>.  <a href="unionjazz__elements_1_1BlockHeader_1_1_0d2.html#a965086e80df17bdacd3928e70a892038">More...</a><br /></td></tr>
+<tr class="separator:a965086e80df17bdacd3928e70a892038"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81fd303fdc33ba11329904f5b78e1a8e"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a81fd303fdc33ba11329904f5b78e1a8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Header for a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a>. </p>
+<div class="textblock"><p>Header for a Movable <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> (<a class="el" href="unionjazz__elements_1_1Tensor.html" title="A tensor of cell size 1, 4, 8 or sizeof(BlockHeader)">Tensor</a>, <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for Jazz Blocks and Tuples.">Kind</a> or <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz Block with multiple Tensors.">Tuple</a>) or a Dynamic <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> (<a class="el" href="unionjazz__elements_1_1Index.html" title="A union abstracting all the individual Index types.">Index</a>) </p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="a74b600fb9d8a9afce9285d79c035b33b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a74b600fb9d8a9afce9285d79c035b33b">&#9670;&nbsp;</a></span>cell_type</h2>
@@ -138,6 +136,38 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The type for the cells in the tensor. See CELL_TYPE_*. </p>
+
+</div>
+</div>
+<a id="a4783f7f789daa2d4afcb84e85721aeee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4783f7f789daa2d4afcb84e85721aeee">&#9670;&nbsp;</a></span>size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jazz_elements::BlockHeader::size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The total number of cells in the tensor. </p>
+
+</div>
+</div>
+<a id="a581c7cd356bad27167467db5cce09291"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a581c7cd356bad27167467db5cce09291">&#9670;&nbsp;</a></span>created</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#aa7e5adf7a32b3080ea959153d2b6aee9">TimePoint</a> jazz_elements::BlockHeader::created</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Timestamp when the block was created. </p>
 
 </div>
 </div>
@@ -170,22 +200,6 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The dimensions of the tensor in terms of ranges (Max. size is 2 Gb.) </p>
-
-</div>
-</div>
-<a id="a4783f7f789daa2d4afcb84e85721aeee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4783f7f789daa2d4afcb84e85721aeee">&#9670;&nbsp;</a></span>size</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int jazz_elements::BlockHeader::size</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The total number of cells in the tensor. </p>
 
 </div>
 </div>
@@ -237,22 +251,6 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a581c7cd356bad27167467db5cce09291"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a581c7cd356bad27167467db5cce09291">&#9670;&nbsp;</a></span>created</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacejazz__elements.html#aa7e5adf7a32b3080ea959153d2b6aee9">TimePoint</a> jazz_elements::BlockHeader::created</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Timestamp when the block was created. </p>
-
-</div>
-</div>
 <a id="a9718cc9c15e696e6e2ff1d044d65b47a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9718cc9c15e696e6e2ff1d044d65b47a">&#9670;&nbsp;</a></span>hash64</h2>
 
@@ -282,6 +280,36 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>A tensor for type cell_type and dimensions set by <a class="el" href="classjazz__elements_1_1Block.html#a78f49018438850141502a3c7e49c52bd">Block.set_dimensions()</a> </p>
+
+</div>
+</div>
+<a id="a2ab9f8c189a25a1aab3ce12ec02fcddf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ab9f8c189a25a1aab3ce12ec02fcddf">&#9670;&nbsp;</a></span>index</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="unionjazz__elements_1_1Index.html">Index</a> jazz_elements::BlockHeader::index</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Any kind of <a class="el" href="unionjazz__elements_1_1Index.html" title="A union abstracting all the individual Index types.">Index</a>. </p>
+
+</div>
+</div>
+<a id="a81fd303fdc33ba11329904f5b78e1a8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81fd303fdc33ba11329904f5b78e1a8e">&#9670;&nbsp;</a></span>@3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union { ... } </td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

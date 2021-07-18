@@ -81,13 +81,13 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string returned by some methods in <a class="el" href="namespacejazz__elements.html" title="The namespace for Jazz Utils, Blocks, Kinds, Tuples, Containers, etc.">jazz_elements</a> and also by some API calls.  <a href="structjazz__elements_1_1Answer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Block.html">Block</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A block is a moveable <a class="el" href="structjazz__elements_1_1BlockHeader.html" title="Header for a Block.">BlockHeader</a> followed by a <a class="el" href="unionjazz__elements_1_1Tensor.html" title="A tensor of cell size 1, 4, 8 or sizeof(BlockHeader)">Tensor</a> and a <a class="el" href="structjazz__elements_1_1StringBuffer.html" title="Structure at the end of a Block, initially created with init_string_buffer()">StringBuffer</a>.  <a href="classjazz__elements_1_1Block.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A block is a moveable <a class="el" href="structjazz__elements_1_1BlockHeader.html" title="Header for a Movable Block (Tensor, Kind or Tuple) or a Dynamic Block (Index)">BlockHeader</a> followed by a <a class="el" href="unionjazz__elements_1_1Tensor.html" title="A tensor of cell size 1, 4, 8 or sizeof(BlockHeader)">Tensor</a> and a <a class="el" href="structjazz__elements_1_1StringBuffer.html" title="Structure at the end of a Block, initially created with init_string_buffer()">StringBuffer</a>.  <a href="classjazz__elements_1_1Block.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1BlockHeader.html">BlockHeader</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header for a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a>.  <a href="structjazz__elements_1_1BlockHeader.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header for a Movable <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> (<a class="el" href="unionjazz__elements_1_1Tensor.html" title="A tensor of cell size 1, 4, 8 or sizeof(BlockHeader)">Tensor</a>, <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for Jazz Blocks and Tuples.">Kind</a> or <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz Block with multiple Tensors.">Tuple</a>) or a Dynamic <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> (<a class="el" href="unionjazz__elements_1_1Index.html" title="A union abstracting all the individual Index types.">Index</a>)  <a href="structjazz__elements_1_1BlockHeader.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Channels.html">Channels</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classjazz__elements_1_1Channels.html" title="Channels: A Service to manage Channel objects.">Channels</a>: A <a class="el" href="classjazz__elements_1_1Service.html" title="A Jazz Service is a globally instanced configurable object that may allocate RAM.">Service</a> to manage Channel objects.  <a href="classjazz__elements_1_1Channels.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classjazz__elements_1_1Channels.html" title="Channels: A Container doing block transactions across media (files, folders, shell,...">Channels</a>: A <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> doing block transactions across media (files, folders, shell, urls, other Containers, ..)  <a href="classjazz__elements_1_1Channels.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1ConfigFile.html">ConfigFile</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A configuration file as a key/value store.  <a href="classjazz__elements_1_1ConfigFile.html#details">More...</a><br /></td></tr>
@@ -97,6 +97,9 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1FilterSize.html">FilterSize</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Another way to describe a <a class="el" href="unionjazz__elements_1_1TensorDim.html" title="The dimension of a tensor.">TensorDim</a> to make filtering syntactically nicer.  <a href="structjazz__elements_1_1FilterSize.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionjazz__elements_1_1Index.html">Index</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A union abstracting all the individual <a class="el" href="unionjazz__elements_1_1Index.html" title="A union abstracting all the individual Index types.">Index</a> types.  <a href="unionjazz__elements_1_1Index.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1ItemHeader.html">ItemHeader</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header for an item (of a <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for Jazz Blocks and Tuples.">Kind</a> or <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz Block with multiple Tensors.">Tuple</a>)  <a href="structjazz__elements_1_1ItemHeader.html#details">More...</a><br /></td></tr>
@@ -113,8 +116,11 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Service.html">Service</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A Jazz <a class="el" href="classjazz__elements_1_1Service.html" title="A Jazz Service is a globally instanced configurable object that may allocate RAM.">Service</a> is a globally instanced configurable object that may allocate RAM.  <a href="classjazz__elements_1_1Service.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1StaticBlockHeader.html">StaticBlockHeader</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A Binary Compatible <a class="el" href="structjazz__elements_1_1BlockHeader.html" title="Header for a Movable Block (Tensor, Kind or Tuple) or a Dynamic Block (Index)">BlockHeader</a> without <a class="el" href="unionjazz__elements_1_1Index.html" title="A union abstracting all the individual Index types.">Index</a> (and therefore constructors/destructors)  <a href="structjazz__elements_1_1StaticBlockHeader.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1StoredTransaction.html">StoredTransaction</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An internal (for <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>) <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block over some Channel.">Transaction</a> with pointers for a deque.  <a href="structjazz__elements_1_1StoredTransaction.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An internal (for <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>) <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block over get/put/remove/cop...">Transaction</a> with pointers for a deque.  <a href="structjazz__elements_1_1StoredTransaction.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1StringBuffer.html">StringBuffer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure at the end of a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a>, initially created with init_string_buffer()  <a href="structjazz__elements_1_1StringBuffer.html#details">More...</a><br /></td></tr>
@@ -126,7 +132,7 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The dimension of a tensor.  <a href="unionjazz__elements_1_1TensorDim.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1Transaction.html">Transaction</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block over some Channel.">Transaction</a>: A wrapper over a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> that defines the communication of a block over some Channel.  <a href="structjazz__elements_1_1Transaction.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block over get/put/remove/cop...">Transaction</a>: A wrapper over a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> that defines the communication of a block over get/put/remove/copy.  <a href="structjazz__elements_1_1Transaction.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Tuple.html">Tuple</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz Block with multiple Tensors.">Tuple</a>: A Jazz <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> with multiple Tensors.  <a href="classjazz__elements_1_1Tuple.html#details">More...</a><br /></td></tr>
@@ -143,18 +149,6 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a89b6ae8b08dfbb376caafc742840adf6"><td class="memItemLeft" align="right" valign="top">typedef class <a class="el" href="classjazz__elements_1_1Block.html">Block</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a></td></tr>
 <tr class="memdesc:a89b6ae8b08dfbb376caafc742840adf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">A (forward defined) pointer to a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a>.  <a href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">More...</a><br /></td></tr>
 <tr class="separator:a89b6ae8b08dfbb376caafc742840adf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21ef56e0ae0b19ab246376047a94b301"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a21ef56e0ae0b19ab246376047a94b301">IndexII</a></td></tr>
-<tr class="memdesc:a21ef56e0ae0b19ab246376047a94b301"><td class="mdescLeft">&#160;</td><td class="mdescRight">An Index kept in RAM by <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a> implemented as an stdlib map (int, int)  <a href="namespacejazz__elements.html#a21ef56e0ae0b19ab246376047a94b301">More...</a><br /></td></tr>
-<tr class="separator:a21ef56e0ae0b19ab246376047a94b301"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaedb854e75f5cd59005006996f594124"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; int, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#aaedb854e75f5cd59005006996f594124">IndexIS</a></td></tr>
-<tr class="memdesc:aaedb854e75f5cd59005006996f594124"><td class="mdescLeft">&#160;</td><td class="mdescRight">An Index kept in RAM by <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a> implemented as an stdlib map (int, string)  <a href="namespacejazz__elements.html#aaedb854e75f5cd59005006996f594124">More...</a><br /></td></tr>
-<tr class="separator:aaedb854e75f5cd59005006996f594124"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6c36959b138f2f01f181fed65c9f3e9"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::string, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#af6c36959b138f2f01f181fed65c9f3e9">IndexSI</a></td></tr>
-<tr class="memdesc:af6c36959b138f2f01f181fed65c9f3e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">An Index kept in RAM by <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a> implemented as an stdlib map (string, int)  <a href="namespacejazz__elements.html#af6c36959b138f2f01f181fed65c9f3e9">More...</a><br /></td></tr>
-<tr class="separator:af6c36959b138f2f01f181fed65c9f3e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a308b39ce977ebbfae2611b6ba4476fbe"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a308b39ce977ebbfae2611b6ba4476fbe">IndexSS</a></td></tr>
-<tr class="memdesc:a308b39ce977ebbfae2611b6ba4476fbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">An Index kept in RAM by <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a> implemented as an stdlib map (string, string)  <a href="namespacejazz__elements.html#a308b39ce977ebbfae2611b6ba4476fbe">More...</a><br /></td></tr>
-<tr class="separator:a308b39ce977ebbfae2611b6ba4476fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a612e435984d430c34312ed9fa76395d7"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classjazz__elements_1_1Channels.html">Channels</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a612e435984d430c34312ed9fa76395d7">pChannels</a></td></tr>
 <tr class="separator:a612e435984d430c34312ed9fa76395d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3d6e1b4aca91c99b80bdc759a73699f"><td class="memItemLeft" align="right" valign="top">typedef std::atomic&lt; int32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#ac3d6e1b4aca91c99b80bdc759a73699f">Lock32</a></td></tr>
@@ -184,6 +178,18 @@ Typedefs</h2></td></tr>
 <tr class="separator:a97c097c96fd6364c46569536e8cbc535"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b6f709ede20f91ff26fa9166a7cc9da"><td class="memItemLeft" align="right" valign="top">typedef char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a></td></tr>
 <tr class="separator:a7b6f709ede20f91ff26fa9166a7cc9da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21ef56e0ae0b19ab246376047a94b301"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a21ef56e0ae0b19ab246376047a94b301">IndexII</a></td></tr>
+<tr class="memdesc:a21ef56e0ae0b19ab246376047a94b301"><td class="mdescLeft">&#160;</td><td class="mdescRight">An <a class="el" href="unionjazz__elements_1_1Index.html" title="A union abstracting all the individual Index types.">Index</a> kept in RAM by <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a> implemented as an stdlib map (int, int)  <a href="namespacejazz__elements.html#a21ef56e0ae0b19ab246376047a94b301">More...</a><br /></td></tr>
+<tr class="separator:a21ef56e0ae0b19ab246376047a94b301"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaedb854e75f5cd59005006996f594124"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; int, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#aaedb854e75f5cd59005006996f594124">IndexIS</a></td></tr>
+<tr class="memdesc:aaedb854e75f5cd59005006996f594124"><td class="mdescLeft">&#160;</td><td class="mdescRight">An <a class="el" href="unionjazz__elements_1_1Index.html" title="A union abstracting all the individual Index types.">Index</a> kept in RAM by <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a> implemented as an stdlib map (int, string)  <a href="namespacejazz__elements.html#aaedb854e75f5cd59005006996f594124">More...</a><br /></td></tr>
+<tr class="separator:aaedb854e75f5cd59005006996f594124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6c36959b138f2f01f181fed65c9f3e9"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::string, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#af6c36959b138f2f01f181fed65c9f3e9">IndexSI</a></td></tr>
+<tr class="memdesc:af6c36959b138f2f01f181fed65c9f3e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">An <a class="el" href="unionjazz__elements_1_1Index.html" title="A union abstracting all the individual Index types.">Index</a> kept in RAM by <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a> implemented as an stdlib map (string, int)  <a href="namespacejazz__elements.html#af6c36959b138f2f01f181fed65c9f3e9">More...</a><br /></td></tr>
+<tr class="separator:af6c36959b138f2f01f181fed65c9f3e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a308b39ce977ebbfae2611b6ba4476fbe"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a308b39ce977ebbfae2611b6ba4476fbe">IndexSS</a></td></tr>
+<tr class="memdesc:a308b39ce977ebbfae2611b6ba4476fbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">An <a class="el" href="unionjazz__elements_1_1Index.html" title="A union abstracting all the individual Index types.">Index</a> kept in RAM by <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a> implemented as an stdlib map (string, string)  <a href="namespacejazz__elements.html#a308b39ce977ebbfae2611b6ba4476fbe">More...</a><br /></td></tr>
+<tr class="separator:a308b39ce977ebbfae2611b6ba4476fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07fdde427e8f40096f59de0b4f9f29d7"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structjazz__elements_1_1BlockHeader.html">BlockHeader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a07fdde427e8f40096f59de0b4f9f29d7">pBlockHeader</a></td></tr>
 <tr class="separator:a07fdde427e8f40096f59de0b4f9f29d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a295f95bab2b1090b5501ffea1c350b31"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structjazz__elements_1_1StringBuffer.html">StringBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a295f95bab2b1090b5501ffea1c350b31">pStringBuffer</a></td></tr>
@@ -255,7 +261,7 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The namespace for Jazz Utils, Blocks, Kinds, Tuples, Containers, etc. </p>
-<p>This namespace includes utilities, types, constants and structures used by <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a>, all different block-based data and code structures (<a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz Block with multiple Tensors.">Tuple</a>, <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for Jazz Blocks and Tuples.">Kind</a> and Field). All the Services used to allocate/store and communicate blocks (<a class="el" href="classjazz__elements_1_1Channels.html" title="Channels: A Service to manage Channel objects.">Channels</a>, <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a>, <a class="el" href="classjazz__elements_1_1Persisted.html" title="Persisted: A Service to manage data objects in LMDB.">Persisted</a>, ..). </p>
+<p>This namespace includes utilities, types, constants and structures used by <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a>, all different block-based data and code structures (<a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz Block with multiple Tensors.">Tuple</a>, <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for Jazz Blocks and Tuples.">Kind</a> and Field). All the Services used to allocate/store and communicate blocks (<a class="el" href="classjazz__elements_1_1Channels.html" title="Channels: A Container doing block transactions across media (files, folders, shell,...">Channels</a>, <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a>, <a class="el" href="classjazz__elements_1_1Persisted.html" title="Persisted: A Service to manage data objects in LMDB.">Persisted</a>, ..). </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
 <a id="ad2f703c26500ad2cdcec139a7e2000c4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad2f703c26500ad2cdcec139a7e2000c4">&#9670;&nbsp;</a></span>AttributeMap</h2>
@@ -286,70 +292,6 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>A (forward defined) pointer to a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a>. </p>
-
-</div>
-</div>
-<a id="a21ef56e0ae0b19ab246376047a94b301"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21ef56e0ae0b19ab246376047a94b301">&#9670;&nbsp;</a></span>IndexII</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef std::map&lt;int, int&gt; <a class="el" href="namespacejazz__elements.html#a21ef56e0ae0b19ab246376047a94b301">jazz_elements::IndexII</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>An Index kept in RAM by <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a> implemented as an stdlib map (int, int) </p>
-
-</div>
-</div>
-<a id="aaedb854e75f5cd59005006996f594124"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaedb854e75f5cd59005006996f594124">&#9670;&nbsp;</a></span>IndexIS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef std::map&lt;int, std::string&gt; <a class="el" href="namespacejazz__elements.html#aaedb854e75f5cd59005006996f594124">jazz_elements::IndexIS</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>An Index kept in RAM by <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a> implemented as an stdlib map (int, string) </p>
-
-</div>
-</div>
-<a id="af6c36959b138f2f01f181fed65c9f3e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af6c36959b138f2f01f181fed65c9f3e9">&#9670;&nbsp;</a></span>IndexSI</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef std::map&lt;std::string, int&gt; <a class="el" href="namespacejazz__elements.html#af6c36959b138f2f01f181fed65c9f3e9">jazz_elements::IndexSI</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>An Index kept in RAM by <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a> implemented as an stdlib map (string, int) </p>
-
-</div>
-</div>
-<a id="a308b39ce977ebbfae2611b6ba4476fbe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a308b39ce977ebbfae2611b6ba4476fbe">&#9670;&nbsp;</a></span>IndexSS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef std::map&lt;std::string, std::string&gt; <a class="el" href="namespacejazz__elements.html#a308b39ce977ebbfae2611b6ba4476fbe">jazz_elements::IndexSS</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>An Index kept in RAM by <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a> implemented as an stdlib map (string, string) </p>
 
 </div>
 </div>
@@ -530,6 +472,70 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a21ef56e0ae0b19ab246376047a94b301"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21ef56e0ae0b19ab246376047a94b301">&#9670;&nbsp;</a></span>IndexII</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::map&lt;int, int&gt; <a class="el" href="namespacejazz__elements.html#a21ef56e0ae0b19ab246376047a94b301">jazz_elements::IndexII</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An <a class="el" href="unionjazz__elements_1_1Index.html" title="A union abstracting all the individual Index types.">Index</a> kept in RAM by <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a> implemented as an stdlib map (int, int) </p>
+
+</div>
+</div>
+<a id="aaedb854e75f5cd59005006996f594124"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaedb854e75f5cd59005006996f594124">&#9670;&nbsp;</a></span>IndexIS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::map&lt;int, std::string&gt; <a class="el" href="namespacejazz__elements.html#aaedb854e75f5cd59005006996f594124">jazz_elements::IndexIS</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An <a class="el" href="unionjazz__elements_1_1Index.html" title="A union abstracting all the individual Index types.">Index</a> kept in RAM by <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a> implemented as an stdlib map (int, string) </p>
+
+</div>
+</div>
+<a id="af6c36959b138f2f01f181fed65c9f3e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6c36959b138f2f01f181fed65c9f3e9">&#9670;&nbsp;</a></span>IndexSI</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::map&lt;std::string, int&gt; <a class="el" href="namespacejazz__elements.html#af6c36959b138f2f01f181fed65c9f3e9">jazz_elements::IndexSI</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An <a class="el" href="unionjazz__elements_1_1Index.html" title="A union abstracting all the individual Index types.">Index</a> kept in RAM by <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a> implemented as an stdlib map (string, int) </p>
+
+</div>
+</div>
+<a id="a308b39ce977ebbfae2611b6ba4476fbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a308b39ce977ebbfae2611b6ba4476fbe">&#9670;&nbsp;</a></span>IndexSS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::map&lt;std::string, std::string&gt; <a class="el" href="namespacejazz__elements.html#a308b39ce977ebbfae2611b6ba4476fbe">jazz_elements::IndexSS</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An <a class="el" href="unionjazz__elements_1_1Index.html" title="A union abstracting all the individual Index types.">Index</a> kept in RAM by <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a> implemented as an stdlib map (string, string) </p>
 
 </div>
 </div>
