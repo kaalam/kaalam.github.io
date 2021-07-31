@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['r_5fvalue_533',['R_value',['../structjazz__main_1_1R__value.html',1,'jazz_main']]]
+  ['r_5fvalue_534',['R_value',['../structjazz__main_1_1R__value.html',1,'jazz_main']]]
 ];
