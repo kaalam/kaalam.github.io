@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['jazz_5fagency_546',['jazz_agency',['../namespacejazz__agency.html',1,'']]],
-  ['jazz_5fbebop_547',['jazz_bebop',['../namespacejazz__bebop.html',1,'']]],
-  ['jazz_5felements_548',['jazz_elements',['../namespacejazz__elements.html',1,'']]],
-  ['jazz_5fmain_549',['jazz_main',['../namespacejazz__main.html',1,'']]]
+  ['jazz_5fagency_547',['jazz_agency',['../namespacejazz__agency.html',1,'']]],
+  ['jazz_5fbebop_548',['jazz_bebop',['../namespacejazz__bebop.html',1,'']]],
+  ['jazz_5felements_549',['jazz_elements',['../namespacejazz__elements.html',1,'']]],
+  ['jazz_5fmain_550',['jazz_main',['../namespacejazz__main.html',1,'']]]
 ];

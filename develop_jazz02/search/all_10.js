@@ -89,10 +89,11 @@ var searchData=
   ['pstate_5ftupl_5fitem_5fname_392',['PSTATE_TUPL_ITEM_NAME',['../api_8h.html#a7c66f2b7929dd5385f23db86707167e9',1,'api.h']]],
   ['pstate_5ftupl_5fsemicolon_393',['PSTATE_TUPL_SEMICOLON',['../api_8h.html#a9af9d84a656a7f9137d7f68ee60cf092',1,'api.h']]],
   ['pstate_5ftype_5fname_394',['PSTATE_TYPE_NAME',['../api_8h.html#a8106df913c8b01f1ff861e60160518a9',1,'api.h']]],
-  ['pstoredtransaction_395',['pStoredTransaction',['../namespacejazz__elements.html#a6fcd912edad1ed3dbb10f97e734d7185',1,'jazz_elements']]],
-  ['pstringbuffer_396',['pStringBuffer',['../namespacejazz__elements.html#a295f95bab2b1090b5501ffea1c350b31',1,'jazz_elements']]],
-  ['ptransaction_397',['pTransaction',['../namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040',1,'jazz_elements']]],
-  ['ptuple_398',['pTuple',['../namespacejazz__elements.html#a07b590209f1036d836732e9a3370e50e',1,'jazz_elements']]],
-  ['put_399',['put',['../classjazz__elements_1_1Channels.html#a049ad6d7f0a71c5e85a6de5762d47a60',1,'jazz_elements::Channels::put(pBlock p_block, pChar p_where)'],['../classjazz__elements_1_1Channels.html#a672b485ba53babbac4e607354f679d44',1,'jazz_elements::Channels::put(int channel, pBlock p_block, pChar p_locator)'],['../classjazz__elements_1_1Container.html#a00e35873e8df2920281badb0778c180c',1,'jazz_elements::Container::put()']]],
-  ['pvolatile_400',['pVolatile',['../namespacejazz__elements.html#ad5752b95c261e1ccd5e0e86cc30e0ffb',1,'jazz_elements']]]
+  ['pstaticblockheader_395',['pStaticBlockHeader',['../namespacejazz__elements.html#ade5482a3dc88f63b4f652a83ce3db990',1,'jazz_elements']]],
+  ['pstoredtransaction_396',['pStoredTransaction',['../namespacejazz__elements.html#a6fcd912edad1ed3dbb10f97e734d7185',1,'jazz_elements']]],
+  ['pstringbuffer_397',['pStringBuffer',['../namespacejazz__elements.html#a295f95bab2b1090b5501ffea1c350b31',1,'jazz_elements']]],
+  ['ptransaction_398',['pTransaction',['../namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040',1,'jazz_elements']]],
+  ['ptuple_399',['pTuple',['../namespacejazz__elements.html#a07b590209f1036d836732e9a3370e50e',1,'jazz_elements']]],
+  ['put_400',['put',['../classjazz__elements_1_1Channels.html#a049ad6d7f0a71c5e85a6de5762d47a60',1,'jazz_elements::Channels::put(pBlock p_block, pChar p_where)'],['../classjazz__elements_1_1Channels.html#a672b485ba53babbac4e607354f679d44',1,'jazz_elements::Channels::put(int channel, pBlock p_block, pChar p_locator)'],['../classjazz__elements_1_1Container.html#a00e35873e8df2920281badb0778c180c',1,'jazz_elements::Container::put()']]],
+  ['pvolatile_401',['pVolatile',['../namespacejazz__elements.html#ad5752b95c261e1ccd5e0e86cc30e0ffb',1,'jazz_elements']]]
 ];
