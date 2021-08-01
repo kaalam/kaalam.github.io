@@ -184,6 +184,12 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a355b6e717c082433feeaffbb5eea3653"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a827bbbff4261ba6148d0c67b0ec7363e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a827bbbff4261ba6148d0c67b0ec7363e">tensor_kind_as_text</a> (<a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a> p_block, <a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> p_dest)</td></tr>
 <tr class="separator:a827bbbff4261ba6148d0c67b0ec7363e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d1c13373d476323e06afcb6c72d597c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a3d1c13373d476323e06afcb6c72d597c">opening_brackets</a> (int rank, <a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> &amp;p_ret)</td></tr>
+<tr class="separator:a3d1c13373d476323e06afcb6c72d597c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a212e2dd4a9b51f26392740e69e17b21e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a212e2dd4a9b51f26392740e69e17b21e">separator</a> (int rank_1, int shape[], int idx[], <a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> &amp;p_ret)</td></tr>
+<tr class="separator:a212e2dd4a9b51f26392740e69e17b21e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a598fc97410dec50ed1806c4a65191a7c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a598fc97410dec50ed1806c4a65191a7c">separator_len</a> (int rank_1, int shape[], int idx[])</td></tr>
+<tr class="separator:a598fc97410dec50ed1806c4a65191a7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -1603,6 +1609,132 @@ new_block()</h2>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The length in bytes required to store the output if p_dest == nullptr</dd></dl>
 <p>The serialization includes item names, types and shapes. </p>
+
+</div>
+</div>
+<a id="a3d1c13373d476323e06afcb6c72d597c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d1c13373d476323e06afcb6c72d597c">&#9670;&nbsp;</a></span>opening_brackets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void jazz_elements::Container::opening_brackets </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rank</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_ret</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a212e2dd4a9b51f26392740e69e17b21e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a212e2dd4a9b51f26392740e69e17b21e">&#9670;&nbsp;</a></span>separator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void jazz_elements::Container::separator </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rank_1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>shape</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>idx</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_ret</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a598fc97410dec50ed1806c4a65191a7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a598fc97410dec50ed1806c4a65191a7c">&#9670;&nbsp;</a></span>separator_len()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jazz_elements::Container::separator_len </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rank_1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>shape</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>idx</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
