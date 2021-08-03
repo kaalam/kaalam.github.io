@@ -77,9 +77,6 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1Answer.html">Answer</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string returned by some methods in <a class="el" href="namespacejazz__elements.html" title="The namespace for Jazz Utils, Blocks, Kinds, Tuples, Containers, etc.">jazz_elements</a> and also by some API calls.  <a href="structjazz__elements_1_1Answer.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Block.html">Block</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A block is a moveable <a class="el" href="structjazz__elements_1_1BlockHeader.html" title="Header for a Movable Block (Tensor, Kind or Tuple) or a Dynamic Block (Index)">BlockHeader</a> followed by a <a class="el" href="unionjazz__elements_1_1Tensor.html" title="A tensor of cell size 1, 4, 8 or sizeof(BlockHeader)">Tensor</a> and a <a class="el" href="structjazz__elements_1_1StringBuffer.html" title="Structure at the end of a Block, initially created with init_string_buffer()">StringBuffer</a>.  <a href="classjazz__elements_1_1Block.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -178,6 +175,9 @@ Typedefs</h2></td></tr>
 <tr class="separator:a97c097c96fd6364c46569536e8cbc535"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b6f709ede20f91ff26fa9166a7cc9da"><td class="memItemLeft" align="right" valign="top">typedef char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a></td></tr>
 <tr class="separator:a7b6f709ede20f91ff26fa9166a7cc9da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4734a779894739a0e04623c47348dd25"><td class="memItemLeft" align="right" valign="top">typedef std::set&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a4734a779894739a0e04623c47348dd25">Dimensions</a></td></tr>
+<tr class="memdesc:a4734a779894739a0e04623c47348dd25"><td class="mdescLeft">&#160;</td><td class="mdescRight">An set::set with the dimension names returned by kind.dimensions()  <a href="namespacejazz__elements.html#a4734a779894739a0e04623c47348dd25">More...</a><br /></td></tr>
+<tr class="separator:a4734a779894739a0e04623c47348dd25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21ef56e0ae0b19ab246376047a94b301"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a21ef56e0ae0b19ab246376047a94b301">IndexII</a></td></tr>
 <tr class="memdesc:a21ef56e0ae0b19ab246376047a94b301"><td class="mdescLeft">&#160;</td><td class="mdescRight">An <a class="el" href="unionjazz__elements_1_1Index.html" title="A union abstracting all the individual Index types.">Index</a> kept in RAM by <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a> implemented as an stdlib map (int, int)  <a href="namespacejazz__elements.html#a21ef56e0ae0b19ab246376047a94b301">More...</a><br /></td></tr>
 <tr class="separator:a21ef56e0ae0b19ab246376047a94b301"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -196,8 +196,6 @@ Typedefs</h2></td></tr>
 <tr class="separator:ade5482a3dc88f63b4f652a83ce3db990"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a295f95bab2b1090b5501ffea1c350b31"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structjazz__elements_1_1StringBuffer.html">StringBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a295f95bab2b1090b5501ffea1c350b31">pStringBuffer</a></td></tr>
 <tr class="separator:a295f95bab2b1090b5501ffea1c350b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05e38fc056b1c3ce4ac21a542aacdf59"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structjazz__elements_1_1Answer.html">Answer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a05e38fc056b1c3ce4ac21a542aacdf59">pAnswer</a></td></tr>
-<tr class="separator:a05e38fc056b1c3ce4ac21a542aacdf59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1de9f0d4fc6192bb22f21e2862add3f"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a></td></tr>
 <tr class="memdesc:ad1de9f0d4fc6192bb22f21e2862add3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type returned by the <a class="el" href="classjazz__elements_1_1Service.html" title="A Jazz Service is a globally instanced configurable object that may allocate RAM.">Service</a> API.  <a href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">More...</a><br /></td></tr>
 <tr class="separator:ad1de9f0d4fc6192bb22f21e2862add3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -489,6 +487,22 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a4734a779894739a0e04623c47348dd25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4734a779894739a0e04623c47348dd25">&#9670;&nbsp;</a></span>Dimensions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::set&lt;std::string&gt; <a class="el" href="namespacejazz__elements.html#a4734a779894739a0e04623c47348dd25">jazz_elements::Dimensions</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An set::set with the dimension names returned by kind.dimensions() </p>
+
+</div>
+</div>
 <a id="a21ef56e0ae0b19ab246376047a94b301"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a21ef56e0ae0b19ab246376047a94b301">&#9670;&nbsp;</a></span>IndexII</h2>
 
@@ -589,20 +603,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">typedef <a class="el" href="structjazz__elements_1_1StringBuffer.html">StringBuffer</a>* <a class="el" href="namespacejazz__elements.html#a295f95bab2b1090b5501ffea1c350b31">jazz_elements::pStringBuffer</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a05e38fc056b1c3ce4ac21a542aacdf59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05e38fc056b1c3ce4ac21a542aacdf59">&#9670;&nbsp;</a></span>pAnswer</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="structjazz__elements_1_1Answer.html">Answer</a>* <a class="el" href="namespacejazz__elements.html#a05e38fc056b1c3ce4ac21a542aacdf59">jazz_elements::pAnswer</a></td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -76,6 +76,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;map&gt;</code><br />
+<code>#include &lt;set&gt;</code><br />
 <code>#include &lt;chrono&gt;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
@@ -108,9 +109,6 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1StringBuffer.html">jazz_elements::StringBuffer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure at the end of a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a>, initially created with init_string_buffer()  <a href="structjazz__elements_1_1StringBuffer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1Answer.html">jazz_elements::Answer</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string returned by some methods in <a class="el" href="namespacejazz__elements.html" title="The namespace for Jazz Utils, Blocks, Kinds, Tuples, Containers, etc.">jazz_elements</a> and also by some API calls.  <a href="structjazz__elements_1_1Answer.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -122,13 +120,11 @@ Namespaces</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a198723ea7b77deeeb47c9c3e21319143"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a198723ea7b77deeeb47c9c3e21319143">INCLUDED_JAZZ_ELEMENTS_TYPES</a></td></tr>
 <tr class="separator:a198723ea7b77deeeb47c9c3e21319143"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4511c6b8167369401ab5eefd0c5d2b0a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a4511c6b8167369401ab5eefd0c5d2b0a">ANSWER_LENGTH</a>&#160;&#160;&#160;4096</td></tr>
-<tr class="memdesc:a4511c6b8167369401ab5eefd0c5d2b0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of an Answer buffer.  <a href="types_8h.html#a4511c6b8167369401ab5eefd0c5d2b0a">More...</a><br /></td></tr>
-<tr class="separator:a4511c6b8167369401ab5eefd0c5d2b0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a834e9a379307f869a10f4da078be5786"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a834e9a379307f869a10f4da078be5786">NAME_SIZE</a>&#160;&#160;&#160;32</td></tr>
 <tr class="memdesc:a834e9a379307f869a10f4da078be5786"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of a Name (ending 0 included)  <a href="types_8h.html#a834e9a379307f869a10f4da078be5786">More...</a><br /></td></tr>
 <tr class="separator:a834e9a379307f869a10f4da078be5786"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8b35ff47d090412d8aceeb428f8b9e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#aa8b35ff47d090412d8aceeb428f8b9e2">ONE_MB</a>&#160;&#160;&#160;(1024*1024)</td></tr>
+<tr class="memdesc:aa8b35ff47d090412d8aceeb428f8b9e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is used in log_printf() of error/warning messages.  <a href="types_8h.html#aa8b35ff47d090412d8aceeb428f8b9e2">More...</a><br /></td></tr>
 <tr class="separator:aa8b35ff47d090412d8aceeb428f8b9e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a8bfd610ac1e273cd0522d1b7169f68"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a7a8bfd610ac1e273cd0522d1b7169f68">REGEX_VALIDATE_NAME</a>&#160;&#160;&#160;&quot;^[a-zA-Z][a-zA-Z0-9_]{0,30}$&quot;</td></tr>
 <tr class="memdesc:a7a8bfd610ac1e273cd0522d1b7169f68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block API (syntax related)  <a href="types_8h.html#a7a8bfd610ac1e273cd0522d1b7169f68">More...</a><br /></td></tr>
@@ -141,9 +137,15 @@ Macros</h2></td></tr>
 <tr class="memitem:a5a4d6ca6f3612a6f6f377b5abe382b5b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a5a4d6ca6f3612a6f6f377b5abe382b5b">MAX_CHECKS_4_MATCH</a>&#160;&#160;&#160;25</td></tr>
 <tr class="memdesc:a5a4d6ca6f3612a6f6f377b5abe382b5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of tries to match in get_string_offset() before setting stop_check_4_match.  <a href="types_8h.html#a5a4d6ca6f3612a6f6f377b5abe382b5b">More...</a><br /></td></tr>
 <tr class="separator:a5a4d6ca6f3612a6f6f377b5abe382b5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe4f82f2878526494276f669fb94cc5d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#abe4f82f2878526494276f669fb94cc5d">MAX_ITEMS_IN_KIND</a>&#160;&#160;&#160;64</td></tr>
+<tr class="memdesc:abe4f82f2878526494276f669fb94cc5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of items merged into a kind or tuple.  <a href="types_8h.html#abe4f82f2878526494276f669fb94cc5d">More...</a><br /></td></tr>
+<tr class="separator:abe4f82f2878526494276f669fb94cc5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ab9efa453cd99ad8a95c797aff340b9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a9ab9efa453cd99ad8a95c797aff340b9">CELL_TYPE__</a></td></tr>
 <tr class="memdesc:a9ab9efa453cd99ad8a95c797aff340b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Different values for Block.cell_type.  <a href="types_8h.html#a9ab9efa453cd99ad8a95c797aff340b9">More...</a><br /></td></tr>
 <tr class="separator:a9ab9efa453cd99ad8a95c797aff340b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade0e911901e31ea19c2a83c1beef1d44"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#ade0e911901e31ea19c2a83c1beef1d44">CELL_TYPE_UNDEFINED</a>&#160;&#160;&#160;0x000</td></tr>
+<tr class="memdesc:ade0e911901e31ea19c2a83c1beef1d44"><td class="mdescLeft">&#160;</td><td class="mdescRight">A cell_type value to be set by a text parser.  <a href="types_8h.html#ade0e911901e31ea19c2a83c1beef1d44">More...</a><br /></td></tr>
+<tr class="separator:ade0e911901e31ea19c2a83c1beef1d44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00ed654fef28807203d5042b4342c3fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a00ed654fef28807203d5042b4342c3fb">CELL_TYPE_BYTE</a>&#160;&#160;&#160;0x001</td></tr>
 <tr class="memdesc:a00ed654fef28807203d5042b4342c3fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tensor of unsigned 8-bit binaries. NA is not defined for this type.  <a href="types_8h.html#a00ed654fef28807203d5042b4342c3fb">More...</a><br /></td></tr>
 <tr class="separator:a00ed654fef28807203d5042b4342c3fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -293,6 +295,9 @@ Typedefs</h2></td></tr>
 <tr class="separator:a97c097c96fd6364c46569536e8cbc535"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b6f709ede20f91ff26fa9166a7cc9da"><td class="memItemLeft" align="right" valign="top">typedef char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">jazz_elements::pChar</a></td></tr>
 <tr class="separator:a7b6f709ede20f91ff26fa9166a7cc9da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4734a779894739a0e04623c47348dd25"><td class="memItemLeft" align="right" valign="top">typedef std::set&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a4734a779894739a0e04623c47348dd25">jazz_elements::Dimensions</a></td></tr>
+<tr class="memdesc:a4734a779894739a0e04623c47348dd25"><td class="mdescLeft">&#160;</td><td class="mdescRight">An set::set with the dimension names returned by kind.dimensions()  <a href="namespacejazz__elements.html#a4734a779894739a0e04623c47348dd25">More...</a><br /></td></tr>
+<tr class="separator:a4734a779894739a0e04623c47348dd25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21ef56e0ae0b19ab246376047a94b301"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a21ef56e0ae0b19ab246376047a94b301">jazz_elements::IndexII</a></td></tr>
 <tr class="memdesc:a21ef56e0ae0b19ab246376047a94b301"><td class="mdescLeft">&#160;</td><td class="mdescRight">An <a class="el" href="unionjazz__elements_1_1Index.html" title="A union abstracting all the individual Index types.">Index</a> kept in RAM by <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a> implemented as an stdlib map (int, int)  <a href="namespacejazz__elements.html#a21ef56e0ae0b19ab246376047a94b301">More...</a><br /></td></tr>
 <tr class="separator:a21ef56e0ae0b19ab246376047a94b301"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -311,8 +316,6 @@ Typedefs</h2></td></tr>
 <tr class="separator:ade5482a3dc88f63b4f652a83ce3db990"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a295f95bab2b1090b5501ffea1c350b31"><td class="memItemLeft" align="right" valign="top">typedef StringBuffer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a295f95bab2b1090b5501ffea1c350b31">jazz_elements::pStringBuffer</a></td></tr>
 <tr class="separator:a295f95bab2b1090b5501ffea1c350b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05e38fc056b1c3ce4ac21a542aacdf59"><td class="memItemLeft" align="right" valign="top">typedef Answer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a05e38fc056b1c3ce4ac21a542aacdf59">jazz_elements::pAnswer</a></td></tr>
-<tr class="separator:a05e38fc056b1c3ce4ac21a542aacdf59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a198723ea7b77deeeb47c9c3e21319143"></a>
@@ -326,23 +329,6 @@ Typedefs</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4511c6b8167369401ab5eefd0c5d2b0a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4511c6b8167369401ab5eefd0c5d2b0a">&#9670;&nbsp;</a></span>ANSWER_LENGTH</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ANSWER_LENGTH&#160;&#160;&#160;4096</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Size of an Answer buffer. </p>
-<p>API buffers limit the size of http API calls, but also anything like lists of item names, dimension names, types, blocktypes, etc. Since Blocks do allocate RAM, when they communicate these kind of text operations, they expect the caller to assign a buffer of ANSWER_LENGTH chars. Of course, data serialization does not have any limits it is done by containers creating new blocks. </p>
 
 </div>
 </div>
@@ -373,6 +359,8 @@ Typedefs</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Is used in log_printf() of error/warning messages. </p>
 
 </div>
 </div>
@@ -440,6 +428,22 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
+<a id="abe4f82f2878526494276f669fb94cc5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe4f82f2878526494276f669fb94cc5d">&#9670;&nbsp;</a></span>MAX_ITEMS_IN_KIND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_ITEMS_IN_KIND&#160;&#160;&#160;64</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The number of items merged into a kind or tuple. </p>
+
+</div>
+</div>
 <a id="a9ab9efa453cd99ad8a95c797aff340b9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9ab9efa453cd99ad8a95c797aff340b9">&#9670;&nbsp;</a></span>CELL_TYPE__</h2>
 
@@ -453,6 +457,22 @@ Typedefs</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Different values for Block.cell_type. </p>
+
+</div>
+</div>
+<a id="ade0e911901e31ea19c2a83c1beef1d44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade0e911901e31ea19c2a83c1beef1d44">&#9670;&nbsp;</a></span>CELL_TYPE_UNDEFINED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CELL_TYPE_UNDEFINED&#160;&#160;&#160;0x000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A cell_type value to be set by a text parser. </p>
 
 </div>
 </div>

@@ -94,10 +94,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a90f3967586b72becda3f3c7ddc9af37a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada80e35eb9a7b53cf5ed79984990072e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Kind.html#ada80e35eb9a7b53cf5ed79984990072e">index</a> (<a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> name)</td></tr>
 <tr class="separator:ada80e35eb9a7b53cf5ed79984990072e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f51bbc324666ee4eb3a9f304960c356"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Kind.html#a6f51bbc324666ee4eb3a9f304960c356">num_dimensions</a> ()</td></tr>
-<tr class="separator:a6f51bbc324666ee4eb3a9f304960c356"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1e9c2011e9f94f6168d6d2c641b8bca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Kind.html#ae1e9c2011e9f94f6168d6d2c641b8bca">dimension_names</a> (<a class="el" href="namespacejazz__elements.html#a05e38fc056b1c3ce4ac21a542aacdf59">pAnswer</a> p_buff)</td></tr>
-<tr class="separator:ae1e9c2011e9f94f6168d6d2c641b8bca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad85b82e1401955777bbe02992fab3e74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Kind.html#ad85b82e1401955777bbe02992fab3e74">dimensions</a> (<a class="el" href="namespacejazz__elements.html#a4734a779894739a0e04623c47348dd25">Dimensions</a> &amp;dims)</td></tr>
+<tr class="separator:ad85b82e1401955777bbe02992fab3e74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d9cc0f15a5ef02139fd3c3552c9a874"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Kind.html#a8d9cc0f15a5ef02139fd3c3552c9a874">new_kind</a> (int num_items, int num_bytes, <a class="el" href="namespacejazz__elements.html#ad2f703c26500ad2cdcec139a7e2000c4">AttributeMap</a> &amp;attr)</td></tr>
 <tr class="separator:a8d9cc0f15a5ef02139fd3c3552c9a874"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b65fa72c255b8cf8a151f1562a32fd6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Kind.html#a8b65fa72c255b8cf8a151f1562a32fd6">add_item</a> (int idx, char const *p_name, int *p_dim, int <a class="el" href="structjazz__elements_1_1StaticBlockHeader.html#a2e55c0b7cf6764b13393c26171f20dc6">cell_type</a>, <a class="el" href="namespacejazz__elements.html#ad2f703c26500ad2cdcec139a7e2000c4">AttributeMap</a> &amp;dims)</td></tr>
@@ -271,8 +269,8 @@ Creating Kinds</h2>
 
 </div>
 </div>
-<a id="a6f51bbc324666ee4eb3a9f304960c356"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f51bbc324666ee4eb3a9f304960c356">&#9670;&nbsp;</a></span>num_dimensions()</h2>
+<a id="ad85b82e1401955777bbe02992fab3e74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad85b82e1401955777bbe02992fab3e74">&#9670;&nbsp;</a></span>dimensions()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -281,9 +279,10 @@ Creating Kinds</h2>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int jazz_elements::Kind::num_dimensions </td>
+          <td class="memname">void jazz_elements::Kind::dimensions </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a4734a779894739a0e04623c47348dd25">Dimensions</a> &amp;&#160;</td>
+          <td class="paramname"><em>dims</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -293,41 +292,7 @@ Creating Kinds</h2>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the number of dimensions in a <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for Jazz Blocks and Tuples.">Kind</a>.</p>
-<dl class="section return"><dt>Returns</dt><dd>Number of dimensions </dd></dl>
-
-</div>
-</div>
-<a id="ae1e9c2011e9f94f6168d6d2c641b8bca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae1e9c2011e9f94f6168d6d2c641b8bca">&#9670;&nbsp;</a></span>dimension_names()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void jazz_elements::Kind::dimension_names </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a05e38fc056b1c3ce4ac21a542aacdf59">pAnswer</a>&#160;</td>
-          <td class="paramname"><em>p_buff</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Returns the names of the dimensions as a tab separated list of names.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">p_buff</td><td>The address of an ApiBuffer to store the answer. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Pushes the <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for Jazz Blocks and Tuples.">Kind</a>'s dimension names into an std::set. </p>
 
 </div>
 </div>

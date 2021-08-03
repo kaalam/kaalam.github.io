@@ -92,9 +92,15 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a6ced5026e75f982993bcc181f09cc3b8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1ItemHeader.html#a6ced5026e75f982993bcc181f09cc3b8">dim</a> [<a class="el" href="types_8h.html#a5dfd5a365563c2e8cf13a83a127af9ac">MAX_TENSOR_RANK</a>]</td></tr>
 <tr class="memdesc:a6ced5026e75f982993bcc181f09cc3b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dimensions for the <a class="el" href="unionjazz__elements_1_1Tensor.html" title="A tensor of cell size 1, 4, 8 or sizeof(BlockHeader)">Tensor</a>. For <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for Jazz Blocks and Tuples.">Kind</a>: negative numbers are dimension names as -offset in <a class="el" href="structjazz__elements_1_1StringBuffer.html" title="Structure at the end of a Block, initially created with init_string_buffer()">StringBuffer</a>.  <a href="structjazz__elements_1_1ItemHeader.html#a6ced5026e75f982993bcc181f09cc3b8">More...</a><br /></td></tr>
 <tr class="separator:a6ced5026e75f982993bcc181f09cc3b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a327442ae9113fe6f91281a1cd38e1f9b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1ItemHeader.html#a327442ae9113fe6f91281a1cd38e1f9b">data_start</a></td></tr>
-<tr class="memdesc:a327442ae9113fe6f91281a1cd38e1f9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The data start of this tensor as an offset of &amp;<a class="el" href="structjazz__elements_1_1BlockHeader.html#a04878e00333fb81bcdc404914109eef1" title="A tensor for type cell_type and dimensions set by Block.set_dimensions()">BlockHeader.tensor</a>. (If is is a <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz Block with multiple Tensors.">Tuple</a>.)  <a href="structjazz__elements_1_1ItemHeader.html#a327442ae9113fe6f91281a1cd38e1f9b">More...</a><br /></td></tr>
-<tr class="separator:a327442ae9113fe6f91281a1cd38e1f9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3ce5e327fe82cba15de88e926575ca6"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:a2cd1d922c58aad58c3839e3b69478786"><td class="memItemLeft" >&#160;&#160;&#160;int&#160;&#160;&#160;<a class="el" href="structjazz__elements_1_1ItemHeader.html#a327442ae9113fe6f91281a1cd38e1f9b">data_start</a></td></tr>
+<tr class="memdesc:a2cd1d922c58aad58c3839e3b69478786"><td class="mdescLeft">&#160;</td><td class="mdescRight">The data start of this tensor as an offset of &amp;<a class="el" href="structjazz__elements_1_1BlockHeader.html#a04878e00333fb81bcdc404914109eef1" title="A tensor for type cell_type and dimensions set by Block.set_dimensions()">BlockHeader.tensor</a>. (If is is a <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz Block with multiple Tensors.">Tuple</a>.)  <a href="unionjazz__elements_1_1ItemHeader_1_1_0d2.html#a2cd1d922c58aad58c3839e3b69478786">More...</a><br /></td></tr>
+<tr class="separator:a2cd1d922c58aad58c3839e3b69478786"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f276212e2123b28ab10e170df60f2b8"><td class="memItemLeft" >&#160;&#160;&#160;int&#160;&#160;&#160;<a class="el" href="structjazz__elements_1_1ItemHeader.html#ae267ff7b63a6e207eec0cbe19a5e669e">item_size</a></td></tr>
+<tr class="memdesc:a8f276212e2123b28ab10e170df60f2b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">During parsing of text blocks, this field is named item_size to temporarily hold the item size.  <a href="unionjazz__elements_1_1ItemHeader_1_1_0d2.html#a8f276212e2123b28ab10e170df60f2b8">More...</a><br /></td></tr>
+<tr class="separator:a8f276212e2123b28ab10e170df60f2b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3ce5e327fe82cba15de88e926575ca6"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:af3ce5e327fe82cba15de88e926575ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Header for an item (of a <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for Jazz Blocks and Tuples.">Kind</a> or <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz Block with multiple Tensors.">Tuple</a>) </p>
@@ -176,6 +182,36 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The data start of this tensor as an offset of &amp;<a class="el" href="structjazz__elements_1_1BlockHeader.html#a04878e00333fb81bcdc404914109eef1" title="A tensor for type cell_type and dimensions set by Block.set_dimensions()">BlockHeader.tensor</a>. (If is is a <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz Block with multiple Tensors.">Tuple</a>.) </p>
+
+</div>
+</div>
+<a id="ae267ff7b63a6e207eec0cbe19a5e669e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae267ff7b63a6e207eec0cbe19a5e669e">&#9670;&nbsp;</a></span>item_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jazz_elements::ItemHeader::item_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>During parsing of text blocks, this field is named item_size to temporarily hold the item size. </p>
+
+</div>
+</div>
+<a id="af3ce5e327fe82cba15de88e926575ca6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3ce5e327fe82cba15de88e926575ca6">&#9670;&nbsp;</a></span>@3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union { ... } </td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
