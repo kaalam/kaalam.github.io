@@ -208,6 +208,8 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a6fa64f7ca52f7206d96f2fa4436214cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a315d6b36c91cd55a2769e7f3e6a61c60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a315d6b36c91cd55a2769e7f3e6a61c60">as_hex</a> (<a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> &amp;p_dest, char bl)</td></tr>
 <tr class="separator:a315d6b36c91cd55a2769e7f3e6a61c60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dc5465894081c7e91ec1489122d6cfb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a9dc5465894081c7e91ec1489122d6cfb">from_hex</a> (char c)</td></tr>
+<tr class="separator:a9dc5465894081c7e91ec1489122d6cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a788e0aa6809df2da851d12f51a336349"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a788e0aa6809df2da851d12f51a336349">separator</a> (int rank_1, int dim[], int idx[], <a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> &amp;p_ret)</td></tr>
 <tr class="separator:a788e0aa6809df2da851d12f51a336349"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a405dc9e9a0c717443f498f307710e500"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a405dc9e9a0c717443f498f307710e500">separator_len</a> (int rank_1, int dim[], int idx[])</td></tr>
@@ -2244,6 +2246,40 @@ new_block()</h2>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a9dc5465894081c7e91ec1489122d6cfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dc5465894081c7e91ec1489122d6cfb">&#9670;&nbsp;</a></span>from_hex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jazz_elements::Container::from_hex </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the binary value of a hex char assuming it is in range.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td>The character which is either 0-9, a-f or A-F </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The binary value of the char </dd></dl>
 
 </div>
 </div>

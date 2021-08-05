@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Jazz 0.5+: jazz_main::NextStateLUT Struct Reference</title>
+<title>Jazz 0.5+: jazz_elements::ParseStateTransition Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,35 +62,67 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespacejazz__main.html">jazz_main</a></li><li class="navelem"><a class="el" href="structjazz__main_1_1NextStateLUT.html">NextStateLUT</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacejazz__elements.html">jazz_elements</a></li><li class="navelem"><a class="el" href="structjazz__elements_1_1ParseStateTransition.html">ParseStateTransition</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">jazz_main::NextStateLUT Struct Reference</div>  </div>
+<div class="title">jazz_elements::ParseStateTransition Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="api_8h_source.html">api.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="container_8h_source.html">container.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:aefe42bc145003234e58e90a808f1e9d9"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__main_1_1NextStateLUT.html#aefe42bc145003234e58e90a808f1e9d9">next</a> [<a class="el" href="container_8h.html#a7dfe57f98086163fe1947f55bcdac9bc">EIGHT_BIT_LONG</a>]</td></tr>
-<tr class="separator:aefe42bc145003234e58e90a808f1e9d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f3a96c757ab94568072adf54b5a9fbc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1ParseStateTransition.html#a6f3a96c757ab94568072adf54b5a9fbc">from</a></td></tr>
+<tr class="separator:a6f3a96c757ab94568072adf54b5a9fbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba6eecca8628176eb7608e6b7c204209"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1ParseStateTransition.html#aba6eecca8628176eb7608e6b7c204209">to</a></td></tr>
+<tr class="separator:aba6eecca8628176eb7608e6b7c204209"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a788072c769b286087cd17f94316d85c4"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1ParseStateTransition.html#a788072c769b286087cd17f94316d85c4">rex</a> [<a class="el" href="container_8h.html#adf382d32aa8c95baa4066359ea13143a">MAX_TRANSITION_REGEX_LEN</a>]</td></tr>
+<tr class="separator:a788072c769b286087cd17f94316d85c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A lookup table for all the possible values of a char mapped into an 8-bit state. </p>
+<div class="textblock"><p>A way to build constants defining the transtition from one state to the next via a regex. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="aefe42bc145003234e58e90a808f1e9d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aefe42bc145003234e58e90a808f1e9d9">&#9670;&nbsp;</a></span>next</h2>
+<a id="a6f3a96c757ab94568072adf54b5a9fbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f3a96c757ab94568072adf54b5a9fbc">&#9670;&nbsp;</a></span>from</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned char jazz_main::NextStateLUT::next[<a class="el" href="container_8h.html#a7dfe57f98086163fe1947f55bcdac9bc">EIGHT_BIT_LONG</a>]</td>
+          <td class="memname">int jazz_elements::ParseStateTransition::from</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aba6eecca8628176eb7608e6b7c204209"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba6eecca8628176eb7608e6b7c204209">&#9670;&nbsp;</a></span>to</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jazz_elements::ParseStateTransition::to</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a788072c769b286087cd17f94316d85c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a788072c769b286087cd17f94316d85c4">&#9670;&nbsp;</a></span>rex</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char jazz_elements::ParseStateTransition::rex[<a class="el" href="container_8h.html#adf382d32aa8c95baa4066359ea13143a">MAX_TRANSITION_REGEX_LEN</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -98,7 +130,7 @@ Data Fields</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="api_8h_source.html">api.h</a></li>
+<li><a class="el" href="container_8h_source.html">container.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -107,6 +107,10 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Logger.html">Logger</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A simple logger.  <a href="classjazz__elements_1_1Logger.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1ParseNextStateLUT.html">ParseNextStateLUT</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1ParseStateTransition.html">ParseStateTransition</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html">Persisted</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classjazz__elements_1_1Persisted.html" title="Persisted: A Service to manage data objects in LMDB.">Persisted</a>: A <a class="el" href="classjazz__elements_1_1Service.html" title="A Jazz Service is a globally instanced configurable object that may allocate RAM.">Service</a> to manage data objects in LMDB.  <a href="classjazz__elements_1_1Persisted.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,6 +152,8 @@ Typedefs</h2></td></tr>
 <tr class="separator:a89b6ae8b08dfbb376caafc742840adf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a612e435984d430c34312ed9fa76395d7"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classjazz__elements_1_1Channels.html">Channels</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a612e435984d430c34312ed9fa76395d7">pChannels</a></td></tr>
 <tr class="separator:a612e435984d430c34312ed9fa76395d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74c455d5540b250c87f151615c732ecd"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structjazz__elements_1_1ParseStateTransition.html">ParseStateTransition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a74c455d5540b250c87f151615c732ecd">ParseStateTransitions</a>[<a class="el" href="container_8cpp.html#a2af6bcc5187fe6040a315da36a4b6b6a">NUM_STATE_TRANSITIONS</a>]</td></tr>
+<tr class="separator:a74c455d5540b250c87f151615c732ecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3d6e1b4aca91c99b80bdc759a73699f"><td class="memItemLeft" align="right" valign="top">typedef std::atomic&lt; int32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#ac3d6e1b4aca91c99b80bdc759a73699f">Lock32</a></td></tr>
 <tr class="memdesc:ac3d6e1b4aca91c99b80bdc759a73699f"><td class="mdescLeft">&#160;</td><td class="mdescRight">An atomically increased (via fetch_add() and fetch_sub()) 32 bit signed integer to use as a lock.  <a href="namespacejazz__elements.html#ac3d6e1b4aca91c99b80bdc759a73699f">More...</a><br /></td></tr>
 <tr class="separator:ac3d6e1b4aca91c99b80bdc759a73699f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -264,6 +270,10 @@ Variables</h2></td></tr>
 <tr class="separator:a94070758291c16a2f53e1c206e952856"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a239fcd81a9132439b710f8c6c2adb229"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a239fcd81a9132439b710f8c6c2adb229">DEF_FLOAT_TIME</a> [24] = {&quot;%Y-%m-%d %H:%M:%S&quot;}</td></tr>
 <tr class="separator:a239fcd81a9132439b710f8c6c2adb229"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf7f8a2a4a05820362258adc46b5be3c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#a74c455d5540b250c87f151615c732ecd">ParseStateTransitions</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#abf7f8a2a4a05820362258adc46b5be3c">state_tr</a></td></tr>
+<tr class="separator:abf7f8a2a4a05820362258adc46b5be3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9daaf364b79a6f24dca81b7b7c7102b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structjazz__elements_1_1ParseNextStateLUT.html">ParseNextStateLUT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a9daaf364b79a6f24dca81b7b7c7102b3">parser_state_switch</a> [<a class="el" href="container_8cpp.html#a10e327a147a2e3f7ff810be83e4e46b4">MAX_NUM_PSTATES</a>]</td></tr>
+<tr class="separator:a9daaf364b79a6f24dca81b7b7c7102b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdb5cec635864c993c6bc9f88a555cd3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#abdb5cec635864c993c6bc9f88a555cd3">F_NA</a> = nanf(&quot;&quot;)</td></tr>
 <tr class="memdesc:abdb5cec635864c993c6bc9f88a555cd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">NaN in single.  <a href="namespacejazz__elements.html#abdb5cec635864c993c6bc9f88a555cd3">More...</a><br /></td></tr>
 <tr class="separator:abdb5cec635864c993c6bc9f88a555cd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -318,6 +328,21 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a74c455d5540b250c87f151615c732ecd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74c455d5540b250c87f151615c732ecd">&#9670;&nbsp;</a></span>ParseStateTransitions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="structjazz__elements_1_1ParseStateTransition.html">ParseStateTransition</a> jazz_elements::ParseStateTransitions[<a class="el" href="container_8cpp.html#a2af6bcc5187fe6040a315da36a4b6b6a">NUM_STATE_TRANSITIONS</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A vector of StateTransition.l This only runs once, when contruction the API object, initializes the LUTs from a sequence of StateTransition constants in the source of <a class="el" href="api_8cpp.html">api.cpp</a>. </p>
 
 </div>
 </div>
@@ -1175,6 +1200,34 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">char jazz_elements::DEF_FLOAT_TIME[24] = {&quot;%Y-%m-%d %H:%M:%S&quot;}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abf7f8a2a4a05820362258adc46b5be3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf7f8a2a4a05820362258adc46b5be3c">&#9670;&nbsp;</a></span>state_tr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#a74c455d5540b250c87f151615c732ecd">ParseStateTransitions</a> jazz_elements::state_tr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9daaf364b79a6f24dca81b7b7c7102b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9daaf364b79a6f24dca81b7b7c7102b3">&#9670;&nbsp;</a></span>parser_state_switch</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structjazz__elements_1_1ParseNextStateLUT.html">ParseNextStateLUT</a> jazz_elements::parser_state_switch[<a class="el" href="container_8cpp.html#a10e327a147a2e3f7ff810be83e4e46b4">MAX_NUM_PSTATES</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">

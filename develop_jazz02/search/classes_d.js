@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['volatile_591',['Volatile',['../classjazz__elements_1_1Volatile.html',1,'jazz_elements']]]
+  ['volatile_593',['Volatile',['../classjazz__elements_1_1Volatile.html',1,'jazz_elements']]]
 ];

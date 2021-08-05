@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['chargrouplut_877',['CharGroupLUT',['../namespacejazz__main.html#ab273ea9d5b5d4b8914ca36b8d232d6c4',1,'jazz_main']]]
+  ['dimensions_869',['Dimensions',['../namespacejazz__elements.html#a4734a779894739a0e04623c47348dd25',1,'jazz_elements']]]
 ];

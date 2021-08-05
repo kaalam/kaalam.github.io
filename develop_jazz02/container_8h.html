@@ -85,6 +85,10 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1ParseNextStateLUT.html">jazz_elements::ParseNextStateLUT</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1ParseStateTransition.html">jazz_elements::ParseStateTransition</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1Transaction.html">jazz_elements::Transaction</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block over get/put/remove/cop...">Transaction</a>: A wrapper over a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> that defines the communication of a block over get/put/remove/copy.  <a href="structjazz__elements_1_1Transaction.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -180,6 +184,12 @@ Macros</h2></td></tr>
 <tr class="memitem:a1d6ec9f0667f58f74bfaa81980d4f0ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a1d6ec9f0667f58f74bfaa81980d4f0ab">LOCK_WEIGHT_OF_WRITE</a>&#160;&#160;&#160;46341</td></tr>
 <tr class="memdesc:a1d6ec9f0667f58f74bfaa81980d4f0ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">sqrt(2^31) == # simultaneous readers to outweight a writer == # simultaneous writers to force an overflow  <a href="container_8h.html#a1d6ec9f0667f58f74bfaa81980d4f0ab">More...</a><br /></td></tr>
 <tr class="separator:a1d6ec9f0667f58f74bfaa81980d4f0ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dfe57f98086163fe1947f55bcdac9bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a7dfe57f98086163fe1947f55bcdac9bc">EIGHT_BIT_LONG</a>&#160;&#160;&#160;256</td></tr>
+<tr class="memdesc:a7dfe57f98086163fe1947f55bcdac9bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length of a NextStateLUT.  <a href="container_8h.html#a7dfe57f98086163fe1947f55bcdac9bc">More...</a><br /></td></tr>
+<tr class="separator:a7dfe57f98086163fe1947f55bcdac9bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf382d32aa8c95baa4066359ea13143a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#adf382d32aa8c95baa4066359ea13143a">MAX_TRANSITION_REGEX_LEN</a>&#160;&#160;&#160;32</td></tr>
+<tr class="memdesc:adf382d32aa8c95baa4066359ea13143a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length of regex for state transitions. Used only in constants for LUT construction.  <a href="container_8h.html#adf382d32aa8c95baa4066359ea13143a">More...</a><br /></td></tr>
+<tr class="separator:adf382d32aa8c95baa4066359ea13143a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -615,6 +625,38 @@ Typedefs</h2></td></tr>
 </div><div class="memdoc">
 
 <p>sqrt(2^31) == # simultaneous readers to outweight a writer == # simultaneous writers to force an overflow </p>
+
+</div>
+</div>
+<a id="a7dfe57f98086163fe1947f55bcdac9bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dfe57f98086163fe1947f55bcdac9bc">&#9670;&nbsp;</a></span>EIGHT_BIT_LONG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EIGHT_BIT_LONG&#160;&#160;&#160;256</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Length of a NextStateLUT. </p>
+
+</div>
+</div>
+<a id="adf382d32aa8c95baa4066359ea13143a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf382d32aa8c95baa4066359ea13143a">&#9670;&nbsp;</a></span>MAX_TRANSITION_REGEX_LEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_TRANSITION_REGEX_LEN&#160;&#160;&#160;32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Length of regex for state transitions. Used only in constants for LUT construction. </p>
 
 </div>
 </div>
