@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['max_5fnum_5fkeepers_815',['max_num_keepers',['../classjazz__elements_1_1Container.html#ab9aadf3bb54843d72e22909489c27b76',1,'jazz_elements::Container']]]
+  ['max_5ftransactions_815',['max_transactions',['../classjazz__elements_1_1Container.html#a78d8175d99a2992675ec9ead633da893',1,'jazz_elements::Container']]]
 ];

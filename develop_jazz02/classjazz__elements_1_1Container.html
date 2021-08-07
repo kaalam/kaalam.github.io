@@ -219,8 +219,8 @@ Private Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a27f9aaacf02a54aaf602655f967b10c0"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a27f9aaacf02a54aaf602655f967b10c0">HEX</a> [16] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'}</td></tr>
 <tr class="separator:a27f9aaacf02a54aaf602655f967b10c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9aadf3bb54843d72e22909489c27b76"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#ab9aadf3bb54843d72e22909489c27b76">max_num_keepers</a></td></tr>
-<tr class="separator:ab9aadf3bb54843d72e22909489c27b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78d8175d99a2992675ec9ead633da893"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a78d8175d99a2992675ec9ead633da893">max_transactions</a></td></tr>
+<tr class="separator:a78d8175d99a2992675ec9ead633da893"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a4180f46f2820502f48df99fe2b88b1"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a7a4180f46f2820502f48df99fe2b88b1">alloc_bytes</a></td></tr>
 <tr class="separator:a7a4180f46f2820502f48df99fe2b88b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae30751a7d7c4c893c52cf50a0fb5bfc0"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#ae30751a7d7c4c893c52cf50a0fb5bfc0">warn_alloc_bytes</a></td></tr>
@@ -259,7 +259,7 @@ One-shot Block allocation</h2>
 <p>This is the only container providing one-shot <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> allocation. This does not mean, unlike in previous versions, the caller owns the pointer. One-shot <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> allocation is intended for computing intermediate blocks like: blocks generated from constants, from slicing, returned by functions, etc. In these blocks, the locator is meaningless, the caller will create it by <a class="el" href="classjazz__elements_1_1Container.html#afd29e008d84b128940e6eab853c2aae2">new_block()</a>, use it and call <a class="el" href="classjazz__elements_1_1Container.html#a00ad2a85f71fe0269aaa3a955126a897">destroy()</a> when done.</p>
 <h2><a class="anchor" id="autotoc_md1"></a>
 Instances and inheritance</h2>
-<p>Note that the descendants don't inherit each other, but they all have the basic deque mechanism inherited from <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>: i.e., they can all allocate new blocks for their own purposes. Configuration-wise the allocations set by ONE_SHOT_MAX_KEEPERS, ONE_SHOT_WARN_BLOCK_KBYTES, ... only apply to the instance of the class <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>, the descendants use their own limits in which they include this allocation combined with whatever other allocations they do. The total allocation of the Jazz node is the sum of all (plus some small amount used by libraries, etc. that is not dependant on data size).</p>
+<p>Note that the descendants don't inherit each other, but they all have the basic deque mechanism inherited from <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>: i.e., they can all allocate new blocks for their own purposes. Configuration-wise the allocations set by ONE_SHOT_MAX_TRANSACTIONS, ONE_SHOT_WARN_BLOCK_KBYTES, ... only apply to the instance of the class <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>, the descendants use their own limits in which they include this allocation combined with whatever other allocations they do. The total allocation of the Jazz node is the sum of all (plus some small amount used by libraries, etc. that is not dependant on data size).</p>
 <h2><a class="anchor" id="autotoc_md2"></a>
 Container descendants</h2>
 <p>Note that Continers own their Transactions and may allocate p_route blocks including all kinds of things like session cookies or credentials for libcurl calls. Any container will reroute a <a class="el" href="classjazz__elements_1_1Container.html#a00ad2a85f71fe0269aaa3a955126a897">destroy()</a> call to its owner.</p>
@@ -1248,7 +1248,7 @@ new_block()</h2>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Creates the buffers for <a class="el" href="classjazz__elements_1_1Container.html#a5103bbe331c753542959d063c9b7ed0f">new_transaction()</a>/free_keeper()</p>
+<p>Creates the buffers for <a class="el" href="classjazz__elements_1_1Container.html#a5103bbe331c753542959d063c9b7ed0f">new_transaction()</a>/destroy()</p>
 <dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR on success (and a valid p_txn), or some error. </dd></dl>
 
 </div>
@@ -1275,7 +1275,7 @@ new_block()</h2>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Destroys everything: all keepers and the buffer itself</p>
+<p>Destroys everything: all transactions and the buffer itself</p>
 <dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR. </dd></dl>
 
 </div>
@@ -2416,8 +2416,8 @@ new_block()</h2>
 
 </div>
 </div>
-<a id="ab9aadf3bb54843d72e22909489c27b76"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab9aadf3bb54843d72e22909489c27b76">&#9670;&nbsp;</a></span>max_num_keepers</h2>
+<a id="a78d8175d99a2992675ec9ead633da893"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78d8175d99a2992675ec9ead633da893">&#9670;&nbsp;</a></span>max_transactions</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2426,7 +2426,7 @@ new_block()</h2>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int jazz_elements::Container::max_num_keepers</td>
+          <td class="memname">int jazz_elements::Container::max_transactions</td>
         </tr>
       </table>
   </td>
