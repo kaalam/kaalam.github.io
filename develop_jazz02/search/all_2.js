@@ -5,7 +5,7 @@ var searchData=
   ['basenames_26',['BaseNames',['../namespacejazz__elements.html#aadf1e411ca544a525c767f3e30010202',1,'jazz_elements']]],
   ['bebop_27',['Bebop',['../classjazz__bebop_1_1Bebop.html',1,'jazz_bebop::Bebop'],['../classjazz__bebop_1_1Bebop.html#afbc12e36557784162719ddd83650637a',1,'jazz_bebop::Bebop::Bebop()']]],
   ['big_5fbang_28',['big_bang',['../classjazz__elements_1_1Logger.html#a07020eabf3e6c31bc7acf679fb4e2267',1,'jazz_elements::Logger']]],
-  ['block_29',['Block',['../classjazz__elements_1_1Block.html',1,'jazz_elements::Block'],['../structjazz__main_1_1Locator.html#a2efd7db6eb7776b0bce96b4413177e71',1,'jazz_main::Locator::block()'],['../classjazz__elements_1_1Tuple.html#a83530ed63075ce9a3d3871b83e40d97d',1,'jazz_elements::Tuple::block()']]],
+  ['block_29',['Block',['../classjazz__elements_1_1Block.html',1,'jazz_elements::Block'],['../structjazz__main_1_1Locator.html#a2efd7db6eb7776b0bce96b4413177e71',1,'jazz_main::Locator::block()']]],
   ['block_2ecpp_30',['block.cpp',['../block_8cpp.html',1,'']]],
   ['block_2eh_31',['block.h',['../block_8h.html',1,'']]],
   ['block_5fattrib_5f_32',['BLOCK_ATTRIB_',['../types_8h.html#addb3f9c44e627a81c7471f876c0de7a7',1,'types.h']]],
