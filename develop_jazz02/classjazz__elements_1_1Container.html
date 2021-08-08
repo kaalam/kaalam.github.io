@@ -2046,9 +2046,10 @@ new_block()</h2>
 <p>Serializes a <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz Block with multiple Tensors.">Tuple</a> as a string.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">p_block</td><td>The raw <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz Block with multiple Tensors.">Tuple</a> to be serialized as text. </td></tr>
+    <tr><td class="paramname">p_tuple</td><td>The raw <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz Block with multiple Tensors.">Tuple</a> to be serialized as text. </td></tr>
     <tr><td class="paramname">p_dest</td><td>Optionally, a pointer with the address to which the output is serialized. (If nullptr, only size counting is done) </td></tr>
-    <tr><td class="paramname">p_fmt</td><td>Optionally, format specifier that will be applied to all items. (default is each type uses its default)</td></tr>
+    <tr><td class="paramname">p_fmt</td><td>Optionally, format specifier that will be applied to all items. (default is each type uses its default) </td></tr>
+    <tr><td class="paramname">item_len</td><td>A buffer storing the length of each item: computed by tensor_tuple_as_text(p_dest == nullptr), used by tensor_tuple_as_text(p_dest != nullptr).</td></tr>
   </table>
   </dd>
 </dl>
@@ -2093,7 +2094,7 @@ new_block()</h2>
 <p>Serializes a <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for Jazz Blocks and Tuples.">Kind</a> as a string.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">p_block</td><td>The raw <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for Jazz Blocks and Tuples.">Kind</a> to be serialized as text. </td></tr>
+    <tr><td class="paramname">p_kind</td><td>The raw <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for Jazz Blocks and Tuples.">Kind</a> to be serialized as text. </td></tr>
     <tr><td class="paramname">p_dest</td><td>Optionally, a pointer with the address to which the output is serialized. (If nullptr, only size counting is done)</td></tr>
   </table>
   </dd>
@@ -2241,7 +2242,7 @@ new_block()</h2>
 <p>Writes a char as 0xFF</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">p_ret</td><td>The cursor to the output buffer </td></tr>
+    <tr><td class="paramname">p_dest</td><td>The cursor to the output buffer </td></tr>
     <tr><td class="paramname">bl</td><td>The character </td></tr>
   </table>
   </dd>

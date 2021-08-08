@@ -10,5 +10,6 @@ var searchData=
   ['destroy_5finternal_135',['destroy_internal',['../classjazz__elements_1_1Container.html#acd21ef27de1f47a2773e7f2327cb1932',1,'jazz_elements::Container']]],
   ['dim_136',['dim',['../unionjazz__elements_1_1TensorDim.html#a0c68e45ee5af23f5041bca88a3b32137',1,'jazz_elements::TensorDim::dim()'],['../structjazz__elements_1_1ItemHeader.html#a6ced5026e75f982993bcc181f09cc3b8',1,'jazz_elements::ItemHeader::dim()']]],
   ['dimensions_137',['dimensions',['../classjazz__elements_1_1Kind.html#ad85b82e1401955777bbe02992fab3e74',1,'jazz_elements::Kind::dimensions()'],['../namespacejazz__elements.html#a4734a779894739a0e04623c47348dd25',1,'jazz_elements::Dimensions()']]],
-  ['double_5fna_138',['DOUBLE_NA',['../types_8h.html#ac0e222767f0998f79ffeb691e5e4a7c1',1,'types.h']]]
+  ['double_5fna_138',['DOUBLE_NA',['../types_8h.html#ac0e222767f0998f79ffeb691e5e4a7c1',1,'types.h']]],
+  ['double_5fna_5fuint64_139',['DOUBLE_NA_UINT64',['../types_8h.html#a7c0cab2b021db33c6a6d4d7d5ee15a77',1,'types.h']]]
 ];
