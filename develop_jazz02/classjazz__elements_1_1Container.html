@@ -166,6 +166,8 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:acd21ef27de1f47a2773e7f2327cb1932"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a256e918b696772139096b2a270f5b1"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a8a256e918b696772139096b2a270f5b1">malloc</a> (size_t size)</td></tr>
 <tr class="separator:a8a256e918b696772139096b2a270f5b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa324950d69cb31f4a4e3f452d6180046"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#aa324950d69cb31f4a4e3f452d6180046">block_malloc</a> (size_t size)</td></tr>
+<tr class="separator:aa324950d69cb31f4a4e3f452d6180046"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ecc4ba001b31b0be81c99350eb6827e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a6ecc4ba001b31b0be81c99350eb6827e">new_container</a> ()</td></tr>
 <tr class="separator:a6ecc4ba001b31b0be81c99350eb6827e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e0efc28d7f6d1d1aa253e68badaf170"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a1e0efc28d7f6d1d1aa253e68badaf170">destroy_container</a> ()</td></tr>
@@ -1237,6 +1239,33 @@ new_block()</h2>
 </table>
 </div><div class="memdoc">
 <p>An std::malloc() that increases .alloc_bytes on each call and fails on overcommit. </p>
+
+</div>
+</div>
+<a id="aa324950d69cb31f4a4e3f452d6180046"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa324950d69cb31f4a4e3f452d6180046">&#9670;&nbsp;</a></span>block_malloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a> jazz_elements::Container::block_malloc </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A spacial alloc for blocks owned by a <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block over get/put/remove/cop...">Transaction</a>. It clears cell_type and total_bytes assumed to be valid by <a class="el" href="classjazz__elements_1_1Container.html#a00ad2a85f71fe0269aaa3a955126a897">destroy()</a>. </p>
 
 </div>
 </div>
