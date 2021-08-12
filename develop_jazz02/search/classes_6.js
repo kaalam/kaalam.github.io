@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['kind_583',['Kind',['../classjazz__elements_1_1Kind.html',1,'jazz_elements']]]
+  ['index_586',['Index',['../unionjazz__elements_1_1Index.html',1,'jazz_elements']]],
+  ['itemheader_587',['ItemHeader',['../structjazz__elements_1_1ItemHeader.html',1,'jazz_elements']]]
 ];
