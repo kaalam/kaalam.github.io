@@ -42,7 +42,6 @@ var menudata={children:[
 {text:"r",url:"namespacemembers.html#index_r"},
 {text:"s",url:"namespacemembers.html#index_s"},
 {text:"t",url:"namespacemembers.html#index_t"},
-{text:"u",url:"namespacemembers.html#index_u"},
 {text:"v",url:"namespacemembers.html#index_v"},
 {text:"w",url:"namespacemembers.html#index_w"}]},
 {text:"Functions",url:"namespacemembers_func.html"},
@@ -71,8 +70,7 @@ var menudata={children:[
 {text:"n",url:"namespacemembers_type.html#index_n"},
 {text:"p",url:"namespacemembers_type.html#index_p"},
 {text:"s",url:"namespacemembers_type.html#index_s"},
-{text:"t",url:"namespacemembers_type.html#index_t"},
-{text:"u",url:"namespacemembers_type.html#index_u"}]}]}]},
+{text:"t",url:"namespacemembers_type.html#index_t"}]}]}]},
 {text:"Data Structures",url:"annotated.html",children:[
 {text:"Data Structures",url:"annotated.html"},
 {text:"Data Structure Index",url:"classes.html"},
@@ -143,14 +141,12 @@ var menudata={children:[
 {text:"r",url:"functions_vars.html#index_r"},
 {text:"s",url:"functions_vars.html#index_s"},
 {text:"t",url:"functions_vars.html#index_t"},
-{text:"u",url:"functions_vars.html#index_u"},
 {text:"w",url:"functions_vars.html#index_w"}]}]}]},
 {text:"Files",url:"files.html",children:[
 {text:"File List",url:"files.html"},
 {text:"Globals",url:"globals.html",children:[
 {text:"All",url:"globals.html",children:[
-{text:"a",url:"globals.html#index_a"},
-{text:"b",url:"globals_b.html#index_b"},
+{text:"b",url:"globals.html#index_b"},
 {text:"c",url:"globals_c.html#index_c"},
 {text:"d",url:"globals_d.html#index_d"},
 {text:"e",url:"globals_e.html#index_e"},
@@ -171,8 +167,7 @@ var menudata={children:[
 {text:"Functions",url:"globals_func.html"},
 {text:"Typedefs",url:"globals_type.html"},
 {text:"Macros",url:"globals_defs.html",children:[
-{text:"a",url:"globals_defs.html#index_a"},
-{text:"b",url:"globals_defs_b.html#index_b"},
+{text:"b",url:"globals_defs.html#index_b"},
 {text:"c",url:"globals_defs_c.html#index_c"},
 {text:"d",url:"globals_defs_d.html#index_d"},
 {text:"e",url:"globals_defs_e.html#index_e"},

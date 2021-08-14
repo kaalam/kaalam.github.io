@@ -77,15 +77,6 @@ $(function() {
  <a href="structjazz__elements_1_1Locator.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="container_8h_source.html">container.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for jazz_elements::Locator:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="structjazz__elements_1_1Locator.png" usemap="#jazz_5Felements::Locator_map" alt=""/>
-  <map id="jazz_5Felements::Locator_map" name="jazz_5Felements::Locator_map">
-<area href="structjazz__main_1_1R__value.html" alt="jazz_main::R_value" shape="rect" coords="0,56,139,80"/>
-  </map>
-</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
@@ -104,7 +95,8 @@ Data Fields</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="structjazz__elements_1_1Locator.html" title="Locator: A minimal structure to define the location of resources inside a Container.">Locator</a>: A minimal structure to define the location of resources inside a <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>. </p>
-<p>This is used by all <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> descendants, it can be extended using p_extra to something else. E..g, a UniversalLocator </p>
+<p>This is used by all <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> descendants, it can be extended using p_extra to something else. E..g, a UniversalLocator</p>
+<p>Valid characters**: base, entity and key names must start with a letter and continue with up to NAME_LENGTH or (SHORT_NAME_SIZE -1 for base) characters in [a-zA-Z0-9\-_~$]. When part of a URL, none of these characters should be %-encoded. Besides names, the following characters have special meaning in URLs (see the parser in API for details): / . : # ; [ ] ( ) = </p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="a2bf2ec77ab816dafa947c20cf1854010"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2bf2ec77ab816dafa947c20cf1854010">&#9670;&nbsp;</a></span>base</h2>
