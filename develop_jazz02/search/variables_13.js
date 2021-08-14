@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['volatile_893',['VOLATILE',['../namespacejazz__main.html#a293f31fb60de0074473a30116ea5a754',1,'jazz_main']]]
+  ['url_5fname_890',['url_name',['../classjazz__main_1_1Api.html#a4554fa366bbdbe06acd62172736165b3',1,'jazz_main::Api']]]
 ];

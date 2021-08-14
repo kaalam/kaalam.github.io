@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['filtersize_584',['FilterSize',['../structjazz__elements_1_1FilterSize.html',1,'jazz_elements']]]
+  ['httpserver_584',['HttpServer',['../classjazz__main_1_1HttpServer.html',1,'jazz_main']]]
 ];

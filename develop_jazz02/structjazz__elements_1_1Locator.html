@@ -73,10 +73,10 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="structjazz__elements_1_1Locator.html" title="Locator: A ... TODO: .">Locator</a>: A ... TODO: .  
+<p><a class="el" href="structjazz__elements_1_1Locator.html" title="Locator: A minimal structure to define the location of resources inside a Container.">Locator</a>: A minimal structure to define the location of resources inside a <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>.  
  <a href="structjazz__elements_1_1Locator.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="channel_8h_source.html">channel.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="container_8h_source.html">container.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for jazz_elements::Locator:</div>
 <div class="dyncontent">
@@ -89,28 +89,89 @@ Inheritance diagram for jazz_elements::Locator:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:af415a10e72099c37640f6d326294eabb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#acf7bf339ba5505b0ecbf219889a6ca8f">pContainer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1Locator.html#af415a10e72099c37640f6d326294eabb">p_owner</a></td></tr>
-<tr class="separator:af415a10e72099c37640f6d326294eabb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bf2ec77ab816dafa947c20cf1854010"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1Locator.html#a2bf2ec77ab816dafa947c20cf1854010">base</a> [<a class="el" href="types_8h.html#ab908b445246a5a6850ca9b80847f73de">SHORT_NAME_SIZE</a>]</td></tr>
+<tr class="memdesc:a2bf2ec77ab816dafa947c20cf1854010"><td class="mdescLeft">&#160;</td><td class="mdescRight">A Jazz node level unique name to locate a <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> and possibly a type of service inside it.  <a href="structjazz__elements_1_1Locator.html#a2bf2ec77ab816dafa947c20cf1854010">More...</a><br /></td></tr>
+<tr class="separator:a2bf2ec77ab816dafa947c20cf1854010"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31d1617bd5e0c73346e87b9c5c1ddbdc"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1Locator.html#a31d1617bd5e0c73346e87b9c5c1ddbdc">entity</a> [<a class="el" href="types_8h.html#a834e9a379307f869a10f4da078be5786">NAME_SIZE</a>]</td></tr>
+<tr class="memdesc:a31d1617bd5e0c73346e87b9c5c1ddbdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Another abstraction inside node.container.base, like the name of a table in a database.  <a href="structjazz__elements_1_1Locator.html#a31d1617bd5e0c73346e87b9c5c1ddbdc">More...</a><br /></td></tr>
+<tr class="separator:a31d1617bd5e0c73346e87b9c5c1ddbdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c183076c4dca6117339b487aceaf806"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1Locator.html#a4c183076c4dca6117339b487aceaf806">key</a> [<a class="el" href="types_8h.html#a834e9a379307f869a10f4da078be5786">NAME_SIZE</a>]</td></tr>
+<tr class="memdesc:a4c183076c4dca6117339b487aceaf806"><td class="mdescLeft">&#160;</td><td class="mdescRight">A key identifying a block inside the entity.  <a href="structjazz__elements_1_1Locator.html#a4c183076c4dca6117339b487aceaf806">More...</a><br /></td></tr>
+<tr class="separator:a4c183076c4dca6117339b487aceaf806"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceff6a67cfe69b3928b8bf4afd987582"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1Locator.html#aceff6a67cfe69b3928b8bf4afd987582">p_extra</a></td></tr>
+<tr class="memdesc:aceff6a67cfe69b3928b8bf4afd987582"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to extend this structure with <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> specific data (like URLs, cookies, credentials).  <a href="structjazz__elements_1_1Locator.html#aceff6a67cfe69b3928b8bf4afd987582">More...</a><br /></td></tr>
+<tr class="separator:aceff6a67cfe69b3928b8bf4afd987582"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="structjazz__elements_1_1Locator.html" title="Locator: A ... TODO: .">Locator</a>: A ... TODO: . </p>
+<div class="textblock"><p><a class="el" href="structjazz__elements_1_1Locator.html" title="Locator: A minimal structure to define the location of resources inside a Container.">Locator</a>: A minimal structure to define the location of resources inside a <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>. </p>
+<p>This is used by all <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> descendants, it can be extended using p_extra to something else. E..g, a UniversalLocator </p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="af415a10e72099c37640f6d326294eabb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af415a10e72099c37640f6d326294eabb">&#9670;&nbsp;</a></span>p_owner</h2>
+<a id="a2bf2ec77ab816dafa947c20cf1854010"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bf2ec77ab816dafa947c20cf1854010">&#9670;&nbsp;</a></span>base</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacejazz__elements.html#acf7bf339ba5505b0ecbf219889a6ca8f">pContainer</a> jazz_elements::Locator::p_owner</td>
+          <td class="memname">char jazz_elements::Locator::base[<a class="el" href="types_8h.html#ab908b445246a5a6850ca9b80847f73de">SHORT_NAME_SIZE</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>A Jazz node level unique name to locate a <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> and possibly a type of service inside it. </p>
+
+</div>
+</div>
+<a id="a31d1617bd5e0c73346e87b9c5c1ddbdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31d1617bd5e0c73346e87b9c5c1ddbdc">&#9670;&nbsp;</a></span>entity</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char jazz_elements::Locator::entity[<a class="el" href="types_8h.html#a834e9a379307f869a10f4da078be5786">NAME_SIZE</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Another abstraction inside node.container.base, like the name of a table in a database. </p>
+
+</div>
+</div>
+<a id="a4c183076c4dca6117339b487aceaf806"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c183076c4dca6117339b487aceaf806">&#9670;&nbsp;</a></span>key</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char jazz_elements::Locator::key[<a class="el" href="types_8h.html#a834e9a379307f869a10f4da078be5786">NAME_SIZE</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A key identifying a block inside the entity. </p>
+
+</div>
+</div>
+<a id="aceff6a67cfe69b3928b8bf4afd987582"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aceff6a67cfe69b3928b8bf4afd987582">&#9670;&nbsp;</a></span>p_extra</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> jazz_elements::Locator::p_extra</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A pointer to extend this structure with <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> specific data (like URLs, cookies, credentials). </p>
+
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="channel_8h_source.html">channel.h</a></li>
+<li><a class="el" href="container_8h_source.html">container.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

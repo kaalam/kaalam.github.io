@@ -90,10 +90,13 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1ParseStateTransition.html">jazz_elements::ParseStateTransition</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1Transaction.html">jazz_elements::Transaction</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block over get/put/remove/cop...">Transaction</a>: A wrapper over a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> that defines the communication of a block over get/put/remove/copy.  <a href="structjazz__elements_1_1Transaction.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a>: A wrapper over a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> that defines the communication of a block with a <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>.  <a href="structjazz__elements_1_1Transaction.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1Locator.html">jazz_elements::Locator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structjazz__elements_1_1Locator.html" title="Locator: A minimal structure to define the location of resources inside a Container.">Locator</a>: A minimal structure to define the location of resources inside a <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>.  <a href="structjazz__elements_1_1Locator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1StoredTransaction.html">jazz_elements::StoredTransaction</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An internal (for <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>) <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block over get/put/remove/cop...">Transaction</a> with pointers for a deque.  <a href="structjazz__elements_1_1StoredTransaction.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An internal (for <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>) <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> with pointers for a deque.  <a href="structjazz__elements_1_1StoredTransaction.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html">jazz_elements::Container</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>: A <a class="el" href="classjazz__elements_1_1Service.html" title="A Jazz Service is a globally instanced configurable object that may allocate RAM.">Service</a> to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of this.  <a href="classjazz__elements_1_1Container.html#details">More...</a><br /></td></tr>
@@ -190,6 +193,18 @@ Macros</h2></td></tr>
 <tr class="memitem:adf382d32aa8c95baa4066359ea13143a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#adf382d32aa8c95baa4066359ea13143a">MAX_TRANSITION_REGEX_LEN</a>&#160;&#160;&#160;32</td></tr>
 <tr class="memdesc:adf382d32aa8c95baa4066359ea13143a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length of regex for state transitions. Used only in constants for LUT construction.  <a href="container_8h.html#adf382d32aa8c95baa4066359ea13143a">More...</a><br /></td></tr>
 <tr class="separator:adf382d32aa8c95baa4066359ea13143a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0e8c1070af8f72a09f07b7c8b0d7873"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#ac0e8c1070af8f72a09f07b7c8b0d7873">WRITE_ALWAYS_COMPLETE</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:ac0e8c1070af8f72a09f07b7c8b0d7873"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default mode with none of the other flags.  <a href="container_8h.html#ac0e8c1070af8f72a09f07b7c8b0d7873">More...</a><br /></td></tr>
+<tr class="separator:ac0e8c1070af8f72a09f07b7c8b0d7873"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71e0e9e3d28f32850c26e43ec5f0224b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a71e0e9e3d28f32850c26e43ec5f0224b">WRITE_ONLY_IF_EXISTS</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:a71e0e9e3d28f32850c26e43ec5f0224b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A .put() call can override, but cannot create a new block.  <a href="container_8h.html#a71e0e9e3d28f32850c26e43ec5f0224b">More...</a><br /></td></tr>
+<tr class="separator:a71e0e9e3d28f32850c26e43ec5f0224b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38f08bb083dd33a492b3b10d8910137b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a38f08bb083dd33a492b3b10d8910137b">WRITE_ONLY_IF_NOT_EXISTS</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memdesc:a38f08bb083dd33a492b3b10d8910137b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A .put() call cannot override, it can only create new blocks.  <a href="container_8h.html#a38f08bb083dd33a492b3b10d8910137b">More...</a><br /></td></tr>
+<tr class="separator:a38f08bb083dd33a492b3b10d8910137b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88dc81f4a27566eb0257b5f239ad1f57"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a88dc81f4a27566eb0257b5f239ad1f57">WRITE_TENSOR_DATA_AS_RAW</a>&#160;&#160;&#160;4</td></tr>
+<tr class="memdesc:a88dc81f4a27566eb0257b5f239ad1f57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fails if not a Tensor, writes the raw data. For e.g., writing files.  <a href="container_8h.html#a88dc81f4a27566eb0257b5f239ad1f57">More...</a><br /></td></tr>
+<tr class="separator:a88dc81f4a27566eb0257b5f239ad1f57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -657,6 +672,70 @@ Typedefs</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Length of regex for state transitions. Used only in constants for LUT construction. </p>
+
+</div>
+</div>
+<a id="ac0e8c1070af8f72a09f07b7c8b0d7873"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0e8c1070af8f72a09f07b7c8b0d7873">&#9670;&nbsp;</a></span>WRITE_ALWAYS_COMPLETE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WRITE_ALWAYS_COMPLETE&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The default mode with none of the other flags. </p>
+
+</div>
+</div>
+<a id="a71e0e9e3d28f32850c26e43ec5f0224b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71e0e9e3d28f32850c26e43ec5f0224b">&#9670;&nbsp;</a></span>WRITE_ONLY_IF_EXISTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WRITE_ONLY_IF_EXISTS&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A .put() call can override, but cannot create a new block. </p>
+
+</div>
+</div>
+<a id="a38f08bb083dd33a492b3b10d8910137b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38f08bb083dd33a492b3b10d8910137b">&#9670;&nbsp;</a></span>WRITE_ONLY_IF_NOT_EXISTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WRITE_ONLY_IF_NOT_EXISTS&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A .put() call cannot override, it can only create new blocks. </p>
+
+</div>
+</div>
+<a id="a88dc81f4a27566eb0257b5f239ad1f57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88dc81f4a27566eb0257b5f239ad1f57">&#9670;&nbsp;</a></span>WRITE_TENSOR_DATA_AS_RAW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WRITE_TENSOR_DATA_AS_RAW&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fails if not a Tensor, writes the raw data. For e.g., writing files. </p>
 
 </div>
 </div>

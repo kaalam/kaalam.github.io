@@ -73,7 +73,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block over get/put/remove/cop...">Transaction</a>: A wrapper over a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> that defines the communication of a block over get/put/remove/copy.  
+<p><a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a>: A wrapper over a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> that defines the communication of a block with a <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>.  
  <a href="structjazz__elements_1_1Transaction.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="container_8h_source.html">container.h</a>&gt;</code></p>
@@ -83,8 +83,7 @@ Inheritance diagram for jazz_elements::Transaction:</div>
  <div class="center">
   <img src="structjazz__elements_1_1Transaction.png" usemap="#jazz_5Felements::Transaction_map" alt=""/>
   <map id="jazz_5Felements::Transaction_map" name="jazz_5Felements::Transaction_map">
-<area href="classjazz__elements_1_1Channel.html" title="Channel: A Transaction descendant that handles Block communication across Containers and Endpoints." alt="jazz_elements::Channel" shape="rect" coords="0,56,199,80"/>
-<area href="structjazz__elements_1_1StoredTransaction.html" title="An internal (for Container) Transaction with pointers for a deque." alt="jazz_elements::StoredTransaction" shape="rect" coords="209,56,408,80"/>
+<area href="structjazz__elements_1_1StoredTransaction.html" title="An internal (for Container) Transaction with pointers for a deque." alt="jazz_elements::StoredTransaction" shape="rect" coords="0,56,199,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -99,11 +98,8 @@ Data Fields</h2></td></tr>
 <tr class="separator:aa08d62282c9a61ed52a5bf1403655900"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb5e6298bd17b41c85ed6abb243a47ca"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:acb5e6298bd17b41c85ed6abb243a47ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f74e442c7e4249949ac38c6f02accd3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1Transaction.html#a7f74e442c7e4249949ac38c6f02accd3">p_route</a></td></tr>
-<tr class="memdesc:a7f74e442c7e4249949ac38c6f02accd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Anything defining the transaction as a (fixed sized) block allocated in an array inside the owner.  <a href="structjazz__elements_1_1Transaction.html#a7f74e442c7e4249949ac38c6f02accd3">More...</a><br /></td></tr>
-<tr class="separator:a7f74e442c7e4249949ac38c6f02accd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ee5319c75e4665a66be4fe17188182c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ac3d6e1b4aca91c99b80bdc759a73699f">Lock32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1Transaction.html#a6ee5319c75e4665a66be4fe17188182c">_lock_</a></td></tr>
-<tr class="memdesc:a6ee5319c75e4665a66be4fe17188182c"><td class="mdescLeft">&#160;</td><td class="mdescRight">An atomically updated int to lock the <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block over get/put/remove/cop...">Transaction</a> to support modifying the <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a>.  <a href="structjazz__elements_1_1Transaction.html#a6ee5319c75e4665a66be4fe17188182c">More...</a><br /></td></tr>
+<tr class="memdesc:a6ee5319c75e4665a66be4fe17188182c"><td class="mdescLeft">&#160;</td><td class="mdescRight">An atomically updated int to lock the <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> to support modifying the <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a>.  <a href="structjazz__elements_1_1Transaction.html#a6ee5319c75e4665a66be4fe17188182c">More...</a><br /></td></tr>
 <tr class="separator:a6ee5319c75e4665a66be4fe17188182c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a964e305c69ac42991cf3e6bfef4e5522"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1Transaction.html#a964e305c69ac42991cf3e6bfef4e5522">status</a></td></tr>
 <tr class="memdesc:a964e305c69ac42991cf3e6bfef4e5522"><td class="mdescLeft">&#160;</td><td class="mdescRight">The status of the block transaction.  <a href="structjazz__elements_1_1Transaction.html#a964e305c69ac42991cf3e6bfef4e5522">More...</a><br /></td></tr>
@@ -113,9 +109,9 @@ Data Fields</h2></td></tr>
 <tr class="separator:af5b0ee5e9f8bc77edf59bc1d73e6dfee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block over get/put/remove/cop...">Transaction</a>: A wrapper over a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> that defines the communication of a block over get/put/remove/copy. </p>
+<div class="textblock"><p><a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a>: A wrapper over a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> that defines the communication of a block with a <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>. </p>
 <p>This minimalist struc is the only block wrapper across anything. Anything is: file I/O, http client CRUD, http server GET and PUT, shell commands, <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a>, <a class="el" href="classjazz__elements_1_1Persisted.html" title="Persisted: A Service to manage data objects in LMDB.">Persisted</a> and <a class="el" href="unionjazz__elements_1_1Index.html" title="A union abstracting all the individual Index types.">Index</a> objects (an stdlib map that serializes to and from a block).</p>
-<p><a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block over get/put/remove/cop...">Transaction</a> allocation is only handled by the owner, a <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> or descendant. </p>
+<p><a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> allocation is only handled by the owner, a <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> or descendant. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="aef29e5845f2fa4beb52d795b5f585118"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aef29e5845f2fa4beb52d795b5f585118">&#9670;&nbsp;</a></span>p_block</h2>
@@ -163,22 +159,6 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a7f74e442c7e4249949ac38c6f02accd3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f74e442c7e4249949ac38c6f02accd3">&#9670;&nbsp;</a></span>p_route</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a> jazz_elements::Transaction::p_route</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Anything defining the transaction as a (fixed sized) block allocated in an array inside the owner. </p>
-
-</div>
-</div>
 <a id="a6ee5319c75e4665a66be4fe17188182c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6ee5319c75e4665a66be4fe17188182c">&#9670;&nbsp;</a></span>_lock_</h2>
 
@@ -191,7 +171,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>An atomically updated int to lock the <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block over get/put/remove/cop...">Transaction</a> to support modifying the <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a>. </p>
+<p>An atomically updated int to lock the <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> to support modifying the <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a>. </p>
 
 </div>
 </div>
