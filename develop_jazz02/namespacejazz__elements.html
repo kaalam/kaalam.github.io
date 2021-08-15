@@ -230,15 +230,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a8adb030d4c0542aa3efbab96080cc982"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a8adb030d4c0542aa3efbab96080cc982">remote_testing_point</a> ()</td></tr>
 <tr class="memdesc:a8adb030d4c0542aa3efbab96080cc982"><td class="mdescLeft">&#160;</td><td class="mdescRight">A remote testing point (libCURL stuff to be modified).  <a href="namespacejazz__elements.html#a8adb030d4c0542aa3efbab96080cc982">More...</a><br /></td></tr>
 <tr class="separator:a8adb030d4c0542aa3efbab96080cc982"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cf579631db7f755d76ce21def56134a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a9cf579631db7f755d76ce21def56134a">compile_next_state_LUT</a> (<a class="el" href="structjazz__elements_1_1ParseNextStateLUT.html">ParseNextStateLUT</a> lut[], int num_states, <a class="el" href="structjazz__elements_1_1ParseStateTransition.html">ParseStateTransition</a> trans[])</td></tr>
+<tr class="memdesc:a9cf579631db7f755d76ce21def56134a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="structjazz__elements_1_1ParseNextStateLUT.html">ParseNextStateLUT</a> compiler: (This is only used to create constants used by parsers.)  <a href="namespacejazz__elements.html#a9cf579631db7f755d76ce21def56134a">More...</a><br /></td></tr>
+<tr class="separator:a9cf579631db7f755d76ce21def56134a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d46e4f3ad15a5b0395e1daffbe5b950"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a4d46e4f3ad15a5b0395e1daffbe5b950">R_ValueOfNA</a> ()</td></tr>
 <tr class="memdesc:a4d46e4f3ad15a5b0395e1daffbe5b950"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an R-compatible numeric NA.  <a href="namespacejazz__elements.html#a4d46e4f3ad15a5b0395e1daffbe5b950">More...</a><br /></td></tr>
 <tr class="separator:a4d46e4f3ad15a5b0395e1daffbe5b950"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b3cfd7adaf27184b08bbf9bd82c45f7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a9b3cfd7adaf27184b08bbf9bd82c45f7">FileExists</a> (const char *file_name)</td></tr>
 <tr class="memdesc:a9b3cfd7adaf27184b08bbf9bd82c45f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a file exists.  <a href="namespacejazz__elements.html#a9b3cfd7adaf27184b08bbf9bd82c45f7">More...</a><br /></td></tr>
 <tr class="separator:a9b3cfd7adaf27184b08bbf9bd82c45f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7474f4883f1062d103d1278d57628cf4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a7474f4883f1062d103d1278d57628cf4">CountBytesFromUtf8</a> (char *buff, int length)</td></tr>
-<tr class="memdesc:a7474f4883f1062d103d1278d57628cf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of bytes required by an utf-8 string of length characters.  <a href="namespacejazz__elements.html#a7474f4883f1062d103d1278d57628cf4">More...</a><br /></td></tr>
-<tr class="separator:a7474f4883f1062d103d1278d57628cf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd88c9d26ad86930e276f94959feb634"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#acd88c9d26ad86930e276f94959feb634">ExpandEscapeSequences</a> (char *buff)</td></tr>
 <tr class="memdesc:acd88c9d26ad86930e276f94959feb634"><td class="mdescLeft">&#160;</td><td class="mdescRight">Expand escaped strings at run-time.  <a href="namespacejazz__elements.html#acd88c9d26ad86930e276f94959feb634">More...</a><br /></td></tr>
 <tr class="separator:acd88c9d26ad86930e276f94959feb634"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -819,6 +819,42 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a9cf579631db7f755d76ce21def56134a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cf579631db7f755d76ce21def56134a">&#9670;&nbsp;</a></span>compile_next_state_LUT()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void jazz_elements::compile_next_state_LUT </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structjazz__elements_1_1ParseNextStateLUT.html">ParseNextStateLUT</a>&#160;</td>
+          <td class="paramname"><em>lut</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num_states</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structjazz__elements_1_1ParseStateTransition.html">ParseStateTransition</a>&#160;</td>
+          <td class="paramname"><em>trans</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The <a class="el" href="structjazz__elements_1_1ParseNextStateLUT.html">ParseNextStateLUT</a> compiler: (This is only used to create constants used by parsers.) </p>
+
+</div>
+</div>
 <a id="a4d46e4f3ad15a5b0395e1daffbe5b950"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4d46e4f3ad15a5b0395e1daffbe5b950">&#9670;&nbsp;</a></span>R_ValueOfNA()</h2>
 
@@ -871,51 +907,6 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the file exists </dd></dl>
 
-</div>
-</div>
-<a id="a7474f4883f1062d103d1278d57628cf4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7474f4883f1062d103d1278d57628cf4">&#9670;&nbsp;</a></span>CountBytesFromUtf8()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int jazz_elements::CountBytesFromUtf8 </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>buff</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>length</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Count the number of bytes required by an utf-8 string of length characters. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">buff</td><td>The string (not necessarily null-terminated) </td></tr>
-    <tr><td class="paramname">length</td><td>The number of characters in the string</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The number of bytes in the string.</dd></dl>
-<p>The RFC <a href="http://www.ietf.org/rfc/rfc3629.txt">http://www.ietf.org/rfc/rfc3629.txt</a> says: </p><pre class="fragment">Char. number range  | UTF-8 octet sequence
-(hexadecimal)       | (binary)
---------------------+---------------------------------------------
-0000 0000-0000 007F | 0xxxxxxx
-0000 0080-0000 07FF | 110xxxxx 10xxxxxx
-0000 0800-0000 FFFF | 1110xxxx 10xxxxxx 10xxxxxx
-0001 0000-0010 FFFF | 11110xxx 10xxxxxx 10xxxxxx 10xxxxxx
-</pre> 
 </div>
 </div>
 <a id="acd88c9d26ad86930e276f94959feb634"></a>

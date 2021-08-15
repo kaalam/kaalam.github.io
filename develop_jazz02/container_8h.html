@@ -70,7 +70,8 @@ $(function() {
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">container.h File Reference</div>  </div>
 </div><!--header-->
@@ -193,6 +194,9 @@ Macros</h2></td></tr>
 <tr class="memitem:adf382d32aa8c95baa4066359ea13143a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#adf382d32aa8c95baa4066359ea13143a">MAX_TRANSITION_REGEX_LEN</a>&#160;&#160;&#160;32</td></tr>
 <tr class="memdesc:adf382d32aa8c95baa4066359ea13143a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length of regex for state transitions. Used only in constants for LUT construction.  <a href="container_8h.html#adf382d32aa8c95baa4066359ea13143a">More...</a><br /></td></tr>
 <tr class="separator:adf382d32aa8c95baa4066359ea13143a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ae2cf4df7c3575c0f54d1b4c5d466e5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a3ae2cf4df7c3575c0f54d1b4c5d466e5">PSTATE_INVALID_CHAR</a>&#160;&#160;&#160;255</td></tr>
+<tr class="memdesc:a3ae2cf4df7c3575c0f54d1b4c5d466e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parser state: The MOST GENERIC parsing error: char goes to invalid state.  <a href="container_8h.html#a3ae2cf4df7c3575c0f54d1b4c5d466e5">More...</a><br /></td></tr>
+<tr class="separator:a3ae2cf4df7c3575c0f54d1b4c5d466e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0e8c1070af8f72a09f07b7c8b0d7873"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#ac0e8c1070af8f72a09f07b7c8b0d7873">WRITE_ALWAYS_COMPLETE</a>&#160;&#160;&#160;0</td></tr>
 <tr class="memdesc:ac0e8c1070af8f72a09f07b7c8b0d7873"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default mode with none of the other flags.  <a href="container_8h.html#ac0e8c1070af8f72a09f07b7c8b0d7873">More...</a><br /></td></tr>
 <tr class="separator:ac0e8c1070af8f72a09f07b7c8b0d7873"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -221,6 +225,12 @@ Typedefs</h2></td></tr>
 <tr class="separator:a3ef76aca99379bae1f286a62869de040"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fcd912edad1ed3dbb10f97e734d7185"><td class="memItemLeft" align="right" valign="top">typedef StoredTransaction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a6fcd912edad1ed3dbb10f97e734d7185">jazz_elements::pStoredTransaction</a></td></tr>
 <tr class="separator:a6fcd912edad1ed3dbb10f97e734d7185"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a9cf579631db7f755d76ce21def56134a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a9cf579631db7f755d76ce21def56134a">jazz_elements::compile_next_state_LUT</a> (ParseNextStateLUT lut[], int num_states, ParseStateTransition trans[])</td></tr>
+<tr class="memdesc:a9cf579631db7f755d76ce21def56134a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="structjazz__elements_1_1ParseNextStateLUT.html">ParseNextStateLUT</a> compiler: (This is only used to create constants used by parsers.)  <a href="namespacejazz__elements.html#a9cf579631db7f755d76ce21def56134a">More...</a><br /></td></tr>
+<tr class="separator:a9cf579631db7f755d76ce21def56134a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a607a0b73de9c3e6bc9ecdf3fa3f11d59"></a>
@@ -672,6 +682,22 @@ Typedefs</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Length of regex for state transitions. Used only in constants for LUT construction. </p>
+
+</div>
+</div>
+<a id="a3ae2cf4df7c3575c0f54d1b4c5d466e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ae2cf4df7c3575c0f54d1b4c5d466e5">&#9670;&nbsp;</a></span>PSTATE_INVALID_CHAR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PSTATE_INVALID_CHAR&#160;&#160;&#160;255</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parser state: The MOST GENERIC parsing error: char goes to invalid state. </p>
 
 </div>
 </div>

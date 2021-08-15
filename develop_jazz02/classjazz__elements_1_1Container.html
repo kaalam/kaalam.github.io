@@ -300,19 +300,19 @@ Private Attributes</h2></td></tr>
 <ul>
 <li>A transparent deque of <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> structures</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md0"></a>
+<h2><a class="anchor" id="autotoc_md1"></a>
 One-shot Block allocation</h2>
 <p>This is the only container providing one-shot <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> allocation. This does not mean, unlike in previous versions, the caller owns the pointer. One-shot <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> allocation is intended for computing intermediate blocks like: blocks generated from constants, from slicing, returned by functions, etc. In these blocks, the locator is meaningless, the caller will create it by <a class="el" href="classjazz__elements_1_1Container.html#afd29e008d84b128940e6eab853c2aae2">new_block()</a>, use it and call <a class="el" href="classjazz__elements_1_1Container.html#a00ad2a85f71fe0269aaa3a955126a897">destroy()</a> when done.</p>
-<h2><a class="anchor" id="autotoc_md1"></a>
+<h2><a class="anchor" id="autotoc_md2"></a>
 Instances and inheritance</h2>
 <p>Note that the descendants don't inherit each other, but they all have the basic deque mechanism inherited from <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>: i.e., they can all allocate new blocks for their own purposes. Configuration-wise the allocations set by ONE_SHOT_MAX_TRANSACTIONS, ONE_SHOT_WARN_BLOCK_KBYTES, ... only apply to the instance of the class <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>, the descendants use their own limits in which they include this allocation combined with whatever other allocations they do. The total allocation of the Jazz node is the sum of all (plus some small amount used by libraries, etc. that is not dependant on data size).</p>
-<h2><a class="anchor" id="autotoc_md2"></a>
+<h2><a class="anchor" id="autotoc_md3"></a>
 Container descendants</h2>
 <p>Note that Continers own their Transactions and may allocate p_route blocks including all kinds of things like session cookies or credentials for libcurl calls. Any container will reroute a <a class="el" href="classjazz__elements_1_1Container.html#a00ad2a85f71fe0269aaa3a955126a897">destroy()</a> call to its owner.</p>
-<h2><a class="anchor" id="autotoc_md3"></a>
+<h2><a class="anchor" id="autotoc_md4"></a>
 Scope of jazz_elements</h2>
 <p>Everything works at binary level, operations on blocks at this level are very simple, just copying, deleting, filtering a <a class="el" href="unionjazz__elements_1_1Tensor.html" title="A tensor of cell size 1, 4, 8 or sizeof(BlockHeader)">Tensor</a> by (int or bool) indices, filtering a <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz Block with multiple Tensors.">Tuple</a> by item name and support every medium in the more conceivably efficient way. Serialization (to and from text) is done at the Api level, running code in <a class="el" href="namespacejazz__bebop.html" title="Bebop, cores, kernel and extending the language.">jazz_bebop</a> and agency (yomi) at <a class="el" href="namespacejazz__agency.html" title="Agency: learning, building flʌkpilers and graphs of flʌkpilers (== Agents).">jazz_agency</a>.</p>
-<h2><a class="anchor" id="autotoc_md4"></a>
+<h2><a class="anchor" id="autotoc_md5"></a>
 new_block()</h2>
 <p>NOTE** that <a class="el" href="classjazz__elements_1_1Container.html#afd29e008d84b128940e6eab853c2aae2">new_block()</a> has 7 forms. It is always called <a class="el" href="classjazz__elements_1_1Container.html#afd29e008d84b128940e6eab853c2aae2">new_block()</a> to emphasize that what the funcion does is create a new block (vs. sharing a pointer to an existing one). Therefore, the container allocates and owns it an requires a <a class="el" href="classjazz__elements_1_1Container.html#a00ad2a85f71fe0269aaa3a955126a897">destroy()</a> call when no longer needed. The forms cover all the supported ways to do basic operations like filtering and serializing.</p>
 <ol type="1">
@@ -3047,8 +3047,17 @@ new_block()</h2>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The length in bytes required to store the output if p_dest == nullptr</dd></dl>
 <p>The serialization includes NA identification, double quotes, commas spaces an square brackets to define the shape.</p>
-<p>NOTE** that this escapes all non-vanilla ASCI characters, non printable (below 32), the blackslash and the double quote. </p>
-
+<p>NOTE** that this escapes all non-vanilla ASCI characters, non printable (below 32), the blackslash and the double quote.</p>
+<h2><a class="anchor" id="autotoc_md0"></a>
+How UTF-8 works</h2>
+<p>The RFC <a href="http://www.ietf.org/rfc/rfc3629.txt">http://www.ietf.org/rfc/rfc3629.txt</a> says: </p><pre class="fragment">Char. number range  | UTF-8 octet sequence
+(hexadecimal)       | (binary)
+--------------------+---------------------------------------------
+0000 0000-0000 007F | 0xxxxxxx
+0000 0080-0000 07FF | 110xxxxx 10xxxxxx
+0000 0800-0000 FFFF | 1110xxxx 10xxxxxx 10xxxxxx
+0001 0000-0010 FFFF | 11110xxx 10xxxxxx 10xxxxxx 10xxxxxx
+</pre> 
 </div>
 </div>
 <a id="acfdf7ace27a706a2ebe24445cc019373"></a>

@@ -70,6 +70,7 @@ $(function() {
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">container.cpp File Reference</div>  </div>
@@ -129,9 +130,6 @@ Macros</h2></td></tr>
 <tr class="memitem:a2af6bcc5187fe6040a315da36a4b6b6a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8cpp.html#a2af6bcc5187fe6040a315da36a4b6b6a">NUM_STATE_TRANSITIONS</a>&#160;&#160;&#160;74</td></tr>
 <tr class="memdesc:a2af6bcc5187fe6040a315da36a4b6b6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of state transitions in the parsing grammar. Applies to const only.  <a href="container_8cpp.html#a2af6bcc5187fe6040a315da36a4b6b6a">More...</a><br /></td></tr>
 <tr class="separator:a2af6bcc5187fe6040a315da36a4b6b6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ae2cf4df7c3575c0f54d1b4c5d466e5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8cpp.html#a3ae2cf4df7c3575c0f54d1b4c5d466e5">PSTATE_INVALID_CHAR</a>&#160;&#160;&#160;255</td></tr>
-<tr class="memdesc:a3ae2cf4df7c3575c0f54d1b4c5d466e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parser state: The MOST GENERIC parsing error: char goes to invalid state.  <a href="container_8cpp.html#a3ae2cf4df7c3575c0f54d1b4c5d466e5">More...</a><br /></td></tr>
-<tr class="separator:a3ae2cf4df7c3575c0f54d1b4c5d466e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3449fcf86766ae50467d0e5da61833e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8cpp.html#ad3449fcf86766ae50467d0e5da61833e">PSTATE_IN_AUTO</a>&#160;&#160;&#160;0</td></tr>
 <tr class="memdesc:ad3449fcf86766ae50467d0e5da61833e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parser state: Reached "[" (shape in), cell type is CELL_TYPE_UNDEFINED.  <a href="container_8cpp.html#ad3449fcf86766ae50467d0e5da61833e">More...</a><br /></td></tr>
 <tr class="separator:ad3449fcf86766ae50467d0e5da61833e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -218,6 +216,12 @@ Macros</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:a74c455d5540b250c87f151615c732ecd"><td class="memItemLeft" align="right" valign="top">typedef ParseStateTransition&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a74c455d5540b250c87f151615c732ecd">jazz_elements::ParseStateTransitions</a>[<a class="el" href="api_8cpp.html#a2af6bcc5187fe6040a315da36a4b6b6a">NUM_STATE_TRANSITIONS</a>]</td></tr>
 <tr class="separator:a74c455d5540b250c87f151615c732ecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a9cf579631db7f755d76ce21def56134a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a9cf579631db7f755d76ce21def56134a">jazz_elements::compile_next_state_LUT</a> (ParseNextStateLUT lut[], int num_states, ParseStateTransition trans[])</td></tr>
+<tr class="memdesc:a9cf579631db7f755d76ce21def56134a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="structjazz__elements_1_1ParseNextStateLUT.html">ParseNextStateLUT</a> compiler: (This is only used to create constants used by parsers.)  <a href="namespacejazz__elements.html#a9cf579631db7f755d76ce21def56134a">More...</a><br /></td></tr>
+<tr class="separator:a9cf579631db7f755d76ce21def56134a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -544,22 +548,6 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Maximum number of state transitions in the parsing grammar. Applies to const only. </p>
-
-</div>
-</div>
-<a id="a3ae2cf4df7c3575c0f54d1b4c5d466e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ae2cf4df7c3575c0f54d1b4c5d466e5">&#9670;&nbsp;</a></span>PSTATE_INVALID_CHAR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PSTATE_INVALID_CHAR&#160;&#160;&#160;255</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Parser state: The MOST GENERIC parsing error: char goes to invalid state. </p>
 
 </div>
 </div>

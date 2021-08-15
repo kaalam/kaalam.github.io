@@ -104,10 +104,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af326dc725326e9e73434aeb9a99538f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e6caba34dc6f3cf66624d47374ed1d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="api_8h.html#addfe8a731ae492e2afd535f4eea99308">MHD_Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html#a5e6caba34dc6f3cf66624d47374ed1d8">return_error_message</a> (struct MHD_Connection *connection, int http_status)</td></tr>
 <tr class="separator:a5e6caba34dc6f3cf66624d47374ed1d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca3bbc127e3a961ad5b1443567bf8490"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html#aca3bbc127e3a961ad5b1443567bf8490">upload</a> (<a class="el" href="structjazz__main_1_1HttpQueryState.html">HttpQueryState</a> &amp;q_state, const char *upload, size_t size, bool continue_upload)</td></tr>
-<tr class="separator:aca3bbc127e3a961ad5b1443567bf8490"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae237f24738500ea1bab24e1da2ac4b37"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html#ae237f24738500ea1bab24e1da2ac4b37">remove</a> (<a class="el" href="structjazz__main_1_1HttpQueryState.html">HttpQueryState</a> &amp;q_state)</td></tr>
-<tr class="separator:ae237f24738500ea1bab24e1da2ac4b37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05a452f4f87d29544c26b20a09832621"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html#a05a452f4f87d29544c26b20a09832621">http_put</a> (<a class="el" href="structjazz__main_1_1HttpQueryState.html">HttpQueryState</a> &amp;q_state, const char *p_upload, size_t size, bool continue_upload)</td></tr>
+<tr class="separator:a05a452f4f87d29544c26b20a09832621"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab52ea91afc756d858d47d877d018778"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html#aab52ea91afc756d858d47d877d018778">http_delete</a> (<a class="el" href="structjazz__main_1_1HttpQueryState.html">HttpQueryState</a> &amp;q_state)</td></tr>
+<tr class="separator:aab52ea91afc756d858d47d877d018778"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae88bd5f41d3c07c577d479a21bc9469f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html#ae88bd5f41d3c07c577d479a21bc9469f">http_get</a> (<a class="el" href="structjazz__main_1_1HttpQueryState.html">HttpQueryState</a> &amp;q_state, <a class="el" href="namespacejazz__main.html#a9d502f9732a9b9206a07f3a78c42fe18">pMHD_Response</a> &amp;response)</td></tr>
 <tr class="separator:ae88bd5f41d3c07c577d479a21bc9469f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classjazz__elements_1_1Container"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classjazz__elements_1_1Container')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classjazz__elements_1_1Container.html">jazz_elements::Container</a></td></tr>
@@ -384,7 +384,7 @@ Private Attributes</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">url</td><td>The http url (that has already been checked to start with //) </td></tr>
     <tr><td class="paramname">method</td><td>The http method in [HTTP_NOTUSED .. HTTP_DELETE] </td></tr>
-    <tr><td class="paramname">pars</td><td>A structure with the parts the url successfully parsed ready to be executed. </td></tr>
+    <tr><td class="paramname">q_state</td><td>A structure with the parts the url successfully parsed ready to be executed. </td></tr>
     <tr><td class="paramname">execution</td><td>If true (default), locks the nested blocks and creates constants as blocks in the R_Value. Ready for execution.</td></tr>
   </table>
   </dd>
@@ -397,9 +397,9 @@ Private Attributes</h2></td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">HTTP_GET, HTTP_HEAD </td><td class="markdownTableBodyNone"><a class="el" href="classjazz__main_1_1Api.html#ae88bd5f41d3c07c577d479a21bc9469f">Api.http_get()</a>  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">HTTP_PUT </td><td class="markdownTableBodyNone"><a class="el" href="classjazz__main_1_1Api.html#aca3bbc127e3a961ad5b1443567bf8490">Api.upload()</a>  </td></tr>
+<td class="markdownTableBodyNone">HTTP_PUT </td><td class="markdownTableBodyNone"><a class="el" href="classjazz__main_1_1Api.html#a05a452f4f87d29544c26b20a09832621">Api.http_put()</a>  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">HTTP_DELETE </td><td class="markdownTableBodyNone"><a class="el" href="classjazz__main_1_1Api.html#ae237f24738500ea1bab24e1da2ac4b37">Api.remove()</a>  </td></tr>
+<td class="markdownTableBodyNone">HTTP_DELETE </td><td class="markdownTableBodyNone"><a class="el" href="classjazz__main_1_1Api.html#aab52ea91afc756d858d47d877d018778">Api.http_delete()</a>  </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">HTTP_OPTIONS </td><td class="markdownTableBodyNone">Nothing: options calls must call with <code>execution = false</code>  </td></tr>
 </table>
@@ -488,14 +488,14 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aca3bbc127e3a961ad5b1443567bf8490"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca3bbc127e3a961ad5b1443567bf8490">&#9670;&nbsp;</a></span>upload()</h2>
+<a id="a05a452f4f87d29544c26b20a09832621"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05a452f4f87d29544c26b20a09832621">&#9670;&nbsp;</a></span>http_put()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool jazz_main::Api::upload </td>
+          <td class="memname">bool jazz_main::Api::http_put </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structjazz__main_1_1HttpQueryState.html">HttpQueryState</a> &amp;&#160;</td>
           <td class="paramname"><em>q_state</em>, </td>
@@ -504,7 +504,7 @@ Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>upload</em>, </td>
+          <td class="paramname"><em>p_upload</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -528,8 +528,8 @@ Private Attributes</h2></td></tr>
 <p>Execute a put block using some one-shot block as an intermediate buffer.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parse_buff</td><td>The structure containing the parts of the url successfully parsed. </td></tr>
-    <tr><td class="paramname">upload</td><td>A pointer to the data uploaded with the http PUT call. </td></tr>
+    <tr><td class="paramname">q_state</td><td>The structure containing the parts of the url successfully parsed. </td></tr>
+    <tr><td class="paramname">p_upload</td><td>A pointer to the data uploaded with the http PUT call. </td></tr>
     <tr><td class="paramname">size</td><td>The size of the data uploaded with the http PUT call. </td></tr>
     <tr><td class="paramname">continue_upload</td><td>If true, the upload is added at the end of the already existing block.</td></tr>
   </table>
@@ -541,14 +541,14 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ae237f24738500ea1bab24e1da2ac4b37"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae237f24738500ea1bab24e1da2ac4b37">&#9670;&nbsp;</a></span>remove()</h2>
+<a id="aab52ea91afc756d858d47d877d018778"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab52ea91afc756d858d47d877d018778">&#9670;&nbsp;</a></span>http_delete()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool jazz_main::Api::remove </td>
+          <td class="memname">bool jazz_main::Api::http_delete </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structjazz__main_1_1HttpQueryState.html">HttpQueryState</a> &amp;&#160;</td>
           <td class="paramname"><em>q_state</em></td><td>)</td>
@@ -559,7 +559,7 @@ Private Attributes</h2></td></tr>
 <p>Execute an http DELETE of a block using the block API.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parse_buff</td><td>The structure containing the parts of the url successfully parsed.</td></tr>
+    <tr><td class="paramname">q_state</td><td>The structure containing the parts of the url successfully parsed.</td></tr>
   </table>
   </dd>
 </dl>
@@ -596,7 +596,7 @@ Private Attributes</h2></td></tr>
 <p>Execute a get block using the instrumental API.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parse_buff</td><td>The structure containing the parts of the url successfully parsed. </td></tr>
+    <tr><td class="paramname">q_state</td><td>The structure containing the parts of the url successfully parsed. </td></tr>
     <tr><td class="paramname">response</td><td>A valid (or error) MHD_Response pointer with the resource, status, mime, etc.</td></tr>
   </table>
   </dd>
