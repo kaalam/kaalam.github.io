@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['entity_803',['entity',['../structjazz__elements_1_1Locator.html#a31d1617bd5e0c73346e87b9c5c1ddbdc',1,'jazz_elements::Locator']]],
-  ['epi_804',['EPI',['../namespacejazz__main.html#a1b82979f33b26c70a17fcb5de1dc581e',1,'jazz_main']]],
-  ['escape_5flow_5fascii_805',['ESCAPE_LOW_ASCII',['../namespacejazz__elements.html#ae22afa09813dc11d381e9a929a52b42b',1,'jazz_elements']]]
+  ['entity_838',['entity',['../structjazz__elements_1_1Locator.html#a31d1617bd5e0c73346e87b9c5c1ddbdc',1,'jazz_elements::Locator']]],
+  ['env_5fset_5fmapsize_839',['env_set_mapsize',['../structjazz__elements_1_1JazzLmdbOptions.html#aa1ffbef95e961f6f2b4839663833df04',1,'jazz_elements::JazzLmdbOptions']]],
+  ['env_5fset_5fmaxdbs_840',['env_set_maxdbs',['../structjazz__elements_1_1JazzLmdbOptions.html#a764161bff08aa194821cb6e929a3a359',1,'jazz_elements::JazzLmdbOptions']]],
+  ['env_5fset_5fmaxreaders_841',['env_set_maxreaders',['../structjazz__elements_1_1JazzLmdbOptions.html#ab222b37eebb05afd0b8dd1a2c4e5c383',1,'jazz_elements::JazzLmdbOptions']]],
+  ['epi_842',['EPI',['../namespacejazz__main.html#a1b82979f33b26c70a17fcb5de1dc581e',1,'jazz_main']]],
+  ['escape_5flow_5fascii_843',['ESCAPE_LOW_ASCII',['../namespacejazz__elements.html#ae22afa09813dc11d381e9a929a52b42b',1,'jazz_elements']]]
 ];

@@ -101,6 +101,9 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1ItemHeader.html">ItemHeader</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header for an item (of a <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for Jazz Blocks and Tuples.">Kind</a> or <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz Block with multiple Tensors.">Tuple</a>)  <a href="structjazz__elements_1_1ItemHeader.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1JazzLmdbOptions.html">JazzLmdbOptions</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">All the necessary LMDB options (a binary representation of the values in the config file)  <a href="structjazz__elements_1_1JazzLmdbOptions.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Kind.html">Kind</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for Jazz Blocks and Tuples.">Kind</a>: A type definition for Jazz Blocks and Tuples.  <a href="classjazz__elements_1_1Kind.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,6 +175,12 @@ Typedefs</h2></td></tr>
 <tr class="separator:a6fcd912edad1ed3dbb10f97e734d7185"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d84d2b4bae53bfa0256db5bd0193656"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classjazz__elements_1_1Kind.html">Kind</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a6d84d2b4bae53bfa0256db5bd0193656">pKind</a></td></tr>
 <tr class="separator:a6d84d2b4bae53bfa0256db5bd0193656"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b66aa81bf225b5653d565b87196f6d1"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::string, MDB_dbi &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a0b66aa81bf225b5653d565b87196f6d1">DBImap</a></td></tr>
+<tr class="memdesc:a0b66aa81bf225b5653d565b87196f6d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The lmdb MDB_dbi handles for each source.  <a href="namespacejazz__elements.html#a0b66aa81bf225b5653d565b87196f6d1">More...</a><br /></td></tr>
+<tr class="separator:a0b66aa81bf225b5653d565b87196f6d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59cfd109724f06a17a43532662d9a513"><td class="memItemLeft" align="right" valign="top">typedef MDB_txn *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a59cfd109724f06a17a43532662d9a513">pMDB_txn</a></td></tr>
+<tr class="memdesc:a59cfd109724f06a17a43532662d9a513"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to a MDB_txn structure which is what mdb_txn_begin() returns.  <a href="namespacejazz__elements.html#a59cfd109724f06a17a43532662d9a513">More...</a><br /></td></tr>
+<tr class="separator:a59cfd109724f06a17a43532662d9a513"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a918dc76d77eac5ff1949366261539368"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classjazz__elements_1_1Persisted.html">Persisted</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a918dc76d77eac5ff1949366261539368">pPersisted</a></td></tr>
 <tr class="separator:a918dc76d77eac5ff1949366261539368"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07b590209f1036d836732e9a3370e50e"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classjazz__elements_1_1Tuple.html">Tuple</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a07b590209f1036d836732e9a3370e50e">pTuple</a></td></tr>
@@ -448,6 +457,38 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0b66aa81bf225b5653d565b87196f6d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b66aa81bf225b5653d565b87196f6d1">&#9670;&nbsp;</a></span>DBImap</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::map&lt;std::string, MDB_dbi&gt; <a class="el" href="namespacejazz__elements.html#a0b66aa81bf225b5653d565b87196f6d1">jazz_elements::DBImap</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The lmdb MDB_dbi handles for each source. </p>
+
+</div>
+</div>
+<a id="a59cfd109724f06a17a43532662d9a513"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59cfd109724f06a17a43532662d9a513">&#9670;&nbsp;</a></span>pMDB_txn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef MDB_txn* <a class="el" href="namespacejazz__elements.html#a59cfd109724f06a17a43532662d9a513">jazz_elements::pMDB_txn</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A pointer to a MDB_txn structure which is what mdb_txn_begin() returns. </p>
 
 </div>
 </div>

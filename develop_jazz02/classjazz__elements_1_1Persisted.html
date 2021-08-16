@@ -68,7 +68,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a>  </div>
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">jazz_elements::Persisted Class Reference</div>  </div>
 </div><!--header-->
@@ -94,8 +95,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1d7eff67e2869078bb4bbdaa0eea9424"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html#a1d7eff67e2869078bb4bbdaa0eea9424">Persisted</a> (<a class="el" href="namespacejazz__elements.html#a6d95828c9ae09a43b64388aad469aa66">pLogger</a> a_logger, <a class="el" href="namespacejazz__elements.html#abe347aade1e2471420c9ec5d5a251e1a">pConfigFile</a> a_config)</td></tr>
 <tr class="separator:a1d7eff67e2869078bb4bbdaa0eea9424"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac71e44e58eadb4289c98ba79755ec369"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html#ac71e44e58eadb4289c98ba79755ec369">start</a> ()</td></tr>
+<tr class="memdesc:ac71e44e58eadb4289c98ba79755ec369"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the service, checking the environment and building the databases.  <a href="classjazz__elements_1_1Persisted.html#ac71e44e58eadb4289c98ba79755ec369">More...</a><br /></td></tr>
 <tr class="separator:ac71e44e58eadb4289c98ba79755ec369"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b2348933f2cc979351770567bc89ac3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html#a2b2348933f2cc979351770567bc89ac3">shut_down</a> ()</td></tr>
+<tr class="memdesc:a2b2348933f2cc979351770567bc89ac3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shuts down the <a class="el" href="classjazz__elements_1_1Persisted.html" title="Persisted: A Service to manage data objects in LMDB.">Persisted</a> <a class="el" href="classjazz__elements_1_1Service.html" title="A Jazz Service is a globally instanced configurable object that may allocate RAM.">Service</a>.  <a href="classjazz__elements_1_1Persisted.html#a2b2348933f2cc979351770567bc89ac3">More...</a><br /></td></tr>
 <tr class="separator:a2b2348933f2cc979351770567bc89ac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab59d950ee5ccdc16e3d84673857fb00c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html#ab59d950ee5ccdc16e3d84673857fb00c">get</a> (<a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> &amp;p_txn, <a class="el" href="structjazz__elements_1_1Locator.html">Locator</a> &amp;what)</td></tr>
 <tr class="separator:ab59d950ee5ccdc16e3d84673857fb00c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -103,8 +106,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa337c37d9dded557dd51df624b262291"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a774d74805afa6e1dcc9416a2e2c7230c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html#a774d74805afa6e1dcc9416a2e2c7230c">get</a> (<a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> &amp;p_txn, <a class="el" href="structjazz__elements_1_1Locator.html">Locator</a> &amp;what, <a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> name)</td></tr>
 <tr class="separator:a774d74805afa6e1dcc9416a2e2c7230c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21f1cc206df27862782c799cecf4511c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html#a21f1cc206df27862782c799cecf4511c">header</a> (<a class="el" href="structjazz__elements_1_1StaticBlockHeader.html">StaticBlockHeader</a> &amp;p_txn, <a class="el" href="structjazz__elements_1_1Locator.html">Locator</a> &amp;what)</td></tr>
-<tr class="separator:a21f1cc206df27862782c799cecf4511c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecc700a783da514310c71f72f8740dae"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html#aecc700a783da514310c71f72f8740dae">header</a> (<a class="el" href="structjazz__elements_1_1StaticBlockHeader.html">StaticBlockHeader</a> &amp;hea, <a class="el" href="structjazz__elements_1_1Locator.html">Locator</a> &amp;what)</td></tr>
+<tr class="separator:aecc700a783da514310c71f72f8740dae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2597b9ca888cd1e5fc7be34f7e53b320"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html#a2597b9ca888cd1e5fc7be34f7e53b320">header</a> (<a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> &amp;p_txn, <a class="el" href="structjazz__elements_1_1Locator.html">Locator</a> &amp;what)</td></tr>
 <tr class="separator:a2597b9ca888cd1e5fc7be34f7e53b320"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8f9163a7e70ea13735301b06b2a2c82"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html#ad8f9163a7e70ea13735301b06b2a2c82">put</a> (<a class="el" href="structjazz__elements_1_1Locator.html">Locator</a> &amp;where, <a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a> p_block, int mode=<a class="el" href="container_8h.html#ac0e8c1070af8f72a09f07b7c8b0d7873">WRITE_ALWAYS_COMPLETE</a>)</td></tr>
@@ -133,8 +136,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad5e83933fb04f297fb55e11ad80d3a1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85788592b507e29795cf90f044af275c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html#a85788592b507e29795cf90f044af275c">header</a> (<a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> &amp;p_txn, <a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> p_what)</td></tr>
 <tr class="separator:a85788592b507e29795cf90f044af275c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93261d6c5e066cbe82497ca074db07a5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html#a93261d6c5e066cbe82497ca074db07a5">header</a> (<a class="el" href="structjazz__elements_1_1StaticBlockHeader.html">StaticBlockHeader</a> &amp;p_txn, <a class="el" href="structjazz__elements_1_1Locator.html">Locator</a> &amp;what)</td></tr>
-<tr class="separator:a93261d6c5e066cbe82497ca074db07a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28df5cb606cb614aa531e13dd2c270bc"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html#a28df5cb606cb614aa531e13dd2c270bc">header</a> (<a class="el" href="structjazz__elements_1_1StaticBlockHeader.html">StaticBlockHeader</a> &amp;hea, <a class="el" href="structjazz__elements_1_1Locator.html">Locator</a> &amp;what)</td></tr>
+<tr class="separator:a28df5cb606cb614aa531e13dd2c270bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad71aa048f2d6931db727c82d3d9bd12e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html#ad71aa048f2d6931db727c82d3d9bd12e">header</a> (<a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> &amp;p_txn, <a class="el" href="structjazz__elements_1_1Locator.html">Locator</a> &amp;what)</td></tr>
 <tr class="separator:ad71aa048f2d6931db727c82d3d9bd12e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74d82b5dd3c8d1d5dd044f285f7defdc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html#a74d82b5dd3c8d1d5dd044f285f7defdc">put</a> (<a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> p_where, <a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a> p_block, int mode=<a class="el" href="container_8h.html#ac0e8c1070af8f72a09f07b7c8b0d7873">WRITE_ALWAYS_COMPLETE</a>)</td></tr>
@@ -224,6 +227,49 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:af499f7e1efc08ce1313686ef2c1a36cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f353aea263dd410530e41eb507a95c4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html#a5f353aea263dd410530e41eb507a95c4">check_block</a> (<a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a> p_block)</td></tr>
 <tr class="separator:a5f353aea263dd410530e41eb507a95c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc0f3359242a82091fa8eddd3e8002c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html#afc0f3359242a82091fa8eddd3e8002c0">lock_pointer_to_block</a> (<a class="el" href="structjazz__elements_1_1Locator.html">Locator</a> &amp;what, <a class="el" href="namespacejazz__elements.html#a59cfd109724f06a17a43532662d9a513">pMDB_txn</a> &amp;p_txn)</td></tr>
+<tr class="memdesc:afc0f3359242a82091fa8eddd3e8002c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Locates a block doing an mdb_get() leaving the transaction open.  <a href="classjazz__elements_1_1Persisted.html#afc0f3359242a82091fa8eddd3e8002c0">More...</a><br /></td></tr>
+<tr class="separator:afc0f3359242a82091fa8eddd3e8002c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a182a6c4b238e672b2ff2ab1b9c01974a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html#a182a6c4b238e672b2ff2ab1b9c01974a">done_pointer_to_block</a> (<a class="el" href="namespacejazz__elements.html#a59cfd109724f06a17a43532662d9a513">pMDB_txn</a> &amp;p_txn)</td></tr>
+<tr class="memdesc:a182a6c4b238e672b2ff2ab1b9c01974a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Completes the transaction started by <a class="el" href="classjazz__elements_1_1Persisted.html#afc0f3359242a82091fa8eddd3e8002c0" title="Locates a block doing an mdb_get() leaving the transaction open.">lock_pointer_to_block()</a> doing a mdb_txn_commit() which invalidates the pointer.  <a href="classjazz__elements_1_1Persisted.html#a182a6c4b238e672b2ff2ab1b9c01974a">More...</a><br /></td></tr>
+<tr class="separator:a182a6c4b238e672b2ff2ab1b9c01974a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63587441cea68cfd92d84e5e453f45c6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html#a63587441cea68cfd92d84e5e453f45c6">open_all_databases</a> ()</td></tr>
+<tr class="separator:a63587441cea68cfd92d84e5e453f45c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70a26ab8d5930abd83a32dda22772ebc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html#a70a26ab8d5930abd83a32dda22772ebc">close_all_databases</a> ()</td></tr>
+<tr class="separator:a70a26ab8d5930abd83a32dda22772ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17d23d5662099d5349730c7175a0940e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html#a17d23d5662099d5349730c7175a0940e">new_database</a> (<a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> name)</td></tr>
+<tr class="separator:a17d23d5662099d5349730c7175a0940e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadc218852b7d2ace91347aa5fb7365d8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html#aadc218852b7d2ace91347aa5fb7365d8">remove_database</a> (<a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> name)</td></tr>
+<tr class="separator:aadc218852b7d2ace91347aa5fb7365d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a05cb6a272e2094edf553a71eba78f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html#a0a05cb6a272e2094edf553a71eba78f3">log_lmdb_err</a> (int err, const char *msg)</td></tr>
+<tr class="memdesc:a0a05cb6a272e2094edf553a71eba78f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">A nicer presentation for LMDB error messages.  <a href="classjazz__elements_1_1Persisted.html#a0a05cb6a272e2094edf553a71eba78f3">More...</a><br /></td></tr>
+<tr class="separator:a0a05cb6a272e2094edf553a71eba78f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a61d71a45fd765b68a0fab60df828902e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#a0b66aa81bf225b5653d565b87196f6d1">DBImap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html#a61d71a45fd765b68a0fab60df828902e">source_dbi</a> = {}</td></tr>
+<tr class="separator:a61d71a45fd765b68a0fab60df828902e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfe301d8e960bfd889e2aed77283c868"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structjazz__elements_1_1JazzLmdbOptions.html">JazzLmdbOptions</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html#acfe301d8e960bfd889e2aed77283c868">lmdb_opt</a></td></tr>
+<tr class="separator:acfe301d8e960bfd889e2aed77283c868"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c0f173de5273c35cb69cc3c77c17b83"><td class="memItemLeft" align="right" valign="top">MDB_env *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html#a8c0f173de5273c35cb69cc3c77c17b83">lmdb_env</a> = nullptr</td></tr>
+<tr class="separator:a8c0f173de5273c35cb69cc3c77c17b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_methods_classjazz__elements_1_1Container"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classjazz__elements_1_1Container')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classjazz__elements_1_1Container.html">jazz_elements::Container</a></td></tr>
+<tr class="memitem:a8a256e918b696772139096b2a270f5b1 inherit pro_methods_classjazz__elements_1_1Container"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a8a256e918b696772139096b2a270f5b1">malloc</a> (size_t size)</td></tr>
+<tr class="separator:a8a256e918b696772139096b2a270f5b1 inherit pro_methods_classjazz__elements_1_1Container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa324950d69cb31f4a4e3f452d6180046 inherit pro_methods_classjazz__elements_1_1Container"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#aa324950d69cb31f4a4e3f452d6180046">block_malloc</a> (size_t size)</td></tr>
+<tr class="separator:aa324950d69cb31f4a4e3f452d6180046 inherit pro_methods_classjazz__elements_1_1Container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b00418cc5f5f425b2ac7353d5f87094 inherit pro_methods_classjazz__elements_1_1Container"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a3b00418cc5f5f425b2ac7353d5f87094">lock_container</a> ()</td></tr>
+<tr class="separator:a3b00418cc5f5f425b2ac7353d5f87094 inherit pro_methods_classjazz__elements_1_1Container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39e73d3ee200010809ad7c4b3540dd51 inherit pro_methods_classjazz__elements_1_1Container"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a39e73d3ee200010809ad7c4b3540dd51">unlock_container</a> ()</td></tr>
+<tr class="separator:a39e73d3ee200010809ad7c4b3540dd51 inherit pro_methods_classjazz__elements_1_1Container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd21ef27de1f47a2773e7f2327cb1932 inherit pro_methods_classjazz__elements_1_1Container"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#acd21ef27de1f47a2773e7f2327cb1932">destroy_internal</a> (<a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> &amp;p_txn)</td></tr>
+<tr class="memdesc:acd21ef27de1f47a2773e7f2327cb1932 inherit pro_methods_classjazz__elements_1_1Container"><td class="mdescLeft">&#160;</td><td class="mdescRight">(UNSAFE) Dealloc the <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> in the p_tnx-&gt;p_block (if not null) and free the <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> API.  <a href="classjazz__elements_1_1Container.html#acd21ef27de1f47a2773e7f2327cb1932">More...</a><br /></td></tr>
+<tr class="separator:acd21ef27de1f47a2773e7f2327cb1932 inherit pro_methods_classjazz__elements_1_1Container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5103bbe331c753542959d063c9b7ed0f inherit pro_methods_classjazz__elements_1_1Container"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a5103bbe331c753542959d063c9b7ed0f">new_transaction</a> (<a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> &amp;p_txn)</td></tr>
+<tr class="separator:a5103bbe331c753542959d063c9b7ed0f inherit pro_methods_classjazz__elements_1_1Container"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classjazz__elements_1_1Persisted.html" title="Persisted: A Service to manage data objects in LMDB.">Persisted</a>: A <a class="el" href="classjazz__elements_1_1Service.html" title="A Jazz Service is a globally instanced configurable object that may allocate RAM.">Service</a> to manage data objects in LMDB. </p>
@@ -279,7 +325,10 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>TODO: Document <a class="el" href="classjazz__elements_1_1Persisted.html#ac71e44e58eadb4289c98ba79755ec369">Persisted::start()</a> </p>
+
+<p>Starts the service, checking the environment and building the databases. </p>
+<dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR if successful, some error and log(LOG_MISS, "further details") if not.</dd></dl>
+<p>This service initialization checks configuration values related with persistence and starts LMDB with configured values. </p>
 
 <p>Reimplemented from <a class="el" href="classjazz__elements_1_1Container.html#a0496a435ee9330f73091a6ad41f07161">jazz_elements::Container</a>.</p>
 
@@ -307,7 +356,9 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Shuts down the <a class="el" href="classjazz__elements_1_1Persisted.html" title="Persisted: A Service to manage data objects in LMDB.">Persisted</a> <a class="el" href="classjazz__elements_1_1Service.html" title="A Jazz Service is a globally instanced configurable object that may allocate RAM.">Service</a> </p>
+
+<p>Shuts down the <a class="el" href="classjazz__elements_1_1Persisted.html" title="Persisted: A Service to manage data objects in LMDB.">Persisted</a> <a class="el" href="classjazz__elements_1_1Service.html" title="A Jazz Service is a globally instanced configurable object that may allocate RAM.">Service</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR if successful, some error and log(LOG_MISS, "further details") if not. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classjazz__elements_1_1Container.html#af1cdde44708880c4577f0202e90fa4f6">jazz_elements::Container</a>.</p>
 
@@ -346,7 +397,16 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>TODO: Document this. </p>
+<p>Native (Persistence) interface <b>complete <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a></b> retrieval.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_txn</td><td>A pointer to a <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> passed by reference. If successful, the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> will return a pointer to a <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> inside the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>. </td></tr>
+    <tr><td class="paramname">what</td><td>Some <a class="el" href="structjazz__elements_1_1Locator.html" title="Locator: A minimal structure to define the location of resources inside a Container.">Locator</a> to the block. E.g. //lmdb/entity/key</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR on success (and a valid p_txn), or some negative value (error).</dd></dl>
+<p>Usage-wise, this is equivalent to a <a class="el" href="classjazz__elements_1_1Container.html#afd29e008d84b128940e6eab853c2aae2">new_block()</a> call. On success, it will return a <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> that belongs to the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> and must be <a class="el" href="classjazz__elements_1_1Container.html#a00ad2a85f71fe0269aaa3a955126a897">destroy()</a>-ed when the caller is done. </p>
 
 <p>Reimplemented from <a class="el" href="classjazz__elements_1_1Container.html#ad2b5f0456aca94998df803c1342aee64">jazz_elements::Container</a>.</p>
 
@@ -391,7 +451,17 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>TODO: Document this. </p>
+<p>Native (Persistence) interface <b>selection of rows in a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a></b> retrieval.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_txn</td><td>A pointer to a <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> passed by reference. If successful, the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> will return a pointer to a <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> inside the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>. </td></tr>
+    <tr><td class="paramname">what</td><td>Some <a class="el" href="structjazz__elements_1_1Locator.html" title="Locator: A minimal structure to define the location of resources inside a Container.">Locator</a> to the block. E.g. //lmdb/entity/key </td></tr>
+    <tr><td class="paramname">p_row_filter</td><td>The block we want to use as a filter. This is either a tensor of boolean of the same length as the tensor in p_from (or all of them if it is a <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz Block with multiple Tensors.">Tuple</a>) (p_row_filter-&gt;filter_type() == FILTER_TYPE_BOOLEAN) or a vector of integers (p_row_filter-&gt;filter_type() == FILTER_TYPE_INTEGER) in that range.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR on success (and a valid p_txn), or some negative value (error).</dd></dl>
+<p>Usage-wise, this is equivalent to a <a class="el" href="classjazz__elements_1_1Container.html#afd29e008d84b128940e6eab853c2aae2">new_block()</a> call. On success, it will return a <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> that belongs to the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> and must be <a class="el" href="classjazz__elements_1_1Container.html#a00ad2a85f71fe0269aaa3a955126a897">destroy()</a>-ed when the caller is done. </p>
 
 <p>Reimplemented from <a class="el" href="classjazz__elements_1_1Container.html#a5a94d30a93ba85039bebcc3f1ecf9f8e">jazz_elements::Container</a>.</p>
 
@@ -436,14 +506,24 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>TODO: Document this. </p>
+<p>Native (Persistence) interface <b>selection of a tensor in a <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz Block with multiple Tensors.">Tuple</a></b> retrieval.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_txn</td><td>A pointer to a <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> passed by reference. If successful, the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> will return a pointer to a <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> inside the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>. </td></tr>
+    <tr><td class="paramname">what</td><td>Some <a class="el" href="structjazz__elements_1_1Locator.html" title="Locator: A minimal structure to define the location of resources inside a Container.">Locator</a> to the block. E.g. //lmdb/entity/key </td></tr>
+    <tr><td class="paramname">name</td><td>The name of the item to be selected.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR on success (and a valid p_txn), or some negative value (error).</dd></dl>
+<p>Usage-wise, this is equivalent to a <a class="el" href="classjazz__elements_1_1Container.html#afd29e008d84b128940e6eab853c2aae2">new_block()</a> call. On success, it will return a <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> that belongs to the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> and must be <a class="el" href="classjazz__elements_1_1Container.html#a00ad2a85f71fe0269aaa3a955126a897">destroy()</a>-ed when the caller is done. </p>
 
 <p>Reimplemented from <a class="el" href="classjazz__elements_1_1Container.html#aec16883b02f1f33fb84e3e4e92a5afd6">jazz_elements::Container</a>.</p>
 
 </div>
 </div>
-<a id="a21f1cc206df27862782c799cecf4511c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21f1cc206df27862782c799cecf4511c">&#9670;&nbsp;</a></span>header() <span class="overload">[1/6]</span></h2>
+<a id="aecc700a783da514310c71f72f8740dae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecc700a783da514310c71f72f8740dae">&#9670;&nbsp;</a></span>header() <span class="overload">[1/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -455,7 +535,7 @@ Private Member Functions</h2></td></tr>
           <td class="memname"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> jazz_elements::Persisted::header </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structjazz__elements_1_1StaticBlockHeader.html">StaticBlockHeader</a> &amp;&#160;</td>
-          <td class="paramname"><em>p_txn</em>, </td>
+          <td class="paramname"><em>hea</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -475,9 +555,18 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>TODO: Document this. </p>
+<p>Native (Persistence) interface <b>metadata of a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a></b> retrieval.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hea</td><td>A <a class="el" href="structjazz__elements_1_1StaticBlockHeader.html" title="A Binary Compatible BlockHeader without Index (and therefore constructors/destructors)">StaticBlockHeader</a> structure that will receive the metadata. </td></tr>
+    <tr><td class="paramname">what</td><td>Some <a class="el" href="structjazz__elements_1_1Locator.html" title="Locator: A minimal structure to define the location of resources inside a Container.">Locator</a> to the block. E.g. //lmdb/entity/key</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR on success (and a valid p_txn), or some negative value (error).</dd></dl>
+<p>This is a faster, not involving RAM allocation version of the other form of header. For a tensor, is will be the only thing you need, but for a <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for Jazz Blocks and Tuples.">Kind</a> or a <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz Block with multiple Tensors.">Tuple</a>, you probably want the types of all its items and need to pass a pTransaction to hold the data. </p>
 
-<p>Reimplemented from <a class="el" href="classjazz__elements_1_1Container.html#a93261d6c5e066cbe82497ca074db07a5">jazz_elements::Container</a>.</p>
+<p>Reimplemented from <a class="el" href="classjazz__elements_1_1Container.html#a28df5cb606cb614aa531e13dd2c270bc">jazz_elements::Container</a>.</p>
 
 </div>
 </div>
@@ -514,7 +603,17 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>TODO: Document this. </p>
+<p>Native (Persistence) interface <b>metadata of a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a></b> retrieval.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_txn</td><td>A pointer to a <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> passed by reference. If successful, the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> will return a pointer to a <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> inside the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>. </td></tr>
+    <tr><td class="paramname">what</td><td>Some <a class="el" href="structjazz__elements_1_1Locator.html" title="Locator: A minimal structure to define the location of resources inside a Container.">Locator</a> to the block. E.g. //lmdb/entity/key</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR on success (and a valid p_txn), or some negative value (error).</dd></dl>
+<p>Unlike its faster form, this allocates a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> and therefore, it is equivalent to a <a class="el" href="classjazz__elements_1_1Container.html#afd29e008d84b128940e6eab853c2aae2">new_block()</a> call. On success, it will return a <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> that belongs to the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> and must be <a class="el" href="classjazz__elements_1_1Container.html#a00ad2a85f71fe0269aaa3a955126a897">destroy()</a>-ed when the caller is done.</p>
+<p>For Tensors it will allocate a block that only has the <a class="el" href="structjazz__elements_1_1StaticBlockHeader.html" title="A Binary Compatible BlockHeader without Index (and therefore constructors/destructors)">StaticBlockHeader</a> (What you can more efficiently get from the other form.) For Kinds, the metadata of all the items is exactly the same a .<a class="el" href="classjazz__elements_1_1Persisted.html#ab59d950ee5ccdc16e3d84673857fb00c">get()</a> call returns. For Tuples, it does what you expect: returning a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> with the metadata of all the items without the data. </p>
 
 <p>Reimplemented from <a class="el" href="classjazz__elements_1_1Container.html#ad71aa048f2d6931db727c82d3d9bd12e">jazz_elements::Container</a>.</p>
 
@@ -559,6 +658,7 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Native (Persistence) interface for <b><a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> storing</b></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">where</td><td>Some <b>destination</b> parsed by <a class="el" href="classjazz__elements_1_1Container.html#a21d9a9ca23de70ad5dab49411dbe9773">as_locator()</a> </td></tr>
@@ -567,8 +667,8 @@ Private Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>TODO: Document this.</p>
-<p>NOTE**: This updates the calling block's creation time and hash64 </p>
+<dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR on success or some negative value (error).</dd></dl>
+<p>NOTE**: This updates the calling block's creation time and hash64. </p>
 
 <p>Reimplemented from <a class="el" href="classjazz__elements_1_1Container.html#a68176a365b24f2f8771b46b946e97a7f">jazz_elements::Container</a>.</p>
 
@@ -597,7 +697,14 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>TODO: Document this. </p>
+<p>Native (Persistence) interface for <b>creating databases</b></p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">what</td><td>The name of the LMDB database to be created. E.g. //lmdb/entity compiled.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR on success or some negative value (error). </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classjazz__elements_1_1Container.html#a7bfce67ab8ba50484eb404b85eb3de8b">jazz_elements::Container</a>.</p>
 
@@ -626,7 +733,14 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>TODO: Document this. </p>
+<p>Native (Persistence) interface for <b>deleting databases and blocks</b>:</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">what</td><td>Some <a class="el" href="structjazz__elements_1_1Locator.html" title="Locator: A minimal structure to define the location of resources inside a Container.">Locator</a> to the block or database to be removed. E.g. //lmdb/entity/key or //lmdb/entity compiled.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR on success or some negative value (error). </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classjazz__elements_1_1Container.html#a0ff71e808619d17c07566e3955862d25">jazz_elements::Container</a>.</p>
 
@@ -665,7 +779,15 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>TODO: Document this. </p>
+<p>Native (Persistence) interface for <b><a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> copying</b> (inside the Persistence).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">where</td><td>Some <b>destination</b> parsed by <a class="el" href="classjazz__elements_1_1Container.html#a21d9a9ca23de70ad5dab49411dbe9773">as_locator()</a> </td></tr>
+    <tr><td class="paramname">what</td><td>Some <a class="el" href="structjazz__elements_1_1Locator.html" title="Locator: A minimal structure to define the location of resources inside a Container.">Locator</a> to the block. E.g. //lmdb/entity/key</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR on success or some negative value (error). </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classjazz__elements_1_1Container.html#a9acd677cb999268663af4ce89f0fb97b">jazz_elements::Container</a>.</p>
 
@@ -747,6 +869,247 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="afc0f3359242a82091fa8eddd3e8002c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc0f3359242a82091fa8eddd3e8002c0">&#9670;&nbsp;</a></span>lock_pointer_to_block()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a> jazz_elements::Persisted::lock_pointer_to_block </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structjazz__elements_1_1Locator.html">Locator</a> &amp;&#160;</td>
+          <td class="paramname"><em>what</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a59cfd109724f06a17a43532662d9a513">pMDB_txn</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_txn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Locates a block doing an mdb_get() leaving the transaction open. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">what</td><td>The location of a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> inside LMDB. </td></tr>
+    <tr><td class="paramname">p_txn</td><td>the transcation created by a <a class="el" href="classjazz__elements_1_1Persisted.html#afc0f3359242a82091fa8eddd3e8002c0" title="Locates a block doing an mdb_get() leaving the transaction open.">lock_pointer_to_block()</a> call.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The pointer to the block (can <b>only</b> be read and <b>requires</b> a <a class="el" href="classjazz__elements_1_1Persisted.html#a182a6c4b238e672b2ff2ab1b9c01974a" title="Completes the transaction started by lock_pointer_to_block() doing a mdb_txn_commit() which invalidat...">done_pointer_to_block()</a> to close the transaction) or nullptr (+ log INFO) on error.</dd></dl>
+<p>NOTE: This requires a subsequent <a class="el" href="classjazz__elements_1_1Persisted.html#a182a6c4b238e672b2ff2ab1b9c01974a" title="Completes the transaction started by lock_pointer_to_block() doing a mdb_txn_commit() which invalidat...">done_pointer_to_block()</a> call. </p>
+
+</div>
+</div>
+<a id="a182a6c4b238e672b2ff2ab1b9c01974a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a182a6c4b238e672b2ff2ab1b9c01974a">&#9670;&nbsp;</a></span>done_pointer_to_block()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void jazz_elements::Persisted::done_pointer_to_block </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a59cfd109724f06a17a43532662d9a513">pMDB_txn</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_txn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Completes the transaction started by <a class="el" href="classjazz__elements_1_1Persisted.html#afc0f3359242a82091fa8eddd3e8002c0" title="Locates a block doing an mdb_get() leaving the transaction open.">lock_pointer_to_block()</a> doing a mdb_txn_commit() which invalidates the pointer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_txn</td><td>the transcation created by a <a class="el" href="classjazz__elements_1_1Persisted.html#afc0f3359242a82091fa8eddd3e8002c0" title="Locates a block doing an mdb_get() leaving the transaction open.">lock_pointer_to_block()</a> call. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a63587441cea68cfd92d84e5e453f45c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63587441cea68cfd92d84e5e453f45c6">&#9670;&nbsp;</a></span>open_all_databases()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool jazz_elements::Persisted::open_all_databases </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Locate all the named databases in the current LMDB environment, add them to the source[] vector and open them all for reading.</p>
+<dl class="section return"><dt>Returns</dt><dd>true if successful, false and log(LOG_MISS, "further details") if not. </dd></dl>
+
+</div>
+</div>
+<a id="a70a26ab8d5930abd83a32dda22772ebc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70a26ab8d5930abd83a32dda22772ebc">&#9670;&nbsp;</a></span>close_all_databases()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void jazz_elements::Persisted::close_all_databases </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Close all named databases on LMDB leaving them ready for a subsequent opening.</p>
+<p>This makes numsources == 0 by closing used LMDB handles via mdb_dbi_close(). </p>
+
+</div>
+</div>
+<a id="a17d23d5662099d5349730c7175a0940e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17d23d5662099d5349730c7175a0940e">&#9670;&nbsp;</a></span>new_database()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool jazz_elements::Persisted::new_database </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a>&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Create a new LMDB named database and add it as a new source to the source_dbi[] map.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The name of the source to be added.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if successful, false and log(LOG_MISS, "further details") if not. </dd></dl>
+
+</div>
+</div>
+<a id="aadc218852b7d2ace91347aa5fb7365d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadc218852b7d2ace91347aa5fb7365d8">&#9670;&nbsp;</a></span>remove_database()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool jazz_elements::Persisted::remove_database </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a>&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Kill a source, both from the LMDB persistence and from the source[] vector. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The name of the source to be killed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if successful, false and log(LOG_MISS, "further details") if not.</dd></dl>
+<p>NOTE: kill_source() is EXTREMELY not thread safe! Indices to ALL sources may change. Unsafe use of: numsources, source_nam, source_open, source_dbi. </p>
+
+</div>
+</div>
+<a id="a0a05cb6a272e2094edf553a71eba78f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a05cb6a272e2094edf553a71eba78f3">&#9670;&nbsp;</a></span>log_lmdb_err()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void jazz_elements::Persisted::log_lmdb_err </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>err</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>msg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A nicer presentation for LMDB error messages. </p>
 
 </div>
 </div>
@@ -883,7 +1246,7 @@ Private Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>"Easy" interface <b>metadata of a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a></b> retrieval. This parses p_what and, on success, calls the native <a class="el" href="classjazz__elements_1_1Persisted.html#a21f1cc206df27862782c799cecf4511c">header()</a> equivalent.</p>
+<p>"Easy" interface <b>metadata of a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a></b> retrieval. This parses p_what and, on success, calls the native <a class="el" href="classjazz__elements_1_1Persisted.html#aecc700a783da514310c71f72f8740dae">header()</a> equivalent.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">hea</td><td>A <a class="el" href="structjazz__elements_1_1StaticBlockHeader.html" title="A Binary Compatible BlockHeader without Index (and therefore constructors/destructors)">StaticBlockHeader</a> structure that will receive the metadata. </td></tr>
@@ -907,7 +1270,7 @@ Private Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>"Easy" interface <b>metadata of a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a></b> retrieval. This parses p_what and, on success, calls the native <a class="el" href="classjazz__elements_1_1Persisted.html#a21f1cc206df27862782c799cecf4511c">header()</a> equivalent.</p>
+<p>"Easy" interface <b>metadata of a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a></b> retrieval. This parses p_what and, on success, calls the native <a class="el" href="classjazz__elements_1_1Persisted.html#aecc700a783da514310c71f72f8740dae">header()</a> equivalent.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">p_txn</td><td>A pointer to a <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> passed by reference. If successful, the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> will return a pointer to a <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> inside the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>. </td></tr>
@@ -921,8 +1284,8 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a93261d6c5e066cbe82497ca074db07a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93261d6c5e066cbe82497ca074db07a5">&#9670;&nbsp;</a></span>header() <span class="overload">[5/6]</span></h2>
+<a id="a28df5cb606cb614aa531e13dd2c270bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28df5cb606cb614aa531e13dd2c270bc">&#9670;&nbsp;</a></span>header() <span class="overload">[5/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1043,7 +1406,7 @@ Private Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>"Easy" interface for <b>deleting entities and blocks</b>: This parses p_what and, on success, calls the native <a class="el" href="classjazz__elements_1_1Persisted.html#a21f1cc206df27862782c799cecf4511c">header()</a> equivalent.</p>
+<p>"Easy" interface for <b>deleting entities and blocks</b>: This parses p_what and, on success, calls the native <a class="el" href="classjazz__elements_1_1Persisted.html#aecc700a783da514310c71f72f8740dae">header()</a> equivalent.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">p_what</td><td>Some string that <a class="el" href="classjazz__elements_1_1Container.html#a21d9a9ca23de70ad5dab49411dbe9773">as_locator()</a> can parse into a <a class="el" href="structjazz__elements_1_1Locator.html" title="Locator: A minimal structure to define the location of resources inside a Container.">Locator</a>. E.g. //base/entity or //base/entity/key</td></tr>
@@ -1108,6 +1471,73 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>The "native" interface: This is what really does the job and <b>must be implemented in the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> descendats</b>.</p>
 <p>NOTE**: The root <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> class does not implement this. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a61d71a45fd765b68a0fab60df828902e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61d71a45fd765b68a0fab60df828902e">&#9670;&nbsp;</a></span>source_dbi</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#a0b66aa81bf225b5653d565b87196f6d1">DBImap</a> jazz_elements::Persisted::source_dbi = {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acfe301d8e960bfd889e2aed77283c868"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfe301d8e960bfd889e2aed77283c868">&#9670;&nbsp;</a></span>lmdb_opt</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structjazz__elements_1_1JazzLmdbOptions.html">JazzLmdbOptions</a> jazz_elements::Persisted::lmdb_opt</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8c0f173de5273c35cb69cc3c77c17b83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c0f173de5273c35cb69cc3c77c17b83">&#9670;&nbsp;</a></span>lmdb_env</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MDB_env* jazz_elements::Persisted::lmdb_env = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
