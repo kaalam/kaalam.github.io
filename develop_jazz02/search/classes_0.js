@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['agency_596',['Agency',['../classjazz__agency_1_1Agency.html',1,'jazz_agency']]],
-  ['api_597',['Api',['../classjazz__main_1_1Api.html',1,'jazz_main']]]
+  ['agency_583',['Agency',['../classjazz__agency_1_1Agency.html',1,'jazz_agency']]],
+  ['api_584',['Api',['../classjazz__main_1_1Api.html',1,'jazz_main']]]
 ];

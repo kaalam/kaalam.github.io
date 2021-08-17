@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['kind_610',['Kind',['../classjazz__elements_1_1Kind.html',1,'jazz_elements']]]
+  ['jazzlmdboptions_597',['JazzLmdbOptions',['../structjazz__elements_1_1JazzLmdbOptions.html',1,'jazz_elements']]]
 ];

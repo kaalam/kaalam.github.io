@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['index_607',['Index',['../unionjazz__elements_1_1Index.html',1,'jazz_elements']]],
-  ['itemheader_608',['ItemHeader',['../structjazz__elements_1_1ItemHeader.html',1,'jazz_elements']]]
+  ['httpquerystate_593',['HttpQueryState',['../structjazz__main_1_1HttpQueryState.html',1,'jazz_main']]],
+  ['httpserver_594',['HttpServer',['../classjazz__main_1_1HttpServer.html',1,'jazz_main']]]
 ];

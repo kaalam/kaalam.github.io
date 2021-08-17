@@ -89,13 +89,13 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a4c183076c4dca6117339b487aceaf806"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1Locator.html#a4c183076c4dca6117339b487aceaf806">key</a> [<a class="el" href="types_8h.html#a834e9a379307f869a10f4da078be5786">NAME_SIZE</a>]</td></tr>
 <tr class="memdesc:a4c183076c4dca6117339b487aceaf806"><td class="mdescLeft">&#160;</td><td class="mdescRight">A key identifying a block inside the entity.  <a href="structjazz__elements_1_1Locator.html#a4c183076c4dca6117339b487aceaf806">More...</a><br /></td></tr>
 <tr class="separator:a4c183076c4dca6117339b487aceaf806"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aceff6a67cfe69b3928b8bf4afd987582"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1Locator.html#aceff6a67cfe69b3928b8bf4afd987582">p_extra</a></td></tr>
-<tr class="memdesc:aceff6a67cfe69b3928b8bf4afd987582"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to extend this structure with <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> specific data (like URLs, cookies, credentials).  <a href="structjazz__elements_1_1Locator.html#aceff6a67cfe69b3928b8bf4afd987582">More...</a><br /></td></tr>
-<tr class="separator:aceff6a67cfe69b3928b8bf4afd987582"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4061fcc863914cfca8205790552155c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#a216acc397d71daaacb283ba8953a104c">pExtraLocator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1Locator.html#ae4061fcc863914cfca8205790552155c">p_extra</a></td></tr>
+<tr class="memdesc:ae4061fcc863914cfca8205790552155c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to extend this structure with <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> specific data (like URLs, cookies, credentials).  <a href="structjazz__elements_1_1Locator.html#ae4061fcc863914cfca8205790552155c">More...</a><br /></td></tr>
+<tr class="separator:ae4061fcc863914cfca8205790552155c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="structjazz__elements_1_1Locator.html" title="Locator: A minimal structure to define the location of resources inside a Container.">Locator</a>: A minimal structure to define the location of resources inside a <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>. </p>
-<p>This is used by all <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> descendants, it can be extended using p_extra to something else. E..g, a UniversalLocator</p>
+<p>This is used by all <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> descendants, it can be extended using p_extra to something else, an <a class="el" href="structjazz__elements_1_1ExtraLocator.html" title="ExtraLocator: A structure that replaces the entity/key in a Locator by a long URL or file name and so...">ExtraLocator</a>.</p>
 <p>Valid characters**: base, entity and key names must start with a letter and continue with up to NAME_LENGTH or (SHORT_NAME_SIZE -1 for base) characters in [a-zA-Z0-9\-_~$]. When part of a URL, none of these characters should be %-encoded. Besides names, the following characters have special meaning in URLs (see the parser in API for details): / . : # ; [ ] ( ) = </p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="a2bf2ec77ab816dafa947c20cf1854010"></a>
@@ -146,14 +146,14 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="aceff6a67cfe69b3928b8bf4afd987582"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aceff6a67cfe69b3928b8bf4afd987582">&#9670;&nbsp;</a></span>p_extra</h2>
+<a id="ae4061fcc863914cfca8205790552155c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4061fcc863914cfca8205790552155c">&#9670;&nbsp;</a></span>p_extra</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> jazz_elements::Locator::p_extra</td>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#a216acc397d71daaacb283ba8953a104c">pExtraLocator</a> jazz_elements::Locator::p_extra</td>
         </tr>
       </table>
 </div><div class="memdoc">

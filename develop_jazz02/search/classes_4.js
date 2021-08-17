@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['httpquerystate_605',['HttpQueryState',['../structjazz__main_1_1HttpQueryState.html',1,'jazz_main']]],
-  ['httpserver_606',['HttpServer',['../classjazz__main_1_1HttpServer.html',1,'jazz_main']]]
+  ['filtersize_592',['FilterSize',['../structjazz__elements_1_1FilterSize.html',1,'jazz_elements']]]
 ];
