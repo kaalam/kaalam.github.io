@@ -1,8 +1,13 @@
 var searchData=
 [
-  ['index_721',['index',['../classjazz__elements_1_1Kind.html#ada80e35eb9a7b53cf5ed79984990072e',1,'jazz_elements::Kind::index()'],['../classjazz__elements_1_1Tuple.html#a9a2fc05a8af10c9eab11fa1740e77ae2',1,'jazz_elements::Tuple::index()']]],
-  ['init_5fstring_5fbuffer_722',['init_string_buffer',['../classjazz__elements_1_1Block.html#a1e7432d6f585a346fd6b713a697dc635',1,'jazz_elements::Block']]],
-  ['initlogger_723',['InitLogger',['../classjazz__elements_1_1Logger.html#a2e28f31a318bc65d7d65dd7c4882558d',1,'jazz_elements::Logger']]],
-  ['is_5fa_724',['is_a',['../classjazz__elements_1_1Tuple.html#a4f590a216d5122299474dd31aaa5ceb3',1,'jazz_elements::Tuple']]],
-  ['item_5fname_725',['item_name',['../classjazz__elements_1_1Kind.html#a90f3967586b72becda3f3c7ddc9af37a',1,'jazz_elements::Kind::item_name()'],['../classjazz__elements_1_1Tuple.html#a71b1e32248aef8b7434cd4b1d4d46aa2',1,'jazz_elements::Tuple::item_name()']]]
+  ['leave_5fread_740',['leave_read',['../classjazz__elements_1_1Container.html#aed814dd5c12fed3c5f9451aa47986c9e',1,'jazz_elements::Container']]],
+  ['leave_5fwrite_741',['leave_write',['../classjazz__elements_1_1Container.html#a10a8f17a8d92058c0dfb0a01435501b4',1,'jazz_elements::Container']]],
+  ['load_5fconfig_742',['load_config',['../classjazz__elements_1_1ConfigFile.html#a86b7edd94d23a7bbdc7c5364e1accfad',1,'jazz_elements::ConfigFile']]],
+  ['load_5fstatics_743',['load_statics',['../classjazz__main_1_1Api.html#abb7286e226a2e3f4c961a9510822c125',1,'jazz_main::Api']]],
+  ['lock_5fcontainer_744',['lock_container',['../classjazz__elements_1_1Container.html#a3b00418cc5f5f425b2ac7353d5f87094',1,'jazz_elements::Container']]],
+  ['lock_5fpointer_5fto_5fblock_745',['lock_pointer_to_block',['../classjazz__elements_1_1Persisted.html#afc0f3359242a82091fa8eddd3e8002c0',1,'jazz_elements::Persisted']]],
+  ['log_746',['log',['../classjazz__elements_1_1Logger.html#a0ad64ce2159712169ded90c2d8459216',1,'jazz_elements::Logger::log()'],['../classjazz__elements_1_1Service.html#a43ae5f53f29c382d1f5ff1ac8f63b5be',1,'jazz_elements::Service::log()']]],
+  ['log_5flmdb_5ferr_747',['log_lmdb_err',['../classjazz__elements_1_1Persisted.html#a0a05cb6a272e2094edf553a71eba78f3',1,'jazz_elements::Persisted']]],
+  ['log_5fprintf_748',['log_printf',['../classjazz__elements_1_1Logger.html#a0a78222ffe95b784eac088545c656f67',1,'jazz_elements::Logger::log_printf(int loglevel, const char *fmt,...)'],['../classjazz__elements_1_1Logger.html#afe14c93dbf7a400f4f5ffd4b947f3963',1,'jazz_elements::Logger::log_printf(int loglevel, const char *fmt, va_list args)'],['../classjazz__elements_1_1Service.html#a8290451b2815ea470b8518493023e605',1,'jazz_elements::Service::log_printf()']]],
+  ['logger_749',['Logger',['../classjazz__elements_1_1Logger.html#a0f3e274cb8138efb05c8f060f3bbbb20',1,'jazz_elements::Logger::Logger(const char *output_file_name)'],['../classjazz__elements_1_1Logger.html#a8362638f64d5e52bbf1c7b916353532a',1,'jazz_elements::Logger::Logger(ConfigFile config, const char *config_key)'],['../namespacejazz__main.html#aebd5be2fc5b704c5db25e81de84f200e',1,'jazz_main::LOGGER()']]]
 ];

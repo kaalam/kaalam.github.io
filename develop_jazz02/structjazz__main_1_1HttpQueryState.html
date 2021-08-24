@@ -80,41 +80,143 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a77803d4e2c3b61ab96482de8bffc2da1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__main_1_1HttpQueryState.html#a77803d4e2c3b61ab96482de8bffc2da1">parser_state</a></td></tr>
-<tr class="separator:a77803d4e2c3b61ab96482de8bffc2da1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ff13ad6634e1eae7dbdddf503914408"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structjazz__elements_1_1Locator.html">Locator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__main_1_1HttpQueryState.html#a5ff13ad6634e1eae7dbdddf503914408">l_value</a></td></tr>
-<tr class="separator:a5ff13ad6634e1eae7dbdddf503914408"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a743e6207d91c6b2e99d7cd1743312466"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__main_1_1HttpQueryState.html#a743e6207d91c6b2e99d7cd1743312466">state</a></td></tr>
+<tr class="memdesc:a743e6207d91c6b2e99d7cd1743312466"><td class="mdescLeft">&#160;</td><td class="mdescRight">The parser state from PSTATE_INITIAL to PSTATE_COMPLETE_OK.  <a href="structjazz__main_1_1HttpQueryState.html#a743e6207d91c6b2e99d7cd1743312466">More...</a><br /></td></tr>
+<tr class="separator:a743e6207d91c6b2e99d7cd1743312466"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75899ee67a1ab9d5cd5012e1ba09c27a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__main_1_1HttpQueryState.html#a75899ee67a1ab9d5cd5012e1ba09c27a">apply</a></td></tr>
+<tr class="memdesc:a75899ee67a1ab9d5cd5012e1ba09c27a"><td class="mdescLeft">&#160;</td><td class="mdescRight">APPLY_NOTHING, APPLY_NAME, APPLY_URL, APPLY_FUNCTION, .. APPLY_ASSIGN_CONST.  <a href="structjazz__main_1_1HttpQueryState.html#a75899ee67a1ab9d5cd5012e1ba09c27a">More...</a><br /></td></tr>
+<tr class="separator:a75899ee67a1ab9d5cd5012e1ba09c27a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dc8d1e12405b68c0c158df1f3826bff"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__main_1_1HttpQueryState.html#a3dc8d1e12405b68c0c158df1f3826bff">base</a> [<a class="el" href="types_8h.html#ab908b445246a5a6850ca9b80847f73de">SHORT_NAME_SIZE</a>]</td></tr>
+<tr class="memdesc:a3dc8d1e12405b68c0c158df1f3826bff"><td class="mdescLeft">&#160;</td><td class="mdescRight">A Locator compatible base for the l_value.  <a href="structjazz__main_1_1HttpQueryState.html#a3dc8d1e12405b68c0c158df1f3826bff">More...</a><br /></td></tr>
+<tr class="separator:a3dc8d1e12405b68c0c158df1f3826bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8eff8f113cc9c8d0e7f1529c96fcf74"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__main_1_1HttpQueryState.html#ae8eff8f113cc9c8d0e7f1529c96fcf74">entity</a> [<a class="el" href="types_8h.html#a834e9a379307f869a10f4da078be5786">NAME_SIZE</a>]</td></tr>
+<tr class="memdesc:ae8eff8f113cc9c8d0e7f1529c96fcf74"><td class="mdescLeft">&#160;</td><td class="mdescRight">A Locator compatible entity for the l_value.  <a href="structjazz__main_1_1HttpQueryState.html#ae8eff8f113cc9c8d0e7f1529c96fcf74">More...</a><br /></td></tr>
+<tr class="separator:ae8eff8f113cc9c8d0e7f1529c96fcf74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7caa40ee9d9641220035e1c9d7e8b93a"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__main_1_1HttpQueryState.html#a7caa40ee9d9641220035e1c9d7e8b93a">key</a> [<a class="el" href="types_8h.html#a834e9a379307f869a10f4da078be5786">NAME_SIZE</a>]</td></tr>
+<tr class="memdesc:a7caa40ee9d9641220035e1c9d7e8b93a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A Locator compatible key for the l_value.  <a href="structjazz__main_1_1HttpQueryState.html#a7caa40ee9d9641220035e1c9d7e8b93a">More...</a><br /></td></tr>
+<tr class="separator:a7caa40ee9d9641220035e1c9d7e8b93a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80b8127b126437c5e071b700a6bc41ca"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__main_1_1HttpQueryState.html#a80b8127b126437c5e071b700a6bc41ca">name</a> [<a class="el" href="types_8h.html#a834e9a379307f869a10f4da078be5786">NAME_SIZE</a>]</td></tr>
+<tr class="memdesc:a80b8127b126437c5e071b700a6bc41ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">A possible item name.  <a href="structjazz__main_1_1HttpQueryState.html#a80b8127b126437c5e071b700a6bc41ca">More...</a><br /></td></tr>
+<tr class="separator:a80b8127b126437c5e071b700a6bc41ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65d1f6d4036be1a9f2b7bc2583251e9c"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__main_1_1HttpQueryState.html#a65d1f6d4036be1a9f2b7bc2583251e9c">url</a> [<a class="el" href="channel_8h.html#a42378c017254ae07807c9b446313ebe3">MAX_FILE_OR_URL_SIZE</a>+32]</td></tr>
+<tr class="memdesc:a65d1f6d4036be1a9f2b7bc2583251e9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The endpoint (an URL, file name, folder name, bash script)  <a href="structjazz__main_1_1HttpQueryState.html#a65d1f6d4036be1a9f2b7bc2583251e9c">More...</a><br /></td></tr>
+<tr class="separator:a65d1f6d4036be1a9f2b7bc2583251e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a352ea3752375f2f84069f40f506136b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structjazz__elements_1_1Locator.html">Locator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__main_1_1HttpQueryState.html#a352ea3752375f2f84069f40f506136b3">r_value</a></td></tr>
+<tr class="memdesc:a352ea3752375f2f84069f40f506136b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parsed //r_base/r_entity/r_key.  <a href="structjazz__main_1_1HttpQueryState.html#a352ea3752375f2f84069f40f506136b3">More...</a><br /></td></tr>
 <tr class="separator:a352ea3752375f2f84069f40f506136b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A buffer to keep the state while parsing/executing a query. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="a77803d4e2c3b61ab96482de8bffc2da1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a77803d4e2c3b61ab96482de8bffc2da1">&#9670;&nbsp;</a></span>parser_state</h2>
+<a id="a743e6207d91c6b2e99d7cd1743312466"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a743e6207d91c6b2e99d7cd1743312466">&#9670;&nbsp;</a></span>state</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int jazz_main::HttpQueryState::parser_state</td>
+          <td class="memname">int jazz_main::HttpQueryState::state</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>The parser state from PSTATE_INITIAL to PSTATE_COMPLETE_OK. </p>
+
 </div>
 </div>
-<a id="a5ff13ad6634e1eae7dbdddf503914408"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ff13ad6634e1eae7dbdddf503914408">&#9670;&nbsp;</a></span>l_value</h2>
+<a id="a75899ee67a1ab9d5cd5012e1ba09c27a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75899ee67a1ab9d5cd5012e1ba09c27a">&#9670;&nbsp;</a></span>apply</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structjazz__elements_1_1Locator.html">Locator</a> jazz_main::HttpQueryState::l_value</td>
+          <td class="memname">int jazz_main::HttpQueryState::apply</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>APPLY_NOTHING, APPLY_NAME, APPLY_URL, APPLY_FUNCTION, .. APPLY_ASSIGN_CONST. </p>
+
+</div>
+</div>
+<a id="a3dc8d1e12405b68c0c158df1f3826bff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3dc8d1e12405b68c0c158df1f3826bff">&#9670;&nbsp;</a></span>base</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char jazz_main::HttpQueryState::base[<a class="el" href="types_8h.html#ab908b445246a5a6850ca9b80847f73de">SHORT_NAME_SIZE</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A Locator compatible base for the l_value. </p>
+
+</div>
+</div>
+<a id="ae8eff8f113cc9c8d0e7f1529c96fcf74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8eff8f113cc9c8d0e7f1529c96fcf74">&#9670;&nbsp;</a></span>entity</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char jazz_main::HttpQueryState::entity[<a class="el" href="types_8h.html#a834e9a379307f869a10f4da078be5786">NAME_SIZE</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A Locator compatible entity for the l_value. </p>
+
+</div>
+</div>
+<a id="a7caa40ee9d9641220035e1c9d7e8b93a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7caa40ee9d9641220035e1c9d7e8b93a">&#9670;&nbsp;</a></span>key</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char jazz_main::HttpQueryState::key[<a class="el" href="types_8h.html#a834e9a379307f869a10f4da078be5786">NAME_SIZE</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A Locator compatible key for the l_value. </p>
+
+</div>
+</div>
+<a id="a80b8127b126437c5e071b700a6bc41ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80b8127b126437c5e071b700a6bc41ca">&#9670;&nbsp;</a></span>name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char jazz_main::HttpQueryState::name[<a class="el" href="types_8h.html#a834e9a379307f869a10f4da078be5786">NAME_SIZE</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A possible item name. </p>
+
+</div>
+</div>
+<a id="a65d1f6d4036be1a9f2b7bc2583251e9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65d1f6d4036be1a9f2b7bc2583251e9c">&#9670;&nbsp;</a></span>url</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char jazz_main::HttpQueryState::url[<a class="el" href="channel_8h.html#a42378c017254ae07807c9b446313ebe3">MAX_FILE_OR_URL_SIZE</a>+32]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The endpoint (an URL, file name, folder name, bash script) </p>
 
 </div>
 </div>
@@ -129,6 +231,8 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Parsed //r_base/r_entity/r_key. </p>
 
 </div>
 </div>

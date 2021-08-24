@@ -1,17 +1,14 @@
 var searchData=
 [
-  ['block_5fattrib_5f_963',['BLOCK_ATTRIB_',['../types_8h.html#addb3f9c44e627a81c7471f876c0de7a7',1,'types.h']]],
-  ['block_5fattrib_5fblocktype_964',['BLOCK_ATTRIB_BLOCKTYPE',['../types_8h.html#abd653b24f4c6faa6c0abbca98396ee14',1,'types.h']]],
-  ['block_5fattrib_5fdest_965',['BLOCK_ATTRIB_DEST',['../types_8h.html#a7adccd0e15de55dcd39559e0312c94eb',1,'types.h']]],
-  ['block_5fattrib_5fempty_966',['BLOCK_ATTRIB_EMPTY',['../types_8h.html#a7d40ed4c26a6ef1a3d497b073a870dd8',1,'types.h']]],
-  ['block_5fattrib_5flanguage_967',['BLOCK_ATTRIB_LANGUAGE',['../types_8h.html#ac6ecb0dac73e0a6c0623db06dfb99cb0',1,'types.h']]],
-  ['block_5fattrib_5fmimetype_968',['BLOCK_ATTRIB_MIMETYPE',['../types_8h.html#a58f5d93b0afc788551f9971045c520e2',1,'types.h']]],
-  ['block_5fattrib_5fsource_969',['BLOCK_ATTRIB_SOURCE',['../types_8h.html#a84d7057716ab87391cf0607a9c77bbf4',1,'types.h']]],
-  ['block_5fattrib_5furl_970',['BLOCK_ATTRIB_URL',['../types_8h.html#aa79dbbdad5dd1fa8943cb14a55221622',1,'types.h']]],
-  ['block_5fstatus_5fempty_971',['BLOCK_STATUS_EMPTY',['../container_8h.html#a75d0ee06672436e6e02aa42652f33ea6',1,'container.h']]],
-  ['block_5fstatus_5fready_972',['BLOCK_STATUS_READY',['../container_8h.html#afca414656562222aaf2632260566ecb9',1,'container.h']]],
-  ['boolean_5fna_973',['BOOLEAN_NA',['../types_8h.html#aaed51ff6508ecf551edd855b99e2da39',1,'types.h']]],
-  ['build_5fkind_974',['BUILD_KIND',['../container_8h.html#ae4b61bc7c4d1ff4e151eb984914e902a',1,'container.h']]],
-  ['build_5ftuple_975',['BUILD_TUPLE',['../container_8h.html#afedeca28cf0eafaafddf47fc7dda1b59',1,'container.h']]],
-  ['byte_5fboolean_5fna_976',['BYTE_BOOLEAN_NA',['../types_8h.html#a848460d85f2782cc1a6dcb735193ec2c',1,'types.h']]]
+  ['apply_5fassign_978',['APPLY_ASSIGN',['../api_8h.html#a4bcade3b8ad349272ff50d5751eabbde',1,'api.h']]],
+  ['apply_5fassign_5fconst_979',['APPLY_ASSIGN_CONST',['../api_8h.html#a5567db116dff41b11fe4f4c996797944',1,'api.h']]],
+  ['apply_5ffilt_5fconst_980',['APPLY_FILT_CONST',['../api_8h.html#aeb35776881caba804b705c3829a51b6a',1,'api.h']]],
+  ['apply_5ffilter_981',['APPLY_FILTER',['../api_8h.html#a8f8a6a44e09f817083d3ef2cdad79d39',1,'api.h']]],
+  ['apply_5ffunct_5fconst_982',['APPLY_FUNCT_CONST',['../api_8h.html#ae699ab1618e7b5b4ab01764599420f7b',1,'api.h']]],
+  ['apply_5ffunction_983',['APPLY_FUNCTION',['../api_8h.html#addef908e5ed50987fd7dbabd04b04319',1,'api.h']]],
+  ['apply_5fname_984',['APPLY_NAME',['../api_8h.html#a02b182c899419d8ebcb094551972b0a5',1,'api.h']]],
+  ['apply_5fnothing_985',['APPLY_NOTHING',['../api_8h.html#af209d1cb5994604f06caf4afd9ed6c0b',1,'api.h']]],
+  ['apply_5fraw_986',['APPLY_RAW',['../api_8h.html#a9ef1d78e04d3008227c7c2386cafe604',1,'api.h']]],
+  ['apply_5ftext_987',['APPLY_TEXT',['../api_8h.html#acc865f252b35ec11fee79f68f9e6a517',1,'api.h']]],
+  ['apply_5furl_988',['APPLY_URL',['../api_8h.html#ac6fd9f9e701cee85f5f7afaa52291e4e',1,'api.h']]]
 ];
