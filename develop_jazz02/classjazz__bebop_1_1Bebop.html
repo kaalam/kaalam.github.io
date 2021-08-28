@@ -97,6 +97,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a45bc91cd5bab380c224c72eb6f3d7aea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b131fca6b8845e03da07c015523026f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1Bebop.html#a8b131fca6b8845e03da07c015523026f">shut_down</a> ()</td></tr>
 <tr class="separator:a8b131fca6b8845e03da07c015523026f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63ab453901b7765f123dbb85ebc47e8e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1Bebop.html#a63ab453901b7765f123dbb85ebc47e8e">call</a> (<a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> &amp;p_txn, <a class="el" href="structjazz__elements_1_1Locator.html">Locator</a> function, <a class="el" href="namespacejazz__elements.html#a07b590209f1036d836732e9a3370e50e">pTuple</a> args)</td></tr>
+<tr class="separator:a63ab453901b7765f123dbb85ebc47e8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classjazz__elements_1_1Container"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classjazz__elements_1_1Container')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classjazz__elements_1_1Container.html">jazz_elements::Container</a></td></tr>
 <tr class="memitem:a6f3d67058dba17a47ae9a5a2a7e4a263 inherit pub_methods_classjazz__elements_1_1Container"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a6f3d67058dba17a47ae9a5a2a7e4a263">Container</a> (<a class="el" href="namespacejazz__elements.html#a6d95828c9ae09a43b64388aad469aa66">pLogger</a> a_logger, <a class="el" href="namespacejazz__elements.html#abe347aade1e2471420c9ec5d5a251e1a">pConfigFile</a> a_config)</td></tr>
 <tr class="separator:a6f3d67058dba17a47ae9a5a2a7e4a263 inherit pub_methods_classjazz__elements_1_1Container"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -293,6 +295,50 @@ Additional Inherited Members</h2></td></tr>
 <p>Shuts down the <a class="el" href="classjazz__bebop_1_1Bebop.html" title="Bebop: A Service to manage running cores and code bases.">Bebop</a> Service </p>
 
 <p>Reimplemented from <a class="el" href="classjazz__elements_1_1Service.html#af9c7e6ebcd6ec69fdbf94ea6cc1edff5">jazz_elements::Service</a>.</p>
+
+</div>
+</div>
+<a id="a63ab453901b7765f123dbb85ebc47e8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63ab453901b7765f123dbb85ebc47e8e">&#9670;&nbsp;</a></span>call()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> jazz_bebop::Bebop::call </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_txn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structjazz__elements_1_1Locator.html">Locator</a>&#160;</td>
+          <td class="paramname"><em>function</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a07b590209f1036d836732e9a3370e50e">pTuple</a>&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Run a function on an argument.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_txn</td><td>A pointer to a Transaction passed by reference. If successful, the Container will return a pointer to a Transaction inside the Container. The caller can only use it read-only and <b>must</b> <a class="el" href="classjazz__elements_1_1Container.html#a00ad2a85f71fe0269aaa3a955126a897">destroy()</a> it when done. </td></tr>
+    <tr><td class="paramname">function</td><td>The function to be called: entity == field, key == opcode. </td></tr>
+    <tr><td class="paramname">args</td><td>A Tuple passed as an argument.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR on success (and a valid p_txn), or some negative value (error). </dd></dl>
 
 </div>
 </div>

@@ -161,6 +161,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a89b6ae8b08dfbb376caafc742840adf6"><td class="memItemLeft" align="right" valign="top">typedef class <a class="el" href="classjazz__elements_1_1Block.html">Block</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a></td></tr>
 <tr class="memdesc:a89b6ae8b08dfbb376caafc742840adf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">A (forward defined) pointer to a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a>.  <a href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">More...</a><br /></td></tr>
 <tr class="separator:a89b6ae8b08dfbb376caafc742840adf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae07e8fd7a73396ce4ef564979d2498e5"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#ae07e8fd7a73396ce4ef564979d2498e5">MHD_StatusCode</a></td></tr>
+<tr class="memdesc:ae07e8fd7a73396ce4ef564979d2498e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">A proper type for specifying http status codes.  <a href="namespacejazz__elements.html#ae07e8fd7a73396ce4ef564979d2498e5">More...</a><br /></td></tr>
+<tr class="separator:ae07e8fd7a73396ce4ef564979d2498e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a612e435984d430c34312ed9fa76395d7"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classjazz__elements_1_1Channels.html">Channels</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a612e435984d430c34312ed9fa76395d7">pChannels</a></td></tr>
 <tr class="separator:a612e435984d430c34312ed9fa76395d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74c455d5540b250c87f151615c732ecd"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structjazz__elements_1_1ParseStateTransition.html">ParseStateTransition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a74c455d5540b250c87f151615c732ecd">ParseStateTransitions</a>[<a class="el" href="api_8cpp.html#a2af6bcc5187fe6040a315da36a4b6b6a">NUM_STATE_TRANSITIONS</a>]</td></tr>
@@ -350,6 +353,25 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>A (forward defined) pointer to a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a>. </p>
+
+</div>
+</div>
+<a id="ae07e8fd7a73396ce4ef564979d2498e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae07e8fd7a73396ce4ef564979d2498e5">&#9670;&nbsp;</a></span>MHD_StatusCode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned int <a class="el" href="namespacejazz__elements.html#ae07e8fd7a73396ce4ef564979d2498e5">jazz_elements::MHD_StatusCode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A proper type for specifying http status codes. </p>
+<p>Before libmicrohttpd (somewhere between &gt; 0.9.66-1 and &lt;= 0.9.72-2) changed MHD_Result to an enum, MHD_Result was (improperly) used to define HTTP responses. That ended-up badly on newer versions, since it was passed to a MHD_queue_response() and stopped working as it became an enum.</p>
+<p>This triggeresd the need, for clarity reasons only, to introduce a new type, MHD_StatusCode to refer to <b>HTTP responses</b>.</p>
+<p>See: <a href="https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml">https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml</a> </p>
 
 </div>
 </div>
