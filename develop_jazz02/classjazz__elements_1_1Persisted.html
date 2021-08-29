@@ -120,6 +120,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a49cb747c82d0affa88e13fb866b26a48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d12b480ec90d0548b9a069bd88997e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html#a0d12b480ec90d0548b9a069bd88997e9">base_names</a> (<a class="el" href="namespacejazz__elements.html#aadf1e411ca544a525c767f3e30010202">BaseNames</a> &amp;base_names)</td></tr>
 <tr class="separator:a0d12b480ec90d0548b9a069bd88997e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5104a3e688c07889e9e9528ba6404e33"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html#a5104a3e688c07889e9e9528ba6404e33">dbi_exists</a> (<a class="el" href="namespacejazz__elements.html#a97c097c96fd6364c46569536e8cbc535">Name</a> dbi_name)</td></tr>
+<tr class="memdesc:a5104a3e688c07889e9e9528ba6404e33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the internal std::map to see if a (dbi) database name exists.  <a href="classjazz__elements_1_1Persisted.html#a5104a3e688c07889e9e9528ba6404e33">More...</a><br /></td></tr>
+<tr class="separator:a5104a3e688c07889e9e9528ba6404e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ac8fb7abc96e21587b0f2577da4ce9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html#a9ac8fb7abc96e21587b0f2577da4ce9f">get</a> (<a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> &amp;p_txn, <a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> p_what)</td></tr>
 <tr class="separator:a9ac8fb7abc96e21587b0f2577da4ce9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4529d9918576bc60ec8d3785a3808d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html#ac4529d9918576bc60ec8d3785a3808d4">get</a> (<a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> &amp;p_txn, <a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> p_what, <a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a> p_row_filter)</td></tr>
@@ -832,6 +835,33 @@ For reference:</h2>
 </dl>
 <p>The <a class="el" href="classjazz__elements_1_1Persisted.html" title="Persisted: A Service to manage data objects in LMDB.">Persisted</a> object has used-defined databases containing anything, these databases can have any names as long as they do not interfere with existing base names. The Api object will forward names that do not match any base names to <a class="el" href="classjazz__elements_1_1Persisted.html" title="Persisted: A Service to manage data objects in LMDB.">Persisted</a> in case they are the name of a database (and will fail otherwise). </p><pre class="fragment">Besides these user-defined names, there is a number of reserved databases that keep track of objects. "sys" keeps cluster-level
 </pre><p> config, "group" keeps track of all groups (of nodes sharing a sharded resource), "kind" the kinds, "field" the fields, etc. "static" is a database of objects with attributes BLOCK_ATTRIB_URL and BLOCK_ATTRIB_MIMETYPE exposed via the / API. </p>
+
+</div>
+</div>
+<a id="a5104a3e688c07889e9e9528ba6404e33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5104a3e688c07889e9e9528ba6404e33">&#9670;&nbsp;</a></span>dbi_exists()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool jazz_elements::Persisted::dbi_exists </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a97c097c96fd6364c46569536e8cbc535">Name</a>&#160;</td>
+          <td class="paramname"><em>dbi_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check the internal std::map to see if a (dbi) database name exists. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dbi_name</td><td>The location of a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> inside LMDB.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if exists. </dd></dl>
 
 </div>
 </div>

@@ -195,8 +195,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a56c875c72abe23e26f3f9ea00d87a92d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html#a56c875c72abe23e26f3f9ea00d87a92d">load_statics</a> (<a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> path)</td></tr>
-<tr class="separator:a56c875c72abe23e26f3f9ea00d87a92d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a207700a1f7b1a3ed62f42ba30d424a84"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html#a207700a1f7b1a3ed62f42ba30d424a84">load_statics</a> (<a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> p_base_path, <a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> p_relative_path, int rec_level)</td></tr>
+<tr class="separator:a207700a1f7b1a3ed62f42ba30d424a84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56db0d37c5ff701bcf8d27a664cbb4f9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html#a56db0d37c5ff701bcf8d27a664cbb4f9">expand_url_encoded</a> (<a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> p_buff, int buff_size, <a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> p_url)</td></tr>
 <tr class="separator:a56db0d37c5ff701bcf8d27a664cbb4f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addfa8ca0ea635fc17ae1922c2aa24750"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html#addfa8ca0ea635fc17ae1922c2aa24750">parse_nested</a> (<a class="el" href="structjazz__elements_1_1Locator.html">Locator</a> &amp;r_value, <a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> p_url)</td></tr>
@@ -622,18 +622,18 @@ Additional Inherited Members</h2></td></tr>
 <p>Execute a get block using the instrumental API.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">response</td><td>A valid (or error) MHD_Response pointer with the resource, status, mime, etc. </td></tr>
+    <tr><td class="paramname">response</td><td>A valid (or error) MHD_Response pointer with the resource. It will only be used on success. </td></tr>
     <tr><td class="paramname">q_state</td><td>The structure containing the parts of the url successfully parsed.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true if successful, log(LOG_MISS, "further details") for errors.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>MHD_HTTP_OK if successful, or a valid http status error.</dd></dl>
 <p>This function is <b>only</b> called after a successfull <a class="el" href="classjazz__main_1_1Api.html#a4f7c58adb6220595b3efb5c5d484afb0">parse()</a> of HTTP_GET and HTTP_HEAD queries. It is not private because it is called for the callback, but it is not intended for any other context. </p>
 
 </div>
 </div>
-<a id="a56c875c72abe23e26f3f9ea00d87a92d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56c875c72abe23e26f3f9ea00d87a92d">&#9670;&nbsp;</a></span>load_statics()</h2>
+<a id="a207700a1f7b1a3ed62f42ba30d424a84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a207700a1f7b1a3ed62f42ba30d424a84">&#9670;&nbsp;</a></span>load_statics()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -642,11 +642,27 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool jazz_main::Api::load_statics </td>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> jazz_main::Api::load_statics </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a>&#160;</td>
-          <td class="paramname"><em>path</em></td><td>)</td>
+          <td class="paramname"><em>p_base_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a>&#160;</td>
+          <td class="paramname"><em>p_relative_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rec_level</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -663,7 +679,9 @@ Additional Inherited Members</h2></td></tr>
 </ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">path</td><td>The path to the tree of webpage statics.</td></tr>
+    <tr><td class="paramname">p_base_path</td><td>The path to the tree of webpage statics. </td></tr>
+    <tr><td class="paramname">p_relative_path</td><td>The relative path that becomes the url with a file name added, starting with /. </td></tr>
+    <tr><td class="paramname">rec_level</td><td>The level of recursion (from 0 to MAX_RECURSE_LEVEL_ON_STATICS)</td></tr>
   </table>
   </dd>
 </dl>

@@ -89,9 +89,15 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a4c183076c4dca6117339b487aceaf806"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1Locator.html#a4c183076c4dca6117339b487aceaf806">key</a> [<a class="el" href="types_8h.html#a834e9a379307f869a10f4da078be5786">NAME_SIZE</a>]</td></tr>
 <tr class="memdesc:a4c183076c4dca6117339b487aceaf806"><td class="mdescLeft">&#160;</td><td class="mdescRight">A key identifying a block inside the entity.  <a href="structjazz__elements_1_1Locator.html#a4c183076c4dca6117339b487aceaf806">More...</a><br /></td></tr>
 <tr class="separator:a4c183076c4dca6117339b487aceaf806"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4061fcc863914cfca8205790552155c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#a216acc397d71daaacb283ba8953a104c">pExtraLocator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1Locator.html#ae4061fcc863914cfca8205790552155c">p_extra</a></td></tr>
-<tr class="memdesc:ae4061fcc863914cfca8205790552155c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to extend this structure with <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> specific data (like URLs, cookies, credentials).  <a href="structjazz__elements_1_1Locator.html#ae4061fcc863914cfca8205790552155c">More...</a><br /></td></tr>
-<tr class="separator:ae4061fcc863914cfca8205790552155c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5bdfaef504879180c8a0d6e9df507ac"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:a5747d01d8d6a3319914dce25516fc00a"><td class="memItemLeft" >&#160;&#160;&#160;int&#160;&#160;&#160;<a class="el" href="structjazz__elements_1_1Locator.html#ad258e5c29127078785fd95e77f1f1726">attribute</a></td></tr>
+<tr class="memdesc:a5747d01d8d6a3319914dce25516fc00a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used by Api to store the attribute.  <a href="unionjazz__elements_1_1Locator_1_1_0d2.html#a5747d01d8d6a3319914dce25516fc00a">More...</a><br /></td></tr>
+<tr class="separator:a5747d01d8d6a3319914dce25516fc00a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d8e4eb5b8de24cefc49952aceefee96"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="namespacejazz__elements.html#a216acc397d71daaacb283ba8953a104c">pExtraLocator</a>&#160;&#160;&#160;<a class="el" href="structjazz__elements_1_1Locator.html#ae4061fcc863914cfca8205790552155c">p_extra</a></td></tr>
+<tr class="memdesc:a7d8e4eb5b8de24cefc49952aceefee96"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to extend this structure with <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> specific data (like URLs, cookies, credentials).  <a href="unionjazz__elements_1_1Locator_1_1_0d2.html#a7d8e4eb5b8de24cefc49952aceefee96">More...</a><br /></td></tr>
+<tr class="separator:a7d8e4eb5b8de24cefc49952aceefee96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5bdfaef504879180c8a0d6e9df507ac"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:ac5bdfaef504879180c8a0d6e9df507ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="structjazz__elements_1_1Locator.html" title="Locator: A minimal structure to define the location of resources inside a Container.">Locator</a>: A minimal structure to define the location of resources inside a <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>. </p>
@@ -146,6 +152,22 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a id="ad258e5c29127078785fd95e77f1f1726"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad258e5c29127078785fd95e77f1f1726">&#9670;&nbsp;</a></span>attribute</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jazz_elements::Locator::attribute</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Used by Api to store the attribute. </p>
+
+</div>
+</div>
 <a id="ae4061fcc863914cfca8205790552155c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae4061fcc863914cfca8205790552155c">&#9670;&nbsp;</a></span>p_extra</h2>
 
@@ -159,6 +181,20 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>A pointer to extend this structure with <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> specific data (like URLs, cookies, credentials). </p>
+
+</div>
+</div>
+<a id="ac5bdfaef504879180c8a0d6e9df507ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5bdfaef504879180c8a0d6e9df507ac">&#9670;&nbsp;</a></span>@3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union { ... } </td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
