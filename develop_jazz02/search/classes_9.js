@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['locator_635',['Locator',['../structjazz__elements_1_1Locator.html',1,'jazz_elements']]],
-  ['logger_636',['Logger',['../classjazz__elements_1_1Logger.html',1,'jazz_elements']]]
+  ['locator_645',['Locator',['../structjazz__elements_1_1Locator.html',1,'jazz_elements']]],
+  ['logger_646',['Logger',['../classjazz__elements_1_1Logger.html',1,'jazz_elements']]]
 ];
