@@ -11,13 +11,14 @@ var searchData=
   ['new_5fentity_347',['new_entity',['../classjazz__elements_1_1Channels.html#ab369cc764490e9a56331e48eff35d224',1,'jazz_elements::Channels::new_entity()'],['../classjazz__elements_1_1Container.html#a5376e000980d6ae51db87c6ddaae34f5',1,'jazz_elements::Container::new_entity(pChar p_where)'],['../classjazz__elements_1_1Container.html#ae584d6ce0b30959a19e2916e5f1373f8',1,'jazz_elements::Container::new_entity(Locator &amp;where)'],['../classjazz__elements_1_1Persisted.html#a9ce0be50b571238d26918508fd81c5e4',1,'jazz_elements::Persisted::new_entity()'],['../classjazz__elements_1_1Volatile.html#aca319680cabd9da074b07de3fd660192',1,'jazz_elements::Volatile::new_entity()']]],
   ['new_5fkind_348',['new_kind',['../classjazz__elements_1_1Kind.html#a8d9cc0f15a5ef02139fd3c3552c9a874',1,'jazz_elements::Kind']]],
   ['new_5ftext_5fblock_349',['new_text_block',['../classjazz__elements_1_1Container.html#ab8c7513de5f67eaa150b9ccd0a3ec78b',1,'jazz_elements::Container']]],
-  ['new_5ftransaction_350',['new_transaction',['../classjazz__elements_1_1Container.html#a5103bbe331c753542959d063c9b7ed0f',1,'jazz_elements::Container']]],
+  ['new_5ftransaction_350',['new_transaction',['../classjazz__elements_1_1Container.html#a5103bbe331c753542959d063c9b7ed0f',1,'jazz_elements::Container::new_transaction()'],['../classjazz__elements_1_1Volatile.html#a5263ef47ef073aaf2dd7c664509e8c1f',1,'jazz_elements::Volatile::new_transaction()']]],
   ['new_5ftuple_351',['new_tuple',['../classjazz__elements_1_1Tuple.html#a927ec744a5b27b44a91a50b1a1deddb5',1,'jazz_elements::Tuple']]],
-  ['next_352',['next',['../structjazz__elements_1_1ParseNextStateLUT.html#a45d4f787ca5098671f2d6d3536bdd22e',1,'jazz_elements::ParseNextStateLUT']]],
-  ['node_353',['node',['../structjazz__main_1_1HttpQueryState.html#a4f28e747d6d80462d3212608d2f3d917',1,'jazz_main::HttpQueryState']]],
-  ['num_5fattributes_354',['num_attributes',['../structjazz__elements_1_1BlockHeader.html#ade1168fe2f507da3c64a90ef3d8f5e17',1,'jazz_elements::BlockHeader::num_attributes()'],['../structjazz__elements_1_1StaticBlockHeader.html#a7dc2553d57cfe560ae1990e96afd20e6',1,'jazz_elements::StaticBlockHeader::num_attributes()']]],
-  ['num_5fkeys_355',['num_keys',['../classjazz__elements_1_1ConfigFile.html#a002fadb3b1aa6a933a9bdb5907987b67',1,'jazz_elements::ConfigFile']]],
-  ['num_5fstate_5ftransitions_356',['NUM_STATE_TRANSITIONS',['../container_8cpp.html#a2af6bcc5187fe6040a315da36a4b6b6a',1,'NUM_STATE_TRANSITIONS():&#160;container.cpp'],['../api_8cpp.html#a2af6bcc5187fe6040a315da36a4b6b6a',1,'NUM_STATE_TRANSITIONS():&#160;api.cpp']]],
-  ['num_5fvisits_357',['num_visits',['../structjazz__elements_1_1VolatileTransaction.html#a58e0d57a8432b4586472b2e9c74ce6d7',1,'jazz_elements::VolatileTransaction']]],
-  ['num_5fwins_358',['num_wins',['../structjazz__elements_1_1VolatileTransaction.html#af8311af300abe9dd0f71d2b4409a9e5c',1,'jazz_elements::VolatileTransaction']]]
+  ['new_5fvolatile_352',['new_volatile',['../classjazz__elements_1_1Volatile.html#a2d97243bf8bde445b451d5f453230268',1,'jazz_elements::Volatile']]],
+  ['next_353',['next',['../structjazz__elements_1_1ParseNextStateLUT.html#a45d4f787ca5098671f2d6d3536bdd22e',1,'jazz_elements::ParseNextStateLUT']]],
+  ['node_354',['node',['../structjazz__main_1_1HttpQueryState.html#a4f28e747d6d80462d3212608d2f3d917',1,'jazz_main::HttpQueryState']]],
+  ['num_5fattributes_355',['num_attributes',['../structjazz__elements_1_1BlockHeader.html#ade1168fe2f507da3c64a90ef3d8f5e17',1,'jazz_elements::BlockHeader::num_attributes()'],['../structjazz__elements_1_1StaticBlockHeader.html#a7dc2553d57cfe560ae1990e96afd20e6',1,'jazz_elements::StaticBlockHeader::num_attributes()']]],
+  ['num_5fkeys_356',['num_keys',['../classjazz__elements_1_1ConfigFile.html#a002fadb3b1aa6a933a9bdb5907987b67',1,'jazz_elements::ConfigFile']]],
+  ['num_5fstate_5ftransitions_357',['NUM_STATE_TRANSITIONS',['../container_8cpp.html#a2af6bcc5187fe6040a315da36a4b6b6a',1,'NUM_STATE_TRANSITIONS():&#160;container.cpp'],['../api_8cpp.html#a2af6bcc5187fe6040a315da36a4b6b6a',1,'NUM_STATE_TRANSITIONS():&#160;api.cpp']]],
+  ['num_5fvisits_358',['num_visits',['../structjazz__elements_1_1VolatileTransaction.html#a58e0d57a8432b4586472b2e9c74ce6d7',1,'jazz_elements::VolatileTransaction']]],
+  ['num_5fwins_359',['num_wins',['../structjazz__elements_1_1VolatileTransaction.html#af8311af300abe9dd0f71d2b4409a9e5c',1,'jazz_elements::VolatileTransaction']]]
 ];

@@ -67,7 +67,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">jazz_elements::Volatile Class Reference</div>  </div>
 </div><!--header-->
@@ -97,6 +98,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad13b77c09c8ae17eaf4908e4350f636d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59169b050f6239b6f12ea21e6f7c8837"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Volatile.html#a59169b050f6239b6f12ea21e6f7c8837">shut_down</a> ()</td></tr>
 <tr class="separator:a59169b050f6239b6f12ea21e6f7c8837"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5263ef47ef073aaf2dd7c664509e8c1f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Volatile.html#a5263ef47ef073aaf2dd7c664509e8c1f">new_transaction</a> (<a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> &amp;p_txn)</td></tr>
+<tr class="separator:a5263ef47ef073aaf2dd7c664509e8c1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02d960d85ebbe5309633980258cd9e22"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Volatile.html#a02d960d85ebbe5309633980258cd9e22">destroy_transaction</a> (<a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> &amp;p_txn)</td></tr>
+<tr class="separator:a02d960d85ebbe5309633980258cd9e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a596197510e4b1a6a35e1d2b6d949b920"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Volatile.html#a596197510e4b1a6a35e1d2b6d949b920">get</a> (<a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> &amp;p_txn, <a class="el" href="structjazz__elements_1_1Locator.html">Locator</a> &amp;what)</td></tr>
 <tr class="separator:a596197510e4b1a6a35e1d2b6d949b920"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae38a7ec498cc9f340cff51c8cc859ab4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Volatile.html#ae38a7ec498cc9f340cff51c8cc859ab4">get</a> (<a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> &amp;p_txn, <a class="el" href="structjazz__elements_1_1Locator.html">Locator</a> &amp;what, <a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a> p_row_filter)</td></tr>
@@ -180,8 +185,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a47e62fb216724f25396611b983a7395a inherit pub_methods_classjazz__elements_1_1Container"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a930f16b7751cdb3dcd59afa2ee49e657 inherit pub_methods_classjazz__elements_1_1Container"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a930f16b7751cdb3dcd59afa2ee49e657">new_block</a> (<a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> &amp;p_txn, int cell_type)</td></tr>
 <tr class="separator:a930f16b7751cdb3dcd59afa2ee49e657 inherit pub_methods_classjazz__elements_1_1Container"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00ad2a85f71fe0269aaa3a955126a897 inherit pub_methods_classjazz__elements_1_1Container"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a00ad2a85f71fe0269aaa3a955126a897">destroy</a> (<a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> &amp;p_txn)</td></tr>
-<tr class="separator:a00ad2a85f71fe0269aaa3a955126a897 inherit pub_methods_classjazz__elements_1_1Container"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ac8fb7abc96e21587b0f2577da4ce9f inherit pub_methods_classjazz__elements_1_1Container"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a9ac8fb7abc96e21587b0f2577da4ce9f">get</a> (<a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> &amp;p_txn, <a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> p_what)</td></tr>
 <tr class="separator:a9ac8fb7abc96e21587b0f2577da4ce9f inherit pub_methods_classjazz__elements_1_1Container"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4529d9918576bc60ec8d3785a3808d4 inherit pub_methods_classjazz__elements_1_1Container"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#ac4529d9918576bc60ec8d3785a3808d4">get</a> (<a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> &amp;p_txn, <a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> p_what, <a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a> p_row_filter)</td></tr>
@@ -218,8 +221,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7d5b766d5214ffb88d58acc6f66e2e29 inherit pub_methods_classjazz__elements_1_1Service"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Service.html#a7d5b766d5214ffb88d58acc6f66e2e29">get_conf_key</a> (const char *key, std::string &amp;value)</td></tr>
 <tr class="separator:a7d5b766d5214ffb88d58acc6f66e2e29 inherit pub_methods_classjazz__elements_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a2d97243bf8bde445b451d5f453230268"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Volatile.html#a2d97243bf8bde445b451d5f453230268">new_volatile</a> ()</td></tr>
+<tr class="separator:a2d97243bf8bde445b451d5f453230268"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1010cb311d75c0a26106d1973e055ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Volatile.html#ac1010cb311d75c0a26106d1973e055ed">destroy_volatile</a> ()</td></tr>
+<tr class="separator:ac1010cb311d75c0a26106d1973e055ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classjazz__elements_1_1Container"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classjazz__elements_1_1Container')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classjazz__elements_1_1Container.html">jazz_elements::Container</a></td></tr>
 <tr class="memitem:a8a256e918b696772139096b2a270f5b1 inherit pro_methods_classjazz__elements_1_1Container"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a8a256e918b696772139096b2a270f5b1">malloc</a> (size_t size)</td></tr>
 <tr class="separator:a8a256e918b696772139096b2a270f5b1 inherit pro_methods_classjazz__elements_1_1Container"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -229,14 +236,18 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a3b00418cc5f5f425b2ac7353d5f87094 inherit pro_methods_classjazz__elements_1_1Container"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39e73d3ee200010809ad7c4b3540dd51 inherit pro_methods_classjazz__elements_1_1Container"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a39e73d3ee200010809ad7c4b3540dd51">unlock_container</a> ()</td></tr>
 <tr class="separator:a39e73d3ee200010809ad7c4b3540dd51 inherit pro_methods_classjazz__elements_1_1Container"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd21ef27de1f47a2773e7f2327cb1932 inherit pro_methods_classjazz__elements_1_1Container"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#acd21ef27de1f47a2773e7f2327cb1932">destroy_internal</a> (<a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> &amp;p_txn)</td></tr>
-<tr class="memdesc:acd21ef27de1f47a2773e7f2327cb1932 inherit pro_methods_classjazz__elements_1_1Container"><td class="mdescLeft">&#160;</td><td class="mdescRight">(UNSAFE) Dealloc the <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> in the p_tnx-&gt;p_block (if not null) and free the <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> API.  <a href="classjazz__elements_1_1Container.html#acd21ef27de1f47a2773e7f2327cb1932">More...</a><br /></td></tr>
-<tr class="separator:acd21ef27de1f47a2773e7f2327cb1932 inherit pro_methods_classjazz__elements_1_1Container"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5103bbe331c753542959d063c9b7ed0f inherit pro_methods_classjazz__elements_1_1Container"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a5103bbe331c753542959d063c9b7ed0f">new_transaction</a> (<a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> &amp;p_txn)</td></tr>
-<tr class="separator:a5103bbe331c753542959d063c9b7ed0f inherit pro_methods_classjazz__elements_1_1Container"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9dc5465894081c7e91ec1489122d6cfb inherit pro_methods_classjazz__elements_1_1Container"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a9dc5465894081c7e91ec1489122d6cfb">from_hex</a> (char c)</td></tr>
 <tr class="separator:a9dc5465894081c7e91ec1489122d6cfb inherit pro_methods_classjazz__elements_1_1Container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_classjazz__elements_1_1Container"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classjazz__elements_1_1Container')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classjazz__elements_1_1Container.html">jazz_elements::Container</a></td></tr>
+<tr class="memitem:a78d8175d99a2992675ec9ead633da893 inherit pro_attribs_classjazz__elements_1_1Container"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a78d8175d99a2992675ec9ead633da893">max_transactions</a></td></tr>
+<tr class="separator:a78d8175d99a2992675ec9ead633da893 inherit pro_attribs_classjazz__elements_1_1Container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae30751a7d7c4c893c52cf50a0fb5bfc0 inherit pro_attribs_classjazz__elements_1_1Container"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#ae30751a7d7c4c893c52cf50a0fb5bfc0">warn_alloc_bytes</a></td></tr>
+<tr class="separator:ae30751a7d7c4c893c52cf50a0fb5bfc0 inherit pro_attribs_classjazz__elements_1_1Container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac76487ead6f2e334882d5d250cc02724 inherit pro_attribs_classjazz__elements_1_1Container"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#ac76487ead6f2e334882d5d250cc02724">fail_alloc_bytes</a></td></tr>
+<tr class="separator:ac76487ead6f2e334882d5d250cc02724 inherit pro_attribs_classjazz__elements_1_1Container"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a4180f46f2820502f48df99fe2b88b1 inherit pro_attribs_classjazz__elements_1_1Container"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a7a4180f46f2820502f48df99fe2b88b1">alloc_bytes</a></td></tr>
 <tr class="separator:a7a4180f46f2820502f48df99fe2b88b1 inherit pro_attribs_classjazz__elements_1_1Container"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -346,6 +357,66 @@ Methods in tree</h2>
 
 </div>
 </div>
+<a id="a5263ef47ef073aaf2dd7c664509e8c1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5263ef47ef073aaf2dd7c664509e8c1f">&#9670;&nbsp;</a></span>new_transaction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> jazz_elements::Volatile::new_transaction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_txn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Bla,</p>
+<p>TODO: Document this! </p>
+
+<p>Reimplemented from <a class="el" href="classjazz__elements_1_1Container.html#a5103bbe331c753542959d063c9b7ed0f">jazz_elements::Container</a>.</p>
+
+</div>
+</div>
+<a id="a02d960d85ebbe5309633980258cd9e22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02d960d85ebbe5309633980258cd9e22">&#9670;&nbsp;</a></span>destroy_transaction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void jazz_elements::Volatile::destroy_transaction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_txn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Bla,</p>
+<p>TODO: Document this! </p>
+
+<p>Reimplemented from <a class="el" href="classjazz__elements_1_1Container.html#af79256b93a1f22d580a5c8eb18fa0558">jazz_elements::Container</a>.</p>
+
+</div>
+</div>
 <a id="a596197510e4b1a6a35e1d2b6d949b920"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a596197510e4b1a6a35e1d2b6d949b920">&#9670;&nbsp;</a></span>get() <span class="overload">[1/9]</span></h2>
 
@@ -388,7 +459,7 @@ Methods in tree</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR on success (and a valid p_txn), or some negative value (error).</dd></dl>
-<p>Usage-wise, this is equivalent to a <a class="el" href="classjazz__elements_1_1Container.html#afd29e008d84b128940e6eab853c2aae2">new_block()</a> call. On success, it will return a <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> that belongs to the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> and must be <a class="el" href="classjazz__elements_1_1Container.html#a00ad2a85f71fe0269aaa3a955126a897">destroy()</a>-ed when the caller is done. </p>
+<p>Usage-wise, this is equivalent to a <a class="el" href="classjazz__elements_1_1Container.html#afd29e008d84b128940e6eab853c2aae2">new_block()</a> call. On success, it will return a <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> that belongs to the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> and must be <a class="el" href="classjazz__elements_1_1Volatile.html#a02d960d85ebbe5309633980258cd9e22">destroy_transaction()</a>-ed when the caller is done. </p>
 
 <p>Reimplemented from <a class="el" href="classjazz__elements_1_1Container.html#ad2b5f0456aca94998df803c1342aee64">jazz_elements::Container</a>.</p>
 
@@ -443,7 +514,7 @@ Methods in tree</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR on success (and a valid p_txn), or some negative value (error).</dd></dl>
-<p>Usage-wise, this is equivalent to a <a class="el" href="classjazz__elements_1_1Container.html#afd29e008d84b128940e6eab853c2aae2">new_block()</a> call. On success, it will return a <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> that belongs to the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> and must be <a class="el" href="classjazz__elements_1_1Container.html#a00ad2a85f71fe0269aaa3a955126a897">destroy()</a>-ed when the caller is done. </p>
+<p>Usage-wise, this is equivalent to a <a class="el" href="classjazz__elements_1_1Container.html#afd29e008d84b128940e6eab853c2aae2">new_block()</a> call. On success, it will return a <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> that belongs to the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> and must be <a class="el" href="classjazz__elements_1_1Volatile.html#a02d960d85ebbe5309633980258cd9e22">destroy_transaction()</a>-ed when the caller is done. </p>
 
 <p>Reimplemented from <a class="el" href="classjazz__elements_1_1Container.html#a5a94d30a93ba85039bebcc3f1ecf9f8e">jazz_elements::Container</a>.</p>
 
@@ -498,7 +569,7 @@ Methods in tree</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR on success (and a valid p_txn), or some negative value (error).</dd></dl>
-<p>Usage-wise, this is equivalent to a <a class="el" href="classjazz__elements_1_1Container.html#afd29e008d84b128940e6eab853c2aae2">new_block()</a> call. On success, it will return a <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> that belongs to the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> and must be <a class="el" href="classjazz__elements_1_1Container.html#a00ad2a85f71fe0269aaa3a955126a897">destroy()</a>-ed when the caller is done. </p>
+<p>Usage-wise, this is equivalent to a <a class="el" href="classjazz__elements_1_1Container.html#afd29e008d84b128940e6eab853c2aae2">new_block()</a> call. On success, it will return a <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> that belongs to the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> and must be <a class="el" href="classjazz__elements_1_1Volatile.html#a02d960d85ebbe5309633980258cd9e22">destroy_transaction()</a>-ed when the caller is done. </p>
 
 <p>Reimplemented from <a class="el" href="classjazz__elements_1_1Container.html#aec16883b02f1f33fb84e3e4e92a5afd6">jazz_elements::Container</a>.</p>
 
@@ -594,7 +665,7 @@ Methods in tree</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR on success (and a valid p_txn), or some negative value (error).</dd></dl>
-<p>Unlike its faster form, this allocates a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> and therefore, it is equivalent to a <a class="el" href="classjazz__elements_1_1Container.html#afd29e008d84b128940e6eab853c2aae2">new_block()</a> call. On success, it will return a <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> that belongs to the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> and must be <a class="el" href="classjazz__elements_1_1Container.html#a00ad2a85f71fe0269aaa3a955126a897">destroy()</a>-ed when the caller is done.</p>
+<p>Unlike its faster form, this allocates a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> and therefore, it is equivalent to a <a class="el" href="classjazz__elements_1_1Container.html#afd29e008d84b128940e6eab853c2aae2">new_block()</a> call. On success, it will return a <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> that belongs to the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> and must be <a class="el" href="classjazz__elements_1_1Volatile.html#a02d960d85ebbe5309633980258cd9e22">destroy_transaction()</a>-ed when the caller is done.</p>
 <p>For Tensors it will allocate a block that only has the <a class="el" href="structjazz__elements_1_1StaticBlockHeader.html" title="A Binary Compatible BlockHeader without Index (and therefore constructors/destructors)">StaticBlockHeader</a> (What you can more efficiently get from the other form.) For Kinds, the metadata of all the items is exactly the same a .<a class="el" href="classjazz__elements_1_1Volatile.html#a596197510e4b1a6a35e1d2b6d949b920">get()</a> call returns. For Tuples, it does what you expect: returning a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> with the metadata of all the items without the data. </p>
 
 <p>Reimplemented from <a class="el" href="classjazz__elements_1_1Container.html#ad71aa048f2d6931db727c82d3d9bd12e">jazz_elements::Container</a>.</p>
@@ -800,6 +871,60 @@ Methods in tree</h2>
 
 </div>
 </div>
+<a id="a2d97243bf8bde445b451d5f453230268"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d97243bf8bde445b451d5f453230268">&#9670;&nbsp;</a></span>new_volatile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> jazz_elements::Volatile::new_volatile </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Bla,</p>
+<p>TODO: Document this! </p>
+
+</div>
+</div>
+<a id="ac1010cb311d75c0a26106d1973e055ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1010cb311d75c0a26106d1973e055ed">&#9670;&nbsp;</a></span>destroy_volatile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> jazz_elements::Volatile::destroy_volatile </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Bla,</p>
+<p>TODO: Document this! </p>
+
+</div>
+</div>
 <a id="a9ac8fb7abc96e21587b0f2577da4ce9f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9ac8fb7abc96e21587b0f2577da4ce9f">&#9670;&nbsp;</a></span>get() <span class="overload">[4/9]</span></h2>
 
@@ -820,7 +945,7 @@ Methods in tree</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR on success (and a valid p_txn), or some negative value (error).</dd></dl>
-<p>Usage-wise, this is equivalent to a <a class="el" href="classjazz__elements_1_1Container.html#afd29e008d84b128940e6eab853c2aae2">new_block()</a> call. On success, it will return a <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> that belongs to the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> and must be <a class="el" href="classjazz__elements_1_1Container.html#a00ad2a85f71fe0269aaa3a955126a897">destroy()</a>-ed when the caller is done. </p>
+<p>Usage-wise, this is equivalent to a <a class="el" href="classjazz__elements_1_1Container.html#afd29e008d84b128940e6eab853c2aae2">new_block()</a> call. On success, it will return a <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> that belongs to the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> and must be <a class="el" href="classjazz__elements_1_1Volatile.html#a02d960d85ebbe5309633980258cd9e22">destroy_transaction()</a>-ed when the caller is done. </p>
 
 </div>
 </div>
@@ -845,7 +970,7 @@ Methods in tree</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR on success (and a valid p_txn), or some negative value (error).</dd></dl>
-<p>Usage-wise, this is equivalent to a <a class="el" href="classjazz__elements_1_1Container.html#afd29e008d84b128940e6eab853c2aae2">new_block()</a> call. On success, it will return a <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> that belongs to the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> and must be <a class="el" href="classjazz__elements_1_1Container.html#a00ad2a85f71fe0269aaa3a955126a897">destroy()</a>-ed when the caller is done. </p>
+<p>Usage-wise, this is equivalent to a <a class="el" href="classjazz__elements_1_1Container.html#afd29e008d84b128940e6eab853c2aae2">new_block()</a> call. On success, it will return a <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> that belongs to the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> and must be <a class="el" href="classjazz__elements_1_1Volatile.html#a02d960d85ebbe5309633980258cd9e22">destroy_transaction()</a>-ed when the caller is done. </p>
 
 </div>
 </div>
@@ -870,7 +995,7 @@ Methods in tree</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR on success (and a valid p_txn), or some negative value (error).</dd></dl>
-<p>Usage-wise, this is equivalent to a <a class="el" href="classjazz__elements_1_1Container.html#afd29e008d84b128940e6eab853c2aae2">new_block()</a> call. On success, it will return a <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> that belongs to the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> and must be <a class="el" href="classjazz__elements_1_1Container.html#a00ad2a85f71fe0269aaa3a955126a897">destroy()</a>-ed when the caller is done. </p>
+<p>Usage-wise, this is equivalent to a <a class="el" href="classjazz__elements_1_1Container.html#afd29e008d84b128940e6eab853c2aae2">new_block()</a> call. On success, it will return a <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> that belongs to the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> and must be <a class="el" href="classjazz__elements_1_1Volatile.html#a02d960d85ebbe5309633980258cd9e22">destroy_transaction()</a>-ed when the caller is done. </p>
 
 </div>
 </div>
@@ -966,7 +1091,7 @@ Methods in tree</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR on success (and a valid p_txn), or some negative value (error).</dd></dl>
-<p>Unlike its faster form, this allocates a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> and therefore, it is equivalent to a <a class="el" href="classjazz__elements_1_1Container.html#afd29e008d84b128940e6eab853c2aae2">new_block()</a> call. On success, it will return a <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> that belongs to the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> and must be <a class="el" href="classjazz__elements_1_1Container.html#a00ad2a85f71fe0269aaa3a955126a897">destroy()</a>-ed when the caller is done.</p>
+<p>Unlike its faster form, this allocates a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> and therefore, it is equivalent to a <a class="el" href="classjazz__elements_1_1Container.html#afd29e008d84b128940e6eab853c2aae2">new_block()</a> call. On success, it will return a <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> that belongs to the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> and must be <a class="el" href="classjazz__elements_1_1Volatile.html#a02d960d85ebbe5309633980258cd9e22">destroy_transaction()</a>-ed when the caller is done.</p>
 <p>For Tensors it will allocate a block that only has the <a class="el" href="structjazz__elements_1_1StaticBlockHeader.html" title="A Binary Compatible BlockHeader without Index (and therefore constructors/destructors)">StaticBlockHeader</a> (What you can more efficiently get from the other form.) For Kinds, the metadata of all the items is exactly the same a .<a class="el" href="classjazz__elements_1_1Volatile.html#a596197510e4b1a6a35e1d2b6d949b920">get()</a> call returns. For Tuples, it does what you expect: returning a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> with the metadata of all the items without the data. </p>
 
 </div>
@@ -1141,7 +1266,8 @@ Methods in tree</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR on success or some negative value (error).</dd></dl>
-<p>NOTE**: This does not copy blocks across Containers. A <a class="el" href="classjazz__elements_1_1Volatile.html#ac5cb0ad9b16c8a70a16a8c2627749a3f">copy()</a> call is a short way to do "get(tx, what); put(where, tx); destroy(tx);" without the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> needing to allocate Transactions and, possibly, not even blocks. To copy blocks across containers, you need channels. </p>
+<p>NOTE**: This does not copy blocks across Containers. A <a class="el" href="classjazz__elements_1_1Volatile.html#ac5cb0ad9b16c8a70a16a8c2627749a3f">copy()</a> call is a short way to do "get(tx, what); put(where, tx);
+destroy_transaction(tx);" without the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> needing to allocate Transactions and, possibly, not even blocks. To copy blocks across containers, you need channels. </p>
 
 </div>
 </div>
