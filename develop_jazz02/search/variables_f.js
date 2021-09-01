@@ -1,15 +1,15 @@
 var searchData=
 [
   ['p_5fagency_940',['p_agency',['../classjazz__main_1_1Api.html#a0d121c9fe1532ba2561234c6c806fcdc',1,'jazz_main::Api']]],
-  ['p_5falloc_941',['p_alloc',['../classjazz__elements_1_1Container.html#a3ef8fef612fe3be95dda58867039a979',1,'jazz_elements::Container']]],
+  ['p_5falloc_941',['p_alloc',['../classjazz__elements_1_1Container.html#adb7327519418aec9202b9400325617c4',1,'jazz_elements::Container']]],
   ['p_5fbebop_942',['p_bebop',['../classjazz__main_1_1Api.html#a90a9bc0852149dd794e7186d96376bef',1,'jazz_main::Api']]],
   ['p_5fblock_943',['p_block',['../structjazz__elements_1_1Transaction.html#aef29e5845f2fa4beb52d795b5f585118',1,'jazz_elements::Transaction']]],
-  ['p_5fbuffer_944',['p_buffer',['../classjazz__elements_1_1Container.html#a7667a1eb1e33e033c2d03205a246d3d5',1,'jazz_elements::Container']]],
+  ['p_5fbuffer_944',['p_buffer',['../classjazz__elements_1_1Container.html#ab0e5976eb5c32fd8b62742f61a16aca7',1,'jazz_elements::Container']]],
   ['p_5fchannels_945',['p_channels',['../classjazz__main_1_1Api.html#a786df3ee1d0d9db7c7a422884f9a4862',1,'jazz_main::Api']]],
   ['p_5fchild_946',['p_child',['../structjazz__elements_1_1VolatileTransaction.html#a44d02b20b264138d830628d5862943ed',1,'jazz_elements::VolatileTransaction']]],
   ['p_5fconf_947',['p_conf',['../classjazz__elements_1_1Service.html#aef0f516befa73bb353fa5ac244fbebe4',1,'jazz_elements::Service']]],
   ['p_5fextra_948',['p_extra',['../structjazz__elements_1_1Locator.html#ae4061fcc863914cfca8205790552155c',1,'jazz_elements::Locator']]],
-  ['p_5ffree_949',['p_free',['../classjazz__elements_1_1Container.html#afadaa39549456f5c5c33a068cfd12cd3',1,'jazz_elements::Container']]],
+  ['p_5ffree_949',['p_free',['../classjazz__elements_1_1Container.html#a54c2e89a62b9d90fe5ce179a215de2ef',1,'jazz_elements::Container']]],
   ['p_5fhea_950',['p_hea',['../structjazz__elements_1_1Transaction.html#a0098363e1a3628c087a7ee28ec57d82c',1,'jazz_elements::Transaction']]],
   ['p_5flog_951',['p_log',['../classjazz__elements_1_1Service.html#a9c9c71fccf7602a67853a1d6ab5c6ac2',1,'jazz_elements::Service']]],
   ['p_5fnext_952',['p_next',['../structjazz__elements_1_1StoredTransaction.html#a64e23ecb08c6c778b0388feb2e458fa2',1,'jazz_elements::StoredTransaction::p_next()'],['../structjazz__elements_1_1VolatileTransaction.html#a15eafd43bd955fd4a47e7bb14aaa27ec',1,'jazz_elements::VolatileTransaction::p_next()']]],
