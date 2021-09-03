@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['warn_5falloc_5fbytes_632',['warn_alloc_bytes',['../classjazz__elements_1_1Container.html#ae30751a7d7c4c893c52cf50a0fb5bfc0',1,'jazz_elements::Container']]],
-  ['write_5falways_5fcomplete_633',['WRITE_ALWAYS_COMPLETE',['../container_8h.html#ac0e8c1070af8f72a09f07b7c8b0d7873',1,'container.h']]],
-  ['write_5fcallback_634',['write_callback',['../namespacejazz__elements.html#a1a5f20cce9610a421e72a17fae481ea4',1,'jazz_elements']]],
-  ['write_5fonly_5fif_5fexists_635',['WRITE_ONLY_IF_EXISTS',['../container_8h.html#a71e0e9e3d28f32850c26e43ec5f0224b',1,'container.h']]],
-  ['write_5fonly_5fif_5fnot_5fexists_636',['WRITE_ONLY_IF_NOT_EXISTS',['../container_8h.html#a38f08bb083dd33a492b3b10d8910137b',1,'container.h']]],
-  ['write_5ftensor_5fdata_5fas_5fraw_637',['WRITE_TENSOR_DATA_AS_RAW',['../container_8h.html#a88dc81f4a27566eb0257b5f239ad1f57',1,'container.h']]],
-  ['www_638',['www',['../classjazz__main_1_1Api.html#a3f02033fc25d875e4decf03163a41619',1,'jazz_main::Api']]]
+  ['valid_5fname_665',['valid_name',['../namespacejazz__elements.html#a5a9db2e1ed4154f282a83cfe38b31239',1,'jazz_elements']]],
+  ['validate_5findex_666',['validate_index',['../classjazz__elements_1_1Block.html#afff9354aea780833e7e133d60e0b6d93',1,'jazz_elements::Block']]],
+  ['validate_5foffset_667',['validate_offset',['../classjazz__elements_1_1Block.html#a3a9f80168b8cc49169a0c906c65c1467',1,'jazz_elements::Block']]],
+  ['volatile_668',['Volatile',['../classjazz__elements_1_1Volatile.html',1,'jazz_elements::Volatile'],['../classjazz__elements_1_1Volatile.html#a17fc85e77d71206a5a4675a51209e0cc',1,'jazz_elements::Volatile::Volatile()'],['../namespacejazz__main.html#a293f31fb60de0074473a30116ea5a754',1,'jazz_main::VOLATILE()']]],
+  ['volatile_2ecpp_669',['volatile.cpp',['../volatile_8cpp.html',1,'']]],
+  ['volatile_2eh_670',['volatile.h',['../volatile_8h.html',1,'']]],
+  ['volatiletransaction_671',['VolatileTransaction',['../structjazz__elements_1_1VolatileTransaction.html',1,'jazz_elements']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['name_1026',['Name',['../namespacejazz__elements.html#a97c097c96fd6364c46569536e8cbc535',1,'jazz_elements']]]
+  ['lock32_1076',['Lock32',['../namespacejazz__elements.html#ac3d6e1b4aca91c99b80bdc759a73699f',1,'jazz_elements']]]
 ];

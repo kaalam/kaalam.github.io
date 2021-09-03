@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['lock32_1023',['Lock32',['../namespacejazz__elements.html#ac3d6e1b4aca91c99b80bdc759a73699f',1,'jazz_elements']]]
+  ['hashnamemap_1070',['HashNameMap',['../namespacejazz__elements.html#a3593683aeaf1543577090e788f15cbb8',1,'jazz_elements']]],
+  ['hashvolxctmap_1071',['HashVolXctMap',['../namespacejazz__elements.html#aaeae45084515078c6ec0cb9718ee0423',1,'jazz_elements']]]
 ];
