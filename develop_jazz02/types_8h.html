@@ -97,14 +97,11 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionjazz__elements_1_1Tensor.html">jazz_elements::Tensor</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tensor of cell size 1, 4, 8 or sizeof(BlockHeader)  <a href="unionjazz__elements_1_1Tensor.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionjazz__elements_1_1Index.html">jazz_elements::Index</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A union abstracting all the individual <a class="el" href="unionjazz__elements_1_1Index.html" title="A union abstracting all the individual Index types.">Index</a> types.  <a href="unionjazz__elements_1_1Index.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1BlockHeader.html">jazz_elements::BlockHeader</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header for a Movable <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> (<a class="el" href="unionjazz__elements_1_1Tensor.html" title="A tensor of cell size 1, 4, 8 or sizeof(BlockHeader)">Tensor</a>, <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for Jazz Blocks and Tuples.">Kind</a> or <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz Block with multiple Tensors.">Tuple</a>) or a Dynamic <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> (<a class="el" href="unionjazz__elements_1_1Index.html" title="A union abstracting all the individual Index types.">Index</a>)  <a href="structjazz__elements_1_1BlockHeader.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header for a Movable <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> (<a class="el" href="unionjazz__elements_1_1Tensor.html" title="A tensor of cell size 1, 4, 8 or sizeof(BlockHeader)">Tensor</a>, <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for Jazz Blocks and Tuples.">Kind</a> or <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz Block with multiple Tensors.">Tuple</a>) or a Dynamic <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> (Index)  <a href="structjazz__elements_1_1BlockHeader.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1StaticBlockHeader.html">jazz_elements::StaticBlockHeader</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A Binary Compatible <a class="el" href="structjazz__elements_1_1BlockHeader.html" title="Header for a Movable Block (Tensor, Kind or Tuple) or a Dynamic Block (Index)">BlockHeader</a> without <a class="el" href="unionjazz__elements_1_1Index.html" title="A union abstracting all the individual Index types.">Index</a> (and therefore constructors/destructors)  <a href="structjazz__elements_1_1StaticBlockHeader.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A Binary Compatible <a class="el" href="structjazz__elements_1_1BlockHeader.html" title="Header for a Movable Block (Tensor, Kind or Tuple) or a Dynamic Block (Index)">BlockHeader</a> without Index (and therefore constructors/destructors)  <a href="structjazz__elements_1_1StaticBlockHeader.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1StringBuffer.html">jazz_elements::StringBuffer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure at the end of a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a>, initially created with init_string_buffer()  <a href="structjazz__elements_1_1StringBuffer.html#details">More...</a><br /></td></tr>
@@ -132,9 +129,6 @@ Macros</h2></td></tr>
 <tr class="memitem:aa8b35ff47d090412d8aceeb428f8b9e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#aa8b35ff47d090412d8aceeb428f8b9e2">ONE_MB</a>&#160;&#160;&#160;(1024*1024)</td></tr>
 <tr class="memdesc:aa8b35ff47d090412d8aceeb428f8b9e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is used in log_printf() of error/warning messages.  <a href="types_8h.html#aa8b35ff47d090412d8aceeb428f8b9e2">More...</a><br /></td></tr>
 <tr class="separator:aa8b35ff47d090412d8aceeb428f8b9e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a8bfd610ac1e273cd0522d1b7169f68"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a7a8bfd610ac1e273cd0522d1b7169f68">REGEX_VALIDATE_NAME</a>&#160;&#160;&#160;&quot;^[a-zA-Z][a-zA-Z0-9_]{0,30}$&quot;</td></tr>
-<tr class="memdesc:a7a8bfd610ac1e273cd0522d1b7169f68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block API (syntax related)  <a href="types_8h.html#a7a8bfd610ac1e273cd0522d1b7169f68">More...</a><br /></td></tr>
-<tr class="separator:a7a8bfd610ac1e273cd0522d1b7169f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ca562590a5d4d166dfef09d15c7f3ac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a5ca562590a5d4d166dfef09d15c7f3ac">JAZZ_MAX_NUM_THREADS</a>&#160;&#160;&#160;64</td></tr>
 <tr class="separator:a5ca562590a5d4d166dfef09d15c7f3ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5dfd5a365563c2e8cf13a83a127af9ac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a5dfd5a365563c2e8cf13a83a127af9ac">MAX_TENSOR_RANK</a>&#160;&#160;&#160;6</td></tr>
@@ -191,18 +185,9 @@ Macros</h2></td></tr>
 <tr class="memitem:ae848294698519fda41816831fb4d953e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#ae848294698519fda41816831fb4d953e">CELL_TYPE_KIND_ITEM</a>&#160;&#160;&#160;0x128</td></tr>
 <tr class="memdesc:ae848294698519fda41816831fb4d953e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A vector of ItemHeader (in a Kind)  <a href="types_8h.html#ae848294698519fda41816831fb4d953e">More...</a><br /></td></tr>
 <tr class="separator:ae848294698519fda41816831fb4d953e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a317927d4f3c6dac582c1d9eb4c58ff41"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a317927d4f3c6dac582c1d9eb4c58ff41">CELL_TYPE_INDEX_II</a>&#160;&#160;&#160;0x030</td></tr>
-<tr class="memdesc:a317927d4f3c6dac582c1d9eb4c58ff41"><td class="mdescLeft">&#160;</td><td class="mdescRight">An IndexII (accessed via a pBlockHeader instead of a pBlock)  <a href="types_8h.html#a317927d4f3c6dac582c1d9eb4c58ff41">More...</a><br /></td></tr>
-<tr class="separator:a317927d4f3c6dac582c1d9eb4c58ff41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b5b96d8318e06128603a0f0688a0f1a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a4b5b96d8318e06128603a0f0688a0f1a">CELL_TYPE_INDEX_IS</a>&#160;&#160;&#160;0x130</td></tr>
-<tr class="memdesc:a4b5b96d8318e06128603a0f0688a0f1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">An IndexIS (accessed via a pBlockHeader instead of a pBlock)  <a href="types_8h.html#a4b5b96d8318e06128603a0f0688a0f1a">More...</a><br /></td></tr>
-<tr class="separator:a4b5b96d8318e06128603a0f0688a0f1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5db0fab8e699bf694cab491ee4c0f754"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a5db0fab8e699bf694cab491ee4c0f754">CELL_TYPE_INDEX_SI</a>&#160;&#160;&#160;0x230</td></tr>
-<tr class="memdesc:a5db0fab8e699bf694cab491ee4c0f754"><td class="mdescLeft">&#160;</td><td class="mdescRight">An IndexSI (accessed via a pBlockHeader instead of a pBlock)  <a href="types_8h.html#a5db0fab8e699bf694cab491ee4c0f754">More...</a><br /></td></tr>
-<tr class="separator:a5db0fab8e699bf694cab491ee4c0f754"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a209e61006d421727fc5a4c7445da3640"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a209e61006d421727fc5a4c7445da3640">CELL_TYPE_INDEX_SS</a>&#160;&#160;&#160;0x330</td></tr>
-<tr class="memdesc:a209e61006d421727fc5a4c7445da3640"><td class="mdescLeft">&#160;</td><td class="mdescRight">An IndexSS (accessed via a pBlockHeader instead of a pBlock)  <a href="types_8h.html#a209e61006d421727fc5a4c7445da3640">More...</a><br /></td></tr>
-<tr class="separator:a209e61006d421727fc5a4c7445da3640"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a85a64e0c86e351169d16c7408748e8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a9a85a64e0c86e351169d16c7408748e8">CELL_TYPE_INDEX</a>&#160;&#160;&#160;0x030</td></tr>
+<tr class="memdesc:a9a85a64e0c86e351169d16c7408748e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">An Index (accessed via a pBlockHeader instead of a pBlock)  <a href="types_8h.html#a9a85a64e0c86e351169d16c7408748e8">More...</a><br /></td></tr>
+<tr class="separator:a9a85a64e0c86e351169d16c7408748e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a848460d85f2782cc1a6dcb735193ec2c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a848460d85f2782cc1a6dcb735193ec2c">BYTE_BOOLEAN_NA</a>&#160;&#160;&#160;0x0ff</td></tr>
 <tr class="memdesc:a848460d85f2782cc1a6dcb735193ec2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">NA for 8-bit boolean is binary 0xff. Type does not exist in R.  <a href="types_8h.html#a848460d85f2782cc1a6dcb735193ec2c">More...</a><br /></td></tr>
 <tr class="separator:a848460d85f2782cc1a6dcb735193ec2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -310,18 +295,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a4734a779894739a0e04623c47348dd25"><td class="memItemLeft" align="right" valign="top">typedef std::set&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a4734a779894739a0e04623c47348dd25">jazz_elements::Dimensions</a></td></tr>
 <tr class="memdesc:a4734a779894739a0e04623c47348dd25"><td class="mdescLeft">&#160;</td><td class="mdescRight">An set::set with the dimension names returned by kind.dimensions()  <a href="namespacejazz__elements.html#a4734a779894739a0e04623c47348dd25">More...</a><br /></td></tr>
 <tr class="separator:a4734a779894739a0e04623c47348dd25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21ef56e0ae0b19ab246376047a94b301"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a21ef56e0ae0b19ab246376047a94b301">jazz_elements::IndexII</a></td></tr>
-<tr class="memdesc:a21ef56e0ae0b19ab246376047a94b301"><td class="mdescLeft">&#160;</td><td class="mdescRight">An <a class="el" href="unionjazz__elements_1_1Index.html" title="A union abstracting all the individual Index types.">Index</a> kept in RAM by <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a> implemented as an stdlib map (int, int)  <a href="namespacejazz__elements.html#a21ef56e0ae0b19ab246376047a94b301">More...</a><br /></td></tr>
-<tr class="separator:a21ef56e0ae0b19ab246376047a94b301"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaedb854e75f5cd59005006996f594124"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; int, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#aaedb854e75f5cd59005006996f594124">jazz_elements::IndexIS</a></td></tr>
-<tr class="memdesc:aaedb854e75f5cd59005006996f594124"><td class="mdescLeft">&#160;</td><td class="mdescRight">An <a class="el" href="unionjazz__elements_1_1Index.html" title="A union abstracting all the individual Index types.">Index</a> kept in RAM by <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a> implemented as an stdlib map (int, string)  <a href="namespacejazz__elements.html#aaedb854e75f5cd59005006996f594124">More...</a><br /></td></tr>
-<tr class="separator:aaedb854e75f5cd59005006996f594124"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6c36959b138f2f01f181fed65c9f3e9"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::string, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#af6c36959b138f2f01f181fed65c9f3e9">jazz_elements::IndexSI</a></td></tr>
-<tr class="memdesc:af6c36959b138f2f01f181fed65c9f3e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">An <a class="el" href="unionjazz__elements_1_1Index.html" title="A union abstracting all the individual Index types.">Index</a> kept in RAM by <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a> implemented as an stdlib map (string, int)  <a href="namespacejazz__elements.html#af6c36959b138f2f01f181fed65c9f3e9">More...</a><br /></td></tr>
-<tr class="separator:af6c36959b138f2f01f181fed65c9f3e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a308b39ce977ebbfae2611b6ba4476fbe"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a308b39ce977ebbfae2611b6ba4476fbe">jazz_elements::IndexSS</a></td></tr>
-<tr class="memdesc:a308b39ce977ebbfae2611b6ba4476fbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">An <a class="el" href="unionjazz__elements_1_1Index.html" title="A union abstracting all the individual Index types.">Index</a> kept in RAM by <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a> implemented as an stdlib map (string, string)  <a href="namespacejazz__elements.html#a308b39ce977ebbfae2611b6ba4476fbe">More...</a><br /></td></tr>
-<tr class="separator:a308b39ce977ebbfae2611b6ba4476fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39c9e80466c03763520f05847e49c28e"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a39c9e80466c03763520f05847e49c28e">jazz_elements::Index</a></td></tr>
+<tr class="memdesc:a39c9e80466c03763520f05847e49c28e"><td class="mdescLeft">&#160;</td><td class="mdescRight">An Index kept in RAM by <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a> implemented as an stdlib map (string, string)  <a href="namespacejazz__elements.html#a39c9e80466c03763520f05847e49c28e">More...</a><br /></td></tr>
+<tr class="separator:a39c9e80466c03763520f05847e49c28e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07fdde427e8f40096f59de0b4f9f29d7"><td class="memItemLeft" align="right" valign="top">typedef BlockHeader *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a07fdde427e8f40096f59de0b4f9f29d7">jazz_elements::pBlockHeader</a></td></tr>
 <tr class="separator:a07fdde427e8f40096f59de0b4f9f29d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade5482a3dc88f63b4f652a83ce3db990"><td class="memItemLeft" align="right" valign="top">typedef StaticBlockHeader *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#ade5482a3dc88f63b4f652a83ce3db990">jazz_elements::pStaticBlockHeader</a></td></tr>
@@ -405,23 +381,6 @@ Typedefs</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Is used in log_printf() of error/warning messages. </p>
-
-</div>
-</div>
-<a id="a7a8bfd610ac1e273cd0522d1b7169f68"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a8bfd610ac1e273cd0522d1b7169f68">&#9670;&nbsp;</a></span>REGEX_VALIDATE_NAME</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define REGEX_VALIDATE_NAME&#160;&#160;&#160;&quot;^[a-zA-Z][a-zA-Z0-9_]{0,30}$&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Block API (syntax related) </p>
-<p>Regex validating a Name </p>
 
 </div>
 </div>
@@ -728,67 +687,19 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="a317927d4f3c6dac582c1d9eb4c58ff41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a317927d4f3c6dac582c1d9eb4c58ff41">&#9670;&nbsp;</a></span>CELL_TYPE_INDEX_II</h2>
+<a id="a9a85a64e0c86e351169d16c7408748e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a85a64e0c86e351169d16c7408748e8">&#9670;&nbsp;</a></span>CELL_TYPE_INDEX</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define CELL_TYPE_INDEX_II&#160;&#160;&#160;0x030</td>
+          <td class="memname">#define CELL_TYPE_INDEX&#160;&#160;&#160;0x030</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>An IndexII (accessed via a pBlockHeader instead of a pBlock) </p>
-
-</div>
-</div>
-<a id="a4b5b96d8318e06128603a0f0688a0f1a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b5b96d8318e06128603a0f0688a0f1a">&#9670;&nbsp;</a></span>CELL_TYPE_INDEX_IS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CELL_TYPE_INDEX_IS&#160;&#160;&#160;0x130</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>An IndexIS (accessed via a pBlockHeader instead of a pBlock) </p>
-
-</div>
-</div>
-<a id="a5db0fab8e699bf694cab491ee4c0f754"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5db0fab8e699bf694cab491ee4c0f754">&#9670;&nbsp;</a></span>CELL_TYPE_INDEX_SI</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CELL_TYPE_INDEX_SI&#160;&#160;&#160;0x230</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>An IndexSI (accessed via a pBlockHeader instead of a pBlock) </p>
-
-</div>
-</div>
-<a id="a209e61006d421727fc5a4c7445da3640"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a209e61006d421727fc5a4c7445da3640">&#9670;&nbsp;</a></span>CELL_TYPE_INDEX_SS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CELL_TYPE_INDEX_SS&#160;&#160;&#160;0x330</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>An IndexSS (accessed via a pBlockHeader instead of a pBlock) </p>
+<p>An Index (accessed via a pBlockHeader instead of a pBlock) </p>
 
 </div>
 </div>
