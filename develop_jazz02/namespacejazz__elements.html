@@ -116,6 +116,9 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Logger.html">Logger</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A simple logger.  <a href="classjazz__elements_1_1Logger.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1NameUse.html">NameUse</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structjazz__elements_1_1NameUse.html" title="NameUse: A pair of Name and number of times the name is used.">NameUse</a>: A pair of Name and number of times the name is used.  <a href="structjazz__elements_1_1NameUse.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1ParseNextStateLUT.html">ParseNextStateLUT</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A lookup table for all the possible values of a char mapped into an 8-bit state.  <a href="structjazz__elements_1_1ParseNextStateLUT.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -251,9 +254,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ad43e3c323e207d8cb3bf3b7df368357f"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; <a class="el" href="structjazz__elements_1_1EntityKeyHash.html">EntityKeyHash</a>, <a class="el" href="namespacejazz__elements.html#a4ca32a12a6e32f3c76f9268f1cad14b2">pVolatileTransaction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#ad43e3c323e207d8cb3bf3b7df368357f">EntKeyVolXctMap</a></td></tr>
 <tr class="memdesc:ad43e3c323e207d8cb3bf3b7df368357f"><td class="mdescLeft">&#160;</td><td class="mdescRight">EntKeyVolXctMap: A map from (entity,key) hashes to pointers to <a class="el" href="structjazz__elements_1_1VolatileTransaction.html" title="VolatileTransaction: A Transaction-descendant wrapper over a Block for Volatile blocks.">VolatileTransaction</a>.  <a href="namespacejazz__elements.html#ad43e3c323e207d8cb3bf3b7df368357f">More...</a><br /></td></tr>
 <tr class="separator:ad43e3c323e207d8cb3bf3b7df368357f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3593683aeaf1543577090e788f15cbb8"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; uint64_t, <a class="el" href="namespacejazz__elements.html#a97c097c96fd6364c46569536e8cbc535">Name</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a3593683aeaf1543577090e788f15cbb8">HashNameMap</a></td></tr>
-<tr class="memdesc:a3593683aeaf1543577090e788f15cbb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">HashNameMap: A map from hashes to pointers to <a class="el" href="structjazz__elements_1_1VolatileTransaction.html" title="VolatileTransaction: A Transaction-descendant wrapper over a Block for Volatile blocks.">VolatileTransaction</a>.  <a href="namespacejazz__elements.html#a3593683aeaf1543577090e788f15cbb8">More...</a><br /></td></tr>
-<tr class="separator:a3593683aeaf1543577090e788f15cbb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49fea973ead34db91489be7646d99d92"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; uint64_t, <a class="el" href="structjazz__elements_1_1NameUse.html">NameUse</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a49fea973ead34db91489be7646d99d92">HashNameUseMap</a></td></tr>
+<tr class="memdesc:a49fea973ead34db91489be7646d99d92"><td class="mdescLeft">&#160;</td><td class="mdescRight">HashNameUseMap: A map from hashes to Name and number of times the name is used.  <a href="namespacejazz__elements.html#a49fea973ead34db91489be7646d99d92">More...</a><br /></td></tr>
+<tr class="separator:a49fea973ead34db91489be7646d99d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e345dcdf9b158926dc111c6e6a7034c"><td class="memItemLeft" align="right" valign="top">typedef std::string *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a4e345dcdf9b158926dc111c6e6a7034c">pString</a></td></tr>
 <tr class="memdesc:a4e345dcdf9b158926dc111c6e6a7034c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to an std::string.  <a href="namespacejazz__elements.html#a4e345dcdf9b158926dc111c6e6a7034c">More...</a><br /></td></tr>
 <tr class="separator:a4e345dcdf9b158926dc111c6e6a7034c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -896,19 +899,19 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a3593683aeaf1543577090e788f15cbb8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3593683aeaf1543577090e788f15cbb8">&#9670;&nbsp;</a></span>HashNameMap</h2>
+<a id="a49fea973ead34db91489be7646d99d92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49fea973ead34db91489be7646d99d92">&#9670;&nbsp;</a></span>HashNameUseMap</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::map&lt;uint64_t, <a class="el" href="namespacejazz__elements.html#a97c097c96fd6364c46569536e8cbc535">Name</a>&gt; <a class="el" href="namespacejazz__elements.html#a3593683aeaf1543577090e788f15cbb8">jazz_elements::HashNameMap</a></td>
+          <td class="memname">typedef std::map&lt;uint64_t, <a class="el" href="structjazz__elements_1_1NameUse.html">NameUse</a>&gt; <a class="el" href="namespacejazz__elements.html#a49fea973ead34db91489be7646d99d92">jazz_elements::HashNameUseMap</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>HashNameMap: A map from hashes to pointers to <a class="el" href="structjazz__elements_1_1VolatileTransaction.html" title="VolatileTransaction: A Transaction-descendant wrapper over a Block for Volatile blocks.">VolatileTransaction</a>. </p>
+<p>HashNameUseMap: A map from hashes to Name and number of times the name is used. </p>
 <p>This map allows doing the reverse conversion to a hash() function finding out the hashed names. </p>
 
 </div>
