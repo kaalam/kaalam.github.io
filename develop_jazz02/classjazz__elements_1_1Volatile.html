@@ -1283,8 +1283,16 @@ Methods in tree</h2>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Bla</p>
-<p>TODO: Document <a class="el" href="classjazz__elements_1_1Volatile.html#ab58bf239fa0c0b24b218ca6bc28a5e48">populate_index()</a> </p>
+<p>Populate an Index with the content of a <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz Block with multiple Tensors.">Tuple</a> of (text, text)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>Some <b>destination</b> Index </td></tr>
+    <tr><td class="paramname">p_block</td><td>The <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> to be pushed into the index <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a>. It must be compatible with new_block(8) A <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz Block with multiple Tensors.">Tuple</a> of two string items named "key" and "value" of rank == 1 and the same size.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR on success or some negative value (error).</dd></dl>
+<p>NOTE**: This is the inverse of new_block(8), except that it does not create the Index from scratch it appends (overriding existing keys) the content of the Index. </p>
 
 </div>
 </div>
@@ -1515,8 +1523,17 @@ Methods in tree</h2>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Bla</p>
-<p>TODO: Document <a class="el" href="classjazz__elements_1_1Volatile.html#abdd02b95467b87bc01bf54f5de5d5239">put_index()</a> </p>
+<p>Write a string into and Index</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>Some <b>destination</b> Index </td></tr>
+    <tr><td class="paramname">key</td><td>The key to be written </td></tr>
+    <tr><td class="paramname">p_block</td><td>The <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> to be written It must be a string of rank == 1 and size == 1. </td></tr>
+    <tr><td class="paramname">mode</td><td>Some writing restriction, either WRITE_ONLY_IF_EXISTS or WRITE_ONLY_IF_NOT_EXISTS. WRITE_TENSOR_DATA_AS_RAW is the only supported option.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR on success or some negative value (error). </dd></dl>
 
 </div>
 </div>
