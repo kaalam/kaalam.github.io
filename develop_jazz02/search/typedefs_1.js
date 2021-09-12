@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['basenames_1095',['BaseNames',['../namespacejazz__elements.html#aadf1e411ca544a525c767f3e30010202',1,'jazz_elements']]]
+  ['basenames_1088',['BaseNames',['../namespacejazz__elements.html#aadf1e411ca544a525c767f3e30010202',1,'jazz_elements']]]
 ];

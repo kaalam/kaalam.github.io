@@ -184,6 +184,9 @@ Macros</h2></td></tr>
 <tr class="memitem:a75d0ee06672436e6e02aa42652f33ea6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a75d0ee06672436e6e02aa42652f33ea6">BLOCK_STATUS_EMPTY</a>&#160;&#160;&#160;1</td></tr>
 <tr class="memdesc:a75d0ee06672436e6e02aa42652f33ea6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transaction.status: successful new_transaction() and new_block() or get() in progress.  <a href="container_8h.html#a75d0ee06672436e6e02aa42652f33ea6">More...</a><br /></td></tr>
 <tr class="separator:a75d0ee06672436e6e02aa42652f33ea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41808e48cfd7d2036e53f7cdc5deacc8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a41808e48cfd7d2036e53f7cdc5deacc8">BLOCK_STATUS_DESTROYED</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memdesc:a41808e48cfd7d2036e53f7cdc5deacc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transaction.status: transaction belongs to the container inside the free list.  <a href="container_8h.html#a41808e48cfd7d2036e53f7cdc5deacc8">More...</a><br /></td></tr>
+<tr class="separator:a41808e48cfd7d2036e53f7cdc5deacc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d08ecdef5fd0e91817f4e6b880659e9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a4d08ecdef5fd0e91817f4e6b880659e9">LOCK_NUM_RETRIES_BEFORE_YIELD</a>&#160;&#160;&#160;100</td></tr>
 <tr class="memdesc:a4d08ecdef5fd0e91817f4e6b880659e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread safety.  <a href="container_8h.html#a4d08ecdef5fd0e91817f4e6b880659e9">More...</a><br /></td></tr>
 <tr class="separator:a4d08ecdef5fd0e91817f4e6b880659e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -624,6 +627,22 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Transaction.status: successful new_transaction() and new_block() or get() in progress. </p>
+
+</div>
+</div>
+<a id="a41808e48cfd7d2036e53f7cdc5deacc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41808e48cfd7d2036e53f7cdc5deacc8">&#9670;&nbsp;</a></span>BLOCK_STATUS_DESTROYED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BLOCK_STATUS_DESTROYED&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Transaction.status: transaction belongs to the container inside the free list. </p>
 
 </div>
 </div>
