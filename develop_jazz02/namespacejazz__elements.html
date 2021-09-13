@@ -128,6 +128,9 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html">Persisted</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classjazz__elements_1_1Persisted.html" title="Persisted: A Service to manage data objects in LMDB.">Persisted</a>: A <a class="el" href="classjazz__elements_1_1Service.html" title="A Jazz Service is a globally instanced configurable object that may allocate RAM.">Service</a> to manage data objects in LMDB.  <a href="classjazz__elements_1_1Persisted.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1QueueEnt.html">QueueEnt</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structjazz__elements_1_1QueueEnt.html" title="QueueEnt: An entity to store a priority queue.">QueueEnt</a>: An entity to store a priority queue.  <a href="structjazz__elements_1_1QueueEnt.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Service.html">Service</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A Jazz <a class="el" href="classjazz__elements_1_1Service.html" title="A Jazz Service is a globally instanced configurable object that may allocate RAM.">Service</a> is a globally instanced configurable object that may allocate RAM.  <a href="classjazz__elements_1_1Service.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -251,6 +254,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:aaeae45084515078c6ec0cb9718ee0423"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; uint64_t, <a class="el" href="namespacejazz__elements.html#a4ca32a12a6e32f3c76f9268f1cad14b2">pVolatileTransaction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#aaeae45084515078c6ec0cb9718ee0423">HashVolXctMap</a></td></tr>
 <tr class="memdesc:aaeae45084515078c6ec0cb9718ee0423"><td class="mdescLeft">&#160;</td><td class="mdescRight">HashVolXctMap: A map from hashes to pointers to <a class="el" href="structjazz__elements_1_1VolatileTransaction.html" title="VolatileTransaction: A Transaction-descendant wrapper over a Block for Volatile blocks.">VolatileTransaction</a>.  <a href="namespacejazz__elements.html#aaeae45084515078c6ec0cb9718ee0423">More...</a><br /></td></tr>
 <tr class="separator:aaeae45084515078c6ec0cb9718ee0423"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a759d41cd19c3779f1de71cd39f5aa2db"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; uint64_t, <a class="el" href="structjazz__elements_1_1QueueEnt.html">QueueEnt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a759d41cd19c3779f1de71cd39f5aa2db">HashQueueEntMap</a></td></tr>
+<tr class="memdesc:a759d41cd19c3779f1de71cd39f5aa2db"><td class="mdescLeft">&#160;</td><td class="mdescRight">HashQueueEntMap: A map from hashes to <a class="el" href="structjazz__elements_1_1QueueEnt.html" title="QueueEnt: An entity to store a priority queue.">QueueEnt</a>.  <a href="namespacejazz__elements.html#a759d41cd19c3779f1de71cd39f5aa2db">More...</a><br /></td></tr>
+<tr class="separator:a759d41cd19c3779f1de71cd39f5aa2db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad43e3c323e207d8cb3bf3b7df368357f"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; <a class="el" href="structjazz__elements_1_1EntityKeyHash.html">EntityKeyHash</a>, <a class="el" href="namespacejazz__elements.html#a4ca32a12a6e32f3c76f9268f1cad14b2">pVolatileTransaction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#ad43e3c323e207d8cb3bf3b7df368357f">EntKeyVolXctMap</a></td></tr>
 <tr class="memdesc:ad43e3c323e207d8cb3bf3b7df368357f"><td class="mdescLeft">&#160;</td><td class="mdescRight">EntKeyVolXctMap: A map from (entity,key) hashes to pointers to <a class="el" href="structjazz__elements_1_1VolatileTransaction.html" title="VolatileTransaction: A Transaction-descendant wrapper over a Block for Volatile blocks.">VolatileTransaction</a>.  <a href="namespacejazz__elements.html#ad43e3c323e207d8cb3bf3b7df368357f">More...</a><br /></td></tr>
 <tr class="separator:ad43e3c323e207d8cb3bf3b7df368357f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -879,6 +885,23 @@ Variables</h2></td></tr>
 
 <p>HashVolXctMap: A map from hashes to pointers to <a class="el" href="structjazz__elements_1_1VolatileTransaction.html" title="VolatileTransaction: A Transaction-descendant wrapper over a Block for Volatile blocks.">VolatileTransaction</a>. </p>
 <p>This map allows locating entity root VolatileTransactions for creating and destroying entities. </p>
+
+</div>
+</div>
+<a id="a759d41cd19c3779f1de71cd39f5aa2db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a759d41cd19c3779f1de71cd39f5aa2db">&#9670;&nbsp;</a></span>HashQueueEntMap</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::map&lt;uint64_t, <a class="el" href="structjazz__elements_1_1QueueEnt.html">QueueEnt</a>&gt; <a class="el" href="namespacejazz__elements.html#a759d41cd19c3779f1de71cd39f5aa2db">jazz_elements::HashQueueEntMap</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HashQueueEntMap: A map from hashes to <a class="el" href="structjazz__elements_1_1QueueEnt.html" title="QueueEnt: An entity to store a priority queue.">QueueEnt</a>. </p>
+<p>This map allows locating entity root VolatileTransactions for creating and destroying queues. </p>
 
 </div>
 </div>

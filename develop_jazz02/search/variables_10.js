@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['queue_5fent_1051',['queue_ent',['../classjazz__elements_1_1Volatile.html#a15c7a37282d44722f9aca06208ba6357',1,'jazz_elements::Volatile']]],
-  ['queue_5fkey_1052',['queue_key',['../classjazz__elements_1_1Volatile.html#a8378c037cc5f6bd062f256d839af0e17',1,'jazz_elements::Volatile']]]
+  ['queue_5fent_1058',['queue_ent',['../classjazz__elements_1_1Volatile.html#a323144e1b6d68c25c93abdf65bf2cd55',1,'jazz_elements::Volatile']]],
+  ['queue_5fkey_1059',['queue_key',['../classjazz__elements_1_1Volatile.html#a8378c037cc5f6bd062f256d839af0e17',1,'jazz_elements::Volatile']]],
+  ['queue_5fsize_1060',['queue_size',['../structjazz__elements_1_1QueueEnt.html#aba4732dc04361cbc7c678bb2d002742b',1,'jazz_elements::QueueEnt']]],
+  ['queue_5fuse_1061',['queue_use',['../structjazz__elements_1_1QueueEnt.html#a34257f9bd1aaabbafb7d3a9cb037ef63',1,'jazz_elements::QueueEnt']]]
 ];
