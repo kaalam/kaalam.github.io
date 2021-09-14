@@ -17,10 +17,11 @@ var searchData=
   ['destroy_5fitem_165',['destroy_item',['../classjazz__elements_1_1Volatile.html#a789aa6a779ed50172ee613500421e589',1,'jazz_elements::Volatile']]],
   ['destroy_5fqueue_166',['destroy_queue',['../classjazz__elements_1_1Volatile.html#aca7c0277fd129922fb23eb47d24abb1e',1,'jazz_elements::Volatile']]],
   ['destroy_5ftransaction_167',['destroy_transaction',['../classjazz__elements_1_1Container.html#af79256b93a1f22d580a5c8eb18fa0558',1,'jazz_elements::Container::destroy_transaction()'],['../classjazz__elements_1_1Volatile.html#a02d960d85ebbe5309633980258cd9e22',1,'jazz_elements::Volatile::destroy_transaction()']]],
-  ['destroy_5fvolatile_168',['destroy_volatile',['../classjazz__elements_1_1Volatile.html#ac1010cb311d75c0a26106d1973e055ed',1,'jazz_elements::Volatile']]],
-  ['dim_169',['dim',['../unionjazz__elements_1_1TensorDim.html#a0c68e45ee5af23f5041bca88a3b32137',1,'jazz_elements::TensorDim::dim()'],['../structjazz__elements_1_1ItemHeader.html#a6ced5026e75f982993bcc181f09cc3b8',1,'jazz_elements::ItemHeader::dim()']]],
-  ['dimensions_170',['dimensions',['../classjazz__elements_1_1Kind.html#ad85b82e1401955777bbe02992fab3e74',1,'jazz_elements::Kind::dimensions()'],['../namespacejazz__elements.html#a4734a779894739a0e04623c47348dd25',1,'jazz_elements::Dimensions()']]],
-  ['done_5fpointer_5fto_5fblock_171',['done_pointer_to_block',['../classjazz__elements_1_1Persisted.html#a182a6c4b238e672b2ff2ab1b9c01974a',1,'jazz_elements::Persisted']]],
-  ['double_5fna_172',['DOUBLE_NA',['../types_8h.html#ac0e222767f0998f79ffeb691e5e4a7c1',1,'types.h']]],
-  ['double_5fna_5fuint64_173',['DOUBLE_NA_UINT64',['../types_8h.html#a7c0cab2b021db33c6a6d4d7d5ee15a77',1,'types.h']]]
+  ['destroy_5ftree_168',['destroy_tree',['../classjazz__elements_1_1Volatile.html#a59264c85263b7ee89bee0a1ea4e69689',1,'jazz_elements::Volatile']]],
+  ['destroy_5fvolatile_169',['destroy_volatile',['../classjazz__elements_1_1Volatile.html#ac1010cb311d75c0a26106d1973e055ed',1,'jazz_elements::Volatile']]],
+  ['dim_170',['dim',['../unionjazz__elements_1_1TensorDim.html#a0c68e45ee5af23f5041bca88a3b32137',1,'jazz_elements::TensorDim::dim()'],['../structjazz__elements_1_1ItemHeader.html#a6ced5026e75f982993bcc181f09cc3b8',1,'jazz_elements::ItemHeader::dim()']]],
+  ['dimensions_171',['dimensions',['../classjazz__elements_1_1Kind.html#ad85b82e1401955777bbe02992fab3e74',1,'jazz_elements::Kind::dimensions()'],['../namespacejazz__elements.html#a4734a779894739a0e04623c47348dd25',1,'jazz_elements::Dimensions()']]],
+  ['done_5fpointer_5fto_5fblock_172',['done_pointer_to_block',['../classjazz__elements_1_1Persisted.html#a182a6c4b238e672b2ff2ab1b9c01974a',1,'jazz_elements::Persisted']]],
+  ['double_5fna_173',['DOUBLE_NA',['../types_8h.html#ac0e222767f0998f79ffeb691e5e4a7c1',1,'types.h']]],
+  ['double_5fna_5fuint64_174',['DOUBLE_NA_UINT64',['../types_8h.html#a7c0cab2b021db33c6a6d4d7d5ee15a77',1,'types.h']]]
 ];
