@@ -37,7 +37,7 @@ var searchData=
   ['cleanconfigargument_114',['CleanConfigArgument',['../namespacejazz__elements.html#a97aefc77eb6fbbb85dabfba528a6efb7',1,'jazz_elements']]],
   ['client_5ftest_115',['client_test',['../namespacejazz__elements.html#a85bf7ecc4b2e2438fcc438ed630371d4',1,'jazz_elements']]],
   ['close_5fall_5fdatabases_116',['close_all_databases',['../classjazz__elements_1_1Persisted.html#a70a26ab8d5930abd83a32dda22772ebc',1,'jazz_elements::Persisted']]],
-  ['close_5fblock_117',['close_block',['../classjazz__elements_1_1Persisted.html#af499f7e1efc08ce1313686ef2c1a36cf',1,'jazz_elements::Persisted']]],
+  ['close_5fblock_117',['close_block',['../classjazz__elements_1_1Block.html#af860b0a6ae2755168c662e542fc5bb64',1,'jazz_elements::Block']]],
   ['cmd_5fhelp_118',['CMD_HELP',['../main_8h.html#a42553adbbb23a03ca876697c00ea44b1',1,'main.h']]],
   ['cmd_5fstart_119',['CMD_START',['../main_8h.html#ab905e6aff2332984df0552c6b50203f2',1,'main.h']]],
   ['cmd_5fstatus_120',['CMD_STATUS',['../main_8h.html#a25e21625c1e6a3d5fefce646e33344e8',1,'main.h']]],

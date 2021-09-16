@@ -94,6 +94,8 @@ Inheritance diagram for jazz_elements::Persisted:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a1d7eff67e2869078bb4bbdaa0eea9424"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html#a1d7eff67e2869078bb4bbdaa0eea9424">Persisted</a> (<a class="el" href="namespacejazz__elements.html#a6d95828c9ae09a43b64388aad469aa66">pLogger</a> a_logger, <a class="el" href="namespacejazz__elements.html#abe347aade1e2471420c9ec5d5a251e1a">pConfigFile</a> a_config)</td></tr>
 <tr class="separator:a1d7eff67e2869078bb4bbdaa0eea9424"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f72fb90b3b4de64bcbeb2485d335553"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html#a6f72fb90b3b4de64bcbeb2485d335553">~Persisted</a> ()</td></tr>
+<tr class="separator:a6f72fb90b3b4de64bcbeb2485d335553"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac71e44e58eadb4289c98ba79755ec369"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html#ac71e44e58eadb4289c98ba79755ec369">start</a> ()</td></tr>
 <tr class="memdesc:ac71e44e58eadb4289c98ba79755ec369"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the service, checking the environment and building the databases.  <a href="classjazz__elements_1_1Persisted.html#ac71e44e58eadb4289c98ba79755ec369">More...</a><br /></td></tr>
 <tr class="separator:ac71e44e58eadb4289c98ba79755ec369"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -234,8 +236,6 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:af499f7e1efc08ce1313686ef2c1a36cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html#af499f7e1efc08ce1313686ef2c1a36cf">close_block</a> (<a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a> p_block)</td></tr>
-<tr class="separator:af499f7e1efc08ce1313686ef2c1a36cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f353aea263dd410530e41eb507a95c4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html#a5f353aea263dd410530e41eb507a95c4">check_block</a> (<a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a> p_block)</td></tr>
 <tr class="separator:a5f353aea263dd410530e41eb507a95c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc0f3359242a82091fa8eddd3e8002c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html#afc0f3359242a82091fa8eddd3e8002c0">lock_pointer_to_block</a> (<a class="el" href="structjazz__elements_1_1Locator.html">Locator</a> &amp;what, <a class="el" href="namespacejazz__elements.html#a59cfd109724f06a17a43532662d9a513">pMDB_txn</a> &amp;p_txn)</td></tr>
@@ -331,6 +331,23 @@ For reference:</h2>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6f72fb90b3b4de64bcbeb2485d335553"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f72fb90b3b4de64bcbeb2485d335553">&#9670;&nbsp;</a></span>~Persisted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">jazz_elements::Persisted::~Persisted </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -879,32 +896,6 @@ For reference:</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if exists. </dd></dl>
-
-</div>
-</div>
-<a id="af499f7e1efc08ce1313686ef2c1a36cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af499f7e1efc08ce1313686ef2c1a36cf">&#9670;&nbsp;</a></span>close_block()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void jazz_elements::Persisted::close_block </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a>&#160;</td>
-          <td class="paramname"><em>p_block</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>
