@@ -248,10 +248,10 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a63587441cea68cfd92d84e5e453f45c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70a26ab8d5930abd83a32dda22772ebc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html#a70a26ab8d5930abd83a32dda22772ebc">close_all_databases</a> ()</td></tr>
 <tr class="separator:a70a26ab8d5930abd83a32dda22772ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17d23d5662099d5349730c7175a0940e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html#a17d23d5662099d5349730c7175a0940e">new_database</a> (<a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> name)</td></tr>
-<tr class="separator:a17d23d5662099d5349730c7175a0940e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadc218852b7d2ace91347aa5fb7365d8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html#aadc218852b7d2ace91347aa5fb7365d8">remove_database</a> (<a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> name)</td></tr>
-<tr class="separator:aadc218852b7d2ace91347aa5fb7365d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84dd3decde0c63abf7b795cb18aa678e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html#a84dd3decde0c63abf7b795cb18aa678e">new_database</a> (<a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> name)</td></tr>
+<tr class="separator:a84dd3decde0c63abf7b795cb18aa678e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b9cc7ea4981cd1497402edfc87fd64b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html#a2b9cc7ea4981cd1497402edfc87fd64b">remove_database</a> (<a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> name)</td></tr>
+<tr class="separator:a2b9cc7ea4981cd1497402edfc87fd64b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a05cb6a272e2094edf553a71eba78f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html#a0a05cb6a272e2094edf553a71eba78f3">log_lmdb_err</a> (int err, const char *msg)</td></tr>
 <tr class="memdesc:a0a05cb6a272e2094edf553a71eba78f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">A nicer presentation for LMDB error messages.  <a href="classjazz__elements_1_1Persisted.html#a0a05cb6a272e2094edf553a71eba78f3">More...</a><br /></td></tr>
 <tr class="separator:a0a05cb6a272e2094edf553a71eba78f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1060,8 +1060,8 @@ For reference:</h2>
 
 </div>
 </div>
-<a id="a17d23d5662099d5349730c7175a0940e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17d23d5662099d5349730c7175a0940e">&#9670;&nbsp;</a></span>new_database()</h2>
+<a id="a84dd3decde0c63abf7b795cb18aa678e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84dd3decde0c63abf7b795cb18aa678e">&#9670;&nbsp;</a></span>new_database()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1070,7 +1070,7 @@ For reference:</h2>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool jazz_elements::Persisted::new_database </td>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> jazz_elements::Persisted::new_database </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a>&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
@@ -1090,12 +1090,12 @@ For reference:</h2>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true if successful, false and log(LOG_MISS, "further details") if not. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR on success or some negative value and log(LOG_MISS, "further details") on failure. </dd></dl>
 
 </div>
 </div>
-<a id="aadc218852b7d2ace91347aa5fb7365d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aadc218852b7d2ace91347aa5fb7365d8">&#9670;&nbsp;</a></span>remove_database()</h2>
+<a id="a2b9cc7ea4981cd1497402edfc87fd64b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b9cc7ea4981cd1497402edfc87fd64b">&#9670;&nbsp;</a></span>remove_database()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1104,7 +1104,7 @@ For reference:</h2>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool jazz_elements::Persisted::remove_database </td>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> jazz_elements::Persisted::remove_database </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a>&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
@@ -1123,7 +1123,7 @@ For reference:</h2>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true if successful, false and log(LOG_MISS, "further details") if not.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR on success or some negative value and log(LOG_MISS, "further details") on failure.</dd></dl>
 <p>NOTE: kill_source() is EXTREMELY not thread safe! Indices to ALL sources may change. Unsafe use of: numsources, source_nam, source_open, source_dbi. </p>
 
 </div>
