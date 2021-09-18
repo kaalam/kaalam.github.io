@@ -16,7 +16,7 @@ var searchData=
   ['agency_14',['Agency',['../classjazz__agency_1_1Agency.html',1,'jazz_agency::Agency'],['../classjazz__agency_1_1Agency.html#a7fb4dcad71df4486293fe6389aff0a37',1,'jazz_agency::Agency::Agency()']]],
   ['agency_2ecpp_15',['agency.cpp',['../agency_8cpp.html',1,'']]],
   ['agency_2eh_16',['agency.h',['../agency_8h.html',1,'']]],
-  ['align_5f128bit_17',['align_128bit',['../classjazz__elements_1_1Block.html#a90d95624762acefc83ecb038e7c4f949',1,'jazz_elements::Block']]],
+  ['align64bit_17',['align64bit',['../classjazz__elements_1_1Block.html#abd65c21518280304bdbe3d74bb6ccba0',1,'jazz_elements::Block']]],
   ['alloc_5fbytes_18',['alloc_bytes',['../classjazz__elements_1_1Container.html#a7a4180f46f2820502f48df99fe2b88b1',1,'jazz_elements::Container']]],
   ['alloc_5ffailed_19',['alloc_failed',['../structjazz__elements_1_1StringBuffer.html#aae699f7385bb6797bfba1e8ced8ecbe2',1,'jazz_elements::StringBuffer']]],
   ['alloc_5fwarning_5fissued_20',['alloc_warning_issued',['../classjazz__elements_1_1Container.html#a5e1952f77849d691de8ad08012322385',1,'jazz_elements::Container']]],

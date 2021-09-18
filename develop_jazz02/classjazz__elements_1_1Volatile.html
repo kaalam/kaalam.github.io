@@ -325,6 +325,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a3b00418cc5f5f425b2ac7353d5f87094 inherit pro_methods_classjazz__elements_1_1Container"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39e73d3ee200010809ad7c4b3540dd51 inherit pro_methods_classjazz__elements_1_1Container"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a39e73d3ee200010809ad7c4b3540dd51">unlock_container</a> ()</td></tr>
 <tr class="separator:a39e73d3ee200010809ad7c4b3540dd51 inherit pro_methods_classjazz__elements_1_1Container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e0efc28d7f6d1d1aa253e68badaf170 inherit pro_methods_classjazz__elements_1_1Container"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a1e0efc28d7f6d1d1aa253e68badaf170">destroy_container</a> ()</td></tr>
+<tr class="separator:a1e0efc28d7f6d1d1aa253e68badaf170 inherit pro_methods_classjazz__elements_1_1Container"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9dc5465894081c7e91ec1489122d6cfb inherit pro_methods_classjazz__elements_1_1Container"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a9dc5465894081c7e91ec1489122d6cfb">from_hex</a> (char c)</td></tr>
 <tr class="separator:a9dc5465894081c7e91ec1489122d6cfb inherit pro_methods_classjazz__elements_1_1Container"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classjazz__elements_1_1Container"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classjazz__elements_1_1Container')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classjazz__elements_1_1Container.html">jazz_elements::Container</a></td></tr>
@@ -2592,7 +2594,7 @@ Methods in tree</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR on success (and a valid location), or some negative value (error).</dd></dl>
-<p>This just copies what into location </p>
+<p>NOTE: This just copies what into location. It will not verify the existence of the block. The function of <a class="el" href="classjazz__elements_1_1Volatile.html#a9a4c7e93174e176b350d86f2893cd224">locate()</a> is to evaluate commands in Containers supporting them (E.g, <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a>). Otherwise, it is a trivial conversion from the easy into the native API. </p>
 
 </div>
 </div>

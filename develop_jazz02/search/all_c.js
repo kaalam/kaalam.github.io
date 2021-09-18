@@ -28,7 +28,7 @@ var searchData=
   ['log_5fdebug_342',['LOG_DEBUG',['../utils_8h.html#a6ff63e8955665c4a58b1598f2b07c51a',1,'utils.h']]],
   ['log_5ferror_343',['LOG_ERROR',['../utils_8h.html#aced66975c154ea0e2a8ec3bc818b4e08',1,'utils.h']]],
   ['log_5finfo_344',['LOG_INFO',['../utils_8h.html#aeb4f36db01bd128c7afeac5889dac311',1,'utils.h']]],
-  ['log_5flmdb_5ferr_345',['log_lmdb_err',['../classjazz__elements_1_1Persisted.html#a0a05cb6a272e2094edf553a71eba78f3',1,'jazz_elements::Persisted']]],
+  ['log_5flmdb_5ferr_345',['log_lmdb_err',['../classjazz__elements_1_1Persisted.html#ace2a34e102e084db95771583ffdbc2b9',1,'jazz_elements::Persisted']]],
   ['log_5fmiss_346',['LOG_MISS',['../utils_8h.html#affb5af35aaf7d7e3224c67db2230a68a',1,'utils.h']]],
   ['log_5fprintf_347',['log_printf',['../classjazz__elements_1_1Logger.html#a0a78222ffe95b784eac088545c656f67',1,'jazz_elements::Logger::log_printf(int loglevel, const char *fmt,...)'],['../classjazz__elements_1_1Logger.html#afe14c93dbf7a400f4f5ffd4b947f3963',1,'jazz_elements::Logger::log_printf(int loglevel, const char *fmt, va_list args)'],['../classjazz__elements_1_1Service.html#a8290451b2815ea470b8518493023e605',1,'jazz_elements::Service::log_printf()']]],
   ['log_5fwarn_348',['LOG_WARN',['../utils_8h.html#aea3f57d6dcc5b4ac957e2679e87dde27',1,'utils.h']]],

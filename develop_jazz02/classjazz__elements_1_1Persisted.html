@@ -252,9 +252,9 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a84dd3decde0c63abf7b795cb18aa678e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b9cc7ea4981cd1497402edfc87fd64b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html#a2b9cc7ea4981cd1497402edfc87fd64b">remove_database</a> (<a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> name)</td></tr>
 <tr class="separator:a2b9cc7ea4981cd1497402edfc87fd64b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a05cb6a272e2094edf553a71eba78f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html#a0a05cb6a272e2094edf553a71eba78f3">log_lmdb_err</a> (int err, const char *msg)</td></tr>
-<tr class="memdesc:a0a05cb6a272e2094edf553a71eba78f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">A nicer presentation for LMDB error messages.  <a href="classjazz__elements_1_1Persisted.html#a0a05cb6a272e2094edf553a71eba78f3">More...</a><br /></td></tr>
-<tr class="separator:a0a05cb6a272e2094edf553a71eba78f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace2a34e102e084db95771583ffdbc2b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html#ace2a34e102e084db95771583ffdbc2b9">log_lmdb_err</a> (int loglevel, int lmdb_err, const char *msg)</td></tr>
+<tr class="memdesc:ace2a34e102e084db95771583ffdbc2b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A nicer presentation for LMDB error messages.  <a href="classjazz__elements_1_1Persisted.html#ace2a34e102e084db95771583ffdbc2b9">More...</a><br /></td></tr>
+<tr class="separator:ace2a34e102e084db95771583ffdbc2b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -276,6 +276,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a3b00418cc5f5f425b2ac7353d5f87094 inherit pro_methods_classjazz__elements_1_1Container"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39e73d3ee200010809ad7c4b3540dd51 inherit pro_methods_classjazz__elements_1_1Container"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a39e73d3ee200010809ad7c4b3540dd51">unlock_container</a> ()</td></tr>
 <tr class="separator:a39e73d3ee200010809ad7c4b3540dd51 inherit pro_methods_classjazz__elements_1_1Container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e0efc28d7f6d1d1aa253e68badaf170 inherit pro_methods_classjazz__elements_1_1Container"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a1e0efc28d7f6d1d1aa253e68badaf170">destroy_container</a> ()</td></tr>
+<tr class="separator:a1e0efc28d7f6d1d1aa253e68badaf170 inherit pro_methods_classjazz__elements_1_1Container"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9dc5465894081c7e91ec1489122d6cfb inherit pro_methods_classjazz__elements_1_1Container"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a9dc5465894081c7e91ec1489122d6cfb">from_hex</a> (char c)</td></tr>
 <tr class="separator:a9dc5465894081c7e91ec1489122d6cfb inherit pro_methods_classjazz__elements_1_1Container"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classjazz__elements_1_1Container"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classjazz__elements_1_1Container')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classjazz__elements_1_1Container.html">jazz_elements::Container</a></td></tr>
@@ -944,7 +946,7 @@ For reference:</h2>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a59cfd109724f06a17a43532662d9a513">pMDB_txn</a> &amp;&#160;</td>
-          <td class="paramname"><em>p_txn</em>&#160;</td>
+          <td class="paramname"><em>lm_tx</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -963,7 +965,7 @@ For reference:</h2>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">what</td><td>The location of a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> inside LMDB. </td></tr>
-    <tr><td class="paramname">p_txn</td><td>the transcation created by a <a class="el" href="classjazz__elements_1_1Persisted.html#afc0f3359242a82091fa8eddd3e8002c0" title="Locates a block doing an mdb_get() leaving the transaction open.">lock_pointer_to_block()</a> call.</td></tr>
+    <tr><td class="paramname">lm_tx</td><td>the transcation created by a <a class="el" href="classjazz__elements_1_1Persisted.html#afc0f3359242a82091fa8eddd3e8002c0" title="Locates a block doing an mdb_get() leaving the transaction open.">lock_pointer_to_block()</a> call.</td></tr>
   </table>
   </dd>
 </dl>
@@ -985,7 +987,7 @@ For reference:</h2>
           <td class="memname">void jazz_elements::Persisted::done_pointer_to_block </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a59cfd109724f06a17a43532662d9a513">pMDB_txn</a> &amp;&#160;</td>
-          <td class="paramname"><em>p_txn</em></td><td>)</td>
+          <td class="paramname"><em>lm_tx</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -999,7 +1001,7 @@ For reference:</h2>
 <p>Completes the transaction started by <a class="el" href="classjazz__elements_1_1Persisted.html#afc0f3359242a82091fa8eddd3e8002c0" title="Locates a block doing an mdb_get() leaving the transaction open.">lock_pointer_to_block()</a> doing a mdb_txn_commit() which invalidates the pointer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">p_txn</td><td>the transcation created by a <a class="el" href="classjazz__elements_1_1Persisted.html#afc0f3359242a82091fa8eddd3e8002c0" title="Locates a block doing an mdb_get() leaving the transaction open.">lock_pointer_to_block()</a> call. </td></tr>
+    <tr><td class="paramname">lm_tx</td><td>the transcation created by a <a class="el" href="classjazz__elements_1_1Persisted.html#afc0f3359242a82091fa8eddd3e8002c0" title="Locates a block doing an mdb_get() leaving the transaction open.">lock_pointer_to_block()</a> call. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1128,8 +1130,8 @@ For reference:</h2>
 
 </div>
 </div>
-<a id="a0a05cb6a272e2094edf553a71eba78f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a05cb6a272e2094edf553a71eba78f3">&#9670;&nbsp;</a></span>log_lmdb_err()</h2>
+<a id="ace2a34e102e084db95771583ffdbc2b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace2a34e102e084db95771583ffdbc2b9">&#9670;&nbsp;</a></span>log_lmdb_err()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1141,7 +1143,13 @@ For reference:</h2>
           <td class="memname">void jazz_elements::Persisted::log_lmdb_err </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>err</em>, </td>
+          <td class="paramname"><em>loglevel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lmdb_err</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1163,6 +1171,15 @@ For reference:</h2>
 </div><div class="memdoc">
 
 <p>A nicer presentation for LMDB error messages. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">loglevel</td><td>The log level with which the messages have to be delivered. </td></tr>
+    <tr><td class="paramname">lmdb_err</td><td>The error code returned by lmdb. </td></tr>
+    <tr><td class="paramname">msg</td><td>An additional explanatory message about the circumstances how it happened.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>NOTE: One call to this produces two log lines: one with the translation of the lmdb code the second one with msg. </p>
 
 </div>
 </div>

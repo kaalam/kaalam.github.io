@@ -14,7 +14,7 @@ var searchData=
   ['add_5fitem_789',['add_item',['../classjazz__elements_1_1Kind.html#a8b65fa72c255b8cf8a151f1562a32fd6',1,'jazz_elements::Kind']]],
   ['add_5fname_790',['add_name',['../classjazz__elements_1_1Volatile.html#aef1a803601f6af44397c6b5b7572a455',1,'jazz_elements::Volatile']]],
   ['agency_791',['Agency',['../classjazz__agency_1_1Agency.html#a7fb4dcad71df4486293fe6389aff0a37',1,'jazz_agency::Agency']]],
-  ['align_5f128bit_792',['align_128bit',['../classjazz__elements_1_1Block.html#a90d95624762acefc83ecb038e7c4f949',1,'jazz_elements::Block']]],
+  ['align64bit_792',['align64bit',['../classjazz__elements_1_1Block.html#abd65c21518280304bdbe3d74bb6ccba0',1,'jazz_elements::Block']]],
   ['api_793',['Api',['../classjazz__main_1_1Api.html#a67c4802ac915634f74e18ff01f6095c6',1,'jazz_main::Api']]],
   ['as_5fhex_794',['as_hex',['../classjazz__elements_1_1Container.html#ab016b3779ac5ed5daf3b99b0583e8112',1,'jazz_elements::Container']]],
   ['as_5flocator_795',['as_locator',['../classjazz__elements_1_1Channels.html#ae0104f089fc82804b1914b3b9afdbabb',1,'jazz_elements::Channels::as_locator()'],['../classjazz__elements_1_1Container.html#a21d9a9ca23de70ad5dab49411dbe9773',1,'jazz_elements::Container::as_locator()']]],
