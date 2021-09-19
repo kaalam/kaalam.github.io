@@ -120,7 +120,7 @@ $(function() {
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="types_8h.html">src/jazz_elements/types.h</a>&quot;</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#if defined CATCH_TEST</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#ifdef CATCH_TEST</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#ifndef INCLUDED_JAZZ_CATCH2</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#define INCLUDED_JAZZ_CATCH2</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
@@ -274,7 +274,7 @@ $(function() {
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classjazz__elements_1_1Logger.html#a0a78222ffe95b784eac088545c656f67">log_printf</a>(<span class="keywordtype">int</span> loglevel, <span class="keyword">const</span> <span class="keywordtype">char</span> *fmt, ...);</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classjazz__elements_1_1Logger.html#a0a78222ffe95b784eac088545c656f67">log_printf</a>(<span class="keywordtype">int</span> loglevel, <span class="keyword">const</span> <span class="keywordtype">char</span> *fmt, va_list args);</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160; </div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="preprocessor">#if defined CATCH_TEST</span></div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="preprocessor">#ifdef CATCH_TEST</span></div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        <span class="keywordtype">bool</span> SkipLogOnce;</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160; </div>
