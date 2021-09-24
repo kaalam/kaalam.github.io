@@ -82,11 +82,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1ExtraLocator.html">jazz_elements::ExtraLocator</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structjazz__elements_1_1ExtraLocator.html" title="ExtraLocator: A structure that replaces the entity/key in a Locator by a long URL or file name and so...">ExtraLocator</a>: A structure that replaces the entity/key in a <a class="el" href="structjazz__elements_1_1Locator.html" title="Locator: A minimal structure to define the location of resources inside a Container.">Locator</a> by a long URL or file name and some http quirks.  <a href="structjazz__elements_1_1ExtraLocator.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Channels.html">jazz_elements::Channels</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classjazz__elements_1_1Channels.html" title="Channels: A Container doing block transactions across media (files, folders, shell,...">Channels</a>: A <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> doing block transactions across media (files, folders, shell, urls, other Containers, ..)  <a href="classjazz__elements_1_1Channels.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classjazz__elements_1_1Channels.html" title="Channels: A Container doing block transactions across media (files, folders, shell,...">Channels</a>: A <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> doing block transactions across media (files, folders, shell, http urls and zeroMQ servers)  <a href="classjazz__elements_1_1Channels.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -99,6 +96,14 @@ Namespaces</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a96f6aa718704cc59c65ee5c701ba4bac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8h.html#a96f6aa718704cc59c65ee5c701ba4bac">INCLUDED_JAZZ_ELEMENTS_CHANNEL</a></td></tr>
 <tr class="separator:a96f6aa718704cc59c65ee5c701ba4bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29688af2ab3fd6abc8aab3d103fb6fb1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8h.html#a29688af2ab3fd6abc8aab3d103fb6fb1">BASE_BASH_10BIT</a>&#160;&#160;&#160;0x022</td></tr>
+<tr class="separator:a29688af2ab3fd6abc8aab3d103fb6fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2476ad0da777f0c6701627234c8e6c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8h.html#af2476ad0da777f0c6701627234c8e6c1">BASE_FILE_10BIT</a>&#160;&#160;&#160;0x126</td></tr>
+<tr class="separator:af2476ad0da777f0c6701627234c8e6c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ee1f03cb28fbc9ba2c0c211c75791ea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8h.html#a5ee1f03cb28fbc9ba2c0c211c75791ea">BASE_HTTP_10BIT</a>&#160;&#160;&#160;0x288</td></tr>
+<tr class="separator:a5ee1f03cb28fbc9ba2c0c211c75791ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08ad82400c5ef6c156e5ac085f59e34a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8h.html#a08ad82400c5ef6c156e5ac085f59e34a">BASE_0_MQ_10BIT</a>&#160;&#160;&#160;0x1b0</td></tr>
+<tr class="separator:a08ad82400c5ef6c156e5ac085f59e34a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42378c017254ae07807c9b446313ebe3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="channel_8h.html#a42378c017254ae07807c9b446313ebe3">MAX_FILE_OR_URL_SIZE</a>&#160;&#160;&#160;1824</td></tr>
 <tr class="memdesc:a42378c017254ae07807c9b446313ebe3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used inside an ExtraLocator, it makes the structure 2 Kbytes.  <a href="channel_8h.html#a42378c017254ae07807c9b446313ebe3">More...</a><br /></td></tr>
 <tr class="separator:a42378c017254ae07807c9b446313ebe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,8 +158,11 @@ Typedefs</h2></td></tr>
 <tr class="memitem:aa38e6e4745cc7e7b0efaba4e1be2fcea"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; int, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#aa38e6e4745cc7e7b0efaba4e1be2fcea">jazz_elements::MapIS</a></td></tr>
 <tr class="memdesc:aa38e6e4745cc7e7b0efaba4e1be2fcea"><td class="mdescLeft">&#160;</td><td class="mdescRight">A map for defining http config names.  <a href="namespacejazz__elements.html#aa38e6e4745cc7e7b0efaba4e1be2fcea">More...</a><br /></td></tr>
 <tr class="separator:aa38e6e4745cc7e7b0efaba4e1be2fcea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65b212cde81ca9c4acfe34dae990ecf1"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::string, Index &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a65b212cde81ca9c4acfe34dae990ecf1">jazz_elements::ConnMap</a></td></tr>
+<tr class="memdesc:a65b212cde81ca9c4acfe34dae990ecf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">A structure holding connections.  <a href="namespacejazz__elements.html#a65b212cde81ca9c4acfe34dae990ecf1">More...</a><br /></td></tr>
+<tr class="separator:a65b212cde81ca9c4acfe34dae990ecf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae0fa1d7770e9247d718fceeabdce05b"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#aae0fa1d7770e9247d718fceeabdce05b">jazz_elements::MapII</a></td></tr>
-<tr class="memdesc:aae0fa1d7770e9247d718fceeabdce05b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A map for defining http config names.  <a href="namespacejazz__elements.html#aae0fa1d7770e9247d718fceeabdce05b">More...</a><br /></td></tr>
+<tr class="memdesc:aae0fa1d7770e9247d718fceeabdce05b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A map for defining http config ports.  <a href="namespacejazz__elements.html#aae0fa1d7770e9247d718fceeabdce05b">More...</a><br /></td></tr>
 <tr class="separator:aae0fa1d7770e9247d718fceeabdce05b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae07e8fd7a73396ce4ef564979d2498e5"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#ae07e8fd7a73396ce4ef564979d2498e5">jazz_elements::MHD_StatusCode</a></td></tr>
 <tr class="memdesc:ae07e8fd7a73396ce4ef564979d2498e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">A proper type for specifying http status codes.  <a href="namespacejazz__elements.html#ae07e8fd7a73396ce4ef564979d2498e5">More...</a><br /></td></tr>
@@ -171,6 +179,62 @@ Typedefs</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define INCLUDED_JAZZ_ELEMENTS_CHANNEL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a29688af2ab3fd6abc8aab3d103fb6fb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29688af2ab3fd6abc8aab3d103fb6fb1">&#9670;&nbsp;</a></span>BASE_BASH_10BIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BASE_BASH_10BIT&#160;&#160;&#160;0x022</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af2476ad0da777f0c6701627234c8e6c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2476ad0da777f0c6701627234c8e6c1">&#9670;&nbsp;</a></span>BASE_FILE_10BIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BASE_FILE_10BIT&#160;&#160;&#160;0x126</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5ee1f03cb28fbc9ba2c0c211c75791ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ee1f03cb28fbc9ba2c0c211c75791ea">&#9670;&nbsp;</a></span>BASE_HTTP_10BIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BASE_HTTP_10BIT&#160;&#160;&#160;0x288</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a08ad82400c5ef6c156e5ac085f59e34a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08ad82400c5ef6c156e5ac085f59e34a">&#9670;&nbsp;</a></span>BASE_0_MQ_10BIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BASE_0_MQ_10BIT&#160;&#160;&#160;0x1b0</td>
         </tr>
       </table>
 </div><div class="memdoc">

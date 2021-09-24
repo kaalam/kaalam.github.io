@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['tenbitintlut_1154',['TenBitIntLUT',['../namespacejazz__elements.html#a059a96462c878934ecc7d2785e10a53a',1,'jazz_elements']]],
-  ['tenbitptrlut_1155',['TenBitPtrLUT',['../namespacejazz__elements.html#a9857872121f78a0031cc90ff9861cb5f',1,'jazz_elements']]],
-  ['timepoint_1156',['TimePoint',['../namespacejazz__elements.html#aa7e5adf7a32b3080ea959153d2b6aee9',1,'jazz_elements']]]
+  ['statuscode_1174',['StatusCode',['../namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f',1,'jazz_elements']]]
 ];

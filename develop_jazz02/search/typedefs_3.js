@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['entkeyvolxctmap_1114',['EntKeyVolXctMap',['../namespacejazz__elements.html#ad43e3c323e207d8cb3bf3b7df368357f',1,'jazz_elements']]]
+  ['dbimap_1133',['DBImap',['../namespacejazz__elements.html#a0b66aa81bf225b5653d565b87196f6d1',1,'jazz_elements']]],
+  ['dimensions_1134',['Dimensions',['../namespacejazz__elements.html#a4734a779894739a0e04623c47348dd25',1,'jazz_elements']]]
 ];

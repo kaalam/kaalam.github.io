@@ -155,6 +155,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a274ffe29a9edd7eb540d72d112429547"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bd04b424e407ed5adb59042d208de14"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a7bd04b424e407ed5adb59042d208de14">copy</a> (<a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> p_where, <a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> p_what)</td></tr>
 <tr class="separator:a7bd04b424e407ed5adb59042d208de14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a945134d7b55d40dd05f2ba573f80ec4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a945134d7b55d40dd05f2ba573f80ec4a">translate</a> (<a class="el" href="namespacejazz__elements.html#a07b590209f1036d836732e9a3370e50e">pTuple</a> p_tuple, <a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> p_pipe)</td></tr>
+<tr class="separator:a945134d7b55d40dd05f2ba573f80ec4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21d9a9ca23de70ad5dab49411dbe9773"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a21d9a9ca23de70ad5dab49411dbe9773">as_locator</a> (<a class="el" href="structjazz__elements_1_1Locator.html">Locator</a> &amp;result, <a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> p_what)</td></tr>
 <tr class="separator:a21d9a9ca23de70ad5dab49411dbe9773"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2b5f0456aca94998df803c1342aee64"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#ad2b5f0456aca94998df803c1342aee64">get</a> (<a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> &amp;p_txn, <a class="el" href="structjazz__elements_1_1Locator.html">Locator</a> &amp;what)</td></tr>
@@ -309,19 +311,19 @@ Private Attributes</h2></td></tr>
 <ul>
 <li>A transparent deque of <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> structures</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md3"></a>
+<h2><a class="anchor" id="autotoc_md5"></a>
 One-shot Block allocation</h2>
 <p>This is the only container providing one-shot <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> allocation. This does not mean, unlike in previous versions, the caller owns the pointer. One-shot <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> allocation is intended for computing intermediate blocks like: blocks generated from constants, from slicing, returned by functions, etc. In these blocks, the locator is meaningless, the caller will create it by <a class="el" href="classjazz__elements_1_1Container.html#afd29e008d84b128940e6eab853c2aae2">new_block()</a>, use it and call <a class="el" href="classjazz__elements_1_1Container.html#af79256b93a1f22d580a5c8eb18fa0558">destroy_transaction()</a> when done.</p>
-<h2><a class="anchor" id="autotoc_md4"></a>
+<h2><a class="anchor" id="autotoc_md6"></a>
 Instances and inheritance</h2>
 <p>Note that the descendants don't inherit each other, but they all have the basic deque mechanism inherited from <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>: i.e., they can all allocate new blocks for their own purposes. Configuration-wise the allocations set by ONE_SHOT_MAX_TRANSACTIONS, ONE_SHOT_WARN_BLOCK_KBYTES, ... only apply to the instance of the class <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>, the descendants use their own limits in which they include this allocation combined with whatever other allocations they do. The total allocation of the Jazz node is the sum of all (plus some small amount used by libraries, etc. that is not dependant on data size).</p>
-<h2><a class="anchor" id="autotoc_md5"></a>
+<h2><a class="anchor" id="autotoc_md7"></a>
 Container descendants</h2>
 <p>Note that Continers own their Transactions and may allocate p_route blocks including all kinds of things like session cookies or credentials for libcurl calls. Any container will reroute a <a class="el" href="classjazz__elements_1_1Container.html#af79256b93a1f22d580a5c8eb18fa0558">destroy_transaction()</a> call to its owner.</p>
-<h2><a class="anchor" id="autotoc_md6"></a>
+<h2><a class="anchor" id="autotoc_md8"></a>
 Scope of jazz_elements</h2>
 <p>Everything works at binary level, operations on blocks at this level are very simple, just copying, deleting, filtering a <a class="el" href="unionjazz__elements_1_1Tensor.html" title="A tensor of cell size 1, 4, 8 or sizeof(BlockHeader)">Tensor</a> by (int or bool) indices, filtering a <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz Block with multiple Tensors.">Tuple</a> by item name and support every medium in the more conceivably efficient way. Serialization (to and from text) is done at the Api level, running code in <a class="el" href="namespacejazz__bebop.html" title="Bebop, cores, kernel and extending the language.">jazz_bebop</a> and agency (yomi) at <a class="el" href="namespacejazz__agency.html" title="Agency: learning, building flʌkpilers and graphs of flʌkpilers (== Agents).">jazz_agency</a>.</p>
-<h2><a class="anchor" id="autotoc_md7"></a>
+<h2><a class="anchor" id="autotoc_md9"></a>
 new_block()</h2>
 <p>NOTE** that <a class="el" href="classjazz__elements_1_1Container.html#afd29e008d84b128940e6eab853c2aae2">new_block()</a> has 7 forms. It is always called <a class="el" href="classjazz__elements_1_1Container.html#afd29e008d84b128940e6eab853c2aae2">new_block()</a> to emphasize that what the funcion does is create a new block (vs. sharing a pointer to an existing one). Therefore, the container allocates and owns it an requires a <a class="el" href="classjazz__elements_1_1Container.html#af79256b93a1f22d580a5c8eb18fa0558">destroy_transaction()</a> call when no longer needed. The forms cover all the supported ways to do basic operations like filtering and serializing.</p>
 <ol type="1">
@@ -1444,6 +1446,44 @@ destroy_transaction(tx);" without the <a class="el" href="classjazz__elements_1_
 
 </div>
 </div>
+<a id="a945134d7b55d40dd05f2ba573f80ec4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a945134d7b55d40dd05f2ba573f80ec4a">&#9670;&nbsp;</a></span>translate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> jazz_elements::Container::translate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a07b590209f1036d836732e9a3370e50e">pTuple</a>&#160;</td>
+          <td class="paramname"><em>p_tuple</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a>&#160;</td>
+          <td class="paramname"><em>p_pipe</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>"Easy" interface for <b><a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz Block with multiple Tensors.">Tuple</a> translate</b>: In <a class="el" href="namespacejazz__elements.html" title="The namespace for Jazz Utils, Blocks, Kinds, Tuples, Containers, etc.">jazz_elements</a>, this is only implemented in <a class="el" href="classjazz__elements_1_1Channels.html" title="Channels: A Container doing block transactions across media (files, folders, shell,...">Channels</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_tuple</td><td>A <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz Block with multiple Tensors.">Tuple</a> with two items, "input" with the data passed to the service and "result" with the data returned. the result will be overridden in-place without any allocation. </td></tr>
+    <tr><td class="paramname">p_pipe</td><td>Some <b>service</b> does some computation on "input" and returns "result".</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR on success or some negative value (error).</dd></dl>
+<p>This is what most frameworks would call predict(), something that takes any tensor as an input and returns another tensor. In channels, it just gives support to some other service doing that connected via zeroMQ or bash. Outside <a class="el" href="namespacejazz__elements.html" title="The namespace for Jazz Utils, Blocks, Kinds, Tuples, Containers, etc.">jazz_elements</a>, the services use this to run their own models. </p>
+
+</div>
+</div>
 <a id="a21d9a9ca23de70ad5dab49411dbe9773"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a21d9a9ca23de70ad5dab49411dbe9773">&#9670;&nbsp;</a></span>as_locator()</h2>
 
@@ -1488,8 +1528,6 @@ destroy_transaction(tx);" without the <a class="el" href="classjazz__elements_1_
 <dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR on success or some negative value (error).</dd></dl>
 <p>More complex <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> descendants that support URLs, credentials, cookies, etc. will override this minimalistic parser. </p>
 
-<p>Reimplemented in <a class="el" href="classjazz__elements_1_1Channels.html#ae0104f089fc82804b1914b3b9afdbabb">jazz_elements::Channels</a>.</p>
-
 </div>
 </div>
 <a id="ad2b5f0456aca94998df803c1342aee64"></a>
@@ -1528,7 +1566,7 @@ destroy_transaction(tx);" without the <a class="el" href="classjazz__elements_1_
 <p>The "native" interface: This is what really does the job and <b>must be implemented in the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> descendats</b>.</p>
 <p>NOTE**: The root <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> class does not implement this. </p>
 
-<p>Reimplemented in <a class="el" href="classjazz__elements_1_1Volatile.html#a596197510e4b1a6a35e1d2b6d949b920">jazz_elements::Volatile</a>, <a class="el" href="classjazz__elements_1_1Channels.html#a83231dfcf357a8d6029a9ecd75b88652">jazz_elements::Channels</a>, and <a class="el" href="classjazz__elements_1_1Persisted.html#ab59d950ee5ccdc16e3d84673857fb00c">jazz_elements::Persisted</a>.</p>
+<p>Reimplemented in <a class="el" href="classjazz__elements_1_1Volatile.html#a596197510e4b1a6a35e1d2b6d949b920">jazz_elements::Volatile</a>, and <a class="el" href="classjazz__elements_1_1Persisted.html#ab59d950ee5ccdc16e3d84673857fb00c">jazz_elements::Persisted</a>.</p>
 
 </div>
 </div>
@@ -1574,7 +1612,7 @@ destroy_transaction(tx);" without the <a class="el" href="classjazz__elements_1_
 <p>The "native" interface: This is what really does the job and <b>must be implemented in the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> descendats</b>.</p>
 <p>NOTE**: The root <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> class does not implement this. </p>
 
-<p>Reimplemented in <a class="el" href="classjazz__elements_1_1Volatile.html#ae38a7ec498cc9f340cff51c8cc859ab4">jazz_elements::Volatile</a>, <a class="el" href="classjazz__elements_1_1Channels.html#acbf5ad7e5d892e5edb1e168105bbee33">jazz_elements::Channels</a>, and <a class="el" href="classjazz__elements_1_1Persisted.html#aa337c37d9dded557dd51df624b262291">jazz_elements::Persisted</a>.</p>
+<p>Reimplemented in <a class="el" href="classjazz__elements_1_1Volatile.html#ae38a7ec498cc9f340cff51c8cc859ab4">jazz_elements::Volatile</a>, and <a class="el" href="classjazz__elements_1_1Persisted.html#aa337c37d9dded557dd51df624b262291">jazz_elements::Persisted</a>.</p>
 
 </div>
 </div>
@@ -1620,7 +1658,7 @@ destroy_transaction(tx);" without the <a class="el" href="classjazz__elements_1_
 <p>The "native" interface: This is what really does the job and <b>must be implemented in the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> descendats</b>.</p>
 <p>NOTE**: The root <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> class does not implement this. </p>
 
-<p>Reimplemented in <a class="el" href="classjazz__elements_1_1Volatile.html#a601322fe3198013aacff87d9dfc67dee">jazz_elements::Volatile</a>, <a class="el" href="classjazz__elements_1_1Channels.html#acd90d887c00ccf41b3e793977ebaec1e">jazz_elements::Channels</a>, and <a class="el" href="classjazz__elements_1_1Persisted.html#a774d74805afa6e1dcc9416a2e2c7230c">jazz_elements::Persisted</a>.</p>
+<p>Reimplemented in <a class="el" href="classjazz__elements_1_1Volatile.html#a601322fe3198013aacff87d9dfc67dee">jazz_elements::Volatile</a>, and <a class="el" href="classjazz__elements_1_1Persisted.html#a774d74805afa6e1dcc9416a2e2c7230c">jazz_elements::Persisted</a>.</p>
 
 </div>
 </div>
@@ -1708,7 +1746,7 @@ destroy_transaction(tx);" without the <a class="el" href="classjazz__elements_1_
 <p>The "native" interface: This is what really does the job and <b>must be implemented in the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> descendats</b>.</p>
 <p>NOTE**: The root <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> class does not implement this. </p>
 
-<p>Reimplemented in <a class="el" href="classjazz__elements_1_1Volatile.html#a975674e0086c4ab6bfeea54c3e191f1c">jazz_elements::Volatile</a>, <a class="el" href="classjazz__elements_1_1Channels.html#aa53633cd9f21ee408e482ff3b6e1c46b">jazz_elements::Channels</a>, and <a class="el" href="classjazz__elements_1_1Persisted.html#aecc700a783da514310c71f72f8740dae">jazz_elements::Persisted</a>.</p>
+<p>Reimplemented in <a class="el" href="classjazz__elements_1_1Volatile.html#a975674e0086c4ab6bfeea54c3e191f1c">jazz_elements::Volatile</a>, and <a class="el" href="classjazz__elements_1_1Persisted.html#aecc700a783da514310c71f72f8740dae">jazz_elements::Persisted</a>.</p>
 
 </div>
 </div>
@@ -1748,7 +1786,7 @@ destroy_transaction(tx);" without the <a class="el" href="classjazz__elements_1_
 <p>The "native" interface: This is what really does the job and <b>must be implemented in the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> descendats</b>.</p>
 <p>NOTE**: The root <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> class does not implement this. </p>
 
-<p>Reimplemented in <a class="el" href="classjazz__elements_1_1Volatile.html#a9913227f79a5edbc67e116ba5ed89e9a">jazz_elements::Volatile</a>, <a class="el" href="classjazz__elements_1_1Channels.html#ae6a44727f80eb9fd3e7af62ff5f9abf8">jazz_elements::Channels</a>, and <a class="el" href="classjazz__elements_1_1Persisted.html#a2597b9ca888cd1e5fc7be34f7e53b320">jazz_elements::Persisted</a>.</p>
+<p>Reimplemented in <a class="el" href="classjazz__elements_1_1Volatile.html#a9913227f79a5edbc67e116ba5ed89e9a">jazz_elements::Volatile</a>, and <a class="el" href="classjazz__elements_1_1Persisted.html#a2597b9ca888cd1e5fc7be34f7e53b320">jazz_elements::Persisted</a>.</p>
 
 </div>
 </div>
@@ -1794,7 +1832,7 @@ destroy_transaction(tx);" without the <a class="el" href="classjazz__elements_1_
 <p>The "native" interface: This is what really does the job and <b>must be implemented in the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> descendats</b>.</p>
 <p>NOTE**: The root <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> class does not implement this. </p>
 
-<p>Reimplemented in <a class="el" href="classjazz__elements_1_1Volatile.html#a51945672c51085597937a6b13ecafdc9">jazz_elements::Volatile</a>, <a class="el" href="classjazz__elements_1_1Channels.html#ae02b80279576a6a37024a2b2d41eccfe">jazz_elements::Channels</a>, and <a class="el" href="classjazz__elements_1_1Persisted.html#aa8ff4f36fa9c1450da6510fa61e9b810">jazz_elements::Persisted</a>.</p>
+<p>Reimplemented in <a class="el" href="classjazz__elements_1_1Volatile.html#a51945672c51085597937a6b13ecafdc9">jazz_elements::Volatile</a>, and <a class="el" href="classjazz__elements_1_1Persisted.html#aa8ff4f36fa9c1450da6510fa61e9b810">jazz_elements::Persisted</a>.</p>
 
 </div>
 </div>
@@ -1824,7 +1862,7 @@ destroy_transaction(tx);" without the <a class="el" href="classjazz__elements_1_
 <p>The "native" interface: This is what really does the job and <b>must be implemented in the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> descendats</b>.</p>
 <p>NOTE**: The root <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> class does not implement this. </p>
 
-<p>Reimplemented in <a class="el" href="classjazz__elements_1_1Volatile.html#aca319680cabd9da074b07de3fd660192">jazz_elements::Volatile</a>, <a class="el" href="classjazz__elements_1_1Channels.html#ab369cc764490e9a56331e48eff35d224">jazz_elements::Channels</a>, and <a class="el" href="classjazz__elements_1_1Persisted.html#a9ce0be50b571238d26918508fd81c5e4">jazz_elements::Persisted</a>.</p>
+<p>Reimplemented in <a class="el" href="classjazz__elements_1_1Volatile.html#aca319680cabd9da074b07de3fd660192">jazz_elements::Volatile</a>, and <a class="el" href="classjazz__elements_1_1Persisted.html#a9ce0be50b571238d26918508fd81c5e4">jazz_elements::Persisted</a>.</p>
 
 </div>
 </div>
@@ -1854,7 +1892,7 @@ destroy_transaction(tx);" without the <a class="el" href="classjazz__elements_1_
 <p>The "native" interface: This is what really does the job and <b>must be implemented in the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> descendats</b>.</p>
 <p>NOTE**: The root <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> class does not implement this. </p>
 
-<p>Reimplemented in <a class="el" href="classjazz__elements_1_1Volatile.html#a58727d1e312dbc40aeb2d942c301513f">jazz_elements::Volatile</a>, <a class="el" href="classjazz__elements_1_1Channels.html#ad0ff5e82f7e9c77ff624ff20294e3dea">jazz_elements::Channels</a>, and <a class="el" href="classjazz__elements_1_1Persisted.html#a53e8c982d5d96c089d61de3cd018b297">jazz_elements::Persisted</a>.</p>
+<p>Reimplemented in <a class="el" href="classjazz__elements_1_1Volatile.html#a58727d1e312dbc40aeb2d942c301513f">jazz_elements::Volatile</a>, and <a class="el" href="classjazz__elements_1_1Persisted.html#a53e8c982d5d96c089d61de3cd018b297">jazz_elements::Persisted</a>.</p>
 
 </div>
 </div>
@@ -1894,7 +1932,7 @@ destroy_transaction(tx);" without the <a class="el" href="classjazz__elements_1_
 <p>The "native" interface: This is what really does the job and <b>must be implemented in the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> descendats</b>.</p>
 <p>NOTE**: The root <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> class does not implement this. </p>
 
-<p>Reimplemented in <a class="el" href="classjazz__elements_1_1Volatile.html#ac5cb0ad9b16c8a70a16a8c2627749a3f">jazz_elements::Volatile</a>, <a class="el" href="classjazz__elements_1_1Channels.html#a5235c85cc22013c7a09f02b846c9d6bd">jazz_elements::Channels</a>, and <a class="el" href="classjazz__elements_1_1Persisted.html#a49cb747c82d0affa88e13fb866b26a48">jazz_elements::Persisted</a>.</p>
+<p>Reimplemented in <a class="el" href="classjazz__elements_1_1Volatile.html#ac5cb0ad9b16c8a70a16a8c2627749a3f">jazz_elements::Volatile</a>, and <a class="el" href="classjazz__elements_1_1Persisted.html#a49cb747c82d0affa88e13fb866b26a48">jazz_elements::Persisted</a>.</p>
 
 </div>
 </div>
@@ -3206,7 +3244,7 @@ destroy_transaction(tx);" without the <a class="el" href="classjazz__elements_1_
 <dl class="section return"><dt>Returns</dt><dd>The length in bytes required to store the output if p_dest == nullptr</dd></dl>
 <p>The serialization includes NA identification, double quotes, commas spaces an square brackets to define the shape.</p>
 <p>NOTE** that this escapes all non-vanilla ASCI characters, non printable (below 32), the blackslash and the double quote.</p>
-<h2><a class="anchor" id="autotoc_md2"></a>
+<h2><a class="anchor" id="autotoc_md4"></a>
 How UTF-8 works</h2>
 <p>The RFC <a href="http://www.ietf.org/rfc/rfc3629.txt">http://www.ietf.org/rfc/rfc3629.txt</a> says: </p><pre class="fragment">Char. number range  | UTF-8 octet sequence
 (hexadecimal)       | (binary)

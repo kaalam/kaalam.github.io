@@ -132,6 +132,9 @@ Macros</h2></td></tr>
 <tr class="memitem:a6773b93f3093658c3dcb569de3b4bdb2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#a6773b93f3093658c3dcb569de3b4bdb2">MAX_FILENAME_LENGTH</a>&#160;&#160;&#160;256</td></tr>
 <tr class="memdesc:a6773b93f3093658c3dcb569de3b4bdb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum length for file names in ConfigFile and Logger.  <a href="utils_8h.html#a6773b93f3093658c3dcb569de3b4bdb2">More...</a><br /></td></tr>
 <tr class="separator:a6773b93f3093658c3dcb569de3b4bdb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8bad2cd89820cdaf2a7f26392774014"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#aa8bad2cd89820cdaf2a7f26392774014">MAX_BLOCK_SIZE</a>&#160;&#160;&#160;0x40000000</td></tr>
+<tr class="memdesc:aa8bad2cd89820cdaf2a7f26392774014"><td class="mdescLeft">&#160;</td><td class="mdescRight">1Gb  <a href="utils_8h.html#aa8bad2cd89820cdaf2a7f26392774014">More...</a><br /></td></tr>
+<tr class="separator:aa8bad2cd89820cdaf2a7f26392774014"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb0492c64e0634fc8e4e06ef54e8b176"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#afb0492c64e0634fc8e4e06ef54e8b176">SERVICE_NO_ERROR</a>&#160;&#160;&#160;0</td></tr>
 <tr class="memdesc:afb0492c64e0634fc8e4e06ef54e8b176"><td class="mdescLeft">&#160;</td><td class="mdescRight">No errors found processing the API call.  <a href="utils_8h.html#afb0492c64e0634fc8e4e06ef54e8b176">More...</a><br /></td></tr>
 <tr class="separator:afb0492c64e0634fc8e4e06ef54e8b176"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -216,6 +219,18 @@ Macros</h2></td></tr>
 <tr class="memitem:a316503aba7df4f98b5a5950db02cea12"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#a316503aba7df4f98b5a5950db02cea12">SERVICE_ERROR_TOO_MANY_ENTITIES</a>&#160;&#160;&#160;-27</td></tr>
 <tr class="memdesc:a316503aba7df4f98b5a5950db02cea12"><td class="mdescLeft">&#160;</td><td class="mdescRight">new_entity() in Persistence failed by MAX_POSSIBLE_SOURCES limit  <a href="utils_8h.html#a316503aba7df4f98b5a5950db02cea12">More...</a><br /></td></tr>
 <tr class="separator:a316503aba7df4f98b5a5950db02cea12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac04f7d5ebe505857aac7cb7b8a76ff71"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#ac04f7d5ebe505857aac7cb7b8a76ff71">SERVICE_ERROR_NOT_APPLICABLE</a>&#160;&#160;&#160;-28</td></tr>
+<tr class="memdesc:ac04f7d5ebe505857aac7cb7b8a76ff71"><td class="mdescLeft">&#160;</td><td class="mdescRight">All the methods that do not make sense when applied to Channels and are not supported.  <a href="utils_8h.html#ac04f7d5ebe505857aac7cb7b8a76ff71">More...</a><br /></td></tr>
+<tr class="separator:ac04f7d5ebe505857aac7cb7b8a76ff71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6dfe82bee90e27ffe2a185c24aeae6a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#ac6dfe82bee90e27ffe2a185c24aeae6a">SERVICE_ERROR_IO_ERROR</a>&#160;&#160;&#160;-29</td></tr>
+<tr class="memdesc:ac6dfe82bee90e27ffe2a185c24aeae6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Any reading or writing error that is unexpected (not not found, forbidden, etc.).  <a href="utils_8h.html#ac6dfe82bee90e27ffe2a185c24aeae6a">More...</a><br /></td></tr>
+<tr class="separator:ac6dfe82bee90e27ffe2a185c24aeae6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b16778a29b446ae78b2b1727a47af3b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#a8b16778a29b446ae78b2b1727a47af3b">SERVICE_ERROR_BLOCK_TOO_BIG</a>&#160;&#160;&#160;-30</td></tr>
+<tr class="memdesc:a8b16778a29b446ae78b2b1727a47af3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">File size (or some other way to get a block) exceeds MAX_BLOCK_SIZE.  <a href="utils_8h.html#a8b16778a29b446ae78b2b1727a47af3b">More...</a><br /></td></tr>
+<tr class="separator:a8b16778a29b446ae78b2b1727a47af3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7972b1ea9306dd81d8c40bfbf73691c9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#a7972b1ea9306dd81d8c40bfbf73691c9">SERVICE_ERROR_BASE_FORBIDDEN</a>&#160;&#160;&#160;-31</td></tr>
+<tr class="memdesc:a7972b1ea9306dd81d8c40bfbf73691c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">base in channels disabled by conf.  <a href="utils_8h.html#a7972b1ea9306dd81d8c40bfbf73691c9">More...</a><br /></td></tr>
+<tr class="separator:a7972b1ea9306dd81d8c40bfbf73691c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89e9b1adbdda91381feed325f8f086b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#a89e9b1adbdda91381feed325f8f086b7">JAZZ_DEFAULT_CONFIG_PATH</a>&#160;&#160;&#160;&quot;config/jazz_config.ini&quot;</td></tr>
 <tr class="separator:a89e9b1adbdda91381feed325f8f086b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -389,6 +404,22 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Maximum length for file names in ConfigFile and Logger. </p>
+
+</div>
+</div>
+<a id="aa8bad2cd89820cdaf2a7f26392774014"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8bad2cd89820cdaf2a7f26392774014">&#9670;&nbsp;</a></span>MAX_BLOCK_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_BLOCK_SIZE&#160;&#160;&#160;0x40000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>1Gb </p>
 
 </div>
 </div>
@@ -838,6 +869,70 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>new_entity() in Persistence failed by MAX_POSSIBLE_SOURCES limit </p>
+
+</div>
+</div>
+<a id="ac04f7d5ebe505857aac7cb7b8a76ff71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac04f7d5ebe505857aac7cb7b8a76ff71">&#9670;&nbsp;</a></span>SERVICE_ERROR_NOT_APPLICABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SERVICE_ERROR_NOT_APPLICABLE&#160;&#160;&#160;-28</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>All the methods that do not make sense when applied to Channels and are not supported. </p>
+
+</div>
+</div>
+<a id="ac6dfe82bee90e27ffe2a185c24aeae6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6dfe82bee90e27ffe2a185c24aeae6a">&#9670;&nbsp;</a></span>SERVICE_ERROR_IO_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SERVICE_ERROR_IO_ERROR&#160;&#160;&#160;-29</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Any reading or writing error that is unexpected (not not found, forbidden, etc.). </p>
+
+</div>
+</div>
+<a id="a8b16778a29b446ae78b2b1727a47af3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b16778a29b446ae78b2b1727a47af3b">&#9670;&nbsp;</a></span>SERVICE_ERROR_BLOCK_TOO_BIG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SERVICE_ERROR_BLOCK_TOO_BIG&#160;&#160;&#160;-30</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>File size (or some other way to get a block) exceeds MAX_BLOCK_SIZE. </p>
+
+</div>
+</div>
+<a id="a7972b1ea9306dd81d8c40bfbf73691c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7972b1ea9306dd81d8c40bfbf73691c9">&#9670;&nbsp;</a></span>SERVICE_ERROR_BASE_FORBIDDEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SERVICE_ERROR_BASE_FORBIDDEN&#160;&#160;&#160;-31</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>base in channels disabled by conf. </p>
 
 </div>
 </div>
