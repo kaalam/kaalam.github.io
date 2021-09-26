@@ -131,6 +131,9 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Service.html">Service</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A Jazz <a class="el" href="classjazz__elements_1_1Service.html" title="A Jazz Service is a globally instanced configurable object that may allocate RAM.">Service</a> is a globally instanced configurable object that may allocate RAM.  <a href="classjazz__elements_1_1Service.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1Socket.html">Socket</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A structure to hold a single pipeline.  <a href="structjazz__elements_1_1Socket.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1StaticBlockHeader.html">StaticBlockHeader</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A Binary Compatible <a class="el" href="structjazz__elements_1_1BlockHeader.html" title="Header for a Movable Block (Tensor, Kind or Tuple) or a Dynamic Block (Index)">BlockHeader</a> without Index (and therefore constructors/destructors)  <a href="structjazz__elements_1_1StaticBlockHeader.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -173,6 +176,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a65b212cde81ca9c4acfe34dae990ecf1"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::string, <a class="el" href="namespacejazz__elements.html#a39c9e80466c03763520f05847e49c28e">Index</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a65b212cde81ca9c4acfe34dae990ecf1">ConnMap</a></td></tr>
 <tr class="memdesc:a65b212cde81ca9c4acfe34dae990ecf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">A structure holding connections.  <a href="namespacejazz__elements.html#a65b212cde81ca9c4acfe34dae990ecf1">More...</a><br /></td></tr>
 <tr class="separator:a65b212cde81ca9c4acfe34dae990ecf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fa9376fff90c19e9a1ff6e232b88b68"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::string, <a class="el" href="structjazz__elements_1_1Socket.html">Socket</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a9fa9376fff90c19e9a1ff6e232b88b68">PipeMap</a></td></tr>
+<tr class="memdesc:a9fa9376fff90c19e9a1ff6e232b88b68"><td class="mdescLeft">&#160;</td><td class="mdescRight">A structure holding pipeline.  <a href="namespacejazz__elements.html#a9fa9376fff90c19e9a1ff6e232b88b68">More...</a><br /></td></tr>
+<tr class="separator:a9fa9376fff90c19e9a1ff6e232b88b68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae0fa1d7770e9247d718fceeabdce05b"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#aae0fa1d7770e9247d718fceeabdce05b">MapII</a></td></tr>
 <tr class="memdesc:aae0fa1d7770e9247d718fceeabdce05b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A map for defining http config ports.  <a href="namespacejazz__elements.html#aae0fa1d7770e9247d718fceeabdce05b">More...</a><br /></td></tr>
 <tr class="separator:aae0fa1d7770e9247d718fceeabdce05b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -271,8 +277,6 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a85bf7ecc4b2e2438fcc438ed630371d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a85bf7ecc4b2e2438fcc438ed630371d4">client_test</a> (void)</td></tr>
-<tr class="separator:a85bf7ecc4b2e2438fcc438ed630371d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a5f20cce9610a421e72a17fae481ea4"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a1a5f20cce9610a421e72a17fae481ea4">write_callback</a> (char *ptr, size_t size, size_t nmemb, void *userdata)</td></tr>
 <tr class="memdesc:a1a5f20cce9610a421e72a17fae481ea4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A test write callback (libCURL stuff to be modified).  <a href="namespacejazz__elements.html#a1a5f20cce9610a421e72a17fae481ea4">More...</a><br /></td></tr>
 <tr class="separator:a1a5f20cce9610a421e72a17fae481ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -412,6 +416,22 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>A structure holding connections. </p>
+
+</div>
+</div>
+<a id="a9fa9376fff90c19e9a1ff6e232b88b68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fa9376fff90c19e9a1ff6e232b88b68">&#9670;&nbsp;</a></span>PipeMap</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::map&lt;std::string, <a class="el" href="structjazz__elements_1_1Socket.html">Socket</a>&gt; <a class="el" href="namespacejazz__elements.html#a9fa9376fff90c19e9a1ff6e232b88b68">jazz_elements::PipeMap</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A structure holding pipeline. </p>
 
 </div>
 </div>
@@ -986,24 +1006,6 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a85bf7ecc4b2e2438fcc438ed630371d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85bf7ecc4b2e2438fcc438ed630371d4">&#9670;&nbsp;</a></span>client_test()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int jazz_elements::client_test </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a1a5f20cce9610a421e72a17fae481ea4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1a5f20cce9610a421e72a17fae481ea4">&#9670;&nbsp;</a></span>write_callback()</h2>
 

@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['eight_5fbit_5flong_182',['EIGHT_BIT_LONG',['../container_8h.html#a7dfe57f98086163fe1947f55bcdac9bc',1,'container.h']]],
-  ['elapsed_5fmu_5fsec_183',['elapsed_mu_sec',['../namespacejazz__elements.html#af3ff9fc83738d0a6102a3e62fb9f346d',1,'jazz_elements']]],
+  ['eight_5fbit_5flong_181',['EIGHT_BIT_LONG',['../container_8h.html#a7dfe57f98086163fe1947f55bcdac9bc',1,'container.h']]],
+  ['elapsed_5fmu_5fsec_182',['elapsed_mu_sec',['../namespacejazz__elements.html#af3ff9fc83738d0a6102a3e62fb9f346d',1,'jazz_elements']]],
+  ['endpoint_183',['endpoint',['../structjazz__elements_1_1Socket.html#a3b4dd9d46979a7dc0769015b4853a6a1',1,'jazz_elements::Socket']]],
   ['ent_5fhash_184',['ent_hash',['../structjazz__elements_1_1EntityKeyHash.html#a5ae3ac7b78d76b015c53b5646617f638',1,'jazz_elements::EntityKeyHash']]],
   ['enter_5fread_185',['enter_read',['../classjazz__elements_1_1Container.html#a45e76af56668d82e2adc1df39663859c',1,'jazz_elements::Container']]],
   ['enter_5fwrite_186',['enter_write',['../classjazz__elements_1_1Container.html#a61d636197e1c6ccece5f1b31ddf99eee',1,'jazz_elements::Container']]],
