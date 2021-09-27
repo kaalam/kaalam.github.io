@@ -3,7 +3,7 @@ var searchData=
   ['call_819',['call',['../classjazz__bebop_1_1Bebop.html#a63ab453901b7765f123dbb85ebc47e8e',1,'jazz_bebop::Bebop']]],
   ['can_5ffilter_820',['can_filter',['../classjazz__elements_1_1Block.html#a7f43dead9f6ba3222b619b5c9d5165de',1,'jazz_elements::Block']]],
   ['channels_821',['Channels',['../classjazz__elements_1_1Channels.html#a08c4979d6aebe47ce02b7e88226d5690',1,'jazz_elements::Channels']]],
-  ['check_5fblock_822',['check_block',['../classjazz__elements_1_1Persisted.html#a5f353aea263dd410530e41eb507a95c4',1,'jazz_elements::Persisted']]],
+  ['check_5fhash_822',['check_hash',['../classjazz__elements_1_1Block.html#abfe8b8a2f8a29202fd5069fdb12f1194',1,'jazz_elements::Block']]],
   ['cleanconfigargument_823',['CleanConfigArgument',['../namespacejazz__elements.html#a97aefc77eb6fbbb85dabfba528a6efb7',1,'jazz_elements']]],
   ['close_5fall_5fdatabases_824',['close_all_databases',['../classjazz__elements_1_1Persisted.html#a70a26ab8d5930abd83a32dda22772ebc',1,'jazz_elements::Persisted']]],
   ['close_5fblock_825',['close_block',['../classjazz__elements_1_1Block.html#af860b0a6ae2755168c662e542fc5bb64',1,'jazz_elements::Block']]],

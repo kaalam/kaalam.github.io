@@ -122,8 +122,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a47abe74815c38ad8d293f74b688e0f31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a889b8aa584d75ef0ae6bdbce0c4bdda0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Channels.html#a889b8aa584d75ef0ae6bdbce0c4bdda0">translate</a> (<a class="el" href="namespacejazz__elements.html#a07b590209f1036d836732e9a3370e50e">pTuple</a> p_tuple, <a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> p_pipe)</td></tr>
 <tr class="separator:a889b8aa584d75ef0ae6bdbce0c4bdda0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b476aa3ae663b85c6c3704602d3904e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ae07e8fd7a73396ce4ef564979d2498e5">MHD_StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Channels.html#a5b476aa3ae663b85c6c3704602d3904e">forward_get</a> (<a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> &amp;p_txn, <a class="el" href="namespacejazz__elements.html#a97c097c96fd6364c46569536e8cbc535">Name</a> node, <a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> p_url, int apply)</td></tr>
-<tr class="separator:a5b476aa3ae663b85c6c3704602d3904e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac515ab4d7ec1a87b86ca73d6bec1fd43"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ae07e8fd7a73396ce4ef564979d2498e5">MHD_StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Channels.html#ac515ab4d7ec1a87b86ca73d6bec1fd43">forward_get</a> (<a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> &amp;p_txn, <a class="el" href="namespacejazz__elements.html#a97c097c96fd6364c46569536e8cbc535">Name</a> node, <a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> p_url)</td></tr>
+<tr class="separator:ac515ab4d7ec1a87b86ca73d6bec1fd43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8fe1f2bdfe26cea502724db051b1a6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ae07e8fd7a73396ce4ef564979d2498e5">MHD_StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Channels.html#ab8fe1f2bdfe26cea502724db051b1a6b">forward_put</a> (<a class="el" href="namespacejazz__elements.html#a97c097c96fd6364c46569536e8cbc535">Name</a> node, <a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> p_url, <a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a> p_block)</td></tr>
 <tr class="separator:ab8fe1f2bdfe26cea502724db051b1a6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a082b33890530767388dd9d06f1d4c132"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ae07e8fd7a73396ce4ef564979d2498e5">MHD_StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Channels.html#a082b33890530767388dd9d06f1d4c132">forward_del</a> (<a class="el" href="namespacejazz__elements.html#a97c097c96fd6364c46569536e8cbc535">Name</a> node, <a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> p_url)</td></tr>
@@ -318,7 +318,7 @@ get() gets files as arrays of byte and folders as an Index (the keys are file na
 <p>"file" operation must be enabled via configuration by setting ENABLE_FILE_LEVEL to 0 (disable everything), 1 (just read), 2 (cannot override == no remove and WRITE_ONLY_IF_NOT_EXISTS) or 3 (enable everything).</p>
 <h2><a class="anchor" id="autotoc_md3"></a>
 "http" Reference</h2>
-<p>Besides being an http server, Jazz is also an http client. The simplest mode of operation is just forwarding <a class="el" href="classjazz__elements_1_1Channels.html#a4c090567bd5bdfa758392732f6977644">get()</a>, <a class="el" href="classjazz__elements_1_1Channels.html#a7587cadb6f6499b28667a5f98869ea69">put()</a> and delete() calls that are intended for other nodes in a Jazz cluster. This is done at the top API level by just adding a node name. E.g., get("///node_x//lmdb/things/this") will forward the call to the node_x (if anything is well configured see JAZZ_NODE_NAME_.., etc.) and return the result just as if is was a local call. At the class level, this is done by <a class="el" href="classjazz__elements_1_1Channels.html#a5b476aa3ae663b85c6c3704602d3904e">forward_get()</a>, <a class="el" href="classjazz__elements_1_1Channels.html#ab8fe1f2bdfe26cea502724db051b1a6b">forward_put()</a> and <a class="el" href="classjazz__elements_1_1Channels.html#a082b33890530767388dd9d06f1d4c132">forward_del()</a>. You can also send simple GET, PUT and DELETE http calls to random urls by either using the <a class="el" href="classjazz__elements_1_1Channels.html#a4c090567bd5bdfa758392732f6977644">get()</a>, <a class="el" href="classjazz__elements_1_1Channels.html#a7587cadb6f6499b28667a5f98869ea69">put()</a> and <a class="el" href="classjazz__elements_1_1Channels.html#a415c84168e2a26a68048a5beca9331c1">remove()</a> or using the API get("//http#https://google.com;")</p>
+<p>Besides being an http server, Jazz is also an http client. The simplest mode of operation is just forwarding <a class="el" href="classjazz__elements_1_1Channels.html#a4c090567bd5bdfa758392732f6977644">get()</a>, <a class="el" href="classjazz__elements_1_1Channels.html#a7587cadb6f6499b28667a5f98869ea69">put()</a> and delete() calls that are intended for other nodes in a Jazz cluster. This is done at the top API level by just adding a node name. E.g., get("///node_x//lmdb/things/this") will forward the call to the node_x (if anything is well configured see JAZZ_NODE_NAME_.., etc.) and return the result just as if is was a local call. At the class level, this is done by <a class="el" href="classjazz__elements_1_1Channels.html#ac515ab4d7ec1a87b86ca73d6bec1fd43">forward_get()</a>, <a class="el" href="classjazz__elements_1_1Channels.html#ab8fe1f2bdfe26cea502724db051b1a6b">forward_put()</a> and <a class="el" href="classjazz__elements_1_1Channels.html#a082b33890530767388dd9d06f1d4c132">forward_del()</a>. You can also send simple GET, PUT and DELETE http calls to random urls by either using the <a class="el" href="classjazz__elements_1_1Channels.html#a4c090567bd5bdfa758392732f6977644">get()</a>, <a class="el" href="classjazz__elements_1_1Channels.html#a7587cadb6f6499b28667a5f98869ea69">put()</a> and <a class="el" href="classjazz__elements_1_1Channels.html#a415c84168e2a26a68048a5beca9331c1">remove()</a> or using the API get("//http#https://google.com;")</p>
 <p>The most advanced way to do it is creating a connection (similar to a "0-mq" pipeline) by <a class="el" href="classjazz__elements_1_1Channels.html#a7587cadb6f6499b28667a5f98869ea69">put()</a>-ing an Index to: //http/connection/a_name the index requires the mandatory key URL and the optional keys: CURLOPT_USERNAME, CURLOPT_USERPWD, CURLOPT_COOKIEFILE and CURLOPT_COOKIEJAR (see <a href="https://curl.se/libcurl/c/CURLOPT_USERNAME.html">https://curl.se/libcurl/c/CURLOPT_USERNAME.html</a> and <a href="https://everything.curl.dev/libcurl-http/cookies">https://everything.curl.dev/libcurl-http/cookies</a>) Once the connection exists, you can <a class="el" href="classjazz__elements_1_1Channels.html#a4c090567bd5bdfa758392732f6977644">get()</a>, <a class="el" href="classjazz__elements_1_1Channels.html#a7587cadb6f6499b28667a5f98869ea69">put()</a> and <a class="el" href="classjazz__elements_1_1Channels.html#a415c84168e2a26a68048a5beca9331c1">remove()</a> to just its name (without the word connection) get("//http/a_name"), etc. If you <a class="el" href="classjazz__elements_1_1Channels.html#a415c84168e2a26a68048a5beca9331c1">remove()</a> to "//http/connection/a_name" you destroy the connection. get("//http/connection/a_name") returns the Index used to create the connection.</p>
 <p>"http" operation must be enabled via configuration by setting ENABLE_HTTP_CLIENT to something non-zero. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -800,8 +800,8 @@ get() gets files as arrays of byte and folders as an Index (the keys are file na
 
 </div>
 </div>
-<a id="a5b476aa3ae663b85c6c3704602d3904e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b476aa3ae663b85c6c3704602d3904e">&#9670;&nbsp;</a></span>forward_get()</h2>
+<a id="ac515ab4d7ec1a87b86ca73d6bec1fd43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac515ab4d7ec1a87b86ca73d6bec1fd43">&#9670;&nbsp;</a></span>forward_get()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -822,13 +822,7 @@ get() gets files as arrays of byte and folders as an Index (the keys are file na
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a>&#160;</td>
-          <td class="paramname"><em>p_url</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>apply</em>&#160;</td>
+          <td class="paramname"><em>p_url</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -842,8 +836,7 @@ get() gets files as arrays of byte and folders as an Index (the keys are file na
   <table class="params">
     <tr><td class="paramname">p_txn</td><td>A pTransaction owned by <a class="el" href="classjazz__elements_1_1Channels.html" title="Channels: A Container doing block transactions across media (files, folders, shell,...">Channels</a>. It must be <a class="el" href="classjazz__elements_1_1Container.html#af79256b93a1f22d580a5c8eb18fa0558">destroy_transaction()</a>-ed after successful use. </td></tr>
     <tr><td class="paramname">node</td><td>The name of the endpoint node. It must be found in the cluster config. </td></tr>
-    <tr><td class="paramname">p_url</td><td>The unparsed url (server excluded) the remote Jazz server can serve. </td></tr>
-    <tr><td class="paramname">apply</td><td>A code parsed by the API in range APPLY_NOTHING .. APPLY_NEW_ENTITY</td></tr>
+    <tr><td class="paramname">p_url</td><td>The unparsed url (server excluded) the remote Jazz server can serve.</td></tr>
   </table>
   </dd>
 </dl>

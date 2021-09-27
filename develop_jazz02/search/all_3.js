@@ -36,7 +36,7 @@ var searchData=
   ['channel_2ecpp_117',['channel.cpp',['../channel_8cpp.html',1,'']]],
   ['channel_2eh_118',['channel.h',['../channel_8h.html',1,'']]],
   ['channels_119',['Channels',['../classjazz__elements_1_1Channels.html',1,'jazz_elements::Channels'],['../classjazz__elements_1_1Channels.html#a08c4979d6aebe47ce02b7e88226d5690',1,'jazz_elements::Channels::Channels()'],['../namespacejazz__main.html#ae7a248b1e997ab7ca7264679401f894a',1,'jazz_main::CHANNELS()']]],
-  ['check_5fblock_120',['check_block',['../classjazz__elements_1_1Persisted.html#a5f353aea263dd410530e41eb507a95c4',1,'jazz_elements::Persisted']]],
+  ['check_5fhash_120',['check_hash',['../classjazz__elements_1_1Block.html#abfe8b8a2f8a29202fd5069fdb12f1194',1,'jazz_elements::Block']]],
   ['cleanconfigargument_121',['CleanConfigArgument',['../namespacejazz__elements.html#a97aefc77eb6fbbb85dabfba528a6efb7',1,'jazz_elements']]],
   ['close_5fall_5fdatabases_122',['close_all_databases',['../classjazz__elements_1_1Persisted.html#a70a26ab8d5930abd83a32dda22772ebc',1,'jazz_elements::Persisted']]],
   ['close_5fblock_123',['close_block',['../classjazz__elements_1_1Block.html#af860b0a6ae2755168c662e542fc5bb64',1,'jazz_elements::Block']]],
