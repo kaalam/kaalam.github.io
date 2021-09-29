@@ -69,6 +69,8 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Data Fields</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">jazz_elements::Channels Class Reference</div>  </div>
@@ -242,6 +244,36 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a942964f970ba5e61f674b16cba181602"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Channels.html#a942964f970ba5e61f674b16cba181602">filesystem_root</a> = {}</td></tr>
 <tr class="separator:a942964f970ba5e61f674b16cba181602"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ae777a28e464c8ab500ec1aa235b15356"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Channels.html#ae777a28e464c8ab500ec1aa235b15356">curl_get</a> (<a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> &amp;p_txn, void *url, <a class="el" href="namespacejazz__elements.html#a39c9e80466c03763520f05847e49c28e">Index</a> *p_idx=nullptr)</td></tr>
+<tr class="memdesc:ae777a28e464c8ab500ec1aa235b15356"><td class="mdescLeft">&#160;</td><td class="mdescRight">The most low level get function.  <a href="classjazz__elements_1_1Channels.html#ae777a28e464c8ab500ec1aa235b15356">More...</a><br /></td></tr>
+<tr class="separator:ae777a28e464c8ab500ec1aa235b15356"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4bd6378761360aafa459291d333451e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Channels.html#ac4bd6378761360aafa459291d333451e">curl_put</a> (void *url, <a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a> p_blk, int mode=<a class="el" href="container_8h.html#a67c2adbcc7178ce1b7d168003c527aeb">WRITE_TENSOR_DATA</a>, <a class="el" href="namespacejazz__elements.html#a39c9e80466c03763520f05847e49c28e">Index</a> *p_idx=nullptr)</td></tr>
+<tr class="memdesc:ac4bd6378761360aafa459291d333451e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The most low level put function.  <a href="classjazz__elements_1_1Channels.html#ac4bd6378761360aafa459291d333451e">More...</a><br /></td></tr>
+<tr class="separator:ac4bd6378761360aafa459291d333451e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30ad19781b4345ca915f777769c20978"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Channels.html#a30ad19781b4345ca915f777769c20978">curl_remove</a> (void *url, <a class="el" href="namespacejazz__elements.html#a39c9e80466c03763520f05847e49c28e">Index</a> *p_idx=nullptr)</td></tr>
+<tr class="memdesc:a30ad19781b4345ca915f777769c20978"><td class="mdescLeft">&#160;</td><td class="mdescRight">The most low level remove function.  <a href="classjazz__elements_1_1Channels.html#a30ad19781b4345ca915f777769c20978">More...</a><br /></td></tr>
+<tr class="separator:a30ad19781b4345ca915f777769c20978"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classjazz__elements_1_1Container"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classjazz__elements_1_1Container')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classjazz__elements_1_1Container.html">jazz_elements::Container</a></td></tr>
+<tr class="memitem:a8a256e918b696772139096b2a270f5b1 inherit pro_methods_classjazz__elements_1_1Container"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a8a256e918b696772139096b2a270f5b1">malloc</a> (size_t size)</td></tr>
+<tr class="separator:a8a256e918b696772139096b2a270f5b1 inherit pro_methods_classjazz__elements_1_1Container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa324950d69cb31f4a4e3f452d6180046 inherit pro_methods_classjazz__elements_1_1Container"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#aa324950d69cb31f4a4e3f452d6180046">block_malloc</a> (size_t size)</td></tr>
+<tr class="separator:aa324950d69cb31f4a4e3f452d6180046 inherit pro_methods_classjazz__elements_1_1Container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b00418cc5f5f425b2ac7353d5f87094 inherit pro_methods_classjazz__elements_1_1Container"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a3b00418cc5f5f425b2ac7353d5f87094">lock_container</a> ()</td></tr>
+<tr class="separator:a3b00418cc5f5f425b2ac7353d5f87094 inherit pro_methods_classjazz__elements_1_1Container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39e73d3ee200010809ad7c4b3540dd51 inherit pro_methods_classjazz__elements_1_1Container"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a39e73d3ee200010809ad7c4b3540dd51">unlock_container</a> ()</td></tr>
+<tr class="separator:a39e73d3ee200010809ad7c4b3540dd51 inherit pro_methods_classjazz__elements_1_1Container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e0efc28d7f6d1d1aa253e68badaf170 inherit pro_methods_classjazz__elements_1_1Container"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a1e0efc28d7f6d1d1aa253e68badaf170">destroy_container</a> ()</td></tr>
+<tr class="separator:a1e0efc28d7f6d1d1aa253e68badaf170 inherit pro_methods_classjazz__elements_1_1Container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dc5465894081c7e91ec1489122d6cfb inherit pro_methods_classjazz__elements_1_1Container"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a9dc5465894081c7e91ec1489122d6cfb">from_hex</a> (char c)</td></tr>
+<tr class="separator:a9dc5465894081c7e91ec1489122d6cfb inherit pro_methods_classjazz__elements_1_1Container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a21e4601d77508d04953bc93768d9fa8c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Channels.html#a21e4601d77508d04953bc93768d9fa8c">compose_url</a> (<a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> p_dest, <a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> p_node, <a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> p_url, int buff_size)</td></tr>
+<tr class="separator:a21e4601d77508d04953bc93768d9fa8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a97cc6773442ab862dbe0478193fa74c9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Channels.html#a97cc6773442ab862dbe0478193fa74c9">can_curl</a> = false</td></tr>
@@ -265,19 +297,6 @@ Private Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_methods_classjazz__elements_1_1Container"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classjazz__elements_1_1Container')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classjazz__elements_1_1Container.html">jazz_elements::Container</a></td></tr>
-<tr class="memitem:a8a256e918b696772139096b2a270f5b1 inherit pro_methods_classjazz__elements_1_1Container"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a8a256e918b696772139096b2a270f5b1">malloc</a> (size_t size)</td></tr>
-<tr class="separator:a8a256e918b696772139096b2a270f5b1 inherit pro_methods_classjazz__elements_1_1Container"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa324950d69cb31f4a4e3f452d6180046 inherit pro_methods_classjazz__elements_1_1Container"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#aa324950d69cb31f4a4e3f452d6180046">block_malloc</a> (size_t size)</td></tr>
-<tr class="separator:aa324950d69cb31f4a4e3f452d6180046 inherit pro_methods_classjazz__elements_1_1Container"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b00418cc5f5f425b2ac7353d5f87094 inherit pro_methods_classjazz__elements_1_1Container"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a3b00418cc5f5f425b2ac7353d5f87094">lock_container</a> ()</td></tr>
-<tr class="separator:a3b00418cc5f5f425b2ac7353d5f87094 inherit pro_methods_classjazz__elements_1_1Container"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39e73d3ee200010809ad7c4b3540dd51 inherit pro_methods_classjazz__elements_1_1Container"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a39e73d3ee200010809ad7c4b3540dd51">unlock_container</a> ()</td></tr>
-<tr class="separator:a39e73d3ee200010809ad7c4b3540dd51 inherit pro_methods_classjazz__elements_1_1Container"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e0efc28d7f6d1d1aa253e68badaf170 inherit pro_methods_classjazz__elements_1_1Container"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a1e0efc28d7f6d1d1aa253e68badaf170">destroy_container</a> ()</td></tr>
-<tr class="separator:a1e0efc28d7f6d1d1aa253e68badaf170 inherit pro_methods_classjazz__elements_1_1Container"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9dc5465894081c7e91ec1489122d6cfb inherit pro_methods_classjazz__elements_1_1Container"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a9dc5465894081c7e91ec1489122d6cfb">from_hex</a> (char c)</td></tr>
-<tr class="separator:a9dc5465894081c7e91ec1489122d6cfb inherit pro_methods_classjazz__elements_1_1Container"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classjazz__elements_1_1Container"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classjazz__elements_1_1Container')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classjazz__elements_1_1Container.html">jazz_elements::Container</a></td></tr>
 <tr class="memitem:a78d8175d99a2992675ec9ead633da893 inherit pro_attribs_classjazz__elements_1_1Container"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a78d8175d99a2992675ec9ead633da893">max_transactions</a></td></tr>
 <tr class="separator:a78d8175d99a2992675ec9ead633da893 inherit pro_attribs_classjazz__elements_1_1Container"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -318,8 +337,9 @@ get() gets files as arrays of byte and folders as an Index (the keys are file na
 <p>"file" operation must be enabled via configuration by setting ENABLE_FILE_LEVEL to 0 (disable everything), 1 (just read), 2 (cannot override == no remove and WRITE_ONLY_IF_NOT_EXISTS) or 3 (enable everything).</p>
 <h2><a class="anchor" id="autotoc_md3"></a>
 "http" Reference</h2>
-<p>Besides being an http server, Jazz is also an http client. The simplest mode of operation is just forwarding <a class="el" href="classjazz__elements_1_1Channels.html#a4c090567bd5bdfa758392732f6977644">get()</a>, <a class="el" href="classjazz__elements_1_1Channels.html#a7587cadb6f6499b28667a5f98869ea69">put()</a> and delete() calls that are intended for other nodes in a Jazz cluster. This is done at the top API level by just adding a node name. E.g., get("///node_x//lmdb/things/this") will forward the call to the node_x (if anything is well configured see JAZZ_NODE_NAME_.., etc.) and return the result just as if is was a local call. At the class level, this is done by <a class="el" href="classjazz__elements_1_1Channels.html#ac515ab4d7ec1a87b86ca73d6bec1fd43">forward_get()</a>, <a class="el" href="classjazz__elements_1_1Channels.html#ab8fe1f2bdfe26cea502724db051b1a6b">forward_put()</a> and <a class="el" href="classjazz__elements_1_1Channels.html#a082b33890530767388dd9d06f1d4c132">forward_del()</a>. You can also send simple GET, PUT and DELETE http calls to random urls by either using the <a class="el" href="classjazz__elements_1_1Channels.html#a4c090567bd5bdfa758392732f6977644">get()</a>, <a class="el" href="classjazz__elements_1_1Channels.html#a7587cadb6f6499b28667a5f98869ea69">put()</a> and <a class="el" href="classjazz__elements_1_1Channels.html#a415c84168e2a26a68048a5beca9331c1">remove()</a> or using the API get("//http#https://google.com;")</p>
-<p>The most advanced way to do it is creating a connection (similar to a "0-mq" pipeline) by <a class="el" href="classjazz__elements_1_1Channels.html#a7587cadb6f6499b28667a5f98869ea69">put()</a>-ing an Index to: //http/connection/a_name the index requires the mandatory key URL and the optional keys: CURLOPT_USERNAME, CURLOPT_USERPWD, CURLOPT_COOKIEFILE and CURLOPT_COOKIEJAR (see <a href="https://curl.se/libcurl/c/CURLOPT_USERNAME.html">https://curl.se/libcurl/c/CURLOPT_USERNAME.html</a> and <a href="https://everything.curl.dev/libcurl-http/cookies">https://everything.curl.dev/libcurl-http/cookies</a>) Once the connection exists, you can <a class="el" href="classjazz__elements_1_1Channels.html#a4c090567bd5bdfa758392732f6977644">get()</a>, <a class="el" href="classjazz__elements_1_1Channels.html#a7587cadb6f6499b28667a5f98869ea69">put()</a> and <a class="el" href="classjazz__elements_1_1Channels.html#a415c84168e2a26a68048a5beca9331c1">remove()</a> to just its name (without the word connection) get("//http/a_name"), etc. If you <a class="el" href="classjazz__elements_1_1Channels.html#a415c84168e2a26a68048a5beca9331c1">remove()</a> to "//http/connection/a_name" you destroy the connection. get("//http/connection/a_name") returns the Index used to create the connection.</p>
+<p>Besides being an http server, Jazz is also an http client. The simplest mode of operation is just forwarding <a class="el" href="classjazz__elements_1_1Channels.html#a4c090567bd5bdfa758392732f6977644">get()</a>, <a class="el" href="classjazz__elements_1_1Channels.html#a7587cadb6f6499b28667a5f98869ea69">put()</a> and delete() calls that are intended for other nodes in a Jazz cluster. This is done at the top API level by just adding a node name. E.g., get("///node_x//lmdb/things/this") will forward the call to the node_x (if anything is well configured see JAZZ_NODE_NAME_.., etc.) and return the result just as if is was a local call. At the class level, this is done by <a class="el" href="classjazz__elements_1_1Channels.html#ac515ab4d7ec1a87b86ca73d6bec1fd43">forward_get()</a>, <a class="el" href="classjazz__elements_1_1Channels.html#ab8fe1f2bdfe26cea502724db051b1a6b">forward_put()</a> and <a class="el" href="classjazz__elements_1_1Channels.html#a082b33890530767388dd9d06f1d4c132">forward_del()</a>. You can also send simple GET, PUT and DELETE http calls to random urls by either using the <a class="el" href="classjazz__elements_1_1Channels.html#a4c090567bd5bdfa758392732f6977644">get()</a>, <a class="el" href="classjazz__elements_1_1Channels.html#a7587cadb6f6499b28667a5f98869ea69">put()</a> and <a class="el" href="classjazz__elements_1_1Channels.html#a415c84168e2a26a68048a5beca9331c1">remove()</a> or using the Jazz http server API GET "//http#https://google.com;"</p>
+<p>The most advanced way to do it is creating a connection (similar to a "0-mq" pipeline) by <a class="el" href="classjazz__elements_1_1Channels.html#a7587cadb6f6499b28667a5f98869ea69">put()</a>-ing an Index to: //http/connection/a_name the index requires the mandatory key URL and the optional keys: CURLOPT_USERNAME, CURLOPT_USERPWD, CURLOPT_COOKIEFILE and CURLOPT_COOKIEJAR (see <a href="https://curl.se/libcurl/c/CURLOPT_USERNAME.html">https://curl.se/libcurl/c/CURLOPT_USERNAME.html</a> and <a href="https://everything.curl.dev/libcurl-http/cookies">https://everything.curl.dev/libcurl-http/cookies</a>) Once the connection exists, you can <a class="el" href="classjazz__elements_1_1Channels.html#a4c090567bd5bdfa758392732f6977644">get()</a>, <a class="el" href="classjazz__elements_1_1Channels.html#a7587cadb6f6499b28667a5f98869ea69">put()</a> and <a class="el" href="classjazz__elements_1_1Channels.html#a415c84168e2a26a68048a5beca9331c1">remove()</a> to just its name (without the word connection). I.e, get(txn, "//http/a_name") or get(txn, "//http/a_name/args") will send the http GET to connection[URL] + "args". Same for <a class="el" href="classjazz__elements_1_1Channels.html#a7587cadb6f6499b28667a5f98869ea69">put()</a> and <a class="el" href="classjazz__elements_1_1Channels.html#a415c84168e2a26a68048a5beca9331c1">remove()</a>.</p>
+<p>If you remove("//http/connection/a_name"), you destroy the connection. get("//http/connection/a_name") returns an Index with all the connection parameters.</p>
 <p>"http" operation must be enabled via configuration by setting ENABLE_HTTP_CLIENT to something non-zero. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a08c4979d6aebe47ce02b7e88226d5690"></a>
@@ -947,6 +967,213 @@ get() gets files as arrays of byte and folders as an Index (the keys are file na
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ae777a28e464c8ab500ec1aa235b15356"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae777a28e464c8ab500ec1aa235b15356">&#9670;&nbsp;</a></span>curl_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> jazz_elements::Channels::curl_get </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_txn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>url</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a39c9e80466c03763520f05847e49c28e">Index</a> *&#160;</td>
+          <td class="paramname"><em>p_idx</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The most low level get function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_txn</td><td>A pointer to a <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> passed by reference. If successful, the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> will return a pointer to a <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> inside the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>. The caller can only use it read-only and <b>must</b> <a class="el" href="classjazz__elements_1_1Container.html#af79256b93a1f22d580a5c8eb18fa0558">destroy_transaction()</a> it when done. </td></tr>
+    <tr><td class="paramname">url</td><td>The url to be got. </td></tr>
+    <tr><td class="paramname">p_idx</td><td>Additional curl_easy_setopt() options passed in an Index.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR on success (and a valid p_txn), or some negative value (error). </dd></dl>
+
+</div>
+</div>
+<a id="ac4bd6378761360aafa459291d333451e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4bd6378761360aafa459291d333451e">&#9670;&nbsp;</a></span>curl_put()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> jazz_elements::Channels::curl_put </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>url</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a>&#160;</td>
+          <td class="paramname"><em>p_blk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mode</em> = <code><a class="el" href="container_8h.html#a67c2adbcc7178ce1b7d168003c527aeb">WRITE_TENSOR_DATA</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a39c9e80466c03763520f05847e49c28e">Index</a> *&#160;</td>
+          <td class="paramname"><em>p_idx</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The most low level put function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">url</td><td>The url to put to. </td></tr>
+    <tr><td class="paramname">p_blk</td><td>The <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> to be sent by <a class="el" href="classjazz__elements_1_1Channels.html" title="Channels: A Container doing block transactions across media (files, folders, shell,...">Channels</a>. </td></tr>
+    <tr><td class="paramname">mode</td><td>WRITE_TENSOR_DATA, WRITE_C_STR or WRITE_EVERYTHING </td></tr>
+    <tr><td class="paramname">p_idx</td><td>Additional curl_easy_setopt() options passed in an Index.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR on success (and a valid p_txn), or some negative value (error). </dd></dl>
+
+</div>
+</div>
+<a id="a30ad19781b4345ca915f777769c20978"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30ad19781b4345ca915f777769c20978">&#9670;&nbsp;</a></span>curl_remove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> jazz_elements::Channels::curl_remove </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>url</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a39c9e80466c03763520f05847e49c28e">Index</a> *&#160;</td>
+          <td class="paramname"><em>p_idx</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The most low level remove function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">url</td><td>The url to put to. </td></tr>
+    <tr><td class="paramname">p_idx</td><td>Additional curl_easy_setopt() options passed in an Index.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR on success (and a valid p_txn), or some negative value (error). </dd></dl>
+
+</div>
+</div>
+<a id="a21e4601d77508d04953bc93768d9fa8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21e4601d77508d04953bc93768d9fa8c">&#9670;&nbsp;</a></span>compose_url()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool jazz_elements::Channels::compose_url </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a>&#160;</td>
+          <td class="paramname"><em>p_dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a>&#160;</td>
+          <td class="paramname"><em>p_node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a>&#160;</td>
+          <td class="paramname"><em>p_url</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>buff_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

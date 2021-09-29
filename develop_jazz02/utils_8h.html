@@ -231,6 +231,21 @@ Macros</h2></td></tr>
 <tr class="memitem:a7972b1ea9306dd81d8c40bfbf73691c9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#a7972b1ea9306dd81d8c40bfbf73691c9">SERVICE_ERROR_BASE_FORBIDDEN</a>&#160;&#160;&#160;-31</td></tr>
 <tr class="memdesc:a7972b1ea9306dd81d8c40bfbf73691c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">base in channels disabled by conf.  <a href="utils_8h.html#a7972b1ea9306dd81d8c40bfbf73691c9">More...</a><br /></td></tr>
 <tr class="separator:a7972b1ea9306dd81d8c40bfbf73691c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5d8443272609095f9d8254ccd798f19"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#ab5d8443272609095f9d8254ccd798f19">SERVICE_ERROR_READ_FORBIDDEN</a>&#160;&#160;&#160;-32</td></tr>
+<tr class="memdesc:ab5d8443272609095f9d8254ccd798f19"><td class="mdescLeft">&#160;</td><td class="mdescRight">libCURL get returns CURLE_REMOTE_ACCESS_DENIED, CURLE_AUTH_ERROR  <a href="utils_8h.html#ab5d8443272609095f9d8254ccd798f19">More...</a><br /></td></tr>
+<tr class="separator:ab5d8443272609095f9d8254ccd798f19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab265d5d342f1f72e758ca162e6a0fbee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#ab265d5d342f1f72e758ca162e6a0fbee">SERVICE_ERROR_NOT_READY</a>&#160;&#160;&#160;-33</td></tr>
+<tr class="memdesc:ab265d5d342f1f72e758ca162e6a0fbee"><td class="mdescLeft">&#160;</td><td class="mdescRight">libCURL not wanting to init or perform.  <a href="utils_8h.html#ab265d5d342f1f72e758ca162e6a0fbee">More...</a><br /></td></tr>
+<tr class="separator:ab265d5d342f1f72e758ca162e6a0fbee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae58be5ab8bba79b76ac1a8b0e8bcade5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#ae58be5ab8bba79b76ac1a8b0e8bcade5">SERVICE_ERROR_MISC_SERVER</a>&#160;&#160;&#160;-34</td></tr>
+<tr class="memdesc:ae58be5ab8bba79b76ac1a8b0e8bcade5"><td class="mdescLeft">&#160;</td><td class="mdescRight">MHD_HTTP_INTERNAL_SERVER_ERROR 500 to MHD_HTTP_LOOP_DETECTED 508 in http call.  <a href="utils_8h.html#ae58be5ab8bba79b76ac1a8b0e8bcade5">More...</a><br /></td></tr>
+<tr class="separator:ae58be5ab8bba79b76ac1a8b0e8bcade5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf7b3b09a77b5cbab2579c192e3a6f65"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#acf7b3b09a77b5cbab2579c192e3a6f65">SERVICE_ERROR_UNKNOWN_JAZZNODE</a>&#160;&#160;&#160;-35</td></tr>
+<tr class="memdesc:acf7b3b09a77b5cbab2579c192e3a6f65"><td class="mdescLeft">&#160;</td><td class="mdescRight">http forward_ compose_url() failed.  <a href="utils_8h.html#acf7b3b09a77b5cbab2579c192e3a6f65">More...</a><br /></td></tr>
+<tr class="separator:acf7b3b09a77b5cbab2579c192e3a6f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4aebdfbb70a1e043854b5a4d3b2a4fe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#aa4aebdfbb70a1e043854b5a4d3b2a4fe">SERVICE_ERROR_CORRUPTED</a>&#160;&#160;&#160;-36</td></tr>
+<tr class="memdesc:aa4aebdfbb70a1e043854b5a4d3b2a4fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">An forward_get() block from another Jazz node does no pass size of hash check.  <a href="utils_8h.html#aa4aebdfbb70a1e043854b5a4d3b2a4fe">More...</a><br /></td></tr>
+<tr class="separator:aa4aebdfbb70a1e043854b5a4d3b2a4fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89e9b1adbdda91381feed325f8f086b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#a89e9b1adbdda91381feed325f8f086b7">JAZZ_DEFAULT_CONFIG_PATH</a>&#160;&#160;&#160;&quot;config/jazz_config.ini&quot;</td></tr>
 <tr class="separator:a89e9b1adbdda91381feed325f8f086b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -933,6 +948,86 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>base in channels disabled by conf. </p>
+
+</div>
+</div>
+<a id="ab5d8443272609095f9d8254ccd798f19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5d8443272609095f9d8254ccd798f19">&#9670;&nbsp;</a></span>SERVICE_ERROR_READ_FORBIDDEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SERVICE_ERROR_READ_FORBIDDEN&#160;&#160;&#160;-32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>libCURL get returns CURLE_REMOTE_ACCESS_DENIED, CURLE_AUTH_ERROR </p>
+
+</div>
+</div>
+<a id="ab265d5d342f1f72e758ca162e6a0fbee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab265d5d342f1f72e758ca162e6a0fbee">&#9670;&nbsp;</a></span>SERVICE_ERROR_NOT_READY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SERVICE_ERROR_NOT_READY&#160;&#160;&#160;-33</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>libCURL not wanting to init or perform. </p>
+
+</div>
+</div>
+<a id="ae58be5ab8bba79b76ac1a8b0e8bcade5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae58be5ab8bba79b76ac1a8b0e8bcade5">&#9670;&nbsp;</a></span>SERVICE_ERROR_MISC_SERVER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SERVICE_ERROR_MISC_SERVER&#160;&#160;&#160;-34</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MHD_HTTP_INTERNAL_SERVER_ERROR 500 to MHD_HTTP_LOOP_DETECTED 508 in http call. </p>
+
+</div>
+</div>
+<a id="acf7b3b09a77b5cbab2579c192e3a6f65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf7b3b09a77b5cbab2579c192e3a6f65">&#9670;&nbsp;</a></span>SERVICE_ERROR_UNKNOWN_JAZZNODE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SERVICE_ERROR_UNKNOWN_JAZZNODE&#160;&#160;&#160;-35</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>http forward_ compose_url() failed. </p>
+
+</div>
+</div>
+<a id="aa4aebdfbb70a1e043854b5a4d3b2a4fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4aebdfbb70a1e043854b5a4d3b2a4fe">&#9670;&nbsp;</a></span>SERVICE_ERROR_CORRUPTED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SERVICE_ERROR_CORRUPTED&#160;&#160;&#160;-36</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An forward_get() block from another Jazz node does no pass size of hash check. </p>
 
 </div>
 </div>

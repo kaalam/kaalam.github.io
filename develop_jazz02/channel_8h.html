@@ -70,12 +70,15 @@ $(function() {
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">channel.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;map&gt;</code><br />
+<code>#include &lt;microhttpd.h&gt;</code><br />
+<code>#include &lt;curl/curl.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="container_8h_source.html">src/jazz_elements/container.h</a>&quot;</code><br />
 </div>
 <p><a href="channel_8h_source.html">Go to the source code of this file.</a></p>
@@ -84,6 +87,9 @@ $(function() {
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1Socket.html">jazz_elements::Socket</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A structure to hold a single pipeline.  <a href="structjazz__elements_1_1Socket.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1PutBuffer.html">jazz_elements::PutBuffer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A structure keep state inside a put callback.  <a href="structjazz__elements_1_1PutBuffer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Channels.html">jazz_elements::Channels</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classjazz__elements_1_1Channels.html" title="Channels: A Container doing block transactions across media (files, folders, shell,...">Channels</a>: A <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> doing block transactions across media (files, folders, shell, http urls and zeroMQ servers)  <a href="classjazz__elements_1_1Channels.html#details">More...</a><br /></td></tr>
@@ -164,6 +170,13 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a65b212cde81ca9c4acfe34dae990ecf1"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::string, Index &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a65b212cde81ca9c4acfe34dae990ecf1">jazz_elements::ConnMap</a></td></tr>
 <tr class="memdesc:a65b212cde81ca9c4acfe34dae990ecf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">A structure holding connections.  <a href="namespacejazz__elements.html#a65b212cde81ca9c4acfe34dae990ecf1">More...</a><br /></td></tr>
 <tr class="separator:a65b212cde81ca9c4acfe34dae990ecf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a982b46aa549671da23ea0698efefb7cd"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a982b46aa549671da23ea0698efefb7cd">jazz_elements::GetBuffer</a></td></tr>
+<tr class="memdesc:a982b46aa549671da23ea0698efefb7cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">A structure to share with the libcurl get callback.  <a href="namespacejazz__elements.html#a982b46aa549671da23ea0698efefb7cd">More...</a><br /></td></tr>
+<tr class="separator:a982b46aa549671da23ea0698efefb7cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f9daac76fef91d204b8eab40208ef47"><td class="memItemLeft" align="right" valign="top">typedef GetBuffer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a0f9daac76fef91d204b8eab40208ef47">jazz_elements::pGetBuffer</a></td></tr>
+<tr class="separator:a0f9daac76fef91d204b8eab40208ef47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab580d5b6d505c9adc1026457fbb22ecf"><td class="memItemLeft" align="right" valign="top">typedef PutBuffer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#ab580d5b6d505c9adc1026457fbb22ecf">jazz_elements::pPutBuffer</a></td></tr>
+<tr class="separator:ab580d5b6d505c9adc1026457fbb22ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fa9376fff90c19e9a1ff6e232b88b68"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::string, Socket &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a9fa9376fff90c19e9a1ff6e232b88b68">jazz_elements::PipeMap</a></td></tr>
 <tr class="memdesc:a9fa9376fff90c19e9a1ff6e232b88b68"><td class="mdescLeft">&#160;</td><td class="mdescRight">A structure holding pipeline.  <a href="namespacejazz__elements.html#a9fa9376fff90c19e9a1ff6e232b88b68">More...</a><br /></td></tr>
 <tr class="separator:a9fa9376fff90c19e9a1ff6e232b88b68"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,6 +188,18 @@ Typedefs</h2></td></tr>
 <tr class="separator:ae07e8fd7a73396ce4ef564979d2498e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a612e435984d430c34312ed9fa76395d7"><td class="memItemLeft" align="right" valign="top">typedef Channels *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a612e435984d430c34312ed9fa76395d7">jazz_elements::pChannels</a></td></tr>
 <tr class="separator:a612e435984d430c34312ed9fa76395d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ad704d89a3cbae873d440ad24237f04bf"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#ad704d89a3cbae873d440ad24237f04bf">jazz_elements::get_callback</a> (char *ptr, size_t size, size_t nmemb, void *container)</td></tr>
+<tr class="memdesc:ad704d89a3cbae873d440ad24237f04bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">A callback for libCURL GET.  <a href="namespacejazz__elements.html#ad704d89a3cbae873d440ad24237f04bf">More...</a><br /></td></tr>
+<tr class="separator:ad704d89a3cbae873d440ad24237f04bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6e6fae02248d31c22e41068597ddac0"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#ae6e6fae02248d31c22e41068597ddac0">jazz_elements::put_callback</a> (char *ptr, size_t size, size_t nmemb, void *container)</td></tr>
+<tr class="memdesc:ae6e6fae02248d31c22e41068597ddac0"><td class="mdescLeft">&#160;</td><td class="mdescRight">A callback for libCURL PUT.  <a href="namespacejazz__elements.html#ae6e6fae02248d31c22e41068597ddac0">More...</a><br /></td></tr>
+<tr class="separator:ae6e6fae02248d31c22e41068597ddac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae82d633679f8087a5b8dc3a8776b3d9f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#ae82d633679f8087a5b8dc3a8776b3d9f">jazz_elements::dev_null</a> (char *_ignore, size_t size, size_t nmemb, void *_ignore_2)</td></tr>
+<tr class="memdesc:ae82d633679f8087a5b8dc3a8776b3d9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A callback for libCURL GET to ignore all the blocks sent by the server in PUT and DELETE calls.  <a href="namespacejazz__elements.html#ae82d633679f8087a5b8dc3a8776b3d9f">More...</a><br /></td></tr>
+<tr class="separator:ae82d633679f8087a5b8dc3a8776b3d9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a96f6aa718704cc59c65ee5c701ba4bac"></a>

@@ -125,6 +125,9 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html">Persisted</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classjazz__elements_1_1Persisted.html" title="Persisted: A Service to manage data objects in LMDB.">Persisted</a>: A <a class="el" href="classjazz__elements_1_1Service.html" title="A Jazz Service is a globally instanced configurable object that may allocate RAM.">Service</a> to manage data objects in LMDB.  <a href="classjazz__elements_1_1Persisted.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1PutBuffer.html">PutBuffer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A structure keep state inside a put callback.  <a href="structjazz__elements_1_1PutBuffer.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1QueueEnt.html">QueueEnt</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structjazz__elements_1_1QueueEnt.html" title="QueueEnt: An entity to store a priority queue.">QueueEnt</a>: An entity to store a priority queue.  <a href="structjazz__elements_1_1QueueEnt.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,6 +179,13 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a65b212cde81ca9c4acfe34dae990ecf1"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::string, <a class="el" href="namespacejazz__elements.html#a39c9e80466c03763520f05847e49c28e">Index</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a65b212cde81ca9c4acfe34dae990ecf1">ConnMap</a></td></tr>
 <tr class="memdesc:a65b212cde81ca9c4acfe34dae990ecf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">A structure holding connections.  <a href="namespacejazz__elements.html#a65b212cde81ca9c4acfe34dae990ecf1">More...</a><br /></td></tr>
 <tr class="separator:a65b212cde81ca9c4acfe34dae990ecf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a982b46aa549671da23ea0698efefb7cd"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a982b46aa549671da23ea0698efefb7cd">GetBuffer</a></td></tr>
+<tr class="memdesc:a982b46aa549671da23ea0698efefb7cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">A structure to share with the libcurl get callback.  <a href="namespacejazz__elements.html#a982b46aa549671da23ea0698efefb7cd">More...</a><br /></td></tr>
+<tr class="separator:a982b46aa549671da23ea0698efefb7cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f9daac76fef91d204b8eab40208ef47"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="namespacejazz__elements.html#a982b46aa549671da23ea0698efefb7cd">GetBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a0f9daac76fef91d204b8eab40208ef47">pGetBuffer</a></td></tr>
+<tr class="separator:a0f9daac76fef91d204b8eab40208ef47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab580d5b6d505c9adc1026457fbb22ecf"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structjazz__elements_1_1PutBuffer.html">PutBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#ab580d5b6d505c9adc1026457fbb22ecf">pPutBuffer</a></td></tr>
+<tr class="separator:ab580d5b6d505c9adc1026457fbb22ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fa9376fff90c19e9a1ff6e232b88b68"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::string, <a class="el" href="structjazz__elements_1_1Socket.html">Socket</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a9fa9376fff90c19e9a1ff6e232b88b68">PipeMap</a></td></tr>
 <tr class="memdesc:a9fa9376fff90c19e9a1ff6e232b88b68"><td class="mdescLeft">&#160;</td><td class="mdescRight">A structure holding pipeline.  <a href="namespacejazz__elements.html#a9fa9376fff90c19e9a1ff6e232b88b68">More...</a><br /></td></tr>
 <tr class="separator:a9fa9376fff90c19e9a1ff6e232b88b68"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -277,12 +287,15 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a1a5f20cce9610a421e72a17fae481ea4"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a1a5f20cce9610a421e72a17fae481ea4">write_callback</a> (char *ptr, size_t size, size_t nmemb, void *userdata)</td></tr>
-<tr class="memdesc:a1a5f20cce9610a421e72a17fae481ea4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A test write callback (libCURL stuff to be modified).  <a href="namespacejazz__elements.html#a1a5f20cce9610a421e72a17fae481ea4">More...</a><br /></td></tr>
-<tr class="separator:a1a5f20cce9610a421e72a17fae481ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8adb030d4c0542aa3efbab96080cc982"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a8adb030d4c0542aa3efbab96080cc982">remote_testing_point</a> ()</td></tr>
-<tr class="memdesc:a8adb030d4c0542aa3efbab96080cc982"><td class="mdescLeft">&#160;</td><td class="mdescRight">A remote testing point (libCURL stuff to be modified).  <a href="namespacejazz__elements.html#a8adb030d4c0542aa3efbab96080cc982">More...</a><br /></td></tr>
-<tr class="separator:a8adb030d4c0542aa3efbab96080cc982"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad704d89a3cbae873d440ad24237f04bf"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#ad704d89a3cbae873d440ad24237f04bf">get_callback</a> (char *ptr, size_t size, size_t nmemb, void *container)</td></tr>
+<tr class="memdesc:ad704d89a3cbae873d440ad24237f04bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">A callback for libCURL GET.  <a href="namespacejazz__elements.html#ad704d89a3cbae873d440ad24237f04bf">More...</a><br /></td></tr>
+<tr class="separator:ad704d89a3cbae873d440ad24237f04bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae82d633679f8087a5b8dc3a8776b3d9f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#ae82d633679f8087a5b8dc3a8776b3d9f">dev_null</a> (char *_ignore, size_t size, size_t nmemb, void *_ignore_2)</td></tr>
+<tr class="memdesc:ae82d633679f8087a5b8dc3a8776b3d9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A callback for libCURL GET to ignore all the blocks sent by the server in PUT and DELETE calls.  <a href="namespacejazz__elements.html#ae82d633679f8087a5b8dc3a8776b3d9f">More...</a><br /></td></tr>
+<tr class="separator:ae82d633679f8087a5b8dc3a8776b3d9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6e6fae02248d31c22e41068597ddac0"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#ae6e6fae02248d31c22e41068597ddac0">put_callback</a> (char *ptr, size_t size, size_t nmemb, void *container)</td></tr>
+<tr class="memdesc:ae6e6fae02248d31c22e41068597ddac0"><td class="mdescLeft">&#160;</td><td class="mdescRight">A callback for libCURL PUT.  <a href="namespacejazz__elements.html#ae6e6fae02248d31c22e41068597ddac0">More...</a><br /></td></tr>
+<tr class="separator:ae6e6fae02248d31c22e41068597ddac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cf579631db7f755d76ce21def56134a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a9cf579631db7f755d76ce21def56134a">compile_next_state_LUT</a> (<a class="el" href="structjazz__elements_1_1ParseNextStateLUT.html">ParseNextStateLUT</a> lut[], int num_states, <a class="el" href="structjazz__elements_1_1ParseStateTransition.html">ParseStateTransition</a> trans[])</td></tr>
 <tr class="memdesc:a9cf579631db7f755d76ce21def56134a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="structjazz__elements_1_1ParseNextStateLUT.html" title="A lookup table for all the possible values of a char mapped into an 8-bit state.">ParseNextStateLUT</a> compiler: (This is only used to create constants used by parsers.)  <a href="namespacejazz__elements.html#a9cf579631db7f755d76ce21def56134a">More...</a><br /></td></tr>
 <tr class="separator:a9cf579631db7f755d76ce21def56134a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -416,6 +429,50 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>A structure holding connections. </p>
+
+</div>
+</div>
+<a id="a982b46aa549671da23ea0698efefb7cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a982b46aa549671da23ea0698efefb7cd">&#9670;&nbsp;</a></span>GetBuffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::vector&lt;uint8_t&gt; <a class="el" href="namespacejazz__elements.html#a982b46aa549671da23ea0698efefb7cd">jazz_elements::GetBuffer</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A structure to share with the libcurl get callback. </p>
+
+</div>
+</div>
+<a id="a0f9daac76fef91d204b8eab40208ef47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f9daac76fef91d204b8eab40208ef47">&#9670;&nbsp;</a></span>pGetBuffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="namespacejazz__elements.html#a982b46aa549671da23ea0698efefb7cd">GetBuffer</a>* <a class="el" href="namespacejazz__elements.html#a0f9daac76fef91d204b8eab40208ef47">jazz_elements::pGetBuffer</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab580d5b6d505c9adc1026457fbb22ecf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab580d5b6d505c9adc1026457fbb22ecf">&#9670;&nbsp;</a></span>pPutBuffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="structjazz__elements_1_1PutBuffer.html">PutBuffer</a>* <a class="el" href="namespacejazz__elements.html#ab580d5b6d505c9adc1026457fbb22ecf">jazz_elements::pPutBuffer</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -1006,14 +1063,14 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a1a5f20cce9610a421e72a17fae481ea4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a5f20cce9610a421e72a17fae481ea4">&#9670;&nbsp;</a></span>write_callback()</h2>
+<a id="ad704d89a3cbae873d440ad24237f04bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad704d89a3cbae873d440ad24237f04bf">&#9670;&nbsp;</a></span>get_callback()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t jazz_elements::write_callback </td>
+          <td class="memname">size_t jazz_elements::get_callback </td>
           <td>(</td>
           <td class="paramtype">char *&#160;</td>
           <td class="paramname"><em>ptr</em>, </td>
@@ -1034,7 +1091,7 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>userdata</em>&#160;</td>
+          <td class="paramname"><em>container</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1044,28 +1101,94 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>A test write callback (libCURL stuff to be modified). </p>
+<p>A callback for libCURL GET. </p>
 <p>(see <a href="https://curl.haxx.se/libcurl/c/CURLOPT_WRITEFUNCTION.html">https://curl.haxx.se/libcurl/c/CURLOPT_WRITEFUNCTION.html</a>) </p>
 
 </div>
 </div>
-<a id="a8adb030d4c0542aa3efbab96080cc982"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8adb030d4c0542aa3efbab96080cc982">&#9670;&nbsp;</a></span>remote_testing_point()</h2>
+<a id="ae82d633679f8087a5b8dc3a8776b3d9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae82d633679f8087a5b8dc3a8776b3d9f">&#9670;&nbsp;</a></span>dev_null()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool jazz_elements::remote_testing_point </td>
+          <td class="memname">size_t jazz_elements::dev_null </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_ignore</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>nmemb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>_ignore_2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>A remote testing point (libCURL stuff to be modified). </p>
+<p>A callback for libCURL GET to ignore all the blocks sent by the server in PUT and DELETE calls. </p>
 <p>(see <a href="https://curl.haxx.se/libcurl/c/CURLOPT_WRITEFUNCTION.html">https://curl.haxx.se/libcurl/c/CURLOPT_WRITEFUNCTION.html</a>) </p>
+
+</div>
+</div>
+<a id="ae6e6fae02248d31c22e41068597ddac0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6e6fae02248d31c22e41068597ddac0">&#9670;&nbsp;</a></span>put_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t jazz_elements::put_callback </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>nmemb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>container</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A callback for libCURL PUT. </p>
+<p>(see <a href="https://curl.haxx.se/libcurl/c/CURLOPT_READFUNCTION.html">https://curl.haxx.se/libcurl/c/CURLOPT_READFUNCTION.html</a>) </p>
 
 </div>
 </div>
