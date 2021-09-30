@@ -173,7 +173,7 @@ hr {
 
 <h3>Consistency first</h3>
 
-<p>These rules do not apply to files that are completely imported from other projects or contributions of complete files. In those cases, consistency with pre-existing formatting prevails.</p>
+<p>These rules do not apply to files that are completely imported from other projects or contributions of complete files (especially, LMDB and Catch2!). In those cases, consistency with pre-existing formatting prevails.</p>
 
 <h3>Line length, tab size and encoding</h3>
 
@@ -187,11 +187,11 @@ hr {
 
 <h3>Use of space</h3>
 
-<p>Never before a comma, always after a comma except when another comma follows. Always before and after arithmetic and logic operators, except arithmetic * and / and all pointer operators. Never immediately inside parentheses except for alignment. Always outside parameters near primitives if, while, for, etc. In function calls and definitions, space is optional.</p>
+<p>Never before a comma, always after a comma except when another comma follows. Always before and after arithmetic and logic operators, except arithmetic * and / and only before pointer operators. Never immediately inside parentheses except for alignment. Always outside parameters near primitives if, while, for, etc. In function calls and definitions, space is just for alignment.</p>
 
 <h3>Use of vertical space</h3>
 
-<p>Two blank lines before a method&#39;s documentation. No space between the doc and the body or at the beginning or the end. One line space each time you separate functional blocks. There is no clear definition of &ldquo;functional block&rdquo;. (Something like &ldquo;a higher level concept&rdquo; that translates into more than one line of c++.)</p>
+<p>Two blank lines before a method&#39;s documentation. No space between the doc and the body or at the beginning or the end. One line space each time you separate blocks. There is no definition of &ldquo;block&rdquo;, just similar things make the same block for readability.</p>
 
 <h3>Use of vertical alignment</h3>
 
@@ -218,7 +218,7 @@ hr {
 
 <h3>Templates</h3>
 
-<p>Never use templates in ways a novice would not understand. Templates should make things simpler. Or not at all, that&#39;s okay too.</p>
+<p>Never use templates if they don&#39;t make expressions cleaner. Templates in stdlib containers are amazing, there is not much need of them in Jazz.</p>
 
 <h3>Macros</h3>
 
