@@ -181,7 +181,7 @@
                 
 
 <ul id="mysidebar" class="nav">
-  <li class="sidebarTitle">Jazz 0.5.1</li>
+  <li class="sidebarTitle">Jazz 0.5.2</li>
   
   
   
@@ -208,13 +208,13 @@
                   
                   
                   
-                  <li><a href="vision_elements_block_kind_etc.html">Elements - Blocks, Kinds, Tuples, Tables and Fluxes</a></li>
+                  <li><a href="vision_elements_block_kind_etc.html">Elements - Blocks, Kinds, Tuples</a></li>
                   
                   
                   
                   
                   
-                  <li><a href="vision_elements_containers.html">Elements - Containers - Volatile, Remote and Persisted</a></li>
+                  <li><a href="vision_elements_containers.html">Elements - Containers - One Shot, Channels, Volatile and Persisted</a></li>
                   
                   
                   
@@ -230,12 +230,6 @@
                   
                   
                   
-                  
-                  
-                  <li><a href="vision_apis_services.html">API, Services, Instances, etc.</a></li>
-                  
-                  
-                  
               </ul>
           </li>
           
@@ -248,7 +242,7 @@
       
   
   <li>
-      <a href="#">Bebop fundamentals</a>
+      <a href="#">Bebop fundamentals (Jazz 0.6.x)</a>
       <ul>
           
           
@@ -264,7 +258,7 @@
       
   
   <li>
-      <a href="#">Agency fundamentals</a>
+      <a href="#">Agency fundamentals (Jazz 0.7.x)</a>
       <ul>
           
           
@@ -292,13 +286,6 @@
           
           
           
-          <li><a href="api_ref_modules_.html">API reference - How it works</a></li>
-          
-          
-          
-          
-          
-          
           <li><a href="api_ref_http_api.html">API reference - The http API</a></li>
           
           
@@ -306,21 +293,7 @@
           
           
           
-          <li><a href="api_ref_names.html">API reference - Names</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="api_ref_locators.html">API reference - Locators</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="api_ref_const.html">API reference - Constants</a></li>
+          <li><a href="api_ref_const_encoding.html">API reference - Constants and %-encoding</a></li>
           
           
           
@@ -334,13 +307,6 @@
           
           
           
-          <li><a href="api_ref_contracts.html">API reference - Block and Container contracts</a></li>
-          
-          
-          
-          
-          
-          
           <li><a href="api_ref_fun_calls.html">API reference - Function calls</a></li>
           
           
@@ -348,28 +314,98 @@
           
           
           
-          <li><a href="api_ref_get_head.html">API reference - GET and HEAD calls reference</a></li>
+          <li><a href="api_ref_assign.html">API reference - Assignment calls</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_put.html">API reference - PUT calls reference</a></li>
+          <li><a href="api_ref_attributes.html">API reference - Attribute calls</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_assign.html">API reference - Assignment calls reference</a></li>
+          <li><a href="api_ref_serving_frontend.html">API reference - Using Jazz to serve applications</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_fluxes_agents.html">API reference - Fluxes, event and agents</a></li>
+          <li><a href="api_ref_agency_wip.html">API reference - Agency bases (Work in Progress)</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_bebop_wip.html">API reference - Bebop bases (Work in Progress)</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_channel_zmq.html">API reference - Channel base 0-mq</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_channel_bash.html">API reference - Channel base bash</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_channel_file.html">API reference - Channel base file</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_channel_http.html">API reference - Channel base http</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_persisted_lmdb.html">API reference - Persisted base lmdb</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_deque.html">API reference - Volatile base deque</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_index.html">API reference - Volatile base index</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_queue.html">API reference - Volatile base queue</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_tree.html">API reference - Volatile base tree</a></li>
           
           
           
@@ -528,23 +564,17 @@ $('#toc').on('click', 'a', function() {
 <p>Jazz is designed for performance. It is a server that can use as much CPU and RAM as available with near 100% efficiency serving thousands
 of concurrent API calls. This comes with some strict architectural decisions that are better kept in mind to understand how the APIs work.
 Blocks, which are everything (data, metadata, indices, code, etc.), and are possibly persisted, are just binary movable structures
-(structures that do not contain pointers). Most things (everything except Columns and Tables) are made of just one Block.</p>
+(structures that do not contain pointers). Most things are made of just one Block.</p>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> <b>First thing</b>: Blocks cannot allocate RAM. Only Services can. In our case, <b>Containers</b>, which are
 Services allocate RAM!</div>
 
-<p>Note that even simple operations like slicing a block as <code class="language-plaintext highlighter-rouge">my_block[1,2,3]</code> require converting the string <code class="language-plaintext highlighter-rouge">[1,2,3]</code> into a (one shot) block
-and using that block to select rows inside <code class="language-plaintext highlighter-rouge">my_block</code>, the result being another block. This block needs some RAM allocation and only a
-Container can do that.</p>
+<p>Note that even simple operations like slicing a block as <code class="language-plaintext highlighter-rouge">/lmdb/my_table/my_block[#[1,2,3];]</code> requires converting the string <code class="language-plaintext highlighter-rouge">[1,2,3]</code> into
+a (one shot) block and using that block to select rows inside <code class="language-plaintext highlighter-rouge">/lmdb/my_table/my_block</code>, the result being another block. This block needs
+some RAM allocation and only a Container can do that.</p>
 
-<p>So unless you are using the C++ API only (which works as you probably expect), the petitions you are doing to blocks are served by one or
-more containers and put together by a special API Service.</p>
-
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> What looks to the user like a method of a block, is called <b>a contract</b> and it is computed
-inside a Service. The reason behind the word contract is, all Block descendants are entitled to provide the same service, with the same
-name and coherent behavior. Besides block contracts, Services have contracts too.</div>
-
-<p>See more details <a href="api_ref_modules_.html">here</a></p>
+<p>When you are using the C++ API you talk to the Containers directly. Via http the petitions you are doing to blocks are served by one or
+more containers and put together by a special <code class="language-plaintext highlighter-rouge">API</code> Service, which is also a <code class="language-plaintext highlighter-rouge">Container</code>.</p>
 
 <h2 id="the-different-apis">The different APIs</h2>
 
@@ -556,51 +586,29 @@ containing the previous ones.</p>
 <ul>
   <li><strong>jazz_elements</strong> (all the pieces: blocks, tuples, storage, fluxes, communication, services, …)</li>
   <li><strong>jazz_bebop</strong> (everything to create bebop code, run it and expand Formal Fields)</li>
-  <li><strong>jazz_agency</strong> (agency as graphs of fields)</li>
+  <li><strong>jazz_agency</strong> (agency as automating code generation over graphs of fields)</li>
 </ul>
 
 <p>See technical documentation <a href="/develop/">here</a></p>
 
 <h3 id="the-bebop-api">The Bebop API</h3>
 
-<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> Bebop implementation in C++ will start with Jazz version 0.6.x. For the moment, consider the bebop API
-just like the current http API without the restrictions of http predicates. Functions are just Blocks and function arguments are Tuples.</div>
+<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> Bebop, of course, also has access to the API. This is under current implementation in Jazz 0.6.x.</div>
 
 <h3 id="the-http-api">The http API</h3>
 
-<p>The http API is what this documentation is about. It has two parts, one http specific (http predicates and encoding specifics) and a
-general syntax of queries which is defined by its parts: (names, locators, constants, slicing, …). Before that, it is important
-to read how the different modules fit together and what the different APIS /, // and /// are.</p>
+<p>The http API is what this documentation is about. It has two parts, one defining general ideas: http commands, constants, slicing, function
+calls, assignment and attributes. The second part is dedicated to describing the operation of each of the <code class="language-plaintext highlighter-rouge">bases</code> in each of the Containers.</p>
 
 <h3 id="python-and-r-apis">Python and R APIs</h3>
 
 <p>To focus on the important parts and advance AI research without the overhead of creating tools we do not need, Jazz dropped the
 implementation of native R and Python packages that existed in Jazz 0.2x. The native APIs (c++ and Bebop) are orders of magnitude more
-efficient than anything that can be implemented in scripting languages. Nevertheless, both projects (rjazz and pyjazz) will be converted
-(by the end of 0.5.xx, before 0.6.1) into http clients that provide the minimum functionality (API calls exchanging data serialized as
-JSON) as clients of a Jazz server.</p>
+efficient than anything that can be implemented in scripting languages.</p>
 
-<p>Ideally, both projects find enough traction to be taken over by groups with some stake in them and become more that just minimum
-functionality clients. Ideally, also a Javascript client joins the project someday.</p>
-
-<p><br /></p>
-
-<p>See also:</p>
-
-<ul>
-  <li>API terminology and how <a href="api_ref_modules_.html">modules</a> work together to serve API calls.</li>
-  <li>High level overview of the <a href="api_ref_http_api.html">http API</a>.</li>
-  <li>Rules to build and use <a href="api_ref_names.html">names</a>.</li>
-  <li>Rules to build block <a href="api_ref_locators.html">locators</a>.</li>
-  <li>Syntax of <a href="api_ref_const.html">constants</a></li>
-  <li><a href="api_ref_slicing.html">Slicing</a> details.</li>
-  <li>List of all <a href="api_ref_contracts.html">contracts</a>.</li>
-  <li><a href="api_ref_fun_calls.html">Function call</a> reference.</li>
-  <li>Detailed reference of http <a href="api_ref_get_head.html">GET, HEAD and OPTIONS</a>.</li>
-  <li>Detailed reference of http <a href="api_ref_put.html">PUT and DELETE</a>.</li>
-  <li>Detailed reference of http <a href="api_ref_assign.html">assignment</a> queries.</li>
-  <li>Event <a href="api_ref_fluxes_agents.html">connection</a> reference.</li>
-</ul>
+<p>With the release of The Tangle (a docker image of Jazz 0.5.2 containing large curated NLP datasets). A python http client is provided, but
+it is just intended to serve as an example on how to access Jazz from Python to be extended by the user, it does not cover most of the
+functions.</p>
 
 <p><br /></p>
 
@@ -617,7 +625,7 @@ functionality clients. Ideally, also a Javascript client joins the project somed
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2021 kaalam.ai. All rights reserved. <br />
- Site last generated: Sep 30, 2021 <br />
+ Site last generated: Oct 2, 2021 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

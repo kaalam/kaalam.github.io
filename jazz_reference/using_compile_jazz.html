@@ -181,7 +181,7 @@
                 
 
 <ul id="mysidebar" class="nav">
-  <li class="sidebarTitle">Jazz 0.5.1</li>
+  <li class="sidebarTitle">Jazz 0.5.2</li>
   
   
   
@@ -208,13 +208,13 @@
                   
                   
                   
-                  <li><a href="vision_elements_block_kind_etc.html">Elements - Blocks, Kinds, Tuples, Tables and Fluxes</a></li>
+                  <li><a href="vision_elements_block_kind_etc.html">Elements - Blocks, Kinds, Tuples</a></li>
                   
                   
                   
                   
                   
-                  <li><a href="vision_elements_containers.html">Elements - Containers - Volatile, Remote and Persisted</a></li>
+                  <li><a href="vision_elements_containers.html">Elements - Containers - One Shot, Channels, Volatile and Persisted</a></li>
                   
                   
                   
@@ -230,12 +230,6 @@
                   
                   
                   
-                  
-                  
-                  <li><a href="vision_apis_services.html">API, Services, Instances, etc.</a></li>
-                  
-                  
-                  
               </ul>
           </li>
           
@@ -248,7 +242,7 @@
       
   
   <li>
-      <a href="#">Bebop fundamentals</a>
+      <a href="#">Bebop fundamentals (Jazz 0.6.x)</a>
       <ul>
           
           
@@ -264,7 +258,7 @@
       
   
   <li>
-      <a href="#">Agency fundamentals</a>
+      <a href="#">Agency fundamentals (Jazz 0.7.x)</a>
       <ul>
           
           
@@ -292,13 +286,6 @@
           
           
           
-          <li><a href="api_ref_modules_.html">API reference - How it works</a></li>
-          
-          
-          
-          
-          
-          
           <li><a href="api_ref_http_api.html">API reference - The http API</a></li>
           
           
@@ -306,21 +293,7 @@
           
           
           
-          <li><a href="api_ref_names.html">API reference - Names</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="api_ref_locators.html">API reference - Locators</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="api_ref_const.html">API reference - Constants</a></li>
+          <li><a href="api_ref_const_encoding.html">API reference - Constants and %-encoding</a></li>
           
           
           
@@ -334,13 +307,6 @@
           
           
           
-          <li><a href="api_ref_contracts.html">API reference - Block and Container contracts</a></li>
-          
-          
-          
-          
-          
-          
           <li><a href="api_ref_fun_calls.html">API reference - Function calls</a></li>
           
           
@@ -348,28 +314,98 @@
           
           
           
-          <li><a href="api_ref_get_head.html">API reference - GET and HEAD calls reference</a></li>
+          <li><a href="api_ref_assign.html">API reference - Assignment calls</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_put.html">API reference - PUT calls reference</a></li>
+          <li><a href="api_ref_attributes.html">API reference - Attribute calls</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_assign.html">API reference - Assignment calls reference</a></li>
+          <li><a href="api_ref_serving_frontend.html">API reference - Using Jazz to serve applications</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_fluxes_agents.html">API reference - Fluxes, event and agents</a></li>
+          <li><a href="api_ref_agency_wip.html">API reference - Agency bases (Work in Progress)</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_bebop_wip.html">API reference - Bebop bases (Work in Progress)</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_channel_zmq.html">API reference - Channel base 0-mq</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_channel_bash.html">API reference - Channel base bash</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_channel_file.html">API reference - Channel base file</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_channel_http.html">API reference - Channel base http</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_persisted_lmdb.html">API reference - Persisted base lmdb</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_deque.html">API reference - Volatile base deque</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_index.html">API reference - Volatile base index</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_queue.html">API reference - Volatile base queue</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_tree.html">API reference - Volatile base tree</a></li>
           
           
           
@@ -528,8 +564,8 @@ $('#toc').on('click', 'a', function() {
 <p><span class="label label-info">Prerequisites</span></p>
 
 <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> We try to make Jazz as self-contained and version independent as possible. Any version that is recent enough
-to support C++11, R 3.x should be fine. The list of prerequisites may not be complete. Please, help us completing it
-if you find missing tools or version conflicts.</div>
+to support C++17. The list of prerequisites may not be complete. Please, help us completing it if you find missing tools or version
+conflicts.</div>
 
 <p>Make sure you are running a Linux box including (see the why column to decide if you need it):</p>
 
@@ -554,6 +590,10 @@ if you find missing tools or version conflicts.</div>
       <td>To build the server.</td>
     </tr>
     <tr>
+      <td><strong>ZeroMQ</strong> (devel)</td>
+      <td>To build the server.</td>
+    </tr>
+    <tr>
       <td><strong>Doxygen</strong></td>
       <td>To make the server documentation.</td>
     </tr>
@@ -572,22 +612,6 @@ if you find missing tools or version conflicts.</div>
     <tr>
       <td><strong>Docker</strong></td>
       <td>To build and run images.</td>
-    </tr>
-    <tr>
-      <td><strong>R</strong></td>
-      <td>To build the R package.</td>
-    </tr>
-    <tr>
-      <td>R package <strong>rcurl</strong></td>
-      <td>A dependency of rjazz.</td>
-    </tr>
-    <tr>
-      <td>R package <strong>knitr</strong></td>
-      <td>To make all the package documentations.</td>
-    </tr>
-    <tr>
-      <td>R package <strong>pkgdown</strong></td>
-      <td>To build the R package’s documentation website.</td>
     </tr>
   </tbody>
 </table>
@@ -616,8 +640,6 @@ You will now override:
   - server/src/include/jazz_platform.h (Version and platform const)
   - server/Makefile (for C++)
   - server/src/main.dox (main page for Doxygen)
-  - r_package/rjazz/DESCRIPTION (With version information for R)
-  - r_package/build.sh (to build, test and install the R package)
   - docker/upload_docker.sh (build &amp; upload reference Docker image)
 
 Do you want to continue? [y/N] y
@@ -625,8 +647,6 @@ Do you want to continue? [y/N] y
 Writing: server/src/include/jazz_platform.h ... Ok.
 Writing: server/Makefile ... Ok.
 Writing: server/src/main.dox ... Ok.
-Writing: r_package/rjazz/DESCRIPTION ... Ok.
-Writing: r_package/build.sh ... Ok.
 Writing: docker/upload_docker.sh ... Ok.
 
   Congratulations, you have successfully configured your project. Now,
@@ -638,11 +658,6 @@ you should be able to:
   - make           // Shows help when invoked without arguments
   - make jazz      // Compiles the server in RELEASE mode
   - make install   // Requires sudo and installs as a Linux service
-
-  2. Build the R package
-
-  - cd r_package
-  - ./build.sh
 </code></pre></div></div>
 
 <h2 id="compile-the-server">Compile the server</h2>
@@ -654,16 +669,6 @@ make install
 
 <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> You can also type “<strong>make</strong>” without parameters to see the options or “<strong>make info</strong>” to see configuration
 variables.</div>
-
-<h2 id="build-the-r-package">Build the R package</h2>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd r_package
-./build.sh
-</code></pre></div></div>
-
-<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> You can also type “<strong>./build_doc.sh</strong>” to build the documentation website. (Assuming you installed pkgdown.)</div>
-
-<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> Unless you have a correctly configured PyPI account, you will not be able to upload the package you built.)</div>
 
 <p><br /></p>
 
@@ -680,7 +685,7 @@ variables.</div>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2021 kaalam.ai. All rights reserved. <br />
- Site last generated: Sep 30, 2021 <br />
+ Site last generated: Oct 2, 2021 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

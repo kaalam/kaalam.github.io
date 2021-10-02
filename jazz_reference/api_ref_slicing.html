@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Syntax of block, tuple, column and table slicing.">
+<meta name="description" content="Filtering rows from a Tensor and selecting items from a Tuple.">
 <meta name="keywords" content=" ">
 <title>API reference - Block and tuple slicing | Jazz User's Manual</title>
 <link rel="stylesheet" href="css/syntax.css">
@@ -181,7 +181,7 @@
                 
 
 <ul id="mysidebar" class="nav">
-  <li class="sidebarTitle">Jazz 0.5.1</li>
+  <li class="sidebarTitle">Jazz 0.5.2</li>
   
   
   
@@ -208,13 +208,13 @@
                   
                   
                   
-                  <li><a href="vision_elements_block_kind_etc.html">Elements - Blocks, Kinds, Tuples, Tables and Fluxes</a></li>
+                  <li><a href="vision_elements_block_kind_etc.html">Elements - Blocks, Kinds, Tuples</a></li>
                   
                   
                   
                   
                   
-                  <li><a href="vision_elements_containers.html">Elements - Containers - Volatile, Remote and Persisted</a></li>
+                  <li><a href="vision_elements_containers.html">Elements - Containers - One Shot, Channels, Volatile and Persisted</a></li>
                   
                   
                   
@@ -230,12 +230,6 @@
                   
                   
                   
-                  
-                  
-                  <li><a href="vision_apis_services.html">API, Services, Instances, etc.</a></li>
-                  
-                  
-                  
               </ul>
           </li>
           
@@ -248,7 +242,7 @@
       
   
   <li>
-      <a href="#">Bebop fundamentals</a>
+      <a href="#">Bebop fundamentals (Jazz 0.6.x)</a>
       <ul>
           
           
@@ -264,7 +258,7 @@
       
   
   <li>
-      <a href="#">Agency fundamentals</a>
+      <a href="#">Agency fundamentals (Jazz 0.7.x)</a>
       <ul>
           
           
@@ -292,13 +286,6 @@
           
           
           
-          <li><a href="api_ref_modules_.html">API reference - How it works</a></li>
-          
-          
-          
-          
-          
-          
           <li><a href="api_ref_http_api.html">API reference - The http API</a></li>
           
           
@@ -306,21 +293,7 @@
           
           
           
-          <li><a href="api_ref_names.html">API reference - Names</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="api_ref_locators.html">API reference - Locators</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="api_ref_const.html">API reference - Constants</a></li>
+          <li><a href="api_ref_const_encoding.html">API reference - Constants and %-encoding</a></li>
           
           
           
@@ -334,13 +307,6 @@
           
           
           
-          <li><a href="api_ref_contracts.html">API reference - Block and Container contracts</a></li>
-          
-          
-          
-          
-          
-          
           <li><a href="api_ref_fun_calls.html">API reference - Function calls</a></li>
           
           
@@ -348,28 +314,98 @@
           
           
           
-          <li><a href="api_ref_get_head.html">API reference - GET and HEAD calls reference</a></li>
+          <li><a href="api_ref_assign.html">API reference - Assignment calls</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_put.html">API reference - PUT calls reference</a></li>
+          <li><a href="api_ref_attributes.html">API reference - Attribute calls</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_assign.html">API reference - Assignment calls reference</a></li>
+          <li><a href="api_ref_serving_frontend.html">API reference - Using Jazz to serve applications</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_fluxes_agents.html">API reference - Fluxes, event and agents</a></li>
+          <li><a href="api_ref_agency_wip.html">API reference - Agency bases (Work in Progress)</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_bebop_wip.html">API reference - Bebop bases (Work in Progress)</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_channel_zmq.html">API reference - Channel base 0-mq</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_channel_bash.html">API reference - Channel base bash</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_channel_file.html">API reference - Channel base file</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_channel_http.html">API reference - Channel base http</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_persisted_lmdb.html">API reference - Persisted base lmdb</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_deque.html">API reference - Volatile base deque</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_index.html">API reference - Volatile base index</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_queue.html">API reference - Volatile base queue</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_tree.html">API reference - Volatile base tree</a></li>
           
           
           
@@ -489,7 +525,7 @@
 <div class="post-content">
 
    
-    <div class="summary">Syntax of block, tuple, column and table slicing.</div>
+    <div class="summary">Filtering rows from a Tensor and selecting items from a Tuple.</div>
    
 
     
@@ -523,8 +559,38 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> Jazz is still under development to produce the first Minimum Viable Product (MVP) after the original 0.1.7.
-This is incomplete, but what is here is up to date.</div>
+  <h2 id="operations-on-blocks-applicable-through-rest-api-calls">Operations on Blocks applicable through rest API calls</h2>
+
+<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> These operations only apply to GET (and therefore HEAD) calls.</div>
+
+<h2 id="selecting-an-item-from-a-tuple">Selecting an item from a <code class="language-plaintext highlighter-rouge">Tuple</code></h2>
+
+<p>This operation returns an item from a Tuple as a Tensor, instead of the whole tuple.</p>
+
+<p>The syntax is giving the item name after a colon <code class="language-plaintext highlighter-rouge">:</code> in <code class="language-plaintext highlighter-rouge">///node//base/entity/key:item_name</code>.</p>
+
+<h2 id="selecting-rows-from-a-tensor">Selecting rows from a <code class="language-plaintext highlighter-rouge">Tensor</code></h2>
+
+<p>In a Tensor, the first dimension in the shape is referred to as the <strong>row</strong>. I.e., a tensor of shape <code class="language-plaintext highlighter-rouge">[30, 16, 5]</code> is stored as if it was
+30 tensors of shape <code class="language-plaintext highlighter-rouge">[1, 16, 5]</code>. You can select rows in a Tensor to get a smaller tensor. This operation is extremely efficient and done
+inside the containers without creating a copy of the block. In this way, you can read 2Kb from a 50Mb block in lmdb storage without
+creating any copy of the original block, just creating the new 2Kb block.</p>
+
+<p>The tensors used as selectors are known as <code class="language-plaintext highlighter-rouge">filters</code>. Filters are just tensors with the right shapes and ranges. A filter can be:</p>
+
+<ul>
+  <li>A vector of boolean whose size is the number of rows to be filtered.</li>
+  <li>A vector of sorted integers in the range of the number of rows to be filtered.</li>
+</ul>
+
+<h3 id="applying-the-selection-from-the-rest-api">Applying the selection from the rest API</h3>
+
+<p>Can be done by either an existing block or a constant. E.g.,</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">//lmdb/my_ent/block_1[//queue/filters/filter_1]</code></li>
+  <li><code class="language-plaintext highlighter-rouge">//lmdb/my_ent/block_1[#[1,3,5];]</code></li>
+</ul>
 
 <p><br /></p>
 
@@ -541,7 +607,7 @@ This is incomplete, but what is here is up to date.</div>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2021 kaalam.ai. All rights reserved. <br />
- Site last generated: Sep 30, 2021 <br />
+ Site last generated: Oct 2, 2021 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

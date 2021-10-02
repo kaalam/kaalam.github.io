@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Syntax of item, block, kind and tuple names.">
+<meta name="description" content="Api Reference for the base "file" inside the container Channels">
 <meta name="keywords" content=" ">
-<title>API reference - Names | Jazz User's Manual</title>
+<title>API reference - Channel base file | Jazz User's Manual</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -181,7 +181,7 @@
                 
 
 <ul id="mysidebar" class="nav">
-  <li class="sidebarTitle">Jazz 0.5.1</li>
+  <li class="sidebarTitle">Jazz 0.5.2</li>
   
   
   
@@ -208,13 +208,13 @@
                   
                   
                   
-                  <li><a href="vision_elements_block_kind_etc.html">Elements - Blocks, Kinds, Tuples, Tables and Fluxes</a></li>
+                  <li><a href="vision_elements_block_kind_etc.html">Elements - Blocks, Kinds, Tuples</a></li>
                   
                   
                   
                   
                   
-                  <li><a href="vision_elements_containers.html">Elements - Containers - Volatile, Remote and Persisted</a></li>
+                  <li><a href="vision_elements_containers.html">Elements - Containers - One Shot, Channels, Volatile and Persisted</a></li>
                   
                   
                   
@@ -230,12 +230,6 @@
                   
                   
                   
-                  
-                  
-                  <li><a href="vision_apis_services.html">API, Services, Instances, etc.</a></li>
-                  
-                  
-                  
               </ul>
           </li>
           
@@ -248,7 +242,7 @@
       
   
   <li>
-      <a href="#">Bebop fundamentals</a>
+      <a href="#">Bebop fundamentals (Jazz 0.6.x)</a>
       <ul>
           
           
@@ -264,7 +258,7 @@
       
   
   <li>
-      <a href="#">Agency fundamentals</a>
+      <a href="#">Agency fundamentals (Jazz 0.7.x)</a>
       <ul>
           
           
@@ -292,13 +286,6 @@
           
           
           
-          <li><a href="api_ref_modules_.html">API reference - How it works</a></li>
-          
-          
-          
-          
-          
-          
           <li><a href="api_ref_http_api.html">API reference - The http API</a></li>
           
           
@@ -306,21 +293,7 @@
           
           
           
-          <li class="active"><a href="api_ref_names.html">API reference - Names</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="api_ref_locators.html">API reference - Locators</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="api_ref_const.html">API reference - Constants</a></li>
+          <li><a href="api_ref_const_encoding.html">API reference - Constants and %-encoding</a></li>
           
           
           
@@ -334,13 +307,6 @@
           
           
           
-          <li><a href="api_ref_contracts.html">API reference - Block and Container contracts</a></li>
-          
-          
-          
-          
-          
-          
           <li><a href="api_ref_fun_calls.html">API reference - Function calls</a></li>
           
           
@@ -348,28 +314,98 @@
           
           
           
-          <li><a href="api_ref_get_head.html">API reference - GET and HEAD calls reference</a></li>
+          <li><a href="api_ref_assign.html">API reference - Assignment calls</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_put.html">API reference - PUT calls reference</a></li>
+          <li><a href="api_ref_attributes.html">API reference - Attribute calls</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_assign.html">API reference - Assignment calls reference</a></li>
+          <li><a href="api_ref_serving_frontend.html">API reference - Using Jazz to serve applications</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_fluxes_agents.html">API reference - Fluxes, event and agents</a></li>
+          <li><a href="api_ref_agency_wip.html">API reference - Agency bases (Work in Progress)</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_bebop_wip.html">API reference - Bebop bases (Work in Progress)</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_channel_zmq.html">API reference - Channel base 0-mq</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_channel_bash.html">API reference - Channel base bash</a></li>
+          
+          
+          
+          
+          
+          
+          <li class="active"><a href="api_ref_channel_file.html">API reference - Channel base file</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_channel_http.html">API reference - Channel base http</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_persisted_lmdb.html">API reference - Persisted base lmdb</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_deque.html">API reference - Volatile base deque</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_index.html">API reference - Volatile base index</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_queue.html">API reference - Volatile base queue</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_tree.html">API reference - Volatile base tree</a></li>
           
           
           
@@ -481,7 +517,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">API reference - Names</h1>
+   <h1 class="post-title-main">API reference - Channel base file</h1>
 </div>
 
 
@@ -489,7 +525,7 @@
 <div class="post-content">
 
    
-    <div class="summary">Syntax of item, block, kind and tuple names.</div>
+    <div class="summary">Api Reference for the base "file" inside the container Channels</div>
    
 
     
@@ -523,64 +559,47 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <h2 id="name">Name</h2>
+  <h2 id="the-container-channels">The Container <code class="language-plaintext highlighter-rouge">Channels</code></h2>
 
-<h3 id="definition-of-name">Definition of name</h3>
+<p><code class="language-plaintext highlighter-rouge">Channels</code> is a container doing block transactions across media (files, folders, the bash shell, http urls and zeroMQ servers). This
+includes keeping a cluster of Jazz nodes as a whole where every node is aware of all the others and queries can be forwarded by just
+including the node name. Any imaginable communication channel, including writing files and pushing them to github (using git in the bash
+shell) is accessible. This includes all protocols supported by zeroMQ and libCURL.</p>
 
-<p>A name is a string of letters, numbers and underscores, starting with a letter, up to 31 characters long.</p>
+<ul>
+  <li>See C++ ref <a href="/develop_jazz02/classjazz__elements_1_1Channels.html">Channels</a></li>
+</ul>
 
-<p>The regex REGEX_VALIDATE_NAME validates a name. See <a href="/develop_jazz02/namespacejazz__elements.html">search for REGEX_VALIDATE_NAME</a>.</p>
+<h2 id="the-base-file">The base <code class="language-plaintext highlighter-rouge">file</code></h2>
 
-<p>Names are combined to form locators as referenced <a href="api_ref_locators.html">here</a>.</p>
+<p>This read/writes/deletes to the filesystem. Since the API does not use locators, there is no hardcoded name restriction. Via the http
+server, just use the URL (#…;). Remember to %-encode whatever http expects to be encoded. E.g., get(“//file/#whatever%20you%20want;”).
+Note that “//file/” is a mandatory prefix, therefore “//file/aa” is “aa” and //file//aa” is “/aa”.</p>
 
-<h3 id="use-of-names">Use of names</h3>
+<p>get() gets files as arrays of byte and folders as an Index (the keys are file names and the values either “file” or “folder”). put() writes
+either Jazz blocks with all the metadata (if mode == WRITE_EVERYTHING) of just the content of the tensor (if mode == WRITE_TENSOR_DATA).</p>
 
-<p>Names are use in all these places:</p>
+<p>WRITE_ONLY_IF_EXISTS and WRITE_ONLY_IF_NOT_EXISTS work as expected. remove() deletes whatever matches the path either a file or a folder
+(with anything inside it).</p>
 
-<table>
-  <thead>
-    <tr>
-      <th>Parser state</th>
-      <th>Reserved base names</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>BASE_NAME</td>
-      <td>Is the first name in both an <code class="language-plaintext highlighter-rouge">L-value</code> and an <code class="language-plaintext highlighter-rouge">R-value</code>, always followed by <code class="language-plaintext highlighter-rouge">/</code>.</td>
-    </tr>
-    <tr>
-      <td>CONTAINER_NAME</td>
-      <td>Anything (possibly nothing) between the base name and the block name, separated by <code class="language-plaintext highlighter-rouge">/</code>. There is a limit of MAX_NESTED_CONTAINERS to how many names can be defined before a block name.</td>
-    </tr>
-    <tr>
-      <td>BLOCK_NAME</td>
-      <td>The last name in an <code class="language-plaintext highlighter-rouge">L-value</code> or the last name <strong>not</strong> followed by <code class="language-plaintext highlighter-rouge">/</code> in an <code class="language-plaintext highlighter-rouge">R-value</code></td>
-    </tr>
-    <tr>
-      <td>CONTRACT_NAME</td>
-      <td>A name following a block name or another contract name separated by a <code class="language-plaintext highlighter-rouge">.</code> There is a limit of MAX_CONTRACTS_IN_R_VALUE to how many contracts can be chained to a block.</td>
-    </tr>
-    <tr>
-      <td>KIND_NAME</td>
-      <td>In a constant defining a Kind, the first name. It is identified by being the only name followed by a double colon <code class="language-plaintext highlighter-rouge">::</code>. See <a href="api_ref_const.html">constant kind</a>.</td>
-    </tr>
-    <tr>
-      <td>ITEM_NAME</td>
-      <td>Is the name of an item (some tensor) inside a constant defining a kind or a tuple. It is followed by a single colon <code class="language-plaintext highlighter-rouge">:</code>.</td>
-    </tr>
-    <tr>
-      <td>DIMENSION_NAME</td>
-      <td>In a constant defining a Kind, a dimension of a tensor that is defined by a name instead of by its value. E.g., <code class="language-plaintext highlighter-rouge">width</code>, <code class="language-plaintext highlighter-rouge">height</code> in <a href="api_ref_const.html">constant kind</a>.</td>
-    </tr>
-    <tr>
-      <td>TYPE_NAME</td>
-      <td>In a constant defining a Kind, the cell type of a tensor. E.g., <code class="language-plaintext highlighter-rouge">BYTE_BOOLEAN</code>, <code class="language-plaintext highlighter-rouge">INTEGER</code>, <code class="language-plaintext highlighter-rouge">TIME</code>, <code class="language-plaintext highlighter-rouge">DOUBLE</code>, etc.</td>
-    </tr>
-  </tbody>
-</table>
+<p>new_entity() creates a new folder.</p>
+
+<h2 id="in-terms-of-the-jazz-server-api">In terms of the Jazz server API</h2>
+
+<p>GET <code class="language-plaintext highlighter-rouge">//file#relative_path;</code> or GET <code class="language-plaintext highlighter-rouge">//file#/absolute_path;</code> gets the files as vectors of byte and the folders as tuples where the key is
+the file name and the value is either “file” or “folder”.</p>
+
+<p>PUT <code class="language-plaintext highlighter-rouge">//file#relative_path;</code> or PUT <code class="language-plaintext highlighter-rouge">//file#/absolute_path;</code> writes blocks (the tensor only) to file.
+PUT <code class="language-plaintext highlighter-rouge">//file#relative_path;/</code> or PUT <code class="language-plaintext highlighter-rouge">//file#/absolute_path;/</code> ignores what is sent and creates a new folder.</p>
+
+<p>DELETE <code class="language-plaintext highlighter-rouge">//file#relative_path;</code> or DELETE <code class="language-plaintext highlighter-rouge">//file#/absolute_path;</code> deletes either a file or a folder with anything in it.</p>
+
+<p>For more advanced control, load the files into <code class="language-plaintext highlighter-rouge">Volatile</code> or <code class="language-plaintext highlighter-rouge">Persisted</code> with an assignment call.</p>
 
 <p><br /></p>
+
+<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> file operation must be enabled via configuration by setting ENABLE_FILE_LEVEL to 0 (disable everything),
+1 (just read), 2 (cannot override == no remove and WRITE_ONLY_IF_NOT_EXISTS) or 3 (enable everything).</div>
 
 
 
@@ -595,7 +614,7 @@ $('#toc').on('click', 'a', function() {
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2021 kaalam.ai. All rights reserved. <br />
- Site last generated: Sep 30, 2021 <br />
+ Site last generated: Oct 2, 2021 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

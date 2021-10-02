@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Technical details of the GET queries">
+<meta name="description" content="Setting us Jazz as a server for static objects.">
 <meta name="keywords" content=" ">
-<title>API reference - GET and HEAD calls reference | Jazz User's Manual</title>
+<title>API reference - Using Jazz to serve applications | Jazz User's Manual</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -181,7 +181,7 @@
                 
 
 <ul id="mysidebar" class="nav">
-  <li class="sidebarTitle">Jazz 0.5.1</li>
+  <li class="sidebarTitle">Jazz 0.5.2</li>
   
   
   
@@ -208,13 +208,13 @@
                   
                   
                   
-                  <li><a href="vision_elements_block_kind_etc.html">Elements - Blocks, Kinds, Tuples, Tables and Fluxes</a></li>
+                  <li><a href="vision_elements_block_kind_etc.html">Elements - Blocks, Kinds, Tuples</a></li>
                   
                   
                   
                   
                   
-                  <li><a href="vision_elements_containers.html">Elements - Containers - Volatile, Remote and Persisted</a></li>
+                  <li><a href="vision_elements_containers.html">Elements - Containers - One Shot, Channels, Volatile and Persisted</a></li>
                   
                   
                   
@@ -230,12 +230,6 @@
                   
                   
                   
-                  
-                  
-                  <li><a href="vision_apis_services.html">API, Services, Instances, etc.</a></li>
-                  
-                  
-                  
               </ul>
           </li>
           
@@ -248,7 +242,7 @@
       
   
   <li>
-      <a href="#">Bebop fundamentals</a>
+      <a href="#">Bebop fundamentals (Jazz 0.6.x)</a>
       <ul>
           
           
@@ -264,7 +258,7 @@
       
   
   <li>
-      <a href="#">Agency fundamentals</a>
+      <a href="#">Agency fundamentals (Jazz 0.7.x)</a>
       <ul>
           
           
@@ -292,13 +286,6 @@
           
           
           
-          <li><a href="api_ref_modules_.html">API reference - How it works</a></li>
-          
-          
-          
-          
-          
-          
           <li><a href="api_ref_http_api.html">API reference - The http API</a></li>
           
           
@@ -306,21 +293,7 @@
           
           
           
-          <li><a href="api_ref_names.html">API reference - Names</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="api_ref_locators.html">API reference - Locators</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="api_ref_const.html">API reference - Constants</a></li>
+          <li><a href="api_ref_const_encoding.html">API reference - Constants and %-encoding</a></li>
           
           
           
@@ -334,13 +307,6 @@
           
           
           
-          <li><a href="api_ref_contracts.html">API reference - Block and Container contracts</a></li>
-          
-          
-          
-          
-          
-          
           <li><a href="api_ref_fun_calls.html">API reference - Function calls</a></li>
           
           
@@ -348,28 +314,98 @@
           
           
           
-          <li class="active"><a href="api_ref_get_head.html">API reference - GET and HEAD calls reference</a></li>
+          <li><a href="api_ref_assign.html">API reference - Assignment calls</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_put.html">API reference - PUT calls reference</a></li>
+          <li><a href="api_ref_attributes.html">API reference - Attribute calls</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_assign.html">API reference - Assignment calls reference</a></li>
+          <li class="active"><a href="api_ref_serving_frontend.html">API reference - Using Jazz to serve applications</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_fluxes_agents.html">API reference - Fluxes, event and agents</a></li>
+          <li><a href="api_ref_agency_wip.html">API reference - Agency bases (Work in Progress)</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_bebop_wip.html">API reference - Bebop bases (Work in Progress)</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_channel_zmq.html">API reference - Channel base 0-mq</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_channel_bash.html">API reference - Channel base bash</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_channel_file.html">API reference - Channel base file</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_channel_http.html">API reference - Channel base http</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_persisted_lmdb.html">API reference - Persisted base lmdb</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_deque.html">API reference - Volatile base deque</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_index.html">API reference - Volatile base index</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_queue.html">API reference - Volatile base queue</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_tree.html">API reference - Volatile base tree</a></li>
           
           
           
@@ -481,7 +517,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">API reference - GET and HEAD calls reference</h1>
+   <h1 class="post-title-main">API reference - Using Jazz to serve applications</h1>
 </div>
 
 
@@ -489,7 +525,7 @@
 <div class="post-content">
 
    
-    <div class="summary">Technical details of the GET queries</div>
+    <div class="summary">Setting us Jazz as a server for static objects.</div>
    
 
     
@@ -523,10 +559,32 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> Jazz is still under development to produce the first Minimum Viable Product (MVP) after the original 0.1.7.
-This is incomplete, but what is here is up to date.</div>
+  <h2 id="jazz-as-a-server-of-static-web-resources">Jazz as a server of static web resources.</h2>
 
-<p><br /></p>
+<p>Since Jazz is an http server, it would not make much sense to require a different server to serve the static webpages and javascript
+created by your favorite frontend development platform such as Flutter/Dart, Angular/Ionic, etc.</p>
+
+<p>Technically, the lmdb database <code class="language-plaintext highlighter-rouge">//lmdb/www</code> is created to store that material. The static objects are just blocks with some attributes
+declared:</p>
+
+<ul>
+  <li>BLOCK_ATTRIB_URL (mandatory) sets the url by which the static is accessed in a GET. The URL should start with a single <code class="language-plaintext highlighter-rouge">/</code>. Note that
+this determines the difference between the Jazz API which always start with <code class="language-plaintext highlighter-rouge">//</code> or <code class="language-plaintext highlighter-rouge">///</code> and statics stored in <code class="language-plaintext highlighter-rouge">//lmdb/www</code>.</li>
+  <li>BLOCK_ATTRIB_MIMETYPE (recommended) is the mime type returned by the server to tell the browser what to do with it.</li>
+  <li>BLOCK_ATTRIB_LANGUAGE (optional) the international code (like “en-us”) defining the language in which the page is written.</li>
+</ul>
+
+<h2 id="loading-static-resource-at-server-start-from-disk">Loading static resource at server start from disk.</h2>
+
+<p>You can set up the key STATIC_HTML_AT_START in the server configuration to any folder. On Jazz start, the folder will be recursively
+searched and all files will be pushed to <code class="language-plaintext highlighter-rouge">//lmdb/www</code> with their URL assigned to the relative path that comes after whatever is
+STATIC_HTML_AT_START. The mime type will be deduced (for simple files) by the file extension. It will identify: “text/html”, “text/css”,
+“image/png”, “application/javascript”, “image/jpeg”, “image/gif”, “image/x-icon”, “text/plain; charset=utf-8”, “application/json”,
+“video/mp4”, “application/pdf” and “application/xml”.</p>
+
+<h2 id="uploading-the-resources-via-put-to-lmdbwww">Uploading the resources via PUT to <code class="language-plaintext highlighter-rouge">//lmdb/www</code></h2>
+
+<p>You can just create the blocks via a PUT to <code class="language-plaintext highlighter-rouge">//lmdb/www/keyXXX</code> (any key name) and then, set the attributes as described <a href="api_ref_attributes.html">here</a>.</p>
 
 
 
@@ -541,7 +599,7 @@ This is incomplete, but what is here is up to date.</div>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2021 kaalam.ai. All rights reserved. <br />
- Site last generated: Sep 30, 2021 <br />
+ Site last generated: Oct 2, 2021 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

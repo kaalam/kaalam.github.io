@@ -181,7 +181,7 @@
                 
 
 <ul id="mysidebar" class="nav">
-  <li class="sidebarTitle">Jazz 0.5.1</li>
+  <li class="sidebarTitle">Jazz 0.5.2</li>
   
   
   
@@ -208,13 +208,13 @@
                   
                   
                   
-                  <li><a href="vision_elements_block_kind_etc.html">Elements - Blocks, Kinds, Tuples, Tables and Fluxes</a></li>
+                  <li><a href="vision_elements_block_kind_etc.html">Elements - Blocks, Kinds, Tuples</a></li>
                   
                   
                   
                   
                   
-                  <li><a href="vision_elements_containers.html">Elements - Containers - Volatile, Remote and Persisted</a></li>
+                  <li><a href="vision_elements_containers.html">Elements - Containers - One Shot, Channels, Volatile and Persisted</a></li>
                   
                   
                   
@@ -230,12 +230,6 @@
                   
                   
                   
-                  
-                  
-                  <li><a href="vision_apis_services.html">API, Services, Instances, etc.</a></li>
-                  
-                  
-                  
               </ul>
           </li>
           
@@ -248,7 +242,7 @@
       
   
   <li>
-      <a href="#">Bebop fundamentals</a>
+      <a href="#">Bebop fundamentals (Jazz 0.6.x)</a>
       <ul>
           
           
@@ -264,7 +258,7 @@
       
   
   <li>
-      <a href="#">Agency fundamentals</a>
+      <a href="#">Agency fundamentals (Jazz 0.7.x)</a>
       <ul>
           
           
@@ -292,13 +286,6 @@
           
           
           
-          <li><a href="api_ref_modules_.html">API reference - How it works</a></li>
-          
-          
-          
-          
-          
-          
           <li><a href="api_ref_http_api.html">API reference - The http API</a></li>
           
           
@@ -306,21 +293,7 @@
           
           
           
-          <li><a href="api_ref_names.html">API reference - Names</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="api_ref_locators.html">API reference - Locators</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="api_ref_const.html">API reference - Constants</a></li>
+          <li><a href="api_ref_const_encoding.html">API reference - Constants and %-encoding</a></li>
           
           
           
@@ -334,13 +307,6 @@
           
           
           
-          <li><a href="api_ref_contracts.html">API reference - Block and Container contracts</a></li>
-          
-          
-          
-          
-          
-          
           <li><a href="api_ref_fun_calls.html">API reference - Function calls</a></li>
           
           
@@ -348,28 +314,98 @@
           
           
           
-          <li><a href="api_ref_get_head.html">API reference - GET and HEAD calls reference</a></li>
+          <li><a href="api_ref_assign.html">API reference - Assignment calls</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_put.html">API reference - PUT calls reference</a></li>
+          <li><a href="api_ref_attributes.html">API reference - Attribute calls</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_assign.html">API reference - Assignment calls reference</a></li>
+          <li><a href="api_ref_serving_frontend.html">API reference - Using Jazz to serve applications</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_fluxes_agents.html">API reference - Fluxes, event and agents</a></li>
+          <li><a href="api_ref_agency_wip.html">API reference - Agency bases (Work in Progress)</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_bebop_wip.html">API reference - Bebop bases (Work in Progress)</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_channel_zmq.html">API reference - Channel base 0-mq</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_channel_bash.html">API reference - Channel base bash</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_channel_file.html">API reference - Channel base file</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_channel_http.html">API reference - Channel base http</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_persisted_lmdb.html">API reference - Persisted base lmdb</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_deque.html">API reference - Volatile base deque</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_index.html">API reference - Volatile base index</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_queue.html">API reference - Volatile base queue</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_tree.html">API reference - Volatile base tree</a></li>
           
           
           
@@ -523,12 +559,9 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> Jazz is still under development to produce the first Minimum Viable Product (MVP) after the original 0.1.7.
-Things are changing fast and this page is <strong>not up to date</strong>. To follow Jazz development see <a href="https://kaalam.github.io/develop_jazz02/index.html">Programming documentation for the Jazz Server</a>.</div>
+  <figure><img class="docimage" src="images/jazz_modules.png" alt="" style="max-width: 880px" /><figcaption>Jazz modules for version 0.4.x</figcaption></figure>
 
-<figure><img class="docimage" src="images/jazz_modules.png" alt="" style="max-width: 880px" /><figcaption>Jazz modules for version 0.4.x</figcaption></figure>
-
-<h2 id="what-is-complete-jazz-03x">What is complete (Jazz 0.3.x)?</h2>
+<h2 id="what-is-complete-jazz-052">What is complete (Jazz 0.5.2)?</h2>
 
 <p>This page is a snapshot of the current state of development in terms of Jazz modules. It is updated after the completion (meaning
 implementation, documentation and testing) of modules and the percentages of executions are rough estimates, except for complete. The
@@ -546,31 +579,79 @@ details of development are updated in the <a href="/develop/">developer’s refe
   <tbody>
     <tr>
       <td>elements</td>
-      <td>jazz_datablocks</td>
+      <td>types</td>
       <td>Block types and fundamental definitions (C++ interface)</td>
       <td><span class="label label-success">100%</span></td>
     </tr>
     <tr>
       <td>elements</td>
-      <td>jazz_utils</td>
-      <td>Many utilities to support configuration, logging, etc.</td>
+      <td>utils</td>
+      <td>Miscellaneous utilities including config and log (C++ interface)</td>
       <td><span class="label label-success">100%</span></td>
     </tr>
     <tr>
       <td>elements</td>
-      <td>jazz_containers</td>
-      <td>All the fundamental (non persisted) keepers.</td>
+      <td>block</td>
+      <td>All Block (Tensor and Index) implementation (C++ interface)</td>
+      <td><span class="label label-success">100%</span></td>
+    </tr>
+    <tr>
+      <td>elements</td>
+      <td>kind</td>
+      <td>All Kind implementation (C++ interface)</td>
+      <td><span class="label label-success">100%</span></td>
+    </tr>
+    <tr>
+      <td>elements</td>
+      <td>tuple</td>
+      <td>All Tuple implementation (C++ interface) (C++ interface)</td>
+      <td><span class="label label-success">100%</span></td>
+    </tr>
+    <tr>
+      <td>elements</td>
+      <td>container</td>
+      <td>The ancestor of all Containers (C++ interface)</td>
+      <td><span class="label label-success">100%</span></td>
+    </tr>
+    <tr>
+      <td>elements</td>
+      <td>channel</td>
+      <td>All the Channels (a Container) (C++ interface)</td>
+      <td><span class="label label-success">100%</span></td>
+    </tr>
+    <tr>
+      <td>elements</td>
+      <td>volatile</td>
+      <td>A container including all structures in RAM (C++ interface)</td>
+      <td><span class="label label-success">100%</span></td>
+    </tr>
+    <tr>
+      <td>elements</td>
+      <td>persisted</td>
+      <td>A container including all persisted structures (C++ interface)</td>
       <td><span class="label label-success">100%</span></td>
     </tr>
     <tr>
       <td>main</td>
-      <td>jazz_instances</td>
+      <td>api</td>
+      <td>The implementation of the http responses at server level.</td>
+      <td><span class="label label-success">100%</span></td>
+    </tr>
+    <tr>
+      <td>main</td>
+      <td>server</td>
+      <td>Http server specifics.</td>
+      <td><span class="label label-success">100%</span></td>
+    </tr>
+    <tr>
+      <td>main</td>
+      <td>instances</td>
       <td>Instantiation of the classes for the server and the clients.</td>
       <td><span class="label label-success">100%</span></td>
     </tr>
     <tr>
       <td>main</td>
-      <td>jazz_main</td>
+      <td>main</td>
       <td>Http server implementation.</td>
       <td><span class="label label-success">100%</span></td>
     </tr>
@@ -579,32 +660,7 @@ details of development are updated in the <a href="/develop/">developer’s refe
 
 <h2 id="what-is-still-refactoring-from-jazz-03x">What is still refactoring from Jazz 0.3.x?</h2>
 
-<p>These modules include code that supports most or all the necessary functionality, but still requires refactoring to the new structures.</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Group</th>
-      <th>Module</th>
-      <th>Description</th>
-      <th>Complete</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>elements</td>
-      <td>jazz_persistence</td>
-      <td>The fundamental persisted keepers.</td>
-      <td><span class="label label-info">80%</span></td>
-    </tr>
-    <tr>
-      <td>main</td>
-      <td>jazz_restapi</td>
-      <td>The implementation of the http responses at server level.</td>
-      <td><span class="label label-info">60%</span></td>
-    </tr>
-  </tbody>
-</table>
+<p>Nothing.</p>
 
 <h2 id="what-is-under-development">What is under development?</h2>
 
@@ -619,28 +675,16 @@ details of development are updated in the <a href="/develop/">developer’s refe
   </thead>
   <tbody>
     <tr>
-      <td>elements</td>
-      <td>jazz_classes</td>
-      <td>An interface simplifying the keeprs for the high level APIs.</td>
-      <td><span class="label label-warning">60%</span></td>
+      <td>bebop</td>
+      <td>core</td>
+      <td>The logic to run code.</td>
+      <td><span class="label label-warning">30%</span></td>
     </tr>
     <tr>
-      <td>elements</td>
-      <td>jazz_httpclient</td>
-      <td>Petitions across a Jazz cluster (Jazz calling Jazz).</td>
-      <td><span class="label label-warning">40%</span></td>
-    </tr>
-    <tr>
-      <td>elements</td>
-      <td>jazz_stdcore</td>
-      <td>Arithmetic and logic functions on tensors.</td>
+      <td>bebop</td>
+      <td>field</td>
+      <td>The higher level organization as languages.</td>
       <td><span class="label label-warning">20%</span></td>
-    </tr>
-    <tr>
-      <td>functional</td>
-      <td>jazz_api</td>
-      <td>The common part of all (high level) APIs.</td>
-      <td><span class="label label-warning">60%</span></td>
     </tr>
   </tbody>
 </table>
@@ -658,48 +702,15 @@ details of development are updated in the <a href="/develop/">developer’s refe
   </thead>
   <tbody>
     <tr>
-      <td>functional</td>
-      <td>jazz_cluster</td>
-      <td>Classes related with Jazz clusters.</td>
-      <td><span class="label label-danger">5%</span></td>
-    </tr>
-    <tr>
-      <td>functional</td>
-      <td>jazz_filesystem</td>
-      <td>A class implementing distributed collections of files.</td>
-      <td><span class="label label-danger">5%</span></td>
-    </tr>
-    <tr>
-      <td>functional</td>
-      <td>jazz_column</td>
-      <td>Distributed (replicated) data columns of tensors.</td>
-      <td><span class="label label-danger">5%</span></td>
-    </tr>
-    <tr>
-      <td>functional</td>
-      <td>jazz_dataframe</td>
-      <td>Distributed (replicated) list of data columns.</td>
-      <td><span class="label label-danger">5%</span></td>
-    </tr>
-    <tr>
-      <td>functional</td>
-      <td>jazz_bebop</td>
-      <td>Extending the standard core with oop and support for automation.</td>
+      <td>agency</td>
+      <td>agency</td>
+      <td>Automating code generation.</td>
       <td><span class="label label-danger">5%</span></td>
     </tr>
   </tbody>
 </table>
 
-<h2 id="what-can-i-try-out-from-jazz-04">What can I try out from Jazz 0.4+?</h2>
-
-<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> Jazz is still under development to create the first Jazz 0.4.1 MVP. There is no PoC for the latest
-version.</div>
-
-<h2 id="what-can-i-try-out-from-jazz-02--03">What can I try out from Jazz 0.2+ &amp; 0.3+?</h2>
-
-<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> Versions 0.2.x and 0.3.x are deprecated.</div>
-
-<h2 id="what-can-i-try-out-from-jazz-017">What can I try out from Jazz 0.1.7?</h2>
+<h2 id="what-can-i-try-out-from-the-original-jazz-017">What can I try out from the original Jazz 0.1.7?</h2>
 
 <p>You can run a Jazz 0.1.7 server (still implemented as legacy in Jazz 0.2.x) using Docker from Docker Hub.</p>
 
@@ -765,7 +776,7 @@ you feel comfortable with R, you can probably make it work or ping the author.</
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2021 kaalam.ai. All rights reserved. <br />
- Site last generated: Sep 30, 2021 <br />
+ Site last generated: Oct 2, 2021 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

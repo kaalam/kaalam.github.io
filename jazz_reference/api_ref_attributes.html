@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Item, Block, Kind, Tuple, Column, Table, Flux, Container, Volatile, Remote and Persisted contracts">
+<meta name="description" content="Reading and writing Block Attributes">
 <meta name="keywords" content=" ">
-<title>API reference - Block and Container contracts | Jazz User's Manual</title>
+<title>API reference - Attribute calls | Jazz User's Manual</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -181,7 +181,7 @@
                 
 
 <ul id="mysidebar" class="nav">
-  <li class="sidebarTitle">Jazz 0.5.1</li>
+  <li class="sidebarTitle">Jazz 0.5.2</li>
   
   
   
@@ -208,13 +208,13 @@
                   
                   
                   
-                  <li><a href="vision_elements_block_kind_etc.html">Elements - Blocks, Kinds, Tuples, Tables and Fluxes</a></li>
+                  <li><a href="vision_elements_block_kind_etc.html">Elements - Blocks, Kinds, Tuples</a></li>
                   
                   
                   
                   
                   
-                  <li><a href="vision_elements_containers.html">Elements - Containers - Volatile, Remote and Persisted</a></li>
+                  <li><a href="vision_elements_containers.html">Elements - Containers - One Shot, Channels, Volatile and Persisted</a></li>
                   
                   
                   
@@ -230,12 +230,6 @@
                   
                   
                   
-                  
-                  
-                  <li><a href="vision_apis_services.html">API, Services, Instances, etc.</a></li>
-                  
-                  
-                  
               </ul>
           </li>
           
@@ -248,7 +242,7 @@
       
   
   <li>
-      <a href="#">Bebop fundamentals</a>
+      <a href="#">Bebop fundamentals (Jazz 0.6.x)</a>
       <ul>
           
           
@@ -264,7 +258,7 @@
       
   
   <li>
-      <a href="#">Agency fundamentals</a>
+      <a href="#">Agency fundamentals (Jazz 0.7.x)</a>
       <ul>
           
           
@@ -292,13 +286,6 @@
           
           
           
-          <li><a href="api_ref_modules_.html">API reference - How it works</a></li>
-          
-          
-          
-          
-          
-          
           <li><a href="api_ref_http_api.html">API reference - The http API</a></li>
           
           
@@ -306,21 +293,7 @@
           
           
           
-          <li><a href="api_ref_names.html">API reference - Names</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="api_ref_locators.html">API reference - Locators</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="api_ref_const.html">API reference - Constants</a></li>
+          <li><a href="api_ref_const_encoding.html">API reference - Constants and %-encoding</a></li>
           
           
           
@@ -334,13 +307,6 @@
           
           
           
-          <li class="active"><a href="api_ref_contracts.html">API reference - Block and Container contracts</a></li>
-          
-          
-          
-          
-          
-          
           <li><a href="api_ref_fun_calls.html">API reference - Function calls</a></li>
           
           
@@ -348,28 +314,98 @@
           
           
           
-          <li><a href="api_ref_get_head.html">API reference - GET and HEAD calls reference</a></li>
+          <li><a href="api_ref_assign.html">API reference - Assignment calls</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_put.html">API reference - PUT calls reference</a></li>
+          <li class="active"><a href="api_ref_attributes.html">API reference - Attribute calls</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_assign.html">API reference - Assignment calls reference</a></li>
+          <li><a href="api_ref_serving_frontend.html">API reference - Using Jazz to serve applications</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_fluxes_agents.html">API reference - Fluxes, event and agents</a></li>
+          <li><a href="api_ref_agency_wip.html">API reference - Agency bases (Work in Progress)</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_bebop_wip.html">API reference - Bebop bases (Work in Progress)</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_channel_zmq.html">API reference - Channel base 0-mq</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_channel_bash.html">API reference - Channel base bash</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_channel_file.html">API reference - Channel base file</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_channel_http.html">API reference - Channel base http</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_persisted_lmdb.html">API reference - Persisted base lmdb</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_deque.html">API reference - Volatile base deque</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_index.html">API reference - Volatile base index</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_queue.html">API reference - Volatile base queue</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_tree.html">API reference - Volatile base tree</a></li>
           
           
           
@@ -481,7 +517,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">API reference - Block and Container contracts</h1>
+   <h1 class="post-title-main">API reference - Attribute calls</h1>
 </div>
 
 
@@ -489,7 +525,7 @@
 <div class="post-content">
 
    
-    <div class="summary">Item, Block, Kind, Tuple, Column, Table, Flux, Container, Volatile, Remote and Persisted contracts</div>
+    <div class="summary">Reading and writing Block Attributes</div>
    
 
     
@@ -523,171 +559,34 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <h2 id="what-are-contracts">What are contracts?</h2>
+  <h2 id="reading-block-attributes">Reading Block Attributes</h2>
 
-<p>API-wise, contracts act like a methods of an object. See <a href="api_ref_intro.html">this</a> and <a href="api_ref_modules_.html">this</a> for a more detailed
-explanation. In the following lists, contracts without &lt; and &gt; should be written just “as is”. Others, like .&lt;call&gt;, .&lt;item&gt; have
-their syntax explained below. All contracts are GET (or any read predicate), except those marked as (PUT).</p>
+<p>Attributes of a block can be read by GET-ing from <code class="language-plaintext highlighter-rouge">///node//base/entity/key.attribute(123)</code>. Attributes are maps from integer to string.
+The codes from the attributes can be found <a href="/develop_jazz02/types_8h_source.html">here</a>.</p>
 
-<h2 id="contracts-for-block-and-descendants">Contracts for Block and descendants</h2>
+<p>Most attributes have user defined codes, the lower codes are:</p>
 
-<h3 id="as_cpp">.as_cpp</h3>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#define BLOCK_ATTRIB_EMPTY     0   ///&lt; The block has no attributes
+#define BLOCK_ATTRIB_BLOCKTYPE 1   ///&lt; The fundamental block type: Tensor, Kind or Tuple.
+#define BLOCK_ATTRIB_SOURCE    2   ///&lt; The location of the source set by Channels, also ..
+#define BLOCK_ATTRIB_DEST      3   ///&lt; The location of the destination. Less frequent, ..
+#define BLOCK_ATTRIB_MIMETYPE  4   ///&lt; The mime type (can also be some proprietary file ..
+#define BLOCK_ATTRIB_URL       5   ///&lt; A url for the server to expose the file by.
+#define BLOCK_ATTRIB_LANGUAGE  6   ///&lt; An http language identifier that will be returned ..
+</span></code></pre></div></div>
 
-<table>
-  <thead>
-    <tr>
-      <th>.as_cpp</th>
-      <th>Return the C++ interface of a Kind</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Applies to</td>
-      <td>A <code class="language-plaintext highlighter-rouge">Kind</code> or <code class="language-plaintext highlighter-rouge">Tuple</code>.</td>
-    </tr>
-    <tr>
-      <td>Returns</td>
-      <td>A compilable C/C++ <code class="language-plaintext highlighter-rouge">struct</code> that allows writing C/C++ code accessing all the data in every Tuple of that Kind.</td>
-    </tr>
-    <tr>
-      <td>Notes</td>
-      <td>This is used by Bebop to support kernel writing in C++ and also underlies the just-in-time linking of Tuples.</td>
-    </tr>
-  </tbody>
-</table>
+<h2 id="writing-block-attributes">Writing Block Attributes</h2>
 
-<h3 id="as_json">.as_json</h3>
+<p>Programmatically, you can assign blocks to attributes, form the rest API, setting attributes only supports constants.</p>
 
-<h3 id="as_text">.as_text</h3>
+<ul>
+  <li>GET <code class="language-plaintext highlighter-rouge">//lmdb/www/blk_idx=//file#~/hello/index.html;</code></li>
+  <li>PUT <code class="language-plaintext highlighter-rouge">//lmdb/www/blk_idx(4)=#text/html;</code></li>
+  <li>PUT <code class="language-plaintext highlighter-rouge">//lmdb/www/blk_idx(5)=#/hello/index.html;</code></li>
+  <li>PUT <code class="language-plaintext highlighter-rouge">//lmdb/www/blk_idx(6)=#en-us;</code></li>
+</ul>
 
-<h3 id="blocktype">.blocktype</h3>
-
-<table>
-  <thead>
-    <tr>
-      <th>.blocktype</th>
-      <th>Return the fundamental block type: tensor, filter, kind or tuple</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Applies to</td>
-      <td>Any <code class="language-plaintext highlighter-rouge">Block descendant</code>.</td>
-    </tr>
-    <tr>
-      <td>Returns</td>
-      <td>A <code class="language-plaintext highlighter-rouge">string</code> with the one of the four possibilities (tensor, filter, kind or tuple).</td>
-    </tr>
-    <tr>
-      <td>Notes</td>
-      <td>This just gets the attribute BLOCK_ATTRIB_TYPE of the block. Many complex classes are tuples, <code class="language-plaintext highlighter-rouge">.type</code> gets the class name.</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3 id="bytesdimensions">.bytes(&lt;dimensions&gt;)</h3>
-
-<h3 id="call">.&lt;call&gt;</h3>
-
-<h3 id="column">.&lt;column&gt;</h3>
-
-<h3 id="columns">.columns</h3>
-
-<h3 id="dimensions">.dimensions</h3>
-
-<h3 id="events">.events</h3>
-
-<h3 id="item">.&lt;item&gt;</h3>
-
-<h3 id="items">.items</h3>
-
-<h3 id="kindsourcedest">.kind(&lt;source|dest&gt;)</h3>
-
-<h3 id="lengthdimensions">.length(&lt;dimensions&gt;)</h3>
-
-<h3 id="listendimensions-handler">.listen(&lt;dimensions&gt;, &lt;handler&gt;)</h3>
-
-<h3 id="meta">.meta</h3>
-
-<h3 id="mime">.mime</h3>
-
-<h3 id="raw">.&lt;raw&gt;</h3>
-
-<h3 id="shape">.shape</h3>
-
-<h3 id="sizedimensions">.size(&lt;dimensions&gt;)</h3>
-
-<h3 id="slice">.&lt;slice&gt;</h3>
-
-<h3 id="type">.type</h3>
-
-<table>
-  <thead>
-    <tr>
-      <th>.type</th>
-      <th>Return the name to the cpp class stored as the block</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Applies to</td>
-      <td>Any <code class="language-plaintext highlighter-rouge">Block descendant</code>.</td>
-    </tr>
-    <tr>
-      <td>Returns</td>
-      <td>A <code class="language-plaintext highlighter-rouge">string</code> with the name.</td>
-    </tr>
-    <tr>
-      <td>Notes</td>
-      <td>This just gets the attribute BLOCK_ATTRIB_TYPE of the block.</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3 id="url">.url</h3>
-
-<table>
-  <thead>
-    <tr>
-      <th>.url</th>
-      <th>Return the static http url assigned to a block</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Applies to</td>
-      <td>A <code class="language-plaintext highlighter-rouge">Block</code>. Most likely a file == vector of CELL_TYPE_BYTE with some mime type.</td>
-    </tr>
-    <tr>
-      <td>Returns</td>
-      <td>A <code class="language-plaintext highlighter-rouge">string</code> with the url without the http://server part. Static http resources are not sharded.</td>
-    </tr>
-    <tr>
-      <td>Notes</td>
-      <td>This just gets the attribute BLOCK_ATTRIB_URL of the block.</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 id="contracts-for-container-and-descendants">Contracts for Container and descendants</h2>
-
-<h3 id="put-add_basename">(PUT) .add_base(&lt;name&gt;)</h3>
-
-<h3 id="put-add_containername">(PUT) .add_container(&lt;name&gt;)</h3>
-
-<h3 id="put-assignlocator-rvalue">(PUT) .assign(&lt;locator&gt;, &lt;rvalue&gt;)</h3>
-
-<h3 id="put-from_jsonlocator">(PUT) .from_json(&lt;locator&gt;)</h3>
-
-<h3 id="put-from_textlocator">(PUT) .from_text(&lt;locator&gt;)</h3>
-
-<h3 id="put-newlocator">(PUT) .new(&lt;locator&gt;)</h3>
-
-<h3 id="put-new_tuplelocator_1-locator_2-">(PUT) .new_tuple(&lt;locator_1&gt;, &lt;locator_2&gt;, …)</h3>
-
-<h3 id="put-set_attributeslocator-rvalue">(PUT) .set_attributes(&lt;locator&gt;, &lt;rvalue&gt;)</h3>
-
-<h3 id="tuplelocator_1-locator_2-">.tuple(&lt;locator_1&gt;, &lt;locator_2&gt;, …)</h3>
+<p>This short sequence, assuming the file “~/hello/index.html” exists, will make it accessible at <code class="language-plaintext highlighter-rouge">/hello/index.html</code> in the server.</p>
 
 <p><br /></p>
 
@@ -704,7 +603,7 @@ their syntax explained below. All contracts are GET (or any read predicate), exc
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2021 kaalam.ai. All rights reserved. <br />
- Site last generated: Sep 30, 2021 <br />
+ Site last generated: Oct 2, 2021 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

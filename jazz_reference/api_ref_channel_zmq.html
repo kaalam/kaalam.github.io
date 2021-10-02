@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="The reference of the event driven API">
+<meta name="description" content="Api Reference for the base "0-mz" inside the container Channels">
 <meta name="keywords" content=" ">
-<title>API reference - Fluxes, event and agents | Jazz User's Manual</title>
+<title>API reference - Channel base 0-mq | Jazz User's Manual</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -181,7 +181,7 @@
                 
 
 <ul id="mysidebar" class="nav">
-  <li class="sidebarTitle">Jazz 0.5.1</li>
+  <li class="sidebarTitle">Jazz 0.5.2</li>
   
   
   
@@ -208,13 +208,13 @@
                   
                   
                   
-                  <li><a href="vision_elements_block_kind_etc.html">Elements - Blocks, Kinds, Tuples, Tables and Fluxes</a></li>
+                  <li><a href="vision_elements_block_kind_etc.html">Elements - Blocks, Kinds, Tuples</a></li>
                   
                   
                   
                   
                   
-                  <li><a href="vision_elements_containers.html">Elements - Containers - Volatile, Remote and Persisted</a></li>
+                  <li><a href="vision_elements_containers.html">Elements - Containers - One Shot, Channels, Volatile and Persisted</a></li>
                   
                   
                   
@@ -230,12 +230,6 @@
                   
                   
                   
-                  
-                  
-                  <li><a href="vision_apis_services.html">API, Services, Instances, etc.</a></li>
-                  
-                  
-                  
               </ul>
           </li>
           
@@ -248,7 +242,7 @@
       
   
   <li>
-      <a href="#">Bebop fundamentals</a>
+      <a href="#">Bebop fundamentals (Jazz 0.6.x)</a>
       <ul>
           
           
@@ -264,7 +258,7 @@
       
   
   <li>
-      <a href="#">Agency fundamentals</a>
+      <a href="#">Agency fundamentals (Jazz 0.7.x)</a>
       <ul>
           
           
@@ -292,13 +286,6 @@
           
           
           
-          <li><a href="api_ref_modules_.html">API reference - How it works</a></li>
-          
-          
-          
-          
-          
-          
           <li><a href="api_ref_http_api.html">API reference - The http API</a></li>
           
           
@@ -306,21 +293,7 @@
           
           
           
-          <li><a href="api_ref_names.html">API reference - Names</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="api_ref_locators.html">API reference - Locators</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="api_ref_const.html">API reference - Constants</a></li>
+          <li><a href="api_ref_const_encoding.html">API reference - Constants and %-encoding</a></li>
           
           
           
@@ -334,13 +307,6 @@
           
           
           
-          <li><a href="api_ref_contracts.html">API reference - Block and Container contracts</a></li>
-          
-          
-          
-          
-          
-          
           <li><a href="api_ref_fun_calls.html">API reference - Function calls</a></li>
           
           
@@ -348,28 +314,98 @@
           
           
           
-          <li><a href="api_ref_get_head.html">API reference - GET and HEAD calls reference</a></li>
+          <li><a href="api_ref_assign.html">API reference - Assignment calls</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_put.html">API reference - PUT calls reference</a></li>
+          <li><a href="api_ref_attributes.html">API reference - Attribute calls</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_assign.html">API reference - Assignment calls reference</a></li>
+          <li><a href="api_ref_serving_frontend.html">API reference - Using Jazz to serve applications</a></li>
           
           
           
           
           
           
-          <li class="active"><a href="api_ref_fluxes_agents.html">API reference - Fluxes, event and agents</a></li>
+          <li><a href="api_ref_agency_wip.html">API reference - Agency bases (Work in Progress)</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_bebop_wip.html">API reference - Bebop bases (Work in Progress)</a></li>
+          
+          
+          
+          
+          
+          
+          <li class="active"><a href="api_ref_channel_zmq.html">API reference - Channel base 0-mq</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_channel_bash.html">API reference - Channel base bash</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_channel_file.html">API reference - Channel base file</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_channel_http.html">API reference - Channel base http</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_persisted_lmdb.html">API reference - Persisted base lmdb</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_deque.html">API reference - Volatile base deque</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_index.html">API reference - Volatile base index</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_queue.html">API reference - Volatile base queue</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_tree.html">API reference - Volatile base tree</a></li>
           
           
           
@@ -481,7 +517,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">API reference - Fluxes, event and agents</h1>
+   <h1 class="post-title-main">API reference - Channel base 0-mq</h1>
 </div>
 
 
@@ -489,7 +525,7 @@
 <div class="post-content">
 
    
-    <div class="summary">The reference of the event driven API</div>
+    <div class="summary">Api Reference for the base "0-mz" inside the container Channels</div>
    
 
     
@@ -523,10 +559,44 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> Jazz is still under development to produce the first Minimum Viable Product (MVP) after the original 0.1.7.
-This is incomplete, but what is here is up to date.</div>
+  <h2 id="the-container-channels">The Container <code class="language-plaintext highlighter-rouge">Channels</code></h2>
+
+<p><code class="language-plaintext highlighter-rouge">Channels</code> is a container doing block transactions across media (files, folders, the bash shell, http urls and zeroMQ servers). This
+includes keeping a cluster of Jazz nodes as a whole where every node is aware of all the others and queries can be forwarded by just
+including the node name. Any imaginable communication channel, including writing files and pushing them to github (using git in the bash
+shell) is accessible. This includes all protocols supported by zeroMQ and libCURL.</p>
+
+<ul>
+  <li>See C++ ref <a href="/develop_jazz02/classjazz__elements_1_1Channels.html">Channels</a></li>
+</ul>
+
+<h2 id="the-base-0-mz">The base <code class="language-plaintext highlighter-rouge">0-mz</code></h2>
+
+<p>The 0-mq implementation in jazz_elements is only a zeroMQ client, not a server. The only operation it supports is a translate() call.
+For a translate() call to succeed, you must first have created a pipeline using a put call with a string. E.g,
+put(“//0-mq/pipeline/speech2text”) with a block containing a string like “tcp://localhost:5555” creates a pipeline named speech2text.</p>
+
+<p>Outside Jazz, you set up a zeroMQ server that listens to tcp://localhost:5555 and does speech to text, expecting, say 32-bit int vectors
+as input and returning a buffer of char as output. In your translate call you must provide a tuple with two Tensors with item names “input”
+and “result”. The translate() call will send the raw tensor of the item “input” to the server and write whatever the server answers into
+the tensor named “result”, just overriding the tensor without any dimension change.</p>
+
+<p>This operation expects the tensor to be binary (i.e., no variable length strings) and their shapes and types known by both parts.</p>
+
+<p>When using translate() as the method of Channel, you should omit the “pipeline” part, <code class="language-plaintext highlighter-rouge">just translate(p_tuple, "//0-mq/speech2text");</code>.</p>
+
+<p>Besides this, <code class="language-plaintext highlighter-rouge">get("//0-mq/pipeline/speech2text")</code> will return just a block with “tcp://localhost:5555” and
+<code class="language-plaintext highlighter-rouge">remove("//0-mq/pipeline/speech2text")</code> will destroy the pipeline. Any other call using “0-mq” returns SERVICE_ERROR_NOT_APPLICABLE.</p>
+
+<h2 id="in-terms-of-the-jazz-server-api">In terms of the Jazz server API</h2>
+
+<p>This is a function call: either GET <code class="language-plaintext highlighter-rouge">//0-mq/speech2text/(//lmdb/stuff/my_tensor)</code> or GET <code class="language-plaintext highlighter-rouge">//0-mq/speech2text/(#[1,2,3];)</code> the argument
+can be anything in Persisted, Volatile, even a file or an //http get or a (%-encoded) constant as in the second example.</p>
 
 <p><br /></p>
+
+<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> 0-mq operation must be enabled via configuration by setting ENABLE_ZEROMQ_CLIENT to something
+non-zero.</div>
 
 
 
@@ -541,7 +611,7 @@ This is incomplete, but what is here is up to date.</div>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2021 kaalam.ai. All rights reserved. <br />
- Site last generated: Sep 30, 2021 <br />
+ Site last generated: Oct 2, 2021 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

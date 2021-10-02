@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="What is Jazz (part 5) More on the architecture.">
+<meta name="description" content="Api Reference for the base "http" inside the container Channels">
 <meta name="keywords" content=" ">
-<title>API, Services, Instances, etc. | Jazz User's Manual</title>
+<title>API reference - Channel base http | Jazz User's Manual</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -181,7 +181,7 @@
                 
 
 <ul id="mysidebar" class="nav">
-  <li class="sidebarTitle">Jazz 0.5.1</li>
+  <li class="sidebarTitle">Jazz 0.5.2</li>
   
   
   
@@ -208,13 +208,13 @@
                   
                   
                   
-                  <li><a href="vision_elements_block_kind_etc.html">Elements - Blocks, Kinds, Tuples, Tables and Fluxes</a></li>
+                  <li><a href="vision_elements_block_kind_etc.html">Elements - Blocks, Kinds, Tuples</a></li>
                   
                   
                   
                   
                   
-                  <li><a href="vision_elements_containers.html">Elements - Containers - Volatile, Remote and Persisted</a></li>
+                  <li><a href="vision_elements_containers.html">Elements - Containers - One Shot, Channels, Volatile and Persisted</a></li>
                   
                   
                   
@@ -230,12 +230,6 @@
                   
                   
                   
-                  
-                  
-                  <li class="active"><a href="vision_apis_services.html">API, Services, Instances, etc.</a></li>
-                  
-                  
-                  
               </ul>
           </li>
           
@@ -248,7 +242,7 @@
       
   
   <li>
-      <a href="#">Bebop fundamentals</a>
+      <a href="#">Bebop fundamentals (Jazz 0.6.x)</a>
       <ul>
           
           
@@ -264,7 +258,7 @@
       
   
   <li>
-      <a href="#">Agency fundamentals</a>
+      <a href="#">Agency fundamentals (Jazz 0.7.x)</a>
       <ul>
           
           
@@ -292,13 +286,6 @@
           
           
           
-          <li><a href="api_ref_modules_.html">API reference - How it works</a></li>
-          
-          
-          
-          
-          
-          
           <li><a href="api_ref_http_api.html">API reference - The http API</a></li>
           
           
@@ -306,21 +293,7 @@
           
           
           
-          <li><a href="api_ref_names.html">API reference - Names</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="api_ref_locators.html">API reference - Locators</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="api_ref_const.html">API reference - Constants</a></li>
+          <li><a href="api_ref_const_encoding.html">API reference - Constants and %-encoding</a></li>
           
           
           
@@ -334,13 +307,6 @@
           
           
           
-          <li><a href="api_ref_contracts.html">API reference - Block and Container contracts</a></li>
-          
-          
-          
-          
-          
-          
           <li><a href="api_ref_fun_calls.html">API reference - Function calls</a></li>
           
           
@@ -348,28 +314,98 @@
           
           
           
-          <li><a href="api_ref_get_head.html">API reference - GET and HEAD calls reference</a></li>
+          <li><a href="api_ref_assign.html">API reference - Assignment calls</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_put.html">API reference - PUT calls reference</a></li>
+          <li><a href="api_ref_attributes.html">API reference - Attribute calls</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_assign.html">API reference - Assignment calls reference</a></li>
+          <li><a href="api_ref_serving_frontend.html">API reference - Using Jazz to serve applications</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_fluxes_agents.html">API reference - Fluxes, event and agents</a></li>
+          <li><a href="api_ref_agency_wip.html">API reference - Agency bases (Work in Progress)</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_bebop_wip.html">API reference - Bebop bases (Work in Progress)</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_channel_zmq.html">API reference - Channel base 0-mq</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_channel_bash.html">API reference - Channel base bash</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_channel_file.html">API reference - Channel base file</a></li>
+          
+          
+          
+          
+          
+          
+          <li class="active"><a href="api_ref_channel_http.html">API reference - Channel base http</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_persisted_lmdb.html">API reference - Persisted base lmdb</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_deque.html">API reference - Volatile base deque</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_index.html">API reference - Volatile base index</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_queue.html">API reference - Volatile base queue</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_tree.html">API reference - Volatile base tree</a></li>
           
           
           
@@ -481,7 +517,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">API, Services, Instances, etc.</h1>
+   <h1 class="post-title-main">API reference - Channel base http</h1>
 </div>
 
 
@@ -489,7 +525,7 @@
 <div class="post-content">
 
    
-    <div class="summary">What is Jazz (part 5) More on the architecture.</div>
+    <div class="summary">Api Reference for the base "http" inside the container Channels</div>
    
 
     
@@ -523,32 +559,47 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <div class="bs-callout bs-callout-">Thank you for for reading this far. This final page on the vision covers some necessary not yet mentioned elements.</div>
+  <h2 id="the-container-channels">The Container <code class="language-plaintext highlighter-rouge">Channels</code></h2>
 
-<h2 id="other-relevant-classes-required-to-understand-the-architecture">Other relevant classes required to understand the architecture</h2>
+<p><code class="language-plaintext highlighter-rouge">Channels</code> is a container doing block transactions across media (files, folders, the bash shell, http urls and zeroMQ servers). This
+includes keeping a cluster of Jazz nodes as a whole where every node is aware of all the others and queries can be forwarded by just
+including the node name. Any imaginable communication channel, including writing files and pushing them to github (using git in the bash
+shell) is accessible. This includes all protocols supported by zeroMQ and libCURL.</p>
 
-<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> This fifth vision page completes the architectural vision at the moment of inception. Some of the internal layers are just drafts for the moment but are included to show the place they fit in. This page will probably interest you if you plan to hack with the source code. You can probably skip it otherwise.</div>
+<ul>
+  <li>See C++ ref <a href="/develop_jazz02/classjazz__elements_1_1Channels.html">Channels</a></li>
+</ul>
 
-<h2 id="services">Services</h2>
+<h2 id="the-base-http">The base <code class="language-plaintext highlighter-rouge">http</code></h2>
 
-<p>In Jazz, the class <code class="language-plaintext highlighter-rouge">Service</code> provides the necessary abstractions to deal with parts that will be instantiated and configured. Services have things such as: configuration files, loggers and are instantiated. In Jazz, services allocate most of the memory. Services include things like the http server itself and the classes that return any container.</p>
+<p>Besides being an http server, Jazz is also an http client. The simplest mode of operation is just forwarding get(), put() and delete()
+calls that are intended for other nodes in a Jazz cluster. This is done at the top API level by just adding a node name. E.g.,
+get(“///node_x//lmdb/things/this”) will forward the call to the node_x (if anything is well configured see JAZZ_NODE_NAME_.., etc.)
+and return the result just as if is was a local call. At the class level, this is done by forward_get(), forward_put() and forward_del().
+You can also send simple GET, PUT and DELETE http calls to random urls by either using the get(), put() and remove() or using the Jazz http
+server API GET “//http#https://google.com;”</p>
 
-<h2 id="instances">Instances</h2>
+<p>The most advanced way to do it is creating a connection (similar to a “0-mq” pipeline) by put()-ing an Index to: //http/connection/a_name
+the index requires the mandatory key URL and the optional keys: CURLOPT_USERNAME, CURLOPT_USERPWD, CURLOPT_COOKIEFILE and CURLOPT_COOKIEJAR
+(see https://curl.se/libcurl/c/CURLOPT_USERNAME.html and https://everything.curl.dev/libcurl-http/cookies) Once the connection exists, you
+can get(), put() and remove() to just its name (without the word connection). I.e, get(txn, “//http/a_name”) or
+get(txn, “//http/a_name/args”) will send the http GET to connection[URL] + “args”. Same for put() and remove().</p>
 
-<p>Since Jazz is an http server, resource allocation serves thousands of clients per node. The server’s RAM space is distributed in a configurable way among its services. Every service has just one instance of it per node. These instances of all the classes derived from <code class="language-plaintext highlighter-rouge">Service</code> and some simple ones like a logger or a system timer available to all classes are the instances that are <strong>created as global variables</strong> and exist through the life of the server. That’s what is meant by <strong>instances</strong> in Jazz terms.</p>
+<p>If you remove(“//http/connection/a_name”), you destroy the connection. get(“//http/connection/a_name”) returns an Index with all the
+connection parameters.</p>
 
-<p><br /></p>
+<h2 id="in-terms-of-the-jazz-server-api">In terms of the Jazz server API</h2>
 
-<table>
-  <tbody>
-    <tr>
-      <td><span class="label label-default">Previous …</span></td>
-    </tr>
-    <tr>
-      <td><a href="vision_agency_code.html">Agency - Code Automation</a></td>
-    </tr>
-  </tbody>
-</table>
+<p>There are three ways:</p>
+
+<ul>
+  <li>Inside the Jazz cluster, just use the API of another node like the API of the current node. E.g., <code class="language-plaintext highlighter-rouge">///tokyo_node//lmdb/base17/key55</code> This
+will forward automatically.</li>
+  <li>For easy URL (no cookies, authorization, etc.), just use the constant form GET, PUT or DELETE to <code class="language-plaintext highlighter-rouge">//http#http://url...;</code></li>
+  <li>For advanced control, just create the pipeline <code class="language-plaintext highlighter-rouge">my_pipe</code> programmatically and GET, PUT or DELETE to <code class="language-plaintext highlighter-rouge">//http/my_pipe/</code></li>
+</ul>
+
+<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> http operation must be enabled via configuration by setting ENABLE_HTTP_CLIENT to something non-zero.</div>
 
 
 
@@ -563,7 +614,7 @@ $('#toc').on('click', 'a', function() {
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2021 kaalam.ai. All rights reserved. <br />
- Site last generated: Sep 30, 2021 <br />
+ Site last generated: Oct 2, 2021 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

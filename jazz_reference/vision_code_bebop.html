@@ -181,7 +181,7 @@
                 
 
 <ul id="mysidebar" class="nav">
-  <li class="sidebarTitle">Jazz 0.5.1</li>
+  <li class="sidebarTitle">Jazz 0.5.2</li>
   
   
   
@@ -208,13 +208,13 @@
                   
                   
                   
-                  <li><a href="vision_elements_block_kind_etc.html">Elements - Blocks, Kinds, Tuples, Tables and Fluxes</a></li>
+                  <li><a href="vision_elements_block_kind_etc.html">Elements - Blocks, Kinds, Tuples</a></li>
                   
                   
                   
                   
                   
-                  <li><a href="vision_elements_containers.html">Elements - Containers - Volatile, Remote and Persisted</a></li>
+                  <li><a href="vision_elements_containers.html">Elements - Containers - One Shot, Channels, Volatile and Persisted</a></li>
                   
                   
                   
@@ -230,12 +230,6 @@
                   
                   
                   
-                  
-                  
-                  <li><a href="vision_apis_services.html">API, Services, Instances, etc.</a></li>
-                  
-                  
-                  
               </ul>
           </li>
           
@@ -248,7 +242,7 @@
       
   
   <li>
-      <a href="#">Bebop fundamentals</a>
+      <a href="#">Bebop fundamentals (Jazz 0.6.x)</a>
       <ul>
           
           
@@ -264,7 +258,7 @@
       
   
   <li>
-      <a href="#">Agency fundamentals</a>
+      <a href="#">Agency fundamentals (Jazz 0.7.x)</a>
       <ul>
           
           
@@ -292,13 +286,6 @@
           
           
           
-          <li><a href="api_ref_modules_.html">API reference - How it works</a></li>
-          
-          
-          
-          
-          
-          
           <li><a href="api_ref_http_api.html">API reference - The http API</a></li>
           
           
@@ -306,21 +293,7 @@
           
           
           
-          <li><a href="api_ref_names.html">API reference - Names</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="api_ref_locators.html">API reference - Locators</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="api_ref_const.html">API reference - Constants</a></li>
+          <li><a href="api_ref_const_encoding.html">API reference - Constants and %-encoding</a></li>
           
           
           
@@ -334,13 +307,6 @@
           
           
           
-          <li><a href="api_ref_contracts.html">API reference - Block and Container contracts</a></li>
-          
-          
-          
-          
-          
-          
           <li><a href="api_ref_fun_calls.html">API reference - Function calls</a></li>
           
           
@@ -348,28 +314,98 @@
           
           
           
-          <li><a href="api_ref_get_head.html">API reference - GET and HEAD calls reference</a></li>
+          <li><a href="api_ref_assign.html">API reference - Assignment calls</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_put.html">API reference - PUT calls reference</a></li>
+          <li><a href="api_ref_attributes.html">API reference - Attribute calls</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_assign.html">API reference - Assignment calls reference</a></li>
+          <li><a href="api_ref_serving_frontend.html">API reference - Using Jazz to serve applications</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_fluxes_agents.html">API reference - Fluxes, event and agents</a></li>
+          <li><a href="api_ref_agency_wip.html">API reference - Agency bases (Work in Progress)</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_bebop_wip.html">API reference - Bebop bases (Work in Progress)</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_channel_zmq.html">API reference - Channel base 0-mq</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_channel_bash.html">API reference - Channel base bash</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_channel_file.html">API reference - Channel base file</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_channel_http.html">API reference - Channel base http</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_persisted_lmdb.html">API reference - Persisted base lmdb</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_deque.html">API reference - Volatile base deque</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_index.html">API reference - Volatile base index</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_queue.html">API reference - Volatile base queue</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_tree.html">API reference - Volatile base tree</a></li>
           
           
           
@@ -557,7 +593,7 @@ $('#toc').on('click', 'a', function() {
 
 <p>Jazz has a programming language called <strong>Bebop</strong> (or simply <strong>Bop</strong>).</p>
 
-<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> Bebop is work in progress. The reference is included in its source code and available via the <a href="/develop/">developer documentation</a>. Coding safety mechanisms are explained in a paper to be shared soon.</div>
+<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> Bebop is work in progress. Now that Jazz 0.5.1 is released (October 2021), the moment has come! After two years of PoC and refining the idea, we are actually working on this! This is Jazz 0.6.1, stay tuned. This page was last updated after the 2019 PoC and is still essentially what the idea is.</div>
 
 <figure><img class="docimage" src="images/jazz_bebop.png" alt="" /><figcaption>Bebop</figcaption></figure>
 
@@ -587,11 +623,13 @@ $('#toc').on('click', 'a', function() {
 A kernel bytecode instruction is just a just-in-time linked c++ function. Alternatively, a bytecode instruction can be a bop function which
 can be learned of written in the kernel.</p>
 
-<h2 id="introducing-fields">Introducing Fields</h2>
+<h2 id="introducing-formal-fields">Introducing Formal Fields</h2>
 
 <p><span class="label label-info">Field</span></p>
 
-<p>As mentioned, a <code class="language-plaintext highlighter-rouge">Field</code> is an abstraction that has many of the features classes have in OOP. It is also similar to a package or library. Some STL fields will include efficient functions to do arithmetic, algebra, text manipulation, etc. Fields can also be purely created in Bop. Fields relate to each other, not just by a DAG like code dependencies, but by and arbitrary complex graph of <code class="language-plaintext highlighter-rouge">Field</code> relations. Reading the next page on relations will shed light on the role fields play in Jazz.</p>
+<p>Our paper from 2019 <a href="https://arxiv.org/abs/2007.14075">formal fields</a> still holds quite well. Maybe, some ways of defining things are too
+formal and verbose. Using the simplest version of category theory. You can think of a formal field as “the set of morphisms that relate two
+<code class="language-plaintext highlighter-rouge">Kind</code> objects”. And that defines the primary structure, all other structures are compositions of morphisms (== opcodes).</p>
 
 <figure><img class="docimage" src="images/jazz_field.png" alt="" /><figcaption>Field class</figcaption></figure>
 
@@ -631,7 +669,7 @@ can be learned of written in the kernel.</p>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2021 kaalam.ai. All rights reserved. <br />
- Site last generated: Sep 30, 2021 <br />
+ Site last generated: Oct 2, 2021 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

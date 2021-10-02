@@ -181,7 +181,7 @@
                 
 
 <ul id="mysidebar" class="nav">
-  <li class="sidebarTitle">Jazz 0.5.1</li>
+  <li class="sidebarTitle">Jazz 0.5.2</li>
   
   
   
@@ -208,13 +208,13 @@
                   
                   
                   
-                  <li><a href="vision_elements_block_kind_etc.html">Elements - Blocks, Kinds, Tuples, Tables and Fluxes</a></li>
+                  <li><a href="vision_elements_block_kind_etc.html">Elements - Blocks, Kinds, Tuples</a></li>
                   
                   
                   
                   
                   
-                  <li><a href="vision_elements_containers.html">Elements - Containers - Volatile, Remote and Persisted</a></li>
+                  <li><a href="vision_elements_containers.html">Elements - Containers - One Shot, Channels, Volatile and Persisted</a></li>
                   
                   
                   
@@ -230,12 +230,6 @@
                   
                   
                   
-                  
-                  
-                  <li><a href="vision_apis_services.html">API, Services, Instances, etc.</a></li>
-                  
-                  
-                  
               </ul>
           </li>
           
@@ -248,7 +242,7 @@
       
   
   <li>
-      <a href="#">Bebop fundamentals</a>
+      <a href="#">Bebop fundamentals (Jazz 0.6.x)</a>
       <ul>
           
           
@@ -264,7 +258,7 @@
       
   
   <li>
-      <a href="#">Agency fundamentals</a>
+      <a href="#">Agency fundamentals (Jazz 0.7.x)</a>
       <ul>
           
           
@@ -292,13 +286,6 @@
           
           
           
-          <li><a href="api_ref_modules_.html">API reference - How it works</a></li>
-          
-          
-          
-          
-          
-          
           <li><a href="api_ref_http_api.html">API reference - The http API</a></li>
           
           
@@ -306,21 +293,7 @@
           
           
           
-          <li><a href="api_ref_names.html">API reference - Names</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="api_ref_locators.html">API reference - Locators</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="api_ref_const.html">API reference - Constants</a></li>
+          <li><a href="api_ref_const_encoding.html">API reference - Constants and %-encoding</a></li>
           
           
           
@@ -334,13 +307,6 @@
           
           
           
-          <li><a href="api_ref_contracts.html">API reference - Block and Container contracts</a></li>
-          
-          
-          
-          
-          
-          
           <li><a href="api_ref_fun_calls.html">API reference - Function calls</a></li>
           
           
@@ -348,28 +314,98 @@
           
           
           
-          <li><a href="api_ref_get_head.html">API reference - GET and HEAD calls reference</a></li>
+          <li><a href="api_ref_assign.html">API reference - Assignment calls</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_put.html">API reference - PUT calls reference</a></li>
+          <li><a href="api_ref_attributes.html">API reference - Attribute calls</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_assign.html">API reference - Assignment calls reference</a></li>
+          <li><a href="api_ref_serving_frontend.html">API reference - Using Jazz to serve applications</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_fluxes_agents.html">API reference - Fluxes, event and agents</a></li>
+          <li><a href="api_ref_agency_wip.html">API reference - Agency bases (Work in Progress)</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_bebop_wip.html">API reference - Bebop bases (Work in Progress)</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_channel_zmq.html">API reference - Channel base 0-mq</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_channel_bash.html">API reference - Channel base bash</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_channel_file.html">API reference - Channel base file</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_channel_http.html">API reference - Channel base http</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_persisted_lmdb.html">API reference - Persisted base lmdb</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_deque.html">API reference - Volatile base deque</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_index.html">API reference - Volatile base index</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_queue.html">API reference - Volatile base queue</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_tree.html">API reference - Volatile base tree</a></li>
           
           
           
@@ -523,23 +559,38 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> Jazz is still under development to produce the first Minimum Viable Product (MVP) after the original 0.1.7.
-Things are changing fast and this vision is <strong>not up to date</strong>. To follow Jazz development see <a href="https://kaalam.github.io/develop_jazz02/index.html">Programming documentation for the Jazz Server</a>.</div>
-
-<h2 id="from-20000-feet">From 20,000 feet:</h2>
+  <h2 id="from-20000-feet">From 20,000 feet:</h2>
 
 <p>Before a detailed introduction, in case you feel the need to put a label on Jazz or want to pitch it in 10 seconds, you may ask…</p>
 
 <h3 id="is-it-a-distributed-no-sql-database-a-language-an-http-server-a-machine-learning-framework">Is it a distributed no-sql database, a language, an http server, a machine learning framework?</h3>
 
-<p>Jazz is a new kind of data product. It combines all these things and some others: a programming language that extends by learning, an automated creator of APIs while being <strong>just one</strong> extremely lightweight process. It is free software created on top of third party free software. It is written in C++, available through a REST API. The framework is Linux only, but, since it is an http back-end, Jazz consumers include all devices and operating systems. Jazz is designed for millions of users interacting concurrently with large clusters.</p>
+<p>Jazz is a new kind of data product. It combines all these things and some others: a programming language that extends by learning, an
+automated creator of APIs, efficient communications and in-RAM storage, etc. Everything done by <strong>just one</strong> extremely lightweight process.
+While being a production quality server, on which you can completely write the code of your backend logic, it focuses on researching AI.
+Especially, automated code generation using <a href="https://arxiv.org/abs/2007.14075">formal fields</a> and lifelong learning.</p>
+
+<p>There is no other platform with that focus, alternatives would be: 1. Using a deep learning platform and failing because anything other
+than deep learning is orders of magnitude inefficient and the platforms lack most tools needed for our vision, coding them in scripting
+languages is, in our opinion, a path to certain failure. 2. Doing experiments with “one use only” C++ code that easily becomes impossible
+to control and insure the required quality and reliability to build on top of it.</p>
+
+<p>In a way, Jazz is something that need to be built to do the research, but also a platform that can be used to write insanely efficient
+http backend servers that do anything AI and data related.</p>
+
+<p>It is free software created on top of third party free software. It is written in C++, extends in C++, communicates over any imaginable
+channel and is also available through a REST API. The framework is Linux only, but, since it is an http back-end, Jazz consumers include
+all devices and operating systems. Jazz is designed for millions of users interacting concurrently with large clusters. It also delivers
+the front-end code built with in your favorite language like Flutter/Dart, Angular/Ionic, etc.</p>
+
+<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> For the final user, Jazz is just a website or mobile app that does “AI Magic” very fast.</div>
 
 <p>Now, let’s explain the main ideas:</p>
 
 <ul>
   <li><a href="vision_elements_block_kind_etc.html">Blocks, Storage and Containers</a></li>
   <li><a href="vision_code_bebop.html">Bebop, Formal Fields and Code Generation</a></li>
-  <li><a href="vision_apis_services.html">APIs and Services</a></li>
+  <li><a href="vision_agency_code.html">Lifelong-learning and agency</a></li>
 </ul>
 
 <p>See also:</p>
@@ -576,7 +627,7 @@ Things are changing fast and this vision is <strong>not up to date</strong>. To 
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2021 kaalam.ai. All rights reserved. <br />
- Site last generated: Sep 30, 2021 <br />
+ Site last generated: Oct 2, 2021 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

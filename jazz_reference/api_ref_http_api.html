@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Http API operation">
+<meta name="description" content="Http operation supported">
 <meta name="keywords" content=" ">
 <title>API reference - The http API | Jazz User's Manual</title>
 <link rel="stylesheet" href="css/syntax.css">
@@ -181,7 +181,7 @@
                 
 
 <ul id="mysidebar" class="nav">
-  <li class="sidebarTitle">Jazz 0.5.1</li>
+  <li class="sidebarTitle">Jazz 0.5.2</li>
   
   
   
@@ -208,13 +208,13 @@
                   
                   
                   
-                  <li><a href="vision_elements_block_kind_etc.html">Elements - Blocks, Kinds, Tuples, Tables and Fluxes</a></li>
+                  <li><a href="vision_elements_block_kind_etc.html">Elements - Blocks, Kinds, Tuples</a></li>
                   
                   
                   
                   
                   
-                  <li><a href="vision_elements_containers.html">Elements - Containers - Volatile, Remote and Persisted</a></li>
+                  <li><a href="vision_elements_containers.html">Elements - Containers - One Shot, Channels, Volatile and Persisted</a></li>
                   
                   
                   
@@ -230,12 +230,6 @@
                   
                   
                   
-                  
-                  
-                  <li><a href="vision_apis_services.html">API, Services, Instances, etc.</a></li>
-                  
-                  
-                  
               </ul>
           </li>
           
@@ -248,7 +242,7 @@
       
   
   <li>
-      <a href="#">Bebop fundamentals</a>
+      <a href="#">Bebop fundamentals (Jazz 0.6.x)</a>
       <ul>
           
           
@@ -264,7 +258,7 @@
       
   
   <li>
-      <a href="#">Agency fundamentals</a>
+      <a href="#">Agency fundamentals (Jazz 0.7.x)</a>
       <ul>
           
           
@@ -292,13 +286,6 @@
           
           
           
-          <li><a href="api_ref_modules_.html">API reference - How it works</a></li>
-          
-          
-          
-          
-          
-          
           <li class="active"><a href="api_ref_http_api.html">API reference - The http API</a></li>
           
           
@@ -306,21 +293,7 @@
           
           
           
-          <li><a href="api_ref_names.html">API reference - Names</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="api_ref_locators.html">API reference - Locators</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="api_ref_const.html">API reference - Constants</a></li>
+          <li><a href="api_ref_const_encoding.html">API reference - Constants and %-encoding</a></li>
           
           
           
@@ -334,13 +307,6 @@
           
           
           
-          <li><a href="api_ref_contracts.html">API reference - Block and Container contracts</a></li>
-          
-          
-          
-          
-          
-          
           <li><a href="api_ref_fun_calls.html">API reference - Function calls</a></li>
           
           
@@ -348,28 +314,98 @@
           
           
           
-          <li><a href="api_ref_get_head.html">API reference - GET and HEAD calls reference</a></li>
+          <li><a href="api_ref_assign.html">API reference - Assignment calls</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_put.html">API reference - PUT calls reference</a></li>
+          <li><a href="api_ref_attributes.html">API reference - Attribute calls</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_assign.html">API reference - Assignment calls reference</a></li>
+          <li><a href="api_ref_serving_frontend.html">API reference - Using Jazz to serve applications</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_fluxes_agents.html">API reference - Fluxes, event and agents</a></li>
+          <li><a href="api_ref_agency_wip.html">API reference - Agency bases (Work in Progress)</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_bebop_wip.html">API reference - Bebop bases (Work in Progress)</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_channel_zmq.html">API reference - Channel base 0-mq</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_channel_bash.html">API reference - Channel base bash</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_channel_file.html">API reference - Channel base file</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_channel_http.html">API reference - Channel base http</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_persisted_lmdb.html">API reference - Persisted base lmdb</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_deque.html">API reference - Volatile base deque</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_index.html">API reference - Volatile base index</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_queue.html">API reference - Volatile base queue</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="api_ref_volatile_tree.html">API reference - Volatile base tree</a></li>
           
           
           
@@ -489,7 +525,7 @@
 <div class="post-content">
 
    
-    <div class="summary">Http API operation</div>
+    <div class="summary">Http operation supported</div>
    
 
     
@@ -525,8 +561,7 @@ $('#toc').on('click', 'a', function() {
 
   <h2 id="http-considerations">HTTP considerations</h2>
 
-<p>HTTP-wise, the protocol is very simple. This page describes the basic http model. Wherever syntax are discussed, what http predicate apply
-will also be described.</p>
+<p>HTTP-wise, the protocol is very simple. This page describes the basic http model.</p>
 
 <h3 id="http-predicates">HTTP predicates</h3>
 
@@ -541,7 +576,22 @@ will also be described.</p>
   <li>Assignment calls (calls doing <code class="language-plaintext highlighter-rouge">L-value = R-value</code> ) are <strong>GET</strong> calls returning just an answer (some status code).</li>
 </ul>
 
-<h3 id="limitations-in-version-05x">Limitations in version 0.5.x</h3>
+<p>Basically, you should understand that all calls are either GET, PUT or DELETE (HEAD being a wrapper over GET and OPTIONS a “thing” the API
+just tries to parse and if the syntax is correct, it includes the predicate.)</p>
+
+<p>In the rest of this reference, we will use GET, PUT or DELETE upper case to mean http predicates (and get(), put() and remove() for
+<code class="language-plaintext highlighter-rouge">Container</code> methods).</p>
+
+<h3 id="http-error-codes">HTTP error codes</h3>
+
+<p>Jazz tries to get most http error codes work as canonically as possible. The internal information about errors is much richer. Many
+error conditions are logged. The verbosity of the logs also depends on the Jazz compilation (release of debug). The logger output is
+defined in the configuration. The C++ API also has a much richer set of return codes. In general, the http code should make it easy
+to differentiate between malformed calls HTTP_BAD_REQUEST, wrong predicates HTTP_NOT_ACCEPTABLE, inexistent resources HTTP_NOT_FOUND,
+lack of authorization HTTP_UNAUTHORIZED or HTTP_FORBIDDEN, failed forwards across the cluster HTTP_BAD_GATEWAY, internal problems e.g.,
+HTTP_INSUFFICIENT_STORAGE, etc. <a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes">List of HTTP status codes</a>.</p>
+
+<h3 id="things-not-supported">Things not supported</h3>
 
 <ul>
   <li>No support for <strong>POST</strong> or <strong>TRACE</strong>.</li>
@@ -566,7 +616,7 @@ will also be described.</p>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2021 kaalam.ai. All rights reserved. <br />
- Site last generated: Sep 30, 2021 <br />
+ Site last generated: Oct 2, 2021 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>
