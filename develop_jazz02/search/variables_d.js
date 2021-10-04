@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['na_1089',['NA',['../namespacejazz__elements.html#a7b00f006eba351061d01802897bff970',1,'jazz_elements']]],
-  ['name_1090',['name',['../structjazz__elements_1_1ItemHeader.html#a3321ce424cd5678433e28e91dcb0bbc5',1,'jazz_elements::ItemHeader::name()'],['../structjazz__elements_1_1NameUse.html#a904c9bd2604af4bdb5ed6dc1920f31c9',1,'jazz_elements::NameUse::name()'],['../classjazz__elements_1_1Volatile.html#a39bb0baec250b1c1f68b22ff7a88fc28',1,'jazz_elements::Volatile::name()'],['../structjazz__main_1_1HttpQueryState.html#a80b8127b126437c5e071b700a6bc41ca',1,'jazz_main::HttpQueryState::name()']]],
-  ['next_1091',['next',['../structjazz__elements_1_1ParseNextStateLUT.html#a45d4f787ca5098671f2d6d3536bdd22e',1,'jazz_elements::ParseNextStateLUT']]],
-  ['node_1092',['node',['../structjazz__main_1_1HttpQueryState.html#a4f28e747d6d80462d3212608d2f3d917',1,'jazz_main::HttpQueryState']]],
-  ['num_5fattributes_1093',['num_attributes',['../structjazz__elements_1_1BlockHeader.html#ade1168fe2f507da3c64a90ef3d8f5e17',1,'jazz_elements::BlockHeader::num_attributes()'],['../structjazz__elements_1_1StaticBlockHeader.html#a7dc2553d57cfe560ae1990e96afd20e6',1,'jazz_elements::StaticBlockHeader::num_attributes()']]],
-  ['num_5fvisits_1094',['num_visits',['../structjazz__elements_1_1VolatileTransaction.html#a58e0d57a8432b4586472b2e9c74ce6d7',1,'jazz_elements::VolatileTransaction']]],
-  ['num_5fwins_1095',['num_wins',['../structjazz__elements_1_1VolatileTransaction.html#af8311af300abe9dd0f71d2b4409a9e5c',1,'jazz_elements::VolatileTransaction']]]
+  ['na_1087',['NA',['../namespacejazz__elements.html#a7b00f006eba351061d01802897bff970',1,'jazz_elements']]],
+  ['name_1088',['name',['../structjazz__elements_1_1ItemHeader.html#a3321ce424cd5678433e28e91dcb0bbc5',1,'jazz_elements::ItemHeader::name()'],['../structjazz__elements_1_1NameUse.html#a904c9bd2604af4bdb5ed6dc1920f31c9',1,'jazz_elements::NameUse::name()'],['../classjazz__elements_1_1Volatile.html#a39bb0baec250b1c1f68b22ff7a88fc28',1,'jazz_elements::Volatile::name()'],['../structjazz__main_1_1HttpQueryState.html#a80b8127b126437c5e071b700a6bc41ca',1,'jazz_main::HttpQueryState::name()']]],
+  ['next_1089',['next',['../structjazz__elements_1_1ParseNextStateLUT.html#a45d4f787ca5098671f2d6d3536bdd22e',1,'jazz_elements::ParseNextStateLUT']]],
+  ['node_1090',['node',['../structjazz__main_1_1HttpQueryState.html#a4f28e747d6d80462d3212608d2f3d917',1,'jazz_main::HttpQueryState']]],
+  ['num_5fattributes_1091',['num_attributes',['../structjazz__elements_1_1BlockHeader.html#ade1168fe2f507da3c64a90ef3d8f5e17',1,'jazz_elements::BlockHeader::num_attributes()'],['../structjazz__elements_1_1StaticBlockHeader.html#a7dc2553d57cfe560ae1990e96afd20e6',1,'jazz_elements::StaticBlockHeader::num_attributes()']]],
+  ['num_5fvisits_1092',['num_visits',['../structjazz__elements_1_1VolatileTransaction.html#a58e0d57a8432b4586472b2e9c74ce6d7',1,'jazz_elements::VolatileTransaction']]],
+  ['num_5fwins_1093',['num_wins',['../structjazz__elements_1_1VolatileTransaction.html#af8311af300abe9dd0f71d2b4409a9e5c',1,'jazz_elements::VolatileTransaction']]]
 ];
