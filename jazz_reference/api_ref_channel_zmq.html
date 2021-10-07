@@ -590,8 +590,10 @@ the tensor named “result”, just overriding the tensor without any dimension 
 
 <h2 id="in-terms-of-the-jazz-server-api">In terms of the Jazz server API</h2>
 
-<p>This is a function call: either GET <code class="language-plaintext highlighter-rouge">//0-mq/speech2text/(//lmdb/stuff/my_tensor)</code> or GET <code class="language-plaintext highlighter-rouge">//0-mq/speech2text/(#[1,2,3];)</code> the argument
+<p>This is a function call: either GET <code class="language-plaintext highlighter-rouge">//0-mq/speech2text/(//lmdb/stuff/my_tensor)</code> or GET <code class="language-plaintext highlighter-rouge">//0-mq/speech2text/(&amp;[1,2,3])</code> the argument
 can be anything in Persisted, Volatile, even a file or an //http get or a (%-encoded) constant as in the second example.</p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> In a function call (or a filter), constants are not terminated by a <code class="language-plaintext highlighter-rouge">;</code> but by the closing bracket.</div>
 
 <p><br /></p>
 
@@ -611,7 +613,7 @@ non-zero.</div>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2021 kaalam.ai. All rights reserved. <br />
- Site last generated: Oct 6, 2021 <br />
+ Site last generated: Oct 7, 2021 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

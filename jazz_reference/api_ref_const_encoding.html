@@ -580,9 +580,12 @@ connecting will handle the call.</li>
 
 <h2 id="constants">Constants</h2>
 
-<p>Constants are the exception to the <code class="language-plaintext highlighter-rouge">///node//base/entity/key++</code> format. They are delimited by <code class="language-plaintext highlighter-rouge">#;</code> as in <code class="language-plaintext highlighter-rouge">#this%20is%a%20constant;</code> and
+<p>Constants are the exception to the <code class="language-plaintext highlighter-rouge">///node//base/entity/key++</code> format. They are delimited by <code class="language-plaintext highlighter-rouge">&amp;;</code> as in <code class="language-plaintext highlighter-rouge">&amp;this%20is%a%20constant;</code> and
 since they are part of a url, must be <a href="https://en.wikipedia.org/wiki/Percent-encoding">%-encoded</a>. Any character that is not RFC 3986
 section 2.2 or RFC 3986 section 2.3 must be percent encoded. You can write utf-8 by just %-encoding all the characters.</p>
+
+<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> As an exception to this rule, In a function call or a filter, constants are not terminated by a <code class="language-plaintext highlighter-rouge">;</code>
+but by the closing <code class="language-plaintext highlighter-rouge">)</code> or <code class="language-plaintext highlighter-rouge">]</code>.</div>
 
 <p>There are two types of constants:</p>
 
@@ -597,10 +600,10 @@ requirements of a <code class="language-plaintext highlighter-rouge">Name</code>
 <p>There are four ways to insert a constant in an API call:</p>
 
 <ul>
-  <li>After the base, instead of the <code class="language-plaintext highlighter-rouge">/</code> <code class="language-plaintext highlighter-rouge">//file#any_%_encoded_path;</code> or <code class="language-plaintext highlighter-rouge">//http#http://my_api.org/something;</code></li>
-  <li>In a block slice <code class="language-plaintext highlighter-rouge">//base/entity/key[#[2,4,6];]</code></li>
-  <li>In a function call <code class="language-plaintext highlighter-rouge">//base/entity/key(#[2,4,6];)</code></li>
-  <li>In an assignment <code class="language-plaintext highlighter-rouge">//base/entity/key=#[2,4,6];</code></li>
+  <li>After the base, instead of the <code class="language-plaintext highlighter-rouge">/</code> <code class="language-plaintext highlighter-rouge">//file&amp;any_%_encoded_path;</code> or <code class="language-plaintext highlighter-rouge">//http&amp;http://my_api.org/something;</code></li>
+  <li>In a block slice <code class="language-plaintext highlighter-rouge">//base/entity/key[&amp;[2,4,6]]</code></li>
+  <li>In a function call <code class="language-plaintext highlighter-rouge">//base/entity/key(&amp;[2,4,6])</code></li>
+  <li>In an assignment <code class="language-plaintext highlighter-rouge">//base/entity/key=&amp;[2,4,6];</code></li>
 </ul>
 
 <h2 id="constant-syntax">Constant Syntax</h2>
@@ -657,7 +660,7 @@ From the C++ API if the Kind is given and the item “build” has the type TIME
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2021 kaalam.ai. All rights reserved. <br />
- Site last generated: Oct 6, 2021 <br />
+ Site last generated: Oct 7, 2021 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

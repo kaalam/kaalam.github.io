@@ -29,6 +29,7 @@ var searchData=
   ['mixed_5ftype_5finvalid_392',['MIXED_TYPE_INVALID',['../types_8h.html#a683112e92b397edff58c899c8cb64eb3',1,'types.h']]],
   ['mixed_5ftype_5fkind_393',['MIXED_TYPE_KIND',['../types_8h.html#a143df485be2b3ce14e4f72b97ef96980',1,'types.h']]],
   ['mixed_5ftype_5ftuple_394',['MIXED_TYPE_TUPLE',['../types_8h.html#a882d6d8e2f6fbe2c72034b810c10cb42',1,'types.h']]],
-  ['murmur_5fseed_395',['MURMUR_SEED',['../utils_8cpp.html#acf830c3140deca25e44187534c55e5a8',1,'utils.cpp']]],
-  ['murmurhash64a_396',['MurmurHash64A',['../namespacejazz__elements.html#a50e37200ae3572b04b417c7e899712bb',1,'jazz_elements']]]
+  ['move_5fconst_395',['move_const',['../classjazz__main_1_1Api.html#a1eb0d8888b7b4dc8632520ea009ecc67',1,'jazz_main::Api']]],
+  ['murmur_5fseed_396',['MURMUR_SEED',['../utils_8cpp.html#acf830c3140deca25e44187534c55e5a8',1,'utils.cpp']]],
+  ['murmurhash64a_397',['MurmurHash64A',['../namespacejazz__elements.html#a50e37200ae3572b04b417c7e899712bb',1,'jazz_elements']]]
 ];

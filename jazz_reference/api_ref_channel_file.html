@@ -573,7 +573,7 @@ shell) is accessible. This includes all protocols supported by zeroMQ and libCUR
 <h2 id="the-base-file">The base <code class="language-plaintext highlighter-rouge">file</code></h2>
 
 <p>This read/writes/deletes to the filesystem. Since the API does not use locators, there is no hardcoded name restriction. Via the http
-server, just use the URL (#…;). Remember to %-encode whatever http expects to be encoded. E.g., get(“//file/#whatever%20you%20want;”).
+server, just use the URL (&amp;…;). Remember to %-encode whatever http expects to be encoded. E.g., get(“//file/&amp;whatever%20you%20want;”).
 Note that “//file/” is a mandatory prefix, therefore “//file/aa” is “aa” and //file//aa” is “/aa”.</p>
 
 <p>get() gets files as arrays of byte and folders as an Index (the keys are file names and the values either “file” or “folder”). put() writes
@@ -586,13 +586,13 @@ either Jazz blocks with all the metadata (if mode == WRITE_EVERYTHING) of just t
 
 <h2 id="in-terms-of-the-jazz-server-api">In terms of the Jazz server API</h2>
 
-<p>GET <code class="language-plaintext highlighter-rouge">//file#relative_path;</code> or GET <code class="language-plaintext highlighter-rouge">//file#/absolute_path;</code> gets the files as vectors of byte and the folders as tuples where the key is
+<p>GET <code class="language-plaintext highlighter-rouge">//file&amp;relative_path;</code> or GET <code class="language-plaintext highlighter-rouge">//file&amp;/absolute_path;</code> gets the files as vectors of byte and the folders as tuples where the key is
 the file name and the value is either “file” or “folder”.</p>
 
-<p>PUT <code class="language-plaintext highlighter-rouge">//file#relative_path;</code> or PUT <code class="language-plaintext highlighter-rouge">//file#/absolute_path;</code> writes blocks (the tensor only) to file.
-PUT <code class="language-plaintext highlighter-rouge">//file#relative_path;/</code> or PUT <code class="language-plaintext highlighter-rouge">//file#/absolute_path;/</code> ignores what is sent and creates a new folder.</p>
+<p>PUT <code class="language-plaintext highlighter-rouge">//file&amp;relative_path;</code> or PUT <code class="language-plaintext highlighter-rouge">//file&amp;/absolute_path;</code> writes blocks (the tensor only) to file.
+GET <code class="language-plaintext highlighter-rouge">//file&amp;relative_path;.new</code> or GET <code class="language-plaintext highlighter-rouge">//file&amp;/absolute_path;.new</code> creates a new folder just like any <code class="language-plaintext highlighter-rouge">//base/entity.new</code> call.</p>
 
-<p>DELETE <code class="language-plaintext highlighter-rouge">//file#relative_path;</code> or DELETE <code class="language-plaintext highlighter-rouge">//file#/absolute_path;</code> deletes either a file or a folder with anything in it.</p>
+<p>DELETE <code class="language-plaintext highlighter-rouge">//file&amp;relative_path;</code> or DELETE <code class="language-plaintext highlighter-rouge">//file&amp;/absolute_path;</code> deletes either a file or a folder with anything in it.</p>
 
 <p>For more advanced control, load the files into <code class="language-plaintext highlighter-rouge">Volatile</code> or <code class="language-plaintext highlighter-rouge">Persisted</code> with an assignment call.</p>
 
@@ -614,7 +614,7 @@ PUT <code class="language-plaintext highlighter-rouge">//file#relative_path;/</c
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2021 kaalam.ai. All rights reserved. <br />
- Site last generated: Oct 6, 2021 <br />
+ Site last generated: Oct 7, 2021 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

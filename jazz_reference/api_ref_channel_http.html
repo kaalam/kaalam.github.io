@@ -577,7 +577,7 @@ calls that are intended for other nodes in a Jazz cluster. This is done at the t
 get(“///node_x//lmdb/things/this”) will forward the call to the node_x (if anything is well configured see JAZZ_NODE_NAME_.., etc.)
 and return the result just as if is was a local call. At the class level, this is done by forward_get(), forward_put() and forward_del().
 You can also send simple GET, PUT and DELETE http calls to random urls by either using the get(), put() and remove() or using the Jazz http
-server API GET “//http#https://google.com;”</p>
+server API GET “//http&amp;https://google.com;”</p>
 
 <p>The most advanced way to do it is creating a connection (similar to a “0-mq” pipeline) by put()-ing an Index to: //http/connection/a_name
 the index requires the mandatory key URL and the optional keys: CURLOPT_USERNAME, CURLOPT_USERPWD, CURLOPT_COOKIEFILE and CURLOPT_COOKIEJAR
@@ -595,7 +595,7 @@ connection parameters.</p>
 <ul>
   <li>Inside the Jazz cluster, just use the API of another node like the API of the current node. E.g., <code class="language-plaintext highlighter-rouge">///tokyo_node//lmdb/base17/key55</code> This
 will forward automatically.</li>
-  <li>For easy URL (no cookies, authorization, etc.), just use the constant form GET, PUT or DELETE to <code class="language-plaintext highlighter-rouge">//http#http://url...;</code></li>
+  <li>For easy URL (no cookies, authorization, etc.), just use the constant form GET, PUT or DELETE to <code class="language-plaintext highlighter-rouge">//http&amp;http://url...;</code></li>
   <li>For advanced control, just create the pipeline <code class="language-plaintext highlighter-rouge">my_pipe</code> programmatically and GET, PUT or DELETE to <code class="language-plaintext highlighter-rouge">//http/my_pipe/</code></li>
 </ul>
 
@@ -614,7 +614,7 @@ will forward automatically.</li>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2021 kaalam.ai. All rights reserved. <br />
- Site last generated: Oct 6, 2021 <br />
+ Site last generated: Oct 7, 2021 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

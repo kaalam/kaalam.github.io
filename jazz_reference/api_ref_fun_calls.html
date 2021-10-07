@@ -581,16 +581,18 @@ in some of the bases are managed as API function calls too.</p>
 
 <ul>
   <li><code class="language-plaintext highlighter-rouge">//0-mq/speech2text/(//lmdb/sound/voice_one)</code></li>
-  <li><code class="language-plaintext highlighter-rouge">//bash/exec/(#ls%20-la;)</code></li>
+  <li><code class="language-plaintext highlighter-rouge">//bash/exec/(&amp;ls%20-la)</code></li>
 </ul>
 
 <p><strong>Note</strong>: These calls follow the final <code class="language-plaintext highlighter-rouge">/</code> immediately, since they refer to an entity (//0-mq/speech2text or //bash/exec), not a key.</p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> In a function call (or a filter), constants are not terminated by a <code class="language-plaintext highlighter-rouge">;</code> but by the closing bracket.</div>
 
 <p>Function calls done by <code class="language-plaintext highlighter-rouge">Bebop</code> (Jazz 0.6x) do use keys:</p>
 
 <ul>
   <li><code class="language-plaintext highlighter-rouge">//core/field/opcode(//lmdb/sound/voice_one)</code></li>
-  <li><code class="language-plaintext highlighter-rouge">//core/field/opcode(#ls%20-la;)</code></li>
+  <li><code class="language-plaintext highlighter-rouge">//core/field/opcode(&amp;ls%20-la)</code></li>
 </ul>
 
 <p><br /></p>
@@ -608,7 +610,7 @@ in some of the bases are managed as API function calls too.</p>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2021 kaalam.ai. All rights reserved. <br />
- Site last generated: Oct 6, 2021 <br />
+ Site last generated: Oct 7, 2021 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

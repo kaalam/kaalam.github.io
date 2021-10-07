@@ -569,7 +569,7 @@ Blocks, which are everything (data, metadata, indices, code, etc.), and are poss
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> <b>First thing</b>: Blocks cannot allocate RAM. Only Services can. In our case, <b>Containers</b>, which are
 Services allocate RAM!</div>
 
-<p>Note that even simple operations like slicing a block as <code class="language-plaintext highlighter-rouge">/lmdb/my_table/my_block[#[1,2,3];]</code> requires converting the string <code class="language-plaintext highlighter-rouge">[1,2,3]</code> into
+<p>Note that even simple operations like slicing a block as <code class="language-plaintext highlighter-rouge">/lmdb/my_table/my_block[&amp;[1,2,3]]</code> requires converting the string <code class="language-plaintext highlighter-rouge">[1,2,3]</code> into
 a (one shot) block and using that block to select rows inside <code class="language-plaintext highlighter-rouge">/lmdb/my_table/my_block</code>, the result being another block. This block needs
 some RAM allocation and only a Container can do that.</p>
 
@@ -625,7 +625,7 @@ functions.</p>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2021 kaalam.ai. All rights reserved. <br />
- Site last generated: Oct 6, 2021 <br />
+ Site last generated: Oct 7, 2021 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>
