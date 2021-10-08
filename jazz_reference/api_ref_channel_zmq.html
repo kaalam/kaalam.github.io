@@ -572,18 +572,18 @@ shell) is accessible. This includes all protocols supported by zeroMQ and libCUR
 
 <h2 id="the-base-0-mz">The base <code class="language-plaintext highlighter-rouge">0-mz</code></h2>
 
-<p>The 0-mq implementation in jazz_elements is only a zeroMQ client, not a server. The only operation it supports is a translate() call.
-For a translate() call to succeed, you must first have created a pipeline using a put call with a string. E.g,
+<p>The 0-mq implementation in jazz_elements is only a zeroMQ client, not a server. The only operation it supports is a modify() call.
+For a modify() call to succeed, you must first have created a pipeline using a put call with a string. E.g,
 put(“//0-mq/pipeline/speech2text”) with a block containing a string like “tcp://localhost:5555” creates a pipeline named speech2text.</p>
 
 <p>Outside Jazz, you set up a zeroMQ server that listens to tcp://localhost:5555 and does speech to text, expecting, say 32-bit int vectors
-as input and returning a buffer of char as output. In your translate call you must provide a tuple with two Tensors with item names “input”
-and “result”. The translate() call will send the raw tensor of the item “input” to the server and write whatever the server answers into
+as input and returning a buffer of char as output. In your modify() call you must provide a tuple with two Tensors with item names “input”
+and “result”. The modify() call will send the raw tensor of the item “input” to the server and write whatever the server answers into
 the tensor named “result”, just overriding the tensor without any dimension change.</p>
 
 <p>This operation expects the tensor to be binary (i.e., no variable length strings) and their shapes and types known by both parts.</p>
 
-<p>When using translate() as the method of Channel, you should omit the “pipeline” part, <code class="language-plaintext highlighter-rouge">just translate(p_tuple, "//0-mq/speech2text");</code>.</p>
+<p>When using modify() as the method of Channel, you should omit the “pipeline” part, <code class="language-plaintext highlighter-rouge">just modify({"0-mq", "speech2text", ""}, p_tuple);</code>.</p>
 
 <p>Besides this, <code class="language-plaintext highlighter-rouge">get("//0-mq/pipeline/speech2text")</code> will return just a block with “tcp://localhost:5555” and
 <code class="language-plaintext highlighter-rouge">remove("//0-mq/pipeline/speech2text")</code> will destroy the pipeline. Any other call using “0-mq” returns SERVICE_ERROR_NOT_APPLICABLE.</p>
@@ -594,6 +594,11 @@ the tensor named “result”, just overriding the tensor without any dimension 
 can be anything in Persisted, Volatile, even a file or an //http get or a (%-encoded) constant as in the second example.</p>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> In a function call (or a filter), constants are not terminated by a <code class="language-plaintext highlighter-rouge">;</code> but by the closing bracket.</div>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> API-wise, this is a modify() call (instead of an exec() call) because the key is empty.</div>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Note that when you call it with a constant, it automatically creates a Tuple with a 4Kb vector of byte
+reserved for the answer. Anything longer than that will be cut off. That Tuple will be returned by the GET call.</div>
 
 <p><br /></p>
 
@@ -613,7 +618,7 @@ non-zero.</div>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2021 kaalam.ai. All rights reserved. <br />
- Site last generated: Oct 7, 2021 <br />
+ Site last generated: Oct 8, 2021 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

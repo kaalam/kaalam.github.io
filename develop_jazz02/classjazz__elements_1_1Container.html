@@ -155,8 +155,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a274ffe29a9edd7eb540d72d112429547"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bd04b424e407ed5adb59042d208de14"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a7bd04b424e407ed5adb59042d208de14">copy</a> (<a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> p_where, <a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> p_what)</td></tr>
 <tr class="separator:a7bd04b424e407ed5adb59042d208de14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a945134d7b55d40dd05f2ba573f80ec4a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a945134d7b55d40dd05f2ba573f80ec4a">translate</a> (<a class="el" href="namespacejazz__elements.html#a07b590209f1036d836732e9a3370e50e">pTuple</a> p_tuple, <a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> p_pipe)</td></tr>
-<tr class="separator:a945134d7b55d40dd05f2ba573f80ec4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a767b2e34174be2778eb009dc864567b2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a767b2e34174be2778eb009dc864567b2">exec</a> (<a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> &amp;p_txn, <a class="el" href="structjazz__elements_1_1Locator.html">Locator</a> &amp;function, <a class="el" href="namespacejazz__elements.html#a07b590209f1036d836732e9a3370e50e">pTuple</a> p_args)</td></tr>
+<tr class="separator:a767b2e34174be2778eb009dc864567b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedba8175934554cb71278d6f4ce96bf8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#aedba8175934554cb71278d6f4ce96bf8">modify</a> (<a class="el" href="structjazz__elements_1_1Locator.html">Locator</a> &amp;function, <a class="el" href="namespacejazz__elements.html#a07b590209f1036d836732e9a3370e50e">pTuple</a> p_args)</td></tr>
+<tr class="separator:aedba8175934554cb71278d6f4ce96bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21d9a9ca23de70ad5dab49411dbe9773"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a21d9a9ca23de70ad5dab49411dbe9773">as_locator</a> (<a class="el" href="structjazz__elements_1_1Locator.html">Locator</a> &amp;result, <a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> p_what)</td></tr>
 <tr class="separator:a21d9a9ca23de70ad5dab49411dbe9773"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2b5f0456aca94998df803c1342aee64"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#ad2b5f0456aca94998df803c1342aee64">get</a> (<a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> &amp;p_txn, <a class="el" href="structjazz__elements_1_1Locator.html">Locator</a> &amp;what)</td></tr>
@@ -303,7 +305,8 @@ Private Attributes</h2></td></tr>
 <ul>
 <li>Transparent thread safety .<a class="el" href="classjazz__elements_1_1Container.html#a45e76af56668d82e2adc1df39663859c">enter_read()</a> .<a class="el" href="classjazz__elements_1_1Container.html#a61d636197e1c6ccece5f1b31ddf99eee">enter_write()</a> .<a class="el" href="classjazz__elements_1_1Container.html#aed814dd5c12fed3c5f9451aa47986c9e">leave_read()</a> .<a class="el" href="classjazz__elements_1_1Container.html#a10a8f17a8d92058c0dfb0a01435501b4">leave_write()</a> .<a class="el" href="classjazz__elements_1_1Container.html#a3b00418cc5f5f425b2ac7353d5f87094">lock_container()</a> .<a class="el" href="classjazz__elements_1_1Container.html#a39e73d3ee200010809ad7c4b3540dd51">unlock_container()</a></li>
 <li>Allocation: .<a class="el" href="classjazz__elements_1_1Container.html#afd29e008d84b128940e6eab853c2aae2">new_block()</a>, .<a class="el" href="classjazz__elements_1_1Container.html#af79256b93a1f22d580a5c8eb18fa0558">destroy_transaction()</a></li>
-<li>Crud: .<a class="el" href="classjazz__elements_1_1Container.html#a9ac8fb7abc96e21587b0f2577da4ce9f">get()</a>, .<a class="el" href="classjazz__elements_1_1Container.html#ad5e83933fb04f297fb55e11ad80d3a1a">header()</a>, .<a class="el" href="classjazz__elements_1_1Container.html#adced106880ad15f1726eec86a5d00068">put()</a>, .<a class="el" href="classjazz__elements_1_1Container.html#a5376e000980d6ae51db87c6ddaae34f5">new_entity()</a>, .<a class="el" href="classjazz__elements_1_1Container.html#a274ffe29a9edd7eb540d72d112429547">remove()</a>, .<a class="el" href="classjazz__elements_1_1Container.html#a7bd04b424e407ed5adb59042d208de14">copy()</a></li>
+<li>Crud: .<a class="el" href="classjazz__elements_1_1Container.html#a9ac8fb7abc96e21587b0f2577da4ce9f">get()</a>, .<a class="el" href="classjazz__elements_1_1Container.html#a4f5694ca68cf7ce0677f99af0cdcddf6">locate()</a>, .<a class="el" href="classjazz__elements_1_1Container.html#ad5e83933fb04f297fb55e11ad80d3a1a">header()</a>, .<a class="el" href="classjazz__elements_1_1Container.html#a5376e000980d6ae51db87c6ddaae34f5">new_entity()</a>, .<a class="el" href="classjazz__elements_1_1Container.html#adced106880ad15f1726eec86a5d00068">put()</a>, .<a class="el" href="classjazz__elements_1_1Container.html#a274ffe29a9edd7eb540d72d112429547">remove()</a>, .<a class="el" href="classjazz__elements_1_1Container.html#a7bd04b424e407ed5adb59042d208de14">copy()</a></li>
+<li>Code execution: .<a class="el" href="classjazz__elements_1_1Container.html#a767b2e34174be2778eb009dc864567b2">exec()</a> and .<a class="el" href="classjazz__elements_1_1Container.html#aedba8175934554cb71278d6f4ce96bf8">modify()</a></li>
 <li>Support for container names in the API .<a class="el" href="classjazz__elements_1_1Container.html#a94a9f090fc004a0eddfce10a8cd150de">base_names()</a></li>
 <li>A configuration style for all descendants</li>
 </ul>
@@ -1547,8 +1550,8 @@ destroy_transaction(tx);" without the <a class="el" href="classjazz__elements_1_
 
 </div>
 </div>
-<a id="a945134d7b55d40dd05f2ba573f80ec4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a945134d7b55d40dd05f2ba573f80ec4a">&#9670;&nbsp;</a></span>translate()</h2>
+<a id="a767b2e34174be2778eb009dc864567b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a767b2e34174be2778eb009dc864567b2">&#9670;&nbsp;</a></span>exec()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1557,16 +1560,22 @@ destroy_transaction(tx);" without the <a class="el" href="classjazz__elements_1_
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> jazz_elements::Container::translate </td>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> jazz_elements::Container::exec </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a07b590209f1036d836732e9a3370e50e">pTuple</a>&#160;</td>
-          <td class="paramname"><em>p_tuple</em>, </td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_txn</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a>&#160;</td>
-          <td class="paramname"><em>p_pipe</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="structjazz__elements_1_1Locator.html">Locator</a> &amp;&#160;</td>
+          <td class="paramname"><em>function</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a07b590209f1036d836732e9a3370e50e">pTuple</a>&#160;</td>
+          <td class="paramname"><em>p_args</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1580,18 +1589,67 @@ destroy_transaction(tx);" without the <a class="el" href="classjazz__elements_1_
   </tr>
 </table>
 </div><div class="memdoc">
-<p>"Easy" interface for <b><a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz Block with multiple Tensors.">Tuple</a> translate</b>: In <a class="el" href="namespacejazz__elements.html" title="The namespace for Jazz Utils, Blocks, Kinds, Tuples, Containers, etc.">jazz_elements</a>, this is only implemented in <a class="el" href="classjazz__elements_1_1Channels.html" title="Channels: A Container doing block transactions across media (files, folders, shell,...">Channels</a>.</p>
+<p>The function call interface for <b>exec</b>: Execute an opcode in a formal field.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">p_tuple</td><td>A <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz Block with multiple Tensors.">Tuple</a> with two items, "input" with the data passed to the service and "result" with the data returned. the result will be overridden in-place without any allocation. </td></tr>
-    <tr><td class="paramname">p_pipe</td><td>Some <b>service</b> does some computation on "input" and returns "result".</td></tr>
+    <tr><td class="paramname">p_txn</td><td>A pointer to a <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> passed by reference. If successful, the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> will return a pointer to a <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> inside the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>. </td></tr>
+    <tr><td class="paramname">function</td><td>Some description of a service. In general base/entity/key. In <a class="el" href="classjazz__elements_1_1Channels.html" title="Channels: A Container doing block transactions across media (files, folders, shell,...">Channels</a> the key must be empty and the entity is the pipeline. In Bebop, the key is the opcode and the entity, the field, In Agents, the entity is a context. </td></tr>
+    <tr><td class="paramname">p_args</td><td>A <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz Block with multiple Tensors.">Tuple</a> passed as argument to the call that is not modified. This may be a pure function in Bebop or have context in Agency.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR on success (and a valid p_txn), or some negative value (error).</dd></dl>
+<p>Usage-wise, this is equivalent to a <a class="el" href="classjazz__elements_1_1Container.html#afd29e008d84b128940e6eab853c2aae2">new_block()</a> call. On success, it will return a <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> that belongs to the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> and must be <a class="el" href="classjazz__elements_1_1Container.html#af79256b93a1f22d580a5c8eb18fa0558">destroy_transaction()</a>-ed when the caller is done. </p>
+
+<p>Reimplemented in <a class="el" href="classjazz__agency_1_1Agency.html#a6e16aa71c7f2085996185d24298aa6a0">jazz_agency::Agency</a>, and <a class="el" href="classjazz__bebop_1_1Bebop.html#aadfeff9c31a09c5249c73ee344cff1b8">jazz_bebop::Bebop</a>.</p>
+
+</div>
+</div>
+<a id="aedba8175934554cb71278d6f4ce96bf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedba8175934554cb71278d6f4ce96bf8">&#9670;&nbsp;</a></span>modify()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> jazz_elements::Container::modify </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structjazz__elements_1_1Locator.html">Locator</a> &amp;&#160;</td>
+          <td class="paramname"><em>function</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a07b590209f1036d836732e9a3370e50e">pTuple</a>&#160;</td>
+          <td class="paramname"><em>p_args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The function call interface for <b>modify</b>: In <a class="el" href="namespacejazz__elements.html" title="The namespace for Jazz Utils, Blocks, Kinds, Tuples, Containers, etc.">jazz_elements</a>, this is only implemented in <a class="el" href="classjazz__elements_1_1Channels.html" title="Channels: A Container doing block transactions across media (files, folders, shell,...">Channels</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">function</td><td>Some description of a service. In general base/entity/key. In <a class="el" href="classjazz__elements_1_1Channels.html" title="Channels: A Container doing block transactions across media (files, folders, shell,...">Channels</a> the key must be empty and the entity is the pipeline. In Bebop, the key is the opcode and the entity, the field, In Agents, the entity is a context. </td></tr>
+    <tr><td class="paramname">p_args</td><td>In <a class="el" href="classjazz__elements_1_1Channels.html" title="Channels: A Container doing block transactions across media (files, folders, shell,...">Channels</a>: A <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz Block with multiple Tensors.">Tuple</a> with two items, "input" with the data passed to the service and "result" with the data returned. The result will be overridden in-place without any allocation.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR on success or some negative value (error).</dd></dl>
-<p>This is what most frameworks would call predict(), something that takes any tensor as an input and returns another tensor. In channels, it just gives support to some other service doing that connected via zeroMQ or bash. Outside <a class="el" href="namespacejazz__elements.html" title="The namespace for Jazz Utils, Blocks, Kinds, Tuples, Containers, etc.">jazz_elements</a>, the services use this to run their own models. </p>
+<p><a class="el" href="classjazz__elements_1_1Container.html#aedba8175934554cb71278d6f4ce96bf8">modify()</a> is similar to <a class="el" href="classjazz__elements_1_1Container.html#a767b2e34174be2778eb009dc864567b2">exec()</a>, but, rather than creating a new block with the result, it modifies the <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz Block with multiple Tensors.">Tuple</a> p_args. </p>
 
-<p>Reimplemented in <a class="el" href="classjazz__elements_1_1Channels.html#a889b8aa584d75ef0ae6bdbce0c4bdda0">jazz_elements::Channels</a>.</p>
+<p>Reimplemented in <a class="el" href="classjazz__elements_1_1Channels.html#a3760f16d25f0867c43114c91064e8ca6">jazz_elements::Channels</a>, <a class="el" href="classjazz__agency_1_1Agency.html#a1b42a869b3ab0433360c0ba9f247361e">jazz_agency::Agency</a>, and <a class="el" href="classjazz__bebop_1_1Bebop.html#ac8185c161c89f28223e0550b42504654">jazz_bebop::Bebop</a>.</p>
 
 </div>
 </div>

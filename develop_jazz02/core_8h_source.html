@@ -144,17 +144,20 @@ $(function() {
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <a class="code" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> start();</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <a class="code" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> shut_down();</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <a class="code" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> call(<a class="code" href="structjazz__elements_1_1Transaction.html">pTransaction</a> &amp;p_txn,</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                        <a class="code" href="structjazz__elements_1_1Locator.html">Locator</a>       <span class="keyword">function</span>,</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                        <a class="code" href="classjazz__elements_1_1Tuple.html">pTuple</a>        args);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;};</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;} <span class="comment">// namespace jazz_bebop</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif // ifndef INCLUDED_JAZZ_BEBOP_CORE</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="comment">// The function call interface: exec()/modify().</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> exec  (<a class="code" href="structjazz__elements_1_1Transaction.html">pTransaction</a> &amp;p_txn,</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                  <a class="code" href="structjazz__elements_1_1Locator.html">Locator</a>      &amp;<span class="keyword">function</span>,</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                                  <a class="code" href="classjazz__elements_1_1Tuple.html">pTuple</a>        p_args);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> modify(<a class="code" href="structjazz__elements_1_1Locator.html">Locator</a>      &amp;<span class="keyword">function</span>,</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                                  <a class="code" href="classjazz__elements_1_1Tuple.html">pTuple</a>        p_args);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;};</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;} <span class="comment">// namespace jazz_bebop</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#endif // ifndef INCLUDED_JAZZ_BEBOP_CORE</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassjazz__elements_1_1Logger_html"><div class="ttname"><a href="classjazz__elements_1_1Logger.html">jazz_elements::Logger</a></div><div class="ttdoc">A simple logger.</div><div class="ttdef"><b>Definition:</b> utils.h:242</div></div>
-<div class="ttc" id="aclassjazz__elements_1_1Container_html"><div class="ttname"><a href="classjazz__elements_1_1Container.html">jazz_elements::Container</a></div><div class="ttdoc">Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...</div><div class="ttdef"><b>Definition:</b> container.h:266</div></div>
+<div class="ttc" id="aclassjazz__elements_1_1Container_html"><div class="ttname"><a href="classjazz__elements_1_1Container.html">jazz_elements::Container</a></div><div class="ttdoc">Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...</div><div class="ttdef"><b>Definition:</b> container.h:267</div></div>
 <div class="ttc" id="aclassjazz__bebop_1_1Bebop_html"><div class="ttname"><a href="classjazz__bebop_1_1Bebop.html">jazz_bebop::Bebop</a></div><div class="ttdoc">Bebop: A Service to manage running cores and code bases.</div><div class="ttdef"><b>Definition:</b> core.h:73</div></div>
 <div class="ttc" id="astructjazz__elements_1_1Locator_html"><div class="ttname"><a href="structjazz__elements_1_1Locator.html">jazz_elements::Locator</a></div><div class="ttdoc">Locator: A minimal structure to define the location of resources inside a Container.</div><div class="ttdef"><b>Definition:</b> container.h:176</div></div>
 <div class="ttc" id="astructjazz__elements_1_1Transaction_html"><div class="ttname"><a href="structjazz__elements_1_1Transaction.html">jazz_elements::Transaction</a></div><div class="ttdoc">Transaction: A wrapper over a Block that defines the communication of a block with a Container.</div><div class="ttdef"><b>Definition:</b> container.h:154</div></div>
