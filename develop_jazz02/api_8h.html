@@ -107,6 +107,18 @@ Macros</h2></td></tr>
 <tr class="memitem:a4e074a73c4dc395c2e3b58a050146922"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a4e074a73c4dc395c2e3b58a050146922">MAX_RECURSE_LEVEL_ON_STATICS</a>&#160;&#160;&#160;16</td></tr>
 <tr class="memdesc:a4e074a73c4dc395c2e3b58a050146922"><td class="mdescLeft">&#160;</td><td class="mdescRight">The max directory recursion depth for load_statics()  <a href="api_8h.html#a4e074a73c4dc395c2e3b58a050146922">More...</a><br /></td></tr>
 <tr class="separator:a4e074a73c4dc395c2e3b58a050146922"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b89da90303d95ce654b7ad8a05daac9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a4b89da90303d95ce654b7ad8a05daac9">RESULT_BUFFER_SIZE</a>&#160;&#160;&#160;4096</td></tr>
+<tr class="memdesc:a4b89da90303d95ce654b7ad8a05daac9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The "result" item size in a Tuple used in a modify() call.  <a href="api_8h.html#a4b89da90303d95ce654b7ad8a05daac9">More...</a><br /></td></tr>
+<tr class="separator:a4b89da90303d95ce654b7ad8a05daac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88be0d2515b5e7f1b9291d43e5dc8b69"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a88be0d2515b5e7f1b9291d43e5dc8b69">RET_MV_CONST_FAILED</a>&#160;&#160;&#160;-1</td></tr>
+<tr class="memdesc:a88be0d2515b5e7f1b9291d43e5dc8b69"><td class="mdescLeft">&#160;</td><td class="mdescRight">return value for move_const() failed.  <a href="api_8h.html#a88be0d2515b5e7f1b9291d43e5dc8b69">More...</a><br /></td></tr>
+<tr class="separator:a88be0d2515b5e7f1b9291d43e5dc8b69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1540966691abba44defbab59629d4ddf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#a1540966691abba44defbab59629d4ddf">RET_MV_CONST_NOTHING</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:a1540966691abba44defbab59629d4ddf"><td class="mdescLeft">&#160;</td><td class="mdescRight">return value for move_const() normal moving.  <a href="api_8h.html#a1540966691abba44defbab59629d4ddf">More...</a><br /></td></tr>
+<tr class="separator:a1540966691abba44defbab59629d4ddf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac262f14f53fe40c87ab6bcb04cddae11"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#ac262f14f53fe40c87ab6bcb04cddae11">RET_MV_CONST_NEW_ENTITY</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:ac262f14f53fe40c87ab6bcb04cddae11"><td class="mdescLeft">&#160;</td><td class="mdescRight">return value for move_const() there is a ";.new" ending, otherwise parses ok.  <a href="api_8h.html#ac262f14f53fe40c87ab6bcb04cddae11">More...</a><br /></td></tr>
+<tr class="separator:ac262f14f53fe40c87ab6bcb04cddae11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -174,6 +186,70 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The max directory recursion depth for load_statics() </p>
+
+</div>
+</div>
+<a id="a4b89da90303d95ce654b7ad8a05daac9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b89da90303d95ce654b7ad8a05daac9">&#9670;&nbsp;</a></span>RESULT_BUFFER_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RESULT_BUFFER_SIZE&#160;&#160;&#160;4096</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The "result" item size in a Tuple used in a modify() call. </p>
+
+</div>
+</div>
+<a id="a88be0d2515b5e7f1b9291d43e5dc8b69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88be0d2515b5e7f1b9291d43e5dc8b69">&#9670;&nbsp;</a></span>RET_MV_CONST_FAILED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RET_MV_CONST_FAILED&#160;&#160;&#160;-1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>return value for move_const() failed. </p>
+
+</div>
+</div>
+<a id="a1540966691abba44defbab59629d4ddf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1540966691abba44defbab59629d4ddf">&#9670;&nbsp;</a></span>RET_MV_CONST_NOTHING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RET_MV_CONST_NOTHING&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>return value for move_const() normal moving. </p>
+
+</div>
+</div>
+<a id="ac262f14f53fe40c87ab6bcb04cddae11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac262f14f53fe40c87ab6bcb04cddae11">&#9670;&nbsp;</a></span>RET_MV_CONST_NEW_ENTITY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RET_MV_CONST_NEW_ENTITY&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>return value for move_const() there is a ";.new" ending, otherwise parses ok. </p>
 
 </div>
 </div>
