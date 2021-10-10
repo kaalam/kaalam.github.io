@@ -43,7 +43,6 @@
 
 		<li><a href="/jazz_reference/">User's Manual</a></li>
 		<li><a href="/develop/">Developer's Reference</a></li>
-		<li><a href="/rjazz/">R client Reference</a></li>
 	</ul>
 </nav>
  
@@ -77,19 +76,14 @@ software. They combine highly optimized low level CPU and GPU software with high
 of it. This allows AI researchers to try new ideas and publish results every day.</p>
 <p><b>Meanwhile, in the same planet ... </b> Most important AI researchers, <i>we just name three to avoid digressing</i>, agree that we still
 need drastic changes before we can solve problems such as common sense reasoning and many more. Humans can solve these tasks even as kids.</p>
-<blockquote><b>Geoffrey Hinton</b>: "'Science progresses one funeral at a time.' The future depends on some graduate student who is deeply
-suspicious of everything I have said."</blockquote>
 </div>
 <div class="6u$ 12u$(small)">
+<blockquote><b>Geoffrey Hinton</b>: "'Science progresses one funeral at a time.' The future depends on some graduate student who is deeply
+suspicious of everything I have said."</blockquote>
 <blockquote><b>Yoshua Bengio</b>: "Engineers and companies will continue to tune getting slight progress. That's not going to be nearly
 enough. We need some fairly drastic changes in the way that we are considering learning."</blockquote>
 <blockquote><b>François Chollet</b>: "For all the progress made, it seems like almost all important questions in AI remain unanswered. Many
 have not even been properly asked yet."</blockquote>
-<h3>Our only intention making this point</h3>
-<div class="box">
-<p>We obviously don't know how to solve common sense reasoning, our point is: <b>nobody does</b>, which is relevant as we continue
-explaining.</p>
-</div>
 </div>
 </div>
 
@@ -102,21 +96,22 @@ we as humans coded the solutions to the problems, that's <b>GOFAI</b> (Good Old 
 to end-to-end optimization. Now, data makes the difference, and the machine creates the model using <b>deep learning</b>."</i> Many even
 state that, today, major AI players can only be the data owners.</p>
 
-<p>The least important thing is how this argument is unfair to all the researchers and achievements AI produced for over sixty years
-~1950-2013 and that some of these achievements were truly game changing. We just all got used to taking them for granted. That's what AI has
-always been about: the <b>next problem</b>.</p>
+<p>The least important thing is how this argument is deeply misconstrued and unfair to all the researchers and achievements AI produced
+for over sixty years ~1950-2013, even if some of these achievements were truly game changing. We all got used to take them for granted.
+That's what AI has always been about: the <b>next problem</b>.</p>
 </div>
 <div class="6u$ 12u$(small)">
 <p>The important thing is that even in the fields in which <b>DL</b> (Deep Learning) produced major advances, as in <b>computer go</b> this
 vision is partial to the point of not being true. <b>AlphaGo</b>, the program that won against Lee Sedol, the best player in the world, is
 a mix of Monte-Carlo Tree Search and DL. Without the DL it is still stronger than almost the whole human population and as strong as the
 best professionals in 9x9. With only the DL and no search, it just sucks. It becomes a player that plays strong and elegant moves, but does
-not understand <b>why</b> or <b>when</b> they should be played. It is like a person trying to fake being a physicist by repeating random
-phrases taken from academic papers in physics.</p>
+not understand <b>why</b> or <b>when</b> they should be played. It is like a person trying to pretend being a physicist by repeating random
+phrases taken from academic papers in physics. Being good at <b>predicting the moves of a master</b> is not the same as <b>mastering the
+game</b>.</p>
 
 <div class="box">
-<p>Our point being: <b>deep learning</b> is great, but hard problems require more than just DL. You may be thinking: <i>"I can do these other
-things on top of current platforms easily."</i> Well, easily, maybe, but <b>not efficiently</b> as we are about to explain.</p>
+<p><b>Deep learning</b> is great, but hard problems require more than just DL. You may be think: <i>"I can do other things with current
+platforms easily."</i> Well, easily, maybe, but <b>not efficiently</b> which is our point.</p>
 </div>
 </div>
 </div>
@@ -167,55 +162,33 @@ digression.</p>
 </div>
 </div>
 
-<h2 id="content">How we optimize software</h2><p>
+<h2 id="content">So, how is the "perfect world" of AI broken?</h2><p>
 <div class="row">
 <div class="6u 12u$(small)">
-<h3>What is a profiler?</h3>
-<p>Sorry for introducing a technicality, but it is necessary. A computer program is made of smaller parts. Simplifying, we call these
-parts <b>functions</b>. What a <b>profiler</b> does, is interrupt a program millions of times, registers the name of the function that
-was interrupted and lets the program carry on. This way, it builds a map of how much time is spent in each function. This is used to
-know what is worth optimizing. If a function only runs 1/10000 of the time, who would want to optimize that? Even if you made it ten times
-faster, the difference would not be noticeable.</p>
-<p>This way, when what runs <b>most of the time</b> is highly optimized, we are living in the <b>perfect world</b>. That is at least true
-<b>outside AI</b>.</p>
-<p>When we look at a running AI system, <b>it looks</b> pretty well optimized. Most of the processing time is spent by efficiently computing
-neural networks with highly optimized code and much less is spent in the "application logic" that is expressed in "higher level" languages.</p>
-<h3>So, how is the "perfect world" model for AI broken?</h3>
-<p>It is broken in different ways.</p>
+
+<h3>It is broken in different ways:</h3>
 <ul>
-	<li>Current platforms are only near optimal <b>in one direction</b>. If we add something like tree search, it can take 1000 times more
-in a high level language than it takes in a lower level one. Suddenly, the profiler shows the pattern exactly upside down.</li>
+	<li>Current platforms are only near optimal <b>in one direction</b>. Computing billions of similar operations (neural networks)
+very fast fitting a design that is in most cases fixed. If we put the complexity at the bottom, like "each word in a language has its
+own definition", the whole idea doesn't work anymore. GPUs become useless to speed up. Remember, a GPU is not a CPU with more
+cores, it imposes an orchestrated execution model.</li>
 	<li>Even when we compute "just neural networks", its efficiency depends on us <b>pushing rectangles into other rectangles</b>.
-We stack fully connected layers without considering alternatives.</li>
-	<li>Current platforms do not have efficient mechanisms to try ideas on <b>"just a few cases"</b>. You can, of course, build smaller data
-sets to explore ideas. But some hypotheses such as <i>"An elephant is heavier than an ant."</i> inherently require less cases to be verified
-than others like <i>"Martian gravity influences athletic records."</i>. This is not minor, learning is precisely about verifying
-hypotheses.</li>
+I.e., stacking fully connected layers without considering alternatives. There is ongoing research in <b>sparsity</b>, which was not
+considered three years ago. It is usually applied to compress models, sometimes by 90% with almost no performance loss, <b>after
+training</b>, GPUs and sparsity don't go along well!</li>
 </ul>
 </div>
 <div class="6u$ 12u$(small)">
 <ul>
-	<li>And, less easy to explain without getting technical, besides data processing, we need <b>data storing</b> and <b>web serving</b>,
-especially since data is big and needs to be computed across multiple computers. The current trend is to do these things as separate
-processes. Not because it is the fastest way, it is not. We don't want to discuss about inter-process barriers or communication overhead,
-neither disrespect the arguments of the architects that prefer many processes. As in the design of the Linux kernel, making it monolithic
-was just an option. <b>Our point</b>: A single process has advantages we will discuss and is faster.</li>
+	<li>Current platforms do not have efficient mechanisms to try ideas on <b>"just a few cases"</b>. You can, of course, build smaller data
+sets to explore ideas. Some hypotheses such as <i>"An elephant is heavier than an ant."</i> inherently require less cases to be verified
+than others like <i>"Martian gravity influences athletic records."</i>, Statisticians call that <b>effect size</b>. This is not minor,
+setting up even small models on these platforms has a high computational cost (many orders of magnitude compared to some evaluations on
+already loaded data). There is no easy way around it, large corporations simply throw in as much computation as they can (millions of
+dollars in computing). This has reached the point that some researchers believe AI research is about budget. And they are right in a way,
+at least when you are trying to do the same thing others are doing and your only distinction is having less resources, <b>not a good
+strategy!</b></li>
 </ul>
-<h3>Converging to a solution vs. "just doing it"</h3>
-<p>If you hear the phrase <b>"Turing complete"</b> applied to any system, it means the system can compute anything. There is a remarkable
-theoretical framework called the <b>"Church-Turing Thesis"</b> that states (simplifying) that all Turing complete systems are equivalent.
-This is a solid foundation for AI: if the brain can do it, a computer can, since both are Turing complete.</p>
-<blockquote>
-There is a lot of excitement about neural networks being Turing complete (except in trivial cases) since it should mean: <b>we don't need
-anything else</b> to do AI.
-</blockquote>
-<p>Actually, we do, at least if we want it <b>before the sun burns out</b>.</p>
-<p>You can read arguments on Twitter going like: <i>"Well, actually, this is more right than you think: A multiplication *is* a convolution
-of one multi-digit number by another one over the digit dimension. Think about it."</i> by none other than <b>Yann LeCun</b>.</p>
-<p>But, when we need a multiplication, we can choose: A <b>CPU</b> doing hundreds of millions per core per second with 0% error in 20 digit
-precision or a <b>neural network</b> doing 100 per second after three days of training in 3 digit precision with a 2% error rate. (The
-former is just average performance of devices costing $10, the latter a generous estimation without even mentioning its cost.)</p>
-
 </div>
 </div>
 
@@ -243,20 +216,16 @@ updated data in consistent ways, are things that add value and <b>simplify data 
 <h2 id="content">Putting it all together</h2><p>
 <div class="row">
 <div class="6u 12u$(small)">
-<p>We pinpoint seven opportunities to build better data platforms for all of us. And we discuss how <b>Jazz</b>
+<p>We <b>identified five opportunities for improvement</b> over current platforms for all of us. And we discuss how <b>Jazz</b>
 addresses them in:
 
 <ul class="actions vertical small">
 	<li><a href="/kaalam/2018/10/01/how_is_jazz_a_solution.html" class="button small">How is Jazz a solution?</a></li>
 </ul></p>
 <blockquote>
-Always keep in mind that nobody knows what AI needs to succeed, but we do know a lot about building data driven solutions. The platform
-should ideally help <b>experimentation</b> while providing <b>technology to build data engines in production environments</b>.
+Nobody knows what AI needs to become <b>True AI</b>, but we do know a lot about building data solutions. The platform should ideally
+help <b>experimentation</b> while providing <b>technology to build data engines in production environments</b>.
 </blockquote>
-
-<div class="box">
-<p>The seven points are <b>identified opportunities for improvement</b> over current platforms.</p>
-</div>
 
 </div>
 <div class="6u$ 12u$(small)">
@@ -264,10 +233,8 @@ should ideally help <b>experimentation</b> while providing <b>technology to buil
 	<li>The efficiency of current systems is broken, unless all you need is pushing <b>rectangles</b> into other rectangles.</li>
 	<li>Current platforms can sometimes be more a hindrance than a help in the exploration of <b>new ideas</b>.</li>
 	<li>Current solutions are not giving any thought (at platform level) to efficient <b>quick exploration</b>.</li>
-	<li>Using <b>external processes</b> for creating REST APIs, storing data or computing with interpreters isn't the fastest choice.</li>
-	<li>Using CPU/GPU to do neural networks while <b>expecting neural networks to do what the CPU does</b> is broken.</li>
-	<li><b>Scripting languages</b> are great for exploration. In production, they are slow, memory hungry and challenge architecture.</li>
 	<li>Working with different kinds of <b>data files</b> and <b>services</b> is tedious and error prone.</li>
+	<li><b>EXTRA!</b> We have to build platforms with <b>code generation</b> and <b>lifelong learning</b> in mind.</li>
 </ol>
 </div>
 </div>
