@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Api Reference for the base "file" inside the container Channels">
+<meta name="description" content="Understanding and specifying how blocks have to be serialized and deserialized">
 <meta name="keywords" content=" ">
-<title>API reference - Channel base file | Jazz User's Manual</title>
+<title>API reference - Block serialization calls | Jazz User's Manual</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -324,7 +324,7 @@
           
           
           
-          <li><a href="api_ref_serialization.html">API reference - Block serialization calls</a></li>
+          <li class="active"><a href="api_ref_serialization.html">API reference - Block serialization calls</a></li>
           
           
           
@@ -366,7 +366,7 @@
           
           
           
-          <li class="active"><a href="api_ref_channel_file.html">API reference - Channel base file</a></li>
+          <li><a href="api_ref_channel_file.html">API reference - Channel base file</a></li>
           
           
           
@@ -520,7 +520,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">API reference - Channel base file</h1>
+   <h1 class="post-title-main">API reference - Block serialization calls</h1>
 </div>
 
 
@@ -528,7 +528,7 @@
 <div class="post-content">
 
    
-    <div class="summary">Api Reference for the base "file" inside the container Channels</div>
+    <div class="summary">Understanding and specifying how blocks have to be serialized and deserialized</div>
    
 
     
@@ -562,47 +562,47 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <h2 id="the-container-channels">The Container <code class="language-plaintext highlighter-rouge">Channels</code></h2>
+  <h2 id="what-is-serialization-and-deserialization">What is serialization and deserialization</h2>
 
-<p><code class="language-plaintext highlighter-rouge">Channels</code> is a container doing block transactions across media (files, folders, the bash shell, http urls and zeroMQ servers). This
-includes keeping a cluster of Jazz nodes as a whole where every node is aware of all the others and queries can be forwarded by just
-including the node name. Any imaginable communication channel, including writing files and pushing them to github (using git in the bash
-shell) is accessible. This includes all protocols supported by zeroMQ and libCURL.</p>
+<p>In Jazz, all blocks are binary movable objects: A tensor of double is literally a grid of 8-byte values in a format directly understood
+by the CPU, a tuple has metadata and tensors that are binary too. Some formats are easier to interpret “as text” than others. A vector
+of byte is the closest thing to a 0-ended C string, and a vector (of possibly just one) string resembles the string types of higher
+level languages.</p>
 
-<ul>
-  <li>See C++ ref <a href="/develop_jazz02/classjazz__elements_1_1Channels.html">Channels</a></li>
-</ul>
+<p>Except for software designed to understand the internals of Jazz (C++ code that uses jazz_elements) or among Jazz servers sharing data
+in a cluster, you will probably want to manage data as text in a format that is similar to JSON and is described
+<a href="api_ref_const_encoding.html">here</a> The exception to this is using blocks that are either strings (stored as a vector of one string) or
+vectors of byte (E.g., a file read). Occasionally, when you read a vector of byte that should be a string, it will have a trailing 0
+that you can remove doing something like <code class="language-plaintext highlighter-rouge">s = a.text[:-1]</code> in Python assuming <code class="language-plaintext highlighter-rouge">a = requests.get(...)</code>.</p>
 
-<h2 id="the-base-file">The base <code class="language-plaintext highlighter-rouge">file</code></h2>
+<h2 id="how-does-implicit-deserialization-work">How does implicit deserialization work?</h2>
 
-<p>This read/writes/deletes to the filesystem. Since the API does not use locators, there is no hardcoded name restriction. Via the http
-server, just use the URL (&amp;…;). Remember to %-encode whatever http expects to be encoded. E.g., get(“//file/&amp;whatever%20you%20want;”).
-Note that “//file/” is a mandatory prefix, therefore “//file/aa” is “aa” and //file//aa” is “/aa”.</p>
+<p>Each time Jazz reads a constant via the http API, it will try to deserialize it. E.g., GET
+<code class="language-plaintext highlighter-rouge">//lmdb/base/key=("weights":[[17,170],[112,54],[207,149]],"author":["Billy"],"score":[0.95])</code> will write a Tuple with item names, types,
+shapes and data. But GET <code class="language-plaintext highlighter-rouge">//lmdb/base/key=(weights:[[17,170],[112,54],[207,149]],"author":["Billy"],"score":[0.95])</code> (note the missing
+double quotes) will write a vector of bytes ended with a final 0, just because parsing the tuple failed.</p>
 
-<p>get() gets files as arrays of byte and folders as an Index (the keys are file names and the values either “file” or “folder”). put() writes
-either Jazz blocks with all the metadata (if mode == WRITE_EVERYTHING) of just the content of the tensor (if mode == WRITE_TENSOR_DATA).</p>
+<p>Note that PUT <code class="language-plaintext highlighter-rouge">//lmdb/base/key</code> sending <code class="language-plaintext highlighter-rouge">("weights":[[17,170],[112,54],[207,149]],"author":["Billy"],"score":[0.95])</code> will store it
+as a string (technically, a vector of just one string). In this case it is <strong>not</strong> a constant, it is the content of a block and the
+previous paragraph does not apply.</p>
 
-<p>WRITE_ONLY_IF_EXISTS and WRITE_ONLY_IF_NOT_EXISTS work as expected. remove() deletes whatever matches the path either a file or a folder
-(with anything inside it).</p>
+<h2 id="how-does-explicit-serialization-and-deserialization-work">How does explicit serialization and deserialization work?</h2>
 
-<p>new_entity() creates a new folder.</p>
+<p>You can add the suffix <code class="language-plaintext highlighter-rouge">.raw</code> to the query to deserialize or <code class="language-plaintext highlighter-rouge">.text</code> to serialize. In the example of the previous paragraph where the block
+has a Tuple, you can serialize it with GET <code class="language-plaintext highlighter-rouge">//lmdb/base/key.text</code> and you will get the text serialization rather than the raw data.</p>
 
-<h2 id="in-terms-of-the-jazz-server-api">In terms of the Jazz server API</h2>
+<p>In the previous PUT example, where implicit deserialization does not apply, you can force it with <code class="language-plaintext highlighter-rouge">//lmdb/base/key.raw</code> sending
+<code class="language-plaintext highlighter-rouge">("weights":[[17,170],[112,54],[207,149]],"author":["Billy"],"score":[0.95])</code>.</p>
 
-<p>GET <code class="language-plaintext highlighter-rouge">//file&amp;relative_path;</code> or GET <code class="language-plaintext highlighter-rouge">//file&amp;/absolute_path;</code> gets the files as vectors of byte and the folders as tuples where the key is
-the file name and the value is either “file” or “folder”.</p>
+<h2 id="how-can-i-combine-deserialization-with-other-incompatible-features">How can I combine deserialization with other incompatible features?</h2>
 
-<p>PUT <code class="language-plaintext highlighter-rouge">//file&amp;relative_path;</code> or PUT <code class="language-plaintext highlighter-rouge">//file&amp;/absolute_path;</code> writes blocks (the tensor only) to file.
-GET <code class="language-plaintext highlighter-rouge">//file&amp;relative_path;.new</code> or GET <code class="language-plaintext highlighter-rouge">//file&amp;/absolute_path;.new</code> creates a new folder just like any <code class="language-plaintext highlighter-rouge">//base/entity.new</code> call.</p>
-
-<p>DELETE <code class="language-plaintext highlighter-rouge">//file&amp;relative_path;</code> or DELETE <code class="language-plaintext highlighter-rouge">//file&amp;/absolute_path;</code> deletes either a file or a folder with anything in it.</p>
-
-<p>For more advanced control, load the files into <code class="language-plaintext highlighter-rouge">Volatile</code> or <code class="language-plaintext highlighter-rouge">Persisted</code> with an assignment call.</p>
+<p>If the API does not support both, E.g. you can either <code class="language-plaintext highlighter-rouge">//lmdb/base/key.text</code> or <code class="language-plaintext highlighter-rouge">//lmdb/base/key[@[3,5]]</code> but
+not <code class="language-plaintext highlighter-rouge">//lmdb/base/key[@[3,5]].text</code>. You may need to create an intermediate volatile block. Assuming you created a deque named <code class="language-plaintext highlighter-rouge">my_stack</code>,
+you can GET <code class="language-plaintext highlighter-rouge">//deque/m_stack/~push=//lmdb/base/key[@[3,5]]</code> and GET <code class="language-plaintext highlighter-rouge">//deque/m_stack/~plast.text</code>. Note that you have created a volatile
+block in the deque (giving it a new name automatically using the <code class="language-plaintext highlighter-rouge">~push</code> command to avoid possibly replacing an existing block) and then,
+you have <strong>deleted</strong> it as you read it (<code class="language-plaintext highlighter-rouge">~last</code> would have read it without deleting it, <code class="language-plaintext highlighter-rouge">~plast</code> stands for pop last).</p>
 
 <p><br /></p>
-
-<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> file operation must be enabled via configuration by setting ENABLE_FILE_LEVEL to 0 (disable everything),
-1 (just read), 2 (cannot override == no remove and WRITE_ONLY_IF_NOT_EXISTS) or 3 (enable everything).</div>
 
 
 
