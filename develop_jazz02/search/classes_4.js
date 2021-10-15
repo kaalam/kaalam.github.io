@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['filtersize_752',['FilterSize',['../structjazz__elements_1_1FilterSize.html',1,'jazz_elements']]]
+  ['filtersize_760',['FilterSize',['../structjazz__elements_1_1FilterSize.html',1,'jazz_elements']]]
 ];

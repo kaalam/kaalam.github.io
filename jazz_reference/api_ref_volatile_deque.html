@@ -586,9 +586,9 @@ The first and last can be peeked by get()ting <code class="language-plaintext hi
 <code class="language-plaintext highlighter-rouge">//deque/entity/key~prev</code> for get(), header() and locate() or as the what of copy(), but not for put(), remove() or as the where of
 copy().</p>
 
-<p>You can also PUT a block into a deque without giving it a name by putting to <code class="language-plaintext highlighter-rouge">//deque/entity/~push</code>. The container will give it a new
-name automatically. This way you avoid finding a name that does not match existing blocks in the deque. You can use <code class="language-plaintext highlighter-rouge">~push</code> and <code class="language-plaintext highlighter-rouge">~plast</code>
-combined to use the deque just as a LIFO stack or <code class="language-plaintext highlighter-rouge">~push</code> and <code class="language-plaintext highlighter-rouge">~pfirst</code> as a FIFO queue.</p>
+<p>You can also PUT a block into a deque without giving it a name by putting to <code class="language-plaintext highlighter-rouge">//deque/entity/~last</code>. The container will give it a new
+name automatically. This way you avoid finding a name that does not match existing blocks in the deque. You can use <code class="language-plaintext highlighter-rouge">~last</code> and <code class="language-plaintext highlighter-rouge">~plast</code>
+combined to use the deque just as a LIFO stack or <code class="language-plaintext highlighter-rouge">~last</code> and <code class="language-plaintext highlighter-rouge">~pfirst</code> as a FIFO queue.</p>
 
 <h2 id="in-terms-of-the-jazz-server-api">In terms of the Jazz server API</h2>
 
@@ -616,7 +616,7 @@ forwarding, …</p>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2021 kaalam.ai. All rights reserved. <br />
- Site last generated: Oct 12, 2021 <br />
+ Site last generated: Oct 15, 2021 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>
