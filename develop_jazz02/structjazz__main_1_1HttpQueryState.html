@@ -86,9 +86,12 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a75899ee67a1ab9d5cd5012e1ba09c27a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__main_1_1HttpQueryState.html#a75899ee67a1ab9d5cd5012e1ba09c27a">apply</a></td></tr>
 <tr class="memdesc:a75899ee67a1ab9d5cd5012e1ba09c27a"><td class="mdescLeft">&#160;</td><td class="mdescRight">APPLY_NOTHING, APPLY_NAME, APPLY_URL, APPLY_FUNCTION, .. APPLY_ASSIGN_CONST.  <a href="structjazz__main_1_1HttpQueryState.html#a75899ee67a1ab9d5cd5012e1ba09c27a">More...</a><br /></td></tr>
 <tr class="separator:a75899ee67a1ab9d5cd5012e1ba09c27a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f28e747d6d80462d3212608d2f3d917"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__main_1_1HttpQueryState.html#a4f28e747d6d80462d3212608d2f3d917">node</a> [<a class="el" href="types_8h.html#a834e9a379307f869a10f4da078be5786">NAME_SIZE</a>]</td></tr>
-<tr class="memdesc:a4f28e747d6d80462d3212608d2f3d917"><td class="mdescLeft">&#160;</td><td class="mdescRight">An optional name of a Jazz node.  <a href="structjazz__main_1_1HttpQueryState.html#a4f28e747d6d80462d3212608d2f3d917">More...</a><br /></td></tr>
-<tr class="separator:a4f28e747d6d80462d3212608d2f3d917"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac54830d678b8cd8c18bed5338ce51f71"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__main_1_1HttpQueryState.html#ac54830d678b8cd8c18bed5338ce51f71">l_node</a> [<a class="el" href="types_8h.html#a834e9a379307f869a10f4da078be5786">NAME_SIZE</a>]</td></tr>
+<tr class="memdesc:ac54830d678b8cd8c18bed5338ce51f71"><td class="mdescLeft">&#160;</td><td class="mdescRight">An optional name of a Jazz node that is either the only one or the left of assignment.  <a href="structjazz__main_1_1HttpQueryState.html#ac54830d678b8cd8c18bed5338ce51f71">More...</a><br /></td></tr>
+<tr class="separator:ac54830d678b8cd8c18bed5338ce51f71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae59e149f59eb001640f7c6945b509d53"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__main_1_1HttpQueryState.html#ae59e149f59eb001640f7c6945b509d53">r_node</a> [<a class="el" href="types_8h.html#a834e9a379307f869a10f4da078be5786">NAME_SIZE</a>]</td></tr>
+<tr class="memdesc:ae59e149f59eb001640f7c6945b509d53"><td class="mdescLeft">&#160;</td><td class="mdescRight">An additional optional name of a Jazz node for the right part in an assignment.  <a href="structjazz__main_1_1HttpQueryState.html#ae59e149f59eb001640f7c6945b509d53">More...</a><br /></td></tr>
+<tr class="separator:ae59e149f59eb001640f7c6945b509d53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3dc8d1e12405b68c0c158df1f3826bff"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__main_1_1HttpQueryState.html#a3dc8d1e12405b68c0c158df1f3826bff">base</a> [<a class="el" href="types_8h.html#ab908b445246a5a6850ca9b80847f73de">SHORT_NAME_SIZE</a>]</td></tr>
 <tr class="memdesc:a3dc8d1e12405b68c0c158df1f3826bff"><td class="mdescLeft">&#160;</td><td class="mdescRight">A Locator compatible base for the l_value.  <a href="structjazz__main_1_1HttpQueryState.html#a3dc8d1e12405b68c0c158df1f3826bff">More...</a><br /></td></tr>
 <tr class="separator:a3dc8d1e12405b68c0c158df1f3826bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,19 +148,35 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a4f28e747d6d80462d3212608d2f3d917"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f28e747d6d80462d3212608d2f3d917">&#9670;&nbsp;</a></span>node</h2>
+<a id="ac54830d678b8cd8c18bed5338ce51f71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac54830d678b8cd8c18bed5338ce51f71">&#9670;&nbsp;</a></span>l_node</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char jazz_main::HttpQueryState::node[<a class="el" href="types_8h.html#a834e9a379307f869a10f4da078be5786">NAME_SIZE</a>]</td>
+          <td class="memname">char jazz_main::HttpQueryState::l_node[<a class="el" href="types_8h.html#a834e9a379307f869a10f4da078be5786">NAME_SIZE</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>An optional name of a Jazz node. </p>
+<p>An optional name of a Jazz node that is either the only one or the left of assignment. </p>
+
+</div>
+</div>
+<a id="ae59e149f59eb001640f7c6945b509d53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae59e149f59eb001640f7c6945b509d53">&#9670;&nbsp;</a></span>r_node</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char jazz_main::HttpQueryState::r_node[<a class="el" href="types_8h.html#a834e9a379307f869a10f4da078be5786">NAME_SIZE</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An additional optional name of a Jazz node for the right part in an assignment. </p>
 
 </div>
 </div>
