@@ -119,6 +119,15 @@ Macros</h2></td></tr>
 <tr class="memitem:ac262f14f53fe40c87ab6bcb04cddae11"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#ac262f14f53fe40c87ab6bcb04cddae11">RET_MV_CONST_NEW_ENTITY</a>&#160;&#160;&#160;1</td></tr>
 <tr class="memdesc:ac262f14f53fe40c87ab6bcb04cddae11"><td class="mdescLeft">&#160;</td><td class="mdescRight">return value for move_const() there is a ";.new" ending, otherwise parses ok.  <a href="api_8h.html#ac262f14f53fe40c87ab6bcb04cddae11">More...</a><br /></td></tr>
 <tr class="separator:ac262f14f53fe40c87ab6bcb04cddae11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae44c151ed9717335e2d9b5430425316b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#ae44c151ed9717335e2d9b5430425316b">SEQUENCE_FIRST_CALL</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:ae44c151ed9717335e2d9b5430425316b"><td class="mdescLeft">&#160;</td><td class="mdescRight">First call, no pTransaction was yet assigned (data must be stored)  <a href="api_8h.html#ae44c151ed9717335e2d9b5430425316b">More...</a><br /></td></tr>
+<tr class="separator:ae44c151ed9717335e2d9b5430425316b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad724007f69d4ac982d0a575955a6f224"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#ad724007f69d4ac982d0a575955a6f224">SEQUENCE_INCREMENT_CALL</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:ad724007f69d4ac982d0a575955a6f224"><td class="mdescLeft">&#160;</td><td class="mdescRight">Any number of these calls (including none) allocate bigger and keep storing.  <a href="api_8h.html#ad724007f69d4ac982d0a575955a6f224">More...</a><br /></td></tr>
+<tr class="separator:ad724007f69d4ac982d0a575955a6f224"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae058260fc5cf7c69d8a405aece8628a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="api_8h.html#ae058260fc5cf7c69d8a405aece8628a6">SEQUENCE_FINAL_CALL</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memdesc:ae058260fc5cf7c69d8a405aece8628a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Last call, no more data this time, do the magic and return a status code.  <a href="api_8h.html#ae058260fc5cf7c69d8a405aece8628a6">More...</a><br /></td></tr>
+<tr class="separator:ae058260fc5cf7c69d8a405aece8628a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -250,6 +259,54 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>return value for move_const() there is a ";.new" ending, otherwise parses ok. </p>
+
+</div>
+</div>
+<a id="ae44c151ed9717335e2d9b5430425316b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae44c151ed9717335e2d9b5430425316b">&#9670;&nbsp;</a></span>SEQUENCE_FIRST_CALL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SEQUENCE_FIRST_CALL&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>First call, no pTransaction was yet assigned (data must be stored) </p>
+
+</div>
+</div>
+<a id="ad724007f69d4ac982d0a575955a6f224"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad724007f69d4ac982d0a575955a6f224">&#9670;&nbsp;</a></span>SEQUENCE_INCREMENT_CALL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SEQUENCE_INCREMENT_CALL&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Any number of these calls (including none) allocate bigger and keep storing. </p>
+
+</div>
+</div>
+<a id="ae058260fc5cf7c69d8a405aece8628a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae058260fc5cf7c69d8a405aece8628a6">&#9670;&nbsp;</a></span>SEQUENCE_FINAL_CALL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SEQUENCE_FINAL_CALL&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Last call, no more data this time, do the magic and return a status code. </p>
 
 </div>
 </div>

@@ -11,12 +11,15 @@ var searchData=
   ['get_5findex_254',['get_index',['../classjazz__elements_1_1Block.html#a73b0ba85c7f56bb0f25032ad089c7baa',1,'jazz_elements::Block']]],
   ['get_5fitem_5fname_255',['get_item_name',['../classjazz__elements_1_1Container.html#a418eacd0ac8aa5745632b4f3185faabc',1,'jazz_elements::Container']]],
   ['get_5fkey_256',['get_key',['../classjazz__elements_1_1ConfigFile.html#a820f5e105f17b00fd8d6ee97afa69eb0',1,'jazz_elements::ConfigFile::get_key(const char *key, int &amp;value)'],['../classjazz__elements_1_1ConfigFile.html#a1eb0d81e26827780316ec0d514d9efaf',1,'jazz_elements::ConfigFile::get_key(const char *key, double &amp;value)'],['../classjazz__elements_1_1ConfigFile.html#a5d5de95dd538ddc18a91d77e4c026b75',1,'jazz_elements::ConfigFile::get_key(const char *key, std::string &amp;value)']]],
-  ['get_5foffset_257',['get_offset',['../classjazz__elements_1_1Block.html#abf050a6d9a28ce38bae4e4a9a6422651',1,'jazz_elements::Block']]],
-  ['get_5foutput_5ffile_5fname_258',['get_output_file_name',['../classjazz__elements_1_1Logger.html#a7ec7a74b330b3b97daea038f1081cef9',1,'jazz_elements::Logger']]],
-  ['get_5fshape_5fand_5fsize_259',['get_shape_and_size',['../classjazz__elements_1_1Container.html#a10e76e4d23c6fd7ae6d8da3396de5017',1,'jazz_elements::Container']]],
-  ['get_5fstatic_260',['get_static',['../classjazz__main_1_1Api.html#a06f89d10a494d5abc7478437679493fb',1,'jazz_main::Api']]],
-  ['get_5fstring_261',['get_string',['../classjazz__elements_1_1Block.html#a9213f24cb63a4d978cd7a67cfd74d360',1,'jazz_elements::Block::get_string(int *p_idx)'],['../classjazz__elements_1_1Block.html#a40e9f06db839c503050fcc5f10c96ae4',1,'jazz_elements::Block::get_string(int offset)']]],
-  ['get_5fstring_5foffset_262',['get_string_offset',['../classjazz__elements_1_1Block.html#a5a98f3f48d88d1261418bb653b92fcfe',1,'jazz_elements::Block']]],
-  ['get_5ftype_5fand_5fshape_263',['get_type_and_shape',['../classjazz__elements_1_1Container.html#ad72fd1fe0ecdfc61d84ffe6261e67672',1,'jazz_elements::Container']]],
-  ['getbuffer_264',['GetBuffer',['../namespacejazz__elements.html#a982b46aa549671da23ea0698efefb7cd',1,'jazz_elements']]]
+  ['get_5fleft_5flocal_257',['get_left_local',['../classjazz__main_1_1Api.html#a188fb4cf5f6358d771dabe5600f25a90',1,'jazz_main::Api']]],
+  ['get_5foffset_258',['get_offset',['../classjazz__elements_1_1Block.html#abf050a6d9a28ce38bae4e4a9a6422651',1,'jazz_elements::Block']]],
+  ['get_5foutput_5ffile_5fname_259',['get_output_file_name',['../classjazz__elements_1_1Logger.html#a7ec7a74b330b3b97daea038f1081cef9',1,'jazz_elements::Logger']]],
+  ['get_5fright_5flocal_260',['get_right_local',['../classjazz__main_1_1Api.html#a106b8354f679bb78a6b4978147c04513',1,'jazz_main::Api']]],
+  ['get_5fright_5fremote_261',['get_right_remote',['../classjazz__main_1_1Api.html#aa1ceefeb7982278bc745a4a7416764df',1,'jazz_main::Api']]],
+  ['get_5fshape_5fand_5fsize_262',['get_shape_and_size',['../classjazz__elements_1_1Container.html#a10e76e4d23c6fd7ae6d8da3396de5017',1,'jazz_elements::Container']]],
+  ['get_5fstatic_263',['get_static',['../classjazz__main_1_1Api.html#a06f89d10a494d5abc7478437679493fb',1,'jazz_main::Api']]],
+  ['get_5fstring_264',['get_string',['../classjazz__elements_1_1Block.html#a9213f24cb63a4d978cd7a67cfd74d360',1,'jazz_elements::Block::get_string(int *p_idx)'],['../classjazz__elements_1_1Block.html#a40e9f06db839c503050fcc5f10c96ae4',1,'jazz_elements::Block::get_string(int offset)']]],
+  ['get_5fstring_5foffset_265',['get_string_offset',['../classjazz__elements_1_1Block.html#a5a98f3f48d88d1261418bb653b92fcfe',1,'jazz_elements::Block']]],
+  ['get_5ftype_5fand_5fshape_266',['get_type_and_shape',['../classjazz__elements_1_1Container.html#ad72fd1fe0ecdfc61d84ffe6261e67672',1,'jazz_elements::Container']]],
+  ['getbuffer_267',['GetBuffer',['../namespacejazz__elements.html#a982b46aa549671da23ea0698efefb7cd',1,'jazz_elements']]]
 ];

@@ -106,8 +106,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a06f89d10a494d5abc7478437679493fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab88684a869980dec87e7c82ecafe45fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="api_8h.html#addfe8a731ae492e2afd535f4eea99308">MHD_Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html#ab88684a869980dec87e7c82ecafe45fa">return_error_message</a> (<a class="el" href="namespacejazz__main.html#a2b12bbced38d0cb284f0e87886477183">pMHD_Connection</a> connection, <a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> p_url, int http_status)</td></tr>
 <tr class="separator:ab88684a869980dec87e7c82ecafe45fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ab6148dcb767c9554cc9173f606cc66"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ae07e8fd7a73396ce4ef564979d2498e5">MHD_StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html#a0ab6148dcb767c9554cc9173f606cc66">http_put</a> (<a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> p_upload, size_t size, <a class="el" href="structjazz__main_1_1HttpQueryState.html">HttpQueryState</a> &amp;q_state, bool continue_upload)</td></tr>
-<tr class="separator:a0ab6148dcb767c9554cc9173f606cc66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acae48cd8a3311f16c7b791514f7cf903"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ae07e8fd7a73396ce4ef564979d2498e5">MHD_StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html#acae48cd8a3311f16c7b791514f7cf903">http_put</a> (<a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> p_upload, size_t size, <a class="el" href="structjazz__main_1_1HttpQueryState.html">HttpQueryState</a> &amp;q_state, int sequence)</td></tr>
+<tr class="separator:acae48cd8a3311f16c7b791514f7cf903"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a882b486244e1032695c8c2fe8fa6cbc2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ae07e8fd7a73396ce4ef564979d2498e5">MHD_StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html#a882b486244e1032695c8c2fe8fa6cbc2">http_delete</a> (<a class="el" href="structjazz__main_1_1HttpQueryState.html">HttpQueryState</a> &amp;q_state)</td></tr>
 <tr class="separator:a882b486244e1032695c8c2fe8fa6cbc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9573223098533651ac031528efd42d75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ae07e8fd7a73396ce4ef564979d2498e5">MHD_StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html#a9573223098533651ac031528efd42d75">http_get</a> (<a class="el" href="namespacejazz__main.html#a9d502f9732a9b9206a07f3a78c42fe18">pMHD_Response</a> &amp;response, <a class="el" href="structjazz__main_1_1HttpQueryState.html">HttpQueryState</a> &amp;q_state)</td></tr>
@@ -219,6 +219,14 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:aac7c167e22b3dcab229cd97fd30f98e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cd42c9ba1cdae50e61f3dbe83862302"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html#a1cd42c9ba1cdae50e61f3dbe83862302">block_from_const</a> (<a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> &amp;p_txn, <a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> p_const, bool make_tuple=false)</td></tr>
 <tr class="separator:a1cd42c9ba1cdae50e61f3dbe83862302"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a188fb4cf5f6358d771dabe5600f25a90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html#a188fb4cf5f6358d771dabe5600f25a90">get_left_local</a> (<a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> &amp;p_txn, <a class="el" href="structjazz__main_1_1HttpQueryState.html">HttpQueryState</a> &amp;q_state)</td></tr>
+<tr class="separator:a188fb4cf5f6358d771dabe5600f25a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1ceefeb7982278bc745a4a7416764df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html#aa1ceefeb7982278bc745a4a7416764df">get_right_remote</a> (<a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> &amp;p_txn, <a class="el" href="structjazz__main_1_1HttpQueryState.html">HttpQueryState</a> &amp;q_state)</td></tr>
+<tr class="separator:aa1ceefeb7982278bc745a4a7416764df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a106b8354f679bb78a6b4978147c04513"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html#a106b8354f679bb78a6b4978147c04513">get_right_local</a> (<a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> &amp;p_txn, <a class="el" href="structjazz__main_1_1HttpQueryState.html">HttpQueryState</a> &amp;q_state)</td></tr>
+<tr class="separator:a106b8354f679bb78a6b4978147c04513"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f0689a75cad06b0a740cf85106afe37"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1Api.html#a8f0689a75cad06b0a740cf85106afe37">put_left_local</a> (<a class="el" href="structjazz__main_1_1HttpQueryState.html">HttpQueryState</a> &amp;q_state, <a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a> p_block)</td></tr>
+<tr class="separator:a8f0689a75cad06b0a740cf85106afe37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -467,7 +475,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">HTTP_GET, HTTP_HEAD </td><td class="markdownTableBodyNone"><a class="el" href="classjazz__main_1_1Api.html#a9573223098533651ac031528efd42d75">Api.http_get()</a>  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">HTTP_PUT </td><td class="markdownTableBodyNone"><a class="el" href="classjazz__main_1_1Api.html#a0ab6148dcb767c9554cc9173f606cc66">Api.http_put()</a>  </td></tr>
+<td class="markdownTableBodyNone">HTTP_PUT </td><td class="markdownTableBodyNone"><a class="el" href="classjazz__main_1_1Api.html#acae48cd8a3311f16c7b791514f7cf903">Api.http_put()</a>  </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">HTTP_DELETE </td><td class="markdownTableBodyNone"><a class="el" href="classjazz__main_1_1Api.html#a882b486244e1032695c8c2fe8fa6cbc2">Api.http_delete()</a>  </td></tr>
 <tr class="markdownTableRowEven">
@@ -565,8 +573,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a0ab6148dcb767c9554cc9173f606cc66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ab6148dcb767c9554cc9173f606cc66">&#9670;&nbsp;</a></span>http_put()</h2>
+<a id="acae48cd8a3311f16c7b791514f7cf903"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acae48cd8a3311f16c7b791514f7cf903">&#9670;&nbsp;</a></span>http_put()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -592,8 +600,8 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>continue_upload</em>&#160;</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sequence</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -608,13 +616,20 @@ Additional Inherited Members</h2></td></tr>
     <tr><td class="paramname">p_upload</td><td>A pointer to the data uploaded with the http PUT call. </td></tr>
     <tr><td class="paramname">size</td><td>The size of the data uploaded with the http PUT call. </td></tr>
     <tr><td class="paramname">q_state</td><td>The structure containing the parts of the url successfully parsed. </td></tr>
-    <tr><td class="paramname">continue_upload</td><td>If true, the upload is added at the end of the already existing block.</td></tr>
+    <tr><td class="paramname">sequence</td><td>SEQUENCE_FIRST_CALL, SEQUENCE_INCREMENT_CALL or SEQUENCE_FINAL_CALL. (See below)</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true if successful, log(LOG_MISS, "further details") if not.</dd></dl>
-<p>This function performs block PUT incrementally. The first time, continue_upload == false and the block is created, all other times, the block is appended at the end on the existing block. </p><pre class="fragment">This function is **only** called after a successfull parse() of an HTTP_PUT query. It is not private because it is called for the
-</pre><p> callback, but it is not intended for any other context. </p>
+<dl class="section return"><dt>Returns</dt><dd>MHD_HTTP_CREATED if SEQUENCE_FINAL_CALL is successful, MHD_HTTP_OK if any othe call is successful, or any HTTP error status code.</dd></dl>
+<p>This function is <b>only</b> called after a successfull <a class="el" href="classjazz__main_1_1Api.html#a2cb26c5b8138f3949db01c779e53df9e">parse()</a> of an HTTP_PUT query. It is not private because it is called for the callback, but it is not intended for any other context.</p>
+<h2><a class="anchor" id="autotoc_md20"></a>
+Internals</h2>
+<p>It supports any successful HTTP_PUT syntax, that is:</p>
+<p>APPLY_NOTHING: With or without node, mandatory base, entity and key. APPLY_RAW &amp; APPLY_TEXT: With or without node, mandatory base, entity and key. APPLY_URL: With or without node and just a base.</p>
+<p>In all cases, calls with a node (it can only be l_node) q_state.url contains exactly what has to be forwarded.</p>
+<h2><a class="anchor" id="autotoc_md21"></a>
+Call logic:</h2>
+<p>SEQUENCE_FIRST_CALL comes first and is mandatory. On success, the functions keeps the data in a block stored in a pTransaction in q_state.rr_value.p_extra (that pointer will be returned in successive call of the same PUT query). SEQUENCE_INCREMENT_CALL may or may not come, if it does, it must allocate bigger blocks and store more data in the same pTransaction. SEQUENCE_FINAL_CALL is called just once, it must destroy the pTransaction when done </p>
 
 </div>
 </div>
@@ -641,7 +656,12 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if successful, log(LOG_MISS, "further details") for errors.</dd></dl>
-<p>This function is <b>only</b> called after a successfull <a class="el" href="classjazz__main_1_1Api.html#a2cb26c5b8138f3949db01c779e53df9e">parse()</a> of an HTTP_DELETE query. It is not private because it is called for the callback, but it is not intended for any other context. </p>
+<p>This function is <b>only</b> called after a successfull <a class="el" href="classjazz__main_1_1Api.html#a2cb26c5b8138f3949db01c779e53df9e">parse()</a> of an HTTP_DELETE query. It is not private because it is called for the callback, but it is not intended for any other context.</p>
+<h2><a class="anchor" id="autotoc_md22"></a>
+Internals</h2>
+<p>It supports any successful HTTP_PUT syntax, that is:</p>
+<p>APPLY_NOTHING: With or without node, mandatory base and entity, with of without a key. APPLY_URL: With or without node and just a base.</p>
+<p>In all cases, calls with a node (it can only be l_node) q_state.url contains exactly what has to be forwarded. </p>
 
 </div>
 </div>
@@ -679,7 +699,12 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>MHD_HTTP_OK if successful, or a valid http status error.</dd></dl>
-<p>This function is <b>only</b> called after a successfull <a class="el" href="classjazz__main_1_1Api.html#a2cb26c5b8138f3949db01c779e53df9e">parse()</a> of HTTP_GET and HTTP_HEAD queries. It is not private because it is called for the callback, but it is not intended for any other context. </p>
+<p>This function is <b>only</b> called after a successfull <a class="el" href="classjazz__main_1_1Api.html#a2cb26c5b8138f3949db01c779e53df9e">parse()</a> of HTTP_GET and HTTP_HEAD queries. It is not private because it is called for the callback, but it is not intended for any other context.</p>
+<h2><a class="anchor" id="autotoc_md23"></a>
+Internals</h2>
+<p>It supports, basically everything, which is, all apply in many versions:</p>
+<p>APPLY_NOTHING, APPLY_NAME, APPLY_URL, APPLY_FUNCTION, APPLY_FUNCT_CONST, APPLY_FILTER, APPLY_FILT_CONST, APPLY_RAW, APPLY_TEXT, APPLY_ASSIGN_NOTHING, APPLY_ASSIGN_NAME, APPLY_ASSIGN_URL, APPLY_ASSIGN_FUNCTION, APPLY_ASSIGN_FUNCT_CONST, APPLY_ASSIGN_FILTER, APPLY_ASSIGN_FILT_CONST, APPLY_ASSIGN_RAW, APPLY_ASSIGN_TEXT, APPLY_ASSIGN_CONST, APPLY_NEW_ENTITY, APPLY_GET_ATTRIBUTE, APPLY_SET_ATTRIBUTE and APPLY_JAZZ_INFO</p>
+<p>To simplify, this top level function decomposes the logic into smaller parts. </p>
 
 </div>
 </div>
@@ -947,6 +972,150 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>'true' if successful. </dd></dl>
+
+</div>
+</div>
+<a id="a188fb4cf5f6358d771dabe5600f25a90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a188fb4cf5f6358d771dabe5600f25a90">&#9670;&nbsp;</a></span>get_left_local()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> jazz_main::Api::get_left_local </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_txn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structjazz__main_1_1HttpQueryState.html">HttpQueryState</a> &amp;&#160;</td>
+          <td class="paramname"><em>q_state</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa1ceefeb7982278bc745a4a7416764df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1ceefeb7982278bc745a4a7416764df">&#9670;&nbsp;</a></span>get_right_remote()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> jazz_main::Api::get_right_remote </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_txn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structjazz__main_1_1HttpQueryState.html">HttpQueryState</a> &amp;&#160;</td>
+          <td class="paramname"><em>q_state</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a106b8354f679bb78a6b4978147c04513"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a106b8354f679bb78a6b4978147c04513">&#9670;&nbsp;</a></span>get_right_local()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> jazz_main::Api::get_right_local </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_txn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structjazz__main_1_1HttpQueryState.html">HttpQueryState</a> &amp;&#160;</td>
+          <td class="paramname"><em>q_state</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8f0689a75cad06b0a740cf85106afe37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f0689a75cad06b0a740cf85106afe37">&#9670;&nbsp;</a></span>put_left_local()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> jazz_main::Api::put_left_local </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structjazz__main_1_1HttpQueryState.html">HttpQueryState</a> &amp;&#160;</td>
+          <td class="paramname"><em>q_state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a>&#160;</td>
+          <td class="paramname"><em>p_block</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

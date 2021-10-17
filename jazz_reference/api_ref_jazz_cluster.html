@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Syntax for defining constant blocks, kinds and tuples">
+<meta name="description" content="How Jazz nodes talk to each other">
 <meta name="keywords" content=" ">
-<title>API reference - Constants and %-encoding | Jazz User's Manual</title>
+<title>API reference - Using Jazz as a cluster | Jazz User's Manual</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -289,7 +289,7 @@
           
           
           
-          <li class="active"><a href="api_ref_const_encoding.html">API reference - Constants and %-encoding</a></li>
+          <li><a href="api_ref_const_encoding.html">API reference - Constants and %-encoding</a></li>
           
           
           
@@ -331,7 +331,7 @@
           
           
           
-          <li><a href="api_ref_jazz_cluster.html">API reference - Using Jazz as a cluster</a></li>
+          <li class="active"><a href="api_ref_jazz_cluster.html">API reference - Using Jazz as a cluster</a></li>
           
           
           
@@ -527,7 +527,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">API reference - Constants and %-encoding</h1>
+   <h1 class="post-title-main">API reference - Using Jazz as a cluster</h1>
 </div>
 
 
@@ -535,7 +535,7 @@
 <div class="post-content">
 
    
-    <div class="summary">Syntax for defining constant blocks, kinds and tuples</div>
+    <div class="summary">How Jazz nodes talk to each other</div>
    
 
     
@@ -569,93 +569,61 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <h2 id="general-api-structure">General API structure</h2>
+  <h2 id="jazz-as-a-cluster-philosophy">Jazz as a cluster (philosophy)</h2>
 
-<h3 id="name-definition">Name definition</h3>
+<p>Since Jazz is both an http client and an http server. Obviously, all nodes understand the binary details of tensors, kinds, tuples.
+Furthermore, they and can “speak” the language of the Jazz API. The only other thing you need to make everything work, is configuring a
+cluster. Once a cluster is configured, all Jazz nodes have a unique name across the cluster and every node knows the IP and port of every
+other node by its name.</p>
 
-<p>A <code class="language-plaintext highlighter-rouge">Name</code> is a string of letters, numbers and “-_~” up to 31 characters long. There is an exception with the decimal “.” that is acceptable,
-but only in a real number, not everywhere. The special “~” indicates a command, although that is <code class="language-plaintext highlighter-rouge">base</code> dependent. If the base does not
-interpret it as a command, it could be just a key. E.g., in “//tree/my_game/node51~parent”, “~parent” is a command, but in
-“//lmdb/my_game/node51~parent”, “node51~parent” is just a key. Commands, if they exist, are detailed in the reference of each base.</p>
+<p>Based on that, you can make API calls like GET <code class="language-plaintext highlighter-rouge">///frankfurt//lmdb/base/key=//lmdb/my_base/my_key</code> which is an assignment across nodes.
+Or even <code class="language-plaintext highlighter-rouge">///frankfurt//lmdb/baseXX/keyYY=///sydney//lmdb/baseSS/keyTT</code> performed in a third (neither <code class="language-plaintext highlighter-rouge">frankfurt</code> nor <code class="language-plaintext highlighter-rouge">sydney</code>) node.
+You can also PUT to <code class="language-plaintext highlighter-rouge">///sydney//lmdb/baseSS/keyTT.raw</code> or GET from <code class="language-plaintext highlighter-rouge">///frankfurt//code/fun(//lmdb/ee/k)</code> or <code class="language-plaintext highlighter-rouge">///frankfurt//code/fun(&amp;[3])</code></p>
 
-<p>Everything in the API follows the <code class="language-plaintext highlighter-rouge">///node//base/entity/key++</code> format, where:</p>
+<p>Compared to what other systems provide: automatic replication, sharding, fault tolerance, etc. this looks very low level. Well, it is.
+When Jazz was created, it had “the burden” of having to provide reliable distributed storage out of the box. Now we focus Jazz in a
+different way: You can create the shared, replicated, fault tolerant storage <strong>in Jazz</strong>. Ultimately, <strong>only if you really need it</strong>. There
+are many alternatives that provide these features “out of the box”. The only thing Jazz provides out of the box is what is described in
+this page. Everything else, including more intelligent ways to distribute data across agents as agents become more intelligent, has to be
+created <strong>inside Jazz</strong>.</p>
 
-<ul>
-  <li>”///node” is an optional reference to a Jazz node in the cluster to which the call will be forwarded, otherwise the node to which you are
-connecting will handle the call.</li>
-  <li>”++” refers to something else (function call, slicing, etc. that is explained below.)</li>
-  <li>“node”, “entity” and “key” are names.</li>
-  <li>“base” is a known base inside a <code class="language-plaintext highlighter-rouge">Container</code>: 0-mq, file, bash, http, index, tree, queue, deque, lmdb, core, …</li>
-</ul>
+<h2 id="configuring-a-jazz-cluster">Configuring a Jazz cluster.</h2>
 
-<h2 id="constants">Constants</h2>
+<p>Is just defining JAZZ_NODE_NAME_#, JAZZ_NODE_IP_# and JAZZ_NODE_PORT_# for each Jazz node in the <code class="language-plaintext highlighter-rouge">jazz_config.ini</code> file (or whatever
+file you pass to the server at starting time). The <code class="language-plaintext highlighter-rouge">#</code> is replaced by a decimal number starting with 1 up to the number of nodes in the
+cluster. You have to use all the consecutive numbers, the parser will stop looking at the first non match.</p>
 
-<p>Constants are the exception to the <code class="language-plaintext highlighter-rouge">///node//base/entity/key++</code> format. They are delimited by <code class="language-plaintext highlighter-rouge">&amp;;</code> as in <code class="language-plaintext highlighter-rouge">&amp;this%20is%a%20constant;</code> and
-since they are part of a url, must be <a href="https://en.wikipedia.org/wiki/Percent-encoding">%-encoded</a>. Any character that is not RFC 3986
-section 2.2 or RFC 3986 section 2.3 must be percent encoded. You can write utf-8 by just %-encoding all the characters.</p>
+<p>All names must be unique, IPs are just strings and should work when used in a URL, ports are integers.</p>
 
-<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> As an exception to this rule, In a function call or a filter, constants are not terminated by a <code class="language-plaintext highlighter-rouge">;</code>
-but by the closing <code class="language-plaintext highlighter-rouge">)</code> or <code class="language-plaintext highlighter-rouge">]</code>.</div>
+<p>Unless you do it intentionally for some reason, the cluster configuration should have the same values for these constants in all
+the nodes <strong>and a different JAZZ_NODE_MY_NAME</strong> defining which of the nodes is the current node.</p>
 
-<p>There are two types of constants:</p>
-
-<ul>
-  <li>Internally, Jazz can serialize any Block as text, or make a Block from parsing that text. The text representation of a block can be passed to the API as a constant.</li>
-  <li>URLs of external sources (E.g., a third part API) or file names, which can be very long, are constants even if they could match the
-requirements of a <code class="language-plaintext highlighter-rouge">Name</code>.</li>
-</ul>
-
-<h2 id="how-constants-fit-in">How constants fit in</h2>
-
-<p>There are four ways to insert a constant in an API call:</p>
+<h2 id="the-golden-rules">The Golden Rules.</h2>
 
 <ul>
-  <li>After the base, instead of the <code class="language-plaintext highlighter-rouge">/</code> <code class="language-plaintext highlighter-rouge">//file&amp;any_%_encoded_path;</code> or <code class="language-plaintext highlighter-rouge">//http&amp;http://my_api.org/something;</code></li>
-  <li>In a block slice <code class="language-plaintext highlighter-rouge">//base/entity/key[&amp;[2,4,6]]</code></li>
-  <li>In a function call <code class="language-plaintext highlighter-rouge">//base/entity/key(&amp;[2,4,6])</code></li>
-  <li>In an assignment <code class="language-plaintext highlighter-rouge">//base/entity/key=&amp;[2,4,6];</code></li>
+  <li>The node name defined in a <code class="language-plaintext highlighter-rouge">///node/...</code> applies to everything until an assignment <code class="language-plaintext highlighter-rouge">=</code> character is found.</li>
+  <li>In absence of a <code class="language-plaintext highlighter-rouge">///node/...</code> the node is the node you are talking to.</li>
+  <li>A node definition can only be the first thing or the first thing after a <code class="language-plaintext highlighter-rouge">=</code>.</li>
 </ul>
 
-<h2 id="constant-syntax">Constant Syntax</h2>
+<h3 id="as-a-consequence">As a consequence:</h3>
 
-<p>Obviously, the constants that are urls or filenames will be passed to whatever service or file system expects them and that will define
-their syntax.</p>
+<ul>
+  <li>In GET <code class="language-plaintext highlighter-rouge">///frankfurt//code/fun(//lmdb/ee/k)</code> the entity <code class="language-plaintext highlighter-rouge">ee</code> is in <code class="language-plaintext highlighter-rouge">frankfurt</code>, not in the current node.</li>
+  <li>In GET <code class="language-plaintext highlighter-rouge">///frankfurt//tt/k=//lmdb/ee/k</code> the entity <code class="language-plaintext highlighter-rouge">ee</code> is in the current node, not in <code class="language-plaintext highlighter-rouge">frankfurt</code>.</li>
+  <li>GET <code class="language-plaintext highlighter-rouge">///frankfurt//tt/k=///frankfurt//lmdb/ee/k</code> is the right way to assign from <code class="language-plaintext highlighter-rouge">frankfurt</code> to <code class="language-plaintext highlighter-rouge">frankfurt</code>.</li>
+  <li>GET <code class="language-plaintext highlighter-rouge">//code/fun(///frankfurt//lmdb/ee/k)</code> is malformed.</li>
+</ul>
 
-<p>The constants that are blocks have the following syntax:</p>
+<h2 id="assignment-is-your-friend">Assignment is your friend</h2>
 
-<h3 id="tensors">Tensors</h3>
+<p>To keep it simple, not everything can be done in just one line. We just saw <code class="language-plaintext highlighter-rouge">//code/fun(///frankfurt//lmdb/ee/k)</code> is malformed. You
+may want to pass a block that is in <code class="language-plaintext highlighter-rouge">frankfurt</code> as an argument to a function in your local node. The way to do it is the two liner:
+GET <code class="language-plaintext highlighter-rouge">deque\xx\~last=///frankfurt//lmdb/ee/k)</code> and GET <code class="language-plaintext highlighter-rouge">//code/fun(deque\xx\~plast)</code>.</p>
 
-<p>They have a shape defined by the sequence of square brackets E.g., <code class="language-plaintext highlighter-rouge">[[[1,2],[1,2]],[[1,2],[1,2]],[[1,2],[1,2]]]</code>. The shape must be
-consistent. From an API call you can create tensors of CELL_TYPE_INTEGER (if no number has a decimal point, CELL_TYPE_DOUBLE, if any
-number has a decimal point, and CELL_TYPE_STRING by quoting every element) as in <code class="language-plaintext highlighter-rouge">["1","two","THREE"]</code>. String serialization supports
-common C escape sequences like \n, \t, \”, \\, \x3f, etc.</p>
-
-<h3 id="kinds">Kinds</h3>
-
-<p>A <code class="language-plaintext highlighter-rouge">Kind</code> is defined inside surrounding <code class="language-plaintext highlighter-rouge">{}</code> characters including all metadata. Inside the kind, each item is comma separated and defines
-the item name, type and shape. Valid types are: “INTEGER”, “DOUBLE”, “BYTE”, “STRING”, “BOOLEAN”, “SINGLE”, “TIME”, “LONG_INTEGER”,
-“BYTE_BOOLEAN”, “FACTOR” and “GRADE”. Dimensions are just names (without quotes) inside the shape.</p>
-
-<p>E.g., <code class="language-plaintext highlighter-rouge">{"palette" : BYTE[10, height, num_col], "time" : TIME[3], "author" : STRING[40], "filter" : SINGLE[height, height, 3]}</code></p>
-
-<p><strong>Note 1</strong>: The dimension <code class="language-plaintext highlighter-rouge">height</code> appears 3 times in the Kind. A tuple of this kind can have any value for <code class="language-plaintext highlighter-rouge">height</code>, but must have
-the same value in the three places, otherwise it is not a tuple of this kind.</p>
-
-<p><strong>Note 2</strong>: We do not %-encode the spaces for readability, but they should be in an API call.</p>
-
-<h3 id="tuples">Tuples</h3>
-
-<p>A <code class="language-plaintext highlighter-rouge">Tuple</code> is defined inside surrounding <code class="language-plaintext highlighter-rouge">()</code> characters including item names and data. Inside the tuple, each item is comma separated
-and defines the item name and content. In an API call the types of the tensors are determined using the same rule explained for tensors.</p>
-
-<p>E.g., <code class="language-plaintext highlighter-rouge">("weights" : [[17, 170], [112, 54], [207, 149]], "built" : [2021-08-01 07:13:14, NA], "author" : ["Billy Doe"])</code></p>
-
-<p><strong>Note 1</strong>: The type TIME cannot be used directly like this from the rest API because of how types are automatically determined for tensors.
-From the C++ API if the Kind is given and the item “build” has the type TIME, this can be serialized as it is.</p>
-
-<p><strong>Note 2</strong>: We do not %-encode the spaces for readability, but they should be in an API call.</p>
-
-<p><br /></p>
+<p>Note that <strong>you created a volatile local</strong> block automatically by pushing it to an existing queue named <code class="language-plaintext highlighter-rouge">xx</code>. This avoids having to give
+it a name (which could already exist and therefore replace an existing item). It the second line, <strong>you destroyed the block</strong> by reading
+it using <code class="language-plaintext highlighter-rouge">~plast</code> (pop last) rather than just <code class="language-plaintext highlighter-rouge">~last</code>.</p>
 
 
 
