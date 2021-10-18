@@ -85,11 +85,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1FilterSize.html">jazz_elements::FilterSize</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Another way to describe a <a class="el" href="unionjazz__elements_1_1TensorDim.html" title="The dimension of a tensor.">TensorDim</a> to make filtering syntactically nicer.  <a href="structjazz__elements_1_1FilterSize.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionjazz__elements_1_1TensorDim.html">jazz_elements::TensorDim</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The dimension of a tensor.  <a href="unionjazz__elements_1_1TensorDim.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1TensorDim.html">jazz_elements::TensorDim</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The dimension of a tensor.  <a href="structjazz__elements_1_1TensorDim.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1ItemHeader.html">jazz_elements::ItemHeader</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Header for an item (of a <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for Jazz Blocks and Tuples.">Kind</a> or <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz Block with multiple Tensors.">Tuple</a>)  <a href="structjazz__elements_1_1ItemHeader.html#details">More...</a><br /></td></tr>
@@ -221,18 +218,6 @@ Macros</h2></td></tr>
 <tr class="memitem:a7c0cab2b021db33c6a6d4d7d5ee15a77"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a7c0cab2b021db33c6a6d4d7d5ee15a77">DOUBLE_NA_UINT64</a>&#160;&#160;&#160;R_NA_uint64</td></tr>
 <tr class="memdesc:a7c0cab2b021db33c6a6d4d7d5ee15a77"><td class="mdescLeft">&#160;</td><td class="mdescRight">An unsigned int64 version to .cell_ulongint[] ==.  <a href="types_8h.html#a7c0cab2b021db33c6a6d4d7d5ee15a77">More...</a><br /></td></tr>
 <tr class="separator:a7c0cab2b021db33c6a6d4d7d5ee15a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73ecd7dc95d36e569f91dbac3ec2d6df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a73ecd7dc95d36e569f91dbac3ec2d6df">FILTER_TYPE_</a></td></tr>
-<tr class="memdesc:a73ecd7dc95d36e569f91dbac3ec2d6df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Possible return values of Block.filter_type() and Block.filter_audit()  <a href="types_8h.html#a73ecd7dc95d36e569f91dbac3ec2d6df">More...</a><br /></td></tr>
-<tr class="separator:a73ecd7dc95d36e569f91dbac3ec2d6df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5abba7b90934a98d6f63ca2bf2c512e3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a5abba7b90934a98d6f63ca2bf2c512e3">FILTER_TYPE_NOTAFILTER</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:a5abba7b90934a98d6f63ca2bf2c512e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This Block cannot be used as a filter. A try to use it in new_jazz_block() will fail.  <a href="types_8h.html#a5abba7b90934a98d6f63ca2bf2c512e3">More...</a><br /></td></tr>
-<tr class="separator:a5abba7b90934a98d6f63ca2bf2c512e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a326fa953bd95451f02064edffb1e2b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a2a326fa953bd95451f02064edffb1e2b">FILTER_TYPE_BOOLEAN</a>&#160;&#160;&#160;1</td></tr>
-<tr class="memdesc:a2a326fa953bd95451f02064edffb1e2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This Block is a vector of CELL_TYPE_BYTE_BOOLEAN for each row.  <a href="types_8h.html#a2a326fa953bd95451f02064edffb1e2b">More...</a><br /></td></tr>
-<tr class="separator:a2a326fa953bd95451f02064edffb1e2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6dc19db547353db903ecb71161ae449c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a6dc19db547353db903ecb71161ae449c">FILTER_TYPE_INTEGER</a>&#160;&#160;&#160;2</td></tr>
-<tr class="memdesc:a6dc19db547353db903ecb71161ae449c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This Block is a vector of CELL_TYPE_INTEGER containing the selected rows.  <a href="types_8h.html#a6dc19db547353db903ecb71161ae449c">More...</a><br /></td></tr>
-<tr class="separator:a6dc19db547353db903ecb71161ae449c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2f99a8a416921dbce5661741fed1231"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#aa2f99a8a416921dbce5661741fed1231">MIXED_TYPE_</a></td></tr>
 <tr class="memdesc:aa2f99a8a416921dbce5661741fed1231"><td class="mdescLeft">&#160;</td><td class="mdescRight">Possible return values of Kind.kind_audit() and Tuple.tuple_audit()  <a href="types_8h.html#aa2f99a8a416921dbce5661741fed1231">More...</a><br /></td></tr>
 <tr class="separator:aa2f99a8a416921dbce5661741fed1231"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -876,70 +861,6 @@ Typedefs</h2></td></tr>
 </div><div class="memdoc">
 
 <p>An unsigned int64 version to .cell_ulongint[] ==. </p>
-
-</div>
-</div>
-<a id="a73ecd7dc95d36e569f91dbac3ec2d6df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73ecd7dc95d36e569f91dbac3ec2d6df">&#9670;&nbsp;</a></span>FILTER_TYPE_</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define FILTER_TYPE_</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Possible return values of Block.filter_type() and Block.filter_audit() </p>
-
-</div>
-</div>
-<a id="a5abba7b90934a98d6f63ca2bf2c512e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5abba7b90934a98d6f63ca2bf2c512e3">&#9670;&nbsp;</a></span>FILTER_TYPE_NOTAFILTER</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define FILTER_TYPE_NOTAFILTER&#160;&#160;&#160;0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This Block cannot be used as a filter. A try to use it in new_jazz_block() will fail. </p>
-
-</div>
-</div>
-<a id="a2a326fa953bd95451f02064edffb1e2b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a326fa953bd95451f02064edffb1e2b">&#9670;&nbsp;</a></span>FILTER_TYPE_BOOLEAN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define FILTER_TYPE_BOOLEAN&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This Block is a vector of CELL_TYPE_BYTE_BOOLEAN for each row. </p>
-
-</div>
-</div>
-<a id="a6dc19db547353db903ecb71161ae449c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6dc19db547353db903ecb71161ae449c">&#9670;&nbsp;</a></span>FILTER_TYPE_INTEGER</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define FILTER_TYPE_INTEGER&#160;&#160;&#160;2</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This Block is a vector of CELL_TYPE_INTEGER containing the selected rows. </p>
 
 </div>
 </div>

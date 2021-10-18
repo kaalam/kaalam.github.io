@@ -19,7 +19,7 @@ var searchData=
   ['destroy_5ftree_185',['destroy_tree',['../classjazz__elements_1_1Volatile.html#a59264c85263b7ee89bee0a1ea4e69689',1,'jazz_elements::Volatile']]],
   ['destroy_5fvolatile_186',['destroy_volatile',['../classjazz__elements_1_1Volatile.html#ac1010cb311d75c0a26106d1973e055ed',1,'jazz_elements::Volatile']]],
   ['dev_5fnull_187',['dev_null',['../namespacejazz__elements.html#ae82d633679f8087a5b8dc3a8776b3d9f',1,'jazz_elements']]],
-  ['dim_188',['dim',['../unionjazz__elements_1_1TensorDim.html#a0c68e45ee5af23f5041bca88a3b32137',1,'jazz_elements::TensorDim::dim()'],['../structjazz__elements_1_1ItemHeader.html#a6ced5026e75f982993bcc181f09cc3b8',1,'jazz_elements::ItemHeader::dim()']]],
+  ['dim_188',['dim',['../structjazz__elements_1_1TensorDim.html#a0c68e45ee5af23f5041bca88a3b32137',1,'jazz_elements::TensorDim::dim()'],['../structjazz__elements_1_1ItemHeader.html#a6ced5026e75f982993bcc181f09cc3b8',1,'jazz_elements::ItemHeader::dim()']]],
   ['dimensions_189',['dimensions',['../classjazz__elements_1_1Kind.html#ad85b82e1401955777bbe02992fab3e74',1,'jazz_elements::Kind::dimensions()'],['../namespacejazz__elements.html#a4734a779894739a0e04623c47348dd25',1,'jazz_elements::Dimensions()']]],
   ['done_5fpointer_5fto_5fblock_190',['done_pointer_to_block',['../classjazz__elements_1_1Persisted.html#a182a6c4b238e672b2ff2ab1b9c01974a',1,'jazz_elements::Persisted']]],
   ['double_5fna_191',['DOUBLE_NA',['../types_8h.html#ac0e222767f0998f79ffeb691e5e4a7c1',1,'types.h']]],

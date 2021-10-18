@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['warn_5falloc_5fbytes_1178',['warn_alloc_bytes',['../classjazz__elements_1_1Container.html#ae30751a7d7c4c893c52cf50a0fb5bfc0',1,'jazz_elements::Container']]],
-  ['www_1179',['www',['../classjazz__main_1_1Api.html#a6b88a68ff04d848064f7d11a7de002a4',1,'jazz_main::Api']]]
+  ['zmq_5fcontext_1164',['zmq_context',['../classjazz__elements_1_1Channels.html#aa83b2c5a6e56f1c952c5a018f1409caf',1,'jazz_elements::Channels']]],
+  ['zmq_5fok_1165',['zmq_ok',['../classjazz__elements_1_1Channels.html#a809b203abeae7f569e1eff90cb5af3da',1,'jazz_elements::Channels']]]
 ];
