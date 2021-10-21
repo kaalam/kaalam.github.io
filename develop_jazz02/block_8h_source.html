@@ -326,13 +326,14 @@ $(function() {
 <div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;        }</div>
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160; </div>
 <div class="line"><a name="l00423"></a><span class="lineno"><a class="line" href="classjazz__elements_1_1Block.html#abfe8b8a2f8a29202fd5069fdb12f1194">  423</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="classjazz__elements_1_1Block.html#abfe8b8a2f8a29202fd5069fdb12f1194">check_hash</a>() {</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="structjazz__elements_1_1StaticBlockHeader.html#a51aad94508001c24984e6bf541bacebe">hash64</a> == <a class="code" href="namespacejazz__elements.html#a50e37200ae3572b04b417c7e899712bb">MurmurHash64A</a>(&amp;<a class="code" href="structjazz__elements_1_1StaticBlockHeader.html#a6edb54e8275778196bc5c9c316d23cfc">tensor</a>, <a class="code" href="structjazz__elements_1_1StaticBlockHeader.html#a75d13fca2bc9ceddac6c499c305e53ca">total_bytes</a> - <span class="keyword">sizeof</span>(<a class="code" href="structjazz__elements_1_1BlockHeader.html">BlockHeader</a>));</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;        }</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;};</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160; </div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;} <span class="comment">// namespace jazz_elements</span></div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160; </div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;<span class="preprocessor">#endif // ifndef INCLUDED_JAZZ_ELEMENTS_BLOCK</span></div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;            <span class="keywordtype">int</span> siz = <a class="code" href="structjazz__elements_1_1StaticBlockHeader.html#a75d13fca2bc9ceddac6c499c305e53ca">total_bytes</a> - <span class="keyword">sizeof</span>(<a class="code" href="structjazz__elements_1_1BlockHeader.html">BlockHeader</a>);</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;            <span class="keywordflow">return</span> siz &gt; 0 &amp;&amp; <a class="code" href="structjazz__elements_1_1StaticBlockHeader.html#a51aad94508001c24984e6bf541bacebe">hash64</a> == <a class="code" href="namespacejazz__elements.html#a50e37200ae3572b04b417c7e899712bb">MurmurHash64A</a>(&amp;<a class="code" href="structjazz__elements_1_1StaticBlockHeader.html#a6edb54e8275778196bc5c9c316d23cfc">tensor</a>, siz);</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;        }</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;};</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160; </div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;} <span class="comment">// namespace jazz_elements</span></div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160; </div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;<span class="preprocessor">#endif // ifndef INCLUDED_JAZZ_ELEMENTS_BLOCK</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassjazz__elements_1_1Block_html_a7068fdf6ba72f689b219ca4ff0d6179e"><div class="ttname"><a href="classjazz__elements_1_1Block.html#a7068fdf6ba72f689b219ca4ff0d6179e">jazz_elements::Block::get_attribute</a></div><div class="ttdeci">char * get_attribute(int attribute_id)</div><div class="ttdef"><b>Definition:</b> block.h:252</div></div>
 <div class="ttc" id="aclassjazz__elements_1_1Block_html_a9d2b455977ea1760446d088f68b63d4f"><div class="ttname"><a href="classjazz__elements_1_1Block.html#a9d2b455977ea1760446d088f68b63d4f">jazz_elements::Block::p_string_buffer</a></div><div class="ttdeci">pStringBuffer p_string_buffer()</div><div class="ttdef"><b>Definition:</b> block.h:346</div></div>
