@@ -181,6 +181,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af4d1179168a035bf86ef3e8102aa22d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9acd677cb999268663af4ce89f0fb97b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a9acd677cb999268663af4ce89f0fb97b">copy</a> (<a class="el" href="structjazz__elements_1_1Locator.html">Locator</a> &amp;where, <a class="el" href="structjazz__elements_1_1Locator.html">Locator</a> &amp;what)</td></tr>
 <tr class="separator:a9acd677cb999268663af4ce89f0fb97b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6065eb2335973ef032f98b411efe107"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#af6065eb2335973ef032f98b411efe107">unwrap_received</a> (<a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> &amp;p_txn)</td></tr>
+<tr class="separator:af6065eb2335973ef032f98b411efe107"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d7e76719e0d5e538aa8908d88e25ebf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a5d7e76719e0d5e538aa8908d88e25ebf">unwrap_received</a> (<a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> &amp;p_txn, <a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a> p_maybe_block, int rec_size)</td></tr>
+<tr class="separator:a5d7e76719e0d5e538aa8908d88e25ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94a9f090fc004a0eddfce10a8cd150de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a94a9f090fc004a0eddfce10a8cd150de">base_names</a> (<a class="el" href="namespacejazz__elements.html#aadf1e411ca544a525c767f3e30010202">BaseNames</a> &amp;base_names)</td></tr>
 <tr class="separator:a94a9f090fc004a0eddfce10a8cd150de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classjazz__elements_1_1Service"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classjazz__elements_1_1Service')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classjazz__elements_1_1Service.html">jazz_elements::Service</a></td></tr>
@@ -849,7 +853,7 @@ new_block()</h2>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Create a new <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> (5): Create a <a class="el" href="unionjazz__elements_1_1Tensor.html" title="A tensor of cell size 1, 4, 8 or sizeof(BlockHeader)">Tensor</a>, <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for Jazz Blocks and Tuples.">Kind</a> or <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz Block with multiple Tensors.">Tuple</a> from a Text block kept as a <a class="el" href="unionjazz__elements_1_1Tensor.html" title="A tensor of cell size 1, 4, 8 or sizeof(BlockHeader)">Tensor</a> of CELL_TYPE_BYTE of rank == 1.</p>
+<p>Create a new <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> (5): Create a <a class="el" href="unionjazz__elements_1_1Tensor.html" title="A tensor of cell size 1, 4, 8 or sizeof(BlockHeader)">Tensor</a>, <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for Jazz Blocks and Tuples.">Kind</a> or <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz Block with multiple Tensors.">Tuple</a> from a Text block kept as a <a class="el" href="unionjazz__elements_1_1Tensor.html" title="A tensor of cell size 1, 4, 8 or sizeof(BlockHeader)">Tensor</a> of CELL_TYPE_BYTE of rank == 1 or a <a class="el" href="unionjazz__elements_1_1Tensor.html" title="A tensor of cell size 1, 4, 8 or sizeof(BlockHeader)">Tensor</a> of CELL_TYPE_STRING of size == 1</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">p_txn</td><td>A pointer to a <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> passed by reference. If successful, the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> will return a pointer to a <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> inside the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>. The caller can only use it read-only and <b>must</b> <a class="el" href="classjazz__elements_1_1Container.html#af79256b93a1f22d580a5c8eb18fa0558">destroy_transaction()</a> it when done. </td></tr>
@@ -2095,6 +2099,94 @@ destroy_transaction(tx);" without the <a class="el" href="classjazz__elements_1_
 <p>NOTE**: The root <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> class does not implement this. </p>
 
 <p>Reimplemented in <a class="el" href="classjazz__elements_1_1Volatile.html#ac5cb0ad9b16c8a70a16a8c2627749a3f">jazz_elements::Volatile</a>, and <a class="el" href="classjazz__elements_1_1Persisted.html#a49cb747c82d0affa88e13fb866b26a48">jazz_elements::Persisted</a>.</p>
+
+</div>
+</div>
+<a id="af6065eb2335973ef032f98b411efe107"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6065eb2335973ef032f98b411efe107">&#9670;&nbsp;</a></span>unwrap_received() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> jazz_elements::Container::unwrap_received </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_txn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Convert a received "block" (just an array of data received) which is in an array of byte to its final form.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_txn</td><td>An already allocated transaction with the data in an array of rank 1 of CELL_TYPE_BYTE </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR except if alloc is necessary and fails, then SERVICE_ERROR_NO_MEM and destroys the p_txn.</dd></dl>
+<p>Logic: If the content is a valid (== hash64-checked) block -&gt; The block is replaced by the block inside else, if the content is a string (its length == the length of the block) -&gt; The block is replaced by a CELL_TYPE_STRING else, -&gt; it is left as it is. </p>
+
+</div>
+</div>
+<a id="a5d7e76719e0d5e538aa8908d88e25ebf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d7e76719e0d5e538aa8908d88e25ebf">&#9670;&nbsp;</a></span>unwrap_received() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> jazz_elements::Container::unwrap_received </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_txn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a>&#160;</td>
+          <td class="paramname"><em>p_maybe_block</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rec_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Convert a received "block" (just an array of data received) which is just a pointer and a size to its final form.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_txn</td><td>A transaction to store the result created in case SERVICE_NO_ERROR is returned. </td></tr>
+    <tr><td class="paramname">p_maybe_block</td><td>A pointer to the data received </td></tr>
+    <tr><td class="paramname">rec_size</td><td>The size of the data received. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR except if alloc is necessary and fails, then SERVICE_ERROR_NO_MEM.</dd></dl>
+<p>Logic: If the content is a valid (== hash64-checked) block -&gt; Create a new transaction containing a copy of that block. else, if the content is a string (its length == the length of the block) -&gt; New transaction with a CELL_TYPE_STRING. else, -&gt; New transaction with a CELL_TYPE_BYTE. </p>
 
 </div>
 </div>

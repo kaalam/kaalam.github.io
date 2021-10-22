@@ -578,20 +578,25 @@ level languages.</p>
 
 <p>Except for software designed to understand the internals of Jazz (C++ code that uses jazz_elements) or among Jazz servers sharing data
 in a cluster, you will probably want to manage data as text in a format that is similar to JSON and is described
-<a href="api_ref_const_encoding.html">here</a> The exception to this is using blocks that are either strings (stored as a vector of one string) or
-vectors of byte (E.g., a file read). Occasionally, when you read a vector of byte that should be a string, it will have a trailing 0
-that you can remove doing something like <code class="language-plaintext highlighter-rouge">s = a.text[:-1]</code> in Python assuming <code class="language-plaintext highlighter-rouge">a = requests.get(...)</code>.</p>
+<a href="api_ref_const_encoding.html">here</a> The exception to this is using blocks that are strings (stored as a vector of one string) or queries
+returning strings. E.g., A <code class="language-plaintext highlighter-rouge">.text</code> call or reading attributes.</p>
 
 <h2 id="how-does-implicit-deserialization-work">How does implicit deserialization work?</h2>
 
-<p>Each time Jazz reads a constant via the http API, it will try to deserialize it. E.g., GET
+<ul>
+  <li>Each time Jazz reads a constant via the http API, it will try to deserialize it. E.g., GET
 <code class="language-plaintext highlighter-rouge">//lmdb/base/key=("weights":[[17,170],[112,54],[207,149]],"author":["Billy"],"score":[0.95])</code> will write a Tuple with item names, types,
 shapes and data. But GET <code class="language-plaintext highlighter-rouge">//lmdb/base/key=(weights:[[17,170],[112,54],[207,149]],"author":["Billy"],"score":[0.95])</code> (note the missing
-double quotes) will write a vector of bytes ended with a final 0, just because parsing the tuple failed.</p>
-
-<p>Note that PUT <code class="language-plaintext highlighter-rouge">//lmdb/base/key</code> sending <code class="language-plaintext highlighter-rouge">("weights":[[17,170],[112,54],[207,149]],"author":["Billy"],"score":[0.95])</code> will store it
-as a string (technically, a vector of just one string). In this case it is <strong>not</strong> a constant, it is the content of a block and the
-previous paragraph does not apply.</p>
+double quotes) will write it as a vector of one string, just because parsing the tuple failed.</li>
+  <li>Note that, on the contrary, PUT <code class="language-plaintext highlighter-rouge">//lmdb/base/key</code> sending <code class="language-plaintext highlighter-rouge">("weights":[[17,170],[112,54],[207,149]],"author":["Billy"],"score":[0.95])</code>
+will store it as a string. In this case it is <strong>not</strong> a constant, it is the content of a block and the previous paragraph does not apply.</li>
+  <li>When you do GET calls, there are two cases: 1. The calls returning a status of a statement or a string (like a block attribute) are
+always returned as strings. 2. Any other call returns binary blocks, <strong>but</strong> if they are tensors of just one string without attributes,
+only the string is returned instead of the whole binary block.</li>
+  <li>With this simple logic, Jazz nodes that talk to each other, understand what kind of call they are doing. If the call should return a
+block, but has returned a string, the receiving node will “wrap” that string inside a tensor of one string (with no attributes). This way,
+in assignments across a Jazz cluster, blocks are identical to the original ones (types, shapes, names, dimensions, attributes, data).</li>
+</ul>
 
 <h2 id="how-does-explicit-serialization-and-deserialization-work">How does explicit serialization and deserialization work?</h2>
 
@@ -607,7 +612,7 @@ has a Tuple, you can serialize it with GET <code class="language-plaintext highl
 not <code class="language-plaintext highlighter-rouge">//lmdb/base/key[@[3,5]].text</code>. You may need to create an intermediate volatile block. Assuming you created a deque named <code class="language-plaintext highlighter-rouge">my_stack</code>,
 you can GET <code class="language-plaintext highlighter-rouge">//deque/m_stack/~last=//lmdb/base/key[@[3,5]]</code> and GET <code class="language-plaintext highlighter-rouge">//deque/m_stack/~plast.text</code>. Note that you have created a volatile
 block in the deque (giving it a new name automatically using the <code class="language-plaintext highlighter-rouge">~last</code> command to avoid possibly replacing an existing block) and then,
-you have <strong>deleted</strong> it as you read it (<code class="language-plaintext highlighter-rouge">~last</code> would have read it without deleting it, <code class="language-plaintext highlighter-rouge">~plast</code> stands for pop last).</p>
+you have <strong>deleted</strong> it as you read it (<code class="language-plaintext highlighter-rouge">~last</code> would have read it without deleting it, <code class="language-plaintext highlighter-rouge">~plast</code> stands for “pop last”).</p>
 
 <p><br /></p>
 
@@ -624,7 +629,7 @@ you have <strong>deleted</strong> it as you read it (<code class="language-plain
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2021 kaalam.ai. All rights reserved. <br />
- Site last generated: Oct 21, 2021 <br />
+ Site last generated: Oct 22, 2021 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>
