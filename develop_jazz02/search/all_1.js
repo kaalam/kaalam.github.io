@@ -11,7 +11,7 @@ var searchData=
   ['aat_5fskew_9',['aat_skew',['../classjazz__elements_1_1Volatile.html#a59a06324e897d18033463fe6bf26dd65',1,'jazz_elements::Volatile']]],
   ['aat_5fsplit_10',['aat_split',['../classjazz__elements_1_1Volatile.html#a1a1ef105688983051938b049501b2bd0',1,'jazz_elements::Volatile']]],
   ['aat_5fto_5fleft_11',['aat_to_left',['../classjazz__elements_1_1Volatile.html#a47da1ffb51ad106d8f2d5feee4d92093',1,'jazz_elements::Volatile']]],
-  ['add_5fitem_12',['add_item',['../classjazz__elements_1_1Kind.html#a8b65fa72c255b8cf8a151f1562a32fd6',1,'jazz_elements::Kind']]],
+  ['add_5fitem_12',['add_item',['../classjazz__elements_1_1Kind.html#a4b188785b81aaff91ecc8091eb3dc0c8',1,'jazz_elements::Kind']]],
   ['add_5fname_13',['add_name',['../classjazz__elements_1_1Volatile.html#aef1a803601f6af44397c6b5b7572a455',1,'jazz_elements::Volatile']]],
   ['agency_14',['Agency',['../classjazz__agency_1_1Agency.html',1,'jazz_agency::Agency'],['../classjazz__agency_1_1Agency.html#a7fb4dcad71df4486293fe6389aff0a37',1,'jazz_agency::Agency::Agency()']]],
   ['agency_2ecpp_15',['agency.cpp',['../agency_8cpp.html',1,'']]],

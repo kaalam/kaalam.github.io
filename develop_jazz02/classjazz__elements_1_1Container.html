@@ -698,7 +698,7 @@ new_block()</h2>
     <tr><td class="paramname">p_hea</td><td>A vector of num_items pointers to StaticBlockHeaders defining the <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for Jazz Blocks and Tuples.">Kind</a> or <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz Block with multiple Tensors.">Tuple</a>. The shape must be defined in "human-readble" format, i.e., what a pBlock-&gt;get_dimensions() returns (not the internal way a block stores it). When creating a <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for Jazz Blocks and Tuples.">Kind</a>, negative constants must be defined in dims-&gt; and will be used to create dimensions. </td></tr>
     <tr><td class="paramname">p_names</td><td>An array of num_items Name structures by which the items will go. </td></tr>
     <tr><td class="paramname">p_block</td><td>The data, only for tuples. It must have the same shape as p_hea but that will not be checked. Unlike p_hea this has the shape stores as a real block (but it is not used) instead of "human-readable". If it is nullptr, a <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for Jazz Blocks and Tuples.">Kind</a> will be created, otherwise a <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz Block with multiple Tensors.">Tuple</a> will be created and just the tensor data will be copied from here. </td></tr>
-    <tr><td class="paramname">dims</td><td>For Kinds only, the names of the dimensions. Note that p_hea must have negative values for the dimensions, just like when Kinds are built using <a class="el" href="classjazz__elements_1_1Kind.html#a8d9cc0f15a5ef02139fd3c3552c9a874">Kind.new_kind()</a> followed by <a class="el" href="classjazz__elements_1_1Kind.html#a8b65fa72c255b8cf8a151f1562a32fd6">Kind.add_item()</a> </td></tr>
+    <tr><td class="paramname">dims</td><td>For Kinds only, the names of the dimensions. Note that p_hea must have negative values for the dimensions, just like when Kinds are built using <a class="el" href="classjazz__elements_1_1Kind.html#aef8ce9dca65abedf966dd49d7f3d7fb4">Kind.new_kind()</a> followed by <a class="el" href="classjazz__elements_1_1Kind.html#a4b188785b81aaff91ecc8091eb3dc0c8">Kind.add_item()</a> </td></tr>
     <tr><td class="paramname">att</td><td>The attributes to set when creating the block. They are immutable. To change the attributes of a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> use the version of new_jazz_block() with parameter p_from.</td></tr>
   </table>
   </dd>
@@ -3041,7 +3041,7 @@ destroy_transaction(tx);" without the <a class="el" href="classjazz__elements_1_
     <tr><td class="paramname">p_in</td><td>The input char stream cursor. </td></tr>
     <tr><td class="paramname">num_bytes</td><td>The number of bytes with data above *p_in </td></tr>
     <tr><td class="paramname">item_hea</td><td>The structure that receives the resulting cell_type, rank and shape. </td></tr>
-    <tr><td class="paramname">dims</td><td>An optional AttributeMap to retrieve the dimension names.</td></tr>
+    <tr><td class="paramname">dims</td><td>A MapSI to retrieve the dimension names.</td></tr>
   </table>
   </dd>
 </dl>

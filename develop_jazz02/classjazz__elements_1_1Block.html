@@ -134,8 +134,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a39aac54b41a71abc7ef8b3504c81f86a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f43dead9f6ba3222b619b5c9d5165de"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Block.html#a7f43dead9f6ba3222b619b5c9d5165de">can_filter</a> (<a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a> p_block)</td></tr>
 <tr class="separator:a7f43dead9f6ba3222b619b5c9d5165de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af860b0a6ae2755168c662e542fc5bb64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Block.html#af860b0a6ae2755168c662e542fc5bb64">close_block</a> (int set_has_NA=<a class="el" href="types_8h.html#a38c86dbe02c8e95ad46331bbace308d5">SET_HAS_NA_AUTO</a>, bool set_hash=true, bool set_time=true)</td></tr>
-<tr class="separator:af860b0a6ae2755168c662e542fc5bb64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4ccfbcb511097507862bd7ccfe0d2ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Block.html#af4ccfbcb511097507862bd7ccfe0d2ca">close_block</a> (int set_has_NA=<a class="el" href="types_8h.html#a5a75fbfe0b9722da1613005865c443db">SET_HAS_NA_FALSE</a>, bool set_hash=true, bool set_time=true)</td></tr>
+<tr class="separator:af4ccfbcb511097507862bd7ccfe0d2ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfe8b8a2f8a29202fd5069fdb12f1194"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Block.html#abfe8b8a2f8a29202fd5069fdb12f1194">check_hash</a> ()</td></tr>
 <tr class="separator:abfe8b8a2f8a29202fd5069fdb12f1194"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -635,7 +635,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Set all attributes of a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a>, only when creating it, using a map.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">all_att</td><td>A map containing all the attributes for the block.</td></tr>
+    <tr><td class="paramname">all_att</td><td>A map containing all the attributes for the block. A call with nullptr is required for initialization.</td></tr>
   </table>
   </dd>
 </dl>
@@ -891,8 +891,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="af860b0a6ae2755168c662e542fc5bb64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af860b0a6ae2755168c662e542fc5bb64">&#9670;&nbsp;</a></span>close_block()</h2>
+<a id="af4ccfbcb511097507862bd7ccfe0d2ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4ccfbcb511097507862bd7ccfe0d2ca">&#9670;&nbsp;</a></span>close_block()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -904,7 +904,7 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">void jazz_elements::Block::close_block </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>set_has_NA</em> = <code><a class="el" href="types_8h.html#a38c86dbe02c8e95ad46331bbace308d5">SET_HAS_NA_AUTO</a></code>, </td>
+          <td class="paramname"><em>set_has_NA</em> = <code><a class="el" href="types_8h.html#a5a75fbfe0b9722da1613005865c443db">SET_HAS_NA_FALSE</a></code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
