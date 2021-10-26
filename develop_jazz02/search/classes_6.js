@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['jazzlmdboptions_761',['JazzLmdbOptions',['../structjazz__elements_1_1JazzLmdbOptions.html',1,'jazz_elements']]]
+  ['jazzlmdboptions_764',['JazzLmdbOptions',['../structjazz__elements_1_1JazzLmdbOptions.html',1,'jazz_elements']]]
 ];

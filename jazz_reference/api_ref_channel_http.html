@@ -589,14 +589,18 @@ and return the result just as if is was a local call. At the class level, this i
 You can also send simple GET, PUT and DELETE http calls to random urls by either using the get(), put() and remove() or using the Jazz http
 server API GET “//http&amp;https://google.com;”</p>
 
-<p>The most advanced way to do it is creating a connection (similar to a “0-mq” pipeline) by put()-ing an Index to: //http/connection/a_name
-the index requires the mandatory key URL and the optional keys: CURLOPT_USERNAME, CURLOPT_USERPWD, CURLOPT_COOKIEFILE and CURLOPT_COOKIEJAR
-(see https://curl.se/libcurl/c/CURLOPT_USERNAME.html and https://everything.curl.dev/libcurl-http/cookies) Once the connection exists, you
-can get(), put() and remove() to just its name (without the word connection). I.e, get(txn, “//http/a_name”) or
-get(txn, “//http/a_name/args”) will send the http GET to connection[URL] + “args”. Same for put() and remove().</p>
+<p>The most advanced way to do it is creating a connection (similar to a “0-mq” pipeline) by put()-ing an <strong>Index serialized as a Tuple</strong>
+to: //http/connection/a_name the index requires the mandatory key URL and the optional keys: CURLOPT_USERNAME, CURLOPT_USERPWD,
+CURLOPT_COOKIEFILE and CURLOPT_COOKIEJAR (see https://curl.se/libcurl/c/CURLOPT_USERNAME.html and
+https://everything.curl.dev/libcurl-http/cookies) Once the connection exists, you can get(), put() and remove() to just its name (without
+the word connection). I.e, get(txn, “//http/a_name”) or get(txn, “//http/a_name/args”) will send the http GET to connection[URL] + “args”.
+Same for put() and remove().</p>
 
-<p>If you remove(“//http/connection/a_name”), you destroy the connection. get(“//http/connection/a_name”) returns an Index with all the
-connection parameters.</p>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> An Index serialized as a Tuple is a <b>Tuple of two string vectors</b> of the same length named <code class="language-plaintext highlighter-rouge">key</code> and
+<code class="language-plaintext highlighter-rouge">value</code>.</div>
+
+<p>If you remove(“//http/connection/a_name”), you destroy the connection. get(“//http/connection/a_name”) returns an
+<strong>Index serialized as a Tuple</strong>  with all the connection parameters.</p>
 
 <h2 id="in-terms-of-the-jazz-server-api">In terms of the Jazz server API</h2>
 
@@ -624,7 +628,7 @@ will forward automatically.</li>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2021 kaalam.ai. All rights reserved. <br />
- Site last generated: Oct 24, 2021 <br />
+ Site last generated: Oct 26, 2021 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

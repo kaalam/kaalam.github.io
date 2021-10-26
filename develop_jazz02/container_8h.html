@@ -196,21 +196,30 @@ Macros</h2></td></tr>
 <tr class="memitem:a3ae2cf4df7c3575c0f54d1b4c5d466e5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a3ae2cf4df7c3575c0f54d1b4c5d466e5">PSTATE_INVALID_CHAR</a>&#160;&#160;&#160;255</td></tr>
 <tr class="memdesc:a3ae2cf4df7c3575c0f54d1b4c5d466e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parser state: The MOST GENERIC parsing error: char goes to invalid state.  <a href="container_8h.html#a3ae2cf4df7c3575c0f54d1b4c5d466e5">More...</a><br /></td></tr>
 <tr class="separator:a3ae2cf4df7c3575c0f54d1b4c5d466e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0a8b419dc184a4c2ef979b95e491b86"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#ad0a8b419dc184a4c2ef979b95e491b86">WRITE_EVERYTHING</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:ad0a8b419dc184a4c2ef979b95e491b86"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default mode with none of the other flags.  <a href="container_8h.html#ad0a8b419dc184a4c2ef979b95e491b86">More...</a><br /></td></tr>
-<tr class="separator:ad0a8b419dc184a4c2ef979b95e491b86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71e0e9e3d28f32850c26e43ec5f0224b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a71e0e9e3d28f32850c26e43ec5f0224b">WRITE_ONLY_IF_EXISTS</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memitem:a71e0e9e3d28f32850c26e43ec5f0224b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a71e0e9e3d28f32850c26e43ec5f0224b">WRITE_ONLY_IF_EXISTS</a>&#160;&#160;&#160;0x01</td></tr>
 <tr class="memdesc:a71e0e9e3d28f32850c26e43ec5f0224b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A .put() call can override, but cannot create a new block.  <a href="container_8h.html#a71e0e9e3d28f32850c26e43ec5f0224b">More...</a><br /></td></tr>
 <tr class="separator:a71e0e9e3d28f32850c26e43ec5f0224b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38f08bb083dd33a492b3b10d8910137b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a38f08bb083dd33a492b3b10d8910137b">WRITE_ONLY_IF_NOT_EXISTS</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memitem:a38f08bb083dd33a492b3b10d8910137b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a38f08bb083dd33a492b3b10d8910137b">WRITE_ONLY_IF_NOT_EXISTS</a>&#160;&#160;&#160;0x02</td></tr>
 <tr class="memdesc:a38f08bb083dd33a492b3b10d8910137b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A .put() call cannot override, it can only create new blocks.  <a href="container_8h.html#a38f08bb083dd33a492b3b10d8910137b">More...</a><br /></td></tr>
 <tr class="separator:a38f08bb083dd33a492b3b10d8910137b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67c2adbcc7178ce1b7d168003c527aeb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a67c2adbcc7178ce1b7d168003c527aeb">WRITE_TENSOR_DATA</a>&#160;&#160;&#160;4</td></tr>
-<tr class="memdesc:a67c2adbcc7178ce1b7d168003c527aeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fails if not a Tensor, writes the raw data without metadata. For e.g., writing files.  <a href="container_8h.html#a67c2adbcc7178ce1b7d168003c527aeb">More...</a><br /></td></tr>
-<tr class="separator:a67c2adbcc7178ce1b7d168003c527aeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad03b2580c04eedfb2f5e74ed1c7e0990"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#ad03b2580c04eedfb2f5e74ed1c7e0990">WRITE_C_STR</a>&#160;&#160;&#160;8</td></tr>
-<tr class="memdesc:ad03b2580c04eedfb2f5e74ed1c7e0990"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fails if not a Tensor of byte, writes until the first zero.  <a href="container_8h.html#ad03b2580c04eedfb2f5e74ed1c7e0990">More...</a><br /></td></tr>
-<tr class="separator:ad03b2580c04eedfb2f5e74ed1c7e0990"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0afea2b2c0d309a8a29ea3930238466a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a0afea2b2c0d309a8a29ea3930238466a">WRITE_ANY_RESTRICTION</a>&#160;&#160;&#160;0x03</td></tr>
+<tr class="memdesc:a0afea2b2c0d309a8a29ea3930238466a"><td class="mdescLeft">&#160;</td><td class="mdescRight">WRITE_ONLY_IF_EXISTS | WRITE_ONLY_IF_NOT_EXISTS.  <a href="container_8h.html#a0afea2b2c0d309a8a29ea3930238466a">More...</a><br /></td></tr>
+<tr class="separator:a0afea2b2c0d309a8a29ea3930238466a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd96613296e70f1c6e74c6c36ea018c9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#abd96613296e70f1c6e74c6c36ea018c9">WRITE_AS_BASE_DEFAULT</a>&#160;&#160;&#160;0x00</td></tr>
+<tr class="memdesc:abd96613296e70f1c6e74c6c36ea018c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The base decides: file WRITE_AS_CONTENT, http WRITE_AS_STRING | WRITE_AS_FULL_BLOCK, ..  <a href="container_8h.html#abd96613296e70f1c6e74c6c36ea018c9">More...</a><br /></td></tr>
+<tr class="separator:abd96613296e70f1c6e74c6c36ea018c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a514ab3b4548802a70dd3e948933406e8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#a514ab3b4548802a70dd3e948933406e8">WRITE_AS_STRING</a>&#160;&#160;&#160;0x04</td></tr>
+<tr class="memdesc:a514ab3b4548802a70dd3e948933406e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Highest priority, string if CELL_TYPE_STRING or a C string inside CELL_TYPE_BYTE.  <a href="container_8h.html#a514ab3b4548802a70dd3e948933406e8">More...</a><br /></td></tr>
+<tr class="separator:a514ab3b4548802a70dd3e948933406e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acffb07618cc4dccc05d4af183592a0e5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#acffb07618cc4dccc05d4af183592a0e5">WRITE_AS_CONTENT</a>&#160;&#160;&#160;0x08</td></tr>
+<tr class="memdesc:acffb07618cc4dccc05d4af183592a0e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Next priority, only for tensors of any type, just write the binary data.  <a href="container_8h.html#acffb07618cc4dccc05d4af183592a0e5">More...</a><br /></td></tr>
+<tr class="separator:acffb07618cc4dccc05d4af183592a0e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade0a8171bf6972f4244339c7591e550d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#ade0a8171bf6972f4244339c7591e550d">WRITE_AS_FULL_BLOCK</a>&#160;&#160;&#160;0x10</td></tr>
+<tr class="memdesc:ade0a8171bf6972f4244339c7591e550d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lowest priority, write full block, can always be done.  <a href="container_8h.html#ade0a8171bf6972f4244339c7591e550d">More...</a><br /></td></tr>
+<tr class="separator:ade0a8171bf6972f4244339c7591e550d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adee9889a215b438c69e18be23f3a8626"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="container_8h.html#adee9889a215b438c69e18be23f3a8626">WRITE_AS_ANY_WRITE</a>&#160;&#160;&#160;0x1C</td></tr>
+<tr class="memdesc:adee9889a215b438c69e18be23f3a8626"><td class="mdescLeft">&#160;</td><td class="mdescRight">if mode &amp; this is zero, use base default  <a href="container_8h.html#adee9889a215b438c69e18be23f3a8626">More...</a><br /></td></tr>
+<tr class="separator:adee9889a215b438c69e18be23f3a8626"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -692,22 +701,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad0a8b419dc184a4c2ef979b95e491b86"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0a8b419dc184a4c2ef979b95e491b86">&#9670;&nbsp;</a></span>WRITE_EVERYTHING</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define WRITE_EVERYTHING&#160;&#160;&#160;0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The default mode with none of the other flags. </p>
-
-</div>
-</div>
 <a id="a71e0e9e3d28f32850c26e43ec5f0224b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a71e0e9e3d28f32850c26e43ec5f0224b">&#9670;&nbsp;</a></span>WRITE_ONLY_IF_EXISTS</h2>
 
@@ -715,7 +708,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define WRITE_ONLY_IF_EXISTS&#160;&#160;&#160;1</td>
+          <td class="memname">#define WRITE_ONLY_IF_EXISTS&#160;&#160;&#160;0x01</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -731,7 +724,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define WRITE_ONLY_IF_NOT_EXISTS&#160;&#160;&#160;2</td>
+          <td class="memname">#define WRITE_ONLY_IF_NOT_EXISTS&#160;&#160;&#160;0x02</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -740,35 +733,99 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a67c2adbcc7178ce1b7d168003c527aeb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a67c2adbcc7178ce1b7d168003c527aeb">&#9670;&nbsp;</a></span>WRITE_TENSOR_DATA</h2>
+<a id="a0afea2b2c0d309a8a29ea3930238466a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0afea2b2c0d309a8a29ea3930238466a">&#9670;&nbsp;</a></span>WRITE_ANY_RESTRICTION</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define WRITE_TENSOR_DATA&#160;&#160;&#160;4</td>
+          <td class="memname">#define WRITE_ANY_RESTRICTION&#160;&#160;&#160;0x03</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Fails if not a Tensor, writes the raw data without metadata. For e.g., writing files. </p>
+<p>WRITE_ONLY_IF_EXISTS | WRITE_ONLY_IF_NOT_EXISTS. </p>
 
 </div>
 </div>
-<a id="ad03b2580c04eedfb2f5e74ed1c7e0990"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad03b2580c04eedfb2f5e74ed1c7e0990">&#9670;&nbsp;</a></span>WRITE_C_STR</h2>
+<a id="abd96613296e70f1c6e74c6c36ea018c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd96613296e70f1c6e74c6c36ea018c9">&#9670;&nbsp;</a></span>WRITE_AS_BASE_DEFAULT</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define WRITE_C_STR&#160;&#160;&#160;8</td>
+          <td class="memname">#define WRITE_AS_BASE_DEFAULT&#160;&#160;&#160;0x00</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Fails if not a Tensor of byte, writes until the first zero. </p>
+<p>The base decides: file WRITE_AS_CONTENT, http WRITE_AS_STRING | WRITE_AS_FULL_BLOCK, .. </p>
+
+</div>
+</div>
+<a id="a514ab3b4548802a70dd3e948933406e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a514ab3b4548802a70dd3e948933406e8">&#9670;&nbsp;</a></span>WRITE_AS_STRING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WRITE_AS_STRING&#160;&#160;&#160;0x04</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Highest priority, string if CELL_TYPE_STRING or a C string inside CELL_TYPE_BYTE. </p>
+
+</div>
+</div>
+<a id="acffb07618cc4dccc05d4af183592a0e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acffb07618cc4dccc05d4af183592a0e5">&#9670;&nbsp;</a></span>WRITE_AS_CONTENT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WRITE_AS_CONTENT&#160;&#160;&#160;0x08</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Next priority, only for tensors of any type, just write the binary data. </p>
+
+</div>
+</div>
+<a id="ade0a8171bf6972f4244339c7591e550d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade0a8171bf6972f4244339c7591e550d">&#9670;&nbsp;</a></span>WRITE_AS_FULL_BLOCK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WRITE_AS_FULL_BLOCK&#160;&#160;&#160;0x10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lowest priority, write full block, can always be done. </p>
+
+</div>
+</div>
+<a id="adee9889a215b438c69e18be23f3a8626"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adee9889a215b438c69e18be23f3a8626">&#9670;&nbsp;</a></span>WRITE_AS_ANY_WRITE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WRITE_AS_ANY_WRITE&#160;&#160;&#160;0x1C</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>if mode &amp; this is zero, use base default </p>
 
 </div>
 </div>

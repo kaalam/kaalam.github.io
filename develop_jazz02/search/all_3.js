@@ -76,6 +76,6 @@ var searchData=
   ['created_164',['created',['../structjazz__elements_1_1BlockHeader.html#a581c7cd356bad27167467db5cce09291',1,'jazz_elements::BlockHeader::created()'],['../structjazz__elements_1_1StaticBlockHeader.html#a262214ad5832e60c65df058f56258ec3',1,'jazz_elements::StaticBlockHeader::created()']]],
   ['curl_5fget_165',['curl_get',['../classjazz__elements_1_1Channels.html#ae777a28e464c8ab500ec1aa235b15356',1,'jazz_elements::Channels']]],
   ['curl_5fok_166',['curl_ok',['../classjazz__elements_1_1Channels.html#aecd3e3dc34df5a0b132298a91251666a',1,'jazz_elements::Channels']]],
-  ['curl_5fput_167',['curl_put',['../classjazz__elements_1_1Channels.html#ac4bd6378761360aafa459291d333451e',1,'jazz_elements::Channels']]],
+  ['curl_5fput_167',['curl_put',['../classjazz__elements_1_1Channels.html#aef0af890bce5a2f7c5d205d4c7ce5d56',1,'jazz_elements::Channels']]],
   ['curl_5fremove_168',['curl_remove',['../classjazz__elements_1_1Channels.html#a30ad19781b4345ca915f777769c20978',1,'jazz_elements::Channels']]]
 ];
