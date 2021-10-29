@@ -17,12 +17,13 @@ var searchData=
   ['fill_5ftensor_225',['fill_tensor',['../classjazz__elements_1_1Container.html#aa3e0b005e11cf90e57a1139467f6380d',1,'jazz_elements::Container']]],
   ['fill_5ftext_5fbuffer_226',['fill_text_buffer',['../classjazz__elements_1_1Container.html#a06821a654da47d5841d370d6ce184c76',1,'jazz_elements::Container']]],
   ['fill_5fwith_5ftextfile_227',['FILL_WITH_TEXTFILE',['../container_8h.html#a2c57e29ff7d1d83236f137899ea846e1',1,'container.h']]],
-  ['find_5fnas_5fin_5ftensor_228',['find_NAs_in_tensor',['../classjazz__elements_1_1Block.html#ae9bc8c5a8a015bcad22d01b219c845f5',1,'jazz_elements::Block']]],
-  ['findprocessidbyname_229',['FindProcessIdByName',['../namespacejazz__elements.html#ad3fcdaf6929f0360f2388eaa7561e1b8',1,'jazz_elements']]],
-  ['flags_230',['flags',['../structjazz__elements_1_1JazzLmdbOptions.html#a7f6b652268b6efd0f1fa4ef23fe59639',1,'jazz_elements::JazzLmdbOptions']]],
-  ['forward_5fdel_231',['forward_del',['../classjazz__elements_1_1Channels.html#a082b33890530767388dd9d06f1d4c132',1,'jazz_elements::Channels']]],
-  ['forward_5fget_232',['forward_get',['../classjazz__elements_1_1Channels.html#ac515ab4d7ec1a87b86ca73d6bec1fd43',1,'jazz_elements::Channels']]],
-  ['forward_5fput_233',['forward_put',['../classjazz__elements_1_1Channels.html#a81114b0434791a91dd047322a5ad0afc',1,'jazz_elements::Channels']]],
-  ['from_234',['from',['../structjazz__elements_1_1ParseStateTransition.html#a6f3a96c757ab94568072adf54b5a9fbc',1,'jazz_elements::ParseStateTransition']]],
-  ['from_5fhex_235',['from_hex',['../classjazz__elements_1_1Container.html#a9dc5465894081c7e91ec1489122d6cfb',1,'jazz_elements::Container']]]
+  ['find_5fmyself_228',['find_myself',['../classjazz__main_1_1Api.html#a53abc9e23287d0ee8c31548a0d51ca32',1,'jazz_main::Api']]],
+  ['find_5fnas_5fin_5ftensor_229',['find_NAs_in_tensor',['../classjazz__elements_1_1Block.html#ae9bc8c5a8a015bcad22d01b219c845f5',1,'jazz_elements::Block']]],
+  ['findprocessidbyname_230',['FindProcessIdByName',['../namespacejazz__elements.html#ad3fcdaf6929f0360f2388eaa7561e1b8',1,'jazz_elements']]],
+  ['flags_231',['flags',['../structjazz__elements_1_1JazzLmdbOptions.html#a7f6b652268b6efd0f1fa4ef23fe59639',1,'jazz_elements::JazzLmdbOptions']]],
+  ['forward_5fdel_232',['forward_del',['../classjazz__elements_1_1Channels.html#a082b33890530767388dd9d06f1d4c132',1,'jazz_elements::Channels']]],
+  ['forward_5fget_233',['forward_get',['../classjazz__elements_1_1Channels.html#ac515ab4d7ec1a87b86ca73d6bec1fd43',1,'jazz_elements::Channels']]],
+  ['forward_5fput_234',['forward_put',['../classjazz__elements_1_1Channels.html#a81114b0434791a91dd047322a5ad0afc',1,'jazz_elements::Channels']]],
+  ['from_235',['from',['../structjazz__elements_1_1ParseStateTransition.html#a6f3a96c757ab94568072adf54b5a9fbc',1,'jazz_elements::ParseStateTransition']]],
+  ['from_5fhex_236',['from_hex',['../classjazz__elements_1_1Container.html#a9dc5465894081c7e91ec1489122d6cfb',1,'jazz_elements::Container']]]
 ];
