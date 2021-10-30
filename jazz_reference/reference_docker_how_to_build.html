@@ -177,7 +177,7 @@
                 
 
 <ul id="mysidebar" class="nav">
-  <li class="sidebarTitle">Jazz 0.5.2</li>
+  <li class="sidebarTitle">Jazz 0.5.3</li>
   
   
   
@@ -605,52 +605,78 @@ make clean
 <span class="nb">cd</span> <span class="s2">"</span><span class="nv">$docker_pwd</span><span class="s2">"</span> <span class="o">||</span> <span class="k">return </span>1
 
 <span class="nb">cp</span> ../server/config/jazz_config.ini <span class="nb">.</span>
+<span class="nb">cp</span> <span class="nt">-r</span> ../server/config/www www
 
 docker build <span class="nt">-t</span> jazz_ref_stable <span class="nb">.</span>
-
 docker login
 
-docker tag jazz_ref_stable kaalam/jazz_neat:0.5.2
-docker push kaalam/jazz_neat:0.5.2
+docker tag jazz_ref_stable kaalam/jazz_neat:0.5.3
+docker push kaalam/jazz_neat:0.5.3
 
 <span class="nb">rm </span>jazz
 <span class="nb">rm </span>jazz_config.ini
-</code></pre></div></div>
-
-<p>You can use this to run the docker image in debug mode (allowing login into the Linux image).</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run <span class="nt">-p8888</span>:8888 <span class="nt">-ti</span> kaalam/jazz_neat:0.5.2 /bin/bash
+<span class="nb">rm</span> <span class="nt">-rf</span> www
 </code></pre></div></div>
 
 <p>Use this to run the image you just created.</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run <span class="nt">-p8888</span>:8888 kaalam/jazz_neat:0.5.2
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run <span class="nt">-p8888</span>:8888 kaalam/jazz_neat:0.5.3
 </code></pre></div></div>
 
-<p>This example (implicitly) refers to a Dockerfile to tell Docker how to build the image</p>
+<p>You can use this to run the docker image in debug mode (allowing login into the Linux image).</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run <span class="nt">-p8888</span>:8888 <span class="nt">-ti</span> kaalam/jazz_neat:0.5.3 /bin/bash
+</code></pre></div></div>
+
+<p>This example (implicitly) refers to a Dockerfile to tell Docker how to build the image. Note that as Jazz’s requirements have grown,
+the dockerfile has become longer, especially, because there is no simple <code class="language-plaintext highlighter-rouge">apt-get</code> installation of <code class="language-plaintext highlighter-rouge">zeroMQ</code>. It contains the sources of
+zeroMQ, install development tools, compiles it and install it.</p>
 
 <div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">FROM</span><span class="s"> ubuntu</span>
 
-<span class="k">MAINTAINER</span><span class="s"> kaalam.ai</span>
+<span class="k">LABEL</span><span class="s"> author=kaalam.ai</span>
 
-<span class="k">WORKDIR</span><span class="s"> /home/jadmin</span>
+<span class="k">WORKDIR</span><span class="s"> /home/jazz</span>
 
-<span class="k">RUN </span>apt-get update <span class="o">&amp;&amp;</span> apt-get <span class="nb">install</span> <span class="nt">-y</span> libmicrohttpd-dev
+<span class="k">COPY</span><span class="s"> zeromq-4.3.4.tar.gz /home/jazz</span>
 
-<span class="k">RUN </span><span class="nb">ln</span> <span class="nt">-s</span> /usr/lib/x86_64-linux-gnu/libmicrohttpd.so.10 /usr/lib/x86_64-linux-gnu/libmicrohttpd.so.12
+<span class="k">RUN </span><span class="nb">tar</span> <span class="nt">-xvf</span> zeromq-4.3.4.tar.gz
+<span class="k">RUN </span>apt-get update <span class="nt">--fix-missing</span>
+<span class="k">RUN </span>apt-get <span class="nb">install</span> <span class="nt">-y</span> libmicrohttpd-dev
+<span class="k">RUN </span>apt-get <span class="nb">install</span> <span class="nt">-y</span> libcurl4-gnutls-dev
 
-<span class="k">RUN </span><span class="nb">mkdir</span> /home/jadmin/mdb
+<span class="k">ENV</span><span class="s"> DEBIAN_FRONTEND=noninteractive</span>
 
-<span class="k">ADD</span><span class="s"> ./start.sh /home/jadmin</span>
-<span class="k">ADD</span><span class="s"> ./jazz /home/jadmin</span>
-<span class="k">ADD</span><span class="s"> ./jazz_config.ini /home/jadmin/config/jazz_config.ini</span>
+<span class="k">RUN </span>apt-get <span class="nb">install</span> <span class="nt">-y</span> g++
+<span class="k">RUN </span>apt-get <span class="nb">install</span> <span class="nt">-y</span> make
+<span class="k">RUN </span>apt-get <span class="nb">install</span> <span class="nt">-y</span> xutils-dev
+<span class="k">RUN </span>apt-get <span class="nb">install</span> <span class="nt">-y</span> libtool
+<span class="k">RUN </span>apt-get <span class="nb">install</span> <span class="nt">-y</span> automake
+<span class="k">RUN </span>apt-get <span class="nb">install</span> <span class="nt">-y</span> pkg-config
 
-<span class="k">EXPOSE</span><span class="s"> 8888</span>
+<span class="k">WORKDIR</span><span class="s"> /home/jazz/zeromq-4.3.4</span>
 
-<span class="k">CMD</span><span class="s"> ["/home/jadmin/start.sh"]</span>
+<span class="k">RUN </span>./autogen.sh
+<span class="k">RUN </span>./configure
+<span class="k">RUN </span>make
+<span class="k">RUN </span>make <span class="nb">install</span>
+<span class="k">RUN </span><span class="nb">ln</span> <span class="nt">-s</span> /usr/local/lib/libzmq.so.5 /usr/lib/x86_64-linux-gnu/
+
+<span class="k">WORKDIR</span><span class="s"> /home/jazz</span>
+
+<span class="k">RUN </span><span class="nb">mkdir</span> /home/jazz/jazz_dbg_mdb
+
+<span class="k">ADD</span><span class="s"> ./start.sh /home/jazz</span>
+<span class="k">ADD</span><span class="s"> ./jazz /home/jazz</span>
+<span class="k">ADD</span><span class="s"> ./jazz_config.ini /home/jazz/config/jazz_config.ini</span>
+<span class="k">ADD</span><span class="s"> ./www /home/jazz/config/www/</span>
+
+<span class="k">EXPOSE</span><span class="s"> 8899</span>
+
+<span class="k">CMD</span><span class="s"> ["/home/jazz/start.sh"]</span>
 </code></pre></div></div>
 
-<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> To make it more efficient, you can group all the ADD commands into one joining them with “+”.</div>
+<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> All this files can be found in the <code class="language-plaintext highlighter-rouge">/docker</code> folder of the Jazz repository.</div>
 
 <p>The start.sh file is found in the docker folder, but it’s just a call to <code class="language-plaintext highlighter-rouge">jazz start</code>.</p>
 
@@ -675,7 +701,7 @@ working.</div>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2021 kaalam.ai. All rights reserved. <br />
- Site last generated: Oct 29, 2021 <br />
+ Site last generated: Oct 30, 2021 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>
