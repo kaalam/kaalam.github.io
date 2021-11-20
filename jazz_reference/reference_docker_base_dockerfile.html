@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Setting up Jazz as a server for static objects">
+<meta name="description" content="How the image in which the others are based is processed">
 <meta name="keywords" content=" ">
-<title>API reference - Using Jazz to serve applications | Jazz User's Manual</title>
+<title>Jazz (BASE) Base Dockerfile | Jazz User's Manual</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -338,7 +338,7 @@
           
           
           
-          <li class="active"><a href="api_ref_serving_frontend.html">API reference - Using Jazz to serve applications</a></li>
+          <li><a href="api_ref_serving_frontend.html">API reference - Using Jazz to serve applications</a></li>
           
           
           
@@ -438,7 +438,7 @@
           
           
           
-          <li><a href="reference_docker_base_dockerfile.html">Jazz (BASE) Base Dockerfile</a></li>
+          <li class="active"><a href="reference_docker_base_dockerfile.html">Jazz (BASE) Base Dockerfile</a></li>
           
           
           
@@ -534,7 +534,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">API reference - Using Jazz to serve applications</h1>
+   <h1 class="post-title-main">Jazz (BASE) Base Dockerfile</h1>
 </div>
 
 
@@ -542,7 +542,7 @@
 <div class="post-content">
 
    
-    <div class="summary">Setting up Jazz as a server for static objects</div>
+    <div class="summary">How the image in which the others are based is processed</div>
    
 
     
@@ -576,32 +576,17 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <h2 id="jazz-as-a-server-of-static-web-resources">Jazz as a server of static web resources.</h2>
+  <div class="bs-callout bs-callout-"><strong>Jazz à la carte</strong> is intended to be a series of Jazz servers maintained as Docker images through
+continuous integration including such things as “voice recognition”, “text to speech”, etc. For the moment, the neat LSS and The
+Tangle server are the only members.</div>
 
-<p>Since Jazz is an http server, it would not make much sense to require a different server to serve the static webpages and javascript
-created by your favorite frontend development platform such as Flutter/Dart, Angular/Ionic, etc.</p>
+<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> <strong>kaalam</strong> maintains an updated Jazz server (without any application) in Docker Hub.</div>
 
-<p>Technically, the lmdb database <code class="language-plaintext highlighter-rouge">//lmdb/www</code> is created to store that material. The static objects are just blocks with some attributes
-declared:</p>
+<h2 id="how-to-check-for-the-latest-version">How to check for the latest version?</h2>
 
-<ul>
-  <li>BLOCK_ATTRIB_URL (mandatory) sets the url by which the static is accessed in a GET. The URL should start with a single <code class="language-plaintext highlighter-rouge">/</code>. Note that
-this determines the difference between the Jazz API which always start with <code class="language-plaintext highlighter-rouge">//</code> or <code class="language-plaintext highlighter-rouge">///</code> and statics stored in <code class="language-plaintext highlighter-rouge">//lmdb/www</code>.</li>
-  <li>BLOCK_ATTRIB_MIMETYPE (recommended) is the mime type returned by the server to tell the browser what to do with it.</li>
-  <li>BLOCK_ATTRIB_LANGUAGE (optional) the international code (like “en-us”) defining the language in which the page is written.</li>
-</ul>
+<p>Follow <a href="https://hub.docker.com/r/kaalam/jazz_neat/tags/">this link</a> and note the version number.</p>
 
-<h2 id="loading-static-resource-at-server-start-from-disk">Loading static resource at server start from disk.</h2>
-
-<p>You can set up the key STATIC_HTML_AT_START in the server configuration to any folder. On Jazz start, the folder will be recursively
-searched and all files will be pushed to <code class="language-plaintext highlighter-rouge">//lmdb/www</code> with their URL assigned to the relative path that comes after whatever is
-STATIC_HTML_AT_START. The mime type will be deduced (for simple files) by the file extension. It will identify: “text/html”, “text/css”,
-“image/png”, “application/javascript”, “image/jpeg”, “image/gif”, “image/x-icon”, “text/plain; charset=utf-8”, “application/json”,
-“video/mp4”, “application/pdf” and “application/xml”.</p>
-
-<h2 id="uploading-the-resources-via-put-to-lmdbwww">Uploading the resources via PUT to <code class="language-plaintext highlighter-rouge">//lmdb/www</code></h2>
-
-<p>You can just create the blocks via a PUT to <code class="language-plaintext highlighter-rouge">//lmdb/www/keyXXX</code> (any key name) and then, set the attributes as described <a href="api_ref_attributes.html">here</a>.</p>
+<p><br /></p>
 
 
 
