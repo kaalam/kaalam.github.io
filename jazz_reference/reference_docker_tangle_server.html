@@ -582,23 +582,60 @@ series.</div>
 
 <h2 id="what-is-the-tangle">What is <strong>The Tangle</strong></h2>
 
-<p>It is an entangled collection of English text: books, wikipedia articles, movie subtitles and also dictionaries (wordnet) …</p>
+<p>It is an entangled collection of English text: dictionaries and grammar, books, wikipedia articles, movie subtitles, facts, Q&amp;A, …
+See <a href="https://raw.githubusercontent.com/kaalam/kaalam/master/the_tangle.pdf">poster</a></p>
 
 <h2 id="how-to-check-for-the-latest-version">How to check for the latest version?</h2>
 
-<p>Follow <a href="https://hub.docker.com/r/kaalam/jazz_tangle/tags/">this link</a> and note the version number.</p>
+<p>Follow <a href="https://hub.docker.com/r/kaalam/jazz_tng/tags">this link</a> and note the version number.</p>
 
 <h2 id="how-to-run-it">How to run it</h2>
 
-<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> This first docker image will be available during October 2021 loaded on Jazz 0.5.2!</div>
+<p>You have to use a different docker image <code class="language-plaintext highlighter-rouge">kaalam/jazz_tng:0.5.3</code> instead of <code class="language-plaintext highlighter-rouge">kaalam/jazz_lss:0.5.3</code> which is a server with some extra
+software to download and decompress the datasets.</p>
 
-<h2 id="can-i-build-applications-on-top-of-it">Can I build applications on top of it?</h2>
+<p>The process is three step:</p>
 
-<p>Yes. That is the intention. Just start your Dockerfile with:</p>
+<ul>
+  <li>downloading and decompressing</li>
+  <li>compiling (storing the serialized data sources as binary in the LMDB database inside Jazz)</li>
+  <li>verifying</li>
+</ul>
 
-<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">FROM</span><span class="s"> kaalam/jazz_tangle:latest</span>
+<h3 id="downloading-and-decompressing">Downloading and decompressing</h3>
 
+<p>Run a docker container by typing:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run -ti -v ~/tmp/the_tangle:/home/jazz/jazz_dbg_mdb kaalam/jazz_tng:0.5.3 /bin/bash
 </code></pre></div></div>
+
+<p>where <code class="language-plaintext highlighter-rouge">~/tmp/the_tangle</code> is any existing empty local path you wish to use to store everything (60 Gb required). Inside the docker
+container run the script <code class="language-plaintext highlighter-rouge">./download_and_store.sh</code> and exit when complete.</p>
+
+<p>You are ready for compiling.</p>
+
+<h3 id="compiling">Compiling</h3>
+
+<p>Install the python package with <code class="language-plaintext highlighter-rouge">pip install thetangle</code>. Run the TNG server with:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run -p8899:8899 -v ~/tmp/the_tangle:/home/jazz/jazz_dbg_mdb kaalam/jazz_tng:0.5.3
+</code></pre></div></div>
+
+<p>using the same <code class="language-plaintext highlighter-rouge">~/tmp/the_tangle</code> folder you used for downloading.</p>
+
+<p>Then, open a python interpreter and run</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">thetangle.TheTangle</span> <span class="kn">import</span> <span class="n">CompileTheTangle</span>
+<span class="n">CompileTheTangle</span><span class="p">()</span><span class="o">.</span><span class="nb">compile</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>in the same machine that is running the server.</p>
+
+<h3 id="verifying">Verifying</h3>
+
+<p>You already have a python package named <code class="language-plaintext highlighter-rouge">thetangle</code> installed and a server running as you did in the previous step.</p>
+
+<p>Now, you can run a python <a href="https://github.com/kaalam/thetangle/blob/master/python_examples/welcome.py">welcome</a> example</p>
 
 <p><br /></p>
 
@@ -615,7 +652,7 @@ series.</div>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2021 kaalam.ai. All rights reserved. <br />
- Site last generated: Nov 23, 2021 <br />
+ Site last generated: Nov 25, 2021 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

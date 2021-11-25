@@ -584,22 +584,18 @@ Tangle server are the only members.</div>
 
 <h2 id="how-to-check-for-the-latest-version">How to check for the latest version?</h2>
 
-<p>Follow <a href="https://hub.docker.com/r/kaalam/jazz_neat/tags/">this link</a> and note the version number.</p>
+<p>Follow <a href="https://hub.docker.com/r/kaalam/jazz_lss/tags">this link</a> and note the version number.</p>
 
 <h2 id="how-to-run-it">How to run it</h2>
 
 <p>Using the right version number, and assuming you have docker installed, type:</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  docker run <span class="nt">-p8888</span>:8888 kaalam/jazz_neat:0.5.2
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  docker run <span class="nt">-p8899</span>:8899 kaalam/jazz_lss:0.5.3
 </code></pre></div></div>
 
 <h2 id="can-i-build-applications-on-top-of-it">Can I build applications on top of it?</h2>
 
-<p>Yes. That is the intention. Just start your Dockerfile with:</p>
-
-<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">FROM</span><span class="s"> kaalam/jazz_neat:latest</span>
-
-</code></pre></div></div>
+<p>No. Use <a href="reference_docker_base_dockerfile.html">this</a> instead.</p>
 
 <p><br /></p>
 
@@ -616,7 +612,7 @@ Tangle server are the only members.</div>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2021 kaalam.ai. All rights reserved. <br />
- Site last generated: Nov 23, 2021 <br />
+ Site last generated: Nov 25, 2021 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

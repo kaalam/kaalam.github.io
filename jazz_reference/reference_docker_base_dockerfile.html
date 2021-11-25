@@ -582,9 +582,28 @@ Tangle server are the only members.</div>
 
 <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> <strong>kaalam</strong> maintains an updated Jazz server (without any application) in Docker Hub.</div>
 
+<h2 id="what-is-this">What is this?</h2>
+
+<p>This is the base image that is used by all the other images. It is basically a complete server with all its dependencies that does not
+expose any port, expect any mounted folder nor runs a starting script.</p>
+
+<p>To use it, you can start your Dockerfile as:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>FROM jazz_base_stable
+
+ ... whatever you add here ...
+
+EXPOSE 8899
+
+CMD ["/home/jazz/start.sh"]
+</code></pre></div></div>
+
+<p>For <code class="language-plaintext highlighter-rouge">jazz_base_stable</code> to exist as a local image, you must have <code class="language-plaintext highlighter-rouge">git clone</code>-d the Jazz repository, configured successfully so that you
+can <a href="using_compile_jazz.html">compile</a>, installed docker and run the <code class="language-plaintext highlighter-rouge">build_upload_all.sh</code> in the Jazz <code class="language-plaintext highlighter-rouge">docker</code> folder.</p>
+
 <h2 id="how-to-check-for-the-latest-version">How to check for the latest version?</h2>
 
-<p>Follow <a href="https://hub.docker.com/r/kaalam/jazz_neat/tags/">this link</a> and note the version number.</p>
+<p>Follow <a href="https://hub.docker.com/r/kaalam/jazz_base/tags">this link</a> and note the version number.</p>
 
 <p><br /></p>
 
@@ -601,7 +620,7 @@ Tangle server are the only members.</div>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2021 kaalam.ai. All rights reserved. <br />
- Site last generated: Nov 23, 2021 <br />
+ Site last generated: Nov 25, 2021 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>
