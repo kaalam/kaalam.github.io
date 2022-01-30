@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nameuse_770',['NameUse',['../structjazz__elements_1_1NameUse.html',1,'jazz_elements']]]
+  ['nameuse_782',['NameUse',['../structjazz__elements_1_1NameUse.html',1,'jazz_elements']]]
 ];
