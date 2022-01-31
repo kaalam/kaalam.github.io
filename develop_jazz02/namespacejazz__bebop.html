@@ -67,17 +67,21 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>One liner.  
+<p>The Basic Opcode Pack (BOP)  
 <a href="namespacejazz__bebop.html#details">More...</a></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>One liner. </p>
+<div class="textblock"><p>The Basic Opcode Pack (BOP) </p>
 <p>Snippets: Snippets and code items. (A code item is a minimal snippet.)</p>
 <p>Primitives: stateless function, stateful function, mutable function, side-effect function.</p>
-<p>Kernel: A collection of primitives.</p>
+<p>Packs: A service to dynamically link Pack collections.</p>
+<p>Pack: A collection of primitives.</p>
 <p>Formal Fields: Organizing primitives and snippets by Kind.</p>
-<p>TODO: Write this!</p>
+<p>Core: The execution unit running Snippet.</p>
+<p>The fundamental collection of primitives provided in Jazz (any other pack is an uplifted pack).</p>
+<p>A core is not a service, it allocates its state in the Volatile container.</p>
 <p>Fields are morphisms defined as primitives and snippets in a unique way for each pair of Kinds.</p>
-<p>Kernels are collections of primitives, either B</p>
+<p>Packs are collections of primitives, either the Basic Opcode Pack (BOP), or a linked dynamic library referred to as an uplifted pack.</p>
+<p>This Service manages uplifted Packs.</p>
 <p>These functions are known as primitives (or op-codes) because they are implemented in C++ inside a Kernel.</p>
 <p>Functionally, snippets can do the same as primitives, but they are written in Bebop rather than C++. </p>
 </div></div><!-- contents -->
