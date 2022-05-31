@@ -117,7 +117,7 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A lookup table for all the possible values of a char mapped into an 8-bit state.  <a href="structjazz__elements_1_1ParseNextStateLUT.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1ParseStateTransition.html">ParseStateTransition</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A way to build constants defining the transtition from one state to the next via a regex.  <a href="structjazz__elements_1_1ParseStateTransition.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A way to build constants defining the transition from one state to the next via a regex.  <a href="structjazz__elements_1_1ParseStateTransition.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Persisted.html">Persisted</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classjazz__elements_1_1Persisted.html" title="Persisted: A Service to manage data objects in LMDB.">Persisted</a>: A <a class="el" href="classjazz__elements_1_1Service.html" title="A Jazz Service is a globally instanced configurable object that may allocate RAM.">Service</a> to manage data objects in LMDB.  <a href="classjazz__elements_1_1Persisted.html#details">More...</a><br /></td></tr>
@@ -519,7 +519,7 @@ Variables</h2></td></tr>
 
 <p>A proper type for specifying http status codes. </p>
 <p>Before libmicrohttpd (somewhere between &gt; 0.9.66-1 and &lt;= 0.9.72-2) changed MHD_Result to an enum, MHD_Result was (improperly) used to define HTTP responses. That ended-up badly on newer versions, since it was passed to a MHD_queue_response() and stopped working as it became an enum.</p>
-<p>This triggeresd the need, for clarity reasons only, to introduce a new type, MHD_StatusCode to refer to <b>HTTP responses</b>.</p>
+<p>This triggered the need, for clarity reasons only, to introduce a new type, MHD_StatusCode to refer to <b>HTTP responses</b>.</p>
 <p>See: <a href="https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml">https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml</a> </p>
 
 </div>
@@ -549,7 +549,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>A vector of StateTransition.l This only runs once, when contruction the API object, initializes the LUTs from a sequence of StateTransition constants in the source of <a class="el" href="api_8cpp.html">api.cpp</a>. </p>
+<p>A vector of StateTransition.l This only runs once, when construction the API object, initializes the LUTs from a sequence of StateTransition constants in the source of <a class="el" href="api_8cpp.html">api.cpp</a>. </p>
 
 </div>
 </div>

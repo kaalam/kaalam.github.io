@@ -359,8 +359,8 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p><a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a>: A <a class="el" href="classjazz__elements_1_1Service.html" title="A Jazz Service is a globally instanced configurable object that may allocate RAM.">Service</a> to manage data objects in RAM. </p>
 <h2><a class="anchor" id="autotoc_md15"></a>
 Node Method Reference</h2>
-<p>Some bases in <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a>, like <b>deque</b> which is just a key/value store where each entity is a new keyspace. Keys are keys and values are blocks of any kind. Other bases have a syntax that allows operating with entities or nodes, like pop()-ing the highest priority node in a <b>queue</b>, accessing to nodes in a tree using the tree pointers or keys to node ids, etc.</p>
-<p>The reference for this is this docstring. All entities and keys can be removed with <a class="el" href="classjazz__elements_1_1Volatile.html#a58727d1e312dbc40aeb2d942c301513f">remove()</a>, each time keys are returned, they are inside a block of just one string, see the methods of each base for more. Methods have commands that follow a ~ char and are only two letters long, allthough they can be written in full to improve readability. E.g. ~fi is the same as ~first and, we write it ~fi{rst} below, but, of course, it cannot be written with the brackets.</p>
+<p>Some bases in <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a>, like <b>deque</b> which is just a key/value store where each entity is a new key space. Keys are keys and values are blocks of any kind. Other bases have a syntax that allows operating with entities or nodes, like pop()-ing the highest priority node in a <b>queue</b>, accessing to nodes in a tree using the tree pointers or keys to node ids, etc.</p>
+<p>The reference for this is this docstring. All entities and keys can be removed with <a class="el" href="classjazz__elements_1_1Volatile.html#a58727d1e312dbc40aeb2d942c301513f">remove()</a>, each time keys are returned, they are inside a block of just one string, see the methods of each base for more. Methods have commands that follow a ~ char and are only two letters long, although they can be written in full to improve readability. E.g. ~fi is the same as ~first and, we write it ~fi{rst} below, but, of course, it cannot be written with the brackets.</p>
 <h2><a class="anchor" id="autotoc_md16"></a>
 Methods in deque</h2>
 <p>A deque is a double linked list with a key-value store. It is created empty via <a class="el" href="classjazz__elements_1_1Volatile.html#aca319680cabd9da074b07de3fd660192">new_entity()</a> and you can just <a class="el" href="classjazz__elements_1_1Volatile.html#a596197510e4b1a6a35e1d2b6d949b920">get()</a>, <a class="el" href="classjazz__elements_1_1Volatile.html#a975674e0086c4ab6bfeea54c3e191f1c">header()</a>, <a class="el" href="classjazz__elements_1_1Volatile.html#ae21341c2fe68dc4c3395cff88df2264a">put()</a>, <a class="el" href="classjazz__elements_1_1Volatile.html#a58727d1e312dbc40aeb2d942c301513f">remove()</a> or <a class="el" href="classjazz__elements_1_1Volatile.html#ac5cb0ad9b16c8a70a16a8c2627749a3f">copy()</a> by key. You can also put to both //deque/entity/~fi{rst} and //deque/entity/~la{st} and the nodes will be pushed to either side of the deque with automatically created keys. Keys can be found using <a class="el" href="classjazz__elements_1_1Volatile.html#a9a4c7e93174e176b350d86f2893cd224">locate()</a> and any node relation command. The first and last can be peeked by <a class="el" href="classjazz__elements_1_1Volatile.html#a596197510e4b1a6a35e1d2b6d949b920">get()</a>ting //deque/entity/~fi{rst} and //deque/entity/~la{st} or popped with //deque/entity/~pf{irst} and //deque/entity/~pl{ast}. Also the list supports //deque/entity/key~ne{xt} and //deque/entity/key~pr{ev} for <a class="el" href="classjazz__elements_1_1Volatile.html#a596197510e4b1a6a35e1d2b6d949b920">get()</a>, <a class="el" href="classjazz__elements_1_1Volatile.html#a975674e0086c4ab6bfeea54c3e191f1c">header()</a> and <a class="el" href="classjazz__elements_1_1Volatile.html#a9a4c7e93174e176b350d86f2893cd224">locate()</a> or as the what of <a class="el" href="classjazz__elements_1_1Volatile.html#ac5cb0ad9b16c8a70a16a8c2627749a3f">copy()</a>, but not for <a class="el" href="classjazz__elements_1_1Volatile.html#ae21341c2fe68dc4c3395cff88df2264a">put()</a>, <a class="el" href="classjazz__elements_1_1Volatile.html#a58727d1e312dbc40aeb2d942c301513f">remove()</a> or as the where of <a class="el" href="classjazz__elements_1_1Volatile.html#ac5cb0ad9b16c8a70a16a8c2627749a3f">copy()</a>.</p>
@@ -1573,7 +1573,7 @@ Methods in tree</h2>
 <p>Define a new name and push it into the HashNameUseMap.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">hash</td><td>hash(key) (It will almost always be already computed in advance, just use of or comoute it. It's inline.) </td></tr>
+    <tr><td class="paramname">hash</td><td>hash(key) (It will almost always be already computed in advance, just use of or compute it. It's inline.) </td></tr>
     <tr><td class="paramname">key</td><td>The name to be added, zero-padded by <a class="el" href="classjazz__elements_1_1Volatile.html#a61bf5660ad73c05efeb7ae4c1cffb5fa">hash()</a>.</td></tr>
   </table>
   </dd>
@@ -1605,7 +1605,7 @@ Methods in tree</h2>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Remove a from the HashNameUseMap by decrasing its use count and destroying it if not used anymore.</p>
+<p>Remove a from the HashNameUseMap by decreasing its use count and destroying it if not used anymore.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">hash</td><td>hash(key) </td></tr>
@@ -2400,7 +2400,7 @@ Methods in tree</h2>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The "native" interface: This is what really does the job and <b>must be implemented in the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> descendats</b>.</p>
+<p>The "native" interface: This is what really does the job and <b>must be implemented in the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> descendants</b>.</p>
 <p>NOTE**: The root <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> class does not implement this. </p>
 
 </div>
@@ -2416,7 +2416,7 @@ Methods in tree</h2>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The "native" interface: This is what really does the job and <b>must be implemented in the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> descendats</b>.</p>
+<p>The "native" interface: This is what really does the job and <b>must be implemented in the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> descendants</b>.</p>
 <p>NOTE**: The root <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> class does not implement this. </p>
 
 </div>
@@ -2432,7 +2432,7 @@ Methods in tree</h2>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The "native" interface: This is what really does the job and <b>must be implemented in the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> descendats</b>.</p>
+<p>The "native" interface: This is what really does the job and <b>must be implemented in the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> descendants</b>.</p>
 <p>NOTE**: The root <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> class does not implement this. </p>
 
 </div>
@@ -2497,7 +2497,7 @@ Methods in tree</h2>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The "native" interface: This is what really does the job and <b>must be implemented in the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> descendats</b>.</p>
+<p>The "native" interface: This is what really does the job and <b>must be implemented in the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> descendants</b>.</p>
 <p>NOTE**: The root <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> class does not implement this. </p>
 
 </div>
@@ -2513,7 +2513,7 @@ Methods in tree</h2>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The "native" interface: This is what really does the job and <b>must be implemented in the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> descendats</b>.</p>
+<p>The "native" interface: This is what really does the job and <b>must be implemented in the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> descendants</b>.</p>
 <p>NOTE**: The root <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> class does not implement this. </p>
 
 </div>
@@ -2553,7 +2553,7 @@ Methods in tree</h2>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The "native" interface: This is what really does the job and <b>must be implemented in the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> descendats</b>.</p>
+<p>The "native" interface: This is what really does the job and <b>must be implemented in the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> descendants</b>.</p>
 <p>NOTE**: The root <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> class does not implement this. </p>
 
 </div>
@@ -2640,7 +2640,7 @@ Methods in tree</h2>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The "native" interface: This is what really does the job and <b>must be implemented in the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> descendats</b>.</p>
+<p>The "native" interface: This is what really does the job and <b>must be implemented in the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> descendants</b>.</p>
 <p>NOTE**: The root <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> class does not implement this. </p>
 
 </div>
@@ -2679,7 +2679,7 @@ Methods in tree</h2>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The "native" interface: This is what really does the job and <b>must be implemented in the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> descendats</b>.</p>
+<p>The "native" interface: This is what really does the job and <b>must be implemented in the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> descendants</b>.</p>
 <p>NOTE**: The root <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> class does not implement this. </p>
 
 </div>
@@ -2720,7 +2720,7 @@ destroy_transaction(tx);" without the <a class="el" href="classjazz__elements_1_
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The "native" interface: This is what really does the job and <b>must be implemented in the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> descendats</b>.</p>
+<p>The "native" interface: This is what really does the job and <b>must be implemented in the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> descendants</b>.</p>
 <p>NOTE**: The root <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> class does not implement this. </p>
 
 </div>
