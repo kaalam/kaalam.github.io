@@ -171,14 +171,14 @@ hr {
 
 <p>There is only one process, the server. No actor model is implemented at process level.</p>
 
-<p>Jazz does not use fibers. Since fiber would not solve the fundamental problem, exploiting the 64 cores in a CPU at the minimum
-interthread (like cache misses, etc.) cost. The mix of threads and fiber makes it even worse. We need threads and cannot replace
-them by anything else.</p>
+<p>Jazz does not use fibers since fibers would not solve the fundamental problem, exploiting the 64 cores in a CPU at the minimum
+cost in terms of cache misses, etc. The mix of threads and fibers would be even worse. We need threads and cannot replace them by
+anything else.</p>
 
 <p>Threads are created in a pool by libmicrohttpd and each API call runs in a thread. The only mechanism to &ldquo;parallelize&rdquo; computation to
-more threads is starting more API calls. Anyway as complexity grows (from elements to bo to agents) this scaling happens automatically.
-Jazz is not prioritizing being a &ldquo;backend tensor workhorse&rdquo; anymore. That market has many well supported products, so you don&#39;t really
-need yet another map/reduce framework.</p>
+more threads is starting more API calls. Anyway as complexity grows (from elements to bop to agents) this scaling happens automatically.
+Jazz is not prioritizing being a &ldquo;backend tensor workhorse&rdquo; anymore and does not provide mechanisms to multithread a single backend
+computation.</p>
 
 <h2>The actor model</h2>
 
@@ -192,7 +192,7 @@ need yet another map/reduce framework.</p>
 <li>There is nothing in control, nothing schedules. The processing of messages to completion does everything.</li>
 <li>An actor is whatever runs to handle an API call up to completion.</li>
 <li>The (almost) only state is the state inside the actors. (Shared resources being the only exception to this.)</li>
-<li>All messages are one-way. The answer is another message.</li>
+<li>All messages are one-way. The answer may trigger more messages.</li>
 <li>Actors execute just one message always to completion, concurrently and asynchronously. They <strong>never</strong> wait for an answer.</li>
 </ul>
 
