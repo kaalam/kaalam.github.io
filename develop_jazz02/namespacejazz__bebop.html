@@ -72,18 +72,18 @@ $(function() {
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The Basic Opcode Pack (BOP) </p>
 <p>Snippets: Snippets and code items. (A code item is a minimal snippet.)</p>
-<p>Primitives: stateless function, stateful function, mutable function, side-effect function.</p>
 <p>Packs: A service to dynamically link Pack collections.</p>
-<p>Pack: A collection of primitives.</p>
-<p>Formal Fields: Organizing primitives and snippets by Kind.</p>
+<p>Pack: A collection of op-codes.</p>
+<p>OpCode: stateless functions and mutators. Category theory provides the necessary composition to manage state without introducing sateless and stateful as separate categories. Only mutators (which introduce addresses) are a separate category.</p>
+<p>Formal Fields: Organizing op-codes and snippets by Kind.</p>
 <p>Core: The execution unit running Snippet.</p>
-<p>The fundamental collection of primitives provided in Jazz (any other pack is an uplifted pack).</p>
+<p>The fundamental collection of op-codes provided in Jazz (any other pack is an uplifted pack).</p>
 <p>A core is not a service, it allocates its state in the Volatile container.</p>
-<p>Fields are morphisms defined as primitives and snippets in a unique way for each pair of Kinds.</p>
-<p>Packs are collections of primitives, either the Basic Opcode Pack (BOP), or a linked dynamic library referred to as an uplifted pack.</p>
+<p>Fields are morphisms defined as op-codes and snippets in a unique way for each pair of Kinds.</p>
+<p>These functions are known as op-codes and inherit OpCode. They are implemented in C++ in a pack.</p>
+<p>Packs are collections of op-codes, either the Basic Opcode Pack (BOP), or a linked dynamic library referred to as an uplifted pack.</p>
 <p>This Service manages uplifted Packs.</p>
-<p>These functions are known as primitives (or op-codes) because they are implemented in C++ inside a Kernel.</p>
-<p>Functionally, snippets can do the same as primitives, but they are written in Bebop rather than C++. </p>
+<p>Functionally, snippets can do the same as op-codes, but they are written in Bebop rather than C++. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
