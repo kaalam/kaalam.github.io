@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['queueent_787',['QueueEnt',['../structjazz__elements_1_1QueueEnt.html',1,'jazz_elements']]]
+  ['nameuse_804',['NameUse',['../structjazz__elements_1_1NameUse.html',1,'jazz_elements']]]
 ];
