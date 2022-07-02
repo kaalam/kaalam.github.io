@@ -68,6 +68,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -83,12 +84,31 @@ Namespaces</h2></td></tr>
 <tr class="memdesc:namespacejazz__main"><td class="mdescLeft">&#160;</td><td class="mdescRight">The http API, instancing and building the server. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:acd7fa8c1e44c1ce605992576831262b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="instances_8cpp.html#acd7fa8c1e44c1ce605992576831262b8">MHD_HTTP_ANYERROR</a>&#160;&#160;&#160;true</td></tr>
+<tr class="separator:acd7fa8c1e44c1ce605992576831262b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa2ef58962194fafcaff8777e31d68c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="instances_8cpp.html#afa2ef58962194fafcaff8777e31d68c2">STATE_NEW_CALL</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:afa2ef58962194fafcaff8777e31d68c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indices inside state (anything else is a pTransaction of a PUT call).  <a href="instances_8cpp.html#afa2ef58962194fafcaff8777e31d68c2">More...</a><br /></td></tr>
+<tr class="separator:afa2ef58962194fafcaff8777e31d68c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d3b51e00c2e1c785f4166444fbc559e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="instances_8cpp.html#a7d3b51e00c2e1c785f4166444fbc559e">STATE_NOT_ACCEPTABLE</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:a7d3b51e00c2e1c785f4166444fbc559e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data upload failed, query execution failed locating targets. Returns MHD_HTTP_NOT_ACCEPTABLE.  <a href="instances_8cpp.html#a7d3b51e00c2e1c785f4166444fbc559e">More...</a><br /></td></tr>
+<tr class="separator:a7d3b51e00c2e1c785f4166444fbc559e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcebd69480b7c8d4f4a83755d28927b5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="instances_8cpp.html#afcebd69480b7c8d4f4a83755d28927b5">STATE_BAD_REQUEST</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memdesc:afcebd69480b7c8d4f4a83755d28927b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">PUT query is call malformed. Returns MHD_HTTP_BAD_REQUEST.  <a href="instances_8cpp.html#afcebd69480b7c8d4f4a83755d28927b5">More...</a><br /></td></tr>
+<tr class="separator:afcebd69480b7c8d4f4a83755d28927b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a255f8360c29618bbb1c9b89cc50cf8f6"><td class="memItemLeft" align="right" valign="top">ConfigFile&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#a255f8360c29618bbb1c9b89cc50cf8f6">jazz_main::CONFIG</a> (<a class="el" href="utils_8h.html#a89e9b1adbdda91381feed325f8f086b7">JAZZ_DEFAULT_CONFIG_PATH</a>)</td></tr>
 <tr class="separator:a255f8360c29618bbb1c9b89cc50cf8f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebd5be2fc5b704c5db25e81de84f200e"><td class="memItemLeft" align="right" valign="top">Logger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#aebd5be2fc5b704c5db25e81de84f200e">jazz_main::LOGGER</a> (CONFIG, &quot;LOGGER_PATH&quot;)</td></tr>
 <tr class="separator:aebd5be2fc5b704c5db25e81de84f200e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c4e34ed7c375c90202bb1d22dd5ff8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="api_8h.html#addfe8a731ae492e2afd535f4eea99308">MHD_Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#a2c4e34ed7c375c90202bb1d22dd5ff8f">jazz_main::http_request_callback</a> (void *cls, struct MHD_Connection *connection, const char *url, const char *method, const char *version, const char *upload_data, size_t *upload_data_size, void **con_cls)</td></tr>
+<tr class="separator:a2c4e34ed7c375c90202bb1d22dd5ff8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a364ec58ec403c475cde847e00ea50f9f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#a364ec58ec403c475cde847e00ea50f9f">jazz_main::init_http_callback</a> ()</td></tr>
+<tr class="memdesc:a364ec58ec403c475cde847e00ea50f9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The initialization of the global variables for <a class="el" href="namespacejazz__main.html#a2c4e34ed7c375c90202bb1d22dd5ff8f">http_request_callback()</a>.  <a href="namespacejazz__main.html#a364ec58ec403c475cde847e00ea50f9f">More...</a><br /></td></tr>
+<tr class="separator:a364ec58ec403c475cde847e00ea50f9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae59e221da2306a62777f259a749aee8e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#ae59e221da2306a62777f259a749aee8e">jazz_main::start_service</a> (pService service, char const *service_name)</td></tr>
 <tr class="memdesc:ae59e221da2306a62777f259a749aee8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A little utility to start services writing output to the console.  <a href="namespacejazz__main.html#ae59e221da2306a62777f259a749aee8e">More...</a><br /></td></tr>
 <tr class="separator:ae59e221da2306a62777f259a749aee8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -102,7 +122,80 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:a9af1d41451e6cfe5e88cddebec1ba954"><td class="memItemLeft" align="right" valign="top">pMHD_Daemon&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#a9af1d41451e6cfe5e88cddebec1ba954">jazz_main::Jazz_MHD_Daemon</a></td></tr>
 <tr class="separator:a9af1d41451e6cfe5e88cddebec1ba954"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a008a2904683fef6fb52dd16ab4c8d947"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#a008a2904683fef6fb52dd16ab4c8d947">jazz_main::callback_state</a> [3]</td></tr>
+<tr class="separator:a008a2904683fef6fb52dd16ab4c8d947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1266718e0c60fa99cb934933e13f565f"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#a1266718e0c60fa99cb934933e13f565f">jazz_main::response_put_ok</a> [] = &quot;0&quot;</td></tr>
+<tr class="separator:a1266718e0c60fa99cb934933e13f565f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f301bae0aebe84fd12580831e960ec3"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#a8f301bae0aebe84fd12580831e960ec3">jazz_main::response_put_fail</a> [] = &quot;1&quot;</td></tr>
+<tr class="separator:a8f301bae0aebe84fd12580831e960ec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e9a007ebb325c49acd6b5a10f647d74"><td class="memItemLeft" align="right" valign="top">TenBitIntLUT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__main.html#a7e9a007ebb325c49acd6b5a10f647d74">jazz_main::http_methods</a></td></tr>
+<tr class="memdesc:a7e9a007ebb325c49acd6b5a10f647d74"><td class="mdescLeft">&#160;</td><td class="mdescRight">A LUT to convert argument const char *method int an integer code.  <a href="namespacejazz__main.html#a7e9a007ebb325c49acd6b5a10f647d74">More...</a><br /></td></tr>
+<tr class="separator:a7e9a007ebb325c49acd6b5a10f647d74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="acd7fa8c1e44c1ce605992576831262b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd7fa8c1e44c1ce605992576831262b8">&#9670;&nbsp;</a></span>MHD_HTTP_ANYERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MHD_HTTP_ANYERROR&#160;&#160;&#160;true</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afa2ef58962194fafcaff8777e31d68c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa2ef58962194fafcaff8777e31d68c2">&#9670;&nbsp;</a></span>STATE_NEW_CALL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_NEW_CALL&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indices inside state (anything else is a pTransaction of a PUT call). </p>
+<p>Default state: connection open for any call </p>
+
+</div>
+</div>
+<a id="a7d3b51e00c2e1c785f4166444fbc559e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d3b51e00c2e1c785f4166444fbc559e">&#9670;&nbsp;</a></span>STATE_NOT_ACCEPTABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_NOT_ACCEPTABLE&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Data upload failed, query execution failed locating targets. Returns MHD_HTTP_NOT_ACCEPTABLE. </p>
+
+</div>
+</div>
+<a id="afcebd69480b7c8d4f4a83755d28927b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcebd69480b7c8d4f4a83755d28927b5">&#9670;&nbsp;</a></span>STATE_BAD_REQUEST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STATE_BAD_REQUEST&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>PUT query is call malformed. Returns MHD_HTTP_BAD_REQUEST. </p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
