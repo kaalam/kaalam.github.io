@@ -123,39 +123,40 @@ $(function() {
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacejazz__bebop.html">jazz_bebop</a></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classjazz__bebop_1_1Pack.html">   59</a></span>&#160;<span class="keyword">class </span><a class="code" href="classjazz__bebop_1_1Pack.html">Pack</a> : <span class="keyword">public</span> <a class="code" href="classjazz__elements_1_1Container.html">jazz_elements::Container</a> {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <a class="code" href="classjazz__bebop_1_1Pack.html#ad23e7482c7f505757f0b5663bb5859d6">Pack</a>(<a class="code" href="classjazz__elements_1_1Logger.html">jazz_elements::pLogger</a>     a_logger,</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;             <a class="code" href="classjazz__elements_1_1ConfigFile.html">jazz_elements::pConfigFile</a> a_config);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;       <a class="code" href="classjazz__bebop_1_1Pack.html#a53d3ddc0b368569d4689e184fcec1f69">~Pack</a>();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <a class="code" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">jazz_elements::StatusCode</a> <a class="code" href="classjazz__bebop_1_1Pack.html#a738b88f891cbddf9e66519deb581a81a">start</a> ();</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <a class="code" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">jazz_elements::StatusCode</a> <a class="code" href="classjazz__bebop_1_1Pack.html#ae9da225b20e06431f76e1c72a9a42bd1">shut_down</a>();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="namespacejazz__bebop.html#a947b6ecccc7afc3056717f2bdb3664c4">   70</a></span>&#160;<span class="keyword">typedef</span> <a class="code" href="classjazz__bebop_1_1Pack.html">Pack</a> *<a class="code" href="namespacejazz__bebop.html#a947b6ecccc7afc3056717f2bdb3664c4">pPack</a>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">//TODO: A Pack is a Service, but not a container.</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classjazz__bebop_1_1Pack.html">   60</a></span>&#160;<span class="keyword">class </span><a class="code" href="classjazz__bebop_1_1Pack.html">Pack</a> : <span class="keyword">public</span> <a class="code" href="classjazz__elements_1_1Container.html">jazz_elements::Container</a> {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="code" href="classjazz__bebop_1_1Pack.html#ad23e7482c7f505757f0b5663bb5859d6">Pack</a>(<a class="code" href="classjazz__elements_1_1Logger.html">jazz_elements::pLogger</a>     a_logger,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;             <a class="code" href="classjazz__elements_1_1ConfigFile.html">jazz_elements::pConfigFile</a> a_config);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;       <a class="code" href="classjazz__bebop_1_1Pack.html#a53d3ddc0b368569d4689e184fcec1f69">~Pack</a>();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <a class="code" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">jazz_elements::StatusCode</a> <a class="code" href="classjazz__bebop_1_1Pack.html#a738b88f891cbddf9e66519deb581a81a">start</a> ();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">jazz_elements::StatusCode</a> <a class="code" href="classjazz__bebop_1_1Pack.html#ae9da225b20e06431f76e1c72a9a42bd1">shut_down</a>();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;};</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="namespacejazz__bebop.html#a947b6ecccc7afc3056717f2bdb3664c4">   71</a></span>&#160;<span class="keyword">typedef</span> <a class="code" href="classjazz__bebop_1_1Pack.html">Pack</a> *<a class="code" href="namespacejazz__bebop.html#a947b6ecccc7afc3056717f2bdb3664c4">pPack</a>;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#ifdef CATCH_TEST</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">// Instancing Pack</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">// ---------------</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">extern</span> <a class="code" href="classjazz__bebop_1_1Pack.html">Pack</a> PAK;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;} <span class="comment">// namespace jazz_bebop</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif // ifndef INCLUDED_JAZZ_BEBOP_PACK</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#ifdef CATCH_TEST</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">// Instancing Pack</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">// ---------------</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">extern</span> <a class="code" href="classjazz__bebop_1_1Pack.html">Pack</a> PAK;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;} <span class="comment">// namespace jazz_bebop</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif // ifndef INCLUDED_JAZZ_BEBOP_PACK</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassjazz__elements_1_1Logger_html"><div class="ttname"><a href="classjazz__elements_1_1Logger.html">jazz_elements::Logger</a></div><div class="ttdoc">A simple logger.</div><div class="ttdef"><b>Definition:</b> utils.h:242</div></div>
 <div class="ttc" id="aclassjazz__elements_1_1Container_html"><div class="ttname"><a href="classjazz__elements_1_1Container.html">jazz_elements::Container</a></div><div class="ttdoc">Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...</div><div class="ttdef"><b>Definition:</b> container.h:278</div></div>
 <div class="ttc" id="aclassjazz__bebop_1_1Pack_html_ae9da225b20e06431f76e1c72a9a42bd1"><div class="ttname"><a href="classjazz__bebop_1_1Pack.html#ae9da225b20e06431f76e1c72a9a42bd1">jazz_bebop::Pack::shut_down</a></div><div class="ttdeci">jazz_elements::StatusCode shut_down()</div><div class="ttdef"><b>Definition:</b> pack.cpp:64</div></div>
 <div class="ttc" id="aopcode_8h_html"><div class="ttname"><a href="opcode_8h.html">opcode.h</a></div></div>
-<div class="ttc" id="aclassjazz__bebop_1_1Pack_html"><div class="ttname"><a href="classjazz__bebop_1_1Pack.html">jazz_bebop::Pack</a></div><div class="ttdef"><b>Definition:</b> pack.h:59</div></div>
-<div class="ttc" id="anamespacejazz__bebop_html_a947b6ecccc7afc3056717f2bdb3664c4"><div class="ttname"><a href="namespacejazz__bebop.html#a947b6ecccc7afc3056717f2bdb3664c4">jazz_bebop::pPack</a></div><div class="ttdeci">Pack * pPack</div><div class="ttdef"><b>Definition:</b> pack.h:70</div></div>
+<div class="ttc" id="aclassjazz__bebop_1_1Pack_html"><div class="ttname"><a href="classjazz__bebop_1_1Pack.html">jazz_bebop::Pack</a></div><div class="ttdef"><b>Definition:</b> pack.h:60</div></div>
+<div class="ttc" id="anamespacejazz__bebop_html_a947b6ecccc7afc3056717f2bdb3664c4"><div class="ttname"><a href="namespacejazz__bebop.html#a947b6ecccc7afc3056717f2bdb3664c4">jazz_bebop::pPack</a></div><div class="ttdeci">Pack * pPack</div><div class="ttdef"><b>Definition:</b> pack.h:71</div></div>
 <div class="ttc" id="aclassjazz__bebop_1_1Pack_html_a53d3ddc0b368569d4689e184fcec1f69"><div class="ttname"><a href="classjazz__bebop_1_1Pack.html#a53d3ddc0b368569d4689e184fcec1f69">jazz_bebop::Pack::~Pack</a></div><div class="ttdeci">~Pack()</div><div class="ttdef"><b>Definition:</b> pack.cpp:51</div></div>
 <div class="ttc" id="aclassjazz__elements_1_1ConfigFile_html"><div class="ttname"><a href="classjazz__elements_1_1ConfigFile.html">jazz_elements::ConfigFile</a></div><div class="ttdoc">A configuration file as a key/value store.</div><div class="ttdef"><b>Definition:</b> utils.h:214</div></div>
 <div class="ttc" id="anamespacejazz__bebop_html"><div class="ttname"><a href="namespacejazz__bebop.html">jazz_bebop</a></div><div class="ttdoc">The Basic Opcode Pack (BOP)</div><div class="ttdef"><b>Definition:</b> bop.cpp:38</div></div>
