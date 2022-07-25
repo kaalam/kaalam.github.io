@@ -1,9 +1,23 @@
 var searchData=
 [
-  ['key_342',['key',['../structjazz__elements_1_1Locator.html#aa7e8c995d5f9f7a6296f67dda46cfae9',1,'jazz_elements::Locator::key()'],['../structjazz__main_1_1HttpQueryState.html#a7caa40ee9d9641220035e1c9d7e8b93a',1,'jazz_main::HttpQueryState::key()']]],
-  ['key_5fhash_343',['key_hash',['../structjazz__elements_1_1VolatileTransaction.html#a20e75d60b495d6e5be520a1b1c293818',1,'jazz_elements::VolatileTransaction::key_hash()'],['../structjazz__elements_1_1EntityKeyHash.html#ab8deadd4103bfa363f3b659104333ab8',1,'jazz_elements::EntityKeyHash::key_hash()']]],
-  ['key_5fseed_344',['key_seed',['../classjazz__elements_1_1Volatile.html#afc059a889ae4c6dd11ab7a22ec043863',1,'jazz_elements::Volatile']]],
-  ['kind_345',['Kind',['../classjazz__elements_1_1Kind.html',1,'jazz_elements']]],
-  ['kind_2ecpp_346',['kind.cpp',['../kind_8cpp.html',1,'']]],
-  ['kind_2eh_347',['kind.h',['../kind_8h.html',1,'']]]
+  ['jazz_5fbebop_335',['jazz_bebop',['../namespacejazz__bebop.html',1,'']]],
+  ['jazz_5fbebop_2eh_336',['jazz_bebop.h',['../jazz__bebop_8h.html',1,'']]],
+  ['jazz_5fdebug_5fhome_337',['JAZZ_DEBUG_HOME',['../jazz__platform_8h.html#ac26325c84d31adf61f1480e8f7cd7b7f',1,'jazz_platform.h']]],
+  ['jazz_5fdefault_5fconfig_5fpath_338',['JAZZ_DEFAULT_CONFIG_PATH',['../utils_8h.html#a89e9b1adbdda91381feed325f8f086b7',1,'utils.h']]],
+  ['jazz_5felements_339',['jazz_elements',['../namespacejazz__elements.html',1,'']]],
+  ['jazz_5felements_2eh_340',['jazz_elements.h',['../jazz__elements_8h.html',1,'']]],
+  ['jazz_5fmain_341',['jazz_main',['../namespacejazz__main.html',1,'']]],
+  ['jazz_5fmax_5fnum_5fthreads_342',['JAZZ_MAX_NUM_THREADS',['../types_8h.html#a5ca562590a5d4d166dfef09d15c7f3ac',1,'types.h']]],
+  ['jazz_5fmhd_5fdaemon_343',['Jazz_MHD_Daemon',['../namespacejazz__main.html#a9af1d41451e6cfe5e88cddebec1ba954',1,'jazz_main']]],
+  ['jazz_5fmodel_344',['jazz_model',['../namespacejazz__model.html',1,'']]],
+  ['jazz_5fmodel_2eh_345',['jazz_model.h',['../jazz__model_8h.html',1,'']]],
+  ['jazz_5fnode_5fcluster_5fsize_346',['jazz_node_cluster_size',['../classjazz__elements_1_1Channels.html#addc02f975b640ba708ee34cbfba35d8e',1,'jazz_elements::Channels']]],
+  ['jazz_5fnode_5fip_347',['jazz_node_ip',['../classjazz__elements_1_1Channels.html#a57ff2b5199b467ea047d7a6ab51107af',1,'jazz_elements::Channels']]],
+  ['jazz_5fnode_5fmy_5findex_348',['jazz_node_my_index',['../classjazz__elements_1_1Channels.html#a157cdf95ec8a4ea15e7aa4754bff32fc',1,'jazz_elements::Channels']]],
+  ['jazz_5fnode_5fname_349',['jazz_node_name',['../classjazz__elements_1_1Channels.html#ad3e69ef85991c7f1afdd796ee15b93ec',1,'jazz_elements::Channels']]],
+  ['jazz_5fnode_5fport_350',['jazz_node_port',['../classjazz__elements_1_1Channels.html#a99f5ffa00666cefa538f2239de54df10',1,'jazz_elements::Channels']]],
+  ['jazz_5fplatform_2eh_351',['jazz_platform.h',['../jazz__platform_8h.html',1,'']]],
+  ['jazz_5fversion_352',['JAZZ_VERSION',['../jazz__platform_8h.html#a948a256c8427f1f46ede7fd6fc2a7b5c',1,'jazz_platform.h']]],
+  ['jazz_5fyears_353',['JAZZ_YEARS',['../jazz__platform_8h.html#a494e5cc1a5686d905af0917e584806bf',1,'jazz_platform.h']]],
+  ['jazzlmdboptions_354',['JazzLmdbOptions',['../structjazz__elements_1_1JazzLmdbOptions.html',1,'jazz_elements']]]
 ];

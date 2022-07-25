@@ -1,10 +1,11 @@
 var searchData=
 [
-  ['valid_5fname_760',['valid_name',['../namespacejazz__elements.html#a5a9db2e1ed4154f282a83cfe38b31239',1,'jazz_elements']]],
-  ['validate_5findex_761',['validate_index',['../classjazz__elements_1_1Block.html#afff9354aea780833e7e133d60e0b6d93',1,'jazz_elements::Block']]],
-  ['validate_5foffset_762',['validate_offset',['../classjazz__elements_1_1Block.html#a3a9f80168b8cc49169a0c906c65c1467',1,'jazz_elements::Block']]],
-  ['volatile_763',['Volatile',['../classjazz__elements_1_1Volatile.html',1,'jazz_elements::Volatile'],['../classjazz__elements_1_1Volatile.html#a17fc85e77d71206a5a4675a51209e0cc',1,'jazz_elements::Volatile::Volatile()'],['../namespacejazz__main.html#a293f31fb60de0074473a30116ea5a754',1,'jazz_main::VOLATILE()']]],
-  ['volatile_2ecpp_764',['volatile.cpp',['../volatile_8cpp.html',1,'']]],
-  ['volatile_2eh_765',['volatile.h',['../volatile_8h.html',1,'']]],
-  ['volatiletransaction_766',['VolatileTransaction',['../structjazz__elements_1_1VolatileTransaction.html',1,'jazz_elements']]]
+  ['unlock_5fcontainer_773',['unlock_container',['../classjazz__elements_1_1Container.html#a39e73d3ee200010809ad7c4b3540dd51',1,'jazz_elements::Container']]],
+  ['unwrap_5freceived_774',['unwrap_received',['../classjazz__elements_1_1Container.html#af6065eb2335973ef032f98b411efe107',1,'jazz_elements::Container::unwrap_received(pTransaction &amp;p_txn)'],['../classjazz__elements_1_1Container.html#a5d7e76719e0d5e538aa8908d88e25ebf',1,'jazz_elements::Container::unwrap_received(pTransaction &amp;p_txn, pBlock p_maybe_block, int rec_size)']]],
+  ['uplifted_5finstances_2ecpp_775',['uplifted_instances.cpp',['../uplifted__instances_8cpp.html',1,'']]],
+  ['uplifted_5finstances_2eh_776',['uplifted_instances.h',['../uplifted__instances_8h.html',1,'']]],
+  ['url_777',['url',['../structjazz__main_1_1HttpQueryState.html#a9c247bfef5456b5f131ad61913d60632',1,'jazz_main::HttpQueryState']]],
+  ['use_778',['use',['../structjazz__elements_1_1NameUse.html#a2e8586f19c17db9f571d6a7df4b29173',1,'jazz_elements::NameUse']]],
+  ['utils_2ecpp_779',['utils.cpp',['../utils_8cpp.html',1,'']]],
+  ['utils_2eh_780',['utils.h',['../utils_8h.html',1,'']]]
 ];
