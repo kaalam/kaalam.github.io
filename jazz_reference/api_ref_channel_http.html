@@ -576,9 +576,9 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <h2 id="the-container-channels">The Container <code class="language-plaintext highlighter-rouge">Channels</code></h2>
+  <h2 id="the-container-channels">The Container <code class="highlighter-rouge">Channels</code></h2>
 
-<p><code class="language-plaintext highlighter-rouge">Channels</code> is a container doing block transactions across media (files, folders, the bash shell, http urls and zeroMQ servers). This
+<p><code class="highlighter-rouge">Channels</code> is a container doing block transactions across media (files, folders, the bash shell, http urls and zeroMQ servers). This
 includes keeping a cluster of Jazz nodes as a whole where every node is aware of all the others and queries can be forwarded by just
 including the node name. Any imaginable communication channel, including writing files and pushing them to github (using git in the bash
 shell) is accessible. This includes all protocols supported by zeroMQ and libCURL.</p>
@@ -587,7 +587,7 @@ shell) is accessible. This includes all protocols supported by zeroMQ and libCUR
   <li>See C++ ref <a href="/develop_jazz02/classjazz__elements_1_1Channels.html">Channels</a></li>
 </ul>
 
-<h2 id="the-base-http">The base <code class="language-plaintext highlighter-rouge">http</code></h2>
+<h2 id="the-base-http">The base <code class="highlighter-rouge">http</code></h2>
 
 <p>Besides being an http server, Jazz is also an http client. The simplest mode of operation is just forwarding get(), put() and delete()
 calls that are intended for other nodes in a Jazz cluster. This is done at the top API level by just adding a node name. E.g.,
@@ -603,8 +603,8 @@ https://everything.curl.dev/libcurl-http/cookies) Once the connection exists, yo
 the word connection). I.e, get(txn, “//http/a_name”) or get(txn, “//http/a_name/args”) will send the http GET to connection[URL] + “args”.
 Same for put() and remove().</p>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> An Index serialized as a Tuple is a <b>Tuple of two string vectors</b> of the same length named <code class="language-plaintext highlighter-rouge">key</code> and
-<code class="language-plaintext highlighter-rouge">value</code>.</div>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> An Index serialized as a Tuple is a <b>Tuple of two string vectors</b> of the same length named <code class="highlighter-rouge">key</code> and
+<code class="highlighter-rouge">value</code>.</div>
 
 <p>If you remove(“//http/connection/a_name”), you destroy the connection. get(“//http/connection/a_name”) returns an
 <strong>Index serialized as a Tuple</strong>  with all the connection parameters.</p>
@@ -614,10 +614,10 @@ Same for put() and remove().</p>
 <p>There are three ways:</p>
 
 <ul>
-  <li>Inside the Jazz cluster, just use the API of another node like the API of the current node. E.g., <code class="language-plaintext highlighter-rouge">///tokyo_node//lmdb/base17/key55</code> This
+  <li>Inside the Jazz cluster, just use the API of another node like the API of the current node. E.g., <code class="highlighter-rouge">///tokyo_node//lmdb/base17/key55</code> This
 will forward automatically.</li>
-  <li>For easy URL (no cookies, authorization, etc.), just use the constant form GET, PUT or DELETE to <code class="language-plaintext highlighter-rouge">//http&amp;http://url...;</code></li>
-  <li>For advanced control, just create the pipeline <code class="language-plaintext highlighter-rouge">my_pipe</code> programmatically and GET, PUT or DELETE to <code class="language-plaintext highlighter-rouge">//http/my_pipe/</code></li>
+  <li>For easy URL (no cookies, authorization, etc.), just use the constant form GET, PUT or DELETE to <code class="highlighter-rouge">//http&amp;http://url...;</code></li>
+  <li>For advanced control, just create the pipeline <code class="highlighter-rouge">my_pipe</code> programmatically and GET, PUT or DELETE to <code class="highlighter-rouge">//http/my_pipe/</code></li>
 </ul>
 
 <div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> http operation must be enabled via configuration by setting ENABLE_HTTP_CLIENT to something non-zero.</div>
@@ -635,7 +635,7 @@ will forward automatically.</li>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2022 kaalam.ai. All rights reserved. <br />
- Site last generated: Aug 5, 2022 <br />
+ Site last generated: Aug 15, 2022 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

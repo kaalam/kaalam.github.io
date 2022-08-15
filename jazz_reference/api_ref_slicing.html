@@ -580,20 +580,20 @@ $('#toc').on('click', 'a', function() {
 
 <div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> These operations only apply to GET (and therefore HEAD) calls.</div>
 
-<h2 id="selecting-an-item-from-a-tuple">Selecting an item from a <code class="language-plaintext highlighter-rouge">Tuple</code></h2>
+<h2 id="selecting-an-item-from-a-tuple">Selecting an item from a <code class="highlighter-rouge">Tuple</code></h2>
 
 <p>This operation returns an item from a Tuple as a Tensor, instead of the whole tuple.</p>
 
-<p>The syntax is giving the item name after a colon <code class="language-plaintext highlighter-rouge">:</code> in <code class="language-plaintext highlighter-rouge">///node//base/entity/key:item_name</code>.</p>
+<p>The syntax is giving the item name after a colon <code class="highlighter-rouge">:</code> in <code class="highlighter-rouge">///node//base/entity/key:item_name</code>.</p>
 
-<h2 id="selecting-rows-from-a-tensor">Selecting rows from a <code class="language-plaintext highlighter-rouge">Tensor</code></h2>
+<h2 id="selecting-rows-from-a-tensor">Selecting rows from a <code class="highlighter-rouge">Tensor</code></h2>
 
-<p>In a Tensor, the first dimension in the shape is referred to as the <strong>row</strong>. I.e., a tensor of shape <code class="language-plaintext highlighter-rouge">[30, 16, 5]</code> is stored as if it was
-30 tensors of shape <code class="language-plaintext highlighter-rouge">[1, 16, 5]</code>. You can select rows in a Tensor to get a smaller tensor. This operation is extremely efficient and done
+<p>In a Tensor, the first dimension in the shape is referred to as the <strong>row</strong>. I.e., a tensor of shape <code class="highlighter-rouge">[30, 16, 5]</code> is stored as if it was
+30 tensors of shape <code class="highlighter-rouge">[1, 16, 5]</code>. You can select rows in a Tensor to get a smaller tensor. This operation is extremely efficient and done
 inside the containers without creating a copy of the block. In this way, you can read 2Kb from a 50Mb block in lmdb storage without
 creating any copy of the original block, just creating the new 2Kb block.</p>
 
-<p>The tensors used as selectors are known as <code class="language-plaintext highlighter-rouge">filters</code>. Filters are just tensors with the right shapes and ranges. A filter can be:</p>
+<p>The tensors used as selectors are known as <code class="highlighter-rouge">filters</code>. Filters are just tensors with the right shapes and ranges. A filter can be:</p>
 
 <ul>
   <li>A vector of boolean whose size is the number of rows to be filtered.</li>
@@ -605,11 +605,11 @@ creating any copy of the original block, just creating the new 2Kb block.</p>
 <p>Can be done by either an existing block or a constant. E.g.,</p>
 
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">//lmdb/my_ent/block_1[//queue/filters/filter_1]</code></li>
-  <li><code class="language-plaintext highlighter-rouge">//lmdb/my_ent/block_1[&amp;[1,3,5]]</code></li>
+  <li><code class="highlighter-rouge">//lmdb/my_ent/block_1[//queue/filters/filter_1]</code></li>
+  <li><code class="highlighter-rouge">//lmdb/my_ent/block_1[&amp;[1,3,5]]</code></li>
 </ul>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> In a filter constants are not terminated by a <code class="language-plaintext highlighter-rouge">;</code> but by the closing square bracket.</div>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> In a filter constants are not terminated by a <code class="highlighter-rouge">;</code> but by the closing square bracket.</div>
 
 <p><br /></p>
 
@@ -626,7 +626,7 @@ creating any copy of the original block, just creating the new 2Kb block.</p>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2022 kaalam.ai. All rights reserved. <br />
- Site last generated: Aug 5, 2022 <br />
+ Site last generated: Aug 15, 2022 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

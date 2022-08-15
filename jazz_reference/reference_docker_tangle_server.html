@@ -591,7 +591,7 @@ See <a href="https://raw.githubusercontent.com/kaalam/kaalam/master/the_tangle.p
 
 <h2 id="how-to-run-it">How to run it</h2>
 
-<p>You have to use a different docker image <code class="language-plaintext highlighter-rouge">kaalam/jazz_tng:0.5.3</code> instead of <code class="language-plaintext highlighter-rouge">kaalam/jazz_lss:0.5.3</code> which is a server with some extra
+<p>You have to use a different docker image <code class="highlighter-rouge">kaalam/jazz_tng:0.5.3</code> instead of <code class="highlighter-rouge">kaalam/jazz_lss:0.5.3</code> which is a server with some extra
 software to download and decompress the datasets.</p>
 
 <p>The process is three step:</p>
@@ -606,34 +606,34 @@ software to download and decompress the datasets.</p>
 
 <p>Run a docker container by typing:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run -ti -v ~/tmp/the_tangle:/home/jazz/jazz_dbg_mdb kaalam/jazz_tng:0.5.3 /bin/bash
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run -ti -v ~/tmp/the_tangle:/home/jazz/jazz_dbg_mdb kaalam/jazz_tng:0.5.3 /bin/bash
 </code></pre></div></div>
 
-<p>where <code class="language-plaintext highlighter-rouge">~/tmp/the_tangle</code> is any existing empty local path you wish to use to store everything (60 Gb required). Inside the docker
-container run the script <code class="language-plaintext highlighter-rouge">./download_and_store.sh</code> and exit when complete.</p>
+<p>where <code class="highlighter-rouge">~/tmp/the_tangle</code> is any existing empty local path you wish to use to store everything (60 Gb required). Inside the docker
+container run the script <code class="highlighter-rouge">./download_and_store.sh</code> and exit when complete.</p>
 
 <p>You are ready for compiling.</p>
 
 <h3 id="compiling">Compiling</h3>
 
-<p>Install the python package with <code class="language-plaintext highlighter-rouge">pip install thetangle</code>. Run the TNG server with:</p>
+<p>Install the python package with <code class="highlighter-rouge">pip install thetangle</code>. Run the TNG server with:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run -p8899:8899 -v ~/tmp/the_tangle:/home/jazz/jazz_dbg_mdb kaalam/jazz_tng:0.5.3
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run -p8899:8899 -v ~/tmp/the_tangle:/home/jazz/jazz_dbg_mdb kaalam/jazz_tng:0.5.3
 </code></pre></div></div>
 
-<p>using the same <code class="language-plaintext highlighter-rouge">~/tmp/the_tangle</code> folder you used for downloading.</p>
+<p>using the same <code class="highlighter-rouge">~/tmp/the_tangle</code> folder you used for downloading.</p>
 
 <p>Then, open a python interpreter and run</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">thetangle.TheTangle</span> <span class="kn">import</span> <span class="n">CompileTheTangle</span>
-<span class="n">CompileTheTangle</span><span class="p">().</span><span class="nb">compile</span><span class="p">()</span>
+<span class="n">CompileTheTangle</span><span class="p">()</span><span class="o">.</span><span class="nb">compile</span><span class="p">()</span>
 </code></pre></div></div>
 
 <p>in the same machine that is running the server.</p>
 
 <h3 id="verifying">Verifying</h3>
 
-<p>You already have a python package named <code class="language-plaintext highlighter-rouge">thetangle</code> installed and a server running as you did in the previous step.</p>
+<p>You already have a python package named <code class="highlighter-rouge">thetangle</code> installed and a server running as you did in the previous step.</p>
 
 <p>Now, you can run a python <a href="https://github.com/kaalam/thetangle/blob/master/python_examples/welcome.py">welcome</a> example</p>
 
@@ -652,7 +652,7 @@ container run the script <code class="language-plaintext highlighter-rouge">./do
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2022 kaalam.ai. All rights reserved. <br />
- Site last generated: Aug 5, 2022 <br />
+ Site last generated: Aug 15, 2022 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

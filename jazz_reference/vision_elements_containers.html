@@ -578,9 +578,9 @@ $('#toc').on('click', 'a', function() {
 
   <h2 id="introducing-container">Introducing Container</h2>
 
-<p>A <code class="language-plaintext highlighter-rouge">Container</code> is a <code class="language-plaintext highlighter-rouge">Service</code> to manage Jazz blocks. All Jazz blocks are managed some descendant of the main <code class="language-plaintext highlighter-rouge">Container</code> class.</p>
+<p>A <code class="highlighter-rouge">Container</code> is a <code class="highlighter-rouge">Service</code> to manage Jazz blocks. All Jazz blocks are managed some descendant of the main <code class="highlighter-rouge">Container</code> class.</p>
 
-<p><code class="language-plaintext highlighter-rouge">Container</code> provides a neat API for all descendants, including:</p>
+<p><code class="highlighter-rouge">Container</code> provides a neat API for all descendants, including:</p>
 
 <ul>
   <li>Transparent thread safety .enter_read() .enter_write() .leave_read() .leave_write() .lock_container() .unlock_container()</li>
@@ -600,7 +600,7 @@ its constituents. This may include commands and many things that are full descri
 
 <h2 id="introducing-channels">Introducing Channels</h2>
 
-<p><code class="language-plaintext highlighter-rouge">Channels</code> is a container doing block transactions across media (files, folders, the bash shell, http urls and zeroMQ servers). This
+<p><code class="highlighter-rouge">Channels</code> is a container doing block transactions across media (files, folders, the bash shell, http urls and zeroMQ servers). This
 includes keeping a cluster of Jazz nodes as a whole where every node is aware of all the others and queries can be forwarded by just
 including the node name. Any imaginable communication channel, including writing files and pushing them to github (using git in the bash
 shell) is accessible. This includes all protocols supported by zeroMQ and libCURL.</p>
@@ -611,14 +611,14 @@ shell) is accessible. This includes all protocols supported by zeroMQ and libCUR
 
 <h2 id="introducing-volatile">Introducing Volatile</h2>
 
-<p><code class="language-plaintext highlighter-rouge">Volatile</code> is a Service to manage data objects in RAM. This includes:</p>
+<p><code class="highlighter-rouge">Volatile</code> is a Service to manage data objects in RAM. This includes:</p>
 
 <ul>
-  <li>A <code class="language-plaintext highlighter-rouge">deque</code> is a double linked list accessible as a key-value store.</li>
-  <li><code class="language-plaintext highlighter-rouge">Index</code> objects that are serialized as tuples and exposed via API to allow connecting everything to everything as a graph.</li>
-  <li>A priority <code class="language-plaintext highlighter-rouge">queue</code> is implemented as self balanced binary trees with a maximum number of nodes.</li>
+  <li>A <code class="highlighter-rouge">deque</code> is a double linked list accessible as a key-value store.</li>
+  <li><code class="highlighter-rouge">Index</code> objects that are serialized as tuples and exposed via API to allow connecting everything to everything as a graph.</li>
+  <li>A priority <code class="highlighter-rouge">queue</code> is implemented as self balanced binary trees with a maximum number of nodes.</li>
   <li>
-    <p>A <code class="language-plaintext highlighter-rouge">tree</code> that can be navigated through commands and through keys, that implements pruning and more.</p>
+    <p>A <code class="highlighter-rouge">tree</code> that can be navigated through commands and through keys, that implements pruning and more.</p>
   </li>
   <li>See C++ ref <a href="/develop_jazz02/classjazz__elements_1_1Volatile.html">Volatile</a></li>
 </ul>
@@ -669,7 +669,7 @@ shell) is accessible. This includes all protocols supported by zeroMQ and libCUR
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2022 kaalam.ai. All rights reserved. <br />
- Site last generated: Aug 5, 2022 <br />
+ Site last generated: Aug 15, 2022 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

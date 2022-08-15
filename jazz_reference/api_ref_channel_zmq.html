@@ -576,9 +576,9 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <h2 id="the-container-channels">The Container <code class="language-plaintext highlighter-rouge">Channels</code></h2>
+  <h2 id="the-container-channels">The Container <code class="highlighter-rouge">Channels</code></h2>
 
-<p><code class="language-plaintext highlighter-rouge">Channels</code> is a container doing block transactions across media (files, folders, the bash shell, http urls and zeroMQ servers). This
+<p><code class="highlighter-rouge">Channels</code> is a container doing block transactions across media (files, folders, the bash shell, http urls and zeroMQ servers). This
 includes keeping a cluster of Jazz nodes as a whole where every node is aware of all the others and queries can be forwarded by just
 including the node name. Any imaginable communication channel, including writing files and pushing them to github (using git in the bash
 shell) is accessible. This includes all protocols supported by zeroMQ and libCURL.</p>
@@ -587,7 +587,7 @@ shell) is accessible. This includes all protocols supported by zeroMQ and libCUR
   <li>See C++ ref <a href="/develop_jazz02/classjazz__elements_1_1Channels.html">Channels</a></li>
 </ul>
 
-<h2 id="the-base-0-mz">The base <code class="language-plaintext highlighter-rouge">0-mz</code></h2>
+<h2 id="the-base-0-mz">The base <code class="highlighter-rouge">0-mz</code></h2>
 
 <p>The 0-mq implementation in jazz_elements is only a zeroMQ client, not a server. The only operation it supports is a modify() call.
 For a modify() call to succeed, you must first have created a pipeline using a put call with a string. E.g,
@@ -600,17 +600,17 @@ the tensor named “result”, just overriding the tensor without any dimension 
 
 <p>This operation expects the tensor to be binary (i.e., no variable length strings) and their shapes and types known by both parts.</p>
 
-<p>When using modify() as the method of Channel, you should omit the “pipeline” part, <code class="language-plaintext highlighter-rouge">just modify({"0-mq", "speech2text", ""}, p_tuple);</code>.</p>
+<p>When using modify() as the method of Channel, you should omit the “pipeline” part, <code class="highlighter-rouge">just modify({"0-mq", "speech2text", ""}, p_tuple);</code>.</p>
 
-<p>Besides this, <code class="language-plaintext highlighter-rouge">get("//0-mq/pipeline/speech2text")</code> will return just a block with “tcp://localhost:5555” and
-<code class="language-plaintext highlighter-rouge">remove("//0-mq/pipeline/speech2text")</code> will destroy the pipeline. Any other call using “0-mq” returns SERVICE_ERROR_NOT_APPLICABLE.</p>
+<p>Besides this, <code class="highlighter-rouge">get("//0-mq/pipeline/speech2text")</code> will return just a block with “tcp://localhost:5555” and
+<code class="highlighter-rouge">remove("//0-mq/pipeline/speech2text")</code> will destroy the pipeline. Any other call using “0-mq” returns SERVICE_ERROR_NOT_APPLICABLE.</p>
 
 <h2 id="in-terms-of-the-jazz-server-api">In terms of the Jazz server API</h2>
 
-<p>This is a function call: either GET <code class="language-plaintext highlighter-rouge">//0-mq/speech2text/(//lmdb/stuff/my_tensor)</code> or GET <code class="language-plaintext highlighter-rouge">//0-mq/speech2text/(&amp;[1,2,3])</code> the argument
+<p>This is a function call: either GET <code class="highlighter-rouge">//0-mq/speech2text/(//lmdb/stuff/my_tensor)</code> or GET <code class="highlighter-rouge">//0-mq/speech2text/(&amp;[1,2,3])</code> the argument
 can be anything in Persisted, Volatile, even a file or an //http get or a (%-encoded) constant as in the second example.</p>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> In a function call (or a filter), constants are not terminated by a <code class="language-plaintext highlighter-rouge">;</code> but by the closing bracket.</div>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> In a function call (or a filter), constants are not terminated by a <code class="highlighter-rouge">;</code> but by the closing bracket.</div>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> API-wise, this is a modify() call (instead of an exec() call) because the key is empty.</div>
 
@@ -635,7 +635,7 @@ non-zero.</div>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2022 kaalam.ai. All rights reserved. <br />
- Site last generated: Aug 5, 2022 <br />
+ Site last generated: Aug 15, 2022 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

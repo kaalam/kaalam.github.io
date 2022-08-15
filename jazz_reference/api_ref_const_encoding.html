@@ -580,36 +580,36 @@ $('#toc').on('click', 'a', function() {
 
 <h3 id="name-definition">Name definition</h3>
 
-<p>A <code class="language-plaintext highlighter-rouge">Name</code> is a string of letters, numbers and “-_~” up to 31 characters long. There is an exception with the decimal “.” that is acceptable,
-but only in a real number, not everywhere. The special “~” indicates a command, although that is <code class="language-plaintext highlighter-rouge">base</code> dependent. If the base does not
+<p>A <code class="highlighter-rouge">Name</code> is a string of letters, numbers and “-_~” up to 31 characters long. There is an exception with the decimal “.” that is acceptable,
+but only in a real number, not everywhere. The special “~” indicates a command, although that is <code class="highlighter-rouge">base</code> dependent. If the base does not
 interpret it as a command, it could be just a key. E.g., in “//tree/my_game/node51~parent”, “~parent” is a command, but in
 “//lmdb/my_game/node51~parent”, “node51~parent” is just a key. Commands, if they exist, are detailed in the reference of each base.</p>
 
-<p>Everything in the API follows the <code class="language-plaintext highlighter-rouge">///node//base/entity/key++</code> format, where:</p>
+<p>Everything in the API follows the <code class="highlighter-rouge">///node//base/entity/key++</code> format, where:</p>
 
 <ul>
   <li>”///node” is an optional reference to a Jazz node in the cluster to which the call will be forwarded, otherwise the node to which you are
 connecting will handle the call.</li>
   <li>”++” refers to something else (function call, slicing, etc. that is explained below.)</li>
   <li>“node”, “entity” and “key” are names.</li>
-  <li>“base” is a known base inside a <code class="language-plaintext highlighter-rouge">Container</code>: 0-mq, file, bash, http, index, tree, queue, deque, lmdb, core, …</li>
+  <li>“base” is a known base inside a <code class="highlighter-rouge">Container</code>: 0-mq, file, bash, http, index, tree, queue, deque, lmdb, core, …</li>
 </ul>
 
 <h2 id="constants">Constants</h2>
 
-<p>Constants are the exception to the <code class="language-plaintext highlighter-rouge">///node//base/entity/key++</code> format. They are delimited by <code class="language-plaintext highlighter-rouge">&amp;;</code> as in <code class="language-plaintext highlighter-rouge">&amp;this%20is%a%20constant;</code> and
+<p>Constants are the exception to the <code class="highlighter-rouge">///node//base/entity/key++</code> format. They are delimited by <code class="highlighter-rouge">&amp;;</code> as in <code class="highlighter-rouge">&amp;this%20is%a%20constant;</code> and
 since they are part of a url, must be <a href="https://en.wikipedia.org/wiki/Percent-encoding">%-encoded</a>. Any character that is not RFC 3986
 section 2.2 or RFC 3986 section 2.3 must be percent encoded. You can write utf-8 by just %-encoding all the characters.</p>
 
-<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> As an exception to this rule, In a function call or a filter, constants are not terminated by a <code class="language-plaintext highlighter-rouge">;</code>
-but by the closing <code class="language-plaintext highlighter-rouge">)</code> or <code class="language-plaintext highlighter-rouge">]</code>.</div>
+<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> As an exception to this rule, In a function call or a filter, constants are not terminated by a <code class="highlighter-rouge">;</code>
+but by the closing <code class="highlighter-rouge">)</code> or <code class="highlighter-rouge">]</code>.</div>
 
 <p>There are two types of constants:</p>
 
 <ul>
   <li>Internally, Jazz can serialize any Block as text, or make a Block from parsing that text. The text representation of a block can be passed to the API as a constant.</li>
   <li>URLs of external sources (E.g., a third part API) or file names, which can be very long, are constants even if they could match the
-requirements of a <code class="language-plaintext highlighter-rouge">Name</code>.</li>
+requirements of a <code class="highlighter-rouge">Name</code>.</li>
 </ul>
 
 <h2 id="how-constants-fit-in">How constants fit in</h2>
@@ -617,10 +617,10 @@ requirements of a <code class="language-plaintext highlighter-rouge">Name</code>
 <p>There are four ways to insert a constant in an API call:</p>
 
 <ul>
-  <li>After the base, instead of the <code class="language-plaintext highlighter-rouge">/</code> <code class="language-plaintext highlighter-rouge">//file&amp;any_%_encoded_path;</code> or <code class="language-plaintext highlighter-rouge">//http&amp;http://my_api.org/something;</code></li>
-  <li>In a block slice <code class="language-plaintext highlighter-rouge">//base/entity/key[&amp;[2,4,6]]</code></li>
-  <li>In a function call <code class="language-plaintext highlighter-rouge">//base/entity/key(&amp;[2,4,6])</code></li>
-  <li>In an assignment <code class="language-plaintext highlighter-rouge">//base/entity/key=&amp;[2,4,6];</code></li>
+  <li>After the base, instead of the <code class="highlighter-rouge">/</code> <code class="highlighter-rouge">//file&amp;any_%_encoded_path;</code> or <code class="highlighter-rouge">//http&amp;http://my_api.org/something;</code></li>
+  <li>In a block slice <code class="highlighter-rouge">//base/entity/key[&amp;[2,4,6]]</code></li>
+  <li>In a function call <code class="highlighter-rouge">//base/entity/key(&amp;[2,4,6])</code></li>
+  <li>In an assignment <code class="highlighter-rouge">//base/entity/key=&amp;[2,4,6];</code></li>
 </ul>
 
 <h2 id="constant-syntax">Constant Syntax</h2>
@@ -632,30 +632,30 @@ their syntax.</p>
 
 <h3 id="tensors">Tensors</h3>
 
-<p>They have a shape defined by the sequence of square brackets E.g., <code class="language-plaintext highlighter-rouge">[[[1,2],[1,2]],[[1,2],[1,2]],[[1,2],[1,2]]]</code>. The shape must be
+<p>They have a shape defined by the sequence of square brackets E.g., <code class="highlighter-rouge">[[[1,2],[1,2]],[[1,2],[1,2]],[[1,2],[1,2]]]</code>. The shape must be
 consistent. From an API call you can create tensors of CELL_TYPE_INTEGER (if no number has a decimal point, CELL_TYPE_DOUBLE, if any
-number has a decimal point, and CELL_TYPE_STRING by quoting every element) as in <code class="language-plaintext highlighter-rouge">["1","two","THREE"]</code>. String serialization supports
+number has a decimal point, and CELL_TYPE_STRING by quoting every element) as in <code class="highlighter-rouge">["1","two","THREE"]</code>. String serialization supports
 common C escape sequences like \n, \t, \”, \\, \x3f, etc.</p>
 
 <h3 id="kinds">Kinds</h3>
 
-<p>A <code class="language-plaintext highlighter-rouge">Kind</code> is defined inside surrounding <code class="language-plaintext highlighter-rouge">{}</code> characters including all metadata. Inside the kind, each item is comma separated and defines
+<p>A <code class="highlighter-rouge">Kind</code> is defined inside surrounding <code class="highlighter-rouge">{}</code> characters including all metadata. Inside the kind, each item is comma separated and defines
 the item name, type and shape. Valid types are: “INTEGER”, “DOUBLE”, “BYTE”, “STRING”, “BOOLEAN”, “SINGLE”, “TIME”, “LONG_INTEGER”,
 “BYTE_BOOLEAN”, “FACTOR” and “GRADE”. Dimensions are just names (without quotes) inside the shape.</p>
 
-<p>E.g., <code class="language-plaintext highlighter-rouge">{"palette" : BYTE[10, height, num_col], "time" : TIME[3], "author" : STRING[40], "filter" : SINGLE[height, height, 3]}</code></p>
+<p>E.g., <code class="highlighter-rouge">{"palette" : BYTE[10, height, num_col], "time" : TIME[3], "author" : STRING[40], "filter" : SINGLE[height, height, 3]}</code></p>
 
-<p><strong>Note 1</strong>: The dimension <code class="language-plaintext highlighter-rouge">height</code> appears 3 times in the Kind. A tuple of this kind can have any value for <code class="language-plaintext highlighter-rouge">height</code>, but must have
+<p><strong>Note 1</strong>: The dimension <code class="highlighter-rouge">height</code> appears 3 times in the Kind. A tuple of this kind can have any value for <code class="highlighter-rouge">height</code>, but must have
 the same value in the three places, otherwise it is not a tuple of this kind.</p>
 
 <p><strong>Note 2</strong>: We do not %-encode the spaces for readability, but they should be in an API call.</p>
 
 <h3 id="tuples">Tuples</h3>
 
-<p>A <code class="language-plaintext highlighter-rouge">Tuple</code> is defined inside surrounding <code class="language-plaintext highlighter-rouge">()</code> characters including item names and data. Inside the tuple, each item is comma separated
+<p>A <code class="highlighter-rouge">Tuple</code> is defined inside surrounding <code class="highlighter-rouge">()</code> characters including item names and data. Inside the tuple, each item is comma separated
 and defines the item name and content. In an API call the types of the tensors are determined using the same rule explained for tensors.</p>
 
-<p>E.g., <code class="language-plaintext highlighter-rouge">("weights" : [[17, 170], [112, 54], [207, 149]], "built" : [2021-08-01 07:13:14, NA], "author" : ["Billy Doe"])</code></p>
+<p>E.g., <code class="highlighter-rouge">("weights" : [[17, 170], [112, 54], [207, 149]], "built" : [2021-08-01 07:13:14, NA], "author" : ["Billy Doe"])</code></p>
 
 <p><strong>Note 1</strong>: The type TIME cannot be used directly like this from the rest API because of how types are automatically determined for tensors.
 From the C++ API if the Kind is given and the item “build” has the type TIME, this can be serialized as it is.</p>
@@ -677,7 +677,7 @@ From the C++ API if the Kind is given and the item “build” has the type TIME
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2022 kaalam.ai. All rights reserved. <br />
- Site last generated: Aug 5, 2022 <br />
+ Site last generated: Aug 15, 2022 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

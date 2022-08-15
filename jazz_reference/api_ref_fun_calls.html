@@ -582,14 +582,14 @@ $('#toc').on('click', 'a', function() {
 
 <h2 id="what-is-treated-as-a-function-call">What is treated as a function call</h2>
 
-<p>Internally, Containers have two execution methods <code class="language-plaintext highlighter-rouge">exec()</code> and <code class="language-plaintext highlighter-rouge">modify()</code>. The difference is the former always creates a new Tuple with the
+<p>Internally, Containers have two execution methods <code class="highlighter-rouge">exec()</code> and <code class="highlighter-rouge">modify()</code>. The difference is the former always creates a new Tuple with the
 result, while the latter modifies (like in a call by reference) the Tuple passed as an argument. Any container could in principle have
 any method, if they don’t, it will default to the root method that just returns an error code.</p>
 
-<p>In <code class="language-plaintext highlighter-rouge">jazz_elements</code> (anything complete in Jazz 0.5.x) only Channel implements <code class="language-plaintext highlighter-rouge">modify()</code> and nothing implements <code class="language-plaintext highlighter-rouge">exec()</code>. In Jazz 0.6.x
-(Bebop) and Jazz 0.7.x (agency), both the <code class="language-plaintext highlighter-rouge">Bebop</code> and the <code class="language-plaintext highlighter-rouge">Agency</code> container execute <code class="language-plaintext highlighter-rouge">exec()</code> and <code class="language-plaintext highlighter-rouge">modify()</code>.</p>
+<p>In <code class="highlighter-rouge">jazz_elements</code> (anything complete in Jazz 0.5.x) only Channel implements <code class="highlighter-rouge">modify()</code> and nothing implements <code class="highlighter-rouge">exec()</code>. In Jazz 0.6.x
+(Bebop) and Jazz 0.7.x (agency), both the <code class="highlighter-rouge">Bebop</code> and the <code class="highlighter-rouge">Agency</code> container execute <code class="highlighter-rouge">exec()</code> and <code class="highlighter-rouge">modify()</code>.</p>
 
-<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> API-wise function calls are translated to <code class="language-plaintext highlighter-rouge">modify()</code> calls when the key is empty and to <code class="language-plaintext highlighter-rouge">exec()</code>
+<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> API-wise function calls are translated to <code class="highlighter-rouge">modify()</code> calls when the key is empty and to <code class="highlighter-rouge">exec()</code>
 when it is not.</div>
 
 <p>See</p>
@@ -604,19 +604,19 @@ when it is not.</div>
 <p>Can be done by either an existing block or a constant. E.g.,</p>
 
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">//0-mq/speech2text/(//lmdb/sound/voice_one)</code></li>
-  <li><code class="language-plaintext highlighter-rouge">//bash/exec/(&amp;ls%20-la)</code></li>
+  <li><code class="highlighter-rouge">//0-mq/speech2text/(//lmdb/sound/voice_one)</code></li>
+  <li><code class="highlighter-rouge">//bash/exec/(&amp;ls%20-la)</code></li>
 </ul>
 
-<p><strong>Note</strong>: These calls follow the final <code class="language-plaintext highlighter-rouge">/</code> immediately, since they refer to an entity (//0-mq/speech2text or //bash/exec), not a key.</p>
+<p><strong>Note</strong>: These calls follow the final <code class="highlighter-rouge">/</code> immediately, since they refer to an entity (//0-mq/speech2text or //bash/exec), not a key.</p>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> In a function call (or a filter), constants are not terminated by a <code class="language-plaintext highlighter-rouge">;</code> but by the closing bracket.</div>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> In a function call (or a filter), constants are not terminated by a <code class="highlighter-rouge">;</code> but by the closing bracket.</div>
 
-<p>Function calls done by <code class="language-plaintext highlighter-rouge">Bebop</code> (Jazz 0.6x) do use keys:</p>
+<p>Function calls done by <code class="highlighter-rouge">Bebop</code> (Jazz 0.6x) do use keys:</p>
 
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">//core/field/opcode(//lmdb/sound/voice_one)</code></li>
-  <li><code class="language-plaintext highlighter-rouge">//core/field/opcode(&amp;ls%20-la)</code></li>
+  <li><code class="highlighter-rouge">//core/field/opcode(//lmdb/sound/voice_one)</code></li>
+  <li><code class="highlighter-rouge">//core/field/opcode(&amp;ls%20-la)</code></li>
 </ul>
 
 <p><br /></p>
@@ -634,7 +634,7 @@ when it is not.</div>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2022 kaalam.ai. All rights reserved. <br />
- Site last generated: Aug 5, 2022 <br />
+ Site last generated: Aug 15, 2022 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

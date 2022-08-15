@@ -636,7 +636,7 @@ docker push kaalam/jazz_neat:0.5.3
 </code></pre></div></div>
 
 <p>This example (implicitly) refers to a Dockerfile to tell Docker how to build the image. Note that as Jazz’s requirements have grown,
-the dockerfile has become longer, especially, because there is no simple <code class="language-plaintext highlighter-rouge">apt-get</code> installation of <code class="language-plaintext highlighter-rouge">zeroMQ</code>. It contains the sources of
+the dockerfile has become longer, especially, because there is no simple <code class="highlighter-rouge">apt-get</code> installation of <code class="highlighter-rouge">zeroMQ</code>. It contains the sources of
 zeroMQ, install development tools, compiles it and install it.</p>
 
 <div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">FROM</span><span class="s"> ubuntu</span>
@@ -683,9 +683,9 @@ zeroMQ, install development tools, compiles it and install it.</p>
 <span class="k">CMD</span><span class="s"> ["/home/jazz/start.sh"]</span>
 </code></pre></div></div>
 
-<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> All this files can be found in the <code class="language-plaintext highlighter-rouge">/docker</code> folder of the Jazz repository.</div>
+<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> All this files can be found in the <code class="highlighter-rouge">/docker</code> folder of the Jazz repository.</div>
 
-<p>The start.sh file is found in the docker folder, but it’s just a call to <code class="language-plaintext highlighter-rouge">jazz start</code>.</p>
+<p>The start.sh file is found in the docker folder, but it’s just a call to <code class="highlighter-rouge">jazz start</code>.</p>
 
 <div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> The previous example does not include loading anything into the Jazz server. For a more realistic
 application, you should develop using a development server. Then, persist the state of the JazzSource object containing all the magic
@@ -708,7 +708,7 @@ working.</div>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2022 kaalam.ai. All rights reserved. <br />
- Site last generated: Aug 5, 2022 <br />
+ Site last generated: Aug 15, 2022 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>
