@@ -164,78 +164,45 @@ hr {
 
 <body>
 <h1>Jazz C++ Style Guide</h1>
-
-<p>We fork Google C++ style guide with some divergent rules, detailed in this document. For anything else, use Google&#39;s style guide as reference. Reference <a href="https://google.github.io/styleguide/cppguide.html">https://google.github.io/styleguide/cppguide.html</a></p>
-
+<p>We fork Google C++ style guide with some divergent rules, detailed in this document. For anything else, use Google’s style guide as reference. Reference <a href="https://google.github.io/styleguide/cppguide.html">https://google.github.io/styleguide/cppguide.html</a></p>
 <h3>SWDWGAD principle</h3>
-
-<p>&ldquo;Since when don&#39;t we give a damn?&rdquo; (SWDWGAD) is a sensation one may have looking at some code bases. Well, in Jazz we do give a damn, we expect the code to be running 30 years from now. We understand some coders get mad when someone else fixes formatting or spelling issues. Some very talented people don&#39;t need order, others do. We want to include everyone here. So please, have a thick skin when your code gets fixed on what you consider &ldquo;silly&rdquo; issues, and above all: never make it personal. Also, ugly code acts like an implicit permission to do ugly things with it. That only gets worse with time.</p>
-
+<p>“Since when don’t we give a damn?” (SWDWGAD) is a sensation one may have looking at some code bases. Well, in Jazz we do give a damn, we expect the code to be running 30 years from now. We understand some coders get mad when someone else fixes formatting or spelling issues. Some very talented people don’t need order, others do. We want to include everyone here. So please, have a thick skin when your code gets fixed on what you consider “silly” issues, and above all: never make it personal. Also, ugly code acts like an implicit permission to do ugly things with it. That only gets worse with time.</p>
 <h3>Consistency first</h3>
-
 <p>These rules do not apply to files that are completely imported from other projects or contributions of complete files (especially, LMDB and Catch2!). In those cases, consistency with pre-existing formatting prevails.</p>
-
 <h3>Line length, tab size and encoding</h3>
-
-<p>Rather than using Google&#39;s 80 character with 4 exceptions rule, we use column 150(*) as a limit, no exceptions. Tabs are used, tab space is 4, line feed is POSIX \n and trailing space is removed.</p>
-
+<p>Rather than using Google’s 80 character with 4 exceptions rule, we use column 150(*) as a limit, no exceptions. Tabs are used, tab space is 4, line feed is POSIX \n and trailing space is removed.</p>
 <p>(*) Note that column 150 is not exactly the same as 150 characters per line as tabs count as the number of spaces they replace.</p>
-
 <h3>English only, EN_US, UTF8</h3>
-
-<p>English only, for everything: comments, UI, naming, &hellip; Avoid the use of non ASCII chars when possible. They are acceptable in remarks or string constants when necessary. i18n applies to front-end UIs, NOT the server, NOT the framework, NOT the Bebop language, NOT the documentation and NOT the APIs.</p>
-
+<p>English only, for everything: comments, UI, naming, … Avoid the use of non ASCII chars when possible. They are acceptable in remarks or string constants when necessary. i18n applies to front-end UIs, NOT the server, NOT the framework, NOT the Bebop language, NOT the documentation and NOT the APIs.</p>
 <h3>Use of space</h3>
-
 <p>Never before a comma, always after a comma except when another comma follows. Always before and after arithmetic and logic operators, except arithmetic * and / and only before pointer operators. Never immediately inside parentheses except for alignment. Always outside parameters near primitives if, while, for, etc. In function calls and definitions, space is just for alignment.</p>
-
 <h3>Use of vertical space</h3>
-
-<p>Two blank lines before a method&#39;s documentation. No space between the doc and the body or at the beginning or the end. One line space each time you separate blocks. There is no definition of &ldquo;block&rdquo;, just similar things make the same block for readability.</p>
-
+<p>Two blank lines before a method’s documentation. No space between the doc and the body or at the beginning or the end. One line space each time you separate blocks. There is no definition of “block”, just similar things make the same block for readability.</p>
 <h3>Use of vertical alignment</h3>
-
 <p>Use more than one consecutive spaces (besides indenting) to improve readability by vertical alignment when two (or more) consecutive lines share a structure and alignment makes their differences evident. We favor readability and error spotting over higher future editing work in case of modification.</p>
-
 <h3>Comments</h3>
-
 <p>Think doxy! You are creating a doxygen page, never forget that. Check doxygen doc when in doubt.</p>
-
 <h3>TODOs</h3>
-
-<p>The line with TODOs must match the regex &ldquo;<sup>//TODO:(.*)$&rdquo;</sup> the bracket should catch something displayable &#39;as is&#39; (without assuming any character escaping logic) as a title. Avoid &ldquo;not implemented&rdquo; as a TODO, it should be notes about known limitations of the code.</p>
-
+<p>The line with TODOs must match the regex “^//TODO:(.*)$” the bracket should catch something displayable ‘as is’ (without assuming any character escaping logic) as a title. Avoid “not implemented” as a TODO, it should be notes about known limitations of the code.</p>
 <h3>Exceptions</h3>
-
 <p>Even against the opinion of Google and our own previous position, we use exceptions in Jazz, but limited to Bebop. Bebop is a language and a very simple one. Forcing error checking in Bebop through conditionals would make Bebop a hell. Of course, we could simulate exceptions for predictable errors. But, we are convinced that we would regret the decision to do so when unpredictable errors show up. The cleanest way to provide exceptions to Bebop is rooting them in C++ exceptions in Jazz.</p>
-
 <p>The only acceptable exception type is <strong>int</strong>. The only acceptable values are:</p>
-
 <ul>
 <li>Those used by c++ stdlib</li>
 <li>Some constants declared in jazz.h named EXCEPTION_xxx that do not collide with the values in stdlib.</li>
 </ul>
-
 <h3>Templates</h3>
-
-<p>Never use templates if they don&#39;t make expressions cleaner. Templates in stdlib containers are amazing, there is not much need of them in Jazz.</p>
-
+<p>Never use templates if they don’t make expressions cleaner. Templates in stdlib containers are amazing, there is not much need of them in Jazz.</p>
 <h3>Macros</h3>
-
-<p>Jazz 0.1.+ had the &ldquo;magical&rdquo; ALLOC(), REALLOC() and FREE() macros. They co-exist in Jazz 0.2.+ until the original code is fully replaced by the new structure. They are banned in Jazz 0.3.1 and above. <strong>Just to clarify: Preprocessor constants are NOT macros</strong> (macros have arguments) and are used all over the source code. There is no intention to change that, this is considered excellent practice in C/C++. Preprocessor constants are not typed, so type should always be obvious, just keep it simple.</p>
-
+<p>Jazz 0.1.+ had the “magical” ALLOC(), REALLOC() and FREE() macros. They co-exist in Jazz 0.2.+ until the original code is fully replaced by the new structure. They are banned in Jazz 0.3.1 and above. <strong>Just to clarify: Preprocessor constants are NOT macros</strong> (macros have arguments) and are used all over the source code. There is no intention to change that, this is considered excellent practice in C/C++. Preprocessor constants are not typed, so type should always be obvious, just keep it simple.</p>
 <h3>Operator Overloading</h3>
-
-<p>Don&#39;t.</p>
-
+<p>Don’t.</p>
 <h2>Bear in mind</h2>
-
-<p>All this is literally taken from Google&#39;s style guide, we just repeat it to make sure it is not ignored.</p>
-
+<p>All this is literally taken from Google’s style guide, we just repeat it to make sure it is not ignored.</p>
 <ul>
-<li>#define guards are imperative and based on the full path in a project&#39;s source tree.</li>
+<li>#define guards are imperative and based on the full path in a project’s source tree.</li>
 <li>Use namespaces. Namespace names are all lower-case. Namespaces do not add an extra level of indentation.</li>
-<li>Place a function&#39;s variables in the narrowest scope possible, and initialize variables in the declaration.</li>
+<li>Place a function’s variables in the narrowest scope possible, and initialize variables in the declaration.</li>
 <li>Specify noexcept when it is useful and correct. (Typically, for the server.)</li>
 <li>Use nullptr instead of NULL.</li>
 <li>Prefer sizeof(var name) to sizeof(type).</li>
