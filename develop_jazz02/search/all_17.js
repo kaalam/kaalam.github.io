@@ -1,13 +1,11 @@
 var searchData=
 [
-  ['warn_5falloc_5fbytes_767',['warn_alloc_bytes',['../classjazz__elements_1_1Container.html#ae30751a7d7c4c893c52cf50a0fb5bfc0',1,'jazz_elements::Container']]],
-  ['write_5fany_5frestriction_768',['WRITE_ANY_RESTRICTION',['../container_8h.html#a0afea2b2c0d309a8a29ea3930238466a',1,'container.h']]],
-  ['write_5fas_5fany_5fwrite_769',['WRITE_AS_ANY_WRITE',['../container_8h.html#adee9889a215b438c69e18be23f3a8626',1,'container.h']]],
-  ['write_5fas_5fbase_5fdefault_770',['WRITE_AS_BASE_DEFAULT',['../container_8h.html#abd96613296e70f1c6e74c6c36ea018c9',1,'container.h']]],
-  ['write_5fas_5fcontent_771',['WRITE_AS_CONTENT',['../container_8h.html#acffb07618cc4dccc05d4af183592a0e5',1,'container.h']]],
-  ['write_5fas_5ffull_5fblock_772',['WRITE_AS_FULL_BLOCK',['../container_8h.html#ade0a8171bf6972f4244339c7591e550d',1,'container.h']]],
-  ['write_5fas_5fstring_773',['WRITE_AS_STRING',['../container_8h.html#a514ab3b4548802a70dd3e948933406e8',1,'container.h']]],
-  ['write_5fonly_5fif_5fexists_774',['WRITE_ONLY_IF_EXISTS',['../container_8h.html#a71e0e9e3d28f32850c26e43ec5f0224b',1,'container.h']]],
-  ['write_5fonly_5fif_5fnot_5fexists_775',['WRITE_ONLY_IF_NOT_EXISTS',['../container_8h.html#a38f08bb083dd33a492b3b10d8910137b',1,'container.h']]],
-  ['www_776',['www',['../classjazz__main_1_1Api.html#a6b88a68ff04d848064f7d11a7de002a4',1,'jazz_main::Api']]]
+  ['valid_5fname_0',['valid_name',['../namespacejazz__elements.html#a5a9db2e1ed4154f282a83cfe38b31239',1,'jazz_elements']]],
+  ['validate_5findex_1',['validate_index',['../classjazz__elements_1_1Block.html#afff9354aea780833e7e133d60e0b6d93',1,'jazz_elements::Block']]],
+  ['validate_5foffset_2',['validate_offset',['../classjazz__elements_1_1Block.html#a3a9f80168b8cc49169a0c906c65c1467',1,'jazz_elements::Block']]],
+  ['volatile_3',['Volatile',['../classjazz__elements_1_1Volatile.html',1,'jazz_elements::Volatile'],['../classjazz__elements_1_1Volatile.html#a17fc85e77d71206a5a4675a51209e0cc',1,'jazz_elements::Volatile::Volatile()']]],
+  ['volatile_4',['VOLATILE',['../namespacejazz__main.html#a293f31fb60de0074473a30116ea5a754',1,'jazz_main']]],
+  ['volatile_2ecpp_5',['volatile.cpp',['../volatile_8cpp.html',1,'']]],
+  ['volatile_2eh_6',['volatile.h',['../volatile_8h.html',1,'']]],
+  ['volatiletransaction_7',['VolatileTransaction',['../structjazz__elements_1_1VolatileTransaction.html',1,'jazz_elements']]]
 ];
