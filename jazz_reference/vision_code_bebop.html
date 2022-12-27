@@ -580,7 +580,7 @@ $('#toc').on('click', 'a', function() {
 
 <p>Until now, we introduced blocks, storage and containers that somehow (we will get there) are accessed via http. That part is just a very efficient and hopefully simple way to manage already known things. The basement of Jazz so to say. The question is still: “why bother using Jazz instead of any other platform with more traction that implements these things?” Hint: Efficiency and simplicity alone are not good enough reasons.</p>
 
-<p>Before we talk about <code class="highlighter-rouge">Field</code>, <code class="highlighter-rouge">Core</code>, <code class="highlighter-rouge">Agency</code> and some other classes, we need to explain where we want to go. What we want to build is a platform that does distributed computation building on top of simple programs (functions).</p>
+<p>Before we talk about <code class="language-plaintext highlighter-rouge">Field</code>, <code class="language-plaintext highlighter-rouge">Core</code>, <code class="language-plaintext highlighter-rouge">Agency</code> and some other classes, we need to explain where we want to go. What we want to build is a platform that does distributed computation building on top of simple programs (functions).</p>
 
 <p>You can look at artificial neurons as programs, they are, and at deep learning (DL) as “software 2.0”, that has been said already. Does that mean we will never need anything other than DL? DL can find incredible functions matching images into labels, text into sound waves, … what not.</p>
 
@@ -616,15 +616,15 @@ $('#toc').on('click', 'a', function() {
 
 <h3 id="bebop-operates-at-source-and-bytecode-level">Bebop operates at source and bytecode level</h3>
 
-<p>After years considering different designs (starting after years trying to use existing languages) we picked a design that extremely simplifies parsing while extending Bop to make it as simple as natural language or multimedia sources. The price is, at least for the moment, you cannot code in Bop without understanding its <strong>bytecode</strong>. Bytecode is just a name, actually it is a vector or 32 bit integers with a special attribute identifying the owning <code class="highlighter-rouge">Field</code>. Positive numbers define functions, negative numbers define arguments (this includes constants, local variables, values passed by reference, constants passed by reference, etc.). The bytecode is executed as a stream of function calls with arguments passed on a stack. Conditionals jumps are supported via special functions.</p>
+<p>After years considering different designs (starting after years trying to use existing languages) we picked a design that extremely simplifies parsing while extending Bop to make it as simple as natural language or multimedia sources. The price is, at least for the moment, you cannot code in Bop without understanding its <strong>bytecode</strong>. Bytecode is just a name, actually it is a vector or 32 bit integers with a special attribute identifying the owning <code class="language-plaintext highlighter-rouge">Field</code>. Positive numbers define functions, negative numbers define arguments (this includes constants, local variables, values passed by reference, constants passed by reference, etc.). The bytecode is executed as a stream of function calls with arguments passed on a stack. Conditionals jumps are supported via special functions.</p>
 
-<p>Bebop compiles anything to <strong>bytecode</strong> on request. Of course, many times it will fail, that is part of the game. Anything includes blocks containing binary files. Take a block containing an .mp3 compressed audio file. A <code class="highlighter-rouge">Field</code> named “wave data” could compile the file resulting in a function call that takes the file as an argument an decompresses it into a vector of integers.</p>
+<p>Bebop compiles anything to <strong>bytecode</strong> on request. Of course, many times it will fail, that is part of the game. Anything includes blocks containing binary files. Take a block containing an .mp3 compressed audio file. A <code class="language-plaintext highlighter-rouge">Field</code> named “wave data” could compile the file resulting in a function call that takes the file as an argument an decompresses it into a vector of integers.</p>
 
 <p>Besides anything potentially being considered <strong>code</strong>, Bop has a source code (text identified by a special attribute) that is just a human friendly way to manage the bytecode including basic things as: comments, includes, variable names, brackets to define code blocks, but not much more.</p>
 
 <h3 id="bebop-is-object-oriented-in-its-own-way">Bebop is object oriented (in its own way)</h3>
 
-<p>Anything provided by OOP: organization, abstraction, inheritance is provided by the class <code class="highlighter-rouge">Field</code>. This makes it unnecessary to build again classes in Bop as contemplated by previous designs. Inheritance is multiple, this implies creating a virtual <code class="highlighter-rouge">Field</code> which is the union of the inherited fields. It also creates new bytecode key assignment.</p>
+<p>Anything provided by OOP: organization, abstraction, inheritance is provided by the class <code class="language-plaintext highlighter-rouge">Field</code>. This makes it unnecessary to build again classes in Bop as contemplated by previous designs. Inheritance is multiple, this implies creating a virtual <code class="language-plaintext highlighter-rouge">Field</code> which is the union of the inherited fields. It also creates new bytecode key assignment.</p>
 
 <h3 id="bebop-is-functional">Bebop is functional</h3>
 
@@ -646,7 +646,7 @@ can be learned of written in the kernel.</p>
 
 <p>Our paper from 2019 <a href="https://arxiv.org/abs/2007.14075">formal fields</a> still holds quite well. Maybe, some ways of defining things are too
 formal and verbose. Using the simplest version of category theory. You can think of a formal field as “the set of morphisms that relate two
-<code class="highlighter-rouge">Kind</code> objects”. And that defines the primary structure, all other structures are compositions of morphisms (== opcodes).</p>
+<code class="language-plaintext highlighter-rouge">Kind</code> objects”. And that defines the primary structure, all other structures are compositions of morphisms (== opcodes).</p>
 
 <figure><img class="docimage" src="images/jazz_field.png" alt="" /><figcaption>Field class</figcaption></figure>
 
@@ -686,7 +686,7 @@ formal and verbose. Using the simplest version of category theory. You can think
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2022 kaalam.ai. All rights reserved. <br />
- Site last generated: Dec 22, 2022 <br />
+ Site last generated: Dec 27, 2022 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

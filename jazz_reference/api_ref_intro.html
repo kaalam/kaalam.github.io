@@ -586,12 +586,12 @@ Blocks, which are everything (data, metadata, indices, code, etc.), and are poss
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> <b>First thing</b>: Blocks cannot allocate RAM. Only Services can. In our case, <b>Containers</b>, which are
 Services allocate RAM!</div>
 
-<p>Note that even simple operations like slicing a block as <code class="highlighter-rouge">//lmdb/my_table/my_block[&amp;[1,2,3]]</code> requires converting the string <code class="highlighter-rouge">[1,2,3]</code> into
-a (one shot) block and using that block to select rows inside <code class="highlighter-rouge">//lmdb/my_table/my_block</code>, the result being another block. This block needs
+<p>Note that even simple operations like slicing a block as <code class="language-plaintext highlighter-rouge">//lmdb/my_table/my_block[&amp;[1,2,3]]</code> requires converting the string <code class="language-plaintext highlighter-rouge">[1,2,3]</code> into
+a (one shot) block and using that block to select rows inside <code class="language-plaintext highlighter-rouge">//lmdb/my_table/my_block</code>, the result being another block. This block needs
 some RAM allocation and only a Container can do that.</p>
 
 <p>When you are using the C++ API you talk to the Containers directly. Via http the petitions you are doing to blocks are served by one or
-more containers and put together by a special <code class="highlighter-rouge">API</code> Service, which is also a <code class="highlighter-rouge">Container</code>.</p>
+more containers and put together by a special <code class="language-plaintext highlighter-rouge">API</code> Service, which is also a <code class="language-plaintext highlighter-rouge">Container</code>.</p>
 
 <h2 id="the-different-apis">The different APIs</h2>
 
@@ -615,7 +615,7 @@ containing the previous ones.</p>
 <h3 id="the-http-api">The http API</h3>
 
 <p>The http API is what this documentation is about. It has two parts, one defining general ideas: http commands, constants, slicing, function
-calls, assignment and attributes. The second part is dedicated to describing the operation of each of the <code class="highlighter-rouge">bases</code> in each of the Containers.</p>
+calls, assignment and attributes. The second part is dedicated to describing the operation of each of the <code class="language-plaintext highlighter-rouge">bases</code> in each of the Containers.</p>
 
 <h3 id="python-and-r-apis">Python and R APIs</h3>
 
@@ -642,7 +642,7 @@ functions.</p>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2022 kaalam.ai. All rights reserved. <br />
- Site last generated: Dec 22, 2022 <br />
+ Site last generated: Dec 27, 2022 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

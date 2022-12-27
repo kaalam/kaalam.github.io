@@ -583,9 +583,9 @@ Furthermore, they and can “speak” the language of the Jazz API. The only oth
 cluster. Once a cluster is configured, all Jazz nodes have a unique name across the cluster and every node knows the IP and port of every
 other node by its name.</p>
 
-<p>Based on that, you can make API calls like GET <code class="highlighter-rouge">///frankfurt//lmdb/base/key=//lmdb/my_base/my_key</code> which is an assignment across nodes.
-Or even <code class="highlighter-rouge">///frankfurt//lmdb/baseXX/keyYY=///sydney//lmdb/baseSS/keyTT</code> performed in a third (neither <code class="highlighter-rouge">frankfurt</code> nor <code class="highlighter-rouge">sydney</code>) node.
-You can also PUT to <code class="highlighter-rouge">///sydney//lmdb/baseSS/keyTT.raw</code> or GET from <code class="highlighter-rouge">///frankfurt//code/fun(//lmdb/ee/k)</code> or <code class="highlighter-rouge">///frankfurt//code/fun(&amp;[3])</code></p>
+<p>Based on that, you can make API calls like GET <code class="language-plaintext highlighter-rouge">///frankfurt//lmdb/base/key=//lmdb/my_base/my_key</code> which is an assignment across nodes.
+Or even <code class="language-plaintext highlighter-rouge">///frankfurt//lmdb/baseXX/keyYY=///sydney//lmdb/baseSS/keyTT</code> performed in a third (neither <code class="language-plaintext highlighter-rouge">frankfurt</code> nor <code class="language-plaintext highlighter-rouge">sydney</code>) node.
+You can also PUT to <code class="language-plaintext highlighter-rouge">///sydney//lmdb/baseSS/keyTT.raw</code> or GET from <code class="language-plaintext highlighter-rouge">///frankfurt//code/fun(//lmdb/ee/k)</code> or <code class="language-plaintext highlighter-rouge">///frankfurt//code/fun(&amp;[3])</code></p>
 
 <p>Compared to what other systems provide: automatic replication, sharding, fault tolerance, etc. this looks very low level. Well, it is.
 When Jazz was created, it had “the burden” of having to provide reliable distributed storage out of the box. Now we focus Jazz in a
@@ -596,8 +596,8 @@ created <strong>inside Jazz</strong>.</p>
 
 <h2 id="configuring-a-jazz-cluster">Configuring a Jazz cluster.</h2>
 
-<p>Is just defining JAZZ_NODE_NAME_#, JAZZ_NODE_IP_# and JAZZ_NODE_PORT_# for each Jazz node in the <code class="highlighter-rouge">jazz_config.ini</code> file (or whatever
-file you pass to the server at starting time). The <code class="highlighter-rouge">#</code> is replaced by a decimal number starting with 1 up to the number of nodes in the
+<p>Is just defining JAZZ_NODE_NAME_#, JAZZ_NODE_IP_# and JAZZ_NODE_PORT_# for each Jazz node in the <code class="language-plaintext highlighter-rouge">jazz_config.ini</code> file (or whatever
+file you pass to the server at starting time). The <code class="language-plaintext highlighter-rouge">#</code> is replaced by a decimal number starting with 1 up to the number of nodes in the
 cluster. You have to use all the consecutive numbers, the parser will stop looking at the first non match.</p>
 
 <p>All names must be unique, IPs are just strings and should work when used in a URL, ports are integers.</p>
@@ -608,29 +608,29 @@ the nodes <strong>and a different JAZZ_NODE_MY_NAME</strong> defining which of t
 <h2 id="the-golden-rules">The Golden Rules.</h2>
 
 <ul>
-  <li>The node name defined in a <code class="highlighter-rouge">///node/...</code> applies to everything until an assignment <code class="highlighter-rouge">=</code> character is found.</li>
-  <li>In absence of a <code class="highlighter-rouge">///node/...</code> the node is the node you are talking to.</li>
-  <li>A node definition can only be the first thing or the first thing after a <code class="highlighter-rouge">=</code>.</li>
+  <li>The node name defined in a <code class="language-plaintext highlighter-rouge">///node/...</code> applies to everything until an assignment <code class="language-plaintext highlighter-rouge">=</code> character is found.</li>
+  <li>In absence of a <code class="language-plaintext highlighter-rouge">///node/...</code> the node is the node you are talking to.</li>
+  <li>A node definition can only be the first thing or the first thing after a <code class="language-plaintext highlighter-rouge">=</code>.</li>
 </ul>
 
 <h3 id="as-a-consequence">As a consequence:</h3>
 
 <ul>
-  <li>In GET <code class="highlighter-rouge">///frankfurt//code/fun(//lmdb/ee/k)</code> the entity <code class="highlighter-rouge">ee</code> is in <code class="highlighter-rouge">frankfurt</code>, not in the current node.</li>
-  <li>In GET <code class="highlighter-rouge">///frankfurt//tt/k=//lmdb/ee/k</code> the entity <code class="highlighter-rouge">ee</code> is in the current node, not in <code class="highlighter-rouge">frankfurt</code>.</li>
-  <li>GET <code class="highlighter-rouge">///frankfurt//tt/k=///frankfurt//lmdb/ee/k</code> is the right way to assign from <code class="highlighter-rouge">frankfurt</code> to <code class="highlighter-rouge">frankfurt</code>.</li>
-  <li>GET <code class="highlighter-rouge">//code/fun(///frankfurt//lmdb/ee/k)</code> is malformed.</li>
+  <li>In GET <code class="language-plaintext highlighter-rouge">///frankfurt//code/fun(//lmdb/ee/k)</code> the entity <code class="language-plaintext highlighter-rouge">ee</code> is in <code class="language-plaintext highlighter-rouge">frankfurt</code>, not in the current node.</li>
+  <li>In GET <code class="language-plaintext highlighter-rouge">///frankfurt//tt/k=//lmdb/ee/k</code> the entity <code class="language-plaintext highlighter-rouge">ee</code> is in the current node, not in <code class="language-plaintext highlighter-rouge">frankfurt</code>.</li>
+  <li>GET <code class="language-plaintext highlighter-rouge">///frankfurt//tt/k=///frankfurt//lmdb/ee/k</code> is the right way to assign from <code class="language-plaintext highlighter-rouge">frankfurt</code> to <code class="language-plaintext highlighter-rouge">frankfurt</code>.</li>
+  <li>GET <code class="language-plaintext highlighter-rouge">//code/fun(///frankfurt//lmdb/ee/k)</code> is malformed.</li>
 </ul>
 
 <h2 id="assignment-is-your-friend">Assignment is your friend</h2>
 
-<p>To keep it simple, not everything can be done in just one line. We just saw <code class="highlighter-rouge">//code/fun(///frankfurt//lmdb/ee/k)</code> is malformed. You
-may want to pass a block that is in <code class="highlighter-rouge">frankfurt</code> as an argument to a function in your local node. The way to do it is the two liner:
-GET <code class="highlighter-rouge">deque\xx\~last=///frankfurt//lmdb/ee/k)</code> and GET <code class="highlighter-rouge">//code/fun(deque\xx\~plast)</code>.</p>
+<p>To keep it simple, not everything can be done in just one line. We just saw <code class="language-plaintext highlighter-rouge">//code/fun(///frankfurt//lmdb/ee/k)</code> is malformed. You
+may want to pass a block that is in <code class="language-plaintext highlighter-rouge">frankfurt</code> as an argument to a function in your local node. The way to do it is the two liner:
+GET <code class="language-plaintext highlighter-rouge">deque\xx\~last=///frankfurt//lmdb/ee/k)</code> and GET <code class="language-plaintext highlighter-rouge">//code/fun(deque\xx\~plast)</code>.</p>
 
-<p>Note that <strong>you created a volatile local</strong> block automatically by pushing it to an existing queue named <code class="highlighter-rouge">xx</code>. This avoids having to give
+<p>Note that <strong>you created a volatile local</strong> block automatically by pushing it to an existing queue named <code class="language-plaintext highlighter-rouge">xx</code>. This avoids having to give
 it a name (which could already exist and therefore replace an existing item). It the second line, <strong>you destroyed the block</strong> by reading
-it using <code class="highlighter-rouge">~plast</code> (pop last) rather than just <code class="highlighter-rouge">~last</code>.</p>
+it using <code class="language-plaintext highlighter-rouge">~plast</code> (pop last) rather than just <code class="language-plaintext highlighter-rouge">~last</code>.</p>
 
 
 
@@ -645,7 +645,7 @@ it using <code class="highlighter-rouge">~plast</code> (pop last) rather than ju
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2022 kaalam.ai. All rights reserved. <br />
- Site last generated: Dec 22, 2022 <br />
+ Site last generated: Dec 27, 2022 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

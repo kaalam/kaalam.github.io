@@ -580,7 +580,7 @@ $('#toc').on('click', 'a', function() {
 
 <p><span class="label label-info">Block</span></p>
 
-<p>In Jazz <strong>everything is stored as</strong> <code class="highlighter-rouge">Block</code>. That includes simple structures: tensor, tuple, kind and index. Also complex structures
+<p>In Jazz <strong>everything is stored as</strong> <code class="language-plaintext highlighter-rouge">Block</code>. That includes simple structures: tensor, tuple, kind and index. Also complex structures
 to run code, formal fields or implement algorithms are stored as blocks. Blocks are stored in containers.</p>
 
 <figure><img class="docimage" src="images/jazz_block.png" alt="" style="max-width: 540px" /><figcaption>A jazz block</figcaption></figure>
@@ -591,13 +591,13 @@ to run code, formal fields or implement algorithms are stored as blocks. Blocks 
 include what you expect in any language: Boolean, integer, float, string of different sizes. Data blocks are typically small, as
 in tenths of thousands of cells, but can be bigger to avoid cross-block boundaries when processing bigger objects (e.g. high resolution
 video). Also, rigorous data analytics is supported: All types (except byte) support a NA (Not Available) logic. There are <strong>sorted factor</strong>,
-<strong>unsorted factor</strong> and <strong>strings as factor</strong> types. Bear in mind that <strong>any file</strong> is a <code class="highlighter-rouge">Block</code>, since it is a vector (tensor or rank 1)
+<strong>unsorted factor</strong> and <strong>strings as factor</strong> types. Bear in mind that <strong>any file</strong> is a <code class="language-plaintext highlighter-rouge">Block</code>, since it is a vector (tensor or rank 1)
 of bytes. Besides that, there are multi-block abstractions which are, again, implemented as blocks.</p>
 
 <h3 id="a-block-has-attributes">A Block has attributes</h3>
 
 <p>Blocks have attributes as first class citizen. Attributes are maps from integer to string. Attributes are contained inside the
-<code class="highlighter-rouge">Block</code>. Possible attributes are:</p>
+<code class="language-plaintext highlighter-rouge">Block</code>. Possible attributes are:</p>
 
 <ul>
   <li><strong>Urls</strong>. This automatically exposes the object under that url in the http server.</li>
@@ -607,22 +607,22 @@ of bytes. Besides that, there are multi-block abstractions which are, again, imp
   <li><strong>Jazz fields</strong>. Possibly used by algorithms.</li>
 </ul>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Since any resource is a <code class="highlighter-rouge">Block</code> and blocks can have urls. A Jazz server is the only http server you need
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Since any resource is a <code class="language-plaintext highlighter-rouge">Block</code> and blocks can have urls. A Jazz server is the only http server you need
 to support any web technology, from static webpages to Typescript and JS frameworks such as Angular and Ionic or Flutter and Dart.</div>
 
 <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> For the final user, Jazz is just a website or mobile app that does “AI Magic” very fast.</div>
 
 <h3 id="a-block-has-an-owner">A Block has an owner</h3>
 
-<p>A <code class="highlighter-rouge">Block</code> is binary moveable, quasi-immutable and has an owner, called a <code class="highlighter-rouge">Container</code>. This means:</p>
+<p>A <code class="language-plaintext highlighter-rouge">Block</code> is binary moveable, quasi-immutable and has an owner, called a <code class="language-plaintext highlighter-rouge">Container</code>. This means:</p>
 
 <ul>
   <li><strong>Binary moveable</strong> - It can be copied “as is” because it has no pointers.</li>
   <li><strong>Quasi-immutable</strong> - Via the API, it appears as immutable. Of course, in C++ you can still change its content for performance reasons
 and provide an interface that abstracts that out.</li>
   <li>
-    <p><strong>Owner</strong> - A <code class="highlighter-rouge">Block</code> can be: <strong>one shot</strong>, <strong>volatile</strong>  or <strong>persisted</strong>, in any case, it still has an owner which is a <code class="highlighter-rouge">Container</code>.
-Blocks “move” with a <code class="highlighter-rouge">Transaction</code> and usually a <code class="highlighter-rouge">Locator</code>. It can “move” across any channel (run as a bash script, read/write to the file
+    <p><strong>Owner</strong> - A <code class="language-plaintext highlighter-rouge">Block</code> can be: <strong>one shot</strong>, <strong>volatile</strong>  or <strong>persisted</strong>, in any case, it still has an owner which is a <code class="language-plaintext highlighter-rouge">Container</code>.
+Blocks “move” with a <code class="language-plaintext highlighter-rouge">Transaction</code> and usually a <code class="language-plaintext highlighter-rouge">Locator</code>. It can “move” across any channel (run as a bash script, read/write to the file
 system, transmitted through zMQ, libCURL, persisted or stored in many efficient structures).
 <strong>One shot</strong> is a block linked to a transaction (typically as the result of some query, that will be destroyed as the transaction is
 destroyed). <strong>Volatile</strong> is a block in RAM inside some efficient structure, queue, deque, tree, index, all of them possibly accessed as
@@ -635,10 +635,10 @@ block.</p>
 
 <h2 id="introducing-kinds">Introducing Kinds</h2>
 
-<p>A <code class="highlighter-rouge">Kind</code> is a type definition for Jazz Blocks and Tuples. <code class="highlighter-rouge">Kind</code> objects contain the metadata only. A <code class="highlighter-rouge">Tuple</code> is a data object of a <code class="highlighter-rouge">Kind</code>.
+<p>A <code class="language-plaintext highlighter-rouge">Kind</code> is a type definition for Jazz Blocks and Tuples. <code class="language-plaintext highlighter-rouge">Kind</code> objects contain the metadata only. A <code class="language-plaintext highlighter-rouge">Tuple</code> is a data object of a <code class="language-plaintext highlighter-rouge">Kind</code>.
 Kinds define more complex types than (raw) Blocks, even if they are blocks. E.g., A Block can store a video of a fixed shape (image only
 or soundtrack only). A Kind can store both and have <strong>dimensions</strong> defining things like: image_width, image_height, number_of_frames and,
-possibly, a subtitle track as another vector of strings. <code class="highlighter-rouge">image_width</code>, etc. would have different values in the Tuples of the same <code class="highlighter-rouge">Kind</code>,
+possibly, a subtitle track as another vector of strings. <code class="language-plaintext highlighter-rouge">image_width</code>, etc. would have different values in the Tuples of the same <code class="language-plaintext highlighter-rouge">Kind</code>,
 but all of them satisfy the is_a(Video) Tuple-&gt;Kind relation.</p>
 
 <ul>
@@ -647,7 +647,7 @@ but all of them satisfy the is_a(Video) Tuple-&gt;Kind relation.</p>
 
 <h2 id="introducing-tuples">Introducing Tuples</h2>
 
-<p>A <code class="highlighter-rouge">Tuple</code> is a Jazz Block with multiple Tensors. It could be simplified as “An instance of a <strong>Kind</strong>” although that is not exactly what it
+<p>A <code class="language-plaintext highlighter-rouge">Tuple</code> is a Jazz Block with multiple Tensors. It could be simplified as “An instance of a <strong>Kind</strong>” although that is not exactly what it
 is. It is an array of Tensors and it can match one or more Kinds if its .is_a(<kind>) method returns true.</kind></p>
 
 <ul>
@@ -690,7 +690,7 @@ is. It is an array of Tensors and it can match one or more Kinds if its .is_a(<k
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2022 kaalam.ai. All rights reserved. <br />
- Site last generated: Dec 22, 2022 <br />
+ Site last generated: Dec 27, 2022 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

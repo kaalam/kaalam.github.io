@@ -576,7 +576,7 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <h2 id="the-container-persisted">The Container <code class="highlighter-rouge">Persisted</code></h2>
+  <h2 id="the-container-persisted">The Container <code class="language-plaintext highlighter-rouge">Persisted</code></h2>
 
 <p>Persisted blocks are blocks stored using LMDB in the Jazz process.</p>
 
@@ -586,17 +586,17 @@ $('#toc').on('click', 'a', function() {
   <li>See C++ ref <a href="/develop_jazz02/classjazz__elements_1_1Persisted.html">Persisted</a></li>
 </ul>
 
-<h2 id="the-base-lmdb-through-the-jazz-server-api">The base <code class="highlighter-rouge">lmdb</code> through the Jazz server API</h2>
+<h2 id="the-base-lmdb-through-the-jazz-server-api">The base <code class="language-plaintext highlighter-rouge">lmdb</code> through the Jazz server API</h2>
 
-<p>The entity is always a database. A database is created by GET <code class="highlighter-rouge">//lmdb/base_name.new</code> and destroyed with DELETE <code class="highlighter-rouge">//lmdb/base_name</code>.
-The special database <code class="highlighter-rouge">www</code> is used to store the blocks exposed via the <a href="api_ref_serving_frontend.html">static API</a></p>
+<p>The entity is always a database. A database is created by GET <code class="language-plaintext highlighter-rouge">//lmdb/base_name.new</code> and destroyed with DELETE <code class="language-plaintext highlighter-rouge">//lmdb/base_name</code>.
+The special database <code class="language-plaintext highlighter-rouge">www</code> is used to store the blocks exposed via the <a href="api_ref_serving_frontend.html">static API</a></p>
 
 <p>The key is always an identifier inside the database, there are no commands.</p>
 
 <h2 id="serializing-blocks">Serializing blocks</h2>
 
-<p>Both the input and the output of binary blocks can be serialized as text or from text. To do this you can GET using <code class="highlighter-rouge">//lmdb/db/key.text</code>
-and PUT a block of text using <code class="highlighter-rouge">//lmdb/db/key.raw</code> into a binary block. You can also store the text version and read it as binary by just
+<p>Both the input and the output of binary blocks can be serialized as text or from text. To do this you can GET using <code class="language-plaintext highlighter-rouge">//lmdb/db/key.text</code>
+and PUT a block of text using <code class="language-plaintext highlighter-rouge">//lmdb/db/key.raw</code> into a binary block. You can also store the text version and read it as binary by just
 switching .raw and .text. See <a href="api_ref_serialization.html">more</a></p>
 
 <p><br /></p>
@@ -618,7 +618,7 @@ switching .raw and .text. See <a href="api_ref_serialization.html">more</a></p>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2022 kaalam.ai. All rights reserved. <br />
- Site last generated: Dec 22, 2022 <br />
+ Site last generated: Dec 27, 2022 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

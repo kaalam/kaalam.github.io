@@ -576,37 +576,37 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <h2 id="the-container-volatile">The Container <code class="highlighter-rouge">Volatile</code></h2>
+  <h2 id="the-container-volatile">The Container <code class="language-plaintext highlighter-rouge">Volatile</code></h2>
 
-<p><code class="highlighter-rouge">Volatile</code> is a Service to manage data objects in RAM. This includes:</p>
+<p><code class="language-plaintext highlighter-rouge">Volatile</code> is a Service to manage data objects in RAM. This includes:</p>
 
 <ul>
-  <li>A <code class="highlighter-rouge">deque</code> is a double linked list accessible as a key-value store.</li>
-  <li><code class="highlighter-rouge">Index</code> objects that are serialized as tuples and exposed via API to allow connecting everything to everything as a graph.</li>
-  <li>A priority <code class="highlighter-rouge">queue</code> is implemented as self balanced binary trees with a maximum number of nodes.</li>
+  <li>A <code class="language-plaintext highlighter-rouge">deque</code> is a double linked list accessible as a key-value store.</li>
+  <li><code class="language-plaintext highlighter-rouge">Index</code> objects that are serialized as tuples and exposed via API to allow connecting everything to everything as a graph.</li>
+  <li>A priority <code class="language-plaintext highlighter-rouge">queue</code> is implemented as self balanced binary trees with a maximum number of nodes.</li>
   <li>
-    <p>A <code class="highlighter-rouge">tree</code> that can be navigated through commands and through keys, that implements pruning and more.</p>
+    <p>A <code class="language-plaintext highlighter-rouge">tree</code> that can be navigated through commands and through keys, that implements pruning and more.</p>
   </li>
   <li>See C++ ref <a href="/develop_jazz02/classjazz__elements_1_1Volatile.html">Volatile</a></li>
 </ul>
 
-<h2 id="the-base-deque">The base <code class="highlighter-rouge">deque</code></h2>
+<h2 id="the-base-deque">The base <code class="language-plaintext highlighter-rouge">deque</code></h2>
 
 <p>A deque is a double linked list with a key-value store. It is created empty via new_entity() and you can just get(), header(), put(),
-remove() or copy() by key. You can also put to both <code class="highlighter-rouge">//deque/entity/~first</code> and <code class="highlighter-rouge">//deque/entity/~last</code> and the nodes will be pushed
+remove() or copy() by key. You can also put to both <code class="language-plaintext highlighter-rouge">//deque/entity/~first</code> and <code class="language-plaintext highlighter-rouge">//deque/entity/~last</code> and the nodes will be pushed
 to either side of the deque with automatically created keys. Keys can be found using locate() and any node relation command.
-The first and last can be peeked by get()ting <code class="highlighter-rouge">//deque/entity/~first</code> and <code class="highlighter-rouge">//deque/entity/~last</code> or popped with
-<code class="highlighter-rouge">//deque/entity/~pfirst</code> and <code class="highlighter-rouge">//deque/entity/~plast</code>. Also the list supports <code class="highlighter-rouge">//deque/entity/key~next</code> and
-<code class="highlighter-rouge">//deque/entity/key~prev</code> for get(), header() and locate() or as the what of copy(), but not for put(), remove() or as the where of
+The first and last can be peeked by get()ting <code class="language-plaintext highlighter-rouge">//deque/entity/~first</code> and <code class="language-plaintext highlighter-rouge">//deque/entity/~last</code> or popped with
+<code class="language-plaintext highlighter-rouge">//deque/entity/~pfirst</code> and <code class="language-plaintext highlighter-rouge">//deque/entity/~plast</code>. Also the list supports <code class="language-plaintext highlighter-rouge">//deque/entity/key~next</code> and
+<code class="language-plaintext highlighter-rouge">//deque/entity/key~prev</code> for get(), header() and locate() or as the what of copy(), but not for put(), remove() or as the where of
 copy().</p>
 
-<p>You can also PUT a block into a deque without giving it a name by putting to <code class="highlighter-rouge">//deque/entity/~last</code>. The container will give it a new
-name automatically. This way you avoid finding a name that does not match existing blocks in the deque. You can use <code class="highlighter-rouge">~last</code> and <code class="highlighter-rouge">~plast</code>
-combined to use the deque just as a LIFO stack or <code class="highlighter-rouge">~last</code> and <code class="highlighter-rouge">~pfirst</code> as a FIFO queue.</p>
+<p>You can also PUT a block into a deque without giving it a name by putting to <code class="language-plaintext highlighter-rouge">//deque/entity/~last</code>. The container will give it a new
+name automatically. This way you avoid finding a name that does not match existing blocks in the deque. You can use <code class="language-plaintext highlighter-rouge">~last</code> and <code class="language-plaintext highlighter-rouge">~plast</code>
+combined to use the deque just as a LIFO stack or <code class="language-plaintext highlighter-rouge">~last</code> and <code class="language-plaintext highlighter-rouge">~pfirst</code> as a FIFO queue.</p>
 
 <h2 id="in-terms-of-the-jazz-server-api">In terms of the Jazz server API</h2>
 
-<p>A deque is created by GET <code class="highlighter-rouge">//deque/ent_name.new</code> and destroyed with DELETE <code class="highlighter-rouge">//deque/ent_name</code>.</p>
+<p>A deque is created by GET <code class="language-plaintext highlighter-rouge">//deque/ent_name.new</code> and destroyed with DELETE <code class="language-plaintext highlighter-rouge">//deque/ent_name</code>.</p>
 
 <p>Anything else is just GET, PUT or DELETE calls as in the previous description.</p>
 
@@ -630,7 +630,7 @@ forwarding, …</p>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2022 kaalam.ai. All rights reserved. <br />
- Site last generated: Dec 22, 2022 <br />
+ Site last generated: Dec 27, 2022 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>
