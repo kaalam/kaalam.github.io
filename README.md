@@ -29,13 +29,13 @@ http://www.apache.org/licenses/LICENSE-2.0
 
 ### New documentation of the Jazz 0.2.x, 0.3.x (deprecated) and 0.4+ server and client:
 
-  (c) 2018-2022 The Authors of Jazz 
+  (c) 2018-2023 The Authors of Jazz 
   
   available under GNU Simpler Free Documentation License http://gplv3.fsf.org/sfdl-dd1.txt
 
 
 ### Kaalam website and blog:
 
-  (c) 2018-2022 kaalam.ai
+  (c) 2018-2023 kaalam.ai
   
   available under GNU Simpler Free Documentation License http://gplv3.fsf.org/sfdl-dd1.txt
