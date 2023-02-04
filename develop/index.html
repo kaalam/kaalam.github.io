@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <title>Development Documentation for the Jazz Server</title>
 
@@ -20,6 +21,10 @@ body {
   margin: auto;
   padding: 1em;
   line-height: 1.5;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 tt, code, pre {
   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
@@ -47,6 +52,7 @@ blockquote {
   border-left: 0.5em #eee solid;
 }
 hr { border: 1px #ddd dashed; }
+.frontmatter { text-align: center; }
 
 @media print {
   * {
@@ -77,10 +83,20 @@ hr { border: 1px #ddd dashed; }
 </style>
 
 
-
 </head>
 
 <body>
+<div class="include-before">
+
+</div>
+
+<div class="frontmatter">
+<div class="title"><h1>Development Documentation for the Jazz Server</h1></div>
+<div class="author"><h2></h2></div>
+<div class="date"><h3></h3></div>
+</div>
+
+<div class="body">
 <h1>Development Documentation for the Jazz Server</h1>
 <p>Jazz 0.5+ is code name for anything alive and maintained. After Jazz 0.1.7 was released under an Apache 2.0 license in December 2017.</p>
 <h3>History:</h3>
@@ -115,8 +131,16 @@ hr { border: 1px #ddd dashed; }
 <li><a href="https://github.com/catchorg/Catch2/blob/master/docs/Readme.md#top">Catch 2! </a></li>
 </ul>
 
+</div>
+
+<div class="include-after">
+
+</div>
 
 <script src="https://cdn.jsdelivr.net/combine/npm/@xiee/utils/js/center-img.min.js" async></script>
+<script>
+
+</script>
 </body>
 
 </html>
