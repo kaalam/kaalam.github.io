@@ -3,103 +3,88 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
 <title>Jazz Actor model</title>
-
-
-
-
-
 <style type="text/css">
-body, td {
-  font-family: sans-serif;
-  background-color: white;
-  font-size: 13px;
-}
 body {
+  font-family: sans-serif;
   max-width: 800px;
   margin: auto;
   padding: 1em;
   line-height: 1.5;
   box-sizing: border-box;
 }
+body, .footnotes, code { font-size: .9em; }
+li li { font-size: .95em; }
 *, *:before, *:after {
   box-sizing: inherit;
 }
-tt, code, pre {
-  font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
-}
-a:visited { color: #80007f; }
 pre, img { max-width: 100%; }
-code {
-  font-size: 92%;
-  border: 1px solid #ccc;
+pre, pre:hover {
+  white-space: pre-wrap;
+  word-break: break-all;
 }
-code[class] { background-color: #F8F8F8; }
-code.language-undefined { background-color: inherit; }
+pre code {
+  display: block;
+  overflow-x: auto;
+}
+code { font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace; }
+:not(pre) > code, code[class] { background-color: #F8F8F8; }
+code.language-undefined, pre > code:not([class]) {
+  background-color: inherit;
+  border: 1px solid #eee;
+}
 table {
   margin: auto;
   border-top: 1px solid #666;
-  border-bottom: 1px solid #666;
 }
 table thead th { border-bottom: 1px solid #ddd; }
 th, td { padding: 5px; }
 thead, tfoot, tr:nth-child(even) { background: #eee; }
 blockquote {
-  color:#666;
-  margin:0;
+  color: #666;
+  margin: 0;
   padding-left: 1em;
-  border-left: 0.5em #eee solid;
+  border-left: 0.5em solid #eee;
 }
-hr { border: 1px #ddd dashed; }
+hr, .footnotes::before { border: 1px dashed #ddd; }
 .frontmatter { text-align: center; }
+#TOC .numbered li { list-style: none; }
+#TOC .numbered { padding-left: 0; }
+#TOC .numbered ul { padding-left: 1em; }
+table, .body h2 { border-bottom: 1px solid #666; }
+.body .appendix, .appendix ~ h2 { border-bottom-style: dashed; }
+.footnote-ref a::before { content: "["; }
+.footnote-ref a::after { content: "]"; }
+.footnotes::before {
+  content: "";
+  display: block;
+  max-width: 20em;
+}
 
 @media print {
-  * {
-    background: transparent !important;
-    color: black !important;
-    filter:none !important;
-  }
   body {
     font-size: 12pt;
     max-width: 100%;
   }
-  a, a:visited { text-decoration: underline; }
-  hr {
-    visibility: hidden;
-    page-break-before: always;
-  }
-  pre, blockquote {
-    padding-right: 1em;
-    page-break-inside: avoid;
-  }
   tr, img { page-break-inside: avoid; }
-  img { max-width: 100% !important; }
-  @page :left { margin: 15mm 20mm 15mm 10mm; }
-  @page :right { margin: 15mm 10mm 15mm 20mm; }
-  p, h2, h3 { orphans: 3; widows: 3; }
-  h2, h3 { page-break-after: avoid; }
+}
+@media only screen and (min-width: 992px) {
+  pre { white-space: pre; }
 }
 </style>
-
-
 </head>
-
 <body>
 <div class="include-before">
-
 </div>
-
 <div class="frontmatter">
 <div class="title"><h1>Jazz Actor model</h1></div>
 <div class="author"><h2></h2></div>
 <div class="date"><h3></h3></div>
 </div>
-
 <div class="body">
-<h1>Jazz Actor model</h1>
+<h1 id="jazz-actor-model">Jazz Actor model</h1>
 <p>Jazz is a single monolithic process that runs multithreaded. This mandatory guide is the specification on how that is implemented.</p>
-<h2>Processes, threads, fibers</h2>
+<h2 id="processes-threads-fibers">Processes, threads, fibers</h2>
 <p>There is only one process, the server. No actor model is implemented at process level.</p>
 <p>Jazz does not use fibers since fibers would not solve the fundamental problem, exploiting the 64 cores in a CPU at the minimum
 cost in terms of cache misses, etc. The mix of threads and fibers would be even worse. We need threads and cannot replace them by
@@ -108,10 +93,10 @@ anything else.</p>
 more threads is starting more API calls. Anyway as complexity grows (from elements to bop to agents) this scaling happens automatically.
 Jazz is not prioritizing being a “backend tensor workhorse” anymore and does not provide mechanisms to multithread a single backend
 computation.</p>
-<h2>The actor model</h2>
+<h2 id="the-actor-model">The actor model</h2>
 <p>Is implemented at thread level.</p>
 <p>It is <strong>almost</strong> canonical, the only exception is how some things are possibly shared (see shared resources below).</p>
-<h3>The canonical parts</h3>
+<h3 id="the-canonical-parts">The canonical parts</h3>
 <ul>
 <li>There is nothing in control, nothing schedules. The processing of messages to completion does everything.</li>
 <li>An actor is whatever runs to handle an API call up to completion.</li>
@@ -119,17 +104,17 @@ computation.</p>
 <li>All messages are one-way. The answer may trigger more messages.</li>
 <li>Actors execute just one message always to completion, concurrently and asynchronously. They <strong>never</strong> wait for an answer.</li>
 </ul>
-<h2>Shared resources</h2>
+<h2 id="shared-resources">Shared resources</h2>
 <p>And, therefore, the only place where thread control happens … are the <strong>Container</strong> objects. And this is done using only two mechanisms</p>
 <ul>
 <li>The methods enter_read(), enter_write(), leave_read() and leave_write() inherited from the Container class.</li>
 <li>The internal LMDB mechanisms (in the case of the Persisted container).</li>
 </ul>
 <p>Otherwise, <strong>nothing</strong> is shared between actors outside a Container.</p>
-<h3>Physical safety of shared resources</h3>
+<h3 id="physical-safety-of-shared-resources">Physical safety of shared resources</h3>
 <p>By physical safety, we mean avoiding catastrophic interactions (including but not limited to, crashes, locking, data corruption). This
 is avoided by the logic in the Container objects. Anything possibly compromising this physical safety is a bug.</p>
-<h3>Logical safety of shared resources</h3>
+<h3 id="logical-safety-of-shared-resources">Logical safety of shared resources</h3>
 <p>This is about racing conditions in reading, writing or deleting shared resources.</p>
 <p>For agents implementing higher level algorithms, this may be crucial and require some higher level access logic to be implemented.</p>
 <p>It is not a “Jazz-level” decision to do so. Platform-wise Jazz actors will just use shared resources regardless of any other actors. It’s
@@ -137,17 +122,8 @@ the Jungle!</p>
 <p>This will be prevented when the resources are not really shared because their names include unique handles known by their owners and nobody
 “spies” at this stage to create problems. These “owners” will have some housekeeping logic to do to prevent wasting resources.</p>
 <p>This part will surely change in the future moving towards ironclad security.</p>
-
 </div>
-
 <div class="include-after">
-
 </div>
-
-<script src="https://cdn.jsdelivr.net/combine/npm/@xiee/utils/js/center-img.min.js" async></script>
-<script>
-
-</script>
 </body>
-
 </html>
