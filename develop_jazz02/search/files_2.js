@@ -7,7 +7,5 @@ var searchData=
   ['container_2ecpp_4',['container.cpp',['../container_8cpp.html',1,'']]],
   ['container_2eh_5',['container.h',['../container_8h.html',1,'']]],
   ['core_2ecpp_6',['core.cpp',['../core_8cpp.html',1,'']]],
-  ['core_2eh_7',['core.h',['../core_8h.html',1,'']]],
-  ['cores_2ecpp_8',['cores.cpp',['../cores_8cpp.html',1,'']]],
-  ['cores_2eh_9',['cores.h',['../cores_8h.html',1,'']]]
+  ['core_2eh_7',['core.h',['../core_8h.html',1,'']]]
 ];

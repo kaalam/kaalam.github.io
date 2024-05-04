@@ -93,14 +93,15 @@ Inheritance diagram for jazz_elements::Service:</div>
   <map id="jazz_5Felements::Service_map" name="jazz_5Felements::Service_map">
 <area href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th..." alt="jazz_elements::Container" shape="rect" coords="0,56,151,80"/>
 <area href="classjazz__main_1_1HttpServer.html" title="HttpServer: The http server is also a Service." alt="jazz_main::HttpServer" shape="rect" coords="161,56,312,80"/>
-<area href="classjazz__bebop_1_1Fields.html" alt="jazz_bebop::Fields" shape="rect" coords="161,112,312,136"/>
-<area href="classjazz__bebop_1_1Pack.html" alt="jazz_bebop::Pack" shape="rect" coords="161,168,312,192"/>
-<area href="classjazz__elements_1_1Channels.html" title="Channels: A Container doing block transactions across media (files, folders, shell,..." alt="jazz_elements::Channels" shape="rect" coords="161,224,312,248"/>
-<area href="classjazz__elements_1_1Persisted.html" title="Persisted: A Service to manage data objects in LMDB." alt="jazz_elements::Persisted" shape="rect" coords="161,280,312,304"/>
-<area href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM." alt="jazz_elements::Volatile" shape="rect" coords="161,336,312,360"/>
-<area href="classjazz__main_1_1Api.html" title="Api: A Service to manage the REST API." alt="jazz_main::Api" shape="rect" coords="161,392,312,416"/>
-<area href="classjazz__model_1_1Model.html" alt="jazz_model::Model" shape="rect" coords="161,448,312,472"/>
-<area href="classjazz__model_1_1SemSpaces.html" alt="jazz_model::SemSpaces" shape="rect" coords="161,504,312,528"/>
+<area href="classjazz__bebop_1_1Core.html" alt="jazz_bebop::Core" shape="rect" coords="161,112,312,136"/>
+<area href="classjazz__bebop_1_1Field.html" alt="jazz_bebop::Field" shape="rect" coords="161,168,312,192"/>
+<area href="classjazz__bebop_1_1Pack.html" alt="jazz_bebop::Pack" shape="rect" coords="161,224,312,248"/>
+<area href="classjazz__elements_1_1Channels.html" title="Channels: A Container doing block transactions across media (files, folders, shell,..." alt="jazz_elements::Channels" shape="rect" coords="161,280,312,304"/>
+<area href="classjazz__elements_1_1Persisted.html" title="Persisted: A Service to manage data objects in LMDB." alt="jazz_elements::Persisted" shape="rect" coords="161,336,312,360"/>
+<area href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM." alt="jazz_elements::Volatile" shape="rect" coords="161,392,312,416"/>
+<area href="classjazz__main_1_1Api.html" title="Api: A Service to manage the REST API." alt="jazz_main::Api" shape="rect" coords="161,448,312,472"/>
+<area href="classjazz__model_1_1Model.html" alt="jazz_model::Model" shape="rect" coords="161,504,312,528"/>
+<area href="classjazz__model_1_1SemSpace.html" alt="jazz_model::SemSpace" shape="rect" coords="161,560,312,584"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -202,7 +203,7 @@ Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR if successful, some error if not.</dd></dl>
 <p>This method should be overriden by something that actually starts the service, possibly using the configuration file in pConf. </p>
 
-<p>Reimplemented in <a class="el" href="classjazz__bebop_1_1Fields.html#a4de8c759a58cf54dfa5fcc34741a328c">jazz_bebop::Fields</a>, <a class="el" href="classjazz__bebop_1_1Pack.html#a738b88f891cbddf9e66519deb581a81a">jazz_bebop::Pack</a>, <a class="el" href="classjazz__elements_1_1Channels.html#a94db3886e6f783abf9e012baeac22aae">jazz_elements::Channels</a>, <a class="el" href="classjazz__elements_1_1Container.html#a0496a435ee9330f73091a6ad41f07161">jazz_elements::Container</a>, <a class="el" href="classjazz__elements_1_1Persisted.html#ac71e44e58eadb4289c98ba79755ec369">jazz_elements::Persisted</a>, <a class="el" href="classjazz__elements_1_1Volatile.html#ad13b77c09c8ae17eaf4908e4350f636d">jazz_elements::Volatile</a>, <a class="el" href="classjazz__main_1_1Api.html#af5527ac854705e198aed8975976311b1">jazz_main::Api</a>, <a class="el" href="classjazz__model_1_1Model.html#aafd362b609717735cef58e7fc226124d">jazz_model::Model</a>, and <a class="el" href="classjazz__model_1_1SemSpaces.html#a56ddd543b435d00c0f83e0779d114e75">jazz_model::SemSpaces</a>.</p>
+<p>Reimplemented in <a class="el" href="classjazz__bebop_1_1Core.html#a27fc7e53cdd9dd7931f9281652bbed9d">jazz_bebop::Core</a>, <a class="el" href="classjazz__bebop_1_1Field.html#ab07afd526330e82c195005834b536b2c">jazz_bebop::Field</a>, <a class="el" href="classjazz__bebop_1_1Pack.html#a738b88f891cbddf9e66519deb581a81a">jazz_bebop::Pack</a>, <a class="el" href="classjazz__elements_1_1Channels.html#a94db3886e6f783abf9e012baeac22aae">jazz_elements::Channels</a>, <a class="el" href="classjazz__elements_1_1Container.html#a0496a435ee9330f73091a6ad41f07161">jazz_elements::Container</a>, <a class="el" href="classjazz__elements_1_1Persisted.html#ac71e44e58eadb4289c98ba79755ec369">jazz_elements::Persisted</a>, <a class="el" href="classjazz__elements_1_1Volatile.html#ad13b77c09c8ae17eaf4908e4350f636d">jazz_elements::Volatile</a>, <a class="el" href="classjazz__main_1_1Api.html#af5527ac854705e198aed8975976311b1">jazz_main::Api</a>, <a class="el" href="classjazz__model_1_1Model.html#aafd362b609717735cef58e7fc226124d">jazz_model::Model</a>, and <a class="el" href="classjazz__model_1_1SemSpace.html#a5ebed5bb06b0f26fc26b497f79954dff">jazz_model::SemSpace</a>.</p>
 
 </div>
 </div>
@@ -232,7 +233,7 @@ Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR if successful, some error if not.</dd></dl>
 <p>This method should be overriden by something that actually stops the service, possibly using the configuration file in pConf. </p>
 
-<p>Reimplemented in <a class="el" href="classjazz__bebop_1_1Fields.html#ac667446481f18c5920e2738a9096a3cd">jazz_bebop::Fields</a>, <a class="el" href="classjazz__bebop_1_1Pack.html#ae9da225b20e06431f76e1c72a9a42bd1">jazz_bebop::Pack</a>, <a class="el" href="classjazz__elements_1_1Channels.html#a798fceeca7c9ed64874a3389ed7268f7">jazz_elements::Channels</a>, <a class="el" href="classjazz__elements_1_1Container.html#af1cdde44708880c4577f0202e90fa4f6">jazz_elements::Container</a>, <a class="el" href="classjazz__elements_1_1Persisted.html#a2b2348933f2cc979351770567bc89ac3">jazz_elements::Persisted</a>, <a class="el" href="classjazz__elements_1_1Volatile.html#a59169b050f6239b6f12ea21e6f7c8837">jazz_elements::Volatile</a>, <a class="el" href="classjazz__main_1_1Api.html#a82e1c6758b2218186400e499d7bcf16f">jazz_main::Api</a>, <a class="el" href="classjazz__main_1_1HttpServer.html#a641a8b251d7e78db6e08a3ea4b38836a">jazz_main::HttpServer</a>, <a class="el" href="classjazz__model_1_1Model.html#a4ef596f9530863c913eca832ab46a8e2">jazz_model::Model</a>, and <a class="el" href="classjazz__model_1_1SemSpaces.html#a8598773013354b2fa6ac258739212425">jazz_model::SemSpaces</a>.</p>
+<p>Reimplemented in <a class="el" href="classjazz__bebop_1_1Core.html#a42a83229939d32cd9515e82836f04ab6">jazz_bebop::Core</a>, <a class="el" href="classjazz__bebop_1_1Field.html#a6b6ad63c0a7585650c6396fb581f5474">jazz_bebop::Field</a>, <a class="el" href="classjazz__bebop_1_1Pack.html#ae9da225b20e06431f76e1c72a9a42bd1">jazz_bebop::Pack</a>, <a class="el" href="classjazz__elements_1_1Channels.html#a798fceeca7c9ed64874a3389ed7268f7">jazz_elements::Channels</a>, <a class="el" href="classjazz__elements_1_1Container.html#af1cdde44708880c4577f0202e90fa4f6">jazz_elements::Container</a>, <a class="el" href="classjazz__elements_1_1Persisted.html#a2b2348933f2cc979351770567bc89ac3">jazz_elements::Persisted</a>, <a class="el" href="classjazz__elements_1_1Volatile.html#a59169b050f6239b6f12ea21e6f7c8837">jazz_elements::Volatile</a>, <a class="el" href="classjazz__main_1_1Api.html#a82e1c6758b2218186400e499d7bcf16f">jazz_main::Api</a>, <a class="el" href="classjazz__main_1_1HttpServer.html#a641a8b251d7e78db6e08a3ea4b38836a">jazz_main::HttpServer</a>, <a class="el" href="classjazz__model_1_1Model.html#a4ef596f9530863c913eca832ab46a8e2">jazz_model::Model</a>, and <a class="el" href="classjazz__model_1_1SemSpace.html#aafc3fa16fe4e650d15eaaaf7d904cf2d">jazz_model::SemSpace</a>.</p>
 
 </div>
 </div>

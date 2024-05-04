@@ -123,19 +123,50 @@ $(function() {
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#ifndef INCLUDED_JAZZ_MODELS_SEMSPACE</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="semspace_8h.html#ac63852174656c712efcddc2e5ebfbf4d">   48</a></span><span class="preprocessor">#define INCLUDED_JAZZ_MODELS_SEMSPACE</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#ifndef INCLUDED_JAZZ_MODEL_SEMSPACE</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="semspace_8h.html#a529e2dd4cfa948ca40d36306554575be">   48</a></span><span class="preprocessor">#define INCLUDED_JAZZ_MODEL_SEMSPACE</span></div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacejazz__model.html">jazz_model</a></div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>{</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>} <span class="comment">// namespace jazz_model</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#endif </span><span class="comment">// ifndef INCLUDED_JAZZ_MODELS_SEMSPACE</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classjazz__model_1_1SemSpace.html">   59</a></span><span class="keyword">class </span><a class="code hl_class" href="classjazz__model_1_1SemSpace.html">SemSpace</a> : <span class="keyword">public</span> <a class="code hl_class" href="classjazz__elements_1_1Container.html">jazz_elements::Container</a> {</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <a class="code hl_class" href="classjazz__model_1_1SemSpace.html">SemSpace</a>(<a class="code hl_class" href="classjazz__elements_1_1Logger.html">jazz_elements::pLogger</a>  a_logger,</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                  <a class="code hl_class" href="classjazz__elements_1_1ConfigFile.html">jazz_elements::pConfigFile</a> a_config);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>       <a class="code hl_function" href="classjazz__model_1_1SemSpace.html#a103bd29b75ce48eb59828194dc2bb12c">~SemSpace</a>();</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <a class="code hl_typedef" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">jazz_elements::StatusCode</a> <a class="code hl_function" href="classjazz__model_1_1SemSpace.html#a5ebed5bb06b0f26fc26b497f79954dff">start</a> ();</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <a class="code hl_typedef" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">jazz_elements::StatusCode</a> <a class="code hl_function" href="classjazz__model_1_1SemSpace.html#aafc3fa16fe4e650d15eaaaf7d904cf2d">shut_down</a>();</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>};</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="namespacejazz__model.html#a26419f0083d186c900832f08970129da">   70</a></span><span class="keyword">typedef</span> <a class="code hl_class" href="classjazz__model_1_1SemSpace.html">SemSpace</a> *<a class="code hl_typedef" href="namespacejazz__model.html#a26419f0083d186c900832f08970129da">pSemSpace</a>;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="preprocessor">#ifdef CATCH_TEST</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">// Instancing SemSpace</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">// -------------------</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="keyword">extern</span> <a class="code hl_class" href="classjazz__model_1_1SemSpace.html">SemSpace</a> SMS;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>} <span class="comment">// namespace jazz_model</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="preprocessor">#endif </span><span class="comment">// ifndef INCLUDED_JAZZ_MODEL_SEMSPACE</span></div>
+<div class="ttc" id="aclassjazz__elements_1_1ConfigFile_html"><div class="ttname"><a href="classjazz__elements_1_1ConfigFile.html">jazz_elements::ConfigFile</a></div><div class="ttdoc">A configuration file as a key/value store.</div><div class="ttdef"><b>Definition:</b> utils.h:214</div></div>
+<div class="ttc" id="aclassjazz__elements_1_1Container_html"><div class="ttname"><a href="classjazz__elements_1_1Container.html">jazz_elements::Container</a></div><div class="ttdoc">Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...</div><div class="ttdef"><b>Definition:</b> container.h:278</div></div>
+<div class="ttc" id="aclassjazz__elements_1_1Logger_html"><div class="ttname"><a href="classjazz__elements_1_1Logger.html">jazz_elements::Logger</a></div><div class="ttdoc">A simple logger.</div><div class="ttdef"><b>Definition:</b> utils.h:242</div></div>
+<div class="ttc" id="aclassjazz__model_1_1SemSpace_html"><div class="ttname"><a href="classjazz__model_1_1SemSpace.html">jazz_model::SemSpace</a></div><div class="ttdef"><b>Definition:</b> semspace.h:59</div></div>
+<div class="ttc" id="aclassjazz__model_1_1SemSpace_html_a103bd29b75ce48eb59828194dc2bb12c"><div class="ttname"><a href="classjazz__model_1_1SemSpace.html#a103bd29b75ce48eb59828194dc2bb12c">jazz_model::SemSpace::~SemSpace</a></div><div class="ttdeci">~SemSpace()</div><div class="ttdef"><b>Definition:</b> semspace.cpp:51</div></div>
+<div class="ttc" id="aclassjazz__model_1_1SemSpace_html_a5ebed5bb06b0f26fc26b497f79954dff"><div class="ttname"><a href="classjazz__model_1_1SemSpace.html#a5ebed5bb06b0f26fc26b497f79954dff">jazz_model::SemSpace::start</a></div><div class="ttdeci">jazz_elements::StatusCode start()</div><div class="ttdef"><b>Definition:</b> semspace.cpp:56</div></div>
+<div class="ttc" id="aclassjazz__model_1_1SemSpace_html_aafc3fa16fe4e650d15eaaaf7d904cf2d"><div class="ttname"><a href="classjazz__model_1_1SemSpace.html#aafc3fa16fe4e650d15eaaaf7d904cf2d">jazz_model::SemSpace::shut_down</a></div><div class="ttdeci">jazz_elements::StatusCode shut_down()</div><div class="ttdef"><b>Definition:</b> semspace.cpp:64</div></div>
 <div class="ttc" id="aconcept_8h_html"><div class="ttname"><a href="concept_8h.html">concept.h</a></div></div>
+<div class="ttc" id="anamespacejazz__elements_html_ad1de9f0d4fc6192bb22f21e2862add3f"><div class="ttname"><a href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">jazz_elements::StatusCode</a></div><div class="ttdeci">int StatusCode</div><div class="ttdoc">Type returned by the Service API.</div><div class="ttdef"><b>Definition:</b> utils.h:141</div></div>
 <div class="ttc" id="anamespacejazz__model_html"><div class="ttname"><a href="namespacejazz__model.html">jazz_model</a></div><div class="ttdoc">Concepts: A concepts is: anchored running data == anchored running code.</div><div class="ttdef"><b>Definition:</b> concept.cpp:39</div></div>
+<div class="ttc" id="anamespacejazz__model_html_a26419f0083d186c900832f08970129da"><div class="ttname"><a href="namespacejazz__model.html#a26419f0083d186c900832f08970129da">jazz_model::pSemSpace</a></div><div class="ttdeci">SemSpace * pSemSpace</div><div class="ttdef"><b>Definition:</b> semspace.h:70</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

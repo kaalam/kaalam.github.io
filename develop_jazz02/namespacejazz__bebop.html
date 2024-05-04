@@ -77,49 +77,63 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>The Basic Opcode <a class="el" href="classjazz__bebop_1_1Pack.html">Pack</a> (BOP)  
+<p>Bop functionality required to implement the classes.  
 <a href="namespacejazz__bebop.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1Fields.html">Fields</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1Core.html">Core</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1Field.html">Field</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1Pack.html">Pack</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a37275e6e0899b47d7ae43552a615a23b"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classjazz__bebop_1_1Fields.html">Fields</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__bebop.html#a37275e6e0899b47d7ae43552a615a23b">pFields</a></td></tr>
-<tr class="separator:a37275e6e0899b47d7ae43552a615a23b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9cc55bfe46fbdae04361e4a4b03845c"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classjazz__bebop_1_1Core.html">Core</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__bebop.html#af9cc55bfe46fbdae04361e4a4b03845c">pCore</a></td></tr>
+<tr class="separator:af9cc55bfe46fbdae04361e4a4b03845c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3511260b9858ed1fb6eef51a56479a01"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classjazz__bebop_1_1Field.html">Field</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__bebop.html#a3511260b9858ed1fb6eef51a56479a01">pField</a></td></tr>
+<tr class="separator:a3511260b9858ed1fb6eef51a56479a01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a947b6ecccc7afc3056717f2bdb3664c4"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classjazz__bebop_1_1Pack.html">Pack</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__bebop.html#a947b6ecccc7afc3056717f2bdb3664c4">pPack</a></td></tr>
 <tr class="separator:a947b6ecccc7afc3056717f2bdb3664c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The Basic Opcode <a class="el" href="classjazz__bebop_1_1Pack.html">Pack</a> (BOP) </p>
+<div class="textblock"><p>Bop functionality required to implement the classes. </p>
 <p>Snippets: Snippets and code items. (A code item is a minimal snippet.)</p>
 <p><a class="el" href="classjazz__bebop_1_1Pack.html">Pack</a>: A collection of op-codes.</p>
 <p>OpCode: stateless functions and mutators. Category theory provides the necessary composition to manage state without introducing stateless and stateful as separate categories. Only mutators (which introduce addresses) are a separate category.</p>
-<p>Formal <a class="el" href="classjazz__bebop_1_1Fields.html">Fields</a>: The container storing all the fields.</p>
-<p>Formal <a class="el" href="classjazz__bebop_1_1Fields.html">Fields</a>: Organizing op-codes and snippets by Kind.</p>
-<p>Cores: The service that owns all the cores.</p>
-<p>Core: The execution unit running Snippet objects.</p>
-<p>The fundamental collection of op-codes provided in Jazz (any other pack is an uplifted pack).</p>
+<p>Formal Fields: Organizing op-codes and snippets by Kind.</p>
+<p><a class="el" href="classjazz__bebop_1_1Core.html">Core</a>: The execution unit running Snippet objects.</p>
+<p>This is mainly functionality shared with the API to access resources in other containers in order to get data for the computations.</p>
 <p>A core is not a service, it allocates its state in the Volatile container.</p>
-<p>This is the one instance of a service containing core to be used in Apis.</p>
-<p><a class="el" href="classjazz__bebop_1_1Fields.html">Fields</a> are morphisms defined as op-codes and snippets in a unique way for each pair of Kinds.</p>
-<p>All fields in a system are managed by this container and searchable by Kind.</p>
+<p>Fields are morphisms defined as op-codes and snippets in a unique way for each pair of Kinds.</p>
 <p>These functions are known as op-codes and inherit OpCode. They are implemented in C++ in a pack.</p>
 <p>A <a class="el" href="classjazz__bebop_1_1Pack.html">Pack</a> is a collections of op-codes either the Basic Opcode <a class="el" href="classjazz__bebop_1_1Pack.html">Pack</a> (BOP) or an uplifted pack.</p>
 <p>Functionally, snippets can do the same as op-codes, but they are written in Bebop rather than C++. </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
-<a id="a37275e6e0899b47d7ae43552a615a23b" name="a37275e6e0899b47d7ae43552a615a23b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37275e6e0899b47d7ae43552a615a23b">&#9670;&#160;</a></span>pFields</h2>
+<a id="af9cc55bfe46fbdae04361e4a4b03845c" name="af9cc55bfe46fbdae04361e4a4b03845c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9cc55bfe46fbdae04361e4a4b03845c">&#9670;&#160;</a></span>pCore</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="classjazz__bebop_1_1Fields.html">Fields</a>* <a class="el" href="namespacejazz__bebop.html#a37275e6e0899b47d7ae43552a615a23b">jazz_bebop::pFields</a></td>
+          <td class="memname">typedef <a class="el" href="classjazz__bebop_1_1Core.html">Core</a>* <a class="el" href="namespacejazz__bebop.html#af9cc55bfe46fbdae04361e4a4b03845c">jazz_bebop::pCore</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3511260b9858ed1fb6eef51a56479a01" name="a3511260b9858ed1fb6eef51a56479a01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3511260b9858ed1fb6eef51a56479a01">&#9670;&#160;</a></span>pField</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classjazz__bebop_1_1Field.html">Field</a>* <a class="el" href="namespacejazz__bebop.html#a3511260b9858ed1fb6eef51a56479a01">jazz_bebop::pField</a></td>
         </tr>
       </table>
 </div><div class="memdoc">

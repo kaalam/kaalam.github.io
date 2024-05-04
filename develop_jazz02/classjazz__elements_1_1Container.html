@@ -95,14 +95,15 @@ Inheritance diagram for jazz_elements::Container:</div>
   <img src="classjazz__elements_1_1Container.png" usemap="#jazz_5Felements::Container_map" alt=""/>
   <map id="jazz_5Felements::Container_map" name="jazz_5Felements::Container_map">
 <area href="classjazz__elements_1_1Service.html" title="A Jazz Service is a globally instanced configurable object that may allocate RAM." alt="jazz_elements::Service" shape="rect" coords="0,0,151,24"/>
-<area href="classjazz__bebop_1_1Fields.html" alt="jazz_bebop::Fields" shape="rect" coords="161,112,312,136"/>
-<area href="classjazz__bebop_1_1Pack.html" alt="jazz_bebop::Pack" shape="rect" coords="161,168,312,192"/>
-<area href="classjazz__elements_1_1Channels.html" title="Channels: A Container doing block transactions across media (files, folders, shell,..." alt="jazz_elements::Channels" shape="rect" coords="161,224,312,248"/>
-<area href="classjazz__elements_1_1Persisted.html" title="Persisted: A Service to manage data objects in LMDB." alt="jazz_elements::Persisted" shape="rect" coords="161,280,312,304"/>
-<area href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM." alt="jazz_elements::Volatile" shape="rect" coords="161,336,312,360"/>
-<area href="classjazz__main_1_1Api.html" title="Api: A Service to manage the REST API." alt="jazz_main::Api" shape="rect" coords="161,392,312,416"/>
-<area href="classjazz__model_1_1Model.html" alt="jazz_model::Model" shape="rect" coords="161,448,312,472"/>
-<area href="classjazz__model_1_1SemSpaces.html" alt="jazz_model::SemSpaces" shape="rect" coords="161,504,312,528"/>
+<area href="classjazz__bebop_1_1Core.html" alt="jazz_bebop::Core" shape="rect" coords="161,112,312,136"/>
+<area href="classjazz__bebop_1_1Field.html" alt="jazz_bebop::Field" shape="rect" coords="161,168,312,192"/>
+<area href="classjazz__bebop_1_1Pack.html" alt="jazz_bebop::Pack" shape="rect" coords="161,224,312,248"/>
+<area href="classjazz__elements_1_1Channels.html" title="Channels: A Container doing block transactions across media (files, folders, shell,..." alt="jazz_elements::Channels" shape="rect" coords="161,280,312,304"/>
+<area href="classjazz__elements_1_1Persisted.html" title="Persisted: A Service to manage data objects in LMDB." alt="jazz_elements::Persisted" shape="rect" coords="161,336,312,360"/>
+<area href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM." alt="jazz_elements::Volatile" shape="rect" coords="161,392,312,416"/>
+<area href="classjazz__main_1_1Api.html" title="Api: A Service to manage the REST API." alt="jazz_main::Api" shape="rect" coords="161,448,312,472"/>
+<area href="classjazz__model_1_1Model.html" alt="jazz_model::Model" shape="rect" coords="161,504,312,528"/>
+<area href="classjazz__model_1_1SemSpace.html" alt="jazz_model::SemSpace" shape="rect" coords="161,560,312,584"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -346,7 +347,7 @@ Scope of jazz_elements</h2>
 <p>Everything works at binary level, operations on blocks at this level are very simple, just copying, deleting, filtering a <a class="el" href="unionjazz__elements_1_1Tensor.html" title="A tensor of cell size 1, 4, 8 or sizeof(BlockHeader)">Tensor</a> by (int or bool) indices, filtering a <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz Block with multiple Tensors.">Tuple</a> by item name and support every medium in the more conceivably efficient way.</p>
 <h2><a class="anchor" id="autotoc_md9"></a>
 Code execution</h2>
-<p>Code execution covers the methods exec (both for functions and mutators) and modify (a special logic used in channel). Code execution both runs at "lower level" (opcodes and snippets) or at higher level (concept, semspace, model). Everything goes through <a class="el" href="classjazz__elements_1_1Container.html#a767b2e34174be2778eb009dc864567b2">exec()</a> both functions and mutators. See the doc in the namespace <a class="el" href="namespacejazz__bebop.html" title="The Basic Opcode Pack (BOP)">jazz_bebop</a> for details.</p>
+<p>Code execution covers the methods exec (both for functions and mutators) and modify (a special logic used in channel). Code execution both runs at "lower level" (opcodes and snippets) or at higher level (concept, semspace, model). Everything goes through <a class="el" href="classjazz__elements_1_1Container.html#a767b2e34174be2778eb009dc864567b2">exec()</a> both functions and mutators. See the doc in the namespace <a class="el" href="namespacejazz__bebop.html" title="Bop functionality required to implement the classes.">jazz_bebop</a> for details.</p>
 <p>Calling OpCodes and sippets from a container always wraps around the arguments. This means, even is the opcode is a mutator it does not modify the original tensor but does a copy-on-write, modifies the copy and returns the copy.</p>
 <h2><a class="anchor" id="autotoc_md10"></a>
 new_block()</h2>
@@ -434,7 +435,7 @@ new_block()</h2>
 
 <p>Reimplemented from <a class="el" href="classjazz__elements_1_1Service.html#ae4883dfb5573ae5911fc97e01f06afe2">jazz_elements::Service</a>.</p>
 
-<p>Reimplemented in <a class="el" href="classjazz__elements_1_1Persisted.html#ac71e44e58eadb4289c98ba79755ec369">jazz_elements::Persisted</a>, <a class="el" href="classjazz__elements_1_1Volatile.html#ad13b77c09c8ae17eaf4908e4350f636d">jazz_elements::Volatile</a>, <a class="el" href="classjazz__main_1_1Api.html#af5527ac854705e198aed8975976311b1">jazz_main::Api</a>, <a class="el" href="classjazz__model_1_1Model.html#aafd362b609717735cef58e7fc226124d">jazz_model::Model</a>, and <a class="el" href="classjazz__model_1_1SemSpaces.html#a56ddd543b435d00c0f83e0779d114e75">jazz_model::SemSpaces</a>.</p>
+<p>Reimplemented in <a class="el" href="classjazz__elements_1_1Persisted.html#ac71e44e58eadb4289c98ba79755ec369">jazz_elements::Persisted</a>, <a class="el" href="classjazz__elements_1_1Volatile.html#ad13b77c09c8ae17eaf4908e4350f636d">jazz_elements::Volatile</a>, <a class="el" href="classjazz__main_1_1Api.html#af5527ac854705e198aed8975976311b1">jazz_main::Api</a>, <a class="el" href="classjazz__model_1_1Model.html#aafd362b609717735cef58e7fc226124d">jazz_model::Model</a>, and <a class="el" href="classjazz__model_1_1SemSpace.html#a5ebed5bb06b0f26fc26b497f79954dff">jazz_model::SemSpace</a>.</p>
 
 </div>
 </div>
@@ -464,7 +465,7 @@ new_block()</h2>
 
 <p>Reimplemented from <a class="el" href="classjazz__elements_1_1Service.html#af9c7e6ebcd6ec69fdbf94ea6cc1edff5">jazz_elements::Service</a>.</p>
 
-<p>Reimplemented in <a class="el" href="classjazz__elements_1_1Persisted.html#a2b2348933f2cc979351770567bc89ac3">jazz_elements::Persisted</a>, <a class="el" href="classjazz__elements_1_1Volatile.html#a59169b050f6239b6f12ea21e6f7c8837">jazz_elements::Volatile</a>, <a class="el" href="classjazz__main_1_1Api.html#a82e1c6758b2218186400e499d7bcf16f">jazz_main::Api</a>, <a class="el" href="classjazz__model_1_1Model.html#a4ef596f9530863c913eca832ab46a8e2">jazz_model::Model</a>, and <a class="el" href="classjazz__model_1_1SemSpaces.html#a8598773013354b2fa6ac258739212425">jazz_model::SemSpaces</a>.</p>
+<p>Reimplemented in <a class="el" href="classjazz__elements_1_1Persisted.html#a2b2348933f2cc979351770567bc89ac3">jazz_elements::Persisted</a>, <a class="el" href="classjazz__elements_1_1Volatile.html#a59169b050f6239b6f12ea21e6f7c8837">jazz_elements::Volatile</a>, <a class="el" href="classjazz__main_1_1Api.html#a82e1c6758b2218186400e499d7bcf16f">jazz_main::Api</a>, <a class="el" href="classjazz__model_1_1Model.html#a4ef596f9530863c913eca832ab46a8e2">jazz_model::Model</a>, and <a class="el" href="classjazz__model_1_1SemSpace.html#aafc3fa16fe4e650d15eaaaf7d904cf2d">jazz_model::SemSpace</a>.</p>
 
 </div>
 </div>

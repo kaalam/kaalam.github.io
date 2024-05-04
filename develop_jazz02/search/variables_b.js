@@ -6,5 +6,5 @@ var searchData=
   ['lmdb_5fenv_3',['lmdb_env',['../classjazz__elements_1_1Persisted.html#a8c0f173de5273c35cb69cc3c77c17b83',1,'jazz_elements::Persisted']]],
   ['lmdb_5fopt_4',['lmdb_opt',['../classjazz__elements_1_1Persisted.html#acfe301d8e960bfd889e2aed77283c868',1,'jazz_elements::Persisted']]],
   ['locator_5fsize_5',['LOCATOR_SIZE',['../namespacejazz__elements.html#a914f17360f6e07a8d6adcf060aa33c27',1,'jazz_elements']]],
-  ['logger_6',['LOGGER',['../namespacejazz__main.html#ae18d0fb5841441ab5a2831734f349328',1,'jazz_main::LOGGER()'],['../uplifted__instances_8cpp.html#a1c36728b055d907fe7aa871b5f5cfa4d',1,'LOGGER():&#160;uplifted_instances.cpp']]]
+  ['logger_6',['LOGGER',['../namespacejazz__main.html#ae18d0fb5841441ab5a2831734f349328',1,'jazz_main::LOGGER()'],['../uplifted__instances_8cpp.html#a35d2a5ba8628023a022cccb8de51fb20',1,'LOGGER():&#160;uplifted_instances.cpp']]]
 ];
