@@ -1,7 +1,7 @@
 var searchData=
 [
   ['search_5fmy_5fnode_5findex_0',['search_my_node_index',['../classjazz__elements_1_1Channels.html#a5e4b79aa5bc40d5a798ce8f04404c4f3',1,'jazz_elements::Channels']]],
-  ['semspace_1',['SEMSPACE',['../uplifted__instances_8h.html#a658454a8e880d74d6a2b6698780579bd',1,'uplifted_instances.h']]],
+  ['semspace_1',['SEMSPACE',['../uplifted__instances_8h.html#ac14cc1cf325a1a7161690b16a0740c4d',1,'uplifted_instances.h']]],
   ['server_5foptions_2',['server_options',['../classjazz__main_1_1HttpServer.html#a2a47289895c302045a8aa21fb72a80dd',1,'jazz_main::HttpServer']]],
   ['size_3',['size',['../structjazz__elements_1_1BlockHeader.html#a4783f7f789daa2d4afcb84e85721aeee',1,'jazz_elements::BlockHeader::size()'],['../structjazz__elements_1_1StaticBlockHeader.html#a209c786f43a9151b869d9d7e66003863',1,'jazz_elements::StaticBlockHeader::size()']]],
   ['source_5fdbi_4',['source_dbi',['../classjazz__elements_1_1Persisted.html#a61d71a45fd765b68a0fab60df828902e',1,'jazz_elements::Persisted']]],

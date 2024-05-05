@@ -19,6 +19,7 @@ var searchData=
   ['config_16',['config',['../classjazz__elements_1_1ConfigFile.html#a742ade6ac89b41888851f3d4aafcbe31',1,'jazz_elements::ConfigFile']]],
   ['config_17',['CONFIG',['../namespacejazz__main.html#a84b0e5c69e4a0011482591eaf87fbdb6',1,'jazz_main']]],
   ['connect_18',['connect',['../classjazz__elements_1_1Channels.html#aec175fc4c66d46f3fb9f4a5009dd4646',1,'jazz_elements::Channels']]],
-  ['created_19',['created',['../structjazz__elements_1_1BlockHeader.html#a581c7cd356bad27167467db5cce09291',1,'jazz_elements::BlockHeader::created()'],['../structjazz__elements_1_1StaticBlockHeader.html#a262214ad5832e60c65df058f56258ec3',1,'jazz_elements::StaticBlockHeader::created()']]],
-  ['curl_5fok_20',['curl_ok',['../classjazz__elements_1_1Channels.html#aecd3e3dc34df5a0b132298a91251666a',1,'jazz_elements::Channels']]]
+  ['core_19',['CORE',['../namespacejazz__main.html#a73441da7e2e8b147dd30b8e225300b9d',1,'jazz_main']]],
+  ['created_20',['created',['../structjazz__elements_1_1BlockHeader.html#a581c7cd356bad27167467db5cce09291',1,'jazz_elements::BlockHeader::created()'],['../structjazz__elements_1_1StaticBlockHeader.html#a262214ad5832e60c65df058f56258ec3',1,'jazz_elements::StaticBlockHeader::created()']]],
+  ['curl_5fok_21',['curl_ok',['../classjazz__elements_1_1Channels.html#aecd3e3dc34df5a0b132298a91251666a',1,'jazz_elements::Channels']]]
 ];

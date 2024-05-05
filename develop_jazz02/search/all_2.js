@@ -17,7 +17,7 @@ var searchData=
   ['alloc_5fbytes_14',['alloc_bytes',['../classjazz__elements_1_1Container.html#a7a4180f46f2820502f48df99fe2b88b1',1,'jazz_elements::Container']]],
   ['alloc_5ffailed_15',['alloc_failed',['../structjazz__elements_1_1StringBuffer.html#aae699f7385bb6797bfba1e8ced8ecbe2',1,'jazz_elements::StringBuffer']]],
   ['alloc_5fwarning_5fissued_16',['alloc_warning_issued',['../classjazz__elements_1_1Container.html#a5e1952f77849d691de8ad08012322385',1,'jazz_elements::Container']]],
-  ['api_17',['Api',['../classjazz__main_1_1Api.html#a4379fc8dd28498395e7b9323120d2578',1,'jazz_main::Api']]],
+  ['api_17',['Api',['../classjazz__main_1_1Api.html#aa1d0fc1bd6f18df47c59e74e59ddef03',1,'jazz_main::Api']]],
   ['api_18',['API',['../uplifted__instances_8h.html#a3f534da0ad113342941da38d4d599153',1,'uplifted_instances.h']]],
   ['api_19',['Api',['../classjazz__main_1_1Api.html',1,'jazz_main']]],
   ['api_2ecpp_20',['api.cpp',['../api_8cpp.html',1,'']]],
