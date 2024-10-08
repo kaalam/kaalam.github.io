@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Jazz 0.5+: [Programming documentation for the Jazz Server version &quot;0.6.1&quot;]</title>
+<title>Jazz 1.25.+: [Programming documentation for the Jazz Server version &quot;1.25.0&quot;]</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="jazz_logo_xparent.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Jazz 0.5+
+   <div id="projectname">Jazz 1.25.+
    </div>
   </td>
  </tr>
@@ -70,37 +70,31 @@ $(function() {
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">[Programming documentation for the Jazz Server version "0.6.1"] </div></div>
+  <div class="headertitle"><div class="title">[Programming documentation for the Jazz Server version "1.25.0"] </div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>Programming Documentation of the Jazz Server</p>
 <h1><a class="anchor" id="jazz_mods"></a>
 Jazz Modules Diagram</h1>
-<p>This diagram shows how the different Jazz modules fit. <br  />
+<p>This diagram shows how the different Jazz modules fit.<br  />
  <img src="diagrams/jazz_modules.png" alt="Jazz modules" class="inline"/></p>
 <p>The maturity level of the different modules is:<br  />
  </p><table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Maturity   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">nothing   </td><td class="markdownTableBodyNone">Code is complete and tested.    </td></tr>
+<td class="markdownTableBodyNone">nothing   </td><td class="markdownTableBodyNone">Code is complete, tested and already was in previous versions.    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">[TEST]   </td><td class="markdownTableBodyNone">Code is complete, but testing is not complete.    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">[PROTO]   </td><td class="markdownTableBodyNone">Code under active development, possibly working, but not release quality.    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">[DRAFT]   </td><td class="markdownTableBodyNone">Code under active development, PoC in Python and API closed, but no working implementation in Jazz.    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">[FUTURE]   </td><td class="markdownTableBodyNone">Code not under active development. Working on PoC.   </td></tr>
+<td class="markdownTableBodyNone">[v.m.r]   </td><td class="markdownTableBodyNone">Code under active development and will be released when the version v.m.r is complete.   </td></tr>
 </table>
 <p><br  />
  There are three C++ namespaces, intended for general c++ Jazz programming, possibly using external Jazz servers, but not necessarily as implemented as an http server:</p>
 <ol type="1">
 <li><a class="el" href="namespacejazz__elements.html" title="The namespace for Jazz Utils, Blocks, Kinds, Tuples, Containers, etc.">jazz_elements</a> (All the pieces: Blocks, Kinds, Tuples, storage, communication, services, etc.)<br  />
 </li>
-<li><a class="el" href="namespacejazz__bebop.html" title="Bop functionality required to implement the classes.">jazz_bebop</a> (Everything to run bebop code: Bop (utils), OpCode, Pack, Snippet, Field, Core)<br  />
+<li><a class="el" href="namespacejazz__bebop.html" title="The Bop compiler.">jazz_bebop</a> (Everything to run bebop code: Bop (utils), OpCode, Pack, Snippet, Field, Core)<br  />
 </li>
-<li><a class="el" href="namespacejazz__model.html" title="Concepts: A concepts is: anchored running data == anchored running code.">jazz_model</a> (From objects to concepts, from code execution to code creation)<br  />
+<li><a class="el" href="namespacejazz__models.html" title="Model: The abstract model.">jazz_models</a> (From objects to concepts, from code execution to code creation)<br  />
 <br  />
  Additionally, there is a namespace for the server: <br  />
 <br  />

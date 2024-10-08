@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['field_0',['Field',['../classjazz__bebop_1_1Field.html',1,'jazz_bebop']]]
+  ['httpquerystate_0',['HttpQueryState',['../structjazz__main_1_1HttpQueryState.html',1,'jazz_main']]],
+  ['httpserver_1',['HttpServer',['../classjazz__main_1_1HttpServer.html',1,'jazz_main']]]
 ];

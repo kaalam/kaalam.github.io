@@ -19,10 +19,9 @@ var searchData=
   ['p_5fprev_16',['p_prev',['../structjazz__elements_1_1VolatileTransaction.html#a5e3b5791d671b43addc1184e8e5729c6',1,'jazz_elements::VolatileTransaction']]],
   ['p_5froot_17',['p_root',['../structjazz__elements_1_1QueueEnt.html#acfc589e15c49a1d330cc1b15f720708d',1,'jazz_elements::QueueEnt']]],
   ['p_5fvolatile_18',['p_volatile',['../classjazz__main_1_1Api.html#a3a9c409553ce5eedf88a3fd60dcdae18',1,'jazz_main::Api']]],
-  ['pack_19',['PACK',['../uplifted__instances_8h.html#a6eef8b63b06668acaa789ee644916702',1,'uplifted_instances.h']]],
-  ['parser_5fstate_5fswitch_20',['parser_state_switch',['../namespacejazz__elements.html#a9daaf364b79a6f24dca81b7b7c7102b3',1,'jazz_elements::parser_state_switch()'],['../namespacejazz__main.html#af5750c13ead96a53523d7cc16092916f',1,'jazz_main::parser_state_switch()']]],
-  ['path_21',['path',['../structjazz__elements_1_1JazzLmdbOptions.html#a00a05f25116c1e5e5b6665afcf7bff4c',1,'jazz_elements::JazzLmdbOptions']]],
-  ['persisted_22',['PERSISTED',['../namespacejazz__main.html#a74ff457be971f30738df31df7bd704af',1,'jazz_main']]],
-  ['pipes_23',['pipes',['../classjazz__elements_1_1Channels.html#a022e668bbb3c713f345d3761cb8f8641',1,'jazz_elements::Channels']]],
-  ['priority_24',['priority',['../structjazz__elements_1_1VolatileTransaction.html#a36f588cae29f44dc2c717229fab33845',1,'jazz_elements::VolatileTransaction']]]
+  ['parser_5fstate_5fswitch_19',['parser_state_switch',['../namespacejazz__elements.html#a9daaf364b79a6f24dca81b7b7c7102b3',1,'jazz_elements::parser_state_switch()'],['../namespacejazz__main.html#af5750c13ead96a53523d7cc16092916f',1,'jazz_main::parser_state_switch()']]],
+  ['path_20',['path',['../structjazz__elements_1_1JazzLmdbOptions.html#a00a05f25116c1e5e5b6665afcf7bff4c',1,'jazz_elements::JazzLmdbOptions']]],
+  ['persisted_21',['PERSISTED',['../namespacejazz__main.html#a74ff457be971f30738df31df7bd704af',1,'jazz_main']]],
+  ['pipes_22',['pipes',['../classjazz__elements_1_1Channels.html#a022e668bbb3c713f345d3761cb8f8641',1,'jazz_elements::Channels']]],
+  ['priority_23',['priority',['../structjazz__elements_1_1VolatileTransaction.html#a36f588cae29f44dc2c717229fab33845',1,'jazz_elements::VolatileTransaction']]]
 ];
