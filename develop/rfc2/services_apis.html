@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Jazz Services, APIs and instantiation</title>
+<style type="text/css">
+body {
+  font-family: sans-serif;
+  max-width: 800px;
+  margin: auto;
+  padding: 1em;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+body, .footnotes, code { font-size: .9em; }
+li li { font-size: .95em; }
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+pre, img { max-width: 100%; }
+pre, pre:hover {
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+pre code {
+  display: block;
+  overflow-x: auto;
+}
+code { font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace; }
+:not(pre) > code, code[class] { background-color: #F8F8F8; }
+code.language-undefined, pre > code:not([class]) {
+  background-color: inherit;
+  border: 1px solid #eee;
+}
+table {
+  margin: auto;
+  border-top: 1px solid #666;
+}
+table thead th { border-bottom: 1px solid #ddd; }
+th, td { padding: 5px; }
+thead, tfoot, tr:nth-child(even) { background: #eee; }
+blockquote {
+  color: #666;
+  margin: 0;
+  padding-left: 1em;
+  border-left: 0.5em solid #eee;
+}
+hr, .footnotes::before { border: 1px dashed #ddd; }
+.frontmatter { text-align: center; }
+#TOC .numbered li { list-style: none; }
+#TOC .numbered { padding-left: 0; }
+#TOC .numbered ul { padding-left: 1em; }
+table, .body h2 { border-bottom: 1px solid #666; }
+.body .appendix, .appendix ~ h2 { border-bottom-style: dashed; }
+.footnote-ref a::before { content: "["; }
+.footnote-ref a::after { content: "]"; }
+section.footnotes::before {
+  content: "";
+  display: block;
+  max-width: 20em;
+}
+
+@media print {
+  body {
+    font-size: 12pt;
+    max-width: 100%;
+  }
+  tr, img { page-break-inside: avoid; }
+}
+@media only screen and (min-width: 992px) {
+  pre { white-space: pre; }
+}
+</style>
+</head>
+<body>
+<div class="frontmatter">
+<div class="title"><h1>Jazz Services, APIs and instantiation</h1></div>
+<div class="author"><h2></h2></div>
+<div class="date"><h3></h3></div>
+</div>
+<div class="body">
+<h1 id="jazz-services-apis-and-instantiation">Jazz Services, APIs and instantiation</h1>
+<p>Jazz is a single monolithic process. It allocates data and code (which is data) through some classes that only have one instance of each.
+This document describes the logic behind it.</p>
+<h2 id="services">Services</h2>
+<p>In Jazz, all the classes that define data and metadata neither have a configuration nor do they allocate RAM. They also don’t have a
+logger to write to.</p>
+<p>These classes are:</p>
+<pre><code>StaticBlockHeader -&gt; Block -&gt; Tuple
+                       +----&gt; Kind
+</code></pre>
+<p>All the classes that do have configuration, a logger and can allocate memory are inherited from the <code>Service</code> class. While you will
+typically instantiate many objects of data and metadata classes, you will only have one instance of each service.</p>
+<p>A Service is constructed by passing a ConfigFile (a key-value store that reads a file and exposes it as keys to the Service) and
+a Logger (Which exposes a variadic log_printf() function and automatically annotates time, level and thread info) to the Service
+descendant constructor.</p>
+<p>Services are always inherited.</p>
+<p>Services, ConfigFiles and Loggers are all defined in jazz_elements::utils.</p>
+<p>Services also have a start() and shut_down() methods, typically run only once when the server starts and closes.</p>
+<h2 id="containers">Containers</h2>
+<pre><code>Service -&gt; Container
+   +-----&gt; HttpServer
+</code></pre>
+<ol>
+<li>
+<p>Some <code>Container</code> descendant owns every <code>Block</code>, <code>Kind</code> and <code>Tuple</code> instances in Jazz (no exceptions). It wraps them in a <code>Transaction</code>
+object. Transactions have a common interface for both persitence <code>StoredTransaction</code> and memory <code>VolatileTransaction</code>.</p>
+</li>
+<li>
+<p>Memory management is handled through custom allocation methods (malloc, block_malloc) that track allocated bytes and ensure
+proper alignment.</p>
+</li>
+<li>
+<p>Every <code>Block</code>, <code>Tuple</code> and <code>Kind</code> is created by one of the 8 forms of <code>new_block()</code> included in the parent class. This uses RAM from
+the Container’s memory pool. These methods allow for creating Tensors from raw data, filtering rows from other Tensors, selecting items
+from Tuples, and more.</p>
+</li>
+<li>
+<p>Resources inside a container are identified through a <code>Locator</code>. Locators have a string form (<code>///node//base/entity/key++</code>) that
+is parsed into its components.</p>
+</li>
+<li>
+<p>Containers provide a CRUD interface: (get, header, put, new_entity, remove, copy). These methods exist as a high-level interface (the
+unparsed string form) and a locator-based interface (each component separately).</p>
+</li>
+<li>
+<p>Code execution is done via exec() (normal function calls) or modify() (external call made to services via Channels).</p>
+</li>
+<li>
+<p>The class also includes methods for locking and unlocking the container or entering and leaving read and write states
+(enter_read, enter_write, leave_read, leave_write), which are essential for managing concurrent access to the container.
+Also, two methods for transaction management (new_transaction, destroy_transaction).</p>
+</li>
+<li>
+<p>All the string parsing for both locators and constants supported by the different new_block() methods is done by the <code>Container</code> class.</p>
+</li>
+<li>
+<p>A method <code>base_names()</code> adds (keys and a pointer to itself) to a map passed by reference. This tell an API who manages what base. (A
+base is the part of a Locator that identifies a functionality).</p>
+</li>
+</ol>
+<p>Overall, the Container class is a robust and flexible component designed to manage complex data structures and transactions, providing
+a rich API for creating, modifying, and querying data while ensuring thread safety and efficient memory management.</p>
+<h2 id="container-descendants-in-jazz-elements">Container descendants in jazz_elements</h2>
+<p>There are three of them:</p>
+<ul>
+<li><strong>Channels</strong>: A Container doing block transactions across media (files, folders, shell, http urls and zeroMQ servers).</li>
+<li><strong>Volatile</strong>: A Container to manage data objects in RAM as a deque, an index (map), a priority queue or a tree.</li>
+<li><strong>Persisted</strong>: A Container to manage data objects in LMDB.</li>
+</ul>
+<h2 id="code-execution">Code execution</h2>
+<p>TODO: A mechanism to separate API from HttpAPI is required!!</p>
+<ul>
+<li>TBD</li>
+</ul>
+<h2 id="communicating-with-a-model">Communicating with a model</h2>
+<ul>
+<li>TBD</li>
+</ul>
+<h2 id="api">API</h2>
+<ul>
+<li>TBD</li>
+</ul>
+<h2 id="instantiation-and-uplifting">Instantiation (and Uplifting)</h2>
+<ul>
+<li>TBD</li>
+</ul>
+</div>
+</body>
+</html>

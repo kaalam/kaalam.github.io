@@ -103,8 +103,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ada80e35eb9a7b53cf5ed79984990072e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad85b82e1401955777bbe02992fab3e74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Kind.html#ad85b82e1401955777bbe02992fab3e74">dimensions</a> (<a class="el" href="namespacejazz__elements.html#a4734a779894739a0e04623c47348dd25">Dimensions</a> &amp;dims)</td></tr>
 <tr class="separator:ad85b82e1401955777bbe02992fab3e74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef8ce9dca65abedf966dd49d7f3d7fb4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Kind.html#aef8ce9dca65abedf966dd49d7f3d7fb4">new_kind</a> (int num_items, int num_bytes, <a class="el" href="namespacejazz__elements.html#ad2f703c26500ad2cdcec139a7e2000c4">AttributeMap</a> *att=nullptr)</td></tr>
-<tr class="separator:aef8ce9dca65abedf966dd49d7f3d7fb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51fd8b2b425b9a936390efcab5c88079"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Kind.html#a51fd8b2b425b9a936390efcab5c88079">new_kind</a> (int num_items, int num_bytes, <a class="el" href="namespacejazz__elements.html#ad2f703c26500ad2cdcec139a7e2000c4">AttributeMap</a> *att=nullptr)</td></tr>
+<tr class="separator:a51fd8b2b425b9a936390efcab5c88079"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b188785b81aaff91ecc8091eb3dc0c8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Kind.html#a4b188785b81aaff91ecc8091eb3dc0c8">add_item</a> (int idx, char const *p_name, int *p_dim, int <a class="el" href="structjazz__elements_1_1StaticBlockHeader.html#a2e55c0b7cf6764b13393c26171f20dc6">cell_type</a>, <a class="el" href="namespacejazz__elements.html#ad2f703c26500ad2cdcec139a7e2000c4">AttributeMap</a> *p_dims)</td></tr>
 <tr class="separator:a4b188785b81aaff91ecc8091eb3dc0c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f07793b25f14849be4e700030ef787f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Kind.html#a0f07793b25f14849be4e700030ef787f">audit</a> ()</td></tr>
@@ -201,7 +201,7 @@ Additional Inherited Members</h2></td></tr>
 <p>The <a class="el" href="structjazz__elements_1_1StringBuffer.html" title="Structure at the end of a Block, initially created with init_string_buffer()">StringBuffer</a> contains the item names and dimension names.</p>
 <h2><a class="anchor" id="autotoc_md11"></a>
 Creating Kinds</h2>
-<p>More advanced <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for Jazz Blocks and Tuples.">Kind</a> functionalities (including creating kinds) can be done by Containers. This object, has a minimum of functionality to build by parts: <a class="el" href="classjazz__elements_1_1Kind.html#aef8ce9dca65abedf966dd49d7f3d7fb4">new_kind()</a>, <a class="el" href="classjazz__elements_1_1Kind.html#a4b188785b81aaff91ecc8091eb3dc0c8">add_item()</a> to do the basic building. It also has function to check the content and validate a <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for Jazz Blocks and Tuples.">Kind</a>.</p>
+<p>More advanced <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for Jazz Blocks and Tuples.">Kind</a> functionalities (including creating kinds) can be done by Containers. This object, has a minimum of functionality to build by parts: <a class="el" href="classjazz__elements_1_1Kind.html#a51fd8b2b425b9a936390efcab5c88079">new_kind()</a>, <a class="el" href="classjazz__elements_1_1Kind.html#a4b188785b81aaff91ecc8091eb3dc0c8">add_item()</a> to do the basic building. It also has function to check the content and validate a <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for Jazz Blocks and Tuples.">Kind</a>.</p>
 <p>Also, kinds should define, these attributes, but that is left to the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>:</p>
 <ul>
 <li>BLOCK_ATTRIB_BLOCKTYPE as the const "Kind"</li>
@@ -304,8 +304,8 @@ Creating Kinds</h2>
 
 </div>
 </div>
-<a id="aef8ce9dca65abedf966dd49d7f3d7fb4" name="aef8ce9dca65abedf966dd49d7f3d7fb4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef8ce9dca65abedf966dd49d7f3d7fb4">&#9670;&#160;</a></span>new_kind()</h2>
+<a id="a51fd8b2b425b9a936390efcab5c88079" name="a51fd8b2b425b9a936390efcab5c88079"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51fd8b2b425b9a936390efcab5c88079">&#9670;&#160;</a></span>new_kind()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -314,7 +314,7 @@ Creating Kinds</h2>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool jazz_elements::Kind::new_kind </td>
+          <td class="memname">int jazz_elements::Kind::new_kind </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>num_items</em>, </td>
@@ -352,7 +352,7 @@ Creating Kinds</h2>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>False on error (insufficient alloc size for a very conservative minimum). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0, SERVICE_ERROR_WRONG_ARGUMENTS (range of num_items) or SERVICE_ERROR_NO_MEM (insufficient alloc size). </dd></dl>
 
 </div>
 </div>
@@ -410,7 +410,7 @@ Creating Kinds</h2>
 <p>Initializes a <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for Jazz Blocks and Tuples.">Kind</a> object (step 2): Adds each of the items.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">idx</td><td>The index of the items to add. Must be in range [0..num_items-1] of the previous <a class="el" href="classjazz__elements_1_1Kind.html#aef8ce9dca65abedf966dd49d7f3d7fb4">new_kind()</a> call. </td></tr>
+    <tr><td class="paramname">idx</td><td>The index of the items to add. Must be in range [0..num_items-1] of the previous <a class="el" href="classjazz__elements_1_1Kind.html#a51fd8b2b425b9a936390efcab5c88079">new_kind()</a> call. </td></tr>
     <tr><td class="paramname">p_name</td><td>The name of the item. </td></tr>
     <tr><td class="paramname">p_dim</td><td>The shape of the item. Rank will be set automatically on the first zero. </td></tr>
     <tr><td class="paramname">cell_type</td><td>The cell type of the item. </td></tr>
