@@ -32,13 +32,11 @@ var searchData=
   ['model_29',['MODEL',['../uplifted__instances_8h.html#aacccfc66ef438bf005ca79c6f136a73f',1,'uplifted_instances.h']]],
   ['model_2ecpp_30',['model.cpp',['../model_8cpp.html',1,'']]],
   ['model_2eh_31',['model.h',['../model_8h.html',1,'']]],
-  ['models_2ecpp_32',['models.cpp',['../models_8cpp.html',1,'']]],
-  ['models_2eh_33',['models.h',['../models_8h.html',1,'']]],
-  ['models_5fapi_2ecpp_34',['models_api.cpp',['../models__api_8cpp.html',1,'']]],
-  ['models_5fapi_2eh_35',['models_api.h',['../models__api_8h.html',1,'']]],
-  ['modelsapi_36',['ModelsAPI',['../classjazz__models_1_1ModelsAPI.html',1,'jazz_models::ModelsAPI'],['../classjazz__models_1_1ModelsAPI.html#a8c284eef9dae83ccf1dcc636ba1f6372',1,'jazz_models::ModelsAPI::ModelsAPI()']]],
-  ['modify_37',['modify',['../classjazz__elements_1_1Container.html#aedba8175934554cb71278d6f4ce96bf8',1,'jazz_elements::Container::modify()'],['../classjazz__elements_1_1Channels.html#a3760f16d25f0867c43114c91064e8ca6',1,'jazz_elements::Channels::modify()']]],
-  ['move_5fconst_38',['move_const',['../classjazz__main_1_1Api.html#afdc143d6cbe246293a1627f829bfab89',1,'jazz_main::Api']]],
-  ['murmur_5fseed_39',['MURMUR_SEED',['../utils_8cpp.html#acf830c3140deca25e44187534c55e5a8',1,'utils.cpp']]],
-  ['murmurhash64a_40',['MurmurHash64A',['../namespacejazz__elements.html#a50e37200ae3572b04b417c7e899712bb',1,'jazz_elements']]]
+  ['models_5fapi_2ecpp_32',['models_api.cpp',['../models__api_8cpp.html',1,'']]],
+  ['models_5fapi_2eh_33',['models_api.h',['../models__api_8h.html',1,'']]],
+  ['modelsapi_34',['ModelsAPI',['../classjazz__models_1_1ModelsAPI.html',1,'jazz_models::ModelsAPI'],['../classjazz__models_1_1ModelsAPI.html#a8c284eef9dae83ccf1dcc636ba1f6372',1,'jazz_models::ModelsAPI::ModelsAPI()']]],
+  ['modify_35',['modify',['../classjazz__elements_1_1Channels.html#a3760f16d25f0867c43114c91064e8ca6',1,'jazz_elements::Channels::modify()'],['../classjazz__elements_1_1Container.html#aedba8175934554cb71278d6f4ce96bf8',1,'jazz_elements::Container::modify()']]],
+  ['move_5fconst_36',['move_const',['../classjazz__main_1_1Api.html#afdc143d6cbe246293a1627f829bfab89',1,'jazz_main::Api']]],
+  ['murmur_5fseed_37',['MURMUR_SEED',['../utils_8cpp.html#acf830c3140deca25e44187534c55e5a8',1,'utils.cpp']]],
+  ['murmurhash64a_38',['MurmurHash64A',['../namespacejazz__elements.html#a50e37200ae3572b04b417c7e899712bb',1,'jazz_elements']]]
 ];
