@@ -99,7 +99,7 @@ Inheritance diagram for jazz_elements::Container:</div>
 <area href="classjazz__elements_1_1Channels.html" title="Channels: A Container doing block transactions across media (files, folders, shell,..." alt="jazz_elements::Channels" shape="rect" coords="161,112,312,136"/>
 <area href="classjazz__elements_1_1Persisted.html" title="Persisted: A Service to manage data objects in LMDB." alt="jazz_elements::Persisted" shape="rect" coords="322,112,473,136"/>
 <area href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM." alt="jazz_elements::Volatile" shape="rect" coords="483,112,634,136"/>
-<area href="classjazz__main_1_1Api.html" title="Api: A Service to manage the REST API." alt="jazz_main::Api" shape="rect" coords="644,112,795,136"/>
+<area href="classjazz__main_1_1API.html" title="API: A Service to manage the REST API." alt="jazz_main::API" shape="rect" coords="644,112,795,136"/>
 <area href="classjazz__models_1_1ModelsAPI.html" alt="jazz_models::ModelsAPI" shape="rect" coords="805,112,956,136"/>
   </map>
 </div></div>
@@ -317,7 +317,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>: A <a class="el" href="classjazz__elements_1_1Service.html" title="A Jazz Service is a globally instanced configurable object that may allocate RAM.">Service</a> to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of this. </p>
-<p>This is the root class for all containers. It is basically an abstract class with some helpful methods but is not instanced as an object. Its descendants are: <a class="el" href="classjazz__elements_1_1Channels.html" title="Channels: A Container doing block transactions across media (files, folders, shell,...">Channels</a>, <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a> and <a class="el" href="classjazz__elements_1_1Persisted.html" title="Persisted: A Service to manage data objects in LMDB.">Persisted</a> (in <a class="el" href="namespacejazz__elements.html" title="The namespace for Jazz Utils, Blocks, Kinds, Tuples, Containers, etc.">jazz_elements</a>) + anything allocating RAM, E.g., the Api.</p>
+<p>This is the root class for all containers. It is basically an abstract class with some helpful methods but is not instanced as an object. Its descendants are: <a class="el" href="classjazz__elements_1_1Channels.html" title="Channels: A Container doing block transactions across media (files, folders, shell,...">Channels</a>, <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a> and <a class="el" href="classjazz__elements_1_1Persisted.html" title="Persisted: A Service to manage data objects in LMDB.">Persisted</a> (in <a class="el" href="namespacejazz__elements.html" title="The namespace for Jazz Utils, Blocks, Kinds, Tuples, Containers, etc.">jazz_elements</a>) + anything allocating RAM, E.g., the API.</p>
 <p>There is no class Channel (in singular), <a class="el" href="classjazz__elements_1_1Container.html#a7bd04b424e407ed5adb59042d208de14">copy()</a> is a method that copies blocks across Containers (or different media in <a class="el" href="classjazz__elements_1_1Channels.html" title="Channels: A Container doing block transactions across media (files, folders, shell,...">Channels</a>). <a class="el" href="classjazz__elements_1_1Channels.html" title="Channels: A Container doing block transactions across media (files, folders, shell,...">Channels</a> does all the block transactions across media (files, folders, shell, urls, zeroMQ pipes, Index types, ...).</p>
 <p><a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> provides a neat API for all descendants, including:</p>
 <ul>
@@ -433,7 +433,7 @@ new_block()</h2>
 
 <p>Reimplemented from <a class="el" href="classjazz__elements_1_1Service.html#ae4883dfb5573ae5911fc97e01f06afe2">jazz_elements::Service</a>.</p>
 
-<p>Reimplemented in <a class="el" href="classjazz__elements_1_1Persisted.html#ac71e44e58eadb4289c98ba79755ec369">jazz_elements::Persisted</a>, <a class="el" href="classjazz__elements_1_1Volatile.html#ad13b77c09c8ae17eaf4908e4350f636d">jazz_elements::Volatile</a>, <a class="el" href="classjazz__main_1_1Api.html#af5527ac854705e198aed8975976311b1">jazz_main::Api</a>, and <a class="el" href="classjazz__models_1_1ModelsAPI.html#a1559a3a6828c929159314cd45d2cd71f">jazz_models::ModelsAPI</a>.</p>
+<p>Reimplemented in <a class="el" href="classjazz__elements_1_1Persisted.html#ac71e44e58eadb4289c98ba79755ec369">jazz_elements::Persisted</a>, <a class="el" href="classjazz__elements_1_1Volatile.html#ad13b77c09c8ae17eaf4908e4350f636d">jazz_elements::Volatile</a>, <a class="el" href="classjazz__main_1_1API.html#aa06fceb3b0ffec949a4938e9dba6267b">jazz_main::API</a>, and <a class="el" href="classjazz__models_1_1ModelsAPI.html#a1559a3a6828c929159314cd45d2cd71f">jazz_models::ModelsAPI</a>.</p>
 
 </div>
 </div>
@@ -463,7 +463,7 @@ new_block()</h2>
 
 <p>Reimplemented from <a class="el" href="classjazz__elements_1_1Service.html#af9c7e6ebcd6ec69fdbf94ea6cc1edff5">jazz_elements::Service</a>.</p>
 
-<p>Reimplemented in <a class="el" href="classjazz__elements_1_1Persisted.html#a2b2348933f2cc979351770567bc89ac3">jazz_elements::Persisted</a>, <a class="el" href="classjazz__elements_1_1Volatile.html#a59169b050f6239b6f12ea21e6f7c8837">jazz_elements::Volatile</a>, <a class="el" href="classjazz__main_1_1Api.html#a82e1c6758b2218186400e499d7bcf16f">jazz_main::Api</a>, and <a class="el" href="classjazz__models_1_1ModelsAPI.html#a70e52c43849b0dfc67b063e6143113a0">jazz_models::ModelsAPI</a>.</p>
+<p>Reimplemented in <a class="el" href="classjazz__elements_1_1Persisted.html#a2b2348933f2cc979351770567bc89ac3">jazz_elements::Persisted</a>, <a class="el" href="classjazz__elements_1_1Volatile.html#a59169b050f6239b6f12ea21e6f7c8837">jazz_elements::Volatile</a>, <a class="el" href="classjazz__main_1_1API.html#a1ebfaf004a2b461dbe54d0ed29d4a92c">jazz_main::API</a>, and <a class="el" href="classjazz__models_1_1ModelsAPI.html#a70e52c43849b0dfc67b063e6143113a0">jazz_models::ModelsAPI</a>.</p>
 
 </div>
 </div>

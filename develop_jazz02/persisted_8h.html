@@ -107,14 +107,17 @@ Macros</h2></td></tr>
 <tr class="memitem:a074499c790e4d470c2f52f03026b8dc0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="persisted_8h.html#a074499c790e4d470c2f52f03026b8dc0">INCLUDED_JAZZ_ELEMENTS_PERSISTED</a></td></tr>
 <tr class="separator:a074499c790e4d470c2f52f03026b8dc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f2fa99db8442e6ce0743de30fc41e49"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="persisted_8h.html#a5f2fa99db8442e6ce0743de30fc41e49">MAX_POSSIBLE_SOURCES</a>&#160;&#160;&#160;32</td></tr>
-<tr class="memdesc:a5f2fa99db8442e6ce0743de30fc41e49"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of databases is configurable via MDB_ENV_SET_MAXDBS, but cannot exceed this.  <br /></td></tr>
+<tr class="memdesc:a5f2fa99db8442e6ce0743de30fc41e49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of databases: configurable via MDB_ENV_SET_MAXDBS, but cannot exceed this.  <br /></td></tr>
 <tr class="separator:a5f2fa99db8442e6ce0743de30fc41e49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c3f8a594ae660685ffa75f11c0ff610"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="persisted_8h.html#a9c3f8a594ae660685ffa75f11c0ff610">MAX_LMDB_HOME_LEN</a>&#160;&#160;&#160;128</td></tr>
-<tr class="memdesc:a9c3f8a594ae660685ffa75f11c0ff610"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of char for the LMDB home path.  <br /></td></tr>
+<tr class="memdesc:a9c3f8a594ae660685ffa75f11c0ff610"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of chars for the LMDB home path.  <br /></td></tr>
 <tr class="separator:a9c3f8a594ae660685ffa75f11c0ff610"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac15b62994cd6eeb840a58f553da60525"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="persisted_8h.html#ac15b62994cd6eeb840a58f553da60525">LMDB_UNIX_FILE_PERMISSIONS</a>&#160;&#160;&#160;0664</td></tr>
 <tr class="memdesc:ac15b62994cd6eeb840a58f553da60525"><td class="mdescLeft">&#160;</td><td class="mdescRight">The file permissions (as in chmod) for the database files.  <br /></td></tr>
 <tr class="separator:ac15b62994cd6eeb840a58f553da60525"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae78baf666aca1be2b2d01109fa3ac634"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="persisted_8h.html#ae78baf666aca1be2b2d01109fa3ac634">INVALID_MDB_DBI</a>&#160;&#160;&#160;0xefefEFEF</td></tr>
+<tr class="memdesc:ae78baf666aca1be2b2d01109fa3ac634"><td class="mdescLeft">&#160;</td><td class="mdescRight">A constant to flag invalid MDB_dbi handle values.  <br /></td></tr>
+<tr class="separator:ae78baf666aca1be2b2d01109fa3ac634"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -154,7 +157,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The number of databases is configurable via MDB_ENV_SET_MAXDBS, but cannot exceed this. </p>
+<p>Number of databases: configurable via MDB_ENV_SET_MAXDBS, but cannot exceed this. </p>
 
 </div>
 </div>
@@ -170,7 +173,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The number of char for the LMDB home path. </p>
+<p>Number of chars for the LMDB home path. </p>
 
 </div>
 </div>
@@ -187,6 +190,22 @@ Typedefs</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The file permissions (as in chmod) for the database files. </p>
+
+</div>
+</div>
+<a id="ae78baf666aca1be2b2d01109fa3ac634" name="ae78baf666aca1be2b2d01109fa3ac634"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae78baf666aca1be2b2d01109fa3ac634">&#9670;&#160;</a></span>INVALID_MDB_DBI</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define INVALID_MDB_DBI&#160;&#160;&#160;0xefefEFEF</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A constant to flag invalid MDB_dbi handle values. </p>
 
 </div>
 </div>

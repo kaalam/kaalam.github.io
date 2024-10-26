@@ -6,7 +6,7 @@ var searchData=
   ['r_5fvalue_3',['r_value',['../structjazz__main_1_1HttpQueryState.html#a352ea3752375f2f84069f40f506136b3',1,'jazz_main::HttpQueryState']]],
   ['range_4',['range',['../structjazz__elements_1_1BlockHeader.html#a8fa258a4e087633971ff268fe5607a00',1,'jazz_elements::BlockHeader::range()'],['../structjazz__elements_1_1StaticBlockHeader.html#afceb70ca19684e41e3b303ee4b9d694a',1,'jazz_elements::StaticBlockHeader::range()']]],
   ['rank_5',['rank',['../structjazz__elements_1_1ItemHeader.html#adbd96699e6550df6aadf3d717c306583',1,'jazz_elements::ItemHeader::rank()'],['../structjazz__elements_1_1BlockHeader.html#aafa8121fb2c2091b32cc688ea711002c',1,'jazz_elements::BlockHeader::rank()'],['../structjazz__elements_1_1StaticBlockHeader.html#ae159ee5639d0b70211095b5241fbff6d',1,'jazz_elements::StaticBlockHeader::rank()']]],
-  ['remove_5fstatics_6',['remove_statics',['../classjazz__main_1_1Api.html#a92d7e9a64c03fc2144c1eb11f7e2d952',1,'jazz_main::Api']]],
+  ['remove_5fstatics_6',['remove_statics',['../classjazz__main_1_1API.html#a671d7b7be51315e1767447e994ac554c',1,'jazz_main::API']]],
   ['requester_7',['requester',['../structjazz__elements_1_1Socket.html#abf5c8e5573a3ab7d00162244888f0860',1,'jazz_elements::Socket']]],
   ['response_5fput_5ffail_8',['response_put_fail',['../namespacejazz__main.html#a8f301bae0aebe84fd12580831e960ec3',1,'jazz_main']]],
   ['response_5fput_5fok_9',['response_put_ok',['../namespacejazz__main.html#a1266718e0c60fa99cb934933e13f565f',1,'jazz_main']]],

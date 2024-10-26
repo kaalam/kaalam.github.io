@@ -9,5 +9,5 @@ var searchData=
   ['write_5fas_5fstring_6',['WRITE_AS_STRING',['../container_8h.html#a514ab3b4548802a70dd3e948933406e8',1,'container.h']]],
   ['write_5fonly_5fif_5fexists_7',['WRITE_ONLY_IF_EXISTS',['../container_8h.html#a71e0e9e3d28f32850c26e43ec5f0224b',1,'container.h']]],
   ['write_5fonly_5fif_5fnot_5fexists_8',['WRITE_ONLY_IF_NOT_EXISTS',['../container_8h.html#a38f08bb083dd33a492b3b10d8910137b',1,'container.h']]],
-  ['www_9',['www',['../classjazz__main_1_1Api.html#a6b88a68ff04d848064f7d11a7de002a4',1,'jazz_main::Api']]]
+  ['www_9',['www',['../classjazz__main_1_1API.html#a119ec7089628812bd46edc9d48ea06df',1,'jazz_main::API']]]
 ];

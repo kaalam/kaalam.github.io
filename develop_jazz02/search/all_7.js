@@ -15,7 +15,7 @@ var searchData=
   ['fill_5ftensor_12',['fill_tensor',['../classjazz__elements_1_1Container.html#aa3e0b005e11cf90e57a1139467f6380d',1,'jazz_elements::Container']]],
   ['fill_5ftext_5fbuffer_13',['fill_text_buffer',['../classjazz__elements_1_1Container.html#a06821a654da47d5841d370d6ce184c76',1,'jazz_elements::Container']]],
   ['fill_5fwith_5ftextfile_14',['FILL_WITH_TEXTFILE',['../container_8h.html#a2c57e29ff7d1d83236f137899ea846e1',1,'container.h']]],
-  ['find_5fmyself_15',['find_myself',['../classjazz__main_1_1Api.html#a53abc9e23287d0ee8c31548a0d51ca32',1,'jazz_main::Api']]],
+  ['find_5fmyself_15',['find_myself',['../classjazz__main_1_1API.html#a37a8eb64571700dc3307936e6e9d309b',1,'jazz_main::API']]],
   ['find_5fnas_5fin_5ftensor_16',['find_NAs_in_tensor',['../classjazz__elements_1_1Block.html#ae9bc8c5a8a015bcad22d01b219c845f5',1,'jazz_elements::Block']]],
   ['findprocessidbyname_17',['FindProcessIdByName',['../namespacejazz__elements.html#ad3fcdaf6929f0360f2388eaa7561e1b8',1,'jazz_elements']]],
   ['flags_18',['flags',['../structjazz__elements_1_1JazzLmdbOptions.html#a7f6b652268b6efd0f1fa4ef23fe59639',1,'jazz_elements::JazzLmdbOptions']]],

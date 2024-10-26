@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['_7eapi_0',['~Api',['../classjazz__main_1_1Api.html#a90c40e5dfa42fe40f24754dcb0af571c',1,'jazz_main::Api']]],
+  ['_7eapi_0',['~API',['../classjazz__main_1_1API.html#a7e1eb75beeb1f83b6eee704c659b3632',1,'jazz_main::API']]],
   ['_7echannels_1',['~Channels',['../classjazz__elements_1_1Channels.html#ae6494a5db8d6a2da8533b1ed8557e0ab',1,'jazz_elements::Channels']]],
   ['_7econtainer_2',['~Container',['../classjazz__elements_1_1Container.html#a8e8a7b8af91fd8a578560cf2cb9dd1f1',1,'jazz_elements::Container']]],
   ['_7ecore_3',['~Core',['../classjazz__bebop_1_1Core.html#a8fdbb34e5f43399c013785a8e0b4b539',1,'jazz_bebop::Core']]],

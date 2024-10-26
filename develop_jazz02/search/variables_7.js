@@ -4,6 +4,7 @@ var searchData=
   ['hash64_1',['hash64',['../structjazz__elements_1_1BlockHeader.html#a9718cc9c15e696e6e2ff1d044d65b47a',1,'jazz_elements::BlockHeader::hash64()'],['../structjazz__elements_1_1StaticBlockHeader.html#a51aad94508001c24984e6bf541bacebe',1,'jazz_elements::StaticBlockHeader::hash64()']]],
   ['hex_2',['HEX',['../classjazz__elements_1_1Channels.html#a7cc3de2fd01b05f9d9d2260f083b4cf6',1,'jazz_elements::Channels::HEX()'],['../classjazz__elements_1_1Container.html#a27f9aaacf02a54aaf602655f967b10c0',1,'jazz_elements::Container::HEX()']]],
   ['http_3',['HTTP',['../namespacejazz__main.html#a7903fed0038168d55f0f50d619d6d1dc',1,'jazz_main']]],
-  ['http_5fmethods_4',['http_methods',['../namespacejazz__main.html#a7e9a007ebb325c49acd6b5a10f647d74',1,'jazz_main']]],
-  ['http_5fport_5',['http_port',['../classjazz__main_1_1HttpServer.html#abc60aa56ec12f34b95047d0f5f491e52',1,'jazz_main::HttpServer']]]
+  ['http_5fapi_4',['HTTP_API',['../uplifted__instances_8h.html#a63a7cc1153861b5e83f6564b18d4b14f',1,'uplifted_instances.h']]],
+  ['http_5fmethods_5',['http_methods',['../namespacejazz__main.html#a7e9a007ebb325c49acd6b5a10f647d74',1,'jazz_main']]],
+  ['http_5fport_6',['http_port',['../classjazz__main_1_1HttpServer.html#abc60aa56ec12f34b95047d0f5f491e52',1,'jazz_main::HttpServer']]]
 ];
