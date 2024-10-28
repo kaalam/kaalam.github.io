@@ -11,7 +11,7 @@ var searchData=
   ['p_5ffree_8',['p_free',['../classjazz__elements_1_1Container.html#a54c2e89a62b9d90fe5ce179a215de2ef',1,'jazz_elements::Container']]],
   ['p_5fhea_9',['p_hea',['../structjazz__elements_1_1Transaction.html#a0098363e1a3628c087a7ee28ec57d82c',1,'jazz_elements::Transaction']]],
   ['p_5flog_10',['p_log',['../classjazz__elements_1_1Service.html#a9c9c71fccf7602a67853a1d6ab5c6ac2',1,'jazz_elements::Service']]],
-  ['p_5fmodel_11',['p_model',['../classjazz__main_1_1API.html#a7ed95e4748b7921480e304f3753758a3',1,'jazz_main::API']]],
+  ['p_5fmodel_11',['p_model',['../classjazz__main_1_1API.html#a177e62bca5ca6b59fb64ecebed176b33',1,'jazz_main::API']]],
   ['p_5fnext_12',['p_next',['../structjazz__elements_1_1VolatileTransaction.html#a15eafd43bd955fd4a47e7bb14aaa27ec',1,'jazz_elements::VolatileTransaction::p_next()'],['../structjazz__elements_1_1StoredTransaction.html#a485b1c7c3734e90feaff12f1ca0b9d49',1,'jazz_elements::StoredTransaction::p_next()']]],
   ['p_5fowner_13',['p_owner',['../structjazz__elements_1_1Transaction.html#af5b0ee5e9f8bc77edf59bc1d73e6dfee',1,'jazz_elements::Transaction']]],
   ['p_5fparent_14',['p_parent',['../structjazz__elements_1_1VolatileTransaction.html#aeffd5832b207701d497d011aeac662c4',1,'jazz_elements::VolatileTransaction']]],

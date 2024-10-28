@@ -89,15 +89,21 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab45dd8580322475c322a5b54fee72ae8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1EntityKeyHash.html#ab45dd8580322475c322a5b54fee72ae8">operator==</a> (const <a class="el" href="structjazz__elements_1_1EntityKeyHash.html">EntityKeyHash</a> &amp;o) const</td></tr>
+<tr class="memdesc:ab45dd8580322475c322a5b54fee72ae8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="structjazz__elements_1_1EntityKeyHash.html" title="EntityKeyHash: A record containing separate hashes for entity and key.">EntityKeyHash</a>.  <br /></td></tr>
 <tr class="separator:ab45dd8580322475c322a5b54fee72ae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25e981498f6438ca422d526cdf1a8beb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1EntityKeyHash.html#a25e981498f6438ca422d526cdf1a8beb">operator&lt;</a> (const <a class="el" href="structjazz__elements_1_1EntityKeyHash.html">EntityKeyHash</a> &amp;o) const</td></tr>
+<tr class="memdesc:a25e981498f6438ca422d526cdf1a8beb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="structjazz__elements_1_1EntityKeyHash.html" title="EntityKeyHash: A record containing separate hashes for entity and key.">EntityKeyHash</a>.  <br /></td></tr>
 <tr class="separator:a25e981498f6438ca422d526cdf1a8beb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a5ae3ac7b78d76b015c53b5646617f638"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1EntityKeyHash.html#a5ae3ac7b78d76b015c53b5646617f638">ent_hash</a></td></tr>
+<tr class="memitem:a5ae3ac7b78d76b015c53b5646617f638"><td class="memItemLeft" align="right" valign="top"><a id="a5ae3ac7b78d76b015c53b5646617f638" name="a5ae3ac7b78d76b015c53b5646617f638"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>ent_hash</b></td></tr>
+<tr class="memdesc:a5ae3ac7b78d76b015c53b5646617f638"><td class="mdescLeft">&#160;</td><td class="mdescRight">The hash of the entity name. <br /></td></tr>
 <tr class="separator:a5ae3ac7b78d76b015c53b5646617f638"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8deadd4103bfa363f3b659104333ab8"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__elements_1_1EntityKeyHash.html#ab8deadd4103bfa363f3b659104333ab8">key_hash</a></td></tr>
+<tr class="memitem:ab8deadd4103bfa363f3b659104333ab8"><td class="memItemLeft" align="right" valign="top"><a id="ab8deadd4103bfa363f3b659104333ab8" name="ab8deadd4103bfa363f3b659104333ab8"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>key_hash</b></td></tr>
+<tr class="memdesc:ab8deadd4103bfa363f3b659104333ab8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The hash of the key name. <br /></td></tr>
 <tr class="separator:ab8deadd4103bfa363f3b659104333ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -127,6 +133,16 @@ Data Fields</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Constructor for <a class="el" href="structjazz__elements_1_1EntityKeyHash.html" title="EntityKeyHash: A record containing separate hashes for entity and key.">EntityKeyHash</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">o</td><td>The other <a class="el" href="structjazz__elements_1_1EntityKeyHash.html" title="EntityKeyHash: A record containing separate hashes for entity and key.">EntityKeyHash</a> to compare with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the two hashes are equal.</dd></dl>
+<p>This is a requirement to sort <a class="el" href="structjazz__elements_1_1EntityKeyHash.html" title="EntityKeyHash: A record containing separate hashes for entity and key.">EntityKeyHash</a> objects. </p>
+
 </div>
 </div>
 <a id="a25e981498f6438ca422d526cdf1a8beb" name="a25e981498f6438ca422d526cdf1a8beb"></a>
@@ -153,34 +169,15 @@ Data Fields</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<h2 class="groupheader">Field Documentation</h2>
-<a id="a5ae3ac7b78d76b015c53b5646617f638" name="a5ae3ac7b78d76b015c53b5646617f638"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ae3ac7b78d76b015c53b5646617f638">&#9670;&#160;</a></span>ent_hash</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint64_t jazz_elements::EntityKeyHash::ent_hash</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab8deadd4103bfa363f3b659104333ab8" name="ab8deadd4103bfa363f3b659104333ab8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8deadd4103bfa363f3b659104333ab8">&#9670;&#160;</a></span>key_hash</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint64_t jazz_elements::EntityKeyHash::key_hash</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>Constructor for <a class="el" href="structjazz__elements_1_1EntityKeyHash.html" title="EntityKeyHash: A record containing separate hashes for entity and key.">EntityKeyHash</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">o</td><td>The other <a class="el" href="structjazz__elements_1_1EntityKeyHash.html" title="EntityKeyHash: A record containing separate hashes for entity and key.">EntityKeyHash</a> to compare with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if is object is less than the other.</dd></dl>
+<p>This is a requirement to sort <a class="el" href="structjazz__elements_1_1EntityKeyHash.html" title="EntityKeyHash: A record containing separate hashes for entity and key.">EntityKeyHash</a> objects. </p>
 
 </div>
 </div>

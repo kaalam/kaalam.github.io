@@ -128,9 +128,13 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:abc60aa56ec12f34b95047d0f5f491e52"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1HttpServer.html#abc60aa56ec12f34b95047d0f5f491e52">http_port</a> = 0</td></tr>
+<tr class="memitem:abc60aa56ec12f34b95047d0f5f491e52"><td class="memItemLeft" align="right" valign="top"><a id="abc60aa56ec12f34b95047d0f5f491e52" name="abc60aa56ec12f34b95047d0f5f491e52"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>http_port</b> = 0</td></tr>
+<tr class="memdesc:abc60aa56ec12f34b95047d0f5f491e52"><td class="mdescLeft">&#160;</td><td class="mdescRight">The port the server is listening to. <br /></td></tr>
 <tr class="separator:abc60aa56ec12f34b95047d0f5f491e52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a47289895c302045a8aa21fb72a80dd"><td class="memItemLeft" align="right" valign="top">MHD_OptionItem&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__main_1_1HttpServer.html#a2a47289895c302045a8aa21fb72a80dd">server_options</a> [9]</td></tr>
+<tr class="memitem:a2a47289895c302045a8aa21fb72a80dd"><td class="memItemLeft" align="right" valign="top"><a id="a2a47289895c302045a8aa21fb72a80dd" name="a2a47289895c302045a8aa21fb72a80dd"></a>
+MHD_OptionItem&#160;</td><td class="memItemRight" valign="bottom"><b>server_options</b> [9]</td></tr>
+<tr class="memdesc:a2a47289895c302045a8aa21fb72a80dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variadic parameter MHD_OPTION_ARRAY, server_options, MHD_OPTION_END in MHD_start_daemon() <br /></td></tr>
 <tr class="separator:a2a47289895c302045a8aa21fb72a80dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -161,6 +165,14 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Constructor for the <a class="el" href="classjazz__main_1_1HttpServer.html" title="HttpServer: The http server is also a Service.">HttpServer</a> service.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a_logger</td><td>A pointer to the Logger object. </td></tr>
+    <tr><td class="paramname">a_config</td><td>A pointer to the ConfigFile object. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -280,6 +292,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Server closing method.</p>
+<dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR if successful, an error code otherwise.</dd></dl>
 <p>This overrides the Service <a class="el" href="classjazz__main_1_1HttpServer.html#a641a8b251d7e78db6e08a3ea4b38836a">shut_down()</a> just to set the return to SERVICE_NO_ERROR.</p>
 <p>The true closing mechanism is a: MHD_stop_daemon (Jazz_MHD_Daemon); done by the <a class="el" href="namespacejazz__main.html#afa96b225c13eebee49a375d73fa3ebba">signalHandler_SIGTERM()</a> callback that captures SIGTERM. </p>
 
@@ -287,54 +300,9 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Field Documentation</h2>
-<a id="abc60aa56ec12f34b95047d0f5f491e52" name="abc60aa56ec12f34b95047d0f5f491e52"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc60aa56ec12f34b95047d0f5f491e52">&#9670;&#160;</a></span>http_port</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int jazz_main::HttpServer::http_port = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2a47289895c302045a8aa21fb72a80dd" name="a2a47289895c302045a8aa21fb72a80dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a47289895c302045a8aa21fb72a80dd">&#9670;&#160;</a></span>server_options</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">MHD_OptionItem jazz_main::HttpServer::server_options[9]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="server_8h_source.html">server.h</a></li>
-<li><a class="el" href="server_8cpp.html">server.cpp</a></li>
+<li>server.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -111,13 +111,21 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a4d787c78ad25b3fbc78ddeaece61a566"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Logger.html#a4d787c78ad25b3fbc78ddeaece61a566">file_name</a> [<a class="el" href="utils_8h.html#a6773b93f3093658c3dcb569de3b4bdb2">MAX_FILENAME_LENGTH</a>]</td></tr>
+<tr class="memitem:a4d787c78ad25b3fbc78ddeaece61a566"><td class="memItemLeft" align="right" valign="top"><a id="a4d787c78ad25b3fbc78ddeaece61a566" name="a4d787c78ad25b3fbc78ddeaece61a566"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><b>file_name</b> [MAX_FILENAME_LENGTH]</td></tr>
+<tr class="memdesc:a4d787c78ad25b3fbc78ddeaece61a566"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the log file. <br /></td></tr>
 <tr class="separator:a4d787c78ad25b3fbc78ddeaece61a566"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acaeef6aa05cc04b5509c9f2dd2df8ca2"><td class="memItemLeft" align="right" valign="top">std::ofstream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Logger.html#acaeef6aa05cc04b5509c9f2dd2df8ca2">f_stream</a></td></tr>
+<tr class="memitem:acaeef6aa05cc04b5509c9f2dd2df8ca2"><td class="memItemLeft" align="right" valign="top"><a id="acaeef6aa05cc04b5509c9f2dd2df8ca2" name="acaeef6aa05cc04b5509c9f2dd2df8ca2"></a>
+std::ofstream&#160;</td><td class="memItemRight" valign="bottom"><b>f_stream</b></td></tr>
+<tr class="memdesc:acaeef6aa05cc04b5509c9f2dd2df8ca2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The stream to the log file. <br /></td></tr>
 <tr class="separator:acaeef6aa05cc04b5509c9f2dd2df8ca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44cf3c42fc2332c0eb226fee16bd3683"><td class="memItemLeft" align="right" valign="top">std::filebuf *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Logger.html#a44cf3c42fc2332c0eb226fee16bd3683">f_buff</a></td></tr>
+<tr class="memitem:a44cf3c42fc2332c0eb226fee16bd3683"><td class="memItemLeft" align="right" valign="top"><a id="a44cf3c42fc2332c0eb226fee16bd3683" name="a44cf3c42fc2332c0eb226fee16bd3683"></a>
+std::filebuf *&#160;</td><td class="memItemRight" valign="bottom"><b>f_buff</b></td></tr>
+<tr class="memdesc:a44cf3c42fc2332c0eb226fee16bd3683"><td class="mdescLeft">&#160;</td><td class="mdescRight">The buffer for the stream. <br /></td></tr>
 <tr class="separator:a44cf3c42fc2332c0eb226fee16bd3683"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0eaf7611e788857fdcac0d679bdafb04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#aa7e5adf7a32b3080ea959153d2b6aee9">TimePoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Logger.html#a0eaf7611e788857fdcac0d679bdafb04">big_bang</a></td></tr>
+<tr class="memitem:a0eaf7611e788857fdcac0d679bdafb04"><td class="memItemLeft" align="right" valign="top"><a id="a0eaf7611e788857fdcac0d679bdafb04" name="a0eaf7611e788857fdcac0d679bdafb04"></a>
+<a class="el" href="namespacejazz__elements.html#aa7e5adf7a32b3080ea959153d2b6aee9">TimePoint</a>&#160;</td><td class="memItemRight" valign="bottom"><b>big_bang</b></td></tr>
+<tr class="memdesc:a0eaf7611e788857fdcac0d679bdafb04"><td class="mdescLeft">&#160;</td><td class="mdescRight">The time when the logger was created. <br /></td></tr>
 <tr class="separator:a0eaf7611e788857fdcac0d679bdafb04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -140,6 +148,12 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Initialize the <a class="el" href="classjazz__elements_1_1Logger.html" title="A simple logger.">Logger</a> (Method 1: by directly giving it the output_file_name).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">output_file_name</td><td>The name of the file to log to.</td></tr>
+  </table>
+  </dd>
+</dl>
 <p>Stores a copy of the file name, Calls <a class="el" href="classjazz__elements_1_1Logger.html#a2e28f31a318bc65d7d65dd7c4882558d">InitLogger()</a> for the rest of the initialization. </p>
 
 </div>
@@ -170,6 +184,13 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Initialize the <a class="el" href="classjazz__elements_1_1Logger.html" title="A simple logger.">Logger</a> (Method 2: with a configuration file and a configuration key).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">config</td><td>The configuration file. </td></tr>
+    <tr><td class="paramname">config_key</td><td>The configuration key to be searched.</td></tr>
+  </table>
+  </dd>
+</dl>
 <p>Stores a copy of the file name, Calls <a class="el" href="classjazz__elements_1_1Logger.html#a2e28f31a318bc65d7d65dd7c4882558d">InitLogger()</a> for the rest of the initialization. </p>
 
 </div>
@@ -393,98 +414,9 @@ NOTE: This does not check buffer allocation! Use it for short results.
 
 </div>
 </div>
-<h2 class="groupheader">Field Documentation</h2>
-<a id="a4d787c78ad25b3fbc78ddeaece61a566" name="a4d787c78ad25b3fbc78ddeaece61a566"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d787c78ad25b3fbc78ddeaece61a566">&#9670;&#160;</a></span>file_name</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">char jazz_elements::Logger::file_name[<a class="el" href="utils_8h.html#a6773b93f3093658c3dcb569de3b4bdb2">MAX_FILENAME_LENGTH</a>]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="acaeef6aa05cc04b5509c9f2dd2df8ca2" name="acaeef6aa05cc04b5509c9f2dd2df8ca2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acaeef6aa05cc04b5509c9f2dd2df8ca2">&#9670;&#160;</a></span>f_stream</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::ofstream jazz_elements::Logger::f_stream</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a44cf3c42fc2332c0eb226fee16bd3683" name="a44cf3c42fc2332c0eb226fee16bd3683"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a44cf3c42fc2332c0eb226fee16bd3683">&#9670;&#160;</a></span>f_buff</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::filebuf* jazz_elements::Logger::f_buff</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0eaf7611e788857fdcac0d679bdafb04" name="a0eaf7611e788857fdcac0d679bdafb04"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0eaf7611e788857fdcac0d679bdafb04">&#9670;&#160;</a></span>big_bang</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacejazz__elements.html#aa7e5adf7a32b3080ea959153d2b6aee9">TimePoint</a> jazz_elements::Logger::big_bang</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="utils_8h_source.html">utils.h</a></li>
-<li><a class="el" href="utils_8cpp.html">utils.cpp</a></li>
+<li>utils.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
