@@ -107,6 +107,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a27fc7e53cdd9dd7931f9281652bbed9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42a83229939d32cd9515e82836f04ab6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1Core.html#a42a83229939d32cd9515e82836f04ab6">shut_down</a> ()</td></tr>
 <tr class="separator:a42a83229939d32cd9515e82836f04ab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26775aa8f61551405b26a313b45ec93b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1Core.html#a26775aa8f61551405b26a313b45ec93b">base_names</a> (<a class="el" href="namespacejazz__elements.html#aadf1e411ca544a525c767f3e30010202">BaseNames</a> &amp;base_names)</td></tr>
+<tr class="separator:a26775aa8f61551405b26a313b45ec93b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classjazz__bebop_1_1BaseAPI"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classjazz__bebop_1_1BaseAPI')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classjazz__bebop_1_1BaseAPI.html">jazz_bebop::BaseAPI</a></td></tr>
 <tr class="memitem:a482b43be524ec391d28623cebfd3fa8f inherit pub_methods_classjazz__bebop_1_1BaseAPI"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1BaseAPI.html#a482b43be524ec391d28623cebfd3fa8f">BaseAPI</a> (<a class="el" href="namespacejazz__elements.html#a6d95828c9ae09a43b64388aad469aa66">pLogger</a> a_logger, <a class="el" href="namespacejazz__elements.html#abe347aade1e2471420c9ec5d5a251e1a">pConfigFile</a> a_config, <a class="el" href="namespacejazz__elements.html#a612e435984d430c34312ed9fa76395d7">pChannels</a> a_channels, <a class="el" href="namespacejazz__elements.html#ad5752b95c261e1ccd5e0e86cc30e0ffb">pVolatile</a> a_volatile, <a class="el" href="namespacejazz__elements.html#a918dc76d77eac5ff1949366261539368">pPersisted</a> a_persisted)</td></tr>
 <tr class="memdesc:a482b43be524ec391d28623cebfd3fa8f inherit pub_methods_classjazz__bebop_1_1BaseAPI"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classjazz__bebop_1_1BaseAPI.html" title="BaseAPI: The parent of API and Core.">BaseAPI</a> service without starting it.  <br /></td></tr>
@@ -253,6 +255,10 @@ Additional Inherited Members</h2></td></tr>
 <a class="el" href="namespacejazz__elements.html#a918dc76d77eac5ff1949366261539368">pPersisted</a>&#160;</td><td class="memItemRight" valign="bottom"><b>p_persisted</b></td></tr>
 <tr class="memdesc:a5fdcd39da3d23075f3805113ad35071c inherit pro_attribs_classjazz__bebop_1_1BaseAPI"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Persisted container. <br /></td></tr>
 <tr class="separator:a5fdcd39da3d23075f3805113ad35071c inherit pro_attribs_classjazz__bebop_1_1BaseAPI"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60ffc06721ef1168a3e76939fc2ca1e3 inherit pro_attribs_classjazz__bebop_1_1BaseAPI"><td class="memItemLeft" align="right" valign="top"><a id="a60ffc06721ef1168a3e76939fc2ca1e3" name="a60ffc06721ef1168a3e76939fc2ca1e3"></a>
+<a class="el" href="namespacejazz__elements.html#a9857872121f78a0031cc90ff9861cb5f">TenBitPtrLUT</a>&#160;</td><td class="memItemRight" valign="bottom"><b>base_server</b></td></tr>
+<tr class="memdesc:a60ffc06721ef1168a3e76939fc2ca1e3 inherit pro_attribs_classjazz__bebop_1_1BaseAPI"><td class="mdescLeft">&#160;</td><td class="mdescRight">A LUT to convert TenBitsAtAddress(base) into a pContainer. <br /></td></tr>
+<tr class="separator:a60ffc06721ef1168a3e76939fc2ca1e3 inherit pro_attribs_classjazz__bebop_1_1BaseAPI"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classjazz__elements_1_1Container"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classjazz__elements_1_1Container')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classjazz__elements_1_1Container.html">jazz_elements::Container</a></td></tr>
 <tr class="memitem:a78d8175d99a2992675ec9ead633da893 inherit pro_attribs_classjazz__elements_1_1Container"><td class="memItemLeft" align="right" valign="top"><a id="a78d8175d99a2992675ec9ead633da893" name="a78d8175d99a2992675ec9ead633da893"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>max_transactions</b></td></tr>
@@ -433,6 +439,31 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>alloc_warning_issued<
 <dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR if successful, an error code otherwise. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classjazz__bebop_1_1BaseAPI.html#af3a9461f00700a68414c968b01335796">jazz_bebop::BaseAPI</a>.</p>
+
+</div>
+</div>
+<a id="a26775aa8f61551405b26a313b45ec93b" name="a26775aa8f61551405b26a313b45ec93b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26775aa8f61551405b26a313b45ec93b">&#9670;&#160;</a></span>base_names()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void jazz_bebop::Core::base_names </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#aadf1e411ca544a525c767f3e30010202">BaseNames</a> &amp;&#160;</td>
+          <td class="paramname"><em>base_names</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Add the base names for this ModelsAPI.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">base_names</td><td>A BaseNames map passed by reference to which the base names of this object are added by this call. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
