@@ -72,7 +72,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">jazz_bebop Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -109,6 +110,8 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:aa8d4f080574d2f5c0fc90e21fd77f139"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structjazz__elements_1_1ParseStateTransition.html">ParseStateTransition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__bebop.html#aa8d4f080574d2f5c0fc90e21fd77f139">ParseStateTransitions</a>[NUM_STATE_TRANSITIONS]</td></tr>
+<tr class="separator:aa8d4f080574d2f5c0fc90e21fd77f139"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5d0b0ff0803692afc8a9442b351746e"><td class="memItemLeft" align="right" valign="top"><a id="ad5d0b0ff0803692afc8a9442b351746e" name="ad5d0b0ff0803692afc8a9442b351746e"></a>
 typedef <a class="el" href="classjazz__bebop_1_1BaseAPI.html">BaseAPI</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>pBaseAPI</b></td></tr>
 <tr class="memdesc:ad5d0b0ff0803692afc8a9442b351746e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to a <a class="el" href="classjazz__bebop_1_1BaseAPI.html" title="BaseAPI: The parent of API and Core.">BaseAPI</a>. <br /></td></tr>
@@ -137,6 +140,13 @@ typedef <a class="el" href="classjazz__bebop_1_1Snippet.html">Snippet</a> *&#160
 typedef <a class="el" href="classjazz__bebop_1_1Space.html">Space</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>pSpace</b></td></tr>
 <tr class="memdesc:a9e570cf93e172fff67ae3cfc5a771cf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to a <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a>. <br /></td></tr>
 <tr class="separator:a9e570cf93e172fff67ae3cfc5a771cf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:abba8c25b3737cd3381ac8b0cd21fc204"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__bebop.html#aa8d4f080574d2f5c0fc90e21fd77f139">ParseStateTransitions</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__bebop.html#abba8c25b3737cd3381ac8b0cd21fc204">state_tr</a></td></tr>
+<tr class="separator:abba8c25b3737cd3381ac8b0cd21fc204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c1bef9cdc7d8faf16ccc851e8edd2c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structjazz__elements_1_1ParseNextStateLUT.html">ParseNextStateLUT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__bebop.html#a8c1bef9cdc7d8faf16ccc851e8edd2c3">parser_state_switch</a> [MAX_NUM_PSTATES]</td></tr>
+<tr class="separator:a8c1bef9cdc7d8faf16ccc851e8edd2c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A language to access any container by base using locators. </p>
@@ -153,7 +163,54 @@ typedef <a class="el" href="classjazz__bebop_1_1Space.html">Space</a> *&#160;</t
 <p>A <a class="el" href="classjazz__bebop_1_1Snippet.html" title="Snippet: A code snippet and the ancestor of Concept.">Snippet</a> is an object that can do both forward (compile) and reverse engineering (decompile) between compilable <a class="el" href="classjazz__bebop_1_1Bop.html" title="Bop: The Bebop compiler and decompiler.">Bop</a> and an onnx file. It supports a number of serializations to and from Jazz Blocks. It forms the minimal unit of what can be run.</p>
 <p>This is the abstract parent of <a class="el" href="classjazz__bebop_1_1DataSpace.html" title="DataSpace: The data space.">DataSpace</a> and SemSpace.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classjazz__bebop_1_1DataSpace.html" title="DataSpace: The data space.">DataSpace</a>, SemSpace </dd></dl>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="aa8d4f080574d2f5c0fc90e21fd77f139" name="aa8d4f080574d2f5c0fc90e21fd77f139"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8d4f080574d2f5c0fc90e21fd77f139">&#9670;&#160;</a></span>ParseStateTransitions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="structjazz__elements_1_1ParseStateTransition.html">ParseStateTransition</a> jazz_bebop::ParseStateTransitions[NUM_STATE_TRANSITIONS]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A vector of StateTransition. This only runs once, on construction of the API object, initializes the LUTs from a sequence of StateTransition constants in the source of api.cpp. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="abba8c25b3737cd3381ac8b0cd21fc204" name="abba8c25b3737cd3381ac8b0cd21fc204"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abba8c25b3737cd3381ac8b0cd21fc204">&#9670;&#160;</a></span>state_tr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__bebop.html#aa8d4f080574d2f5c0fc90e21fd77f139">ParseStateTransitions</a> jazz_bebop::state_tr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The parser logic defined in terms of transitions between states. </p>
+
+</div>
+</div>
+<a id="a8c1bef9cdc7d8faf16ccc851e8edd2c3" name="a8c1bef9cdc7d8faf16ccc851e8edd2c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c1bef9cdc7d8faf16ccc851e8edd2c3">&#9670;&#160;</a></span>parser_state_switch</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structjazz__elements_1_1ParseNextStateLUT.html">ParseNextStateLUT</a> jazz_bebop::parser_state_switch[MAX_NUM_PSTATES]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The parser logic defined as a LUT (initialized by <a class="el" href="namespacejazz__elements.html#a9cf579631db7f755d76ce21def56134a">compile_next_state_LUT()</a>). </p>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
