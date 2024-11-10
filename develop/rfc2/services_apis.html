@@ -126,7 +126,9 @@ unparsed string form) and a locator-based interface (each component separately).
 </li>
 <li>
 <p>Code execution is done via exec() (normal function calls) or modify() (external call made to services via Channels). At the level of
-jazz_elements, exec() is only declared but not implemented and modify() is used only in <code>Channels</code>.</p>
+jazz_elements, exec() is only declared but not implemented and modify() is used only in <code>Channels</code>. Code executed via exec() corresponds
+to the API apply codes predicates APPLY_ASSIGN_FUNCTION and APPLY_ASSIGN_FUNCT_CONST. It is the most basic functionality that is later
+extended in BaseAPI and its descendants.</p>
 </li>
 <li>
 <p>The class also includes methods for locking and unlocking the container or entering and leaving read and write states
@@ -166,10 +168,9 @@ customized <code>Model</code> descendants that inherit from the Jazz <code>Model
 access, making parts of it inaccessible, use credentials, tokens, etc. to make a Jazz server secure for internet access.</p>
 </li>
 <li>
-<p><strong>Instantiation</strong>: As mentioned, you will only have one instance of each service. Besides <code>HttpServer</code> (which does not require
-special attention since customizing <code>API</code> is all you need to create commercial secure servers), every <code>Service</code> is a <code>Container</code>.
-<code>BaseAPI</code> and <code>API</code> are containers since they need to at least momentarily allocate <code>Block</code> objects. Containers have a <code>base_names()</code>
-mechanism to make <code>BaseAPI</code> descendants see where they are instantiated and call them.</p>
+<p><strong>Instantiation</strong>: As mentioned, you will only have one instance of each service. <code>BaseAPI</code> and therefore <code>API</code> are containers since
+they need to at least momentarily allocate <code>Block</code> objects. Containers have a <code>base_names()</code> mechanism to make <code>BaseAPI</code> descendants see
+where they are instantiated and call them.</p>
 </li>
 <li>
 <p><strong>instances.h/instances.cpp  in jazz_main</strong>: Is a little module that instantiates everything (callback functions, Services possibly
@@ -192,7 +193,7 @@ including uplifted ones) and provides a <code>start_service()</code>/<code>stop_
 <li><code>OpCodes</code>: The ONNX language</li>
 <li><code>Bop</code>: The compiler and decompiler</li>
 <li><code>Snippet</code>: A <code>Concept</code> ancestor that contains both the source and the object code</li>
-<li><code>Core</code>: (as in a CPU-core) a wrapper around the onnx-runtime the manages data objects, sessions and other onnx-runtime details.</li>
+<li><code>Core</code>: (as in a CPU-core) A wrapper around the onnx-runtime the manages data objects, sessions and other onnx-runtime details</li>
 </ul>
 <p>Code is executed in the <code>Core</code> class. This class descends from <code>BaseAPI</code> which is a <code>Container</code>. <code>BaseAPI</code> is also the parent of <code>API</code>.
 Simply put, an API is a container. but not permanently allocate data (it there just as long a request is being processed). Also, an API
@@ -217,7 +218,7 @@ the informal input). We can think of the whole model as a <strong>resolver</stro
 <p>A <code>ModelsAPI</code> can be informally seen as a <code>Core</code> that executes a higher level language (natural language) that has to be resolved into
 Bebop that can be compiled and executed by the <code>Core</code>. A single service serves multiple models using the same mechanism the other
 containers have: a base (a part of a locator) that identifies the model.</p>
-<h2 id="api">API</h2>
+<h2 id="api-as-a-baseapi-descendant">API as a BaseAPI descendant</h2>
 <pre><code>Service -&gt; Container -&gt; BaseAPI -&gt; API  [Single http entry point aware of all Containers]
 </code></pre>
 <p>So far we have seen:</p>
@@ -229,10 +230,27 @@ data, tables, indexing and execute programs.</li>
 <li>[Now] API Gives unrestricted access to everything to anyone.</li>
 <li>[Highest level: Uplifted API]: Establishes access restrictions, credentials, tokens, etc.</li>
 </ul>
-<p>The <code>API</code> class is a <code>Container</code> aware of every base in every other container, that routes requests to the appropriate container. The
+<h3 id="the-baseapi-class">The BaseAPI class</h3>
+<p><code>BaseAPI</code> handles everything that is neither http specific or requires code execution. If provides an interface that is on one side
+http oriented:</p>
+<ul>
+<li>header() Allows checking metadata without memory allocation. Similar to a http HEAD request.</li>
+<li>get() Support the entire querying language (which is a subset of Bop) and returns Tensors. Similar to a http GET request.</li>
+<li>put() Creates tensor inside a container. Similar to a http PUT request.</li>
+<li>remove() Deletes a tensor inside a container. Similar to a http DELETE request.</li>
+</ul>
+<p>And on the other side defines a subset of Bop that provides control over the containers.</p>
+<p>The subset of Bop that handles queries is defined by the use of apply in an ApiQueryState structure. The apply codes are 23 ranging from
+APPLY_NOTHING to APPLY_JAZZ_INFO and are defined and described in <code>jazz_elements::channel.h</code>.</p>
+<p>Code execution is done by the BaseAPI descendants (Core and ModelsAPI) by overriding the get() method to support all the apply codes
+from APPLY_NOTHING to APPLY_TEXT.</p>
+<h3 id="the-api-class">The API class</h3>
+<p>The <code>API</code> class is a <code>BaseAPI</code> aware of every other <code>BaseAPI</code> descendant. As a <code>BaseAPI</code> itself it manages: Channels, Volatile and
+Persisted. It routes its http put() and delete() methods to its parent and its get() method to either its parent, Core or ModelAPI.
 <code>API</code> is called by the <code>http_request_callback()</code> callback function of the <code>HttpServer</code> class. Except for developing purposes it is
 typically uplifted to provide security and access control. Note that without restrictions, the <code>API</code> can execute any code on the server
-since it has access to the console via the <code>Chanel</code> container. The least harmful thing it can do is stop the server.</p>
+since it has access to the console via the <code>Chanel</code> container. The least harmful thing it can do is stop the server. This functionality
+can also be disabled via configuration, but uplifting provides a total control over the server.</p>
 </div>
 </body>
 </html>
