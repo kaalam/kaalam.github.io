@@ -99,9 +99,9 @@ Inheritance diagram for jazz_bebop::Space:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0b11e8e59e7746ab1c982f1147673dce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1Space.html#a0b11e8e59e7746ab1c982f1147673dce">Space</a> (<a class="el" href="namespacejazz__elements.html#a6d95828c9ae09a43b64388aad469aa66">pLogger</a> a_logger, <a class="el" href="namespacejazz__elements.html#abe347aade1e2471420c9ec5d5a251e1a">pConfigFile</a> a_config)</td></tr>
-<tr class="memdesc:a0b11e8e59e7746ab1c982f1147673dce"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classjazz__bebop_1_1Bop.html" title="Bop: The Bebop compiler and decompiler.">Bop</a>: Start the <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a>.  <br /></td></tr>
-<tr class="separator:a0b11e8e59e7746ab1c982f1147673dce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3ef5c28da246b7b5c593fda4a1d1cc9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1Space.html#aa3ef5c28da246b7b5c593fda4a1d1cc9">Space</a> (<a class="el" href="namespacejazz__elements.html#a6d95828c9ae09a43b64388aad469aa66">pLogger</a> a_logger, <a class="el" href="namespacejazz__elements.html#abe347aade1e2471420c9ec5d5a251e1a">pConfigFile</a> a_config, <a class="el" href="namespacejazz__bebop.html#ad5d0b0ff0803692afc8a9442b351746e">pBaseAPI</a> an_api)</td></tr>
+<tr class="memdesc:aa3ef5c28da246b7b5c593fda4a1d1cc9"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classjazz__bebop_1_1Bop.html" title="Bop: The Bebop compiler and decompiler.">Bop</a>: Start the <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a>.  <br /></td></tr>
+<tr class="separator:aa3ef5c28da246b7b5c593fda4a1d1cc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1fe8dc987459e3e9034c4f4eeaea686"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1Space.html#aa1fe8dc987459e3e9034c4f4eeaea686">start</a> ()</td></tr>
 <tr class="separator:aa1fe8dc987459e3e9034c4f4eeaea686"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4beb2a74e09e2b55935381028dd3fb23"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1Space.html#a4beb2a74e09e2b55935381028dd3fb23">shut_down</a> ()</td></tr>
@@ -265,11 +265,18 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>alloc_warning_issued<
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a>: The abstract space. </p>
-<p>This is the abstract parent of <a class="el" href="classjazz__bebop_1_1DataSpace.html" title="DataSpace: The data space.">DataSpace</a> and SemSpace.</p>
+<p>This is the abstract parent of <a class="el" href="classjazz__bebop_1_1DataSpace.html" title="DataSpace: The data space.">DataSpace</a> and SemSpace. A <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a> is an abstraction over many blocks that provides:</p>
+<ul>
+<li>An abstraction in the form of rows and columns.</li>
+<li>Sharding and replication across a cluster.</li>
+<li>A mechanism to load, update, invalidate blocks. This supports continuous update like in time series.</li>
+<li>A mechanism to load and update its own metadata in a persisted way.</li>
+</ul>
+<p>The class <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a> is mostly empty. It provides the parent virtual interface and the parents of all the auxiliary classes used to access data.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classjazz__bebop_1_1DataSpace.html" title="DataSpace: The data space.">DataSpace</a>, SemSpace </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a0b11e8e59e7746ab1c982f1147673dce" name="a0b11e8e59e7746ab1c982f1147673dce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b11e8e59e7746ab1c982f1147673dce">&#9670;&#160;</a></span>Space()</h2>
+<a id="aa3ef5c28da246b7b5c593fda4a1d1cc9" name="aa3ef5c28da246b7b5c593fda4a1d1cc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3ef5c28da246b7b5c593fda4a1d1cc9">&#9670;&#160;</a></span>Space()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -284,7 +291,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>alloc_warning_issued<
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="namespacejazz__elements.html#abe347aade1e2471420c9ec5d5a251e1a">pConfigFile</a>&#160;</td>
-          <td class="paramname"><em>a_config</em>&#160;</td>
+          <td class="paramname"><em>a_config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacejazz__bebop.html#ad5d0b0ff0803692afc8a9442b351746e">pBaseAPI</a>&#160;</td>
+          <td class="paramname"><em>an_api</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

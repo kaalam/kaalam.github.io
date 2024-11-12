@@ -15,5 +15,7 @@ var searchData=
   ['response_5fput_5fok_12',['response_put_ok',['../namespacejazz__main.html#a1266718e0c60fa99cb934933e13f565f',1,'jazz_main']]],
   ['return_5ferror_5fmessage_13',['return_error_message',['../classjazz__main_1_1API.html#adf38a3ec1b48d937f34966d3aa6906c6',1,'jazz_main::API']]],
   ['rex_14',['rex',['../structjazz__elements_1_1ParseStateTransition.html#a788072c769b286087cd17f94316d85c4',1,'jazz_elements::ParseStateTransition']]],
-  ['rr_5fvalue_15',['rr_value',['../structjazz__bebop_1_1ApiQueryState.html#a0c19e9a6a249d21502ab389c53c63e50',1,'jazz_bebop::ApiQueryState']]]
+  ['rownumber_15',['RowNumber',['../namespacejazz__bebop.html#ad8a0d7e9b686b938fab39c5d25ec53d3',1,'jazz_bebop']]],
+  ['rowselection_16',['RowSelection',['../classjazz__bebop_1_1RowSelection.html',1,'jazz_bebop']]],
+  ['rr_5fvalue_17',['rr_value',['../structjazz__bebop_1_1ApiQueryState.html#a0c19e9a6a249d21502ab389c53c63e50',1,'jazz_bebop::ApiQueryState']]]
 ];
