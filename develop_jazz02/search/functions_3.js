@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['dataspace_0',['DataSpace',['../classjazz__bebop_1_1DataSpace.html#a59e2c61770b81e4a1a09b3835ff8bd82',1,'jazz_bebop::DataSpace']]],
+  ['dataspace_0',['DataSpace',['../classjazz__bebop_1_1DataSpace.html#a5088c487c47e16bd2cd7b52151c6b566',1,'jazz_bebop::DataSpace']]],
   ['dbi_5fexists_1',['dbi_exists',['../classjazz__elements_1_1Persisted.html#a5104a3e688c07889e9e9528ba6404e33',1,'jazz_elements::Persisted']]],
   ['debug_5fput_2',['debug_put',['../classjazz__elements_1_1ConfigFile.html#a971c3b7d978717f3099572c022b4a1f5',1,'jazz_elements::ConfigFile']]],
   ['destroy_5fcontainer_3',['destroy_container',['../classjazz__elements_1_1Container.html#a1e0efc28d7f6d1d1aa253e68badaf170',1,'jazz_elements::Container']]],

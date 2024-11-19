@@ -79,19 +79,131 @@ $(function() {
   <div class="headertitle"><div class="title">jazz_bebop::RowSelection Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="classjazz__bebop_1_1RowSelection.html" title="RowSelection: An iterator over the rows of a Space.">RowSelection</a>: An iterator over the rows of a <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a>.  
+ <a href="classjazz__bebop_1_1RowSelection.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="space_8h_source.html">space.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a57afedd595e24472c18a18bd0a64239b"><td class="memItemLeft" align="right" valign="top"><a id="a57afedd595e24472c18a18bd0a64239b" name="a57afedd595e24472c18a18bd0a64239b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>RowSelection</b> (<a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> query)</td></tr>
-<tr class="separator:a57afedd595e24472c18a18bd0a64239b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa29818a80b821ecb546f9517e45752d4"><td class="memItemLeft" align="right" valign="top"><a id="aa29818a80b821ecb546f9517e45752d4" name="aa29818a80b821ecb546f9517e45752d4"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>restart</b> ()</td></tr>
+<tr class="memitem:a55913bbc618809a7d74b3b5a94a8762c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1RowSelection.html#a55913bbc618809a7d74b3b5a94a8762c">RowSelection</a> (<a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> query, <a class="el" href="namespacejazz__bebop.html#a9e570cf93e172fff67ae3cfc5a771cf5">pSpace</a> p_space)</td></tr>
+<tr class="memdesc:a55913bbc618809a7d74b3b5a94a8762c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor for a <a class="el" href="classjazz__bebop_1_1RowSelection.html" title="RowSelection: An iterator over the rows of a Space.">RowSelection</a>.  <br /></td></tr>
+<tr class="separator:a55913bbc618809a7d74b3b5a94a8762c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa29818a80b821ecb546f9517e45752d4"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1RowSelection.html#aa29818a80b821ecb546f9517e45752d4">restart</a> ()</td></tr>
+<tr class="memdesc:aa29818a80b821ecb546f9517e45752d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restart the iterator.  <br /></td></tr>
 <tr class="separator:aa29818a80b821ecb546f9517e45752d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3296ab175221dbcaf9dd30b3b8ad677d"><td class="memItemLeft" align="right" valign="top"><a id="a3296ab175221dbcaf9dd30b3b8ad677d" name="a3296ab175221dbcaf9dd30b3b8ad677d"></a>
-virtual <a class="el" href="namespacejazz__bebop.html#ad8a0d7e9b686b938fab39c5d25ec53d3">RowNumber</a>&#160;</td><td class="memItemRight" valign="bottom"><b>next</b> ()</td></tr>
+<tr class="memitem:a3296ab175221dbcaf9dd30b3b8ad677d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__bebop.html#ad8a0d7e9b686b938fab39c5d25ec53d3">RowNumber</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1RowSelection.html#a3296ab175221dbcaf9dd30b3b8ad677d">next</a> ()</td></tr>
+<tr class="memdesc:a3296ab175221dbcaf9dd30b3b8ad677d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next row.  <br /></td></tr>
 <tr class="separator:a3296ab175221dbcaf9dd30b3b8ad677d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="classjazz__bebop_1_1RowSelection.html" title="RowSelection: An iterator over the rows of a Space.">RowSelection</a>: An iterator over the rows of a <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a>. </p>
+<p>This is an abstract class that provides the interface of an iterator over rows. The where() method of a <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a> returns a <a class="el" href="classjazz__bebop_1_1RowSelection.html" title="RowSelection: An iterator over the rows of a Space.">RowSelection</a> descendant that is compatible with this interface.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a> </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a55913bbc618809a7d74b3b5a94a8762c" name="a55913bbc618809a7d74b3b5a94a8762c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55913bbc618809a7d74b3b5a94a8762c">&#9670;&#160;</a></span>RowSelection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">jazz_bebop::RowSelection::RowSelection </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a>&#160;</td>
+          <td class="paramname"><em>query</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacejazz__bebop.html#a9e570cf93e172fff67ae3cfc5a771cf5">pSpace</a>&#160;</td>
+          <td class="paramname"><em>p_space</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The constructor for a <a class="el" href="classjazz__bebop_1_1RowSelection.html" title="RowSelection: An iterator over the rows of a Space.">RowSelection</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">query</td><td>A query string that is understood by the descendant. In <a class="el" href="classjazz__bebop_1_1Bop.html" title="Bop: The Bebop compiler and decompiler.">Bop</a>, this is the content of a WHERE clause with a syntax that depends on how the <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a> is indexed (Time, categorical, Embedding storage, ...). </td></tr>
+    <tr><td class="paramname">p_space</td><td>The <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a> that created the object and is being queried. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa29818a80b821ecb546f9517e45752d4" name="aa29818a80b821ecb546f9517e45752d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa29818a80b821ecb546f9517e45752d4">&#9670;&#160;</a></span>restart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool jazz_bebop::RowSelection::restart </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Restart the iterator. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if the iterator was successfully restarted, false if it is not possible. </dd></dl>
+
+</div>
+</div>
+<a id="a3296ab175221dbcaf9dd30b3b8ad677d" name="a3296ab175221dbcaf9dd30b3b8ad677d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3296ab175221dbcaf9dd30b3b8ad677d">&#9670;&#160;</a></span>next()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespacejazz__bebop.html#ad8a0d7e9b686b938fab39c5d25ec53d3">RowNumber</a> jazz_bebop::RowSelection::next </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the next row. </p>
+<dl class="section return"><dt>Returns</dt><dd>The next row number or SPACE_ROW_STOP_ITERATOR if the iteration is exhausted. </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="space_8h_source.html">space.h</a></li>
 </ul>
