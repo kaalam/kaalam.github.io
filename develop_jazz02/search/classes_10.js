@@ -7,6 +7,7 @@ var searchData=
   ['socket_4',['Socket',['../structjazz__elements_1_1Socket.html',1,'jazz_elements']]],
   ['space_5',['Space',['../classjazz__bebop_1_1Space.html',1,'jazz_bebop']]],
   ['staticblockheader_6',['StaticBlockHeader',['../structjazz__elements_1_1StaticBlockHeader.html',1,'jazz_elements']]],
-  ['storedtransaction_7',['StoredTransaction',['../structjazz__elements_1_1StoredTransaction.html',1,'jazz_elements']]],
-  ['stringbuffer_8',['StringBuffer',['../structjazz__elements_1_1StringBuffer.html',1,'jazz_elements']]]
+  ['stdname_7',['stdName',['../classjazz__bebop_1_1stdName.html',1,'jazz_bebop']]],
+  ['storedtransaction_8',['StoredTransaction',['../structjazz__elements_1_1StoredTransaction.html',1,'jazz_elements']]],
+  ['stringbuffer_9',['StringBuffer',['../structjazz__elements_1_1StringBuffer.html',1,'jazz_elements']]]
 ];

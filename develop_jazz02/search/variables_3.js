@@ -12,7 +12,7 @@ var searchData=
   ['cell_5flongint_9',['cell_longint',['../unionjazz__elements_1_1Tensor.html#af05deaffcf6e5c0f1b9bd5ca5c2276dc',1,'jazz_elements::Tensor']]],
   ['cell_5fsingle_10',['cell_single',['../unionjazz__elements_1_1Tensor.html#af92d25a600f67f5474f20ee16ac53e08',1,'jazz_elements::Tensor']]],
   ['cell_5ftime_11',['cell_time',['../unionjazz__elements_1_1Tensor.html#a36681b6a0ffbf7061de8033b502a41af',1,'jazz_elements::Tensor']]],
-  ['cell_5ftype_12',['cell_type',['../structjazz__elements_1_1BlockHeader.html#a74b600fb9d8a9afce9285d79c035b33b',1,'jazz_elements::BlockHeader::cell_type()'],['../structjazz__elements_1_1StaticBlockHeader.html#a2e55c0b7cf6764b13393c26171f20dc6',1,'jazz_elements::StaticBlockHeader::cell_type()'],['../structjazz__elements_1_1ItemHeader.html#ae1a3f9d632242c84a39c8a9c0fa52db6',1,'jazz_elements::ItemHeader::cell_type()']]],
+  ['cell_5ftype_12',['cell_type',['../structjazz__elements_1_1StaticBlockHeader.html#a2e55c0b7cf6764b13393c26171f20dc6',1,'jazz_elements::StaticBlockHeader::cell_type()'],['../structjazz__elements_1_1BlockHeader.html#a74b600fb9d8a9afce9285d79c035b33b',1,'jazz_elements::BlockHeader::cell_type()'],['../structjazz__elements_1_1ItemHeader.html#ae1a3f9d632242c84a39c8a9c0fa52db6',1,'jazz_elements::ItemHeader::cell_type()']]],
   ['cell_5fuint_13',['cell_uint',['../unionjazz__elements_1_1Tensor.html#a4fbaf6b2848c1091188a74ba20d40b66',1,'jazz_elements::Tensor']]],
   ['cell_5fulongint_14',['cell_ulongint',['../unionjazz__elements_1_1Tensor.html#a9902620604520df8840e73d8b05b50e4',1,'jazz_elements::Tensor']]],
   ['channels_15',['CHANNELS',['../namespacejazz__main.html#ae7a248b1e997ab7ca7264679401f894a',1,'jazz_main']]],
@@ -21,5 +21,6 @@ var searchData=
   ['connect_18',['connect',['../classjazz__elements_1_1Channels.html#aec175fc4c66d46f3fb9f4a5009dd4646',1,'jazz_elements::Channels']]],
   ['core_19',['CORE',['../namespacejazz__main.html#a73441da7e2e8b147dd30b8e225300b9d',1,'jazz_main']]],
   ['created_20',['created',['../structjazz__elements_1_1BlockHeader.html#a581c7cd356bad27167467db5cce09291',1,'jazz_elements::BlockHeader::created()'],['../structjazz__elements_1_1StaticBlockHeader.html#a262214ad5832e60c65df058f56258ec3',1,'jazz_elements::StaticBlockHeader::created()']]],
-  ['curl_5fok_21',['curl_ok',['../classjazz__elements_1_1Channels.html#aecd3e3dc34df5a0b132298a91251666a',1,'jazz_elements::Channels']]]
+  ['curl_5fok_21',['curl_ok',['../classjazz__elements_1_1Channels.html#aecd3e3dc34df5a0b132298a91251666a',1,'jazz_elements::Channels']]],
+  ['current_5fcol_22',['current_col',['../classjazz__bebop_1_1ColSelection.html#ad92783968304581347029cdf1f92cb18',1,'jazz_bebop::ColSelection']]]
 ];

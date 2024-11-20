@@ -181,10 +181,10 @@ including uplifted ones) and provides a <code>start_service()</code>/<code>stop_
 <pre><code>Service ----------&gt; OpCodes           [ONNX language]
    +--------------&gt; Bop               [Compiler and decompiler]
    +--------------&gt; Snippet           [Code snippet, parent of Concept]
-   +-&gt; Container -&gt; Space             [Parent of DataSpace and SemSpace]
-           |          +---&gt; DataSpace [Abstracts tables and indexing]
-           +------&gt; BaseAPI           [Manages petitions to Containers]
-                       +--&gt; Core      [Compiles, runs code and serves]
+   +--------------&gt; Space             [Parent of DataSpace and SemSpace]
+   |                  +---&gt; DataSpace [Abstracts tables and indexing]
+   +-&gt; Container -&gt; BaseAPI           [Manages petitions to Containers]
+                      +---&gt; Core      [Compiles, runs code and serves]
 </code></pre>
 <h3 id="the-namespace-jazz-bebop-has">The namespace <code>jazz_bebop</code> has:</h3>
 <ul>
@@ -196,7 +196,7 @@ including uplifted ones) and provides a <code>start_service()</code>/<code>stop_
 <li><code>Core</code>: (as in a CPU-core) A wrapper around the onnx-runtime the manages data objects, sessions and other onnx-runtime details</li>
 </ul>
 <p>Code is executed in the <code>Core</code> class. This class descends from <code>BaseAPI</code> which is a <code>Container</code>. <code>BaseAPI</code> is also the parent of <code>API</code>.
-Simply put, an API is a container. but not permanently allocate data (it there just as long a request is being processed). Also, an API
+Simply put, an API is a container. but does not permanently allocate data (it does just as long a request is being processed). Also, an API
 can parse requests and route them to the appropriate container.</p>
 <p><code>Core</code> is the only object instantiated by the server’s instantiation mechanism. The language (OpCodes), the compiler (Bop), the DataSpace
 and many Snippets inside <code>Core</code>.</p>
@@ -206,8 +206,8 @@ and many Snippets inside <code>Core</code>.</p>
 namespace and an <strong>informal</strong> natural language that is converted into compilable code by a <code>Model</code> in <code>jazz_models</code>.</p>
 <h2 id="models-are-a-superior-form-of-code-execution">Models are a superior form of code execution</h2>
 <pre><code>Service -&gt; Snippet ----------------&gt; Concept    [Generalizes Snippet to informal code]
+   +-----&gt; Space ------------------&gt; SemSpace   [Serves Concepts]
    +-----&gt; Container --------------&gt; Model      [uses Core to compile and run solutions]
-               +------&gt; Space -----&gt; SemSpace   [Serves Concepts]
                +------&gt; BaseAPI ---&gt; ModelsAPI  [serves Model descendants]
 </code></pre>
 <p>At the level of <code>jazz_bebop</code>, we have a compiler that converts <strong>formal</strong> compilable Bebop code into <strong>formal</strong> object code. In this higher
@@ -231,17 +231,17 @@ data, tables, indexing and execute programs.</li>
 <li>[Highest level: Uplifted API]: Establishes access restrictions, credentials, tokens, etc.</li>
 </ul>
 <h3 id="the-baseapi-class">The BaseAPI class</h3>
-<p><code>BaseAPI</code> handles everything that is neither http specific or requires code execution. If provides an interface that is on one side
+<p><code>BaseAPI</code> handles everything that is neither http specific or requires code execution. It provides an interface that is on one side
 http oriented:</p>
 <ul>
 <li>header() Allows checking metadata without memory allocation. Similar to a http HEAD request.</li>
-<li>get() Support the entire querying language (which is a subset of Bop) and returns Tensors. Similar to a http GET request.</li>
-<li>put() Creates tensor inside a container. Similar to a http PUT request.</li>
+<li>get() Supports the entire querying language (which is a subset of Bop) and returns Tensors. Similar to a http GET request.</li>
+<li>put() Writes a tensor inside a container. Similar to a http PUT request.</li>
 <li>remove() Deletes a tensor inside a container. Similar to a http DELETE request.</li>
 </ul>
 <p>And on the other side defines a subset of Bop that provides control over the containers.</p>
-<p>The subset of Bop that handles queries is defined by the use of apply in an ApiQueryState structure. The apply codes are 23 ranging from
-APPLY_NOTHING to APPLY_JAZZ_INFO and are defined and described in <code>jazz_elements::channel.h</code>.</p>
+<p>The subset of Bop that handles queries is defined by the use of the <code>apply</code> property in an ApiQueryState structure. There are 23 codes
+ranging from APPLY_NOTHING to APPLY_JAZZ_INFO. See <code>jazz_elements::channel.h</code>.</p>
 <p>Code execution is done by the BaseAPI descendants (Core and ModelsAPI) by overriding the get() method to support all the apply codes
 from APPLY_NOTHING to APPLY_TEXT.</p>
 <h3 id="the-api-class">The API class</h3>
@@ -250,7 +250,7 @@ Persisted. It routes its http put() and delete() methods to its parent and its g
 <code>API</code> is called by the <code>http_request_callback()</code> callback function of the <code>HttpServer</code> class. Except for developing purposes it is
 typically uplifted to provide security and access control. Note that without restrictions, the <code>API</code> can execute any code on the server
 since it has access to the console via the <code>Chanel</code> container. The least harmful thing it can do is stop the server. This functionality
-can also be disabled via configuration, but uplifting provides a total control over the server.</p>
+can also be disabled via configuration, but uplifting provides total control over the server, not just disabling features.</p>
 </div>
 </body>
 </html>

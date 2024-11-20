@@ -75,7 +75,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pri-methods">Private Member Functions</a>  </div>
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a>  </div>
   <div class="headertitle"><div class="title">jazz_bebop::RowSelection Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -96,6 +97,13 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a3296ab175221dbcaf9dd30b3b8ad677d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__bebop.html#ad8a0d7e9b686b938fab39c5d25ec53d3">RowNumber</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1RowSelection.html#a3296ab175221dbcaf9dd30b3b8ad677d">next</a> ()</td></tr>
 <tr class="memdesc:a3296ab175221dbcaf9dd30b3b8ad677d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next row.  <br /></td></tr>
 <tr class="separator:a3296ab175221dbcaf9dd30b3b8ad677d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:aebccca975bba3086a57a43a4e4391543"><td class="memItemLeft" align="right" valign="top"><a id="aebccca975bba3086a57a43a4e4391543" name="aebccca975bba3086a57a43a4e4391543"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_valid</b> = false</td></tr>
+<tr class="memdesc:aebccca975bba3086a57a43a4e4391543"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if the iterator was created by a successful query. <br /></td></tr>
+<tr class="separator:aebccca975bba3086a57a43a4e4391543"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classjazz__bebop_1_1RowSelection.html" title="RowSelection: An iterator over the rows of a Space.">RowSelection</a>: An iterator over the rows of a <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a>. </p>
@@ -140,7 +148,7 @@ Private Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">query</td><td>A query string that is understood by the descendant. In <a class="el" href="classjazz__bebop_1_1Bop.html" title="Bop: The Bebop compiler and decompiler.">Bop</a>, this is the content of a WHERE clause with a syntax that depends on how the <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a> is indexed (Time, categorical, Embedding storage, ...). </td></tr>
-    <tr><td class="paramname">p_space</td><td>The <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a> that created the object and is being queried. </td></tr>
+    <tr><td class="paramname">p_space</td><td>The <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a> that created the object is required because the descendant may need to call .get_index_data() or other methods. </td></tr>
   </table>
   </dd>
 </dl>
