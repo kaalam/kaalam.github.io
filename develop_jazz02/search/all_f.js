@@ -15,13 +15,13 @@ var searchData=
   ['new_5ftransaction_12',['new_transaction',['../classjazz__elements_1_1Volatile.html#a5263ef47ef073aaf2dd7c664509e8c1f',1,'jazz_elements::Volatile::new_transaction()'],['../classjazz__elements_1_1Container.html#a5103bbe331c753542959d063c9b7ed0f',1,'jazz_elements::Container::new_transaction()']]],
   ['new_5ftuple_13',['new_tuple',['../classjazz__elements_1_1Tuple.html#a8eebf0494ee7dff51fbaddc5591ffac4',1,'jazz_elements::Tuple']]],
   ['new_5fvolatile_14',['new_volatile',['../classjazz__elements_1_1Volatile.html#a2d97243bf8bde445b451d5f453230268',1,'jazz_elements::Volatile']]],
-  ['next_15',['next',['../structjazz__elements_1_1ParseNextStateLUT.html#a45d4f787ca5098671f2d6d3536bdd22e',1,'jazz_elements::ParseNextStateLUT::next()'],['../classjazz__bebop_1_1RowSelection.html#a3296ab175221dbcaf9dd30b3b8ad677d',1,'jazz_bebop::RowSelection::next()']]],
+  ['next_15',['next',['../classjazz__bebop_1_1RowSelection.html#a3296ab175221dbcaf9dd30b3b8ad677d',1,'jazz_bebop::RowSelection::next()'],['../structjazz__elements_1_1ParseNextStateLUT.html#a45d4f787ca5098671f2d6d3536bdd22e',1,'jazz_elements::ParseNextStateLUT::next()']]],
   ['next_5findex_16',['next_index',['../classjazz__bebop_1_1ColSelection.html#a6b319edbd31f92a9a774fa4739013ac6',1,'jazz_bebop::ColSelection']]],
   ['next_5fname_17',['next_name',['../classjazz__bebop_1_1ColSelection.html#a14f14403dbf6092c67cf646424facb75',1,'jazz_bebop::ColSelection']]],
   ['num_5fattributes_18',['num_attributes',['../structjazz__elements_1_1BlockHeader.html#ade1168fe2f507da3c64a90ef3d8f5e17',1,'jazz_elements::BlockHeader::num_attributes()'],['../structjazz__elements_1_1StaticBlockHeader.html#a7dc2553d57cfe560ae1990e96afd20e6',1,'jazz_elements::StaticBlockHeader::num_attributes()']]],
-  ['num_5fcols_19',['num_cols',['../classjazz__bebop_1_1Space.html#a85d3d9d8d7cfe2a2487be816d8a1e10d',1,'jazz_bebop::Space']]],
+  ['num_5fcols_19',['num_cols',['../classjazz__bebop_1_1DataSpace.html#a8b6cf87f47cbe9f87b5338fc98b08436',1,'jazz_bebop::DataSpace::num_cols()'],['../classjazz__bebop_1_1Space.html#a85d3d9d8d7cfe2a2487be816d8a1e10d',1,'jazz_bebop::Space::num_cols()'],['../classjazz__models_1_1SemSpace.html#ad7eafed3a71a0a872e9764fc18563003',1,'jazz_models::SemSpace::num_cols()']]],
   ['num_5fkeys_20',['num_keys',['../classjazz__elements_1_1ConfigFile.html#a002fadb3b1aa6a933a9bdb5907987b67',1,'jazz_elements::ConfigFile']]],
-  ['num_5frows_21',['num_rows',['../classjazz__bebop_1_1Space.html#a5df8bb784489595c8d7d4b6753a1aa86',1,'jazz_bebop::Space']]],
+  ['num_5frows_21',['num_rows',['../classjazz__bebop_1_1DataSpace.html#adfdc93fe276ffb3fd9ca54348478181d',1,'jazz_bebop::DataSpace::num_rows()'],['../classjazz__bebop_1_1Space.html#a5df8bb784489595c8d7d4b6753a1aa86',1,'jazz_bebop::Space::num_rows()'],['../classjazz__models_1_1SemSpace.html#ae6c3baaf37743f64dc1376eb9ae0edad',1,'jazz_models::SemSpace::num_rows()']]],
   ['num_5fvisits_22',['num_visits',['../structjazz__elements_1_1VolatileTransaction.html#a58e0d57a8432b4586472b2e9c74ce6d7',1,'jazz_elements::VolatileTransaction']]],
   ['num_5fwins_23',['num_wins',['../structjazz__elements_1_1VolatileTransaction.html#af8311af300abe9dd0f71d2b4409a9e5c',1,'jazz_elements::VolatileTransaction']]]
 ];

@@ -76,6 +76,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a>  </div>
   <div class="headertitle"><div class="title">jazz_bebop::DataSpace Class Reference</div></div>
 </div><!--header-->
@@ -105,6 +106,36 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a87f8def1cc15f5714387ea1538b9612e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a828f644e091179adeb7d2aa39d102214"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1DataSpace.html#a828f644e091179adeb7d2aa39d102214">id</a> ()</td></tr>
 <tr class="separator:a828f644e091179adeb7d2aa39d102214"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16313a5243e78dc46360f197b070045f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1DataSpace.html#a16313a5243e78dc46360f197b070045f">load_meta</a> ()</td></tr>
+<tr class="memdesc:a16313a5243e78dc46360f197b070045f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load the metadata of the <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a>.  <br /></td></tr>
+<tr class="separator:a16313a5243e78dc46360f197b070045f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1173bfa10e19efb02cb4f2302649ae21"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1DataSpace.html#a1173bfa10e19efb02cb4f2302649ae21">save_meta</a> ()</td></tr>
+<tr class="memdesc:a1173bfa10e19efb02cb4f2302649ae21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the metadata of the <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a>.  <br /></td></tr>
+<tr class="separator:a1173bfa10e19efb02cb4f2302649ae21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfdc93fe276ffb3fd9ca54348478181d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__bebop.html#ad8a0d7e9b686b938fab39c5d25ec53d3">RowNumber</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1DataSpace.html#adfdc93fe276ffb3fd9ca54348478181d">num_rows</a> ()</td></tr>
+<tr class="memdesc:adfdc93fe276ffb3fd9ca54348478181d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of rows in the <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a>.  <br /></td></tr>
+<tr class="separator:adfdc93fe276ffb3fd9ca54348478181d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82a7e6a919d9f26931b3f126bbc24505"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1DataSpace.html#a82a7e6a919d9f26931b3f126bbc24505">get_index_data</a> (<a class="el" href="namespacejazz__bebop.html#ad8a0d7e9b686b938fab39c5d25ec53d3">RowNumber</a> row)</td></tr>
+<tr class="memdesc:a82a7e6a919d9f26931b3f126bbc24505"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the data of the index of a given row.  <br /></td></tr>
+<tr class="separator:a82a7e6a919d9f26931b3f126bbc24505"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b6cf87f47cbe9f87b5338fc98b08436"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1DataSpace.html#a8b6cf87f47cbe9f87b5338fc98b08436">num_cols</a> ()</td></tr>
+<tr class="memdesc:a8b6cf87f47cbe9f87b5338fc98b08436"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of columns in the <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a>.  <br /></td></tr>
+<tr class="separator:a8b6cf87f47cbe9f87b5338fc98b08436"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0487f20fdc227c4342b4ab8a3e2d4629"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__elements.html#aa1ee282228d329b2175b2efa7add9385">pName</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1DataSpace.html#a0487f20fdc227c4342b4ab8a3e2d4629">col_name</a> (int col)</td></tr>
+<tr class="memdesc:a0487f20fdc227c4342b4ab8a3e2d4629"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of a column.  <br /></td></tr>
+<tr class="separator:a0487f20fdc227c4342b4ab8a3e2d4629"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa409f26c586ffc2014298b1c8ae3e8cc"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1DataSpace.html#aa409f26c586ffc2014298b1c8ae3e8cc">col_index</a> (<a class="el" href="namespacejazz__elements.html#aa1ee282228d329b2175b2efa7add9385">pName</a> <a class="el" href="classjazz__bebop_1_1Space.html#a6ba84917bc1383bfefce78be1d682c82">name</a>)</td></tr>
+<tr class="memdesc:aa409f26c586ffc2014298b1c8ae3e8cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the index of a column.  <br /></td></tr>
+<tr class="separator:aa409f26c586ffc2014298b1c8ae3e8cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9136bc861474c254921dfad861e733b3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__elements.html#a420779e1f5820ebcf0a149e4d8677ee9">pLocator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1DataSpace.html#a9136bc861474c254921dfad861e733b3">locator</a> (<a class="el" href="namespacejazz__bebop.html#ad8a0d7e9b686b938fab39c5d25ec53d3">RowNumber</a> row, int col, int &amp;index)</td></tr>
+<tr class="memdesc:a9136bc861474c254921dfad861e733b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the location of a cell as a Locator.  <br /></td></tr>
+<tr class="separator:a9136bc861474c254921dfad861e733b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27d37a725d3ebe3425b07e4fc7d1824e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__bebop.html#a42b9654b9254295e7d6a4eb6d4cbbc4e">pRowSelection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1DataSpace.html#a27d37a725d3ebe3425b07e4fc7d1824e">where</a> (<a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> query)</td></tr>
+<tr class="memdesc:a27d37a725d3ebe3425b07e4fc7d1824e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a <a class="el" href="classjazz__bebop_1_1RowSelection.html" title="RowSelection: An iterator over the rows of a Space.">RowSelection</a> from a query.  <br /></td></tr>
+<tr class="separator:a27d37a725d3ebe3425b07e4fc7d1824e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b1165c38a01a42f4eb652e3a4847f51"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1DataSpace.html#a7b1165c38a01a42f4eb652e3a4847f51">get_row</a> (<a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> &amp;p_txn, <a class="el" href="namespacejazz__bebop.html#ad8a0d7e9b686b938fab39c5d25ec53d3">RowNumber</a> row, <a class="el" href="namespacejazz__bebop.html#aa540587dff4cb32b1e178f23b931214c">pColSelection</a> cols=nullptr)</td></tr>
+<tr class="memdesc:a7b1165c38a01a42f4eb652e3a4847f51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a row from the <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a> as a Tuple.  <br /></td></tr>
+<tr class="separator:a7b1165c38a01a42f4eb652e3a4847f51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classjazz__bebop_1_1Space"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classjazz__bebop_1_1Space')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classjazz__bebop_1_1Space.html">jazz_bebop::Space</a></td></tr>
 <tr class="memitem:ad7f550a1fbc9254d46546a853fba275a inherit pub_methods_classjazz__bebop_1_1Space"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1Space.html#ad7f550a1fbc9254d46546a853fba275a">Space</a> (<a class="el" href="namespacejazz__bebop.html#ad5d0b0ff0803692afc8a9442b351746e">pBaseAPI</a> api, <a class="el" href="namespacejazz__elements.html#aa1ee282228d329b2175b2efa7add9385">pName</a> a_name)</td></tr>
 <tr class="memdesc:ad7f550a1fbc9254d46546a853fba275a inherit pub_methods_classjazz__bebop_1_1Space"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classjazz__bebop_1_1Bop.html" title="Bop: The Bebop compiler and decompiler.">Bop</a>: Start the <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a>.  <br /></td></tr>
@@ -166,6 +197,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae470b76019bcbcecc6ac1b516c51bb74 inherit pub_methods_classjazz__elements_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d5b766d5214ffb88d58acc6f66e2e29 inherit pub_methods_classjazz__elements_1_1Service"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Service.html#a7d5b766d5214ffb88d58acc6f66e2e29">get_conf_key</a> (const char *key, std::string &amp;value)</td></tr>
 <tr class="separator:a7d5b766d5214ffb88d58acc6f66e2e29 inherit pub_methods_classjazz__elements_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a8b1315e4b6cb40807b3ca1c577f71c12"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1DataSpace.html#a8b1315e4b6cb40807b3ca1c577f71c12">load_or_create_space</a> ()</td></tr>
+<tr class="separator:a8b1315e4b6cb40807b3ca1c577f71c12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -306,6 +342,414 @@ char&#160;</td><td class="memItemRight" valign="bottom"><b>storage_base</b> [SHO
 <dl class="section return"><dt>Returns</dt><dd>A string identifying the object that is especially useful to track uplifts and versions. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classjazz__elements_1_1Service.html#ad547340ffa66c65656e5da13c42f8295">jazz_elements::Service</a>.</p>
+
+</div>
+</div>
+<a id="a16313a5243e78dc46360f197b070045f" name="a16313a5243e78dc46360f197b070045f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16313a5243e78dc46360f197b070045f">&#9670;&#160;</a></span>load_meta()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> jazz_bebop::DataSpace::load_meta </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Load the metadata of the <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a>. </p>
+<p>This method must be implemented by descendants. It will load a record of metadata from <code>//storage_base/storage_ent/name</code>.</p>
+<dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR if successful, an error code otherwise. </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classjazz__bebop_1_1Space.html#a1201f5ad4f2557da48f6bff3f966c257">jazz_bebop::Space</a>.</p>
+
+</div>
+</div>
+<a id="a1173bfa10e19efb02cb4f2302649ae21" name="a1173bfa10e19efb02cb4f2302649ae21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1173bfa10e19efb02cb4f2302649ae21">&#9670;&#160;</a></span>save_meta()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> jazz_bebop::DataSpace::save_meta </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Save the metadata of the <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a>. </p>
+<p>This method must be implemented by descendants. It will store a record of metadata into <code>//storage_base/storage_ent/name</code>.</p>
+<dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR if successful, an error code otherwise. </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classjazz__bebop_1_1Space.html#ad37859eb958cefe72722ccf04c24766d">jazz_bebop::Space</a>.</p>
+
+</div>
+</div>
+<a id="adfdc93fe276ffb3fd9ca54348478181d" name="adfdc93fe276ffb3fd9ca54348478181d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfdc93fe276ffb3fd9ca54348478181d">&#9670;&#160;</a></span>num_rows()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__bebop.html#ad8a0d7e9b686b938fab39c5d25ec53d3">RowNumber</a> jazz_bebop::DataSpace::num_rows </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the number of rows in the <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>The number of rows in the <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a> or SPACE_NOT_A_ROW if the <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a> is invalid. </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classjazz__bebop_1_1Space.html#a5df8bb784489595c8d7d4b6753a1aa86">jazz_bebop::Space</a>.</p>
+
+</div>
+</div>
+<a id="a82a7e6a919d9f26931b3f126bbc24505" name="a82a7e6a919d9f26931b3f126bbc24505"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82a7e6a919d9f26931b3f126bbc24505">&#9670;&#160;</a></span>get_index_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * jazz_bebop::DataSpace::get_index_data </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__bebop.html#ad8a0d7e9b686b938fab39c5d25ec53d3">RowNumber</a>&#160;</td>
+          <td class="paramname"><em>row</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a pointer to the data of the index of a given row. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">row</td><td>The row number.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the index or nullptr if there is no index. Examples include a vector for an embedding, of a string for a key-based index and a TimePoint for a time-based index. </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classjazz__bebop_1_1Space.html#a9e752f4adad9a409517210efc8217fd5">jazz_bebop::Space</a>.</p>
+
+</div>
+</div>
+<a id="a8b6cf87f47cbe9f87b5338fc98b08436" name="a8b6cf87f47cbe9f87b5338fc98b08436"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b6cf87f47cbe9f87b5338fc98b08436">&#9670;&#160;</a></span>num_cols()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jazz_bebop::DataSpace::num_cols </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the number of columns in the <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>The number of columns in the <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a>. </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classjazz__bebop_1_1Space.html#a85d3d9d8d7cfe2a2487be816d8a1e10d">jazz_bebop::Space</a>.</p>
+
+</div>
+</div>
+<a id="a0487f20fdc227c4342b4ab8a3e2d4629" name="a0487f20fdc227c4342b4ab8a3e2d4629"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0487f20fdc227c4342b4ab8a3e2d4629">&#9670;&#160;</a></span>col_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#aa1ee282228d329b2175b2efa7add9385">pName</a> jazz_bebop::DataSpace::col_name </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>col</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the name of a column. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">col</td><td>The column index.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The name of the column or nullptr if the index is out of range. </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classjazz__bebop_1_1Space.html#a2a6ba46e15e2baabf563d97dbf2af345">jazz_bebop::Space</a>.</p>
+
+</div>
+</div>
+<a id="aa409f26c586ffc2014298b1c8ae3e8cc" name="aa409f26c586ffc2014298b1c8ae3e8cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa409f26c586ffc2014298b1c8ae3e8cc">&#9670;&#160;</a></span>col_index()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jazz_bebop::DataSpace::col_index </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#aa1ee282228d329b2175b2efa7add9385">pName</a>&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the index of a column. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The name of the column.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The index of the column or -1 if the column is not found. </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classjazz__bebop_1_1Space.html#a902b790c02decfe0d2a5a91cae068bbb">jazz_bebop::Space</a>.</p>
+
+</div>
+</div>
+<a id="a9136bc861474c254921dfad861e733b3" name="a9136bc861474c254921dfad861e733b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9136bc861474c254921dfad861e733b3">&#9670;&#160;</a></span>locator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#a420779e1f5820ebcf0a149e4d8677ee9">pLocator</a> jazz_bebop::DataSpace::locator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__bebop.html#ad8a0d7e9b686b938fab39c5d25ec53d3">RowNumber</a>&#160;</td>
+          <td class="paramname"><em>row</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>col</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the location of a cell as a Locator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">row</td><td>The row number. </td></tr>
+    <tr><td class="paramname">col</td><td>The column index. </td></tr>
+    <tr><td class="paramname">index</td><td>If the block contains multiple rows, which is the index of <code>row</code> in the block.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to a Locator object that can be used to access the cell or nullptr if the cell is not found. </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classjazz__bebop_1_1Space.html#a919474134e15a5162b10e45f9423ba89">jazz_bebop::Space</a>.</p>
+
+</div>
+</div>
+<a id="a27d37a725d3ebe3425b07e4fc7d1824e" name="a27d37a725d3ebe3425b07e4fc7d1824e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27d37a725d3ebe3425b07e4fc7d1824e">&#9670;&#160;</a></span>where()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__bebop.html#a42b9654b9254295e7d6a4eb6d4cbbc4e">pRowSelection</a> jazz_bebop::DataSpace::where </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a>&#160;</td>
+          <td class="paramname"><em>query</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a <a class="el" href="classjazz__bebop_1_1RowSelection.html" title="RowSelection: An iterator over the rows of a Space.">RowSelection</a> from a query. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">query</td><td>A query string that is understood by the descendant. In <a class="el" href="classjazz__bebop_1_1Bop.html" title="Bop: The Bebop compiler and decompiler.">Bop</a>, this is the content of a WHERE clause with a syntax that depends on how the <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a> is indexed (Time, categorical, Embedding storage, ...).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="classjazz__bebop_1_1RowSelection.html" title="RowSelection: An iterator over the rows of a Space.">RowSelection</a> object that can be used to iterate over the rows that match the query. </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classjazz__bebop_1_1Space.html#a4546064eeaa63a9a2efee8790cfe16f8">jazz_bebop::Space</a>.</p>
+
+</div>
+</div>
+<a id="a7b1165c38a01a42f4eb652e3a4847f51" name="a7b1165c38a01a42f4eb652e3a4847f51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b1165c38a01a42f4eb652e3a4847f51">&#9670;&#160;</a></span>get_row()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> jazz_bebop::DataSpace::get_row </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_txn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacejazz__bebop.html#ad8a0d7e9b686b938fab39c5d25ec53d3">RowNumber</a>&#160;</td>
+          <td class="paramname"><em>row</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacejazz__bebop.html#aa540587dff4cb32b1e178f23b931214c">pColSelection</a>&#160;</td>
+          <td class="paramname"><em>cols</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a row from the <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a> as a Tuple. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_txn</td><td>A transaction that will be used to get the result. It must be destroyed with: p_txn-&gt;p_owner-&gt;destroy_transaction(p_txn) </td></tr>
+    <tr><td class="paramname">row</td><td>The row number as obtained from a <a class="el" href="classjazz__bebop_1_1RowSelection.html#a3296ab175221dbcaf9dd30b3b8ad677d" title="Get the next row.">RowSelection.next()</a> call. </td></tr>
+    <tr><td class="paramname">cols</td><td>Pointer to a <a class="el" href="classjazz__bebop_1_1ColSelection.html" title="ColSelection: A selection of columns from a Space.">ColSelection</a> to specify columns to be retrieved. If nullptr, all columns are retrieved.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR if successful, an error code otherwise. </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classjazz__bebop_1_1Space.html#a880f2ef45ea3303d9adf28a73b09544a">jazz_bebop::Space</a>.</p>
+
+</div>
+</div>
+<a id="a8b1315e4b6cb40807b3ca1c577f71c12" name="a8b1315e4b6cb40807b3ca1c577f71c12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b1315e4b6cb40807b3ca1c577f71c12">&#9670;&#160;</a></span>load_or_create_space()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> jazz_bebop::DataSpace::load_or_create_space </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Load or create the space.</p>
+<p>This is called once when <a class="el" href="classjazz__bebop_1_1DataSpace.html#a87f8def1cc15f5714387ea1538b9612e">start()</a> has successfully completed. It will load from persistence (and not write into persistence) if def.load_on_start. Otherwise, if the table metadata exists, it will fail. To override a table, you must use the DataSpace-ETL interface.- Otherwise, it will create the table using the definition in <code>def</code>.</p>
+<dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR if successful, an error code otherwise. </dd></dl>
 
 </div>
 </div>
