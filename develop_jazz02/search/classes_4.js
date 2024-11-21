@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['entitykeyhash_0',['EntityKeyHash',['../structjazz__elements_1_1EntityKeyHash.html',1,'jazz_elements']]]
+  ['dataspace_0',['DataSpace',['../classjazz__bebop_1_1DataSpace.html',1,'jazz_bebop']]],
+  ['dataspacedefinition_1',['DataSpaceDefinition',['../structjazz__bebop_1_1DataSpaceDefinition.html',1,'jazz_bebop']]]
 ];

@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['channels_0',['Channels',['../classjazz__elements_1_1Channels.html',1,'jazz_elements']]],
-  ['colselection_1',['ColSelection',['../classjazz__bebop_1_1ColSelection.html',1,'jazz_bebop']]],
-  ['concept_2',['Concept',['../classjazz__models_1_1Concept.html',1,'jazz_models']]],
-  ['configfile_3',['ConfigFile',['../classjazz__elements_1_1ConfigFile.html',1,'jazz_elements']]],
-  ['container_4',['Container',['../classjazz__elements_1_1Container.html',1,'jazz_elements']]],
-  ['core_5',['Core',['../classjazz__bebop_1_1Core.html',1,'jazz_bebop']]]
+  ['baseapi_0',['BaseAPI',['../classjazz__bebop_1_1BaseAPI.html',1,'jazz_bebop']]],
+  ['block_1',['Block',['../classjazz__elements_1_1Block.html',1,'jazz_elements']]],
+  ['blockheader_2',['BlockHeader',['../structjazz__elements_1_1BlockHeader.html',1,'jazz_elements']]],
+  ['bop_3',['Bop',['../classjazz__bebop_1_1Bop.html',1,'jazz_bebop']]]
 ];
