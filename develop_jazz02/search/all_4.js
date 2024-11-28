@@ -39,10 +39,9 @@ var searchData=
   ['core_36',['CORE',['../namespacejazz__main.html#a73441da7e2e8b147dd30b8e225300b9d',1,'jazz_main']]],
   ['core_37',['Core',['../classjazz__bebop_1_1Core.html#a8f614fb4f33a38377e01544cf87a6987',1,'jazz_bebop::Core::Core()'],['../classjazz__bebop_1_1Core.html',1,'jazz_bebop::Core']]],
   ['created_38',['created',['../structjazz__elements_1_1StaticBlockHeader.html#a262214ad5832e60c65df058f56258ec3',1,'jazz_elements::StaticBlockHeader::created()'],['../structjazz__elements_1_1BlockHeader.html#a581c7cd356bad27167467db5cce09291',1,'jazz_elements::BlockHeader::created()']]],
-  ['creating_20onnx_20pipelines_39',['Creating ONNX Pipelines',['../md__home_jadmin_kaalam_github_Jazz_server_src_onnx_proto_README.html',1,'']]],
-  ['curl_5fget_40',['curl_get',['../classjazz__elements_1_1Channels.html#a30ce6ad575f86923fce545650ecd1c4d',1,'jazz_elements::Channels']]],
-  ['curl_5fok_41',['curl_ok',['../classjazz__elements_1_1Channels.html#aecd3e3dc34df5a0b132298a91251666a',1,'jazz_elements::Channels']]],
-  ['curl_5fput_42',['curl_put',['../classjazz__elements_1_1Channels.html#a32dbf9827f29aff8eff73461a7a3f229',1,'jazz_elements::Channels']]],
-  ['curl_5fremove_43',['curl_remove',['../classjazz__elements_1_1Channels.html#a1e1e06da75e891e90b7e81f346ae3319',1,'jazz_elements::Channels']]],
-  ['current_5fcol_44',['current_col',['../classjazz__bebop_1_1ColSelection.html#ad92783968304581347029cdf1f92cb18',1,'jazz_bebop::ColSelection']]]
+  ['curl_5fget_39',['curl_get',['../classjazz__elements_1_1Channels.html#a30ce6ad575f86923fce545650ecd1c4d',1,'jazz_elements::Channels']]],
+  ['curl_5fok_40',['curl_ok',['../classjazz__elements_1_1Channels.html#aecd3e3dc34df5a0b132298a91251666a',1,'jazz_elements::Channels']]],
+  ['curl_5fput_41',['curl_put',['../classjazz__elements_1_1Channels.html#a32dbf9827f29aff8eff73461a7a3f229',1,'jazz_elements::Channels']]],
+  ['curl_5fremove_42',['curl_remove',['../classjazz__elements_1_1Channels.html#a1e1e06da75e891e90b7e81f346ae3319',1,'jazz_elements::Channels']]],
+  ['current_5fcol_43',['current_col',['../classjazz__bebop_1_1ColSelection.html#ad92783968304581347029cdf1f92cb18',1,'jazz_bebop::ColSelection']]]
 ];

@@ -25,6 +25,5 @@ var searchData=
   ['as_5fshape_22',['as_shape',['../classjazz__elements_1_1Container.html#ad3df79aceb1b56c948764760a7e10c9b',1,'jazz_elements::Container']]],
   ['attribute_23',['attribute',['../structjazz__elements_1_1Locator.html#ad258e5c29127078785fd95e77f1f1726',1,'jazz_elements::Locator']]],
   ['attributemap_24',['AttributeMap',['../namespacejazz__elements.html#ad2f703c26500ad2cdcec139a7e2000c4',1,'jazz_elements']]],
-  ['attributeprotodefaulttypeinternal_25',['AttributeProtoDefaultTypeInternal',['../classonnx_1_1AttributeProtoDefaultTypeInternal.html',1,'onnx']]],
-  ['audit_26',['audit',['../classjazz__elements_1_1Kind.html#a0f07793b25f14849be4e700030ef787f',1,'jazz_elements::Kind::audit()'],['../classjazz__elements_1_1Tuple.html#abd67dcd506ff0ea51e3375ba630ddfc7',1,'jazz_elements::Tuple::audit()']]]
+  ['audit_25',['audit',['../classjazz__elements_1_1Kind.html#a0f07793b25f14849be4e700030ef787f',1,'jazz_elements::Kind::audit()'],['../classjazz__elements_1_1Tuple.html#abd67dcd506ff0ea51e3375ba630ddfc7',1,'jazz_elements::Tuple::audit()']]]
 ];
