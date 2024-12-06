@@ -1,10 +1,13 @@
 var searchData=
 [
-  ['tensor_0',['tensor',['../structjazz__elements_1_1BlockHeader.html#a04878e00333fb81bcdc404914109eef1',1,'jazz_elements::BlockHeader::tensor()'],['../structjazz__elements_1_1StaticBlockHeader.html#a6edb54e8275778196bc5c9c316d23cfc',1,'jazz_elements::StaticBlockHeader::tensor()']]],
-  ['times_5fused_1',['times_used',['../structjazz__elements_1_1VolatileTransaction.html#a71406eb51c3f7d28888bb7374fae9287',1,'jazz_elements::VolatileTransaction']]],
-  ['to_2',['to',['../structjazz__elements_1_1ParseStateTransition.html#aba6eecca8628176eb7608e6b7c204209',1,'jazz_elements::ParseStateTransition']]],
-  ['to_5fsend_3',['to_send',['../structjazz__elements_1_1PutBuffer.html#a3e2ddc2ccadc085179bb6fbbd6153cb1',1,'jazz_elements::PutBuffer']]],
-  ['total_5fbytes_4',['total_bytes',['../structjazz__elements_1_1BlockHeader.html#a19962d3aafd5b6ac89ce52701cf901c6',1,'jazz_elements::BlockHeader::total_bytes()'],['../structjazz__elements_1_1StaticBlockHeader.html#a75d13fca2bc9ceddac6c499c305e53ca',1,'jazz_elements::StaticBlockHeader::total_bytes()']]],
-  ['tree_5fent_5',['tree_ent',['../classjazz__elements_1_1Volatile.html#a4301a76ffcf6ea87c734be2473656c08',1,'jazz_elements::Volatile']]],
-  ['tree_5fkey_6',['tree_key',['../classjazz__elements_1_1Volatile.html#a4e18792e8d2c555ec5db7215f2e263e7',1,'jazz_elements::Volatile']]]
+  ['search_5fmy_5fnode_5findex_0',['search_my_node_index',['../classjazz__elements_1_1Channels.html#a5e4b79aa5bc40d5a798ce8f04404c4f3',1,'jazz_elements::Channels']]],
+  ['server_5foptions_1',['server_options',['../classjazz__main_1_1HttpServer.html#a2a47289895c302045a8aa21fb72a80dd',1,'jazz_main::HttpServer']]],
+  ['size_2',['size',['../structjazz__elements_1_1BlockHeader.html#a4783f7f789daa2d4afcb84e85721aeee',1,'jazz_elements::BlockHeader::size()'],['../structjazz__elements_1_1StaticBlockHeader.html#a209c786f43a9151b869d9d7e66003863',1,'jazz_elements::StaticBlockHeader::size()']]],
+  ['source_5fdbi_3',['source_dbi',['../classjazz__elements_1_1Persisted.html#a61d71a45fd765b68a0fab60df828902e',1,'jazz_elements::Persisted']]],
+  ['state_4',['state',['../structjazz__bebop_1_1ApiQueryState.html#aa545b5caa10641ba253ec77c4ddee59c',1,'jazz_bebop::ApiQueryState']]],
+  ['state_5ftr_5',['state_tr',['../namespacejazz__bebop.html#abba8c25b3737cd3381ac8b0cd21fc204',1,'jazz_bebop::state_tr()'],['../namespacejazz__elements.html#abf7f8a2a4a05820362258adc46b5be3c',1,'jazz_elements::state_tr()']]],
+  ['status_6',['status',['../structjazz__elements_1_1Transaction.html#a964e305c69ac42991cf3e6bfef4e5522',1,'jazz_elements::Transaction']]],
+  ['stop_5fcheck_5f4_5fmatch_7',['stop_check_4_match',['../structjazz__elements_1_1StringBuffer.html#a4056d062ef9438589e77aefca08d8c60',1,'jazz_elements::StringBuffer']]],
+  ['storage_5fbase_8',['storage_base',['../classjazz__bebop_1_1Space.html#a4b256cfdd9d1d34a71d675973512a34e',1,'jazz_bebop::Space']]],
+  ['storage_5fent_9',['storage_ent',['../classjazz__bebop_1_1DataSpace.html#a506120452dfb9ddef8b6989618901dde',1,'jazz_bebop::DataSpace::storage_ent()'],['../classjazz__models_1_1SemSpace.html#a9d903d2c19b49ac85acb10b67952877d',1,'jazz_models::SemSpace::storage_ent()']]]
 ];

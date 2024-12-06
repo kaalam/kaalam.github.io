@@ -1,13 +1,15 @@
 var searchData=
 [
-  ['search_5fmy_5fnode_5findex_0',['search_my_node_index',['../classjazz__elements_1_1Channels.html#a5e4b79aa5bc40d5a798ce8f04404c4f3',1,'jazz_elements::Channels']]],
-  ['server_5foptions_1',['server_options',['../classjazz__main_1_1HttpServer.html#a2a47289895c302045a8aa21fb72a80dd',1,'jazz_main::HttpServer']]],
-  ['size_2',['size',['../structjazz__elements_1_1BlockHeader.html#a4783f7f789daa2d4afcb84e85721aeee',1,'jazz_elements::BlockHeader::size()'],['../structjazz__elements_1_1StaticBlockHeader.html#a209c786f43a9151b869d9d7e66003863',1,'jazz_elements::StaticBlockHeader::size()']]],
-  ['source_5fdbi_3',['source_dbi',['../classjazz__elements_1_1Persisted.html#a61d71a45fd765b68a0fab60df828902e',1,'jazz_elements::Persisted']]],
-  ['state_4',['state',['../structjazz__bebop_1_1ApiQueryState.html#aa545b5caa10641ba253ec77c4ddee59c',1,'jazz_bebop::ApiQueryState']]],
-  ['state_5ftr_5',['state_tr',['../namespacejazz__bebop.html#abba8c25b3737cd3381ac8b0cd21fc204',1,'jazz_bebop::state_tr()'],['../namespacejazz__elements.html#abf7f8a2a4a05820362258adc46b5be3c',1,'jazz_elements::state_tr()']]],
-  ['status_6',['status',['../structjazz__elements_1_1Transaction.html#a964e305c69ac42991cf3e6bfef4e5522',1,'jazz_elements::Transaction']]],
-  ['stop_5fcheck_5f4_5fmatch_7',['stop_check_4_match',['../structjazz__elements_1_1StringBuffer.html#a4056d062ef9438589e77aefca08d8c60',1,'jazz_elements::StringBuffer']]],
-  ['storage_5fbase_8',['storage_base',['../classjazz__bebop_1_1Space.html#a4b256cfdd9d1d34a71d675973512a34e',1,'jazz_bebop::Space']]],
-  ['storage_5fent_9',['storage_ent',['../classjazz__bebop_1_1DataSpace.html#a506120452dfb9ddef8b6989618901dde',1,'jazz_bebop::DataSpace::storage_ent()'],['../classjazz__models_1_1SemSpace.html#a9d903d2c19b49ac85acb10b67952877d',1,'jazz_models::SemSpace::storage_ent()']]]
+  ['r_5fna_0',['R_NA',['../namespacejazz__elements.html#a0ca8f9758d7f2438f120412cbb0fcc43',1,'jazz_elements']]],
+  ['r_5fna_5fuint64_1',['R_NA_uint64',['../namespacejazz__elements.html#a705bcc1669f712a15ea4f5131caca631',1,'jazz_elements']]],
+  ['r_5fnode_2',['r_node',['../structjazz__bebop_1_1ApiQueryState.html#a82a3bf2f7b194385197587a9093822c8',1,'jazz_bebop::ApiQueryState']]],
+  ['r_5fvalue_3',['r_value',['../structjazz__bebop_1_1ApiQueryState.html#aac11837c7b128d634b903429755dd30e',1,'jazz_bebop::ApiQueryState']]],
+  ['range_4',['range',['../structjazz__elements_1_1BlockHeader.html#a8fa258a4e087633971ff268fe5607a00',1,'jazz_elements::BlockHeader::range()'],['../structjazz__elements_1_1StaticBlockHeader.html#afceb70ca19684e41e3b303ee4b9d694a',1,'jazz_elements::StaticBlockHeader::range()']]],
+  ['rank_5',['rank',['../structjazz__elements_1_1ItemHeader.html#adbd96699e6550df6aadf3d717c306583',1,'jazz_elements::ItemHeader::rank()'],['../structjazz__elements_1_1BlockHeader.html#aafa8121fb2c2091b32cc688ea711002c',1,'jazz_elements::BlockHeader::rank()'],['../structjazz__elements_1_1StaticBlockHeader.html#ae159ee5639d0b70211095b5241fbff6d',1,'jazz_elements::StaticBlockHeader::rank()']]],
+  ['remove_5fstatics_6',['remove_statics',['../classjazz__main_1_1API.html#a671d7b7be51315e1767447e994ac554c',1,'jazz_main::API']]],
+  ['requester_7',['requester',['../structjazz__elements_1_1Socket.html#abf5c8e5573a3ab7d00162244888f0860',1,'jazz_elements::Socket']]],
+  ['response_5fput_5ffail_8',['response_put_fail',['../namespacejazz__main.html#a8f301bae0aebe84fd12580831e960ec3',1,'jazz_main']]],
+  ['response_5fput_5fok_9',['response_put_ok',['../namespacejazz__main.html#a1266718e0c60fa99cb934933e13f565f',1,'jazz_main']]],
+  ['rex_10',['rex',['../structjazz__elements_1_1ParseStateTransition.html#a788072c769b286087cd17f94316d85c4',1,'jazz_elements::ParseStateTransition']]],
+  ['rr_5fvalue_11',['rr_value',['../structjazz__bebop_1_1ApiQueryState.html#a0c19e9a6a249d21502ab389c53c63e50',1,'jazz_bebop::ApiQueryState']]]
 ];
