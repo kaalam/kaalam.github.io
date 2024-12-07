@@ -112,68 +112,79 @@ $(function() {
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &quot;src/jazz_bebop/data_space.h&quot;</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#if defined CATCH_TEST</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#ifndef INCLUDED_JAZZ_CATCH2</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#define INCLUDED_JAZZ_CATCH2</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#include &quot;src/catch2/catch.hpp&quot;</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &quot;src/onnx_proto/onnx.pb.h&quot;</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &quot;onnxruntime_c_api.h&quot;</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#if defined CATCH_TEST</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#ifndef INCLUDED_JAZZ_CATCH2</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#define INCLUDED_JAZZ_CATCH2</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#ifndef INCLUDED_JAZZ_BEBOP_OPCODES</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#define INCLUDED_JAZZ_BEBOP_OPCODES</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="structOnnxParameter.html">   51</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structOnnxParameter.html">OnnxParameter</a> {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#include &quot;src/catch2/catch.hpp&quot;</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#ifndef INCLUDED_JAZZ_BEBOP_OPCODES</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#define INCLUDED_JAZZ_BEBOP_OPCODES</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>};</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacejazz__bebop.html">jazz_bebop</a></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>{</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="classjazz__bebop_1_1OpCodes.html">   66</a></span><span class="keyword">class </span><a class="code hl_class" href="classjazz__bebop_1_1OpCodes.html">OpCodes</a> : <span class="keyword">public</span> <a class="code hl_class" href="classjazz__elements_1_1Service.html">Service</a> {</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <a class="code hl_class" href="classjazz__bebop_1_1OpCodes.html">OpCodes</a>(<a class="code hl_class" href="classjazz__elements_1_1Logger.html">pLogger</a> a_logger, <a class="code hl_class" href="classjazz__elements_1_1ConfigFile.html">pConfigFile</a> a_config);</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keyword">virtual</span> <a class="code hl_typedef" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> <a class="code hl_function" href="classjazz__bebop_1_1OpCodes.html#aca35e3719ec8dde0491cf70650ee3b2d">start</a>    ();</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keyword">virtual</span> <a class="code hl_typedef" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> <a class="code hl_function" href="classjazz__bebop_1_1OpCodes.html#ad50822542940926d3c8c97945dfc642a">shut_down</a>();</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keywordtype">int</span> <a class="code hl_function" href="classjazz__bebop_1_1OpCodes.html#a1a579f3cd53d3a75f24c8794b2e7a6ab">latest_opset_version</a>();</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classjazz__bebop_1_1OpCodes.html#a8c8c807195b5c56c456684032bd5eecb">set_opset_version</a>(<span class="keywordtype">int</span> version);</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="classjazz__bebop_1_1OpCodes.html#a236bcdee259192d520775203013e8e85">   81</a></span>        <a class="code hl_class" href="classjazz__elements_1_1ConfigFile.html">ConfigFile</a> <a class="code hl_variable" href="classjazz__bebop_1_1OpCodes.html#a236bcdee259192d520775203013e8e85">onnx_conf</a> = <a class="code hl_class" href="classjazz__elements_1_1ConfigFile.html">ConfigFile</a>(<span class="keyword">nullptr</span>);     </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="classjazz__bebop_1_1OpCodes.html#ae991b37847009da97528d26af2571869">   82</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="classjazz__bebop_1_1OpCodes.html#ae991b37847009da97528d26af2571869">ir_version</a>;                                 </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>};</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="namespacejazz__bebop.html#a24b2b26c7008881a3e65f036be925591">   85</a></span><span class="keyword">typedef</span> <a class="code hl_class" href="classjazz__bebop_1_1OpCodes.html">OpCodes</a> *<a class="code hl_typedef" href="namespacejazz__bebop.html#a24b2b26c7008881a3e65f036be925591">pOpCodes</a>;      </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="classTensorType.html">   53</a></span><span class="keyword">class </span><a class="code hl_class" href="classTensorType.html">TensorType</a> {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">int</span> jazz_type;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    onnx::TensorProto::DataType onnx_proto_type;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    ONNXTensorElementDataType onnx_rt_type;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>};</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="classOnnxParameter.html">   60</a></span><span class="keyword">class </span><a class="code hl_class" href="classOnnxParameter.html">OnnxParameter</a> {</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>};</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacejazz__bebop.html">jazz_bebop</a></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>{</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="classjazz__bebop_1_1OpCodes.html">   76</a></span><span class="keyword">class </span><a class="code hl_class" href="classjazz__bebop_1_1OpCodes.html">OpCodes</a> : <span class="keyword">public</span> <a class="code hl_class" href="classjazz__elements_1_1Service.html">Service</a> {</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <a class="code hl_class" href="classjazz__bebop_1_1OpCodes.html">OpCodes</a>(<a class="code hl_class" href="classjazz__elements_1_1Logger.html">pLogger</a> a_logger, <a class="code hl_class" href="classjazz__elements_1_1ConfigFile.html">pConfigFile</a> a_config);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="keyword">virtual</span> <a class="code hl_typedef" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> <a class="code hl_function" href="classjazz__bebop_1_1OpCodes.html#aca35e3719ec8dde0491cf70650ee3b2d">start</a>    ();</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <span class="keyword">virtual</span> <a class="code hl_typedef" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> <a class="code hl_function" href="classjazz__bebop_1_1OpCodes.html#ad50822542940926d3c8c97945dfc642a">shut_down</a>();</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="keywordtype">int</span> <a class="code hl_function" href="classjazz__bebop_1_1OpCodes.html#a1a579f3cd53d3a75f24c8794b2e7a6ab">latest_opset_version</a>();</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>} <span class="comment">// namespace jazz_bebop</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classjazz__bebop_1_1OpCodes.html#a8c8c807195b5c56c456684032bd5eecb">set_opset_version</a>(<span class="keywordtype">int</span> version);</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="preprocessor">#endif </span><span class="comment">// ifndef INCLUDED_JAZZ_BEBOP_OPCODES</span></div>
-<div class="ttc" id="aclassjazz__bebop_1_1OpCodes_html"><div class="ttname"><a href="classjazz__bebop_1_1OpCodes.html">jazz_bebop::OpCodes</a></div><div class="ttdoc">OpCodes: The opcodes.</div><div class="ttdef"><b>Definition:</b> opcodes.h:66</div></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="classjazz__bebop_1_1OpCodes.html#a236bcdee259192d520775203013e8e85">   91</a></span>        <a class="code hl_class" href="classjazz__elements_1_1ConfigFile.html">ConfigFile</a> <a class="code hl_variable" href="classjazz__bebop_1_1OpCodes.html#a236bcdee259192d520775203013e8e85">onnx_conf</a> = <a class="code hl_class" href="classjazz__elements_1_1ConfigFile.html">ConfigFile</a>(<span class="keyword">nullptr</span>);     </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="classjazz__bebop_1_1OpCodes.html#ae991b37847009da97528d26af2571869">   92</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="classjazz__bebop_1_1OpCodes.html#ae991b37847009da97528d26af2571869">ir_version</a>;                                 </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>};</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="namespacejazz__bebop.html#a24b2b26c7008881a3e65f036be925591">   95</a></span><span class="keyword">typedef</span> <a class="code hl_class" href="classjazz__bebop_1_1OpCodes.html">OpCodes</a> *<a class="code hl_typedef" href="namespacejazz__bebop.html#a24b2b26c7008881a3e65f036be925591">pOpCodes</a>;      </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>} <span class="comment">// namespace jazz_bebop</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="preprocessor">#endif </span><span class="comment">// ifndef INCLUDED_JAZZ_BEBOP_OPCODES</span></div>
+<div class="ttc" id="aclassOnnxParameter_html"><div class="ttname"><a href="classOnnxParameter.html">OnnxParameter</a></div><div class="ttdef"><b>Definition:</b> opcodes.h:60</div></div>
+<div class="ttc" id="aclassTensorType_html"><div class="ttname"><a href="classTensorType.html">TensorType</a></div><div class="ttdef"><b>Definition:</b> opcodes.h:53</div></div>
+<div class="ttc" id="aclassjazz__bebop_1_1OpCodes_html"><div class="ttname"><a href="classjazz__bebop_1_1OpCodes.html">jazz_bebop::OpCodes</a></div><div class="ttdoc">OpCodes: The opcodes.</div><div class="ttdef"><b>Definition:</b> opcodes.h:76</div></div>
 <div class="ttc" id="aclassjazz__bebop_1_1OpCodes_html_a1a579f3cd53d3a75f24c8794b2e7a6ab"><div class="ttname"><a href="classjazz__bebop_1_1OpCodes.html#a1a579f3cd53d3a75f24c8794b2e7a6ab">jazz_bebop::OpCodes::latest_opset_version</a></div><div class="ttdeci">int latest_opset_version()</div><div class="ttdoc">Get the latest opset version.</div><div class="ttdef"><b>Definition:</b> opcodes.cpp:87</div></div>
-<div class="ttc" id="aclassjazz__bebop_1_1OpCodes_html_a236bcdee259192d520775203013e8e85"><div class="ttname"><a href="classjazz__bebop_1_1OpCodes.html#a236bcdee259192d520775203013e8e85">jazz_bebop::OpCodes::onnx_conf</a></div><div class="ttdeci">ConfigFile onnx_conf</div><div class="ttdoc">The ONNX opcodes reference stored as a ConfigFile.</div><div class="ttdef"><b>Definition:</b> opcodes.h:81</div></div>
+<div class="ttc" id="aclassjazz__bebop_1_1OpCodes_html_a236bcdee259192d520775203013e8e85"><div class="ttname"><a href="classjazz__bebop_1_1OpCodes.html#a236bcdee259192d520775203013e8e85">jazz_bebop::OpCodes::onnx_conf</a></div><div class="ttdeci">ConfigFile onnx_conf</div><div class="ttdoc">The ONNX opcodes reference stored as a ConfigFile.</div><div class="ttdef"><b>Definition:</b> opcodes.h:91</div></div>
 <div class="ttc" id="aclassjazz__bebop_1_1OpCodes_html_a8c8c807195b5c56c456684032bd5eecb"><div class="ttname"><a href="classjazz__bebop_1_1OpCodes.html#a8c8c807195b5c56c456684032bd5eecb">jazz_bebop::OpCodes::set_opset_version</a></div><div class="ttdeci">bool set_opset_version(int version)</div><div class="ttdoc">Set the opset version.</div><div class="ttdef"><b>Definition:</b> opcodes.cpp:98</div></div>
 <div class="ttc" id="aclassjazz__bebop_1_1OpCodes_html_aca35e3719ec8dde0491cf70650ee3b2d"><div class="ttname"><a href="classjazz__bebop_1_1OpCodes.html#aca35e3719ec8dde0491cf70650ee3b2d">jazz_bebop::OpCodes::start</a></div><div class="ttdeci">virtual StatusCode start()</div><div class="ttdoc">A simple start()/shut_down() interface (Restart is: shut_down(TRUE):start())</div><div class="ttdef"><b>Definition:</b> opcodes.cpp:53</div></div>
 <div class="ttc" id="aclassjazz__bebop_1_1OpCodes_html_ad50822542940926d3c8c97945dfc642a"><div class="ttname"><a href="classjazz__bebop_1_1OpCodes.html#ad50822542940926d3c8c97945dfc642a">jazz_bebop::OpCodes::shut_down</a></div><div class="ttdeci">virtual StatusCode shut_down()</div><div class="ttdef"><b>Definition:</b> opcodes.cpp:78</div></div>
-<div class="ttc" id="aclassjazz__bebop_1_1OpCodes_html_ae991b37847009da97528d26af2571869"><div class="ttname"><a href="classjazz__bebop_1_1OpCodes.html#ae991b37847009da97528d26af2571869">jazz_bebop::OpCodes::ir_version</a></div><div class="ttdeci">int ir_version</div><div class="ttdoc">Argument of model.set_ir_version() (Stored as ONNX_IR_VERSION in config.)</div><div class="ttdef"><b>Definition:</b> opcodes.h:82</div></div>
+<div class="ttc" id="aclassjazz__bebop_1_1OpCodes_html_ae991b37847009da97528d26af2571869"><div class="ttname"><a href="classjazz__bebop_1_1OpCodes.html#ae991b37847009da97528d26af2571869">jazz_bebop::OpCodes::ir_version</a></div><div class="ttdeci">int ir_version</div><div class="ttdoc">Argument of model.set_ir_version() (Stored as ONNX_IR_VERSION in config.)</div><div class="ttdef"><b>Definition:</b> opcodes.h:92</div></div>
 <div class="ttc" id="aclassjazz__elements_1_1ConfigFile_html"><div class="ttname"><a href="classjazz__elements_1_1ConfigFile.html">jazz_elements::ConfigFile</a></div><div class="ttdoc">A configuration file as a key/value store.</div><div class="ttdef"><b>Definition:</b> utils.h:217</div></div>
 <div class="ttc" id="aclassjazz__elements_1_1Logger_html"><div class="ttname"><a href="classjazz__elements_1_1Logger.html">jazz_elements::Logger</a></div><div class="ttdoc">A simple logger.</div><div class="ttdef"><b>Definition:</b> utils.h:245</div></div>
 <div class="ttc" id="aclassjazz__elements_1_1Service_html"><div class="ttname"><a href="classjazz__elements_1_1Service.html">jazz_elements::Service</a></div><div class="ttdoc">A Jazz Service is a globally instanced configurable object that may allocate RAM.</div><div class="ttdef"><b>Definition:</b> utils.h:285</div></div>
 <div class="ttc" id="anamespacejazz__bebop_html"><div class="ttname"><a href="namespacejazz__bebop.html">jazz_bebop</a></div><div class="ttdoc">A language to access any container by base using locators.</div><div class="ttdef"><b>Definition:</b> base_api.cpp:39</div></div>
-<div class="ttc" id="anamespacejazz__bebop_html_a24b2b26c7008881a3e65f036be925591"><div class="ttname"><a href="namespacejazz__bebop.html#a24b2b26c7008881a3e65f036be925591">jazz_bebop::pOpCodes</a></div><div class="ttdeci">OpCodes * pOpCodes</div><div class="ttdoc">A pointer to a OpCodes.</div><div class="ttdef"><b>Definition:</b> opcodes.h:85</div></div>
+<div class="ttc" id="anamespacejazz__bebop_html_a24b2b26c7008881a3e65f036be925591"><div class="ttname"><a href="namespacejazz__bebop.html#a24b2b26c7008881a3e65f036be925591">jazz_bebop::pOpCodes</a></div><div class="ttdeci">OpCodes * pOpCodes</div><div class="ttdoc">A pointer to a OpCodes.</div><div class="ttdef"><b>Definition:</b> opcodes.h:95</div></div>
 <div class="ttc" id="anamespacejazz__elements_html_ad1de9f0d4fc6192bb22f21e2862add3f"><div class="ttname"><a href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">jazz_elements::StatusCode</a></div><div class="ttdeci">int StatusCode</div><div class="ttdoc">Type returned by the Service API.</div><div class="ttdef"><b>Definition:</b> utils.h:141</div></div>
-<div class="ttc" id="astructOnnxParameter_html"><div class="ttname"><a href="structOnnxParameter.html">OnnxParameter</a></div><div class="ttdef"><b>Definition:</b> opcodes.h:51</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

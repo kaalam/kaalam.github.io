@@ -13,13 +13,14 @@ var searchData=
   ['tensor_5ftime_5fas_5ftext_10',['tensor_time_as_text',['../classjazz__elements_1_1Container.html#acfdf7ace27a706a2ebe24445cc019373',1,'jazz_elements::Container']]],
   ['tensor_5ftuple_5fas_5ftext_11',['tensor_tuple_as_text',['../classjazz__elements_1_1Container.html#a692de49726a75af1ba6c27be2bb050a5',1,'jazz_elements::Container']]],
   ['tensordim_12',['TensorDim',['../structjazz__elements_1_1TensorDim.html',1,'jazz_elements']]],
-  ['timepoint_13',['TimePoint',['../namespacejazz__elements.html#aa7e5adf7a32b3080ea959153d2b6aee9',1,'jazz_elements']]],
-  ['times_5fused_14',['times_used',['../structjazz__elements_1_1VolatileTransaction.html#a71406eb51c3f7d28888bb7374fae9287',1,'jazz_elements::VolatileTransaction']]],
-  ['to_15',['to',['../structjazz__elements_1_1ParseStateTransition.html#aba6eecca8628176eb7608e6b7c204209',1,'jazz_elements::ParseStateTransition']]],
-  ['to_5fsend_16',['to_send',['../structjazz__elements_1_1PutBuffer.html#a3e2ddc2ccadc085179bb6fbbd6153cb1',1,'jazz_elements::PutBuffer']]],
-  ['total_5fbytes_17',['total_bytes',['../structjazz__elements_1_1BlockHeader.html#a19962d3aafd5b6ac89ce52701cf901c6',1,'jazz_elements::BlockHeader::total_bytes()'],['../structjazz__elements_1_1StaticBlockHeader.html#a75d13fca2bc9ceddac6c499c305e53ca',1,'jazz_elements::StaticBlockHeader::total_bytes()']]],
-  ['transaction_18',['Transaction',['../structjazz__elements_1_1Transaction.html',1,'jazz_elements']]],
-  ['tree_5fent_19',['tree_ent',['../classjazz__elements_1_1Volatile.html#a4301a76ffcf6ea87c734be2473656c08',1,'jazz_elements::Volatile']]],
-  ['tree_5fkey_20',['tree_key',['../classjazz__elements_1_1Volatile.html#a4e18792e8d2c555ec5db7215f2e263e7',1,'jazz_elements::Volatile']]],
-  ['tuple_21',['Tuple',['../classjazz__elements_1_1Tuple.html',1,'jazz_elements']]]
+  ['tensortype_13',['TensorType',['../classTensorType.html',1,'']]],
+  ['timepoint_14',['TimePoint',['../namespacejazz__elements.html#aa7e5adf7a32b3080ea959153d2b6aee9',1,'jazz_elements']]],
+  ['times_5fused_15',['times_used',['../structjazz__elements_1_1VolatileTransaction.html#a71406eb51c3f7d28888bb7374fae9287',1,'jazz_elements::VolatileTransaction']]],
+  ['to_16',['to',['../structjazz__elements_1_1ParseStateTransition.html#aba6eecca8628176eb7608e6b7c204209',1,'jazz_elements::ParseStateTransition']]],
+  ['to_5fsend_17',['to_send',['../structjazz__elements_1_1PutBuffer.html#a3e2ddc2ccadc085179bb6fbbd6153cb1',1,'jazz_elements::PutBuffer']]],
+  ['total_5fbytes_18',['total_bytes',['../structjazz__elements_1_1BlockHeader.html#a19962d3aafd5b6ac89ce52701cf901c6',1,'jazz_elements::BlockHeader::total_bytes()'],['../structjazz__elements_1_1StaticBlockHeader.html#a75d13fca2bc9ceddac6c499c305e53ca',1,'jazz_elements::StaticBlockHeader::total_bytes()']]],
+  ['transaction_19',['Transaction',['../structjazz__elements_1_1Transaction.html',1,'jazz_elements']]],
+  ['tree_5fent_20',['tree_ent',['../classjazz__elements_1_1Volatile.html#a4301a76ffcf6ea87c734be2473656c08',1,'jazz_elements::Volatile']]],
+  ['tree_5fkey_21',['tree_key',['../classjazz__elements_1_1Volatile.html#a4e18792e8d2c555ec5db7215f2e263e7',1,'jazz_elements::Volatile']]],
+  ['tuple_22',['Tuple',['../classjazz__elements_1_1Tuple.html',1,'jazz_elements']]]
 ];
