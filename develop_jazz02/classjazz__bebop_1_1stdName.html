@@ -81,16 +81,25 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>A wrapped Name that supports being stacked in an std::vector.  
+<p>A wrapped Name that supports being stacked in an std::vector and used as a key in an std::map.  
  <a href="classjazz__bebop_1_1stdName.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="space_8h_source.html">space.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a9ab6b0a39b14fe1c137cbaccc69d57bc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1stdName.html#a9ab6b0a39b14fe1c137cbaccc69d57bc">stdName</a> (const <a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> &amp;<a class="el" href="classjazz__bebop_1_1stdName.html#a73228fadcb3bbcb7a4dc84668b22ae4c">name</a>)</td></tr>
+<tr class="memdesc:a9ab6b0a39b14fe1c137cbaccc69d57bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor from cChar.  <br /></td></tr>
+<tr class="separator:a9ab6b0a39b14fe1c137cbaccc69d57bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86e3049d8ca7df0b6a82d61e400f67b2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1stdName.html#a86e3049d8ca7df0b6a82d61e400f67b2">stdName</a> (const <a class="el" href="classjazz__bebop_1_1stdName.html">stdName</a> &amp;<a class="el" href="classjazz__bebop_1_1stdName.html#a73228fadcb3bbcb7a4dc84668b22ae4c">name</a>)</td></tr>
-<tr class="memdesc:a86e3049d8ca7df0b6a82d61e400f67b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor for <a class="el" href="classjazz__bebop_1_1stdName.html" title="A wrapped Name that supports being stacked in an std::vector.">stdName</a>.  <br /></td></tr>
+<tr class="memdesc:a86e3049d8ca7df0b6a82d61e400f67b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor for <a class="el" href="classjazz__bebop_1_1stdName.html" title="A wrapped Name that supports being stacked in an std::vector and used as a key in an std::map.">stdName</a>.  <br /></td></tr>
 <tr class="separator:a86e3049d8ca7df0b6a82d61e400f67b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c93118dab91926ef877fdd16327dc7c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1stdName.html#a2c93118dab91926ef877fdd16327dc7c">operator==</a> (const <a class="el" href="classjazz__bebop_1_1stdName.html">stdName</a> &amp;o) const</td></tr>
+<tr class="memdesc:a2c93118dab91926ef877fdd16327dc7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operator name == o.name.  <br /></td></tr>
+<tr class="separator:a2c93118dab91926ef877fdd16327dc7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a788f436fb463e96da36b58493116e255"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1stdName.html#a788f436fb463e96da36b58493116e255">operator&lt;</a> (const <a class="el" href="classjazz__bebop_1_1stdName.html">stdName</a> &amp;o) const</td></tr>
+<tr class="memdesc:a788f436fb463e96da36b58493116e255"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operator name &lt; o.name.  <br /></td></tr>
+<tr class="separator:a788f436fb463e96da36b58493116e255"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
@@ -100,10 +109,44 @@ Data Fields</h2></td></tr>
 <tr class="separator:a73228fadcb3bbcb7a4dc84668b22ae4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A wrapped Name that supports being stacked in an std::vector. </p>
+<div class="textblock"><p>A wrapped Name that supports being stacked in an std::vector and used as a key in an std::map. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a9ab6b0a39b14fe1c137cbaccc69d57bc" name="a9ab6b0a39b14fe1c137cbaccc69d57bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ab6b0a39b14fe1c137cbaccc69d57bc">&#9670;&#160;</a></span>stdName() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">jazz_bebop::stdName::stdName </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor from cChar. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>A C string with a name. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a86e3049d8ca7df0b6a82d61e400f67b2" name="a86e3049d8ca7df0b6a82d61e400f67b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a86e3049d8ca7df0b6a82d61e400f67b2">&#9670;&#160;</a></span>stdName()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a86e3049d8ca7df0b6a82d61e400f67b2">&#9670;&#160;</a></span>stdName() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -126,13 +169,84 @@ Data Fields</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Copy constructor for <a class="el" href="classjazz__bebop_1_1stdName.html" title="A wrapped Name that supports being stacked in an std::vector.">stdName</a>. </p>
+<p>Copy constructor for <a class="el" href="classjazz__bebop_1_1stdName.html" title="A wrapped Name that supports being stacked in an std::vector and used as a key in an std::map.">stdName</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">name</td><td>The <a class="el" href="classjazz__bebop_1_1stdName.html" title="A wrapped Name that supports being stacked in an std::vector.">stdName</a> to copy. </td></tr>
+    <tr><td class="paramname">name</td><td>The <a class="el" href="classjazz__bebop_1_1stdName.html" title="A wrapped Name that supports being stacked in an std::vector and used as a key in an std::map.">stdName</a> to copy. </td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2c93118dab91926ef877fdd16327dc7c" name="a2c93118dab91926ef877fdd16327dc7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c93118dab91926ef877fdd16327dc7c">&#9670;&#160;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool jazz_bebop::stdName::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classjazz__bebop_1_1stdName.html">stdName</a> &amp;&#160;</td>
+          <td class="paramname"><em>o</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Operator name == o.name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">o</td><td>The object to compare with.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the names are equal. </dd></dl>
+
+</div>
+</div>
+<a id="a788f436fb463e96da36b58493116e255" name="a788f436fb463e96da36b58493116e255"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a788f436fb463e96da36b58493116e255">&#9670;&#160;</a></span>operator&lt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool jazz_bebop::stdName::operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classjazz__bebop_1_1stdName.html">stdName</a> &amp;&#160;</td>
+          <td class="paramname"><em>o</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Operator name &lt; o.name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">o</td><td>The object to compare with.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the name is less than o.name. </dd></dl>
 
 </div>
 </div>

@@ -20,10 +20,11 @@ var searchData=
   ['api_17',['API',['../classjazz__main_1_1API.html#a058035fd2804f03081d8fb9a1620246c',1,'jazz_main::API::API()'],['../classjazz__main_1_1API.html',1,'jazz_main::API']]],
   ['apiquerystate_18',['ApiQueryState',['../structjazz__bebop_1_1ApiQueryState.html',1,'jazz_bebop']]],
   ['apply_19',['apply',['../structjazz__bebop_1_1ApiQueryState.html#a8abb3ff7691201fd55a464a18ae78eaf',1,'jazz_bebop::ApiQueryState']]],
-  ['as_5fhex_20',['as_hex',['../classjazz__elements_1_1Container.html#ab016b3779ac5ed5daf3b99b0583e8112',1,'jazz_elements::Container']]],
-  ['as_5flocator_21',['as_locator',['../classjazz__elements_1_1Container.html#a21d9a9ca23de70ad5dab49411dbe9773',1,'jazz_elements::Container']]],
-  ['as_5fshape_22',['as_shape',['../classjazz__elements_1_1Container.html#ad3df79aceb1b56c948764760a7e10c9b',1,'jazz_elements::Container']]],
-  ['attribute_23',['attribute',['../structjazz__elements_1_1Locator.html#ad258e5c29127078785fd95e77f1f1726',1,'jazz_elements::Locator']]],
-  ['attributemap_24',['AttributeMap',['../namespacejazz__elements.html#ad2f703c26500ad2cdcec139a7e2000c4',1,'jazz_elements']]],
-  ['audit_25',['audit',['../classjazz__elements_1_1Kind.html#a0f07793b25f14849be4e700030ef787f',1,'jazz_elements::Kind::audit()'],['../classjazz__elements_1_1Tuple.html#abd67dcd506ff0ea51e3375ba630ddfc7',1,'jazz_elements::Tuple::audit()']]]
+  ['as_20',['as',['../classjazz__bebop_1_1Space.html#a776eb873791590eb1176eff889f400ea',1,'jazz_bebop::Space']]],
+  ['as_5fhex_21',['as_hex',['../classjazz__elements_1_1Container.html#ab016b3779ac5ed5daf3b99b0583e8112',1,'jazz_elements::Container']]],
+  ['as_5flocator_22',['as_locator',['../classjazz__elements_1_1Container.html#a21d9a9ca23de70ad5dab49411dbe9773',1,'jazz_elements::Container']]],
+  ['as_5fshape_23',['as_shape',['../classjazz__elements_1_1Container.html#ad3df79aceb1b56c948764760a7e10c9b',1,'jazz_elements::Container']]],
+  ['attribute_24',['attribute',['../structjazz__elements_1_1Locator.html#ad258e5c29127078785fd95e77f1f1726',1,'jazz_elements::Locator']]],
+  ['attributemap_25',['AttributeMap',['../namespacejazz__elements.html#ad2f703c26500ad2cdcec139a7e2000c4',1,'jazz_elements']]],
+  ['audit_26',['audit',['../classjazz__elements_1_1Kind.html#a0f07793b25f14849be4e700030ef787f',1,'jazz_elements::Kind::audit()'],['../classjazz__elements_1_1Tuple.html#abd67dcd506ff0ea51e3375ba630ddfc7',1,'jazz_elements::Tuple::audit()']]]
 ];

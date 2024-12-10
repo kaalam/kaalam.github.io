@@ -92,6 +92,9 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1Bop.html">Bop</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classjazz__bebop_1_1Bop.html" title="Bop: The Bebop compiler and decompiler.">Bop</a>: The Bebop compiler and decompiler.  <a href="classjazz__bebop_1_1Bop.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1Caster.html">Caster</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classjazz__bebop_1_1Caster.html" title="Caster: An optional converter of the output.">Caster</a>: An optional converter of the output.  <a href="classjazz__bebop_1_1Caster.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1ColSelection.html">ColSelection</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classjazz__bebop_1_1ColSelection.html" title="ColSelection: A selection of columns from a Space.">ColSelection</a>: A selection of columns from a <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a>.  <a href="classjazz__bebop_1_1ColSelection.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,7 +120,7 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a>: The abstract space.  <a href="classjazz__bebop_1_1Space.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1stdName.html">stdName</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A wrapped Name that supports being stacked in an std::vector.  <a href="classjazz__bebop_1_1stdName.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A wrapped Name that supports being stacked in an std::vector and used as a key in an std::map.  <a href="classjazz__bebop_1_1stdName.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
@@ -165,7 +168,7 @@ typedef <a class="el" href="namespacejazz__elements.html#a97c097c96fd6364c465695
 <tr class="separator:a9e570cf93e172fff67ae3cfc5a771cf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21f5a9318be36ac9f868c272a53f8206"><td class="memItemLeft" align="right" valign="top"><a id="a21f5a9318be36ac9f868c272a53f8206" name="a21f5a9318be36ac9f868c272a53f8206"></a>
 typedef std::vector&lt; <a class="el" href="classjazz__bebop_1_1stdName.html">stdName</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>stdNames</b></td></tr>
-<tr class="memdesc:a21f5a9318be36ac9f868c272a53f8206"><td class="mdescLeft">&#160;</td><td class="mdescRight">A vector of <a class="el" href="classjazz__bebop_1_1stdName.html" title="A wrapped Name that supports being stacked in an std::vector.">stdName</a>. <br /></td></tr>
+<tr class="memdesc:a21f5a9318be36ac9f868c272a53f8206"><td class="mdescLeft">&#160;</td><td class="mdescRight">A vector of <a class="el" href="classjazz__bebop_1_1stdName.html" title="A wrapped Name that supports being stacked in an std::vector and used as a key in an std::map.">stdName</a>. <br /></td></tr>
 <tr class="separator:a21f5a9318be36ac9f868c272a53f8206"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42b9654b9254295e7d6a4eb6d4cbbc4e"><td class="memItemLeft" align="right" valign="top"><a id="a42b9654b9254295e7d6a4eb6d4cbbc4e" name="a42b9654b9254295e7d6a4eb6d4cbbc4e"></a>
 typedef <a class="el" href="classjazz__bebop_1_1RowSelection.html">RowSelection</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>pRowSelection</b></td></tr>
@@ -175,6 +178,18 @@ typedef <a class="el" href="classjazz__bebop_1_1RowSelection.html">RowSelection<
 typedef <a class="el" href="classjazz__bebop_1_1ColSelection.html">ColSelection</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>pColSelection</b></td></tr>
 <tr class="memdesc:aa540587dff4cb32b1e178f23b931214c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to a <a class="el" href="classjazz__bebop_1_1ColSelection.html" title="ColSelection: A selection of columns from a Space.">ColSelection</a>. <br /></td></tr>
 <tr class="separator:aa540587dff4cb32b1e178f23b931214c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a382a51bebf3adf223a0a74c95c71223b"><td class="memItemLeft" align="right" valign="top"><a id="a382a51bebf3adf223a0a74c95c71223b" name="a382a51bebf3adf223a0a74c95c71223b"></a>
+typedef <a class="el" href="classjazz__bebop_1_1Caster.html">Caster</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>pCaster</b></td></tr>
+<tr class="memdesc:a382a51bebf3adf223a0a74c95c71223b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to a <a class="el" href="classjazz__bebop_1_1Caster.html" title="Caster: An optional converter of the output.">Caster</a>. <br /></td></tr>
+<tr class="separator:a382a51bebf3adf223a0a74c95c71223b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1043608b2ff7c843201afc598477e6cb"><td class="memItemLeft" align="right" valign="top"><a id="a1043608b2ff7c843201afc598477e6cb" name="a1043608b2ff7c843201afc598477e6cb"></a>
+typedef std::map&lt; <a class="el" href="classjazz__bebop_1_1stdName.html">stdName</a>, <a class="el" href="namespacejazz__bebop.html#a382a51bebf3adf223a0a74c95c71223b">pCaster</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Casters</b></td></tr>
+<tr class="memdesc:a1043608b2ff7c843201afc598477e6cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">A map of <a class="el" href="classjazz__bebop_1_1Caster.html" title="Caster: An optional converter of the output.">Caster</a> pointers. <br /></td></tr>
+<tr class="separator:a1043608b2ff7c843201afc598477e6cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f2e9798fc6482c9f891e3ea38465f10"><td class="memItemLeft" align="right" valign="top"><a id="a0f2e9798fc6482c9f891e3ea38465f10" name="a0f2e9798fc6482c9f891e3ea38465f10"></a>
+typedef <a class="el" href="namespacejazz__bebop.html#a1043608b2ff7c843201afc598477e6cb">Casters</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>pCasters</b></td></tr>
+<tr class="memdesc:a0f2e9798fc6482c9f891e3ea38465f10"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to a Casters. <br /></td></tr>
+<tr class="separator:a0f2e9798fc6482c9f891e3ea38465f10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>

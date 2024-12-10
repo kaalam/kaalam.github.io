@@ -29,12 +29,12 @@ var searchData=
   ['staticblockheader_26',['StaticBlockHeader',['../structjazz__elements_1_1StaticBlockHeader.html',1,'jazz_elements']]],
   ['status_27',['status',['../structjazz__elements_1_1Transaction.html#a964e305c69ac42991cf3e6bfef4e5522',1,'jazz_elements::Transaction']]],
   ['statuscode_28',['StatusCode',['../namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f',1,'jazz_elements']]],
-  ['stdname_29',['stdName',['../classjazz__bebop_1_1stdName.html',1,'jazz_bebop::stdName'],['../classjazz__bebop_1_1stdName.html#a86e3049d8ca7df0b6a82d61e400f67b2',1,'jazz_bebop::stdName::stdName()']]],
+  ['stdname_29',['stdName',['../classjazz__bebop_1_1stdName.html',1,'jazz_bebop::stdName'],['../classjazz__bebop_1_1stdName.html#a86e3049d8ca7df0b6a82d61e400f67b2',1,'jazz_bebop::stdName::stdName(const stdName &amp;name)'],['../classjazz__bebop_1_1stdName.html#a9ab6b0a39b14fe1c137cbaccc69d57bc',1,'jazz_bebop::stdName::stdName(const pChar &amp;name)']]],
   ['stdnames_30',['stdNames',['../namespacejazz__bebop.html#a21f5a9318be36ac9f868c272a53f8206',1,'jazz_bebop']]],
   ['stop_5fcheck_5f4_5fmatch_31',['stop_check_4_match',['../structjazz__elements_1_1StringBuffer.html#a4056d062ef9438589e77aefca08d8c60',1,'jazz_elements::StringBuffer']]],
   ['stop_5fservice_32',['stop_service',['../namespacejazz__main.html#a085b3a1c5d5f6ce36a8fbf68272626c5',1,'jazz_main']]],
   ['storage_5fbase_33',['storage_base',['../classjazz__bebop_1_1Space.html#a4b256cfdd9d1d34a71d675973512a34e',1,'jazz_bebop::Space']]],
-  ['storage_5fent_34',['storage_ent',['../classjazz__models_1_1SemSpace.html#a9d903d2c19b49ac85acb10b67952877d',1,'jazz_models::SemSpace::storage_ent()'],['../classjazz__bebop_1_1DataSpace.html#a506120452dfb9ddef8b6989618901dde',1,'jazz_bebop::DataSpace::storage_ent()']]],
+  ['storage_5fent_34',['storage_ent',['../classjazz__bebop_1_1DataSpace.html#a506120452dfb9ddef8b6989618901dde',1,'jazz_bebop::DataSpace::storage_ent()'],['../classjazz__models_1_1SemSpace.html#a9d903d2c19b49ac85acb10b67952877d',1,'jazz_models::SemSpace::storage_ent()']]],
   ['storedtransaction_35',['StoredTransaction',['../structjazz__elements_1_1StoredTransaction.html',1,'jazz_elements']]],
   ['stringbuffer_36',['StringBuffer',['../structjazz__elements_1_1StringBuffer.html',1,'jazz_elements']]]
 ];
