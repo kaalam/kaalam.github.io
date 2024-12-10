@@ -283,6 +283,10 @@ typedef <a class="el" href="namespacejazz__elements.html#a97c097c96fd6364c465695
 typedef char *&#160;</td><td class="memItemRight" valign="bottom"><b>pChar</b></td></tr>
 <tr class="memdesc:a7b6f709ede20f91ff26fa9166a7cc9da"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to a char buffer. <br /></td></tr>
 <tr class="separator:a7b6f709ede20f91ff26fa9166a7cc9da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a997b6f878eeaa9972d6ea168ab9c5c66"><td class="memItemLeft" align="right" valign="top"><a id="a997b6f878eeaa9972d6ea168ab9c5c66" name="a997b6f878eeaa9972d6ea168ab9c5c66"></a>
+typedef uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>ff_fp16</b></td></tr>
+<tr class="memdesc:a997b6f878eeaa9972d6ea168ab9c5c66"><td class="mdescLeft">&#160;</td><td class="mdescRight">A future (C++23 declares std::float16_t) 16-bit floating point placeholder for float16 and bfloat16. <br /></td></tr>
+<tr class="separator:a997b6f878eeaa9972d6ea168ab9c5c66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4734a779894739a0e04623c47348dd25"><td class="memItemLeft" align="right" valign="top"><a id="a4734a779894739a0e04623c47348dd25" name="a4734a779894739a0e04623c47348dd25"></a>
 typedef std::set&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Dimensions</b></td></tr>
 <tr class="memdesc:a4734a779894739a0e04623c47348dd25"><td class="mdescLeft">&#160;</td><td class="mdescRight">An set::set with the dimension names returned by kind.dimensions() <br /></td></tr>
@@ -458,6 +462,14 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>F_NA</b> = nanf(&quo
 double&#160;</td><td class="memItemRight" valign="bottom"><b>R_NA</b> = <a class="el" href="namespacejazz__elements.html#a4d46e4f3ad15a5b0395e1daffbe5b950">R_ValueOfNA</a>()</td></tr>
 <tr class="memdesc:a0ca8f9758d7f2438f120412cbb0fcc43"><td class="mdescLeft">&#160;</td><td class="mdescRight">NaN in double (binary R-compatible) <br /></td></tr>
 <tr class="separator:a0ca8f9758d7f2438f120412cbb0fcc43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace1ec8571d17a865f38338ada07643c7"><td class="memItemLeft" align="right" valign="top"><a id="ace1ec8571d17a865f38338ada07643c7" name="ace1ec8571d17a865f38338ada07643c7"></a>
+<a class="el" href="namespacejazz__elements.html#a997b6f878eeaa9972d6ea168ab9c5c66">ff_fp16</a>&#160;</td><td class="memItemRight" valign="bottom"><b>F16_NA</b> = {0x7e00}</td></tr>
+<tr class="memdesc:ace1ec8571d17a865f38338ada07643c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">FLOAT16_NA: 0x7e00 is the IEEE 754 half-precision floating point representation of NaN. <br /></td></tr>
+<tr class="separator:ace1ec8571d17a865f38338ada07643c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afade25cee3b045d75e2e2d16ccf9f7b1"><td class="memItemLeft" align="right" valign="top"><a id="afade25cee3b045d75e2e2d16ccf9f7b1" name="afade25cee3b045d75e2e2d16ccf9f7b1"></a>
+<a class="el" href="namespacejazz__elements.html#a997b6f878eeaa9972d6ea168ab9c5c66">ff_fp16</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BF16_NA</b> = {0x7fc0}</td></tr>
+<tr class="memdesc:afade25cee3b045d75e2e2d16ccf9f7b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">BFLOAT16_NA: 0x7fc0 is the Brain Floating Point, half-precision representation of NaN. <br /></td></tr>
+<tr class="separator:afade25cee3b045d75e2e2d16ccf9f7b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The namespace for Jazz Utils, Blocks, Kinds, Tuples, Containers, etc. </p>

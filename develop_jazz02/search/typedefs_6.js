@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['hashnameusemap_0',['HashNameUseMap',['../namespacejazz__elements.html#a49fea973ead34db91489be7646d99d92',1,'jazz_elements']]],
-  ['hashqueueentmap_1',['HashQueueEntMap',['../namespacejazz__elements.html#a759d41cd19c3779f1de71cd39f5aa2db',1,'jazz_elements']]],
-  ['hashvolxctmap_2',['HashVolXctMap',['../namespacejazz__elements.html#aaeae45084515078c6ec0cb9718ee0423',1,'jazz_elements']]]
+  ['getbuffer_0',['GetBuffer',['../namespacejazz__elements.html#a982b46aa549671da23ea0698efefb7cd',1,'jazz_elements']]]
 ];

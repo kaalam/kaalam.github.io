@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['getbuffer_0',['GetBuffer',['../namespacejazz__elements.html#a982b46aa549671da23ea0698efefb7cd',1,'jazz_elements']]]
+  ['ff_5ffp16_0',['ff_fp16',['../namespacejazz__elements.html#a997b6f878eeaa9972d6ea168ab9c5c66',1,'jazz_elements']]]
 ];
