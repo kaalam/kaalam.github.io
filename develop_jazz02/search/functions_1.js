@@ -4,5 +4,6 @@ var searchData=
   ['baseapi_1',['BaseAPI',['../classjazz__bebop_1_1BaseAPI.html#a482b43be524ec391d28623cebfd3fa8f',1,'jazz_bebop::BaseAPI']]],
   ['block_5ffrom_5fconst_2',['block_from_const',['../classjazz__bebop_1_1BaseAPI.html#a9e4d94ca2e2930ef7b1825e7654dbb28',1,'jazz_bebop::BaseAPI']]],
   ['block_5fmalloc_3',['block_malloc',['../classjazz__elements_1_1Container.html#aa324950d69cb31f4a4e3f452d6180046',1,'jazz_elements::Container']]],
-  ['bop_4',['Bop',['../classjazz__bebop_1_1Bop.html#ad96710af6f7c4d1ee46c9ee209d06a64',1,'jazz_bebop::Bop']]]
+  ['bop_4',['Bop',['../classjazz__bebop_1_1Bop.html#ad96710af6f7c4d1ee46c9ee209d06a64',1,'jazz_bebop::Bop']]],
+  ['build_5fopcode_5fdict_5',['build_opcode_dict',['../classjazz__bebop_1_1OpCodes.html#ae34973f5112c3f5fee8fdc15eafc4481',1,'jazz_bebop::OpCodes']]]
 ];

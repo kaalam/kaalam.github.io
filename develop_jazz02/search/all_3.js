@@ -13,5 +13,6 @@ var searchData=
   ['blockheader_10',['BlockHeader',['../structjazz__elements_1_1BlockHeader.html',1,'jazz_elements']]],
   ['bop_11',['Bop',['../classjazz__bebop_1_1Bop.html#ad96710af6f7c4d1ee46c9ee209d06a64',1,'jazz_bebop::Bop::Bop()'],['../classjazz__bebop_1_1Bop.html',1,'jazz_bebop::Bop']]],
   ['buffer_12',['buffer',['../structjazz__elements_1_1StringBuffer.html#aad4fda4c16c6eddb4ff3b2c56079bca1',1,'jazz_elements::StringBuffer']]],
-  ['buffer_5fsize_13',['buffer_size',['../structjazz__elements_1_1StringBuffer.html#a8bf233a47a69a90211852992d604f25b',1,'jazz_elements::StringBuffer']]]
+  ['buffer_5fsize_13',['buffer_size',['../structjazz__elements_1_1StringBuffer.html#a8bf233a47a69a90211852992d604f25b',1,'jazz_elements::StringBuffer']]],
+  ['build_5fopcode_5fdict_14',['build_opcode_dict',['../classjazz__bebop_1_1OpCodes.html#ae34973f5112c3f5fee8fdc15eafc4481',1,'jazz_bebop::OpCodes']]]
 ];
