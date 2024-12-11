@@ -76,6 +76,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a>  </div>
   <div class="headertitle"><div class="title">jazz_bebop::OpCodes Class Reference</div></div>
 </div><!--header-->
@@ -105,12 +106,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aca35e3719ec8dde0491cf70650ee3b2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad50822542940926d3c8c97945dfc642a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1OpCodes.html#ad50822542940926d3c8c97945dfc642a">shut_down</a> ()</td></tr>
 <tr class="separator:ad50822542940926d3c8c97945dfc642a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a579f3cd53d3a75f24c8794b2e7a6ab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1OpCodes.html#a1a579f3cd53d3a75f24c8794b2e7a6ab">latest_opset_version</a> ()</td></tr>
-<tr class="memdesc:a1a579f3cd53d3a75f24c8794b2e7a6ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the latest opset version.  <br /></td></tr>
+<tr class="memitem:a1a579f3cd53d3a75f24c8794b2e7a6ab"><td class="memItemLeft" align="right" valign="top"><a id="a1a579f3cd53d3a75f24c8794b2e7a6ab" name="a1a579f3cd53d3a75f24c8794b2e7a6ab"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>latest_opset_version</b> ()</td></tr>
 <tr class="separator:a1a579f3cd53d3a75f24c8794b2e7a6ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c8c807195b5c56c456684032bd5eecb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1OpCodes.html#a8c8c807195b5c56c456684032bd5eecb">set_opset_version</a> (int version)</td></tr>
-<tr class="memdesc:a8c8c807195b5c56c456684032bd5eecb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the opset version.  <br /></td></tr>
+<tr class="memitem:a8c8c807195b5c56c456684032bd5eecb"><td class="memItemLeft" align="right" valign="top"><a id="a8c8c807195b5c56c456684032bd5eecb" name="a8c8c807195b5c56c456684032bd5eecb"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>set_opset_version</b> (int version)</td></tr>
 <tr class="separator:a8c8c807195b5c56c456684032bd5eecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea86f2a9df39be6b11bdfe4e1884ff7e"><td class="memItemLeft" align="right" valign="top"><a id="aea86f2a9df39be6b11bdfe4e1884ff7e" name="aea86f2a9df39be6b11bdfe4e1884ff7e"></a>
+<a class="el" href="namespacejazz__bebop.html#a2f538b86f67647491a116da07d721801">pOnnxOpCode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>get</b> (<a class="el" href="classjazz__bebop_1_1stdName.html">stdName</a> name)</td></tr>
+<tr class="separator:aea86f2a9df39be6b11bdfe4e1884ff7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classjazz__elements_1_1Service"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classjazz__elements_1_1Service')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classjazz__elements_1_1Service.html">jazz_elements::Service</a></td></tr>
 <tr class="memitem:a08b2c5b3bcd2e343b163468d01c5127d inherit pub_methods_classjazz__elements_1_1Service"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Service.html#a08b2c5b3bcd2e343b163468d01c5127d">Service</a> (<a class="el" href="namespacejazz__elements.html#a6d95828c9ae09a43b64388aad469aa66">pLogger</a> a_logger, <a class="el" href="namespacejazz__elements.html#abe347aade1e2471420c9ec5d5a251e1a">pConfigFile</a> a_config)</td></tr>
 <tr class="separator:a08b2c5b3bcd2e343b163468d01c5127d inherit pub_methods_classjazz__elements_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,20 +136,50 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7d5b766d5214ffb88d58acc6f66e2e29 inherit pub_methods_classjazz__elements_1_1Service"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Service.html#a7d5b766d5214ffb88d58acc6f66e2e29">get_conf_key</a> (const char *key, std::string &amp;value)</td></tr>
 <tr class="separator:a7d5b766d5214ffb88d58acc6f66e2e29 inherit pub_methods_classjazz__elements_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ae34973f5112c3f5fee8fdc15eafc4481"><td class="memItemLeft" align="right" valign="top"><a id="ae34973f5112c3f5fee8fdc15eafc4481" name="ae34973f5112c3f5fee8fdc15eafc4481"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>build_opcode_dict</b> ()</td></tr>
+<tr class="separator:ae34973f5112c3f5fee8fdc15eafc4481"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bfd14c677f895d4c98b6303b3d1c3d4"><td class="memItemLeft" align="right" valign="top"><a id="a7bfd14c677f895d4c98b6303b3d1c3d4" name="a7bfd14c677f895d4c98b6303b3d1c3d4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>fill_op_code</b> (<a class="el" href="classjazz__bebop_1_1OnnxOpCode.html">OnnxOpCode</a> &amp;op, <a class="el" href="classjazz__bebop_1_1stdName.html">stdName</a> name, int version)</td></tr>
+<tr class="separator:a7bfd14c677f895d4c98b6303b3d1c3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81ac539fd6c7cc2fc64a403715da7b75"><td class="memItemLeft" align="right" valign="top"><a id="a81ac539fd6c7cc2fc64a403715da7b75" name="a81ac539fd6c7cc2fc64a403715da7b75"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>fill_all_dict_versions</b> ()</td></tr>
+<tr class="separator:a81ac539fd6c7cc2fc64a403715da7b75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58933fb44b10305ce4436c21a9770bf5"><td class="memItemLeft" align="right" valign="top"><a id="a58933fb44b10305ce4436c21a9770bf5" name="a58933fb44b10305ce4436c21a9770bf5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>fill_tensor_types</b> (<a class="el" href="namespacejazz__bebop.html#a0454e38f1717294f69340a9e65badbe1">TensorTypes</a> &amp;types, std::string &amp;all_types)</td></tr>
+<tr class="separator:a58933fb44b10305ce4436c21a9770bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad64597caddb79940470ef1ae8ccaa24c"><td class="memItemLeft" align="right" valign="top"><a id="ad64597caddb79940470ef1ae8ccaa24c" name="ad64597caddb79940470ef1ae8ccaa24c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>fill_attribute_type</b> (<a class="el" href="structjazz__bebop_1_1AttributeType.html">AttributeType</a> &amp;type, std::string &amp;type_name)</td></tr>
+<tr class="separator:ad64597caddb79940470ef1ae8ccaa24c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a236bcdee259192d520775203013e8e85"><td class="memItemLeft" align="right" valign="top"><a id="a236bcdee259192d520775203013e8e85" name="a236bcdee259192d520775203013e8e85"></a>
 <a class="el" href="classjazz__elements_1_1ConfigFile.html">ConfigFile</a>&#160;</td><td class="memItemRight" valign="bottom"><b>onnx_conf</b> = <a class="el" href="classjazz__elements_1_1ConfigFile.html">ConfigFile</a>(nullptr)</td></tr>
 <tr class="memdesc:a236bcdee259192d520775203013e8e85"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ONNX opcodes reference stored as a ConfigFile. <br /></td></tr>
 <tr class="separator:a236bcdee259192d520775203013e8e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae991b37847009da97528d26af2571869"><td class="memItemLeft" align="right" valign="top"><a id="ae991b37847009da97528d26af2571869" name="ae991b37847009da97528d26af2571869"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ir_version</b></td></tr>
-<tr class="memdesc:ae991b37847009da97528d26af2571869"><td class="mdescLeft">&#160;</td><td class="mdescRight">Argument of <code>model.set_ir_version()</code> (Stored as ONNX_IR_VERSION in config.) <br /></td></tr>
-<tr class="separator:ae991b37847009da97528d26af2571869"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a495d7e28d513402b11dff05531b04ecb"><td class="memItemLeft" align="right" valign="top"><a id="a495d7e28d513402b11dff05531b04ecb" name="a495d7e28d513402b11dff05531b04ecb"></a>
-<a class="el" href="namespacejazz__bebop.html#a2f625e6dff71b1d8e7c7d7dc553bc52f">OnnxOpCodeDict</a>&#160;</td><td class="memItemRight" valign="bottom"><b>opcodes</b></td></tr>
-<tr class="memdesc:a495d7e28d513402b11dff05531b04ecb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The opcodes parsed as binary objects. <br /></td></tr>
-<tr class="separator:a495d7e28d513402b11dff05531b04ecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07e88c6b85971b2c9bc849dfe242acf1"><td class="memItemLeft" align="right" valign="top"><a id="a07e88c6b85971b2c9bc849dfe242acf1" name="a07e88c6b85971b2c9bc849dfe242acf1"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ir_vers</b></td></tr>
+<tr class="memdesc:a07e88c6b85971b2c9bc849dfe242acf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Argument of <code>model.set_ir_version()</code> (Stored as ONNX_IR_VERSION in config.) <br /></td></tr>
+<tr class="separator:a07e88c6b85971b2c9bc849dfe242acf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37da3fe086ca38e384db7b7f967ff2c0"><td class="memItemLeft" align="right" valign="top"><a id="a37da3fe086ca38e384db7b7f967ff2c0" name="a37da3fe086ca38e384db7b7f967ff2c0"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>op_vers_latest</b></td></tr>
+<tr class="memdesc:a37da3fe086ca38e384db7b7f967ff2c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The latest opset version in onnx.ini. <br /></td></tr>
+<tr class="separator:a37da3fe086ca38e384db7b7f967ff2c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d6ca7df4e8e35ebd44bc72d811bbb46"><td class="memItemLeft" align="right" valign="top"><a id="a9d6ca7df4e8e35ebd44bc72d811bbb46" name="a9d6ca7df4e8e35ebd44bc72d811bbb46"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>op_vers_current</b></td></tr>
+<tr class="memdesc:a9d6ca7df4e8e35ebd44bc72d811bbb46"><td class="mdescLeft">&#160;</td><td class="mdescRight">The opset version in use, set by set_opset_version() or op_vers_latest. <br /></td></tr>
+<tr class="separator:a9d6ca7df4e8e35ebd44bc72d811bbb46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a85164f812192bbcc89e98297442ea1"><td class="memItemLeft" align="right" valign="top"><a id="a2a85164f812192bbcc89e98297442ea1" name="a2a85164f812192bbcc89e98297442ea1"></a>
+<a class="el" href="namespacejazz__bebop.html#a93bfc77bd7a2ac50240dd3ca2f4f04f0">OnnxOpCodeDict</a>&#160;</td><td class="memItemRight" valign="bottom"><b>opcodes_idx</b> = {}</td></tr>
+<tr class="memdesc:a2a85164f812192bbcc89e98297442ea1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The index to the opcodes. <br /></td></tr>
+<tr class="separator:a2a85164f812192bbcc89e98297442ea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ae9d96859d89d5b061ea1f23d44e1d1"><td class="memItemLeft" align="right" valign="top"><a id="a5ae9d96859d89d5b061ea1f23d44e1d1" name="a5ae9d96859d89d5b061ea1f23d44e1d1"></a>
+<a class="el" href="namespacejazz__bebop.html#afbb448b50dc8d683e77d65eff62e55c8">OnnxOpCodes</a>&#160;</td><td class="memItemRight" valign="bottom"><b>opcodes</b> = {}</td></tr>
+<tr class="memdesc:a5ae9d96859d89d5b061ea1f23d44e1d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The opcodes parsed as binary objects. <br /></td></tr>
+<tr class="separator:a5ae9d96859d89d5b061ea1f23d44e1d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -259,53 +293,6 @@ Additional Inherited Members</h2></td></tr>
 <p>This method should be overriden by something that actually stops the service, possibly using the configuration file in pConf. </p>
 
 <p>Reimplemented from <a class="el" href="classjazz__elements_1_1Service.html#af9c7e6ebcd6ec69fdbf94ea6cc1edff5">jazz_elements::Service</a>.</p>
-
-</div>
-</div>
-<a id="a1a579f3cd53d3a75f24c8794b2e7a6ab" name="a1a579f3cd53d3a75f24c8794b2e7a6ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a579f3cd53d3a75f24c8794b2e7a6ab">&#9670;&#160;</a></span>latest_opset_version()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int jazz_bebop::OpCodes::latest_opset_version </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the latest opset version. </p>
-<dl class="section return"><dt>Returns</dt><dd>The latest opset version. </dd></dl>
-
-</div>
-</div>
-<a id="a8c8c807195b5c56c456684032bd5eecb" name="a8c8c807195b5c56c456684032bd5eecb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c8c807195b5c56c456684032bd5eecb">&#9670;&#160;</a></span>set_opset_version()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool jazz_bebop::OpCodes::set_opset_version </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>version</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set the opset version. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">version</td><td>The version to set.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the version was set, false otherwise. </dd></dl>
 
 </div>
 </div>

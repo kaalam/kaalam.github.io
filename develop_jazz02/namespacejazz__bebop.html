@@ -86,8 +86,8 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__bebop_1_1ApiQueryState.html">ApiQueryState</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A buffer to keep the state while parsing/executing a query.  <a href="structjazz__bebop_1_1ApiQueryState.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1AttributeType.html">AttributeType</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A type definition for attributes across Jazz native (with special codes), and ONNX protocol buffer.  <a href="classjazz__bebop_1_1AttributeType.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__bebop_1_1AttributeType.html">AttributeType</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A type definition for attributes across Jazz native (with special codes), and ONNX protocol buffer.  <a href="structjazz__bebop_1_1AttributeType.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1BaseAPI.html">BaseAPI</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classjazz__bebop_1_1BaseAPI.html" title="BaseAPI: The parent of API and Core.">BaseAPI</a>: The parent of API and <a class="el" href="classjazz__bebop_1_1Core.html" title="Core: The execution unit is now a wrapper around onnx-runtime.">Core</a>.  <a href="classjazz__bebop_1_1BaseAPI.html#details">More...</a><br /></td></tr>
@@ -137,8 +137,8 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1stdNameVersion.html">stdNameVersion</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pair of a name and a version to be used as a key in a dictionary.  <a href="classjazz__bebop_1_1stdNameVersion.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1TensorType.html">TensorType</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A type definition for tensors across all the technologies: Jazz native, ONNX protocol buffer and ONNX runtime.  <a href="classjazz__bebop_1_1TensorType.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjazz__bebop_1_1TensorType.html">TensorType</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A type definition for tensors across all the technologies: Jazz native, ONNX protocol buffer and ONNX runtime.  <a href="structjazz__bebop_1_1TensorType.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
@@ -166,21 +166,25 @@ typedef <a class="el" href="classjazz__bebop_1_1DataSpace.html">DataSpace</a> *&
 <tr class="memdesc:a3c0bd6b6dc6021164b4d5f81a1d6eb61"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to a <a class="el" href="classjazz__bebop_1_1DataSpace.html" title="DataSpace: The data space.">DataSpace</a>. <br /></td></tr>
 <tr class="separator:a3c0bd6b6dc6021164b4d5f81a1d6eb61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a337a055e9d8627ce92df67209a9ff21f"><td class="memItemLeft" align="right" valign="top"><a id="a337a055e9d8627ce92df67209a9ff21f" name="a337a055e9d8627ce92df67209a9ff21f"></a>
-typedef std::map&lt; <a class="el" href="classjazz__bebop_1_1stdName.html">stdName</a>, <a class="el" href="classjazz__bebop_1_1TensorType.html">TensorType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>TensorTypeDict</b></td></tr>
-<tr class="memdesc:a337a055e9d8627ce92df67209a9ff21f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A map of <a class="el" href="classjazz__bebop_1_1TensorType.html" title="A type definition for tensors across all the technologies: Jazz native, ONNX protocol buffer and ONNX...">TensorType</a> objects. <br /></td></tr>
+typedef std::map&lt; <a class="el" href="classjazz__bebop_1_1stdName.html">stdName</a>, <a class="el" href="structjazz__bebop_1_1TensorType.html">TensorType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>TensorTypeDict</b></td></tr>
+<tr class="memdesc:a337a055e9d8627ce92df67209a9ff21f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A map of <a class="el" href="structjazz__bebop_1_1TensorType.html" title="A type definition for tensors across all the technologies: Jazz native, ONNX protocol buffer and ONNX...">TensorType</a> objects. <br /></td></tr>
 <tr class="separator:a337a055e9d8627ce92df67209a9ff21f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0454e38f1717294f69340a9e65badbe1"><td class="memItemLeft" align="right" valign="top"><a id="a0454e38f1717294f69340a9e65badbe1" name="a0454e38f1717294f69340a9e65badbe1"></a>
-typedef std::vector&lt; <a class="el" href="classjazz__bebop_1_1TensorType.html">TensorType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>TensorTypes</b></td></tr>
-<tr class="memdesc:a0454e38f1717294f69340a9e65badbe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of <a class="el" href="classjazz__bebop_1_1TensorType.html" title="A type definition for tensors across all the technologies: Jazz native, ONNX protocol buffer and ONNX...">TensorType</a> objects. <br /></td></tr>
+typedef std::vector&lt; <a class="el" href="structjazz__bebop_1_1TensorType.html">TensorType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>TensorTypes</b></td></tr>
+<tr class="memdesc:a0454e38f1717294f69340a9e65badbe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of <a class="el" href="structjazz__bebop_1_1TensorType.html" title="A type definition for tensors across all the technologies: Jazz native, ONNX protocol buffer and ONNX...">TensorType</a> objects. <br /></td></tr>
 <tr class="separator:a0454e38f1717294f69340a9e65badbe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a105c7d15714e2168e331219fad2fbe65"><td class="memItemLeft" align="right" valign="top"><a id="a105c7d15714e2168e331219fad2fbe65" name="a105c7d15714e2168e331219fad2fbe65"></a>
+typedef <a class="el" href="namespacejazz__bebop.html#a0454e38f1717294f69340a9e65badbe1">TensorTypes</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>pTensorTypes</b></td></tr>
+<tr class="memdesc:a105c7d15714e2168e331219fad2fbe65"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to a TensorTypes. <br /></td></tr>
+<tr class="separator:a105c7d15714e2168e331219fad2fbe65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3abbc565c36b9f331c29433fe4638d27"><td class="memItemLeft" align="right" valign="top"><a id="a3abbc565c36b9f331c29433fe4638d27" name="a3abbc565c36b9f331c29433fe4638d27"></a>
-typedef std::map&lt; <a class="el" href="classjazz__bebop_1_1stdName.html">stdName</a>, <a class="el" href="classjazz__bebop_1_1AttributeType.html">AttributeType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>AttributeTypeDict</b></td></tr>
-<tr class="memdesc:a3abbc565c36b9f331c29433fe4638d27"><td class="mdescLeft">&#160;</td><td class="mdescRight">A map of <a class="el" href="classjazz__bebop_1_1AttributeType.html" title="A type definition for attributes across Jazz native (with special codes), and ONNX protocol buffer.">AttributeType</a> objects. <br /></td></tr>
+typedef std::map&lt; <a class="el" href="classjazz__bebop_1_1stdName.html">stdName</a>, <a class="el" href="structjazz__bebop_1_1AttributeType.html">AttributeType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>AttributeTypeDict</b></td></tr>
+<tr class="memdesc:a3abbc565c36b9f331c29433fe4638d27"><td class="mdescLeft">&#160;</td><td class="mdescRight">A map of <a class="el" href="structjazz__bebop_1_1AttributeType.html" title="A type definition for attributes across Jazz native (with special codes), and ONNX protocol buffer.">AttributeType</a> objects. <br /></td></tr>
 <tr class="separator:a3abbc565c36b9f331c29433fe4638d27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a417f01781879518fb15771ae84d0a1ce"><td class="memItemLeft" align="right" valign="top"><a id="a417f01781879518fb15771ae84d0a1ce" name="a417f01781879518fb15771ae84d0a1ce"></a>
-typedef std::vector&lt; <a class="el" href="classjazz__bebop_1_1AttributeType.html">AttributeType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>AttributeTypes</b></td></tr>
-<tr class="memdesc:a417f01781879518fb15771ae84d0a1ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of <a class="el" href="classjazz__bebop_1_1AttributeType.html" title="A type definition for attributes across Jazz native (with special codes), and ONNX protocol buffer.">AttributeType</a> objects. <br /></td></tr>
-<tr class="separator:a417f01781879518fb15771ae84d0a1ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a379ae38ea7f72be2ab11e1dd9a59a1"><td class="memItemLeft" align="right" valign="top"><a id="a6a379ae38ea7f72be2ab11e1dd9a59a1" name="a6a379ae38ea7f72be2ab11e1dd9a59a1"></a>
+typedef <a class="el" href="structjazz__bebop_1_1AttributeType.html">AttributeType</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>pAttributeType</b></td></tr>
+<tr class="memdesc:a6a379ae38ea7f72be2ab11e1dd9a59a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to a <a class="el" href="structjazz__bebop_1_1AttributeType.html" title="A type definition for attributes across Jazz native (with special codes), and ONNX protocol buffer.">AttributeType</a>. <br /></td></tr>
+<tr class="separator:a6a379ae38ea7f72be2ab11e1dd9a59a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a100664102ae44134bf17f3df58334bf6"><td class="memItemLeft" align="right" valign="top"><a id="a100664102ae44134bf17f3df58334bf6" name="a100664102ae44134bf17f3df58334bf6"></a>
 typedef std::vector&lt; <a class="el" href="classjazz__bebop_1_1OnnxParameter.html">OnnxParameter</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>OnnxParameters</b></td></tr>
 <tr class="memdesc:a100664102ae44134bf17f3df58334bf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of <a class="el" href="classjazz__bebop_1_1OnnxParameter.html" title="A parameter (input or output) for an ONNX OpCode.">OnnxParameter</a> objects. <br /></td></tr>
@@ -189,13 +193,21 @@ typedef std::vector&lt; <a class="el" href="classjazz__bebop_1_1OnnxParameter.ht
 typedef std::vector&lt; <a class="el" href="classjazz__bebop_1_1OnnxAttribute.html">OnnxAttribute</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>OnnxAttributes</b></td></tr>
 <tr class="memdesc:ae706b252983a75b66a9d182323eeb915"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of <a class="el" href="classjazz__bebop_1_1OnnxAttribute.html" title="An attribute for an ONNX OpCode.">OnnxAttribute</a> objects. <br /></td></tr>
 <tr class="separator:ae706b252983a75b66a9d182323eeb915"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f625e6dff71b1d8e7c7d7dc553bc52f"><td class="memItemLeft" align="right" valign="top"><a id="a2f625e6dff71b1d8e7c7d7dc553bc52f" name="a2f625e6dff71b1d8e7c7d7dc553bc52f"></a>
-typedef std::map&lt; <a class="el" href="classjazz__bebop_1_1stdNameVersion.html">stdNameVersion</a>, <a class="el" href="classjazz__bebop_1_1OnnxOpCode.html">OnnxOpCode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>OnnxOpCodeDict</b></td></tr>
-<tr class="memdesc:a2f625e6dff71b1d8e7c7d7dc553bc52f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A map of <a class="el" href="classjazz__bebop_1_1OnnxOpCode.html" title="An ONNX OpCode.">OnnxOpCode</a> objects. <br /></td></tr>
-<tr class="separator:a2f625e6dff71b1d8e7c7d7dc553bc52f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f538b86f67647491a116da07d721801"><td class="memItemLeft" align="right" valign="top"><a id="a2f538b86f67647491a116da07d721801" name="a2f538b86f67647491a116da07d721801"></a>
+typedef <a class="el" href="classjazz__bebop_1_1OnnxOpCode.html">OnnxOpCode</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>pOnnxOpCode</b></td></tr>
+<tr class="memdesc:a2f538b86f67647491a116da07d721801"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to an <a class="el" href="classjazz__bebop_1_1OnnxOpCode.html" title="An ONNX OpCode.">OnnxOpCode</a>. <br /></td></tr>
+<tr class="separator:a2f538b86f67647491a116da07d721801"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbb448b50dc8d683e77d65eff62e55c8"><td class="memItemLeft" align="right" valign="top"><a id="afbb448b50dc8d683e77d65eff62e55c8" name="afbb448b50dc8d683e77d65eff62e55c8"></a>
+typedef std::vector&lt; <a class="el" href="namespacejazz__bebop.html#a2f538b86f67647491a116da07d721801">pOnnxOpCode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>OnnxOpCodes</b></td></tr>
+<tr class="memdesc:afbb448b50dc8d683e77d65eff62e55c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of <a class="el" href="classjazz__bebop_1_1OnnxOpCode.html" title="An ONNX OpCode.">OnnxOpCode</a> objects. <br /></td></tr>
+<tr class="separator:afbb448b50dc8d683e77d65eff62e55c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93bfc77bd7a2ac50240dd3ca2f4f04f0"><td class="memItemLeft" align="right" valign="top"><a id="a93bfc77bd7a2ac50240dd3ca2f4f04f0" name="a93bfc77bd7a2ac50240dd3ca2f4f04f0"></a>
+typedef std::map&lt; <a class="el" href="classjazz__bebop_1_1stdNameVersion.html">stdNameVersion</a>, <a class="el" href="namespacejazz__bebop.html#a2f538b86f67647491a116da07d721801">pOnnxOpCode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>OnnxOpCodeDict</b></td></tr>
+<tr class="memdesc:a93bfc77bd7a2ac50240dd3ca2f4f04f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">A map of <a class="el" href="classjazz__bebop_1_1OnnxOpCode.html" title="An ONNX OpCode.">OnnxOpCode</a> objects. <br /></td></tr>
+<tr class="separator:a93bfc77bd7a2ac50240dd3ca2f4f04f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24b2b26c7008881a3e65f036be925591"><td class="memItemLeft" align="right" valign="top"><a id="a24b2b26c7008881a3e65f036be925591" name="a24b2b26c7008881a3e65f036be925591"></a>
 typedef <a class="el" href="classjazz__bebop_1_1OpCodes.html">OpCodes</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>pOpCodes</b></td></tr>
-<tr class="memdesc:a24b2b26c7008881a3e65f036be925591"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to a <a class="el" href="classjazz__bebop_1_1OpCodes.html" title="OpCodes: The opcodes.">OpCodes</a>. <br /></td></tr>
+<tr class="memdesc:a24b2b26c7008881a3e65f036be925591"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to an <a class="el" href="classjazz__bebop_1_1OpCodes.html" title="OpCodes: The opcodes.">OpCodes</a> object. <br /></td></tr>
 <tr class="separator:a24b2b26c7008881a3e65f036be925591"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63c47f7df1f0261e39a05118fa8a92f7"><td class="memItemLeft" align="right" valign="top"><a id="a63c47f7df1f0261e39a05118fa8a92f7" name="a63c47f7df1f0261e39a05118fa8a92f7"></a>
 typedef <a class="el" href="classjazz__bebop_1_1Snippet.html">Snippet</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>pSnippet</b></td></tr>
@@ -243,12 +255,12 @@ Variables</h2></td></tr>
 <tr class="separator:abba8c25b3737cd3381ac8b0cd21fc204"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c1bef9cdc7d8faf16ccc851e8edd2c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structjazz__elements_1_1ParseNextStateLUT.html">ParseNextStateLUT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__bebop.html#a8c1bef9cdc7d8faf16ccc851e8edd2c3">parser_state_switch</a> [MAX_NUM_PSTATES]</td></tr>
 <tr class="separator:a8c1bef9cdc7d8faf16ccc851e8edd2c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a486efb02fb32862e56c56794dae2963c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacejazz__bebop.html#a337a055e9d8627ce92df67209a9ff21f">TensorTypeDict</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__bebop.html#a486efb02fb32862e56c56794dae2963c">TENSOR_TYPES</a></td></tr>
-<tr class="memdesc:a486efb02fb32862e56c56794dae2963c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A table to locate all the possible ONNX tensor types by their name in the config file "onnx.ini".  <br /></td></tr>
-<tr class="separator:a486efb02fb32862e56c56794dae2963c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3921e01cd1c00988cd6bf9e0ffcbd04f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacejazz__bebop.html#a3abbc565c36b9f331c29433fe4638d27">AttributeTypeDict</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__bebop.html#a3921e01cd1c00988cd6bf9e0ffcbd04f">ATTRIBUTE_TYPES</a></td></tr>
-<tr class="memdesc:a3921e01cd1c00988cd6bf9e0ffcbd04f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A table to locate all the possible ONNX attribute types by their name in the config file "onnx.ini".  <br /></td></tr>
-<tr class="separator:a3921e01cd1c00988cd6bf9e0ffcbd04f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b3385e5bd635d36fc96ce76fbb37f00"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__bebop.html#a337a055e9d8627ce92df67209a9ff21f">TensorTypeDict</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__bebop.html#a0b3385e5bd635d36fc96ce76fbb37f00">TENSOR_TYPES</a></td></tr>
+<tr class="memdesc:a0b3385e5bd635d36fc96ce76fbb37f00"><td class="mdescLeft">&#160;</td><td class="mdescRight">A table to locate all the possible ONNX tensor types by their name in the config file "onnx.ini".  <br /></td></tr>
+<tr class="separator:a0b3385e5bd635d36fc96ce76fbb37f00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71ea95a2d50bce225688b4a38acf2b80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__bebop.html#a3abbc565c36b9f331c29433fe4638d27">AttributeTypeDict</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__bebop.html#a71ea95a2d50bce225688b4a38acf2b80">ATTRIBUTE_TYPES</a></td></tr>
+<tr class="memdesc:a71ea95a2d50bce225688b4a38acf2b80"><td class="mdescLeft">&#160;</td><td class="mdescRight">A table to locate all the possible ONNX attribute types by their name in the config file "onnx.ini".  <br /></td></tr>
+<tr class="separator:a71ea95a2d50bce225688b4a38acf2b80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A language to access any container by base using locators. </p>
@@ -326,14 +338,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a486efb02fb32862e56c56794dae2963c" name="a486efb02fb32862e56c56794dae2963c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a486efb02fb32862e56c56794dae2963c">&#9670;&#160;</a></span>TENSOR_TYPES</h2>
+<a id="a0b3385e5bd635d36fc96ce76fbb37f00" name="a0b3385e5bd635d36fc96ce76fbb37f00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b3385e5bd635d36fc96ce76fbb37f00">&#9670;&#160;</a></span>TENSOR_TYPES</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="namespacejazz__bebop.html#a337a055e9d8627ce92df67209a9ff21f">TensorTypeDict</a> jazz_bebop::TENSOR_TYPES</td>
+          <td class="memname"><a class="el" href="namespacejazz__bebop.html#a337a055e9d8627ce92df67209a9ff21f">TensorTypeDict</a> jazz_bebop::TENSOR_TYPES</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -360,18 +372,18 @@ Variables</h2></td></tr>
 <div class="ttc" id="anamespacejazz__elements_html_a7b6f709ede20f91ff26fa9166a7cc9da"><div class="ttname"><a href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">jazz_elements::pChar</a></div><div class="ttdeci">char * pChar</div><div class="ttdoc">A pointer to a char buffer.</div><div class="ttdef"><b>Definition:</b> types.h:183</div></div>
 </div><!-- fragment -->
 <p>A table to locate all the possible ONNX tensor types by their name in the config file "onnx.ini". </p>
-<p>The table is a map of strings to a <a class="el" href="classjazz__bebop_1_1TensorType.html" title="A type definition for tensors across all the technologies: Jazz native, ONNX protocol buffer and ONNX...">TensorType</a>: Jazz native type, ONNX protocol buffer type and ONNX runtime type. </p>
+<p>The table is a map of strings to a <a class="el" href="structjazz__bebop_1_1TensorType.html" title="A type definition for tensors across all the technologies: Jazz native, ONNX protocol buffer and ONNX...">TensorType</a>: Jazz native type, ONNX protocol buffer type and ONNX runtime type. </p>
 
 </div>
 </div>
-<a id="a3921e01cd1c00988cd6bf9e0ffcbd04f" name="a3921e01cd1c00988cd6bf9e0ffcbd04f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3921e01cd1c00988cd6bf9e0ffcbd04f">&#9670;&#160;</a></span>ATTRIBUTE_TYPES</h2>
+<a id="a71ea95a2d50bce225688b4a38acf2b80" name="a71ea95a2d50bce225688b4a38acf2b80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71ea95a2d50bce225688b4a38acf2b80">&#9670;&#160;</a></span>ATTRIBUTE_TYPES</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="namespacejazz__bebop.html#a3abbc565c36b9f331c29433fe4638d27">AttributeTypeDict</a> jazz_bebop::ATTRIBUTE_TYPES</td>
+          <td class="memname"><a class="el" href="namespacejazz__bebop.html#a3abbc565c36b9f331c29433fe4638d27">AttributeTypeDict</a> jazz_bebop::ATTRIBUTE_TYPES</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -389,7 +401,7 @@ Variables</h2></td></tr>
 <div class="line">}</div>
 </div><!-- fragment -->
 <p>A table to locate all the possible ONNX attribute types by their name in the config file "onnx.ini". </p>
-<p>The table is a map of strings to an <a class="el" href="classjazz__bebop_1_1AttributeType.html" title="A type definition for attributes across Jazz native (with special codes), and ONNX protocol buffer.">AttributeType</a>: Jazz native type, ONNX protobuf type and a boolean if the attribute is a list. </p>
+<p>The table is a map of strings to an <a class="el" href="structjazz__bebop_1_1AttributeType.html" title="A type definition for attributes across Jazz native (with special codes), and ONNX protocol buffer.">AttributeType</a>: Jazz native type, ONNX protobuf type and a boolean if the attribute is a list. </p>
 
 </div>
 </div>

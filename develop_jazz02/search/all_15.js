@@ -12,9 +12,9 @@ var searchData=
   ['tensor_5fstring_5fas_5ftext_9',['tensor_string_as_text',['../classjazz__elements_1_1Container.html#a20c55e5489741453d9f4e85845559ea6',1,'jazz_elements::Container']]],
   ['tensor_5ftime_5fas_5ftext_10',['tensor_time_as_text',['../classjazz__elements_1_1Container.html#acfdf7ace27a706a2ebe24445cc019373',1,'jazz_elements::Container']]],
   ['tensor_5ftuple_5fas_5ftext_11',['tensor_tuple_as_text',['../classjazz__elements_1_1Container.html#a692de49726a75af1ba6c27be2bb050a5',1,'jazz_elements::Container']]],
-  ['tensor_5ftypes_12',['TENSOR_TYPES',['../namespacejazz__bebop.html#a486efb02fb32862e56c56794dae2963c',1,'jazz_bebop']]],
+  ['tensor_5ftypes_12',['TENSOR_TYPES',['../namespacejazz__bebop.html#a0b3385e5bd635d36fc96ce76fbb37f00',1,'jazz_bebop']]],
   ['tensordim_13',['TensorDim',['../structjazz__elements_1_1TensorDim.html',1,'jazz_elements']]],
-  ['tensortype_14',['TensorType',['../classjazz__bebop_1_1TensorType.html',1,'jazz_bebop::TensorType'],['../classjazz__bebop_1_1TensorType.html#a690f2f0a96ebd73f9e062eec83858b0f',1,'jazz_bebop::TensorType::TensorType()']]],
+  ['tensortype_14',['TensorType',['../structjazz__bebop_1_1TensorType.html',1,'jazz_bebop']]],
   ['tensortypedict_15',['TensorTypeDict',['../namespacejazz__bebop.html#a337a055e9d8627ce92df67209a9ff21f',1,'jazz_bebop']]],
   ['tensortypes_16',['TensorTypes',['../namespacejazz__bebop.html#a0454e38f1717294f69340a9e65badbe1',1,'jazz_bebop']]],
   ['timepoint_17',['TimePoint',['../namespacejazz__elements.html#aa7e5adf7a32b3080ea959153d2b6aee9',1,'jazz_elements']]],
@@ -26,5 +26,6 @@ var searchData=
   ['tree_5fent_23',['tree_ent',['../classjazz__elements_1_1Volatile.html#a4301a76ffcf6ea87c734be2473656c08',1,'jazz_elements::Volatile']]],
   ['tree_5fkey_24',['tree_key',['../classjazz__elements_1_1Volatile.html#a4e18792e8d2c555ec5db7215f2e263e7',1,'jazz_elements::Volatile']]],
   ['tuple_25',['Tuple',['../classjazz__elements_1_1Tuple.html',1,'jazz_elements']]],
-  ['types_26',['types',['../classjazz__bebop_1_1OnnxParameter.html#ad7839a695eb012969268eed53a59ff57',1,'jazz_bebop::OnnxParameter::types()'],['../classjazz__bebop_1_1OnnxAttribute.html#a5ca19a7f8e0fbe4fd4f724f7a7956d29',1,'jazz_bebop::OnnxAttribute::types()']]]
+  ['type_26',['type',['../classjazz__bebop_1_1OnnxAttribute.html#ae79b2218604843654a87815e56d01022',1,'jazz_bebop::OnnxAttribute']]],
+  ['types_27',['types',['../classjazz__bebop_1_1OnnxParameter.html#ad7839a695eb012969268eed53a59ff57',1,'jazz_bebop::OnnxParameter']]]
 ];

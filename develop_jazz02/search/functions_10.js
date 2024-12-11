@@ -7,6 +7,5 @@ var searchData=
   ['tensor_5fkind_5fas_5ftext_4',['tensor_kind_as_text',['../classjazz__elements_1_1Container.html#a1ba8ef9b52baa9bdbc4ad883c9fa3b8e',1,'jazz_elements::Container']]],
   ['tensor_5fstring_5fas_5ftext_5',['tensor_string_as_text',['../classjazz__elements_1_1Container.html#a20c55e5489741453d9f4e85845559ea6',1,'jazz_elements::Container']]],
   ['tensor_5ftime_5fas_5ftext_6',['tensor_time_as_text',['../classjazz__elements_1_1Container.html#acfdf7ace27a706a2ebe24445cc019373',1,'jazz_elements::Container']]],
-  ['tensor_5ftuple_5fas_5ftext_7',['tensor_tuple_as_text',['../classjazz__elements_1_1Container.html#a692de49726a75af1ba6c27be2bb050a5',1,'jazz_elements::Container']]],
-  ['tensortype_8',['TensorType',['../classjazz__bebop_1_1TensorType.html#a690f2f0a96ebd73f9e062eec83858b0f',1,'jazz_bebop::TensorType']]]
+  ['tensor_5ftuple_5fas_5ftext_7',['tensor_tuple_as_text',['../classjazz__elements_1_1Container.html#a692de49726a75af1ba6c27be2bb050a5',1,'jazz_elements::Container']]]
 ];

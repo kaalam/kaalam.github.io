@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Jazz 1.25.+: AttributeType Class Reference</title>
+<title>Jazz 1.25.+: jazz_bebop::TensorType Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -68,26 +68,41 @@ $(function() {
 </div>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacejazz__bebop.html">jazz_bebop</a></li><li class="navelem"><a class="el" href="structjazz__bebop_1_1TensorType.html">TensorType</a></li>  </ul>
+</div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pri-attribs">Private Attributes</a>  </div>
-  <div class="headertitle"><div class="title">AttributeType Class Reference</div></div>
+<a href="#pub-attribs">Data Fields</a>  </div>
+  <div class="headertitle"><div class="title">jazz_bebop::TensorType Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>A type definition for tensors across all the technologies: Jazz native, ONNX protocol buffer and ONNX runtime.  
+ <a href="structjazz__bebop_1_1TensorType.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="opcodes_8h_source.html">opcodes.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:ab6685a118a57944d380978cc1c995bdb"><td class="memItemLeft" align="right" valign="top"><a id="ab6685a118a57944d380978cc1c995bdb" name="ab6685a118a57944d380978cc1c995bdb"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:a1eb5159b9f66957891d3de8dd45d5030"><td class="memItemLeft" align="right" valign="top"><a id="a1eb5159b9f66957891d3de8dd45d5030" name="a1eb5159b9f66957891d3de8dd45d5030"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>jazz_type</b></td></tr>
-<tr class="memdesc:ab6685a118a57944d380978cc1c995bdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Jazz native type. <br /></td></tr>
-<tr class="separator:ab6685a118a57944d380978cc1c995bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb3c7e752d214c1a56c68047666eee00"><td class="memItemLeft" align="right" valign="top"><a id="acb3c7e752d214c1a56c68047666eee00" name="acb3c7e752d214c1a56c68047666eee00"></a>
-onnx::AttributeProto::AttributeType&#160;</td><td class="memItemRight" valign="bottom"><b>onnx_proto_type</b></td></tr>
-<tr class="memdesc:acb3c7e752d214c1a56c68047666eee00"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ONNX protocol buffer type. <br /></td></tr>
-<tr class="separator:acb3c7e752d214c1a56c68047666eee00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:a1eb5159b9f66957891d3de8dd45d5030"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Jazz native type. <br /></td></tr>
+<tr class="separator:a1eb5159b9f66957891d3de8dd45d5030"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1aed3756c84555afa7659dac5fc7e587"><td class="memItemLeft" align="right" valign="top"><a id="a1aed3756c84555afa7659dac5fc7e587" name="a1aed3756c84555afa7659dac5fc7e587"></a>
+onnx::TensorProto::DataType&#160;</td><td class="memItemRight" valign="bottom"><b>onnx_proto_type</b></td></tr>
+<tr class="memdesc:a1aed3756c84555afa7659dac5fc7e587"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ONNX protocol buffer type. <br /></td></tr>
+<tr class="separator:a1aed3756c84555afa7659dac5fc7e587"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a624c96c3f64107dbe0b95c81ec608e"><td class="memItemLeft" align="right" valign="top"><a id="a5a624c96c3f64107dbe0b95c81ec608e" name="a5a624c96c3f64107dbe0b95c81ec608e"></a>
+ONNXTensorElementDataType&#160;</td><td class="memItemRight" valign="bottom"><b>onnx_rt_type</b></td></tr>
+<tr class="memdesc:a5a624c96c3f64107dbe0b95c81ec608e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ONNX runtime type. <br /></td></tr>
+<tr class="separator:a5a624c96c3f64107dbe0b95c81ec608e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A type definition for tensors across all the technologies: Jazz native, ONNX protocol buffer and ONNX runtime. </p>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="opcodes_8h_source.html">opcodes.h</a></li>
 </ul>
 </div><!-- contents -->
