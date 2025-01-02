@@ -17,7 +17,7 @@ var searchData=
   ['signalhandler_5fsigterm_14',['signalHandler_SIGTERM',['../namespacejazz__main.html#afa96b225c13eebee49a375d73fa3ebba',1,'jazz_main']]],
   ['size_15',['size',['../structjazz__elements_1_1StaticBlockHeader.html#a209c786f43a9151b869d9d7e66003863',1,'jazz_elements::StaticBlockHeader::size()'],['../structjazz__elements_1_1BlockHeader.html#a4783f7f789daa2d4afcb84e85721aeee',1,'jazz_elements::BlockHeader::size()']]],
   ['skip_5fspace_16',['skip_space',['../classjazz__elements_1_1Container.html#a15cc7bb0b1364d943625e94211b1d67c',1,'jazz_elements::Container']]],
-  ['snippet_17',['Snippet',['../classjazz__bebop_1_1Snippet.html',1,'jazz_bebop::Snippet'],['../classjazz__bebop_1_1Snippet.html#aa1a2bd22209716935a7b72a3e07d8bde',1,'jazz_bebop::Snippet::Snippet()']]],
+  ['snippet_17',['Snippet',['../classjazz__bebop_1_1Snippet.html',1,'jazz_bebop::Snippet'],['../classjazz__bebop_1_1Snippet.html#a40be967cb3866305510591cb4750870b',1,'jazz_bebop::Snippet::Snippet()']]],
   ['socket_18',['Socket',['../structjazz__elements_1_1Socket.html',1,'jazz_elements']]],
   ['source_5fdbi_19',['source_dbi',['../classjazz__elements_1_1Persisted.html#a61d71a45fd765b68a0fab60df828902e',1,'jazz_elements::Persisted']]],
   ['space_20',['Space',['../classjazz__bebop_1_1Space.html',1,'jazz_bebop::Space'],['../classjazz__bebop_1_1Space.html#ad7f550a1fbc9254d46546a853fba275a',1,'jazz_bebop::Space::Space()']]],
