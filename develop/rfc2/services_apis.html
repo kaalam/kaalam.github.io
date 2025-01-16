@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>Jazz Services, APIs and instantiation</title>
+<title>Jazz Services, APIs and Instantiation</title>
 <style type="text/css">
 body {
   font-family: sans-serif;
@@ -75,12 +75,12 @@ section.footnotes::before {
 </head>
 <body>
 <div class="frontmatter">
-<div class="title"><h1>Jazz Services, APIs and instantiation</h1></div>
+<div class="title"><h1>Jazz Services, APIs and Instantiation</h1></div>
 <div class="author"><h2></h2></div>
 <div class="date"><h3></h3></div>
 </div>
 <div class="body">
-<h1 id="jazz-services-apis-and-instantiation">Jazz Services, APIs and instantiation</h1>
+<h1 id="jazz-services-apis-and-instantiation">Jazz Services, APIs and Instantiation</h1>
 <p>Jazz is a single monolithic process. It allocates data and code (which is data) through some classes that only have one instance of each.
 This document describes the logic behind it.</p>
 <h2 id="services">Services</h2>
@@ -180,8 +180,9 @@ including uplifted ones) and provides a <code>start_service()</code>/<code>stop_
 <h2 id="code-execution-baseapi-space-dataspace-opcodes-bop-snippet-core">Code execution, BaseAPI, Space, DataSpace, OpCodes, Bop, Snippet, Core</h2>
 <pre><code>Service ----------&gt; OpCodes           [ONNX language]
    +--------------&gt; Bop               [Compiler and decompiler]
-   +--------------&gt; Space             [Parent of DataSpace, Snippet and SemSpace]
+   +--------------&gt; Space             [Parent of DataSpace, Field and Snippet]
    |                  +---&gt; DataSpace [Abstracts tables and indexing]
+   |                  +---&gt; Field	  [Storage for snippets, parent of SemSpace]
    |                  +---&gt; Snippet   [Code snippet, parent of Concept]
    +-&gt; Container -&gt; BaseAPI           [Manages petitions to Containers]
                       +---&gt; Core      [Compiles, runs code and serves]
@@ -192,6 +193,7 @@ including uplifted ones) and provides a <code>start_service()</code>/<code>stop_
 <li><code>Space</code>: A common ancestor of <code>DataSpace</code>, <code>Snippet</code> and <code>SemSpace</code> that provides the space abstraction to blocks inside containers.</li>
 <li><code>OpCodes</code>: The ONNX language definition</li>
 <li><code>Bop</code>: The compiler and decompiler</li>
+<li><code>Field</code>: A <code>Space</code> to store snippets</li>
 <li><code>Snippet</code>: A <code>Space</code> to manage executable code, contains: requirements, source and object code</li>
 <li><code>Core</code>: (as in a CPU-core) A wrapper around the onnx-runtime the manages data objects, sessions and other onnx-runtime details</li>
 </ul>
@@ -205,7 +207,7 @@ and many Snippets inside <code>Core</code>.</p>
 <p>You can consider Bebop (Bop) a language with two “flavors”: a <strong>formal</strong> one that can be compiled and is defined by everything in this
 namespace and an <strong>informal</strong> natural language that is converted into compilable code by a <code>Model</code> in <code>jazz_models</code>.</p>
 <h2 id="models-are-a-superior-form-of-code-execution">Models are a superior form of code execution</h2>
-<pre><code>Service -&gt; Space ------------------&gt; SemSpace  [Serves Concepts]
+<pre><code>Service -&gt; Space -----&gt; Field -----&gt; SemSpace  [Serves Concepts]
    |         +--------&gt; Snippet ---&gt; Concept   [Generalizes Snippet to informal code]
    +-----&gt; Container --------------&gt; Model     [uses Core to compile and run solutions]
                +------&gt; BaseAPI ---&gt; ModelsAPI [serves Model descendants]

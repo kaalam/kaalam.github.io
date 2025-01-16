@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['parsenextstatelut_0',['ParseNextStateLUT',['../structjazz__elements_1_1ParseNextStateLUT.html',1,'jazz_elements']]],
-  ['parsestatetransition_1',['ParseStateTransition',['../structjazz__elements_1_1ParseStateTransition.html',1,'jazz_elements']]],
-  ['persisted_2',['Persisted',['../classjazz__elements_1_1Persisted.html',1,'jazz_elements']]],
-  ['putbuffer_3',['PutBuffer',['../structjazz__elements_1_1PutBuffer.html',1,'jazz_elements']]]
+  ['onnxattribute_0',['OnnxAttribute',['../classjazz__bebop_1_1OnnxAttribute.html',1,'jazz_bebop']]],
+  ['onnxopcode_1',['OnnxOpCode',['../classjazz__bebop_1_1OnnxOpCode.html',1,'jazz_bebop']]],
+  ['onnxparameter_2',['OnnxParameter',['../classjazz__bebop_1_1OnnxParameter.html',1,'jazz_bebop']]],
+  ['opcodes_3',['OpCodes',['../classjazz__bebop_1_1OpCodes.html',1,'jazz_bebop']]]
 ];

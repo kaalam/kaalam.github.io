@@ -68,99 +68,110 @@
 </ul>
 
 
-<p>In the <a href="/kaalam/2018/10/02/reviewing_the_motive.html"><b>first part</b></a> we identified <b>five opportunities for
-improvement</b>. In this post we discuss how Jazz addresses them to better understand why Jazz was created. We avoid getting too
-technical here. You can find precise details in the technical documentation.</p>
+<p>
 
-<h4><b>One:</b> The efficiency of current systems is broken, unless all you need is pushing <b>rectangles</b> into other rectangles.</h4>
+<h2>Our Purpose in 2016</h2><p>
 
-<p>Okay, a strong headline. In other words: current platforms are amazing and they can make use of all the hardware you can throw at them
-very efficiently, <b>but</b>... When you ask simple questions like <i>"do I really need all the connections?"</i> The answer should not
-be: <i>"who cares? the optimization would break if you start cherry picking connections."</i> Well, apparently, <b>the human brain does</b>.</p>
+<p>
+<b>Jazz</b> was a tensor storage before it was cool. Back in 2016, we were motivated by the need for lightning-fast data retrieval in
+backend applications, where every millisecond mattered. Our systems demanded not just efficient data storage but also robust backend
+computation to process complex operations seamlessly. <b>Jazz</b> emerged as a solution to bridge these needs, combining speed and
+computational capability in a way that felt ahead of its time.</p>
 
-<p>So maybe, we would benefit from "cherry picking" or, in other words, <b>express complex ideas at low level</b>. And by low level, we
-mean the "things" that are executed millions of times (per core, thread and second).</p>
-<blockquote>
-To "express ideas" Jazz provides a full <b>programming language</b>, <a href="/jazz_reference/vision_code_bebop.html"><b>Bebop</b></a>.
-This includes expressing knowledge with neural networks, but since it is fast (dynamically linked C++ primitives), it can take the
-complexity to the low level without becoming inefficient.
-</blockquote>
+<h2>Bebop-25: Redefining Machine Understanding Through Iterative Execution</h2><p>
 
-<h4><b>Two:</b> Current platforms can sometimes be more a hindrance than a help in the exploration of <b>new ideas</b>.</h4>
-
-<h5>
-<b>Question:</b> How did the Spanish architect <b>Antonio Gaud&iacute;</b> compute thousands of interrelated parameters to build a
-cathedral in the early XX-th century?
-</h5>
+<p>
+The transition to <b>Bebop-25</b> marked a pivotal moment for us, driven by the realization that true machine understanding required more
+than conventional approaches to automated code generation. As <b>Jazz</b> evolved, becoming open source, we turned our focus to enabling
+it to write, run, and evaluate code autonomously. This wasn’t about targeting traditional software development but fulfilling the
+foundational need for machines to grasp and execute programs in ways that mirror human intent. Over time, the concept of Bebop, though
+always carrying the same name, took on many iterations before solidifying as <b>Bebop-25</b>—a culmination of years of research
+and discovery.</p>
 
 <div class="row">
 <div class="6u 12u$(small)">
+<p>
+Tackling the challenge of searching within the space of possible programs meant confronting a problem of combinatorial explosion. In this
+quest, we encountered a need for something that simply did not exist. Reflecting on historical ingenuity, we drew inspiration from
+<b>Antonio Gaud&iacute;</b>, the Spanish architect who designed the ambitious Sagrada Familia over a century ago. To calculate its complex
+curves before the age of computers, he created an inverted physical model using strings and weighted bags, letting physics solve the
+equations of his design. In a similar spirit, we realized that solving our problem required not just thinking outside the box but flipping
+it upside down—embedding program execution as an integral part of the search process, rather than an isolated step that follows program
+creation.</p>
 
-<br />
+<p>
+This shift in thinking became the cornerstone of <b>Bebop-25</b>. By integrating execution into the search itself, we crafted a system that
+could explore, test, and refine potential solutions in real-time, emulating a kind of <b>“live computation”</b>. This paradigm redefined how
+we approached automated code generation and problem-solving, enabling us to move beyond static workflows to a dynamic, iterative process.
+<b>Bebop-25</b> is more than just a system; it represents a philosophy of embracing unconventional approaches to drive innovation in machine
+understanding.</p>
 
-<p><b>Answer:</b> He built a model at scale made of strings and weights putting bullets inside bags and <b>hanged it upside down</b>.
-<a href="https://memetician.livejournal.com/201202.html"><b>link</b></a></p>
-
-<br />
-
-<p>This point sounds similar to the previous one, but with a key difference, it targets <b>science</b> rather than <b>technology</b>.
-Platforms can act like a hammer looking for everything to be a nail. All our models are differentiable end to end because "we" only want
-backprop as a learning mechanism. Should we try RL with tree search, a genetic algorithm or something new, it would get deeply
-handicapped by platforms just because it is on the wrong side of the optimization pyramid. And we may give up instead of trying
-otherwise.</p>
-
-<p>There is more to AI that just fitting a curve using backprop. If you want to hang you model upside down and efficiently train a language
-model where every word or word constituent is a function over a formal field, <b>you need Jazz</b>. As of today, it's either Jazz or ...
-<br />
-<br />
-... nothing else.</p>
 </div>
 <div class="6u$ 12u$(small)">
 <span class="image fit"><img src="/kaalam/assets/images/poly-funicular-miniature.png" alt="" /></span>
 </div>
 </div>
 
+<p>
+<b>Bebop-25</b> has <b>introspection and composition</b> at its core. By representing everything as a computational graph, it inherently
+understands dependencies, enabling seamless transformations such as converting a method of a class into a standalone function or merging
+multiple functions into a cohesive unit. This natural handling of dependencies extends beyond structure to behavior, making the system
+remarkably adaptable. On top of this, the <b>resolver/compiler</b> paradigm empowers <b>Bebop-25</b> to compose code in a manner analogous
+to how we construct natural language—blending smaller, meaningful units into larger, coherent expressions. This approach bridges the gap
+between human intent and machine execution, making <b>Bebop-25</b> not only a tool but a true partner in problem-solving.&lt;/b&gt;
 
-<h4><b>Three:</b> Current solutions are not giving any thought (at platform level) to efficient <b>quick exploration</b>.</h4>
+<h2>Summarizing Jazz 1.25.x</h2><p>
 
-<p>This is exactly why Jazz was created in the first place. We had to provide analysis based on millions (to billions) of data rows
-to thousands of users. The overhead of waiting for queries that took minutes was too much for the average case and the infrastructure
-could not handle giving access to querying to thousands of users. We had to focus on partial results taken from random samples and
-leveraging cached results as much as possible. Before deciding that we needed Jazz, we wrote code running in the back-end of existing
-distributed key-value stores. That almost did the job, but was very short sighted in terms of product life cycle. We learned a lot about
-distributing data and, at some point, we found the courage to tell our bosses that we needed to write the storage (almost) from scratch,
-in C++, to own a platform to do data computation for the future, <b>in a bank</b>!</p>
+</p>
 
-<p>We cannot stress more how <b>important this is for AI</b>. Besides having solved this problem in a different domain, We have decades of
-AI research behind. Learning is all about verifying hypothesis and confirmation/disproof based of small sets of data can leverage learning
-speed orders of magnitude. <a href="/jazz_reference/vision_elements_containers.html"><b>more</b></a></p>
+<table>
+  <thead>
+    <tr>
+      <th>Jazz is</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Native tensors and native tuples</b></td>
+      <td>Built-in support for efficient data structures.</td>
+    </tr>
+    <tr>
+      <td><b>Persistence</b></td>
+      <td>Memory-mapped storage for high-performance data access.</td>
+    </tr>
+    <tr>
+      <td><b>In RAM retrieval</b></td>
+      <td>Uses optimized C structures for rapid data access.</td>
+    </tr>
+    <tr>
+      <td><b>Data abstraction</b></td>
+      <td>Spaces support, sharding, embeddings, time series, and more.</td>
+    </tr>
+    <tr>
+      <td><b>Communication</b></td>
+      <td>Integrates via bash, ZeroMQ and REST.</td>
+    </tr>
+    <tr>
+      <td><b>Computation</b></td>
+      <td>Leverages onnx-runtime for optimized execution. Compiled from Bebop-25 or written by Keras, Pytorch, ...</td>
+    </tr>
+    <tr>
+      <td><b>Code generation</b></td>
+      <td>Generates Bebop-25 automatically by a resolver, runs and evaluates.</td>
+    </tr>
+    <tr>
+      <td><b>Monolith design</b></td>
+      <td>An all-in-one C++ framework for comprehensive functionality.</td>
+    </tr>
+  </tbody>
+</table>
 
-<h4><b>Four:</b> Working with different kinds of <b>data files</b> and <b>services</b> is tedious and error prone.</h4>
-
-<p>Data integration is the ugliest part of data analytics. It is already bad when we only have tabular data. Who knows how many hours are spent
-fixing character encodings and date formats. In AI it is even worse, since AI is about "unstructured" data. We have myriads of binary
-formats for images, sound, video, text files and more. Some algorithms also expect data to be transformed: images to be scaled, normalized,
-etc.</p>
-<p>On the other side, we have myriads of tools to do these things that have limitations and different argument syntax. The knowledge on
-what to use on what to produce what is stored as human readable text only.</p>
 
 <blockquote>
-Making the knowledge <b>machine understandable</b> rather than human understandable makes sense. If there was a universal tool for
-this (in the way git is the universal version control system), we wouldn't even mention it. But, there is no such tool. The first thing
-we need to make it happen is tagging files with attributes specifying what they are and what tools can produce what and how. In Jazz
-files are blocks and blocks have attributes as first class citizen. Just like a web resource has mime types, languages, a url, etc. any
-file can have attributes defining what can be done with it.
+<b>Jazz</b> is a platform built for unmatched speed and innovation, with <b>code creation</b>, <b>introspection</b> and <b>composition</b>
+embedded at its core. It redefines what’s possible, making it a foundation for the future of <b>intelligence engineering</b>.
 </blockquote>
-
-<h4><b>Five:</b> We have to build platforms with <b>code generation</b> and <b>lifelong learning</b> in mind.</h4>
-
-<p>Jazz has this double goal: On one side being a highly efficient and reliable <b>data platform</b> to build backend applications on it.
-On the other, allow <b>AI research</b> on things that cannot be done efficiently otherwise.
-<br />
-With Jazz 0.6.x, the first version releasing code execution, the first goal is accomplished. The second one is a never ending path, that
-will start with Jazz 0.7.x. In the meantime, we have some proof of concept implementations on automated code generation and published some
-work. <a href="/jazz_reference/agency_elements.html"><b>more</b></a></p>
-</section></div>
+</p></p></p></p></section></div>
 </p>
 	</div>
 </section>

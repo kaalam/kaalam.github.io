@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="What is Jazz (part 3) Introduction to Bebop, fields and code generation">
+<meta name="description" content="What is Jazz (part 4) - Introduction to Bebop and code execution">
 <meta name="keywords" content=" ">
-<title>Code Generation - Formal Fields and Bebop | Jazz User's Manual</title>
+<title>Code Execution - Onnx and Bebop | Jazz User's Manual</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -115,7 +115,7 @@
                 
                 
                 
-                <li><a href="http://kaalam.ai" target="_blank">kaalam.ai</a></li>
+                <li><a href="https://kaalam.ai" target="_blank">kaalam.ai</a></li>
                 
                 
                 
@@ -132,7 +132,7 @@
                     <ul class="dropdown-menu">
                         
                         
-                        <li><a href="vision_intro_page.html">What is the vision? What does Jazz want to become?</a></li>
+                        <li><a href="vision_intro_page.html">What is the vision?</a></li>
                         
                         
                         
@@ -152,7 +152,7 @@
                         
                         
                         
-                        <li><a href="using_jazz_today.html">What is the usable part of Jazz today?</a></li>
+                        <li><a href="using_jazz_start.html">How Can I Start with Jazz?</a></li>
                         
                         
                     </ul>
@@ -177,12 +177,12 @@
                 
 
 <ul id="mysidebar" class="nav">
-  <li class="sidebarTitle">Jazz 0.6.1</li>
+  <li class="sidebarTitle">Jazz 1.25.0</li>
   
   
   
   <li>
-      <a href="#">Basic questions on Jazz</a>
+      <a href="#">Basic Questions on Jazz</a>
       <ul>
           
           
@@ -194,35 +194,47 @@
           
           
           
-          <li><a href="vision_intro_page.html">What is the vision? What does Jazz want to be?</a></li>
+          <li><a href="vision_intro_page.html">What is the Vision?</a></li>
           
           
           
           <li class="subfolders">
-              <a href="#">The vision</a>
+              <a href="#">The Vision</a>
               <ul>
                   
                   
                   
-                  <li><a href="vision_elements_block_kind_etc.html">Elements - Blocks, Kinds, Tuples</a></li>
+                  <li><a href="vision_elements_block_kind_etc.html">Basic Types - Blocks, Kinds, Tuples</a></li>
                   
                   
                   
                   
                   
-                  <li><a href="vision_elements_containers.html">Elements - Containers - One Shot, Channels, Volatile and Persisted</a></li>
+                  <li><a href="vision_elements_containers.html">Storing Elements in Containers - One Shot, Channels, Volatile and Persisted</a></li>
                   
                   
                   
                   
                   
-                  <li class="active"><a href="vision_code_bebop.html">Code Generation - Formal Fields and Bebop</a></li>
+                  <li><a href="vision_apis_spaces.html">Abstracting Containers - APIs and Spaces</a></li>
                   
                   
                   
                   
                   
-                  <li><a href="vision_agency_code.html">Agency - Code Automation</a></li>
+                  <li class="active"><a href="vision_code_bebop.html">Code Execution - Onnx and Bebop</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="vision_models.html">Adding Intelligence - Code Automation</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a href="vision_uplifts.html">Customizing Jazz for Production - Uplifts</a></li>
                   
                   
                   
@@ -238,12 +250,12 @@
       
   
   <li>
-      <a href="#">Bebop fundamentals (Jazz 0.6.x)</a>
+      <a href="#">Bebop Fundamentals (since Jazz 1.25.1)</a>
       <ul>
           
           
           
-          <li><a href="bop_elements.html">Bebop elements</a></li>
+          <li><a href="bop_reference.html">Bebop Reference</a></li>
           
           
           
@@ -254,12 +266,12 @@
       
   
   <li>
-      <a href="#">Agency fundamentals (Jazz 0.7.x)</a>
+      <a href="#">Models Fundamentals (since Jazz 1.25.2)</a>
       <ul>
           
           
           
-          <li><a href="agency_elements.html">Agency elements</a></li>
+          <li><a href="models_reference.html">Models Reference</a></li>
           
           
           
@@ -270,152 +282,152 @@
       
   
   <li>
-      <a href="#">API fundamentals</a>
+      <a href="#">API Fundamentals</a>
       <ul>
           
           
           
-          <li><a href="api_ref_intro.html">API reference - Introduction</a></li>
+          <li><a href="api_ref_intro.html">API Reference - Introduction</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_http_api.html">API reference - The http API</a></li>
+          <li><a href="api_ref_http_api.html">API Reference - The HTTP API</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_const_encoding.html">API reference - Constants and %-encoding</a></li>
+          <li><a href="api_ref_const_encoding.html">API Reference - Constants and %-encoding</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_slicing.html">API reference - Block and tuple slicing</a></li>
+          <li><a href="api_ref_slicing.html">API Reference - Block and tuple slicing</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_fun_calls.html">API reference - Function calls</a></li>
+          <li><a href="api_ref_fun_calls.html">API Reference - Function calls</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_assign.html">API reference - Assignment calls</a></li>
+          <li><a href="api_ref_assign.html">API Reference - Assignment calls</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_attributes.html">API reference - Attribute calls</a></li>
+          <li><a href="api_ref_attributes.html">API Reference - Attribute calls</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_serialization.html">API reference - Block serialization calls</a></li>
+          <li><a href="api_ref_serialization.html">API Reference - Block serialization calls</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_jazz_cluster.html">API reference - Using Jazz as a cluster</a></li>
+          <li><a href="api_ref_jazz_cluster.html">API Reference - Using Jazz as a cluster</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_serving_frontend.html">API reference - Using Jazz to serve applications</a></li>
+          <li><a href="api_ref_serving_frontend.html">API Reference - Using Jazz to serve applications</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_agency_wip.html">API reference - Agency bases (Work in Progress)</a></li>
+          <li><a href="api_ref_core.html">API Reference - Core API</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_bebop_wip.html">API reference - Bebop bases (Work in Progress)</a></li>
+          <li><a href="api_ref_model.html">API Reference - Model API</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_channel_zmq.html">API reference - Channel base 0-mq</a></li>
+          <li><a href="api_ref_channel_zmq.html">API Reference - Channel base 0-mq</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_channel_bash.html">API reference - Channel base bash</a></li>
+          <li><a href="api_ref_channel_bash.html">API Reference - Channel base bash</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_channel_file.html">API reference - Channel base file</a></li>
+          <li><a href="api_ref_channel_file.html">API Reference - Channel base file</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_channel_http.html">API reference - Channel base http</a></li>
+          <li><a href="api_ref_channel_http.html">API Reference - Channel base http</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_persisted_lmdb.html">API reference - Persisted base lmdb</a></li>
+          <li><a href="api_ref_persisted_lmdb.html">API Reference - Persisted base lmdb</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_volatile_deque.html">API reference - Volatile base deque</a></li>
+          <li><a href="api_ref_volatile_deque.html">API Reference - Volatile base deque</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_volatile_index.html">API reference - Volatile base index</a></li>
+          <li><a href="api_ref_volatile_index.html">API Reference - Volatile base index</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_volatile_queue.html">API reference - Volatile base queue</a></li>
+          <li><a href="api_ref_volatile_queue.html">API Reference - Volatile base queue</a></li>
           
           
           
           
           
           
-          <li><a href="api_ref_volatile_tree.html">API reference - Volatile base tree</a></li>
+          <li><a href="api_ref_volatile_tree.html">API Reference - Volatile base tree</a></li>
           
           
           
@@ -426,12 +438,12 @@
       
   
   <li>
-      <a href="#">Docker reference</a>
+      <a href="#">Docker Reference</a>
       <ul>
           
           
           
-          <li><a href="reference_docker_how_to_build.html">How to build your own Jazz Docker image</a></li>
+          <li><a href="reference_docker_how_to_build.html">How to Build your Own Jazz Docker Image</a></li>
           
           
           
@@ -468,7 +480,7 @@
           
           
           
-          <li><a href="reference_server_setup.html">Server internals and setup</a></li>
+          <li><a href="reference_server_setup.html">Server Internals and Setup</a></li>
           
           
           
@@ -484,14 +496,21 @@
           
           
           
-          <li><a href="using_jazz_today.html">What is the usable part of Jazz today?</a></li>
+          <li><a href="using_jazz_start.html">How Can I Start with Jazz?</a></li>
           
           
           
           
           
           
-          <li><a href="using_compile_jazz.html">How can I compile Jazz and the clients?</a></li>
+          <li><a href="using_compile.html">How Can I Compile Jazz?</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="using_extend.html">How Can I Extend Jazz?</a></li>
           
           
           
@@ -507,7 +526,7 @@
           
           
           
-          <li><a href="contributing_welcome_all.html">How can I help? What kind of skills are needed?</a></li>
+          <li><a href="contributing_welcome_all.html">How Can I Help?</a></li>
           
           
           
@@ -534,7 +553,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Code Generation - Formal Fields and Bebop</h1>
+   <h1 class="post-title-main">Code Execution - Onnx and Bebop</h1>
 </div>
 
 
@@ -542,7 +561,7 @@
 <div class="post-content">
 
    
-    <div class="summary">What is Jazz (part 3) Introduction to Bebop, fields and code generation</div>
+    <div class="summary">What is Jazz (part 4) - Introduction to Bebop and code execution</div>
    
 
     
@@ -578,77 +597,63 @@ $('#toc').on('click', 'a', function() {
 
   <h2 id="what-is-that-jazz-magic">What is that “Jazz Magic”?</h2>
 
-<p>Until now, we introduced blocks, storage and containers that somehow (we will get there) are accessed via http. That part is just a very efficient and hopefully simple way to manage already known things. The basement of Jazz so to say. The question is still: “why bother using Jazz instead of any other platform with more traction that implements these things?” Hint: Efficiency and simplicity alone are not good enough reasons.</p>
+<p>The Jazz <a href="/kaalam/2018/10/04/why_jazz.html">purpose</a> and how it a <a href="/kaalam/2018/10/01/how_is_jazz_a_solution.html">solution</a> has been
+introduced in the kaalam blog. In this page, we just outline a few traits of Bebop (aka. Bop) that make it a unique programming language.</p>
 
-<p>Before we talk about <code class="language-plaintext highlighter-rouge">Field</code>, <code class="language-plaintext highlighter-rouge">Core</code>, <code class="language-plaintext highlighter-rouge">Agency</code> and some other classes, we need to explain where we want to go. What we want to build is a platform that does distributed computation building on top of simple programs (functions).</p>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> In the past, Bebop has been different experimental things, from now on, by Bebop we mean Bebop-25 and that
+refers to any modern version of the language.</div>
 
-<p>You can look at artificial neurons as programs, they are, and at deep learning (DL) as “software 2.0”, that has been said already. Does that mean we will never need anything other than DL? DL can find incredible functions matching images into labels, text into sound waves, … what not.</p>
+<h3 id="jazz-with-onnx">Jazz with ONNX</h3>
 
-<p>But, imagine for now we just want to code a known equation, say the fundamental equation of thermodynamics. Given enough data, we can get an acceptable approximation with millions of parameters. Aside from size and efficiency, the model comes with absolutely no warranty, especially for out of distribution data and no interpretability. Each time we have to introduce any change and train again, we have to “rediscover thermodynamics”. Actually, a less general, less precise and less computationally efficient version of it.</p>
+<p>On one side, we want to do computation using Jazz, the most efficient possible data storage, we want that computation to be the most
+efficient possible, maintained by a huge team (including Microsoft, Facebook, IBM, Intel, AMD and Nvidia) to optimize for any platform.
+We want to support any deep learning framework, via ONNX, to support anything written in PyTorch, TensorFlow, Keras, MXNet, SciKit-Learn
+and hundreds of other frameworks. And we want to do that using the tensors stored in Jazz and be able to serve the service (or even compile
+Bop on the fly) via API. Well Bebop does that in a <strong>clean and simple way</strong>.</p>
 
-<p>Of course, we don’t need to use deep learning for that, we can use any back-end programming language and have a human code the equation for us. Nothing new under the sun.</p>
+<p>On another side, we want to provide <code class="language-plaintext highlighter-rouge">DataSpace</code> objects to make our models use data abstractions that support such things as embeddings,
+nearest neighbors, and other things that are not supported by ONNX, in a seamless way.</p>
 
-<p>Why choose? <strong>That’s the point</strong>. We want to build a computing framework that can be coded by humans, thus creating simple and efficient programs. But we want these programs to also be learned. We want a framework that can be coded, in a language that is <strong>safe enough to explore automatic programming</strong> while being <strong>extensible enough to use natural language as code</strong>.</p>
+<p>That, on itself is a reason big enough to use Jazz. We get rid of any scripting language in favor of a concurrent, controllable monolithic
+server written in C++ to put machine learning in production.</p>
 
-<p>In the outworn debate between “symbolic” and “connectionist”, again: why choose? Knowledge can be built as networks of symbols, but not symbols that only have meaning for humans, grounded symbols, <strong>symbols that can be executed as code</strong> and queried. Because growing as networks of programs is the natural way, this is connectionism. In fact, it extends connectionism beyond deep learning since the architecture is also learned. Let’s assume that “deep learning” is defined as “anything based on differentiable end-to-end learning”, which of course is an objectionable definition, but allow us to oversimplify for now. The reason why DL needs being differentiable is because anything that cannot do gradient based optimization is too slow to work. And that is true, but only if you need to train millions (or billions) of parameters from scratch each time you train. Living systems don’t do that.</p>
+<h3 id="onnx-is-designed-to-be-written-by-machines">ONNX is designed to be written by machines</h3>
 
-<p>Until now, <strong>“lifelong learning”</strong> is just an aspiration with no real content. Maybe, that’s what we should learn from living things.</p>
+<p>To support automatic programming, typically from natural language, in a way in which a text description follows a model of the world and
+that world can be used to explain and predict outcomes, we need to generate massive amounts of candidate programs efficiently. How to do
+that with Jazz/Bebop is explained in the <a href="vision_models.html">next page</a>.</p>
 
-<p>We want to learn these programs, which is why we need efficient persistence to support their lifecycle. But we do not want to learn them through SGD, that’s why we don’t need the differentiable part. We want to learn few parameters at a time.</p>
+<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> Automatic programming has been the holy grail of AI since the times of <b>von Neumann</b>. Also,
+<b>Minsky</b> stated that von Neumann’s architecture was created with the intention to do automatic programming <i>(previous architectures
+had a hard code/data separation and code was not modifiable while running)</i>. Other languages, including Lisp, clearly had automated
+programming in mind when designed.</div>
 
-<p><strong>Caveat</strong>: Automatic programming has been the holy grail of AI since the times of von Neumann. Minsky even stated that von Neumann’s architecture was created with the intention to do automatic programming <em>(previous architectures had a hard code/data separation and code was not modifiable while running)</em>. Other languages, including Lisp, clearly had automated programming in mind when designed.</p>
+<h3 id="bebop-is-made-of-computation-graphs">Bebop is made of computation graphs</h3>
 
-<p>The search space is virtually infinite, <strong>why do you want to fail again?</strong></p>
+<p>A computation in Bebop is a graph of graphs of graphs, … of graphs. Each edge is either an ONNX operator or a Bebop function. When
+running, the function calls can be replaced by the code of the function.</p>
 
-<p>The search space is virtually infinite in all interesting problems, including those already solved, and anyway, it is much smaller than that of deep learning, since programs are much shorter than weight vectors. The size of the search space is only an obstacle in problems that can only be approached from the uniform distribution like cryptographically safe one-way functions. Automatic coding can be approached from many fields including genetic programming, evolutionary algorithms, compositionality and more. We also have some examples of success, including humans. Even if <strong>abiogenesis</strong> is still an unsolved problem, something finally managed to automatically build the code of some primordial cell. Let’s put it this way: It’s easier than abiogenesis because we can hack as much as we want instead of waiting for the universe to solve it for us.</p>
+<h3 id="bebop-is-object-oriented">Bebop is object oriented</h3>
 
-<p>So we do not build Jazz with the intention of creating conscious robots in five years. We build it because, worst case, we have a lightweight efficient framework to express distributed data processing problems that will make lots of things happen. We build it because, if not built, we cannot research the ideas we want to research to advance the field of automatic programming. Ultimately, we build it because we dream of Jazz becoming a “failure” like von Neumann’s architecture or Lisp.</p>
-
-<h2 id="introducing-bebop">Introducing Bebop</h2>
-
-<p><span class="label label-info">Bebop</span></p>
-
-<p>Jazz has a programming language called <strong>Bebop</strong> (or simply <strong>Bop</strong>).</p>
-
-<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> Bebop is work in progress. Now that Jazz 0.5.1 is released (October 2021), the moment has come! After two years of PoC and refining the idea, we are actually working on this! This is Jazz 0.6.1, stay tuned. This page was last updated after the 2019 PoC and is still essentially what the idea is.</div>
-
-<figure><img class="docimage" src="images/jazz_bebop.png" alt="" /><figcaption>Bebop</figcaption></figure>
-
-<h3 id="bebop-operates-at-source-and-bytecode-level">Bebop operates at source and bytecode level</h3>
-
-<p>After years considering different designs (starting after years trying to use existing languages) we picked a design that extremely simplifies parsing while extending Bop to make it as simple as natural language or multimedia sources. The price is, at least for the moment, you cannot code in Bop without understanding its <strong>bytecode</strong>. Bytecode is just a name, actually it is a vector or 32 bit integers with a special attribute identifying the owning <code class="language-plaintext highlighter-rouge">Field</code>. Positive numbers define functions, negative numbers define arguments (this includes constants, local variables, values passed by reference, constants passed by reference, etc.). The bytecode is executed as a stream of function calls with arguments passed on a stack. Conditionals jumps are supported via special functions.</p>
-
-<p>Bebop compiles anything to <strong>bytecode</strong> on request. Of course, many times it will fail, that is part of the game. Anything includes blocks containing binary files. Take a block containing an .mp3 compressed audio file. A <code class="language-plaintext highlighter-rouge">Field</code> named “wave data” could compile the file resulting in a function call that takes the file as an argument an decompresses it into a vector of integers.</p>
-
-<p>Besides anything potentially being considered <strong>code</strong>, Bop has a source code (text identified by a special attribute) that is just a human friendly way to manage the bytecode including basic things as: comments, includes, variable names, brackets to define code blocks, but not much more.</p>
-
-<h3 id="bebop-is-object-oriented-in-its-own-way">Bebop is object oriented (in its own way)</h3>
-
-<p>Anything provided by OOP: organization, abstraction, inheritance is provided by the class <code class="language-plaintext highlighter-rouge">Field</code>. This makes it unnecessary to build again classes in Bop as contemplated by previous designs. Inheritance is multiple, this implies creating a virtual <code class="language-plaintext highlighter-rouge">Field</code> which is the union of the inherited fields. It also creates new bytecode key assignment.</p>
+<p>In Bebop and object is a private namespace with attributes and methods defined in a class. The attributes have constructors may be
+read-only or read-write. The methods are functions with access to the attributes. The object support multiple inheritance.
+Via introspection, at any time what part of an object is used is known and construction will operate in a lazy way.</p>
 
 <h3 id="bebop-is-functional">Bebop is functional</h3>
 
-<p>In the sense that functions (bytecode) can be passed as arguments to functions and returned by functions. Also, blocks are immutable, reads are safe, writes are idempotent. It is not purely functional since side effects are possible because arguments can be passed by reference. It is up to the user to decide to make it purely functional or not.</p>
+<p>In the sense that functions can be passed as arguments to functions and returned by functions. Also, blocks are immutable, reads are safe,
+writes are idempotent. It is not purely functional since side effects are possible since objects have read-write attributes.
+It is up to the user to decide to make it purely functional or not.</p>
 
-<h3 id="bebop-is-safe">Bebop is safe</h3>
+<h3 id="bebop-does-introspection">Bebop does introspection</h3>
 
-<p>Bop supports both static and dynamic analysis of its own code. Static allows analyzing the code without running it. The mechanism implemented is described in a paper that will be shared soon. Dynamic allows defining alternative code in case of failure, called forking a function.</p>
+<p>Any Bebop code being a graph of graphs, … which is a graph, makes it possible to introspect the code at any level and always know
+the flow of dependencies. This is used to optimize the code, to generate the code. Also, since ONNX runtime has a cost for creating
+sessions, we have the option to call code that is already in memory, and that is a huge advantage.</p>
 
-<h3 id="bebop-is-pure-just-in-time-linked-c">Bebop is pure just-in-time linked C++</h3>
+<h2 id="bebop-reference">Bebop Reference</h2>
 
-<p>Bop only needs one tuple as an argument and one tuple as a return (which is no limitation since the complexity of a tuple is unlimited).
-A kernel bytecode instruction is just a just-in-time linked c++ function. Alternatively, a bytecode instruction can be a bop function which
-can be learned of written in the kernel.</p>
-
-<h2 id="introducing-formal-fields">Introducing Formal Fields</h2>
-
-<p><span class="label label-info">Field</span></p>
-
-<p>Our paper from 2019 <a href="https://arxiv.org/abs/2007.14075">formal fields</a> still holds quite well. Maybe, some ways of defining things are too
-formal and verbose. Using the simplest version of category theory. You can think of a formal field as “the set of morphisms that relate two
-<code class="language-plaintext highlighter-rouge">Kind</code> objects”. And that defines the primary structure, all other structures are compositions of morphisms (== opcodes).</p>
-
-<figure><img class="docimage" src="images/jazz_field.png" alt="" /><figcaption>Field class</figcaption></figure>
+<p>The Bebop-25 Reference source is <a href="bop_reference.html">Bebop Reference</a> page.</p>
 
 <p><br /></p>
 
@@ -663,12 +668,12 @@ formal and verbose. Using the simplest version of category theory. You can think
       <td><span class="label label-info">Next …</span></td>
     </tr>
     <tr>
-      <td><a href="vision_elements_containers.html">Elements - Containers</a></td>
+      <td><a href="vision_apis_spaces.html">APIs and Spaces</a></td>
       <td> </td>
       <td> </td>
       <td> </td>
       <td> </td>
-      <td><a href="vision_agency_code.html">Agency - Code Automation</a></td>
+      <td><a href="vision_models.html">Code Automation</a></td>
     </tr>
   </tbody>
 </table>
@@ -686,7 +691,7 @@ formal and verbose. Using the simplest version of category theory. You can think
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2025 kaalam.ai. All rights reserved. <br />
- Site last generated: Jan 7, 2025 <br />
+ Site last generated: Jan 16, 2025 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>
