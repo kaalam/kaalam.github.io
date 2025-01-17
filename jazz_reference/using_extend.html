@@ -609,15 +609,213 @@ $('#toc').on('click', 'a', function() {
 
 <h3 id="1-placing-your-source-tree">1. Placing your source tree</h3>
 
+<p>In the previous step, you have created a directory tree using <code class="language-plaintext highlighter-rouge">git clone https://github.com/kaalam/Jazz.git</code>. This tree will become
+the source of your customized Jazz server. Once everything is configured, the <code class="language-plaintext highlighter-rouge">make</code> command will build the customized server. Also,
+your IDE will be aware of the whole project, which allows you to navigate the source code and debug it.</p>
+
+<p>At the moment, your project has a subfolder called <code class="language-plaintext highlighter-rouge">uplifts</code> that contains just a <code class="language-plaintext highlighter-rouge">README.md</code> file. That file is part of the Jazz
+project, the rest is not.</p>
+
+<pre><code class="language-txt">uplifts/
+└── README.md
+</code></pre>
+
+<p>Inside the <code class="language-plaintext highlighter-rouge">uplifts</code> folder, you will create new folders <code class="language-plaintext highlighter-rouge">api</code> and <code class="language-plaintext highlighter-rouge">models_api</code> (you can create both or just one depending on what you
+want to uplift). You will get a sub-tree like:</p>
+
+<pre><code class="language-txt">├── uplifts
+│   ├── api
+│   │   ├── internal_api.cpp
+│   │   └── internal_api.h
+│   ├── models_api
+│   │   ├── internal_models.cpp
+│   │   └── internal_models.h
+│   └── README.md
+</code></pre>
+
+<p>The names of the files, also putting each model in a separate file, is your choice, but the folder names are fixed. Of course, you can
+create subfolders with whatever you need, but the files that define the names of your classes must be exposed as in the example.</p>
+
+<p><code class="language-plaintext highlighter-rouge">config</code> will look for the names and relate them with their parents and object names. To make this detection possible, just write simple
+class definitions like:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">MyModel</span> <span class="o">:</span> <span class="k">public</span> <span class="n">Model</span> <span class="p">{</span>
+
+    <span class="nl">public:</span>
+
+         <span class="n">MyModel</span><span class="p">(</span><span class="n">pLogger</span> <span class="n">a_logger</span><span class="p">,</span> <span class="n">pConfigFile</span> <span class="n">a_config</span><span class="p">);</span>
+        <span class="o">~</span><span class="n">MyModel</span><span class="p">();</span>
+
+        <span class="k">virtual</span> <span class="n">pChar</span> <span class="k">const</span> <span class="n">id</span><span class="p">();</span>
+
+    <span class="c1">// ... whatever you need goes here</span>
+<span class="p">};</span>
+
+
+<span class="k">class</span> <span class="nc">MyModelsAPI</span> <span class="o">:</span> <span class="k">public</span> <span class="n">ModelsAPI</span> <span class="p">{</span>
+
+    <span class="nl">public:</span>
+
+         <span class="n">MyModelsAPI</span><span class="p">(</span><span class="n">pLogger</span> <span class="n">a_logger</span><span class="p">,</span>
+                     <span class="n">pConfigFile</span> <span class="n">a_config</span><span class="p">,</span>
+                     <span class="n">pChannels</span> <span class="n">a_channels</span><span class="p">,</span>
+                     <span class="n">pVolatile</span> <span class="n">a_volatile</span><span class="p">,</span>
+                     <span class="n">pPersisted</span> <span class="n">a_persisted</span><span class="p">);</span>
+        <span class="o">~</span><span class="n">MyModelsAPI</span><span class="p">();</span>
+
+        <span class="k">virtual</span> <span class="n">pChar</span> <span class="k">const</span> <span class="n">id</span><span class="p">();</span>
+
+    <span class="c1">// ... whatever you need goes here</span>
+<span class="p">};</span>
+
+
+<span class="k">class</span> <span class="nc">InternalAPI</span> <span class="o">:</span> <span class="k">public</span> <span class="n">jazz_main</span><span class="o">::</span><span class="n">API</span> <span class="p">{</span>
+
+    <span class="nl">public:</span>
+
+         <span class="n">InternalAPI</span><span class="p">(</span><span class="n">pLogger</span>	 <span class="n">a_logger</span><span class="p">,</span>
+                     <span class="n">pConfigFile</span> <span class="n">a_config</span><span class="p">,</span>
+                     <span class="n">pChannels</span>	 <span class="n">a_channels</span><span class="p">,</span>
+                     <span class="n">pVolatile</span>	 <span class="n">a_volatile</span><span class="p">,</span>
+                     <span class="n">pPersisted</span>	 <span class="n">a_persisted</span><span class="p">,</span>
+                     <span class="n">pCore</span>		 <span class="n">a_core</span><span class="p">,</span>
+                     <span class="n">pModelsAPI</span>	 <span class="n">a_model</span><span class="p">);</span>
+        <span class="o">~</span><span class="n">InternalAPI</span><span class="p">();</span>
+
+        <span class="k">virtual</span> <span class="n">pChar</span> <span class="k">const</span> <span class="n">id</span><span class="p">();</span>
+
+    <span class="c1">// ... whatever you need goes here</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
 <h3 id="2-creating-a-makefile">2. Creating a Makefile</h3>
+
+<p>To create a makefile that understands your new classes, you just have to run <code class="language-plaintext highlighter-rouge">./config.sh</code> again. We assume that in the prerequisites
+you already solve all the library dependencies. Now, you only have to let it detect the new modules and names.</p>
+
+<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> Each time you modify class names for inherited class or file names, you have to run <code class="language-plaintext highlighter-rouge">./config.sh</code>
+again!</div>
 
 <h3 id="3-adding-version-control">3. Adding version control</h3>
 
+<p>At the level of your <code class="language-plaintext highlighter-rouge">(project)/uplifts</code> folder you start your own git repository. Typically, with <code class="language-plaintext highlighter-rouge">git init</code>, add a remote, etc.
+This folder is already ignored by the main Jazz repository, with the exception of the <code class="language-plaintext highlighter-rouge">README.md</code> file. You will typically want to create
+your own <code class="language-plaintext highlighter-rouge">.gitignore</code> file at this level to, at the minimum, hide you IDE’s configuration files. Include <code class="language-plaintext highlighter-rouge">.vscode</code> in it, the rest of
+this page assumes VSCode as the IDE.</p>
+
 <h3 id="4-making-the-ide-in-each-tree-aware-of-the-other">4. Making the IDE in each tree aware of the other</h3>
+
+<p>By default, your main project is not aware of the uplifts in the IDE even if <code class="language-plaintext highlighter-rouge">make</code> works ok. You will have to create a
+<code class="language-plaintext highlighter-rouge">c_cpp_properties.json</code> in <code class="language-plaintext highlighter-rouge">.vscode</code> with something like:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"configurations"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Jazz testing"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"defines"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"DEBUG"</span><span class="p">,</span><span class="w"> </span><span class="s2">"CATCH_TEST"</span><span class="p">],</span><span class="w">
+            </span><span class="nl">"intelliSenseMode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"linux-gcc-x64"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"cStandard"</span><span class="p">:</span><span class="w"> </span><span class="s2">"c17"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"cppStandard"</span><span class="p">:</span><span class="w"> </span><span class="s2">"c++17"</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"includePath"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"${workspaceFolder}/server"</span><span class="p">,</span><span class="w"> </span><span class="s2">"${workspaceFolder}/uplifts"</span><span class="p">]</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>You may also want to have debugging configuration to run tests, run the server in debug mode or attach to a running server. This is
+controlled by the <code class="language-plaintext highlighter-rouge">launch.json</code> file in the <code class="language-plaintext highlighter-rouge">.vscode</code> folder, something like:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+	</span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.2.0"</span><span class="p">,</span><span class="w">
+	</span><span class="nl">"configurations"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+
+		</span><span class="p">{</span><span class="w">
+			</span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"(gdb) Attach"</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cppdbg"</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"request"</span><span class="p">:</span><span class="w"> </span><span class="s2">"attach"</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"program"</span><span class="p">:</span><span class="w"> </span><span class="s2">"${workspaceFolder}/server/djazz"</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"processId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"${command:pickProcess}"</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"MIMode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"gdb"</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"setupCommands"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+				</span><span class="p">{</span><span class="w">
+					</span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Enable pretty-printing for gdb"</span><span class="p">,</span><span class="w">
+					</span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"-enable-pretty-printing"</span><span class="p">,</span><span class="w">
+					</span><span class="nl">"ignoreFailures"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+				</span><span class="p">}</span><span class="w">
+			</span><span class="p">]</span><span class="w">
+		</span><span class="p">},</span><span class="w">
+		</span><span class="p">{</span><span class="w">
+			</span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"(gdb) Launch"</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cppdbg"</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"request"</span><span class="p">:</span><span class="w"> </span><span class="s2">"launch"</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"program"</span><span class="p">:</span><span class="w"> </span><span class="s2">"${workspaceFolder}/server/tjazz"</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"args"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+			</span><span class="nl">"stopAtEntry"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"cwd"</span><span class="p">:</span><span class="w"> </span><span class="s2">"${workspaceFolder}/server"</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"environment"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+			</span><span class="nl">"MIMode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"gdb"</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"setupCommands"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+				</span><span class="p">{</span><span class="w">
+					</span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Enable pretty-printing for gdb"</span><span class="p">,</span><span class="w">
+					</span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"-enable-pretty-printing"</span><span class="p">,</span><span class="w">
+					</span><span class="nl">"ignoreFailures"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+				</span><span class="p">}</span><span class="w">
+			</span><span class="p">]</span><span class="w">
+		</span><span class="p">},</span><span class="w">
+		</span><span class="p">{</span><span class="w">
+			</span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"(gdb) Launch DBG server"</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cppdbg"</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"request"</span><span class="p">:</span><span class="w"> </span><span class="s2">"launch"</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"program"</span><span class="p">:</span><span class="w"> </span><span class="s2">"${workspaceFolder}/server/djazz"</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"args"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"start"</span><span class="p">],</span><span class="w">
+			</span><span class="nl">"stopAtEntry"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"cwd"</span><span class="p">:</span><span class="w"> </span><span class="s2">"${workspaceFolder}/server"</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"environment"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+			</span><span class="nl">"MIMode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"gdb"</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"setupCommands"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+				</span><span class="p">{</span><span class="w">
+					</span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Enable pretty-printing for gdb"</span><span class="p">,</span><span class="w">
+					</span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"-enable-pretty-printing"</span><span class="p">,</span><span class="w">
+					</span><span class="nl">"ignoreFailures"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+				</span><span class="p">}</span><span class="w">
+			</span><span class="p">]</span><span class="w">
+		</span><span class="p">}</span><span class="w">
+	</span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
 
 <h3 id="5-testing-the-uplift">5. Testing the uplift</h3>
 
+<p>To make testing the uplift identical to testing the main project, just use the same logic:</p>
+
+<ul>
+  <li>Create a <code class="language-plaintext highlighter-rouge">test</code> folder in each of you folders, <code class="language-plaintext highlighter-rouge">api</code> and <code class="language-plaintext highlighter-rouge">models_api</code>.</li>
+  <li>Write Catch2 tests in the <code class="language-plaintext highlighter-rouge">test</code> folder.</li>
+  <li>Include the test conditionally in the .cpp file, like:</li>
+</ul>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#if defined CATCH_TEST
+#include "../uplifts/models_api/tests/test_my_model.ctest"
+#endif
+</span></code></pre></div></div>
+
+<p>Also, to make the IDE find the sources when editing the test files, add a second include to the .h file, like:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#pragma once
+#include "./uplifts/models_api/my_model.h"
+</span></code></pre></div></div>
+
+<p>Once you have that, you can just <code class="language-plaintext highlighter-rouge">make tjazz</code> and run it or debug it in the IDE.</p>
+
 <h3 id="6-building-deploying">6. Building, deploying</h3>
+
+<p>Once you have a debugged your uplifts, you can build the server with <code class="language-plaintext highlighter-rouge">make jazz</code> and deploy it. You could install it in the
+machine where you are developing with <code class="language-plaintext highlighter-rouge">make install</code> or build a Docker with it as explained in
+the <a href="reference_docker_how_to_build.html">Docker documentation</a>.</p>
+
+<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> When you create a docker image, you will probably want to edit the server configuration and the static
+content available by default that are in the <code class="language-plaintext highlighter-rouge">server/config/jazz_config.ini</code> file and <code class="language-plaintext highlighter-rouge">server/config/www</code> folder.</div>
 
 <p><br /></p>
 
