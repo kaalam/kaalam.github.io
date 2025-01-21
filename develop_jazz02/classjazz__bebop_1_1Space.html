@@ -91,12 +91,10 @@ Inheritance diagram for jazz_bebop::Space:</div>
  <div class="center">
   <img src="classjazz__bebop_1_1Space.png" usemap="#jazz_5Fbebop::Space_map" alt=""/>
   <map id="jazz_5Fbebop::Space_map" name="jazz_5Fbebop::Space_map">
-<area href="classjazz__elements_1_1Service.html" title="A Jazz Service is a globally instanced configurable object that may allocate RAM." alt="jazz_elements::Service" shape="rect" coords="156,0,302,24"/>
+<area href="classjazz__elements_1_1Service.html" title="A Jazz Service is a globally instanced configurable object that may allocate RAM." alt="jazz_elements::Service" shape="rect" coords="78,0,224,24"/>
 <area href="classjazz__bebop_1_1DataSpace.html" title="DataSpace: The data space." alt="jazz_bebop::DataSpace" shape="rect" coords="0,112,146,136"/>
 <area href="classjazz__bebop_1_1Field.html" title="Field: A Space for Snippets." alt="jazz_bebop::Field" shape="rect" coords="156,112,302,136"/>
-<area href="classjazz__bebop_1_1Snippet.html" title="Snippet: A code snippet and the ancestor of Concept." alt="jazz_bebop::Snippet" shape="rect" coords="312,112,458,136"/>
 <area href="classjazz__models_1_1SemSpace.html" title="SemSpace: A Field for Concepts." alt="jazz_models::SemSpace" shape="rect" coords="156,168,302,192"/>
-<area href="classjazz__models_1_1Concept.html" title="Concept: Generalizes Snippet for informal code." alt="jazz_models::Concept" shape="rect" coords="312,168,458,192"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -202,15 +200,19 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a>: The abstract space. </p>
-<p>This is the abstract parent of <a class="el" href="classjazz__bebop_1_1DataSpace.html" title="DataSpace: The data space.">DataSpace</a> and SemSpace. A <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a> is an abstraction over many blocks that provides:</p>
+<p>This is the abstract parent of <a class="el" href="classjazz__bebop_1_1DataSpace.html" title="DataSpace: The data space.">DataSpace</a>, Field/SemSpace and Snippet/Concept. A <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a> is an abstraction over many blocks that provides:</p>
 <ul>
 <li>An abstraction in the form of rows and columns.</li>
-<li>Sharding and replication across a cluster.</li>
-<li>A mechanism to load, update, invalidate blocks. This supports continuous update like in time series.</li>
 <li>A mechanism to load and update its own metadata in a persisted way.</li>
 </ul>
+<p>Through inheritance, it provides su things as:</p>
+<ul>
+<li>Sharding and replication across a cluster.</li>
+<li>A mechanism to load, update, invalidate blocks. This supports continuous update like in time series.</li>
+<li>Indexing by time, key, embedding, etc.</li>
+</ul>
 <p>The class <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a> is mostly empty. It provides the parent virtual interface and the parents of all the auxiliary classes used to access data.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classjazz__bebop_1_1DataSpace.html" title="DataSpace: The data space.">DataSpace</a>, SemSpace </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classjazz__bebop_1_1DataSpace.html" title="DataSpace: The data space.">DataSpace</a>, <a class="el" href="classjazz__bebop_1_1Field.html" title="Field: A Space for Snippets.">Field</a>, SemSpace, <a class="el" href="classjazz__bebop_1_1Snippet.html" title="Snippet: A code snippet and the ancestor of Concept.">Snippet</a>, Concept </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad7f550a1fbc9254d46546a853fba275a" name="ad7f550a1fbc9254d46546a853fba275a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad7f550a1fbc9254d46546a853fba275a">&#9670;&#160;</a></span>Space()</h2>
