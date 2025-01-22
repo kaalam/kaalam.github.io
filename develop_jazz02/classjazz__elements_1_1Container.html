@@ -995,7 +995,7 @@ new_block()</h2>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">p_txn</td><td>A pointer to a <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> passed by reference. If successful, the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> will return a pointer to a <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a> inside the <a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a>. The caller can only use it read-only and <b>must</b> <a class="el" href="classjazz__elements_1_1Container.html#af79256b93a1f22d580a5c8eb18fa0558">destroy_transaction()</a> it when done. </td></tr>
-    <tr><td class="paramname">cell_type</td><td>The type of index (from CELL_TYPE_INDEX_II to CELL_TYPE_INDEX_SS)</td></tr>
+    <tr><td class="paramname">cell_type</td><td>The type of index (a 48 bit CELL_TYPE_INDEX)</td></tr>
   </table>
   </dd>
 </dl>
