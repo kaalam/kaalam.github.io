@@ -203,8 +203,24 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>hash64</b></td></
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classjazz__bebop_1_1Snippet.html" title="Snippet: A code snippet and the ancestor of Concept.">Snippet</a>: A code snippet and the ancestor of Concept. </p>
-<p>A <a class="el" href="classjazz__bebop_1_1Snippet.html" title="Snippet: A code snippet and the ancestor of Concept.">Snippet</a> is a Tuple with three?? items and some attributes. The items are: <code>uses</code>, all its dependencies, <code>source</code>, and <code>object</code>, the compiled onnx code. The attributes identify it as a <a class="el" href="classjazz__bebop_1_1Snippet.html" title="Snippet: A code snippet and the ancestor of Concept.">Snippet</a> and manage state (). The <a class="el" href="classjazz__bebop_1_1Snippet.html" title="Snippet: A code snippet and the ancestor of Concept.">Snippet</a> object provides an interface to access the text parts (<code>uses</code> and <code>source</code>) as a std::vector of std::string. Also, it provide many constructors to create a <a class="el" href="classjazz__bebop_1_1Snippet.html" title="Snippet: A code snippet and the ancestor of Concept.">Snippet</a> from source, object, ...</p>
-<p>input, output, reads, writes, calls, body, object ?? </p>
+<p>A <a class="el" href="classjazz__bebop_1_1Snippet.html" title="Snippet: A code snippet and the ancestor of Concept.">Snippet</a> is a Tuple with items and some attributes. The items are sources and compiled onnx code. The attributes identify it as a <a class="el" href="classjazz__bebop_1_1Snippet.html" title="Snippet: A code snippet and the ancestor of Concept.">Snippet</a> and manage state (). The <a class="el" href="classjazz__bebop_1_1Snippet.html" title="Snippet: A code snippet and the ancestor of Concept.">Snippet</a> object provides an interface to access the text parts (<code>uses</code> and <code>source</code>) as a std::vector of std::string. Also, it provides many constructors to create a <a class="el" href="classjazz__bebop_1_1Snippet.html" title="Snippet: A code snippet and the ancestor of Concept.">Snippet</a> from source, object, ...</p>
+<p>The items are:</p>
+<p>source, input, output, reads, writes, calls, body, object </p><hr  />
+<p> | | +--&gt; The Onnx object code | +-------------------------&mdash;&gt; The preprocessed source code (Possibly reverse engineered) +--------------------------------------------------&mdash;&gt; The original source code (If available)</p>
+<p>The attributes are set in BLOCK_SNIPPET_STATE and are:</p>
+<ul>
+<li>SNIPSTATE_SOURCE_AVAILABLE : The source code is available (has original source)</li>
+<li>SNIPSTATE_SOURCE_PREPROCESSED : The source code has been preprocessed (has input, output, reads, writes, calls, body)</li>
+<li>SNIPSTATE_SOURCE_COMPILED : The object code has been compiled (has object)</li>
+<li>SNIPSTATE_OBJECT_AVAILABLE : The object code is available (the object is the original source)</li>
+<li>SNIPSTATE_OBJECT_PREPROCESSED : The object code has been preprocessed (has input, output, reads, writes, calls, body)</li>
+<li>SNIPSTATE_RUNS : The snippet has run successfully, (was either SNIPSTATE_SOURCE_COMPILED or SNIPSTATE_OBJECT_PREPROCESSED)</li>
+<li>SNIPSTATE_IS_RUNNING : The snippet is currently mounted in an ONNX runtime session</li>
+<li>SNIPSTATE_FAILED_SRC_PREPROC : The source code preprocessing failed</li>
+<li>SNIPSTATE_FAILED_SRC_COMPILE : The object code compilation failed</li>
+<li>SNIPSTATE_FAILED_OBJ_PREPROC : The object code preprocessing failed</li>
+<li>SNIPSTATE_FAILED_RUN : The snippet failed to run </li>
+</ul>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="snippet_8h_source.html">snippet.h</a></li>
 </ul>
