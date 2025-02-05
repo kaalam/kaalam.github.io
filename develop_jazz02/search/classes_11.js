@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['semspace_0',['SemSpace',['../classjazz__models_1_1SemSpace.html',1,'jazz_models']]],
-  ['semspacedefinition_1',['SemSpaceDefinition',['../classjazz__models_1_1SemSpaceDefinition.html',1,'jazz_models']]],
+  ['semspacedefinition_0',['SemSpaceDefinition',['../classjazz__models_1_1SemSpaceDefinition.html',1,'jazz_models']]],
+  ['semspaces_1',['SemSpaces',['../classjazz__models_1_1SemSpaces.html',1,'jazz_models']]],
   ['service_2',['Service',['../classjazz__elements_1_1Service.html',1,'jazz_elements']]],
   ['snippet_3',['Snippet',['../classjazz__bebop_1_1Snippet.html',1,'jazz_bebop']]],
   ['socket_4',['Socket',['../structjazz__elements_1_1Socket.html',1,'jazz_elements']]],

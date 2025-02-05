@@ -640,10 +640,11 @@ replication, etc.</p>
 
 <h2 id="fields">Fields</h2>
 
-<p>A <code class="language-plaintext highlighter-rouge">Field</code> (aka. Formal Field) is a <code class="language-plaintext highlighter-rouge">Space</code> that stores Snippets. I has the formal (Bebop) definitions of a system.</p>
+<p>A <code class="language-plaintext highlighter-rouge">Fields</code> (the <code class="language-plaintext highlighter-rouge">Service</code> that stores all the formal fields) is a <code class="language-plaintext highlighter-rouge">Space</code> that stores Snippets in fields (namespaces). I has the formal
+(Bebop) definitions of a system.</p>
 
 <ul>
-  <li>See C++ ref <a href="/develop_jazz02/classjazz__bebop_1_1Field.html">Field</a></li>
+  <li>See C++ ref <a href="/develop_jazz02/classjazz__bebop_1_1Fields.html">Fields</a></li>
 </ul>
 
 <h2 id="snippets">Snippets</h2>
@@ -672,12 +673,13 @@ a problem defined as a sequence of Concepts.</p>
 
 <h2 id="semspaces">SemSpaces</h2>
 
-<p>A <code class="language-plaintext highlighter-rouge">Semspace</code> (Semantic Space) is a <code class="language-plaintext highlighter-rouge">Field</code> that stores concepts instead of just Snippets. It can be an English dictionary, like SPEED
-(Small Preserved Everyday English Dictionary) or the state of the knowledge of an agent. SemSpaces have multiple inheritance, this way
-an agent can have its own knowledge stored as a difference from the general knowledge his class of agents share.</p>
+<p><code class="language-plaintext highlighter-rouge">SemSpaces</code> (the service that stores semantic spaces) is a <code class="language-plaintext highlighter-rouge">Fields</code>-descendant that stores Concepts instead of just Snippets. A semspace
+(semantic space, a namespace inside SemSpaces) can be an English dictionary, like SPEED (Small Preserved Everyday English Dictionary) or
+the state of the knowledge of an agent. SemSpaces have multiple inheritance, this way an agent can have its own knowledge stored as a
+difference from the general knowledge his class of agents share.</p>
 
 <ul>
-  <li>See C++ ref <a href="/develop_jazz02/classjazz__models_1_1SemSpace.html">SemSpace</a></li>
+  <li>See C++ ref <a href="/develop_jazz02/classjazz__models_1_1SemSpaces.html">SemSpaces</a></li>
 </ul>
 
 <h2 id="see-also">See also</h2>
@@ -722,7 +724,7 @@ an agent can have its own knowledge stored as a difference from the general know
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2025 kaalam.ai. All rights reserved. <br />
- Site last generated: Jan 25, 2025 <br />
+ Site last generated: Feb 5, 2025 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

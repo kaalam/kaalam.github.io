@@ -796,14 +796,14 @@ controlled by the <code class="language-plaintext highlighter-rouge">launch.json
 </ul>
 
 <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#if defined CATCH_TEST
-#include "../uplifts/models_api/tests/test_my_model.ctest"
+#include</span> <span class="cpf">"../uplifts/models_api/tests/test_my_model.ctest"</span><span class="cp">
 #endif
 </span></code></pre></div></div>
 
 <p>Also, to make the IDE find the sources when editing the test files, add a second include to the .h file, like:</p>
 
 <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#pragma once
-#include "./uplifts/models_api/my_model.h"
+#include</span> <span class="cpf">"./uplifts/models_api/my_model.h"</span><span class="cp">
 </span></code></pre></div></div>
 
 <p>Once you have that, you can just <code class="language-plaintext highlighter-rouge">make tjazz</code> and run it or debug it in the IDE.</p>
@@ -832,7 +832,7 @@ content available by default that are in the <code class="language-plaintext hig
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2025 kaalam.ai. All rights reserved. <br />
- Site last generated: Jan 25, 2025 <br />
+ Site last generated: Feb 5, 2025 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

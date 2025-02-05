@@ -1,14 +1,17 @@
 var searchData=
 [
-  ['malloc_0',['malloc',['../classjazz__elements_1_1Container.html#a87da84dd18edafc8d69888613ae91af8',1,'jazz_elements::Container']]],
-  ['mapii_1',['MapII',['../namespacejazz__elements.html#aae0fa1d7770e9247d718fceeabdce05b',1,'jazz_elements']]],
-  ['mapis_2',['MapIS',['../namespacejazz__elements.html#aa38e6e4745cc7e7b0efaba4e1be2fcea',1,'jazz_elements']]],
-  ['mapsi_3',['MapSI',['../namespacejazz__elements.html#af867517f0ecdb06b85f8ff2972d8f08f',1,'jazz_elements']]],
-  ['max_5ftransactions_4',['max_transactions',['../classjazz__elements_1_1Container.html#a78d8175d99a2992675ec9ead633da893',1,'jazz_elements::Container']]],
-  ['mhd_5fstatuscode_5',['MHD_StatusCode',['../namespacejazz__elements.html#ae07e8fd7a73396ce4ef564979d2498e5',1,'jazz_elements']]],
-  ['model_6',['Model',['../classjazz__models_1_1Model.html',1,'jazz_models::Model'],['../classjazz__models_1_1Model.html#a5ef4bfb6fcd17e8bd7c3e728167cecea',1,'jazz_models::Model::Model()']]],
-  ['modelsapi_7',['ModelsAPI',['../classjazz__models_1_1ModelsAPI.html',1,'jazz_models::ModelsAPI'],['../classjazz__models_1_1ModelsAPI.html#a7714ebda207a88c1258d1fe6f6c3edf5',1,'jazz_models::ModelsAPI::ModelsAPI()']]],
-  ['modify_8',['modify',['../classjazz__elements_1_1Channels.html#a3760f16d25f0867c43114c91064e8ca6',1,'jazz_elements::Channels::modify()'],['../classjazz__elements_1_1Container.html#aedba8175934554cb71278d6f4ce96bf8',1,'jazz_elements::Container::modify()']]],
-  ['move_5fconst_9',['move_const',['../classjazz__bebop_1_1BaseAPI.html#acb837e90ae77c245c4eff51bf8519e92',1,'jazz_bebop::BaseAPI']]],
-  ['murmurhash64a_10',['MurmurHash64A',['../namespacejazz__elements.html#a50e37200ae3572b04b417c7e899712bb',1,'jazz_elements']]]
+  ['jazz_20modules_20diagram_0',['Jazz Modules Diagram',['../index.html#jazz_mods',1,'']]],
+  ['jazz_20server_20version_201_2025_200_1',['[Programming documentation for the Jazz Server version &quot;1.25.0&quot;]',['../index.html',1,'']]],
+  ['jazz_5fbebop_2',['jazz_bebop',['../namespacejazz__bebop.html',1,'']]],
+  ['jazz_5felements_3',['jazz_elements',['../namespacejazz__elements.html',1,'jazz_elements'],['../classjazz__elements_1_1Container.html#autotoc_md9',1,'Scope of jazz_elements']]],
+  ['jazz_5fmain_4',['jazz_main',['../namespacejazz__main.html',1,'']]],
+  ['jazz_5fmhd_5fdaemon_5',['Jazz_MHD_Daemon',['../namespacejazz__main.html#a9af1d41451e6cfe5e88cddebec1ba954',1,'jazz_main']]],
+  ['jazz_5fmodels_6',['jazz_models',['../namespacejazz__models.html',1,'']]],
+  ['jazz_5fnode_5fcluster_5fsize_7',['jazz_node_cluster_size',['../classjazz__elements_1_1Channels.html#addc02f975b640ba708ee34cbfba35d8e',1,'jazz_elements::Channels']]],
+  ['jazz_5fnode_5fip_8',['jazz_node_ip',['../classjazz__elements_1_1Channels.html#a57ff2b5199b467ea047d7a6ab51107af',1,'jazz_elements::Channels']]],
+  ['jazz_5fnode_5fmy_5findex_9',['jazz_node_my_index',['../classjazz__elements_1_1Channels.html#a157cdf95ec8a4ea15e7aa4754bff32fc',1,'jazz_elements::Channels']]],
+  ['jazz_5fnode_5fname_10',['jazz_node_name',['../classjazz__elements_1_1Channels.html#ad3e69ef85991c7f1afdd796ee15b93ec',1,'jazz_elements::Channels']]],
+  ['jazz_5fnode_5fport_11',['jazz_node_port',['../classjazz__elements_1_1Channels.html#a99f5ffa00666cefa538f2239de54df10',1,'jazz_elements::Channels']]],
+  ['jazz_5ftype_12',['jazz_type',['../structjazz__bebop_1_1TensorType.html#a1eb5159b9f66957891d3de8dd45d5030',1,'jazz_bebop::TensorType::jazz_type'],['../structjazz__bebop_1_1AttributeType.html#a5cc97be76fbd863ea00989c197dc86fc',1,'jazz_bebop::AttributeType::jazz_type']]],
+  ['jazzlmdboptions_13',['JazzLmdbOptions',['../structjazz__elements_1_1JazzLmdbOptions.html',1,'jazz_elements']]]
 ];

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['parsestatetransitions_0',['ParseStateTransitions',['../namespacejazz__elements.html#a74c455d5540b250c87f151615c732ecd',1,'jazz_elements::ParseStateTransitions()'],['../namespacejazz__bebop.html#aa8d4f080574d2f5c0fc90e21fd77f139',1,'jazz_bebop::ParseStateTransitions()']]],
+  ['parsestatetransitions_0',['parsestatetransitions',['../namespacejazz__elements.html#a74c455d5540b250c87f151615c732ecd',1,'jazz_elements::ParseStateTransitions'],['../namespacejazz__bebop.html#aa8d4f080574d2f5c0fc90e21fd77f139',1,'jazz_bebop::ParseStateTransitions']]],
   ['pattributetype_1',['pAttributeType',['../namespacejazz__bebop.html#a6a379ae38ea7f72be2ab11e1dd9a59a1',1,'jazz_bebop']]],
   ['pbaseapi_2',['pBaseAPI',['../namespacejazz__bebop.html#ad5d0b0ff0803692afc8a9442b351746e',1,'jazz_bebop']]],
   ['pblock_3',['pBlock',['../namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6',1,'jazz_elements']]],
@@ -18,7 +18,7 @@ var searchData=
   ['pdataspace_15',['pDataSpace',['../namespacejazz__bebop.html#a3c0bd6b6dc6021164b4d5f81a1d6eb61',1,'jazz_bebop']]],
   ['pdataspacedefinition_16',['pDataSpaceDefinition',['../namespacejazz__bebop.html#a4361774efbbb7c7924ff9522ed9026e2',1,'jazz_bebop']]],
   ['pextralocator_17',['pExtraLocator',['../namespacejazz__elements.html#a216acc397d71daaacb283ba8953a104c',1,'jazz_elements']]],
-  ['pfield_18',['pField',['../namespacejazz__bebop.html#a3511260b9858ed1fb6eef51a56479a01',1,'jazz_bebop']]],
+  ['pfields_18',['pFields',['../namespacejazz__bebop.html#a37275e6e0899b47d7ae43552a615a23b',1,'jazz_bebop']]],
   ['pgetbuffer_19',['pGetBuffer',['../namespacejazz__elements.html#a0f9daac76fef91d204b8eab40208ef47',1,'jazz_elements']]],
   ['pipemap_20',['PipeMap',['../namespacejazz__elements.html#a9fa9376fff90c19e9a1ff6e232b88b68',1,'jazz_elements']]],
   ['pkind_21',['pKind',['../namespacejazz__elements.html#a6d84d2b4bae53bfa0256db5bd0193656',1,'jazz_elements']]],
@@ -36,8 +36,8 @@ var searchData=
   ['ppersisted_33',['pPersisted',['../namespacejazz__elements.html#a918dc76d77eac5ff1949366261539368',1,'jazz_elements']]],
   ['pputbuffer_34',['pPutBuffer',['../namespacejazz__elements.html#ab580d5b6d505c9adc1026457fbb22ecf',1,'jazz_elements']]],
   ['prowselection_35',['pRowSelection',['../namespacejazz__bebop.html#a42b9654b9254295e7d6a4eb6d4cbbc4e',1,'jazz_bebop']]],
-  ['psemspace_36',['pSemSpace',['../namespacejazz__models.html#a16ff2bdcadbfd1eb28241bdc22ad5423',1,'jazz_models']]],
-  ['psemspacedefinition_37',['pSemSpaceDefinition',['../namespacejazz__models.html#a5fbdfec57ccb58d994e70a3c7b8daa18',1,'jazz_models']]],
+  ['psemspacedefinition_36',['pSemSpaceDefinition',['../namespacejazz__models.html#a5fbdfec57ccb58d994e70a3c7b8daa18',1,'jazz_models']]],
+  ['psemspaces_37',['pSemSpaces',['../namespacejazz__models.html#a8022516395fe3a405b4c0237ef6dc24a',1,'jazz_models']]],
   ['pservice_38',['pService',['../namespacejazz__elements.html#a042130809ff0ed079890839004d5350c',1,'jazz_elements']]],
   ['psignalhandler_39',['pSignalHandler',['../namespacejazz__main.html#a578cf47cfadacf0e9c6735b8cb53e6b0',1,'jazz_main']]],
   ['psnippet_40',['pSnippet',['../namespacejazz__bebop.html#a63c47f7df1f0261e39a05118fa8a92f7',1,'jazz_bebop']]],

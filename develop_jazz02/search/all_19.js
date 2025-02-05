@@ -1,5 +1,9 @@
 var searchData=
 [
-  ['zmq_5fcontext_0',['zmq_context',['../classjazz__elements_1_1Channels.html#aa83b2c5a6e56f1c952c5a018f1409caf',1,'jazz_elements::Channels']]],
-  ['zmq_5fok_1',['zmq_ok',['../classjazz__elements_1_1Channels.html#a809b203abeae7f569e1eff90cb5af3da',1,'jazz_elements::Channels']]]
+  ['unlock_5fcontainer_0',['unlock_container',['../classjazz__elements_1_1Container.html#a39e73d3ee200010809ad7c4b3540dd51',1,'jazz_elements::Container']]],
+  ['unwrap_5freceived_1',['unwrap_received',['../classjazz__elements_1_1Container.html#af6065eb2335973ef032f98b411efe107',1,'jazz_elements::Container::unwrap_received(pTransaction &amp;p_txn)'],['../classjazz__elements_1_1Container.html#a5d7e76719e0d5e538aa8908d88e25ebf',1,'jazz_elements::Container::unwrap_received(pTransaction &amp;p_txn, pBlock p_maybe_block, int rec_size)']]],
+  ['url_2',['url',['../structjazz__bebop_1_1ApiQueryState.html#a4005d00d31d4e12ff03c753894050189',1,'jazz_bebop::ApiQueryState']]],
+  ['use_3',['use',['../structjazz__elements_1_1NameUse.html#a2e8586f19c17db9f571d6a7df4b29173',1,'jazz_elements::NameUse']]],
+  ['using_20tuples_4',['Using Tuples',['../classjazz__elements_1_1Tuple.html#autotoc_md16',1,'']]],
+  ['utf_208_20works_5',['How UTF-8 works',['../classjazz__elements_1_1Container.html#autotoc_md5',1,'']]]
 ];
