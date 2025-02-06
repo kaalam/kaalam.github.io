@@ -9,5 +9,5 @@ var searchData=
   ['status_6',['status',['../structjazz__elements_1_1Transaction.html#a964e305c69ac42991cf3e6bfef4e5522',1,'jazz_elements::Transaction']]],
   ['stop_5fcheck_5f4_5fmatch_7',['stop_check_4_match',['../structjazz__elements_1_1StringBuffer.html#a4056d062ef9438589e77aefca08d8c60',1,'jazz_elements::StringBuffer']]],
   ['storage_5fbase_8',['storage_base',['../classjazz__bebop_1_1Space.html#a4b256cfdd9d1d34a71d675973512a34e',1,'jazz_bebop::Space']]],
-  ['storage_5fent_9',['storage_ent',['../classjazz__bebop_1_1DataSpace.html#a506120452dfb9ddef8b6989618901dde',1,'jazz_bebop::DataSpace::storage_ent'],['../classjazz__bebop_1_1Fields.html#abc7b54267b7e961fbd8bc278502043b5',1,'jazz_bebop::Fields::storage_ent'],['../classjazz__models_1_1SemSpaces.html#aa1122a1af002ce0a45133bc427e5e9cb',1,'jazz_models::SemSpaces::storage_ent']]]
+  ['storage_5fent_9',['storage_ent',['../classjazz__bebop_1_1DataSpaces.html#aa80368a2a9624e8ae516c1452d7f60f6',1,'jazz_bebop::DataSpaces::storage_ent'],['../classjazz__bebop_1_1Fields.html#abc7b54267b7e961fbd8bc278502043b5',1,'jazz_bebop::Fields::storage_ent'],['../classjazz__models_1_1SemSpaces.html#aa1122a1af002ce0a45133bc427e5e9cb',1,'jazz_models::SemSpaces::storage_ent']]]
 ];

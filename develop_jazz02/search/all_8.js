@@ -1,12 +1,12 @@
 var searchData=
 [
   ['data_5fstart_0',['data_start',['../structjazz__elements_1_1ItemHeader.html#a327442ae9113fe6f91281a1cd38e1f9b',1,'jazz_elements::ItemHeader']]],
-  ['dataspace_1',['dataspace',['../classjazz__bebop_1_1DataSpace.html#a5088c487c47e16bd2cd7b52151c6b566',1,'jazz_bebop::DataSpace::DataSpace()'],['../classjazz__bebop_1_1DataSpace.html',1,'jazz_bebop::DataSpace']]],
-  ['dataspacedefinition_2',['DataSpaceDefinition',['../structjazz__bebop_1_1DataSpaceDefinition.html',1,'jazz_bebop']]],
+  ['dataspacedefinition_1',['DataSpaceDefinition',['../structjazz__bebop_1_1DataSpaceDefinition.html',1,'jazz_bebop']]],
+  ['dataspaces_2',['dataspaces',['../classjazz__bebop_1_1DataSpaces.html',1,'jazz_bebop::DataSpaces'],['../classjazz__bebop_1_1DataSpaces.html#a4537ae727cbc287b4ee84db774e0f9de',1,'jazz_bebop::DataSpaces::DataSpaces()']]],
   ['dbi_5fexists_3',['dbi_exists',['../classjazz__elements_1_1Persisted.html#a5104a3e688c07889e9e9528ba6404e33',1,'jazz_elements::Persisted']]],
   ['dbimap_4',['DBImap',['../namespacejazz__elements.html#a0b66aa81bf225b5653d565b87196f6d1',1,'jazz_elements']]],
   ['debug_5fput_5',['debug_put',['../classjazz__elements_1_1ConfigFile.html#a971c3b7d978717f3099572c022b4a1f5',1,'jazz_elements::ConfigFile']]],
-  ['def_6',['def',['../classjazz__bebop_1_1DataSpace.html#af46e8cf7c07982e40e4f02bfa1124841',1,'jazz_bebop::DataSpace::def'],['../classjazz__models_1_1SemSpaces.html#ab9be07443d62779c74428647a3faa72e',1,'jazz_models::SemSpaces::def']]],
+  ['def_6',['def',['../classjazz__bebop_1_1DataSpaces.html#a76069a14eb744c05d6086309f0a6da37',1,'jazz_bebop::DataSpaces::def'],['../classjazz__models_1_1SemSpaces.html#ab9be07443d62779c74428647a3faa72e',1,'jazz_models::SemSpaces::def']]],
   ['def_5ffloat32_5ffmt_7',['DEF_FLOAT32_FMT',['../namespacejazz__elements.html#ac8da9ec9260cf794f10b4038fbc7b1d7',1,'jazz_elements']]],
   ['def_5ffloat64_5ffmt_8',['DEF_FLOAT64_FMT',['../namespacejazz__elements.html#a660d03463784932c8cb436f6d26a27be',1,'jazz_elements']]],
   ['def_5ffloat_5ftime_9',['DEF_FLOAT_TIME',['../namespacejazz__elements.html#a239fcd81a9132439b710f8c6c2adb229',1,'jazz_elements']]],
