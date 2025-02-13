@@ -4,6 +4,6 @@ var searchData=
   ['unwrap_5freceived_1',['unwrap_received',['../classjazz__elements_1_1Container.html#af6065eb2335973ef032f98b411efe107',1,'jazz_elements::Container::unwrap_received(pTransaction &amp;p_txn)'],['../classjazz__elements_1_1Container.html#a5d7e76719e0d5e538aa8908d88e25ebf',1,'jazz_elements::Container::unwrap_received(pTransaction &amp;p_txn, pBlock p_maybe_block, int rec_size)']]],
   ['url_2',['url',['../structjazz__bebop_1_1ApiQueryState.html#a4005d00d31d4e12ff03c753894050189',1,'jazz_bebop::ApiQueryState']]],
   ['use_3',['use',['../structjazz__elements_1_1NameUse.html#a2e8586f19c17db9f571d6a7df4b29173',1,'jazz_elements::NameUse']]],
-  ['using_20tuples_4',['Using Tuples',['../classjazz__elements_1_1Tuple.html#autotoc_md16',1,'']]],
-  ['utf_208_20works_5',['How UTF-8 works',['../classjazz__elements_1_1Container.html#autotoc_md5',1,'']]]
+  ['using_20tuples_4',['Using Tuples',['../classjazz__elements_1_1Tuple.html#autotoc_md19',1,'']]],
+  ['utf_208_20works_5',['How UTF-8 works',['../classjazz__elements_1_1Container.html#autotoc_md8',1,'']]]
 ];

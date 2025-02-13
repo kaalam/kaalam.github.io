@@ -216,6 +216,13 @@ typedef std::map&lt; <a class="el" href="classjazz__bebop_1_1stdNameVersion.html
 typedef <a class="el" href="classjazz__bebop_1_1OpCodes.html">OpCodes</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>pOpCodes</b></td></tr>
 <tr class="memdesc:a24b2b26c7008881a3e65f036be925591"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to an <a class="el" href="classjazz__bebop_1_1OpCodes.html" title="OpCodes: The opcodes.">OpCodes</a> object. <br /></td></tr>
 <tr class="separator:a24b2b26c7008881a3e65f036be925591"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e5990c6fafcb24d3aeee47c8bb4659c" id="r_a3e5990c6fafcb24d3aeee47c8bb4659c"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__bebop.html#a3e5990c6fafcb24d3aeee47c8bb4659c">SnippetText</a></td></tr>
+<tr class="memdesc:a3e5990c6fafcb24d3aeee47c8bb4659c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A SnippetText is a vector of strings.  <br /></td></tr>
+<tr class="separator:a3e5990c6fafcb24d3aeee47c8bb4659c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a530ca6452190b61a2f500a407dda6e59" id="r_a530ca6452190b61a2f500a407dda6e59"><td class="memItemLeft" align="right" valign="top"><a id="a530ca6452190b61a2f500a407dda6e59" name="a530ca6452190b61a2f500a407dda6e59"></a>
+typedef <a class="el" href="namespacejazz__bebop.html#a3e5990c6fafcb24d3aeee47c8bb4659c">SnippetText</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>pSnippetText</b></td></tr>
+<tr class="memdesc:a530ca6452190b61a2f500a407dda6e59"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to a SnippetText. <br /></td></tr>
+<tr class="separator:a530ca6452190b61a2f500a407dda6e59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63c47f7df1f0261e39a05118fa8a92f7" id="r_a63c47f7df1f0261e39a05118fa8a92f7"><td class="memItemLeft" align="right" valign="top"><a id="a63c47f7df1f0261e39a05118fa8a92f7" name="a63c47f7df1f0261e39a05118fa8a92f7"></a>
 typedef <a class="el" href="classjazz__bebop_1_1Snippet.html">Snippet</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>pSnippet</b></td></tr>
 <tr class="memdesc:a63c47f7df1f0261e39a05118fa8a92f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to a <a class="el" href="classjazz__bebop_1_1Snippet.html" title="Snippet: A code snippet and the ancestor of Concept.">Snippet</a>. <br /></td></tr>
@@ -268,6 +275,70 @@ Variables</h2></td></tr>
 <tr class="memitem:a71ea95a2d50bce225688b4a38acf2b80" id="r_a71ea95a2d50bce225688b4a38acf2b80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__bebop.html#a3abbc565c36b9f331c29433fe4638d27">AttributeTypeDict</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__bebop.html#a71ea95a2d50bce225688b4a38acf2b80">ATTRIBUTE_TYPES</a></td></tr>
 <tr class="memdesc:a71ea95a2d50bce225688b4a38acf2b80"><td class="mdescLeft">&#160;</td><td class="mdescRight">A table to locate all the possible ONNX attribute types by their name in the config file "onnx.ini".  <br /></td></tr>
 <tr class="separator:a71ea95a2d50bce225688b4a38acf2b80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0de99c6eee97dfb355d471cf29dc772c" id="r_a0de99c6eee97dfb355d471cf29dc772c"><td class="memItemLeft" align="right" valign="top"><a id="a0de99c6eee97dfb355d471cf29dc772c" name="a0de99c6eee97dfb355d471cf29dc772c"></a>
+const char&#160;</td><td class="memItemRight" valign="bottom"><b>SNIPSTATE_EMPTY_SNIPPET</b> [] = &quot;____&quot;</td></tr>
+<tr class="memdesc:a0de99c6eee97dfb355d471cf29dc772c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The snippet is empty. <br /></td></tr>
+<tr class="separator:a0de99c6eee97dfb355d471cf29dc772c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c0ca40349a6a85d45d0c652c3f5a851" id="r_a3c0ca40349a6a85d45d0c652c3f5a851"><td class="memItemLeft" align="right" valign="top"><a id="a3c0ca40349a6a85d45d0c652c3f5a851" name="a3c0ca40349a6a85d45d0c652c3f5a851"></a>
+const char&#160;</td><td class="memItemRight" valign="bottom"><b>SNIPSTATE_SOURCE_AVAILABLE</b> [] = &quot;s___&quot;</td></tr>
+<tr class="memdesc:a3c0ca40349a6a85d45d0c652c3f5a851"><td class="mdescLeft">&#160;</td><td class="mdescRight">The source code is available. <br /></td></tr>
+<tr class="separator:a3c0ca40349a6a85d45d0c652c3f5a851"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09daabb3dccf52b7afcfa77f0b0676c7" id="r_a09daabb3dccf52b7afcfa77f0b0676c7"><td class="memItemLeft" align="right" valign="top"><a id="a09daabb3dccf52b7afcfa77f0b0676c7" name="a09daabb3dccf52b7afcfa77f0b0676c7"></a>
+const char&#160;</td><td class="memItemRight" valign="bottom"><b>SNIPSTATE_SOURCE_PREPROCESSED</b> [] = &quot;sx__&quot;</td></tr>
+<tr class="memdesc:a09daabb3dccf52b7afcfa77f0b0676c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The source code has been preprocessed successfully. <br /></td></tr>
+<tr class="separator:a09daabb3dccf52b7afcfa77f0b0676c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7359c4f36dc2dce0769bfb6773ec1085" id="r_a7359c4f36dc2dce0769bfb6773ec1085"><td class="memItemLeft" align="right" valign="top"><a id="a7359c4f36dc2dce0769bfb6773ec1085" name="a7359c4f36dc2dce0769bfb6773ec1085"></a>
+const char&#160;</td><td class="memItemRight" valign="bottom"><b>SNIPSTATE_SOURCE_COMPILED</b> [] = &quot;sxo_&quot;</td></tr>
+<tr class="memdesc:a7359c4f36dc2dce0769bfb6773ec1085"><td class="mdescLeft">&#160;</td><td class="mdescRight">The source code has been compiled successfully. <br /></td></tr>
+<tr class="separator:a7359c4f36dc2dce0769bfb6773ec1085"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d0b945a1c60ec8bddeb7189d0a43be7" id="r_a3d0b945a1c60ec8bddeb7189d0a43be7"><td class="memItemLeft" align="right" valign="top"><a id="a3d0b945a1c60ec8bddeb7189d0a43be7" name="a3d0b945a1c60ec8bddeb7189d0a43be7"></a>
+const char&#160;</td><td class="memItemRight" valign="bottom"><b>SNIPSTATE_OBJECT_AVAILABLE</b> [] = &quot;__o_&quot;</td></tr>
+<tr class="memdesc:a3d0b945a1c60ec8bddeb7189d0a43be7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The snippet is created from an onnx object. <br /></td></tr>
+<tr class="separator:a3d0b945a1c60ec8bddeb7189d0a43be7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40a3e52ca0a14075f1719e2dd1432146" id="r_a40a3e52ca0a14075f1719e2dd1432146"><td class="memItemLeft" align="right" valign="top"><a id="a40a3e52ca0a14075f1719e2dd1432146" name="a40a3e52ca0a14075f1719e2dd1432146"></a>
+const char&#160;</td><td class="memItemRight" valign="bottom"><b>SNIPSTATE_OBJECT_PREPROCESSED</b> [] = &quot;_xo_&quot;</td></tr>
+<tr class="memdesc:a40a3e52ca0a14075f1719e2dd1432146"><td class="mdescLeft">&#160;</td><td class="mdescRight">The snippet (from onnx) has been reverse engineered successfully. <br /></td></tr>
+<tr class="separator:a40a3e52ca0a14075f1719e2dd1432146"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c8d8d71adfc899d6986eedd477ec767" id="r_a1c8d8d71adfc899d6986eedd477ec767"><td class="memItemLeft" align="right" valign="top"><a id="a1c8d8d71adfc899d6986eedd477ec767" name="a1c8d8d71adfc899d6986eedd477ec767"></a>
+const char&#160;</td><td class="memItemRight" valign="bottom"><b>SNIPSTATE_CAN_RUN</b> [] = &quot;___a&quot;</td></tr>
+<tr class="memdesc:a1c8d8d71adfc899d6986eedd477ec767"><td class="mdescLeft">&#160;</td><td class="mdescRight">The global state is neither error nor empty state() &gt;= SNIPSTATE_CAN_RUN. <br /></td></tr>
+<tr class="separator:a1c8d8d71adfc899d6986eedd477ec767"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accebc1d36a357d37fcde6cf638e08c04" id="r_accebc1d36a357d37fcde6cf638e08c04"><td class="memItemLeft" align="right" valign="top"><a id="accebc1d36a357d37fcde6cf638e08c04" name="accebc1d36a357d37fcde6cf638e08c04"></a>
+const char&#160;</td><td class="memItemRight" valign="bottom"><b>SNIPSTATE_CAN_RUN_OBJECT</b> [] = &quot;_xor&quot;</td></tr>
+<tr class="memdesc:accebc1d36a357d37fcde6cf638e08c04"><td class="mdescLeft">&#160;</td><td class="mdescRight">The snippet (from onnx) is ready to run (or has run before) <br /></td></tr>
+<tr class="separator:accebc1d36a357d37fcde6cf638e08c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04b9d557818f7dbdeddc77d706365910" id="r_a04b9d557818f7dbdeddc77d706365910"><td class="memItemLeft" align="right" valign="top"><a id="a04b9d557818f7dbdeddc77d706365910" name="a04b9d557818f7dbdeddc77d706365910"></a>
+const char&#160;</td><td class="memItemRight" valign="bottom"><b>SNIPSTATE_CAN_RUN_SOURCE</b> [] = &quot;sxor&quot;</td></tr>
+<tr class="memdesc:a04b9d557818f7dbdeddc77d706365910"><td class="mdescLeft">&#160;</td><td class="mdescRight">The snippet (from source) is ready to run (or has run before) <br /></td></tr>
+<tr class="separator:a04b9d557818f7dbdeddc77d706365910"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d8e5d6631d11f601b647d8b77c79d40" id="r_a2d8e5d6631d11f601b647d8b77c79d40"><td class="memItemLeft" align="right" valign="top"><a id="a2d8e5d6631d11f601b647d8b77c79d40" name="a2d8e5d6631d11f601b647d8b77c79d40"></a>
+const char&#160;</td><td class="memItemRight" valign="bottom"><b>SNIPSTATE_IS_RUNNING_OBJECT</b> [] = &quot;_xoi&quot;</td></tr>
+<tr class="memdesc:a2d8e5d6631d11f601b647d8b77c79d40"><td class="mdescLeft">&#160;</td><td class="mdescRight">The snippet is currently running (from onnx) <br /></td></tr>
+<tr class="separator:a2d8e5d6631d11f601b647d8b77c79d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a131aabc5e6a83052000db659595af5ee" id="r_a131aabc5e6a83052000db659595af5ee"><td class="memItemLeft" align="right" valign="top"><a id="a131aabc5e6a83052000db659595af5ee" name="a131aabc5e6a83052000db659595af5ee"></a>
+const char&#160;</td><td class="memItemRight" valign="bottom"><b>SNIPSTATE_IS_RUNNING_SOURCE</b> [] = &quot;sxoi&quot;</td></tr>
+<tr class="memdesc:a131aabc5e6a83052000db659595af5ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">The snippet is currently running (from source) <br /></td></tr>
+<tr class="separator:a131aabc5e6a83052000db659595af5ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b70627728bb66eaf2ba01e904702f51" id="r_a0b70627728bb66eaf2ba01e904702f51"><td class="memItemLeft" align="right" valign="top"><a id="a0b70627728bb66eaf2ba01e904702f51" name="a0b70627728bb66eaf2ba01e904702f51"></a>
+const char&#160;</td><td class="memItemRight" valign="bottom"><b>SNIPSTATE_FAILED_SRC_PREPROC</b> [] = &quot;sX_!&quot;</td></tr>
+<tr class="memdesc:a0b70627728bb66eaf2ba01e904702f51"><td class="mdescLeft">&#160;</td><td class="mdescRight">The source code preprocessing failed. <br /></td></tr>
+<tr class="separator:a0b70627728bb66eaf2ba01e904702f51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1328ff5c5ee5fff012f24f1b197ceb13" id="r_a1328ff5c5ee5fff012f24f1b197ceb13"><td class="memItemLeft" align="right" valign="top"><a id="a1328ff5c5ee5fff012f24f1b197ceb13" name="a1328ff5c5ee5fff012f24f1b197ceb13"></a>
+const char&#160;</td><td class="memItemRight" valign="bottom"><b>SNIPSTATE_FAILED_SRC_COMPILE</b> [] = &quot;sxO!&quot;</td></tr>
+<tr class="memdesc:a1328ff5c5ee5fff012f24f1b197ceb13"><td class="mdescLeft">&#160;</td><td class="mdescRight">The source code compilation failed. <br /></td></tr>
+<tr class="separator:a1328ff5c5ee5fff012f24f1b197ceb13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa62cfab3ebd5a33cfbf72075243ef5ad" id="r_aa62cfab3ebd5a33cfbf72075243ef5ad"><td class="memItemLeft" align="right" valign="top"><a id="aa62cfab3ebd5a33cfbf72075243ef5ad" name="aa62cfab3ebd5a33cfbf72075243ef5ad"></a>
+const char&#160;</td><td class="memItemRight" valign="bottom"><b>SNIPSTATE_FAILED_OBJ_PREPROC</b> [] = &quot;_Xo!&quot;</td></tr>
+<tr class="memdesc:aa62cfab3ebd5a33cfbf72075243ef5ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">The snippet (from onnx) reverse engineering failed. <br /></td></tr>
+<tr class="separator:aa62cfab3ebd5a33cfbf72075243ef5ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b178b4597945364510578ebfde2984b" id="r_a8b178b4597945364510578ebfde2984b"><td class="memItemLeft" align="right" valign="top"><a id="a8b178b4597945364510578ebfde2984b" name="a8b178b4597945364510578ebfde2984b"></a>
+const char&#160;</td><td class="memItemRight" valign="bottom"><b>SNIPSTATE_FAILED_RUN_OBJECT</b> [] = &quot;_xo!&quot;</td></tr>
+<tr class="memdesc:a8b178b4597945364510578ebfde2984b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The snippet failed to run (from onnx) <br /></td></tr>
+<tr class="separator:a8b178b4597945364510578ebfde2984b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5974b51e459e8eb1f24d0fc1a4568a7d" id="r_a5974b51e459e8eb1f24d0fc1a4568a7d"><td class="memItemLeft" align="right" valign="top"><a id="a5974b51e459e8eb1f24d0fc1a4568a7d" name="a5974b51e459e8eb1f24d0fc1a4568a7d"></a>
+const char&#160;</td><td class="memItemRight" valign="bottom"><b>SNIPSTATE_FAILED_RUN_SOURCE</b> [] = &quot;sxo!&quot;</td></tr>
+<tr class="memdesc:a5974b51e459e8eb1f24d0fc1a4568a7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The snippet failed to run (from source) <br /></td></tr>
+<tr class="separator:a5974b51e459e8eb1f24d0fc1a4568a7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A language to access any container by base using locators. </p>
@@ -294,6 +365,24 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>A vector of StateTransition. This only runs once, on construction of the API object, initializes the LUTs from a sequence of StateTransition constants in the source of api.cpp. </p>
+
+</div>
+</div>
+<a id="a3e5990c6fafcb24d3aeee47c8bb4659c" name="a3e5990c6fafcb24d3aeee47c8bb4659c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e5990c6fafcb24d3aeee47c8bb4659c">&#9670;&#160;</a></span>SnippetText</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::vector&lt;std::string&gt; <a class="el" href="namespacejazz__bebop.html#a3e5990c6fafcb24d3aeee47c8bb4659c">jazz_bebop::SnippetText</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A SnippetText is a vector of strings. </p>
+<p>A std::vector of std::string to hold the source and intermediate code of a <a class="el" href="classjazz__bebop_1_1Snippet.html" title="Snippet: A code snippet and the ancestor of Concept.">Snippet</a>. This is used to make compilation and code generation easier to interface in c++.</p>
+<p>The caller owns the object (initially empty) and is responsible for freeing it when no longer needed. </p>
 
 </div>
 </div>
@@ -376,7 +465,7 @@ Variables</h2></td></tr>
 <div class="line">    {(<a class="code hl_typedef" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a>) <span class="stringliteral">&quot;uint64&quot;</span>,  {CELL_TYPE_UINT64,       onnx::TensorProto::UINT64,   ONNX_TENSOR_ELEMENT_DATA_TYPE_UINT64}},</div>
 <div class="line">    {(<a class="code hl_typedef" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a>) <span class="stringliteral">&quot;uint8&quot;</span>,   {CELL_TYPE_BYTE,         onnx::TensorProto::UINT8,    ONNX_TENSOR_ELEMENT_DATA_TYPE_UINT8}}</div>
 <div class="line">}</div>
-<div class="ttc" id="anamespacejazz__elements_html_a7b6f709ede20f91ff26fa9166a7cc9da"><div class="ttname"><a href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">jazz_elements::pChar</a></div><div class="ttdeci">char * pChar</div><div class="ttdoc">A pointer to a char buffer.</div><div class="ttdef"><b>Definition</b> types.h:184</div></div>
+<div class="ttc" id="anamespacejazz__elements_html_a7b6f709ede20f91ff26fa9166a7cc9da"><div class="ttname"><a href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">jazz_elements::pChar</a></div><div class="ttdeci">char * pChar</div><div class="ttdoc">A pointer to a char buffer.</div><div class="ttdef"><b>Definition</b> types.h:185</div></div>
 </div><!-- fragment -->
 <p>A table to locate all the possible ONNX tensor types by their name in the config file "onnx.ini". </p>
 <p>The table is a map of strings to a <a class="el" href="structjazz__bebop_1_1TensorType.html" title="A type definition for tensors across all the technologies: Jazz native, ONNX protocol buffer and ONNX...">TensorType</a>: Jazz native type, ONNX protocol buffer type and ONNX runtime type. </p>
@@ -415,7 +504,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 6 2025 for Jazz 1.25.+ by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Thu Feb 13 2025 for Jazz 1.25.+ by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

@@ -74,6 +74,8 @@ $(function() {
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pri-methods">Private Member Functions</a>  </div>
   <div class="headertitle"><div class="title">jazz_bebop::Snippet Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -95,6 +97,21 @@ Inheritance diagram for jazz_bebop::Snippet:</div>
   </map>
 </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a95a2d128581f5b281179a78d3dc39f54" id="r_a95a2d128581f5b281179a78d3dc39f54"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1Snippet.html#a95a2d128581f5b281179a78d3dc39f54">get_state</a> ()</td></tr>
+<tr class="separator:a95a2d128581f5b281179a78d3dc39f54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9514c07b2bf7717245fdc0dfd1f19017" id="r_a9514c07b2bf7717245fdc0dfd1f19017"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1Snippet.html#a9514c07b2bf7717245fdc0dfd1f19017">get_block</a> (int idx, <a class="el" href="namespacejazz__bebop.html#a3e5990c6fafcb24d3aeee47c8bb4659c">SnippetText</a> &amp;snip_text)</td></tr>
+<tr class="separator:a9514c07b2bf7717245fdc0dfd1f19017"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32d7db3b04f4f0d22343498a80b880c4" id="r_a32d7db3b04f4f0d22343498a80b880c4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1Snippet.html#a32d7db3b04f4f0d22343498a80b880c4">get_block</a> (<a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> name, <a class="el" href="namespacejazz__bebop.html#a3e5990c6fafcb24d3aeee47c8bb4659c">SnippetText</a> &amp;snip_text)</td></tr>
+<tr class="separator:a32d7db3b04f4f0d22343498a80b880c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0ae921e44891db01075ace6a5e5cc11" id="r_ab0ae921e44891db01075ace6a5e5cc11"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1Snippet.html#ab0ae921e44891db01075ace6a5e5cc11">object_size</a> ()</td></tr>
+<tr class="separator:ab0ae921e44891db01075ace6a5e5cc11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b3ff94c678a2b45fa639450a1066921" id="r_a3b3ff94c678a2b45fa639450a1066921"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1Snippet.html#a3b3ff94c678a2b45fa639450a1066921">get_object</a> ()</td></tr>
+<tr class="separator:a3b3ff94c678a2b45fa639450a1066921"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3674805168223f34a754c95da83bd7a" id="r_ae3674805168223f34a754c95da83bd7a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1Snippet.html#ae3674805168223f34a754c95da83bd7a">get_block</a> (int idx)</td></tr>
+<tr class="separator:ae3674805168223f34a754c95da83bd7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_methods_classjazz__elements_1_1Tuple"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classjazz__elements_1_1Tuple')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classjazz__elements_1_1Tuple.html">jazz_elements::Tuple</a></td></tr>
@@ -203,31 +220,245 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>hash64</b></td></
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classjazz__bebop_1_1Snippet.html" title="Snippet: A code snippet and the ancestor of Concept.">Snippet</a>: A code snippet and the ancestor of Concept. </p>
-<p>A <a class="el" href="classjazz__bebop_1_1Snippet.html" title="Snippet: A code snippet and the ancestor of Concept.">Snippet</a> is a Tuple with items and some attributes. The items are sources and compiled onnx code. The attributes identify it as a <a class="el" href="classjazz__bebop_1_1Snippet.html" title="Snippet: A code snippet and the ancestor of Concept.">Snippet</a> and manage state (). The <a class="el" href="classjazz__bebop_1_1Snippet.html" title="Snippet: A code snippet and the ancestor of Concept.">Snippet</a> object provides an interface to access the text parts (<code>uses</code> and <code>source</code>) as a std::vector of std::string. Also, it provides many constructors to create a <a class="el" href="classjazz__bebop_1_1Snippet.html" title="Snippet: A code snippet and the ancestor of Concept.">Snippet</a> from source, object, ...</p>
+<p>A <a class="el" href="classjazz__bebop_1_1Snippet.html" title="Snippet: A code snippet and the ancestor of Concept.">Snippet</a> is a Tuple with items and some attributes. The items are sources and compiled onnx code. The attributes identify it as a <a class="el" href="classjazz__bebop_1_1Snippet.html" title="Snippet: A code snippet and the ancestor of Concept.">Snippet</a> and manage state ().</p>
+<h2><a class="anchor" id="autotoc_md1"></a>
+Attributes</h2>
+<p>A snippet always defines two attributes:</p>
+<p>BLOCK_ATTRIB_SNIPVERS : The version of the <a class="el" href="classjazz__bebop_1_1Snippet.html" title="Snippet: A code snippet and the ancestor of Concept.">Snippet</a> '1' reserved for future use or extension in general (Concepts). BLOCK_ATTRIB_SNIPSTATE : A four character from SNIPSTATE_EMPTY_SNIPPET to SNIPSTATE_FAILED_RUN_SOURCE</p>
+<p>The string is made by binary sorted ASCII characters with 4 fields: general, object, intermediate (body, input, output, reads, writes, calls) and source. The characters are (lower is problematic: ! (33) is irrecoverable error, 'A'..'Z' (65..90) are explanations for error states, _ (93) is empty, 'a'..'z' (97..122) are valid states). The order of the fields is general goes in the top bits when represented as an integer. state() &gt;= SNIPSTATE_CAN_RUN matches any can_run or is_running, state() &lt; SNIPSTATE_EMPTY_SNIPPET matches any error.</p>
+<p>You can also mask using MASK_SNIPSTATE_GENERAL .. MASK_SNIPSTATE_SOURCE to get the state of a specific part of the <a class="el" href="classjazz__bebop_1_1Snippet.html" title="Snippet: A code snippet and the ancestor of Concept.">Snippet</a>. The indices are defines as SNIP_INDEX_OBJECT .. SNIP_INDEX_WRITES.</p>
+<h2><a class="anchor" id="autotoc_md2"></a>
+Kind</h2>
+<p>A Valid snippet satisfies the Kind defined as KIND_SNIPPET</p>
 <p>The items are:</p>
-<p>source, input, output, reads, writes, calls, body, object </p><hr  />
-<p> | | +--&gt; The Onnx object code | +-------------------------&mdash;&gt; The preprocessed source code (Possibly reverse engineered) +--------------------------------------------------&mdash;&gt; The original source code (If available)</p>
-<p>The attributes are set in BLOCK_SNIPPET_STATE and are:</p>
-<ul>
-<li>SNIPSTATE_SOURCE_AVAILABLE : The source code is available (has original source)</li>
-<li>SNIPSTATE_SOURCE_PREPROCESSED : The source code has been preprocessed (has input, output, reads, writes, calls, body)</li>
-<li>SNIPSTATE_SOURCE_COMPILED : The object code has been compiled (has object)</li>
-<li>SNIPSTATE_OBJECT_AVAILABLE : The object code is available (the object is the original source)</li>
-<li>SNIPSTATE_OBJECT_PREPROCESSED : The object code has been preprocessed (has input, output, reads, writes, calls, body)</li>
-<li>SNIPSTATE_RUNS : The snippet has run successfully, (was either SNIPSTATE_SOURCE_COMPILED or SNIPSTATE_OBJECT_PREPROCESSED)</li>
-<li>SNIPSTATE_IS_RUNNING : The snippet is currently mounted in an ONNX runtime session</li>
-<li>SNIPSTATE_FAILED_SRC_PREPROC : The source code preprocessing failed</li>
-<li>SNIPSTATE_FAILED_SRC_COMPILE : The object code compilation failed</li>
-<li>SNIPSTATE_FAILED_OBJ_PREPROC : The object code preprocessing failed</li>
-<li>SNIPSTATE_FAILED_RUN : The snippet failed to run </li>
-</ul>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+<pre class="fragment">source, input, output, reads, writes, calls, body, object
+------  -----------------------------------------  ------
+   |                        |                         +--&gt; The Onnx object code
+   |                        +----------------------------&gt; The intermediate (preprocessed) source code
+   +-----------------------------------------------------&gt; The original source code (If available)
+</pre><p>Item indices: Since the order of the blocks in a tuple are fixed, you can retrieve the items both by name of by index.</p>
+<h2><a class="anchor" id="autotoc_md3"></a>
+Interface</h2>
+<p>The <a class="el" href="classjazz__bebop_1_1Snippet.html" title="Snippet: A code snippet and the ancestor of Concept.">Snippet</a> object provides an interface to access the text parts as a SnippetText and also returns its state as an integer and its onnx object as a pointer.</p>
+<p>Since Snippets are immutable, the logic of adding blocks to the tuple is managed by the <a class="el" href="classjazz__bebop_1_1Fields.html" title="Fields: A Space for Snippets.">Fields</a> object. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a95a2d128581f5b281179a78d3dc39f54" name="a95a2d128581f5b281179a78d3dc39f54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95a2d128581f5b281179a78d3dc39f54">&#9670;&#160;</a></span>get_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jazz_bebop::Snippet::get_state </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the state of the <a class="el" href="classjazz__bebop_1_1Snippet.html" title="Snippet: A code snippet and the ancestor of Concept.">Snippet</a> as an integer.</p>
+<p>Returns the value of the attribute BLOCK_ATTRIB_SNIPSTATE (only the first 4 chars) as an integer.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classjazz__bebop_1_1Snippet.html" title="Snippet: A code snippet and the ancestor of Concept.">Snippet</a></dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The state of the <a class="el" href="classjazz__bebop_1_1Snippet.html" title="Snippet: A code snippet and the ancestor of Concept.">Snippet</a> as an integer. </dd></dl>
+
+</div>
+</div>
+<a id="a9514c07b2bf7717245fdc0dfd1f19017" name="a9514c07b2bf7717245fdc0dfd1f19017"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9514c07b2bf7717245fdc0dfd1f19017">&#9670;&#160;</a></span>get_block() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool jazz_bebop::Snippet::get_block </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>idx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacejazz__bebop.html#a3e5990c6fafcb24d3aeee47c8bb4659c">SnippetText</a> &amp;&#160;</td>
+          <td class="paramname"><em>snip_text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get a specific block (whose type is a tensor of strings) into a SnippetText.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">idx</td><td>The index of the block. </td></tr>
+    <tr><td class="paramname">snip_text</td><td>The SnippetText to fill. The caller must provide an empty object and is responsible of disposing it. If not empty, the content will be appended.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the block was found and either is is empty or snip_text was filled. </dd></dl>
+
+</div>
+</div>
+<a id="a32d7db3b04f4f0d22343498a80b880c4" name="a32d7db3b04f4f0d22343498a80b880c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32d7db3b04f4f0d22343498a80b880c4">&#9670;&#160;</a></span>get_block() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool jazz_bebop::Snippet::get_block </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a>&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacejazz__bebop.html#a3e5990c6fafcb24d3aeee47c8bb4659c">SnippetText</a> &amp;&#160;</td>
+          <td class="paramname"><em>snip_text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get a specific block (whose type is a tensor of strings) into a SnippetText.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The name of the block. </td></tr>
+    <tr><td class="paramname">snip_text</td><td>The SnippetText to fill. The caller must provide an empty object and is responsible of disposing it. If not empty, the content will be appended.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the block was found and either is is empty or snip_text was filled. </dd></dl>
+
+</div>
+</div>
+<a id="ab0ae921e44891db01075ace6a5e5cc11" name="ab0ae921e44891db01075ace6a5e5cc11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0ae921e44891db01075ace6a5e5cc11">&#9670;&#160;</a></span>object_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jazz_bebop::Snippet::object_size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the size of the onnx object block.</p>
+<dl class="section return"><dt>Returns</dt><dd>The size of the object block or 0 if the block is not found. </dd></dl>
+
+</div>
+</div>
+<a id="a3b3ff94c678a2b45fa639450a1066921" name="a3b3ff94c678a2b45fa639450a1066921"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b3ff94c678a2b45fa639450a1066921">&#9670;&#160;</a></span>get_object()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * jazz_bebop::Snippet::get_object </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the onnx object block.</p>
+<p>This does not copy or allocate memory, it returns a pointer inside the <a class="el" href="classjazz__bebop_1_1Snippet.html" title="Snippet: A code snippet and the ancestor of Concept.">Snippet</a> object which will be valid as long as the <a class="el" href="classjazz__bebop_1_1Snippet.html" title="Snippet: A code snippet and the ancestor of Concept.">Snippet</a> object is valid. Do not try to free it.</p>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the onnx object block or nullptr if the block is not found. </dd></dl>
+
+</div>
+</div>
+<a id="ae3674805168223f34a754c95da83bd7a" name="ae3674805168223f34a754c95da83bd7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3674805168223f34a754c95da83bd7a">&#9670;&#160;</a></span>get_block() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a> jazz_elements::Tuple::get_block </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>idx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get a Block from a Tuple by item index.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">idx</td><td>The index of the item.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The block stored in the tuple or nullptr for an invalid index.</dd></dl>
+<p>NOTE: Use the pointer as read-only (more than one cell may point to the same value) and never try to free it. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="snippet_8h_source.html">snippet.h</a></li>
+<li><b>snippet.cpp</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 6 2025 for Jazz 1.25.+ by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Thu Feb 13 2025 for Jazz 1.25.+ by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

@@ -673,12 +673,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>alloc_warning_issued<
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>MHD_HTTP_CREATED if SEQUENCE_FINAL_CALL is successful, MHD_HTTP_OK if any othe call is successful, or any HTTP error status code.</dd></dl>
 <p>This function is <b>only</b> called after a successful <a class="el" href="classjazz__bebop_1_1BaseAPI.html#acffc96640bc1033c6b02dab9887b1076">parse()</a> of an HTTP_PUT query. It is not private because it is called for the callback, but it is not intended for any other context.</p>
-<h2><a class="anchor" id="autotoc_md22"></a>
+<h2><a class="anchor" id="autotoc_md25"></a>
 Internals</h2>
 <p>It supports any successful HTTP_PUT syntax, that is:</p>
 <p>APPLY_NOTHING: With or without node, mandatory base, entity and key. APPLY_RAW &amp; APPLY_TEXT: With or without node, mandatory base, entity and key. APPLY_URL: With or without node and just a base.</p>
 <p>In all cases, calls with a node (it can only be l_node) q_state.url contains exactly what has to be forwarded.</p>
-<h2><a class="anchor" id="autotoc_md23"></a>
+<h2><a class="anchor" id="autotoc_md26"></a>
 Call logic:</h2>
 <p>SEQUENCE_FIRST_CALL comes first and is mandatory. On success, the functions keeps the data in a block stored in a pTransaction in q_state.rr_value.p_extra (that pointer will be returned in successive call of the same PUT query). SEQUENCE_INCREMENT_CALL may or may not come, if it does, it must allocate bigger blocks and store more data in the same pTransaction. SEQUENCE_FINAL_CALL is called just once, it must destroy the pTransaction when done </p>
 
@@ -708,7 +708,7 @@ Call logic:</h2>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if successful, log(LOG_MISS, "further details") for errors.</dd></dl>
 <p>This function is <b>only</b> called after a successful <a class="el" href="classjazz__bebop_1_1BaseAPI.html#acffc96640bc1033c6b02dab9887b1076">parse()</a> of an HTTP_DELETE query. It is not private because it is called for the callback, but it is not intended for any other context.</p>
-<h2><a class="anchor" id="autotoc_md24"></a>
+<h2><a class="anchor" id="autotoc_md27"></a>
 Internals</h2>
 <p>It supports any successful HTTP_PUT syntax, that is:</p>
 <p>APPLY_NOTHING: With or without node, mandatory base and entity, with of without a key. APPLY_URL: With or without node and just a base.</p>
@@ -751,7 +751,7 @@ Internals</h2>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>MHD_HTTP_OK if successful, or a valid http status error.</dd></dl>
 <p>This function is <b>only</b> called after a successful <a class="el" href="classjazz__bebop_1_1BaseAPI.html#acffc96640bc1033c6b02dab9887b1076">parse()</a> of HTTP_GET and HTTP_HEAD queries. It is not private because it is called for the callback, but it is not intended for any other context.</p>
-<h2><a class="anchor" id="autotoc_md25"></a>
+<h2><a class="anchor" id="autotoc_md28"></a>
 Internals</h2>
 <p>It supports, basically everything, which is, all apply in many versions:</p>
 <p>APPLY_NOTHING, APPLY_NAME, APPLY_URL, APPLY_FUNCTION, APPLY_FUNCT_CONST, APPLY_FILTER, APPLY_FILT_CONST, APPLY_RAW, APPLY_TEXT, APPLY_ASSIGN_NOTHING, APPLY_ASSIGN_NAME, APPLY_ASSIGN_URL, APPLY_ASSIGN_FUNCTION, APPLY_ASSIGN_FUNCT_CONST, APPLY_ASSIGN_FILTER, APPLY_ASSIGN_FILT_CONST, APPLY_ASSIGN_RAW, APPLY_ASSIGN_TEXT, APPLY_ASSIGN_CONST, APPLY_NEW_ENTITY, APPLY_GET_ATTRIBUTE, APPLY_SET_ATTRIBUTE and APPLY_JAZZ_INFO</p>
@@ -904,7 +904,7 @@ Internals</h2>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 6 2025 for Jazz 1.25.+ by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Thu Feb 13 2025 for Jazz 1.25.+ by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>
