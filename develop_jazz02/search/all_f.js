@@ -4,5 +4,6 @@ var searchData=
   ['key_5fhash_1',['key_hash',['../structjazz__elements_1_1VolatileTransaction.html#a20e75d60b495d6e5be520a1b1c293818',1,'jazz_elements::VolatileTransaction::key_hash'],['../structjazz__elements_1_1EntityKeyHash.html#ab8deadd4103bfa363f3b659104333ab8',1,'jazz_elements::EntityKeyHash::key_hash']]],
   ['key_5fseed_2',['key_seed',['../classjazz__elements_1_1Volatile.html#afc059a889ae4c6dd11ab7a22ec043863',1,'jazz_elements::Volatile']]],
   ['kind_3',['kind',['../classjazz__elements_1_1Kind.html',1,'jazz_elements::Kind'],['../classjazz__bebop_1_1Snippet.html#autotoc_md2',1,'Kind']]],
-  ['kinds_4',['Creating Kinds',['../classjazz__elements_1_1Kind.html#autotoc_md15',1,'']]]
+  ['kind_5fsnippet_4',['KIND_SNIPPET',['../namespacejazz__bebop.html#a68cd7a2a3a8b32e35970816e7d0b5d74',1,'jazz_bebop']]],
+  ['kinds_5',['Creating Kinds',['../classjazz__elements_1_1Kind.html#autotoc_md15',1,'']]]
 ];

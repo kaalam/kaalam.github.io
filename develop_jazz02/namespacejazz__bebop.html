@@ -275,6 +275,13 @@ Variables</h2></td></tr>
 <tr class="memitem:a71ea95a2d50bce225688b4a38acf2b80" id="r_a71ea95a2d50bce225688b4a38acf2b80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__bebop.html#a3abbc565c36b9f331c29433fe4638d27">AttributeTypeDict</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__bebop.html#a71ea95a2d50bce225688b4a38acf2b80">ATTRIBUTE_TYPES</a></td></tr>
 <tr class="memdesc:a71ea95a2d50bce225688b4a38acf2b80"><td class="mdescLeft">&#160;</td><td class="mdescRight">A table to locate all the possible ONNX attribute types by their name in the config file "onnx.ini".  <br /></td></tr>
 <tr class="separator:a71ea95a2d50bce225688b4a38acf2b80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68cd7a2a3a8b32e35970816e7d0b5d74" id="r_a68cd7a2a3a8b32e35970816e7d0b5d74"><td class="memItemLeft" align="right" valign="top">const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__bebop.html#a68cd7a2a3a8b32e35970816e7d0b5d74">KIND_SNIPPET</a> []</td></tr>
+<tr class="separator:a68cd7a2a3a8b32e35970816e7d0b5d74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7f6a596881d6e91e5bf27aa70a59511" id="r_ae7f6a596881d6e91e5bf27aa70a59511"><td class="memItemLeft" align="right" valign="top">const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__bebop.html#ae7f6a596881d6e91e5bf27aa70a59511">EMPTY_SNIPPET</a> []</td></tr>
+<tr class="separator:ae7f6a596881d6e91e5bf27aa70a59511"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6766e319c5c55df928367527e515e4fc" id="r_a6766e319c5c55df928367527e515e4fc"><td class="memItemLeft" align="right" valign="top">const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__bebop.html#a6766e319c5c55df928367527e515e4fc">SNIPPET_VERSION</a> [] = &quot;snp1&quot;</td></tr>
+<tr class="memdesc:a6766e319c5c55df928367527e515e4fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The content of the attribute BLOCK_ATTRIB_SNIPVERS.  <br /></td></tr>
+<tr class="separator:a6766e319c5c55df928367527e515e4fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0de99c6eee97dfb355d471cf29dc772c" id="r_a0de99c6eee97dfb355d471cf29dc772c"><td class="memItemLeft" align="right" valign="top"><a id="a0de99c6eee97dfb355d471cf29dc772c" name="a0de99c6eee97dfb355d471cf29dc772c"></a>
 const char&#160;</td><td class="memItemRight" valign="bottom"><b>SNIPSTATE_EMPTY_SNIPPET</b> [] = &quot;____&quot;</td></tr>
 <tr class="memdesc:a0de99c6eee97dfb355d471cf29dc772c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The snippet is empty. <br /></td></tr>
@@ -501,10 +508,62 @@ const char&#160;</td><td class="memItemRight" valign="bottom"><b>SNIPSTATE_FAILE
 
 </div>
 </div>
+<a id="a68cd7a2a3a8b32e35970816e7d0b5d74" name="a68cd7a2a3a8b32e35970816e7d0b5d74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68cd7a2a3a8b32e35970816e7d0b5d74">&#9670;&#160;</a></span>KIND_SNIPPET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char jazz_bebop::KIND_SNIPPET[]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= <span class="stringliteral">&quot;{\&quot;object\&quot; : BYTE[obj_size], \&quot;body\&quot; : STRING[body_len], \&quot;calls\&quot; : STRING[calls_len],&quot;</span> </div>
+<div class="line">                              <span class="stringliteral">&quot;\&quot;input\&quot; : STRING[input_len], \&quot;output\&quot; : STRING[output_len], \&quot;reads\&quot; : STRING[reads_len],&quot;</span> </div>
+<div class="line">                              <span class="stringliteral">&quot;\&quot;source\&quot; : STRING[source_len], \&quot;writes\&quot; : STRING[writes_len]}&quot;</span></div>
+</div><!-- fragment --><p>The kind of a <a class="el" href="classjazz__bebop_1_1Snippet.html" title="Snippet: A code snippet and the ancestor of Concept.">Snippet</a> </p>
+
+</div>
+</div>
+<a id="ae7f6a596881d6e91e5bf27aa70a59511" name="ae7f6a596881d6e91e5bf27aa70a59511"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7f6a596881d6e91e5bf27aa70a59511">&#9670;&#160;</a></span>EMPTY_SNIPPET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char jazz_bebop::EMPTY_SNIPPET[]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= <span class="stringliteral">&quot;(\&quot;object\&quot; : [], \&quot;body\&quot; : [NA], \&quot;calls\&quot; : [NA], \&quot;input\&quot; : [NA], \&quot;output\&quot; : [NA],&quot;</span> </div>
+<div class="line">                              <span class="stringliteral">&quot;\&quot;reads\&quot; : [NA], \&quot;source\&quot; : [NA], \&quot;writes\&quot; : [NA])&quot;</span></div>
+</div><!-- fragment --><p>The empty <a class="el" href="classjazz__bebop_1_1Snippet.html" title="Snippet: A code snippet and the ancestor of Concept.">Snippet</a> </p>
+
+</div>
+</div>
+<a id="a6766e319c5c55df928367527e515e4fc" name="a6766e319c5c55df928367527e515e4fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6766e319c5c55df928367527e515e4fc">&#9670;&#160;</a></span>SNIPPET_VERSION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char jazz_bebop::SNIPPET_VERSION[] = &quot;snp1&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The content of the attribute BLOCK_ATTRIB_SNIPVERS. </p>
+<p>The empty <a class="el" href="classjazz__bebop_1_1Snippet.html" title="Snippet: A code snippet and the ancestor of Concept.">Snippet</a> </p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 13 2025 for Jazz 1.25.+ by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sat Feb 15 2025 for Jazz 1.25.+ by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>
