@@ -677,7 +677,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>alloc_warning_issued<
 <p>In the <a class="el" href="classjazz__bebop_1_1BaseAPI.html" title="BaseAPI: The parent of API and Core.">BaseAPI</a> class, this implements all the apply cases from APPLY_NOTHING to APPLY_SET_ATTRIBUTE (APPLY_JAZZ_INFO is http only). What the aseAPI class does is forwarding the request to the right container (if the base is found, returning SERVICE_ERROR_WRONG_BASE if not).</p>
 <p>In the descendants (<a class="el" href="classjazz__bebop_1_1Core.html" title="Core: The execution unit is now a wrapper around onnx-runtime.">Core</a> and ModelsAPI) it should support the range from APPLY_NOTHING to APPLY_TEXT. This includes function calls APPLY_FUNCTION and APPLY_FUNCT_CONST, but also APPLY_FILTER and APPLY_FILT_CONST to select from the result of a function call. Also, APPLY_URL is very convenient for passing text as an argument to a function. APPLY_NOTHING can return some metadata about the model including a list of endpoints. APPLY_NAME can define specifics of an endpoint. APPLY_RAW and APPLY_TEXT can be used to select the favorite serialization format of the result. Therefore, the function interface should be considered as the whole range and not just APPLY_FUNCTION. </p>
 
-<p>Reimplemented in <a class="el" href="classjazz__bebop_1_1Core.html#a6976df2b17220bab43aa5213f75e1a26">jazz_bebop::Core</a>, and <a class="el" href="classjazz__models_1_1ModelsAPI.html#a4a4440d8c81f03195bfd9e5b7d473476">jazz_models::ModelsAPI</a>.</p>
+<p>Reimplemented in <a class="el" href="classjazz__models_1_1ModelsAPI.html#a4a4440d8c81f03195bfd9e5b7d473476">jazz_models::ModelsAPI</a>.</p>
 
 </div>
 </div>
@@ -1151,7 +1151,7 @@ Internals</h2>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 18 2025 for Jazz 1.25.+ by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Thu Feb 20 2025 for Jazz 1.25.+ by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

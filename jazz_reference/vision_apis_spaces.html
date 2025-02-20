@@ -620,9 +620,10 @@ containers to store both data and metadata.</p>
 
 <h2 id="dataspaces">DataSpaces</h2>
 
-<p>A <code class="language-plaintext highlighter-rouge">DataSpaces</code> is a <code class="language-plaintext highlighter-rouge">Space</code> that stores data. DataSpaces are used to store data in a way that is more user friendly than using Containers.</p>
+<p>A <code class="language-plaintext highlighter-rouge">DataSpaces</code> is a <code class="language-plaintext highlighter-rouge">Service</code> that stores all the <code class="language-plaintext highlighter-rouge">Space</code> descendants that store metadata. DataSpaces are used to store data in a way that
+is more user friendly (abstracts Block locators using a FROM/SELECT/WHERE/AS query style) than using Containers.</p>
 
-<p><code class="language-plaintext highlighter-rouge">DataSpaces</code> is the <code class="language-plaintext highlighter-rouge">Service</code> that contains multiple data spaces that can be configured to do:</p>
+<p><code class="language-plaintext highlighter-rouge">DataSpaces</code> is the <code class="language-plaintext highlighter-rouge">Service</code> that contains multiple data spaces (<code class="language-plaintext highlighter-rouge">Space</code> descendants) that can be configured to do:</p>
 
 <ul>
   <li>Sharding across a cluster of Jazz nodes</li>
@@ -640,8 +641,8 @@ replication, etc.</p>
 
 <h2 id="fields">Fields</h2>
 
-<p>A <code class="language-plaintext highlighter-rouge">Fields</code> (the <code class="language-plaintext highlighter-rouge">Service</code> that stores all the formal fields) is a <code class="language-plaintext highlighter-rouge">Space</code> that stores Snippets in fields (namespaces). I has the formal
-(Bebop) definitions of a system.</p>
+<p>A <code class="language-plaintext highlighter-rouge">Fields</code> (the <code class="language-plaintext highlighter-rouge">Service</code> that stores all the formal fields) it stores Snippets in fields (namespaces). I has the formal (Bebop)
+definitions of a system.</p>
 
 <ul>
   <li>See C++ ref <a href="/develop_jazz02/classjazz__bebop_1_1Fields.html">Fields</a></li>
@@ -724,7 +725,7 @@ difference from the general knowledge his class of agents share.</p>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2025 kaalam.ai. All rights reserved. <br />
- Site last generated: Feb 18, 2025 <br />
+ Site last generated: Feb 20, 2025 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

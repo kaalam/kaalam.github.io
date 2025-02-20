@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['data_5fstart_0',['data_start',['../structjazz__elements_1_1ItemHeader.html#a327442ae9113fe6f91281a1cd38e1f9b',1,'jazz_elements::ItemHeader']]],
-  ['def_1',['def',['../classjazz__bebop_1_1DataSpaces.html#a76069a14eb744c05d6086309f0a6da37',1,'jazz_bebop::DataSpaces::def'],['../classjazz__models_1_1SemSpaces.html#ab9be07443d62779c74428647a3faa72e',1,'jazz_models::SemSpaces::def']]],
+  ['data_5fspaces_0',['data_spaces',['../classjazz__bebop_1_1Core.html#a353efa8c2961e6e2b60fb6bd1c58be59',1,'jazz_bebop::Core']]],
+  ['data_5fstart_1',['data_start',['../structjazz__elements_1_1ItemHeader.html#a327442ae9113fe6f91281a1cd38e1f9b',1,'jazz_elements::ItemHeader']]],
   ['def_5ffloat32_5ffmt_2',['DEF_FLOAT32_FMT',['../namespacejazz__elements.html#ac8da9ec9260cf794f10b4038fbc7b1d7',1,'jazz_elements']]],
   ['def_5ffloat64_5ffmt_3',['DEF_FLOAT64_FMT',['../namespacejazz__elements.html#a660d03463784932c8cb436f6d26a27be',1,'jazz_elements']]],
   ['def_5ffloat_5ftime_4',['DEF_FLOAT_TIME',['../namespacejazz__elements.html#a239fcd81a9132439b710f8c6c2adb229',1,'jazz_elements']]],

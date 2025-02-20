@@ -221,13 +221,13 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>hash64</b></td></
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classjazz__bebop_1_1Snippet.html" title="Snippet: A code snippet and the ancestor of Concept.">Snippet</a>: A code snippet and the ancestor of Concept. </p>
 <p>A <a class="el" href="classjazz__bebop_1_1Snippet.html" title="Snippet: A code snippet and the ancestor of Concept.">Snippet</a> is a Tuple with items and some attributes. The items are sources and compiled onnx code. The attributes identify it as a <a class="el" href="classjazz__bebop_1_1Snippet.html" title="Snippet: A code snippet and the ancestor of Concept.">Snippet</a> and manage state ().</p>
-<h2><a class="anchor" id="autotoc_md1"></a>
+<h2><a class="anchor" id="autotoc_md2"></a>
 Attributes</h2>
 <p>A snippet always defines two attributes:</p>
 <p>BLOCK_ATTRIB_SNIPVERS : The version of the <a class="el" href="classjazz__bebop_1_1Snippet.html" title="Snippet: A code snippet and the ancestor of Concept.">Snippet</a> '1' reserved for future use or extension in general (Concepts). BLOCK_ATTRIB_SNIPSTATE : A four character from SNIPSTATE_EMPTY_SNIPPET to SNIPSTATE_FAILED_RUN_SOURCE</p>
 <p>The string is made by binary sorted ASCII characters with 4 fields: general, object, intermediate (body, input, output, reads, writes, calls) and source. The characters are (lower is problematic: ! (33) is irrecoverable error, 'A'..'Z' (65..90) are explanations for error states, _ (93) is empty, 'a'..'z' (97..122) are valid states). The order of the fields is general goes in the top bits when represented as an integer. state() &gt;= SNIPSTATE_CAN_RUN matches any can_run or is_running, state() &lt; SNIPSTATE_EMPTY_SNIPPET matches any error.</p>
 <p>You can also mask using MASK_SNIPSTATE_GENERAL .. MASK_SNIPSTATE_SOURCE to get the state of a specific part of the <a class="el" href="classjazz__bebop_1_1Snippet.html" title="Snippet: A code snippet and the ancestor of Concept.">Snippet</a>. The indices are defines as SNIP_INDEX_OBJECT .. SNIP_INDEX_WRITES.</p>
-<h2><a class="anchor" id="autotoc_md2"></a>
+<h2><a class="anchor" id="autotoc_md3"></a>
 Kind</h2>
 <p>A Valid snippet satisfies the Kind defined as KIND_SNIPPET</p>
 <p>The items are:</p>
@@ -237,7 +237,7 @@ Kind</h2>
    |                        +----------------------------&gt; The intermediate (preprocessed) source code
    +-----------------------------------------------------&gt; The original source code (If available)
 </pre><p>Item indices: Since the order of the blocks in a tuple are fixed, you can retrieve the items both by name of by index.</p>
-<h2><a class="anchor" id="autotoc_md3"></a>
+<h2><a class="anchor" id="autotoc_md4"></a>
 Interface</h2>
 <p>The <a class="el" href="classjazz__bebop_1_1Snippet.html" title="Snippet: A code snippet and the ancestor of Concept.">Snippet</a> object provides an interface to access the text parts as a SnippetText and also returns its state as an integer and its onnx object as a pointer.</p>
 <p>Since Snippets are immutable, the logic of adding blocks to the tuple is managed by the <a class="el" href="classjazz__bebop_1_1Fields.html" title="Fields: A Space for Snippets.">Fields</a> object. </p>
@@ -418,7 +418,7 @@ Interface</h2>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 18 2025 for Jazz 1.25.+ by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Thu Feb 20 2025 for Jazz 1.25.+ by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

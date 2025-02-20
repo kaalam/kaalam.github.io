@@ -375,17 +375,17 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>alloc_warning_issued<
 <li><a class="el" href="classjazz__elements_1_1Channels.html" title="Channels: A Container doing block transactions across media (files, folders, shell,...">Channels</a> support four bases: "0-mq", "bash", "file" and "http". The reference for each base is this docstring.</li>
 <li><a class="el" href="classjazz__elements_1_1Channels.html#a47abe74815c38ad8d293f74b688e0f31">copy()</a> copies across any enabled channels as long as the corresponding <a class="el" href="classjazz__elements_1_1Channels.html#a4c090567bd5bdfa758392732f6977644">get()</a> and <a class="el" href="classjazz__elements_1_1Channels.html#a1c894bf6091db5ff9bae006e07ee5335">put()</a> are correct.</li>
 </ol>
-<h2><a class="anchor" id="autotoc_md4"></a>
+<h2><a class="anchor" id="autotoc_md5"></a>
 "0-mq" Reference</h2>
 <p>The 0-mq implementation in <a class="el" href="namespacejazz__elements.html" title="The namespace for Jazz Utils, Blocks, Kinds, Tuples, Containers, etc.">jazz_elements</a> is only a zeroMQ client, not a server. The only operation it supports is a translate() call. For a translate() call to succeed, you must first have created a pipeline using a put call with a string. E.g, put("//0-mq/pipeline/speech2text") with a block containing a string like "tcp://localhost:5555" creates a pipeline named speech2text. Outside Jazz, you set up a zeroMQ server that listens to tcp://localhost:5555 and does speech to text, expecting, say 32-bit int vectors as input and returning a buffer of char as output. In your translate call you must provide a tuple with two Tensors with item names "input" and "result". The translate() call will send the raw tensor of the item "input" to the server and write whatever the server answers into the tensor named "result", just overriding the tensor without any dimension change. This operation expects the tensor to be binary (i.e., no variable length strings) and their shapes and types known by both parts.</p>
 <p>In terms of the Jazz server API, this is a function call: either GET "//0-mq/speech2text/(//lmdb/stuff/my_tensor)" or GET "//0-mq/speech2text/(&amp;[1,2,3];)" the argument can be anything in <a class="el" href="classjazz__elements_1_1Persisted.html" title="Persisted: A Service to manage data objects in LMDB.">Persisted</a>, <a class="el" href="classjazz__elements_1_1Volatile.html" title="Volatile: A Service to manage data objects in RAM.">Volatile</a>, even a file or an //http get or a (%-encoded) constant as in the second example.</p>
 <p>When using translate() as the method of Channel, you should omit the "pipeline" part, just translate(p_tuple, "//0-mq/speech2text");</p>
 <p>Besides this, get("//0-mq/pipeline/speech2text") will return just a block with "tcp://localhost:5555" and remove("//0-mq/pipeline/speech2text") will destroy the pipeline. Any other call using "0-mq" returns SERVICE_ERROR_NOT_APPLICABLE.</p>
 <p>"0-mq" operation must be enabled via configuration by setting ENABLE_ZEROMQ_CLIENT to something non-zero.</p>
-<h2><a class="anchor" id="autotoc_md5"></a>
+<h2><a class="anchor" id="autotoc_md6"></a>
 "bash" Reference</h2>
 <p>This is also a translate() call, the difference is you don't create the pipeline, it always exists and is called "//bash/exec". The <a class="el" href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz Block with multiple Tensors.">Tuple</a> is an array of byte, both ways "input" and "result". If the size of the "result" buffer is too small for the answer it will be filled up to the available size and something will be lost. The answer includes whatever a popen("bash script.sh") writes to stdout / stderr (where script.sh is the content of the "input" tensor). "bash" operation must be enabled via configuration by setting ENABLE_BASH_EXEC to something non-zero. There is no security check: it can be used for pushing AI creations to github or kill the server with //bash/exec(&amp; jazz%20stop ;)</p>
-<h2><a class="anchor" id="autotoc_md6"></a>
+<h2><a class="anchor" id="autotoc_md7"></a>
 "file" Reference</h2>
 <p>This read/writes/deletes to the filesystem. Since the API does not use locators, there is no hardcoded name restriction. Via the http server, just use the URL (&amp;...;). Remember to %-encode whatever http expects to be encoded. E.g., get("//file/&amp;whatever%20you%20want;"). Note that "//file/" is a mandatory prefix, therefore "//file/aa" is "aa" and //file//aa" is "/aa".
 get() gets files as arrays of byte and folders as an Index serialized as a Tuple (the keys are file names and the values either "file" or
@@ -398,7 +398,7 @@ new_entity() creates a new folder.
 "file" operation must be enabled via configuration by setting ENABLE_FILE_LEVEL to 0 (disable everything), 1 (just read), 2 (cannot
 override == no remove and WRITE_ONLY_IF_NOT_EXISTS) or 3 (enable everything).
 
-@subsection autotoc_md7 "http" Reference
+@subsection autotoc_md8 "http" Reference
 
 
 Besides being an http server, Jazz is also an http client. The simplest mode of operation is just forwarding get(), put() and delete()
@@ -1455,7 +1455,7 @@ Tuple with all the connection parameters.
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 18 2025 for Jazz 1.25.+ by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Thu Feb 20 2025 for Jazz 1.25.+ by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

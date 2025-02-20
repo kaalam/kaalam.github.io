@@ -91,10 +91,7 @@ Inheritance diagram for jazz_bebop::Space:</div>
  <div class="center">
   <img src="classjazz__bebop_1_1Space.png" usemap="#jazz_5Fbebop::Space_map" alt=""/>
   <map id="jazz_5Fbebop::Space_map" name="jazz_5Fbebop::Space_map">
-<area href="classjazz__elements_1_1Service.html" title="A Jazz Service is a globally instanced configurable object that may allocate RAM." alt="jazz_elements::Service" shape="rect" coords="81,0,233,24"/>
-<area href="classjazz__bebop_1_1DataSpaces.html" title="DataSpaces: The data space." alt="jazz_bebop::DataSpaces" shape="rect" coords="0,112,152,136"/>
-<area href="classjazz__bebop_1_1Fields.html" title="Fields: A Space for Snippets." alt="jazz_bebop::Fields" shape="rect" coords="162,112,314,136"/>
-<area href="classjazz__models_1_1SemSpaces.html" title="SemSpaces: A Fields for Concepts." alt="jazz_models::SemSpaces" shape="rect" coords="162,168,314,192"/>
+<area href="classjazz__elements_1_1Service.html" title="A Jazz Service is a globally instanced configurable object that may allocate RAM." alt="jazz_elements::Service" shape="rect" coords="0,0,140,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -274,8 +271,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classjazz__elements_1_1Service.html#ae4883dfb5573ae5911fc97e01f06afe2">jazz_elements::Service</a>.</p>
 
-<p>Reimplemented in <a class="el" href="classjazz__bebop_1_1DataSpaces.html#a405c8d15f97327f16ebe7dab4f45f694">jazz_bebop::DataSpaces</a>, <a class="el" href="classjazz__bebop_1_1Fields.html#a4de8c759a58cf54dfa5fcc34741a328c">jazz_bebop::Fields</a>, and <a class="el" href="classjazz__models_1_1SemSpaces.html#a9afab6dfe94d5616f80a8b93f372652d">jazz_models::SemSpaces</a>.</p>
-
 </div>
 </div>
 <a id="a4beb2a74e09e2b55935381028dd3fb23" name="a4beb2a74e09e2b55935381028dd3fb23"></a>
@@ -334,8 +329,6 @@ Additional Inherited Members</h2></td></tr>
 <p>This method must be implemented by descendants. It will load a record of metadata from <code>//storage_base/storage_ent/name</code>.</p>
 <dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR if successful, an error code otherwise. </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classjazz__bebop_1_1DataSpaces.html#a549cf93e90215e3aefac43200f19fe59">jazz_bebop::DataSpaces</a>, <a class="el" href="classjazz__bebop_1_1Fields.html#a2fae828315916afe7d2b160a06c2a959">jazz_bebop::Fields</a>, and <a class="el" href="classjazz__models_1_1SemSpaces.html#a90a61354f28685f67ed8ef9649a7cd93">jazz_models::SemSpaces</a>.</p>
-
 </div>
 </div>
 <a id="ad37859eb958cefe72722ccf04c24766d" name="ad37859eb958cefe72722ccf04c24766d"></a>
@@ -365,8 +358,6 @@ Additional Inherited Members</h2></td></tr>
 <p>This method must be implemented by descendants. It will store a record of metadata into <code>//storage_base/storage_ent/name</code>.</p>
 <dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR if successful, an error code otherwise. </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classjazz__bebop_1_1DataSpaces.html#a95f6895248215a679cee0a405ad573f3">jazz_bebop::DataSpaces</a>, <a class="el" href="classjazz__bebop_1_1Fields.html#a1efac22b6462abfc64f83109c5d26503">jazz_bebop::Fields</a>, and <a class="el" href="classjazz__models_1_1SemSpaces.html#ad54e45255354c0b2b4fbc78ccef39f75">jazz_models::SemSpaces</a>.</p>
-
 </div>
 </div>
 <a id="a5df8bb784489595c8d7d4b6753a1aa86" name="a5df8bb784489595c8d7d4b6753a1aa86"></a>
@@ -394,8 +385,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Return the number of rows in the <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a>. </p>
 <dl class="section return"><dt>Returns</dt><dd>The number of rows in the <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a> or SPACE_NOT_A_ROW if the <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a> is invalid. </dd></dl>
-
-<p>Reimplemented in <a class="el" href="classjazz__bebop_1_1DataSpaces.html#a16f1d21aeaf7b31443a16581f21b08d8">jazz_bebop::DataSpaces</a>, <a class="el" href="classjazz__bebop_1_1Fields.html#a17f99df8a8d60875f02002f48df55ac8">jazz_bebop::Fields</a>, and <a class="el" href="classjazz__models_1_1SemSpaces.html#a533309096573b1b9e381836899ed7599">jazz_models::SemSpaces</a>.</p>
 
 </div>
 </div>
@@ -432,8 +421,6 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the index or nullptr if there is no index. Examples include a vector for an embedding, of a string for a key-based index and a TimePoint for a time-based index. </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classjazz__bebop_1_1DataSpaces.html#a652adf52635618085e51031465be715a">jazz_bebop::DataSpaces</a>, <a class="el" href="classjazz__bebop_1_1Fields.html#a14f97045adc865b2f859bcc58d4105b2">jazz_bebop::Fields</a>, and <a class="el" href="classjazz__models_1_1SemSpaces.html#a8de2d54fa50a238b61cceeca516c3d3e">jazz_models::SemSpaces</a>.</p>
-
 </div>
 </div>
 <a id="a85d3d9d8d7cfe2a2487be816d8a1e10d" name="a85d3d9d8d7cfe2a2487be816d8a1e10d"></a>
@@ -461,8 +448,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Get the number of columns in the <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a>. </p>
 <dl class="section return"><dt>Returns</dt><dd>The number of columns in the <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a>. </dd></dl>
-
-<p>Reimplemented in <a class="el" href="classjazz__bebop_1_1DataSpaces.html#a996c44d66e0b76b8eee33a7fe7ee5f69">jazz_bebop::DataSpaces</a>, <a class="el" href="classjazz__bebop_1_1Fields.html#a8015cca9906e2eb6aea66546a3d6cc97">jazz_bebop::Fields</a>, and <a class="el" href="classjazz__models_1_1SemSpaces.html#a4b1156c21f09ea31bedde13f3003cb34">jazz_models::SemSpaces</a>.</p>
 
 </div>
 </div>
@@ -499,8 +484,6 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The name of the column or nullptr if the index is out of range. </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classjazz__bebop_1_1DataSpaces.html#a557b10d3affc874aa4a05c8bd802007e">jazz_bebop::DataSpaces</a>, <a class="el" href="classjazz__bebop_1_1Fields.html#a78b07fac0635e83da680998cc9a8edab">jazz_bebop::Fields</a>, and <a class="el" href="classjazz__models_1_1SemSpaces.html#a917fdffd0231ea1c4b1a0216b70acd24">jazz_models::SemSpaces</a>.</p>
-
 </div>
 </div>
 <a id="a902b790c02decfe0d2a5a91cae068bbb" name="a902b790c02decfe0d2a5a91cae068bbb"></a>
@@ -535,8 +518,6 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The index of the column or -1 if the column is not found. </dd></dl>
-
-<p>Reimplemented in <a class="el" href="classjazz__bebop_1_1DataSpaces.html#aaf7e22cacc7adf2c7d9d427a59319482">jazz_bebop::DataSpaces</a>, <a class="el" href="classjazz__bebop_1_1Fields.html#aef9913fe0dc67dcf49bf91ccc9fc1b2f">jazz_bebop::Fields</a>, and <a class="el" href="classjazz__models_1_1SemSpaces.html#aac45c8055580d30146e169cb250fb2f9">jazz_models::SemSpaces</a>.</p>
 
 </div>
 </div>
@@ -591,8 +572,6 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to a Locator object that can be used to access the cell or nullptr if the cell is not found. </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classjazz__bebop_1_1DataSpaces.html#a83797bc366e5458a12f43b4e2bba7b1a">jazz_bebop::DataSpaces</a>, <a class="el" href="classjazz__bebop_1_1Fields.html#af598634e5110affced52e78ee2947ed3">jazz_bebop::Fields</a>, and <a class="el" href="classjazz__models_1_1SemSpaces.html#a494c2f11e56e2afebf1a3c4dadb3128e">jazz_models::SemSpaces</a>.</p>
-
 </div>
 </div>
 <a id="a4546064eeaa63a9a2efee8790cfe16f8" name="a4546064eeaa63a9a2efee8790cfe16f8"></a>
@@ -627,8 +606,6 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="classjazz__bebop_1_1RowSelection.html" title="RowSelection: An iterator over the rows of a Space.">RowSelection</a> object that can be used to iterate over the rows that match the query. </dd></dl>
-
-<p>Reimplemented in <a class="el" href="classjazz__bebop_1_1DataSpaces.html#a2b6fc6c4b120121a89a8af0c1aca1dcc">jazz_bebop::DataSpaces</a>, <a class="el" href="classjazz__bebop_1_1Fields.html#a43c5420af2db5cc0b34250f81f678bcd">jazz_bebop::Fields</a>, and <a class="el" href="classjazz__models_1_1SemSpaces.html#a8f3e1a3c09976305962e2a256557a395">jazz_models::SemSpaces</a>.</p>
 
 </div>
 </div>
@@ -795,8 +772,6 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR if successful, an error code otherwise. </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classjazz__bebop_1_1DataSpaces.html#afdfe657c6c2c30489cfbe4f29756654c">jazz_bebop::DataSpaces</a>, <a class="el" href="classjazz__bebop_1_1Fields.html#a5cf926776add32b14118e6c732cb1dbf">jazz_bebop::Fields</a>, and <a class="el" href="classjazz__models_1_1SemSpaces.html#ac1f358de9094ca6c66f68031ce7557ea">jazz_models::SemSpaces</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -806,7 +781,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 18 2025 for Jazz 1.25.+ by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Thu Feb 20 2025 for Jazz 1.25.+ by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>
