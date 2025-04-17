@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>Jazz Services, APIs and Instantiation</title>
+<meta name="generator" content="litedown 0.7">
+<title></title>
 <style type="text/css">
 body {
   font-family: sans-serif;
@@ -11,79 +12,110 @@ body {
   margin: auto;
   padding: 1em;
   line-height: 1.5;
-  box-sizing: border-box;
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
 }
-body, .footnotes, code { font-size: .9em; }
+body, .abstract, code, .footnotes, footer, #refs, .caption { font-size: .9em; }
 li li { font-size: .95em; }
-*, *:before, *:after {
-  box-sizing: inherit;
-}
+ul:has(li > input[type="checkbox"]) { list-style: none; padding-left: 1em; }
+*, :before, :after { box-sizing: border-box; }
+a { color: steelblue; }
 pre, img { max-width: 100%; }
-pre, pre:hover {
-  white-space: pre-wrap;
-  word-break: break-all;
-}
-pre code {
-  display: block;
-  overflow-x: auto;
-}
+pre { white-space: pre-wrap; word-break: break-word; }
+pre code { display: block; padding: 1em; overflow-x: auto; }
 code { font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace; }
-:not(pre) > code, code[class] { background-color: #F8F8F8; }
-code.language-undefined, pre > code:not([class]) {
-  background-color: inherit;
-  border: 1px solid #eee;
+:not(pre, th) > code, code[class], div > .caption { background: #f8f8f8; }
+pre > code:is(:not([class]), .language-plain, .language-none, .plain), .box, .figure, .table { background: inherit; border: 1px solid #eee; }
+pre > code {
+  &.message { border-color: #9eeaf9; }
+  &.warning { background: #fff3cd; border-color: #fff3cd; }
+  &.error { background: #f8d7da; border-color: #f8d7da; }
 }
+.fenced-chunk { border-left: 1px solid #666; }
+.code-fence {
+  opacity: .4;
+  border: 1px dashed #666;
+  border-left: 2px solid;
+  &:hover { opacity: inherit; }
+}
+.box, .figure, .table, table { margin: 1em auto; }
+div > .caption { padding: 1px 1em; }
+.figure { p:has(img, svg), pre:has(svg) { text-align: center; } }
+.flex-col { display: flex; justify-content: space-between; }
 table {
-  margin: auto;
-  border-top: 1px solid #666;
+  &:only-child:not(.table > *) { margin: auto; }
+  th, td { padding: 5px; font-variant-numeric: tabular-nums; }
+  thead, tfoot, tr:nth-child(even) { background: whitesmoke; }
+  thead th { border-bottom: 1px solid #ddd; }
+  &:not(.datatable-table) {
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+  }
 }
-table thead th { border-bottom: 1px solid #ddd; }
-th, td { padding: 5px; }
-thead, tfoot, tr:nth-child(even) { background: #eee; }
 blockquote {
   color: #666;
   margin: 0;
-  padding-left: 1em;
-  border-left: 0.5em solid #eee;
+  padding: 1px 1em;
+  border-left: .5em solid #eee;
 }
 hr, .footnotes::before { border: 1px dashed #ddd; }
 .frontmatter { text-align: center; }
-#TOC .numbered li { list-style: none; }
-#TOC .numbered { padding-left: 0; }
-#TOC .numbered ul { padding-left: 1em; }
-table, .body h2 { border-bottom: 1px solid #666; }
+#TOC {
+  a { text-decoration: none; }
+  ul { list-style: none; padding-left: 1em; }
+  & > ul { padding: 0; }
+  ul ul { border-left: 1px solid lightsteelblue; }
+}
+.body h2 { border-bottom: 1px solid #666; }
 .body .appendix, .appendix ~ h2 { border-bottom-style: dashed; }
-.footnote-ref a::before { content: "["; }
-.footnote-ref a::after { content: "]"; }
-section.footnotes::before {
-  content: "";
-  display: block;
-  max-width: 20em;
+.main-number::after { content: "."; }
+span[class^="ref-number-"] { font-weight: bold; }
+.ref-number-fig::after, .ref-number-tab::after { content: ":"; }
+.cross-ref-chp::before { content: "Chapter "; }
+.cross-ref-sec::before { content: "Section "; }
+.cross-ref-fig::before, .ref-number-fig::before { content: "Figure "; }
+.cross-ref-tab::before, .ref-number-tab::before { content: "Table "; }
+.cross-ref-eqn::before, .MathJax_ref:has(mjx-mtext > mjx-c + mjx-c)::before { content: "Equation "; }
+.abstract, #refs {
+  &::before { display: block; margin: 1em auto; font-weight: bold; }
+}
+.abstract::before { content: "Abstract"; text-align: center; }
+#refs::before { content: "Bibliography"; font-size: 1.5em; }
+.ref-paren-open::before { content: "("; }
+.ref-paren-close::after { content: ")"; }
+.ref-semicolon::after { content: "; "; }
+.ref-and::after { content: " and "; }
+.ref-et-al::after { content: " et al."; font-style: italic; }
+.footnote-ref a {
+  &::before { content: "["; }
+  &::after { content: "]"; }
+}
+section.footnotes {
+  margin-top: 2em;
+  &::before { content: ""; display: block; max-width: 20em; }
+}
+.fade {
+  background: repeating-linear-gradient(135deg, white, white 30px, #ddd 32px, #ddd 32px);
+  opacity: 0.6;
 }
 
 @media print {
-  body {
-    font-size: 12pt;
-    max-width: 100%;
-  }
-  tr, img { page-break-inside: avoid; }
+  body { max-width: 100%; }
+  tr, img { break-inside: avoid; }
 }
 @media only screen and (min-width: 992px) {
-  pre { white-space: pre; }
+  body:not(.pagesjs) pre:has(.line-numbers):not(:hover) { white-space: pre; }
 }
 </style>
 </head>
 <body>
 <div class="frontmatter">
-<div class="title"><h1>Jazz Services, APIs and Instantiation</h1></div>
-<div class="author"><h2></h2></div>
-<div class="date"><h3></h3></div>
 </div>
 <div class="body">
-<h1 id="jazz-services-apis-and-instantiation">Jazz Services, APIs and Instantiation</h1>
+<h1 id="chp:jazz-services-apis-and-instantiation">Jazz Services, APIs and Instantiation</h1>
 <p>Jazz is a single monolithic process. It allocates data and code (which is data) through some classes that only have one instance of each.
 This document describes the logic behind it.</p>
-<h2 id="services">Services</h2>
+<h2 id="sec:services">Services</h2>
 <p>In Jazz, all the classes that define data and metadata neither have a configuration nor do they allocate RAM. They also don’t have a
 logger to write to.</p>
 <p>These classes are:</p>
@@ -98,7 +130,7 @@ descendant constructor.</p>
 <p>Services are always inherited.</p>
 <p>Services, ConfigFiles and Loggers are all defined in jazz_elements::utils.</p>
 <p>Services also have a start() and shut_down() methods, typically run only once when the server starts and closes.</p>
-<h2 id="containers">Containers</h2>
+<h2 id="sec:containers">Containers</h2>
 <pre><code>Service -&gt; Container
    +-----&gt; HttpServer
 </code></pre>
@@ -145,7 +177,7 @@ base is the part of a Locator that identifies a functionality).</p>
 </ol>
 <p>Overall, the Container class is a robust and flexible component designed to manage complex data structures and transactions, providing
 a rich API for creating, modifying, and querying data while ensuring thread safety and efficient memory management.</p>
-<h2 id="container-descendants-in-jazz-elements">Container descendants in jazz_elements</h2>
+<h2 id="sec:container-descendants-in-jazz-elements">Container descendants in jazz_elements</h2>
 <pre><code>Service -&gt; Container -&gt; Channels
                +------&gt; Volatile
                +------&gt; Persisted
@@ -156,7 +188,7 @@ a rich API for creating, modifying, and querying data while ensuring thread safe
 <li><strong>Volatile</strong>: A Container to manage data objects in RAM as a deque, an index (map), a priority queue or a tree.</li>
 <li><strong>Persisted</strong>: A Container to manage data objects in LMDB.</li>
 </ul>
-<h2 id="instantiation-and-uplifting">Instantiation (and Uplifting)</h2>
+<h2 id="sec:instantiation-and-uplifting">Instantiation (and Uplifting)</h2>
 <ul>
 <li>
 <p><strong>Uplifting</strong> is the process of implementing a descendant of a class in another source tree –and possibly under a different
@@ -177,7 +209,7 @@ where they are instantiated and call them.</p>
 including uplifted ones) and provides a <code>start_service()</code>/<code>stop_service()</code> mechanism that logs and provides user feedback.</p>
 </li>
 </ul>
-<h3 id="how-services-are-instantiated">How Services are instantiated</h3>
+<h3 id="sec:how-services-are-instantiated">How Services are instantiated</h3>
 <p>The Jazz server instantiates services, one instance of each, following these rules:</p>
 <ul>
 <li>Services that are common ancestors (Service, Container, BaseAPI, Model, Space) are not instantiated. Only their descendants are.</li>
@@ -194,7 +226,7 @@ including uplifted ones) and provides a <code>start_service()</code>/<code>stop_
   API         HttpServer           -- nothing --                    Possibly
   HttpServer  -- the world --      -- nothing --                    No
 </code></pre>
-<h2 id="execution-baseapi-space-dataspaces-opcodes-bop-snippet-core">Execution: BaseAPI, Space, DataSpaces, OpCodes, Bop, Snippet, Core</h2>
+<h2 id="sec:execution-baseapi-space-dataspaces-opcodes-bop-snippet-core">Execution: BaseAPI, Space, DataSpaces, OpCodes, Bop, Snippet, Core</h2>
 <pre><code>Service ----------&gt; OpCodes          [ONNX language]
    +--------------&gt; Bop              [Compiler and decompiler]
    +--------------&gt; Space            [Parent of xxxSpace classes inside DataSpaces]
@@ -204,7 +236,7 @@ including uplifted ones) and provides a <code>start_service()</code>/<code>stop_
                       +----&gt; Core    [Compiles, runs code and serves]
 Block ------------&gt; Tuple -&gt; Snippet [Code snippet, parent of Concept]
 </code></pre>
-<h3 id="the-namespace-jazz-bebop-has">The namespace <code>jazz_bebop</code> has:</h3>
+<h3 id="sec:the-namespace-jazz-bebop-has">The namespace <code>jazz_bebop</code> has:</h3>
 <ul>
 <li><code>BaseAPI</code>: A container that routes requests to other containers</li>
 <li><code>Space</code>: A common ancestor of all the xxxSpace classes in <code>DataSpaces</code> that provide abstraction to blocks inside containers.</li>
@@ -220,10 +252,10 @@ can parse requests and route them to the appropriate container.</p>
 <p><code>Core</code> is the only object instantiated by the server’s instantiation mechanism. It owns (as a private attribute) the DataSpaces, the Fields
 (to store the Snippets) and the compiler, Bop, which owns the language (OpCodes).</p>
 <p><code>Core</code> implements the <code>exec()</code> method. It inherits from <code>BaseAPI</code> which provides control over the containers in <code>jazz_elements</code>.</p>
-<h3 id="the-two-flavors-of-bebop">The two flavors of Bebop</h3>
+<h3 id="sec:the-two-flavors-of-bebop">The two flavors of Bebop</h3>
 <p>You can consider Bebop (Bop) a language with two “flavors”: a <strong>formal</strong> one that can be compiled and is defined by everything in this
 namespace and an <strong>informal</strong> natural language that is converted into compilable code by a <code>Model</code> in <code>jazz_models</code>.</p>
-<h2 id="models-are-a-superior-form-of-code-execution">Models are a superior form of code execution</h2>
+<h2 id="sec:models-are-a-superior-form-of-code-execution">Models are a superior form of code execution</h2>
 <pre><code>Service ------------&gt; Fields ---&gt; SemSpaces [Serves Concepts]
    +----&gt; Container ------------&gt; Model     [uses Core to compile and run solutions]
               +-----&gt; BaseAPI --&gt; ModelsAPI [serves Model descendants]
@@ -237,7 +269,7 @@ the informal input). We can think of the whole model as a <strong>resolver</stro
 <p>A <code>ModelsAPI</code> can be informally seen as a <code>Core</code> that executes a higher level language (natural language) that has to be resolved into
 Bebop that can be compiled and executed by the <code>Core</code>. A single service serves multiple models using the same mechanism the other
 containers have: a base (a part of a locator) that identifies the model.</p>
-<h2 id="api-as-a-baseapi-descendant">API as a BaseAPI descendant</h2>
+<h2 id="sec:api-as-a-baseapi-descendant">API as a BaseAPI descendant</h2>
 <pre><code>Service -&gt; Container -&gt; BaseAPI -&gt; API  [Single http entry point aware of all Containers]
 </code></pre>
 <p>So far we have seen:</p>
@@ -249,7 +281,7 @@ data, tables, indexing and execute programs.</li>
 <li>[Now] API Gives unrestricted access to everything to anyone.</li>
 <li>[Highest level: Uplifted API]: Establishes access restrictions, credentials, tokens, etc.</li>
 </ul>
-<h3 id="the-baseapi-class">The BaseAPI class</h3>
+<h3 id="sec:the-baseapi-class">The BaseAPI class</h3>
 <p><code>BaseAPI</code> handles everything that is neither http specific or requires code execution. It provides an interface that is on one side
 http oriented:</p>
 <ul>
@@ -263,7 +295,7 @@ http oriented:</p>
 ranging from APPLY_NOTHING to APPLY_JAZZ_INFO. See <code>jazz_elements::channel.h</code>.</p>
 <p>Code execution is done by the BaseAPI descendants (Core and ModelsAPI) by overriding the get() method to support all the apply codes
 from APPLY_NOTHING to APPLY_TEXT.</p>
-<h3 id="the-api-class">The API class</h3>
+<h3 id="sec:the-api-class">The API class</h3>
 <p>The <code>API</code> class is a <code>BaseAPI</code> aware of every other <code>BaseAPI</code> descendant. As a <code>BaseAPI</code> itself it manages: Channels, Volatile and
 Persisted. It routes its http put() and delete() methods to its parent and its get() method to either its parent, Core or ModelAPI.
 <code>API</code> is called by the <code>http_request_callback()</code> callback function of the <code>HttpServer</code> class. Except for developing purposes it is

@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>Jazz C++ Style Guide</title>
+<meta name="generator" content="litedown 0.7">
+<title></title>
 <style type="text/css">
 body {
   font-family: sans-serif;
@@ -11,110 +12,141 @@ body {
   margin: auto;
   padding: 1em;
   line-height: 1.5;
-  box-sizing: border-box;
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
 }
-body, .footnotes, code { font-size: .9em; }
+body, .abstract, code, .footnotes, footer, #refs, .caption { font-size: .9em; }
 li li { font-size: .95em; }
-*, *:before, *:after {
-  box-sizing: inherit;
-}
+ul:has(li > input[type="checkbox"]) { list-style: none; padding-left: 1em; }
+*, :before, :after { box-sizing: border-box; }
+a { color: steelblue; }
 pre, img { max-width: 100%; }
-pre, pre:hover {
-  white-space: pre-wrap;
-  word-break: break-all;
-}
-pre code {
-  display: block;
-  overflow-x: auto;
-}
+pre { white-space: pre-wrap; word-break: break-word; }
+pre code { display: block; padding: 1em; overflow-x: auto; }
 code { font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace; }
-:not(pre) > code, code[class] { background-color: #F8F8F8; }
-code.language-undefined, pre > code:not([class]) {
-  background-color: inherit;
-  border: 1px solid #eee;
+:not(pre, th) > code, code[class], div > .caption { background: #f8f8f8; }
+pre > code:is(:not([class]), .language-plain, .language-none, .plain), .box, .figure, .table { background: inherit; border: 1px solid #eee; }
+pre > code {
+  &.message { border-color: #9eeaf9; }
+  &.warning { background: #fff3cd; border-color: #fff3cd; }
+  &.error { background: #f8d7da; border-color: #f8d7da; }
 }
+.fenced-chunk { border-left: 1px solid #666; }
+.code-fence {
+  opacity: .4;
+  border: 1px dashed #666;
+  border-left: 2px solid;
+  &:hover { opacity: inherit; }
+}
+.box, .figure, .table, table { margin: 1em auto; }
+div > .caption { padding: 1px 1em; }
+.figure { p:has(img, svg), pre:has(svg) { text-align: center; } }
+.flex-col { display: flex; justify-content: space-between; }
 table {
-  margin: auto;
-  border-top: 1px solid #666;
+  &:only-child:not(.table > *) { margin: auto; }
+  th, td { padding: 5px; font-variant-numeric: tabular-nums; }
+  thead, tfoot, tr:nth-child(even) { background: whitesmoke; }
+  thead th { border-bottom: 1px solid #ddd; }
+  &:not(.datatable-table) {
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+  }
 }
-table thead th { border-bottom: 1px solid #ddd; }
-th, td { padding: 5px; }
-thead, tfoot, tr:nth-child(even) { background: #eee; }
 blockquote {
   color: #666;
   margin: 0;
-  padding-left: 1em;
-  border-left: 0.5em solid #eee;
+  padding: 1px 1em;
+  border-left: .5em solid #eee;
 }
 hr, .footnotes::before { border: 1px dashed #ddd; }
 .frontmatter { text-align: center; }
-#TOC .numbered li { list-style: none; }
-#TOC .numbered { padding-left: 0; }
-#TOC .numbered ul { padding-left: 1em; }
-table, .body h2 { border-bottom: 1px solid #666; }
+#TOC {
+  a { text-decoration: none; }
+  ul { list-style: none; padding-left: 1em; }
+  & > ul { padding: 0; }
+  ul ul { border-left: 1px solid lightsteelblue; }
+}
+.body h2 { border-bottom: 1px solid #666; }
 .body .appendix, .appendix ~ h2 { border-bottom-style: dashed; }
-.footnote-ref a::before { content: "["; }
-.footnote-ref a::after { content: "]"; }
-section.footnotes::before {
-  content: "";
-  display: block;
-  max-width: 20em;
+.main-number::after { content: "."; }
+span[class^="ref-number-"] { font-weight: bold; }
+.ref-number-fig::after, .ref-number-tab::after { content: ":"; }
+.cross-ref-chp::before { content: "Chapter "; }
+.cross-ref-sec::before { content: "Section "; }
+.cross-ref-fig::before, .ref-number-fig::before { content: "Figure "; }
+.cross-ref-tab::before, .ref-number-tab::before { content: "Table "; }
+.cross-ref-eqn::before, .MathJax_ref:has(mjx-mtext > mjx-c + mjx-c)::before { content: "Equation "; }
+.abstract, #refs {
+  &::before { display: block; margin: 1em auto; font-weight: bold; }
+}
+.abstract::before { content: "Abstract"; text-align: center; }
+#refs::before { content: "Bibliography"; font-size: 1.5em; }
+.ref-paren-open::before { content: "("; }
+.ref-paren-close::after { content: ")"; }
+.ref-semicolon::after { content: "; "; }
+.ref-and::after { content: " and "; }
+.ref-et-al::after { content: " et al."; font-style: italic; }
+.footnote-ref a {
+  &::before { content: "["; }
+  &::after { content: "]"; }
+}
+section.footnotes {
+  margin-top: 2em;
+  &::before { content: ""; display: block; max-width: 20em; }
+}
+.fade {
+  background: repeating-linear-gradient(135deg, white, white 30px, #ddd 32px, #ddd 32px);
+  opacity: 0.6;
 }
 
 @media print {
-  body {
-    font-size: 12pt;
-    max-width: 100%;
-  }
-  tr, img { page-break-inside: avoid; }
+  body { max-width: 100%; }
+  tr, img { break-inside: avoid; }
 }
 @media only screen and (min-width: 992px) {
-  pre { white-space: pre; }
+  body:not(.pagesjs) pre:has(.line-numbers):not(:hover) { white-space: pre; }
 }
 </style>
 </head>
 <body>
 <div class="frontmatter">
-<div class="title"><h1>Jazz C++ Style Guide</h1></div>
-<div class="author"><h2></h2></div>
-<div class="date"><h3></h3></div>
 </div>
 <div class="body">
-<h1 id="jazz-c-style-guide">Jazz C++ Style Guide</h1>
+<h1 id="chp:jazz-c-style-guide">Jazz C++ Style Guide</h1>
 <p>We fork Google C++ style guide with some divergent rules, detailed in this document. For anything else, use Google’s style guide as reference. Reference <a href="https://google.github.io/styleguide/cppguide.html">https://google.github.io/styleguide/cppguide.html</a></p>
-<h3 id="swdwgad-principle">SWDWGAD principle</h3>
+<h3 id="sec:swdwgad-principle">SWDWGAD principle</h3>
 <p>“Since when don’t we give a damn?” (SWDWGAD) is a sensation one may have looking at some code bases. Well, in Jazz we do give a damn, we expect the code to be running 30 years from now. We understand some coders get mad when someone else fixes formatting or spelling issues. Some very talented people don’t need order, others do. We want to include everyone here. So please, have a thick skin when your code gets fixed on what you consider “silly” issues, and above all: never make it personal. Also, ugly code acts like an implicit permission to do ugly things with it. That only gets worse with time.</p>
-<h3 id="consistency-first">Consistency first</h3>
+<h3 id="sec:consistency-first">Consistency first</h3>
 <p>These rules do not apply to files that are completely imported from other projects or contributions of complete files (especially, LMDB and Catch2!). In those cases, consistency with pre-existing formatting prevails.</p>
-<h3 id="line-length-tab-size-and-encoding">Line length, tab size and encoding</h3>
+<h3 id="sec:line-length-tab-size-and-encoding">Line length, tab size and encoding</h3>
 <p>Rather than using Google’s 80 character with 4 exceptions rule, we use column 150(*) as a limit, no exceptions. Tabs are used, tab space is 4, line feed is POSIX \n and trailing space is removed.</p>
 <p>(*) Note that column 150 is not exactly the same as 150 characters per line as tabs count as the number of spaces they replace.</p>
-<h3 id="english-only-en-us-utf8">English only, EN_US, UTF8</h3>
+<h3 id="sec:english-only-en-us-utf8">English only, EN_US, UTF8</h3>
 <p>English only, for everything: comments, UI, naming, … Avoid the use of non ASCII chars when possible. They are acceptable in remarks or string constants when necessary. i18n applies to front-end UIs, NOT the server, NOT the framework, NOT the Bebop language, NOT the documentation and NOT the APIs.</p>
-<h3 id="use-of-space">Use of space</h3>
+<h3 id="sec:use-of-space">Use of space</h3>
 <p>Never before a comma, always after a comma except when another comma follows. Always before and after arithmetic and logic operators, except arithmetic * and / and only before pointer operators. Never immediately inside parentheses except for alignment. Always outside parameters near primitives if, while, for, etc. In function calls and definitions, space is just for alignment.</p>
-<h3 id="use-of-vertical-space">Use of vertical space</h3>
+<h3 id="sec:use-of-vertical-space">Use of vertical space</h3>
 <p>Two blank lines before a method’s documentation. No space between the doc and the body or at the beginning or the end. One line space each time you separate blocks. There is no definition of “block”, just similar things make the same block for readability.</p>
-<h3 id="use-of-vertical-alignment">Use of vertical alignment</h3>
+<h3 id="sec:use-of-vertical-alignment">Use of vertical alignment</h3>
 <p>Use more than one consecutive spaces (besides indenting) to improve readability by vertical alignment when two (or more) consecutive lines share a structure and alignment makes their differences evident. We favor readability and error spotting over higher future editing work in case of modification.</p>
-<h3 id="comments">Comments</h3>
+<h3 id="sec:comments">Comments</h3>
 <p>Think doxy! You are creating a doxygen page, never forget that. Check doxygen doc when in doubt.</p>
-<h3 id="todos">TODOs</h3>
+<h3 id="sec:todos">TODOs</h3>
 <p>The line with TODOs must match the regex “^//TODO:(.*)$” the bracket should catch something displayable ‘as is’ (without assuming any character escaping logic) as a title. Avoid “not implemented” as a TODO, it should be notes about known limitations of the code.</p>
-<h3 id="exceptions">Exceptions</h3>
+<h3 id="sec:exceptions">Exceptions</h3>
 <p>Even against the opinion of Google and our own previous position, we use exceptions in Jazz, but limited to Bebop. Bebop is a language and a very simple one. Forcing error checking in Bebop through conditionals would make Bebop a hell. Of course, we could simulate exceptions for predictable errors. But, we are convinced that we would regret the decision to do so when unpredictable errors show up. The cleanest way to provide exceptions to Bebop is rooting them in C++ exceptions in Jazz.</p>
 <p>The only acceptable exception type is <strong>int</strong>. The only acceptable values are:</p>
 <ul>
 <li>Those used by c++ stdlib</li>
 <li>Some constants declared in jazz.h named EXCEPTION_xxx that do not collide with the values in stdlib.</li>
 </ul>
-<h3 id="templates">Templates</h3>
+<h3 id="sec:templates">Templates</h3>
 <p>Never use templates if they don’t make expressions cleaner. Templates in stdlib containers are amazing, there is not much need of them in Jazz.</p>
-<h3 id="macros">Macros</h3>
+<h3 id="sec:macros">Macros</h3>
 <p>Jazz 0.1.+ had the “magical” ALLOC(), REALLOC() and FREE() macros. They co-exist in Jazz 0.2.+ until the original code is fully replaced by the new structure. They are banned in Jazz 0.3.1 and above. <strong>Just to clarify: Preprocessor constants are NOT macros</strong> (macros have arguments) and are used all over the source code. There is no intention to change that, this is considered excellent practice in C/C++. Preprocessor constants are not typed, so type should always be obvious, just keep it simple.</p>
-<h3 id="operator-overloading">Operator Overloading</h3>
+<h3 id="sec:operator-overloading">Operator Overloading</h3>
 <p>Don’t.</p>
-<h2 id="bear-in-mind">Bear in mind</h2>
+<h2 id="sec:bear-in-mind">Bear in mind</h2>
 <p>All this is literally taken from Google’s style guide, we just repeat it to make sure it is not ignored.</p>
 <ul>
 <li>#define guards are imperative and based on the full path in a project’s source tree.</li>
