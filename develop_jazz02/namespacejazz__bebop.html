@@ -365,6 +365,7 @@ const char&#160;</td><td class="memItemRight" valign="bottom"><b>SNIPSTATE_FAILE
 <dl class="section see"><dt>See also</dt><dd>Container, <a class="el" href="classjazz__bebop_1_1Core.html" title="Core: The execution unit is now a wrapper around onnx-runtime.">Core</a>, ModelsAPI and API</dd></dl>
 <p>A core is not a service, it is stored in a <a class="el" href="classjazz__bebop_1_1Bop.html" title="Bop: The Bebop compiler and decompiler.">Bop</a> API.</p>
 <p>This is an essential part of <a class="el" href="classjazz__bebop_1_1Bop.html" title="Bop: The Bebop compiler and decompiler.">Bop</a> to abstract data storage supporting dataframes, possibly sharded and lazy-loaded. It also provides indexing which can select rows, keys of find nearest neighbors.</p>
+<p>TODO: OpCode is not a Service!</p>
 <p>A <a class="el" href="classjazz__bebop_1_1Snippet.html" title="Snippet: A code snippet and the ancestor of Concept.">Snippet</a> is an object that can do both forward (compile) and reverse engineering (decompile) between compilable <a class="el" href="classjazz__bebop_1_1Bop.html" title="Bop: The Bebop compiler and decompiler.">Bop</a> and an onnx file. It supports a number of serializations to and from Jazz Blocks. It forms the minimal unit of what can be run. </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
 <a id="aa8d4f080574d2f5c0fc90e21fd77f139" name="aa8d4f080574d2f5c0fc90e21fd77f139"></a>
@@ -479,7 +480,7 @@ const char&#160;</td><td class="memItemRight" valign="bottom"><b>SNIPSTATE_FAILE
 <div class="line">    {(<a class="code hl_typedef" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a>) <span class="stringliteral">&quot;uint64&quot;</span>,  {CELL_TYPE_UINT64,       onnx::TensorProto::UINT64,   ONNX_TENSOR_ELEMENT_DATA_TYPE_UINT64}},</div>
 <div class="line">    {(<a class="code hl_typedef" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a>) <span class="stringliteral">&quot;uint8&quot;</span>,   {CELL_TYPE_BYTE,         onnx::TensorProto::UINT8,    ONNX_TENSOR_ELEMENT_DATA_TYPE_UINT8}}</div>
 <div class="line">}</div>
-<div class="ttc" id="anamespacejazz__elements_html_a7b6f709ede20f91ff26fa9166a7cc9da"><div class="ttname"><a href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">jazz_elements::pChar</a></div><div class="ttdeci">char * pChar</div><div class="ttdoc">A pointer to a char buffer.</div><div class="ttdef"><b>Definition</b> types.h:185</div></div>
+<div class="ttc" id="anamespacejazz__elements_html_a7b6f709ede20f91ff26fa9166a7cc9da"><div class="ttname"><a href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">jazz_elements::pChar</a></div><div class="ttdeci">char * pChar</div><div class="ttdoc">A pointer to a char buffer.</div><div class="ttdef"><b>Definition</b> types.h:186</div></div>
 </div><!-- fragment -->
 <p>A table to locate all the possible ONNX tensor types by their name in the config file "onnx.ini". </p>
 <p>The table is a map of strings to a <a class="el" href="structjazz__bebop_1_1TensorType.html" title="A type definition for tensors across all the technologies: Jazz native, ONNX protocol buffer and ONNX...">TensorType</a>: Jazz native type, ONNX protocol buffer type and ONNX runtime type. </p>
