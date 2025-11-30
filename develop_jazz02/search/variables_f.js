@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['p_5fapi_0',['p_api',['../classjazz__bebop_1_1Fields.html#a5f5f2288621267f8c7e621ffcd6367be',1,'jazz_bebop::Fields::p_api'],['../classjazz__bebop_1_1Space.html#a057ca62682e6bba46548694e589409fd',1,'jazz_bebop::Space::p_api'],['../classjazz__bebop_1_1DataSpaces.html#a4128eef4a6345629a68c4b211b739026',1,'jazz_bebop::DataSpaces::p_api']]],
+  ['p_5fapi_0',['p_api',['../classjazz__bebop_1_1Space.html#a057ca62682e6bba46548694e589409fd',1,'jazz_bebop::Space']]],
   ['p_5fbase_1',['p_base',['../structjazz__elements_1_1PutBuffer.html#a1d6fcff052d92437c9ce0dca38eda56f',1,'jazz_elements::PutBuffer']]],
   ['p_5fblock_2',['p_block',['../structjazz__elements_1_1Transaction.html#aef29e5845f2fa4beb52d795b5f585118',1,'jazz_elements::Transaction']]],
   ['p_5fbuffer_3',['p_buffer',['../classjazz__elements_1_1Container.html#ab0e5976eb5c32fd8b62742f61a16aca7',1,'jazz_elements::Container']]],
@@ -16,10 +16,10 @@ var searchData=
   ['p_5fnext_13',['p_next',['../structjazz__elements_1_1StoredTransaction.html#a485b1c7c3734e90feaff12f1ca0b9d49',1,'jazz_elements::StoredTransaction::p_next'],['../structjazz__elements_1_1VolatileTransaction.html#a15eafd43bd955fd4a47e7bb14aaa27ec',1,'jazz_elements::VolatileTransaction::p_next']]],
   ['p_5fowner_14',['p_owner',['../structjazz__elements_1_1Transaction.html#af5b0ee5e9f8bc77edf59bc1d73e6dfee',1,'jazz_elements::Transaction']]],
   ['p_5fparent_15',['p_parent',['../structjazz__elements_1_1VolatileTransaction.html#aeffd5832b207701d497d011aeac662c4',1,'jazz_elements::VolatileTransaction']]],
-  ['p_5fpersisted_16',['p_persisted',['../classjazz__bebop_1_1BaseAPI.html#a5fdcd39da3d23075f3805113ad35071c',1,'jazz_bebop::BaseAPI::p_persisted'],['../classjazz__bebop_1_1Fields.html#ab2816afcf317192e1156a7b17b055f1b',1,'jazz_bebop::Fields::p_persisted']]],
+  ['p_5fpersisted_16',['p_persisted',['../classjazz__bebop_1_1BaseAPI.html#a5fdcd39da3d23075f3805113ad35071c',1,'jazz_bebop::BaseAPI']]],
   ['p_5fprev_17',['p_prev',['../structjazz__elements_1_1VolatileTransaction.html#a5e3b5791d671b43addc1184e8e5729c6',1,'jazz_elements::VolatileTransaction']]],
   ['p_5froot_18',['p_root',['../structjazz__elements_1_1QueueEnt.html#acfc589e15c49a1d330cc1b15f720708d',1,'jazz_elements::QueueEnt']]],
-  ['p_5fvolatile_19',['p_volatile',['../classjazz__bebop_1_1BaseAPI.html#ab3f1467f3f3fea19d0f28ac636ec56d4',1,'jazz_bebop::BaseAPI::p_volatile'],['../classjazz__bebop_1_1Fields.html#a9e05b9bc0f6898d5482a5f89434b2ddf',1,'jazz_bebop::Fields::p_volatile']]],
+  ['p_5fvolatile_19',['p_volatile',['../classjazz__bebop_1_1BaseAPI.html#ab3f1467f3f3fea19d0f28ac636ec56d4',1,'jazz_bebop::BaseAPI']]],
   ['parser_5fstate_5fswitch_20',['parser_state_switch',['../namespacejazz__bebop.html#a8c1bef9cdc7d8faf16ccc851e8edd2c3',1,'jazz_bebop::parser_state_switch'],['../namespacejazz__elements.html#a9daaf364b79a6f24dca81b7b7c7102b3',1,'jazz_elements::parser_state_switch']]],
   ['path_21',['path',['../structjazz__elements_1_1JazzLmdbOptions.html#a00a05f25116c1e5e5b6665afcf7bff4c',1,'jazz_elements::JazzLmdbOptions']]],
   ['persisted_22',['PERSISTED',['../namespacejazz__main.html#a74ff457be971f30738df31df7bd704af',1,'jazz_main']]],

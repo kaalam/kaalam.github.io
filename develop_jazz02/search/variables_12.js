@@ -22,9 +22,9 @@ var searchData=
   ['snipstate_5fsource_5fpreprocessed_19',['SNIPSTATE_SOURCE_PREPROCESSED',['../namespacejazz__bebop.html#a09daabb3dccf52b7afcfa77f0b0676c7',1,'jazz_bebop']]],
   ['source_5fdbi_20',['source_dbi',['../classjazz__elements_1_1Persisted.html#a61d71a45fd765b68a0fab60df828902e',1,'jazz_elements::Persisted']]],
   ['state_21',['state',['../structjazz__bebop_1_1ApiQueryState.html#aa545b5caa10641ba253ec77c4ddee59c',1,'jazz_bebop::ApiQueryState']]],
-  ['state_5ftr_22',['state_tr',['../namespacejazz__bebop.html#abba8c25b3737cd3381ac8b0cd21fc204',1,'jazz_bebop::state_tr'],['../namespacejazz__elements.html#abf7f8a2a4a05820362258adc46b5be3c',1,'jazz_elements::state_tr']]],
+  ['state_5ftr_22',['state_tr',['../namespacejazz__elements.html#abf7f8a2a4a05820362258adc46b5be3c',1,'jazz_elements::state_tr'],['../namespacejazz__bebop.html#abba8c25b3737cd3381ac8b0cd21fc204',1,'jazz_bebop::state_tr']]],
   ['status_23',['status',['../structjazz__elements_1_1Transaction.html#a964e305c69ac42991cf3e6bfef4e5522',1,'jazz_elements::Transaction']]],
   ['stop_5fcheck_5f4_5fmatch_24',['stop_check_4_match',['../structjazz__elements_1_1StringBuffer.html#a4056d062ef9438589e77aefca08d8c60',1,'jazz_elements::StringBuffer']]],
   ['storage_5fbase_25',['storage_base',['../classjazz__bebop_1_1Space.html#a4b256cfdd9d1d34a71d675973512a34e',1,'jazz_bebop::Space']]],
-  ['storage_5fent_26',['storage_ent',['../classjazz__models_1_1SemSpaces.html#aa1122a1af002ce0a45133bc427e5e9cb',1,'jazz_models::SemSpaces::storage_ent'],['../classjazz__bebop_1_1Fields.html#abc7b54267b7e961fbd8bc278502043b5',1,'jazz_bebop::Fields::storage_ent'],['../classjazz__bebop_1_1DataSpaces.html#aa80368a2a9624e8ae516c1452d7f60f6',1,'jazz_bebop::DataSpaces::storage_ent']]]
+  ['storage_5fent_26',['storage_ent',['../classjazz__models_1_1SemSpace.html#a9d903d2c19b49ac85acb10b67952877d',1,'jazz_models::SemSpace']]]
 ];

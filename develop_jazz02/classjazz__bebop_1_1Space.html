@@ -91,10 +91,8 @@ Inheritance diagram for jazz_bebop::Space:</div>
  <div class="center">
   <img src="classjazz__bebop_1_1Space.png" usemap="#jazz_5Fbebop::Space_map" alt=""/>
   <map id="jazz_5Fbebop::Space_map" name="jazz_5Fbebop::Space_map">
-<area href="classjazz__elements_1_1Service.html" title="A Jazz Service is a globally instanced configurable object that may allocate RAM." alt="jazz_elements::Service" shape="rect" coords="81,0,233,24"/>
-<area href="classjazz__bebop_1_1DataSpaces.html" title="DataSpaces: The data space." alt="jazz_bebop::DataSpaces" shape="rect" coords="0,112,152,136"/>
-<area href="classjazz__bebop_1_1Fields.html" title="Fields: A Space for Snippets." alt="jazz_bebop::Fields" shape="rect" coords="162,112,314,136"/>
-<area href="classjazz__models_1_1SemSpaces.html" title="SemSpaces: A Fields for Concepts." alt="jazz_models::SemSpaces" shape="rect" coords="162,168,314,192"/>
+<area href="classjazz__elements_1_1Service.html" title="A Jazz Service is a globally instanced configurable object that may allocate RAM." alt="jazz_elements::Service" shape="rect" coords="0,0,146,24"/>
+<area href="classjazz__models_1_1SemSpace.html" title="SemSpace: A Fields for Concepts." alt="jazz_models::SemSpace" shape="rect" coords="0,112,146,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -195,7 +193,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a>: The abstract space. </p>
-<p>This is the abstract parent of <a class="el" href="classjazz__bebop_1_1DataSpaces.html" title="DataSpaces: The data space.">DataSpaces</a>, Fields/SemSpaces and Snippet/Concept. A <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a> is an abstraction over many blocks that provides:</p>
+<p>This is the abstract parent of DataSpaces, Fields/SemSpaces and Snippet/Concept. A <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a> is an abstraction over many blocks that provides:</p>
 <ul>
 <li>An abstraction in the form of rows and columns.</li>
 <li>A mechanism to load and update its own metadata in a persisted way.</li>
@@ -207,7 +205,7 @@ Additional Inherited Members</h2></td></tr>
 <li>Indexing by time, key, embedding, etc.</li>
 </ul>
 <p>The class <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a> is mostly empty. It provides the parent virtual interface and the parents of all the auxiliary classes used to access data.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classjazz__bebop_1_1DataSpaces.html" title="DataSpaces: The data space.">DataSpaces</a>, <a class="el" href="classjazz__bebop_1_1Fields.html" title="Fields: A Space for Snippets.">Fields</a>, <a class="el" href="classjazz__models_1_1SemSpaces.html" title="SemSpaces: A Fields for Concepts.">jazz_models::SemSpaces</a>, <a class="el" href="classjazz__bebop_1_1Snippet.html" title="Snippet: A code snippet and the ancestor of Concept.">Snippet</a>, <a class="el" href="classjazz__models_1_1Concept.html" title="Concept: Generalizes Snippet for informal code.">jazz_models::Concept</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>DataSpaces, Fields, jazz_models::SemSpaces, <a class="el" href="classjazz__bebop_1_1Snippet.html" title="Snippet: A code snippet and the ancestor of Concept.">Snippet</a>, <a class="el" href="classjazz__models_1_1Concept.html" title="Concept: Generalizes Snippet for informal code.">jazz_models::Concept</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad7f550a1fbc9254d46546a853fba275a" name="ad7f550a1fbc9254d46546a853fba275a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad7f550a1fbc9254d46546a853fba275a">&#9670;&#160;</a></span>Space()</h2>
@@ -274,7 +272,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classjazz__elements_1_1Service.html#ae4883dfb5573ae5911fc97e01f06afe2">jazz_elements::Service</a>.</p>
 
-<p>Reimplemented in <a class="el" href="classjazz__bebop_1_1DataSpaces.html#a405c8d15f97327f16ebe7dab4f45f694">jazz_bebop::DataSpaces</a>, <a class="el" href="classjazz__bebop_1_1Fields.html#a4de8c759a58cf54dfa5fcc34741a328c">jazz_bebop::Fields</a>, and <a class="el" href="classjazz__models_1_1SemSpaces.html#a9afab6dfe94d5616f80a8b93f372652d">jazz_models::SemSpaces</a>.</p>
+<p>Reimplemented in <a class="el" href="classjazz__models_1_1SemSpace.html#a2cb2645d23301173c7f133ce7ad6b75a">jazz_models::SemSpace</a>.</p>
 
 </div>
 </div>

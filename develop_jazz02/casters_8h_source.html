@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Jazz 1.25.+: model.h Source File</title>
+<title>Jazz 1.25.+: casters.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -75,11 +75,11 @@ $(document).ready(function() { init_codefold(0); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_430f81bf3057a797870c5bf709d3e9bb.html">Jazz</a></li><li class="navelem"><a class="el" href="dir_970248c0e167d637c79cc313be7174ec.html">server</a></li><li class="navelem"><a class="el" href="dir_5fc8f4be9411809bf801ba630f4604fb.html">src</a></li><li class="navelem"><a class="el" href="dir_f3897093ff237eb31aa35b22b5e771d8.html">jazz_models</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_430f81bf3057a797870c5bf709d3e9bb.html">Jazz</a></li><li class="navelem"><a class="el" href="dir_970248c0e167d637c79cc313be7174ec.html">server</a></li><li class="navelem"><a class="el" href="dir_5fc8f4be9411809bf801ba630f4604fb.html">src</a></li><li class="navelem"><a class="el" href="dir_516722aa956028ff1de39b7c1ea87b99.html">jazz_bebop</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
-  <div class="headertitle"><div class="title">model.h</div></div>
+  <div class="headertitle"><div class="title">casters.h</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/* Jazz (c) 2018-2025 kaalam.ai (The Authors of Jazz), using (under the same license):</span></div>
@@ -116,7 +116,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">*/</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &quot;src/jazz_models/sem_space.h&quot;</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &quot;src/jazz_bebop/objects.h&quot;</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#if defined CATCH_TEST</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#ifndef INCLUDED_JAZZ_CATCH2</span></div>
@@ -128,43 +128,18 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#ifndef INCLUDED_JAZZ_MODELS_MODEL</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#define INCLUDED_JAZZ_MODELS_MODEL</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#ifndef INCLUDED_JAZZ_BEBOP_CASTERS</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#define INCLUDED_JAZZ_BEBOP_CASTERS</span></div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacejazz__models.html">jazz_models</a></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>{</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacejazz__bebop.html">jazz_bebop</a></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>{</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="foldopen" id="foldopen00062" data-start="{" data-end="};">
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="classjazz__models_1_1Model.html">   62</a></span><span class="keyword">class </span><a class="code hl_class" href="classjazz__models_1_1Model.html">Model</a> : <span class="keyword">public</span> <a class="code hl_class" href="classjazz__elements_1_1Container.html">Container</a> {</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">//TODO: A Model has entrypoints http://localhost:8888/jazz_reference/api_ref_model.html#models-in-modelsapi</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">//TODO: Every Model supports run and id (Document that)</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">//TODO: A model is no longer a base in the ModelAPI, it is an entity. Review all doc and update.</span></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <a class="code hl_class" href="classjazz__models_1_1Model.html">Model</a>(<a class="code hl_class" href="classjazz__elements_1_1Logger.html">pLogger</a> a_logger, <a class="code hl_class" href="classjazz__elements_1_1ConfigFile.html">pConfigFile</a> a_config);</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>       <a class="code hl_class" href="classjazz__models_1_1Model.html">~Model</a>();</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <a class="code hl_typedef" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> <a class="code hl_function" href="classjazz__models_1_1Model.html#a876a8d8875f7b7d409069e85fe8f4fe7">start</a>    ();</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <a class="code hl_typedef" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> <a class="code hl_function" href="classjazz__models_1_1Model.html#abc839925ba988778fc2d3983cb9c27be">shut_down</a>();</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>};</div>
-</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="namespacejazz__models.html#a47be86931adb7a3b0c84ba26b847193d">   76</a></span><span class="keyword">typedef</span> <a class="code hl_class" href="classjazz__models_1_1Model.html">Model</a> *<a class="code hl_typedef" href="namespacejazz__models.html#a47be86931adb7a3b0c84ba26b847193d">pModel</a>;      </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>} <span class="comment">// namespace jazz_models</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="preprocessor">#endif </span><span class="comment">// ifndef INCLUDED_JAZZ_MODELS_MODEL</span></div>
-<div class="ttc" id="aclassjazz__elements_1_1ConfigFile_html"><div class="ttname"><a href="classjazz__elements_1_1ConfigFile.html">jazz_elements::ConfigFile</a></div><div class="ttdoc">A configuration file as a key/value store.</div><div class="ttdef"><b>Definition</b> utils.h:217</div></div>
-<div class="ttc" id="aclassjazz__elements_1_1Container_html"><div class="ttname"><a href="classjazz__elements_1_1Container.html">jazz_elements::Container</a></div><div class="ttdoc">Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...</div><div class="ttdef"><b>Definition</b> container.h:282</div></div>
-<div class="ttc" id="aclassjazz__elements_1_1Logger_html"><div class="ttname"><a href="classjazz__elements_1_1Logger.html">jazz_elements::Logger</a></div><div class="ttdoc">A simple logger.</div><div class="ttdef"><b>Definition</b> utils.h:245</div></div>
-<div class="ttc" id="aclassjazz__models_1_1Model_html"><div class="ttname"><a href="classjazz__models_1_1Model.html">jazz_models::Model</a></div><div class="ttdoc">Model: A Space of Concepts.</div><div class="ttdef"><b>Definition</b> model.h:62</div></div>
-<div class="ttc" id="aclassjazz__models_1_1Model_html_a876a8d8875f7b7d409069e85fe8f4fe7"><div class="ttname"><a href="classjazz__models_1_1Model.html#a876a8d8875f7b7d409069e85fe8f4fe7">jazz_models::Model::start</a></div><div class="ttdeci">StatusCode start()</div><div class="ttdef"><b>Definition</b> model.cpp:60</div></div>
-<div class="ttc" id="aclassjazz__models_1_1Model_html_abc839925ba988778fc2d3983cb9c27be"><div class="ttname"><a href="classjazz__models_1_1Model.html#abc839925ba988778fc2d3983cb9c27be">jazz_models::Model::shut_down</a></div><div class="ttdeci">StatusCode shut_down()</div><div class="ttdef"><b>Definition</b> model.cpp:78</div></div>
-<div class="ttc" id="anamespacejazz__elements_html_ad1de9f0d4fc6192bb22f21e2862add3f"><div class="ttname"><a href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">jazz_elements::StatusCode</a></div><div class="ttdeci">int StatusCode</div><div class="ttdoc">Type returned by the Service API.</div><div class="ttdef"><b>Definition</b> utils.h:141</div></div>
-<div class="ttc" id="anamespacejazz__models_html"><div class="ttname"><a href="namespacejazz__models.html">jazz_models</a></div><div class="ttdoc">Concepts: A tree of Snippets with support fro blending that populates a semantic space.</div><div class="ttdef"><b>Definition</b> concept.cpp:39</div></div>
-<div class="ttc" id="anamespacejazz__models_html_a47be86931adb7a3b0c84ba26b847193d"><div class="ttname"><a href="namespacejazz__models.html#a47be86931adb7a3b0c84ba26b847193d">jazz_models::pModel</a></div><div class="ttdeci">Model * pModel</div><div class="ttdoc">A pointer to a Model.</div><div class="ttdef"><b>Definition</b> model.h:76</div></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>} <span class="comment">// namespace jazz_bebop</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#endif </span><span class="comment">// ifndef INCLUDED_JAZZ_BEBOP_CASTERS</span></div>
+<div class="ttc" id="anamespacejazz__bebop_html"><div class="ttname"><a href="namespacejazz__bebop.html">jazz_bebop</a></div><div class="ttdoc">A language to access any container by base using locators.</div><div class="ttdef"><b>Definition</b> base_api.cpp:39</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- footer.html -->
 <hr>
