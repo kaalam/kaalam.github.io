@@ -15,9 +15,8 @@ var searchData=
   ['add_5fname_12',['add_name',['../classjazz__elements_1_1Volatile.html#aef1a803601f6af44397c6b5b7572a455',1,'jazz_elements::Volatile']]],
   ['align64bit_13',['align64bit',['../classjazz__elements_1_1Block.html#a74502a3f4be61fb0de9662ea19faa0ab',1,'jazz_elements::Block']]],
   ['api_14',['API',['../classjazz__main_1_1API.html#a058035fd2804f03081d8fb9a1620246c',1,'jazz_main::API']]],
-  ['as_15',['as',['../classjazz__bebop_1_1Space.html#a776eb873791590eb1176eff889f400ea',1,'jazz_bebop::Space']]],
-  ['as_5fhex_16',['as_hex',['../classjazz__elements_1_1Container.html#ab016b3779ac5ed5daf3b99b0583e8112',1,'jazz_elements::Container']]],
-  ['as_5flocator_17',['as_locator',['../classjazz__elements_1_1Container.html#a21d9a9ca23de70ad5dab49411dbe9773',1,'jazz_elements::Container']]],
-  ['as_5fshape_18',['as_shape',['../classjazz__elements_1_1Container.html#ad3df79aceb1b56c948764760a7e10c9b',1,'jazz_elements::Container']]],
-  ['audit_19',['audit',['../classjazz__elements_1_1Kind.html#a0f07793b25f14849be4e700030ef787f',1,'jazz_elements::Kind::audit()'],['../classjazz__elements_1_1Tuple.html#abd67dcd506ff0ea51e3375ba630ddfc7',1,'jazz_elements::Tuple::audit()']]]
+  ['as_5fhex_15',['as_hex',['../classjazz__elements_1_1Container.html#ab016b3779ac5ed5daf3b99b0583e8112',1,'jazz_elements::Container']]],
+  ['as_5flocator_16',['as_locator',['../classjazz__elements_1_1Container.html#a21d9a9ca23de70ad5dab49411dbe9773',1,'jazz_elements::Container']]],
+  ['as_5fshape_17',['as_shape',['../classjazz__elements_1_1Container.html#ad3df79aceb1b56c948764760a7e10c9b',1,'jazz_elements::Container']]],
+  ['audit_18',['audit',['../classjazz__elements_1_1Kind.html#a0f07793b25f14849be4e700030ef787f',1,'jazz_elements::Kind::audit()'],['../classjazz__elements_1_1Tuple.html#abd67dcd506ff0ea51e3375ba630ddfc7',1,'jazz_elements::Tuple::audit()']]]
 ];

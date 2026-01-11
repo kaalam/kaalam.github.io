@@ -2,8 +2,8 @@ var searchData=
 [
   ['malloc_0',['malloc',['../classjazz__elements_1_1Container.html#a87da84dd18edafc8d69888613ae91af8',1,'jazz_elements::Container']]],
   ['mapii_1',['MapII',['../namespacejazz__elements.html#aae0fa1d7770e9247d718fceeabdce05b',1,'jazz_elements']]],
-  ['mapis_2',['MapIS',['../namespacejazz__elements.html#aa38e6e4745cc7e7b0efaba4e1be2fcea',1,'jazz_elements']]],
-  ['mapsi_3',['MapSI',['../namespacejazz__elements.html#af867517f0ecdb06b85f8ff2972d8f08f',1,'jazz_elements']]],
+  ['mapis_2',['MapIS',['../namespacejazz__elements.html#af8e07060e0ea8122c2747b59105585e0',1,'jazz_elements']]],
+  ['mapsi_3',['MapSI',['../namespacejazz__elements.html#a9e7ad4dcd8e512ca98da2b8408ce9f5d',1,'jazz_elements']]],
   ['max_5ftransactions_4',['max_transactions',['../classjazz__elements_1_1Container.html#a78d8175d99a2992675ec9ead633da893',1,'jazz_elements::Container']]],
   ['method_20reference_5',['Node Method Reference',['../classjazz__elements_1_1Volatile.html#autotoc_md21',1,'']]],
   ['methods_20in_20deque_6',['Methods in deque',['../classjazz__elements_1_1Volatile.html#autotoc_md22',1,'']]],

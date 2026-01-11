@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['index_0',['Index',['../namespacejazz__elements.html#a39c9e80466c03763520f05847e49c28e',1,'jazz_elements']]]
+  ['index_0',['Index',['../namespacejazz__elements.html#afadd4e22f22d4bb6e72d1512761a8996',1,'jazz_elements']]]
 ];

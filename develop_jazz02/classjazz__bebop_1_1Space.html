@@ -74,712 +74,130 @@ $(function() {
 </div>
 </div><!-- top -->
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a>  </div>
   <div class="headertitle"><div class="title">jazz_bebop::Space Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p><a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a>: The abstract space.  
- <a href="classjazz__bebop_1_1Space.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="space_8h_source.html">space.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for jazz_bebop::Space:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classjazz__bebop_1_1Space.png" usemap="#jazz_5Fbebop::Space_map" alt=""/>
   <map id="jazz_5Fbebop::Space_map" name="jazz_5Fbebop::Space_map">
-<area href="classjazz__elements_1_1Service.html" title="A Jazz Service is a globally instanced configurable object that may allocate RAM." alt="jazz_elements::Service" shape="rect" coords="0,0,146,24"/>
-<area href="classjazz__models_1_1SemSpace.html" title="SemSpace: A Fields for Concepts." alt="jazz_models::SemSpace" shape="rect" coords="0,112,146,136"/>
+<area href="classjazz__elements_1_1Tuple.html" title="Tuple: A Jazz Block with multiple Tensors." alt="jazz_elements::Tuple" shape="rect" coords="0,112,200,136"/>
+<area href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer." alt="jazz_elements::Block" shape="rect" coords="0,56,200,80"/>
+<area href="structjazz__elements_1_1StaticBlockHeader.html" title="A Binary Compatible BlockHeader without Index (and therefore constructors/destructors)" alt="jazz_elements::StaticBlockHeader" shape="rect" coords="0,0,200,24"/>
+<area href="classjazz__models_1_1SemSpace.html" title="SemSpace: A Fields for Concepts." alt="jazz_models::SemSpace" shape="rect" coords="0,224,200,248"/>
   </map>
 </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:ad7f550a1fbc9254d46546a853fba275a" id="r_ad7f550a1fbc9254d46546a853fba275a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1Space.html#ad7f550a1fbc9254d46546a853fba275a">Space</a> (<a class="el" href="namespacejazz__bebop.html#ad5d0b0ff0803692afc8a9442b351746e">pBaseAPI</a> api, <a class="el" href="namespacejazz__elements.html#aa1ee282228d329b2175b2efa7add9385">pName</a> a_name)</td></tr>
-<tr class="memdesc:ad7f550a1fbc9254d46546a853fba275a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classjazz__bebop_1_1Bop.html" title="Bop: The Bebop compiler and decompiler.">Bop</a>: Create the <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a>.  <br /></td></tr>
-<tr class="separator:ad7f550a1fbc9254d46546a853fba275a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1fe8dc987459e3e9034c4f4eeaea686" id="r_aa1fe8dc987459e3e9034c4f4eeaea686"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1Space.html#aa1fe8dc987459e3e9034c4f4eeaea686">start</a> ()</td></tr>
-<tr class="separator:aa1fe8dc987459e3e9034c4f4eeaea686"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4beb2a74e09e2b55935381028dd3fb23" id="r_a4beb2a74e09e2b55935381028dd3fb23"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1Space.html#a4beb2a74e09e2b55935381028dd3fb23">shut_down</a> ()</td></tr>
-<tr class="separator:a4beb2a74e09e2b55935381028dd3fb23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1201f5ad4f2557da48f6bff3f966c257" id="r_a1201f5ad4f2557da48f6bff3f966c257"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1Space.html#a1201f5ad4f2557da48f6bff3f966c257">load_meta</a> ()</td></tr>
-<tr class="memdesc:a1201f5ad4f2557da48f6bff3f966c257"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load the metadata of the <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a>.  <br /></td></tr>
-<tr class="separator:a1201f5ad4f2557da48f6bff3f966c257"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad37859eb958cefe72722ccf04c24766d" id="r_ad37859eb958cefe72722ccf04c24766d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1Space.html#ad37859eb958cefe72722ccf04c24766d">save_meta</a> ()</td></tr>
-<tr class="memdesc:ad37859eb958cefe72722ccf04c24766d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the metadata of the <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a>.  <br /></td></tr>
-<tr class="separator:ad37859eb958cefe72722ccf04c24766d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5df8bb784489595c8d7d4b6753a1aa86" id="r_a5df8bb784489595c8d7d4b6753a1aa86"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__bebop.html#ad8a0d7e9b686b938fab39c5d25ec53d3">RowNumber</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1Space.html#a5df8bb784489595c8d7d4b6753a1aa86">num_rows</a> ()</td></tr>
-<tr class="memdesc:a5df8bb784489595c8d7d4b6753a1aa86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of rows in the <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a>.  <br /></td></tr>
-<tr class="separator:a5df8bb784489595c8d7d4b6753a1aa86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e752f4adad9a409517210efc8217fd5" id="r_a9e752f4adad9a409517210efc8217fd5"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1Space.html#a9e752f4adad9a409517210efc8217fd5">get_index_data</a> (<a class="el" href="namespacejazz__bebop.html#ad8a0d7e9b686b938fab39c5d25ec53d3">RowNumber</a> row)</td></tr>
-<tr class="memdesc:a9e752f4adad9a409517210efc8217fd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the data of the index of a given row.  <br /></td></tr>
-<tr class="separator:a9e752f4adad9a409517210efc8217fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85d3d9d8d7cfe2a2487be816d8a1e10d" id="r_a85d3d9d8d7cfe2a2487be816d8a1e10d"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1Space.html#a85d3d9d8d7cfe2a2487be816d8a1e10d">num_cols</a> ()</td></tr>
-<tr class="memdesc:a85d3d9d8d7cfe2a2487be816d8a1e10d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of columns in the <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a>.  <br /></td></tr>
-<tr class="separator:a85d3d9d8d7cfe2a2487be816d8a1e10d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a6ba46e15e2baabf563d97dbf2af345" id="r_a2a6ba46e15e2baabf563d97dbf2af345"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__elements.html#aa1ee282228d329b2175b2efa7add9385">pName</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1Space.html#a2a6ba46e15e2baabf563d97dbf2af345">col_name</a> (int col)</td></tr>
-<tr class="memdesc:a2a6ba46e15e2baabf563d97dbf2af345"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of a column.  <br /></td></tr>
-<tr class="separator:a2a6ba46e15e2baabf563d97dbf2af345"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a902b790c02decfe0d2a5a91cae068bbb" id="r_a902b790c02decfe0d2a5a91cae068bbb"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1Space.html#a902b790c02decfe0d2a5a91cae068bbb">col_index</a> (<a class="el" href="namespacejazz__elements.html#aa1ee282228d329b2175b2efa7add9385">pName</a> <a class="el" href="classjazz__bebop_1_1Space.html#a6ba84917bc1383bfefce78be1d682c82">name</a>)</td></tr>
-<tr class="memdesc:a902b790c02decfe0d2a5a91cae068bbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the index of a column.  <br /></td></tr>
-<tr class="separator:a902b790c02decfe0d2a5a91cae068bbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a919474134e15a5162b10e45f9423ba89" id="r_a919474134e15a5162b10e45f9423ba89"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__elements.html#a420779e1f5820ebcf0a149e4d8677ee9">pLocator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1Space.html#a919474134e15a5162b10e45f9423ba89">locator</a> (<a class="el" href="namespacejazz__bebop.html#ad8a0d7e9b686b938fab39c5d25ec53d3">RowNumber</a> row, int col, int &amp;index)</td></tr>
-<tr class="memdesc:a919474134e15a5162b10e45f9423ba89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the location of a cell as a Locator.  <br /></td></tr>
-<tr class="separator:a919474134e15a5162b10e45f9423ba89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4546064eeaa63a9a2efee8790cfe16f8" id="r_a4546064eeaa63a9a2efee8790cfe16f8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__bebop.html#a42b9654b9254295e7d6a4eb6d4cbbc4e">pRowSelection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1Space.html#a4546064eeaa63a9a2efee8790cfe16f8">where</a> (<a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> query)</td></tr>
-<tr class="memdesc:a4546064eeaa63a9a2efee8790cfe16f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a <a class="el" href="classjazz__bebop_1_1RowSelection.html" title="RowSelection: An iterator over the rows of a Space.">RowSelection</a> from a query.  <br /></td></tr>
-<tr class="separator:a4546064eeaa63a9a2efee8790cfe16f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a514989783df895835f06226b513dc907" id="r_a514989783df895835f06226b513dc907"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__bebop.html#aa540587dff4cb32b1e178f23b931214c">pColSelection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1Space.html#a514989783df895835f06226b513dc907">select</a> (<a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> query)</td></tr>
-<tr class="memdesc:a514989783df895835f06226b513dc907"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a <a class="el" href="classjazz__bebop_1_1ColSelection.html" title="ColSelection: A selection of columns from a Space.">ColSelection</a> from a query.  <br /></td></tr>
-<tr class="separator:a514989783df895835f06226b513dc907"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a776eb873791590eb1176eff889f400ea" id="r_a776eb873791590eb1176eff889f400ea"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__bebop.html#a382a51bebf3adf223a0a74c95c71223b">pCaster</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1Space.html#a776eb873791590eb1176eff889f400ea">as</a> (<a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> query)</td></tr>
-<tr class="memdesc:a776eb873791590eb1176eff889f400ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the appropriate <a class="el" href="classjazz__bebop_1_1Caster.html" title="Caster: An optional converter of the output.">Caster</a> from the AS clause of a query.  <br /></td></tr>
-<tr class="separator:a776eb873791590eb1176eff889f400ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7745b8dd2400a69933d15c5fbb7169e2" id="r_a7745b8dd2400a69933d15c5fbb7169e2"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1Space.html#a7745b8dd2400a69933d15c5fbb7169e2">register_caster</a> (<a class="el" href="namespacejazz__bebop.html#a382a51bebf3adf223a0a74c95c71223b">pCaster</a> cast)</td></tr>
-<tr class="memdesc:a7745b8dd2400a69933d15c5fbb7169e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a <a class="el" href="classjazz__bebop_1_1Caster.html" title="Caster: An optional converter of the output.">Caster</a> descendant to make it available in queries.  <br /></td></tr>
-<tr class="separator:a7745b8dd2400a69933d15c5fbb7169e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcff28b8627c33ac0d0c0d448f064cb9" id="r_adcff28b8627c33ac0d0c0d448f064cb9"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__bebop_1_1Space.html#adcff28b8627c33ac0d0c0d448f064cb9">get_row</a> (<a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> &amp;p_txn, <a class="el" href="namespacejazz__bebop.html#ad8a0d7e9b686b938fab39c5d25ec53d3">RowNumber</a> row, <a class="el" href="namespacejazz__bebop.html#aa540587dff4cb32b1e178f23b931214c">pColSelection</a> cols=nullptr, <a class="el" href="namespacejazz__bebop.html#a382a51bebf3adf223a0a74c95c71223b">pCaster</a> cast=nullptr)</td></tr>
-<tr class="memdesc:adcff28b8627c33ac0d0c0d448f064cb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a row from the <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a> as a Tuple.  <br /></td></tr>
-<tr class="separator:adcff28b8627c33ac0d0c0d448f064cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classjazz__elements_1_1Service"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classjazz__elements_1_1Service')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classjazz__elements_1_1Service.html">jazz_elements::Service</a></td></tr>
-<tr class="memitem:a08b2c5b3bcd2e343b163468d01c5127d inherit pub_methods_classjazz__elements_1_1Service" id="r_a08b2c5b3bcd2e343b163468d01c5127d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Service.html#a08b2c5b3bcd2e343b163468d01c5127d">Service</a> (<a class="el" href="namespacejazz__elements.html#a6d95828c9ae09a43b64388aad469aa66">pLogger</a> a_logger, <a class="el" href="namespacejazz__elements.html#abe347aade1e2471420c9ec5d5a251e1a">pConfigFile</a> a_config)</td></tr>
-<tr class="separator:a08b2c5b3bcd2e343b163468d01c5127d inherit pub_methods_classjazz__elements_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad547340ffa66c65656e5da13c42f8295 inherit pub_methods_classjazz__elements_1_1Service" id="r_ad547340ffa66c65656e5da13c42f8295"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Service.html#ad547340ffa66c65656e5da13c42f8295">id</a> ()</td></tr>
-<tr class="separator:ad547340ffa66c65656e5da13c42f8295 inherit pub_methods_classjazz__elements_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43ae5f53f29c382d1f5ff1ac8f63b5be inherit pub_methods_classjazz__elements_1_1Service" id="r_a43ae5f53f29c382d1f5ff1ac8f63b5be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Service.html#a43ae5f53f29c382d1f5ff1ac8f63b5be">log</a> (int loglevel, const char *message)</td></tr>
-<tr class="separator:a43ae5f53f29c382d1f5ff1ac8f63b5be inherit pub_methods_classjazz__elements_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8290451b2815ea470b8518493023e605 inherit pub_methods_classjazz__elements_1_1Service" id="r_a8290451b2815ea470b8518493023e605"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Service.html#a8290451b2815ea470b8518493023e605">log_printf</a> (int loglevel, const char *fmt,...)</td></tr>
-<tr class="separator:a8290451b2815ea470b8518493023e605 inherit pub_methods_classjazz__elements_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ca88fd7aa5eb3e29c214d98e905f20f inherit pub_methods_classjazz__elements_1_1Service" id="r_a3ca88fd7aa5eb3e29c214d98e905f20f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Service.html#a3ca88fd7aa5eb3e29c214d98e905f20f">get_conf_key</a> (const char *key, int &amp;value)</td></tr>
-<tr class="separator:a3ca88fd7aa5eb3e29c214d98e905f20f inherit pub_methods_classjazz__elements_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae470b76019bcbcecc6ac1b516c51bb74 inherit pub_methods_classjazz__elements_1_1Service" id="r_ae470b76019bcbcecc6ac1b516c51bb74"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Service.html#ae470b76019bcbcecc6ac1b516c51bb74">get_conf_key</a> (const char *key, double &amp;value)</td></tr>
-<tr class="separator:ae470b76019bcbcecc6ac1b516c51bb74 inherit pub_methods_classjazz__elements_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d5b766d5214ffb88d58acc6f66e2e29 inherit pub_methods_classjazz__elements_1_1Service" id="r_a7d5b766d5214ffb88d58acc6f66e2e29"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Service.html#a7d5b766d5214ffb88d58acc6f66e2e29">get_conf_key</a> (const char *key, std::string &amp;value)</td></tr>
-<tr class="separator:a7d5b766d5214ffb88d58acc6f66e2e29 inherit pub_methods_classjazz__elements_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a4b256cfdd9d1d34a71d675973512a34e" id="r_a4b256cfdd9d1d34a71d675973512a34e"><td class="memItemLeft" align="right" valign="top"><a id="a4b256cfdd9d1d34a71d675973512a34e" name="a4b256cfdd9d1d34a71d675973512a34e"></a>
-char&#160;</td><td class="memItemRight" valign="bottom"><b>storage_base</b> [SHORT_NAME_SIZE]</td></tr>
-<tr class="memdesc:a4b256cfdd9d1d34a71d675973512a34e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The base name of the storage container. <br /></td></tr>
-<tr class="separator:a4b256cfdd9d1d34a71d675973512a34e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ba84917bc1383bfefce78be1d682c82" id="r_a6ba84917bc1383bfefce78be1d682c82"><td class="memItemLeft" align="right" valign="top"><a id="a6ba84917bc1383bfefce78be1d682c82" name="a6ba84917bc1383bfefce78be1d682c82"></a>
-<a class="el" href="namespacejazz__elements.html#a97c097c96fd6364c46569536e8cbc535">Name</a>&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td></tr>
-<tr class="memdesc:a6ba84917bc1383bfefce78be1d682c82"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a>. <br /></td></tr>
-<tr class="separator:a6ba84917bc1383bfefce78be1d682c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a057ca62682e6bba46548694e589409fd" id="r_a057ca62682e6bba46548694e589409fd"><td class="memItemLeft" align="right" valign="top"><a id="a057ca62682e6bba46548694e589409fd" name="a057ca62682e6bba46548694e589409fd"></a>
-<a class="el" href="namespacejazz__bebop.html#ad5d0b0ff0803692afc8a9442b351746e">pBaseAPI</a>&#160;</td><td class="memItemRight" valign="bottom"><b>p_api</b></td></tr>
-<tr class="memdesc:a057ca62682e6bba46548694e589409fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to the <a class="el" href="classjazz__bebop_1_1BaseAPI.html" title="BaseAPI: The parent of API and Core.">BaseAPI</a> that provides access to containers. <br /></td></tr>
-<tr class="separator:a057ca62682e6bba46548694e589409fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45de8235b38de6b3f9598413a402c42b" id="r_a45de8235b38de6b3f9598413a402c42b"><td class="memItemLeft" align="right" valign="top"><a id="a45de8235b38de6b3f9598413a402c42b" name="a45de8235b38de6b3f9598413a402c42b"></a>
-<a class="el" href="namespacejazz__bebop.html#a1043608b2ff7c843201afc598477e6cb">Casters</a>&#160;</td><td class="memItemRight" valign="bottom"><b>casters</b></td></tr>
-<tr class="memdesc:a45de8235b38de6b3f9598413a402c42b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A map of all the available Casters. <br /></td></tr>
-<tr class="separator:a45de8235b38de6b3f9598413a402c42b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_attribs_classjazz__elements_1_1Service"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classjazz__elements_1_1Service')"><img src="closed.png" alt="-"/>&#160;Data Fields inherited from <a class="el" href="classjazz__elements_1_1Service.html">jazz_elements::Service</a></td></tr>
-<tr class="memitem:a9c9c71fccf7602a67853a1d6ab5c6ac2 inherit pub_attribs_classjazz__elements_1_1Service" id="r_a9c9c71fccf7602a67853a1d6ab5c6ac2"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="namespacejazz__elements.html#a6d95828c9ae09a43b64388aad469aa66">pLogger</a>&#160;</td><td class="memItemRight" valign="bottom"><b>p_log</b></td></tr>
-<tr class="memdesc:a9c9c71fccf7602a67853a1d6ab5c6ac2 inherit pub_attribs_classjazz__elements_1_1Service"><td class="mdescLeft">&#160;</td><td class="mdescRight">The logger. <br /></td></tr>
-<tr class="separator:a9c9c71fccf7602a67853a1d6ab5c6ac2 inherit pub_attribs_classjazz__elements_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef0f516befa73bb353fa5ac244fbebe4 inherit pub_attribs_classjazz__elements_1_1Service" id="r_aef0f516befa73bb353fa5ac244fbebe4"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="namespacejazz__elements.html#abe347aade1e2471420c9ec5d5a251e1a">pConfigFile</a>&#160;</td><td class="memItemRight" valign="bottom"><b>p_conf</b></td></tr>
-<tr class="memdesc:aef0f516befa73bb353fa5ac244fbebe4 inherit pub_attribs_classjazz__elements_1_1Service"><td class="mdescLeft">&#160;</td><td class="mdescRight">The configuration file. <br /></td></tr>
-<tr class="separator:aef0f516befa73bb353fa5ac244fbebe4 inherit pub_attribs_classjazz__elements_1_1Service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classjazz__elements_1_1Tuple"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classjazz__elements_1_1Tuple')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classjazz__elements_1_1Tuple.html">jazz_elements::Tuple</a></td></tr>
+<tr class="memitem:a8eebf0494ee7dff51fbaddc5591ffac4 inherit pub_methods_classjazz__elements_1_1Tuple" id="r_a8eebf0494ee7dff51fbaddc5591ffac4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Tuple.html#a8eebf0494ee7dff51fbaddc5591ffac4">new_tuple</a> (int num_items, <a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a> blocks[], <a class="el" href="namespacejazz__elements.html#a97c097c96fd6364c46569536e8cbc535">Name</a> p_names[], int num_bytes, <a class="el" href="namespacejazz__elements.html#ad2f703c26500ad2cdcec139a7e2000c4">AttributeMap</a> *att=nullptr)</td></tr>
+<tr class="separator:a8eebf0494ee7dff51fbaddc5591ffac4 inherit pub_methods_classjazz__elements_1_1Tuple"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a717875e9d1a963d5d7bb9801154d0f80 inherit pub_methods_classjazz__elements_1_1Tuple" id="r_a717875e9d1a963d5d7bb9801154d0f80"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Tuple.html#a717875e9d1a963d5d7bb9801154d0f80">item_name</a> (int idx)</td></tr>
+<tr class="separator:a717875e9d1a963d5d7bb9801154d0f80 inherit pub_methods_classjazz__elements_1_1Tuple"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a2fc05a8af10c9eab11fa1740e77ae2 inherit pub_methods_classjazz__elements_1_1Tuple" id="r_a9a2fc05a8af10c9eab11fa1740e77ae2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Tuple.html#a9a2fc05a8af10c9eab11fa1740e77ae2">index</a> (<a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> name)</td></tr>
+<tr class="separator:a9a2fc05a8af10c9eab11fa1740e77ae2 inherit pub_methods_classjazz__elements_1_1Tuple"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3674805168223f34a754c95da83bd7a inherit pub_methods_classjazz__elements_1_1Tuple" id="r_ae3674805168223f34a754c95da83bd7a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Tuple.html#ae3674805168223f34a754c95da83bd7a">get_block</a> (int idx)</td></tr>
+<tr class="separator:ae3674805168223f34a754c95da83bd7a inherit pub_methods_classjazz__elements_1_1Tuple"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f590a216d5122299474dd31aaa5ceb3 inherit pub_methods_classjazz__elements_1_1Tuple" id="r_a4f590a216d5122299474dd31aaa5ceb3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Tuple.html#a4f590a216d5122299474dd31aaa5ceb3">is_a</a> (<a class="el" href="namespacejazz__elements.html#a6d84d2b4bae53bfa0256db5bd0193656">pKind</a> kind)</td></tr>
+<tr class="separator:a4f590a216d5122299474dd31aaa5ceb3 inherit pub_methods_classjazz__elements_1_1Tuple"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd67dcd506ff0ea51e3375ba630ddfc7 inherit pub_methods_classjazz__elements_1_1Tuple" id="r_abd67dcd506ff0ea51e3375ba630ddfc7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Tuple.html#abd67dcd506ff0ea51e3375ba630ddfc7">audit</a> ()</td></tr>
+<tr class="separator:abd67dcd506ff0ea51e3375ba630ddfc7 inherit pub_methods_classjazz__elements_1_1Tuple"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classjazz__elements_1_1Block"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classjazz__elements_1_1Block')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classjazz__elements_1_1Block.html">jazz_elements::Block</a></td></tr>
+<tr class="memitem:a78f49018438850141502a3c7e49c52bd inherit pub_methods_classjazz__elements_1_1Block" id="r_a78f49018438850141502a3c7e49c52bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Block.html#a78f49018438850141502a3c7e49c52bd">set_dimensions</a> (int *p_dim)</td></tr>
+<tr class="separator:a78f49018438850141502a3c7e49c52bd inherit pub_methods_classjazz__elements_1_1Block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56a915d107ed872fc6c5e0f14d639ec1 inherit pub_methods_classjazz__elements_1_1Block" id="r_a56a915d107ed872fc6c5e0f14d639ec1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Block.html#a56a915d107ed872fc6c5e0f14d639ec1">get_dimensions</a> (int *p_dim)</td></tr>
+<tr class="separator:a56a915d107ed872fc6c5e0f14d639ec1 inherit pub_methods_classjazz__elements_1_1Block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afff9354aea780833e7e133d60e0b6d93 inherit pub_methods_classjazz__elements_1_1Block" id="r_afff9354aea780833e7e133d60e0b6d93"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Block.html#afff9354aea780833e7e133d60e0b6d93">validate_index</a> (int *p_idx)</td></tr>
+<tr class="separator:afff9354aea780833e7e133d60e0b6d93 inherit pub_methods_classjazz__elements_1_1Block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a9f80168b8cc49169a0c906c65c1467 inherit pub_methods_classjazz__elements_1_1Block" id="r_a3a9f80168b8cc49169a0c906c65c1467"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Block.html#a3a9f80168b8cc49169a0c906c65c1467">validate_offset</a> (int offset)</td></tr>
+<tr class="separator:a3a9f80168b8cc49169a0c906c65c1467 inherit pub_methods_classjazz__elements_1_1Block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf050a6d9a28ce38bae4e4a9a6422651 inherit pub_methods_classjazz__elements_1_1Block" id="r_abf050a6d9a28ce38bae4e4a9a6422651"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Block.html#abf050a6d9a28ce38bae4e4a9a6422651">get_offset</a> (int *p_idx)</td></tr>
+<tr class="separator:abf050a6d9a28ce38bae4e4a9a6422651 inherit pub_methods_classjazz__elements_1_1Block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73b0ba85c7f56bb0f25032ad089c7baa inherit pub_methods_classjazz__elements_1_1Block" id="r_a73b0ba85c7f56bb0f25032ad089c7baa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Block.html#a73b0ba85c7f56bb0f25032ad089c7baa">get_index</a> (int offset, int *p_idx)</td></tr>
+<tr class="separator:a73b0ba85c7f56bb0f25032ad089c7baa inherit pub_methods_classjazz__elements_1_1Block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac42bd9ead32efedd95481a9312471ab5 inherit pub_methods_classjazz__elements_1_1Block" id="r_ac42bd9ead32efedd95481a9312471ab5"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Block.html#ac42bd9ead32efedd95481a9312471ab5">get_string</a> (int *p_idx)</td></tr>
+<tr class="separator:ac42bd9ead32efedd95481a9312471ab5 inherit pub_methods_classjazz__elements_1_1Block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a627993f2c85af5ee52768b8d060fe4aa inherit pub_methods_classjazz__elements_1_1Block" id="r_a627993f2c85af5ee52768b8d060fe4aa"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Block.html#a627993f2c85af5ee52768b8d060fe4aa">get_string</a> (int offset)</td></tr>
+<tr class="separator:a627993f2c85af5ee52768b8d060fe4aa inherit pub_methods_classjazz__elements_1_1Block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a971c22433494abb91a77cb98b091dc4b inherit pub_methods_classjazz__elements_1_1Block" id="r_a971c22433494abb91a77cb98b091dc4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Block.html#a971c22433494abb91a77cb98b091dc4b">set_string</a> (int *p_idx, const char *p_str)</td></tr>
+<tr class="separator:a971c22433494abb91a77cb98b091dc4b inherit pub_methods_classjazz__elements_1_1Block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d1b07fd7d67b2e11ffd999cf7d87bf6 inherit pub_methods_classjazz__elements_1_1Block" id="r_a4d1b07fd7d67b2e11ffd999cf7d87bf6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Block.html#a4d1b07fd7d67b2e11ffd999cf7d87bf6">set_string</a> (int offset, const char *p_str)</td></tr>
+<tr class="separator:a4d1b07fd7d67b2e11ffd999cf7d87bf6 inherit pub_methods_classjazz__elements_1_1Block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b0302ea218ff51405dd659a5b9a0556 inherit pub_methods_classjazz__elements_1_1Block" id="r_a5b0302ea218ff51405dd659a5b9a0556"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Block.html#a5b0302ea218ff51405dd659a5b9a0556">get_attribute</a> (int attribute_id)</td></tr>
+<tr class="separator:a5b0302ea218ff51405dd659a5b9a0556 inherit pub_methods_classjazz__elements_1_1Block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5ab27c383bd0fdd923f943dcad2c9de inherit pub_methods_classjazz__elements_1_1Block" id="r_af5ab27c383bd0fdd923f943dcad2c9de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Block.html#af5ab27c383bd0fdd923f943dcad2c9de">set_attributes</a> (<a class="el" href="namespacejazz__elements.html#ad2f703c26500ad2cdcec139a7e2000c4">AttributeMap</a> *all_att)</td></tr>
+<tr class="separator:af5ab27c383bd0fdd923f943dcad2c9de inherit pub_methods_classjazz__elements_1_1Block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c5b1b95f818b9f1eae87d3ed245e9e8 inherit pub_methods_classjazz__elements_1_1Block" id="r_a2c5b1b95f818b9f1eae87d3ed245e9e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Block.html#a2c5b1b95f818b9f1eae87d3ed245e9e8">get_attributes</a> (<a class="el" href="namespacejazz__elements.html#ad2f703c26500ad2cdcec139a7e2000c4">AttributeMap</a> *all_att)</td></tr>
+<tr class="separator:a2c5b1b95f818b9f1eae87d3ed245e9e8 inherit pub_methods_classjazz__elements_1_1Block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e7432d6f585a346fd6b713a697dc635 inherit pub_methods_classjazz__elements_1_1Block" id="r_a1e7432d6f585a346fd6b713a697dc635"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Block.html#a1e7432d6f585a346fd6b713a697dc635">init_string_buffer</a> ()</td></tr>
+<tr class="separator:a1e7432d6f585a346fd6b713a697dc635 inherit pub_methods_classjazz__elements_1_1Block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9bc8c5a8a015bcad22d01b219c845f5 inherit pub_methods_classjazz__elements_1_1Block" id="r_ae9bc8c5a8a015bcad22d01b219c845f5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Block.html#ae9bc8c5a8a015bcad22d01b219c845f5">find_NAs_in_tensor</a> ()</td></tr>
+<tr class="separator:ae9bc8c5a8a015bcad22d01b219c845f5 inherit pub_methods_classjazz__elements_1_1Block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74502a3f4be61fb0de9662ea19faa0ab inherit pub_methods_classjazz__elements_1_1Block" id="r_a74502a3f4be61fb0de9662ea19faa0ab"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Block.html#a74502a3f4be61fb0de9662ea19faa0ab">align64bit</a> (uintptr_t ipt)</td></tr>
+<tr class="memdesc:a74502a3f4be61fb0de9662ea19faa0ab inherit pub_methods_classjazz__elements_1_1Block"><td class="mdescLeft">&#160;</td><td class="mdescRight">Align a pointer (as uintptr_t) to the next 8 byte boundary assuming the block is aligned.  <br /></td></tr>
+<tr class="separator:a74502a3f4be61fb0de9662ea19faa0ab inherit pub_methods_classjazz__elements_1_1Block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad790246d8a94f85992014fa8b4651826 inherit pub_methods_classjazz__elements_1_1Block" id="r_ad790246d8a94f85992014fa8b4651826"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Block.html#ad790246d8a94f85992014fa8b4651826">p_attribute_keys</a> ()</td></tr>
+<tr class="separator:ad790246d8a94f85992014fa8b4651826 inherit pub_methods_classjazz__elements_1_1Block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d2b455977ea1760446d088f68b63d4f inherit pub_methods_classjazz__elements_1_1Block" id="r_a9d2b455977ea1760446d088f68b63d4f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejazz__elements.html#a295f95bab2b1090b5501ffea1c350b31">pStringBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Block.html#a9d2b455977ea1760446d088f68b63d4f">p_string_buffer</a> ()</td></tr>
+<tr class="separator:a9d2b455977ea1760446d088f68b63d4f inherit pub_methods_classjazz__elements_1_1Block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a98f3f48d88d1261418bb653b92fcfe inherit pub_methods_classjazz__elements_1_1Block" id="r_a5a98f3f48d88d1261418bb653b92fcfe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Block.html#a5a98f3f48d88d1261418bb653b92fcfe">get_string_offset</a> (<a class="el" href="namespacejazz__elements.html#a295f95bab2b1090b5501ffea1c350b31">pStringBuffer</a> psb, const char *p_str)</td></tr>
+<tr class="separator:a5a98f3f48d88d1261418bb653b92fcfe inherit pub_methods_classjazz__elements_1_1Block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39aac54b41a71abc7ef8b3504c81f86a inherit pub_methods_classjazz__elements_1_1Block" id="r_a39aac54b41a71abc7ef8b3504c81f86a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Block.html#a39aac54b41a71abc7ef8b3504c81f86a">is_a_filter</a> ()</td></tr>
+<tr class="memdesc:a39aac54b41a71abc7ef8b3504c81f86a inherit pub_methods_classjazz__elements_1_1Block"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check (in depth) the validity of a filter.  <br /></td></tr>
+<tr class="separator:a39aac54b41a71abc7ef8b3504c81f86a inherit pub_methods_classjazz__elements_1_1Block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f43dead9f6ba3222b619b5c9d5165de inherit pub_methods_classjazz__elements_1_1Block" id="r_a7f43dead9f6ba3222b619b5c9d5165de"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Block.html#a7f43dead9f6ba3222b619b5c9d5165de">can_filter</a> (<a class="el" href="namespacejazz__elements.html#a89b6ae8b08dfbb376caafc742840adf6">pBlock</a> p_block)</td></tr>
+<tr class="separator:a7f43dead9f6ba3222b619b5c9d5165de inherit pub_methods_classjazz__elements_1_1Block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4ccfbcb511097507862bd7ccfe0d2ca inherit pub_methods_classjazz__elements_1_1Block" id="r_af4ccfbcb511097507862bd7ccfe0d2ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Block.html#af4ccfbcb511097507862bd7ccfe0d2ca">close_block</a> (int set_has_NA=SET_HAS_NA_FALSE, bool set_hash=true, bool set_time=true)</td></tr>
+<tr class="separator:af4ccfbcb511097507862bd7ccfe0d2ca inherit pub_methods_classjazz__elements_1_1Block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfe8b8a2f8a29202fd5069fdb12f1194 inherit pub_methods_classjazz__elements_1_1Block" id="r_abfe8b8a2f8a29202fd5069fdb12f1194"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Block.html#abfe8b8a2f8a29202fd5069fdb12f1194">check_hash</a> ()</td></tr>
+<tr class="separator:abfe8b8a2f8a29202fd5069fdb12f1194 inherit pub_methods_classjazz__elements_1_1Block"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_structjazz__elements_1_1StaticBlockHeader"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_structjazz__elements_1_1StaticBlockHeader')"><img src="closed.png" alt="-"/>&#160;Data Fields inherited from <a class="el" href="structjazz__elements_1_1StaticBlockHeader.html">jazz_elements::StaticBlockHeader</a></td></tr>
+<tr class="memitem:a2e55c0b7cf6764b13393c26171f20dc6 inherit pub_attribs_structjazz__elements_1_1StaticBlockHeader" id="r_a2e55c0b7cf6764b13393c26171f20dc6"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>cell_type</b></td></tr>
+<tr class="memdesc:a2e55c0b7cf6764b13393c26171f20dc6 inherit pub_attribs_structjazz__elements_1_1StaticBlockHeader"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type for the cells in the tensor. See CELL_TYPE_*. <br /></td></tr>
+<tr class="separator:a2e55c0b7cf6764b13393c26171f20dc6 inherit pub_attribs_structjazz__elements_1_1StaticBlockHeader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a209c786f43a9151b869d9d7e66003863 inherit pub_attribs_structjazz__elements_1_1StaticBlockHeader" id="r_a209c786f43a9151b869d9d7e66003863"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>size</b></td></tr>
+<tr class="memdesc:a209c786f43a9151b869d9d7e66003863 inherit pub_attribs_structjazz__elements_1_1StaticBlockHeader"><td class="mdescLeft">&#160;</td><td class="mdescRight">The total number of cells in the tensor. <br /></td></tr>
+<tr class="separator:a209c786f43a9151b869d9d7e66003863 inherit pub_attribs_structjazz__elements_1_1StaticBlockHeader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a262214ad5832e60c65df058f56258ec3 inherit pub_attribs_structjazz__elements_1_1StaticBlockHeader" id="r_a262214ad5832e60c65df058f56258ec3"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="namespacejazz__elements.html#aa7e5adf7a32b3080ea959153d2b6aee9">TimePoint</a>&#160;</td><td class="memItemRight" valign="bottom"><b>created</b></td></tr>
+<tr class="memdesc:a262214ad5832e60c65df058f56258ec3 inherit pub_attribs_structjazz__elements_1_1StaticBlockHeader"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timestamp when the block was created. <br /></td></tr>
+<tr class="separator:a262214ad5832e60c65df058f56258ec3 inherit pub_attribs_structjazz__elements_1_1StaticBlockHeader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae159ee5639d0b70211095b5241fbff6d inherit pub_attribs_structjazz__elements_1_1StaticBlockHeader" id="r_ae159ee5639d0b70211095b5241fbff6d"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>rank</b></td></tr>
+<tr class="memdesc:ae159ee5639d0b70211095b5241fbff6d inherit pub_attribs_structjazz__elements_1_1StaticBlockHeader"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of dimensions. <br /></td></tr>
+<tr class="separator:ae159ee5639d0b70211095b5241fbff6d inherit pub_attribs_structjazz__elements_1_1StaticBlockHeader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afceb70ca19684e41e3b303ee4b9d694a inherit pub_attribs_structjazz__elements_1_1StaticBlockHeader" id="r_afceb70ca19684e41e3b303ee4b9d694a"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="structjazz__elements_1_1TensorDim.html">TensorDim</a>&#160;</td><td class="memItemRight" valign="bottom"><b>range</b></td></tr>
+<tr class="memdesc:afceb70ca19684e41e3b303ee4b9d694a inherit pub_attribs_structjazz__elements_1_1StaticBlockHeader"><td class="mdescLeft">&#160;</td><td class="mdescRight">The dimensions of the tensor in terms of ranges (Max. size is 2 Gb.) <br /></td></tr>
+<tr class="separator:afceb70ca19684e41e3b303ee4b9d694a inherit pub_attribs_structjazz__elements_1_1StaticBlockHeader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dc2553d57cfe560ae1990e96afd20e6 inherit pub_attribs_structjazz__elements_1_1StaticBlockHeader" id="r_a7dc2553d57cfe560ae1990e96afd20e6"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>num_attributes</b></td></tr>
+<tr class="memdesc:a7dc2553d57cfe560ae1990e96afd20e6 inherit pub_attribs_structjazz__elements_1_1StaticBlockHeader"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of elements in the JazzAttributesMap. <br /></td></tr>
+<tr class="separator:a7dc2553d57cfe560ae1990e96afd20e6 inherit pub_attribs_structjazz__elements_1_1StaticBlockHeader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75d13fca2bc9ceddac6c499c305e53ca inherit pub_attribs_structjazz__elements_1_1StaticBlockHeader" id="r_a75d13fca2bc9ceddac6c499c305e53ca"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>total_bytes</b></td></tr>
+<tr class="memdesc:a75d13fca2bc9ceddac6c499c305e53ca inherit pub_attribs_structjazz__elements_1_1StaticBlockHeader"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total size of the block everything included. <br /></td></tr>
+<tr class="separator:a75d13fca2bc9ceddac6c499c305e53ca inherit pub_attribs_structjazz__elements_1_1StaticBlockHeader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaa0a780b5cac17e4cba736bf6b9f692 inherit pub_attribs_structjazz__elements_1_1StaticBlockHeader" id="r_acaa0a780b5cac17e4cba736bf6b9f692"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>has_NA</b></td></tr>
+<tr class="memdesc:acaa0a780b5cac17e4cba736bf6b9f692 inherit pub_attribs_structjazz__elements_1_1StaticBlockHeader"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, at least one value is a NA and block requires NA-aware arithmetic. <br /></td></tr>
+<tr class="separator:acaa0a780b5cac17e4cba736bf6b9f692 inherit pub_attribs_structjazz__elements_1_1StaticBlockHeader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51aad94508001c24984e6bf541bacebe inherit pub_attribs_structjazz__elements_1_1StaticBlockHeader" id="r_a51aad94508001c24984e6bf541bacebe"><td class="memItemLeft" align="right" valign="top">
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>hash64</b></td></tr>
+<tr class="memdesc:a51aad94508001c24984e6bf541bacebe inherit pub_attribs_structjazz__elements_1_1StaticBlockHeader"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hash of everything but the header. <br /></td></tr>
+<tr class="separator:a51aad94508001c24984e6bf541bacebe inherit pub_attribs_structjazz__elements_1_1StaticBlockHeader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6edb54e8275778196bc5c9c316d23cfc inherit pub_attribs_structjazz__elements_1_1StaticBlockHeader" id="r_a6edb54e8275778196bc5c9c316d23cfc"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="unionjazz__elements_1_1Tensor.html">Tensor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>tensor</b></td></tr>
+<tr class="memdesc:a6edb54e8275778196bc5c9c316d23cfc inherit pub_attribs_structjazz__elements_1_1StaticBlockHeader"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tensor for type cell_type and dimensions set by <a class="el" href="classjazz__elements_1_1Block.html#a78f49018438850141502a3c7e49c52bd">Block.set_dimensions()</a> <br /></td></tr>
+<tr class="separator:a6edb54e8275778196bc5c9c316d23cfc inherit pub_attribs_structjazz__elements_1_1StaticBlockHeader"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a>: The abstract space. </p>
-<p>This is the abstract parent of DataSpaces, Fields/SemSpaces and Snippet/Concept. A <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a> is an abstraction over many blocks that provides:</p>
-<ul>
-<li>An abstraction in the form of rows and columns.</li>
-<li>A mechanism to load and update its own metadata in a persisted way.</li>
-</ul>
-<p>Through inheritance, it provides su things as:</p>
-<ul>
-<li>Sharding and replication across a cluster.</li>
-<li>A mechanism to load, update, invalidate blocks. This supports continuous update like in time series.</li>
-<li>Indexing by time, key, embedding, etc.</li>
-</ul>
-<p>The class <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a> is mostly empty. It provides the parent virtual interface and the parents of all the auxiliary classes used to access data.</p>
-<dl class="section see"><dt>See also</dt><dd>DataSpaces, Fields, jazz_models::SemSpaces, <a class="el" href="classjazz__bebop_1_1Snippet.html" title="Snippet: A code snippet and the ancestor of Concept.">Snippet</a>, <a class="el" href="classjazz__models_1_1Concept.html" title="Concept: Generalizes Snippet for informal code.">jazz_models::Concept</a> </dd></dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ad7f550a1fbc9254d46546a853fba275a" name="ad7f550a1fbc9254d46546a853fba275a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7f550a1fbc9254d46546a853fba275a">&#9670;&#160;</a></span>Space()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">jazz_bebop::Space::Space </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacejazz__bebop.html#ad5d0b0ff0803692afc8a9442b351746e">pBaseAPI</a>&#160;</td>
-          <td class="paramname"><em>api</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#aa1ee282228d329b2175b2efa7add9385">pName</a>&#160;</td>
-          <td class="paramname"><em>a_name</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p><a class="el" href="classjazz__bebop_1_1Bop.html" title="Bop: The Bebop compiler and decompiler.">Bop</a>: Create the <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">api</td><td>A pointer to a <a class="el" href="classjazz__bebop_1_1BaseAPI.html" title="BaseAPI: The parent of API and Core.">BaseAPI</a> that provides access to containers. </td></tr>
-    <tr><td class="paramname">a_name</td><td>The name of the <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a>. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa1fe8dc987459e3e9034c4f4eeaea686" name="aa1fe8dc987459e3e9034c4f4eeaea686"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa1fe8dc987459e3e9034c4f4eeaea686">&#9670;&#160;</a></span>start()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> jazz_bebop::Space::start </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Starts the <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a> service</p>
-<dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR if successful, an error code otherwise. </dd></dl>
-
-<p>Reimplemented from <a class="el" href="classjazz__elements_1_1Service.html#ae4883dfb5573ae5911fc97e01f06afe2">jazz_elements::Service</a>.</p>
-
-<p>Reimplemented in <a class="el" href="classjazz__models_1_1SemSpace.html#a2cb2645d23301173c7f133ce7ad6b75a">jazz_models::SemSpace</a>.</p>
-
-</div>
-</div>
-<a id="a4beb2a74e09e2b55935381028dd3fb23" name="a4beb2a74e09e2b55935381028dd3fb23"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4beb2a74e09e2b55935381028dd3fb23">&#9670;&#160;</a></span>shut_down()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> jazz_bebop::Space::shut_down </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Shuts down the <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a> Service</p>
-<dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR if successful, an error code otherwise. </dd></dl>
-
-<p>Reimplemented from <a class="el" href="classjazz__elements_1_1Service.html#af9c7e6ebcd6ec69fdbf94ea6cc1edff5">jazz_elements::Service</a>.</p>
-
-</div>
-</div>
-<a id="a1201f5ad4f2557da48f6bff3f966c257" name="a1201f5ad4f2557da48f6bff3f966c257"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1201f5ad4f2557da48f6bff3f966c257">&#9670;&#160;</a></span>load_meta()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> jazz_bebop::Space::load_meta </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Load the metadata of the <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a>. </p>
-<p>This method must be implemented by descendants. It will load a record of metadata from <code>//storage_base/storage_ent/name</code>.</p>
-<dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR if successful, an error code otherwise. </dd></dl>
-
-</div>
-</div>
-<a id="ad37859eb958cefe72722ccf04c24766d" name="ad37859eb958cefe72722ccf04c24766d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad37859eb958cefe72722ccf04c24766d">&#9670;&#160;</a></span>save_meta()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> jazz_bebop::Space::save_meta </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Save the metadata of the <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a>. </p>
-<p>This method must be implemented by descendants. It will store a record of metadata into <code>//storage_base/storage_ent/name</code>.</p>
-<dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR if successful, an error code otherwise. </dd></dl>
-
-</div>
-</div>
-<a id="a5df8bb784489595c8d7d4b6753a1aa86" name="a5df8bb784489595c8d7d4b6753a1aa86"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5df8bb784489595c8d7d4b6753a1aa86">&#9670;&#160;</a></span>num_rows()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="namespacejazz__bebop.html#ad8a0d7e9b686b938fab39c5d25ec53d3">RowNumber</a> jazz_bebop::Space::num_rows </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Return the number of rows in the <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a>. </p>
-<dl class="section return"><dt>Returns</dt><dd>The number of rows in the <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a> or SPACE_NOT_A_ROW if the <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a> is invalid. </dd></dl>
-
-</div>
-</div>
-<a id="a9e752f4adad9a409517210efc8217fd5" name="a9e752f4adad9a409517210efc8217fd5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e752f4adad9a409517210efc8217fd5">&#9670;&#160;</a></span>get_index_data()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void * jazz_bebop::Space::get_index_data </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacejazz__bebop.html#ad8a0d7e9b686b938fab39c5d25ec53d3">RowNumber</a>&#160;</td>
-          <td class="paramname"><em>row</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get a pointer to the data of the index of a given row. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">row</td><td>The row number.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the index or nullptr if there is no index. Examples include a vector for an embedding, of a string for a key-based index and a TimePoint for a time-based index. </dd></dl>
-
-</div>
-</div>
-<a id="a85d3d9d8d7cfe2a2487be816d8a1e10d" name="a85d3d9d8d7cfe2a2487be816d8a1e10d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85d3d9d8d7cfe2a2487be816d8a1e10d">&#9670;&#160;</a></span>num_cols()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual int jazz_bebop::Space::num_cols </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the number of columns in the <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a>. </p>
-<dl class="section return"><dt>Returns</dt><dd>The number of columns in the <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a>. </dd></dl>
-
-</div>
-</div>
-<a id="a2a6ba46e15e2baabf563d97dbf2af345" name="a2a6ba46e15e2baabf563d97dbf2af345"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a6ba46e15e2baabf563d97dbf2af345">&#9670;&#160;</a></span>col_name()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="namespacejazz__elements.html#aa1ee282228d329b2175b2efa7add9385">pName</a> jazz_bebop::Space::col_name </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>col</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the name of a column. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">col</td><td>The column index.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The name of the column or nullptr if the index is out of range. </dd></dl>
-
-</div>
-</div>
-<a id="a902b790c02decfe0d2a5a91cae068bbb" name="a902b790c02decfe0d2a5a91cae068bbb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a902b790c02decfe0d2a5a91cae068bbb">&#9670;&#160;</a></span>col_index()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual int jazz_bebop::Space::col_index </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#aa1ee282228d329b2175b2efa7add9385">pName</a>&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the index of a column. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">name</td><td>The name of the column.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The index of the column or -1 if the column is not found. </dd></dl>
-
-</div>
-</div>
-<a id="a919474134e15a5162b10e45f9423ba89" name="a919474134e15a5162b10e45f9423ba89"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a919474134e15a5162b10e45f9423ba89">&#9670;&#160;</a></span>locator()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="namespacejazz__elements.html#a420779e1f5820ebcf0a149e4d8677ee9">pLocator</a> jazz_bebop::Space::locator </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacejazz__bebop.html#ad8a0d7e9b686b938fab39c5d25ec53d3">RowNumber</a>&#160;</td>
-          <td class="paramname"><em>row</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>col</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int &amp;&#160;</td>
-          <td class="paramname"><em>index</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the location of a cell as a Locator. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">row</td><td>The row number. </td></tr>
-    <tr><td class="paramname">col</td><td>The column index. </td></tr>
-    <tr><td class="paramname">index</td><td>If the block contains multiple rows, which is the index of <code>row</code> in the block.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to a Locator object that can be used to access the cell or nullptr if the cell is not found. </dd></dl>
-
-</div>
-</div>
-<a id="a4546064eeaa63a9a2efee8790cfe16f8" name="a4546064eeaa63a9a2efee8790cfe16f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4546064eeaa63a9a2efee8790cfe16f8">&#9670;&#160;</a></span>where()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="namespacejazz__bebop.html#a42b9654b9254295e7d6a4eb6d4cbbc4e">pRowSelection</a> jazz_bebop::Space::where </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a>&#160;</td>
-          <td class="paramname"><em>query</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get a <a class="el" href="classjazz__bebop_1_1RowSelection.html" title="RowSelection: An iterator over the rows of a Space.">RowSelection</a> from a query. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">query</td><td>A query string that is understood by the descendant. In <a class="el" href="classjazz__bebop_1_1Bop.html" title="Bop: The Bebop compiler and decompiler.">Bop</a>, this is the content of a WHERE clause with a syntax that depends on how the <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a> is indexed (Time, categorical, Embedding storage, ...).</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="classjazz__bebop_1_1RowSelection.html" title="RowSelection: An iterator over the rows of a Space.">RowSelection</a> object that can be used to iterate over the rows that match the query. </dd></dl>
-
-</div>
-</div>
-<a id="a514989783df895835f06226b513dc907" name="a514989783df895835f06226b513dc907"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a514989783df895835f06226b513dc907">&#9670;&#160;</a></span>select()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="namespacejazz__bebop.html#aa540587dff4cb32b1e178f23b931214c">pColSelection</a> jazz_bebop::Space::select </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a>&#160;</td>
-          <td class="paramname"><em>query</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get a <a class="el" href="classjazz__bebop_1_1ColSelection.html" title="ColSelection: A selection of columns from a Space.">ColSelection</a> from a query. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">query</td><td>By default, a list of comma separated column names. Spaces that use descendants of <a class="el" href="classjazz__bebop_1_1ColSelection.html" title="ColSelection: A selection of columns from a Space.">ColSelection</a> may define a different interface. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="classjazz__bebop_1_1ColSelection.html" title="ColSelection: A selection of columns from a Space.">ColSelection</a> object that can be used to iterate over the selected columns. If the query is invalid, the object will be invalid and return no columns. This is intentional since nullptr in a <a class="el" href="classjazz__bebop_1_1Space.html#adcff28b8627c33ac0d0c0d448f064cb9" title="Get a row from the Space as a Tuple.">get_row()</a> call means "all columns". An invalid query produces a selection of "no columns". </dd></dl>
-
-</div>
-</div>
-<a id="a776eb873791590eb1176eff889f400ea" name="a776eb873791590eb1176eff889f400ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a776eb873791590eb1176eff889f400ea">&#9670;&#160;</a></span>as()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="namespacejazz__bebop.html#a382a51bebf3adf223a0a74c95c71223b">pCaster</a> jazz_bebop::Space::as </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a>&#160;</td>
-          <td class="paramname"><em>query</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the appropriate <a class="el" href="classjazz__bebop_1_1Caster.html" title="Caster: An optional converter of the output.">Caster</a> from the AS clause of a query. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">query</td><td>The name of the <a class="el" href="classjazz__bebop_1_1Caster.html" title="Caster: An optional converter of the output.">Caster</a> to get.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the <a class="el" href="classjazz__bebop_1_1Caster.html" title="Caster: An optional converter of the output.">Caster</a> or nullptr if the <a class="el" href="classjazz__bebop_1_1Caster.html" title="Caster: An optional converter of the output.">Caster</a> is not found. </dd></dl>
-
-</div>
-</div>
-<a id="a7745b8dd2400a69933d15c5fbb7169e2" name="a7745b8dd2400a69933d15c5fbb7169e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7745b8dd2400a69933d15c5fbb7169e2">&#9670;&#160;</a></span>register_caster()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool jazz_bebop::Space::register_caster </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacejazz__bebop.html#a382a51bebf3adf223a0a74c95c71223b">pCaster</a>&#160;</td>
-          <td class="paramname"><em>cast</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Register a <a class="el" href="classjazz__bebop_1_1Caster.html" title="Caster: An optional converter of the output.">Caster</a> descendant to make it available in queries. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">cast</td><td>The <a class="el" href="classjazz__bebop_1_1Caster.html" title="Caster: An optional converter of the output.">Caster</a> to register.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the <a class="el" href="classjazz__bebop_1_1Caster.html" title="Caster: An optional converter of the output.">Caster</a> was successfully registered, false if a <a class="el" href="classjazz__bebop_1_1Caster.html" title="Caster: An optional converter of the output.">Caster</a> with the same name is already registered. </dd></dl>
-
-</div>
-</div>
-<a id="adcff28b8627c33ac0d0c0d448f064cb9" name="adcff28b8627c33ac0d0c0d448f064cb9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adcff28b8627c33ac0d0c0d448f064cb9">&#9670;&#160;</a></span>get_row()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f">StatusCode</a> jazz_bebop::Space::get_row </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> &amp;&#160;</td>
-          <td class="paramname"><em>p_txn</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacejazz__bebop.html#ad8a0d7e9b686b938fab39c5d25ec53d3">RowNumber</a>&#160;</td>
-          <td class="paramname"><em>row</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacejazz__bebop.html#aa540587dff4cb32b1e178f23b931214c">pColSelection</a>&#160;</td>
-          <td class="paramname"><em>cols</em> = <code>nullptr</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacejazz__bebop.html#a382a51bebf3adf223a0a74c95c71223b">pCaster</a>&#160;</td>
-          <td class="paramname"><em>cast</em> = <code>nullptr</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get a row from the <a class="el" href="classjazz__bebop_1_1Space.html" title="Space: The abstract space.">Space</a> as a Tuple. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">p_txn</td><td>A transaction that will be used to get the result. It must be destroyed with: p_txn-&gt;p_owner-&gt;destroy_transaction(p_txn) </td></tr>
-    <tr><td class="paramname">row</td><td>The row number as obtained from a <a class="el" href="classjazz__bebop_1_1RowSelection.html#a3296ab175221dbcaf9dd30b3b8ad677d" title="Get the next row.">RowSelection.next()</a> call. </td></tr>
-    <tr><td class="paramname">cols</td><td>Pointer to a <a class="el" href="classjazz__bebop_1_1ColSelection.html" title="ColSelection: A selection of columns from a Space.">ColSelection</a> to specify columns to be retrieved. If nullptr, all columns are retrieved. </td></tr>
-    <tr><td class="paramname">cast</td><td>Pointer to a <a class="el" href="classjazz__bebop_1_1Caster.html" title="Caster: An optional converter of the output.">Caster</a> to convert the result. If nullptr, no conversion is done.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR if successful, an error code otherwise. </dd></dl>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="space_8h_source.html">space.h</a></li>
-<li><b>space.cpp</b></li>
 </ul>
 </div><!-- contents -->
 <!-- footer.html -->

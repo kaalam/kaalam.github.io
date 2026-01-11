@@ -2,8 +2,8 @@ var searchData=
 [
   ['data_5fstart_0',['data_start',['../structjazz__elements_1_1ItemHeader.html#a327442ae9113fe6f91281a1cd38e1f9b',1,'jazz_elements::ItemHeader']]],
   ['dbi_5fexists_1',['dbi_exists',['../classjazz__elements_1_1Persisted.html#a5104a3e688c07889e9e9528ba6404e33',1,'jazz_elements::Persisted']]],
-  ['dbimap_2',['DBImap',['../namespacejazz__elements.html#a0b66aa81bf225b5653d565b87196f6d1',1,'jazz_elements']]],
-  ['debug_5fput_3',['debug_put',['../classjazz__elements_1_1ConfigFile.html#a971c3b7d978717f3099572c022b4a1f5',1,'jazz_elements::ConfigFile']]],
+  ['dbimap_2',['DBImap',['../namespacejazz__elements.html#a7f6eee0c7c6922427d8c02191bbb9686',1,'jazz_elements']]],
+  ['debug_5fput_3',['debug_put',['../classjazz__elements_1_1ConfigFile.html#a36b12b7f63e74fceb42ab04f347b05f8',1,'jazz_elements::ConfigFile']]],
   ['def_5ffloat32_5ffmt_4',['DEF_FLOAT32_FMT',['../namespacejazz__elements.html#ac8da9ec9260cf794f10b4038fbc7b1d7',1,'jazz_elements']]],
   ['def_5ffloat64_5ffmt_5',['DEF_FLOAT64_FMT',['../namespacejazz__elements.html#a660d03463784932c8cb436f6d26a27be',1,'jazz_elements']]],
   ['def_5ffloat_5ftime_6',['DEF_FLOAT_TIME',['../namespacejazz__elements.html#a239fcd81a9132439b710f8c6c2adb229',1,'jazz_elements']]],
@@ -24,7 +24,7 @@ var searchData=
   ['dev_5fnull_21',['dev_null',['../namespacejazz__elements.html#ae82d633679f8087a5b8dc3a8776b3d9f',1,'jazz_elements']]],
   ['diagram_22',['Jazz Modules Diagram',['../index.html#jazz_mods',1,'']]],
   ['dim_23',['dim',['../structjazz__elements_1_1ItemHeader.html#a6ced5026e75f982993bcc181f09cc3b8',1,'jazz_elements::ItemHeader::dim'],['../structjazz__elements_1_1TensorDim.html#a0c68e45ee5af23f5041bca88a3b32137',1,'jazz_elements::TensorDim::dim']]],
-  ['dimensions_24',['dimensions',['../namespacejazz__elements.html#a4734a779894739a0e04623c47348dd25',1,'jazz_elements::Dimensions'],['../classjazz__elements_1_1Kind.html#ad85b82e1401955777bbe02992fab3e74',1,'jazz_elements::Kind::dimensions()']]],
+  ['dimensions_24',['dimensions',['../namespacejazz__elements.html#a0cf11bc676708918ed9b3508ece2aa77',1,'jazz_elements::Dimensions'],['../classjazz__elements_1_1Kind.html#ad85b82e1401955777bbe02992fab3e74',1,'jazz_elements::Kind::dimensions()']]],
   ['dimensions_20are_20defined_25',['How dimensions are defined.',['../classjazz__elements_1_1Kind.html#autotoc_md17',1,'']]],
   ['documentation_20for_20the_20jazz_20server_20version_201_2025_200_26',['[Programming documentation for the Jazz Server version &quot;1.25.0&quot;]',['../index.html',1,'']]],
   ['done_5fpointer_5fto_5fblock_27',['done_pointer_to_block',['../classjazz__elements_1_1Persisted.html#a182a6c4b238e672b2ff2ab1b9c01974a',1,'jazz_elements::Persisted']]]
