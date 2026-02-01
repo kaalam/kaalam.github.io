@@ -15,7 +15,7 @@ var searchData=
   ['onnxparameters_12',['OnnxParameters',['../namespacejazz__bebop.html#a100664102ae44134bf17f3df58334bf6',1,'jazz_bebop']]],
   ['op_5fvers_5fcurrent_13',['op_vers_current',['../classjazz__bebop_1_1OpCodes.html#a9d6ca7df4e8e35ebd44bc72d811bbb46',1,'jazz_bebop::OpCodes']]],
   ['op_5fvers_5flatest_14',['op_vers_latest',['../classjazz__bebop_1_1OpCodes.html#a37da3fe086ca38e384db7b7f967ff2c0',1,'jazz_bebop::OpCodes']]],
-  ['opcodes_15',['opcodes',['../classjazz__bebop_1_1OpCodes.html',1,'jazz_bebop::OpCodes'],['../classjazz__bebop_1_1Bop.html#a4616063097a451d88e1fd5207c1c2895',1,'jazz_bebop::Bop::opcodes'],['../classjazz__bebop_1_1OpCodes.html#a5ae9d96859d89d5b061ea1f23d44e1d1',1,'jazz_bebop::OpCodes::opcodes'],['../classjazz__bebop_1_1OpCodes.html#a584d19709c28728dc1404e94f393a82e',1,'jazz_bebop::OpCodes::OpCodes(pLogger a_logger, pConfigFile a_config)']]],
+  ['opcodes_15',['opcodes',['../classjazz__bebop_1_1OpCodes.html',1,'jazz_bebop::OpCodes'],['../classjazz__bebop_1_1OpCodes.html#a584d19709c28728dc1404e94f393a82e',1,'jazz_bebop::OpCodes::OpCodes()'],['../classjazz__bebop_1_1Bop.html#a4616063097a451d88e1fd5207c1c2895',1,'jazz_bebop::Bop::opcodes'],['../classjazz__bebop_1_1OpCodes.html#a5ae9d96859d89d5b061ea1f23d44e1d1',1,'jazz_bebop::OpCodes::opcodes']]],
   ['opcodes_5fidx_16',['opcodes_idx',['../classjazz__bebop_1_1OpCodes.html#a2a85164f812192bbcc89e98297442ea1',1,'jazz_bebop::OpCodes']]],
   ['open_5fall_5fdatabases_17',['open_all_databases',['../classjazz__elements_1_1Persisted.html#a63587441cea68cfd92d84e5e453f45c6',1,'jazz_elements::Persisted']]],
   ['opening_5fbrackets_18',['opening_brackets',['../classjazz__elements_1_1Container.html#a3d1c13373d476323e06afcb6c72d597c',1,'jazz_elements::Container']]],
