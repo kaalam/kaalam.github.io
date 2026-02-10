@@ -250,7 +250,7 @@
       
   
   <li>
-      <a href="#">Bebop Fundamentals (since Jazz 1.25.1)</a>
+      <a href="#">Bebop Fundamentals (since Jazz 1.26.1)</a>
       <ul>
           
           
@@ -266,7 +266,7 @@
       
   
   <li>
-      <a href="#">Models Fundamentals (since Jazz 1.25.2)</a>
+      <a href="#">Models Fundamentals (since Jazz 1.26.2)</a>
       <ul>
           
           
@@ -595,7 +595,9 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <h2 id="apis-and-the-baseapi-class">APIs and the BaseAPI class</h2>
+  <div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> This document is under development. It will be updated for Jazz 1.26.</div>
+
+<h2 id="apis-and-the-baseapi-class">APIs and the BaseAPI class</h2>
 
 <p>Jazz has a <a href="vision_uplifts.html">customizable</a> http API. This API abstracts over all the Containers in the system. The <code class="language-plaintext highlighter-rouge">BaseAPI</code> class is
 the base class for all APIs in Jazz. This allows Bebop to use the API at the lower level (Container and blocks), the intermediate level
@@ -635,18 +637,10 @@ is more user friendly (abstracts Block locators using a FROM/SELECT/WHERE/AS que
 <p>DataSpaces return iterators over the rows returned as tuples. DataSpaces also provide ETL support for populating the tables,
 replication, etc.</p>
 
-<ul>
-  <li>See C++ ref <a href="/develop_jazz02/classjazz__bebop_1_1DataSpaces.html">DataSpaces</a></li>
-</ul>
-
 <h2 id="fields">Fields</h2>
 
 <p>A <code class="language-plaintext highlighter-rouge">Fields</code> (the <code class="language-plaintext highlighter-rouge">Service</code> that stores all the formal fields) it stores Snippets in fields (namespaces). I has the formal (Bebop)
 definitions of a system.</p>
-
-<ul>
-  <li>See C++ ref <a href="/develop_jazz02/classjazz__bebop_1_1Fields.html">Fields</a></li>
-</ul>
 
 <h2 id="snippets">Snippets</h2>
 
@@ -678,10 +672,6 @@ a problem defined as a sequence of Concepts.</p>
 (semantic space, a namespace inside SemSpaces) can be an English dictionary, like SPEED (Small Preserved Everyday English Dictionary) or
 the state of the knowledge of an agent. SemSpaces have multiple inheritance, this way an agent can have its own knowledge stored as a
 difference from the general knowledge his class of agents share.</p>
-
-<ul>
-  <li>See C++ ref <a href="/develop_jazz02/classjazz__models_1_1SemSpaces.html">SemSpaces</a></li>
-</ul>
 
 <h2 id="see-also">See also</h2>
 
@@ -725,7 +715,7 @@ difference from the general knowledge his class of agents share.</p>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2026 kaalam.ai. All rights reserved. <br />
- Site last generated: Feb 1, 2026 <br />
+ Site last generated: Feb 10, 2026 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>
