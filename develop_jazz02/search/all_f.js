@@ -5,5 +5,5 @@ var searchData=
   ['key_5fseed_2',['key_seed',['../classjazz__elements_1_1Volatile.html#afc059a889ae4c6dd11ab7a22ec043863',1,'jazz_elements::Volatile']]],
   ['kind_3',['kind',['../classjazz__elements_1_1Kind.html',1,'jazz_elements::Kind'],['../classjazz__bebop_1_1Snippet.html#autotoc_md3',1,'Kind']]],
   ['kind_5fsnippet_4',['KIND_SNIPPET',['../namespacejazz__bebop.html#a68cd7a2a3a8b32e35970816e7d0b5d74',1,'jazz_bebop']]],
-  ['kinds_5',['Creating Kinds',['../classjazz__elements_1_1Kind.html#autotoc_md16',1,'']]]
+  ['kinds_5',['kinds',['../classjazz__elements_1_1Kind.html#autotoc_md17',1,'Creating Kinds'],['../classjazz__elements_1_1Kind.html#autotoc_md16',1,'How Bebop uses Kinds']]]
 ];

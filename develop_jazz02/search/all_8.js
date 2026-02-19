@@ -10,8 +10,8 @@ var searchData=
   ['def_5fint32_5ffmt_7',['DEF_INT32_FMT',['../namespacejazz__elements.html#af11f8614b3b8da2d3474526c0ca90ad4',1,'jazz_elements']]],
   ['def_5fint64_5ffmt_8',['DEF_INT64_FMT',['../namespacejazz__elements.html#a72560225a9df36993e3e7fae87585f76',1,'jazz_elements']]],
   ['def_5fint8_5ffmt_9',['DEF_INT8_FMT',['../namespacejazz__elements.html#a94d20ee7fe7ed03a629d0cc1a01b5f4f',1,'jazz_elements']]],
-  ['defined_10',['How dimensions are defined.',['../classjazz__elements_1_1Kind.html#autotoc_md17',1,'']]],
-  ['deque_11',['Methods in deque',['../classjazz__elements_1_1Volatile.html#autotoc_md22',1,'']]],
+  ['defined_10',['How dimensions are defined.',['../classjazz__elements_1_1Kind.html#autotoc_md18',1,'']]],
+  ['deque_11',['Methods in deque',['../classjazz__elements_1_1Volatile.html#autotoc_md23',1,'']]],
   ['deque_5fent_12',['deque_ent',['../classjazz__elements_1_1Volatile.html#ae44bae75984a1126bdcc7710b242cdda',1,'jazz_elements::Volatile']]],
   ['deque_5fkey_13',['deque_key',['../classjazz__elements_1_1Volatile.html#a78b35874ace1a5f3f399cd7cd04fde92',1,'jazz_elements::Volatile']]],
   ['descendants_14',['Container descendants',['../classjazz__elements_1_1Container.html#autotoc_md12',1,'']]],
@@ -25,7 +25,7 @@ var searchData=
   ['diagram_22',['Jazz Modules Diagram',['../index.html#jazz_mods',1,'']]],
   ['dim_23',['dim',['../structjazz__elements_1_1ItemHeader.html#a6ced5026e75f982993bcc181f09cc3b8',1,'jazz_elements::ItemHeader::dim'],['../structjazz__elements_1_1TensorDim.html#a0c68e45ee5af23f5041bca88a3b32137',1,'jazz_elements::TensorDim::dim']]],
   ['dimensions_24',['dimensions',['../namespacejazz__elements.html#a0cf11bc676708918ed9b3508ece2aa77',1,'jazz_elements::Dimensions'],['../classjazz__elements_1_1Kind.html#ad85b82e1401955777bbe02992fab3e74',1,'jazz_elements::Kind::dimensions()']]],
-  ['dimensions_20are_20defined_25',['How dimensions are defined.',['../classjazz__elements_1_1Kind.html#autotoc_md17',1,'']]],
+  ['dimensions_20are_20defined_25',['How dimensions are defined.',['../classjazz__elements_1_1Kind.html#autotoc_md18',1,'']]],
   ['documentation_20for_20the_20jazz_20server_20version_201_2025_200_26',['[Programming documentation for the Jazz Server version &quot;1.25.0&quot;]',['../index.html',1,'']]],
   ['done_5fpointer_5fto_5fblock_27',['done_pointer_to_block',['../classjazz__elements_1_1Persisted.html#a182a6c4b238e672b2ff2ab1b9c01974a',1,'jazz_elements::Persisted']]]
 ];

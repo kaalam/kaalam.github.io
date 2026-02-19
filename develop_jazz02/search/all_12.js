@@ -14,7 +14,7 @@ var searchData=
   ['new_5ftuple_11',['new_tuple',['../classjazz__elements_1_1Tuple.html#a8eebf0494ee7dff51fbaddc5591ffac4',1,'jazz_elements::Tuple']]],
   ['new_5fvolatile_12',['new_volatile',['../classjazz__elements_1_1Volatile.html#a2d97243bf8bde445b451d5f453230268',1,'jazz_elements::Volatile']]],
   ['next_13',['next',['../structjazz__elements_1_1ParseNextStateLUT.html#a45d4f787ca5098671f2d6d3536bdd22e',1,'jazz_elements::ParseNextStateLUT']]],
-  ['node_20method_20reference_14',['Node Method Reference',['../classjazz__elements_1_1Volatile.html#autotoc_md21',1,'']]],
+  ['node_20method_20reference_14',['Node Method Reference',['../classjazz__elements_1_1Volatile.html#autotoc_md22',1,'']]],
   ['num_5fattributes_15',['num_attributes',['../structjazz__elements_1_1StaticBlockHeader.html#a7dc2553d57cfe560ae1990e96afd20e6',1,'jazz_elements::StaticBlockHeader::num_attributes'],['../structjazz__elements_1_1BlockHeader.html#ade1168fe2f507da3c64a90ef3d8f5e17',1,'jazz_elements::BlockHeader::num_attributes']]],
   ['num_5fkeys_16',['num_keys',['../classjazz__elements_1_1ConfigFile.html#a002fadb3b1aa6a933a9bdb5907987b67',1,'jazz_elements::ConfigFile']]],
   ['num_5fvisits_17',['num_visits',['../structjazz__elements_1_1VolatileTransaction.html#a58e0d57a8432b4586472b2e9c74ce6d7',1,'jazz_elements::VolatileTransaction']]],

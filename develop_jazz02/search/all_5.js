@@ -24,7 +24,7 @@ var searchData=
   ['api_5fquery_5fstate_21',['api_query_state',['../classjazz__bebop_1_1stdAPIQueryState.html#a6143819126027c87fc8091ea74d0d904',1,'jazz_bebop::stdAPIQueryState']]],
   ['apiquerystate_22',['ApiQueryState',['../structjazz__bebop_1_1ApiQueryState.html',1,'jazz_bebop']]],
   ['apply_23',['apply',['../structjazz__bebop_1_1ApiQueryState.html#a8abb3ff7691201fd55a464a18ae78eaf',1,'jazz_bebop::ApiQueryState']]],
-  ['are_20defined_24',['How dimensions are defined.',['../classjazz__elements_1_1Kind.html#autotoc_md17',1,'']]],
+  ['are_20defined_24',['How dimensions are defined.',['../classjazz__elements_1_1Kind.html#autotoc_md18',1,'']]],
   ['as_5fhex_25',['as_hex',['../classjazz__elements_1_1Container.html#ab016b3779ac5ed5daf3b99b0583e8112',1,'jazz_elements::Container']]],
   ['as_5flocator_26',['as_locator',['../classjazz__elements_1_1Container.html#a21d9a9ca23de70ad5dab49411dbe9773',1,'jazz_elements::Container']]],
   ['as_5fshape_27',['as_shape',['../classjazz__elements_1_1Container.html#ad3df79aceb1b56c948764760a7e10c9b',1,'jazz_elements::Container']]],
