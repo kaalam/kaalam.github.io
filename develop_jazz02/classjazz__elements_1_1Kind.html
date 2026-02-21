@@ -107,11 +107,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a51fd8b2b425b9a936390efcab5c88079"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b188785b81aaff91ecc8091eb3dc0c8" id="r_a4b188785b81aaff91ecc8091eb3dc0c8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Kind.html#a4b188785b81aaff91ecc8091eb3dc0c8">add_item</a> (int idx, char const *p_name, int *p_dim, int <a class="el" href="structjazz__elements_1_1StaticBlockHeader.html#a2e55c0b7cf6764b13393c26171f20dc6">cell_type</a>, <a class="el" href="namespacejazz__elements.html#ad2f703c26500ad2cdcec139a7e2000c4">AttributeMap</a> *p_dims)</td></tr>
 <tr class="separator:a4b188785b81aaff91ecc8091eb3dc0c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a278f0dad8c94ac01c271b895e15eb416" id="r_a278f0dad8c94ac01c271b895e15eb416"><td class="memItemLeft" align="right" valign="top"><a id="a278f0dad8c94ac01c271b895e15eb416" name="a278f0dad8c94ac01c271b895e15eb416"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>new_object_kind</b> (char const *p_def, char sep, <a class="el" href="namespacejazz__elements.html#ad2f703c26500ad2cdcec139a7e2000c4">AttributeMap</a> *att=nullptr)</td></tr>
-<tr class="separator:a278f0dad8c94ac01c271b895e15eb416"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23cc208684db6e02a8ea7c1a800878ca" id="r_a23cc208684db6e02a8ea7c1a800878ca"><td class="memItemLeft" align="right" valign="top"><a id="a23cc208684db6e02a8ea7c1a800878ca" name="a23cc208684db6e02a8ea7c1a800878ca"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>to_block_kind</b> ()</td></tr>
+<tr class="memitem:a826654dc879baad97ce3ba52c5fb6be2" id="r_a826654dc879baad97ce3ba52c5fb6be2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Kind.html#a826654dc879baad97ce3ba52c5fb6be2">new_object_kind</a> (int num_bytes, char const *p_def, char sep, <a class="el" href="namespacejazz__elements.html#ad2f703c26500ad2cdcec139a7e2000c4">AttributeMap</a> *att=nullptr)</td></tr>
+<tr class="separator:a826654dc879baad97ce3ba52c5fb6be2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23cc208684db6e02a8ea7c1a800878ca" id="r_a23cc208684db6e02a8ea7c1a800878ca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Kind.html#a23cc208684db6e02a8ea7c1a800878ca">to_block_kind</a> ()</td></tr>
 <tr class="separator:a23cc208684db6e02a8ea7c1a800878ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f07793b25f14849be4e700030ef787f" id="r_a0f07793b25f14849be4e700030ef787f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Kind.html#a0f07793b25f14849be4e700030ef787f">audit</a> ()</td></tr>
 <tr class="memdesc:a0f07793b25f14849be4e700030ef787f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Audit a <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for Jazz Blocks and Tuples.">Kind</a>.  <br /></td></tr>
@@ -451,6 +449,92 @@ Creating Kinds</h2>
 <h2><a class="anchor" id="autotoc_md18"></a>
 How dimensions are defined.</h2>
 <p>Dimensions are placeholders in the tensor shapes that contain an integer variable such as "width" instead of a constant. They are defined by placing a unique negative number for each dimension in the tensor and giving it a name inside the dims map. E.g., if an image has shape [-1, -2, 3] and dims[-1] == "width" and dims[-2] == "height", The kind will store these variable dimensions together with their names. </p>
+
+</div>
+</div>
+<a id="a826654dc879baad97ce3ba52c5fb6be2" name="a826654dc879baad97ce3ba52c5fb6be2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a826654dc879baad97ce3ba52c5fb6be2">&#9670;&#160;</a></span>new_object_kind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jazz_elements::Kind::new_object_kind </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num_bytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char const *&#160;</td>
+          <td class="paramname"><em>p_def</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>sep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacejazz__elements.html#ad2f703c26500ad2cdcec139a7e2000c4">AttributeMap</a> *&#160;</td>
+          <td class="paramname"><em>att</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Creates a <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for Jazz Blocks and Tuples.">Kind</a> for an object (CELL_TYPE_OBJECT_KIND) in just one call.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">num_bytes</td><td>The size in bytes allocated. Should be enough for all names, dimensions and attributes + ItemHeaders. </td></tr>
+    <tr><td class="paramname">p_def</td><td>The definition of the object kind as a string. It is a list of lines separated by sep. Each is a name. </td></tr>
+    <tr><td class="paramname">sep</td><td>The separator for the lines in p_def. </td></tr>
+    <tr><td class="paramname">att</td><td>The attributes for the <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for Jazz Blocks and Tuples.">Kind</a>. Set "as is", without adding BLOCK_ATTRIB_BLOCKTYPE or anything.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR or error code for insufficient alloc size or wrong arguments. </dd></dl>
+
+</div>
+</div>
+<a id="a23cc208684db6e02a8ea7c1a800878ca" name="a23cc208684db6e02a8ea7c1a800878ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23cc208684db6e02a8ea7c1a800878ca">&#9670;&#160;</a></span>to_block_kind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool jazz_elements::Kind::to_block_kind </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Initializes a <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for Jazz Blocks and Tuples.">Kind</a> object (step 3) when it is just simple <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a>: Make cell_type = CELL_TYPE_BLOCK_KIND</p>
+<dl class="section return"><dt>Returns</dt><dd>True if the <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for Jazz Blocks and Tuples.">Kind</a> was converted to a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> <a class="el" href="classjazz__elements_1_1Kind.html" title="Kind: A type definition for Jazz Blocks and Tuples.">Kind</a>, false if wrong type or wrong size. </dd></dl>
 
 </div>
 </div>
