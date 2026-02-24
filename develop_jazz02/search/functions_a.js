@@ -1,9 +1,15 @@
 var searchData=
 [
-  ['malloc_0',['malloc',['../classjazz__elements_1_1Container.html#a87da84dd18edafc8d69888613ae91af8',1,'jazz_elements::Container']]],
-  ['model_1',['Model',['../classjazz__models_1_1Model.html#a5ef4bfb6fcd17e8bd7c3e728167cecea',1,'jazz_models::Model']]],
-  ['modelsapi_2',['ModelsAPI',['../classjazz__models_1_1ModelsAPI.html#af0aa6450aeccaf3d67e69a97a47cc8b5',1,'jazz_models::ModelsAPI']]],
-  ['modify_3',['modify',['../classjazz__bebop_1_1Core.html#a4b2dce018947026dc97c5f0a0c484e4b',1,'jazz_bebop::Core::modify()'],['../classjazz__elements_1_1Channels.html#a3760f16d25f0867c43114c91064e8ca6',1,'jazz_elements::Channels::modify()'],['../classjazz__elements_1_1Container.html#aedba8175934554cb71278d6f4ce96bf8',1,'jazz_elements::Container::modify()']]],
-  ['move_5fconst_4',['move_const',['../classjazz__bebop_1_1BaseAPI.html#acb837e90ae77c245c4eff51bf8519e92',1,'jazz_bebop::BaseAPI']]],
-  ['murmurhash64a_5',['MurmurHash64A',['../namespacejazz__elements.html#a50e37200ae3572b04b417c7e899712bb',1,'jazz_elements']]]
+  ['latest_5fopset_5fversion_0',['latest_opset_version',['../classjazz__bebop_1_1OpCodes.html#a1a579f3cd53d3a75f24c8794b2e7a6ab',1,'jazz_bebop::OpCodes']]],
+  ['leave_5fread_1',['leave_read',['../classjazz__elements_1_1Container.html#aed814dd5c12fed3c5f9451aa47986c9e',1,'jazz_elements::Container']]],
+  ['leave_5fwrite_2',['leave_write',['../classjazz__elements_1_1Container.html#a10a8f17a8d92058c0dfb0a01435501b4',1,'jazz_elements::Container']]],
+  ['load_5fconfig_3',['load_config',['../classjazz__elements_1_1ConfigFile.html#a86b7edd94d23a7bbdc7c5364e1accfad',1,'jazz_elements::ConfigFile']]],
+  ['load_5fstatics_4',['load_statics',['../classjazz__main_1_1API.html#a0832220a4cac3c69ce87b4dd21981289',1,'jazz_main::API']]],
+  ['locate_5',['locate',['../classjazz__elements_1_1Volatile.html#a8d688adeb00be4bd53f7635da9970b0f',1,'jazz_elements::Volatile::locate(Locator &amp;location, Locator &amp;what)'],['../classjazz__elements_1_1Volatile.html#a4f5694ca68cf7ce0677f99af0cdcddf6',1,'jazz_elements::Volatile::locate(Locator &amp;location, pChar p_what)'],['../classjazz__elements_1_1Volatile.html#a9a4c7e93174e176b350d86f2893cd224',1,'jazz_elements::Volatile::locate(Locator &amp;location, Locator &amp;what)'],['../classjazz__elements_1_1Container.html#a8d688adeb00be4bd53f7635da9970b0f',1,'jazz_elements::Container::locate(Locator &amp;location, Locator &amp;what)'],['../classjazz__elements_1_1Container.html#a4f5694ca68cf7ce0677f99af0cdcddf6',1,'jazz_elements::Container::locate(Locator &amp;location, pChar p_what)'],['../classjazz__elements_1_1Channels.html#a5254d9758a1767c093d7a5023c4d2679',1,'jazz_elements::Channels::locate()']]],
+  ['lock_5fcontainer_6',['lock_container',['../classjazz__elements_1_1Container.html#ad84ce50f749041c82bfb1efed0fb17e5',1,'jazz_elements::Container']]],
+  ['lock_5fpointer_5fto_5fblock_7',['lock_pointer_to_block',['../classjazz__elements_1_1Persisted.html#afc0f3359242a82091fa8eddd3e8002c0',1,'jazz_elements::Persisted']]],
+  ['log_8',['log',['../classjazz__elements_1_1Logger.html#a0ad64ce2159712169ded90c2d8459216',1,'jazz_elements::Logger::log()'],['../classjazz__elements_1_1Service.html#a43ae5f53f29c382d1f5ff1ac8f63b5be',1,'jazz_elements::Service::log()']]],
+  ['log_5flmdb_5ferr_9',['log_lmdb_err',['../classjazz__elements_1_1Persisted.html#ace2a34e102e084db95771583ffdbc2b9',1,'jazz_elements::Persisted']]],
+  ['log_5fprintf_10',['log_printf',['../classjazz__elements_1_1Logger.html#a0a78222ffe95b784eac088545c656f67',1,'jazz_elements::Logger::log_printf(int loglevel, const char *fmt,...)'],['../classjazz__elements_1_1Logger.html#afe14c93dbf7a400f4f5ffd4b947f3963',1,'jazz_elements::Logger::log_printf(int loglevel, const char *fmt, va_list args)'],['../classjazz__elements_1_1Service.html#a8290451b2815ea470b8518493023e605',1,'jazz_elements::Service::log_printf()']]],
+  ['logger_11',['logger',['../classjazz__elements_1_1Logger.html#a0f3e274cb8138efb05c8f060f3bbbb20',1,'jazz_elements::Logger::Logger(const char *output_file_name)'],['../classjazz__elements_1_1Logger.html#a8362638f64d5e52bbf1c7b916353532a',1,'jazz_elements::Logger::Logger(ConfigFile config, const char *config_key)']]]
 ];
