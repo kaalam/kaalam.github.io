@@ -272,8 +272,8 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a15cc7bb0b1364d943625e94211b1d67c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1457040bace38b24efb6fdbc5481e5c2" id="r_a1457040bace38b24efb6fdbc5481e5c2"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a1457040bace38b24efb6fdbc5481e5c2">get_char</a> (<a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> &amp;p_in, int &amp;num_bytes)</td></tr>
 <tr class="separator:a1457040bace38b24efb6fdbc5481e5c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a418eacd0ac8aa5745632b4f3185faabc" id="r_a418eacd0ac8aa5745632b4f3185faabc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a418eacd0ac8aa5745632b4f3185faabc">get_item_name</a> (<a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> &amp;p_in, int &amp;num_bytes, <a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> p_out, bool check_quotes=true, bool check_colon=true)</td></tr>
-<tr class="separator:a418eacd0ac8aa5745632b4f3185faabc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6bf3e17fff0611f7d6ae3bd39c602a7" id="r_ac6bf3e17fff0611f7d6ae3bd39c602a7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#ac6bf3e17fff0611f7d6ae3bd39c602a7">get_item_name</a> (<a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> &amp;p_in, int &amp;num_bytes, <a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> p_out, bool check_quotes=true, bool check_colon=true, bool dot_ended=false)</td></tr>
+<tr class="separator:ac6bf3e17fff0611f7d6ae3bd39c602a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e57b4b865fe9b1ca1b35d4002f46e50" id="r_a5e57b4b865fe9b1ca1b35d4002f46e50"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a5e57b4b865fe9b1ca1b35d4002f46e50">sscanf_int32</a> (<a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> &amp;p_in, int &amp;num_bytes, int &amp;result)</td></tr>
 <tr class="separator:a5e57b4b865fe9b1ca1b35d4002f46e50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa174286388e5b7b729310b61d1e47b18" id="r_aa174286388e5b7b729310b61d1e47b18"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#aa174286388e5b7b729310b61d1e47b18">push_int_cell</a> (<a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> cell, <a class="el" href="namespacejazz__elements.html#a7b6f709ede20f91ff26fa9166a7cc9da">pChar</a> &amp;p_st, int *&amp;p_out)</td></tr>
@@ -2252,7 +2252,8 @@ destroy_transaction(tx);" without the <a class="el" href="classjazz__elements_1_
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>SERVICE_NO_ERROR except if alloc is necessary and fails, then SERVICE_ERROR_NO_MEM and destroys the p_txn.</dd></dl>
-<p>Logic: If the content is a valid (== hash64-checked) block -&gt; The block is replaced by the block inside else, if the content is a string (its length == the length of the block) -&gt; The block is replaced by a CELL_TYPE_STRING else, -&gt; it is left as it is. </p>
+<p>Warning: This function destroys the transaction in case of error. That is how it is used in the API.</p>
+<p>Logic: The block is either a string (CELL_TYPE_STRING of size 1) or a vector or bytes (CELL_TYPE_BYTE of rank 1), anything else produces an error. If it is a string, it is kept as it is. Else: If the content is a valid (== hash64-checked) block -&gt; The block is replaced by the block inside Else: If the content is anything but a string (its length != the length of the block), it is left as it is. Else: The block is replaced by a CELL_TYPE_STRING </p>
 
 </div>
 </div>
@@ -2392,7 +2393,7 @@ destroy_transaction(tx);" without the <a class="el" href="classjazz__elements_1_
   </tr>
 </table>
 </div><div class="memdoc">
-<p>A spacial alloc for blocks owned by a <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a>. It clears cell_type and total_bytes assumed valid by <a class="el" href="classjazz__elements_1_1Container.html#af79256b93a1f22d580a5c8eb18fa0558">destroy_transaction()</a>.</p>
+<p>A special alloc for blocks owned by a <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a>. It clears cell_type and total_bytes assumed valid by <a class="el" href="classjazz__elements_1_1Container.html#af79256b93a1f22d580a5c8eb18fa0558">destroy_transaction()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">size</td><td>The size in bytes to allocate. </td></tr>
@@ -2641,8 +2642,8 @@ destroy_transaction(tx);" without the <a class="el" href="classjazz__elements_1_
 
 </div>
 </div>
-<a id="a418eacd0ac8aa5745632b4f3185faabc" name="a418eacd0ac8aa5745632b4f3185faabc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a418eacd0ac8aa5745632b4f3185faabc">&#9670;&#160;</a></span>get_item_name()</h2>
+<a id="ac6bf3e17fff0611f7d6ae3bd39c602a7" name="ac6bf3e17fff0611f7d6ae3bd39c602a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6bf3e17fff0611f7d6ae3bd39c602a7">&#9670;&#160;</a></span>get_item_name()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2678,7 +2679,13 @@ destroy_transaction(tx);" without the <a class="el" href="classjazz__elements_1_
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>check_colon</em> = <code>true</code>&#160;</td>
+          <td class="paramname"><em>check_colon</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>dot_ended</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2699,7 +2706,8 @@ destroy_transaction(tx);" without the <a class="el" href="classjazz__elements_1_
     <tr><td class="paramname">num_bytes</td><td>The number of bytes with data above *p_in </td></tr>
     <tr><td class="paramname">p_out</td><td>The Name buffer that gets the answer if no error was found </td></tr>
     <tr><td class="paramname">check_quotes</td><td>Expects the name to be quoted (like item names) or not (like dimensions) </td></tr>
-    <tr><td class="paramname">check_colon</td><td>Expects the name to be followed by a colon (like item names).</td></tr>
+    <tr><td class="paramname">check_colon</td><td>Expects the name to be followed by a colon (like item names). </td></tr>
+    <tr><td class="paramname">dot_ended</td><td>Accepts a dot as the end of the name. Also, the quote, to parse "x.y.z" as 3 names.</td></tr>
   </table>
   </dd>
 </dl>

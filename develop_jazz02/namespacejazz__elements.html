@@ -375,6 +375,8 @@ Functions</h2></td></tr>
 <tr class="separator:a9cf579631db7f755d76ce21def56134a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d46e4f3ad15a5b0395e1daffbe5b950" id="r_a4d46e4f3ad15a5b0395e1daffbe5b950"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a4d46e4f3ad15a5b0395e1daffbe5b950">R_ValueOfNA</a> ()</td></tr>
 <tr class="separator:a4d46e4f3ad15a5b0395e1daffbe5b950"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83cec517eff646762b8acad435e1fe79" id="r_a83cec517eff646762b8acad435e1fe79"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a83cec517eff646762b8acad435e1fe79">init_uint_na</a> ()</td></tr>
+<tr class="separator:a83cec517eff646762b8acad435e1fe79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b3cfd7adaf27184b08bbf9bd82c45f7" id="r_a9b3cfd7adaf27184b08bbf9bd82c45f7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejazz__elements.html#a9b3cfd7adaf27184b08bbf9bd82c45f7">FileExists</a> (const char *file_name)</td></tr>
 <tr class="memdesc:a9b3cfd7adaf27184b08bbf9bd82c45f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a file exists.  <br /></td></tr>
 <tr class="separator:a9b3cfd7adaf27184b08bbf9bd82c45f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -434,14 +436,6 @@ char&#160;</td><td class="memItemRight" valign="bottom"><b>DEF_FLOAT64_FMT</b> [
 char&#160;</td><td class="memItemRight" valign="bottom"><b>DEF_FLOAT_TIME</b> [24] = {&quot;%Y-%m-%d %H:%M:%S&quot;}</td></tr>
 <tr class="memdesc:a239fcd81a9132439b710f8c6c2adb229"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default format for time_t. <br /></td></tr>
 <tr class="separator:a239fcd81a9132439b710f8c6c2adb229"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2ea8d9fbd7060e50f30c694129e98b7" id="r_ac2ea8d9fbd7060e50f30c694129e98b7"><td class="memItemLeft" align="right" valign="top"><a id="ac2ea8d9fbd7060e50f30c694129e98b7" name="ac2ea8d9fbd7060e50f30c694129e98b7"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>F_NA_uint32</b></td></tr>
-<tr class="memdesc:ac2ea8d9fbd7060e50f30c694129e98b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">A binary exact copy of F_NA. <br /></td></tr>
-<tr class="separator:ac2ea8d9fbd7060e50f30c694129e98b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a705bcc1669f712a15ea4f5131caca631" id="r_a705bcc1669f712a15ea4f5131caca631"><td class="memItemLeft" align="right" valign="top"><a id="a705bcc1669f712a15ea4f5131caca631" name="a705bcc1669f712a15ea4f5131caca631"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>R_NA_uint64</b></td></tr>
-<tr class="memdesc:a705bcc1669f712a15ea4f5131caca631"><td class="mdescLeft">&#160;</td><td class="mdescRight">A binary exact copy of R_NA. <br /></td></tr>
-<tr class="separator:a705bcc1669f712a15ea4f5131caca631"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a914f17360f6e07a8d6adcf060aa33c27" id="r_a914f17360f6e07a8d6adcf060aa33c27"><td class="memItemLeft" align="right" valign="top"><a id="a914f17360f6e07a8d6adcf060aa33c27" name="a914f17360f6e07a8d6adcf060aa33c27"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>LOCATOR_SIZE</b> [3] = {SHORT_NAME_SIZE - 1, NAME_SIZE - 1, NAME_SIZE - 1}</td></tr>
 <tr class="memdesc:a914f17360f6e07a8d6adcf060aa33c27"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size for each section. <br /></td></tr>
@@ -474,6 +468,18 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>R_NA</b> = <a class
 <a class="el" href="namespacejazz__elements.html#a997b6f878eeaa9972d6ea168ab9c5c66">ff_fp16</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BF16_NA</b> = {0x7fc0}</td></tr>
 <tr class="memdesc:afade25cee3b045d75e2e2d16ccf9f7b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">BFLOAT16_NA: 0x7fc0 is the Brain Floating Point, half-precision representation of NaN. <br /></td></tr>
 <tr class="separator:afade25cee3b045d75e2e2d16ccf9f7b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2ea8d9fbd7060e50f30c694129e98b7" id="r_ac2ea8d9fbd7060e50f30c694129e98b7"><td class="memItemLeft" align="right" valign="top"><a id="ac2ea8d9fbd7060e50f30c694129e98b7" name="ac2ea8d9fbd7060e50f30c694129e98b7"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>F_NA_uint32</b></td></tr>
+<tr class="memdesc:ac2ea8d9fbd7060e50f30c694129e98b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">A binary exact copy of F_NA. <br /></td></tr>
+<tr class="separator:ac2ea8d9fbd7060e50f30c694129e98b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a705bcc1669f712a15ea4f5131caca631" id="r_a705bcc1669f712a15ea4f5131caca631"><td class="memItemLeft" align="right" valign="top"><a id="a705bcc1669f712a15ea4f5131caca631" name="a705bcc1669f712a15ea4f5131caca631"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>R_NA_uint64</b></td></tr>
+<tr class="memdesc:a705bcc1669f712a15ea4f5131caca631"><td class="mdescLeft">&#160;</td><td class="mdescRight">A binary exact copy of R_NA. <br /></td></tr>
+<tr class="separator:a705bcc1669f712a15ea4f5131caca631"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4c17dd7abd53b053f97bc0f480ab93a" id="r_aa4c17dd7abd53b053f97bc0f480ab93a"><td class="memItemLeft" align="right" valign="top"><a id="aa4c17dd7abd53b053f97bc0f480ab93a" name="aa4c17dd7abd53b053f97bc0f480ab93a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>uinit_na_initialized</b> = <a class="el" href="namespacejazz__elements.html#a83cec517eff646762b8acad435e1fe79">init_uint_na</a>()</td></tr>
+<tr class="memdesc:aa4c17dd7abd53b053f97bc0f480ab93a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A flag to ensure that F_NA_uint32 and R_NA_uint64 are initialized before use. <br /></td></tr>
+<tr class="separator:aa4c17dd7abd53b053f97bc0f480ab93a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The namespace for Jazz Utils, Blocks, Kinds, Tuples, Containers, etc. </p>
@@ -825,6 +831,32 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>R_NA</b> = <a class
 </table>
 </div><div class="memdoc">
 <p>Constants for the types of cells in a <a class="el" href="unionjazz__elements_1_1Tensor.html" title="A tensor of cell size 1, 4, 8 or sizeof(BlockHeader)">Tensor</a> </p><dl class="section return"><dt>Returns</dt><dd>An R-compatible numeric NA. </dd></dl>
+
+</div>
+</div>
+<a id="a83cec517eff646762b8acad435e1fe79" name="a83cec517eff646762b8acad435e1fe79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83cec517eff646762b8acad435e1fe79">&#9670;&#160;</a></span>init_uint_na()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool jazz_elements::init_uint_na </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Initialize F_NA_uint32 and R_NA_uint64 with the binary representation of F_NA and R_NA, respectively. </p><dl class="section return"><dt>Returns</dt><dd>true Always true, just to set a flag. </dd></dl>
 
 </div>
 </div>
