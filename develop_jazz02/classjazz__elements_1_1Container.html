@@ -116,8 +116,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af1cdde44708880c4577f0202e90fa4f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45e76af56668d82e2adc1df39663859c" id="r_a45e76af56668d82e2adc1df39663859c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a45e76af56668d82e2adc1df39663859c">enter_read</a> (<a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> p_txn)</td></tr>
 <tr class="separator:a45e76af56668d82e2adc1df39663859c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61d636197e1c6ccece5f1b31ddf99eee" id="r_a61d636197e1c6ccece5f1b31ddf99eee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a61d636197e1c6ccece5f1b31ddf99eee">enter_write</a> (<a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> p_txn)</td></tr>
-<tr class="separator:a61d636197e1c6ccece5f1b31ddf99eee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a871986bc8109d9bd4ac8d9602a7ab301" id="r_a871986bc8109d9bd4ac8d9602a7ab301"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a871986bc8109d9bd4ac8d9602a7ab301">enter_write</a> (<a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> p_txn, int total_times=0)</td></tr>
+<tr class="separator:a871986bc8109d9bd4ac8d9602a7ab301"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed814dd5c12fed3c5f9451aa47986c9e" id="r_aed814dd5c12fed3c5f9451aa47986c9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#aed814dd5c12fed3c5f9451aa47986c9e">leave_read</a> (<a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> p_txn)</td></tr>
 <tr class="separator:aed814dd5c12fed3c5f9451aa47986c9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10a8f17a8d92058c0dfb0a01435501b4" id="r_a10a8f17a8d92058c0dfb0a01435501b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjazz__elements_1_1Container.html#a10a8f17a8d92058c0dfb0a01435501b4">leave_write</a> (<a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a> p_txn)</td></tr>
@@ -350,7 +350,7 @@ Additional Inherited Members</h2></td></tr>
 <p>There is no class Channel (in singular), <a class="el" href="classjazz__elements_1_1Container.html#a7bd04b424e407ed5adb59042d208de14">copy()</a> is a method that copies blocks across Containers (or different media in <a class="el" href="classjazz__elements_1_1Channels.html" title="Channels: A Container doing block transactions across media (files, folders, shell,...">Channels</a>). <a class="el" href="classjazz__elements_1_1Channels.html" title="Channels: A Container doing block transactions across media (files, folders, shell,...">Channels</a> does all the block transactions across media (files, folders, shell, urls, zeroMQ pipes, Index types, ...).</p>
 <p><a class="el" href="classjazz__elements_1_1Container.html" title="Container: A Service to manage Jazz blocks. All Jazz blocks are managed by this or a descendant of th...">Container</a> provides a neat API for all descendants, including:</p>
 <ul>
-<li>Transparent thread safety .<a class="el" href="classjazz__elements_1_1Container.html#a45e76af56668d82e2adc1df39663859c">enter_read()</a> .<a class="el" href="classjazz__elements_1_1Container.html#a61d636197e1c6ccece5f1b31ddf99eee">enter_write()</a> .<a class="el" href="classjazz__elements_1_1Container.html#aed814dd5c12fed3c5f9451aa47986c9e">leave_read()</a> .<a class="el" href="classjazz__elements_1_1Container.html#a10a8f17a8d92058c0dfb0a01435501b4">leave_write()</a> .<a class="el" href="classjazz__elements_1_1Container.html#ad84ce50f749041c82bfb1efed0fb17e5">lock_container()</a> .<a class="el" href="classjazz__elements_1_1Container.html#a39e73d3ee200010809ad7c4b3540dd51">unlock_container()</a></li>
+<li>Transparent thread safety .<a class="el" href="classjazz__elements_1_1Container.html#a45e76af56668d82e2adc1df39663859c">enter_read()</a> .<a class="el" href="classjazz__elements_1_1Container.html#a871986bc8109d9bd4ac8d9602a7ab301">enter_write()</a> .<a class="el" href="classjazz__elements_1_1Container.html#aed814dd5c12fed3c5f9451aa47986c9e">leave_read()</a> .<a class="el" href="classjazz__elements_1_1Container.html#a10a8f17a8d92058c0dfb0a01435501b4">leave_write()</a> .<a class="el" href="classjazz__elements_1_1Container.html#ad84ce50f749041c82bfb1efed0fb17e5">lock_container()</a> .<a class="el" href="classjazz__elements_1_1Container.html#a39e73d3ee200010809ad7c4b3540dd51">unlock_container()</a></li>
 <li>Allocation: .<a class="el" href="classjazz__elements_1_1Container.html#aaa3b7c856c6fc5a0b209ebbf464bd1b4">new_block()</a>, .<a class="el" href="classjazz__elements_1_1Container.html#af79256b93a1f22d580a5c8eb18fa0558">destroy_transaction()</a></li>
 <li>Crud: .<a class="el" href="classjazz__elements_1_1Container.html#a9ac8fb7abc96e21587b0f2577da4ce9f">get()</a>, .<a class="el" href="classjazz__elements_1_1Container.html#a4f5694ca68cf7ce0677f99af0cdcddf6">locate()</a>, .<a class="el" href="classjazz__elements_1_1Container.html#ad5e83933fb04f297fb55e11ad80d3a1a">header()</a>, .<a class="el" href="classjazz__elements_1_1Container.html#a5376e000980d6ae51db87c6ddaae34f5">new_entity()</a>, .<a class="el" href="classjazz__elements_1_1Container.html#a14a8486deea53fa96eb4a76a7a4b81d1">put()</a>, .<a class="el" href="classjazz__elements_1_1Container.html#a274ffe29a9edd7eb540d72d112429547">remove()</a>, .<a class="el" href="classjazz__elements_1_1Container.html#a7bd04b424e407ed5adb59042d208de14">copy()</a></li>
 <li>Code execution: .<a class="el" href="classjazz__elements_1_1Container.html#a767b2e34174be2778eb009dc864567b2">exec()</a> and .<a class="el" href="classjazz__elements_1_1Container.html#aedba8175934554cb71278d6f4ce96bf8">modify()</a></li>
@@ -515,8 +515,8 @@ new_block()</h2>
 
 </div>
 </div>
-<a id="a61d636197e1c6ccece5f1b31ddf99eee" name="a61d636197e1c6ccece5f1b31ddf99eee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a61d636197e1c6ccece5f1b31ddf99eee">&#9670;&#160;</a></span>enter_write()</h2>
+<a id="a871986bc8109d9bd4ac8d9602a7ab301" name="a871986bc8109d9bd4ac8d9602a7ab301"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a871986bc8109d9bd4ac8d9602a7ab301">&#9670;&#160;</a></span>enter_write()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -525,15 +525,26 @@ new_block()</h2>
           <td class="memname">void jazz_elements::Container::enter_write </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacejazz__elements.html#a3ef76aca99379bae1f286a62869de040">pTransaction</a>&#160;</td>
-          <td class="paramname"><em>p_txn</em></td><td>)</td>
+          <td class="paramname"><em>p_txn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>total_times</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Enter (hard lock) a <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> for writing. No readers are allowed during writing.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">p_txn</td><td>The address of the <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a>'s <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a>.</td></tr>
+    <tr><td class="paramname">p_txn</td><td>The address of the <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a>'s <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a>. </td></tr>
+    <tr><td class="paramname">total_times</td><td>An optional (typically for debugging) option to give up after a number of yield() calls.</td></tr>
   </table>
   </dd>
 </dl>
@@ -582,7 +593,7 @@ new_block()</h2>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Release the hard lock of <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> after writing. This is mandatory for each <a class="el" href="classjazz__elements_1_1Container.html#a61d636197e1c6ccece5f1b31ddf99eee">enter_write()</a> call or it may result in permanent locking.</p>
+<p>Release the hard lock of <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a> after writing. This is mandatory for each <a class="el" href="classjazz__elements_1_1Container.html#a871986bc8109d9bd4ac8d9602a7ab301">enter_write()</a> call or it may result in permanent locking.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">p_txn</td><td>The address of the <a class="el" href="classjazz__elements_1_1Block.html" title="A block is a moveable BlockHeader followed by a Tensor and a StringBuffer.">Block</a>'s <a class="el" href="structjazz__elements_1_1Transaction.html" title="Transaction: A wrapper over a Block that defines the communication of a block with a Container.">Transaction</a>.</td></tr>
