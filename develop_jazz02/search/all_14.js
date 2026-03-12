@@ -63,7 +63,7 @@ var searchData=
   ['ppersisted_60',['pPersisted',['../namespacejazz__elements.html#a918dc76d77eac5ff1949366261539368',1,'jazz_elements']]],
   ['pputbuffer_61',['pPutBuffer',['../namespacejazz__elements.html#ab580d5b6d505c9adc1026457fbb22ecf',1,'jazz_elements']]],
   ['priority_62',['priority',['../structjazz__elements_1_1VolatileTransaction.html#a36f588cae29f44dc2c717229fab33845',1,'jazz_elements::VolatileTransaction']]],
-  ['programming_20documentation_20for_20the_20jazz_20server_20version_201_2025_200_63',['[Programming documentation for the Jazz Server version &quot;1.25.0&quot;]',['../index.html',1,'']]],
+  ['programming_20documentation_20for_20the_20jazz_20server_20version_201_2026_201_63',['[Programming documentation for the Jazz Server version &quot;1.26.1&quot;]',['../index.html',1,'']]],
   ['psemspace_64',['pSemSpace',['../namespacejazz__models.html#a16ff2bdcadbfd1eb28241bdc22ad5423',1,'jazz_models']]],
   ['pservice_65',['pService',['../namespacejazz__elements.html#a042130809ff0ed079890839004d5350c',1,'jazz_elements']]],
   ['psignalhandler_66',['pSignalHandler',['../namespacejazz__main.html#a578cf47cfadacf0e9c6735b8cb53e6b0',1,'jazz_main']]],

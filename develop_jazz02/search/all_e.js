@@ -1,7 +1,7 @@
 var searchData=
 [
   ['jazz_20modules_20diagram_0',['Jazz Modules Diagram',['../index.html#jazz_mods',1,'']]],
-  ['jazz_20server_20version_201_2025_200_1',['[Programming documentation for the Jazz Server version &quot;1.25.0&quot;]',['../index.html',1,'']]],
+  ['jazz_20server_20version_201_2026_201_1',['[Programming documentation for the Jazz Server version &quot;1.26.1&quot;]',['../index.html',1,'']]],
   ['jazz_5fbebop_2',['jazz_bebop',['../namespacejazz__bebop.html',1,'']]],
   ['jazz_5felements_3',['jazz_elements',['../namespacejazz__elements.html',1,'jazz_elements'],['../classjazz__elements_1_1Container.html#autotoc_md13',1,'Scope of jazz_elements']]],
   ['jazz_5fmain_4',['jazz_main',['../namespacejazz__main.html',1,'']]],

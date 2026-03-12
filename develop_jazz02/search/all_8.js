@@ -26,6 +26,6 @@ var searchData=
   ['dim_23',['dim',['../structjazz__elements_1_1ItemHeader.html#a6ced5026e75f982993bcc181f09cc3b8',1,'jazz_elements::ItemHeader::dim'],['../structjazz__elements_1_1TensorDim.html#a0c68e45ee5af23f5041bca88a3b32137',1,'jazz_elements::TensorDim::dim']]],
   ['dimensions_24',['dimensions',['../namespacejazz__elements.html#a0cf11bc676708918ed9b3508ece2aa77',1,'jazz_elements::Dimensions'],['../classjazz__elements_1_1Kind.html#ad85b82e1401955777bbe02992fab3e74',1,'jazz_elements::Kind::dimensions()']]],
   ['dimensions_20are_20defined_25',['How dimensions are defined.',['../classjazz__elements_1_1Kind.html#autotoc_md18',1,'']]],
-  ['documentation_20for_20the_20jazz_20server_20version_201_2025_200_26',['[Programming documentation for the Jazz Server version &quot;1.25.0&quot;]',['../index.html',1,'']]],
+  ['documentation_20for_20the_20jazz_20server_20version_201_2026_201_26',['[Programming documentation for the Jazz Server version &quot;1.26.1&quot;]',['../index.html',1,'']]],
   ['done_5fpointer_5fto_5fblock_27',['done_pointer_to_block',['../classjazz__elements_1_1Persisted.html#a182a6c4b238e672b2ff2ab1b9c01974a',1,'jazz_elements::Persisted']]]
 ];

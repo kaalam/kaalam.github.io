@@ -4,7 +4,7 @@ var searchData=
   ['semspace_1',['SemSpace',['../classjazz__models_1_1SemSpace.html',1,'jazz_models']]],
   ['separator_2',['separator',['../classjazz__elements_1_1Container.html#a788e0aa6809df2da851d12f51a336349',1,'jazz_elements::Container']]],
   ['separator_5flen_3',['separator_len',['../classjazz__elements_1_1Container.html#a405dc9e9a0c717443f498f307710e500',1,'jazz_elements::Container']]],
-  ['server_20version_201_2025_200_4',['[Programming documentation for the Jazz Server version &quot;1.25.0&quot;]',['../index.html',1,'']]],
+  ['server_20version_201_2026_201_4',['[Programming documentation for the Jazz Server version &quot;1.26.1&quot;]',['../index.html',1,'']]],
   ['server_5foptions_5',['server_options',['../classjazz__main_1_1HttpServer.html#a2a47289895c302045a8aa21fb72a80dd',1,'jazz_main::HttpServer']]],
   ['service_6',['service',['../classjazz__elements_1_1Service.html',1,'jazz_elements::Service'],['../classjazz__elements_1_1Service.html#a08b2c5b3bcd2e343b163468d01c5127d',1,'jazz_elements::Service::Service()']]],
   ['set_5fattributes_7',['set_attributes',['../classjazz__elements_1_1Block.html#af5ab27c383bd0fdd923f943dcad2c9de',1,'jazz_elements::Block']]],

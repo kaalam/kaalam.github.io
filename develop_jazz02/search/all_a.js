@@ -22,7 +22,7 @@ var searchData=
   ['findprocessidbyname_19',['FindProcessIdByName',['../namespacejazz__elements.html#ad3fcdaf6929f0360f2388eaa7561e1b8',1,'jazz_elements']]],
   ['flags_20',['flags',['../structjazz__elements_1_1JazzLmdbOptions.html#a7f6b652268b6efd0f1fa4ef23fe59639',1,'jazz_elements::JazzLmdbOptions']]],
   ['for_20reference_3a_21',['For reference:',['../classjazz__elements_1_1Persisted.html#autotoc_md19',1,'']]],
-  ['for_20the_20jazz_20server_20version_201_2025_200_22',['[Programming documentation for the Jazz Server version &quot;1.25.0&quot;]',['../index.html',1,'']]],
+  ['for_20the_20jazz_20server_20version_201_2026_201_22',['[Programming documentation for the Jazz Server version &quot;1.26.1&quot;]',['../index.html',1,'']]],
   ['forward_5fdel_23',['forward_del',['../classjazz__elements_1_1Channels.html#a082b33890530767388dd9d06f1d4c132',1,'jazz_elements::Channels']]],
   ['forward_5fget_24',['forward_get',['../classjazz__elements_1_1Channels.html#ac515ab4d7ec1a87b86ca73d6bec1fd43',1,'jazz_elements::Channels']]],
   ['forward_5fput_25',['forward_put',['../classjazz__elements_1_1Channels.html#a81114b0434791a91dd047322a5ad0afc',1,'jazz_elements::Channels']]],

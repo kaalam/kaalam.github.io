@@ -14,7 +14,7 @@ var searchData=
   ['tensortype_11',['TensorType',['../structjazz__bebop_1_1TensorType.html',1,'jazz_bebop']]],
   ['tensortypedict_12',['TensorTypeDict',['../namespacejazz__bebop.html#a337a055e9d8627ce92df67209a9ff21f',1,'jazz_bebop']]],
   ['tensortypes_13',['TensorTypes',['../namespacejazz__bebop.html#a0454e38f1717294f69340a9e65badbe1',1,'jazz_bebop']]],
-  ['the_20jazz_20server_20version_201_2025_200_14',['[Programming documentation for the Jazz Server version &quot;1.25.0&quot;]',['../index.html',1,'']]],
+  ['the_20jazz_20server_20version_201_2026_201_14',['[Programming documentation for the Jazz Server version &quot;1.26.1&quot;]',['../index.html',1,'']]],
   ['timepoint_15',['TimePoint',['../namespacejazz__elements.html#aa7e5adf7a32b3080ea959153d2b6aee9',1,'jazz_elements']]],
   ['times_5fused_16',['times_used',['../structjazz__elements_1_1VolatileTransaction.html#a71406eb51c3f7d28888bb7374fae9287',1,'jazz_elements::VolatileTransaction']]],
   ['to_17',['to',['../structjazz__elements_1_1ParseStateTransition.html#aba6eecca8628176eb7608e6b7c204209',1,'jazz_elements::ParseStateTransition']]],
