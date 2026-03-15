@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['latest_5fopset_5fversion_0',['latest_opset_version',['../classjazz__bebop_1_1OpCodes.html#a1a579f3cd53d3a75f24c8794b2e7a6ab',1,'jazz_bebop::OpCodes']]],
+  ['latest_5fopset_5fversion_0',['latest_opset_version',['../classjazz__core_1_1OpCodes.html#a506643d9c0b41e313fa325024cb8a3b2',1,'jazz_core::OpCodes']]],
   ['leave_5fread_1',['leave_read',['../classjazz__elements_1_1Container.html#aed814dd5c12fed3c5f9451aa47986c9e',1,'jazz_elements::Container']]],
   ['leave_5fwrite_2',['leave_write',['../classjazz__elements_1_1Container.html#a10a8f17a8d92058c0dfb0a01435501b4',1,'jazz_elements::Container']]],
   ['load_5fconfig_3',['load_config',['../classjazz__elements_1_1ConfigFile.html#a86b7edd94d23a7bbdc7c5364e1accfad',1,'jazz_elements::ConfigFile']]],

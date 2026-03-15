@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Jazz 1.25.+: uplifted_instances.cpp Source File</title>
+<title>Jazz 1.26.+: uplifted_instances.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="jazz_logo_xparent.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Jazz 1.25.+
+   <div id="projectname">Jazz 1.26.+
    </div>
   </td>
  </tr>
@@ -84,8 +84,9 @@ $(document).ready(function() { init_codefold(0); });
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// This file is auto generated, do NOT edit, run ./config.sh instead</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span>BraneAPI MODELS_API(&amp;LOGGER, &amp;CONFIG, &amp;CHANNELS, &amp;VOLATILE, &amp;PERSISTED, &amp;CORE);</div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>InternalAPI HTTP_API(&amp;LOGGER, &amp;CONFIG, &amp;CHANNELS, &amp;VOLATILE, &amp;PERSISTED, &amp;CORE, &amp;MODELS_API);</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span>Bebop26 BEBOP(&amp;LOGGER, &amp;CONFIG, &amp;CHANNELS, &amp;VOLATILE, &amp;PERSISTED, &amp;CORE);</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>BraneAPI MODELS_API(&amp;LOGGER, &amp;CONFIG, &amp;CHANNELS, &amp;VOLATILE, &amp;PERSISTED, &amp;CORE, &amp;BEBOP);</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>InternalAPI HTTP_API(&amp;LOGGER, &amp;CONFIG, &amp;CHANNELS, &amp;VOLATILE, &amp;PERSISTED, &amp;CORE, &amp;BEBOP, &amp;MODELS_API);</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- footer.html -->
 <hr>

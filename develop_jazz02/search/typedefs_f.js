@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['snippettext_0',['SnippetText',['../namespacejazz__bebop.html#a74e743bf6f11c1fb4c2c4c659d187ec4',1,'jazz_bebop']]],
+  ['snippettext_0',['SnippetText',['../namespacejazz__core.html#a971f0d5e07082b217c7b0e9be8bdefd6',1,'jazz_core']]],
   ['statuscode_1',['StatusCode',['../namespacejazz__elements.html#ad1de9f0d4fc6192bb22f21e2862add3f',1,'jazz_elements']]],
-  ['stdapiquerystates_2',['stdAPIQueryStates',['../namespacejazz__bebop.html#a14614a2f3b7e14fce088c292ec8fc087',1,'jazz_bebop']]],
-  ['stdlocators_3',['stdLocators',['../namespacejazz__bebop.html#abfff8a5a2c0a4032433f92cd4003f729',1,'jazz_bebop']]],
-  ['stdnames_4',['stdNames',['../namespacejazz__bebop.html#a21f5a9318be36ac9f868c272a53f8206',1,'jazz_bebop']]],
-  ['stdurls_5',['stdUrls',['../namespacejazz__bebop.html#a7b55fea4c8c89e7207ab946194c88d8d',1,'jazz_bebop']]],
+  ['stdapiquerystates_2',['stdAPIQueryStates',['../namespacejazz__core.html#ad831359e1eeed3d59bc723d19d555aba',1,'jazz_core']]],
+  ['stdlocators_3',['stdLocators',['../namespacejazz__core.html#a2c39c9a247807da1880e46fd3c1d8717',1,'jazz_core']]],
+  ['stdnames_4',['stdNames',['../namespacejazz__core.html#a5bfb54d901b91d88abd81be63ef5d6cb',1,'jazz_core']]],
+  ['stdurls_5',['stdUrls',['../namespacejazz__core.html#ada852c226d4302772d834accc7e122fa',1,'jazz_core']]],
   ['string_6',['String',['../namespacejazz__elements.html#a090b4ae3a4d31758831e19ccc423f04c',1,'jazz_elements']]]
 ];
