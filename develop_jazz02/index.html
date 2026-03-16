@@ -85,22 +85,24 @@ Jazz Modules Diagram</h1>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">nothing   </td><td class="markdownTableBodyNone">Code is complete, tested and already was in previous versions.    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">[v.m.r]   </td><td class="markdownTableBodyNone">Code under active development and will be released when the version <code>v.m.r</code> is complete.   </td></tr>
+<td class="markdownTableBodyNone">[yyQn]   </td><td class="markdownTableBodyNone">Code under active development and will be released when the version <code>v.m.r</code> is complete.   </td></tr>
 </table>
 <p><br  />
  There are three C++ namespaces, intended for general c++ Jazz programming, possibly using external Jazz servers, but not necessarily as implemented as an http server:</p>
 <ol type="1">
-<li><a class="el" href="namespacejazz__elements.html" title="The namespace for Jazz Utils, Blocks, Kinds, Tuples, Containers, etc.">jazz_elements</a> (All the pieces: Blocks, Kinds, Tuples, storage, communication, services, etc.)<br  />
+<li><a class="el" href="namespacejazz__elements.html" title="The namespace for Jazz Utils, Blocks, Kinds, Tuples, Containers, etc.">jazz_elements</a> &ndash; The namespace <a class="el" href="namespacejazz__elements.html" title="The namespace for Jazz Utils, Blocks, Kinds, Tuples, Containers, etc.">jazz_elements</a> contains every fundamental data class (Block, Kind, Tuple) and the Containers used to store and communicate them (Channels, Volatile, Persisted). It also contains the basic types and utils used by those classes.<br  />
 </li>
-<li><a class="el" href="namespacejazz__bebop.html" title="The Bop compiler.">jazz_bebop</a> (Everything to run Bebop (just Bop) code: Spaces, Concepts, Opcodes, Cores and the compiler itself.)<br  />
+<li><a class="el" href="namespacejazz__core.html" title="A language to access any container by base using locators.">jazz_core</a> &ndash; The namespace with anything required for ONNX runtime execution running inside Jazz: BaseAPI, Snippet and Core.<br  />
 </li>
-<li><a class="el" href="namespacejazz__models.html" title="Concepts: A tree of Snippets with support fro blending that populates a semantic space.">jazz_models</a> (Model algorithms, including the resolver and tools to expose them via API)<br  />
+<li><a class="el" href="namespacejazz__bebop.html" title="The Bop compiler.">jazz_bebop</a> &ndash; This namespace contains everything necessary to compile Bebop and the parents of the objects in Models.<br  />
+</li>
+<li><a class="el" href="namespacejazz__models.html" title="Concepts: A tree of Snippets with support fro blending that populates a semantic space.">jazz_models</a> &mdash; Jazz models are services inside ModelsAPI providing abstractions (DataSpace, Concept, SemSpace) resolved by a Model.<br  />
 <br  />
  Additionally, there is a namespace for the server: <br  />
 <br  />
 </li>
-<li><a class="el" href="namespacejazz__main.html" title="The http API, instancing and building the server.">jazz_main</a> (putting it all together, the http API and the server) <br  />
- And, of course, Jazz development is about making the server run Bebop code and interfacing via REST using python or any front-end tech via the REST API.<br  />
+<li><a class="el" href="namespacejazz__main.html" title="The http API, instancing and building the server.">jazz_main</a> &ndash; Putting it all together as a monolithic HTTP server. <br  />
+ And, of course, Jazz development is about making the server run Bebop code and interfacing via REST using Python or any front-end tech via the REST API.<br  />
  <br  />
 </li>
 </ol>
@@ -111,7 +113,7 @@ REPOSITORIES</h1>
 </p>
 <h1><a class="anchor" id="license_sec"></a>
 LICENSE</h1>
-<p>Jazz (c) 2018-2025 kaalam.ai (The Authors of Jazz), using (under the same license):</p>
+<p>Jazz (c) 2018-2026 kaalam.ai (The Authors of Jazz), using (under the same license):</p>
 <ol type="1">
 <li><p class="startli">Biomodelling - The AATBlockQueue class (c) Jacques Basaldúa, 2009-2012 licensed exclusively for the use in the Jazz server software.</p>
 <p class="startli">Copyright 2009-2012 Jacques Basaldúa</p>
