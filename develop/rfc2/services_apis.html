@@ -113,13 +113,17 @@ section.footnotes {
 </div>
 <div class="body">
 <h1 id="chp:jazz-services-apis-and-instantiation">Jazz Services, APIs and Instantiation</h1>
+<blockquote>
+<p>Last updated: 2026-03-21: Applies to Jazz 1.26.x</p>
+</blockquote>
 <p>Jazz is a single monolithic process. It allocates data and code (which is data) through some classes that only have one instance of each.
 This document describes the logic behind it.</p>
 <h2 id="sec:services">Services</h2>
 <p>In Jazz, all the classes that define data and metadata neither have a configuration nor do they allocate RAM. They also don’t have a
 logger to write to.</p>
 <p>These classes are:</p>
-<pre><code>StaticBlockHeader -&gt; Block -&gt; Tuple
+<pre><code>StaticBlockHeader -&gt; Block -&gt; Tuple -&gt; Snippet -&gt; Space -&gt; Concept
+                       |                            +----&gt; DataSpace -&gt; SemSpace
                        +----&gt; Kind
 </code></pre>
 <p>All the classes that do have configuration, a logger and can allocate memory are inherited from the <code>Service</code> class. While you will
@@ -137,7 +141,9 @@ descendant constructor.</p>
 <ol>
 <li>
 <p>Some <code>Container</code> descendant owns every <code>Block</code>, <code>Kind</code> and <code>Tuple</code> instances in Jazz (no exceptions). It wraps them in a <code>Transaction</code>
-object. Transactions have a common interface for both persistence <code>StoredTransaction</code> and memory <code>VolatileTransaction</code>.</p>
+object. Transactions have a common interface for both persistence <code>StoredTransaction</code> and memory <code>VolatileTransaction</code>. This continues to
+be true beyond <code>jazz_elements</code>, the <code>Snippet</code>, <code>Space</code>, <code>Concept</code>, <code>DataSpace</code> and <code>SemSpace</code> objects are just <code>Tuple</code> descendants
+and created by some <code>Container</code> (<code>Core</code> for <code>Snippet</code>, <code>Bebop</code> for <code>Space</code>, and <code>ModelsAPI</code> for <code>Concept</code>, <code>DataSpace</code> and <code>SemSpace</code>).</p>
 </li>
 <li>
 <p>Memory management is handled through custom allocation methods (malloc, block_malloc) that track allocated bytes and ensure
@@ -146,7 +152,8 @@ proper alignment.</p>
 <li>
 <p>Every <code>Block</code>, <code>Tuple</code> and <code>Kind</code> is created by one of the 8 forms of <code>new_block()</code> included in the parent class. This uses RAM from
 the Container’s memory pool. These methods allow for creating Tensors from raw data, filtering rows from other Tensors, selecting items
-from Tuples, and more.</p>
+from Tuples, and more. Beyond <code>jazz_elements</code>, the Core, the Compiler or the Model create their own and the classes have constructors
+that simplify its creation.</p>
 </li>
 <li>
 <p>Resources inside a container are identified through a <code>Locator</code>. Locators have a string form (<code>///node//base/entity/key++</code>) that
@@ -160,7 +167,8 @@ unparsed string form) and a locator-based interface (each component separately).
 <p>Code execution is done via exec() (normal function calls) or modify() (external call made to services via Channels). At the level of
 jazz_elements, exec() is only declared but not implemented and modify() is used only in <code>Channels</code>. Code executed via exec() corresponds
 to the API apply codes predicates APPLY_ASSIGN_FUNCTION and APPLY_ASSIGN_FUNCT_CONST. It is the most basic functionality that is later
-extended in BaseAPI and its descendants.</p>
+extended in BaseAPI and its descendants. Beyond <code>jazz_elements</code>, <code>exec()</code> is connected to the calling mechanism of a <code>Snippet</code>, inherited
+all the descendants and managed by <code>BaseAPI</code> descendant which is a <code>Container</code>.</p>
 </li>
 <li>
 <p>The class also includes methods for locking and unlocking the container or entering and leaving read and write states
@@ -195,9 +203,11 @@ a rich API for creating, modifying, and querying data while ensuring thread safe
 license– while still instantiating it in a (customized) Jazz server. The source of the uplifts is located below the <code>uplifts</code>
 folder in the Jazz source tree and will typically have its own version control repository. The <code>.config.sh</code> file applied to the
 parent Jazz repository will create the appropriate makefile and headers to compile Jazz as if the uplifted classes were part of
-the Jazz source tree. You can only uplift the <code>API</code> and the <code>ModelsAPI</code> classes. An uplifted <code>ModelsAPI</code> class will typically serve
-customized <code>Model</code> descendants that inherit from the Jazz <code>Model</code> class. A customized <code>API</code> class will typically restrict the
-access, making parts of it inaccessible, use credentials, tokens, etc. to make a Jazz server secure for internet access.</p>
+the Jazz source tree. You can only uplift the <code>API</code>, the <code>ModelsAPI</code> and the <code>Bebop</code> classes. An uplifted <code>Bebop</code> is a compiler
+that fundamentally converts the <code>src</code> of a <code>Space</code> into <code>asm</code> of its <code>Snippet</code>parent. An uplifted <code>ModelsAPI</code> class will
+typically serve customized <code>Model</code> descendants that fundamentally converts <code>pain</code> of a <code>Concept</code> into the <code>src</code> of its <code>Space</code>
+parent. A customized <code>API</code> class will typically restrict the access, making parts of it inaccessible, use credentials, tokens, etc.
+to make a Jazz server secure for enterprise use.</p>
 </li>
 <li>
 <p><strong>Instantiation</strong>: As mentioned, you will only have one instance of each service. <code>BaseAPI</code> and therefore <code>API</code> are containers since
@@ -212,75 +222,35 @@ including uplifted ones) and provides a <code>start_service()</code>/<code>stop_
 <h3 id="sec:how-services-are-instantiated">How Services are instantiated</h3>
 <p>The Jazz server instantiates services, one instance of each, following these rules:</p>
 <ul>
-<li>Services that are common ancestors (Service, Container, BaseAPI, Model, Space) are not instantiated. Only their descendants are.</li>
-<li>Core owns: DataSpaces, Fields and Bop (which owns OpCodes). These Services are instantiated by Core and remain private.</li>
-<li>ModelsAPI owns: The model descendants (which are uplifts) and SemSpaces.</li>
+<li>Services that are common ancestors (Service, Container, BaseAPI, Model) are not instantiated. Only their descendants are.</li>
+<li>Core, Bebop and ModelsAPI via the BaseAPI interface use everything in jazz_elements the lower level of each other.</li>
 </ul>
-<pre><code>  Globals:    Used by:             Owns:                            Uplifted:
-  --------    --------             -----                            ---------
-  Channel     BaseAPI descendants  -- nothing --                    No
-  Volatile    BaseAPI descendants  -- nothing --                    No
-  Persisted   BaseAPI descendants  -- nothing --                    No
-  Core        ModelsAPI, API       DataSpaces, Fields, OpCodes/Bop  No
-  ModelsAPI   API                  Model descendants, SemSpaces     Possibly
-  API         HttpServer           -- nothing --                    Possibly
-  HttpServer  -- the world --      -- nothing --                    No
+<pre><code>  Globals:    Used by:                     Uplifted:
+  --------    --------                     ---------
+  Channel     Core, Bebop, ModelsAPI, API  No
+  Volatile    Core, Bebop, ModelsAPI, API  No
+  Persisted   Core, Bebop, ModelsAPI, API  No
+  Core        Bebop, ModelsAPI, API        No
+  Bebop       ModelsAPI, API               Possibly
+  ModelsAPI   API                          Possibly
+  API         HttpServer                   Possibly
+  HttpServer  -- the outside world --      No
 </code></pre>
-<h2 id="sec:execution-baseapi-space-dataspaces-opcodes-bop-snippet-core">Execution: BaseAPI, Space, DataSpaces, OpCodes, Bop, Snippet, Core</h2>
+<h2 id="sec:execution-baseapi-opcodes-core">Execution: BaseAPI, OpCodes Core</h2>
 <pre><code>Service ----------&gt; OpCodes          [ONNX language]
-   +--------------&gt; Bop              [Compiler and decompiler]
-   +--------------&gt; Space            [Parent of xxxSpace classes inside DataSpaces]
-   +--------------&gt; DataSpaces       [Abstracts tables and indexing]
-   +--------------&gt; Fields           [Storage for snippets, parent of SemSpaces]
    +-&gt; Container -&gt; BaseAPI          [Manages petitions to Containers]
-                      +----&gt; Core    [Compiles, runs code and serves]
-Block ------------&gt; Tuple -&gt; Snippet [Code snippet, parent of Concept]
+                      +----&gt; Core    [Manages sessions, runs code and serves]
+Block ------------&gt; Tuple -&gt; Snippet [Code snippet, parent of Space]
 </code></pre>
-<h3 id="sec:the-namespace-jazz-bebop-has">The namespace <code>jazz_bebop</code> has:</h3>
+<h3 id="sec:the-namespace-jazz-core-has">The namespace <code>jazz_core</code> has:</h3>
 <ul>
 <li><code>BaseAPI</code>: A container that routes requests to other containers</li>
-<li><code>Space</code>: A common ancestor of all the xxxSpace classes in <code>DataSpaces</code> that provide abstraction to blocks inside containers.</li>
-<li><code>OpCodes</code>: The ONNX language definition</li>
-<li><code>Bop</code>: The compiler and decompiler</li>
-<li><code>Fields</code>: A <code>Service</code> providing namespaces of snippets as formal fields (namespaces).</li>
-<li><code>Snippet</code>: A tuple containing: source, intermadiate and object code</li>
-<li><code>Core</code>: (as in a CPU-core) A wrapper around the onnx-runtime the manages data objects, sessions and other onnx-runtime details</li>
+<li><code>OpCodes</code>: The ONNX language definition. A Service to use configuration and log mechanisms.</li>
+<li><code>Snippet</code>: A tuple containing: obj (the onnx object), links (how data is possibly stored) and asm (a source in onnx opcodes).</li>
+<li><code>Core</code>: (as in a CPU-core) A BaseAPI that manages sessions to run snippets with an interface similar to the other containers.</li>
 </ul>
-<p>Code is executed in the <code>Core</code> class. This class descends from <code>BaseAPI</code> which is a <code>Container</code>. <code>BaseAPI</code> is also the parent of <code>API</code>.
-Simply put, an API is a container. but does not permanently allocate data (it does just as long a request is being processed). Also, an API
-can parse requests and route them to the appropriate container.</p>
-<p><code>Core</code> is the only object instantiated by the server’s instantiation mechanism. It owns (as a private attribute) the DataSpaces, the Fields
-(to store the Snippets) and the compiler, Bop, which owns the language (OpCodes).</p>
-<p><code>Core</code> implements the <code>exec()</code> method. It inherits from <code>BaseAPI</code> which provides control over the containers in <code>jazz_elements</code>.</p>
-<h3 id="sec:the-two-flavors-of-bebop">The two flavors of Bebop</h3>
-<p>You can consider Bebop (Bop) a language with two “flavors”: a <strong>formal</strong> one that can be compiled and is defined by everything in this
-namespace and an <strong>informal</strong> natural language that is converted into compilable code by a <code>Model</code> in <code>jazz_models</code>.</p>
-<h2 id="sec:models-are-a-superior-form-of-code-execution">Models are a superior form of code execution</h2>
-<pre><code>Service ------------&gt; Fields ---&gt; SemSpaces [Serves Concepts]
-   +----&gt; Container ------------&gt; Model     [uses Core to compile and run solutions]
-              +-----&gt; BaseAPI --&gt; ModelsAPI [serves Model descendants]
-Block --&gt; Tuple ----&gt; Snippet --&gt; Concept   [Generalizes Snippet to informal code]
-</code></pre>
-<p>At the level of <code>jazz_bebop</code>, we have a compiler that converts <strong>formal</strong> compilable Bebop code into <strong>formal</strong> object code. In this higher
-level of abstraction (<code>jazz_models</code>) we convert <strong>informal</strong> natural language into <strong>formal</strong> compilable Bebop code. This requires a
-<code>Model</code>. How a specific model works is beyond the scope of this document. As far as the Jazz server is concerned, a <code>Model</code> is just a
-<code>Service-&gt;Container-&gt;BaseAPI</code> descendant with access to the <code>Core</code> to compile, run and evaluate solutions (formal representations to
-the informal input). We can think of the whole model as a <strong>resolver</strong> vs. a <strong>compiler</strong> that is used in <code>Core</code>.</p>
-<p>A <code>ModelsAPI</code> can be informally seen as a <code>Core</code> that executes a higher level language (natural language) that has to be resolved into
-Bebop that can be compiled and executed by the <code>Core</code>. A single service serves multiple models using the same mechanism the other
-containers have: a base (a part of a locator) that identifies the model.</p>
-<h2 id="sec:api-as-a-baseapi-descendant">API as a BaseAPI descendant</h2>
-<pre><code>Service -&gt; Container -&gt; BaseAPI -&gt; API  [Single http entry point aware of all Containers]
-</code></pre>
-<p>So far we have seen:</p>
-<ul>
-<li>[Lowest level] <code>Container</code> provides a language to define data as constants and move blocks around containers using locators.</li>
-<li>[Level jazz_bebop] <code>BaseAPI</code> provides a language to access any container by base using locators, <code>Core</code> provides a language to abstract
-data, tables, indexing and execute programs.</li>
-<li>[Level jazz_models] <code>ModelsAPI</code> provides a mechanism to resolve natural language into Bebop code.</li>
-<li>[Now] API Gives unrestricted access to everything to anyone.</li>
-<li>[Highest level: Uplifted API]: Establishes access restrictions, credentials, tokens, etc.</li>
-</ul>
+<p><code>Core</code> is the only object instantiated by the server’s instantiation mechanism.
+<code>Core</code> implements the <code>exec()</code> method. It inherits from <code>BaseAPI</code> which provides control over the containers in <code>jazz_elements</code>.</p>
 <h3 id="sec:the-baseapi-class">The BaseAPI class</h3>
 <p><code>BaseAPI</code> handles everything that is neither http specific or requires code execution. It provides an interface that is on one side
 http oriented:</p>
@@ -293,15 +263,87 @@ http oriented:</p>
 <p>And on the other side defines a subset of Bop that provides control over the containers.</p>
 <p>The subset of Bop that handles queries is defined by the use of the <code>apply</code> property in an ApiQueryState structure. There are 23 codes
 ranging from APPLY_NOTHING to APPLY_JAZZ_INFO. See <code>jazz_elements::channel.h</code>.</p>
-<p>Code execution is done by the BaseAPI descendants (Core and ModelsAPI) by overriding the get() method to support all the apply codes
-from APPLY_NOTHING to APPLY_TEXT.</p>
+<p>Code execution is done by the BaseAPI descendants (Core, Bebop and ModelsAPI).</p>
+<h2 id="sec:compilation-space-namespace-bebop">Compilation: Space, NameSpace, Bebop</h2>
+<pre><code>Service
+   +-&gt; Container -&gt; BaseAPI         [Manages petitions to Containers]
+                      +----&gt; Bebop  [Compiles, runs using a Core and serves]
+Block -&gt; Tuple -&gt; Snippet -&gt; Space  [A hierarchical code element, parent of Concept]
+</code></pre>
+<h3 id="sec:the-namespace-jazz-bebop-has">The namespace <code>jazz_bebop</code> has:</h3>
+<ul>
+<li><code>Space</code>: Extends Snippet with:
+<ul>
+<li>A parent defining a hierarchical structure</li>
+<li>An address (a locator)</li>
+<li>A kind</li>
+<li>Casting mechanisms across kinds</li>
+<li>operators: is (=), get (&lt;-), key (.), inside ({..}), within ([..]), call ((..)) and after (|&gt;)</li>
+<li>properties: keys (a dictionary to children and settings), src (the source code)</li>
+</ul>
+</li>
+<li><code>NameSpace</code> A cpp stdlib container-based to make it more efficient to the compiler.</li>
+<li><code>Bebop</code>: The compiler/runner with access to <code>Core</code> to run.</li>
+</ul>
+<h2 id="sec:resolution-concept-dataspace-semspace-model-modelsapi">Resolution: Concept, DataSpace, SemSpace, Model, ModelsAPI</h2>
+<pre><code>Service ----------&gt; Model                                 [Abstract class that defines models]
+   |                  +----&gt; MyModel                      [Models are always uplifted]
+   +-&gt; Container -&gt; BaseAPI                               [Manages petitions to Containers]
+                      +----&gt; ModelsAPI                    [Serves, resolves, compiles and runs]
+Block -&gt; Tuple -&gt; Snippet -&gt; Space -&gt; Concept             [A code element with resolution]
+                               +   -&gt; DataSpace           [A Space to organize data]
+                                         +-----&gt; SemSpace [A Space to organize Concepts]
+</code></pre>
+<h3 id="sec:the-namespace-jazz-models-has">The namespace <code>jazz_models</code> has:</h3>
+<ul>
+<li><code>Concept</code>: A <code>Space</code> with resolution capabilities. It extends <code>Space</code> with:
+<ul>
+<li>operators: resolve (&lt;&lt;-), clue (?) and under (|:)</li>
+<li>properties: plain (the origin), image (the result of applying a lens), game (the tree searched by a model)</li>
+<li>A mechanism to call virtual methods in models.</li>
+</ul>
+</li>
+<li><code>DataSpace</code>: A <code>Space</code> to organize data. It extends <code>Space</code> with:
+<ul>
+<li>operators: within ([..]) and key (.) are redefined to provide access specific blocks of data.</li>
+<li>properties: grid (the metadata to locate data in a Jazz cluster).</li>
+</ul>
+</li>
+<li><code>SemSpace</code>: A <code>DataSpace</code> to organize concepts. It extends <code>DataSpace</code> with:
+<ul>
+<li>operators: resolve (&lt;&lt;-), clue (?) and under (|:) at SemSpace level and can be overridden in a Concept.</li>
+<li>properties: self (a context accessible to the Model).</li>
+</ul>
+</li>
+<li><code>Model</code>: An abstract class that defines a model. It is a Service the can have config, RAM allocation and logging. It can implement
+virtual methods such a HNSW (Hierarchical Navigable Small World) or vector representations of Concepts, that become accessible to the
+Concepts providing such things as lensing typically done using the under operator (an image under a lens).</li>
+<li><code>ModelsAPI</code>: A <code>BaseAPI</code> descendant that serves one or multiple <code>Model</code> descendants implemented in an uplift.</li>
+</ul>
+<h3 id="sec:the-two-flavors-of-bebop">The two flavors of Bebop</h3>
+<p>You can consider Bebop (Bop) a language with two “flavors”: a <strong>formal</strong> one that can be compiled and is defined by everything in this
+namespace and an <strong>informal</strong> natural language that is converted into compilable code by a <code>Model</code> in <code>jazz_models</code>.</p>
+<p>At the level of <code>jazz_bebop</code>, we have a compiler that converts <strong>formal</strong> compilable Bebop code into <strong>formal</strong> object code. In this higher
+level of abstraction (<code>jazz_models</code>) we convert <strong>informal</strong> natural language into <strong>formal</strong> compilable Bebop code. This requires a
+<code>Model</code>.</p>
+<h2 id="sec:api-as-a-baseapi-descendant">API as a BaseAPI descendant</h2>
+<pre><code>Service -&gt; Container -&gt; BaseAPI -&gt; API  [Single http entry point aware of all Containers]
+</code></pre>
+<ul>
+<li>[<strong>IMPORTANT</strong>] API Gives <strong>unrestricted access</strong> to <strong>everything</strong> to <strong>anyone</strong>.</li>
+<li>[Highest level: <strong>Uplifted API</strong>]: Establishes access restrictions, credentials, tokens, etc.</li>
+</ul>
 <h3 id="sec:the-api-class">The API class</h3>
 <p>The <code>API</code> class is a <code>BaseAPI</code> aware of every other <code>BaseAPI</code> descendant. As a <code>BaseAPI</code> itself it manages: Channels, Volatile and
-Persisted. It routes its http put() and delete() methods to its parent and its get() method to either its parent, Core or ModelAPI.
+Persisted. It routes its http put() and delete() methods to its parent and its get() method to either its parent, Core, Bebop or ModelAPI.
 <code>API</code> is called by the <code>http_request_callback()</code> callback function of the <code>HttpServer</code> class. Except for developing purposes it is
 typically uplifted to provide security and access control. Note that without restrictions, the <code>API</code> can execute any code on the server
 since it has access to the console via the <code>Chanel</code> container. The least harmful thing it can do is stop the server. This functionality
 can also be disabled via configuration, but uplifting provides total control over the server, not just disabling features.</p>
+<h2 id="sec:jazz-main-the-server-itself">jazz_main: The server itself</h2>
+<p>The <code>jazz_main</code> namespace, beyond the <code>API</code> class, includes the server instantiation, starting, stopping, etc. The mechanisms to customize
+the server are: uplifting, configuration and providing a static website (html, js, css) that the server will serve by default. You will
+typically not want to modify the server itself. In that case, the source code itself is the reference.</p>
 </div>
 </body>
 </html>
