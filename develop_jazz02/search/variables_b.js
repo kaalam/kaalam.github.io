@@ -1,12 +1,8 @@
 var searchData=
 [
-  ['l_5fnode_0',['l_node',['../structjazz__core_1_1ApiQueryState.html#ad6d027a328652938da715c057c1271a3',1,'jazz_core::ApiQueryState']]],
-  ['last_5fidx_1',['last_idx',['../structjazz__elements_1_1StringBuffer.html#a3bce2a089e52c3b868885f6c6c191356',1,'jazz_elements::StringBuffer']]],
-  ['level_2',['level',['../structjazz__elements_1_1VolatileTransaction.html#ac271628d94cbbf2182ce4d27092625a7',1,'jazz_elements::VolatileTransaction']]],
-  ['lmdb_5fenv_3',['lmdb_env',['../classjazz__elements_1_1Persisted.html#a8c0f173de5273c35cb69cc3c77c17b83',1,'jazz_elements::Persisted']]],
-  ['lmdb_5fopt_4',['lmdb_opt',['../classjazz__elements_1_1Persisted.html#acfe301d8e960bfd889e2aed77283c868',1,'jazz_elements::Persisted']]],
-  ['locator_5',['locator',['../classjazz__core_1_1stdLocator.html#af663b7474ce93ea1137b6d6e72306e62',1,'jazz_core::stdLocator']]],
-  ['locator_5fsize_6',['LOCATOR_SIZE',['../namespacejazz__elements.html#a914f17360f6e07a8d6adcf060aa33c27',1,'jazz_elements']]],
-  ['log_5ferror_5flevel_7',['log_error_level',['../classjazz__core_1_1OpCodes.html#a7d474f46672c2a19cd688d1dad64d327',1,'jazz_core::OpCodes::log_error_level'],['../classjazz__elements_1_1Container.html#a5d00200b357d14e30da3a87ddb0ac662',1,'jazz_elements::Container::log_error_level']]],
-  ['logger_8',['logger',['../namespacejazz__elements.html#a06bbb5377a6c16f6d81db316910a66d9',1,'jazz_elements::LOGGER'],['../namespacejazz__main.html#ae18d0fb5841441ab5a2831734f349328',1,'jazz_main::LOGGER']]]
+  ['key_0',['key',['../structjazz__core_1_1ApiQueryState.html#a53cdc56849784fd540d26d46f1e6afc5',1,'jazz_core::ApiQueryState::key'],['../structjazz__elements_1_1Locator.html#aa7e8c995d5f9f7a6296f67dda46cfae9',1,'jazz_elements::Locator::key']]],
+  ['key_5fhash_1',['key_hash',['../structjazz__elements_1_1VolatileTransaction.html#a20e75d60b495d6e5be520a1b1c293818',1,'jazz_elements::VolatileTransaction::key_hash'],['../structjazz__elements_1_1EntityKeyHash.html#ab8deadd4103bfa363f3b659104333ab8',1,'jazz_elements::EntityKeyHash::key_hash']]],
+  ['key_5fseed_2',['key_seed',['../classjazz__elements_1_1Volatile.html#afc059a889ae4c6dd11ab7a22ec043863',1,'jazz_elements::Volatile']]],
+  ['keys_3',['keys',['../classjazz__bebop_1_1Space.html#affe412275c684ddf5457db03b3664c40',1,'jazz_bebop::Space']]],
+  ['kind_5fsnippet_4',['KIND_SNIPPET',['../namespacejazz__core.html#a9be5de21f762a55ed90333a2d2c824bc',1,'jazz_core']]]
 ];

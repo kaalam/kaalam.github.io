@@ -297,13 +297,17 @@ const char&#160;</td><td class="memItemRight" valign="bottom"><b>SNIPSTATE_FAILE
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A language to access any container by base using locators. </p>
 <p>This file has wrappers to convert static C structures that make part of the Space interface into C++ stdlib containers.</p>
-<p>A Concept ancestor that contains both the source and the object code.</p>
+<p>A tuple containing: obj (the onnx object), links (how data is possibly stored) and asm (a source in onnx opcodes).</p>
 <p>In Bop-25, opcodes are onnx-runtime operations.</p>
 <p><a class="el" href="classjazz__core_1_1Core.html" title="Core: The execution unit is now a wrapper around onnx-runtime.">Core</a>: The execution unit is now a wrapper around onnx-runtime.</p>
 <p><a class="el" href="classjazz__core_1_1BaseAPI.html" title="BaseAPI: The parent of API and Core.">BaseAPI</a> is a Container and a parent of: <a class="el" href="classjazz__core_1_1Core.html" title="Core: The execution unit is now a wrapper around onnx-runtime.">Core</a>, ModelsAPI and API.</p>
 <dl class="section see"><dt>See also</dt><dd>Container, <a class="el" href="classjazz__core_1_1Core.html" title="Core: The execution unit is now a wrapper around onnx-runtime.">Core</a>, ModelsAPI and API</dd></dl>
 <p>A core is not a service, it is stored in a Bop API.</p>
-<p>A <a class="el" href="classjazz__core_1_1Snippet.html" title="Snippet: A code snippet and the ancestor of Concept.">Snippet</a> is an object that can do both forward (compile) and reverse engineering (decompile) between compilable Bop and an onnx file. It supports a number of serializations to and from Jazz Blocks. It forms the minimal unit of what can be run.</p>
+<p>TODO: Refactor 1: <a class="el" href="classjazz__core_1_1Snippet.html" title="Snippet: A code snippet and the ancestor of Concept.">Snippet</a>: A tuple containing: obj, links and asm. TODO: Refactor 2: <a class="el" href="classjazz__core_1_1Snippet.html" title="Snippet: A code snippet and the ancestor of Concept.">Snippet</a> has constructors, Unlike Tuple they can resize with the help of a pBaseAPI</p><ul>
+<li>pBaseAPI: Creates an empty <a class="el" href="classjazz__core_1_1Snippet.html" title="Snippet: A code snippet and the ancestor of Concept.">Snippet</a></li>
+<li>pBaseAPI + obj: Creates from an onnx object</li>
+<li>pBaseAPI + links + asm: Creates from source</li>
+</ul>
 <p>The classes are: stdNames (a vector of <a class="el" href="classjazz__core_1_1stdName.html" title="A wrapped Name that supports being stacked in an std::vector and used as a key in an std::map.">stdName</a> which is just a Name with some operators), stdLocators (a vector of <a class="el" href="classjazz__core_1_1stdLocator.html" title="A wrapped Locator that supports being stacked in an std::vector and used as a key in an std::map.">stdLocator</a> which is just a Locator with some operators), stdAPIQueryStates (a vector of <a class="el" href="classjazz__core_1_1stdAPIQueryState.html" title="A wrapped ApiQueryState that supports being stacked in an std::vector.">stdAPIQueryState</a> which is just an <a class="el" href="structjazz__core_1_1ApiQueryState.html" title="A buffer to keep the state while parsing/executing a query.">ApiQueryState</a> with some operators) and stdUrls (a vector of String (an std::string)). </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
 <a id="a790970fd3876b45455f4810e8359a51b" name="a790970fd3876b45455f4810e8359a51b"></a>

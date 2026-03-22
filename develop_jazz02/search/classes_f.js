@@ -1,8 +1,15 @@
 var searchData=
 [
-  ['tensor_0',['Tensor',['../unionjazz__elements_1_1Tensor.html',1,'jazz_elements']]],
-  ['tensordim_1',['TensorDim',['../structjazz__elements_1_1TensorDim.html',1,'jazz_elements']]],
-  ['tensortype_2',['TensorType',['../structjazz__core_1_1TensorType.html',1,'jazz_core']]],
-  ['transaction_3',['Transaction',['../structjazz__elements_1_1Transaction.html',1,'jazz_elements']]],
-  ['tuple_4',['Tuple',['../classjazz__elements_1_1Tuple.html',1,'jazz_elements']]]
+  ['semspace_0',['SemSpace',['../classjazz__models_1_1SemSpace.html',1,'jazz_models']]],
+  ['service_1',['Service',['../classjazz__elements_1_1Service.html',1,'jazz_elements']]],
+  ['snippet_2',['Snippet',['../classjazz__core_1_1Snippet.html',1,'jazz_core']]],
+  ['socket_3',['Socket',['../structjazz__elements_1_1Socket.html',1,'jazz_elements']]],
+  ['space_4',['Space',['../classjazz__bebop_1_1Space.html',1,'jazz_bebop']]],
+  ['staticblockheader_5',['StaticBlockHeader',['../structjazz__elements_1_1StaticBlockHeader.html',1,'jazz_elements']]],
+  ['stdapiquerystate_6',['stdAPIQueryState',['../classjazz__core_1_1stdAPIQueryState.html',1,'jazz_core']]],
+  ['stdlocator_7',['stdLocator',['../classjazz__core_1_1stdLocator.html',1,'jazz_core']]],
+  ['stdname_8',['stdName',['../classjazz__core_1_1stdName.html',1,'jazz_core']]],
+  ['stdnameversion_9',['stdNameVersion',['../classjazz__core_1_1stdNameVersion.html',1,'jazz_core']]],
+  ['storedtransaction_10',['StoredTransaction',['../structjazz__elements_1_1StoredTransaction.html',1,'jazz_elements']]],
+  ['stringbuffer_11',['StringBuffer',['../structjazz__elements_1_1StringBuffer.html',1,'jazz_elements']]]
 ];

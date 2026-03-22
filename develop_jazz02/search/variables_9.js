@@ -1,10 +1,9 @@
 var searchData=
 [
-  ['jazz_5fmhd_5fdaemon_0',['Jazz_MHD_Daemon',['../namespacejazz__main.html#a9af1d41451e6cfe5e88cddebec1ba954',1,'jazz_main']]],
-  ['jazz_5fnode_5fcluster_5fsize_1',['jazz_node_cluster_size',['../classjazz__elements_1_1Channels.html#addc02f975b640ba708ee34cbfba35d8e',1,'jazz_elements::Channels']]],
-  ['jazz_5fnode_5fip_2',['jazz_node_ip',['../classjazz__elements_1_1Channels.html#a57ff2b5199b467ea047d7a6ab51107af',1,'jazz_elements::Channels']]],
-  ['jazz_5fnode_5fmy_5findex_3',['jazz_node_my_index',['../classjazz__elements_1_1Channels.html#a157cdf95ec8a4ea15e7aa4754bff32fc',1,'jazz_elements::Channels']]],
-  ['jazz_5fnode_5fname_4',['jazz_node_name',['../classjazz__elements_1_1Channels.html#ad3e69ef85991c7f1afdd796ee15b93ec',1,'jazz_elements::Channels']]],
-  ['jazz_5fnode_5fport_5',['jazz_node_port',['../classjazz__elements_1_1Channels.html#a99f5ffa00666cefa538f2239de54df10',1,'jazz_elements::Channels']]],
-  ['jazz_5ftype_6',['jazz_type',['../structjazz__core_1_1TensorType.html#aa79387691bf5f5dc2f4a00f356181956',1,'jazz_core::TensorType::jazz_type'],['../structjazz__core_1_1AttributeType.html#ad4586efc7592016ceef632c7d3f51edd',1,'jazz_core::AttributeType::jazz_type']]]
+  ['index_0',['index',['../structjazz__elements_1_1BlockHeader.html#a2ab9f8c189a25a1aab3ce12ec02fcddf',1,'jazz_elements::BlockHeader']]],
+  ['index_5fent_1',['index_ent',['../classjazz__elements_1_1Volatile.html#ac483a1c7329295be619b293c07c931fb',1,'jazz_elements::Volatile']]],
+  ['inputs_2',['inputs',['../classjazz__core_1_1OnnxOpCode.html#a44c3e0fe1123e2f0aef94c549f3c4d11',1,'jazz_core::OnnxOpCode']]],
+  ['ir_5fvers_3',['ir_vers',['../classjazz__core_1_1OpCodes.html#ad4d8251fce479ab75434753fc806bc45',1,'jazz_core::OpCodes']]],
+  ['is_5fmulti_4',['is_multi',['../structjazz__core_1_1AttributeType.html#a3eacd870ed98c01813e8d3e7b02410b9',1,'jazz_core::AttributeType']]],
+  ['item_5fsize_5',['item_size',['../structjazz__elements_1_1ItemHeader.html#ae267ff7b63a6e207eec0cbe19a5e669e',1,'jazz_elements::ItemHeader']]]
 ];

@@ -15,7 +15,7 @@ var searchData=
   ['onnxparameters_12',['OnnxParameters',['../namespacejazz__core.html#a3716680f0db9cb099f1a0894b70e4ee6',1,'jazz_core']]],
   ['op_5fvers_5fcurrent_13',['op_vers_current',['../classjazz__core_1_1OpCodes.html#aac7e9edc3cbc68f979f88270fc89026a',1,'jazz_core::OpCodes']]],
   ['op_5fvers_5flatest_14',['op_vers_latest',['../classjazz__core_1_1OpCodes.html#aafb957af993815d0f991c67b514963ea',1,'jazz_core::OpCodes']]],
-  ['opcodes_15',['opcodes',['../classjazz__core_1_1OpCodes.html',1,'jazz_core::OpCodes'],['../classjazz__core_1_1OpCodes.html#a577e89a67176b8a1c4a9d7e9f3c09ae9',1,'jazz_core::OpCodes::OpCodes(pLogger a_logger, pConfigFile a_config)'],['../classjazz__core_1_1OpCodes.html#a227caf9b240306af9a6a165130ccf707',1,'jazz_core::OpCodes::opcodes']]],
+  ['opcodes_15',['opcodes',['../classjazz__core_1_1OpCodes.html',1,'jazz_core::OpCodes'],['../classjazz__core_1_1OpCodes.html#a227caf9b240306af9a6a165130ccf707',1,'jazz_core::OpCodes::opcodes'],['../classjazz__core_1_1OpCodes.html#a577e89a67176b8a1c4a9d7e9f3c09ae9',1,'jazz_core::OpCodes::OpCodes(pLogger a_logger, pConfigFile a_config)']]],
   ['opcodes_5fidx_16',['opcodes_idx',['../classjazz__core_1_1OpCodes.html#aab07a995d2a5371f9d7241c804e5b7f7',1,'jazz_core::OpCodes']]],
   ['open_5fall_5fdatabases_17',['open_all_databases',['../classjazz__elements_1_1Persisted.html#a63587441cea68cfd92d84e5e453f45c6',1,'jazz_elements::Persisted']]],
   ['opening_5fbrackets_18',['opening_brackets',['../classjazz__elements_1_1Container.html#a3d1c13373d476323e06afcb6c72d597c',1,'jazz_elements::Container']]],

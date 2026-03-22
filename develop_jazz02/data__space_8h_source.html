@@ -413,12 +413,32 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span><span class="comment">//      pBaseAPI p_api;             ///&lt; A pointer to the BaseAPI that provides access to containers.</span></div>
 <div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span><span class="comment">//      Name storage_ent;           ///&lt; The name of the storage entity (Typically an lmdb database with the metadata of all DataSpaces).</span></div>
 <div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span><span class="comment">// };</span></div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span><span class="comment">// typedef DataSpaces *pDataSpace;      ///&lt; A pointer to a DataSpaces</span></div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span> </div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>} <span class="comment">// namespace jazz_models</span></div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span> </div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span><span class="preprocessor">#endif </span><span class="comment">// ifndef INCLUDED_JAZZ_MODELS_DATA_SPACE</span></div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span> </div>
+<div class="foldopen" id="foldopen00356" data-start="{" data-end="};">
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno"><a class="line" href="classjazz__models_1_1DataSpace.html">  356</a></span><span class="keyword">class </span><a class="code hl_class" href="classjazz__models_1_1DataSpace.html">DataSpace</a> : <span class="keyword">public</span> <a class="code hl_class" href="classjazz__bebop_1_1Space.html">Space</a> {</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span> </div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span> </div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>        <a class="code hl_class" href="classjazz__models_1_1DataSpace.html">DataSpace</a>(<a class="code hl_class" href="classjazz__core_1_1BaseAPI.html">pBaseAPI</a> p_owner);</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>        <a class="code hl_function" href="classjazz__models_1_1DataSpace.html#ac84e1a97f9ea7e523d8696e15ce9e8bc">~DataSpace</a>();</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span> </div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno"><a class="line" href="classjazz__models_1_1DataSpace.html#aff44743d972a4b1a1bd560cf413b32e2">  363</a></span>        std::map&lt;stdName, std::string&gt; <a class="code hl_variable" href="classjazz__models_1_1DataSpace.html#aff44743d972a4b1a1bd560cf413b32e2">grid</a>;    </div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span> </div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>};</div>
+</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno"><a class="line" href="namespacejazz__models.html#a18c18a4dbf875fc3dbb522edceb0f314">  366</a></span><span class="keyword">typedef</span> <a class="code hl_class" href="classjazz__models_1_1DataSpace.html">DataSpace</a> *<a class="code hl_typedef" href="namespacejazz__models.html#a18c18a4dbf875fc3dbb522edceb0f314">pDataSpace</a>;      </div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span> </div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span> </div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>} <span class="comment">// namespace jazz_models</span></div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span> </div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span><span class="preprocessor">#endif </span><span class="comment">// ifndef INCLUDED_JAZZ_MODELS_DATA_SPACE</span></div>
+<div class="ttc" id="aclassjazz__bebop_1_1Space_html"><div class="ttname"><a href="classjazz__bebop_1_1Space.html">jazz_bebop::Space</a></div><div class="ttdoc">Space: The Bebop object that belongs to a hierarchy.</div><div class="ttdef"><b>Definition</b> space.h:76</div></div>
+<div class="ttc" id="aclassjazz__core_1_1BaseAPI_html"><div class="ttname"><a href="classjazz__core_1_1BaseAPI.html">jazz_core::BaseAPI</a></div><div class="ttdoc">BaseAPI: The parent of API and Core.</div><div class="ttdef"><b>Definition</b> base_api.h:122</div></div>
+<div class="ttc" id="aclassjazz__models_1_1DataSpace_html"><div class="ttname"><a href="classjazz__models_1_1DataSpace.html">jazz_models::DataSpace</a></div><div class="ttdoc">DataSpace.</div><div class="ttdef"><b>Definition</b> data_space.h:356</div></div>
+<div class="ttc" id="aclassjazz__models_1_1DataSpace_html_ac84e1a97f9ea7e523d8696e15ce9e8bc"><div class="ttname"><a href="classjazz__models_1_1DataSpace.html#ac84e1a97f9ea7e523d8696e15ce9e8bc">jazz_models::DataSpace::~DataSpace</a></div><div class="ttdeci">~DataSpace()</div><div class="ttdoc">DataSpace: Destructor.</div><div class="ttdef"><b>Definition</b> data_space.cpp:267</div></div>
+<div class="ttc" id="aclassjazz__models_1_1DataSpace_html_aff44743d972a4b1a1bd560cf413b32e2"><div class="ttname"><a href="classjazz__models_1_1DataSpace.html#aff44743d972a4b1a1bd560cf413b32e2">jazz_models::DataSpace::grid</a></div><div class="ttdeci">std::map&lt; stdName, std::string &gt; grid</div><div class="ttdoc">An attribute that is a map of names to other Spaces or strings.</div><div class="ttdef"><b>Definition</b> data_space.h:363</div></div>
 <div class="ttc" id="anamespacejazz__models_html"><div class="ttname"><a href="namespacejazz__models.html">jazz_models</a></div><div class="ttdoc">Concepts: A tree of Snippets with support fro blending that populates a semantic space.</div><div class="ttdef"><b>Definition</b> concept.cpp:39</div></div>
+<div class="ttc" id="anamespacejazz__models_html_a18c18a4dbf875fc3dbb522edceb0f314"><div class="ttname"><a href="namespacejazz__models.html#a18c18a4dbf875fc3dbb522edceb0f314">jazz_models::pDataSpace</a></div><div class="ttdeci">DataSpace * pDataSpace</div><div class="ttdoc">A pointer to a DataSpace.</div><div class="ttdef"><b>Definition</b> data_space.h:366</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- footer.html -->
 <hr>

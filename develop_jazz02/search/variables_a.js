@@ -1,7 +1,10 @@
 var searchData=
 [
-  ['key_0',['key',['../structjazz__core_1_1ApiQueryState.html#a53cdc56849784fd540d26d46f1e6afc5',1,'jazz_core::ApiQueryState::key'],['../structjazz__elements_1_1Locator.html#aa7e8c995d5f9f7a6296f67dda46cfae9',1,'jazz_elements::Locator::key']]],
-  ['key_5fhash_1',['key_hash',['../structjazz__elements_1_1VolatileTransaction.html#a20e75d60b495d6e5be520a1b1c293818',1,'jazz_elements::VolatileTransaction::key_hash'],['../structjazz__elements_1_1EntityKeyHash.html#ab8deadd4103bfa363f3b659104333ab8',1,'jazz_elements::EntityKeyHash::key_hash']]],
-  ['key_5fseed_2',['key_seed',['../classjazz__elements_1_1Volatile.html#afc059a889ae4c6dd11ab7a22ec043863',1,'jazz_elements::Volatile']]],
-  ['kind_5fsnippet_3',['KIND_SNIPPET',['../namespacejazz__core.html#a9be5de21f762a55ed90333a2d2c824bc',1,'jazz_core']]]
+  ['jazz_5fmhd_5fdaemon_0',['Jazz_MHD_Daemon',['../namespacejazz__main.html#a9af1d41451e6cfe5e88cddebec1ba954',1,'jazz_main']]],
+  ['jazz_5fnode_5fcluster_5fsize_1',['jazz_node_cluster_size',['../classjazz__elements_1_1Channels.html#addc02f975b640ba708ee34cbfba35d8e',1,'jazz_elements::Channels']]],
+  ['jazz_5fnode_5fip_2',['jazz_node_ip',['../classjazz__elements_1_1Channels.html#a57ff2b5199b467ea047d7a6ab51107af',1,'jazz_elements::Channels']]],
+  ['jazz_5fnode_5fmy_5findex_3',['jazz_node_my_index',['../classjazz__elements_1_1Channels.html#a157cdf95ec8a4ea15e7aa4754bff32fc',1,'jazz_elements::Channels']]],
+  ['jazz_5fnode_5fname_4',['jazz_node_name',['../classjazz__elements_1_1Channels.html#ad3e69ef85991c7f1afdd796ee15b93ec',1,'jazz_elements::Channels']]],
+  ['jazz_5fnode_5fport_5',['jazz_node_port',['../classjazz__elements_1_1Channels.html#a99f5ffa00666cefa538f2239de54df10',1,'jazz_elements::Channels']]],
+  ['jazz_5ftype_6',['jazz_type',['../structjazz__core_1_1TensorType.html#aa79387691bf5f5dc2f4a00f356181956',1,'jazz_core::TensorType::jazz_type'],['../structjazz__core_1_1AttributeType.html#ad4586efc7592016ceef632c7d3f51edd',1,'jazz_core::AttributeType::jazz_type']]]
 ];

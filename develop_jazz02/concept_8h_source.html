@@ -138,22 +138,30 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacejazz__bebop.html">jazz_bebop</a>;</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
 <div class="foldopen" id="foldopen00065" data-start="{" data-end="};">
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classjazz__models_1_1Concept.html">   65</a></span><span class="keyword">class </span><a class="code hl_class" href="classjazz__models_1_1Concept.html">Concept</a> : <span class="keyword">public</span> <a class="code hl_class" href="classjazz__core_1_1Snippet.html">Snippet</a> {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classjazz__models_1_1Concept.html">   65</a></span><span class="keyword">class </span><a class="code hl_class" href="classjazz__models_1_1Concept.html">Concept</a> : <span class="keyword">public</span> <a class="code hl_class" href="classjazz__bebop_1_1Space.html">Space</a> {</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>};</div>
-</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="namespacejazz__models.html#a03ec097f0a7be96bdd576a9da3855d17">   70</a></span><span class="keyword">typedef</span> <a class="code hl_class" href="classjazz__models_1_1Concept.html">Concept</a> *<a class="code hl_typedef" href="namespacejazz__models.html#a03ec097f0a7be96bdd576a9da3855d17">pConcept</a>;      </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <a class="code hl_class" href="classjazz__models_1_1Concept.html">Concept</a>(<a class="code hl_class" href="classjazz__core_1_1BaseAPI.html">pBaseAPI</a> p_owner);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <a class="code hl_function" href="classjazz__models_1_1Concept.html#ac8dbbc857ca09ef0d8626f9d9a5a0716">~Concept</a>();</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>} <span class="comment">// namespace jazz_models</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="classjazz__models_1_1Concept.html#aac66399285d565741a9b6f436f9012db">   72</a></span>        std::map&lt;stdName, std::string&gt; <a class="code hl_variable" href="classjazz__models_1_1Concept.html#aac66399285d565741a9b6f436f9012db">game</a>;    </div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="preprocessor">#endif </span><span class="comment">// ifndef INCLUDED_JAZZ_MODELS_CONCEPT</span></div>
-<div class="ttc" id="aclassjazz__core_1_1Snippet_html"><div class="ttname"><a href="classjazz__core_1_1Snippet.html">jazz_core::Snippet</a></div><div class="ttdoc">Snippet: A code snippet and the ancestor of Concept.</div><div class="ttdef"><b>Definition</b> snippet.h:172</div></div>
-<div class="ttc" id="aclassjazz__models_1_1Concept_html"><div class="ttname"><a href="classjazz__models_1_1Concept.html">jazz_models::Concept</a></div><div class="ttdoc">Concept: Generalizes Snippet for informal code.</div><div class="ttdef"><b>Definition</b> concept.h:65</div></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>};</div>
+</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="namespacejazz__models.html#a03ec097f0a7be96bdd576a9da3855d17">   75</a></span><span class="keyword">typedef</span> <a class="code hl_class" href="classjazz__models_1_1Concept.html">Concept</a> *<a class="code hl_typedef" href="namespacejazz__models.html#a03ec097f0a7be96bdd576a9da3855d17">pConcept</a>;      </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>} <span class="comment">// namespace jazz_models</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="preprocessor">#endif </span><span class="comment">// ifndef INCLUDED_JAZZ_MODELS_CONCEPT</span></div>
+<div class="ttc" id="aclassjazz__bebop_1_1Space_html"><div class="ttname"><a href="classjazz__bebop_1_1Space.html">jazz_bebop::Space</a></div><div class="ttdoc">Space: The Bebop object that belongs to a hierarchy.</div><div class="ttdef"><b>Definition</b> space.h:76</div></div>
+<div class="ttc" id="aclassjazz__core_1_1BaseAPI_html"><div class="ttname"><a href="classjazz__core_1_1BaseAPI.html">jazz_core::BaseAPI</a></div><div class="ttdoc">BaseAPI: The parent of API and Core.</div><div class="ttdef"><b>Definition</b> base_api.h:122</div></div>
+<div class="ttc" id="aclassjazz__models_1_1Concept_html"><div class="ttname"><a href="classjazz__models_1_1Concept.html">jazz_models::Concept</a></div><div class="ttdoc">Concept.</div><div class="ttdef"><b>Definition</b> concept.h:65</div></div>
+<div class="ttc" id="aclassjazz__models_1_1Concept_html_aac66399285d565741a9b6f436f9012db"><div class="ttname"><a href="classjazz__models_1_1Concept.html#aac66399285d565741a9b6f436f9012db">jazz_models::Concept::game</a></div><div class="ttdeci">std::map&lt; stdName, std::string &gt; game</div><div class="ttdoc">An attribute that is a map of names to other Spaces or strings.</div><div class="ttdef"><b>Definition</b> concept.h:72</div></div>
+<div class="ttc" id="aclassjazz__models_1_1Concept_html_ac8dbbc857ca09ef0d8626f9d9a5a0716"><div class="ttname"><a href="classjazz__models_1_1Concept.html#ac8dbbc857ca09ef0d8626f9d9a5a0716">jazz_models::Concept::~Concept</a></div><div class="ttdeci">~Concept()</div><div class="ttdoc">Concept: Destructor.</div><div class="ttdef"><b>Definition</b> concept.cpp:58</div></div>
 <div class="ttc" id="anamespacejazz__bebop_html"><div class="ttname"><a href="namespacejazz__bebop.html">jazz_bebop</a></div><div class="ttdoc">The Bop compiler.</div><div class="ttdef"><b>Definition</b> bebop.cpp:115</div></div>
 <div class="ttc" id="anamespacejazz__models_html"><div class="ttname"><a href="namespacejazz__models.html">jazz_models</a></div><div class="ttdoc">Concepts: A tree of Snippets with support fro blending that populates a semantic space.</div><div class="ttdef"><b>Definition</b> concept.cpp:39</div></div>
-<div class="ttc" id="anamespacejazz__models_html_a03ec097f0a7be96bdd576a9da3855d17"><div class="ttname"><a href="namespacejazz__models.html#a03ec097f0a7be96bdd576a9da3855d17">jazz_models::pConcept</a></div><div class="ttdeci">Concept * pConcept</div><div class="ttdoc">A pointer to a Concept.</div><div class="ttdef"><b>Definition</b> concept.h:70</div></div>
+<div class="ttc" id="anamespacejazz__models_html_a03ec097f0a7be96bdd576a9da3855d17"><div class="ttname"><a href="namespacejazz__models.html#a03ec097f0a7be96bdd576a9da3855d17">jazz_models::pConcept</a></div><div class="ttdeci">Concept * pConcept</div><div class="ttdoc">A pointer to a Concept.</div><div class="ttdef"><b>Definition</b> concept.h:75</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- footer.html -->
 <hr>

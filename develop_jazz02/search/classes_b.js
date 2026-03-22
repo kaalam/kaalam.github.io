@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['onnxattribute_0',['OnnxAttribute',['../classjazz__core_1_1OnnxAttribute.html',1,'jazz_core']]],
-  ['onnxopcode_1',['OnnxOpCode',['../classjazz__core_1_1OnnxOpCode.html',1,'jazz_core']]],
-  ['onnxparameter_2',['OnnxParameter',['../classjazz__core_1_1OnnxParameter.html',1,'jazz_core']]],
-  ['opcodes_3',['OpCodes',['../classjazz__core_1_1OpCodes.html',1,'jazz_core']]]
+  ['namespace_0',['NameSpace',['../classjazz__bebop_1_1NameSpace.html',1,'jazz_bebop']]],
+  ['nameuse_1',['NameUse',['../structjazz__elements_1_1NameUse.html',1,'jazz_elements']]]
 ];

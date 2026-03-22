@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['nameuse_0',['NameUse',['../structjazz__elements_1_1NameUse.html',1,'jazz_elements']]]
+  ['model_0',['Model',['../classjazz__models_1_1Model.html',1,'jazz_models']]],
+  ['modelsapi_1',['ModelsAPI',['../classjazz__models_1_1ModelsAPI.html',1,'jazz_models']]]
 ];

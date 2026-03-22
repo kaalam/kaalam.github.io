@@ -138,45 +138,36 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacejazz__elements.html">jazz_elements</a>;</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacejazz__core.html">jazz_core</a>;</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="namespacejazz__bebop.html#ad8a0d7e9b686b938fab39c5d25ec53d3">   57</a></span><span class="keyword">typedef</span> uint64_t <a class="code hl_typedef" href="namespacejazz__bebop.html#ad8a0d7e9b686b938fab39c5d25ec53d3">RowNumber</a>;     </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="namespacejazz__bebop.html#adda856380732fbf8bbfbb24d2db779d8">   58</a></span><span class="keyword">typedef</span> <a class="code hl_typedef" href="namespacejazz__elements.html#a97c097c96fd6364c46569536e8cbc535">Name</a>     <a class="code hl_typedef" href="namespacejazz__bebop.html#adda856380732fbf8bbfbb24d2db779d8">ColumnName</a>;    </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#define SPACE_NOT_A_ROW             0xffffFFFFffffFFFE  </span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#define SPACE_ROW_STOP_ITERATOR     0xffffFFFFffffFFFF  </span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keyword">class </span><a class="code hl_class" href="classjazz__bebop_1_1Space.html">Space</a>;                    </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="namespacejazz__bebop.html#a9e570cf93e172fff67ae3cfc5a771cf5">   65</a></span><span class="keyword">typedef</span> <a class="code hl_class" href="classjazz__bebop_1_1Space.html">Space</a> *<a class="code hl_typedef" href="namespacejazz__bebop.html#a9e570cf93e172fff67ae3cfc5a771cf5">pSpace</a>;          </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="foldopen" id="foldopen00068" data-start="{" data-end="};">
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="classjazz__bebop_1_1Space.html">   68</a></span><span class="keyword">class </span><a class="code hl_class" href="classjazz__bebop_1_1Space.html">Space</a> : <span class="keyword">public</span> <a class="code hl_class" href="classjazz__elements_1_1Tuple.html">Tuple</a> {</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="comment">// Service interface</span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>};</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="keyword">class </span>Space;                    </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="namespacejazz__bebop.html#a9e570cf93e172fff67ae3cfc5a771cf5">   59</a></span><span class="keyword">typedef</span> <a class="code hl_class" href="classjazz__bebop_1_1Space.html">Space</a> *<a class="code hl_typedef" href="namespacejazz__bebop.html#a9e570cf93e172fff67ae3cfc5a771cf5">pSpace</a>;          </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="foldopen" id="foldopen00076" data-start="{" data-end="};">
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="classjazz__bebop_1_1Space.html">   76</a></span><span class="keyword">class </span><a class="code hl_class" href="classjazz__bebop_1_1Space.html">Space</a> : <span class="keyword">public</span> <a class="code hl_class" href="classjazz__core_1_1Snippet.html">Snippet</a> {</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <a class="code hl_class" href="classjazz__bebop_1_1Space.html">Space</a>(<a class="code hl_class" href="classjazz__core_1_1BaseAPI.html">pBaseAPI</a> p_owner);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <a class="code hl_function" href="classjazz__bebop_1_1Space.html#a37019cc497bc0b61fa5b78fa161bbf80">~Space</a>();</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="classjazz__bebop_1_1Space.html#affe412275c684ddf5457db03b3664c40">   83</a></span>    std::map&lt;stdName, std::string&gt; <a class="code hl_variable" href="classjazz__bebop_1_1Space.html#affe412275c684ddf5457db03b3664c40">keys</a>;    </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>};</div>
 </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">//TODO: Clarify how spaces build a tree.</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">//TODO: Clarify why we need singular/plural like collections of, because we want to have just one service for all the spaces at a level.</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">//TODO: Think that in Bop, a space is something that accepts then [] and the &#39;.&#39; the latter being just a property of what is on its left:</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="comment">// (E.g.: this.is.just.a.hierarchy.defining.some.path.on.a.tree)</span></div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">//TODO: Is row the appropriate abstraction? Is a space somehow always tabular? A row is a key</span></div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>} <span class="comment">// namespace jazz_bebop</span></div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="preprocessor">#endif </span><span class="comment">// ifndef INCLUDED_JAZZ_BEBOP_SPACE</span></div>
-<div class="ttc" id="aclassjazz__bebop_1_1Space_html"><div class="ttname"><a href="classjazz__bebop_1_1Space.html">jazz_bebop::Space</a></div><div class="ttdef"><b>Definition</b> space.h:68</div></div>
-<div class="ttc" id="aclassjazz__elements_1_1Tuple_html"><div class="ttname"><a href="classjazz__elements_1_1Tuple.html">jazz_elements::Tuple</a></div><div class="ttdoc">Tuple: A Jazz Block with multiple Tensors.</div><div class="ttdef"><b>Definition</b> tuple.h:94</div></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>} <span class="comment">// namespace jazz_bebop</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="preprocessor">#endif </span><span class="comment">// ifndef INCLUDED_JAZZ_BEBOP_SPACE</span></div>
+<div class="ttc" id="aclassjazz__bebop_1_1Space_html"><div class="ttname"><a href="classjazz__bebop_1_1Space.html">jazz_bebop::Space</a></div><div class="ttdoc">Space: The Bebop object that belongs to a hierarchy.</div><div class="ttdef"><b>Definition</b> space.h:76</div></div>
+<div class="ttc" id="aclassjazz__bebop_1_1Space_html_a37019cc497bc0b61fa5b78fa161bbf80"><div class="ttname"><a href="classjazz__bebop_1_1Space.html#a37019cc497bc0b61fa5b78fa161bbf80">jazz_bebop::Space::~Space</a></div><div class="ttdeci">~Space()</div><div class="ttdoc">Space: Destructor.</div><div class="ttdef"><b>Definition</b> space.cpp:58</div></div>
+<div class="ttc" id="aclassjazz__bebop_1_1Space_html_affe412275c684ddf5457db03b3664c40"><div class="ttname"><a href="classjazz__bebop_1_1Space.html#affe412275c684ddf5457db03b3664c40">jazz_bebop::Space::keys</a></div><div class="ttdeci">std::map&lt; stdName, std::string &gt; keys</div><div class="ttdoc">An attribute that is a map of names to other Spaces or strings.</div><div class="ttdef"><b>Definition</b> space.h:83</div></div>
+<div class="ttc" id="aclassjazz__core_1_1BaseAPI_html"><div class="ttname"><a href="classjazz__core_1_1BaseAPI.html">jazz_core::BaseAPI</a></div><div class="ttdoc">BaseAPI: The parent of API and Core.</div><div class="ttdef"><b>Definition</b> base_api.h:122</div></div>
+<div class="ttc" id="aclassjazz__core_1_1Snippet_html"><div class="ttname"><a href="classjazz__core_1_1Snippet.html">jazz_core::Snippet</a></div><div class="ttdoc">Snippet: A code snippet and the ancestor of Concept.</div><div class="ttdef"><b>Definition</b> snippet.h:175</div></div>
 <div class="ttc" id="anamespacejazz__bebop_html"><div class="ttname"><a href="namespacejazz__bebop.html">jazz_bebop</a></div><div class="ttdoc">The Bop compiler.</div><div class="ttdef"><b>Definition</b> bebop.cpp:115</div></div>
-<div class="ttc" id="anamespacejazz__bebop_html_a9e570cf93e172fff67ae3cfc5a771cf5"><div class="ttname"><a href="namespacejazz__bebop.html#a9e570cf93e172fff67ae3cfc5a771cf5">jazz_bebop::pSpace</a></div><div class="ttdeci">Space * pSpace</div><div class="ttdoc">Forward definition of Space.</div><div class="ttdef"><b>Definition</b> space.h:65</div></div>
-<div class="ttc" id="anamespacejazz__bebop_html_ad8a0d7e9b686b938fab39c5d25ec53d3"><div class="ttname"><a href="namespacejazz__bebop.html#ad8a0d7e9b686b938fab39c5d25ec53d3">jazz_bebop::RowNumber</a></div><div class="ttdeci">uint64_t RowNumber</div><div class="ttdoc">A row number in a Space.</div><div class="ttdef"><b>Definition</b> space.h:57</div></div>
-<div class="ttc" id="anamespacejazz__bebop_html_adda856380732fbf8bbfbb24d2db779d8"><div class="ttname"><a href="namespacejazz__bebop.html#adda856380732fbf8bbfbb24d2db779d8">jazz_bebop::ColumnName</a></div><div class="ttdeci">Name ColumnName</div><div class="ttdoc">A column name in a Space.</div><div class="ttdef"><b>Definition</b> space.h:58</div></div>
+<div class="ttc" id="anamespacejazz__bebop_html_a9e570cf93e172fff67ae3cfc5a771cf5"><div class="ttname"><a href="namespacejazz__bebop.html#a9e570cf93e172fff67ae3cfc5a771cf5">jazz_bebop::pSpace</a></div><div class="ttdeci">Space * pSpace</div><div class="ttdoc">Forward definition of Space.</div><div class="ttdef"><b>Definition</b> space.h:59</div></div>
 <div class="ttc" id="anamespacejazz__core_html"><div class="ttname"><a href="namespacejazz__core.html">jazz_core</a></div><div class="ttdoc">A language to access any container by base using locators.</div><div class="ttdef"><b>Definition</b> base_api.cpp:39</div></div>
 <div class="ttc" id="anamespacejazz__elements_html"><div class="ttname"><a href="namespacejazz__elements.html">jazz_elements</a></div><div class="ttdoc">The namespace for Jazz Utils, Blocks, Kinds, Tuples, Containers, etc.</div><div class="ttdef"><b>Definition</b> block.cpp:39</div></div>
-<div class="ttc" id="anamespacejazz__elements_html_a97c097c96fd6364c46569536e8cbc535"><div class="ttname"><a href="namespacejazz__elements.html#a97c097c96fd6364c46569536e8cbc535">jazz_elements::Name</a></div><div class="ttdeci">char Name[NAME_SIZE]</div><div class="ttdoc">A short identifier used in Blocks, Containers and API.</div><div class="ttdef"><b>Definition</b> types.h:187</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- footer.html -->
 <hr>
