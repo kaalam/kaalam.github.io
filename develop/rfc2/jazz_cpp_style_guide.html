@@ -3,38 +3,45 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<meta name="generator" content="litedown 0.11">
+<meta name="generator" content="litedown 1.0">
 <title></title>
 <style type="text/css">
+:root {
+  --accent: steelblue;
+  --muted-bg: #f8f8f8;
+  --border-color: #eee;
+  --rule-color: #666;
+}
 body {
   font-family: sans-serif;
-  max-width: 800px;
+  max-width: 50em;
   margin: auto;
   padding: 1em;
   line-height: 1.5;
   print-color-adjust: exact;
   -webkit-print-color-adjust: exact;
 }
-body, .abstract, code, .footnotes, footer, #refs, .caption { font-size: .9em; }
+.abstract, .footnotes, footer, #refs, div:has(> .caption) { font-size: .9em; }
 li li { font-size: .95em; }
 ul:has(li > input[type="checkbox"]) { list-style: none; padding-left: 1em; }
 *, :before, :after { box-sizing: border-box; }
-a { color: steelblue; }
+a { color: var(--accent); }
 pre, img { max-width: 100%; }
-pre { white-space: pre-wrap; word-break: break-word; }
-pre code { display: block; padding: 1em; overflow-x: auto; }
-code { font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace; }
-:not(pre, th) > code, code[class], div > .caption { background: #f8f8f8; }
-pre > code:is(:not([class]), .language-plain, .language-none, .plain), .box, .figure, .table { background: inherit; border: 1px solid #eee; }
+pre {
+  white-space: pre-wrap; word-break: break-word;
+  code { display: block; padding: 1em; overflow-x: auto; }
+}
+:not(pre, th) > code, code[class], div > .caption { background: var(--muted-bg); }
+pre > code:is(:not([class]), .language-plain, .language-none, .plain), .box, .figure, .table { background: inherit; border: 1px solid var(--border-color); }
 pre > code {
   &.message { border-color: #9eeaf9; }
   &.warning { background: #fff3cd; border-color: #fff3cd; }
   &.error { background: #f8d7da; border-color: #f8d7da; }
 }
-.fenced-chunk { border-left: 1px solid #666; }
+.fenced-chunk { border-left: 1px solid var(--rule-color); }
 .code-fence {
   opacity: .4;
-  border: 1px dashed #666;
+  border: 1px dashed var(--rule-color);
   border-left: 2px solid;
   &:hover { opacity: inherit; }
 }
@@ -46,28 +53,28 @@ table {
   &:only-child:not(.table > *) { margin: auto; }
   th, td { padding: 5px; font-variant-numeric: tabular-nums; }
   &:not([class]) {
-    thead, tfoot, tr:nth-child(even) { background: whitesmoke; }
+    thead, tfoot, tr:nth-child(even) { background: var(--muted-bg); }
     thead th { border-bottom: 1px solid #ddd; }
-    border-top: 1px solid #666;
-    border-bottom: 1px solid #666;
+    border-top: 1px solid var(--rule-color);
+    border-bottom: 1px solid var(--rule-color);
   }
 }
 blockquote {
   color: #666;
   margin: 0;
   padding: 1px 1em;
-  border-left: .5em solid #eee;
+  border-left: .5em solid var(--border-color);
 }
 hr, .footnotes::before { border: 1px dashed #ddd; }
 .frontmatter { text-align: center; }
 #TOC {
   a { text-decoration: none; }
-  ul { list-style: none; padding-left: 1em; columns: 24em; }
-  & > ul { padding: 0; }
+  ul { list-style: none; padding-left: 1em; }
+  & > ul { padding: 0; columns: 18em; }
   ul ul { border-left: 1px solid lightsteelblue; }
 }
-.body h2 { border-bottom: 1px solid #666; }
-.body .appendix, .appendix ~ h2 { border-bottom-style: dashed; }
+article h2 { border-bottom: 1px solid var(--rule-color); }
+.appendix ~ h2 { border-bottom-style: dashed; }
 .main-number::after { content: "."; }
 span[class^="ref-number-"] { font-weight: bold; }
 .ref-number-fig::after, .ref-number-tab::after { content: ":"; }
@@ -100,22 +107,29 @@ section.footnotes {
   opacity: 0.6;
 }
 @media (prefers-color-scheme: dark) {
-  html, img, video, iframe { filter: invert(1); }
+  :is(html, img, video, iframe) {
+    &:not(.no-invert, .no-invert *), .no-invert:not(&) { filter: invert(1); }
+  }
   body { background: #ededed; }
 }
 @media print {
   body { max-width: 100%; }
   tr, img { break-inside: avoid; }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 62em) {
   body:not(.pagesjs) pre:has(.line-numbers):not(:hover) { white-space: pre; }
 }
 </style>
 </head>
 <body>
-<div class="frontmatter">
-</div>
-<div class="body">
+<header class="frontmatter">
+
+
+
+
+</header>
+<main>
+<article class="">
 <h1 id="chp:jazz-c-style-guide">Jazz C++ Style Guide</h1>
 <p>We fork Google C++ style guide with some divergent rules, detailed in this document. For anything else, use Google’s style guide as reference. Reference <a href="https://google.github.io/styleguide/cppguide.html">https://google.github.io/styleguide/cppguide.html</a></p>
 <h3 id="sec:swdwgad-principle">SWDWGAD principle</h3>
@@ -169,6 +183,8 @@ section.footnotes {
 <li>The hash mark that starts a preprocessor directive should always be at the beginning of the line.</li>
 <li>No spaces inside the angle brackets.</li>
 </ul>
-</div>
+
+</article>
+</main>
 </body>
 </html>
